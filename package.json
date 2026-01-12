@@ -1,0 +1,43 @@
+{
+  "name": "travel-buddy-mcp",
+  "version": "0.1.0",
+  "description": "Stateless Travel MCP Server - Search flights, hotels, cars, and vacation rentals",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/api/server.ts",
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "start": "node dist/api/server.js",
+    "start:prod": "NODE_ENV=production node dist/api/server.js",
+    "api": "tsx src/api/server.ts",
+    "mcp": "node --loader tsx src/mcp/server.ts",
+    "cli": "tsx src/cli/simple.ts",
+    "android": "./scripts/run-android.sh",
+    "android:restart": "./scripts/restart-android.sh",
+    "mobile:start": "cd mobile && npx expo start",
+    "mobile:android": "cd mobile && npx expo start --android",
+    "mobile:build:android": "cd mobile && eas build --platform android --profile production",
+    "mobile:build:preview": "cd mobile && eas build --platform android --profile preview"
+  },
+  "bin": {
+    "travel-buddy": "./src/cli/simple.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "expo-location": "^19.0.8",
+    "express": "^5.2.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^20.10.6",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.1.0"
+  }
+}
