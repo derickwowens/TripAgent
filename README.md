@@ -135,7 +135,7 @@ npm run cli -- help
 
 ## 🤖 MCP Server (Claude Desktop Integration)
 
-Connect Travel Buddy to Claude Desktop as an MCP server!
+Connect TripAgent to Claude Desktop as an MCP server!
 
 ### Quick Setup
 
@@ -144,9 +144,9 @@ Connect Travel Buddy to Claude Desktop as an MCP server!
 ```json
 {
   "mcpServers": {
-    "travel-buddy": {
+    "tripagent": {
       "command": "node",
-      "args": ["--loader", "tsx", "/path/to/travel-buddy/src/mcp/server.ts"],
+      "args": ["--loader", "tsx", "/path/to/tripagent/src/mcp/server.ts"],
       "env": {
         "AMADEUS_CLIENT_ID": "your_client_id",
         "AMADEUS_CLIENT_SECRET": "your_client_secret"

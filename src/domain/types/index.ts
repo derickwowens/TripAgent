@@ -1,4 +1,4 @@
-// Travel Buddy - Domain Types
+// TripAgent - Domain Types
 
 // ============================================
 // FLIGHT TYPES

@@ -1,5 +1,5 @@
 {
-  "name": "travel-buddy-mcp",
+  "name": "tripagent",
   "version": "0.1.0",
   "description": "Stateless Travel MCP Server - Search flights, hotels, cars, and vacation rentals",
   "type": "module",
@@ -21,7 +21,7 @@
     "mobile:build:preview": "cd mobile && eas build --platform android --profile preview"
   },
   "bin": {
-    "travel-buddy": "./src/cli/simple.ts"
+    "tripagent": "./src/cli/simple.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",

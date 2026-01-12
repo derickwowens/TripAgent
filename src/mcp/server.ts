@@ -63,7 +63,7 @@ const facade = new TravelFacade(
 // Create MCP server
 const server = new Server(
   {
-    name: 'travel-buddy',
+    name: 'tripagent',
     version: '0.1.0',
   },
   {
@@ -118,7 +118,7 @@ async function main() {
   await server.connect(transport);
 
   // Log to stderr so it doesn't interfere with stdio protocol
-  console.error('🌍 Travel Buddy MCP Server running on stdio');
+  console.error('🌍 TripAgent MCP Server running on stdio');
   console.error('Available tools: search_flights, search_hotels, search_car_rentals, search_activities, search_national_parks, plan_park_trip, get_airport_info');
 }
 

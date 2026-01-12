@@ -24,7 +24,7 @@ This guide covers deploying the TripAgent API server and building the mobile app
 
 3. **Connect Repository**
    - Click "New Project" → "Deploy from GitHub repo"
-   - Select your `travel-buddy` repository
+   - Select your `TripAgent` repository
    - Railway will auto-detect the Dockerfile
 
 4. **Set Environment Variables**
@@ -37,7 +37,7 @@ This guide covers deploying the TripAgent API server and building the mobile app
    ```
 
 5. **Get Your API URL**
-   - Railway provides a URL like: `https://travel-buddy-production.up.railway.app`
+   - Railway provides a URL like: `https://tripagent-production.up.railway.app`
    - Copy this URL for the mobile app configuration
 
 ### Option B: Render

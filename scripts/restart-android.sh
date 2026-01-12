@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Travel Buddy - Restart Android App Script
+# TripAgent - Restart Android App Script
 # Comprehensive restart with cache clearing and proper initialization
 
 set -e
@@ -12,7 +12,7 @@ MOBILE_DIR="$PROJECT_ROOT/mobile"
 export ANDROID_HOME="$HOME/Library/Android/sdk"
 export PATH="$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator"
 
-echo "🔄 Restarting Travel Buddy..."
+echo "🔄 Restarting TripAgent..."
 echo "=============================="
 
 # Cleanup on exit
@@ -61,10 +61,10 @@ rm -rf .expo 2>/dev/null || true
 echo ""
 echo "📡 Starting API server..."
 cd "$PROJECT_ROOT"
-npm run api > /tmp/travel-buddy-api.log 2>&1 &
+npm run api > /tmp/tripagent-api.log 2>&1 &
 API_PID=$!
 echo "   API PID: $API_PID"
-echo "   Log: /tmp/travel-buddy-api.log"
+echo "   Log: /tmp/tripagent-api.log"
 
 # Wait for API to be ready
 echo "   Waiting for API..."
@@ -78,8 +78,8 @@ done
 
 # Verify API is actually running
 if ! curl -s http://localhost:3000/health > /dev/null 2>&1; then
-    echo "❌ API failed to start. Check /tmp/travel-buddy-api.log"
-    cat /tmp/travel-buddy-api.log | tail -20
+    echo "❌ API failed to start. Check /tmp/tripagent-api.log"
+    cat /tmp/tripagent-api.log | tail -20
     exit 1
 fi
 
@@ -89,15 +89,15 @@ echo "📱 Starting Expo..."
 cd "$MOBILE_DIR"
 
 # Start Expo in background and capture output
-npx expo start --clear > /tmp/travel-buddy-expo.log 2>&1 &
+npx expo start --clear > /tmp/tripagent-expo.log 2>&1 &
 EXPO_PID=$!
 echo "   Expo PID: $EXPO_PID"
-echo "   Log: /tmp/travel-buddy-expo.log"
+echo "   Log: /tmp/tripagent-expo.log"
 
 # Wait for Metro bundler to be ready
 echo "   Waiting for Metro bundler..."
 for i in {1..30}; do
-    if grep -q "Metro waiting" /tmp/travel-buddy-expo.log 2>/dev/null; then
+    if grep -q "Metro waiting" /tmp/tripagent-expo.log 2>/dev/null; then
         echo "✅ Metro bundler ready"
         break
     fi
@@ -115,7 +115,7 @@ adb shell am start -a android.intent.action.VIEW -d "exp://192.168.1.109:8081" 2
 # Wait for bundle to complete
 echo "   Waiting for bundle to complete..."
 for i in {1..60}; do
-    if grep -q "Bundled" /tmp/travel-buddy-expo.log 2>/dev/null; then
+    if grep -q "Bundled" /tmp/tripagent-expo.log 2>/dev/null; then
         echo "✅ Bundle complete!"
         break
     fi
@@ -124,17 +124,17 @@ done
 
 echo ""
 echo "=============================="
-echo "✅ Travel Buddy is running!"
+echo "✅ TripAgent is running!"
 echo ""
 echo "📱 Check the emulator for the app"
 echo "📡 API: http://localhost:3000"
 echo ""
 echo "📋 Logs:"
-echo "   API:   tail -f /tmp/travel-buddy-api.log"
-echo "   Expo:  tail -f /tmp/travel-buddy-expo.log"
+echo "   API:   tail -f /tmp/tripagent-api.log"
+echo "   Expo:  tail -f /tmp/tripagent-expo.log"
 echo ""
 echo "Press Ctrl+C to stop all services"
 echo ""
 
 # Keep script running and tail expo logs
-tail -f /tmp/travel-buddy-expo.log
+tail -f /tmp/tripagent-expo.log

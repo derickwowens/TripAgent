@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Travel Buddy - Android Emulator Launch Script
+# TripAgent - Android Emulator Launch Script
 # This script starts the API server and launches the app on Android emulator
 
 set -e
@@ -8,7 +8,7 @@ set -e
 PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 MOBILE_DIR="$PROJECT_ROOT/mobile"
 
-echo "🚀 Travel Buddy Android Launch Script"
+echo "🚀 TripAgent Android Launch Script"
 echo "======================================"
 
 # Check if Android emulator is running

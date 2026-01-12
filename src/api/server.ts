@@ -1,5 +1,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import cors from 'cors';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import { config } from 'dotenv';
 import { TravelFacade } from '../domain/facade/TravelFacade.js';
 import { AmadeusFlightAdapter } from '../providers/flights/AmadeusFlightAdapter.js';
@@ -20,6 +22,11 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
+// Serve static files (privacy policy)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+app.use('/public', express.static(path.join(__dirname, '../../public')));
+
 // Initialize facade with all providers
 const facade = new TravelFacade(
   [new AmadeusFlightAdapter(), new KiwiFlightAdapter()],
@@ -38,7 +45,7 @@ const asyncHandler = (fn: Function) => (req: Request, res: Response, next: NextF
 // HEALTH CHECK
 // ============================================
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', service: 'travel-buddy-api', timestamp: new Date().toISOString() });
+  res.json({ status: 'ok', service: 'tripagent-api', timestamp: new Date().toISOString() });
 });
 
 // ============================================
@@ -236,7 +243,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`🚀 Travel Buddy API running on http://localhost:${PORT}`);
+  console.log(`🚀 TripAgent API running on http://localhost:${PORT}`);
   console.log(`📚 Endpoints:`);
   console.log(`   GET  /health`);
   console.log(`   GET  /api/flights/search?origin=LAX&destination=JFK&departureDate=2026-06-15`);

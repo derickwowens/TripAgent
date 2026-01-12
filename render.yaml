@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: travel-buddy-api
+    name: tripagent-api
     env: node
     plan: free
     buildCommand: npm ci && npm run build

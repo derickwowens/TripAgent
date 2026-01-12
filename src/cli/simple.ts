@@ -72,7 +72,7 @@ async function main() {
 
 function printHelp() {
   console.log(`
-🌍 Travel Buddy CLI
+🌍 TripAgent CLI
 
 Usage: npm run cli -- <command> [options]
 

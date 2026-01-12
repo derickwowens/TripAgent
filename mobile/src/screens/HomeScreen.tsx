@@ -349,7 +349,7 @@ const HomeScreen: React.FC = () => {
           <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
             <Text style={styles.menuIcon}>☰</Text>
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>Travel Buddy</Text>
+          <Text style={styles.headerTitle}>TripAgent</Text>
           <View style={styles.menuButton} />
         </View>
 

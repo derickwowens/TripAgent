@@ -37,10 +37,10 @@ export default ({ config }) => {
     },
     extra: {
       eas: {
-        projectId: process.env.EAS_PROJECT_ID || "travel-buddy"
+        projectId: "675e8ace-7c0e-42e4-9e04-d768a159871c"
       },
       apiUrl: process.env.EXPO_PUBLIC_API_URL || "http://localhost:3000"
     },
-    owner: "tripagent"
+    owner: "derickwowens"
   };
 };
