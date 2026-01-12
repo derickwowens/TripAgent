@@ -11,6 +11,7 @@ import { AmadeusCarAdapter } from '../providers/cars/AmadeusCarAdapter.js';
 import { AmadeusActivitiesAdapter } from '../providers/activities/AmadeusActivitiesAdapter.js';
 import { NationalParksAdapter } from '../providers/parks/NationalParksAdapter.js';
 import { createChatHandler } from './chat.js';
+import { logError } from './errorLogger.js';
 
 // Load environment variables
 config();
@@ -47,6 +48,24 @@ const asyncHandler = (fn: Function) => (req: Request, res: Response, next: NextF
 app.get('/health', (req, res) => {
   res.json({ status: 'ok', service: 'tripagent-api', timestamp: new Date().toISOString() });
 });
+
+// ============================================
+// ERROR LOGGING ENDPOINT
+// ============================================
+app.post('/api/log-error', asyncHandler(async (req: Request, res: Response) => {
+  const { message, stack, endpoint, context } = req.body;
+  
+  await logError({
+    message: message || 'Unknown error',
+    stack,
+    endpoint,
+    userAgent: req.headers['user-agent'],
+    timestamp: new Date().toISOString(),
+    context,
+  });
+  
+  res.json({ logged: true });
+}));
 
 // ============================================
 // FLIGHT ENDPOINTS

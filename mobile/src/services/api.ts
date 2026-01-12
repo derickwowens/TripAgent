@@ -174,4 +174,19 @@ export const sendChatMessage = async (
   return response.data;
 };
 
+// Error logging
+export const logErrorToServer = async (error: {
+  message: string;
+  stack?: string;
+  endpoint?: string;
+  context?: Record<string, any>;
+}): Promise<void> => {
+  try {
+    await api.post('/api/log-error', error);
+  } catch (e) {
+    // Silently fail - don't cause more errors trying to log errors
+    console.error('Failed to log error to server:', e);
+  }
+};
+
 export default api;

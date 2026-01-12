@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import * as Location from 'expo-location';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext } from '../services/api';
+import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
 
 interface Message {
   id: string;
@@ -284,10 +284,25 @@ const HomeScreen: React.FC = () => {
       setMessages(prev => [...prev, assistantMessage]);
     } catch (error: any) {
       console.error('Chat error:', error);
+      
+      // Log error to server for monitoring
+      logErrorToServer({
+        message: error?.message || 'Unknown chat error',
+        stack: error?.stack,
+        endpoint: '/api/chat',
+        context: {
+          model: selectedModel,
+          messageCount: updatedMessages.length,
+          userLocation: userLocation?.city,
+          errorCode: error?.response?.status,
+          errorData: error?.response?.data,
+        },
+      });
+      
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         type: 'assistant',
-        content: 'Sorry, I had trouble connecting. Please try again.',
+        content: `Sorry, I had trouble connecting. ${error?.message || 'Please try again.'}`,
         timestamp: new Date(),
       };
       setMessages(prev => [...prev, errorMessage]);
@@ -355,8 +370,8 @@ const HomeScreen: React.FC = () => {
 
         <KeyboardAvoidingView
           style={styles.container}
-          behavior={Platform.OS === 'ios' ? 'padding' : undefined}
-          keyboardVerticalOffset={Platform.OS === 'ios' ? 90 : 0}
+          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+          keyboardVerticalOffset={Platform.OS === 'ios' ? 90 : 20}
         >
           <ScrollView
             ref={scrollViewRef}
