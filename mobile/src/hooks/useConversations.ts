@@ -9,6 +9,8 @@ export interface Message {
   type: 'user' | 'assistant';
   content: string;
   timestamp: Date;
+  isError?: boolean;
+  lastUserMessage?: string; // For retry functionality
 }
 
 export interface SavedConversation {

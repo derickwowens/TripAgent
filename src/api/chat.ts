@@ -1,6 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { TravelFacade } from '../domain/facade/TravelFacade.js';
 import { GoogleMapsAdapter } from '../providers/GoogleMapsAdapter.js';
+import { validateLinksInResponse } from '../utils/linkValidator.js';
 
 let anthropic: Anthropic | null = null;
 
@@ -78,9 +79,9 @@ IMPORTANT - DRIVING DISTANCES:
 Always use the get_driving_distance tool to get accurate drive times for road trips. Never estimate or guess driving times. The tool provides real distance and duration data. Include driving time when showing airport-to-park comparisons so users can factor in the drive.
 
 IMPORTANT - BUDGET SUMMARY:
-Always end trip plans with a clear cost breakdown and total estimate:
+Always end trip plans with a clear cost breakdown and total estimate. ALWAYS provide a cost summary even if some data is missing - use estimates and clearly mark them.
 
-💰 ESTIMATED TRIP COST (using best value flight)
+💰 ESTIMATED TRIP COST
 ━━━━━━━━━━━━━━━━━━━━━━
 • Flights: $XXX × [travelers] = $XXX
 • Car rental: $XX/day × [days] = $XXX
@@ -90,34 +91,35 @@ Always end trip plans with a clear cost breakdown and total estimate:
 ━━━━━━━━━━━━━━━━━━━━━━
 📊 TOTAL: $X,XXX (for [X] travelers, [X] days)
 
-Use actual prices from tool results. If a price is unavailable, provide a reasonable estimate and note it.
+HANDLING MISSING DATA:
+- If flight data is unavailable: Use "~$XXX (estimate)" and note "Flight prices vary - click link to see current rates"
+- If hotel data is unavailable: Estimate $100-200/night for hotels near national parks, $20-50/night for camping
+- If car rental data is unavailable: Estimate $40-80/day for standard rental
+- NEVER skip the cost summary - always provide your best estimate with clear labels like "~" or "(est.)"
+- Include a note: "⚠️ Some prices are estimates - click booking links for current rates"
 
 You have access to real-time data through tools. When you receive tool results, incorporate the ACTUAL PRICES naturally into your response.
 
-IMPORTANT - INCLUDE USEFUL LINKS WITH ACTUAL VALUES:
-When providing recommendations, ALWAYS include links with the ACTUAL values from the conversation filled in - never use placeholders like [origin] or [destination]. Use the real airport codes, dates, and locations discussed.
+IMPORTANT - BOOKING LINKS (use EXACT formats below, replacing values):
 
-For National Parks (replace with actual park code like "yose", "grca", "zion"):
-• Official NPS page: https://www.nps.gov/yose/index.htm (use actual park code)
-• Example: 🔗 [Yosemite NPS Site](https://www.nps.gov/yose/index.htm)
+FLIGHTS - Use Kayak format (TESTED & WORKING):
+🔗 [Search flights](https://www.kayak.com/flights/LAX-JFK/2026-03-15/2026-03-20)
+Format: https://www.kayak.com/flights/{ORIGIN}-{DEST}/{DEPART-DATE}/{RETURN-DATE}
 
-For Flights (use actual airport codes and dates from conversation):
-• Google Flights URL format: https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI2LTAzLTE1agcIARIDTEFYcgcIARIDU0ZPGiMSCjIwMjYtMDMtMjBqBwgBEgNTRk9yBwgBEgNMQVg&curr=USD
-• Simpler format: https://www.google.com/travel/flights?q=flights+from+LAX+to+SFO+on+March+15
-• Example with real values: 🔗 [Search LAX→SFO flights](https://www.google.com/travel/flights?q=flights+from+LAX+to+SFO+on+March+15+2026)
+HOTELS - Use Booking.com format (TESTED & WORKING):
+🔗 [Find hotels](https://www.booking.com/searchresults.html?ss=Yosemite%20National%20Park&checkin=2026-03-15&checkout=2026-03-20)
+Format: https://www.booking.com/searchresults.html?ss={DESTINATION}&checkin={DATE}&checkout={DATE}
+Note: Replace spaces with %20 in destination names
 
-For Hotels (use actual destination city/park name):
-• Booking.com: https://www.booking.com/searchresults.html?ss=Yosemite+National+Park
-• Example: 🔗 [Hotels near Yosemite](https://www.booking.com/searchresults.html?ss=Yosemite+Valley)
+CAR RENTALS - Use Kayak format (TESTED & WORKING):
+🔗 [Rent a car](https://www.kayak.com/cars/LAX/2026-03-15/2026-03-20)
+Format: https://www.kayak.com/cars/{AIRPORT}/{PICKUP-DATE}/{DROPOFF-DATE}
 
-For Car Rentals (use actual airport code and dates):
-• Kayak format: https://www.kayak.com/cars/LAX/2026-03-15/2026-03-20
-• Example: 🔗 [Rent car at LAX](https://www.kayak.com/cars/LAX/2026-03-15/2026-03-20)
+NATIONAL PARKS:
+🔗 [Park info](https://www.nps.gov/yose/index.htm)
+Format: https://www.nps.gov/{PARK-CODE}/index.htm
 
-CRITICAL: Replace all example values above with the ACTUAL values from the user's request. If user says they're flying from Denver to Yellowstone on June 1st, the link should be:
-🔗 [Search DEN→JAC flights](https://www.google.com/travel/flights?q=flights+from+DEN+to+JAC+on+June+1+2026)
-
-Format links in markdown style: [Link Text](URL)
+CRITICAL: Always use the ACTUAL airport codes, dates, and locations from the conversation. Dates must be YYYY-MM-DD format.
 
 Keep responses concise - mobile users prefer shorter messages. Use line breaks for readability.`;
 
@@ -344,7 +346,16 @@ export async function createChatHandler(facade: TravelFacade) {
         (block): block is Anthropic.TextBlock => block.type === 'text'
       );
 
-      return textBlocks.map(b => b.text).join('\n');
+      const rawResponse = textBlocks.map(b => b.text).join('\n');
+      
+      // Validate and fix any broken links in the response
+      try {
+        const validatedResponse = await validateLinksInResponse(rawResponse);
+        return validatedResponse;
+      } catch (linkError) {
+        console.warn('[Chat] Link validation failed, returning raw response:', linkError);
+        return rawResponse;
+      }
     } catch (error: any) {
       console.error('Claude API error:', error);
       throw new Error(`Chat error: ${error.message}`);

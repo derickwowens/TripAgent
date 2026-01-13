@@ -137,11 +137,18 @@ const HomeScreen: React.FC = () => {
         userFriendlyMessage = "😕 Something unexpected happened. Please try again, or reach out via the feedback form in the menu if this persists.";
       }
       
+      // Find the last user message for retry functionality
+      const lastUserMsg = messages.length > 0 
+        ? messages.filter(m => m.type === 'user').pop()?.content 
+        : inputText;
+      
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         type: 'assistant',
         content: userFriendlyMessage,
         timestamp: new Date(),
+        isError: true,
+        lastUserMessage: lastUserMsg || inputText,
       };
       setMessages(prev => [...prev, errorMessage]);
     } finally {
@@ -187,6 +194,64 @@ const HomeScreen: React.FC = () => {
               messages={messages}
               isLoading={isLoading}
               loadingStatus={loadingStatus}
+              onRetry={async (lastUserMessage) => {
+                // Remove the error message
+                const cleanedMessages = messages.filter(m => !m.isError);
+                setMessages(cleanedMessages);
+                
+                // Create a new user message and resend
+                const retryMessage: Message = {
+                  id: Date.now().toString(),
+                  type: 'user',
+                  content: lastUserMessage,
+                  timestamp: new Date(),
+                };
+                
+                const updatedMessages = [...cleanedMessages, retryMessage];
+                setMessages(updatedMessages);
+                setIsLoading(true);
+                setLoadingStatus('Retrying...');
+                
+                try {
+                  const chatMessages: ApiChatMessage[] = updatedMessages.map(m => ({
+                    role: m.type === 'user' ? 'user' : 'assistant',
+                    content: m.content,
+                  }));
+                  
+                  const context: ChatContext = {
+                    userLocation: userLocation ? {
+                      city: userLocation.city,
+                      state: userLocation.state,
+                      nearestAirport: userLocation.nearestAirport,
+                    } : undefined,
+                    userProfile: userProfile || undefined,
+                  };
+                  
+                  const result = await sendChatMessage(chatMessages, context, selectedModel);
+                  
+                  const assistantMessage: Message = {
+                    id: (Date.now() + 1).toString(),
+                    type: 'assistant',
+                    content: result.response,
+                    timestamp: new Date(),
+                  };
+                  
+                  setMessages(prev => [...prev, assistantMessage]);
+                } catch (error: any) {
+                  const errorMessage: Message = {
+                    id: (Date.now() + 1).toString(),
+                    type: 'assistant',
+                    content: "😕 Still having trouble. Please try again later or use the feedback form.",
+                    timestamp: new Date(),
+                    isError: true,
+                    lastUserMessage,
+                  };
+                  setMessages(prev => [...prev, errorMessage]);
+                } finally {
+                  setIsLoading(false);
+                  setLoadingStatus('');
+                }
+              }}
             />
           </ScrollView>
 

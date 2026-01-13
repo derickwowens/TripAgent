@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { SavedConversation } from '../../hooks';
 
 interface ConversationListProps {
@@ -30,7 +30,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   return (
     <>
       <Text style={styles.title}>Saved Trips</Text>
-      <ScrollView style={styles.list}>
+      <View style={styles.list}>
         {conversations.map((conv) => (
           <View
             key={conv.id}
@@ -75,7 +75,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
         {conversations.length === 0 && (
           <Text style={styles.emptyText}>No saved conversations yet</Text>
         )}
-      </ScrollView>
+      </View>
     </>
   );
 };
@@ -91,7 +91,6 @@ const styles = StyleSheet.create({
     paddingBottom: 8,
   },
   list: {
-    flex: 1,
     paddingHorizontal: 12,
   },
   item: {

@@ -6,6 +6,7 @@ interface ChatMessagesProps {
   messages: Message[];
   isLoading: boolean;
   loadingStatus: string;
+  onRetry?: (lastUserMessage: string) => void;
 }
 
 // Parse markdown links [text](url) and plain URLs
@@ -70,7 +71,8 @@ const MessageContent: React.FC<{ content: string; isUser: boolean }> = ({ conten
 export const ChatMessages: React.FC<ChatMessagesProps> = ({ 
   messages, 
   isLoading, 
-  loadingStatus 
+  loadingStatus,
+  onRetry,
 }) => {
   return (
     <>
@@ -80,9 +82,18 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           style={[
             styles.bubble,
             message.type === 'user' ? styles.userBubble : styles.assistantBubble,
+            message.isError && styles.errorBubble,
           ]}
         >
           <MessageContent content={message.content} isUser={message.type === 'user'} />
+          {message.isError && message.lastUserMessage && onRetry && (
+            <TouchableOpacity 
+              style={styles.retryButton}
+              onPress={() => onRetry(message.lastUserMessage!)}
+            >
+              <Text style={styles.retryText}>🔄 Tap to retry</Text>
+            </TouchableOpacity>
+          )}
         </View>
       ))}
       
@@ -145,5 +156,23 @@ const styles = StyleSheet.create({
   },
   assistantLink: {
     color: '#93c5fd',
+  },
+  errorBubble: {
+    borderWidth: 1,
+    borderColor: 'rgba(239, 68, 68, 0.5)',
+    backgroundColor: 'rgba(127, 29, 29, 0.9)',
+  },
+  retryButton: {
+    marginTop: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    backgroundColor: 'rgba(255,255,255,0.2)',
+    borderRadius: 8,
+    alignSelf: 'flex-start',
+  },
+  retryText: {
+    color: '#FFFFFF',
+    fontSize: 14,
+    fontWeight: '600',
   },
 });

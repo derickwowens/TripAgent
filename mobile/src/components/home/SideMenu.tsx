@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView } from 'react-native';
 import { ProfileSection } from './ProfileSection';
 import { ModelSelector } from './ModelSelector';
 import { ConversationList } from './ConversationList';
@@ -66,36 +66,43 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             </TouchableOpacity>
           </View>
 
-          <ProfileSection
-            userProfile={userProfile}
-            profileExpanded={profileExpanded}
-            onToggleExpanded={onToggleProfile}
-            onSaveProfile={onSaveProfile}
-            onAddSuggestion={onAddProfileSuggestion}
-          />
-
-          <ModelSelector
-            selectedModel={selectedModel}
-            onSelectModel={onSelectModel}
-          />
-
-          <ConversationList
-            conversations={conversations}
-            currentConversationId={currentConversationId}
-            onLoadConversation={handleLoadConversation}
-            onDeleteConversation={onDeleteConversation}
-          />
-
-          <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>
-            <Text style={styles.newChatText}>+ New Conversation</Text>
-          </TouchableOpacity>
-
-          <TouchableOpacity 
-            style={styles.surveyButton} 
-            onPress={() => Linking.openURL('https://travel-buddy-api-production.up.railway.app/public/survey.html')}
+          <ScrollView 
+            style={styles.scrollContent}
+            contentContainerStyle={styles.scrollContentContainer}
+            showsVerticalScrollIndicator={true}
+            indicatorStyle="white"
           >
-            <Text style={styles.surveyText}>📝 Send Feedback</Text>
-          </TouchableOpacity>
+            <ProfileSection
+              userProfile={userProfile}
+              profileExpanded={profileExpanded}
+              onToggleExpanded={onToggleProfile}
+              onSaveProfile={onSaveProfile}
+              onAddSuggestion={onAddProfileSuggestion}
+            />
+
+            <ModelSelector
+              selectedModel={selectedModel}
+              onSelectModel={onSelectModel}
+            />
+
+            <ConversationList
+              conversations={conversations}
+              currentConversationId={currentConversationId}
+              onLoadConversation={handleLoadConversation}
+              onDeleteConversation={onDeleteConversation}
+            />
+
+            <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>
+              <Text style={styles.newChatText}>+ New Conversation</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity 
+              style={styles.surveyButton} 
+              onPress={() => Linking.openURL('https://travel-buddy-api-production.up.railway.app/public/survey.html')}
+            >
+              <Text style={styles.surveyText}>📝 Send Feedback</Text>
+            </TouchableOpacity>
+          </ScrollView>
         </View>
         <TouchableOpacity 
           style={styles.backdrop} 
@@ -116,6 +123,12 @@ const styles = StyleSheet.create({
     width: SCREEN_WIDTH * 0.8,
     backgroundColor: '#1a1a2e',
     height: '100%',
+  },
+  scrollContent: {
+    flex: 1,
+  },
+  scrollContentContainer: {
+    paddingBottom: 40,
   },
   backdrop: {
     flex: 1,
