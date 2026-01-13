@@ -51,11 +51,15 @@ echo ""
 echo "🧹 Clearing Expo Go cache on emulator..."
 adb shell pm clear host.exp.exponent 2>/dev/null || echo "   (Expo Go not installed yet, skipping)"
 
-# Clear local metro cache
+# Clear local metro cache (thorough)
 echo "🧹 Clearing Metro bundler cache..."
 cd "$MOBILE_DIR"
 rm -rf node_modules/.cache 2>/dev/null || true
 rm -rf .expo 2>/dev/null || true
+rm -rf "$TMPDIR/metro-*" 2>/dev/null || true
+rm -rf "$TMPDIR/haste-map-*" 2>/dev/null || true
+rm -rf "$TMPDIR/react-*" 2>/dev/null || true
+watchman watch-del-all 2>/dev/null || true
 
 # Start API server
 echo ""

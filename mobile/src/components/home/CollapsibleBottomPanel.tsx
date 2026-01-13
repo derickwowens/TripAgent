@@ -1,17 +1,16 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import {
   View,
-  TouchableOpacity,
   StyleSheet,
   Animated,
   PanResponder,
   Dimensions,
-  Text,
 } from 'react-native';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
-const COLLAPSED_HEIGHT = 60;
-const EXPANDED_HEIGHT = 280;
+const MIN_HEIGHT = 70;
+const MAX_HEIGHT = SCREEN_HEIGHT * 0.7; // Allow up to 70% of screen height
+const DEFAULT_HEIGHT = 200;
 
 interface CollapsibleBottomPanelProps {
   children: React.ReactNode;
@@ -22,68 +21,33 @@ export const CollapsibleBottomPanel: React.FC<CollapsibleBottomPanelProps> = ({
   children,
   hasPhotos,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(true);
-  const animatedHeight = useRef(new Animated.Value(EXPANDED_HEIGHT)).current;
-
-  const togglePanel = () => {
-    const toValue = isExpanded ? COLLAPSED_HEIGHT : EXPANDED_HEIGHT;
-    Animated.spring(animatedHeight, {
-      toValue,
-      useNativeDriver: false,
-      friction: 8,
-    }).start();
-    setIsExpanded(!isExpanded);
-  };
+  const animatedHeight = useRef(new Animated.Value(DEFAULT_HEIGHT)).current;
+  const currentHeightRef = useRef(DEFAULT_HEIGHT);
 
   const panResponder = useRef(
     PanResponder.create({
       onStartShouldSetPanResponder: () => true,
       onMoveShouldSetPanResponder: (_, gestureState) => {
-        return Math.abs(gestureState.dy) > 5;
+        return Math.abs(gestureState.dy) > 3;
       },
       onPanResponderMove: (_, gestureState) => {
-        const newHeight = isExpanded 
-          ? EXPANDED_HEIGHT - gestureState.dy 
-          : COLLAPSED_HEIGHT - gestureState.dy;
-        
-        const clampedHeight = Math.max(COLLAPSED_HEIGHT, Math.min(EXPANDED_HEIGHT, newHeight));
+        const newHeight = currentHeightRef.current - gestureState.dy;
+        const clampedHeight = Math.max(MIN_HEIGHT, Math.min(MAX_HEIGHT, newHeight));
         animatedHeight.setValue(clampedHeight);
       },
       onPanResponderRelease: (_, gestureState) => {
-        const threshold = (EXPANDED_HEIGHT - COLLAPSED_HEIGHT) / 2;
-        const currentHeight = isExpanded 
-          ? EXPANDED_HEIGHT - gestureState.dy 
-          : COLLAPSED_HEIGHT - gestureState.dy;
-        
-        if (currentHeight > COLLAPSED_HEIGHT + threshold) {
-          Animated.spring(animatedHeight, {
-            toValue: EXPANDED_HEIGHT,
-            useNativeDriver: false,
-            friction: 8,
-          }).start();
-          setIsExpanded(true);
-        } else {
-          Animated.spring(animatedHeight, {
-            toValue: COLLAPSED_HEIGHT,
-            useNativeDriver: false,
-            friction: 8,
-          }).start();
-          setIsExpanded(false);
-        }
+        const newHeight = currentHeightRef.current - gestureState.dy;
+        const clampedHeight = Math.max(MIN_HEIGHT, Math.min(MAX_HEIGHT, newHeight));
+        currentHeightRef.current = clampedHeight;
       },
     })
   ).current;
 
   return (
     <Animated.View style={[styles.container, { height: animatedHeight }]}>
-      <TouchableOpacity 
-        style={styles.handle} 
-        onPress={togglePanel}
-        activeOpacity={0.8}
-        {...panResponder.panHandlers}
-      >
+      <View style={styles.handle} {...panResponder.panHandlers}>
         <View style={styles.handleBar} />
-      </TouchableOpacity>
+      </View>
       
       <View style={styles.content}>
         {children}
@@ -95,28 +59,23 @@ export const CollapsibleBottomPanel: React.FC<CollapsibleBottomPanelProps> = ({
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
     overflow: 'hidden',
   },
   handle: {
     alignItems: 'center',
-    paddingVertical: 8,
+    justifyContent: 'center',
+    paddingVertical: 10,
     backgroundColor: 'rgba(22, 101, 52, 0.9)',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
+    borderTopLeftRadius: 16,
+    borderTopRightRadius: 16,
   },
   handleBar: {
-    width: 40,
-    height: 4,
-    backgroundColor: 'rgba(255, 255, 255, 0.5)',
-    borderRadius: 2,
-    marginBottom: 4,
-  },
-  handleText: {
-    color: 'rgba(255, 255, 255, 0.8)',
-    fontSize: 12,
-    fontWeight: '500',
+    width: 50,
+    height: 5,
+    backgroundColor: 'rgba(255, 255, 255, 0.6)',
+    borderRadius: 3,
   },
   content: {
     flex: 1,

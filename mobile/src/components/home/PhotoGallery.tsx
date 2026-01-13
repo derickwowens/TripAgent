@@ -3,27 +3,33 @@ import {
   View,
   Text,
   Image,
-  ScrollView,
   TouchableOpacity,
   StyleSheet,
   ActivityIndicator,
+  FlatList,
+  Dimensions,
 } from 'react-native';
 import { PhotoReference } from '../../hooks';
 import { ImageModal } from './ImageModal';
+
+const { width: SCREEN_WIDTH } = Dimensions.get('window');
+const NUM_COLUMNS = 4;
+const PHOTO_GAP = 4;
+const PHOTO_SIZE = (SCREEN_WIDTH - 24 - (NUM_COLUMNS - 1) * PHOTO_GAP) / NUM_COLUMNS;
 
 interface PhotoGalleryProps {
   photos: PhotoReference[];
 }
 
 export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos }) => {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedPhoto, setSelectedPhoto] = useState<PhotoReference | null>(null);
+  const [modalVisible, setModalVisible] = useState<boolean>(false);
+  const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
 
   if (!photos || photos.length === 0) return null;
 
-  const handlePhotoPress = (photo: PhotoReference) => {
-    setSelectedPhoto(photo);
+  const handlePhotoPress = (index: number) => {
+    setSelectedIndex(index);
     setModalVisible(true);
   };
 
@@ -35,54 +41,52 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos }) => {
     setLoadingStates(prev => ({ ...prev, [url]: false }));
   };
 
+  const renderPhoto = ({ item, index }: { item: PhotoReference; index: number }) => (
+    <TouchableOpacity
+      style={styles.photoCard}
+      onPress={() => handlePhotoPress(index)}
+      activeOpacity={0.8}
+    >
+      <View style={styles.imageWrapper}>
+        {loadingStates[item.url] && (
+          <ActivityIndicator 
+            size="small" 
+            color="#FFFFFF" 
+            style={styles.loader}
+          />
+        )}
+        <Image
+          source={{ uri: item.url }}
+          style={styles.thumbnail}
+          resizeMode="cover"
+          onLoadStart={() => handleLoadStart(item.url)}
+          onLoadEnd={() => handleLoadEnd(item.url)}
+        />
+      </View>
+    </TouchableOpacity>
+  );
+
   return (
     <>
       <View style={styles.container}>
-        <Text style={styles.title}>📷 Trip Photos</Text>
-        <ScrollView 
-          horizontal 
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={styles.scrollContent}
-        >
-          {photos.map((photo, index) => (
-            <TouchableOpacity
-              key={`${photo.url}-${index}`}
-              style={styles.photoCard}
-              onPress={() => handlePhotoPress(photo)}
-              activeOpacity={0.8}
-            >
-              <View style={styles.imageWrapper}>
-                {loadingStates[photo.url] && (
-                  <ActivityIndicator 
-                    size="small" 
-                    color="#FFFFFF" 
-                    style={styles.loader}
-                  />
-                )}
-                <Image
-                  source={{ uri: photo.url }}
-                  style={styles.thumbnail}
-                  resizeMode="cover"
-                  onLoadStart={() => handleLoadStart(photo.url)}
-                  onLoadEnd={() => handleLoadEnd(photo.url)}
-                />
-              </View>
-              <Text style={styles.caption} numberOfLines={2}>
-                {photo.caption || photo.keyword}
-              </Text>
-            </TouchableOpacity>
-          ))}
-        </ScrollView>
+        <Text style={styles.title}>📷 Trip Photos ({photos.length})</Text>
+        <FlatList
+          data={photos}
+          renderItem={renderPhoto}
+          keyExtractor={(item, index) => `${item.url}-${index}`}
+          numColumns={NUM_COLUMNS}
+          columnWrapperStyle={styles.row}
+          showsVerticalScrollIndicator={true}
+          nestedScrollEnabled={true}
+          scrollEnabled={true}
+        />
       </View>
 
       <ImageModal
         visible={modalVisible}
-        imageUrl={selectedPhoto?.url || ''}
-        caption={selectedPhoto?.caption}
-        onClose={() => {
-          setModalVisible(false);
-          setSelectedPhoto(null);
-        }}
+        photos={photos}
+        initialIndex={selectedIndex}
+        onClose={() => setModalVisible(false)}
       />
     </>
   );
@@ -90,28 +94,29 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos }) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 12,
-    paddingTop: 12,
-    borderTopWidth: 1,
-    borderTopColor: 'rgba(255, 255, 255, 0.2)',
+    flex: 1,
+    paddingTop: 8,
+    paddingHorizontal: 12,
   },
   title: {
     color: 'rgba(255, 255, 255, 0.9)',
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: '600',
     marginBottom: 8,
   },
-  scrollContent: {
-    paddingRight: 8,
+  row: {
+    justifyContent: 'flex-start',
+    gap: PHOTO_GAP,
+    marginBottom: PHOTO_GAP,
   },
   photoCard: {
-    marginRight: 10,
-    width: 100,
+    width: PHOTO_SIZE,
+    height: PHOTO_SIZE,
   },
   imageWrapper: {
-    width: 100,
-    height: 75,
-    borderRadius: 8,
+    width: '100%',
+    height: '100%',
+    borderRadius: 6,
     overflow: 'hidden',
     backgroundColor: 'rgba(0, 0, 0, 0.3)',
   },
@@ -126,11 +131,5 @@ const styles = StyleSheet.create({
   thumbnail: {
     width: '100%',
     height: '100%',
-  },
-  caption: {
-    color: 'rgba(255, 255, 255, 0.8)',
-    fontSize: 11,
-    marginTop: 4,
-    lineHeight: 14,
   },
 });

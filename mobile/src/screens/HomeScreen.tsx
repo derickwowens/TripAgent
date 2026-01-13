@@ -56,14 +56,23 @@ const HomeScreen: React.FC = () => {
     }
   }, [messages, isLoading]);
 
-  // Accumulate all photos from messages for the gallery
+  // Get photos only from the most recent assistant messages (reflects current context)
+  // Only shows photos from the last 3 assistant responses to keep context relevant
   const allPhotos = useMemo(() => {
     const photos: Array<{ keyword: string; url: string; caption?: string }> = [];
-    messages.forEach(msg => {
-      if (msg.photos && msg.photos.length > 0) {
+    const MAX_PHOTOS = 24;
+    const RECENT_MESSAGES_COUNT = 3;
+    
+    // Get the last N assistant messages that have photos
+    const recentAssistantMessages = messages
+      .filter(msg => msg.type === 'assistant' && msg.photos && msg.photos.length > 0)
+      .slice(-RECENT_MESSAGES_COUNT);
+    
+    recentAssistantMessages.forEach(msg => {
+      if (msg.photos && photos.length < MAX_PHOTOS) {
         msg.photos.forEach(photo => {
-          // Avoid duplicates by URL
-          if (!photos.some(p => p.url === photo.url)) {
+          // Avoid duplicates by URL, respect limit
+          if (photos.length < MAX_PHOTOS && !photos.some(p => p.url === photo.url)) {
             photos.push(photo);
           }
         });

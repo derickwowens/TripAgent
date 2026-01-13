@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal } from 'react-native';
 import { SavedConversation } from '../../hooks';
 
@@ -22,6 +22,16 @@ const formatDate = (dateString: string) => {
   return date.toLocaleDateString();
 };
 
+const formatDateTime = (dateString: string) => {
+  const date = new Date(dateString);
+  return date.toLocaleDateString(undefined, { 
+    month: 'short', 
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit'
+  });
+};
+
 export const ConversationList: React.FC<ConversationListProps> = ({
   conversations,
   currentConversationId,
@@ -33,6 +43,33 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   const [editingConv, setEditingConv] = useState<SavedConversation | null>(null);
   const [editTitle, setEditTitle] = useState('');
   const [editDescription, setEditDescription] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Sort by last updated and filter by search (title, destination, description, AND message content)
+  const filteredConversations = useMemo(() => {
+    let sorted = [...conversations].sort((a, b) => 
+      new Date(b.metadata.updatedAt).getTime() - new Date(a.metadata.updatedAt).getTime()
+    );
+    
+    if (searchQuery.trim()) {
+      const query = searchQuery.toLowerCase();
+      sorted = sorted.filter(conv => {
+        const title = conv.metadata.title?.toLowerCase() || '';
+        const destination = conv.metadata.destination?.toLowerCase() || '';
+        const description = conv.metadata.description?.toLowerCase() || '';
+        // Also search through all message content
+        const messageContent = conv.messages
+          .map(m => m.content.toLowerCase())
+          .join(' ');
+        return title.includes(query) || 
+               destination.includes(query) || 
+               description.includes(query) ||
+               messageContent.includes(query);
+      });
+    }
+    
+    return sorted;
+  }, [conversations, searchQuery]);
 
   const openEditModal = (conv: SavedConversation) => {
     setEditingConv(conv);
@@ -60,9 +97,19 @@ export const ConversationList: React.FC<ConversationListProps> = ({
 
   return (
     <>
-      <Text style={styles.title}>Saved Trips</Text>
+      <View style={styles.headerRow}>
+        <Text style={styles.title}>Saved Trips</Text>
+        <TextInput
+          style={styles.searchInput}
+          placeholder="🔍"
+          placeholderTextColor="rgba(255,255,255,0.4)"
+          value={searchQuery}
+          onChangeText={setSearchQuery}
+          returnKeyType="search"
+        />
+      </View>
       <View style={styles.list}>
-        {conversations.map((conv) => (
+        {filteredConversations.map((conv) => (
           <View
             key={conv.id}
             style={[
@@ -79,9 +126,17 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                 <Text style={styles.destination} numberOfLines={1}>
                   {getDisplayTitle(conv)}
                 </Text>
-                <Text style={styles.date}>
-                  {formatDate(conv.metadata.updatedAt)}
-                </Text>
+              </View>
+              <View style={styles.dateRow}>
+                <Text style={styles.dateLabel}>Updated: </Text>
+                <Text style={styles.date}>{formatDate(conv.metadata.updatedAt)}</Text>
+                {conv.metadata.createdAt !== conv.metadata.updatedAt && (
+                  <>
+                    <Text style={styles.dateSeparator}> • </Text>
+                    <Text style={styles.dateLabel}>Created: </Text>
+                    <Text style={styles.date}>{formatDateTime(conv.metadata.createdAt)}</Text>
+                  </>
+                )}
               </View>
               {conv.metadata.description ? (
                 <Text style={styles.description} numberOfLines={1}>
@@ -118,6 +173,9 @@ export const ConversationList: React.FC<ConversationListProps> = ({
           </View>
         ))}
 
+        {filteredConversations.length === 0 && conversations.length > 0 && (
+          <Text style={styles.emptyText}>No trips match your search</Text>
+        )}
         {conversations.length === 0 && (
           <Text style={styles.emptyText}>No saved conversations yet</Text>
         )}
@@ -173,17 +231,45 @@ export const ConversationList: React.FC<ConversationListProps> = ({
 };
 
 const styles = StyleSheet.create({
+  headerRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingTop: 16,
+    paddingBottom: 8,
+  },
   title: {
     color: 'rgba(255,255,255,0.6)',
     fontSize: 12,
     fontWeight: '600',
     textTransform: 'uppercase',
-    paddingHorizontal: 16,
-    paddingTop: 16,
-    paddingBottom: 8,
+  },
+  searchInput: {
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderRadius: 8,
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    fontSize: 14,
+    color: '#FFFFFF',
+    width: 180,
+    height: 28,
   },
   list: {
     paddingHorizontal: 12,
+  },
+  dateRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  dateLabel: {
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.4)',
+  },
+  dateSeparator: {
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.3)',
   },
   item: {
     flexDirection: 'row',
