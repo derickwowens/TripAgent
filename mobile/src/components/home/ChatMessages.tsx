@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ActivityIndicator, StyleSheet } from 'react-native';
+import { View, Text, ActivityIndicator, StyleSheet, Linking, TouchableOpacity } from 'react-native';
 import { Message } from '../../hooks';
 
 interface ChatMessagesProps {
@@ -7,6 +7,65 @@ interface ChatMessagesProps {
   isLoading: boolean;
   loadingStatus: string;
 }
+
+// Parse markdown links [text](url) and plain URLs
+const parseMessageContent = (content: string, isUser: boolean) => {
+  // Regex for markdown links: [text](url)
+  const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  // Regex for plain URLs
+  const urlRegex = /(https?:\/\/[^\s\)]+)/g;
+  
+  const parts: Array<{ type: 'text' | 'link'; text: string; url?: string }> = [];
+  let lastIndex = 0;
+  let match;
+
+  // First pass: find markdown links
+  const processedContent = content.replace(markdownLinkRegex, (match, text, url) => {
+    return `{{LINK:${text}::${url}}}`;
+  });
+
+  // Split by our link markers and plain URLs
+  const segments = processedContent.split(/({{LINK:[^}]+}}|https?:\/\/[^\s\)]+)/g);
+  
+  segments.forEach((segment) => {
+    if (!segment) return;
+    
+    if (segment.startsWith('{{LINK:')) {
+      const inner = segment.slice(7, -2);
+      const [text, url] = inner.split('::');
+      parts.push({ type: 'link', text, url });
+    } else if (segment.match(/^https?:\/\//)) {
+      parts.push({ type: 'link', text: segment, url: segment });
+    } else if (segment.trim()) {
+      parts.push({ type: 'text', text: segment });
+    }
+  });
+
+  return parts;
+};
+
+const MessageContent: React.FC<{ content: string; isUser: boolean }> = ({ content, isUser }) => {
+  const parts = parseMessageContent(content, isUser);
+  
+  return (
+    <Text style={[styles.text, isUser ? styles.userText : styles.assistantText]}>
+      {parts.map((part, index) => {
+        if (part.type === 'link' && part.url) {
+          return (
+            <Text
+              key={index}
+              style={[styles.link, isUser ? styles.userLink : styles.assistantLink]}
+              onPress={() => Linking.openURL(part.url!)}
+            >
+              {part.text}
+            </Text>
+          );
+        }
+        return <Text key={index}>{part.text}</Text>;
+      })}
+    </Text>
+  );
+};
 
 export const ChatMessages: React.FC<ChatMessagesProps> = ({ 
   messages, 
@@ -23,12 +82,7 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
             message.type === 'user' ? styles.userBubble : styles.assistantBubble,
           ]}
         >
-          <Text style={[
-            styles.text,
-            message.type === 'user' ? styles.userText : styles.assistantText,
-          ]}>
-            {message.content}
-          </Text>
+          <MessageContent content={message.content} isUser={message.type === 'user'} />
         </View>
       ))}
       
@@ -81,5 +135,15 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 14,
     fontStyle: 'italic',
+  },
+  link: {
+    textDecorationLine: 'underline',
+    fontWeight: '500',
+  },
+  userLink: {
+    color: '#166534',
+  },
+  assistantLink: {
+    color: '#93c5fd',
   },
 });

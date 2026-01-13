@@ -90,6 +90,26 @@ Use actual prices from tool results. If a price is unavailable, provide a reason
 
 You have access to real-time data through tools. When you receive tool results, incorporate the ACTUAL PRICES naturally into your response.
 
+IMPORTANT - INCLUDE USEFUL LINKS:
+When providing recommendations, always include relevant links so users can take action:
+
+For National Parks:
+• Official NPS page: https://www.nps.gov/[parkcode]/index.htm
+• Reservations: https://www.recreation.gov/camping/campgrounds/[campground-id] (if known)
+
+For Flights:
+• Google Flights: https://www.google.com/travel/flights?q=flights%20from%20[origin]%20to%20[destination]
+• Format links like: 🔗 [Search flights on Google](https://www.google.com/travel/flights)
+
+For Hotels:
+• Booking link: https://www.booking.com/searchresults.html?dest=[destination]
+
+For Car Rentals:
+• Kayak: https://www.kayak.com/cars/[airport]/[dates]
+
+Format links in markdown style: [Link Text](URL)
+Example: 🔗 [Book at Yosemite](https://www.recreation.gov)
+
 Keep responses concise - mobile users prefer shorter messages. Use line breaks for readability.`;
 
 const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
