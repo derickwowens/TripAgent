@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
 import { useLocation, useConversations, useUserProfile, Message, SavedConversation } from '../hooks';
-import { WelcomeScreen, ChatMessages, ChatInput, SideMenu } from '../components/home';
+import { WelcomeScreen, ConsiderationsHint, ChatMessages, ChatInput, SideMenu } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
 const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
@@ -161,6 +161,82 @@ const HomeScreen: React.FC = () => {
     }
   };
 
+  const handleSendWithMessage = async (messageContent: string) => {
+    if (!messageContent.trim() || isLoading) return;
+
+    const userMessage: Message = {
+      id: Date.now().toString(),
+      type: 'user',
+      content: messageContent.trim(),
+      timestamp: new Date(),
+    };
+
+    const updatedMessages = [userMessage];
+    setMessages(updatedMessages);
+    setIsLoading(true);
+    setLoadingStatus('Thinking...');
+
+    try {
+      const chatMessages: ApiChatMessage[] = updatedMessages.map(m => ({
+        role: m.type === 'user' ? 'user' : 'assistant',
+        content: m.content,
+      }));
+
+      const context: ChatContext = {
+        userLocation: userLocation ? {
+          city: userLocation.city,
+          state: userLocation.state,
+          nearestAirport: userLocation.nearestAirport,
+        } : undefined,
+        userProfile: userProfile || undefined,
+      };
+
+      const loadingStates = [
+        '🔍 Searching for information...',
+        '✈️ Checking flight options...',
+        '🏕️ Finding camping & lodging...',
+        '🥾 Loading hiking trails...',
+        '📝 Compiling your trip plan...',
+      ];
+      
+      let stateIndex = 0;
+      const statusInterval = setInterval(() => {
+        if (stateIndex < loadingStates.length) {
+          setLoadingStatus(loadingStates[stateIndex]);
+          stateIndex++;
+        }
+      }, 1500);
+
+      const response = await sendChatMessage(chatMessages, context, selectedModel);
+      clearInterval(statusInterval);
+      
+      const assistantMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        type: 'assistant',
+        content: response.response,
+        timestamp: new Date(),
+      };
+
+      setMessages(prev => [...prev, assistantMessage]);
+    } catch (error: any) {
+      console.error('Chat error:', error);
+      
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        type: 'assistant',
+        content: "😕 Something went wrong. Please try again.",
+        timestamp: new Date(),
+        isError: true,
+        lastUserMessage: messageContent,
+      };
+      setMessages(prev => [...prev, errorMessage]);
+    } finally {
+      setIsLoading(false);
+      setLoadingStatus('');
+      setTimeout(() => scrollViewRef.current?.scrollToEnd({ animated: true }), 100);
+    }
+  };
+
   const handleGenerateItinerary = async (conversation: SavedConversation) => {
     setMenuOpen(false);
     setIsLoading(true);
@@ -244,7 +320,12 @@ const HomeScreen: React.FC = () => {
             showsVerticalScrollIndicator={false}
           >
             {messages.length === 0 && (
-              <WelcomeScreen locationLoading={locationLoading} />
+              <WelcomeScreen 
+                locationLoading={locationLoading} 
+                userProfile={userProfile}
+                userLocation={userLocation || undefined}
+                onSetPrompt={setInputText}
+              />
             )}
             
             <ChatMessages
@@ -312,6 +393,7 @@ const HomeScreen: React.FC = () => {
             />
           </ScrollView>
 
+          {messages.length === 0 && <ConsiderationsHint />}
           <ChatInput
             inputText={inputText}
             onChangeText={setInputText}
@@ -324,8 +406,6 @@ const HomeScreen: React.FC = () => {
           visible={menuOpen}
           onClose={() => setMenuOpen(false)}
           userProfile={userProfile}
-          profileExpanded={profileExpanded}
-          onToggleProfile={toggleExpanded}
           onSaveProfile={saveProfile}
           onAddProfileSuggestion={addSuggestion}
           selectedModel={selectedModel}
@@ -335,7 +415,6 @@ const HomeScreen: React.FC = () => {
           onLoadConversation={loadConversation}
           onDeleteConversation={deleteConversation}
           onNewConversation={startNewConversation}
-          onGenerateItinerary={handleGenerateItinerary}
           onUpdateConversation={updateConversation}
         />
       </View>

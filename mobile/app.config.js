@@ -29,12 +29,22 @@ export default ({ config }) => {
       edgeToEdgeEnabled: true,
       permissions: [
         "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION"
+        "ACCESS_FINE_LOCATION",
+        "RECORD_AUDIO"
       ]
     },
     web: {
       favicon: "./assets/favicon.png"
     },
+    plugins: [
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Allow TripAgent to use the microphone for voice input.",
+          "speechRecognitionPermission": "Allow TripAgent to use speech recognition for voice input."
+        }
+      ]
+    ],
     extra: {
       eas: {
         projectId: "675e8ace-7c0e-42e4-9e04-d768a159871c"

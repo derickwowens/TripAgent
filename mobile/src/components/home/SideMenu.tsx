@@ -11,8 +11,6 @@ interface SideMenuProps {
   visible: boolean;
   onClose: () => void;
   userProfile: string;
-  profileExpanded: boolean;
-  onToggleProfile: () => void;
   onSaveProfile: (profile: string) => void;
   onAddProfileSuggestion: (suggestion: string) => void;
   selectedModel: string;
@@ -22,7 +20,6 @@ interface SideMenuProps {
   onLoadConversation: (conversation: SavedConversation) => void;
   onDeleteConversation: (id: string) => void;
   onNewConversation: () => void;
-  onGenerateItinerary: (conversation: SavedConversation) => void;
   onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
 }
 
@@ -30,8 +27,6 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   visible,
   onClose,
   userProfile,
-  profileExpanded,
-  onToggleProfile,
   onSaveProfile,
   onAddProfileSuggestion,
   selectedModel,
@@ -41,7 +36,6 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onLoadConversation,
   onDeleteConversation,
   onNewConversation,
-  onGenerateItinerary,
   onUpdateConversation,
 }) => {
   const handleLoadConversation = (conv: SavedConversation) => {
@@ -78,8 +72,6 @@ export const SideMenu: React.FC<SideMenuProps> = ({
           >
             <ProfileSection
               userProfile={userProfile}
-              profileExpanded={profileExpanded}
-              onToggleExpanded={onToggleProfile}
               onSaveProfile={onSaveProfile}
               onAddSuggestion={onAddProfileSuggestion}
             />
@@ -94,7 +86,6 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               currentConversationId={currentConversationId}
               onLoadConversation={handleLoadConversation}
               onDeleteConversation={onDeleteConversation}
-              onGenerateItinerary={onGenerateItinerary}
               onUpdateConversation={onUpdateConversation}
             />
 

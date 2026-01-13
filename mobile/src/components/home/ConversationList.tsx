@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Alert, TextInput, Modal, Platform } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal } from 'react-native';
 import { SavedConversation } from '../../hooks';
-import { showShareOptions } from '../../utils/shareItinerary';
 
 interface ConversationListProps {
   conversations: SavedConversation[];
   currentConversationId: string | null;
   onLoadConversation: (conversation: SavedConversation) => void;
   onDeleteConversation: (id: string) => void;
-  onGenerateItinerary: (conversation: SavedConversation) => void;
   onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
 }
 
@@ -29,7 +27,6 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   currentConversationId,
   onLoadConversation,
   onDeleteConversation,
-  onGenerateItinerary,
   onUpdateConversation,
 }) => {
   const [editModalVisible, setEditModalVisible] = useState(false);
@@ -110,12 +107,6 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                 onPress={() => openEditModal(conv)}
               >
                 <Text style={styles.editIcon}>✏️</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.shareButton}
-                onPress={() => showShareOptions(conv, () => onGenerateItinerary(conv))}
-              >
-                <Text style={styles.shareIcon}>↗</Text>
               </TouchableOpacity>
               <TouchableOpacity
                 style={styles.actionButton}
