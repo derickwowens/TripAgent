@@ -163,6 +163,7 @@ export interface ChatContext {
     numDays?: number;
     numTravelers?: number;
   };
+  userProfile?: string;
 }
 
 export const sendChatMessage = async (

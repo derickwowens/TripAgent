@@ -31,6 +31,7 @@ interface ChatContext {
     numDays?: number;
     numTravelers?: number;
   };
+  userProfile?: string;
 }
 
 const SYSTEM_PROMPT = `You are TripAgent, a friendly and knowledgeable AI travel assistant specializing in National Park trips. You help users plan amazing outdoor adventures.
@@ -110,6 +111,9 @@ export async function createChatHandler(facade: TravelFacade) {
       if (context.tripContext.numDays) contextInfo += `, ${context.tripContext.numDays} days`;
       if (context.tripContext.numTravelers) contextInfo += `, ${context.tripContext.numTravelers} travelers`;
       contextInfo += '\n';
+    }
+    if (context.userProfile) {
+      contextInfo += `\nUser profile/preferences:\n${context.userProfile}\n\nIMPORTANT: Use these preferences to personalize recommendations. For example, if they mention "family of four", assume 4 travelers. If they prefer warm destinations, suggest accordingly. If they have accessibility needs, prioritize accessible options.\n`;
     }
 
     const systemPrompt = contextInfo ? `${SYSTEM_PROMPT}\n\nCurrent context:\n${contextInfo}` : SYSTEM_PROMPT;

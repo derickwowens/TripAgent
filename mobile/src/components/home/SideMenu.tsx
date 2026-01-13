@@ -1,0 +1,169 @@
+import React from 'react';
+import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking } from 'react-native';
+import { ProfileSection } from './ProfileSection';
+import { ModelSelector } from './ModelSelector';
+import { ConversationList } from './ConversationList';
+import { SavedConversation } from '../../hooks';
+
+const { width: SCREEN_WIDTH } = Dimensions.get('window');
+
+interface SideMenuProps {
+  visible: boolean;
+  onClose: () => void;
+  userProfile: string;
+  profileExpanded: boolean;
+  onToggleProfile: () => void;
+  onSaveProfile: (profile: string) => void;
+  onAddProfileSuggestion: (suggestion: string) => void;
+  selectedModel: string;
+  onSelectModel: (modelId: string) => void;
+  conversations: SavedConversation[];
+  currentConversationId: string | null;
+  onLoadConversation: (conversation: SavedConversation) => void;
+  onDeleteConversation: (id: string) => void;
+  onNewConversation: () => void;
+}
+
+export const SideMenu: React.FC<SideMenuProps> = ({
+  visible,
+  onClose,
+  userProfile,
+  profileExpanded,
+  onToggleProfile,
+  onSaveProfile,
+  onAddProfileSuggestion,
+  selectedModel,
+  onSelectModel,
+  conversations,
+  currentConversationId,
+  onLoadConversation,
+  onDeleteConversation,
+  onNewConversation,
+}) => {
+  const handleLoadConversation = (conv: SavedConversation) => {
+    onLoadConversation(conv);
+    onClose();
+  };
+
+  const handleNewConversation = () => {
+    onNewConversation();
+    onClose();
+  };
+
+  return (
+    <Modal
+      visible={visible}
+      animationType="slide"
+      transparent={true}
+      onRequestClose={onClose}
+    >
+      <View style={styles.overlay}>
+        <View style={styles.menu}>
+          <View style={styles.header}>
+            <Text style={styles.title}>Recent Trips</Text>
+            <TouchableOpacity onPress={onClose}>
+              <Text style={styles.closeButton}>✕</Text>
+            </TouchableOpacity>
+          </View>
+
+          <ProfileSection
+            userProfile={userProfile}
+            profileExpanded={profileExpanded}
+            onToggleExpanded={onToggleProfile}
+            onSaveProfile={onSaveProfile}
+            onAddSuggestion={onAddProfileSuggestion}
+          />
+
+          <ModelSelector
+            selectedModel={selectedModel}
+            onSelectModel={onSelectModel}
+          />
+
+          <ConversationList
+            conversations={conversations}
+            currentConversationId={currentConversationId}
+            onLoadConversation={handleLoadConversation}
+            onDeleteConversation={onDeleteConversation}
+          />
+
+          <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>
+            <Text style={styles.newChatText}>+ New Conversation</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity 
+            style={styles.surveyButton} 
+            onPress={() => Linking.openURL('https://travel-buddy-api-production.up.railway.app/public/survey.html')}
+          >
+            <Text style={styles.surveyText}>📝 Send Feedback</Text>
+          </TouchableOpacity>
+        </View>
+        <TouchableOpacity 
+          style={styles.backdrop} 
+          onPress={onClose}
+          activeOpacity={1}
+        />
+      </View>
+    </Modal>
+  );
+};
+
+const styles = StyleSheet.create({
+  overlay: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  menu: {
+    width: SCREEN_WIDTH * 0.8,
+    backgroundColor: '#1a1a2e',
+    height: '100%',
+  },
+  backdrop: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 20,
+    paddingTop: 60,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255,255,255,0.1)',
+  },
+  title: {
+    fontSize: 22,
+    fontWeight: '700',
+    color: '#FFFFFF',
+  },
+  closeButton: {
+    fontSize: 24,
+    color: 'rgba(255,255,255,0.7)',
+  },
+  newChatButton: {
+    margin: 16,
+    padding: 14,
+    backgroundColor: '#166534',
+    borderRadius: 12,
+    alignItems: 'center',
+  },
+  newChatText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  surveyButton: {
+    marginHorizontal: 16,
+    marginBottom: 16,
+    padding: 14,
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderRadius: 12,
+    alignItems: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.2)',
+  },
+  surveyText: {
+    color: 'rgba(255,255,255,0.8)',
+    fontSize: 14,
+    fontWeight: '500',
+  },
+});
