@@ -1,5 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { TravelFacade } from '../domain/facade/TravelFacade.js';
+import { GoogleMapsAdapter } from '../providers/GoogleMapsAdapter.js';
 
 let anthropic: Anthropic | null = null;
 
@@ -73,6 +74,9 @@ Once you have enough info, use the available tools to fetch REAL PRICING DATA an
 - 🥾 Top hiking trails (free!)
 - 🎫 Park entrance fees
 
+IMPORTANT - DRIVING DISTANCES:
+Always use the get_driving_distance tool to get accurate drive times for road trips. Never estimate or guess driving times. The tool provides real distance and duration data. Include driving time when showing airport-to-park comparisons so users can factor in the drive.
+
 IMPORTANT - BUDGET SUMMARY:
 Always end trip plans with a clear cost breakdown and total estimate:
 
@@ -90,25 +94,30 @@ Use actual prices from tool results. If a price is unavailable, provide a reason
 
 You have access to real-time data through tools. When you receive tool results, incorporate the ACTUAL PRICES naturally into your response.
 
-IMPORTANT - INCLUDE USEFUL LINKS:
-When providing recommendations, always include relevant links so users can take action:
+IMPORTANT - INCLUDE USEFUL LINKS WITH ACTUAL VALUES:
+When providing recommendations, ALWAYS include links with the ACTUAL values from the conversation filled in - never use placeholders like [origin] or [destination]. Use the real airport codes, dates, and locations discussed.
 
-For National Parks:
-• Official NPS page: https://www.nps.gov/[parkcode]/index.htm
-• Reservations: https://www.recreation.gov/camping/campgrounds/[campground-id] (if known)
+For National Parks (replace with actual park code like "yose", "grca", "zion"):
+• Official NPS page: https://www.nps.gov/yose/index.htm (use actual park code)
+• Example: 🔗 [Yosemite NPS Site](https://www.nps.gov/yose/index.htm)
 
-For Flights:
-• Google Flights: https://www.google.com/travel/flights?q=flights%20from%20[origin]%20to%20[destination]
-• Format links like: 🔗 [Search flights on Google](https://www.google.com/travel/flights)
+For Flights (use actual airport codes and dates from conversation):
+• Google Flights URL format: https://www.google.com/travel/flights/search?tfs=CBwQAhojEgoyMDI2LTAzLTE1agcIARIDTEFYcgcIARIDU0ZPGiMSCjIwMjYtMDMtMjBqBwgBEgNTRk9yBwgBEgNMQVg&curr=USD
+• Simpler format: https://www.google.com/travel/flights?q=flights+from+LAX+to+SFO+on+March+15
+• Example with real values: 🔗 [Search LAX→SFO flights](https://www.google.com/travel/flights?q=flights+from+LAX+to+SFO+on+March+15+2026)
 
-For Hotels:
-• Booking link: https://www.booking.com/searchresults.html?dest=[destination]
+For Hotels (use actual destination city/park name):
+• Booking.com: https://www.booking.com/searchresults.html?ss=Yosemite+National+Park
+• Example: 🔗 [Hotels near Yosemite](https://www.booking.com/searchresults.html?ss=Yosemite+Valley)
 
-For Car Rentals:
-• Kayak: https://www.kayak.com/cars/[airport]/[dates]
+For Car Rentals (use actual airport code and dates):
+• Kayak format: https://www.kayak.com/cars/LAX/2026-03-15/2026-03-20
+• Example: 🔗 [Rent car at LAX](https://www.kayak.com/cars/LAX/2026-03-15/2026-03-20)
+
+CRITICAL: Replace all example values above with the ACTUAL values from the user's request. If user says they're flying from Denver to Yellowstone on June 1st, the link should be:
+🔗 [Search DEN→JAC flights](https://www.google.com/travel/flights?q=flights+from+DEN+to+JAC+on+June+1+2026)
 
 Format links in markdown style: [Link Text](URL)
-Example: 🔗 [Book at Yosemite](https://www.recreation.gov)
 
 Keep responses concise - mobile users prefer shorter messages. Use line breaks for readability.`;
 
@@ -198,6 +207,18 @@ export async function createChatHandler(facade: TravelFacade) {
           required: ['origin', 'destination', 'departure_date'],
         },
       },
+      {
+        name: 'get_driving_distance',
+        description: 'Get accurate driving distance and time between two locations. Use this for road trips and to calculate drive time from airports to national parks or destinations.',
+        input_schema: {
+          type: 'object' as const,
+          properties: {
+            origin: { type: 'string', description: 'Starting location (e.g., "LAX Airport", "Los Angeles, CA")' },
+            destination: { type: 'string', description: 'Destination (e.g., "Yosemite National Park", "Grand Canyon Village, AZ")' },
+          },
+          required: ['origin', 'destination'],
+        },
+      },
     ];
 
     // Convert messages to Anthropic format
@@ -267,6 +288,22 @@ export async function createChatHandler(facade: TravelFacade) {
                     duration: f.itineraries[0]?.duration,
                   })),
                 };
+                break;
+
+              case 'get_driving_distance':
+                const mapsAdapter = new GoogleMapsAdapter();
+                const distanceInput = toolUse.input as any;
+                const distanceResult = await mapsAdapter.getDistance(
+                  distanceInput.origin,
+                  distanceInput.destination
+                );
+                result = distanceResult ? {
+                  origin: distanceResult.origin,
+                  destination: distanceResult.destination,
+                  distance: distanceResult.distance.text,
+                  duration: distanceResult.duration.text,
+                  status: distanceResult.status,
+                } : { error: 'Could not calculate driving distance' };
                 break;
 
               default:
