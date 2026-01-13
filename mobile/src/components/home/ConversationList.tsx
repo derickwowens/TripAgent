@@ -1,12 +1,15 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, Alert, TextInput, Modal, Platform } from 'react-native';
 import { SavedConversation } from '../../hooks';
+import { showShareOptions } from '../../utils/shareItinerary';
 
 interface ConversationListProps {
   conversations: SavedConversation[];
   currentConversationId: string | null;
   onLoadConversation: (conversation: SavedConversation) => void;
   onDeleteConversation: (id: string) => void;
+  onGenerateItinerary: (conversation: SavedConversation) => void;
+  onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
 }
 
 const formatDate = (dateString: string) => {
@@ -26,7 +29,38 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   currentConversationId,
   onLoadConversation,
   onDeleteConversation,
+  onGenerateItinerary,
+  onUpdateConversation,
 }) => {
+  const [editModalVisible, setEditModalVisible] = useState(false);
+  const [editingConv, setEditingConv] = useState<SavedConversation | null>(null);
+  const [editTitle, setEditTitle] = useState('');
+  const [editDescription, setEditDescription] = useState('');
+
+  const openEditModal = (conv: SavedConversation) => {
+    setEditingConv(conv);
+    setEditTitle(conv.metadata.title || conv.metadata.destination || '');
+    setEditDescription(conv.metadata.description || '');
+    setEditModalVisible(true);
+  };
+
+  const saveEdit = () => {
+    if (editingConv) {
+      onUpdateConversation(editingConv.id, {
+        title: editTitle.trim() || undefined,
+        description: editDescription.trim() || undefined,
+      });
+    }
+    setEditModalVisible(false);
+    setEditingConv(null);
+  };
+
+  const getDisplayTitle = (conv: SavedConversation) => {
+    if (conv.metadata.title) return conv.metadata.title;
+    if (conv.metadata.destination) return `🏞️ ${conv.metadata.destination}`;
+    return '💬 Trip Planning';
+  };
+
   return (
     <>
       <Text style={styles.title}>Saved Trips</Text>
@@ -42,33 +76,54 @@ export const ConversationList: React.FC<ConversationListProps> = ({
             <TouchableOpacity
               style={styles.content}
               onPress={() => onLoadConversation(conv)}
+              onLongPress={() => openEditModal(conv)}
             >
               <View style={styles.header}>
-                <Text style={styles.destination}>
-                  {conv.metadata.destination ? `🏞️ ${conv.metadata.destination}` : '💬 Trip Planning'}
+                <Text style={styles.destination} numberOfLines={1}>
+                  {getDisplayTitle(conv)}
                 </Text>
                 <Text style={styles.date}>
                   {formatDate(conv.metadata.updatedAt)}
                 </Text>
               </View>
-              <View style={styles.meta}>
-                {conv.metadata.travelers && (
-                  <Text style={styles.metaTag}>👥 {conv.metadata.travelers}</Text>
-                )}
-                {conv.metadata.departingFrom && (
-                  <Text style={styles.metaTag}>✈️ {conv.metadata.departingFrom}</Text>
-                )}
-              </View>
-              <Text style={styles.preview} numberOfLines={1}>
-                {conv.messages[0]?.content || 'Empty conversation'}
-              </Text>
+              {conv.metadata.description ? (
+                <Text style={styles.description} numberOfLines={1}>
+                  {conv.metadata.description}
+                </Text>
+              ) : (
+                <View style={styles.meta}>
+                  {conv.metadata.duration && (
+                    <Text style={styles.metaTag}>📅 {conv.metadata.duration}</Text>
+                  )}
+                  {conv.metadata.travelDates && (
+                    <Text style={styles.metaTag}>🗓️ {conv.metadata.travelDates}</Text>
+                  )}
+                  {conv.metadata.travelers && (
+                    <Text style={styles.metaTag}>👥 {conv.metadata.travelers}</Text>
+                  )}
+                </View>
+              )}
             </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.deleteButton}
-              onPress={() => onDeleteConversation(conv.id)}
-            >
-              <Text style={styles.deleteIcon}>🗑️</Text>
-            </TouchableOpacity>
+            <View style={styles.actions}>
+              <TouchableOpacity
+                style={styles.editButton}
+                onPress={() => openEditModal(conv)}
+              >
+                <Text style={styles.editIcon}>✏️</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.shareButton}
+                onPress={() => showShareOptions(conv, () => onGenerateItinerary(conv))}
+              >
+                <Text style={styles.shareIcon}>↗</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.actionButton}
+                onPress={() => onDeleteConversation(conv.id)}
+              >
+                <Text style={styles.actionIcon}>🗑️</Text>
+              </TouchableOpacity>
+            </View>
           </View>
         ))}
 
@@ -76,6 +131,52 @@ export const ConversationList: React.FC<ConversationListProps> = ({
           <Text style={styles.emptyText}>No saved conversations yet</Text>
         )}
       </View>
+
+      <Modal
+        visible={editModalVisible}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => setEditModalVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.modalContent}>
+            <Text style={styles.modalTitle}>Edit Trip</Text>
+            <Text style={styles.inputLabel}>Title</Text>
+            <TextInput
+              style={styles.input}
+              value={editTitle}
+              onChangeText={setEditTitle}
+              placeholder="Trip name..."
+              placeholderTextColor="rgba(255,255,255,0.4)"
+              maxLength={50}
+            />
+            <Text style={styles.inputLabel}>Description</Text>
+            <TextInput
+              style={[styles.input, styles.inputMultiline]}
+              value={editDescription}
+              onChangeText={setEditDescription}
+              placeholder="Add notes about your trip..."
+              placeholderTextColor="rgba(255,255,255,0.4)"
+              multiline
+              maxLength={150}
+            />
+            <View style={styles.modalButtons}>
+              <TouchableOpacity
+                style={styles.cancelButton}
+                onPress={() => setEditModalVisible(false)}
+              >
+                <Text style={styles.cancelButtonText}>Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.saveButton}
+                onPress={saveEdit}
+              >
+                <Text style={styles.saveButtonText}>Save</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
     </>
   );
 };
@@ -142,18 +243,127 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: 'rgba(255,255,255,0.5)',
   },
-  deleteButton: {
-    padding: 12,
+  summary: {
+    fontSize: 13,
+    color: 'rgba(255,255,255,0.6)',
+    fontStyle: 'italic',
+  },
+  actions: {
+    flexDirection: 'column',
+    paddingRight: 8,
+    gap: 4,
+  },
+  shareButton: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: '#166534',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  deleteIcon: {
-    fontSize: 18,
+  shareIcon: {
+    fontSize: 16,
+    color: '#FFFFFF',
+    fontWeight: '600',
+  },
+  actionButton: {
+    padding: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  actionIcon: {
+    fontSize: 16,
   },
   emptyText: {
     textAlign: 'center',
     color: 'rgba(255,255,255,0.4)',
     marginTop: 40,
     fontSize: 15,
+  },
+  description: {
+    fontSize: 13,
+    color: 'rgba(255,255,255,0.6)',
+    fontStyle: 'italic',
+  },
+  editButton: {
+    padding: 6,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  editIcon: {
+    fontSize: 14,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+  },
+  modalContent: {
+    backgroundColor: '#1a1a2e',
+    borderRadius: 16,
+    padding: 20,
+    width: '100%',
+    maxWidth: 340,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.1)',
+  },
+  modalTitle: {
+    fontSize: 18,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    marginBottom: 16,
+    textAlign: 'center',
+  },
+  inputLabel: {
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.6)',
+    marginBottom: 6,
+    textTransform: 'uppercase',
+    fontWeight: '600',
+  },
+  input: {
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderRadius: 10,
+    padding: 12,
+    fontSize: 15,
+    color: '#FFFFFF',
+    marginBottom: 14,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.15)',
+  },
+  inputMultiline: {
+    height: 70,
+    textAlignVertical: 'top',
+  },
+  modalButtons: {
+    flexDirection: 'row',
+    gap: 10,
+    marginTop: 6,
+  },
+  cancelButton: {
+    flex: 1,
+    padding: 12,
+    borderRadius: 10,
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    alignItems: 'center',
+  },
+  cancelButtonText: {
+    color: 'rgba(255,255,255,0.7)',
+    fontSize: 15,
+    fontWeight: '600',
+  },
+  saveButton: {
+    flex: 1,
+    padding: 12,
+    borderRadius: 10,
+    backgroundColor: '#166534',
+    alignItems: 'center',
+  },
+  saveButtonText: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    fontWeight: '600',
   },
 });

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo, useCallback } from 'react';
 import { View, TextInput, TouchableOpacity, Text, StyleSheet, Platform } from 'react-native';
 
 interface ChatInputProps {
@@ -8,13 +8,23 @@ interface ChatInputProps {
   isLoading: boolean;
 }
 
-export const ChatInput: React.FC<ChatInputProps> = ({
+export const ChatInput: React.FC<ChatInputProps> = memo(({
   inputText,
   onChangeText,
   onSend,
   isLoading,
 }) => {
   const isDisabled = !inputText.trim() || isLoading;
+  
+  const handleChangeText = useCallback((text: string) => {
+    onChangeText(text);
+  }, [onChangeText]);
+  
+  const handleSubmit = useCallback(() => {
+    if (!isDisabled) {
+      onSend();
+    }
+  }, [onSend, isDisabled]);
 
   return (
     <View style={styles.container}>
@@ -23,22 +33,25 @@ export const ChatInput: React.FC<ChatInputProps> = ({
         placeholder="Ask about parks, flights, or trips..."
         placeholderTextColor="rgba(255,255,255,0.6)"
         value={inputText}
-        onChangeText={onChangeText}
-        onSubmitEditing={onSend}
+        onChangeText={handleChangeText}
+        onSubmitEditing={handleSubmit}
         returnKeyType="send"
+        blurOnSubmit={true}
         multiline
         maxLength={500}
+        autoCorrect={false}
+        autoCapitalize="sentences"
       />
       <TouchableOpacity
         style={[styles.sendButton, isDisabled && styles.sendButtonDisabled]}
-        onPress={onSend}
+        onPress={handleSubmit}
         disabled={isDisabled}
       >
         <Text style={styles.sendButtonText}>→</Text>
       </TouchableOpacity>
     </View>
   );
-};
+});
 
 const styles = StyleSheet.create({
   container: {

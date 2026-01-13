@@ -22,6 +22,8 @@ interface SideMenuProps {
   onLoadConversation: (conversation: SavedConversation) => void;
   onDeleteConversation: (id: string) => void;
   onNewConversation: () => void;
+  onGenerateItinerary: (conversation: SavedConversation) => void;
+  onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
 }
 
 export const SideMenu: React.FC<SideMenuProps> = ({
@@ -39,6 +41,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onLoadConversation,
   onDeleteConversation,
   onNewConversation,
+  onGenerateItinerary,
+  onUpdateConversation,
 }) => {
   const handleLoadConversation = (conv: SavedConversation) => {
     onLoadConversation(conv);
@@ -90,6 +94,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               currentConversationId={currentConversationId}
               onLoadConversation={handleLoadConversation}
               onDeleteConversation={onDeleteConversation}
+              onGenerateItinerary={onGenerateItinerary}
+              onUpdateConversation={onUpdateConversation}
             />
 
             <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>

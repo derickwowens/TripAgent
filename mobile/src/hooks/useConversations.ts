@@ -17,15 +17,20 @@ export interface SavedConversation {
   id: string;
   messages: Message[];
   metadata: {
+    title?: string;
+    description?: string;
     destination?: string;
     travelers?: number;
     departingFrom?: string;
+    travelDates?: string;
+    duration?: string;
+    summary?: string;
     createdAt: string;
     updatedAt: string;
   };
 }
 
-const PARK_NAMES = ['yosemite', 'yellowstone', 'grand canyon', 'zion', 'glacier', 'acadia', 'rocky mountain', 'joshua tree', 'sequoia', 'death valley'];
+const PARK_NAMES = ['yosemite', 'yellowstone', 'grand canyon', 'zion', 'glacier', 'acadia', 'rocky mountain', 'joshua tree', 'sequoia', 'death valley', 'olympic', 'arches', 'bryce canyon', 'everglades', 'great smoky', 'mount rainier', 'shenandoah', 'big bend', 'badlands', 'carlsbad', 'crater lake', 'denali', 'hot springs', 'mammoth cave', 'mesa verde', 'petrified forest', 'redwood', 'saguaro', 'theodore roosevelt', 'voyageurs', 'wind cave'];
 
 export const useConversations = (nearestAirport?: string) => {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -55,6 +60,8 @@ export const useConversations = (nearestAirport?: string) => {
 
   const extractMetadata = (msgs: Message[]): SavedConversation['metadata'] => {
     const allText = msgs.map(m => m.content.toLowerCase()).join(' ');
+    const userMessages = msgs.filter(m => m.type === 'user').map(m => m.content.toLowerCase()).join(' ');
+    const assistantMessages = msgs.filter(m => m.type === 'assistant').map(m => m.content).join(' ');
     
     let destination: string | undefined;
     for (const park of PARK_NAMES) {
@@ -65,19 +72,56 @@ export const useConversations = (nearestAirport?: string) => {
     }
 
     let travelers: number | undefined;
-    const travelerMatch = allText.match(/(\d+)\s*(people|travelers|persons|adults)/);
+    const travelerMatch = allText.match(/(\d+)\s*(people|travelers|persons|adults|of us)/);
     if (travelerMatch) {
       travelers = parseInt(travelerMatch[1]);
-    } else if (allText.includes('solo') || allText.includes('just me')) {
+    } else if (allText.includes('solo') || allText.includes('just me') || allText.includes('myself')) {
       travelers = 1;
-    } else if (allText.includes('couple')) {
+    } else if (allText.includes('couple') || allText.includes('two of us') || allText.includes('my partner')) {
       travelers = 2;
+    } else if (allText.includes('family')) {
+      travelers = 4;
+    }
+
+    let travelDates: string | undefined;
+    const monthNames = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+    const monthMatch = userMessages.match(new RegExp(`(${monthNames.join('|')})\\s*(\\d{1,2})?`, 'i'));
+    if (monthMatch) {
+      const month = monthMatch[1].charAt(0).toUpperCase() + monthMatch[1].slice(1);
+      travelDates = monthMatch[2] ? `${month} ${monthMatch[2]}` : month;
+    }
+
+    let duration: string | undefined;
+    const durationMatch = userMessages.match(/(\d+)\s*(day|night|week)/i);
+    if (durationMatch) {
+      const num = parseInt(durationMatch[1]);
+      const unit = durationMatch[2].toLowerCase();
+      if (unit === 'week') {
+        duration = num === 1 ? '1 week' : `${num} weeks`;
+      } else {
+        duration = num === 1 ? '1 day' : `${num} days`;
+      }
+    }
+
+    let summary: string | undefined;
+    if (destination) {
+      const parts = [];
+      if (duration) parts.push(duration);
+      if (travelDates) parts.push(`in ${travelDates}`);
+      if (travelers) parts.push(`${travelers} ${travelers === 1 ? 'traveler' : 'travelers'}`);
+      summary = parts.length > 0 ? parts.join(' • ') : undefined;
+    } else {
+      const firstUserMsg = msgs.find(m => m.type === 'user')?.content || '';
+      summary = firstUserMsg.length > 60 ? firstUserMsg.substring(0, 57) + '...' : firstUserMsg;
     }
 
     return {
       destination,
       travelers,
       departingFrom: nearestAirport,
+      travelDates,
+      duration,
+      summary,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
@@ -143,6 +187,28 @@ export const useConversations = (nearestAirport?: string) => {
     }
   };
 
+  const updateConversation = async (id: string, updates: { title?: string; description?: string }) => {
+    try {
+      const updated = savedConversations.map(c => {
+        if (c.id === id) {
+          return {
+            ...c,
+            metadata: {
+              ...c.metadata,
+              ...updates,
+              updatedAt: new Date().toISOString(),
+            },
+          };
+        }
+        return c;
+      });
+      await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+      setSavedConversations(updated);
+    } catch (error) {
+      console.error('Failed to update conversation:', error);
+    }
+  };
+
   const addMessage = (message: Message) => {
     setMessages(prev => [...prev, message]);
   };
@@ -155,6 +221,7 @@ export const useConversations = (nearestAirport?: string) => {
     loadConversation,
     startNewConversation,
     deleteConversation,
+    updateConversation,
     addMessage,
   };
 };

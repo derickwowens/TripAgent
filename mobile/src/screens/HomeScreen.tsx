@@ -9,10 +9,12 @@ import {
   StatusBar,
   TouchableOpacity,
   Text,
+  Alert,
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
-import { useLocation, useConversations, useUserProfile, Message } from '../hooks';
+import { useLocation, useConversations, useUserProfile, Message, SavedConversation } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu } from '../components/home';
+import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
 const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
 
@@ -33,6 +35,7 @@ const HomeScreen: React.FC = () => {
     loadConversation, 
     startNewConversation, 
     deleteConversation,
+    updateConversation,
     addMessage,
   } = useConversations(userLocation?.nearestAirport);
   const { 
@@ -158,6 +161,44 @@ const HomeScreen: React.FC = () => {
     }
   };
 
+  const handleGenerateItinerary = async (conversation: SavedConversation) => {
+    setMenuOpen(false);
+    setIsLoading(true);
+    setLoadingStatus('Generating your itinerary...');
+    
+    try {
+      const itineraryContent = await generateItinerary(conversation, setLoadingStatus);
+      
+      if (itineraryContent) {
+        const saved = await saveItineraryToDevice(conversation, itineraryContent);
+        setIsLoading(false);
+        setLoadingStatus('');
+        
+        if (saved) {
+          Alert.alert(
+            'Itinerary Created!',
+            'Your itinerary has been saved. Would you like to share it now?',
+            [
+              { text: 'Later', style: 'cancel' },
+              { 
+                text: 'Share', 
+                onPress: () => shareGeneratedItinerary(saved)
+              },
+            ]
+          );
+        }
+      } else {
+        Alert.alert('Error', 'Unable to generate itinerary. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error generating itinerary:', error);
+      Alert.alert('Error', 'Something went wrong. Please try again.');
+    } finally {
+      setIsLoading(false);
+      setLoadingStatus('');
+    }
+  };
+
   return (
     <ImageBackground
       source={{ uri: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800' }}
@@ -172,7 +213,23 @@ const HomeScreen: React.FC = () => {
             <Text style={styles.menuIcon}>☰</Text>
           </TouchableOpacity>
           <Text style={styles.headerTitle}>TripAgent</Text>
-          <View style={styles.menuButton} />
+          {messages.length > 0 ? (
+            <TouchableOpacity 
+              style={styles.shareButton} 
+              onPress={() => {
+                const currentConv = savedConversations.find(c => c.id === currentConversationId);
+                if (currentConv) {
+                  showShareOptions(currentConv, () => handleGenerateItinerary(currentConv));
+                } else {
+                  Alert.alert('Share', 'Save your conversation first to share it');
+                }
+              }}
+            >
+              <Text style={styles.shareButtonText}>↗</Text>
+            </TouchableOpacity>
+          ) : (
+            <View style={styles.menuButton} />
+          )}
         </View>
 
         <KeyboardAvoidingView
@@ -278,6 +335,8 @@ const HomeScreen: React.FC = () => {
           onLoadConversation={loadConversation}
           onDeleteConversation={deleteConversation}
           onNewConversation={startNewConversation}
+          onGenerateItinerary={handleGenerateItinerary}
+          onUpdateConversation={updateConversation}
         />
       </View>
     </ImageBackground>
@@ -311,6 +370,19 @@ const styles = StyleSheet.create({
   menuIcon: {
     fontSize: 28,
     color: '#FFFFFF',
+  },
+  shareButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#166534',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  shareButtonText: {
+    fontSize: 20,
+    color: '#FFFFFF',
+    fontWeight: '600',
   },
   headerTitle: {
     fontSize: 18,
