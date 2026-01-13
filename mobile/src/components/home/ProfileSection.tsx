@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
 const PROFILE_SUGGESTIONS = [
@@ -33,12 +33,25 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   onSaveProfile,
   onAddSuggestion,
 }) => {
+  // Expanded by default for empty profiles, collapsed otherwise
+  const [suggestionsExpanded, setSuggestionsExpanded] = useState(!userProfile || userProfile.trim().length === 0);
+
+  // Filter out suggestions that are already in the user's profile
+  const availableSuggestions = useMemo(() => {
+    const profileLower = userProfile.toLowerCase();
+    return PROFILE_SUGGESTIONS.filter(suggestion => {
+      // Remove emoji and check if the text is already in the profile
+      const textWithoutEmoji = suggestion.replace(/[\u{1F300}-\u{1F9FF}]|[\u{2600}-\u{26FF}]|[\u{2700}-\u{27BF}]/gu, '').trim().toLowerCase();
+      return !profileLower.includes(textWithoutEmoji);
+    });
+  }, [userProfile]);
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>👤 Your Profile</Text>
       <TextInput
         style={styles.input}
-        placeholder="Add details about yourself..."
+        placeholder="Add details about yourself to improve trip recommendations..."
         placeholderTextColor="rgba(255,255,255,0.5)"
         value={userProfile}
         onChangeText={onSaveProfile}
@@ -46,18 +59,31 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
         numberOfLines={6}
         scrollEnabled
       />
-      <Text style={styles.suggestionsTitle}>Quick add:</Text>
-      <View style={styles.suggestions}>
-        {PROFILE_SUGGESTIONS.map((suggestion, index) => (
-          <TouchableOpacity
-            key={index}
-            style={styles.suggestionChip}
-            onPress={() => onAddSuggestion(suggestion)}
+      {availableSuggestions.length > 0 && (
+        <>
+          <TouchableOpacity 
+            style={styles.suggestionsHeader}
+            onPress={() => setSuggestionsExpanded(!suggestionsExpanded)}
           >
-            <Text style={styles.suggestionText}>{suggestion}</Text>
+            <Text style={styles.suggestionsTitle}>
+              {suggestionsExpanded ? '▼' : '▶'} Quick add ({availableSuggestions.length})
+            </Text>
           </TouchableOpacity>
-        ))}
-      </View>
+          {suggestionsExpanded && (
+            <View style={styles.suggestions}>
+              {availableSuggestions.map((suggestion, index) => (
+                <TouchableOpacity
+                  key={index}
+                  style={styles.suggestionChip}
+                  onPress={() => onAddSuggestion(suggestion)}
+                >
+                  <Text style={styles.suggestionText}>{suggestion}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          )}
+        </>
+      )}
     </View>
   );
 };
@@ -87,10 +113,12 @@ const styles = StyleSheet.create({
     textAlignVertical: 'top',
     marginBottom: 8,
   },
+  suggestionsHeader: {
+    paddingVertical: 6,
+  },
   suggestionsTitle: {
     color: 'rgba(255,255,255,0.5)',
     fontSize: 11,
-    marginBottom: 6,
   },
   suggestions: {
     flexDirection: 'row',

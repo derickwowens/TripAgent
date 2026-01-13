@@ -7,3 +7,4 @@ export { SideMenu } from './SideMenu';
 export { ProfileSection } from './ProfileSection';
 export { ModelSelector } from './ModelSelector';
 export { ConversationList } from './ConversationList';
+export { CollapsibleBottomPanel } from './CollapsibleBottomPanel';

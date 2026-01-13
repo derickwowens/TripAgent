@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
 import { useLocation, useConversations, useUserProfile, Message, SavedConversation } from '../hooks';
-import { WelcomeScreen, ConsiderationsHint, ChatMessages, ChatInput, SideMenu, PhotoGallery } from '../components/home';
+import { WelcomeScreen, ConsiderationsHint, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
 const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
@@ -427,16 +427,27 @@ const HomeScreen: React.FC = () => {
 
           {messages.length === 0 && <ConsiderationsHint />}
           
-          {allPhotos.length > 0 && (
-            <PhotoGallery photos={allPhotos} />
+          {messages.length > 0 ? (
+            <CollapsibleBottomPanel hasPhotos={allPhotos.length > 0}>
+              <ChatInput
+                inputText={inputText}
+                onChangeText={setInputText}
+                onSend={handleSend}
+                isLoading={isLoading}
+              />
+              
+              {allPhotos.length > 0 && (
+                <PhotoGallery photos={allPhotos} />
+              )}
+            </CollapsibleBottomPanel>
+          ) : (
+            <ChatInput
+              inputText={inputText}
+              onChangeText={setInputText}
+              onSend={handleSend}
+              isLoading={isLoading}
+            />
           )}
-          
-          <ChatInput
-            inputText={inputText}
-            onChangeText={setInputText}
-            onSend={handleSend}
-            isLoading={isLoading}
-          />
         </KeyboardAvoidingView>
 
         <SideMenu
