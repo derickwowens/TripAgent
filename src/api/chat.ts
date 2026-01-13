@@ -133,7 +133,13 @@ export async function createChatHandler(facade: TravelFacade) {
       contextInfo += '\n';
     }
     if (context.userProfile) {
-      contextInfo += `\nUser profile/preferences:\n${context.userProfile}\n\nIMPORTANT: Use these preferences to personalize recommendations. For example, if they mention "family of four", assume 4 travelers. If they prefer warm destinations, suggest accordingly. If they have accessibility needs, prioritize accessible options.\n`;
+      contextInfo += `\nUser profile/preferences:\n${context.userProfile}\n\nIMPORTANT: Use these preferences to personalize recommendations:
+- If they mention "family of four", assume 4 travelers
+- If they prefer warm destinations, suggest accordingly
+- If they have accessibility needs, prioritize accessible options
+- If they're traveling with a dog or service animal, provide pet-friendly lodging options, airline pet policies, and note any park restrictions on pets (most national parks restrict pets on trails but allow them in campgrounds and on paved roads)
+- For service animals specifically, note they are allowed in more areas than regular pets under ADA guidelines
+\n`;
     }
 
     const systemPrompt = contextInfo ? `${SYSTEM_PROMPT}\n\nCurrent context:\n${contextInfo}` : SYSTEM_PROMPT;

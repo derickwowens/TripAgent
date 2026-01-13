@@ -1,5 +1,3 @@
-import nodemailer from 'nodemailer';
-
 interface ErrorLog {
   message: string;
   stack?: string;
@@ -11,101 +9,72 @@ interface ErrorLog {
 
 const ADMIN_EMAIL = 'derickwowens@gmail.com';
 
-// Create transporter - uses environment variables for SMTP config
-const createTransporter = () => {
-  // For production, use a service like SendGrid, Mailgun, or Gmail
-  // For now, we'll use a simple SMTP setup or skip if not configured
-  if (!process.env.SMTP_HOST) {
-    return null;
-  }
-
-  return nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port: parseInt(process.env.SMTP_PORT || '587'),
-    secure: process.env.SMTP_SECURE === 'true',
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
-};
-
 // In-memory error buffer for batching
 let errorBuffer: ErrorLog[] = [];
-let lastEmailSent = 0;
-const EMAIL_COOLDOWN = 60000; // 1 minute between emails
+let lastNotificationSent = 0;
+const NOTIFICATION_COOLDOWN = 60000; // 1 minute between notifications
 
 export const logError = async (error: ErrorLog): Promise<void> => {
-  // Always log to console
+  // Always log to console with full details
   console.error(`[ERROR] ${error.timestamp}`, {
     message: error.message,
     endpoint: error.endpoint,
     stack: error.stack,
+    context: error.context,
   });
 
   // Add to buffer
   errorBuffer.push(error);
 
-  // Try to send email if cooldown has passed
+  // Try to send notification if cooldown has passed
   const now = Date.now();
-  if (now - lastEmailSent > EMAIL_COOLDOWN && errorBuffer.length > 0) {
-    await sendErrorEmail();
+  if (now - lastNotificationSent > NOTIFICATION_COOLDOWN && errorBuffer.length > 0) {
+    await sendErrorNotification();
   }
 };
 
-const sendErrorEmail = async (): Promise<void> => {
-  const transporter = createTransporter();
-  
-  if (!transporter) {
-    console.log('[ErrorLogger] SMTP not configured, skipping email notification');
-    console.log('[ErrorLogger] Buffered errors:', errorBuffer.length);
-    errorBuffer = []; // Clear buffer to prevent memory leak
-    return;
-  }
-
+const sendErrorNotification = async (): Promise<void> => {
   const errors = [...errorBuffer];
   errorBuffer = [];
-  lastEmailSent = Date.now();
+  lastNotificationSent = Date.now();
 
-  const errorSummary = errors.map(e => `
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-📍 Endpoint: ${e.endpoint || 'Unknown'}
-⏰ Time: ${e.timestamp}
-📱 User Agent: ${e.userAgent || 'Unknown'}
+  const errorSummary = errors.map(e => ({
+    endpoint: e.endpoint || 'Unknown',
+    time: e.timestamp,
+    error: e.message,
+    context: e.context,
+  }));
 
-❌ Error: ${e.message}
-
-📋 Stack:
-${e.stack || 'No stack trace'}
-
-📦 Context:
-${JSON.stringify(e.context, null, 2) || 'None'}
-`).join('\n');
-
+  // Use FormSubmit.co to send email without SMTP config
   try {
-    await transporter.sendMail({
-      from: process.env.SMTP_FROM || 'tripagent@noreply.com',
-      to: ADMIN_EMAIL,
-      subject: `🚨 TripAgent Error Alert (${errors.length} error${errors.length > 1 ? 's' : ''})`,
-      text: `TripAgent encountered ${errors.length} error(s):\n${errorSummary}`,
-      html: `
-        <h2>🚨 TripAgent Error Alert</h2>
-        <p><strong>${errors.length}</strong> error(s) occurred:</p>
-        <pre style="background: #f5f5f5; padding: 15px; border-radius: 5px; overflow-x: auto;">
-${errorSummary}
-        </pre>
-      `,
+    const response = await fetch('https://formsubmit.co/ajax/derickwowens@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+      },
+      body: JSON.stringify({
+        _subject: `🚨 TripAgent Error Alert (${errors.length} error${errors.length > 1 ? 's' : ''})`,
+        error_count: errors.length,
+        errors: JSON.stringify(errorSummary, null, 2),
+        timestamp: new Date().toISOString(),
+      }),
     });
-    console.log(`[ErrorLogger] Sent error notification email to ${ADMIN_EMAIL}`);
-  } catch (emailError) {
-    console.error('[ErrorLogger] Failed to send error email:', emailError);
+
+    if (response.ok) {
+      console.log(`[ErrorLogger] Sent error notification email to ${ADMIN_EMAIL}`);
+    } else {
+      console.error('[ErrorLogger] Failed to send error notification:', await response.text());
+    }
+  } catch (notifyError) {
+    console.error('[ErrorLogger] Failed to send error notification:', notifyError);
   }
 };
 
 // Flush any remaining errors on process exit
 process.on('beforeExit', async () => {
   if (errorBuffer.length > 0) {
-    await sendErrorEmail();
+    await sendErrorNotification();
   }
 });
 
