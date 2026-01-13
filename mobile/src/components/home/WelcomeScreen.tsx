@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 const QUICK_PROMPTS = [
   { emoji: '🌴', label: 'Somewhere warm on a budget', template: 'Take me somewhere warm on a budget' },
@@ -218,7 +218,11 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
 
   return (
     <View style={styles.container}>
-      <Text style={styles.emoji}>🌲</Text>
+      <Image 
+        source={require('../../../assets/icon.png')} 
+        style={styles.logo}
+        resizeMode="contain"
+      />
       <Text style={styles.title}>Where would you like to explore?</Text>
       
       <Text style={styles.sectionLabel}>Quick Start</Text>
@@ -269,9 +273,11 @@ const styles = StyleSheet.create({
     paddingTop: 60,
     paddingHorizontal: 16,
   },
-  emoji: {
-    fontSize: 56,
+  logo: {
+    width: 80,
+    height: 80,
     marginBottom: 12,
+    borderRadius: 16,
   },
   title: {
     fontSize: 20,

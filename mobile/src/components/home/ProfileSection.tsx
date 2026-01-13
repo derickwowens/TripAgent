@@ -10,6 +10,16 @@ const PROFILE_SUGGESTIONS = [
   '♿ Need accessible accommodations',
   '💰 Budget-conscious traveler',
   '🏔️ Love hiking and outdoors',
+  '✈️ Delta Airlines preferred',
+  '✈️ Southwest Airlines preferred',
+  '✈️ United Airlines preferred',
+  '✈️ American Airlines preferred',
+  '🚗 Hertz preferred',
+  '🚗 Enterprise preferred',
+  '🚗 National preferred',
+  '🏨 Marriott preferred',
+  '🏨 Hilton preferred',
+  '🏨 IHG preferred',
 ];
 
 interface ProfileSectionProps {

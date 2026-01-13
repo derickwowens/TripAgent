@@ -42,6 +42,42 @@ interface ChatContext {
   userProfile?: string;
 }
 
+// Clean up formatting artifacts from Claude's response
+// IMPORTANT: Preserves markdown links [text](url) for photo/link functionality
+function cleanResponseFormatting(text: string): string {
+  try {
+    let cleaned = text;
+    
+    // Remove underscore dividers (3+ underscores) but NOT inside URLs
+    cleaned = cleaned.replace(/(?<!\()_{3,}(?!\))/g, '---');
+    
+    // Remove asterisks used for bold/italic (but preserve content)
+    // Be careful not to match asterisks that might be in URLs
+    cleaned = cleaned.replace(/\*\*([^*\n]+)\*\*/g, '$1');
+    cleaned = cleaned.replace(/(?<![a-zA-Z])\*([^*\n]+)\*(?![a-zA-Z])/g, '$1');
+    
+    // Remove hashtag headers at start of lines
+    cleaned = cleaned.replace(/^#{1,6}\s+/gm, '');
+    
+    // Replace asterisk bullets with proper bullets (only at line start)
+    cleaned = cleaned.replace(/^\s*\*\s+/gm, '• ');
+    
+    // Remove inline backticks (preserve content)
+    cleaned = cleaned.replace(/`([^`\n]+)`/g, '$1');
+    
+    // Clean up excessive dashes (more than 5)
+    cleaned = cleaned.replace(/-{6,}/g, '---');
+    
+    // Clean up multiple consecutive blank lines
+    cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
+    
+    return cleaned.trim();
+  } catch (error) {
+    console.warn('[Chat] Error in cleanResponseFormatting, returning original:', error);
+    return text;
+  }
+}
+
 const SYSTEM_PROMPT = `You are TripAgent, a friendly and knowledgeable AI travel assistant specializing in National Park trips. You help users plan amazing outdoor adventures.
 
 Your personality:
@@ -64,13 +100,13 @@ Do NOT automatically pick a single destination airport. Instead, research and pr
 - RSW (Fort Myers) - west coast option
 
 Always show a comparison table like:
-✈️ FLIGHT OPTIONS from [origin]
-━━━━━━━━━━━━━━━━━━━━━━
+✈️ Flight Options from [origin]
+---
 • MIA (Miami): $XXX - 1hr drive to park
-• FLL (Ft Lauderdale): $XXX - 1.5hr drive ⭐ Best value
+• FLL (Ft Lauderdale): $XXX - 1.5hr drive (lowest price)
 • RSW (Ft Myers): $XXX - 2hr drive
-━━━━━━━━━━━━━━━━━━━━━━
-💡 Recommendation: [cheapest or best value option]
+---
+💡 Recommendation: [cheapest option with note about drive time tradeoff]
 
 This applies to ALL destinations, including national parks. Search multiple nearby airports and let the user see the price differences so they can make an informed choice.
 
@@ -134,7 +170,54 @@ Format: https://www.nps.gov/{PARK-CODE}/index.htm
 
 CRITICAL: Always use the ACTUAL airport codes, dates, and locations from the conversation. Dates must be YYYY-MM-DD format.
 
-Keep responses concise - mobile users prefer shorter messages. Use line breaks for readability.`;
+IMPORTANT - TEXT FORMATTING FOR MOBILE:
+This is a mobile app that displays PLAIN TEXT. Follow these formatting rules strictly:
+
+NEVER USE:
+- Asterisks (*) for bold, italics, or bullets
+- Hashtags (#) for headers
+- Underscores (_) or underscore lines (___) for emphasis or dividers
+- Backticks (\`) for code
+- ALL CAPS for emphasis (like "GIANT SEQUOIAS" - use "Giant Sequoias" instead)
+
+ALWAYS USE:
+- Emojis (✈️ 🏨 🚗 🥾 💰) as visual section markers
+- Title Case for section headers (e.g., "Flight Options" not "FLIGHT OPTIONS")
+- Bullet points with "•" symbol only
+- Simple dashes (---) or line breaks for separation, not underscores
+- Proper sentence case for all text
+- Natural, conversational tone
+
+IMPORTANT - NEUTRAL PRICING LANGUAGE:
+Never use positive affirmation language when describing prices. Avoid phrases like:
+- "Great deal", "Amazing price", "Excellent value", "Best value", "Fantastic rate"
+- "Steal", "Bargain", "Can't beat this price"
+- Any subjective value judgments about pricing
+
+Instead, use neutral, factual language:
+- "Lowest price option", "Most affordable", "Budget-friendly option"
+- Simply state the price without judgment: "$245 roundtrip"
+- "Lower cost alternative", "Price comparison shows..."
+Users will decide for themselves if a price is good. Our job is to present accurate information, not make value judgments.
+
+Example of GOOD formatting:
+✈️ Flight Options
+---
+• LAX → Denver: $245 (United)
+• LAX → Denver: $289 (Southwest)
+
+🏨 Where to Stay
+---
+• Elkmont Campground - $25/night
+• LeConte Lodge - $150/night
+
+Example of BAD formatting (NEVER do this):
+**FLIGHT OPTIONS**
+_______________
+* LAX -> DEN: $245
+# GIANT SEQUOIAS
+
+Keep responses concise and conversational - mobile users prefer shorter, friendly messages.`;
 
 const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
 
@@ -275,14 +358,26 @@ export async function createChatHandler(facade: TravelFacade) {
             switch (toolUse.name) {
               case 'search_national_parks':
                 const parks = await facade.searchNationalParks((toolUse.input as any).query);
-                // Collect photos from park results
+                // Collect multiple photos from park results
                 parks.slice(0, 3).forEach(park => {
                   if (park.images && park.images.length > 0) {
-                    collectedPhotos.push({
-                      keyword: park.name,
-                      url: park.images[0],
-                      caption: `${park.name} - National Park`
+                    // Add up to 3 photos per park
+                    park.images.slice(0, 3).forEach((imageUrl: string, idx: number) => {
+                      collectedPhotos.push({
+                        keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
+                        url: imageUrl,
+                        caption: `${park.name} - National Park`
+                      });
                     });
+                    // Also add short name variation for first image
+                    const shortName = park.name.replace(' National Park', '');
+                    if (shortName !== park.name) {
+                      collectedPhotos.push({
+                        keyword: shortName,
+                        url: park.images[0],
+                        caption: park.name
+                      });
+                    }
                   }
                 });
                 result = { parks: parks.slice(0, 3) };
@@ -298,14 +393,17 @@ export async function createChatHandler(facade: TravelFacade) {
                   adults: input.adults || 1,
                 });
                 
-                // Collect photos from park
+                // Collect multiple photos from park
                 if (result.park?.images && result.park.images.length > 0) {
-                  collectedPhotos.push({
-                    keyword: result.park.name,
-                    url: result.park.images[0],
-                    caption: `${result.park.name} - National Park`
+                  // Add up to 3 photos from park
+                  result.park.images.slice(0, 3).forEach((imageUrl: string, idx: number) => {
+                    collectedPhotos.push({
+                      keyword: idx === 0 ? result.park.name : `${result.park.name} photo ${idx + 1}`,
+                      url: imageUrl,
+                      caption: `${result.park.name} - National Park`
+                    });
                   });
-                  // Add shorter keyword variation
+                  // Add shorter keyword variation for first image
                   const shortName = result.park.name.replace(' National Park', '');
                   if (shortName !== result.park.name) {
                     collectedPhotos.push({
@@ -422,22 +520,29 @@ export async function createChatHandler(facade: TravelFacade) {
 
       const rawResponse = textBlocks.map(b => b.text).join('\n');
       
-      // Log collected photos for debugging
+      // Post-process response to clean up formatting artifacts
+      const cleanedResponse = cleanResponseFormatting(rawResponse);
+      
+      // Log for debugging
+      console.log(`[Chat] Raw response length: ${rawResponse.length}, Cleaned: ${cleanedResponse.length}`);
       if (collectedPhotos.length > 0) {
         console.log('[Chat] Collected photos:', collectedPhotos.map(p => ({ keyword: p.keyword, url: p.url.substring(0, 50) + '...' })));
+      } else {
+        console.log('[Chat] No photos collected from tool results');
       }
       
       // Validate and fix any broken links in the response
       try {
-        const validatedResponse = await validateLinksInResponse(rawResponse);
+        const validatedResponse = await validateLinksInResponse(cleanedResponse);
+        console.log(`[Chat] Returning response with ${collectedPhotos.length} photos`);
         return { 
           response: validatedResponse, 
           photos: collectedPhotos.length > 0 ? collectedPhotos : undefined 
         };
       } catch (linkError) {
-        console.warn('[Chat] Link validation failed, returning raw response:', linkError);
+        console.warn('[Chat] Link validation failed, returning cleaned response:', linkError);
         return { 
-          response: rawResponse, 
+          response: cleanedResponse, 
           photos: collectedPhotos.length > 0 ? collectedPhotos : undefined 
         };
       }

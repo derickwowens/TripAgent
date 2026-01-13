@@ -11,6 +11,15 @@ const api = axios.create({
   },
 });
 
+// Separate instance for chat with longer timeout (Claude can take 2+ minutes with tool calls)
+const chatApi = axios.create({
+  baseURL: API_BASE_URL,
+  timeout: 180000, // 3 minutes for complex chat requests
+  headers: {
+    'Content-Type': 'application/json',
+  },
+});
+
 // Types
 export interface FlightOffer {
   id: string;
@@ -177,7 +186,7 @@ export const sendChatMessage = async (
   context: ChatContext,
   model?: string
 ): Promise<{ response: string; photos?: PhotoReference[]; fallback?: boolean }> => {
-  const response = await api.post('/api/chat', { messages, context, model });
+  const response = await chatApi.post('/api/chat', { messages, context, model });
   return response.data;
 };
 

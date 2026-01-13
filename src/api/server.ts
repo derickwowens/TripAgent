@@ -237,7 +237,10 @@ createChatHandler(facade).then(handler => {
 });
 
 app.post('/api/chat', asyncHandler(async (req: Request, res: Response) => {
+  const startTime = Date.now();
   const { messages, context, model } = req.body;
+
+  console.log(`[Chat] Request received - ${messages?.length || 0} messages, model: ${model || 'default'}`);
 
   if (!messages || !Array.isArray(messages)) {
     return res.status(400).json({ error: 'Missing required parameter: messages (array)' });
@@ -252,9 +255,12 @@ app.post('/api/chat', asyncHandler(async (req: Request, res: Response) => {
 
   try {
     const result = await chatHandler(messages, context || {}, model);
+    const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.log(`[Chat] Response ready in ${duration}s - ${result.photos?.length || 0} photos`);
     res.json({ response: result.response, photos: result.photos });
   } catch (error: any) {
-    console.error('Chat error:', error);
+    const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.error(`[Chat] Error after ${duration}s:`, error.message);
     res.status(500).json({ error: error.message, fallback: true });
   }
 }));

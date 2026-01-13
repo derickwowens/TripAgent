@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image } from 'react-native';
 import { ProfileSection } from './ProfileSection';
 import { ModelSelector } from './ModelSelector';
 import { ConversationList } from './ConversationList';
@@ -57,13 +57,19 @@ export const SideMenu: React.FC<SideMenuProps> = ({
     >
       <View style={styles.overlay}>
         <View style={styles.menu}>
+          {/* Fixed Header */}
           <View style={styles.header}>
-            <Text style={styles.title}>Recent Trips</Text>
+            <Image 
+              source={require('../../../assets/icon.png')} 
+              style={styles.logo}
+              resizeMode="contain"
+            />
             <TouchableOpacity onPress={onClose}>
               <Text style={styles.closeButton}>✕</Text>
             </TouchableOpacity>
           </View>
 
+          {/* Scrollable Content */}
           <ScrollView 
             style={styles.scrollContent}
             contentContainerStyle={styles.scrollContentContainer}
@@ -140,10 +146,10 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderBottomColor: 'rgba(255,255,255,0.1)',
   },
-  title: {
-    fontSize: 22,
-    fontWeight: '700',
-    color: '#FFFFFF',
+  logo: {
+    width: 40,
+    height: 40,
+    borderRadius: 8,
   },
   closeButton: {
     fontSize: 24,

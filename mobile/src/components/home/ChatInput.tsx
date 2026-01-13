@@ -144,11 +144,12 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
         onChangeText={handleChangeText}
         onSubmitEditing={handleSubmit}
         returnKeyType="send"
-        blurOnSubmit={true}
+        blurOnSubmit={false}
         multiline
         maxLength={500}
         autoCorrect={false}
         autoCapitalize="sentences"
+        editable={!isLoading}
       />
       <TouchableOpacity
         style={[styles.sendButton, isDisabled && styles.sendButtonDisabled]}

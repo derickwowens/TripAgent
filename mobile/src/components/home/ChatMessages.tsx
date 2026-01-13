@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { View, Text, ActivityIndicator, StyleSheet, Linking, TouchableOpacity } from 'react-native';
-import { Message, PhotoReference } from '../../hooks';
-import { ImageModal } from './ImageModal';
-import { PhotoGallery } from './PhotoGallery';
+import { Message } from '../../hooks';
 
 interface ChatMessagesProps {
   messages: Message[];
@@ -14,13 +12,17 @@ interface ChatMessagesProps {
 // Parse markdown links [text](url) and plain URLs, with photo keyword detection
 const parseMessageContent = (
   content: string, 
-  isUser: boolean,
-  photos?: PhotoReference[]
-): Array<{ type: 'text' | 'link' | 'photo'; text: string; url?: string; caption?: string }> => {
+  isUser: boolean
+): Array<{ type: 'text' | 'link'; text: string; url?: string }> => {
+  // Safety check for empty or invalid content
+  if (!content || typeof content !== 'string') {
+    return [{ type: 'text', text: content || '' }];
+  }
+
   // Regex for markdown links: [text](url)
   const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
   
-  const parts: Array<{ type: 'text' | 'link' | 'photo'; text: string; url?: string; caption?: string }> = [];
+  const parts: Array<{ type: 'text' | 'link'; text: string; url?: string }> = [];
 
   // First pass: find markdown links
   const processedContent = content.replace(markdownLinkRegex, (match, text, url) => {
@@ -31,57 +33,24 @@ const parseMessageContent = (
   const segments = processedContent.split(/({{LINK:[^}]+}}|https?:\/\/[^\s\)]+)/g);
   
   segments.forEach((segment) => {
-    if (!segment) return;
+    if (!segment || segment.length === 0) return;
     
     if (segment.startsWith('{{LINK:')) {
       const inner = segment.slice(7, -2);
       const [text, url] = inner.split('::');
-      parts.push({ type: 'link', text, url });
+      parts.push({ type: 'link', text: text || '', url: url || '' });
     } else if (segment.match(/^https?:\/\//)) {
       parts.push({ type: 'link', text: segment, url: segment });
-    } else if (segment.trim()) {
-      // Check if this text segment contains any photo keywords
-      if (photos && photos.length > 0) {
-        let remainingText = segment;
-        let foundPhoto = false;
-        
-        for (const photo of photos) {
-          const keywordLower = photo.keyword.toLowerCase();
-          const textLower = remainingText.toLowerCase();
-          const keywordIndex = textLower.indexOf(keywordLower);
-          
-          if (keywordIndex !== -1) {
-            foundPhoto = true;
-            // Add text before the keyword
-            if (keywordIndex > 0) {
-              parts.push({ type: 'text', text: remainingText.substring(0, keywordIndex) });
-            }
-            // Add the photo link (preserve original case from text)
-            const originalKeyword = remainingText.substring(keywordIndex, keywordIndex + photo.keyword.length);
-            parts.push({ 
-              type: 'photo', 
-              text: originalKeyword, 
-              url: photo.url, 
-              caption: photo.caption 
-            });
-            // Continue with remaining text
-            remainingText = remainingText.substring(keywordIndex + photo.keyword.length);
-            break; // Only match first occurrence per segment
-          }
-        }
-        
-        if (!foundPhoto) {
-          parts.push({ type: 'text', text: segment });
-        } else if (remainingText) {
-          // Recursively parse remaining text for more keywords
-          const remainingParts = parseMessageContent(remainingText, isUser, photos);
-          parts.push(...remainingParts);
-        }
-      } else {
-        parts.push({ type: 'text', text: segment });
-      }
+    } else {
+      // Just add as text
+      parts.push({ type: 'text', text: segment });
     }
   });
+
+  // Ensure we return at least the original content if nothing was parsed
+  if (parts.length === 0) {
+    return [{ type: 'text', text: content }];
+  }
 
   return parts;
 };
@@ -89,12 +58,10 @@ const parseMessageContent = (
 interface MessageContentProps {
   content: string;
   isUser: boolean;
-  photos?: PhotoReference[];
-  onPhotoPress: (url: string, caption?: string) => void;
 }
 
-const MessageContent: React.FC<MessageContentProps> = ({ content, isUser, photos, onPhotoPress }) => {
-  const parts = parseMessageContent(content, isUser, photos);
+const MessageContent: React.FC<MessageContentProps> = ({ content, isUser }) => {
+  const parts = parseMessageContent(content, isUser);
   
   return (
     <Text style={[styles.text, isUser ? styles.userText : styles.assistantText]}>
@@ -110,18 +77,6 @@ const MessageContent: React.FC<MessageContentProps> = ({ content, isUser, photos
             </Text>
           );
         }
-        if (part.type === 'photo' && part.url) {
-          return (
-            <Text
-              key={index}
-              style={[styles.photoLink, isUser ? styles.userPhotoLink : styles.assistantPhotoLink]}
-              onPress={() => onPhotoPress(part.url!, part.caption)}
-            >
-              {part.text}
-              <Text style={styles.photoIcon}> 📷</Text>
-            </Text>
-          );
-        }
         return <Text key={index}>{part.text}</Text>;
       })}
     </Text>
@@ -134,14 +89,6 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
   loadingStatus,
   onRetry,
 }) => {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedImage, setSelectedImage] = useState<{ url: string; caption?: string } | null>(null);
-
-  const handlePhotoPress = (url: string, caption?: string) => {
-    setSelectedImage({ url, caption });
-    setModalVisible(true);
-  };
-
   return (
     <>
       {messages.map((message) => (
@@ -156,12 +103,7 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           <MessageContent 
             content={message.content} 
             isUser={message.type === 'user'} 
-            photos={message.photos}
-            onPhotoPress={handlePhotoPress}
           />
-          {message.type === 'assistant' && message.photos && message.photos.length > 0 && (
-            <PhotoGallery photos={message.photos} />
-          )}
           {message.isError && message.lastUserMessage && onRetry && (
             <TouchableOpacity 
               style={styles.retryButton}
@@ -179,16 +121,6 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           <Text style={styles.loadingText}>{loadingStatus || 'Thinking...'}</Text>
         </View>
       )}
-
-      <ImageModal
-        visible={modalVisible}
-        imageUrl={selectedImage?.url || ''}
-        caption={selectedImage?.caption}
-        onClose={() => {
-          setModalVisible(false);
-          setSelectedImage(null);
-        }}
-      />
     </>
   );
 };
@@ -260,18 +192,5 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 14,
     fontWeight: '600',
-  },
-  photoLink: {
-    textDecorationLine: 'underline',
-    fontWeight: '600',
-  },
-  userPhotoLink: {
-    color: '#7c3aed',
-  },
-  assistantPhotoLink: {
-    color: '#fbbf24',
-  },
-  photoIcon: {
-    fontSize: 12,
   },
 });

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect, useMemo } from 'react';
 import {
   View,
   ScrollView,
@@ -10,10 +10,11 @@ import {
   TouchableOpacity,
   Text,
   Alert,
+  Image,
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
 import { useLocation, useConversations, useUserProfile, Message, SavedConversation } from '../hooks';
-import { WelcomeScreen, ConsiderationsHint, ChatMessages, ChatInput, SideMenu } from '../components/home';
+import { WelcomeScreen, ConsiderationsHint, ChatMessages, ChatInput, SideMenu, PhotoGallery } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
 const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
@@ -46,6 +47,31 @@ const HomeScreen: React.FC = () => {
     toggleExpanded 
   } = useUserProfile();
 
+  // Scroll to bottom when messages change or loading state changes
+  useEffect(() => {
+    if (scrollViewRef.current && messages.length > 0) {
+      setTimeout(() => {
+        scrollViewRef.current?.scrollToEnd({ animated: true });
+      }, 100);
+    }
+  }, [messages, isLoading]);
+
+  // Accumulate all photos from messages for the gallery
+  const allPhotos = useMemo(() => {
+    const photos: Array<{ keyword: string; url: string; caption?: string }> = [];
+    messages.forEach(msg => {
+      if (msg.photos && msg.photos.length > 0) {
+        msg.photos.forEach(photo => {
+          // Avoid duplicates by URL
+          if (!photos.some(p => p.url === photo.url)) {
+            photos.push(photo);
+          }
+        });
+      }
+    });
+    return photos;
+  }, [messages]);
+
   const handleSend = async () => {
     if (!inputText.trim() || isLoading) return;
 
@@ -59,6 +85,11 @@ const HomeScreen: React.FC = () => {
     const updatedMessages = [...messages, userMessage];
     setMessages(updatedMessages);
     setInputText('');
+    
+    // Scroll to bottom immediately after sending
+    setTimeout(() => {
+      scrollViewRef.current?.scrollToEnd({ animated: true });
+    }, 50);
     setIsLoading(true);
     setLoadingStatus('Thinking...');
 
@@ -290,7 +321,15 @@ const HomeScreen: React.FC = () => {
           <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
             <Text style={styles.menuIcon}>☰</Text>
           </TouchableOpacity>
-          <Text style={styles.headerTitle}>TripAgent</Text>
+          {messages.length > 0 ? (
+            <Image 
+              source={require('../../assets/icon.png')} 
+              style={styles.headerLogo}
+              resizeMode="contain"
+            />
+          ) : (
+            <View style={styles.headerLogo} />
+          )}
           {messages.length > 0 ? (
             <TouchableOpacity 
               style={styles.shareButton} 
@@ -387,6 +426,11 @@ const HomeScreen: React.FC = () => {
           </ScrollView>
 
           {messages.length === 0 && <ConsiderationsHint />}
+          
+          {allPhotos.length > 0 && (
+            <PhotoGallery photos={allPhotos} />
+          )}
+          
           <ChatInput
             inputText={inputText}
             onChangeText={setInputText}
@@ -456,10 +500,10 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: '600',
   },
-  headerTitle: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#FFFFFF',
+  headerLogo: {
+    width: 32,
+    height: 32,
+    borderRadius: 6,
   },
   container: {
     flex: 1,
