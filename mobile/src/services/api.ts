@@ -166,11 +166,17 @@ export interface ChatContext {
   userProfile?: string;
 }
 
+export interface PhotoReference {
+  keyword: string;
+  url: string;
+  caption?: string;
+}
+
 export const sendChatMessage = async (
   messages: ChatMessage[],
   context: ChatContext,
   model?: string
-): Promise<{ response: string; fallback?: boolean }> => {
+): Promise<{ response: string; photos?: PhotoReference[]; fallback?: boolean }> => {
   const response = await api.post('/api/chat', { messages, context, model });
   return response.data;
 };

@@ -221,7 +221,12 @@ app.get('/api/airports/:iataCode', (req: Request, res: Response) => {
 // ============================================
 // CHAT ENDPOINT (Claude AI)
 // ============================================
-let chatHandler: ((messages: any[], context: any, model?: string) => Promise<string>) | null = null;
+interface ChatResponse {
+  response: string;
+  photos?: { keyword: string; url: string; caption?: string }[];
+}
+
+let chatHandler: ((messages: any[], context: any, model?: string) => Promise<ChatResponse>) | null = null;
 
 // Initialize chat handler
 createChatHandler(facade).then(handler => {
@@ -246,8 +251,8 @@ app.post('/api/chat', asyncHandler(async (req: Request, res: Response) => {
   }
 
   try {
-    const response = await chatHandler(messages, context || {}, model);
-    res.json({ response });
+    const result = await chatHandler(messages, context || {}, model);
+    res.json({ response: result.response, photos: result.photos });
   } catch (error: any) {
     console.error('Chat error:', error);
     res.status(500).json({ error: error.message, fallback: true });

@@ -101,6 +101,7 @@ const HomeScreen: React.FC = () => {
         type: 'assistant',
         content: response.response,
         timestamp: new Date(),
+        photos: response.photos,
       };
 
       setMessages(prev => [...prev, assistantMessage]);
@@ -215,6 +216,7 @@ const HomeScreen: React.FC = () => {
         type: 'assistant',
         content: response.response,
         timestamp: new Date(),
+        photos: response.photos,
       };
 
       setMessages(prev => [...prev, assistantMessage]);
@@ -333,25 +335,15 @@ const HomeScreen: React.FC = () => {
               isLoading={isLoading}
               loadingStatus={loadingStatus}
               onRetry={async (lastUserMessage) => {
-                // Remove the error message
+                // Remove all error messages from conversation
                 const cleanedMessages = messages.filter(m => !m.isError);
                 setMessages(cleanedMessages);
-                
-                // Create a new user message and resend
-                const retryMessage: Message = {
-                  id: Date.now().toString(),
-                  type: 'user',
-                  content: lastUserMessage,
-                  timestamp: new Date(),
-                };
-                
-                const updatedMessages = [...cleanedMessages, retryMessage];
-                setMessages(updatedMessages);
                 setIsLoading(true);
                 setLoadingStatus('Retrying...');
                 
                 try {
-                  const chatMessages: ApiChatMessage[] = updatedMessages.map(m => ({
+                  // Use full conversation history for context
+                  const chatMessages: ApiChatMessage[] = cleanedMessages.map(m => ({
                     role: m.type === 'user' ? 'user' : 'assistant',
                     content: m.content,
                   }));
@@ -372,9 +364,10 @@ const HomeScreen: React.FC = () => {
                     type: 'assistant',
                     content: result.response,
                     timestamp: new Date(),
+                    photos: result.photos,
                   };
                   
-                  setMessages(prev => [...prev, assistantMessage]);
+                  setMessages(prev => [...prev.filter(m => !m.isError), assistantMessage]);
                 } catch (error: any) {
                   const errorMessage: Message = {
                     id: (Date.now() + 1).toString(),
@@ -384,7 +377,7 @@ const HomeScreen: React.FC = () => {
                     isError: true,
                     lastUserMessage,
                   };
-                  setMessages(prev => [...prev, errorMessage]);
+                  setMessages(prev => [...prev.filter(m => !m.isError), errorMessage]);
                 } finally {
                   setIsLoading(false);
                   setLoadingStatus('');

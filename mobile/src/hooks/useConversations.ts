@@ -4,6 +4,12 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const STORAGE_KEY = 'travel_conversations';
 const MAX_CONVERSATIONS = 20;
 
+export interface PhotoReference {
+  keyword: string;
+  url: string;
+  caption?: string;
+}
+
 export interface Message {
   id: string;
   type: 'user' | 'assistant';
@@ -11,6 +17,7 @@ export interface Message {
   timestamp: Date;
   isError?: boolean;
   lastUserMessage?: string; // For retry functionality
+  photos?: PhotoReference[]; // Photos associated with this message
 }
 
 export interface SavedConversation {

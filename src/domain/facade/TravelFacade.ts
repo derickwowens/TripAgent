@@ -283,6 +283,7 @@ export class TravelFacade {
         entranceFee: park.entranceFee,
         states: park.states.join(', '),
         url: park.url,
+        images: park.images?.slice(0, 3) || [],
       } : {
         name: parkName,
         description: 'Park details unavailable - set NPS_API_KEY for full details',
@@ -302,6 +303,7 @@ export class TravelFacade {
           sites: c.totalSites,
           fees: c.fees,
           reservationUrl: c.reservationUrl,
+          images: c.images?.slice(0, 2) || [],
         })),
         note: 'For hotels/Airbnb, search lodging near: ' + (park?.address || parkStates),
       },
@@ -309,6 +311,7 @@ export class TravelFacade {
         title: a.title,
         duration: a.duration,
         requiresReservation: a.requiresReservation,
+        images: a.images?.slice(0, 2) || [],
       })),
       hikes: hikes.map(h => ({
         name: h.name,

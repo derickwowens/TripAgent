@@ -21,6 +21,12 @@ interface ChatMessage {
   content: string;
 }
 
+interface PhotoReference {
+  keyword: string;
+  url: string;
+  caption?: string;
+}
+
 interface ChatContext {
   userLocation?: {
     city: string;
@@ -98,6 +104,13 @@ HANDLING MISSING DATA:
 - NEVER skip the cost summary - always provide your best estimate with clear labels like "~" or "(est.)"
 - Include a note: "⚠️ Some prices are estimates - click booking links for current rates"
 
+IMPORTANT - MENTIONING LOCATIONS BY NAME:
+When discussing parks, campgrounds, and activities, ALWAYS mention them by their full official name at least once in your response. This helps users identify and research these locations. For example:
+- Say "Great Smoky Mountains National Park" not just "the Smokies"
+- Say "Elkmont Campground" not just "the campground"
+- Say "Alum Cave Trail" not just "a popular trail"
+This ensures users can easily look up and recognize these destinations.
+
 You have access to real-time data through tools. When you receive tool results, incorporate the ACTUAL PRICES naturally into your response.
 
 IMPORTANT - BOOKING LINKS (use EXACT formats below, replacing values):
@@ -125,8 +138,15 @@ Keep responses concise - mobile users prefer shorter messages. Use line breaks f
 
 const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
 
+interface ChatResponse {
+  response: string;
+  photos?: PhotoReference[];
+}
+
 export async function createChatHandler(facade: TravelFacade) {
-  return async (messages: ChatMessage[], context: ChatContext, model?: string): Promise<string> => {
+  return async (messages: ChatMessage[], context: ChatContext, model?: string): Promise<ChatResponse> => {
+    // Collect photos from tool results
+    const collectedPhotos: PhotoReference[] = [];
     const selectedModel = model || DEFAULT_MODEL;
     if (!process.env.ANTHROPIC_API_KEY) {
       throw new Error('ANTHROPIC_API_KEY not configured');
@@ -255,6 +275,16 @@ export async function createChatHandler(facade: TravelFacade) {
             switch (toolUse.name) {
               case 'search_national_parks':
                 const parks = await facade.searchNationalParks((toolUse.input as any).query);
+                // Collect photos from park results
+                parks.slice(0, 3).forEach(park => {
+                  if (park.images && park.images.length > 0) {
+                    collectedPhotos.push({
+                      keyword: park.name,
+                      url: park.images[0],
+                      caption: `${park.name} - National Park`
+                    });
+                  }
+                });
                 result = { parks: parks.slice(0, 3) };
                 break;
 
@@ -267,6 +297,50 @@ export async function createChatHandler(facade: TravelFacade) {
                   departureDate: input.departure_date,
                   adults: input.adults || 1,
                 });
+                
+                // Collect photos from park
+                if (result.park?.images && result.park.images.length > 0) {
+                  collectedPhotos.push({
+                    keyword: result.park.name,
+                    url: result.park.images[0],
+                    caption: `${result.park.name} - National Park`
+                  });
+                  // Add shorter keyword variation
+                  const shortName = result.park.name.replace(' National Park', '');
+                  if (shortName !== result.park.name) {
+                    collectedPhotos.push({
+                      keyword: shortName,
+                      url: result.park.images[0],
+                      caption: result.park.name
+                    });
+                  }
+                }
+                
+                // Collect photos from activities
+                if (result.activities) {
+                  result.activities.forEach((activity: any) => {
+                    if (activity.images && activity.images.length > 0) {
+                      collectedPhotos.push({
+                        keyword: activity.title,
+                        url: activity.images[0].url || activity.images[0],
+                        caption: activity.images[0].caption || activity.title
+                      });
+                    }
+                  });
+                }
+                
+                // Collect photos from campgrounds
+                if (result.lodging?.campgrounds) {
+                  result.lodging.campgrounds.forEach((camp: any) => {
+                    if (camp.images && camp.images.length > 0) {
+                      collectedPhotos.push({
+                        keyword: camp.name,
+                        url: camp.images[0].url || camp.images[0],
+                        caption: camp.images[0].caption || camp.name
+                      });
+                    }
+                  });
+                }
                 break;
 
               case 'get_park_hikes':
@@ -348,13 +422,24 @@ export async function createChatHandler(facade: TravelFacade) {
 
       const rawResponse = textBlocks.map(b => b.text).join('\n');
       
+      // Log collected photos for debugging
+      if (collectedPhotos.length > 0) {
+        console.log('[Chat] Collected photos:', collectedPhotos.map(p => ({ keyword: p.keyword, url: p.url.substring(0, 50) + '...' })));
+      }
+      
       // Validate and fix any broken links in the response
       try {
         const validatedResponse = await validateLinksInResponse(rawResponse);
-        return validatedResponse;
+        return { 
+          response: validatedResponse, 
+          photos: collectedPhotos.length > 0 ? collectedPhotos : undefined 
+        };
       } catch (linkError) {
         console.warn('[Chat] Link validation failed, returning raw response:', linkError);
-        return rawResponse;
+        return { 
+          response: rawResponse, 
+          photos: collectedPhotos.length > 0 ? collectedPhotos : undefined 
+        };
       }
     } catch (error: any) {
       console.error('Claude API error:', error);

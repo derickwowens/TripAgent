@@ -1,4 +1,6 @@
 export { WelcomeScreen, ConsiderationsHint } from './WelcomeScreen';
+export { ImageModal } from './ImageModal';
+export { PhotoGallery } from './PhotoGallery';
 export { ChatMessages } from './ChatMessages';
 export { ChatInput } from './ChatInput';
 export { SideMenu } from './SideMenu';
