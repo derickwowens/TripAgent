@@ -32,6 +32,7 @@ interface SideMenuProps {
   onDeleteConversation: (id: string) => void;
   onNewConversation: () => void;
   onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
+  onToggleFavorite?: (id: string) => void;
 }
 
 export const SideMenu: React.FC<SideMenuProps> = ({
@@ -46,6 +47,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onDeleteConversation,
   onNewConversation,
   onUpdateConversation,
+  onToggleFavorite,
 }) => {
   const { isDarkMode } = useDarkModeContext();
   
@@ -110,6 +112,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               onLoadConversation={handleLoadConversation}
               onDeleteConversation={onDeleteConversation}
               onUpdateConversation={onUpdateConversation}
+              onToggleFavorite={onToggleFavorite}
             />
 
             <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>

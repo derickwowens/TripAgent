@@ -34,6 +34,7 @@ export interface SavedConversation {
     summary?: string;
     createdAt: string;
     updatedAt: string;
+    favorite?: boolean;
   };
 }
 
@@ -220,6 +221,27 @@ export const useConversations = (nearestAirport?: string) => {
     setMessages(prev => [...prev, message]);
   };
 
+  const toggleFavorite = async (id: string) => {
+    try {
+      const updated = savedConversations.map(c => {
+        if (c.id === id) {
+          return {
+            ...c,
+            metadata: {
+              ...c.metadata,
+              favorite: !c.metadata.favorite,
+            },
+          };
+        }
+        return c;
+      });
+      await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(updated));
+      setSavedConversations(updated);
+    } catch (error) {
+      console.error('Failed to toggle favorite:', error);
+    }
+  };
+
   return {
     messages,
     setMessages,
@@ -229,6 +251,7 @@ export const useConversations = (nearestAirport?: string) => {
     startNewConversation,
     deleteConversation,
     updateConversation,
+    toggleFavorite,
     addMessage,
   };
 };

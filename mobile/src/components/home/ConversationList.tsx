@@ -8,6 +8,7 @@ interface ConversationListProps {
   onLoadConversation: (conversation: SavedConversation) => void;
   onDeleteConversation: (id: string) => void;
   onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
+  onToggleFavorite?: (id: string) => void;
 }
 
 const formatDate = (dateString: string) => {
@@ -38,6 +39,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   onLoadConversation,
   onDeleteConversation,
   onUpdateConversation,
+  onToggleFavorite,
 }) => {
   const { isDarkMode } = useDarkModeContext();
   const [editModalVisible, setEditModalVisible] = useState(false);
@@ -46,11 +48,15 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   const [editDescription, setEditDescription] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
 
-  // Sort by last updated and filter by search (title, destination, description, AND message content)
+  // Sort by favorites first, then by last updated
   const filteredConversations = useMemo(() => {
-    let sorted = [...conversations].sort((a, b) => 
-      new Date(b.metadata.updatedAt).getTime() - new Date(a.metadata.updatedAt).getTime()
-    );
+    let sorted = [...conversations].sort((a, b) => {
+      // Favorites first
+      if (a.metadata.favorite && !b.metadata.favorite) return -1;
+      if (!a.metadata.favorite && b.metadata.favorite) return 1;
+      // Then by last updated
+      return new Date(b.metadata.updatedAt).getTime() - new Date(a.metadata.updatedAt).getTime();
+    });
     
     if (searchQuery.trim()) {
       const query = searchQuery.toLowerCase();
@@ -140,7 +146,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                   </Text>
                 </View>
                 <View style={styles.dateRow}>
-                  <Text style={styles.date}>{formatDate(conv.metadata.updatedAt)}</Text>
+                  <Text style={styles.date}>{formatDate(conv.metadata.createdAt)}</Text>
                 </View>
                 {conv.metadata.description ? (
                   <Text style={styles.description} numberOfLines={1}>
@@ -161,6 +167,16 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                 )}
               </TouchableOpacity>
               <View style={styles.actions}>
+                {onToggleFavorite && (
+                  <TouchableOpacity
+                    style={[styles.actionBadge, conv.metadata.favorite && styles.favoriteBadge]}
+                    onPress={() => onToggleFavorite(conv.id)}
+                  >
+                    <Text style={[styles.actionIcon, styles.favoriteIcon, conv.metadata.favorite && styles.favoriteIconActive]}>
+                      {conv.metadata.favorite ? '★' : '☆'}
+                    </Text>
+                  </TouchableOpacity>
+                )}
                 <TouchableOpacity
                   style={[styles.actionBadge, isDarkMode && styles.actionBadgeDark]}
                   onPress={() => openEditModal(conv)}
@@ -412,6 +428,16 @@ const styles = StyleSheet.create({
   deleteIcon: {
     fontSize: 18,
     fontWeight: '300',
+  },
+  favoriteBadge: {
+    backgroundColor: 'rgba(234, 179, 8, 0.3)',
+  },
+  favoriteIcon: {
+    fontSize: 16,
+    color: 'rgba(255, 255, 255, 0.6)',
+  },
+  favoriteIconActive: {
+    color: '#F59E0B',
   },
   itemWithPhoto: {
     flex: 1,

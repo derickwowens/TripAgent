@@ -43,6 +43,7 @@ const HomeScreen: React.FC = () => {
     startNewConversation, 
     deleteConversation,
     updateConversation,
+    toggleFavorite,
     addMessage,
   } = useConversations(userLocation?.nearestAirport);
   const { 
@@ -554,6 +555,7 @@ const HomeScreen: React.FC = () => {
           onDeleteConversation={deleteConversation}
           onNewConversation={startNewConversation}
           onUpdateConversation={updateConversation}
+          onToggleFavorite={toggleFavorite}
         />
         </View>
       </ImageBackground>
