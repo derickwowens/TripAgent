@@ -1,6 +1,7 @@
 import Anthropic from '@anthropic-ai/sdk';
 import { TravelFacade } from '../domain/facade/TravelFacade.js';
 import { GoogleMapsAdapter } from '../providers/GoogleMapsAdapter.js';
+import { OpenChargeMapAdapter } from '../providers/OpenChargeMapAdapter.js';
 import { validateLinksInResponse } from '../utils/linkValidator.js';
 
 let anthropic: Anthropic | null = null;
@@ -126,12 +127,31 @@ ALWAYS use the get_driving_distance tool to get accurate drive times. NEVER esti
 - Hotel/lodging to attraction distances
 Include driving time when showing airport-to-park comparisons so users can factor in the drive.
 
-IMPORTANT - EV/ELECTRIC VEHICLE CONSIDERATIONS:
-If the user mentions Tesla, EV, electric vehicle, or similar in their profile:
-- Note that EV road trips require charging stops every 200-300 miles
-- Add 30-45 minutes per charging stop to estimated drive times
-- Recommend checking Tesla Supercharger or ChargePoint locations along the route
-- For long drives (4+ hours), factor in 1-2 charging stops
+IMPORTANT - ELECTRIC VEHICLE CONSIDERATIONS:
+Check the user profile for "Tesla" or "Other EV" to determine charging needs:
+
+**Tesla owners:**
+- Use search_ev_charging_stations with tesla_only=true to find Tesla Superchargers
+- Tesla Supercharger network is extensive and fast (150-250kW, ~20-30 min for 80%)
+- Range: ~250-350 miles per charge depending on model
+- Charging stops every 200-250 miles on road trips
+- Add 25-30 minutes per charging stop to drive times
+
+**Other EV owners (non-Tesla):**
+- Use search_ev_charging_stations to find all DC fast chargers (CCS/CHAdeMO)
+- Charging network less reliable - recommend having backup options
+- Typical DC fast charge: 50-150kW (~30-45 min for 80%)
+- Range varies widely: 150-300 miles depending on vehicle
+- Add 35-45 minutes per charging stop to drive times
+- Recommend apps like PlugShare or ChargePoint for real-time availability
+
+**For both:**
+- Use the search_ev_charging_stations tool for long drives (3+ hours)
+- Present charging stations clearly:
+  ⚡ Charging Stops Along Route
+  ---
+  • [Station Name] - [City, State] ([Operator], [Power]kW)
+- Factor roughly 1 charging stop per 200-250 miles into trip planning
 
 IMPORTANT - BUDGET SUMMARY:
 Always end trip plans with a clear cost breakdown and total estimate. ALWAYS provide a cost summary even if some data is missing - use estimates and clearly mark them.
@@ -337,6 +357,21 @@ export async function createChatHandler(facade: TravelFacade) {
           required: ['origin', 'destination'],
         },
       },
+      {
+        name: 'search_ev_charging_stations',
+        description: 'Search for EV charging stations (including Tesla Superchargers) along a route or near a location. Use this when the user has an EV/Tesla or mentions needing charging stops.',
+        input_schema: {
+          type: 'object' as const,
+          properties: {
+            origin_lat: { type: 'number', description: 'Origin latitude' },
+            origin_lng: { type: 'number', description: 'Origin longitude' },
+            dest_lat: { type: 'number', description: 'Destination latitude' },
+            dest_lng: { type: 'number', description: 'Destination longitude' },
+            tesla_only: { type: 'boolean', description: 'If true, only return Tesla Superchargers' },
+          },
+          required: ['origin_lat', 'origin_lng', 'dest_lat', 'dest_lng'],
+        },
+      },
     ];
 
     // Convert messages to Anthropic format
@@ -497,6 +532,34 @@ export async function createChatHandler(facade: TravelFacade) {
                   duration: distanceResult.duration.text,
                   status: distanceResult.status,
                 } : { error: 'Could not calculate driving distance' };
+                break;
+
+              case 'search_ev_charging_stations':
+                const evAdapter = new OpenChargeMapAdapter();
+                const evInput = toolUse.input as any;
+                const chargingStations = await evAdapter.searchAlongRoute(
+                  evInput.origin_lat,
+                  evInput.origin_lng,
+                  evInput.dest_lat,
+                  evInput.dest_lng,
+                  25, // corridor width in miles
+                  10  // max results
+                );
+                result = {
+                  stations: chargingStations.map(s => ({
+                    name: s.name,
+                    location: `${s.city}, ${s.state}`,
+                    operator: s.operator,
+                    powerKW: s.powerKW,
+                    numChargers: s.numPoints,
+                    isTesla: s.isTeslaSupercharger,
+                    isFastCharger: s.isFastCharger,
+                    cost: s.usageCost,
+                  })),
+                  note: chargingStations.length > 0 
+                    ? `Found ${chargingStations.length} DC fast charging stations along your route`
+                    : 'No charging stations found along this route',
+                };
                 break;
 
               default:

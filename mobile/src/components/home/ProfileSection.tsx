@@ -4,7 +4,7 @@ import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable }
 // Define mutually exclusive groups
 const EXCLUSIVE_GROUPS = {
   gender: ['Male', 'Female'],
-  vehicle: ['Gas vehicle', 'Tesla/EV'],
+  vehicle: ['Gas vehicle', 'Tesla', 'Other EV'],
   climate: ['Warm destinations', 'Cold destinations'],
   airline: ['Delta', 'Southwest', 'United', 'American', 'JetBlue', 'Alaska'],
   carRental: ['Hertz', 'Enterprise', 'National', 'Budget'],
@@ -22,7 +22,8 @@ const PROFILE_SUGGESTIONS = [
   'Kids 13+',
   // Vehicle (mutually exclusive)
   'Gas vehicle',
-  'Tesla/EV',
+  'Tesla',
+  'Other EV',
   // Climate preference (mutually exclusive)
   'Warm destinations',
   'Cold destinations',
