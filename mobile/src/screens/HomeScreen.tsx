@@ -11,6 +11,7 @@ import {
   Text,
   Alert,
   Image,
+  TextInput,
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, Message, SavedConversation } from '../hooks';
@@ -28,6 +29,8 @@ const HomeScreen: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [loadingStatus, setLoadingStatus] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
+  const [editingTitle, setEditingTitle] = useState(false);
+  const [tempTitle, setTempTitle] = useState('');
   const scrollViewRef = useRef<ScrollView>(null);
 
   const { userLocation, locationLoading } = useLocation();
@@ -45,7 +48,8 @@ const HomeScreen: React.FC = () => {
   const { 
     userProfile, 
     profileExpanded, 
-    saveProfile, 
+    updateProfile, 
+    persistProfile,
     addSuggestion, 
     toggleExpanded 
   } = useUserProfile();
@@ -390,9 +394,40 @@ const HomeScreen: React.FC = () => {
           if (currentConv && (currentConv.metadata.title || currentConv.metadata.destination)) {
             return (
               <View style={styles.conversationHeader}>
-                <Text style={styles.conversationTitle} numberOfLines={1}>
-                  {currentConv.metadata.title || currentConv.metadata.destination}
-                </Text>
+                {editingTitle ? (
+                  <TextInput
+                    style={styles.conversationTitleInput}
+                    value={tempTitle}
+                    onChangeText={setTempTitle}
+                    onBlur={() => {
+                      if (tempTitle.trim()) {
+                        updateConversation(currentConversationId, { title: tempTitle.trim() });
+                      }
+                      setEditingTitle(false);
+                    }}
+                    onSubmitEditing={() => {
+                      if (tempTitle.trim()) {
+                        updateConversation(currentConversationId, { title: tempTitle.trim() });
+                      }
+                      setEditingTitle(false);
+                    }}
+                    autoFocus
+                    maxLength={50}
+                    returnKeyType="done"
+                    placeholderTextColor="rgba(255,255,255,0.5)"
+                  />
+                ) : (
+                  <TouchableOpacity
+                    onPress={() => {
+                      setTempTitle(currentConv.metadata.title || currentConv.metadata.destination || '');
+                      setEditingTitle(true);
+                    }}
+                  >
+                    <Text style={styles.conversationTitle} numberOfLines={1}>
+                      {currentConv.metadata.title || currentConv.metadata.destination}
+                    </Text>
+                  </TouchableOpacity>
+                )}
                 {currentConv.metadata.description && (
                   <Text style={styles.conversationDescription} numberOfLines={1}>
                     {currentConv.metadata.description}
@@ -506,9 +541,12 @@ const HomeScreen: React.FC = () => {
 
         <SideMenu
           visible={menuOpen}
-          onClose={() => setMenuOpen(false)}
+          onClose={() => {
+            persistProfile();
+            setMenuOpen(false);
+          }}
           userProfile={userProfile}
-          onSaveProfile={saveProfile}
+          onSaveProfile={updateProfile}
           onAddProfileSuggestion={addSuggestion}
           conversations={savedConversations}
           currentConversationId={currentConversationId}
@@ -585,6 +623,18 @@ const styles = StyleSheet.create({
     fontSize: 12,
     marginTop: 2,
     textAlign: 'center',
+  },
+  conversationTitleInput: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '600',
+    textAlign: 'center',
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    paddingHorizontal: 12,
+    paddingVertical: 4,
+    borderRadius: 8,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.3)',
   },
   container: {
     flex: 1,

@@ -47,6 +47,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onNewConversation,
   onUpdateConversation,
 }) => {
+  const { isDarkMode } = useDarkModeContext();
+  
   const handleLoadConversation = (conv: SavedConversation) => {
     onLoadConversation(conv);
     onClose();
@@ -181,7 +183,7 @@ const styles = StyleSheet.create({
   darkModeToggle: {
     padding: 8,
     borderRadius: 20,
-    backgroundColor: 'rgba(255,255,255,0.1)',
+    backgroundColor: 'rgba(22, 101, 52, 0.4)',
   },
   darkModeIcon: {
     fontSize: 18,
@@ -189,10 +191,10 @@ const styles = StyleSheet.create({
   feedbackButton: {
     paddingHorizontal: 12,
     paddingVertical: 6,
-    backgroundColor: 'rgba(255,255,255,0.1)',
+    backgroundColor: 'rgba(22, 101, 52, 0.4)',
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.15)',
+    borderColor: 'rgba(22, 101, 52, 0.5)',
   },
   feedbackText: {
     color: 'rgba(255,255,255,0.7)',
@@ -209,7 +211,7 @@ const styles = StyleSheet.create({
     margin: 16,
     paddingVertical: 10,
     paddingHorizontal: 16,
-    backgroundColor: '#166534',
+    backgroundColor: 'rgba(22, 101, 52, 0.9)',
     borderRadius: 10,
     gap: 8,
   },

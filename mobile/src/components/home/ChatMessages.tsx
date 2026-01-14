@@ -66,15 +66,17 @@ const parseMessageContent = (
 interface MessageContentProps {
   content: string;
   isUser: boolean;
+  isDarkMode?: boolean;
 }
 
-const MessageContent: React.FC<MessageContentProps> = ({ content, isUser }) => {
+const MessageContent: React.FC<MessageContentProps> = ({ content, isUser, isDarkMode }) => {
   const parts = parseMessageContent(content, isUser);
   
   return (
     <Text style={[
       styles.text, 
       isUser ? styles.userText : styles.assistantText,
+      isUser && isDarkMode && styles.userTextDark,
     ]}>
       {parts.map((part, index) => {
         if (part.type === 'link' && part.url) {
@@ -118,6 +120,7 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           <MessageContent 
             content={message.content} 
             isUser={message.type === 'user'}
+            isDarkMode={isDarkMode}
           />
           {message.isError && message.lastUserMessage && onRetry && (
             <TouchableOpacity 
@@ -158,7 +161,7 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 4,
   },
   userBubbleDark: {
-    backgroundColor: 'rgba(180, 185, 200, 0.85)',
+    backgroundColor: 'rgba(74, 160, 100, 0.95)',
   },
   assistantBubble: {
     alignSelf: 'flex-start',
@@ -166,7 +169,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 4,
   },
   assistantBubbleDark: {
-    backgroundColor: 'rgba(35, 75, 55, 0.9)',
+    backgroundColor: 'rgba(15, 45, 25, 0.95)',
   },
   text: {
     fontSize: 15,
@@ -174,6 +177,9 @@ const styles = StyleSheet.create({
   },
   userText: {
     color: '#1F2937',
+  },
+  userTextDark: {
+    color: '#FFFFFF',
   },
   assistantText: {
     color: '#FFFFFF',

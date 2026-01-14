@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const STORAGE_KEY = 'user_profile';
@@ -22,21 +22,25 @@ export const useUserProfile = () => {
     }
   };
 
-  const saveProfile = async (profile: string) => {
+  // Update local state only (no persistence)
+  const updateProfile = useCallback((profile: string) => {
+    setUserProfile(profile);
+  }, []);
+
+  // Persist to AsyncStorage (call when menu closes)
+  const persistProfile = useCallback(async () => {
     try {
-      await AsyncStorage.setItem(STORAGE_KEY, profile);
-      setUserProfile(profile);
+      await AsyncStorage.setItem(STORAGE_KEY, userProfile);
     } catch (error) {
       console.error('Failed to save user profile:', error);
     }
-  };
+  }, [userProfile]);
 
   const addSuggestion = (suggestion: string) => {
-    // Keep the emoji with the text for better readability
     const newProfile = userProfile 
       ? `${userProfile}, ${suggestion}`
       : suggestion;
-    saveProfile(newProfile);
+    updateProfile(newProfile);
   };
 
   const toggleExpanded = () => setProfileExpanded(!profileExpanded);
@@ -44,7 +48,8 @@ export const useUserProfile = () => {
   return {
     userProfile,
     profileExpanded,
-    saveProfile,
+    updateProfile,
+    persistProfile,
     addSuggestion,
     toggleExpanded,
   };

@@ -3,6 +3,8 @@ import { TravelFacade } from '../domain/facade/TravelFacade.js';
 import { GoogleMapsAdapter } from '../providers/GoogleMapsAdapter.js';
 import { OpenChargeMapAdapter } from '../providers/OpenChargeMapAdapter.js';
 import { validateLinksInResponse } from '../utils/linkValidator.js';
+import { findParkCode, getParkByCode } from '../utils/parkCodeLookup.js';
+import { getUnsplashAdapter } from '../providers/UnsplashAdapter.js';
 
 let anthropic: Anthropic | null = null;
 
@@ -26,6 +28,61 @@ interface PhotoReference {
   keyword: string;
   url: string;
   caption?: string;
+  confidence?: number; // 0-100 score for relevance
+}
+
+// Calculate confidence score for a photo based on how well it matches the trip context
+function calculatePhotoConfidence(
+  photo: { keyword: string; url: string; caption?: string },
+  tripDestination: string | undefined,
+  conversationText: string
+): number {
+  let score = 0;
+  const keyword = photo.keyword.toLowerCase();
+  const caption = (photo.caption || '').toLowerCase();
+  const destination = (tripDestination || '').toLowerCase();
+  const conversation = conversationText.toLowerCase();
+  
+  // Clean destination for matching (remove "national park" etc)
+  const cleanDest = destination
+    .replace('national park', '')
+    .replace('national', '')
+    .replace('park', '')
+    .trim();
+  
+  // CRITICAL: Photo keyword must contain destination name or vice versa
+  // This is the primary filter - without this match, score stays very low
+  const hasDestinationMatch = cleanDest.length > 2 && (
+    keyword.includes(cleanDest) || 
+    cleanDest.includes(keyword.split(' ')[0]) ||
+    caption.includes(cleanDest)
+  );
+  
+  if (hasDestinationMatch) {
+    score += 50; // Strong base for matching destination
+  }
+  
+  // Check if photo is from a trusted source (NPS, official)
+  const url = photo.url.toLowerCase();
+  const isTrustedSource = url.includes('nps.gov') || 
+                          url.includes('recreation.gov') ||
+                          url.includes('nationalpark');
+  if (isTrustedSource) score += 15; // Reduced from 30 - source alone isn't enough
+  
+  // Check if keyword/caption appears in conversation context
+  const keywordWords = keyword.split(' ').filter(w => w.length > 4);
+  const keywordInConversation = keywordWords.some(w => conversation.includes(w));
+  if (keywordInConversation) score += 20;
+  
+  // Check caption relevance to destination
+  if (caption && cleanDest.length > 2) {
+    if (caption.includes(cleanDest)) {
+      score += 15;
+    }
+  }
+  
+  // Cap at 100
+  return Math.min(100, score);
 }
 
 interface ChatContext {
@@ -263,6 +320,7 @@ export async function createChatHandler(facade: TravelFacade) {
   return async (messages: ChatMessage[], context: ChatContext, model?: string): Promise<ChatResponse> => {
     // Collect photos from tool results
     const collectedPhotos: PhotoReference[] = [];
+    let detectedDestination: string | undefined; // Track destination from tool calls
     const selectedModel = model || DEFAULT_MODEL;
     if (!process.env.ANTHROPIC_API_KEY) {
       throw new Error('ANTHROPIC_API_KEY not configured');
@@ -405,32 +463,135 @@ export async function createChatHandler(facade: TravelFacade) {
           try {
             switch (toolUse.name) {
               case 'search_national_parks':
-                const parks = await facade.searchNationalParks((toolUse.input as any).query);
-                // Collect photos from park results
-                parks.slice(0, 3).forEach(park => {
+                const rawQuery = (toolUse.input as any).query.toLowerCase();
+                
+                // Try to find park code from our lookup table first
+                const knownParkCode = findParkCode(rawQuery);
+                let parks;
+                let searchQuery: string;
+                
+                if (knownParkCode) {
+                  // Use park code for reliable direct lookup
+                  console.log(`[Chat] NPS search: "${rawQuery}" -> found park code "${knownParkCode}"`);
+                  const parkDetails = await facade.getParkDetails(knownParkCode);
+                  parks = parkDetails ? [parkDetails.park] : await facade.searchNationalParks(knownParkCode);
+                  searchQuery = knownParkCode;
+                } else {
+                  // Fall back to keyword search
+                  searchQuery = rawQuery
+                    .replace(/national park/gi, '')
+                    .replace(/national/gi, '')
+                    .replace(/park/gi, '')
+                    .trim();
+                  console.log(`[Chat] NPS search: "${rawQuery}" -> keyword search "${searchQuery}"`);
+                  parks = await facade.searchNationalParks(searchQuery);
+                }
+                
+                // Filter parks to match original query
+                const cleanQuery = rawQuery
+                  .replace(/national park/gi, '')
+                  .replace(/national/gi, '')
+                  .replace(/park/gi, '')
+                  .trim()
+                  .toLowerCase();
+                
+                const relevantParks = parks.filter(park => {
+                  const parkNameLower = park.name.toLowerCase();
+                  const parkCodeLower = park.parkCode.toLowerCase();
+                  
+                  // Strip common suffixes from park name
+                  const coreName = parkNameLower
+                    .replace(/ national park$/i, '')
+                    .replace(/ national historical park$/i, '')
+                    .replace(/ national historic site$/i, '')
+                    .replace(/ national monument$/i, '')
+                    .replace(/ national recreation area$/i, '')
+                    .trim();
+                  
+                  // Direct matches - any of these should pass
+                  if (parkCodeLower === cleanQuery) return true;
+                  if (coreName === cleanQuery) return true;
+                  if (cleanQuery.length >= 3 && coreName.includes(cleanQuery)) return true;
+                  if (coreName.length >= 3 && cleanQuery.includes(coreName)) return true;
+                  if (cleanQuery.length >= 3 && parkNameLower.includes(cleanQuery)) return true;
+                  
+                  // Word-based matching for multi-word queries
+                  const searchWords = cleanQuery.split(/\s+/).filter((w: string) => w.length >= 3);
+                  if (searchWords.length > 0) {
+                    const hasMatch = searchWords.some((sw: string) => 
+                      coreName.includes(sw) || parkNameLower.includes(sw)
+                    );
+                    if (hasMatch) return true;
+                  }
+                  
+                  return false;
+                });
+                
+                console.log(`[Chat] Park filter: query="${searchQuery}" -> clean="${cleanQuery}", found=${parks.length}, relevant=${relevantParks.map(p => p.parkCode).join(', ') || 'none'}`);
+                
+                // Use relevant parks if found, otherwise just use first park
+                const parksForPhotos = relevantParks.length > 0 ? relevantParks.slice(0, 2) : parks.slice(0, 1);
+                
+                // Track destination for confidence scoring
+                if (parksForPhotos.length > 0) {
+                  detectedDestination = parksForPhotos[0].name;
+                }
+                
+                const TARGET_PHOTOS = 8; // Target 8 photos for good UX
+                
+                parksForPhotos.forEach(park => {
                   if (park.images && park.images.length > 0) {
-                    // Great Smoky Mountains has known photo quality issues after first 2
+                    // Great Smoky Mountains - use known good NPS photo URLs
                     const isSmokies = park.parkCode === 'grsm' || park.name.toLowerCase().includes('smoky');
-                    const maxPhotos = isSmokies ? 2 : 3;
                     
-                    park.images.slice(0, maxPhotos).forEach((imageUrl: string, idx: number) => {
-                      collectedPhotos.push({
-                        keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
-                        url: imageUrl,
-                        caption: `${park.name} - National Park`
+                    if (isSmokies) {
+                      // Use verified working NPS photos for Great Smoky Mountains
+                      const smokiesPhotos = [
+                        'https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg',
+                        'https://www.nps.gov/common/uploads/structured_data/3C80E4A2-1DD8-B71B-0B92311ED9BAC3D0.jpg',
+                      ];
+                      smokiesPhotos.forEach((url, idx) => {
+                        collectedPhotos.push({
+                          keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
+                          url: url,
+                          caption: `${park.name} - National Park`
+                        });
                       });
-                    });
-                    // Also add short name variation for first image
-                    const shortName = park.name.replace(' National Park', '');
-                    if (shortName !== park.name) {
-                      collectedPhotos.push({
-                        keyword: shortName,
-                        url: park.images[0],
-                        caption: park.name
+                    } else {
+                      // Get ALL NPS photos first (up to 8 to match target)
+                      const npsPhotos = park.images.slice(0, TARGET_PHOTOS);
+                      npsPhotos.forEach((imageUrl: string, idx: number) => {
+                        collectedPhotos.push({
+                          keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
+                          url: imageUrl,
+                          caption: `${park.name} - National Park`
+                        });
                       });
                     }
                   }
                 });
+                
+                console.log(`[Chat] Park search: collecting ${collectedPhotos.length} NPS photos from ${parksForPhotos.map(p => p.parkCode).join(', ')}`);
+                
+                // Supplement with Unsplash to reach target of 8 photos
+                if (collectedPhotos.length < TARGET_PHOTOS && parksForPhotos.length > 0) {
+                  const unsplash = getUnsplashAdapter();
+                  if (unsplash.isConfigured()) {
+                    const parkName = parksForPhotos[0].name.replace(' National Park', '').replace(' National', '');
+                    const needed = TARGET_PHOTOS - collectedPhotos.length;
+                    console.log(`[Chat] Fetching ${needed} Unsplash photos for "${parkName}"`);
+                    const unsplashPhotos = await unsplash.searchPhotos(`${parkName} landscape nature`, needed);
+                    unsplashPhotos.forEach(photo => {
+                      collectedPhotos.push({
+                        keyword: parkName,
+                        url: photo.url,
+                        caption: `${photo.caption} (${photo.credit})`
+                      });
+                    });
+                    console.log(`[Chat] Added ${unsplashPhotos.length} Unsplash photos, total: ${collectedPhotos.length}`);
+                  }
+                }
+                
                 result = { parks: parks.slice(0, 3) };
                 break;
 
@@ -446,23 +607,40 @@ export async function createChatHandler(facade: TravelFacade) {
                 
                 // Collect photos from park
                 if (result.park?.images && result.park.images.length > 0) {
-                  // Great Smoky Mountains has known photo quality issues after first 2
+                  // Great Smoky Mountains - use known good NPS photo URLs
                   const isSmokies = input.park_code === 'grsm' || result.park.name.toLowerCase().includes('smoky');
-                  const maxPhotos = isSmokies ? 2 : 3;
                   
-                  result.park.images.slice(0, maxPhotos).forEach((imageUrl: string, idx: number) => {
-                    collectedPhotos.push({
-                      keyword: idx === 0 ? result.park.name : `${result.park.name} photo ${idx + 1}`,
-                      url: imageUrl,
-                      caption: `${result.park.name} - National Park`
+                  if (isSmokies) {
+                    // Use verified working NPS photos for Great Smoky Mountains
+                    const smokiesPhotos = [
+                      'https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg',
+                      'https://www.nps.gov/common/uploads/structured_data/3C80E4A2-1DD8-B71B-0B92311ED9BAC3D0.jpg',
+                    ];
+                    smokiesPhotos.forEach((url, idx) => {
+                      collectedPhotos.push({
+                        keyword: idx === 0 ? result.park.name : `${result.park.name} photo ${idx + 1}`,
+                        url: url,
+                        caption: `${result.park.name} - National Park`
+                      });
                     });
-                  });
+                  } else {
+                    result.park.images.slice(0, 3).forEach((imageUrl: string, idx: number) => {
+                      collectedPhotos.push({
+                        keyword: idx === 0 ? result.park.name : `${result.park.name} photo ${idx + 1}`,
+                        url: imageUrl,
+                        caption: `${result.park.name} - National Park`
+                      });
+                    });
+                  }
                   // Add shorter keyword variation for first image
                   const shortName = result.park.name.replace(' National Park', '');
                   if (shortName !== result.park.name) {
+                    const firstUrl = isSmokies 
+                      ? 'https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg'
+                      : result.park.images[0];
                     collectedPhotos.push({
                       keyword: shortName,
-                      url: result.park.images[0],
+                      url: firstUrl,
                       caption: result.park.name
                     });
                   }
@@ -605,10 +783,30 @@ export async function createChatHandler(facade: TravelFacade) {
       // Post-process response to clean up formatting artifacts
       const cleanedResponse = cleanResponseFormatting(rawResponse);
       
+      // Build conversation text for confidence scoring
+      const conversationText = messages.map(m => m.content).join(' ') + ' ' + cleanedResponse;
+      // Use detected destination from tool calls, or fall back to context
+      const tripDestination = detectedDestination || context.tripContext?.destination;
+      console.log(`[Chat] Confidence scoring with destination: "${tripDestination || 'none'}"`)
+      
+      // Calculate confidence scores and filter photos (60% threshold)
+      const CONFIDENCE_THRESHOLD = 60;
+      const scoredPhotos = collectedPhotos.map(photo => ({
+        ...photo,
+        confidence: calculatePhotoConfidence(photo, tripDestination, conversationText)
+      }));
+      
+      const filteredPhotos = scoredPhotos.filter(p => p.confidence! >= CONFIDENCE_THRESHOLD);
+      
       // Log for debugging
       console.log(`[Chat] Raw response length: ${rawResponse.length}, Cleaned: ${cleanedResponse.length}`);
-      if (collectedPhotos.length > 0) {
-        console.log('[Chat] Collected photos:', collectedPhotos.map(p => ({ keyword: p.keyword, url: p.url.substring(0, 50) + '...' })));
+      if (scoredPhotos.length > 0) {
+        console.log('[Chat] Photo confidence scores:', scoredPhotos.map(p => ({ 
+          keyword: p.keyword, 
+          confidence: p.confidence,
+          included: p.confidence! >= CONFIDENCE_THRESHOLD
+        })));
+        console.log(`[Chat] Filtered ${scoredPhotos.length - filteredPhotos.length} low-confidence photos (threshold: ${CONFIDENCE_THRESHOLD}%)`);
       } else {
         console.log('[Chat] No photos collected from tool results');
       }
@@ -616,16 +814,16 @@ export async function createChatHandler(facade: TravelFacade) {
       // Validate and fix any broken links in the response
       try {
         const validatedResponse = await validateLinksInResponse(cleanedResponse);
-        console.log(`[Chat] Returning response with ${collectedPhotos.length} photos`);
+        console.log(`[Chat] Returning response with ${filteredPhotos.length} photos`);
         return { 
           response: validatedResponse, 
-          photos: collectedPhotos.length > 0 ? collectedPhotos : undefined 
+          photos: filteredPhotos.length > 0 ? filteredPhotos : undefined 
         };
       } catch (linkError) {
         console.warn('[Chat] Link validation failed, returning cleaned response:', linkError);
         return { 
           response: cleanedResponse, 
-          photos: collectedPhotos.length > 0 ? collectedPhotos : undefined 
+          photos: filteredPhotos.length > 0 ? filteredPhotos : undefined 
         };
       }
     } catch (error: any) {

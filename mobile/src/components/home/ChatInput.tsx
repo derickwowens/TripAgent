@@ -129,16 +129,9 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        style={[styles.micButton, isListening && styles.micButtonActive]}
-        onPress={toggleListening}
-        disabled={isLoading}
-      >
-        <Text style={styles.micButtonText}>{isListening ? '⏹' : '🎤'}</Text>
-      </TouchableOpacity>
       <TextInput
         style={styles.input}
-        placeholder={isListening ? "Listening..." : "Ask about parks, flights, or trips..."}
+        placeholder="Ask about parks, flights, or trips..."
         placeholderTextColor="rgba(255,255,255,0.6)"
         value={inputText}
         onChangeText={handleChangeText}
@@ -199,22 +192,5 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: '600',
     transform: [{ translateY: -2 }],
-  },
-  micButton: {
-    width: 44,
-    height: 44,
-    borderRadius: 22,
-    backgroundColor: 'rgba(255,255,255,0.15)',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.2)',
-  },
-  micButtonActive: {
-    backgroundColor: '#dc2626',
-    borderColor: '#dc2626',
-  },
-  micButtonText: {
-    fontSize: 20,
   },
 });

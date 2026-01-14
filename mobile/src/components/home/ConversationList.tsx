@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal, KeyboardAvoidingView, Platform, ScrollView, ImageBackground } from 'react-native';
-import { SavedConversation } from '../../hooks';
+import { SavedConversation, useDarkModeContext } from '../../hooks';
 
 interface ConversationListProps {
   conversations: SavedConversation[];
@@ -39,6 +39,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   onDeleteConversation,
   onUpdateConversation,
 }) => {
+  const { isDarkMode } = useDarkModeContext();
   const [editModalVisible, setEditModalVisible] = useState(false);
   const [editingConv, setEditingConv] = useState<SavedConversation | null>(null);
   const [editTitle, setEditTitle] = useState('');
@@ -161,13 +162,13 @@ export const ConversationList: React.FC<ConversationListProps> = ({
               </TouchableOpacity>
               <View style={styles.actions}>
                 <TouchableOpacity
-                  style={styles.actionBadge}
+                  style={[styles.actionBadge, isDarkMode && styles.actionBadgeDark]}
                   onPress={() => openEditModal(conv)}
                 >
                   <Text style={styles.actionIcon}>•••</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                  style={[styles.actionBadge, styles.deleteBadge]}
+                  style={[styles.actionBadge, styles.deleteBadge, isDarkMode && styles.deleteBadgeDark]}
                   onPress={() => onDeleteConversation(conv.id)}
                 >
                   <Text style={[styles.actionIcon, styles.deleteIcon]}>×</Text>
@@ -358,6 +359,7 @@ const styles = StyleSheet.create({
   },
   actions: {
     flexDirection: 'column',
+    justifyContent: 'center',
     paddingRight: 8,
     gap: 4,
   },
@@ -393,8 +395,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  actionBadgeDark: {
+    backgroundColor: 'rgba(74, 160, 100, 0.6)',
+  },
   deleteBadge: {
     backgroundColor: 'rgba(22, 101, 52, 0.25)',
+  },
+  deleteBadgeDark: {
+    backgroundColor: 'rgba(15, 45, 25, 0.7)',
   },
   actionIcon: {
     fontSize: 12,

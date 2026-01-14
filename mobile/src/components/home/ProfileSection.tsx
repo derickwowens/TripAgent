@@ -116,7 +116,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   return (
     <View style={styles.container}>
       <View style={styles.titleRow}>
-        <Text style={styles.title}>👤 Your Profile</Text>
+        <Text style={styles.title}>Traveler Profile</Text>
         <TouchableOpacity onPress={() => setPrivacyModalVisible(true)} style={styles.infoButton}>
           <Text style={styles.infoIcon}>ⓘ</Text>
         </TouchableOpacity>
@@ -235,7 +235,7 @@ const styles = StyleSheet.create({
     gap: 4,
   },
   suggestionChip: {
-    backgroundColor: 'rgba(255,255,255,0.08)',
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
     paddingHorizontal: 8,
     paddingVertical: 4,
     borderRadius: 12,
