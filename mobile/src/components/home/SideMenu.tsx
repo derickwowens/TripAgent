@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image } from 'react-native';
 import { ProfileSection } from './ProfileSection';
-import { ModelSelector } from './ModelSelector';
 import { ConversationList } from './ConversationList';
 import { SavedConversation } from '../../hooks';
 
@@ -13,8 +12,6 @@ interface SideMenuProps {
   userProfile: string;
   onSaveProfile: (profile: string) => void;
   onAddProfileSuggestion: (suggestion: string) => void;
-  selectedModel: string;
-  onSelectModel: (modelId: string) => void;
   conversations: SavedConversation[];
   currentConversationId: string | null;
   onLoadConversation: (conversation: SavedConversation) => void;
@@ -29,8 +26,6 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   userProfile,
   onSaveProfile,
   onAddProfileSuggestion,
-  selectedModel,
-  onSelectModel,
   conversations,
   currentConversationId,
   onLoadConversation,
@@ -59,12 +54,20 @@ export const SideMenu: React.FC<SideMenuProps> = ({
         <View style={styles.menu}>
           {/* Fixed Header */}
           <View style={styles.header}>
-            <Image 
-              source={require('../../../assets/icon.png')} 
-              style={styles.logo}
-              resizeMode="contain"
-            />
-            <TouchableOpacity onPress={onClose}>
+            <View style={styles.headerLeft}>
+              <Image 
+                source={require('../../../assets/icon.png')} 
+                style={styles.logo}
+                resizeMode="contain"
+              />
+              <TouchableOpacity 
+                style={styles.feedbackButton} 
+                onPress={() => Linking.openURL('https://travel-buddy-api-production.up.railway.app/public/survey.html')}
+              >
+                <Text style={styles.feedbackText}>Feedback</Text>
+              </TouchableOpacity>
+            </View>
+            <TouchableOpacity onPress={onClose} style={styles.closeButtonContainer}>
               <Text style={styles.closeButton}>✕</Text>
             </TouchableOpacity>
           </View>
@@ -82,11 +85,6 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               onAddSuggestion={onAddProfileSuggestion}
             />
 
-            <ModelSelector
-              selectedModel={selectedModel}
-              onSelectModel={onSelectModel}
-            />
-
             <ConversationList
               conversations={conversations}
               currentConversationId={currentConversationId}
@@ -96,14 +94,12 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             />
 
             <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>
-              <Text style={styles.newChatText}>+ New Conversation</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity 
-              style={styles.surveyButton} 
-              onPress={() => Linking.openURL('https://travel-buddy-api-production.up.railway.app/public/survey.html')}
-            >
-              <Text style={styles.surveyText}>📝 Send Feedback</Text>
+              <Image 
+                source={require('../../../assets/icon.png')} 
+                style={styles.newChatIcon}
+                resizeMode="contain"
+              />
+              <Text style={styles.newChatText}>New Trip</Text>
             </TouchableOpacity>
           </ScrollView>
         </View>
@@ -155,31 +151,46 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: 'rgba(255,255,255,0.7)',
   },
-  newChatButton: {
-    margin: 16,
-    padding: 14,
-    backgroundColor: '#166534',
-    borderRadius: 12,
+  headerLeft: {
+    flexDirection: 'row',
     alignItems: 'center',
+    gap: 12,
+  },
+  feedbackButton: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.15)',
+  },
+  feedbackText: {
+    color: 'rgba(255,255,255,0.7)',
+    fontSize: 12,
+    fontWeight: '500',
+  },
+  closeButtonContainer: {
+    padding: 4,
+  },
+  newChatButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    margin: 16,
+    paddingVertical: 10,
+    paddingHorizontal: 16,
+    backgroundColor: '#166534',
+    borderRadius: 10,
+    gap: 8,
+  },
+  newChatIcon: {
+    width: 20,
+    height: 20,
+    borderRadius: 4,
   },
   newChatText: {
     color: '#FFFFFF',
-    fontSize: 16,
-    fontWeight: '600',
-  },
-  surveyButton: {
-    marginHorizontal: 16,
-    marginBottom: 16,
-    padding: 14,
-    backgroundColor: 'rgba(255,255,255,0.1)',
-    borderRadius: 12,
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'rgba(255,255,255,0.2)',
-  },
-  surveyText: {
-    color: 'rgba(255,255,255,0.8)',
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: '600',
   },
 });

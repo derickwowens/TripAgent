@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal, KeyboardAvoidingView, Platform, ScrollView, ImageBackground } from 'react-native';
 import { SavedConversation } from '../../hooks';
 
 interface ConversationListProps {
@@ -91,8 +91,18 @@ export const ConversationList: React.FC<ConversationListProps> = ({
 
   const getDisplayTitle = (conv: SavedConversation) => {
     if (conv.metadata.title) return conv.metadata.title;
-    if (conv.metadata.destination) return `🏞️ ${conv.metadata.destination}`;
-    return '💬 Trip Planning';
+    if (conv.metadata.destination) return conv.metadata.destination;
+    return 'Trip Planning';
+  };
+
+  // Get first photo URL from conversation messages
+  const getConversationPhoto = (conv: SavedConversation): string | null => {
+    for (const msg of conv.messages) {
+      if (msg.photos && msg.photos.length > 0) {
+        return msg.photos[0].url;
+      }
+    }
+    return null;
   };
 
   return (
@@ -105,7 +115,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
         <Text style={styles.title}>Saved Trips</Text>
         <TextInput
           style={styles.searchInput}
-          placeholder="🔍 Search"
+          placeholder="Search..."
           placeholderTextColor="rgba(255,255,255,0.4)"
           value={searchQuery}
           onChangeText={setSearchQuery}
@@ -113,69 +123,83 @@ export const ConversationList: React.FC<ConversationListProps> = ({
         />
       </View>
       <ScrollView style={styles.list} keyboardShouldPersistTaps="handled">
-        {filteredConversations.map((conv) => (
-          <View
-            key={conv.id}
-            style={[
-              styles.item,
-              currentConversationId === conv.id && styles.activeItem,
-            ]}
-          >
-            <TouchableOpacity
-              style={styles.content}
-              onPress={() => onLoadConversation(conv)}
-              onLongPress={() => openEditModal(conv)}
-            >
-              <View style={styles.header}>
-                <Text style={styles.destination} numberOfLines={1}>
-                  {getDisplayTitle(conv)}
-                </Text>
-              </View>
-              <View style={styles.dateRow}>
-                <Text style={styles.dateLabel}>Updated: </Text>
-                <Text style={styles.date}>{formatDate(conv.metadata.updatedAt)}</Text>
-                {conv.metadata.createdAt !== conv.metadata.updatedAt && (
-                  <>
-                    <Text style={styles.dateSeparator}> • </Text>
-                    <Text style={styles.dateLabel}>Created: </Text>
-                    <Text style={styles.date}>{formatDateTime(conv.metadata.createdAt)}</Text>
-                  </>
-                )}
-              </View>
-              {conv.metadata.description ? (
-                <Text style={styles.description} numberOfLines={1}>
-                  {conv.metadata.description}
-                </Text>
-              ) : (
-                <View style={styles.meta}>
-                  {conv.metadata.duration && (
-                    <Text style={styles.metaTag}>📅 {conv.metadata.duration}</Text>
-                  )}
-                  {conv.metadata.travelDates && (
-                    <Text style={styles.metaTag}>🗓️ {conv.metadata.travelDates}</Text>
-                  )}
-                  {conv.metadata.travelers && (
-                    <Text style={styles.metaTag}>👥 {conv.metadata.travelers}</Text>
-                  )}
+        {filteredConversations.map((conv) => {
+          const photoUrl = getConversationPhoto(conv);
+          
+          const TileContent = (
+            <>
+              <TouchableOpacity
+                style={styles.content}
+                onPress={() => onLoadConversation(conv)}
+                onLongPress={() => openEditModal(conv)}
+              >
+                <View style={styles.header}>
+                  <Text style={styles.destination} numberOfLines={1}>
+                    {getDisplayTitle(conv)}
+                  </Text>
                 </View>
+                <View style={styles.dateRow}>
+                  <Text style={styles.date}>{formatDate(conv.metadata.updatedAt)}</Text>
+                </View>
+                {conv.metadata.description ? (
+                  <Text style={styles.description} numberOfLines={1}>
+                    {conv.metadata.description}
+                  </Text>
+                ) : (
+                  <View style={styles.meta}>
+                    {conv.metadata.duration && (
+                      <Text style={styles.metaTag}>{conv.metadata.duration}</Text>
+                    )}
+                    {conv.metadata.travelDates && (
+                      <Text style={styles.metaTag}>{conv.metadata.travelDates}</Text>
+                    )}
+                    {conv.metadata.travelers && (
+                      <Text style={styles.metaTag}>{conv.metadata.travelers} travelers</Text>
+                    )}
+                  </View>
+                )}
+              </TouchableOpacity>
+              <View style={styles.actions}>
+                <TouchableOpacity
+                  style={styles.editButton}
+                  onPress={() => openEditModal(conv)}
+                >
+                  <Text style={styles.editButtonText}>Edit</Text>
+                </TouchableOpacity>
+                <TouchableOpacity
+                  style={styles.deleteButton}
+                  onPress={() => onDeleteConversation(conv.id)}
+                >
+                  <Text style={styles.deleteButtonText}>Delete</Text>
+                </TouchableOpacity>
+              </View>
+            </>
+          );
+
+          return (
+            <View
+              key={conv.id}
+              style={[
+                styles.item,
+                currentConversationId === conv.id && styles.activeItem,
+              ]}
+            >
+              {photoUrl ? (
+                <ImageBackground
+                  source={{ uri: photoUrl }}
+                  style={styles.itemWithPhoto}
+                  imageStyle={styles.itemBackgroundImage}
+                >
+                  <View style={styles.photoOverlay}>
+                    {TileContent}
+                  </View>
+                </ImageBackground>
+              ) : (
+                TileContent
               )}
-            </TouchableOpacity>
-            <View style={styles.actions}>
-              <TouchableOpacity
-                style={styles.editButton}
-                onPress={() => openEditModal(conv)}
-              >
-                <Text style={styles.editIcon}>✏️</Text>
-              </TouchableOpacity>
-              <TouchableOpacity
-                style={styles.actionButton}
-                onPress={() => onDeleteConversation(conv.id)}
-              >
-                <Text style={styles.actionIcon}>🗑️</Text>
-              </TouchableOpacity>
             </View>
-          </View>
-        ))}
+          );
+        })}
 
         {filteredConversations.length === 0 && conversations.length > 0 && (
           <Text style={styles.emptyText}>No trips match your search</Text>
@@ -350,14 +374,6 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontWeight: '600',
   },
-  actionButton: {
-    padding: 8,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  actionIcon: {
-    fontSize: 16,
-  },
   emptyText: {
     textAlign: 'center',
     color: 'rgba(255,255,255,0.4)',
@@ -370,12 +386,40 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
   },
   editButton: {
-    padding: 6,
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    backgroundColor: 'rgba(255,255,255,0.15)',
+    borderRadius: 6,
   },
-  editIcon: {
-    fontSize: 14,
+  editButtonText: {
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.8)',
+    fontWeight: '500',
+  },
+  deleteButton: {
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    backgroundColor: 'rgba(255,100,100,0.2)',
+    borderRadius: 6,
+  },
+  deleteButtonText: {
+    fontSize: 11,
+    color: 'rgba(255,150,150,0.9)',
+    fontWeight: '500',
+  },
+  itemWithPhoto: {
+    flex: 1,
+    flexDirection: 'row',
+    overflow: 'hidden',
+  },
+  itemBackgroundImage: {
+    opacity: 0.3,
+    borderRadius: 12,
+  },
+  photoOverlay: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: 'rgba(26,26,46,0.7)',
   },
   modalOverlay: {
     flex: 1,

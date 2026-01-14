@@ -17,14 +17,14 @@ import { useLocation, useConversations, useUserProfile, Message, SavedConversati
 import { WelcomeScreen, ConsiderationsHint, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
-const DEFAULT_MODEL = 'claude-sonnet-4-20250514';
+// Use Haiku for faster responses - tools handle the heavy lifting
+const MODEL = 'claude-3-5-haiku-20241022';
 
 const HomeScreen: React.FC = () => {
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [loadingStatus, setLoadingStatus] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
-  const [selectedModel, setSelectedModel] = useState(DEFAULT_MODEL);
   const scrollViewRef = useRef<ScrollView>(null);
 
   const { userLocation, locationLoading } = useLocation();
@@ -133,7 +133,7 @@ const HomeScreen: React.FC = () => {
         }
       }, 1500);
 
-      const response = await sendChatMessage(chatMessages, context, selectedModel);
+      const response = await sendChatMessage(chatMessages, context, MODEL);
       clearInterval(statusInterval);
       
       const assistantMessage: Message = {
@@ -153,7 +153,7 @@ const HomeScreen: React.FC = () => {
         stack: error?.stack,
         endpoint: '/api/chat',
         context: {
-          model: selectedModel,
+          model: MODEL,
           messageCount: updatedMessages.length,
           userLocation: userLocation?.city,
           errorCode: error?.response?.status,
@@ -248,7 +248,7 @@ const HomeScreen: React.FC = () => {
         }
       }, 1500);
 
-      const response = await sendChatMessage(chatMessages, context, selectedModel);
+      const response = await sendChatMessage(chatMessages, context, MODEL);
       clearInterval(statusInterval);
       
       const assistantMessage: Message = {
@@ -424,7 +424,7 @@ const HomeScreen: React.FC = () => {
                     userProfile: userProfile || undefined,
                   };
                   
-                  const result = await sendChatMessage(chatMessages, context, selectedModel);
+                  const result = await sendChatMessage(chatMessages, context, MODEL);
                   
                   const assistantMessage: Message = {
                     id: (Date.now() + 1).toString(),
@@ -484,8 +484,6 @@ const HomeScreen: React.FC = () => {
           userProfile={userProfile}
           onSaveProfile={saveProfile}
           onAddProfileSuggestion={addSuggestion}
-          selectedModel={selectedModel}
-          onSelectModel={setSelectedModel}
           conversations={savedConversations}
           currentConversationId={currentConversationId}
           onLoadConversation={loadConversation}
