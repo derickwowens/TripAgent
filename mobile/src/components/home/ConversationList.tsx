@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
 import { SavedConversation } from '../../hooks';
 
 interface ConversationListProps {
@@ -96,19 +96,23 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   };
 
   return (
-    <>
+    <KeyboardAvoidingView 
+      style={styles.keyboardAvoid}
+      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      keyboardVerticalOffset={100}
+    >
       <View style={styles.headerRow}>
         <Text style={styles.title}>Saved Trips</Text>
         <TextInput
           style={styles.searchInput}
-          placeholder="🔍"
+          placeholder="🔍 Search"
           placeholderTextColor="rgba(255,255,255,0.4)"
           value={searchQuery}
           onChangeText={setSearchQuery}
           returnKeyType="search"
         />
       </View>
-      <View style={styles.list}>
+      <ScrollView style={styles.list} keyboardShouldPersistTaps="handled">
         {filteredConversations.map((conv) => (
           <View
             key={conv.id}
@@ -179,7 +183,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
         {conversations.length === 0 && (
           <Text style={styles.emptyText}>No saved conversations yet</Text>
         )}
-      </View>
+      </ScrollView>
 
       <Modal
         visible={editModalVisible}
@@ -226,11 +230,14 @@ export const ConversationList: React.FC<ConversationListProps> = ({
           </View>
         </View>
       </Modal>
-    </>
+    </KeyboardAvoidingView>
   );
 };
 
 const styles = StyleSheet.create({
+  keyboardAvoid: {
+    flex: 1,
+  },
   headerRow: {
     flexDirection: 'row',
     alignItems: 'center',

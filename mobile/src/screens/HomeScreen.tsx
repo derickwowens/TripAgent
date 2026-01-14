@@ -358,6 +358,25 @@ const HomeScreen: React.FC = () => {
           )}
         </View>
 
+        {messages.length > 0 && currentConversationId && (() => {
+          const currentConv = savedConversations.find(c => c.id === currentConversationId);
+          if (currentConv && (currentConv.metadata.title || currentConv.metadata.destination)) {
+            return (
+              <View style={styles.conversationHeader}>
+                <Text style={styles.conversationTitle} numberOfLines={1}>
+                  {currentConv.metadata.title || currentConv.metadata.destination}
+                </Text>
+                {currentConv.metadata.description && (
+                  <Text style={styles.conversationDescription} numberOfLines={1}>
+                    {currentConv.metadata.description}
+                  </Text>
+                )}
+              </View>
+            );
+          }
+          return null;
+        })()}
+
         <KeyboardAvoidingView
           style={styles.container}
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
@@ -524,6 +543,23 @@ const styles = StyleSheet.create({
     width: 32,
     height: 32,
     borderRadius: 6,
+  },
+  conversationHeader: {
+    paddingHorizontal: 16,
+    paddingBottom: 8,
+    alignItems: 'center',
+  },
+  conversationTitle: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '600',
+    textAlign: 'center',
+  },
+  conversationDescription: {
+    color: 'rgba(255,255,255,0.7)',
+    fontSize: 12,
+    marginTop: 2,
+    textAlign: 'center',
   },
   container: {
     flex: 1,

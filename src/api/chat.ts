@@ -85,6 +85,7 @@ Your personality:
 - Concise but informative
 - Use emojis sparingly to add warmth
 - Focus on practical, actionable advice
+- Use gender-neutral language unless the user specifies their gender in their profile
 
 When helping plan a trip, gather this information through natural conversation:
 1. Destination (which park or area)
@@ -118,7 +119,19 @@ Once you have enough info, use the available tools to fetch REAL PRICING DATA an
 - 🎫 Park entrance fees
 
 IMPORTANT - DRIVING DISTANCES:
-Always use the get_driving_distance tool to get accurate drive times for road trips. Never estimate or guess driving times. The tool provides real distance and duration data. Include driving time when showing airport-to-park comparisons so users can factor in the drive.
+ALWAYS use the get_driving_distance tool to get accurate drive times. NEVER estimate or guess driving times - the tool uses Google Maps API for real-time accurate data. Call this tool for:
+- Airport to park/destination distances
+- Any road trip segments
+- Comparing drive times from different airports
+- Hotel/lodging to attraction distances
+Include driving time when showing airport-to-park comparisons so users can factor in the drive.
+
+IMPORTANT - EV/ELECTRIC VEHICLE CONSIDERATIONS:
+If the user mentions Tesla, EV, electric vehicle, or similar in their profile:
+- Note that EV road trips require charging stops every 200-300 miles
+- Add 30-45 minutes per charging stop to estimated drive times
+- Recommend checking Tesla Supercharger or ChargePoint locations along the route
+- For long drives (4+ hours), factor in 1-2 charging stops
 
 IMPORTANT - BUDGET SUMMARY:
 Always end trip plans with a clear cost breakdown and total estimate. ALWAYS provide a cost summary even if some data is missing - use estimates and clearly mark them.
@@ -358,11 +371,14 @@ export async function createChatHandler(facade: TravelFacade) {
             switch (toolUse.name) {
               case 'search_national_parks':
                 const parks = await facade.searchNationalParks((toolUse.input as any).query);
-                // Collect multiple photos from park results
+                // Collect photos from park results
                 parks.slice(0, 3).forEach(park => {
                   if (park.images && park.images.length > 0) {
-                    // Add up to 3 photos per park
-                    park.images.slice(0, 3).forEach((imageUrl: string, idx: number) => {
+                    // Great Smoky Mountains has known photo quality issues after first 2
+                    const isSmokies = park.parkCode === 'grsm' || park.name.toLowerCase().includes('smoky');
+                    const maxPhotos = isSmokies ? 2 : 3;
+                    
+                    park.images.slice(0, maxPhotos).forEach((imageUrl: string, idx: number) => {
                       collectedPhotos.push({
                         keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
                         url: imageUrl,
@@ -393,10 +409,13 @@ export async function createChatHandler(facade: TravelFacade) {
                   adults: input.adults || 1,
                 });
                 
-                // Collect multiple photos from park
+                // Collect photos from park
                 if (result.park?.images && result.park.images.length > 0) {
-                  // Add up to 3 photos from park
-                  result.park.images.slice(0, 3).forEach((imageUrl: string, idx: number) => {
+                  // Great Smoky Mountains has known photo quality issues after first 2
+                  const isSmokies = input.park_code === 'grsm' || result.park.name.toLowerCase().includes('smoky');
+                  const maxPhotos = isSmokies ? 2 : 3;
+                  
+                  result.park.images.slice(0, maxPhotos).forEach((imageUrl: string, idx: number) => {
                     collectedPhotos.push({
                       keyword: idx === 0 ? result.park.name : `${result.park.name} photo ${idx + 1}`,
                       url: imageUrl,

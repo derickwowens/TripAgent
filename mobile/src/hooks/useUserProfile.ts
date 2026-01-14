@@ -32,10 +32,10 @@ export const useUserProfile = () => {
   };
 
   const addSuggestion = (suggestion: string) => {
-    const cleanSuggestion = suggestion.replace(/^[^\s]+\s/, '');
+    // Keep the emoji with the text for better readability
     const newProfile = userProfile 
-      ? `${userProfile}\n${cleanSuggestion}`
-      : cleanSuggestion;
+      ? `${userProfile}, ${suggestion}`
+      : suggestion;
     saveProfile(newProfile);
   };
 

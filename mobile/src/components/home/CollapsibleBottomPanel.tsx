@@ -66,16 +66,16 @@ const styles = StyleSheet.create({
   handle: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 10,
+    paddingVertical: 16,
     backgroundColor: 'rgba(22, 101, 52, 0.9)',
     borderTopLeftRadius: 16,
     borderTopRightRadius: 16,
   },
   handleBar: {
-    width: 50,
-    height: 5,
-    backgroundColor: 'rgba(255, 255, 255, 0.6)',
-    borderRadius: 3,
+    width: 100,
+    height: 8,
+    backgroundColor: 'rgba(255, 255, 255, 0.7)',
+    borderRadius: 4,
   },
   content: {
     flex: 1,
