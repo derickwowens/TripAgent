@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { logger } from './logger';
 
 // Use your deployed API URL in production, localhost for development
 const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://192.168.1.109:3000'; // Your local IP for emulator access
@@ -19,6 +20,31 @@ const chatApi = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
+// Add response interceptors for automatic error logging
+const addErrorInterceptor = (instance: typeof api, name: string) => {
+  instance.interceptors.response.use(
+    (response) => response,
+    (error) => {
+      const endpoint = error.config?.url || 'unknown';
+      const method = error.config?.method?.toUpperCase() || 'UNKNOWN';
+      const status = error.response?.status;
+      const responseData = error.response?.data;
+      
+      logger.apiError(
+        `${method} ${endpoint}`,
+        error,
+        error.config?.data ? JSON.parse(error.config.data) : error.config?.params,
+        responseData
+      );
+      
+      return Promise.reject(error);
+    }
+  );
+};
+
+addErrorInterceptor(api, 'api');
+addErrorInterceptor(chatApi, 'chatApi');
 
 // Types
 export interface FlightOffer {
