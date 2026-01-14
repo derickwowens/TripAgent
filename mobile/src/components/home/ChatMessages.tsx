@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, ActivityIndicator, StyleSheet, Linking, TouchableOpacity } from 'react-native';
-import { Message } from '../../hooks';
+import { Message, useDarkModeContext } from '../../hooks';
 
 interface ChatMessagesProps {
   messages: Message[];
@@ -8,6 +8,14 @@ interface ChatMessagesProps {
   loadingStatus: string;
   onRetry?: (lastUserMessage: string) => void;
 }
+
+// Dark mode colors for softer appearance
+const darkModeColors = {
+  userBubble: 'rgba(200, 200, 210, 0.9)',
+  userText: '#1a1a2e',
+  assistantBubble: 'rgba(40, 80, 60, 0.85)',
+  assistantText: 'rgba(255, 255, 255, 0.95)',
+};
 
 // Parse markdown links [text](url) and plain URLs, with photo keyword detection
 const parseMessageContent = (
@@ -64,7 +72,10 @@ const MessageContent: React.FC<MessageContentProps> = ({ content, isUser }) => {
   const parts = parseMessageContent(content, isUser);
   
   return (
-    <Text style={[styles.text, isUser ? styles.userText : styles.assistantText]}>
+    <Text style={[
+      styles.text, 
+      isUser ? styles.userText : styles.assistantText,
+    ]}>
       {parts.map((part, index) => {
         if (part.type === 'link' && part.url) {
           return (
@@ -89,6 +100,8 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
   loadingStatus,
   onRetry,
 }) => {
+  const { isDarkMode } = useDarkModeContext();
+  
   return (
     <>
       {messages.map((message) => (
@@ -97,12 +110,14 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           style={[
             styles.bubble,
             message.type === 'user' ? styles.userBubble : styles.assistantBubble,
+            message.type === 'user' && isDarkMode && styles.userBubbleDark,
+            message.type === 'assistant' && isDarkMode && styles.assistantBubbleDark,
             message.isError && styles.errorBubble,
           ]}
         >
           <MessageContent 
             content={message.content} 
-            isUser={message.type === 'user'} 
+            isUser={message.type === 'user'}
           />
           {message.isError && message.lastUserMessage && onRetry && (
             <TouchableOpacity 
@@ -116,7 +131,12 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
       ))}
       
       {isLoading && (
-        <View style={[styles.bubble, styles.assistantBubble, styles.loadingBubble]}>
+        <View style={[
+          styles.bubble, 
+          styles.assistantBubble, 
+          styles.loadingBubble,
+          isDarkMode && styles.assistantBubbleDark,
+        ]}>
           <ActivityIndicator size="small" color="#FFFFFF" style={styles.spinner} />
           <Text style={styles.loadingText}>{loadingStatus || 'Thinking...'}</Text>
         </View>
@@ -137,10 +157,16 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(255,255,255,0.95)',
     borderBottomRightRadius: 4,
   },
+  userBubbleDark: {
+    backgroundColor: 'rgba(180, 185, 200, 0.85)',
+  },
   assistantBubble: {
     alignSelf: 'flex-start',
     backgroundColor: 'rgba(22, 101, 52, 0.9)',
     borderBottomLeftRadius: 4,
+  },
+  assistantBubbleDark: {
+    backgroundColor: 'rgba(35, 75, 55, 0.9)',
   },
   text: {
     fontSize: 15,

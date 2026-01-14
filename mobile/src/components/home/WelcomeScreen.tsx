@@ -34,102 +34,143 @@ const injectProfileContext = (template: string, profile?: string): string => {
   const profileLower = profile.toLowerCase();
   let additions: string[] = [];
   
-  // Extract traveler type
-  if (profileLower.includes('solo')) additions.push("I'm a solo traveler");
-  else if (profileLower.includes('couple')) additions.push("I'm traveling as a couple");
-  else if (profileLower.includes('family')) additions.push("I'm traveling with family");
-  else if (profileLower.includes('group') || profileLower.includes('friends')) additions.push("I'm traveling with a group");
-  
-  // Extract climate preferences
-  if (profileLower.includes('warm') || profileLower.includes('beach') || profileLower.includes('tropical') || profileLower.includes('sun')) {
-    additions.push("I prefer warm climates");
-  } else if (profileLower.includes('cold') || profileLower.includes('snow') || profileLower.includes('winter') || profileLower.includes('mountain')) {
-    additions.push("I enjoy cold climates and mountains");
+  // Kids age groups
+  if (profileLower.includes('kids 1-3') || profileLower.includes('toddler')) {
+    additions.push("I'm traveling with toddlers (1-3 years old)");
+  }
+  if (profileLower.includes('kids 4-7') || profileLower.includes('young kids')) {
+    additions.push("I'm traveling with young children (4-7 years old)");
+  }
+  if (profileLower.includes('kids 8-12') || profileLower.includes('older kids')) {
+    additions.push("I'm traveling with kids (8-12 years old)");
+  }
+  if (profileLower.includes('kids 13+') || profileLower.includes('teenagers') || profileLower.includes('teens')) {
+    additions.push("I'm traveling with teenagers");
   }
   
-  // Extract budget preferences
-  if (profileLower.includes('budget') || profileLower.includes('cheap') || profileLower.includes('affordable')) {
-    additions.push("I'm looking for budget-friendly options");
-  } else if (profileLower.includes('luxury') || profileLower.includes('premium') || profileLower.includes('high-end')) {
-    additions.push("I prefer luxury experiences");
-  } else if (profileLower.includes('mid-range') || profileLower.includes('moderate')) {
-    additions.push("I'm comfortable with mid-range pricing");
+  // Vehicle type - important for road trips and charging
+  if (profileLower.includes('tesla')) {
+    additions.push("I drive a Tesla and need Supercharger access for road trips");
+  } else if (profileLower.includes('other ev') || profileLower.includes('electric vehicle')) {
+    additions.push("I drive an electric vehicle and need EV charging stations");
+  } else if (profileLower.includes('gas vehicle')) {
+    additions.push("I drive a gas vehicle");
   }
   
-  // Extract activity preferences
-  if (profileLower.includes('adventure') || profileLower.includes('hiking') || profileLower.includes('outdoor') || profileLower.includes('sports')) {
-    additions.push("I enjoy outdoor adventures and activities");
-  }
-  if (profileLower.includes('relax') || profileLower.includes('spa') || profileLower.includes('rest') || profileLower.includes('chill')) {
-    additions.push("I prefer relaxing and peaceful experiences");
-  }
-  if (profileLower.includes('food') || profileLower.includes('culinary') || profileLower.includes('cuisine') || profileLower.includes('dining')) {
-    additions.push("I love exploring local food and dining experiences");
-  }
-  if (profileLower.includes('culture') || profileLower.includes('history') || profileLower.includes('museum') || profileLower.includes('art')) {
-    additions.push("I'm interested in cultural and historical sites");
-  }
-  if (profileLower.includes('nightlife') || profileLower.includes('party') || profileLower.includes('bars') || profileLower.includes('entertainment')) {
-    additions.push("I enjoy nightlife and entertainment");
-  }
-  if (profileLower.includes('nature') || profileLower.includes('wildlife') || profileLower.includes('scenery') || profileLower.includes('landscape')) {
-    additions.push("I love nature and scenic landscapes");
-  }
-  if (profileLower.includes('shopping') || profileLower.includes('markets') || profileLower.includes('souvenirs')) {
-    additions.push("I enjoy shopping and local markets");
+  // Climate preferences
+  if (profileLower.includes('warm destination')) {
+    additions.push("I prefer warm weather destinations");
+  } else if (profileLower.includes('cold destination')) {
+    additions.push("I prefer cold weather destinations");
   }
   
-  // Extract accommodation preferences
-  if (profileLower.includes('camping') || profileLower.includes('camp')) {
-    additions.push("I prefer camping accommodations");
-  } else if (profileLower.includes('hotel') || profileLower.includes('resort')) {
-    additions.push("I prefer hotels or resorts");
-  } else if (profileLower.includes('hostel') || profileLower.includes('budget lodging')) {
-    additions.push("I'm open to hostels and budget lodging");
-  } else if (profileLower.includes('airbnb') || profileLower.includes('vacation rental')) {
-    additions.push("I prefer vacation rentals like Airbnb");
+  // Travel style
+  if (profileLower.includes('avoid crowds')) {
+    additions.push("I prefer less crowded, off-the-beaten-path destinations");
   }
-  if (profileLower.includes('accessible') || profileLower.includes('accessibility') || profileLower.includes('wheelchair') || profileLower.includes('disabled')) {
-    additions.push("I need accessible accommodations");
+  if (profileLower.includes('budget traveler')) {
+    additions.push("I'm a budget-conscious traveler");
   }
-  
-  // Extract transportation preferences
-  if (profileLower.includes('road trip') || profileLower.includes('driving') || profileLower.includes('car')) {
-    additions.push("I enjoy road trips and driving");
-  } else if (profileLower.includes('flying') || profileLower.includes('plane') || profileLower.includes('air travel')) {
-    additions.push("I prefer flying to destinations");
-  } else if (profileLower.includes('train') || profileLower.includes('rail') || profileLower.includes('public transport')) {
-    additions.push("I enjoy train travel and public transportation");
+  if (profileLower.includes('luxury travel')) {
+    additions.push("I prefer luxury travel experiences");
+  }
+  if (profileLower.includes('backpacker')) {
+    additions.push("I'm a backpacker looking for affordable adventures");
+  }
+  if (profileLower.includes('love camping')) {
+    additions.push("I love camping and outdoor accommodations");
+  }
+  if (profileLower.includes('hotels only')) {
+    additions.push("I prefer staying in hotels");
   }
   
-  // Extract duration preferences
-  if (profileLower.includes('weekend') || profileLower.includes('2-3 days')) {
-    additions.push("I'm planning for a weekend trip");
-  } else if (profileLower.includes('week') || profileLower.includes('7 days')) {
-    additions.push("I'm planning for a week-long trip");
-  } else if (profileLower.includes('day trip') || profileLower.includes('1 day')) {
-    additions.push("I'm looking for a day trip");
+  // Activities and interests
+  if (profileLower.includes('hiking/outdoor') || profileLower.includes('hiking')) {
+    additions.push("I enjoy hiking and outdoor activities");
+  }
+  if (profileLower.includes('photography')) {
+    additions.push("I love photography and scenic photo spots");
+  }
+  if (profileLower.includes('wildlife viewing') || profileLower.includes('wildlife')) {
+    additions.push("I'm interested in wildlife viewing opportunities");
+  }
+  if (profileLower.includes('cycling')) {
+    additions.push("I enjoy cycling and bike-friendly destinations");
+  }
+  if (profileLower.includes('fishing')) {
+    additions.push("I enjoy fishing");
+  }
+  if (profileLower.includes('skiing') || profileLower.includes('snowboard')) {
+    additions.push("I enjoy skiing and snowboarding");
+  }
+  if (profileLower.includes('water sports')) {
+    additions.push("I enjoy water sports and aquatic activities");
+  }
+  if (profileLower.includes('sunrise') || profileLower.includes('sunset')) {
+    additions.push("I love catching sunrise and sunset views");
   }
   
-  // Extract specific interests
-  if (profileLower.includes('photography') || profileLower.includes('photos')) {
-    additions.push("I love photography and scenic photo opportunities");
+  // Accessibility and special needs
+  if (profileLower.includes('traveling with dog') || profileLower.includes('with dog')) {
+    additions.push("I'm traveling with my dog and need pet-friendly options");
   }
-  if (profileLower.includes('beach') || profileLower.includes('ocean') || profileLower.includes('sea')) {
-    additions.push("I love beaches and ocean activities");
+  if (profileLower.includes('accessible needs') || profileLower.includes('accessibility')) {
+    additions.push("I need accessible accommodations and facilities");
   }
-  if (profileLower.includes('city') || profileLower.includes('urban')) {
-    additions.push("I enjoy city experiences and urban exploration");
+  if (profileLower.includes('limited mobility')) {
+    additions.push("I have limited mobility and need easy-access options");
   }
-  if (profileLower.includes('countryside') || profileLower.includes('rural')) {
-    additions.push("I prefer countryside and rural experiences");
+  if (profileLower.includes('with seniors') || profileLower.includes('elderly')) {
+    additions.push("I'm traveling with seniors");
+  }
+  if (profileLower.includes('educational trip')) {
+    additions.push("I'm looking for educational travel experiences");
   }
   
-  // Extract pet/travel companion preferences
-  if (profileLower.includes('dog') || profileLower.includes('pet') || profileLower.includes('animal') || profileLower.includes('furry')) {
-    additions.push("I'm traveling with a dog and need pet-friendly options");
-  } else if (profileLower.includes('cat') || profileLower.includes('kitten')) {
-    additions.push("I'm traveling with a cat and need pet-friendly options");
+  // Airline preferences
+  if (profileLower.includes('delta')) {
+    additions.push("I prefer flying Delta Airlines");
+  } else if (profileLower.includes('southwest')) {
+    additions.push("I prefer flying Southwest Airlines");
+  } else if (profileLower.includes('united')) {
+    additions.push("I prefer flying United Airlines");
+  } else if (profileLower.includes('american')) {
+    additions.push("I prefer flying American Airlines");
+  } else if (profileLower.includes('jetblue')) {
+    additions.push("I prefer flying JetBlue");
+  } else if (profileLower.includes('alaska')) {
+    additions.push("I prefer flying Alaska Airlines");
+  }
+  
+  // Car rental preferences
+  if (profileLower.includes('hertz')) {
+    additions.push("I prefer renting from Hertz");
+  } else if (profileLower.includes('enterprise')) {
+    additions.push("I prefer renting from Enterprise");
+  } else if (profileLower.includes('national')) {
+    additions.push("I prefer renting from National");
+  } else if (profileLower.includes('budget')) {
+    additions.push("I prefer renting from Budget");
+  }
+  
+  // Hotel preferences
+  if (profileLower.includes('marriott')) {
+    additions.push("I prefer Marriott hotels");
+  } else if (profileLower.includes('hilton')) {
+    additions.push("I prefer Hilton hotels");
+  } else if (profileLower.includes('ihg')) {
+    additions.push("I prefer IHG hotels");
+  } else if (profileLower.includes('hyatt')) {
+    additions.push("I prefer Hyatt hotels");
+  } else if (profileLower.includes('airbnb') || profileLower.includes('vrbo')) {
+    additions.push("I prefer Airbnb or VRBO rentals");
+  }
+  
+  // Gender (for solo travel safety considerations)
+  if (profileLower.includes('female') && !profileLower.includes('male')) {
+    additions.push("I'm a female traveler");
+  } else if (profileLower.includes('male') && !profileLower.includes('female')) {
+    additions.push("I'm a male traveler");
   }
   
   // If we couldn't extract specific preferences, use the full profile

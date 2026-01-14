@@ -13,12 +13,15 @@ import {
   Image,
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
-import { useLocation, useConversations, useUserProfile, Message, SavedConversation } from '../hooks';
+import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, Message, SavedConversation } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
+
+// Default forest background
+const DEFAULT_BACKGROUND_URL = 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800';
 
 const HomeScreen: React.FC = () => {
   const [inputText, setInputText] = useState('');
@@ -46,6 +49,7 @@ const HomeScreen: React.FC = () => {
     addSuggestion, 
     toggleExpanded 
   } = useUserProfile();
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   // Scroll to bottom when messages change or loading state changes
   useEffect(() => {
@@ -336,14 +340,18 @@ const HomeScreen: React.FC = () => {
     }
   };
 
+  // Use first destination photo as background if available
+  const backgroundUrl = allPhotos.length > 0 ? allPhotos[0].url : DEFAULT_BACKGROUND_URL;
+
   return (
-    <ImageBackground
-      source={{ uri: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800' }}
-      style={styles.backgroundImage}
-      resizeMode="cover"
-    >
-      <View style={styles.overlay}>
-        <StatusBar barStyle="light-content" />
+    <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
+      <ImageBackground
+        source={{ uri: backgroundUrl }}
+        style={styles.backgroundImage}
+        resizeMode="cover"
+      >
+        <View style={styles.overlay}>
+          <StatusBar barStyle="light-content" />
         
         <View style={styles.header}>
           <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
@@ -509,8 +517,9 @@ const HomeScreen: React.FC = () => {
           onNewConversation={startNewConversation}
           onUpdateConversation={updateConversation}
         />
-      </View>
-    </ImageBackground>
+        </View>
+      </ImageBackground>
+    </DarkModeContext.Provider>
   );
 };
 

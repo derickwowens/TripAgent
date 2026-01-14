@@ -161,16 +161,16 @@ export const ConversationList: React.FC<ConversationListProps> = ({
               </TouchableOpacity>
               <View style={styles.actions}>
                 <TouchableOpacity
-                  style={styles.editButton}
+                  style={styles.actionBadge}
                   onPress={() => openEditModal(conv)}
                 >
-                  <Text style={styles.editButtonText}>Edit</Text>
+                  <Text style={styles.actionIcon}>•••</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                  style={styles.deleteButton}
+                  style={[styles.actionBadge, styles.deleteBadge]}
                   onPress={() => onDeleteConversation(conv.id)}
                 >
-                  <Text style={styles.deleteButtonText}>Delete</Text>
+                  <Text style={[styles.actionIcon, styles.deleteIcon]}>×</Text>
                 </TouchableOpacity>
               </View>
             </>
@@ -385,27 +385,25 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.6)',
     fontStyle: 'italic',
   },
-  editButton: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    backgroundColor: 'rgba(255,255,255,0.15)',
-    borderRadius: 6,
+  actionBadge: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: 'rgba(22, 101, 52, 0.4)',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  editButtonText: {
-    fontSize: 11,
-    color: 'rgba(255,255,255,0.8)',
-    fontWeight: '500',
+  deleteBadge: {
+    backgroundColor: 'rgba(22, 101, 52, 0.25)',
   },
-  deleteButton: {
-    paddingHorizontal: 10,
-    paddingVertical: 4,
-    backgroundColor: 'rgba(255,100,100,0.2)',
-    borderRadius: 6,
+  actionIcon: {
+    fontSize: 12,
+    color: 'rgba(255, 255, 255, 0.8)',
+    fontWeight: '600',
   },
-  deleteButtonText: {
-    fontSize: 11,
-    color: 'rgba(255,150,150,0.9)',
-    fontWeight: '500',
+  deleteIcon: {
+    fontSize: 18,
+    fontWeight: '300',
   },
   itemWithPhoto: {
     flex: 1,

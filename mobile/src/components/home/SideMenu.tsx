@@ -2,9 +2,23 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image } from 'react-native';
 import { ProfileSection } from './ProfileSection';
 import { ConversationList } from './ConversationList';
-import { SavedConversation } from '../../hooks';
+import { SavedConversation, useDarkModeContext } from '../../hooks';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
+
+const DarkModeToggle: React.FC = () => {
+  const { isDarkMode, toggleDarkMode } = useDarkModeContext();
+  
+  return (
+    <TouchableOpacity 
+      style={styles.darkModeToggle} 
+      onPress={toggleDarkMode}
+      activeOpacity={0.7}
+    >
+      <Text style={styles.darkModeIcon}>{isDarkMode ? '☀️' : '🌙'}</Text>
+    </TouchableOpacity>
+  );
+};
 
 interface SideMenuProps {
   visible: boolean;
@@ -67,9 +81,12 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                 <Text style={styles.feedbackText}>Feedback</Text>
               </TouchableOpacity>
             </View>
-            <TouchableOpacity onPress={onClose} style={styles.closeButtonContainer}>
-              <Text style={styles.closeButton}>✕</Text>
-            </TouchableOpacity>
+            <View style={styles.headerRight}>
+              <DarkModeToggle />
+              <TouchableOpacity onPress={onClose} style={styles.closeButtonContainer}>
+                <Text style={styles.closeButton}>✕</Text>
+              </TouchableOpacity>
+            </View>
           </View>
 
           {/* Scrollable Content */}
@@ -155,6 +172,19 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
+  },
+  headerRight: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 16,
+  },
+  darkModeToggle: {
+    padding: 8,
+    borderRadius: 20,
+    backgroundColor: 'rgba(255,255,255,0.1)',
+  },
+  darkModeIcon: {
+    fontSize: 18,
   },
   feedbackButton: {
     paddingHorizontal: 12,
