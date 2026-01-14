@@ -212,6 +212,17 @@ export class TravelFacade {
     return this.parksAdapter.getHikes(parkCode);
   }
 
+  async getParkActivities(parkCode: string): Promise<any[]> {
+    if (!this.parksAdapter) {
+      return [];
+    }
+    try {
+      return await this.parksAdapter.getThingsToDo(parkCode);
+    } catch {
+      return [];
+    }
+  }
+
   async planParkTrip(params: ParkTripPlanParams): Promise<any> {
     if (!this.parksAdapter) {
       throw new Error('National Parks adapter not configured.');

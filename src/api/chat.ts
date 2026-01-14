@@ -485,15 +485,22 @@ export async function createChatHandler(facade: TravelFacade) {
                 // Track destination and query for confidence scoring
                 originalSearchQuery = cleanQuery; // Always store the original query
                 
-                const TARGET_PHOTOS = 8; // Target 8 photos for good UX
+                // Photo targets: 24 total (6 rows of 4)
+                // - 16 NPS park photos (4 rows)
+                // - 8 activity/event photos from Unsplash (2 rows)
+                const TARGET_NPS_PHOTOS = 16;
+                const TARGET_EVENT_PHOTOS = 8;
+                const TARGET_TOTAL_PHOTOS = 24;
                 
                 if (parksForPhotos.length > 0) {
                   // We have matching NPS parks - collect their photos
                   detectedDestination = parksForPhotos[0].name;
+                  const parkName = parksForPhotos[0].name.replace(' National Park', '').replace(' National', '');
+                  const parkCode = parksForPhotos[0].parkCode;
                   
+                  // STEP 1: Collect NPS park photos (up to 16)
                   parksForPhotos.forEach(park => {
-                    if (park.images && park.images.length > 0) {
-                      // Great Smoky Mountains - use known good NPS photo URLs
+                    if (park.images && park.images.length > 0 && collectedPhotos.length < TARGET_NPS_PHOTOS) {
                       const isSmokies = park.parkCode === 'grsm' || park.name.toLowerCase().includes('smoky');
                       
                       if (isSmokies) {
@@ -502,15 +509,17 @@ export async function createChatHandler(facade: TravelFacade) {
                           'https://www.nps.gov/common/uploads/structured_data/3C80E4A2-1DD8-B71B-0B92311ED9BAC3D0.jpg',
                         ];
                         smokiesPhotos.forEach((url, idx) => {
-                          collectedPhotos.push({
-                            keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
-                            url: url,
-                            caption: `${park.name} - National Park`,
-                            source: 'nps'
-                          });
+                          if (collectedPhotos.length < TARGET_NPS_PHOTOS) {
+                            collectedPhotos.push({
+                              keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
+                              url: url,
+                              caption: `${park.name} - National Park`,
+                              source: 'nps'
+                            });
+                          }
                         });
                       } else {
-                        const npsPhotos = park.images.slice(0, TARGET_PHOTOS);
+                        const npsPhotos = park.images.slice(0, TARGET_NPS_PHOTOS - collectedPhotos.length);
                         npsPhotos.forEach((imageUrl: string, idx: number) => {
                           collectedPhotos.push({
                             keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
@@ -525,22 +534,89 @@ export async function createChatHandler(facade: TravelFacade) {
                   
                   console.log(`[Chat] Park search: collected ${collectedPhotos.length} NPS photos from ${parksForPhotos.map(p => p.parkCode).join(', ')}`);
                   
-                  // Supplement with Unsplash if needed
-                  if (collectedPhotos.length < TARGET_PHOTOS) {
-                    const unsplash = getUnsplashAdapter();
-                    if (unsplash.isConfigured()) {
-                      const parkName = parksForPhotos[0].name.replace(' National Park', '').replace(' National', '');
-                      const needed = TARGET_PHOTOS - collectedPhotos.length;
-                      console.log(`[Chat] Supplementing with ${needed} Unsplash photos for "${parkName}"`);
-                      const unsplashPhotos = await unsplash.searchPhotos(`${parkName} landscape nature`, needed);
-                      unsplashPhotos.forEach(photo => {
-                        collectedPhotos.push({
-                          keyword: parkName,
-                          url: photo.url,
-                          caption: `${parkName} - ${photo.caption} (${photo.credit})`,
-                          source: 'unsplash'
-                        });
+                  // STEP 2: Supplement NPS photos with generic Unsplash if needed
+                  const unsplash = getUnsplashAdapter();
+                  if (collectedPhotos.length < TARGET_NPS_PHOTOS && unsplash.isConfigured()) {
+                    const needed = TARGET_NPS_PHOTOS - collectedPhotos.length;
+                    console.log(`[Chat] Supplementing with ${needed} Unsplash landscape photos for "${parkName}"`);
+                    const unsplashPhotos = await unsplash.searchPhotos(`${parkName} landscape nature`, needed);
+                    unsplashPhotos.forEach(photo => {
+                      collectedPhotos.push({
+                        keyword: parkName,
+                        url: photo.url,
+                        caption: `${parkName} - ${photo.caption} (${photo.credit})`,
+                        source: 'unsplash'
                       });
+                    });
+                  }
+                  
+                  // STEP 3: Fetch activities/events and get matching Unsplash photos (8 photos)
+                  if (unsplash.isConfigured()) {
+                    try {
+                      // Get things to do / activities from NPS API
+                      const activities = await facade.getParkActivities(parkCode);
+                      const hikes = facade.getParkHikes(parkCode);
+                      
+                      // Build list of interesting features to search for
+                      const features: string[] = [];
+                      
+                      // Add activity titles (hiking, wildlife viewing, etc.)
+                      activities.slice(0, 5).forEach((activity: any) => {
+                        if (activity.title) {
+                          features.push(activity.title);
+                        }
+                      });
+                      
+                      // Add hike names as features
+                      hikes.slice(0, 3).forEach(hike => {
+                        features.push(hike.name);
+                      });
+                      
+                      // Add park-specific features based on common attractions
+                      const parkFeatures: Record<string, string[]> = {
+                        'grca': ['Colorado River rafting', 'South Rim viewpoint', 'Bright Angel Trail'],
+                        'yose': ['Half Dome', 'Yosemite Falls', 'El Capitan climbing'],
+                        'yell': ['Old Faithful geyser', 'Yellowstone wildlife bison', 'Grand Prismatic Spring'],
+                        'zion': ['Angels Landing', 'The Narrows hiking', 'Zion Canyon'],
+                        'glac': ['Going to the Sun Road', 'Glacier mountain goats', 'alpine lakes'],
+                        'grsm': ['Cades Cove wildlife', 'Appalachian Trail', 'mountain streams'],
+                        'acad': ['Cadillac Mountain sunrise', 'rocky coastline', 'lighthouse'],
+                        'romo': ['elk wildlife', 'alpine tundra', 'mountain peaks'],
+                      };
+                      
+                      if (parkFeatures[parkCode]) {
+                        features.push(...parkFeatures[parkCode]);
+                      }
+                      
+                      // Dedupe and limit features
+                      const uniqueFeatures = [...new Set(features)].slice(0, 8);
+                      
+                      console.log(`[Chat] Fetching event/activity photos for: ${uniqueFeatures.join(', ')}`);
+                      
+                      // Fetch Unsplash photos for each feature
+                      for (const feature of uniqueFeatures) {
+                        if (collectedPhotos.length >= TARGET_TOTAL_PHOTOS) break;
+                        
+                        const searchQuery = `${parkName} ${feature}`;
+                        const photos = await unsplash.searchPhotos(searchQuery, 1);
+                        
+                        if (photos.length > 0) {
+                          const photo = photos[0];
+                          // Check we don't already have this URL
+                          if (!collectedPhotos.some(p => p.url === photo.url)) {
+                            collectedPhotos.push({
+                              keyword: feature,
+                              url: photo.url,
+                              caption: `${parkName} - ${feature} (${photo.credit})`,
+                              source: 'unsplash'
+                            });
+                          }
+                        }
+                      }
+                      
+                      console.log(`[Chat] Total photos after event matching: ${collectedPhotos.length}`);
+                    } catch (err) {
+                      console.log(`[Chat] Could not fetch activities for event photos:`, err);
                     }
                   }
                 } else {
@@ -548,11 +624,9 @@ export async function createChatHandler(facade: TravelFacade) {
                   console.log(`[Chat] No NPS parks matched "${cleanQuery}", falling back to Unsplash`);
                   const unsplash = getUnsplashAdapter();
                   if (unsplash.isConfigured()) {
-                    // Use the original query for Unsplash search
                     const searchTerm = cleanQuery.length > 2 ? cleanQuery : rawQuery;
-                    console.log(`[Chat] Fetching ${TARGET_PHOTOS} Unsplash photos for "${searchTerm}"`);
-                    const unsplashPhotos = await unsplash.searchPhotos(`${searchTerm} national park landscape`, TARGET_PHOTOS);
-                    // Format search term for display (title case)
+                    console.log(`[Chat] Fetching ${TARGET_TOTAL_PHOTOS} Unsplash photos for "${searchTerm}"`);
+                    const unsplashPhotos = await unsplash.searchPhotos(`${searchTerm} national park landscape`, TARGET_TOTAL_PHOTOS);
                     const displayName = searchTerm.split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
                     unsplashPhotos.forEach(photo => {
                       collectedPhotos.push({
