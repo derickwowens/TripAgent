@@ -57,12 +57,12 @@ export function calculatePhotoConfidence(
     }
   }
   
-  // BONUS: Trusted source (NPS, official sites)
+  // BONUS: Trusted source (NPS, official sites) - give significant boost
   const isTrustedSource = url.includes('nps.gov') || 
                           url.includes('recreation.gov') ||
                           url.includes('nationalpark');
   if (isTrustedSource) {
-    score += 10;
+    score += 25; // NPS photos are authoritative, boost to pass threshold
   }
   
   // BONUS: Unsplash photos that match query get a small boost (quality source)

@@ -572,16 +572,69 @@ export async function createChatHandler(facade: TravelFacade) {
                         features.push(hike.name);
                       });
                       
-                      // Add park-specific features based on common attractions
+                      // Add park-specific features based on common attractions (all 63 national parks)
                       const parkFeatures: Record<string, string[]> = {
+                        'acad': ['Cadillac Mountain sunrise', 'rocky coastline', 'Bass Harbor lighthouse'],
+                        'arch': ['Delicate Arch', 'Landscape Arch', 'Fiery Furnace'],
+                        'badl': ['badlands formations', 'prairie wildlife', 'night sky stars'],
+                        'bibe': ['Chisos Mountains', 'Rio Grande river', 'desert wildlife'],
+                        'bisc': ['coral reef snorkeling', 'mangroves', 'island kayaking'],
+                        'blca': ['canyon overlook', 'Painted Wall', 'Gunnison River'],
+                        'brca': ['Bryce Canyon hoodoos', 'Thor\'s Hammer', 'Navajo Loop Trail'],
+                        'cany': ['Island in the Sky', 'Mesa Arch sunrise', 'Needles District'],
+                        'care': ['Waterpocket Fold', 'Capitol Dome', 'petroglyphs'],
+                        'cave': ['Carlsbad Caverns underground', 'bat flight', 'cave formations'],
+                        'chis': ['island wildlife', 'sea caves kayaking', 'whale watching'],
+                        'cong': ['cypress swamp', 'boardwalk trail', 'fireflies'],
+                        'crla': ['Crater Lake blue water', 'Wizard Island', 'Rim Drive'],
+                        'cuva': ['Brandywine Falls', 'covered bridges', 'fall foliage'],
+                        'dena': ['Denali mountain peak', 'grizzly bears', 'northern lights'],
+                        'deva': ['Death Valley sand dunes', 'Badwater Basin salt flats', 'Artists Palette'],
+                        'drto': ['Fort Jefferson', 'snorkeling coral', 'sea turtles'],
+                        'ever': ['alligators wildlife', 'mangrove kayaking', 'bird watching'],
+                        'gaar': ['arctic wilderness', 'caribou migration', 'midnight sun'],
+                        'jeff': ['Gateway Arch', 'St Louis skyline', 'riverfront'],
+                        'glac': ['Going to the Sun Road', 'mountain goats', 'alpine lakes'],
+                        'glba': ['tidewater glaciers', 'whale watching', 'kayaking'],
+                        'grba': ['Lehman Caves', 'bristlecone pines', 'Wheeler Peak'],
                         'grca': ['Colorado River rafting', 'South Rim viewpoint', 'Bright Angel Trail'],
-                        'yose': ['Half Dome', 'Yosemite Falls', 'El Capitan climbing'],
-                        'yell': ['Old Faithful geyser', 'Yellowstone wildlife bison', 'Grand Prismatic Spring'],
-                        'zion': ['Angels Landing', 'The Narrows hiking', 'Zion Canyon'],
-                        'glac': ['Going to the Sun Road', 'Glacier mountain goats', 'alpine lakes'],
+                        'grsa': ['sand dunes sunset', 'Medano Creek', 'alpine lakes'],
                         'grsm': ['Cades Cove wildlife', 'Appalachian Trail', 'mountain streams'],
-                        'acad': ['Cadillac Mountain sunrise', 'rocky coastline', 'lighthouse'],
-                        'romo': ['elk wildlife', 'alpine tundra', 'mountain peaks'],
+                        'grte': ['Teton Range reflection', 'Jenny Lake', 'moose wildlife'],
+                        'gumo': ['El Capitan peak', 'McKittrick Canyon fall colors', 'desert trails'],
+                        'hale': ['Haleakala sunrise', 'volcanic crater', 'silversword plants'],
+                        'havo': ['Kilauea volcano', 'lava flows', 'volcanic crater'],
+                        'hosp': ['historic bathhouses', 'hot springs', 'Bathhouse Row'],
+                        'indu': ['Lake Michigan beach', 'sand dunes', 'Chicago skyline'],
+                        'isro': ['island wilderness', 'moose', 'lighthouse'],
+                        'jotr': ['Joshua trees desert', 'rock climbing boulders', 'Cholla Cactus Garden', 'Keys View sunset'],
+                        'katm': ['brown bears fishing', 'Brooks Falls', 'Valley of Ten Thousand Smokes'],
+                        'kefj': ['Exit Glacier', 'fjords boat tour', 'sea lions'],
+                        'kova': ['Kobuk sand dunes', 'caribou', 'arctic wilderness'],
+                        'lacl': ['volcanic landscape', 'brown bears', 'remote wilderness'],
+                        'lavo': ['Bumpass Hell', 'volcanic features', 'Lassen Peak'],
+                        'maca': ['Mammoth Cave underground', 'cave formations', 'Green River'],
+                        'meve': ['cliff dwellings', 'Cliff Palace', 'ancient pueblos'],
+                        'mora': ['Mount Rainier peak', 'wildflower meadows', 'Paradise'],
+                        'neri': ['New River Gorge Bridge', 'whitewater rafting', 'rock climbing'],
+                        'noca': ['North Cascades mountains', 'Diablo Lake', 'glaciers'],
+                        'olym': ['Hoh Rainforest', 'Hurricane Ridge', 'tide pools'],
+                        'pefo': ['petrified wood', 'Painted Desert', 'ancient fossils'],
+                        'pinn': ['rock spires', 'California condors', 'talus caves'],
+                        'redw': ['giant redwood trees', 'Fern Canyon', 'foggy forest'],
+                        'romo': ['elk wildlife', 'alpine tundra', 'Trail Ridge Road'],
+                        'sagu': ['saguaro cactus forest', 'desert sunset', 'Sonoran Desert'],
+                        'seki': ['Giant Sequoia trees', 'Moro Rock', 'Crystal Cave'],
+                        'shen': ['Skyline Drive', 'Blue Ridge Mountains', 'fall foliage'],
+                        'thro': ['badlands formations', 'wild horses', 'prairie'],
+                        'viis': ['tropical beaches', 'snorkeling coral reef', 'Trunk Bay'],
+                        'voya': ['lakes canoeing', 'northern lights', 'houseboating'],
+                        'whsa': ['white sand dunes', 'gypsum desert', 'sunset'],
+                        'wica': ['Wind Cave underground', 'boxwork formations', 'bison prairie'],
+                        'wrst': ['massive glaciers', 'mountain wilderness', 'Kennecott mines'],
+                        'yell': ['Old Faithful geyser', 'Yellowstone bison wildlife', 'Grand Prismatic Spring'],
+                        'yose': ['Half Dome', 'Yosemite Falls', 'El Capitan climbing'],
+                        'zion': ['Angels Landing', 'The Narrows hiking', 'Zion Canyon'],
                       };
                       
                       if (parkFeatures[parkCode]) {
@@ -845,18 +898,58 @@ export async function createChatHandler(facade: TravelFacade) {
       console.log(`[Chat] Photo filtering with query: "${searchQuery}", destination: "${tripDestination || 'none'}"`);
       console.log(`[Chat] Raw response length: ${rawResponse.length}, Cleaned: ${cleanedResponse.length}`);
       
-      // Use modular photo filtering with 70% confidence threshold
-      const filterContext: PhotoFilterContext = {
-        searchQuery: searchQuery,
-        destination: tripDestination,
-        conversationText: conversationText
-      };
+      // IMPROVED FILTERING STRATEGY:
+      // - NPS photos: validate park name appears in keyword/caption/URL
+      // - Unsplash photos: apply confidence scoring
+      const npsPhotos = collectedPhotos.filter(p => p.source === 'nps');
+      const unsplashPhotos = collectedPhotos.filter(p => p.source === 'unsplash');
       
-      const filteredPhotos = filterPhotosByConfidence(collectedPhotos, filterContext, 70);
+      // Validate NPS photos by string matching on park name
+      // Require ALL destination words to match (e.g., "joshua" AND "tree")
+      const cleanDestWords = (tripDestination || searchQuery || '')
+        .toLowerCase()
+        .replace(/national park/gi, '')
+        .replace(/national/gi, '')
+        .split(/\s+/)
+        .filter((w: string) => w.length >= 3);
       
-      if (collectedPhotos.length > 0) {
-        console.log(`[Chat] Filtered ${collectedPhotos.length - filteredPhotos.length} of ${collectedPhotos.length} photos`);
+      const validatedNpsPhotos = npsPhotos.filter(photo => {
+        const keyword = photo.keyword.toLowerCase();
+        const caption = (photo.caption || '').toLowerCase();
+        const url = photo.url.toLowerCase();
+        const combined = `${keyword} ${caption} ${url}`;
+        
+        // Require ALL destination words to appear (not just any one)
+        const allWordsMatch = cleanDestWords.length > 0 && 
+          cleanDestWords.every((word: string) => combined.includes(word));
+        
+        // Also accept if URL is from nps.gov (official source, trusted)
+        const isOfficialNps = url.includes('nps.gov');
+        
+        return allWordsMatch || isOfficialNps;
+      });
+      
+      console.log(`[Chat] NPS validation: kept ${validatedNpsPhotos.length} of ${npsPhotos.length} (all words: "${cleanDestWords.join(' + ')}")`);
+      
+      let filteredPhotos = [...validatedNpsPhotos];
+      
+      // Only filter Unsplash photos if we have a search query
+      if (unsplashPhotos.length > 0 && searchQuery) {
+        const filterContext: PhotoFilterContext = {
+          searchQuery: searchQuery,
+          destination: tripDestination,
+          conversationText: conversationText
+        };
+        const filteredUnsplash = filterPhotosByConfidence(unsplashPhotos, filterContext, 50);
+        filteredPhotos.push(...filteredUnsplash);
+        console.log(`[Chat] Unsplash: kept ${filteredUnsplash.length} of ${unsplashPhotos.length} photos`);
       } else {
+        filteredPhotos.push(...unsplashPhotos);
+      }
+      
+      console.log(`[Chat] Final: ${npsPhotos.length} NPS + ${filteredPhotos.length - npsPhotos.length} Unsplash = ${filteredPhotos.length} photos`);
+      
+      if (collectedPhotos.length === 0) {
         console.log('[Chat] No photos collected from tool results');
       }
       
