@@ -12,6 +12,7 @@ import { AmadeusActivitiesAdapter } from '../providers/activities/AmadeusActivit
 import { NationalParksAdapter } from '../providers/parks/NationalParksAdapter.js';
 import { createChatHandler } from './chat.js';
 import { logError } from './errorLogger.js';
+import { storeItinerary, getItinerary } from './itineraryHost.js';
 
 // Load environment variables
 config();
@@ -65,6 +66,54 @@ app.post('/api/log-error', asyncHandler(async (req: Request, res: Response) => {
   });
   
   res.json({ logged: true });
+}));
+
+// ============================================
+// ITINERARY HOSTING ENDPOINTS
+// ============================================
+app.post('/api/itinerary/create', asyncHandler(async (req: Request, res: Response) => {
+  const { content, destination, photos, links } = req.body;
+  
+  if (!content) {
+    return res.status(400).json({ error: 'Missing required parameter: content' });
+  }
+  
+  const id = storeItinerary(content, destination, photos, links);
+  const baseUrl = process.env.API_URL || `https://travel-buddy-api-production.up.railway.app`;
+  const url = `${baseUrl}/itinerary/${id}`;
+  
+  res.json({ id, url });
+}));
+
+app.get('/itinerary/:id', asyncHandler(async (req: Request, res: Response) => {
+  const { id } = req.params;
+  const itinerary = getItinerary(id);
+  
+  if (!itinerary) {
+    return res.status(404).send(`
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Itinerary Not Found</title>
+        <style>
+          body { font-family: -apple-system, sans-serif; display: flex; align-items: center; justify-content: center; min-height: 100vh; background: #1a1a2e; color: white; }
+          .container { text-align: center; padding: 40px; }
+          h1 { color: #166534; }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>Itinerary Not Found</h1>
+          <p>This itinerary may have expired or the link is invalid.</p>
+          <p style="margin-top: 20px; opacity: 0.7;">Itineraries are available for 7 days after creation.</p>
+        </div>
+      </body>
+      </html>
+    `);
+  }
+  
+  res.setHeader('Content-Type', 'text/html');
+  res.send(itinerary.html);
 }));
 
 // ============================================

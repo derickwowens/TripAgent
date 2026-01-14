@@ -205,4 +205,17 @@ export const logErrorToServer = async (error: {
   }
 };
 
+// Create HTML itinerary
+export interface CreateItineraryParams {
+  content: string;
+  destination?: string;
+  photos?: Array<{ url: string; caption?: string; keyword?: string }>;
+  links?: Array<{ text: string; url: string }>;
+}
+
+export const createHtmlItinerary = async (params: CreateItineraryParams): Promise<{ id: string; url: string }> => {
+  const response = await api.post('/api/itinerary/create', params);
+  return response.data;
+};
+
 export default api;

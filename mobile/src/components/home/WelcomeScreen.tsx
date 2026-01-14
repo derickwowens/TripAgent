@@ -1,5 +1,5 @@
-import React from 'react';
-import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image } from 'react-native';
+import React, { useState, useRef } from 'react';
+import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image, Animated } from 'react-native';
 
 const QUICK_PROMPTS = [
   { emoji: '🌴', label: 'Somewhere warm on a budget', template: 'Take me somewhere warm on a budget' },
@@ -207,6 +207,89 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   userLocation,
   onSetPrompt 
 }) => {
+  const [expanded, setExpanded] = useState(false);
+  const [showOptions, setShowOptions] = useState(false);
+  
+  // Animation values
+  const headerScale = useRef(new Animated.Value(1)).current;
+  const headerOpacity = useRef(new Animated.Value(1)).current;
+  const buttonScale = useRef(new Animated.Value(1)).current;
+  const optionsOpacity = useRef(new Animated.Value(0)).current;
+  const optionsTranslate = useRef(new Animated.Value(30)).current;
+  
+  const toggleExpanded = () => {
+    if (!expanded) {
+      // First show the options container, then animate
+      setShowOptions(true);
+      setExpanded(true);
+      
+      // Small delay to ensure render, then animate
+      setTimeout(() => {
+        Animated.parallel([
+          Animated.spring(headerScale, {
+            toValue: 0.7,
+            useNativeDriver: true,
+            friction: 8,
+          }),
+          Animated.spring(buttonScale, {
+            toValue: 0.85,
+            useNativeDriver: true,
+            friction: 8,
+          }),
+          Animated.timing(headerOpacity, {
+            toValue: 0.5,
+            duration: 250,
+            useNativeDriver: true,
+          }),
+          Animated.spring(optionsOpacity, {
+            toValue: 1,
+            useNativeDriver: true,
+            friction: 8,
+          }),
+          Animated.spring(optionsTranslate, {
+            toValue: 0,
+            useNativeDriver: true,
+            friction: 8,
+          }),
+        ]).start();
+      }, 10);
+    } else {
+      // Collapse: animate first, then hide
+      setExpanded(false);
+      
+      Animated.parallel([
+        Animated.spring(headerScale, {
+          toValue: 1,
+          useNativeDriver: true,
+          friction: 8,
+        }),
+        Animated.spring(buttonScale, {
+          toValue: 1,
+          useNativeDriver: true,
+          friction: 8,
+        }),
+        Animated.timing(headerOpacity, {
+          toValue: 1,
+          duration: 250,
+          useNativeDriver: true,
+        }),
+        Animated.timing(optionsOpacity, {
+          toValue: 0,
+          duration: 200,
+          useNativeDriver: true,
+        }),
+        Animated.timing(optionsTranslate, {
+          toValue: 30,
+          duration: 200,
+          useNativeDriver: true,
+        }),
+      ]).start(() => {
+        // Hide options after animation completes
+        setShowOptions(false);
+      });
+    }
+  };
+  
   if (locationLoading) {
     return (
       <View style={styles.container}>
@@ -218,73 +301,96 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
 
   return (
     <View style={styles.container}>
-      <Image 
-        source={require('../../../assets/icon.png')} 
-        style={styles.logo}
-        resizeMode="contain"
-      />
-      <Text style={styles.title}>Where would you like to explore?</Text>
+      <Animated.View style={[
+        styles.headerSection,
+        {
+          transform: [{ scale: headerScale }],
+          opacity: headerOpacity,
+        }
+      ]}>
+        <Image 
+          source={require('../../../assets/icon.png')} 
+          style={styles.logo}
+          resizeMode="contain"
+        />
+        <Text style={styles.title}>where would you like to explore?</Text>
+      </Animated.View>
       
-      <Text style={styles.sectionLabel}>Quick Start</Text>
-      <View style={styles.promptContainer}>
-        {userProfile && userProfile.trim().length > 0 && (
-          <TouchableOpacity 
-            style={[styles.promptChip, styles.profileChip]}
-            onPress={() => onSetPrompt(generateProfilePrompt(userProfile))}
-          >
-            <Text style={styles.promptEmoji}>✨</Text>
-            <Text style={styles.promptText}>Trip from my profile</Text>
-          </TouchableOpacity>
-        )}
-        
+      <Animated.View style={{ transform: [{ scale: buttonScale }] }}>
         <TouchableOpacity 
-          style={styles.promptChip}
-          onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(), userProfile))}
+          style={[styles.quickStartButton, expanded && styles.quickStartButtonActive]}
+          onPress={toggleExpanded}
+          activeOpacity={0.7}
         >
-          <Text style={styles.promptEmoji}>🎲</Text>
-          <Text style={styles.promptText}>Surprise me!</Text>
+          <Text style={styles.quickStartText}>Quick Start</Text>
         </TouchableOpacity>
-        
-        {QUICK_PROMPTS.map((prompt, index) => (
+      </Animated.View>
+      
+      {showOptions && (
+        <Animated.View style={[
+          styles.promptContainer,
+          {
+            opacity: optionsOpacity,
+            transform: [{ translateY: optionsTranslate }],
+          }
+        ]}>
+          {userProfile && userProfile.trim().length > 0 && (
+            <TouchableOpacity 
+              style={[styles.promptChip, styles.profileChip]}
+              onPress={() => onSetPrompt(generateProfilePrompt(userProfile))}
+            >
+              <Text style={styles.promptEmoji}>✨</Text>
+              <Text style={styles.promptText}>Trip from my profile</Text>
+            </TouchableOpacity>
+          )}
+          
           <TouchableOpacity 
-            key={index}
             style={styles.promptChip}
-            onPress={() => onSetPrompt(injectProfileContext(prompt.template, userProfile))}
+            onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation), userProfile))}
           >
-            <Text style={styles.promptEmoji}>{prompt.emoji}</Text>
-            <Text style={styles.promptText}>{prompt.label}</Text>
+            <Text style={styles.promptEmoji}>🎲</Text>
+            <Text style={styles.promptText}>Surprise me!</Text>
           </TouchableOpacity>
-        ))}
-      </View>
+          
+          {QUICK_PROMPTS.map((prompt, index) => (
+            <TouchableOpacity 
+              key={index}
+              style={styles.promptChip}
+              onPress={() => onSetPrompt(injectProfileContext(prompt.template, userProfile))}
+            >
+              <Text style={styles.promptEmoji}>{prompt.emoji}</Text>
+              <Text style={styles.promptText}>{prompt.label}</Text>
+            </TouchableOpacity>
+          ))}
+        </Animated.View>
+      )}
     </View>
   );
 };
-
-export const ConsiderationsHint: React.FC = () => (
-  <Text style={styles.considerationsHint}>
-    💡 Consider: duration • budget • lodging type • transportation
-  </Text>
-);
 
 const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 60,
+    paddingTop: 40,
     paddingHorizontal: 16,
   },
+  headerSection: {
+    alignItems: 'center',
+    marginBottom: 24,
+  },
   logo: {
-    width: 80,
-    height: 80,
-    marginBottom: 12,
-    borderRadius: 16,
+    width: 100,
+    height: 100,
+    marginBottom: 16,
+    borderRadius: 20,
   },
   title: {
-    fontSize: 20,
-    color: 'rgba(255,255,255,0.9)',
+    fontSize: 26,
+    color: 'rgba(255,255,255,0.95)',
     textAlign: 'center',
     fontWeight: '300',
-    marginBottom: 24,
+    letterSpacing: 0.5,
   },
   loadingText: {
     fontSize: 20,
@@ -292,12 +398,29 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: '300',
   },
-  sectionLabel: {
-    fontSize: 12,
-    color: 'rgba(255,255,255,0.5)',
-    textTransform: 'uppercase',
+  quickStartButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    backgroundColor: 'transparent',
+    borderRadius: 20,
+    borderWidth: 1.5,
+    borderColor: 'rgba(255, 255, 255, 0.25)',
+    marginBottom: 20,
+    gap: 6,
+  },
+  quickStartButtonActive: {
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderColor: 'rgba(255, 255, 255, 0.4)',
+  },
+  quickStartText: {
+    color: 'rgba(255, 255, 255, 0.9)',
+    fontSize: 14,
+    fontWeight: '500',
     letterSpacing: 1,
-    marginBottom: 12,
+    textTransform: 'uppercase',
   },
   promptContainer: {
     width: '100%',
@@ -317,7 +440,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(22, 101, 52, 0.6)',
     borderColor: 'rgba(22, 101, 52, 0.8)',
   },
-    promptEmoji: {
+  promptEmoji: {
     fontSize: 20,
     marginRight: 12,
   },
@@ -326,12 +449,5 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: '500',
     flex: 1,
-  },
-  considerationsHint: {
-    fontSize: 11,
-    color: 'rgba(255,255,255,0.4)',
-    textAlign: 'center',
-    paddingHorizontal: 20,
-    marginBottom: 8,
   },
 });

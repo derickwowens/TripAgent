@@ -1,4 +1,4 @@
-export { WelcomeScreen, ConsiderationsHint } from './WelcomeScreen';
+export { WelcomeScreen } from './WelcomeScreen';
 export { ImageModal } from './ImageModal';
 export { PhotoGallery } from './PhotoGallery';
 export { ChatMessages } from './ChatMessages';

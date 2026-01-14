@@ -14,7 +14,7 @@ import {
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
 import { useLocation, useConversations, useUserProfile, Message, SavedConversation } from '../hooks';
-import { WelcomeScreen, ConsiderationsHint, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel } from '../components/home';
+import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
@@ -285,18 +285,37 @@ const HomeScreen: React.FC = () => {
     setLoadingStatus('Generating your itinerary...');
     
     try {
-      const itineraryContent = await generateItinerary(conversation, setLoadingStatus);
+      const itineraryData = await generateItinerary(conversation, setLoadingStatus);
       
-      if (itineraryContent) {
-        const saved = await saveItineraryToDevice(conversation, itineraryContent);
+      if (itineraryData) {
+        setLoadingStatus('Creating shareable page...');
+        const saved = await saveItineraryToDevice(conversation, itineraryData);
         setIsLoading(false);
         setLoadingStatus('');
         
         if (saved) {
+          const hasHtmlUrl = !!saved.htmlUrl;
           Alert.alert(
-            'Itinerary Created!',
-            'Your itinerary has been saved. Would you like to share it now?',
-            [
+            'Itinerary Created (Beta)',
+            hasHtmlUrl 
+              ? 'Your web itinerary is ready! This is an experimental feature - the link will expire in 7 days.'
+              : 'Your itinerary has been saved. Would you like to share it now?',
+            hasHtmlUrl ? [
+              { text: 'Later', style: 'cancel' },
+              { 
+                text: 'View', 
+                onPress: async () => {
+                  if (saved.htmlUrl) {
+                    const { Linking } = require('react-native');
+                    await Linking.openURL(saved.htmlUrl);
+                  }
+                }
+              },
+              { 
+                text: 'Share', 
+                onPress: () => shareGeneratedItinerary(saved)
+              },
+            ] : [
               { text: 'Later', style: 'cancel' },
               { 
                 text: 'Share', 
@@ -453,8 +472,7 @@ const HomeScreen: React.FC = () => {
             />
           </ScrollView>
 
-          {messages.length === 0 && <ConsiderationsHint />}
-          
+                    
           {messages.length > 0 ? (
             <CollapsibleBottomPanel hasPhotos={allPhotos.length > 0}>
               <ChatInput

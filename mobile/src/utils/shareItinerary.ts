@@ -1,7 +1,7 @@
-import { Share, Platform, ActionSheetIOS, Alert } from 'react-native';
+import { Share, Platform, ActionSheetIOS, Alert, Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { SavedConversation, Message } from '../hooks';
-import { sendChatMessage, ChatMessage } from '../services/api';
+import { sendChatMessage, ChatMessage, createHtmlItinerary, PhotoReference } from '../services/api';
 
 const ITINERARIES_STORAGE_KEY = 'saved_itineraries';
 
@@ -11,6 +11,9 @@ export interface SavedItinerary {
   destination?: string;
   content: string;
   createdAt: string;
+  htmlUrl?: string;
+  photos?: PhotoReference[];
+  links?: Array<{ text: string; url: string }>;
 }
 
 /**
@@ -93,14 +96,52 @@ export const shareConversation = async (conversation: SavedConversation): Promis
 };
 
 /**
+ * Extract all photos from conversation messages
+ */
+const extractPhotosFromConversation = (conversation: SavedConversation): PhotoReference[] => {
+  const photos: PhotoReference[] = [];
+  for (const msg of conversation.messages) {
+    if (msg.photos && msg.photos.length > 0) {
+      photos.push(...msg.photos);
+    }
+  }
+  return photos;
+};
+
+/**
+ * Extract links from conversation content
+ */
+const extractLinksFromConversation = (conversation: SavedConversation): Array<{ text: string; url: string }> => {
+  const links: Array<{ text: string; url: string }> = [];
+  const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
+  
+  for (const msg of conversation.messages) {
+    if (msg.type === 'assistant') {
+      let match: RegExpExecArray | null;
+      while ((match = linkRegex.exec(msg.content)) !== null) {
+        // Avoid duplicates
+        if (!links.some(l => l.url === match![2])) {
+          links.push({ text: match[1], url: match[2] });
+        }
+      }
+    }
+  }
+  return links;
+};
+
+/**
  * Generate a polished itinerary from the conversation using AI
  */
 export const generateItinerary = async (
   conversation: SavedConversation,
   onStatusUpdate?: (status: string) => void
-): Promise<string | null> => {
+): Promise<{ content: string; photos: PhotoReference[]; links: Array<{ text: string; url: string }> } | null> => {
   try {
     onStatusUpdate?.('Creating your itinerary...');
+    
+    // Extract photos and links from conversation
+    const photos = extractPhotosFromConversation(conversation);
+    const links = extractLinksFromConversation(conversation);
     
     // Extract key details from metadata
     const { metadata } = conversation;
@@ -136,16 +177,17 @@ INSTRUCTIONS:
 3. If specific dates aren't mentioned, use placeholder dates like "Day 1", "Day 2"
 4. If budget isn't specified, provide general cost estimates
 5. Fill in reasonable details based on the destination discussed
-6. Format with clear sections using emojis for visual appeal
+6. IMPORTANT: Preserve any links from the conversation in markdown format [text](url)
+7. Format with clear sections for visual appeal
 
 Generate the itinerary now with these sections:
-📍 TRIP OVERVIEW
-📅 DAILY ITINERARY  
-🏨 ACCOMMODATIONS
-🚗 TRANSPORTATION
-💰 ESTIMATED BUDGET
-🎒 PACKING LIST
-💡 TIPS & REMINDERS
+## Trip Overview
+## Daily Itinerary  
+## Accommodations
+## Transportation
+## Estimated Budget
+## Packing List
+## Tips & Reminders
 
 Be concise but comprehensive. This will be shared with friends and family.`;
 
@@ -156,7 +198,11 @@ Be concise but comprehensive. This will be shared with friends and family.`;
     const response = await sendChatMessage(chatMessages, {});
     
     if (response.response) {
-      return response.response;
+      return {
+        content: response.response,
+        photos,
+        links,
+      };
     }
     return null;
   } catch (error) {
@@ -166,19 +212,36 @@ Be concise but comprehensive. This will be shared with friends and family.`;
 };
 
 /**
- * Save itinerary to device storage
+ * Save itinerary to device storage and create HTML version
  */
 export const saveItineraryToDevice = async (
   conversation: SavedConversation,
-  itineraryContent: string
+  itineraryData: { content: string; photos: PhotoReference[]; links: Array<{ text: string; url: string }> }
 ): Promise<SavedItinerary | null> => {
   try {
+    // Create HTML itinerary on server
+    let htmlUrl: string | undefined;
+    try {
+      const htmlResult = await createHtmlItinerary({
+        content: itineraryData.content,
+        destination: conversation.metadata.destination,
+        photos: itineraryData.photos,
+        links: itineraryData.links,
+      });
+      htmlUrl = htmlResult.url;
+    } catch (e) {
+      console.warn('Failed to create HTML itinerary:', e);
+    }
+    
     const itinerary: SavedItinerary = {
       id: Date.now().toString(),
       conversationId: conversation.id,
       destination: conversation.metadata.destination,
-      content: itineraryContent,
+      content: itineraryData.content,
       createdAt: new Date().toISOString(),
+      htmlUrl,
+      photos: itineraryData.photos,
+      links: itineraryData.links,
     };
     
     // Load existing itineraries
@@ -207,15 +270,33 @@ export const shareGeneratedItinerary = async (
   itinerary: SavedItinerary
 ): Promise<boolean> => {
   try {
-    let content = '🏞️ My Trip Itinerary\n';
-    content += '━━━━━━━━━━━━━━━━━━━━━━\n\n';
-    content += cleanMarkdown(itinerary.content);
-    content += '\n\n━━━━━━━━━━━━━━━━━━━━━━\n';
-    content += '📱 Created with TripAgent';
-    
     const title = itinerary.destination 
       ? `Itinerary: ${itinerary.destination}`
       : 'My Trip Itinerary';
+    
+    // If we have an HTML URL, share that
+    if (itinerary.htmlUrl) {
+      const result = await Share.share(
+        {
+          message: `Check out my trip itinerary for ${itinerary.destination || 'my upcoming trip'}!\n\n${itinerary.htmlUrl}`,
+          title: title,
+          url: itinerary.htmlUrl,
+          ...(Platform.OS === 'ios' && { subject: title }),
+        },
+        {
+          dialogTitle: 'Share your itinerary',
+          ...(Platform.OS === 'ios' && { subject: title }),
+        }
+      );
+      return result.action === Share.sharedAction;
+    }
+    
+    // Fallback to text sharing
+    let content = 'My Trip Itinerary\n';
+    content += '━━━━━━━━━━━━━━━━━━━━━━\n\n';
+    content += cleanMarkdown(itinerary.content);
+    content += '\n\n━━━━━━━━━━━━━━━━━━━━━━\n';
+    content += 'Created with TripAgent';
     
     const result = await Share.share(
       {
@@ -237,13 +318,24 @@ export const shareGeneratedItinerary = async (
 };
 
 /**
+ * Open HTML itinerary in browser
+ */
+export const viewHtmlItinerary = async (itinerary: SavedItinerary): Promise<void> => {
+  if (itinerary.htmlUrl) {
+    await Linking.openURL(itinerary.htmlUrl);
+  } else {
+    Alert.alert('Not Available', 'HTML version is not available for this itinerary.');
+  }
+};
+
+/**
  * Show share options action sheet
  */
 export const showShareOptions = (
   conversation: SavedConversation,
   onGenerateItinerary: () => void
 ): void => {
-  const options = ['Share Conversation', 'Generate & Share Itinerary', 'Cancel'];
+  const options = ['Share Conversation', 'Generate Web Itinerary (Beta)', 'Cancel'];
   const cancelButtonIndex = 2;
   
   if (Platform.OS === 'ios') {
@@ -275,7 +367,7 @@ export const showShareOptions = (
           },
         },
         {
-          text: 'Generate & Share Itinerary',
+          text: 'Generate Web Itinerary (Beta)',
           onPress: onGenerateItinerary,
         },
         {
