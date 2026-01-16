@@ -20,6 +20,16 @@
         "EXPO_PUBLIC_API_URL": "http://192.168.1.109:3000"
       }
     },
+    "closed": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "APP_ENV": "production",
+        "EXPO_PUBLIC_API_URL": "https://travel-buddy-api-production.up.railway.app",
+        "EXPO_PUBLIC_BUILD_SUFFIX": "-RC"
+      }
+    },
     "production": {
       "android": {
         "buildType": "app-bundle"

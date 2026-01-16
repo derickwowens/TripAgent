@@ -6,6 +6,7 @@ import { ConversationList } from './ConversationList';
 import { SavedConversation, useDarkModeContext } from '../../hooks';
 
 const APP_VERSION = Constants.expoConfig?.version || '1.0.0';
+const BUILD_SUFFIX = process.env.EXPO_PUBLIC_BUILD_SUFFIX || '';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -87,7 +88,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               >
                 <Text style={styles.feedbackText}>Feedback</Text>
               </TouchableOpacity>
-              <Text style={styles.versionText}>v{APP_VERSION}</Text>
+              <Text style={styles.versionText}>v{APP_VERSION}{BUILD_SUFFIX}</Text>
             </View>
             <View style={styles.headerRight}>
               <DarkModeToggle />

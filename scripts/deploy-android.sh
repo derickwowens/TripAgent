@@ -1,6 +1,6 @@
 #!/bin/bash
 # TripAgent - Android Deployment Script
-# Usage: ./scripts/deploy-android.sh [major|minor|hotfix]
+# Usage: ./scripts/deploy-android.sh [major|minor|hotfix] [--rc]
 
 set -e
 
@@ -10,21 +10,44 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
-# Get the bump type from argument
-BUMP_TYPE=${1:-minor}
+# Parse arguments
+BUMP_TYPE=""
+RC_BUILD=false
+
+for arg in "$@"; do
+    case $arg in
+        --rc)
+            RC_BUILD=true
+            ;;
+        major|minor|hotfix)
+            BUMP_TYPE=$arg
+            ;;
+    esac
+done
+
+# Default to minor if not specified
+BUMP_TYPE=${BUMP_TYPE:-minor}
 
 if [[ ! "$BUMP_TYPE" =~ ^(major|minor|hotfix)$ ]]; then
     echo -e "${RED}Error: Invalid bump type '$BUMP_TYPE'${NC}"
-    echo "Usage: ./scripts/deploy-android.sh [major|minor|hotfix]"
+    echo "Usage: ./scripts/deploy-android.sh [major|minor|hotfix] [--rc]"
     echo "  major  - Bump major version (1.0.0 -> 2.0.0)"
     echo "  minor  - Bump minor version (1.0.0 -> 1.1.0)"
     echo "  hotfix - Bump patch version (1.0.0 -> 1.0.1)"
+    echo "  --rc   - Build as Release Candidate for closed testing"
     exit 1
 fi
 
 echo -e "${GREEN}🚀 TripAgent Android Deployment${NC}"
 echo "=================================="
 echo -e "Bump type: ${YELLOW}$BUMP_TYPE${NC}"
+if [ "$RC_BUILD" = true ]; then
+    echo -e "Build type: ${YELLOW}Release Candidate (closed testing)${NC}"
+    BUILD_PROFILE="closed"
+else
+    echo -e "Build type: ${YELLOW}Production${NC}"
+    BUILD_PROFILE="production"
+fi
 echo ""
 
 # Navigate to project root
@@ -99,7 +122,7 @@ echo "This may take 10-15 minutes on the free tier."
 echo ""
 
 cd mobile
-eas build --platform android --profile production
+eas build --platform android --profile $BUILD_PROFILE
 
 echo ""
 echo -e "${GREEN}🎉 Deployment complete!${NC}"
