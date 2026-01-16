@@ -206,7 +206,8 @@ NATIONAL PARKS:
 🔗 [Park info](https://www.nps.gov/yose/index.htm)
 Format: https://www.nps.gov/{PARK-CODE}/index.htm
 
-CRITICAL: Always use the ACTUAL airport codes, dates, and locations from the conversation. Dates must be YYYY-MM-DD format.
+CRITICAL: Always use the ACTUAL airport codes, dates, and locations from the CURRENT query being asked. Dates must be YYYY-MM-DD format.
+IMPORTANT: When the user asks about a NEW destination or trip, you MUST generate FRESH booking links with the NEW destination's airport codes and dates. NEVER reuse links from a previous trip discussed in the conversation. Each new trip query requires newly generated links specific to that destination.
 
 IMPORTANT - TEXT FORMATTING FOR MOBILE:
 This is a mobile app that displays PLAIN TEXT. Follow these formatting rules strictly:
@@ -293,6 +294,7 @@ export async function createChatHandler(facade: TravelFacade) {
 - If they have accessibility needs, prioritize accessible options
 - If they're traveling with a dog or service animal, provide pet-friendly lodging options, airline pet policies, and note any park restrictions on pets (most national parks restrict pets on trails but allow them in campgrounds and on paved roads)
 - For service animals specifically, note they are allowed in more areas than regular pets under ADA guidelines
+- IMPORTANT: "budget" or "budget-conscious" refers to TRAVEL STYLE (affordable, cost-conscious travel) - NOT the "Budget" rental car company. Do not assume a car rental company preference unless they explicitly mention a company name like "I prefer Hertz" or "I like Enterprise"
 \n`;
     }
 
@@ -377,6 +379,49 @@ export async function createChatHandler(facade: TravelFacade) {
             tesla_only: { type: 'boolean', description: 'If true, only return Tesla Superchargers' },
           },
           required: ['origin_lat', 'origin_lng', 'dest_lat', 'dest_lng'],
+        },
+      },
+      {
+        name: 'search_hotels',
+        description: 'Search for hotels near a location. Returns hotel options with prices, ratings, and amenities.',
+        input_schema: {
+          type: 'object' as const,
+          properties: {
+            location: { type: 'string', description: 'City or location to search (e.g., "Yosemite Valley", "Grand Canyon Village")' },
+            check_in_date: { type: 'string', description: 'Check-in date YYYY-MM-DD' },
+            check_out_date: { type: 'string', description: 'Check-out date YYYY-MM-DD' },
+            adults: { type: 'number', description: 'Number of adults (default: 2)' },
+            rooms: { type: 'number', description: 'Number of rooms (default: 1)' },
+          },
+          required: ['location', 'check_in_date', 'check_out_date'],
+        },
+      },
+      {
+        name: 'search_car_rentals',
+        description: 'Search for rental cars at an airport or location. Returns car options with prices and vehicle details.',
+        input_schema: {
+          type: 'object' as const,
+          properties: {
+            pickup_location: { type: 'string', description: 'Airport code or city (e.g., "LAX", "Denver")' },
+            pickup_date: { type: 'string', description: 'Pickup date YYYY-MM-DD' },
+            dropoff_date: { type: 'string', description: 'Dropoff date YYYY-MM-DD' },
+            pickup_time: { type: 'string', description: 'Pickup time HH:MM (default: 10:00)' },
+            dropoff_time: { type: 'string', description: 'Dropoff time HH:MM (default: 10:00)' },
+          },
+          required: ['pickup_location', 'pickup_date', 'dropoff_date'],
+        },
+      },
+      {
+        name: 'search_activities',
+        description: 'Search for tours, activities, and experiences near a location. Returns bookable activities with prices and descriptions.',
+        input_schema: {
+          type: 'object' as const,
+          properties: {
+            location: { type: 'string', description: 'City or destination (e.g., "Grand Canyon", "Yellowstone")' },
+            latitude: { type: 'number', description: 'Latitude of the location (optional, improves accuracy)' },
+            longitude: { type: 'number', description: 'Longitude of the location (optional, improves accuracy)' },
+          },
+          required: ['location'],
         },
       },
     ];
@@ -844,6 +889,75 @@ export async function createChatHandler(facade: TravelFacade) {
                   note: chargingStations.length > 0 
                     ? `Found ${chargingStations.length} DC fast charging stations along your route`
                     : 'No charging stations found along this route',
+                };
+                break;
+
+              case 'search_hotels':
+                const hotelInput = toolUse.input as any;
+                const hotelResults = await facade.searchHotels({
+                  location: hotelInput.location,
+                  checkInDate: hotelInput.check_in_date,
+                  checkOutDate: hotelInput.check_out_date,
+                  adults: hotelInput.adults || 2,
+                  rooms: hotelInput.rooms || 1,
+                });
+                result = {
+                  hotels: hotelResults.results.slice(0, 8).map(h => ({
+                    name: h.name,
+                    price: `$${h.price.total}`,
+                    pricePerNight: `$${h.price.perNight}`,
+                    rating: h.rating,
+                    address: h.address,
+                    amenities: h.amenities?.slice(0, 5),
+                  })),
+                  totalFound: hotelResults.totalResults,
+                  providers: hotelResults.providers,
+                };
+                break;
+
+              case 'search_car_rentals':
+                const carInput = toolUse.input as any;
+                const carResults = await facade.searchCarRentals({
+                  pickupLocation: carInput.pickup_location,
+                  pickupDate: carInput.pickup_date,
+                  dropoffDate: carInput.dropoff_date,
+                  pickupTime: carInput.pickup_time || '10:00',
+                  dropoffTime: carInput.dropoff_time || '10:00',
+                });
+                result = {
+                  cars: carResults.results.slice(0, 8).map(c => ({
+                    vendor: c.vendor,
+                    vehicle: `${c.vehicle.category} (${c.vehicle.transmission})`,
+                    seats: c.vehicle.seats,
+                    pricePerDay: `$${c.price.perDay}`,
+                    totalPrice: `$${c.price.total}`,
+                    features: [
+                      c.vehicle.airConditioning ? 'A/C' : null,
+                      c.mileage?.unlimited ? 'Unlimited miles' : null,
+                    ].filter(Boolean),
+                  })),
+                  totalFound: carResults.totalResults,
+                  providers: carResults.providers,
+                };
+                break;
+
+              case 'search_activities':
+                const activityInput = toolUse.input as any;
+                const activityResults = await facade.searchActivities({
+                  location: activityInput.location,
+                  radius: 50, // 50km radius
+                });
+                result = {
+                  activities: activityResults.results.slice(0, 10).map(a => ({
+                    name: a.name,
+                    description: a.shortDescription?.substring(0, 150) + (a.shortDescription && a.shortDescription.length > 150 ? '...' : ''),
+                    price: a.price?.amount ? `$${a.price.amount}` : 'Price varies',
+                    rating: a.rating,
+                    duration: a.duration,
+                    bookingLink: a.bookingLink,
+                  })),
+                  totalFound: activityResults.totalResults,
+                  providers: activityResults.providers,
                 };
                 break;
 

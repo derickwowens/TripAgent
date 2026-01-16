@@ -47,6 +47,9 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   const [editTitle, setEditTitle] = useState('');
   const [editDescription, setEditDescription] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
+  const [deleteModalVisible, setDeleteModalVisible] = useState(false);
+  const [deletingConvId, setDeletingConvId] = useState<string | null>(null);
+  const [deletingConvTitle, setDeletingConvTitle] = useState('');
 
   // Sort by favorites first, then by last updated
   const filteredConversations = useMemo(() => {
@@ -100,6 +103,21 @@ export const ConversationList: React.FC<ConversationListProps> = ({
     if (conv.metadata.title) return conv.metadata.title;
     if (conv.metadata.destination) return conv.metadata.destination;
     return 'Trip Planning';
+  };
+
+  const openDeleteModal = (conv: SavedConversation) => {
+    setDeletingConvId(conv.id);
+    setDeletingConvTitle(getDisplayTitle(conv));
+    setDeleteModalVisible(true);
+  };
+
+  const confirmDelete = () => {
+    if (deletingConvId) {
+      onDeleteConversation(deletingConvId);
+    }
+    setDeleteModalVisible(false);
+    setDeletingConvId(null);
+    setDeletingConvTitle('');
   };
 
   // Get first photo URL from conversation messages
@@ -182,7 +200,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                 </TouchableOpacity>
                 <TouchableOpacity
                   style={[styles.actionBadge, styles.deleteBadge, isDarkMode && styles.deleteBadgeDark]}
-                  onPress={() => onDeleteConversation(conv.id)}
+                  onPress={() => openDeleteModal(conv)}
                 >
                   <Text style={[styles.actionIcon, styles.deleteIcon]}>×</Text>
                 </TouchableOpacity>
@@ -263,6 +281,36 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                 onPress={saveEdit}
               >
                 <Text style={styles.saveButtonText}>Save</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </View>
+      </Modal>
+
+      <Modal
+        visible={deleteModalVisible}
+        transparent={true}
+        animationType="fade"
+        onRequestClose={() => setDeleteModalVisible(false)}
+      >
+        <View style={styles.modalOverlay}>
+          <View style={styles.deleteModalContent}>
+            <Text style={styles.deleteModalTitle}>Delete Trip?</Text>
+            <Text style={styles.deleteModalMessage}>
+              Are you sure you want to delete "{deletingConvTitle}"? This action cannot be undone.
+            </Text>
+            <View style={styles.modalButtons}>
+              <TouchableOpacity
+                style={styles.cancelButton}
+                onPress={() => setDeleteModalVisible(false)}
+              >
+                <Text style={styles.cancelButtonText}>Cancel</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                style={styles.deleteButton}
+                onPress={confirmDelete}
+              >
+                <Text style={styles.deleteButtonText}>Delete</Text>
               </TouchableOpacity>
             </View>
           </View>
@@ -519,6 +567,41 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   saveButtonText: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    fontWeight: '600',
+  },
+  deleteModalContent: {
+    backgroundColor: '#1a1a2e',
+    borderRadius: 16,
+    padding: 24,
+    width: '100%',
+    maxWidth: 320,
+    borderWidth: 1,
+    borderColor: 'rgba(239, 68, 68, 0.3)',
+  },
+  deleteModalTitle: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    marginBottom: 12,
+    textAlign: 'center',
+  },
+  deleteModalMessage: {
+    fontSize: 15,
+    color: 'rgba(255,255,255,0.7)',
+    textAlign: 'center',
+    marginBottom: 20,
+    lineHeight: 22,
+  },
+  deleteButton: {
+    flex: 1,
+    padding: 12,
+    borderRadius: 10,
+    backgroundColor: '#DC2626',
+    alignItems: 'center',
+  },
+  deleteButtonText: {
     color: '#FFFFFF',
     fontSize: 15,
     fontWeight: '600',

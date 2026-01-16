@@ -275,6 +275,52 @@ export class TravelFacade {
     // Get hikes (works without API key)
     const hikes = this.parksAdapter.getHikes(params.parkCode);
 
+    // Search for hotels near the park
+    let hotels: any[] = [];
+    if (this.hotelProviders.length > 0 && park?.name) {
+      try {
+        const hotelResults = await this.searchHotels({
+          location: park.name,
+          checkInDate: params.arrivalDate,
+          checkOutDate: params.departureDate,
+          adults: params.adults,
+          rooms: 1,
+        });
+        hotels = hotelResults.results.slice(0, 5).map(h => ({
+          name: h.name,
+          price: this.formatPrice(h.price.total, h.price.currency),
+          pricePerNight: this.formatPrice(h.price.perNight, h.price.currency),
+          rating: h.rating,
+          address: h.address,
+        }));
+      } catch (error: any) {
+        console.error('Hotel search failed:', error.message);
+      }
+    }
+
+    // Search for car rentals at the destination airport
+    let cars: any[] = [];
+    if (this.carProviders.length > 0 && destinationAirport !== 'N/A') {
+      try {
+        const carResults = await this.searchCarRentals({
+          pickupLocation: destinationAirport,
+          pickupDate: params.arrivalDate,
+          dropoffDate: params.departureDate,
+          pickupTime: '10:00',
+          dropoffTime: '10:00',
+        });
+        cars = carResults.results.slice(0, 5).map(c => ({
+          vendor: c.vendor,
+          vehicle: `${c.vehicle.category} (${c.vehicle.transmission})`,
+          pricePerDay: this.formatPrice(c.price.perDay, c.price.currency),
+          totalPrice: this.formatPrice(c.price.total, c.price.currency),
+          features: c.mileage?.unlimited ? 'Unlimited miles' : undefined,
+        }));
+      } catch (error: any) {
+        console.error('Car rental search failed:', error.message);
+      }
+    }
+
     // Park name fallback
     const parkName = park?.name || params.parkCode.toUpperCase();
     const parkStates = park?.states.join(', ') || 'USA';
@@ -309,6 +355,12 @@ export class TravelFacade {
         note: 'No flight data available. Consider searching manually.',
       },
       lodging: {
+        hotels: hotels.length > 0 ? {
+          note: `Hotels near ${parkName}`,
+          options: hotels,
+        } : {
+          note: 'No hotel data available. Search booking sites for lodging options.',
+        },
         campgrounds: campgrounds.slice(0, 3).map((c: any) => ({
           name: c.name,
           sites: c.totalSites,
@@ -316,7 +368,12 @@ export class TravelFacade {
           reservationUrl: c.reservationUrl,
           images: c.images?.slice(0, 2) || [],
         })),
-        note: 'For hotels/Airbnb, search lodging near: ' + (park?.address || parkStates),
+      },
+      carRentals: cars.length > 0 ? {
+        note: `Car rentals at ${destinationAirport}`,
+        options: cars,
+      } : {
+        note: 'No car rental data available. Search rental sites for options.',
       },
       activities: thingsToDo.slice(0, 5).map((a: any) => ({
         title: a.title,
