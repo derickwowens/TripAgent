@@ -67,7 +67,7 @@ export async function createChatHandler(facade: TravelFacade) {
       const client = getAnthropicClient();
       let response = await client.messages.create({
         model: selectedModel,
-        max_tokens: 1024,
+        max_tokens: 4096,
         system: systemPrompt,
         tools,
         messages: anthropicMessages,
@@ -121,7 +121,7 @@ export async function createChatHandler(facade: TravelFacade) {
 
         response = await client.messages.create({
           model: selectedModel,
-          max_tokens: 1024,
+          max_tokens: 4096,
           system: systemPrompt,
           tools,
           messages: anthropicMessages,
