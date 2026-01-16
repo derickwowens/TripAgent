@@ -140,7 +140,7 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
         blurOnSubmit={false}
         multiline
         numberOfLines={4}
-        maxLength={500}
+        maxLength={1000}
         autoCorrect={false}
         autoCapitalize="sentences"
         editable={!isLoading}
@@ -175,10 +175,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: '#FFFFFF',
     minHeight: 48,
-    maxHeight: 120,
+    maxHeight: 240,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.2)',
-    textAlignVertical: 'center',
+    textAlignVertical: 'top',
   },
   sendButton: {
     width: 48,
