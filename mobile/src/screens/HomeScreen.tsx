@@ -37,6 +37,7 @@ const getLoadingStatesForQuery = (query: string): string[] => {
   const isAskingAboutActivities = /tour|activity|activities|things to do|experience/i.test(q);
   const isAskingAboutEV = /tesla|ev|charging|electric/i.test(q);
   const isPlanningTrip = /trip|plan|itinerary|vacation|travel|visit|going to|heading to/i.test(q);
+  const isAskingForPhotos = /photo|picture|image|background|wallpaper|different photo|new photo|more photo|refresh photo|change photo|show me more|get more/i.test(q);
   
   // plan_park_trip is triggered when asking about parks - it fetches everything
   const isParkTrip = isAskingAboutParks && (isPlanningTrip || /want|like|help|tell me|show me|info|about/i.test(q));
@@ -67,6 +68,10 @@ const getLoadingStatesForQuery = (query: string): string[] => {
   
   if (isAskingAboutEV) {
     states.push('⚡ Locating charging stations...');
+  }
+  
+  if (isAskingForPhotos) {
+    states.push('📸 Finding new photos...');
   }
   
   if (isPlanningTrip || isParkTrip) {

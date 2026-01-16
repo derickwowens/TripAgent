@@ -229,6 +229,7 @@
             <input type="hidden" name="_subject" value="TripAgent Survey Response">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="app_version" id="appVersion" value="unknown">
             
             <div class="question">
                 <label class="question-label">
@@ -494,6 +495,13 @@
     </div>
 
     <script>
+        // Read version from URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const version = urlParams.get('version');
+        if (version) {
+            document.getElementById('appVersion').value = version;
+        }
+        
         document.getElementById('surveyForm').addEventListener('submit', function(e) {
             // FormSubmit handles the actual submission
             // This just provides visual feedback

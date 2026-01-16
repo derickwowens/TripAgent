@@ -424,6 +424,20 @@ export async function createChatHandler(facade: TravelFacade) {
           required: ['location'],
         },
       },
+      {
+        name: 'refresh_photos',
+        description: 'Get new/different photos for a destination, event, or activity. Use this when the user asks for photos of specific events (wildflowers, wildlife, sunsets, waterfalls, fall colors), activities (hiking, camping, stargazing), or wants different background images for their trip.',
+        input_schema: {
+          type: 'object' as const,
+          properties: {
+            destination: { type: 'string', description: 'The destination or location (e.g., "Yosemite National Park", "Grand Canyon", "Yellowstone")' },
+            event: { type: 'string', description: 'Specific event or phenomenon to photograph (e.g., "Old Faithful eruption", "wildflower bloom", "fall foliage", "elk rut", "sunset", "northern lights", "waterfall")' },
+            style: { type: 'string', description: 'Photo style: "landscape", "wildlife", "hiking", "camping", "scenic", "adventure", "aerial", "night sky"' },
+            count: { type: 'number', description: 'Number of photos to return (default: 8, max: 12)' },
+          },
+          required: ['destination'],
+        },
+      },
     ];
 
     // Convert messages to Anthropic format
@@ -958,6 +972,61 @@ export async function createChatHandler(facade: TravelFacade) {
                   })),
                   totalFound: activityResults.totalResults,
                   providers: activityResults.providers,
+                };
+                break;
+
+              case 'refresh_photos':
+                const photoInput = toolUse.input as any;
+                const destination = photoInput.destination;
+                const event = photoInput.event || '';
+                const style = photoInput.style || '';
+                const photoCount = Math.min(photoInput.count || 8, 12);
+                
+                const unsplashAdapter = getUnsplashAdapter();
+                if (!unsplashAdapter.isConfigured()) {
+                  result = { error: 'Photo service not available' };
+                  break;
+                }
+                
+                // Build search query prioritizing event, then style, then generic
+                let photoSearchQuery: string;
+                let photoCaption: string;
+                
+                if (event) {
+                  // Event-specific search (e.g., "Yellowstone Old Faithful eruption")
+                  photoSearchQuery = `${destination} ${event}`;
+                  photoCaption = `${event} at ${destination}`;
+                } else if (style) {
+                  // Style-specific search (e.g., "Yosemite wildlife")
+                  photoSearchQuery = `${destination} ${style} nature`;
+                  photoCaption = `${destination} - ${style}`;
+                } else {
+                  // Generic scenic search
+                  photoSearchQuery = `${destination} landscape nature scenic`;
+                  photoCaption = destination;
+                }
+                
+                console.log(`[Chat] Refreshing photos for "${destination}" with query: "${photoSearchQuery}"`);
+                const freshPhotos = await unsplashAdapter.searchPhotos(photoSearchQuery, photoCount);
+                
+                // Add photos to collected photos for response
+                freshPhotos.forEach(photo => {
+                  collectedPhotos.push({
+                    keyword: event || destination,
+                    url: photo.url,
+                    caption: photo.caption || photoCaption,
+                    source: 'unsplash'
+                  });
+                });
+                
+                result = {
+                  message: event 
+                    ? `Found ${freshPhotos.length} photos of ${event} at ${destination}`
+                    : `Found ${freshPhotos.length} new photos for ${destination}`,
+                  photoCount: freshPhotos.length,
+                  destination: destination,
+                  event: event || null,
+                  style: style || 'general',
                 };
                 break;
 

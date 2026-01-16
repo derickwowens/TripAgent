@@ -1,8 +1,11 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image } from 'react-native';
+import Constants from 'expo-constants';
 import { ProfileSection } from './ProfileSection';
 import { ConversationList } from './ConversationList';
 import { SavedConversation, useDarkModeContext } from '../../hooks';
+
+const APP_VERSION = Constants.expoConfig?.version || '1.0.0';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -80,10 +83,11 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               />
               <TouchableOpacity 
                 style={styles.feedbackButton} 
-                onPress={() => Linking.openURL('https://travel-buddy-api-production.up.railway.app/public/survey.html')}
+                onPress={() => Linking.openURL(`https://travel-buddy-api-production.up.railway.app/public/survey.html?version=${APP_VERSION}`)}
               >
                 <Text style={styles.feedbackText}>Feedback</Text>
               </TouchableOpacity>
+              <Text style={styles.versionText}>v{APP_VERSION}</Text>
             </View>
             <View style={styles.headerRight}>
               <DarkModeToggle />
@@ -106,15 +110,6 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               onAddSuggestion={onAddProfileSuggestion}
             />
 
-            <ConversationList
-              conversations={conversations}
-              currentConversationId={currentConversationId}
-              onLoadConversation={handleLoadConversation}
-              onDeleteConversation={onDeleteConversation}
-              onUpdateConversation={onUpdateConversation}
-              onToggleFavorite={onToggleFavorite}
-            />
-
             <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>
               <Image 
                 source={require('../../../assets/icon.png')} 
@@ -123,6 +118,15 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               />
               <Text style={styles.newChatText}>New Trip</Text>
             </TouchableOpacity>
+
+            <ConversationList
+              conversations={conversations}
+              currentConversationId={currentConversationId}
+              onLoadConversation={handleLoadConversation}
+              onDeleteConversation={onDeleteConversation}
+              onUpdateConversation={onUpdateConversation}
+              onToggleFavorite={onToggleFavorite}
+            />
           </ScrollView>
         </View>
         <TouchableOpacity 
@@ -203,6 +207,12 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.7)',
     fontSize: 12,
     fontWeight: '500',
+  },
+  versionText: {
+    color: 'rgba(255,255,255,0.4)',
+    fontSize: 11,
+    fontWeight: '400',
+    marginLeft: 8,
   },
   closeButtonContainer: {
     padding: 4,

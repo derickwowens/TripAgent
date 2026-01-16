@@ -139,10 +139,12 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
         returnKeyType="send"
         blurOnSubmit={false}
         multiline
+        numberOfLines={4}
         maxLength={500}
         autoCorrect={false}
         autoCapitalize="sentences"
         editable={!isLoading}
+        scrollEnabled={true}
       />
       <TouchableOpacity
         style={[styles.sendButton, isDisabled && styles.sendButtonDisabled]}
@@ -172,9 +174,11 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     fontSize: 16,
     color: '#FFFFFF',
+    minHeight: 48,
     maxHeight: 120,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.2)',
+    textAlignVertical: 'center',
   },
   sendButton: {
     width: 48,
