@@ -160,9 +160,6 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                     {conv.metadata.travelDates && (
                       <Text style={styles.metaTag}>{conv.metadata.travelDates}</Text>
                     )}
-                    {conv.metadata.travelers && (
-                      <Text style={styles.metaTag}>{conv.metadata.travelers} travelers</Text>
-                    )}
                   </View>
                 )}
               </TouchableOpacity>
