@@ -14,7 +14,7 @@ import {
   TextInput,
 } from 'react-native';
 import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
-import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, Message, SavedConversation } from '../hooks';
+import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
@@ -23,74 +23,6 @@ const MODEL = 'claude-3-5-haiku-20241022';
 
 // Default forest background
 const DEFAULT_BACKGROUND_URL = 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800';
-
-// Generate context-aware loading messages based on user's query
-const getLoadingStatesForQuery = (query: string): string[] => {
-  const q = query.toLowerCase();
-  const states: string[] = [];
-  
-  // Detect what the user is asking about
-  const isAskingAboutFlights = /flight|fly|airport|airline/i.test(q);
-  const isAskingAboutHotels = /hotel|lodging|stay|accommodat|room/i.test(q);
-  const isAskingAboutCars = /car|rental|rent|drive/i.test(q);
-  const isAskingAboutParks = /park|hike|trail|camping|camp|national|yosemite|yellowstone|zion|glacier|canyon|sequoia|acadia|olympic|everglades|smoky/i.test(q);
-  const isAskingAboutActivities = /tour|activity|activities|things to do|experience/i.test(q);
-  const isAskingAboutEV = /tesla|ev|charging|electric/i.test(q);
-  const isPlanningTrip = /trip|plan|itinerary|vacation|travel|visit|going to|heading to/i.test(q);
-  const isAskingForPhotos = /photo|picture|image|background|wallpaper|different photo|new photo|more photo|refresh photo|change photo|show me more|get more/i.test(q);
-  
-  // plan_park_trip is triggered when asking about parks - it fetches everything
-  const isParkTrip = isAskingAboutParks && (isPlanningTrip || /want|like|help|tell me|show me|info|about/i.test(q));
-  
-  // Add relevant loading states based on detected intent
-  if (isAskingAboutParks) {
-    states.push('🏞️ Searching national parks...');
-    states.push('🥾 Finding hiking trails...');
-    states.push('🏕️ Checking campground availability...');
-  }
-  
-  // park trips trigger full plan_park_trip which fetches flights, hotels, cars
-  if (isAskingAboutFlights || isPlanningTrip || isParkTrip) {
-    states.push('✈️ Searching flight options...');
-  }
-  
-  if (isAskingAboutHotels || isPlanningTrip || isParkTrip) {
-    states.push('🏨 Finding hotels & lodging...');
-  }
-  
-  if (isAskingAboutCars || isPlanningTrip || isParkTrip) {
-    states.push('🚗 Checking car rental prices...');
-  }
-  
-  if (isAskingAboutActivities) {
-    states.push('🎫 Discovering tours & activities...');
-  }
-  
-  if (isAskingAboutEV) {
-    states.push('⚡ Locating charging stations...');
-  }
-  
-  if (isAskingForPhotos) {
-    states.push('📸 Finding new photos...');
-  }
-  
-  if (isPlanningTrip || isParkTrip) {
-    states.push('🗺️ Calculating driving distances...');
-    states.push('📝 Compiling your trip plan...');
-  }
-  
-  // Always end with a compilation message if we have multiple steps
-  if (states.length > 2) {
-    states.push('✨ Putting it all together...');
-  }
-  
-  // Fallback if no specific intent detected
-  if (states.length === 0) {
-    states.push('🔍 Searching for information...');
-  }
-  
-  return states;
-};
 
 const HomeScreen: React.FC = () => {
   const [inputText, setInputText] = useState('');
