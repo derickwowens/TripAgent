@@ -12,11 +12,11 @@ import { OpenChargeMapAdapter } from '../../providers/OpenChargeMapAdapter.js';
 import { findParkCode } from '../../utils/parkCodeLookup.js';
 import { getUnsplashAdapter } from '../../providers/UnsplashAdapter.js';
 
-// Re-export types
-export * from './types.js';
+// Re-export types explicitly
+export type { ChatMessage, ChatContext, ChatResponse, PhotoReference, ToolResult } from './types.js';
 
 // Import modular components
-import { ChatMessage, ChatContext, ChatResponse, PhotoReference } from './types.js';
+import type { ChatMessage, ChatContext, ChatResponse, PhotoReference } from './types.js';
 import { SYSTEM_PROMPT, DEFAULT_MODEL, buildContextInfo } from './systemPrompt.js';
 import { tools } from './toolDefinitions.js';
 import { validateAndCleanResponse } from './responseProcessor.js';

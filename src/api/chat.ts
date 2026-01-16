@@ -12,10 +12,5 @@
  * - ./chat/index.ts - Main orchestrator
  */
 
-export { 
-  createChatHandler,
-  ChatMessage, 
-  ChatContext, 
-  ChatResponse, 
-  PhotoReference 
-} from './chat/index.js';
+export { createChatHandler } from './chat/index.js';
+export type { ChatMessage, ChatContext, ChatResponse, PhotoReference } from './chat/index.js';
