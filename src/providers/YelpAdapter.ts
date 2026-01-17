@@ -261,14 +261,33 @@ export class YelpAdapter {
     time?: string,
     partySize: number = 2
   ): ReservationLinks {
-    const encodedName = encodeURIComponent(restaurantName);
+    // Include location IN the search term to prevent OpenTable from using browser geolocation
+    const searchTermWithLocation = `${restaurantName} ${city} ${state}`;
+    const encodedSearchTerm = encodeURIComponent(searchTermWithLocation);
     const encodedLocation = encodeURIComponent(`${city}, ${state}`);
     const dateTimeStr = date ? (time ? `${date}T${time}` : `${date}T19:00`) : '';
     
+    // Use search term that includes location - OpenTable ignores locationQuery and uses geolocation
+    const openTableUrl = dateTimeStr 
+      ? `https://www.opentable.com/s?term=${encodedSearchTerm}&covers=${partySize}&dateTime=${dateTimeStr}`
+      : `https://www.opentable.com/s?term=${encodedSearchTerm}&covers=${partySize}`;
+    
+    console.log('[OpenTable] Generating reservation link:', {
+      restaurantName,
+      city,
+      state,
+      date,
+      time,
+      partySize,
+      searchTermWithLocation,
+      encodedSearchTerm,
+      dateTimeStr,
+      url: openTableUrl,
+    });
+    
+    const encodedName = encodeURIComponent(restaurantName);
     return {
-      openTable: dateTimeStr 
-        ? `https://www.opentable.com/s?term=${encodedName}&locationQuery=${encodedLocation}&covers=${partySize}&dateTime=${dateTimeStr}`
-        : `https://www.opentable.com/s?term=${encodedName}&locationQuery=${encodedLocation}&covers=${partySize}`,
+      openTable: openTableUrl,
       resy: `https://resy.com/cities/${encodeURIComponent(city.toLowerCase())}?query=${encodedName}`,
       yelp: `https://www.yelp.com/search?find_desc=${encodedName}&find_loc=${encodedLocation}`,
       google: `https://www.google.com/search?q=${encodedName}+${encodedLocation}+reservations`,

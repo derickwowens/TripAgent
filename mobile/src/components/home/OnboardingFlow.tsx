@@ -25,25 +25,28 @@ const BG_HEIGHT = SCREEN_HEIGHT * 1.2;
 
 // Profile badge options for onboarding
 const TRAVEL_STYLES = [
-  { id: 'frugal', label: 'Frugal' },
-  { id: 'luxury', label: 'Luxury' },
+  { id: 'frugal', label: 'Frugal traveler' },
+  { id: 'luxury', label: 'Luxury travel' },
   { id: 'backpacker', label: 'Backpacker' },
-  { id: 'camping', label: 'Camping' },
-  { id: 'hotels', label: 'Hotels' },
+  { id: 'camping', label: 'Love camping' },
+  { id: 'hotels', label: 'Hotels only' },
   { id: 'airbnb', label: 'Airbnb/VRBO' },
-  { id: 'rv', label: 'RV/Camper' },
+  { id: 'avoid-crowds', label: 'Avoid crowds' },
 ];
 
 const INTERESTS = [
-  { id: 'hiking', label: 'Hiking' },
+  { id: 'hiking', label: 'Hiking/outdoors' },
   { id: 'photography', label: 'Photography' },
-  { id: 'wildlife', label: 'Wildlife' },
+  { id: 'wildlife', label: 'Wildlife viewing' },
   { id: 'foodie', label: 'Foodie' },
   { id: 'water', label: 'Water sports' },
   { id: 'cycling', label: 'Cycling' },
   { id: 'fishing', label: 'Fishing' },
-  { id: 'stargazing', label: 'Stargazing' },
-  { id: 'history', label: 'History' },
+  { id: 'skiing', label: 'Skiing/snowboard' },
+  { id: 'sunrise', label: 'Sunrise/sunset' },
+  { id: 'coffee', label: 'Coffee hound' },
+  { id: 'bookworm', label: 'Book worm' },
+  { id: 'historian', label: 'Historian' },
 ];
 
 const TRAVEL_WITH = [
@@ -51,7 +54,7 @@ const TRAVEL_WITH = [
   { id: 'partner', label: 'Partner' },
   { id: 'family', label: 'Family' },
   { id: 'friends', label: 'Friends' },
-  { id: 'dog', label: 'With dog' },
+  { id: 'dog', label: 'Traveling with dog' },
 ];
 
 // Family sub-options
@@ -59,9 +62,50 @@ const FAMILY_OPTIONS = [
   { id: 'toddlers', label: 'Kids 1-3 yrs' },
   { id: 'young-kids', label: 'Kids 4-7 yrs' },
   { id: 'older-kids', label: 'Kids 8-12 yrs' },
-  { id: 'teens', label: 'Teens 13+' },
-  { id: 'seniors', label: 'Seniors' },
-  { id: 'accessibility', label: 'Accessibility needs' },
+  { id: 'teens', label: 'Kids 13+' },
+  { id: 'seniors', label: 'With seniors' },
+  { id: 'accessibility', label: 'Accessible needs' },
+  { id: 'limited-mobility', label: 'Limited mobility' },
+  { id: 'educational', label: 'Educational trips' },
+];
+
+// Climate preferences
+const CLIMATE_PREFS = [
+  { id: 'warm', label: 'Warm destinations' },
+  { id: 'cold', label: 'Cold destinations' },
+];
+
+// Vehicle type
+const VEHICLE_TYPES = [
+  { id: 'gas', label: 'Gas vehicle' },
+  { id: 'tesla', label: 'Tesla' },
+  { id: 'other-ev', label: 'Other EV' },
+];
+
+// Preferred airlines
+const AIRLINES = [
+  { id: 'delta', label: 'Delta' },
+  { id: 'southwest', label: 'Southwest' },
+  { id: 'united', label: 'United' },
+  { id: 'american', label: 'American' },
+  { id: 'jetblue', label: 'JetBlue' },
+  { id: 'alaska', label: 'Alaska' },
+];
+
+// Preferred car rentals
+const CAR_RENTALS = [
+  { id: 'hertz', label: 'Hertz' },
+  { id: 'enterprise', label: 'Enterprise' },
+  { id: 'national', label: 'National' },
+  { id: 'budget', label: 'Budget' },
+];
+
+// Preferred hotels
+const HOTELS = [
+  { id: 'marriott', label: 'Marriott' },
+  { id: 'hilton', label: 'Hilton' },
+  { id: 'ihg', label: 'IHG' },
+  { id: 'hyatt', label: 'Hyatt' },
 ];
 
 // Official US National Parks from NPS API
@@ -118,6 +162,11 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
   const { userLocation, locationLoading } = useLocation();
   const [selectedTravelWith, setSelectedTravelWith] = useState<string[]>([]);
   const [selectedFamilyOptions, setSelectedFamilyOptions] = useState<string[]>([]);
+  const [selectedClimate, setSelectedClimate] = useState<string[]>([]);
+  const [selectedVehicle, setSelectedVehicle] = useState<string[]>([]);
+  const [selectedAirline, setSelectedAirline] = useState<string[]>([]);
+  const [selectedCarRental, setSelectedCarRental] = useState<string[]>([]);
+  const [selectedHotel, setSelectedHotel] = useState<string[]>([]);
   const [selectedTrip, setSelectedTrip] = useState<string>('');
   const [customPrompt, setCustomPrompt] = useState('');
 
@@ -133,6 +182,21 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
     }
   };
 
+  // Single-select toggle for mutually exclusive groups (climate, vehicle, airline, car rental, hotel)
+  const toggleExclusiveSelection = (
+    id: string,
+    selected: string[],
+    setSelected: React.Dispatch<React.SetStateAction<string[]>>
+  ) => {
+    if (selected.includes(id)) {
+      // Deselect if already selected
+      setSelected([]);
+    } else {
+      // Replace with new selection (only one allowed)
+      setSelected([id]);
+    }
+  };
+
   const buildProfile = (): string => {
     const parts: string[] = [];
     
@@ -140,6 +204,13 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
     TRAVEL_STYLES.forEach(style => {
       if (selectedStyles.includes(style.id)) {
         parts.push(style.label);
+      }
+    });
+    
+    // Add climate preferences
+    CLIMATE_PREFS.forEach(climate => {
+      if (selectedClimate.includes(climate.id)) {
+        parts.push(climate.label);
       }
     });
     
@@ -164,15 +235,73 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
       }
     });
     
+    // NOTE: Booking-specific preferences (vehicle, airline, car rental, hotel) are NOT included
+    // in the profile string. They are stored separately in 'defaults' for programmatic access
+    // when actually performing booking searches. This prevents them from cluttering location queries.
+    
     return parts.join(', ');
   };
 
   const getFirstPrompt = (): string | undefined => {
+    // If user typed a custom prompt, use that
     if (selectedTrip === 'custom' && customPrompt.trim()) {
       return customPrompt.trim();
     }
+    
+    // Build a comprehensive prompt from all selected preferences
+    const promptParts: string[] = [];
+    
+    // Get trip type prompt
     const trip = QUICK_TRIP_IDEAS.find(t => t.id === selectedTrip);
-    return trip?.getPrompt() || undefined;
+    if (trip && trip.id !== 'custom') {
+      promptParts.push(trip.getPrompt());
+    }
+    
+    // Add context from selected preferences
+    const contextParts: string[] = [];
+    
+    // Travel style context
+    if (selectedStyles.length > 0) {
+      const styles = TRAVEL_STYLES.filter(s => selectedStyles.includes(s.id)).map(s => s.label.toLowerCase());
+      if (styles.length > 0) {
+        contextParts.push(`I'm a ${styles.join(', ')} type of traveler`);
+      }
+    }
+    
+    // Interests context
+    if (selectedInterests.length > 0) {
+      const interests = INTERESTS.filter(i => selectedInterests.includes(i.id)).map(i => i.label.toLowerCase());
+      if (interests.length > 0) {
+        contextParts.push(`interested in ${interests.join(', ')}`);
+      }
+    }
+    
+    // Travel companions context
+    if (selectedTravelWith.length > 0) {
+      const companions = TRAVEL_WITH.filter(t => selectedTravelWith.includes(t.id)).map(t => t.label.toLowerCase());
+      if (companions.length > 0) {
+        contextParts.push(`traveling ${companions.join(' and ')}`);
+      }
+    }
+    
+    // Family details context
+    if (selectedFamilyOptions.length > 0) {
+      const familyDetails = FAMILY_OPTIONS.filter(f => selectedFamilyOptions.includes(f.id)).map(f => f.label.toLowerCase());
+      if (familyDetails.length > 0) {
+        contextParts.push(`with ${familyDetails.join(', ')}`);
+      }
+    }
+    
+    // Combine into a natural prompt
+    if (promptParts.length > 0 && contextParts.length > 0) {
+      return `${promptParts[0]}. ${contextParts.join(', ')}.`;
+    } else if (promptParts.length > 0) {
+      return promptParts[0];
+    } else if (contextParts.length > 0) {
+      return `Help me plan a trip. ${contextParts.join(', ')}.`;
+    }
+    
+    return undefined;
   };
 
   const handleNext = () => {
@@ -247,10 +376,10 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
       case 1:
         return (
           <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>How do you like to travel?</Text>
-            <Text style={styles.stepSubtitle}>Select all that apply</Text>
+            <Text style={styles.stepTitle}>how do you like to travel?</Text>
+            <Text style={styles.stepSubtitle}>select all that apply</Text>
             
-            <Text style={styles.sectionLabel}>Travel Style</Text>
+            <Text style={styles.sectionLabel}>travel style</Text>
             <View style={styles.optionsGrid}>
               {TRAVEL_STYLES.map(style => (
                 <TouchableOpacity
@@ -269,7 +398,26 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
               ))}
             </View>
 
-            <Text style={styles.sectionLabel}>Interests</Text>
+            <Text style={styles.sectionLabel}>climate preference</Text>
+            <View style={styles.optionsGrid}>
+              {CLIMATE_PREFS.map(climate => (
+                <TouchableOpacity
+                  key={climate.id}
+                  style={[
+                    styles.optionChip,
+                    selectedClimate.includes(climate.id) && styles.optionChipSelected
+                  ]}
+                  onPress={() => toggleExclusiveSelection(climate.id, selectedClimate, setSelectedClimate)}
+                >
+                  <Text style={[
+                    styles.optionLabel,
+                    selectedClimate.includes(climate.id) && styles.optionLabelSelected
+                  ]}>{climate.label}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+
+            <Text style={styles.sectionLabel}>interests</Text>
             <View style={styles.optionsGrid}>
               {INTERESTS.map(interest => (
                 <TouchableOpacity
@@ -294,8 +442,8 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
         const showFamilyOptions = selectedTravelWith.includes('family');
         return (
           <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>Who are you traveling with?</Text>
-            <Text style={styles.stepSubtitle}>This helps us tailor recommendations</Text>
+            <Text style={styles.stepTitle}>who are you traveling with?</Text>
+            <Text style={styles.stepSubtitle}>this helps us tailor recommendations</Text>
             
             <View style={styles.optionsGrid}>
               {TRAVEL_WITH.map(tw => (
@@ -317,7 +465,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
 
             {showFamilyOptions && (
               <>
-                <Text style={styles.sectionLabel}>Family Details</Text>
+                <Text style={styles.sectionLabel}>family details</Text>
                 <View style={styles.optionsGrid}>
                   {FAMILY_OPTIONS.map(fo => (
                     <TouchableOpacity
@@ -337,14 +485,90 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
                 </View>
               </>
             )}
+
+            <Text style={styles.sectionLabel}>vehicle type</Text>
+            <View style={styles.optionsGrid}>
+              {VEHICLE_TYPES.map(vehicle => (
+                <TouchableOpacity
+                  key={vehicle.id}
+                  style={[
+                    styles.optionChip,
+                    selectedVehicle.includes(vehicle.id) && styles.optionChipSelected
+                  ]}
+                  onPress={() => toggleExclusiveSelection(vehicle.id, selectedVehicle, setSelectedVehicle)}
+                >
+                  <Text style={[
+                    styles.optionLabel,
+                    selectedVehicle.includes(vehicle.id) && styles.optionLabelSelected
+                  ]}>{vehicle.label}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+
+            <Text style={styles.sectionLabel}>preferred airline</Text>
+            <View style={styles.optionsGrid}>
+              {AIRLINES.map(airline => (
+                <TouchableOpacity
+                  key={airline.id}
+                  style={[
+                    styles.optionChipSmall,
+                    selectedAirline.includes(airline.id) && styles.optionChipSelected
+                  ]}
+                  onPress={() => toggleExclusiveSelection(airline.id, selectedAirline, setSelectedAirline)}
+                >
+                  <Text style={[
+                    styles.optionLabelSmall,
+                    selectedAirline.includes(airline.id) && styles.optionLabelSelected
+                  ]}>{airline.label}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+
+            <Text style={styles.sectionLabel}>preferred car rental</Text>
+            <View style={styles.optionsGrid}>
+              {CAR_RENTALS.map(rental => (
+                <TouchableOpacity
+                  key={rental.id}
+                  style={[
+                    styles.optionChipSmall,
+                    selectedCarRental.includes(rental.id) && styles.optionChipSelected
+                  ]}
+                  onPress={() => toggleExclusiveSelection(rental.id, selectedCarRental, setSelectedCarRental)}
+                >
+                  <Text style={[
+                    styles.optionLabelSmall,
+                    selectedCarRental.includes(rental.id) && styles.optionLabelSelected
+                  ]}>{rental.label}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+
+            <Text style={styles.sectionLabel}>preferred hotel brand</Text>
+            <View style={styles.optionsGrid}>
+              {HOTELS.map(hotel => (
+                <TouchableOpacity
+                  key={hotel.id}
+                  style={[
+                    styles.optionChipSmall,
+                    selectedHotel.includes(hotel.id) && styles.optionChipSelected
+                  ]}
+                  onPress={() => toggleExclusiveSelection(hotel.id, selectedHotel, setSelectedHotel)}
+                >
+                  <Text style={[
+                    styles.optionLabelSmall,
+                    selectedHotel.includes(hotel.id) && styles.optionLabelSelected
+                  ]}>{hotel.label}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
           </View>
         );
 
       case 3:
         return (
           <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>Ready to plan your first trip?</Text>
-            <Text style={styles.stepSubtitle}>Choose a starting point</Text>
+            <Text style={styles.stepTitle}>ready to plan your first trip?</Text>
+            <Text style={styles.stepSubtitle}>choose a starting point</Text>
             
             <View style={styles.tripOptions}>
               {QUICK_TRIP_IDEAS.map(trip => (
@@ -571,18 +795,18 @@ const styles = StyleSheet.create({
   stepTitle: {
     fontSize: 24,
     fontWeight: '600',
-    color: '#FFFFFF',
+    color: '#22C55E',
     marginBottom: 8,
   },
   stepSubtitle: {
     fontSize: 14,
-    color: 'rgba(255, 255, 255, 0.6)',
+    color: 'rgba(255, 255, 255, 0.7)',
     marginBottom: 24,
   },
   sectionLabel: {
     fontSize: 12,
-    color: 'rgba(255, 255, 255, 0.5)',
-    textTransform: 'uppercase',
+    color: '#22C55E',
+    fontWeight: '600',
     marginBottom: 12,
     marginTop: 16,
   },
@@ -594,15 +818,15 @@ const styles = StyleSheet.create({
   optionChip: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    borderRadius: 20,
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 16,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.2)',
+    borderColor: 'rgba(34, 197, 94, 0.3)',
   },
   optionChipSelected: {
-    backgroundColor: 'rgba(22, 101, 52, 0.6)',
+    backgroundColor: 'rgba(22, 101, 52, 0.7)',
     borderColor: '#22C55E',
   },
   optionIcon: {
@@ -610,22 +834,22 @@ const styles = StyleSheet.create({
     marginRight: 6,
   },
   optionLabel: {
-    fontSize: 13,
-    color: 'rgba(255, 255, 255, 0.8)',
+    fontSize: 12,
+    color: 'rgba(255, 255, 255, 0.85)',
   },
   optionLabelSelected: {
     color: '#FFFFFF',
-    fontWeight: '500',
+    fontWeight: '600',
   },
   optionChipSmall: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
     paddingHorizontal: 10,
     paddingVertical: 6,
-    borderRadius: 16,
+    borderRadius: 14,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.2)',
+    borderColor: 'rgba(34, 197, 94, 0.3)',
   },
   optionIconSmall: {
     fontSize: 14,
@@ -639,34 +863,36 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   tripOption: {
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    padding: 16,
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
+    padding: 14,
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: 'rgba(255, 255, 255, 0.2)',
+    borderColor: 'rgba(34, 197, 94, 0.3)',
   },
   tripOptionSelected: {
-    backgroundColor: 'rgba(22, 101, 52, 0.6)',
+    backgroundColor: 'rgba(22, 101, 52, 0.7)',
     borderColor: '#22C55E',
   },
   tripOptionText: {
-    fontSize: 15,
-    color: 'rgba(255, 255, 255, 0.8)',
+    fontSize: 14,
+    color: 'rgba(255, 255, 255, 0.85)',
     textAlign: 'center',
   },
   tripOptionTextSelected: {
     color: '#FFFFFF',
-    fontWeight: '500',
+    fontWeight: '600',
   },
   customInput: {
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    backgroundColor: 'rgba(22, 101, 52, 0.2)',
     borderRadius: 12,
-    padding: 16,
+    padding: 14,
     marginTop: 16,
     color: '#FFFFFF',
-    fontSize: 15,
+    fontSize: 14,
     minHeight: 80,
     textAlignVertical: 'top',
+    borderWidth: 1,
+    borderColor: 'rgba(34, 197, 94, 0.3)',
   },
   navButtons: {
     flexDirection: 'row',
@@ -677,27 +903,29 @@ const styles = StyleSheet.create({
   },
   backButton: {
     flex: 1,
-    backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    paddingVertical: 10,
-    borderRadius: 8,
+    backgroundColor: 'rgba(22, 101, 52, 0.25)',
+    paddingVertical: 12,
+    borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: 'rgba(34, 197, 94, 0.3)',
   },
   backButtonText: {
-    color: '#FFFFFF',
+    color: '#22C55E',
     fontSize: 14,
-    fontWeight: '500',
+    fontWeight: '600',
   },
   nextButton: {
     width: '50%',
     backgroundColor: '#166534',
-    paddingVertical: 10,
-    borderRadius: 8,
+    paddingVertical: 12,
+    borderRadius: 10,
     alignItems: 'center',
     justifyContent: 'center',
   },
   nextButtonDisabled: {
-    backgroundColor: 'rgba(22, 101, 52, 0.4)',
+    backgroundColor: 'rgba(22, 101, 52, 0.3)',
   },
   nextButtonText: {
     color: '#FFFFFF',
@@ -714,7 +942,7 @@ const styles = StyleSheet.create({
     paddingBottom: 144,
   },
   skipOnboardingText: {
-    color: 'rgba(255, 255, 255, 0.5)',
+    color: 'rgba(34, 197, 94, 0.6)',
     fontSize: 14,
   },
 });

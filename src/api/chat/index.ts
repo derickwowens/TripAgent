@@ -47,6 +47,43 @@ let restaurantCache: RestaurantCache = {
   timestamp: 0,
 };
 
+// Deterministic destination cache - stores the current park/destination gateway city
+// This is set when a park is searched and used for all subsequent restaurant/reservation lookups
+interface DestinationCache {
+  parkName: string;
+  parkCode: string;
+  gatewayCity: string;
+  gatewayState: string;
+  timestamp: number;
+}
+
+let destinationCache: DestinationCache | null = null;
+
+function setDestinationCache(parkName: string, parkCode: string, city: string, state: string): void {
+  destinationCache = {
+    parkName,
+    parkCode,
+    gatewayCity: city,
+    gatewayState: state,
+    timestamp: Date.now(),
+  };
+  console.log(`[Destination Cache] Set: ${parkName} -> ${city}, ${state}`);
+}
+
+function getDestinationCache(): DestinationCache | null {
+  if (destinationCache) {
+    console.log(`[Destination Cache] Get: ${destinationCache.parkName} -> ${destinationCache.gatewayCity}, ${destinationCache.gatewayState}`);
+  } else {
+    console.log('[Destination Cache] Empty - no park searched yet');
+  }
+  return destinationCache;
+}
+
+function clearDestinationCache(): void {
+  destinationCache = null;
+  console.log('[Destination Cache] Cleared');
+}
+
 // Cache management functions
 function clearRestaurantCache(): void {
   restaurantCache = {
@@ -69,11 +106,37 @@ function updateRestaurantCache(restaurants: CachedRestaurant[], searchLocation: 
 
 function getCachedRestaurant(name: string): CachedRestaurant | undefined {
   const normalizedName = name.toLowerCase().trim();
-  return restaurantCache.restaurants.find(r => 
-    r.name.toLowerCase().trim() === normalizedName ||
-    r.name.toLowerCase().includes(normalizedName) ||
-    normalizedName.includes(r.name.toLowerCase())
-  );
+  // Also try without common suffixes/prefixes
+  const simplifiedName = normalizedName
+    .replace(/^the\s+/i, '')
+    .replace(/\s+(restaurant|cafe|bar|grill|bistro|kitchen|eatery)$/i, '');
+  
+  console.log(`[Cache Lookup] Searching for "${name}" (normalized: "${normalizedName}", simplified: "${simplifiedName}")`);
+  console.log(`[Cache Lookup] Cache has ${restaurantCache.restaurants.length} restaurants from "${restaurantCache.searchLocation}"`);
+  
+  const found = restaurantCache.restaurants.find(r => {
+    const rNormalized = r.name.toLowerCase().trim();
+    const rSimplified = rNormalized
+      .replace(/^the\s+/i, '')
+      .replace(/\s+(restaurant|cafe|bar|grill|bistro|kitchen|eatery)$/i, '');
+    
+    return (
+      rNormalized === normalizedName ||
+      rSimplified === simplifiedName ||
+      rNormalized.includes(normalizedName) ||
+      normalizedName.includes(rNormalized) ||
+      rSimplified.includes(simplifiedName) ||
+      simplifiedName.includes(rSimplified)
+    );
+  });
+  
+  if (found) {
+    console.log(`[Cache Lookup] FOUND: "${found.name}" at ${found.city}, ${found.state}`);
+  } else {
+    console.log(`[Cache Lookup] NOT FOUND. Available names:`, restaurantCache.restaurants.map(r => r.name));
+  }
+  
+  return found;
 }
 
 function getCacheInfo(): { count: number; location: string; ageMs: number } {
@@ -227,6 +290,7 @@ export async function createChatHandler(facade: TravelFacade) {
       if (response.stop_reason === 'max_tokens') {
         console.warn('[Chat] Response was truncated due to max_tokens limit');
       }
+      console.log(`[Chat] Initial response stop_reason: ${response.stop_reason}`);
 
       // Handle tool use
       while (response.stop_reason === 'tool_use') {
@@ -310,6 +374,11 @@ export async function createChatHandler(facade: TravelFacade) {
       );
 
       const rawResponse = textBlocks.map(b => b.text).join('\n');
+      
+      // Log the final response for debugging truncation issues
+      console.log(`[Chat] Final stop_reason: ${response.stop_reason}`);
+      console.log(`[Chat] Text blocks: ${textBlocks.length}, Raw response length: ${rawResponse.length}`);
+      console.log(`[Chat] Response ends with: "${rawResponse.slice(-100)}"`);
       
       // Deduplicate photos before returning (by URL and one-per-Unsplash-photographer)
       const dedupedPhotos = deduplicatePhotos(collectedPhotos);
@@ -559,9 +628,21 @@ async function handleSearchNationalParks(
   let npsGateway: { city: string; state: string } | undefined;
   if (parksForPhotos.length > 0) {
     const firstPark = parksForPhotos[0];
-    if (firstPark.gatewayCity && firstPark.gatewayState) {
+    
+    // PREFER static lookup over API - the API often returns the park name instead of actual gateway town
+    const staticGateway = resolveGatewayCity(firstPark.name);
+    if (staticGateway) {
+      npsGateway = { city: staticGateway.city, state: staticGateway.state };
+      console.log(`[Chat] NPS gateway city from static lookup: ${npsGateway.city}, ${npsGateway.state}`);
+    } else if (firstPark.gatewayCity && firstPark.gatewayState) {
+      // Only use API gateway if static lookup fails
       npsGateway = { city: firstPark.gatewayCity, state: firstPark.gatewayState };
-      console.log(`[Chat] NPS gateway city from API: ${npsGateway.city}, ${npsGateway.state}`);
+      console.log(`[Chat] NPS gateway city from API (fallback): ${npsGateway.city}, ${npsGateway.state}`);
+    }
+    
+    // DETERMINISTIC: Store in module-level cache for all subsequent tool calls
+    if (npsGateway) {
+      setDestinationCache(firstPark.name, firstPark.parkCode, npsGateway.city, npsGateway.state);
     }
   }
   
@@ -971,14 +1052,34 @@ async function handleSearchRestaurants(
   collectedPhotos: PhotoReference[],
   context: ChatContext
 ): Promise<any> {
-  // DETERMINISTIC: Use context.npsGatewayCity if available, otherwise resolve from static lookup
-  const npsGateway = context.npsGatewayCity;
-  const gatewayCity = npsGateway || resolveGatewayCity(input.location);
-  const searchLocation = gatewayCity 
-    ? `${gatewayCity.city}, ${gatewayCity.state}`
-    : input.location;
+  console.log('[Restaurant] === handleSearchRestaurants called ===');
+  console.log('[Restaurant] Input location from Claude:', input.location);
   
-  console.log(`[Restaurant] Search location: "${input.location}" -> "${searchLocation}"`);
+  // DETERMINISTIC: Use module-level destination cache (set by park search)
+  const destCache = getDestinationCache();
+  const staticGateway = resolveGatewayCity(input.location);
+  
+  console.log('[Restaurant] Destination cache:', destCache);
+  console.log('[Restaurant] Static gateway lookup result:', staticGateway);
+  
+  // Priority: 1) Module-level destination cache, 2) Static gateway lookup, 3) Input location (last resort)
+  let searchLocation: string;
+  let locationSource: string;
+  
+  if (destCache) {
+    // BEST: Use the deterministic destination cache from park search
+    searchLocation = `${destCache.gatewayCity}, ${destCache.gatewayState}`;
+    locationSource = 'destination-cache';
+  } else if (staticGateway) {
+    searchLocation = `${staticGateway.city}, ${staticGateway.state}`;
+    locationSource = 'static-gateway-lookup';
+  } else {
+    searchLocation = input.location;
+    locationSource = 'claude-input-fallback';
+    console.warn('[Restaurant] WARNING: Using Claude input as fallback - may be incorrect');
+  }
+  
+  console.log(`[Restaurant] Final search location: "${searchLocation}" (source: ${locationSource})`);
   
   // Try Yelp first for richer data (reviews, photos, reservation info)
   const yelpAdapter = new YelpAdapter();
@@ -1098,9 +1199,10 @@ async function handleSearchRestaurants(
   });
 
   // Cache Google Places results for reservation lookups
-  // Use gateway city if resolved, otherwise parse from search input
-  const cacheCity = gatewayCity?.city || searchLocation.split(',')[0].trim();
-  const cacheState = gatewayCity?.state || searchLocation.split(',')[1]?.trim() || '';
+  // IMPORTANT: Use the actual searchLocation (which is the resolved gateway city), NOT the destination cache
+  // The destination cache stores the park name, but restaurants are in the gateway town
+  const cacheCity = staticGateway?.city || searchLocation.split(',')[0].trim();
+  const cacheState = staticGateway?.state || searchLocation.split(',')[1]?.trim() || '';
   
   const cachedGoogleRestaurants = results.results.map(r => ({
     name: r.name,
@@ -1182,50 +1284,80 @@ async function validateOpenTableLink(url: string): Promise<boolean> {
 async function handleGetReservationLink(
   input: {
     restaurant_name: string;
-    city: string;
-    state: string;
+    city?: string;
+    state?: string;
     date?: string;
     time?: string;
     party_size?: number;
   },
   context: ChatContext
 ): Promise<any> {
-  // CRITICAL FIX: Look up restaurant in cache to get CORRECT location
-  // This ensures we use the restaurant's actual location, not the user's home location
+  console.log('[Reservation] === handleGetReservationLink called ===');
+  console.log('[Reservation] Input:', JSON.stringify(input, null, 2));
+  
+  // CRITICAL: Look up restaurant in cache to get CORRECT location
+  // This is the primary source - the restaurant's actual location from Yelp search results
   const cachedRestaurant = getCachedRestaurant(input.restaurant_name);
   const cacheInfo = getCacheInfo();
+  console.log('[Reservation] Cached restaurant:', cachedRestaurant);
+  console.log('[Reservation] Cache info:', cacheInfo);
   
-  // Get NPS gateway from context (set deterministically by park lookups)
-  const npsGateway = context.npsGatewayCity;
+  // DETERMINISTIC: Get destination from module-level cache (set by park search)
+  const destCache = getDestinationCache();
+  console.log('[Reservation] Destination cache:', destCache);
 
-  // Priority: 1) Cached restaurant location, 2) NPS gateway city, 3) Static gateway lookup, 4) Input
-  let city = input.city;
-  let state = input.state;
-  let locationSource = 'input';
+  // Priority: 1) Cached restaurant location, 2) Destination cache, 3) Static gateway lookup
+  let city: string | undefined;
+  let state: string | undefined;
+  let locationSource = 'unknown';
   
   if (cachedRestaurant) {
+    // BEST: Use the restaurant's actual location from search results
     city = cachedRestaurant.city;
     state = cachedRestaurant.state;
     locationSource = 'cache';
     console.log(`[Reservation] Using cached location for "${input.restaurant_name}": ${city}, ${state}`);
-  } else if (npsGateway) {
-    // Use NPS gateway city from context (deterministically set by park lookup)
-    city = npsGateway.city;
-    state = npsGateway.state;
-    locationSource = 'nps-gateway';
-    console.log(`[Reservation] Using NPS gateway city from context: ${city}, ${state}`);
-  } else {
-    // Try static gateway city lookup from the search location in cache
-    const gatewayFromCache = cacheInfo.location ? resolveGatewayCity(cacheInfo.location) : null;
+  } else if (destCache) {
+    // GOOD: Use destination cache from park search
+    city = destCache.gatewayCity;
+    state = destCache.gatewayState;
+    locationSource = 'destination-cache';
+    console.log(`[Reservation] Using destination cache: ${city}, ${state}`);
+  } else if (cacheInfo.location) {
+    // OK: Try static gateway city lookup from the search location in cache
+    const gatewayFromCache = resolveGatewayCity(cacheInfo.location);
     if (gatewayFromCache) {
       city = gatewayFromCache.city;
       state = gatewayFromCache.state;
       locationSource = 'static-gateway';
       console.log(`[Reservation] Using static gateway city for "${cacheInfo.location}": ${city}, ${state}`);
-    } else {
-      console.warn(`[Reservation] Restaurant "${input.restaurant_name}" not found in cache (${cacheInfo.count} cached from "${cacheInfo.location}"). Using provided location: ${city}, ${state}`);
     }
   }
+  
+  // NEVER use Claude's input for city/state - it's unreliable (often uses user's home location)
+  if (!city || !state) {
+    console.error(`[Reservation] ERROR: No trusted location source for "${input.restaurant_name}"`);
+    console.error(`[Reservation] Claude provided: ${input.city}, ${input.state} - IGNORED (unreliable)`);
+    return {
+      error: 'Could not determine restaurant location. Please search for restaurants first.',
+      suggestion: 'Try searching for restaurants near the park before requesting a reservation link.',
+      debug: {
+        searchedFor: input.restaurant_name,
+        cacheInfo: cacheInfo,
+        destCache: destCache ? `${destCache.gatewayCity}, ${destCache.gatewayState}` : 'not set',
+      },
+    };
+  }
+
+  console.log('[Reservation] Final location resolution:', {
+    restaurant: input.restaurant_name,
+    city,
+    state,
+    locationSource,
+    date: input.date,
+    time: input.time,
+    partySize: input.party_size || 2,
+  });
 
   const links = YelpAdapter.generateReservationLinks(
     input.restaurant_name,
@@ -1261,32 +1393,51 @@ async function handleGetReservationLink(
     partySize: input.party_size || 2,
   };
 
-  // Only include OpenTable if it returns results AND validation succeeded
-  const availableLinks: Record<string, string> = {
-    yelp: links.yelp,
-    google: links.google,
-  };
+  // Build formatted links with display labels for clean presentation
+  const formattedLinks: Array<{ label: string; url: string; platform: string }> = [];
   
   if (openTableValid) {
-    availableLinks.openTable = links.openTable;
+    formattedLinks.push({
+      label: 'Book on OpenTable',
+      url: links.openTable,
+      platform: 'OpenTable',
+    });
   }
   
-  // Add Resy as an option
-  availableLinks.resy = links.resy;
+  formattedLinks.push({
+    label: 'Find on Google',
+    url: links.google,
+    platform: 'Google',
+  });
+  
+  formattedLinks.push({
+    label: 'View on Yelp',
+    url: links.yelp,
+    platform: 'Yelp',
+  });
+  
+  formattedLinks.push({
+    label: 'Check Resy',
+    url: links.resy,
+    platform: 'Resy',
+  });
 
-  // Choose best primary link - prefer Google search which always works
-  // Only use OpenTable as primary if we confirmed it works
+  // Choose best primary link
   const primaryLink = openTableValid ? links.openTable : links.google;
   const primaryPlatform = openTableValid ? 'OpenTable' : 'Google';
+  const primaryLabel = openTableValid ? 'Book on OpenTable' : 'Find on Google';
 
   return {
     reservationDetails,
-    links: availableLinks,
-    primaryLink,
-    primaryPlatform,
+    links: formattedLinks,
+    primaryLink: {
+      label: primaryLabel,
+      url: primaryLink,
+      platform: primaryPlatform,
+    },
     openTableAvailable: openTableValid,
     message: openTableValid 
-      ? `Reservation links generated for ${input.restaurant_name}. OpenTable has this restaurant available for booking.`
-      : `${input.restaurant_name} is not on OpenTable. Use Google or Yelp to find reservation options or call the restaurant directly.`,
+      ? `Here are reservation options for ${input.restaurant_name}:`
+      : `${input.restaurant_name} may not be on OpenTable. Here are other ways to make a reservation:`,
   };
 }

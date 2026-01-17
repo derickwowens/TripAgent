@@ -32,7 +32,22 @@ const injectProfileContext = (template: string, profile?: string): string => {
   if (!profile || !profile.trim()) return template;
   
   const profileLower = profile.toLowerCase();
+  const templateLower = template.toLowerCase();
   let additions: string[] = [];
+  
+  // Check if a specific destination is already mentioned in the template
+  // If so, skip destination-preference injections (climate, crowd preferences)
+  const hasSpecificDestination = 
+    templateLower.includes('trip to ') ||
+    templateLower.includes('visiting ') ||
+    templateLower.includes('national park') ||
+    templateLower.includes('yellowstone') ||
+    templateLower.includes('yosemite') ||
+    templateLower.includes('grand canyon') ||
+    templateLower.includes('zion') ||
+    templateLower.includes('acadia') ||
+    templateLower.includes('glacier') ||
+    templateLower.includes('everglades');
   
   // Kids age groups
   if (profileLower.includes('kids 1-3') || profileLower.includes('toddler')) {
@@ -57,15 +72,17 @@ const injectProfileContext = (template: string, profile?: string): string => {
     additions.push("I drive a gas vehicle");
   }
   
-  // Climate preferences
-  if (profileLower.includes('warm destination')) {
-    additions.push("I prefer warm weather destinations");
-  } else if (profileLower.includes('cold destination')) {
-    additions.push("I prefer cold weather destinations");
+  // Climate preferences - only inject if no specific destination chosen
+  if (!hasSpecificDestination) {
+    if (profileLower.includes('warm destination')) {
+      additions.push("I prefer warm weather destinations");
+    } else if (profileLower.includes('cold destination')) {
+      additions.push("I prefer cold weather destinations");
+    }
   }
   
-  // Travel style
-  if (profileLower.includes('avoid crowds')) {
+  // Travel style - "avoid crowds" is destination-selection preference
+  if (!hasSpecificDestination && profileLower.includes('avoid crowds')) {
     additions.push("I prefer less crowded, off-the-beaten-path destinations");
   }
   if (profileLower.includes('frugal traveler')) {
@@ -206,44 +223,9 @@ const injectProfileContext = (template: string, profile?: string): string => {
     additions.push("I'm looking for educational travel experiences");
   }
   
-  // Airline preferences
-  if (profileLower.includes('delta')) {
-    additions.push("I prefer flying Delta Airlines");
-  } else if (profileLower.includes('southwest')) {
-    additions.push("I prefer flying Southwest Airlines");
-  } else if (profileLower.includes('united')) {
-    additions.push("I prefer flying United Airlines");
-  } else if (profileLower.includes('american')) {
-    additions.push("I prefer flying American Airlines");
-  } else if (profileLower.includes('jetblue')) {
-    additions.push("I prefer flying JetBlue");
-  } else if (profileLower.includes('alaska')) {
-    additions.push("I prefer flying Alaska Airlines");
-  }
-  
-  // Car rental preferences
-  if (profileLower.includes('hertz')) {
-    additions.push("I prefer renting from Hertz");
-  } else if (profileLower.includes('enterprise')) {
-    additions.push("I prefer renting from Enterprise");
-  } else if (profileLower.includes('national')) {
-    additions.push("I prefer renting from National");
-  } else if (profileLower.includes('budget')) {
-    additions.push("I prefer renting from Budget");
-  }
-  
-  // Hotel preferences
-  if (profileLower.includes('marriott')) {
-    additions.push("I prefer Marriott hotels");
-  } else if (profileLower.includes('hilton')) {
-    additions.push("I prefer Hilton hotels");
-  } else if (profileLower.includes('ihg')) {
-    additions.push("I prefer IHG hotels");
-  } else if (profileLower.includes('hyatt')) {
-    additions.push("I prefer Hyatt hotels");
-  } else if (profileLower.includes('airbnb') || profileLower.includes('vrbo')) {
-    additions.push("I prefer Airbnb or VRBO rentals");
-  }
+  // NOTE: Booking-specific preferences (airline, car rental, hotel) are NOT injected here.
+  // These are only relevant when actually searching for flights, cars, or hotels - not for
+  // destination/location queries. They are stored in the user profile for programmatic access.
   
   // Gender (for solo travel safety considerations)
   if (profileLower.includes('female') && !profileLower.includes('male')) {

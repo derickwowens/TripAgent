@@ -283,10 +283,10 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
 const styles = StyleSheet.create({
   bubble: {
     maxWidth: '85%',
+    minWidth: 60,
     padding: 14,
     borderRadius: 18,
     marginBottom: 10,
-    flexShrink: 0,
   },
   userBubble: {
     alignSelf: 'flex-end',

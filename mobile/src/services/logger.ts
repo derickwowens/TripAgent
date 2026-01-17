@@ -157,9 +157,9 @@ export const logger = {
 
   /**
    * Log info - batched before sending (use sparingly)
+   * Note: No console output to reduce noise - only sent to server
    */
   info: (message: string, context?: LogContext) => {
-    console.log(`[Info] ${message}`);
     
     addToBuffer({
       level: 'info',

@@ -169,18 +169,16 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'get_reservation_link',
-    description: 'Generate a reservation link for a specific restaurant. IMPORTANT: Use the city and state from the restaurant search results (where the restaurant is located), NOT the user\'s home location. For example, if a restaurant near Yellowstone is in West Yellowstone, MT, use city="West Yellowstone" and state="MT".',
+    description: 'Generate a reservation link for a specific restaurant. The system will automatically use the correct location from the restaurant search results - just provide the restaurant name. Do NOT provide city/state from the user\'s home location.',
     input_schema: {
       type: 'object' as const,
       properties: {
         restaurant_name: { type: 'string', description: 'Exact name of the restaurant from search results' },
-        city: { type: 'string', description: 'City where the RESTAURANT is located (from search results, e.g., "West Yellowstone", "Springdale", "Grand Canyon Village")' },
-        state: { type: 'string', description: 'State where the RESTAURANT is located (from search results, e.g., "MT", "UT", "AZ") - NOT the user\'s home state' },
         date: { type: 'string', description: 'Reservation date in YYYY-MM-DD format' },
         time: { type: 'string', description: 'Reservation time in HH:MM format (24-hour, e.g., "19:00" for 7pm)' },
         party_size: { type: 'number', description: 'Number of guests (default: 2)' },
       },
-      required: ['restaurant_name', 'city', 'state'],
+      required: ['restaurant_name'],
     },
   },
 ];
