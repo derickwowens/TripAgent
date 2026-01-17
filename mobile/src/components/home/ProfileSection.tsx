@@ -29,7 +29,7 @@ const PROFILE_SUGGESTIONS = [
   'Cold destinations',
   // Travel style
   'Avoid crowds',
-  'Budget traveler',
+  'Frugal traveler',
   'Luxury travel',
   'Backpacker',
   'Love camping',

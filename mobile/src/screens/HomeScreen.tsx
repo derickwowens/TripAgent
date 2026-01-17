@@ -638,7 +638,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 16,
   },
   messagesContent: {
-    paddingBottom: 20,
+    paddingBottom: 220,
   },
 });
 

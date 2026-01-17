@@ -68,8 +68,8 @@ const injectProfileContext = (template: string, profile?: string): string => {
   if (profileLower.includes('avoid crowds')) {
     additions.push("I prefer less crowded, off-the-beaten-path destinations");
   }
-  if (profileLower.includes('budget traveler')) {
-    additions.push("I'm a budget-conscious traveler");
+  if (profileLower.includes('frugal traveler')) {
+    additions.push("I'm a frugal traveler looking for value");
   }
   if (profileLower.includes('luxury travel')) {
     additions.push("I prefer luxury travel experiences");
@@ -178,7 +178,7 @@ const injectProfileContext = (template: string, profile?: string): string => {
     return `About me: ${profile}. ${template}`;
   }
   
-  return `${additions.join('. ')}. ${template}`;
+  return `${template} (My profile: ${additions.join(', ')})`;
 };
 
 const generateProfilePrompt = (profile: string): string => {
