@@ -20,6 +20,9 @@ interface ChatInputProps {
   onChangeText: (text: string) => void;
   onSend: () => void;
   isLoading: boolean;
+  onOpenGallery?: () => void;
+  hasPhotos?: boolean;
+  galleryOpen?: boolean;
 }
 
 // Wrapper hook that no-ops when speech recognition isn't available
@@ -34,6 +37,9 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
   onChangeText,
   onSend,
   isLoading,
+  onOpenGallery,
+  hasPhotos,
+  galleryOpen,
 }) => {
   const [isListening, setIsListening] = useState(false);
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
@@ -146,6 +152,19 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
         editable={!isLoading}
         scrollEnabled={true}
       />
+      {hasPhotos && onOpenGallery && !galleryOpen && (
+        <TouchableOpacity
+          style={styles.photoButton}
+          onPress={onOpenGallery}
+        >
+          <View style={styles.photoIcon}>
+            <View style={styles.photoIconInner}>
+              <View style={styles.photoIconMountain} />
+              <View style={styles.photoIconSun} />
+            </View>
+          </View>
+        </TouchableOpacity>
+      )}
       <TouchableOpacity
         style={[styles.sendButton, isDisabled && styles.sendButtonDisabled]}
         onPress={handleSubmit}
@@ -196,5 +215,48 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: '600',
     transform: [{ translateY: -2 }],
+  },
+  photoButton: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: 'rgba(22, 101, 52, 0.6)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  photoIcon: {
+    width: 24,
+    height: 20,
+    borderRadius: 3,
+    borderWidth: 2,
+    borderColor: '#FFFFFF',
+    overflow: 'hidden',
+    justifyContent: 'flex-end',
+  },
+  photoIconInner: {
+    flex: 1,
+    position: 'relative',
+  },
+  photoIconMountain: {
+    position: 'absolute',
+    bottom: 0,
+    left: 2,
+    width: 0,
+    height: 0,
+    borderLeftWidth: 6,
+    borderRightWidth: 6,
+    borderBottomWidth: 8,
+    borderLeftColor: 'transparent',
+    borderRightColor: 'transparent',
+    borderBottomColor: '#FFFFFF',
+  },
+  photoIconSun: {
+    position: 'absolute',
+    top: 3,
+    right: 4,
+    width: 5,
+    height: 5,
+    borderRadius: 3,
+    backgroundColor: '#FFFFFF',
   },
 });

@@ -54,6 +54,7 @@ const HomeScreen: React.FC = () => {
   const [editingTitle, setEditingTitle] = useState(false);
   const [tempTitle, setTempTitle] = useState('');
   const [defaultBackground] = useState(() => getRandomBackground()); // Random bg per session
+  const [showPhotoGallery, setShowPhotoGallery] = useState(true);
   const scrollViewRef = useRef<ScrollView>(null);
 
   const { userLocation, locationLoading } = useLocation();
@@ -149,6 +150,13 @@ const HomeScreen: React.FC = () => {
     // Combine: destination photos first, then restaurant photos at the end
     return [...destinationPhotos, ...restaurantPhotos];
   }, [messages]);
+
+  // Show photo gallery when new photos arrive
+  useEffect(() => {
+    if (allPhotos.length > 0) {
+      setShowPhotoGallery(true);
+    }
+  }, [allPhotos.length]);
 
   const handleSend = async () => {
     if (!inputText.trim() || isLoading) return;
@@ -622,26 +630,23 @@ const HomeScreen: React.FC = () => {
           </ScrollView>
 
                     
-          {messages.length > 0 ? (
-            <CollapsibleBottomPanel hasPhotos={allPhotos.length > 0}>
-              <ChatInput
-                inputText={inputText}
-                onChangeText={setInputText}
-                onSend={handleSend}
-                isLoading={isLoading}
+          <ChatInput
+            inputText={inputText}
+            onChangeText={setInputText}
+            onSend={handleSend}
+            isLoading={isLoading}
+            hasPhotos={allPhotos.length > 0}
+            galleryOpen={showPhotoGallery}
+            onOpenGallery={() => setShowPhotoGallery(true)}
+          />
+          
+          {messages.length > 0 && allPhotos.length > 0 && showPhotoGallery && (
+            <CollapsibleBottomPanel hasPhotos={true}>
+              <PhotoGallery 
+                photos={allPhotos} 
+                onClose={() => setShowPhotoGallery(false)}
               />
-              
-              {allPhotos.length > 0 && (
-                <PhotoGallery photos={allPhotos} />
-              )}
             </CollapsibleBottomPanel>
-          ) : (
-            <ChatInput
-              inputText={inputText}
-              onChangeText={setInputText}
-              onSend={handleSend}
-              isLoading={isLoading}
-            />
           )}
         </KeyboardAvoidingView>
 

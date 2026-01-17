@@ -19,9 +19,10 @@ const PHOTO_SIZE = (SCREEN_WIDTH - 24 - (NUM_COLUMNS - 1) * PHOTO_GAP) / NUM_COL
 
 interface PhotoGalleryProps {
   photos: PhotoReference[];
+  onClose?: () => void;
 }
 
-export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos }) => {
+export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos, onClose }) => {
   const [modalVisible, setModalVisible] = useState<boolean>(false);
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
@@ -69,7 +70,14 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos }) => {
   return (
     <>
       <View style={styles.container}>
-        <Text style={styles.title}>📷 Trip Photos ({photos.length})</Text>
+        <View style={styles.header}>
+          <Text style={styles.title}>📷 Trip Photos ({photos.length})</Text>
+          {onClose && (
+            <TouchableOpacity onPress={onClose} style={styles.closeButton}>
+              <Text style={styles.closeText}>✕</Text>
+            </TouchableOpacity>
+          )}
+        </View>
         <FlatList
           data={photos}
           renderItem={renderPhoto}
@@ -98,11 +106,24 @@ const styles = StyleSheet.create({
     paddingTop: 8,
     paddingHorizontal: 12,
   },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
   title: {
     color: 'rgba(255, 255, 255, 0.9)',
     fontSize: 13,
     fontWeight: '600',
-    marginBottom: 8,
+  },
+  closeButton: {
+    padding: 4,
+  },
+  closeText: {
+    color: 'rgba(255, 255, 255, 0.7)',
+    fontSize: 18,
+    fontWeight: '600',
   },
   row: {
     justifyContent: 'flex-start',

@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import {
   View,
   StyleSheet,
@@ -21,8 +21,18 @@ export const CollapsibleBottomPanel: React.FC<CollapsibleBottomPanelProps> = ({
   children,
   hasPhotos,
 }) => {
-  const animatedHeight = useRef(new Animated.Value(DEFAULT_HEIGHT)).current;
+  const animatedHeight = useRef(new Animated.Value(0)).current;
   const currentHeightRef = useRef(DEFAULT_HEIGHT);
+
+  // Smooth slide-up animation on mount
+  useEffect(() => {
+    Animated.spring(animatedHeight, {
+      toValue: DEFAULT_HEIGHT,
+      useNativeDriver: false,
+      tension: 50,
+      friction: 8,
+    }).start();
+  }, []);
 
   const panResponder = PanResponder.create({
     onStartShouldSetPanResponder: () => true,
