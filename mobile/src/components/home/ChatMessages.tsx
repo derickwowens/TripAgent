@@ -158,72 +158,68 @@ interface MessageContentProps {
 }
 
 const MessageContent: React.FC<MessageContentProps> = ({ content, isUser, isDarkMode }) => {
+  // Use a simple Text component for the entire content to avoid nested Text truncation issues
+  const baseStyle = [
+    styles.text, 
+    isUser ? styles.userText : styles.assistantText,
+    isUser && isDarkMode && styles.userTextDark,
+  ];
+  
+  // For simple content without markdown, render directly
+  if (!content.includes('**') && !content.includes('[') && !content.includes('#')) {
+    return <Text style={baseStyle}>{content}</Text>;
+  }
+  
   const elements = parseMessageContent(content, isUser);
   
-  const renderElements = () => {
-    return elements.map((element, index) => {
-      switch (element.type) {
-        case 'header':
-          return (
-            <Text 
-              key={index} 
-              style={[
-                styles.header,
-                element.level === 1 && styles.header1,
-                element.level === 2 && styles.header2,
-                element.level >= 3 && styles.header3,
-                isUser ? styles.userText : styles.assistantText,
-                isUser && isDarkMode && styles.userTextDark,
-              ]}
-            >
-              {element.text}
-            </Text>
-          );
-        case 'bullet':
-          return (
-            <Text key={index} style={styles.bullet}>
-              {'  '.repeat(element.indent)}{'• '}
-            </Text>
-          );
-        case 'bold':
-          return (
-            <Text 
-              key={index} 
-              style={[
-                styles.boldText,
-                isUser ? styles.userText : styles.assistantText,
-                isUser && isDarkMode && styles.userTextDark,
-              ]}
-            >
-              {element.text}
-            </Text>
-          );
-        case 'link':
-          return (
-            <Text
-              key={index}
-              style={[styles.link, isUser ? styles.userLink : styles.assistantLink]}
-              onPress={() => Linking.openURL(element.url)}
-            >
-              {element.text}
-            </Text>
-          );
-        case 'newline':
-          return <Text key={index}>{'\n'}</Text>;
-        case 'text':
-        default:
-          return <Text key={index}>{element.text}</Text>;
-      }
-    });
-  };
-  
+  // Render all elements as children of a single Text component
   return (
-    <Text style={[
-      styles.text, 
-      isUser ? styles.userText : styles.assistantText,
-      isUser && isDarkMode && styles.userTextDark,
-    ]}>
-      {renderElements()}
+    <Text style={baseStyle}>
+      {elements.map((element, index) => {
+        switch (element.type) {
+          case 'header':
+            return (
+              <Text 
+                key={index} 
+                style={[
+                  styles.header,
+                  element.level === 1 && styles.header1,
+                  element.level === 2 && styles.header2,
+                  element.level >= 3 && styles.header3,
+                ]}
+              >
+                {element.text}
+              </Text>
+            );
+          case 'bullet':
+            return (
+              <Text key={index}>
+                {'  '.repeat(element.indent)}{'• '}
+              </Text>
+            );
+          case 'bold':
+            return (
+              <Text key={index} style={styles.boldText}>
+                {element.text}
+              </Text>
+            );
+          case 'link':
+            return (
+              <Text
+                key={index}
+                style={[styles.link, isUser ? styles.userLink : styles.assistantLink]}
+                onPress={() => Linking.openURL(element.url)}
+              >
+                {element.text}
+              </Text>
+            );
+          case 'newline':
+            return '\n';
+          case 'text':
+          default:
+            return element.text;
+        }
+      })}
     </Text>
   );
 };
@@ -282,7 +278,7 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
 
 const styles = StyleSheet.create({
   bubble: {
-    maxWidth: '85%',
+    maxWidth: '98%',
     minWidth: 60,
     padding: 14,
     borderRadius: 18,
