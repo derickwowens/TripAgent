@@ -2,7 +2,7 @@
   "expo": {
     "name": "TripAgent",
     "slug": "tripagent",
-    "version": "1.8.3",
+    "version": "1.8.4",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -14,7 +14,13 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.tripagent.app"
+      "bundleIdentifier": "com.tripagent.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "TripAgent needs your location to find nearby parks, restaurants, and provide personalized travel recommendations.",
+        "NSSpeechRecognitionUsageDescription": "TripAgent uses speech recognition for voice input to make trip planning easier.",
+        "NSMicrophoneUsageDescription": "TripAgent needs microphone access to enable voice input for hands-free trip planning."
+      }
     },
     "android": {
       "package": "com.tripagent.app",

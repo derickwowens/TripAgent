@@ -20,9 +20,21 @@
         "EXPO_PUBLIC_API_URL": "http://192.168.1.109:3000"
       }
     },
+    "preview-ios": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": false
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://192.168.1.109:3000"
+      }
+    },
     "closed": {
       "android": {
         "buildType": "app-bundle"
+      },
+      "ios": {
+        "autoIncrement": false
       },
       "env": {
         "APP_ENV": "production",
@@ -33,6 +45,9 @@
     "production": {
       "android": {
         "buildType": "app-bundle"
+      },
+      "ios": {
+        "autoIncrement": false
       },
       "env": {
         "APP_ENV": "production",
@@ -46,6 +61,10 @@
         "serviceAccountKeyPath": "./google-service-account.json",
         "track": "internal",
         "releaseStatus": "draft"
+      },
+      "ios": {
+        "ascAppId": "6757965908",
+        "appleTeamId": "T83G455PH4"
       }
     }
   }
