@@ -3,5 +3,6 @@ export { useConversations } from './useConversations';
 export { useLocation } from './useLocation';
 export { useDarkMode, useDarkModeContext, DarkModeContext } from './useDarkMode';
 export { getLoadingStatesForQuery } from './useLoadingStates';
+export { useOnboarding } from './useOnboarding';
 export type { Message, SavedConversation, PhotoReference } from './useConversations';
 export type { UserLocation } from './useLocation';

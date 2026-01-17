@@ -4,14 +4,13 @@ import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 interface ModelOption {
   id: string;
   name: string;
-  icon: string;
   desc: string;
 }
 
 const MODEL_OPTIONS: ModelOption[] = [
-  { id: 'claude-3-5-haiku-20241022', name: 'Haiku', icon: '⚡', desc: 'Fast' },
-  { id: 'claude-sonnet-4-20250514', name: 'Sonnet', icon: '⭐', desc: 'Balanced' },
-  { id: 'claude-opus-4-20250514', name: 'Opus', icon: '🧠', desc: 'Advanced' },
+  { id: 'claude-3-5-haiku-20241022', name: 'Haiku', desc: 'Fast' },
+  { id: 'claude-sonnet-4-20250514', name: 'Sonnet', desc: 'Balanced' },
+  { id: 'claude-opus-4-20250514', name: 'Opus', desc: 'Advanced' },
 ];
 
 interface ModelSelectorProps {
@@ -36,7 +35,6 @@ export const ModelSelector: React.FC<ModelSelectorProps> = ({
             ]}
             onPress={() => onSelectModel(model.id)}
           >
-            <Text style={styles.modelIcon}>{model.icon}</Text>
             <Text style={[
               styles.modelName,
               selectedModel === model.id && styles.modelNameSelected,

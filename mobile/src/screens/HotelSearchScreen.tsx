@@ -46,13 +46,13 @@ const HotelSearchScreen: React.FC = () => {
 
   const renderStars = (rating?: number) => {
     if (!rating) return null;
-    return '⭐'.repeat(Math.min(rating, 5));
+    return `${rating} stars`;
   };
 
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Text style={styles.title}>🏨 Search Hotels</Text>
+        <Text style={styles.title}>Search Hotels</Text>
         <Text style={styles.subtitle}>Find your perfect stay</Text>
 
         <View style={styles.form}>

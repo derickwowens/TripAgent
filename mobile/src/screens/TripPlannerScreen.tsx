@@ -142,14 +142,14 @@ const TripPlannerScreen: React.FC = () => {
 
             {/* Trip Summary */}
             <View style={styles.summaryCard}>
-              <Text style={styles.summaryTitle}>🏞️ {tripPlan.tripSummary.park}</Text>
-              <Text style={styles.summaryText}>📅 {tripPlan.tripSummary.dates}</Text>
-              <Text style={styles.summaryText}>✈️ {tripPlan.tripSummary.nearestAirport}</Text>
+              <Text style={styles.summaryTitle}>{tripPlan.tripSummary.park}</Text>
+              <Text style={styles.summaryText}>{tripPlan.tripSummary.dates}</Text>
+              <Text style={styles.summaryText}>{tripPlan.tripSummary.nearestAirport}</Text>
             </View>
 
             {/* Park Info */}
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>📍 Park Info</Text>
+              <Text style={styles.sectionTitle}>Park Info</Text>
               <View style={styles.card}>
                 <Text style={styles.cardText}>Entrance: {tripPlan.park.entranceFee}</Text>
                 <Text style={styles.cardText}>States: {tripPlan.park.states}</Text>
@@ -158,7 +158,7 @@ const TripPlannerScreen: React.FC = () => {
 
             {/* Flights */}
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>✈️ Flights</Text>
+              <Text style={styles.sectionTitle}>Flights</Text>
               <View style={styles.card}>
                 {tripPlan.flights.options?.length ? (
                   tripPlan.flights.options.slice(0, 3).map((flight, i) => (
@@ -177,7 +177,7 @@ const TripPlannerScreen: React.FC = () => {
 
             {/* Campgrounds */}
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>🏕️ Campgrounds</Text>
+              <Text style={styles.sectionTitle}>Campgrounds</Text>
               <View style={styles.card}>
                 {tripPlan.lodging.campgrounds?.length ? (
                   tripPlan.lodging.campgrounds.map((camp, i) => (
@@ -189,13 +189,13 @@ const TripPlannerScreen: React.FC = () => {
                 ) : (
                   <Text style={styles.cardText}>No campground data available</Text>
                 )}
-                <Text style={styles.tipText}>💡 {tripPlan.lodging.note}</Text>
+                <Text style={styles.tipText}>{tripPlan.lodging.note}</Text>
               </View>
             </View>
 
             {/* Hikes */}
             <View style={styles.section}>
-              <Text style={styles.sectionTitle}>🥾 Popular Hikes</Text>
+              <Text style={styles.sectionTitle}>Popular Hikes</Text>
               {tripPlan.hikes?.map((hike, i) => (
                 <View key={i} style={styles.hikeCard}>
                   <View style={styles.hikeHeader}>

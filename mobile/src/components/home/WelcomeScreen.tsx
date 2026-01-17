@@ -2,10 +2,10 @@ import React, { useState, useRef } from 'react';
 import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image, Animated } from 'react-native';
 
 const QUICK_PROMPTS = [
-  { emoji: '🌴', label: 'Somewhere warm on a budget', template: 'Take me somewhere warm on a budget' },
-  { emoji: '🏔️', label: 'Weekend mountain getaway', template: 'Plan a weekend mountain getaway' },
-  { emoji: '🏖️', label: 'Beach destination', template: 'Find me a beach destination' },
-  { emoji: '🌆', label: 'City break nearby', template: 'Suggest a city break nearby' },
+  { label: 'Somewhere warm on a budget', template: 'Take me somewhere warm on a budget' },
+  { label: 'Weekend mountain getaway', template: 'Plan a weekend mountain getaway' },
+  { label: 'Beach destination', template: 'Find me a beach destination' },
+  { label: 'City break nearby', template: 'Suggest a city break nearby' },
 ];
 
 const NATIONAL_PARKS = [
@@ -109,6 +109,85 @@ const injectProfileContext = (template: string, profile?: string): string => {
   if (profileLower.includes('sunrise') || profileLower.includes('sunset')) {
     additions.push("I love catching sunrise and sunset views");
   }
+  if (profileLower.includes('foodie')) {
+    let foodieDetails: string[] = ["I'm a foodie"];
+    
+    // Add specific foodie preferences
+    if (profileLower.includes('local cuisine lover')) foodieDetails.push('love local cuisine');
+    if (profileLower.includes('fine dining')) foodieDetails.push('enjoy fine dining');
+    if (profileLower.includes('casual eats')) foodieDetails.push('prefer casual eats');
+    if (profileLower.includes('street food fan')) foodieDetails.push('love street food');
+    if (profileLower.includes('farm-to-table')) foodieDetails.push('prefer farm-to-table');
+    if (profileLower.includes('vegetarian')) foodieDetails.push('am vegetarian');
+    if (profileLower.includes('vegan')) foodieDetails.push('am vegan');
+    if (profileLower.includes('gluten-free')) foodieDetails.push('need gluten-free options');
+    if (profileLower.includes('breakfast enthusiast')) foodieDetails.push('love great breakfasts');
+    if (profileLower.includes('brunch lover')) foodieDetails.push('enjoy brunch spots');
+    if (profileLower.includes('dinner reservations')) foodieDetails.push('want dinner reservations');
+    if (profileLower.includes('food tours')) foodieDetails.push('interested in food tours');
+    if (profileLower.includes('cooking classes')) foodieDetails.push('want cooking classes');
+    if (profileLower.includes('wine/beer tastings')) foodieDetails.push('enjoy wine/beer tastings');
+    if (profileLower.includes('budget eats')) foodieDetails.push('looking for budget eats');
+    if (profileLower.includes('splurge-worthy meals')) foodieDetails.push('want splurge-worthy meals');
+    if (profileLower.includes('hidden gems')) foodieDetails.push('love hidden gem restaurants');
+    if (profileLower.includes('scenic dining')) foodieDetails.push('want scenic dining views');
+    if (profileLower.includes('instagram-worthy')) foodieDetails.push('want Instagram-worthy spots');
+    if (profileLower.includes('historic restaurants')) foodieDetails.push('love historic restaurants');
+    
+    additions.push(foodieDetails.join(', '));
+  }
+  
+  // Coffee hound preferences
+  if (profileLower.includes('coffee hound')) {
+    let coffeeDetails: string[] = ["I'm a coffee enthusiast"];
+    
+    if (profileLower.includes('local roasters')) coffeeDetails.push('love local roasters');
+    if (profileLower.includes('specialty coffee')) coffeeDetails.push('seek specialty coffee');
+    if (profileLower.includes('cozy cafe vibes')) coffeeDetails.push('enjoy cozy cafe vibes');
+    if (profileLower.includes('coffee with a view')) coffeeDetails.push('want coffee spots with views');
+    if (profileLower.includes('early morning coffee')) coffeeDetails.push('need early morning coffee spots');
+    if (profileLower.includes('espresso lover')) coffeeDetails.push('am an espresso lover');
+    if (profileLower.includes('cold brew fan')) coffeeDetails.push('love cold brew');
+    if (profileLower.includes('coffee shop workspaces')) coffeeDetails.push('like working from coffee shops');
+    
+    additions.push(coffeeDetails.join(', '));
+  }
+  
+  // Book worm preferences
+  if (profileLower.includes('book worm')) {
+    let bookDetails: string[] = ["I'm a book lover"];
+    
+    if (profileLower.includes('independent bookshops')) bookDetails.push('love independent bookshops');
+    if (profileLower.includes('used bookstores')) bookDetails.push('enjoy used bookstores');
+    if (profileLower.includes('library visits')) bookDetails.push('like visiting libraries');
+    if (profileLower.includes('literary landmarks')) bookDetails.push('want to see literary landmarks');
+    if (profileLower.includes('author home tours')) bookDetails.push('interested in author home tours');
+    if (profileLower.includes('reading cafes')) bookDetails.push('love reading cafes');
+    if (profileLower.includes('book festivals')) bookDetails.push('interested in book festivals');
+    if (profileLower.includes('quiet reading spots')) bookDetails.push('seek quiet reading spots');
+    
+    additions.push(bookDetails.join(', '));
+  }
+  
+  // Historian preferences
+  if (profileLower.includes('historian')) {
+    let historyDetails: string[] = ["I'm a history enthusiast"];
+    
+    if (profileLower.includes('battlefields')) historyDetails.push('love visiting battlefields and monuments');
+    if (profileLower.includes('historic homes')) historyDetails.push('enjoy historic homes and estates');
+    if (profileLower.includes('museums')) historyDetails.push('want to visit museums and exhibits');
+    if (profileLower.includes('archaeological')) historyDetails.push('interested in archaeological sites');
+    if (profileLower.includes('historic districts')) historyDetails.push('love exploring historic districts');
+    if (profileLower.includes('ghost towns')) historyDetails.push('want to see ghost towns');
+    if (profileLower.includes('native american')) historyDetails.push('interested in Native American heritage');
+    if (profileLower.includes('colonial')) historyDetails.push('interested in colonial history');
+    if (profileLower.includes('civil war')) historyDetails.push('want to visit Civil War sites');
+    if (profileLower.includes('pioneer') || profileLower.includes('frontier')) historyDetails.push('interested in pioneer and frontier history');
+    if (profileLower.includes('industrial')) historyDetails.push('interested in industrial heritage');
+    if (profileLower.includes('maritime')) historyDetails.push('interested in maritime history');
+    
+    additions.push(historyDetails.join(', '));
+  }
   
   // Accessibility and special needs
   if (profileLower.includes('traveling with dog') || profileLower.includes('with dog')) {
@@ -178,7 +257,8 @@ const injectProfileContext = (template: string, profile?: string): string => {
     return `About me: ${profile}. ${template}`;
   }
   
-  return `${template} (My profile: ${additions.join(', ')})`;
+  // Build natural language prompt with preferences woven in
+  return `${additions.join('. ')}. ${template}`;
 };
 
 const generateProfilePrompt = (profile: string): string => {
@@ -380,7 +460,6 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
               style={[styles.promptChip, styles.profileChip]}
               onPress={() => onSetPrompt(generateProfilePrompt(userProfile))}
             >
-              <Text style={styles.promptEmoji}>✨</Text>
               <Text style={styles.promptText}>Trip from my profile</Text>
             </TouchableOpacity>
           )}
@@ -389,7 +468,6 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             style={styles.promptChip}
             onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation), userProfile))}
           >
-            <Text style={styles.promptEmoji}>🎲</Text>
             <Text style={styles.promptText}>Surprise me!</Text>
           </TouchableOpacity>
           
@@ -399,7 +477,6 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
               style={styles.promptChip}
               onPress={() => onSetPrompt(injectProfileContext(prompt.template, userProfile))}
             >
-              <Text style={styles.promptEmoji}>{prompt.emoji}</Text>
               <Text style={styles.promptText}>{prompt.label}</Text>
             </TouchableOpacity>
           ))}
@@ -480,10 +557,6 @@ const styles = StyleSheet.create({
   profileChip: {
     backgroundColor: 'rgba(22, 101, 52, 0.6)',
     borderColor: 'rgba(22, 101, 52, 0.8)',
-  },
-  promptEmoji: {
-    fontSize: 20,
-    marginRight: 12,
   },
   promptText: {
     color: '#FFFFFF',

@@ -57,7 +57,7 @@ const FlightSearchScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Text style={styles.title}>✈️ Search Flights</Text>
+        <Text style={styles.title}>Search Flights</Text>
         <Text style={styles.subtitle}>Find the best deals</Text>
 
         <View style={styles.form}>

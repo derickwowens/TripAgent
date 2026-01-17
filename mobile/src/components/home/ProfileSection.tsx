@@ -11,6 +11,77 @@ const EXCLUSIVE_GROUPS = {
   hotel: ['Marriott', 'Hilton', 'IHG', 'Hyatt', 'Airbnb/VRBO'],
 };
 
+// Foodie-specific preferences
+const FOODIE_PREFERENCES = [
+  // Cuisine types
+  'Local cuisine lover',
+  'Fine dining',
+  'Casual eats',
+  'Street food fan',
+  'Farm-to-table',
+  // Dietary
+  'Vegetarian',
+  'Vegan',
+  'Gluten-free',
+  'No dietary restrictions',
+  // Meal preferences
+  'Breakfast enthusiast',
+  'Brunch lover',
+  'Dinner reservations',
+  // Experience
+  'Food tours',
+  'Cooking classes',
+  'Wine/beer tastings',
+  // Budget
+  'Budget eats',
+  'Splurge-worthy meals',
+  // Style
+  'Instagram-worthy spots',
+  'Hidden gems',
+  'Historic restaurants',
+  'Scenic dining',
+];
+
+// Coffee hound preferences
+const COFFEE_PREFERENCES = [
+  'Local roasters',
+  'Specialty coffee',
+  'Cozy cafe vibes',
+  'Coffee with a view',
+  'Early morning coffee runs',
+  'Espresso lover',
+  'Cold brew fan',
+  'Coffee shop workspaces',
+];
+
+// Book worm preferences
+const BOOKWORM_PREFERENCES = [
+  'Independent bookshops',
+  'Used bookstores',
+  'Library visits',
+  'Literary landmarks',
+  'Author home tours',
+  'Reading cafes',
+  'Book festivals',
+  'Quiet reading spots',
+];
+
+// Historian preferences
+const HISTORIAN_PREFERENCES = [
+  'Battlefields & monuments',
+  'Historic homes & estates',
+  'Museums & exhibits',
+  'Archaeological sites',
+  'Historic districts',
+  'Ghost towns',
+  'Native American heritage',
+  'Colonial history',
+  'Civil War sites',
+  'Pioneer & frontier history',
+  'Industrial heritage',
+  'Maritime history',
+];
+
 const PROFILE_SUGGESTIONS = [
   // Gender (mutually exclusive)
   'Male',
@@ -43,6 +114,10 @@ const PROFILE_SUGGESTIONS = [
   'Skiing/snowboard',
   'Water sports',
   'Sunrise/sunset',
+  'Foodie',
+  'Coffee hound',
+  'Book worm',
+  'Historian',
   // Physical/Accessibility
   'Traveling with dog',
   'Accessible needs',
@@ -83,6 +158,44 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   // Expanded by default for empty profiles, collapsed otherwise
   const [suggestionsExpanded, setSuggestionsExpanded] = useState(!userProfile || userProfile.trim().length === 0);
   const [privacyModalVisible, setPrivacyModalVisible] = useState(false);
+  const [foodieExpanded, setFoodieExpanded] = useState(false);
+  const [coffeeExpanded, setCoffeeExpanded] = useState(false);
+  const [bookwormExpanded, setBookwormExpanded] = useState(false);
+  const [historianExpanded, setHistorianExpanded] = useState(false);
+
+  // Check if user has special badges selected
+  const isFoodie = userProfile.toLowerCase().includes('foodie');
+  const isCoffeeHound = userProfile.toLowerCase().includes('coffee hound');
+  const isBookWorm = userProfile.toLowerCase().includes('book worm');
+  const isHistorian = userProfile.toLowerCase().includes('historian');
+
+  // Count lines in profile (for clear button visibility)
+  const profileLineCount = userProfile.trim() ? userProfile.trim().split(',').length : 0;
+  const showClearButton = profileLineCount > 3;
+
+  // Filter out foodie preferences already in profile
+  const availableFoodiePrefs = useMemo(() => {
+    const profileLower = userProfile.toLowerCase();
+    return FOODIE_PREFERENCES.filter(pref => !profileLower.includes(pref.toLowerCase()));
+  }, [userProfile]);
+
+  // Filter out coffee preferences already in profile
+  const availableCoffeePrefs = useMemo(() => {
+    const profileLower = userProfile.toLowerCase();
+    return COFFEE_PREFERENCES.filter(pref => !profileLower.includes(pref.toLowerCase()));
+  }, [userProfile]);
+
+  // Filter out bookworm preferences already in profile
+  const availableBookwormPrefs = useMemo(() => {
+    const profileLower = userProfile.toLowerCase();
+    return BOOKWORM_PREFERENCES.filter(pref => !profileLower.includes(pref.toLowerCase()));
+  }, [userProfile]);
+
+  // Filter out historian preferences already in profile
+  const availableHistorianPrefs = useMemo(() => {
+    const profileLower = userProfile.toLowerCase();
+    return HISTORIAN_PREFERENCES.filter(pref => !profileLower.includes(pref.toLowerCase()));
+  }, [userProfile]);
 
   // Filter out suggestions that are already in the user's profile OR are mutually exclusive with selected options
   const availableSuggestions = useMemo(() => {
@@ -117,9 +230,16 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
     <View style={styles.container}>
       <View style={styles.titleRow}>
         <Text style={styles.title}>Traveler Profile</Text>
-        <TouchableOpacity onPress={() => setPrivacyModalVisible(true)} style={styles.infoButton}>
-          <Text style={styles.infoIcon}>ⓘ</Text>
-        </TouchableOpacity>
+        <View style={styles.titleButtons}>
+          <TouchableOpacity onPress={() => setPrivacyModalVisible(true)} style={styles.infoButton}>
+            <Text style={styles.infoIcon}>ⓘ</Text>
+          </TouchableOpacity>
+          {showClearButton && (
+            <TouchableOpacity onPress={() => onSaveProfile('')} style={styles.clearButton}>
+              <Text style={styles.clearButtonText}>Clear</Text>
+            </TouchableOpacity>
+          )}
+        </View>
       </View>
       <TextInput
         style={styles.input}
@@ -138,7 +258,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
             onPress={() => setSuggestionsExpanded(!suggestionsExpanded)}
           >
             <Text style={styles.suggestionsTitle}>
-              {suggestionsExpanded ? '▼' : '▶'} Quick add ({availableSuggestions.length})
+              {suggestionsExpanded ? '▼' : '▶'} Quick preferences ({availableSuggestions.length})
             </Text>
           </TouchableOpacity>
           {suggestionsExpanded && (
@@ -150,6 +270,114 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                   onPress={() => onAddSuggestion(suggestion)}
                 >
                   <Text style={styles.suggestionText}>{suggestion}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          )}
+        </>
+      )}
+
+      {/* Foodie Sub-Profile - appears when Foodie badge is selected */}
+      {isFoodie && availableFoodiePrefs.length > 0 && (
+        <>
+          <TouchableOpacity 
+            style={styles.foodieHeader}
+            onPress={() => setFoodieExpanded(!foodieExpanded)}
+          >
+            <Text style={styles.foodieTitle}>
+              {foodieExpanded ? '▼' : '▶'} Foodie Preferences ({availableFoodiePrefs.length})
+            </Text>
+          </TouchableOpacity>
+          {foodieExpanded && (
+            <View style={styles.suggestions}>
+              {availableFoodiePrefs.map((pref, index) => (
+                <TouchableOpacity
+                  key={index}
+                  style={styles.foodieChip}
+                  onPress={() => onAddSuggestion(pref)}
+                >
+                  <Text style={styles.suggestionText}>{pref}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          )}
+        </>
+      )}
+
+      {/* Coffee Hound Sub-Profile - appears when Coffee hound badge is selected */}
+      {isCoffeeHound && availableCoffeePrefs.length > 0 && (
+        <>
+          <TouchableOpacity 
+            style={styles.coffeeHeader}
+            onPress={() => setCoffeeExpanded(!coffeeExpanded)}
+          >
+            <Text style={styles.coffeeTitle}>
+              {coffeeExpanded ? '▼' : '▶'} Coffee Preferences ({availableCoffeePrefs.length})
+            </Text>
+          </TouchableOpacity>
+          {coffeeExpanded && (
+            <View style={styles.suggestions}>
+              {availableCoffeePrefs.map((pref, index) => (
+                <TouchableOpacity
+                  key={index}
+                  style={styles.coffeeChip}
+                  onPress={() => onAddSuggestion(pref)}
+                >
+                  <Text style={styles.suggestionText}>{pref}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          )}
+        </>
+      )}
+
+      {/* Book Worm Sub-Profile - appears when Book worm badge is selected */}
+      {isBookWorm && availableBookwormPrefs.length > 0 && (
+        <>
+          <TouchableOpacity 
+            style={styles.bookwormHeader}
+            onPress={() => setBookwormExpanded(!bookwormExpanded)}
+          >
+            <Text style={styles.bookwormTitle}>
+              {bookwormExpanded ? '▼' : '▶'} Book Worm Preferences ({availableBookwormPrefs.length})
+            </Text>
+          </TouchableOpacity>
+          {bookwormExpanded && (
+            <View style={styles.suggestions}>
+              {availableBookwormPrefs.map((pref, index) => (
+                <TouchableOpacity
+                  key={index}
+                  style={styles.bookwormChip}
+                  onPress={() => onAddSuggestion(pref)}
+                >
+                  <Text style={styles.suggestionText}>{pref}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          )}
+        </>
+      )}
+
+      {/* Historian Sub-Profile - appears when Historian badge is selected */}
+      {isHistorian && availableHistorianPrefs.length > 0 && (
+        <>
+          <TouchableOpacity 
+            style={styles.historianHeader}
+            onPress={() => setHistorianExpanded(!historianExpanded)}
+          >
+            <Text style={styles.historianTitle}>
+              {historianExpanded ? '▼' : '▶'} Historian Preferences ({availableHistorianPrefs.length})
+            </Text>
+          </TouchableOpacity>
+          {historianExpanded && (
+            <View style={styles.suggestions}>
+              {availableHistorianPrefs.map((pref, index) => (
+                <TouchableOpacity
+                  key={index}
+                  style={styles.historianChip}
+                  onPress={() => onAddSuggestion(pref)}
+                >
+                  <Text style={styles.suggestionText}>{pref}</Text>
                 </TouchableOpacity>
               ))}
             </View>
@@ -211,6 +439,21 @@ const styles = StyleSheet.create({
     color: '#4A9FE8',
     fontSize: 16,
   },
+  titleButtons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  clearButton: {
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    paddingHorizontal: 10,
+    paddingVertical: 4,
+    borderRadius: 12,
+  },
+  clearButtonText: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 11,
+  },
   input: {
     backgroundColor: 'rgba(255,255,255,0.1)',
     borderRadius: 10,
@@ -243,6 +486,70 @@ const styles = StyleSheet.create({
   suggestionText: {
     color: 'rgba(255,255,255,0.8)',
     fontSize: 11,
+  },
+  foodieHeader: {
+    paddingVertical: 8,
+    marginTop: 8,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255,255,255,0.1)',
+  },
+  foodieTitle: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 11,
+  },
+  foodieChip: {
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
+  },
+  coffeeHeader: {
+    paddingVertical: 8,
+    marginTop: 8,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255,255,255,0.1)',
+  },
+  coffeeTitle: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 11,
+  },
+  coffeeChip: {
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
+  },
+  bookwormHeader: {
+    paddingVertical: 8,
+    marginTop: 8,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255,255,255,0.1)',
+  },
+  bookwormTitle: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 11,
+  },
+  bookwormChip: {
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
+  },
+  historianHeader: {
+    paddingVertical: 8,
+    marginTop: 8,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255,255,255,0.1)',
+  },
+  historianTitle: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 11,
+  },
+  historianChip: {
+    backgroundColor: 'rgba(22, 101, 52, 0.35)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
   },
   modalOverlay: {
     flex: 1,

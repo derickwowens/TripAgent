@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, createContext, useContext, ReactNode } from 'react';
 import * as Location from 'expo-location';
 
 export interface UserLocation {
@@ -6,6 +6,10 @@ export interface UserLocation {
   state: string;
   nearestAirport: string;
 }
+
+// Singleton to cache location across the app
+let cachedLocation: UserLocation | null = null;
+let locationPromise: Promise<UserLocation | null> | null = null;
 
 const AIRPORT_MAPPING: Record<string, string> = {
   'California': 'LAX',
@@ -25,20 +29,24 @@ const AIRPORT_MAPPING: Record<string, string> = {
   'Oregon': 'PDX',
 };
 
-export const useLocation = () => {
-  const [userLocation, setUserLocation] = useState<UserLocation | null>(null);
-  const [locationLoading, setLocationLoading] = useState(true);
+// Fetch location once and cache it
+const fetchLocation = async (): Promise<UserLocation | null> => {
+  // Return cached location if available
+  if (cachedLocation) {
+    return cachedLocation;
+  }
 
-  useEffect(() => {
-    requestLocationPermission();
-  }, []);
+  // If already fetching, return the existing promise
+  if (locationPromise) {
+    return locationPromise;
+  }
 
-  const requestLocationPermission = async () => {
+  // Start fetching
+  locationPromise = (async () => {
     try {
       const { status } = await Location.requestForegroundPermissionsAsync();
       if (status !== 'granted') {
-        setLocationLoading(false);
-        return;
+        return null;
       }
 
       const location = await Location.getCurrentPositionAsync({});
@@ -50,18 +58,43 @@ export const useLocation = () => {
       const state = address.region || 'California';
       const nearestAirport = AIRPORT_MAPPING[state] || 'LAX';
 
-      setUserLocation({
+      cachedLocation = {
         city: address.city || 'Unknown',
         state: state,
         nearestAirport: nearestAirport,
-      });
-      setLocationLoading(false);
+      };
 
+      return cachedLocation;
     } catch (error) {
       console.error('Location error:', error);
-      setLocationLoading(false);
+      return null;
     }
-  };
+  })();
+
+  return locationPromise;
+};
+
+// Start location detection immediately when module loads
+fetchLocation();
+
+export const useLocation = () => {
+  const [userLocation, setUserLocation] = useState<UserLocation | null>(cachedLocation);
+  const [locationLoading, setLocationLoading] = useState(!cachedLocation);
+
+  useEffect(() => {
+    // If already cached, use it immediately
+    if (cachedLocation) {
+      setUserLocation(cachedLocation);
+      setLocationLoading(false);
+      return;
+    }
+
+    // Otherwise wait for the fetch
+    fetchLocation().then(location => {
+      setUserLocation(location);
+      setLocationLoading(false);
+    });
+  }, []);
 
   return {
     userLocation,

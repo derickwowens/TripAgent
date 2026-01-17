@@ -13,16 +13,38 @@ import {
   Image,
   TextInput,
 } from 'react-native';
-import { sendChatMessage, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
-import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation } from '../hooks';
-import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel } from '../components/home';
+import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
+import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding } from '../hooks';
+import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
 
-// Default forest background
-const DEFAULT_BACKGROUND_URL = 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800';
+// Variety of nature/national park backgrounds for new conversations
+const DEFAULT_BACKGROUNDS = [
+  // Forests & Mountains
+  'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800', // Misty forest
+  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800', // Mountain peaks
+  'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800', // Snowy mountains
+  'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800', // Alpine sunrise
+  // Canyons & Deserts
+  'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800', // Grand Canyon
+  'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800', // Desert road
+  'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800', // Arches
+  // Lakes & Water
+  'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800', // Mountain lake
+  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800', // Beach sunset
+  'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800', // Waterfall
+  // National Parks
+  'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800', // Deer in meadow
+  'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?w=800', // Yosemite valley
+  'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800', // Camping tent
+  'https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=800', // Redwood trees
+];
+
+// Get a random background for new conversations
+const getRandomBackground = () => DEFAULT_BACKGROUNDS[Math.floor(Math.random() * DEFAULT_BACKGROUNDS.length)];
 
 const HomeScreen: React.FC = () => {
   const [inputText, setInputText] = useState('');
@@ -31,6 +53,7 @@ const HomeScreen: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [editingTitle, setEditingTitle] = useState(false);
   const [tempTitle, setTempTitle] = useState('');
+  const [defaultBackground] = useState(() => getRandomBackground()); // Random bg per session
   const scrollViewRef = useRef<ScrollView>(null);
 
   const { userLocation, locationLoading } = useLocation();
@@ -51,10 +74,32 @@ const HomeScreen: React.FC = () => {
     profileExpanded, 
     updateProfile, 
     persistProfile,
+    updateAndPersistProfile,
     addSuggestion, 
     toggleExpanded 
   } = useUserProfile();
   const { isDarkMode, toggleDarkMode } = useDarkMode();
+  const { hasCompletedOnboarding, isLoading: onboardingLoading, completeOnboarding } = useOnboarding();
+
+  // Handle onboarding completion
+  const handleOnboardingComplete = async (profile: string, firstPrompt?: string) => {
+    // Save the profile from onboarding - use updateAndPersistProfile to ensure it's saved immediately
+    if (profile) {
+      await updateAndPersistProfile(profile);
+    }
+    
+    // Mark onboarding as complete
+    await completeOnboarding();
+    
+    // If user selected a first trip prompt, set it as input
+    if (firstPrompt) {
+      setInputText(firstPrompt);
+    }
+  };
+
+  const handleOnboardingSkip = async () => {
+    await completeOnboarding();
+  };
 
   // Scroll to bottom when messages change or loading state changes
   useEffect(() => {
@@ -67,9 +112,12 @@ const HomeScreen: React.FC = () => {
 
   // Get photos only from the most recent assistant messages (reflects current context)
   // Only shows photos from the last 3 assistant responses to keep context relevant
+  // Gallery: 28 photos total - first 24 for destination/parks, last 4 for restaurants
   const allPhotos = useMemo(() => {
-    const photos: Array<{ keyword: string; url: string; caption?: string }> = [];
-    const MAX_PHOTOS = 24;
+    const destinationPhotos: PhotoReference[] = [];
+    const restaurantPhotos: PhotoReference[] = [];
+    const MAX_DESTINATION_PHOTOS = 24;
+    const MAX_RESTAURANT_PHOTOS = 4;
     const RECENT_MESSAGES_COUNT = 3;
     
     // Get the last N assistant messages that have photos
@@ -78,16 +126,28 @@ const HomeScreen: React.FC = () => {
       .slice(-RECENT_MESSAGES_COUNT);
     
     recentAssistantMessages.forEach(msg => {
-      if (msg.photos && photos.length < MAX_PHOTOS) {
+      if (msg.photos) {
         msg.photos.forEach(photo => {
-          // Avoid duplicates by URL, respect limit
-          if (photos.length < MAX_PHOTOS && !photos.some(p => p.url === photo.url)) {
-            photos.push(photo);
+          // Check if this is a restaurant photo (source: 'other' or caption contains restaurant-related text)
+          const isRestaurantPhoto = photo.source === 'other' || photo.caption?.includes('miles to') || photo.caption?.includes('near');
+          
+          if (isRestaurantPhoto) {
+            // Add to restaurant photos if not duplicate and under limit
+            if (restaurantPhotos.length < MAX_RESTAURANT_PHOTOS && !restaurantPhotos.some(p => p.url === photo.url)) {
+              restaurantPhotos.push(photo);
+            }
+          } else {
+            // Add to destination photos if not duplicate and under limit
+            if (destinationPhotos.length < MAX_DESTINATION_PHOTOS && !destinationPhotos.some(p => p.url === photo.url)) {
+              destinationPhotos.push(photo);
+            }
           }
         });
       }
     });
-    return photos;
+    
+    // Combine: destination photos first, then restaurant photos at the end
+    return [...destinationPhotos, ...restaurantPhotos];
   }, [messages]);
 
   const handleSend = async () => {
@@ -126,30 +186,39 @@ const HomeScreen: React.FC = () => {
         userProfile: userProfile || undefined,
       };
 
-      // Get context-aware loading states based on user's query
-      const loadingStates = getLoadingStatesForQuery(inputText);
-      
-      let stateIndex = 0;
-      setLoadingStatus(loadingStates[0]);
-      const statusInterval = setInterval(() => {
-        stateIndex++;
-        if (stateIndex < loadingStates.length) {
-          setLoadingStatus(loadingStates[stateIndex]);
-        }
-      }, 2000);
+      // Start with initial loading state
+      setLoadingStatus('Thinking...');
 
-      const response = await sendChatMessage(chatMessages, context, MODEL);
-      clearInterval(statusInterval);
+      // Use streaming to get real-time tool status updates
+      const response = await sendChatMessageWithStream(
+        chatMessages, 
+        context, 
+        MODEL,
+        (toolStatus) => setLoadingStatus(toolStatus)
+      );
       
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        type: 'assistant',
-        content: response.response,
-        timestamp: new Date(),
-        photos: response.photos,
-      };
-
-      setMessages(prev => [...prev, assistantMessage]);
+      // If segments are provided, create multiple message bubbles for better display
+      if (response.segments && response.segments.length > 1) {
+        const segmentMessages: Message[] = response.segments.map((segment, index) => ({
+          id: (Date.now() + index + 1).toString(),
+          type: 'assistant' as const,
+          content: segment,
+          timestamp: new Date(),
+          // Only attach photos to the last segment
+          photos: index === response.segments!.length - 1 ? response.photos : undefined,
+        }));
+        setMessages(prev => [...prev, ...segmentMessages]);
+      } else {
+        // Single message as before
+        const assistantMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          type: 'assistant',
+          content: response.response,
+          timestamp: new Date(),
+          photos: response.photos,
+        };
+        setMessages(prev => [...prev, assistantMessage]);
+      }
     } catch (error: any) {
       console.error('Chat error:', error);
       
@@ -166,24 +235,24 @@ const HomeScreen: React.FC = () => {
         },
       });
       
-      // Generate user-friendly error message based on error type
+      // Generate user-friendly error message with helpful guidance
       let userFriendlyMessage = '';
       const statusCode = error?.response?.status;
       
       if (statusCode === 500) {
-        userFriendlyMessage = "🔧 Our servers are experiencing high demand right now. Please try again in a moment. Your trip planning request has been saved.";
+        userFriendlyMessage = "I'm having trouble processing that request right now. Try being more specific - for example, instead of 'plan a trip' try 'Help me plan a 3-day trip to Yellowstone National Park'.";
       } else if (statusCode === 503) {
-        userFriendlyMessage = "🔄 TripAgent is temporarily unavailable for maintenance. Please try again in a few minutes.";
+        userFriendlyMessage = "I'm temporarily unavailable. This usually resolves in a minute or two - tap retry when you're ready!";
       } else if (statusCode === 429) {
-        userFriendlyMessage = "⏳ You're sending requests too quickly. Please wait a moment before trying again.";
+        userFriendlyMessage = "Let's slow down a bit! Wait a moment and then tap retry.";
       } else if (statusCode === 401 || statusCode === 403) {
-        userFriendlyMessage = "🔐 There was an authentication issue. Please restart the app and try again.";
+        userFriendlyMessage = "There was a connection issue. Please close and reopen the app, then try again.";
       } else if (error?.message?.includes('Network') || error?.message?.includes('network') || !statusCode) {
-        userFriendlyMessage = "📶 Unable to connect. Please check your internet connection and try again.";
+        userFriendlyMessage = "I can't reach the server right now. Check your internet connection and tap retry when you're back online.";
       } else if (statusCode >= 400 && statusCode < 500) {
-        userFriendlyMessage = "⚠️ Something went wrong with your request. Please try rephrasing your question.";
+        userFriendlyMessage = "I didn't quite understand that. Try rephrasing - for example: 'What are the best hikes in Zion?' or 'Help me plan a weekend trip to the Grand Canyon'.";
       } else {
-        userFriendlyMessage = "😕 Something unexpected happened. Please try again, or reach out via the feedback form in the menu if this persists.";
+        userFriendlyMessage = "Something went wrong on my end. Tap retry, or try asking in a different way. If this keeps happening, use the feedback form in the menu.";
       }
       
       // Find the last user message for retry functionality
@@ -237,30 +306,39 @@ const HomeScreen: React.FC = () => {
         userProfile: userProfile || undefined,
       };
 
-      // Get context-aware loading states based on user's query
-      const loadingStates = getLoadingStatesForQuery(messageContent);
-      
-      let stateIndex = 0;
-      setLoadingStatus(loadingStates[0]);
-      const statusInterval = setInterval(() => {
-        stateIndex++;
-        if (stateIndex < loadingStates.length) {
-          setLoadingStatus(loadingStates[stateIndex]);
-        }
-      }, 2000);
+      // Start with initial loading state
+      setLoadingStatus('Thinking...');
 
-      const response = await sendChatMessage(chatMessages, context, MODEL);
-      clearInterval(statusInterval);
+      // Use streaming to get real-time tool status updates
+      const response = await sendChatMessageWithStream(
+        chatMessages, 
+        context, 
+        MODEL,
+        (toolStatus) => setLoadingStatus(toolStatus)
+      );
       
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        type: 'assistant',
-        content: response.response,
-        timestamp: new Date(),
-        photos: response.photos,
-      };
-
-      setMessages(prev => [...prev, assistantMessage]);
+      // If segments are provided, create multiple message bubbles for better display
+      if (response.segments && response.segments.length > 1) {
+        const segmentMessages: Message[] = response.segments.map((segment, index) => ({
+          id: (Date.now() + index + 1).toString(),
+          type: 'assistant' as const,
+          content: segment,
+          timestamp: new Date(),
+          // Only attach photos to the last segment
+          photos: index === response.segments!.length - 1 ? response.photos : undefined,
+        }));
+        setMessages(prev => [...prev, ...segmentMessages]);
+      } else {
+        // Single message as before
+        const assistantMessage: Message = {
+          id: (Date.now() + 1).toString(),
+          type: 'assistant',
+          content: response.response,
+          timestamp: new Date(),
+          photos: response.photos,
+        };
+        setMessages(prev => [...prev, assistantMessage]);
+      }
     } catch (error: any) {
       console.error('Chat error:', error);
       
@@ -286,7 +364,7 @@ const HomeScreen: React.FC = () => {
     setLoadingStatus('Generating your itinerary...');
     
     try {
-      const itineraryData = await generateItinerary(conversation, setLoadingStatus);
+      const itineraryData = await generateItinerary(conversation, setLoadingStatus, userProfile || undefined);
       
       if (itineraryData) {
         setLoadingStatus('Creating shareable page...');
@@ -337,8 +415,27 @@ const HomeScreen: React.FC = () => {
     }
   };
 
-  // Use first destination photo as background if available
-  const backgroundUrl = allPhotos.length > 0 ? allPhotos[0].url : DEFAULT_BACKGROUND_URL;
+  // Use first destination photo as background if available, otherwise use random default
+  const backgroundUrl = allPhotos.length > 0 ? allPhotos[0].url : defaultBackground;
+
+  // Show loading state while checking onboarding status
+  if (onboardingLoading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <Text style={styles.loadingText}>Loading...</Text>
+      </View>
+    );
+  }
+
+  // Show onboarding for first-time users
+  if (hasCompletedOnboarding === false) {
+    return (
+      <OnboardingFlow
+        onComplete={handleOnboardingComplete}
+        onSkip={handleOnboardingSkip}
+      />
+    );
+  }
 
   return (
     <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
@@ -479,17 +576,33 @@ const HomeScreen: React.FC = () => {
                     userProfile: userProfile || undefined,
                   };
                   
-                  const result = await sendChatMessage(chatMessages, context, MODEL);
+                  const result = await sendChatMessageWithStream(
+                    chatMessages, 
+                    context, 
+                    MODEL,
+                    (toolStatus) => setLoadingStatus(toolStatus)
+                  );
                   
-                  const assistantMessage: Message = {
-                    id: (Date.now() + 1).toString(),
-                    type: 'assistant',
-                    content: result.response,
-                    timestamp: new Date(),
-                    photos: result.photos,
-                  };
-                  
-                  setMessages(prev => [...prev.filter(m => !m.isError), assistantMessage]);
+                  // If segments are provided, create multiple message bubbles
+                  if (result.segments && result.segments.length > 1) {
+                    const segmentMessages: Message[] = result.segments.map((segment, index) => ({
+                      id: (Date.now() + index + 1).toString(),
+                      type: 'assistant' as const,
+                      content: segment,
+                      timestamp: new Date(),
+                      photos: index === result.segments!.length - 1 ? result.photos : undefined,
+                    }));
+                    setMessages(prev => [...prev.filter(m => !m.isError), ...segmentMessages]);
+                  } else {
+                    const assistantMessage: Message = {
+                      id: (Date.now() + 1).toString(),
+                      type: 'assistant',
+                      content: result.response,
+                      timestamp: new Date(),
+                      photos: result.photos,
+                    };
+                    setMessages(prev => [...prev.filter(m => !m.isError), assistantMessage]);
+                  }
                 } catch (error: any) {
                   const errorMessage: Message = {
                     id: (Date.now() + 1).toString(),
@@ -560,6 +673,16 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     height: '100%',
+  },
+  loadingContainer: {
+    flex: 1,
+    backgroundColor: '#0a1a0f',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  loadingText: {
+    color: 'rgba(255, 255, 255, 0.6)',
+    fontSize: 16,
   },
   overlay: {
     flex: 1,

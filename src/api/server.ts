@@ -10,7 +10,7 @@ import { AmadeusHotelAdapter } from '../providers/hotels/AmadeusHotelAdapter.js'
 import { AmadeusCarAdapter } from '../providers/cars/AmadeusCarAdapter.js';
 import { AmadeusActivitiesAdapter } from '../providers/activities/AmadeusActivitiesAdapter.js';
 import { NationalParksAdapter } from '../providers/parks/NationalParksAdapter.js';
-import { createChatHandler } from './chat.js';
+import { createChatHandler, TOOL_DISPLAY_NAMES } from './chat.js';
 import { logError } from './errorLogger.js';
 import { storeItinerary, getItinerary } from './itineraryHost.js';
 
@@ -275,7 +275,7 @@ interface ChatResponse {
   photos?: { keyword: string; url: string; caption?: string }[];
 }
 
-let chatHandler: ((messages: any[], context: any, model?: string) => Promise<ChatResponse>) | null = null;
+let chatHandler: ((messages: any[], context: any, model?: string, onToolStatus?: (toolName: string, status: 'starting' | 'complete') => void) => Promise<ChatResponse>) | null = null;
 
 // Initialize chat handler
 createChatHandler(facade).then(handler => {
@@ -311,6 +311,59 @@ app.post('/api/chat', asyncHandler(async (req: Request, res: Response) => {
     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
     console.error(`[Chat] Error after ${duration}s:`, error.message);
     res.status(500).json({ error: error.message, fallback: true });
+  }
+}));
+
+// Streaming chat endpoint with real-time tool status updates
+app.post('/api/chat/stream', asyncHandler(async (req: Request, res: Response) => {
+  const startTime = Date.now();
+  const { messages, context, model } = req.body;
+
+  console.log(`[Chat Stream] Request received - ${messages?.length || 0} messages`);
+
+  if (!messages || !Array.isArray(messages)) {
+    return res.status(400).json({ error: 'Missing required parameter: messages (array)' });
+  }
+
+  if (!chatHandler) {
+    return res.status(503).json({ 
+      error: 'Chat service not available. Set ANTHROPIC_API_KEY in .env',
+      fallback: true 
+    });
+  }
+
+  // Set up SSE headers
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  res.flushHeaders();
+
+  try {
+    // Tool status callback to send SSE events
+    const onToolStatus = (toolName: string, status: 'starting' | 'complete') => {
+      const displayName = TOOL_DISPLAY_NAMES[toolName] || `Using ${toolName}...`;
+      const event = { type: 'tool_status', tool: toolName, status, message: displayName };
+      res.write(`data: ${JSON.stringify(event)}\n\n`);
+    };
+
+    const result = await chatHandler(messages, context || {}, model, onToolStatus);
+    
+    // Send final result
+    const finalEvent = { 
+      type: 'complete', 
+      response: result.response, 
+      photos: result.photos 
+    };
+    res.write(`data: ${JSON.stringify(finalEvent)}\n\n`);
+    
+    const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.log(`[Chat Stream] Complete in ${duration}s - ${result.photos?.length || 0} photos`);
+    
+    res.end();
+  } catch (error: any) {
+    const errorEvent = { type: 'error', error: error.message };
+    res.write(`data: ${JSON.stringify(errorEvent)}\n\n`);
+    res.end();
   }
 }));
 

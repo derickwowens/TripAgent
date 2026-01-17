@@ -24,49 +24,49 @@ export function getLoadingStatesForQuery(query: string): string[] {
   
   // Add relevant loading states based on detected intent
   if (isAskingAboutParks) {
-    states.push('🏞️ Searching national parks...');
-    states.push('🥾 Finding hiking trails...');
-    states.push('🏕️ Checking campground availability...');
+    states.push('Searching national parks...');
+    states.push('Finding hiking trails...');
+    states.push('Checking campground availability...');
   }
   
   // park trips trigger full plan_park_trip which fetches flights, hotels, cars
   if (isAskingAboutFlights || isPlanningTrip || isParkTrip) {
-    states.push('✈️ Searching flight options...');
+    states.push('Searching flight options...');
   }
   
   if (isAskingAboutHotels || isPlanningTrip || isParkTrip) {
-    states.push('🏨 Finding hotels & lodging...');
+    states.push('Finding hotels & lodging...');
   }
   
   if (isAskingAboutCars || isPlanningTrip || isParkTrip) {
-    states.push('🚗 Checking car rental prices...');
+    states.push('Checking car rental prices...');
   }
   
   if (isAskingAboutActivities) {
-    states.push('🎫 Discovering tours & activities...');
+    states.push('Discovering tours & activities...');
   }
   
   if (isAskingAboutEV) {
-    states.push('⚡ Locating charging stations...');
+    states.push('Locating charging stations...');
   }
   
   if (isAskingForPhotos) {
-    states.push('📸 Finding new photos...');
+    states.push('Finding new photos...');
   }
   
   if (isPlanningTrip || isParkTrip) {
-    states.push('🗺️ Calculating driving distances...');
-    states.push('📝 Compiling your trip plan...');
+    states.push('Calculating driving distances...');
+    states.push('Compiling your trip plan...');
   }
   
   // Always end with a compilation message if we have multiple steps
   if (states.length > 2) {
-    states.push('✨ Putting it all together...');
+    states.push('Putting it all together...');
   }
   
   // Fallback if no specific intent detected
   if (states.length === 0) {
-    states.push('🔍 Searching for information...');
+    states.push('Searching for information...');
   }
   
   return states;

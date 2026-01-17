@@ -107,6 +107,55 @@ export function filterPhotos(
 }
 
 /**
+ * Split a long response into logical segments for better display
+ * Splits on major section breaks (double newlines after headers, etc.)
+ */
+export function splitResponseIntoSegments(response: string): string[] {
+  if (!response || response.length < 500) {
+    return [response];
+  }
+  
+  const segments: string[] = [];
+  
+  // Split on double newlines that precede headers or major breaks
+  // This pattern matches: content followed by blank line(s) then a header or new section
+  const sectionPattern = /\n\n+(?=(?:#{1,4}\s|[A-Z][^a-z]*:|(?:\d+\.|[-•])\s))/g;
+  
+  const parts = response.split(sectionPattern);
+  
+  // If we got meaningful splits, use them
+  if (parts.length > 1) {
+    let currentSegment = '';
+    
+    for (const part of parts) {
+      const trimmedPart = part.trim();
+      if (!trimmedPart) continue;
+      
+      // If adding this part would make segment too long, start new segment
+      if (currentSegment && (currentSegment.length + trimmedPart.length > 1500)) {
+        segments.push(currentSegment.trim());
+        currentSegment = trimmedPart;
+      } else if (!currentSegment) {
+        currentSegment = trimmedPart;
+      } else {
+        currentSegment += '\n\n' + trimmedPart;
+      }
+    }
+    
+    if (currentSegment.trim()) {
+      segments.push(currentSegment.trim());
+    }
+  }
+  
+  // If no good splits found, return as single segment
+  if (segments.length === 0) {
+    return [response];
+  }
+  
+  return segments;
+}
+
+/**
  * Validate links in the response and return cleaned response
  */
 export async function validateAndCleanResponse(
@@ -116,7 +165,7 @@ export async function validateAndCleanResponse(
   originalSearchQuery: string | undefined,
   messages: { content: string }[],
   tripDestination: string | undefined
-): Promise<{ response: string; photos?: PhotoReference[] }> {
+): Promise<{ response: string; photos?: PhotoReference[]; segments?: string[] }> {
   // Post-process response to clean up formatting artifacts
   const cleanedResponse = cleanResponseFormatting(rawResponse);
   
@@ -137,16 +186,20 @@ export async function validateAndCleanResponse(
   // Validate and fix any broken links in the response
   try {
     const validatedResponse = await validateLinksInResponse(cleanedResponse);
-    console.log(`[Chat] Returning response with ${filteredPhotos.length} photos`);
+    const segments = splitResponseIntoSegments(validatedResponse);
+    console.log(`[Chat] Returning response with ${filteredPhotos.length} photos, ${segments.length} segments`);
     return { 
       response: validatedResponse, 
-      photos: filteredPhotos.length > 0 ? filteredPhotos : undefined 
+      photos: filteredPhotos.length > 0 ? filteredPhotos : undefined,
+      segments: segments.length > 1 ? segments : undefined
     };
   } catch (linkError) {
     console.warn('[Chat] Link validation failed, returning cleaned response:', linkError);
+    const segments = splitResponseIntoSegments(cleanedResponse);
     return { 
       response: cleanedResponse, 
-      photos: filteredPhotos.length > 0 ? filteredPhotos : undefined 
+      photos: filteredPhotos.length > 0 ? filteredPhotos : undefined,
+      segments: segments.length > 1 ? segments : undefined
     };
   }
 }

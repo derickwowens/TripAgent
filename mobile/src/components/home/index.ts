@@ -8,3 +8,4 @@ export { ProfileSection } from './ProfileSection';
 export { ModelSelector } from './ModelSelector';
 export { ConversationList } from './ConversationList';
 export { CollapsibleBottomPanel } from './CollapsibleBottomPanel';
+export { OnboardingFlow } from './OnboardingFlow';

@@ -4,10 +4,95 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const STORAGE_KEY = 'travel_conversations';
 const MAX_CONVERSATIONS = 20;
 
+// Authoritative National Parks data for destination detection
+// Sorted by key length (descending) to prioritize longer/more specific matches
+// e.g., "kenai fjords" should match before "glacier"
+const NATIONAL_PARKS_LOOKUP: Array<{ key: string; name: string }> = [
+  { key: 'great smoky mountains', name: 'Great Smoky Mountains National Park' },
+  { key: 'wrangell st elias', name: 'Wrangell-St. Elias National Park' },
+  { key: 'gates of the arctic', name: 'Gates of the Arctic National Park' },
+  { key: 'guadalupe mountains', name: 'Guadalupe Mountains National Park' },
+  { key: 'carlsbad caverns', name: 'Carlsbad Caverns National Park' },
+  { key: 'theodore roosevelt', name: 'Theodore Roosevelt National Park' },
+  { key: 'great sand dunes', name: 'Great Sand Dunes National Park' },
+  { key: 'petrified forest', name: 'Petrified Forest National Park' },
+  { key: 'hawaii volcanoes', name: 'Hawaiʻi Volcanoes National Park' },
+  { key: 'cuyahoga valley', name: 'Cuyahoga Valley National Park' },
+  { key: 'channel islands', name: 'Channel Islands National Park' },
+  { key: 'lassen volcanic', name: 'Lassen Volcanic National Park' },
+  { key: 'rocky mountain', name: 'Rocky Mountain National Park' },
+  { key: 'north cascades', name: 'North Cascades National Park' },
+  { key: 'new river gorge', name: 'New River Gorge National Park' },
+  { key: 'indiana dunes', name: 'Indiana Dunes National Park' },
+  { key: 'black canyon', name: 'Black Canyon of the Gunnison National Park' },
+  { key: 'mount rainier', name: 'Mount Rainier National Park' },
+  { key: 'virgin islands', name: 'Virgin Islands National Park' },
+  { key: 'kenai fjords', name: 'Kenai Fjords National Park' },
+  { key: 'kobuk valley', name: 'Kobuk Valley National Park' },
+  { key: 'death valley', name: 'Death Valley National Park' },
+  { key: 'crater lake', name: 'Crater Lake National Park' },
+  { key: 'bryce canyon', name: 'Bryce Canyon National Park' },
+  { key: 'grand canyon', name: 'Grand Canyon National Park' },
+  { key: 'joshua tree', name: 'Joshua Tree National Park' },
+  { key: 'mammoth cave', name: 'Mammoth Cave National Park' },
+  { key: 'isle royale', name: 'Isle Royale National Park' },
+  { key: 'dry tortugas', name: 'Dry Tortugas National Park' },
+  { key: 'glacier bay', name: 'Glacier Bay National Park' },
+  { key: 'grand teton', name: 'Grand Teton National Park' },
+  { key: 'great basin', name: 'Great Basin National Park' },
+  { key: 'hot springs', name: 'Hot Springs National Park' },
+  { key: 'lake clark', name: 'Lake Clark National Park' },
+  { key: 'mesa verde', name: 'Mesa Verde National Park' },
+  { key: 'white sands', name: 'White Sands National Park' },
+  { key: 'capitol reef', name: 'Capitol Reef National Park' },
+  { key: 'canyonlands', name: 'Canyonlands National Park' },
+  { key: 'great smoky', name: 'Great Smoky Mountains National Park' },
+  { key: 'wind cave', name: 'Wind Cave National Park' },
+  { key: 'everglades', name: 'Everglades National Park' },
+  { key: 'voyageurs', name: 'Voyageurs National Park' },
+  { key: 'shenandoah', name: 'Shenandoah National Park' },
+  { key: 'yellowstone', name: 'Yellowstone National Park' },
+  { key: 'pinnacles', name: 'Pinnacles National Park' },
+  { key: 'biscayne', name: 'Biscayne National Park' },
+  { key: 'congaree', name: 'Congaree National Park' },
+  { key: 'haleakala', name: 'Haleakalā National Park' },
+  { key: 'big bend', name: 'Big Bend National Park' },
+  { key: 'badlands', name: 'Badlands National Park' },
+  { key: 'yosemite', name: 'Yosemite National Park' },
+  { key: 'sequoia', name: 'Sequoia National Park' },
+  { key: 'olympic', name: 'Olympic National Park' },
+  { key: 'saguaro', name: 'Saguaro National Park' },
+  { key: 'redwood', name: 'Redwood National Park' },
+  { key: 'glacier', name: 'Glacier National Park' },
+  { key: 'arches', name: 'Arches National Park' },
+  { key: 'acadia', name: 'Acadia National Park' },
+  { key: 'katmai', name: 'Katmai National Park' },
+  { key: 'denali', name: 'Denali National Park' },
+  { key: 'zion', name: 'Zion National Park' },
+];
+
+/**
+ * Extract destination from text using authoritative park data
+ * Prioritizes longer matches to avoid "glacier" matching before "kenai fjords"
+ */
+function extractDestinationFromText(text: string): string | null {
+  const textLower = text.toLowerCase();
+  
+  // NATIONAL_PARKS_LOOKUP is already sorted by key length (longest first)
+  for (const park of NATIONAL_PARKS_LOOKUP) {
+    if (textLower.includes(park.key)) {
+      return park.name;
+    }
+  }
+  
+  return null;
+}
+
 export interface PhotoReference {
   keyword: string;
   url: string;
   caption?: string;
+  source?: 'nps' | 'unsplash' | 'other';
 }
 
 export interface Message {
@@ -16,8 +101,8 @@ export interface Message {
   content: string;
   timestamp: Date;
   isError?: boolean;
-  lastUserMessage?: string; // For retry functionality
-  photos?: PhotoReference[]; // Photos associated with this message
+  lastUserMessage?: string;
+  photos?: PhotoReference[];
 }
 
 export interface SavedConversation {
@@ -37,8 +122,6 @@ export interface SavedConversation {
     favorite?: boolean;
   };
 }
-
-const PARK_NAMES = ['yosemite', 'yellowstone', 'grand canyon', 'zion', 'glacier', 'acadia', 'rocky mountain', 'joshua tree', 'sequoia', 'death valley', 'olympic', 'arches', 'bryce canyon', 'everglades', 'great smoky', 'mount rainier', 'shenandoah', 'big bend', 'badlands', 'carlsbad', 'crater lake', 'denali', 'hot springs', 'mammoth cave', 'mesa verde', 'petrified forest', 'redwood', 'saguaro', 'theodore roosevelt', 'voyageurs', 'wind cave'];
 
 export const useConversations = (nearestAirport?: string) => {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -67,27 +150,23 @@ export const useConversations = (nearestAirport?: string) => {
   };
 
   const extractMetadata = (msgs: Message[]): SavedConversation['metadata'] => {
-    const allText = msgs.map(m => m.content.toLowerCase()).join(' ');
+    const allText = msgs.map(m => m.content).join(' ');
     const userMessages = msgs.filter(m => m.type === 'user').map(m => m.content.toLowerCase()).join(' ');
     const assistantMessages = msgs.filter(m => m.type === 'assistant').map(m => m.content).join(' ');
     
-    let destination: string | undefined;
-    for (const park of PARK_NAMES) {
-      if (allText.includes(park)) {
-        destination = park.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-        break;
-      }
-    }
+    // Use authoritative park data with priority for longer/more specific matches
+    const destination = extractDestinationFromText(allText) || undefined;
 
     let travelers: number | undefined;
-    const travelerMatch = allText.match(/(\d+)\s*(people|travelers|persons|adults|of us)/);
+    const allTextLower = allText.toLowerCase();
+    const travelerMatch = allTextLower.match(/(\d+)\s*(people|travelers|persons|adults|of us)/);
     if (travelerMatch) {
       travelers = parseInt(travelerMatch[1]);
-    } else if (allText.includes('solo') || allText.includes('just me') || allText.includes('myself')) {
+    } else if (allTextLower.includes('solo') || allTextLower.includes('just me') || allTextLower.includes('myself')) {
       travelers = 1;
-    } else if (allText.includes('couple') || allText.includes('two of us') || allText.includes('my partner')) {
+    } else if (allTextLower.includes('couple') || allTextLower.includes('two of us') || allTextLower.includes('my partner')) {
       travelers = 2;
-    } else if (allText.includes('family')) {
+    } else if (allTextLower.includes('family')) {
       travelers = 4;
     }
 

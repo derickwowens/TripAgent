@@ -54,7 +54,7 @@ const ParkSearchScreen: React.FC = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContent}>
-        <Text style={styles.title}>🏞️ National Parks</Text>
+        <Text style={styles.title}>National Parks</Text>
         <Text style={styles.subtitle}>Select a park to see popular hikes</Text>
 
         <View style={styles.parkGrid}>
@@ -126,7 +126,7 @@ const ParkSearchScreen: React.FC = () => {
                 <View style={styles.highlights}>
                   {hike.highlights.map((highlight, i) => (
                     <View key={i} style={styles.highlightChip}>
-                      <Text style={styles.highlightText}>✨ {highlight}</Text>
+                      <Text style={styles.highlightText}>{highlight}</Text>
                     </View>
                   ))}
                 </View>

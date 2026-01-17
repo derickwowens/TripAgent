@@ -82,6 +82,9 @@ export interface NationalPark {
   images: string[];
   url: string;
   address: string;
+  // Gateway city info from NPS physical address for restaurant searches
+  gatewayCity?: string;
+  gatewayState?: string;
 }
 
 export interface ParkActivity {
@@ -328,6 +331,9 @@ export class NationalParksAdapter extends BaseAdapter {
       images: park.images?.map(i => i.url) || [],
       url: park.url,
       address: physicalAddress ? `${physicalAddress.line1}, ${physicalAddress.city}, ${physicalAddress.stateCode} ${physicalAddress.postalCode}` : '',
+      // Gateway city from NPS physical address for restaurant searches
+      gatewayCity: physicalAddress?.city,
+      gatewayState: physicalAddress?.stateCode,
     };
   }
 }

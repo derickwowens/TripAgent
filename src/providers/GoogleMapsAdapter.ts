@@ -25,6 +25,24 @@ interface DirectionsResult {
   }>;
 }
 
+export interface RestaurantResult {
+  name: string;
+  address: string;
+  rating?: number;
+  userRatingsTotal?: number;
+  priceLevel?: number; // 0-4 scale
+  types?: string[];
+  openNow?: boolean;
+  placeId: string;
+  photoUrl?: string;
+}
+
+interface PlacesSearchResponse {
+  results: RestaurantResult[];
+  status: string;
+  nextPageToken?: string;
+}
+
 export class GoogleMapsAdapter {
   private apiKey: string | undefined;
   private baseUrl = 'https://maps.googleapis.com/maps/api';
@@ -102,6 +120,81 @@ export class GoogleMapsAdapter {
       console.error('[GoogleMaps] Directions request failed:', error);
       return null;
     }
+  }
+
+  async searchRestaurants(
+    location: string,
+    cuisine?: string,
+    priceLevel?: number,
+    radius: number = 5000
+  ): Promise<PlacesSearchResponse> {
+    if (!this.apiKey) {
+      console.warn('[GoogleMaps] API key not configured for restaurant search');
+      return { results: [], status: 'NO_API_KEY' };
+    }
+
+    try {
+      // Build the search query
+      let query = 'restaurants';
+      if (cuisine) {
+        query = `${cuisine} restaurants`;
+      }
+      query += ` near ${location}`;
+
+      const url = `${this.baseUrl}/place/textsearch/json?query=${encodeURIComponent(query)}&type=restaurant&radius=${radius}&key=${this.apiKey}`;
+      
+      const response = await fetch(url);
+      const data: any = await response.json();
+
+      if (data.status === 'OK' || data.status === 'ZERO_RESULTS') {
+        let results: RestaurantResult[] = data.results?.map((place: any) => {
+          // Build photo URL from photo_reference if available
+          let photoUrl: string | undefined;
+          if (place.photos?.[0]?.photo_reference && this.apiKey) {
+            photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference=${place.photos[0].photo_reference}&key=${this.apiKey}`;
+          }
+          
+          return {
+            name: place.name,
+            address: place.formatted_address,
+            rating: place.rating,
+            userRatingsTotal: place.user_ratings_total,
+            priceLevel: place.price_level,
+            types: place.types?.filter((t: string) => !['point_of_interest', 'establishment'].includes(t)),
+            openNow: place.opening_hours?.open_now,
+            placeId: place.place_id,
+            photoUrl,
+          };
+        }) || [];
+
+        // Filter by price level if specified
+        if (priceLevel !== undefined) {
+          results = results.filter(r => r.priceLevel !== undefined && r.priceLevel <= priceLevel);
+        }
+
+        // Sort by rating (highest first)
+        results.sort((a, b) => (b.rating || 0) - (a.rating || 0));
+
+        return {
+          results: results.slice(0, 10), // Return top 10
+          status: data.status,
+          nextPageToken: data.next_page_token,
+        };
+      }
+
+      console.error('[GoogleMaps] Places API error:', data.status);
+      return { results: [], status: data.status };
+    } catch (error) {
+      console.error('[GoogleMaps] Restaurant search failed:', error);
+      return { results: [], status: 'ERROR' };
+    }
+  }
+
+  // Convert price level to readable format
+  static formatPriceLevel(level?: number): string {
+    if (level === undefined) return 'Price unknown';
+    const symbols = ['Free', '$', '$$', '$$$', '$$$$'];
+    return symbols[level] || 'Price unknown';
   }
 
   // Fallback estimation when API key is not available

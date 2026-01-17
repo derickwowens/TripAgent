@@ -38,8 +38,11 @@ const parseMessageContent = (
 
   const elements: ParsedElement[] = [];
   
+  // Normalize line endings (handle \r\n and \r)
+  const normalizedContent = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  
   // Split by lines first to handle headers and bullets
-  const lines = content.split('\n');
+  const lines = normalizedContent.split('\n');
   
   lines.forEach((line, lineIndex) => {
     // Add newline between lines (not before first line)
@@ -47,8 +50,11 @@ const parseMessageContent = (
       elements.push({ type: 'newline' });
     }
     
+    // Trim trailing whitespace from line (but keep leading for indentation)
+    const trimmedLine = line.replace(/\s+$/, '');
+    
     // Check for headers (## Header or ### Header)
-    const headerMatch = line.match(/^(#{1,4})\s+(.+)$/);
+    const headerMatch = trimmedLine.match(/^(#{1,4})\s+(.+)$/);
     if (headerMatch) {
       elements.push({ 
         type: 'header', 
@@ -59,7 +65,7 @@ const parseMessageContent = (
     }
     
     // Check for bullet points (- item or * item or numbered 1. item)
-    const bulletMatch = line.match(/^(\s*)([-*•]|\d+\.)\s+(.+)$/);
+    const bulletMatch = trimmedLine.match(/^(\s*)([-*•]|\d+\.)\s+(.+)$/);
     if (bulletMatch) {
       const indent = Math.floor(bulletMatch[1].length / 2);
       const bulletContent = bulletMatch[3];
@@ -70,21 +76,36 @@ const parseMessageContent = (
         text: '', 
         indent 
       });
-      elements.push(...inlineElements);
+      // Ensure we always have content after bullet
+      if (inlineElements.length > 0) {
+        elements.push(...inlineElements);
+      } else {
+        elements.push({ type: 'text', text: bulletContent });
+      }
       return;
     }
     
     // Parse inline content (bold, links, etc.)
-    const inlineElements = parseInlineContent(line);
-    elements.push(...inlineElements);
+    const inlineElements = parseInlineContent(trimmedLine);
+    // Ensure we always preserve the line content
+    if (inlineElements.length > 0) {
+      elements.push(...inlineElements);
+    } else if (trimmedLine.length > 0) {
+      // Fallback: add the line as plain text if parsing returned nothing
+      elements.push({ type: 'text', text: trimmedLine });
+    }
   });
 
+  // Final safety check: if no elements, return the original content
   return elements.length > 0 ? elements : [{ type: 'text', text: content }];
 };
 
 // Parse inline markdown (bold, links)
 const parseInlineContent = (text: string): ParsedElement[] => {
-  if (!text) return [];
+  // Return the text as-is if empty or whitespace only
+  if (!text || !text.trim()) {
+    return text ? [{ type: 'text', text }] : [];
+  }
   
   const elements: ParsedElement[] = [];
   
@@ -93,6 +114,9 @@ const parseInlineContent = (text: string): ParsedElement[] => {
   
   let lastIndex = 0;
   let match;
+  
+  // Reset regex lastIndex to ensure fresh matching
+  inlineRegex.lastIndex = 0;
   
   while ((match = inlineRegex.exec(text)) !== null) {
     // Add text before the match
@@ -114,9 +138,14 @@ const parseInlineContent = (text: string): ParsedElement[] => {
     lastIndex = match.index + match[0].length;
   }
   
-  // Add remaining text
+  // Add remaining text after last match
   if (lastIndex < text.length) {
     elements.push({ type: 'text', text: text.slice(lastIndex) });
+  }
+  
+  // Safety: if no elements were created but we have text, return the text as-is
+  if (elements.length === 0 && text.length > 0) {
+    return [{ type: 'text', text }];
   }
   
   return elements;
@@ -257,6 +286,7 @@ const styles = StyleSheet.create({
     padding: 14,
     borderRadius: 18,
     marginBottom: 10,
+    flexShrink: 0,
   },
   userBubble: {
     alignSelf: 'flex-end',
@@ -337,8 +367,8 @@ const styles = StyleSheet.create({
   },
   errorBubble: {
     borderWidth: 1,
-    borderColor: 'rgba(239, 68, 68, 0.5)',
-    backgroundColor: 'rgba(127, 29, 29, 0.9)',
+    borderColor: 'rgba(251, 191, 36, 0.4)',
+    backgroundColor: 'rgba(45, 55, 72, 0.95)',
   },
   retryButton: {
     marginTop: 10,

@@ -2,30 +2,46 @@
 
 **AI-Powered National Park Trip Planner**
 
-TripAgent is a mobile app and API that helps you plan amazing National Park adventures. Chat naturally with our AI assistant to get real-time flight pricing, lodging options, hiking trail recommendations, and complete budget breakdowns.
+TripAgent is a mobile app and API that helps you plan amazing National Park adventures. Chat naturally with our AI assistant to get real-time flight pricing, lodging options, hiking trail recommendations, restaurant reservations, and complete budget breakdowns.
 
 ![Platform](https://img.shields.io/badge/Platform-Android-green)
 ![AI](https://img.shields.io/badge/AI-Claude%20AI-blue)
+![NPS](https://img.shields.io/badge/Data-NPS%20API-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## ✨ Features
 
 ### 📱 Mobile App
 - **AI Chat Interface** - Natural conversation with Claude AI
+- **Smart Onboarding** - Personalized profile with travel preferences
+- **Photo Gallery** - Beautiful park, restaurant, and activity photos
 - **Multi-Airport Comparison** - See 3-5 nearby airports with prices
 - **Budget Breakdown** - Complete trip cost estimates
 - **Saved Conversations** - Return to previous trip plans
-- **Model Selection** - Choose Haiku, Sonnet, or Opus
+- **Context-Aware** - Remembers preferences, handles overrides naturally
 
-### 🔍 Travel Tools
+### 🔍 Travel Tools (12 AI-Powered Tools)
+- **Park Search** - All 63 US National Parks with NPS data
 - **Flight Search** - Real prices from Amadeus (400+ airlines)
 - **Hotel/Lodging Search** - Campgrounds, lodges, and hotels
+- **Car Rentals** - With EV/Tesla preference support
+- **Restaurant Search** - Yelp + Google Places with photos
+- **Reservation Links** - OpenTable, Resy integration
 - **Hiking Trails** - Curated recommendations by difficulty
-- **Park Information** - Entrance fees, best times to visit
+- **Driving Distance** - Google Maps integration
+- **EV Charging** - Tesla Supercharger + DC fast charger search
+- **Activities** - Tours and experiences near parks
+
+### 🧠 Smart Context System
+- **Profile Preferences** - Budget, family size, accessibility, EV ownership
+- **Dynamic Overrides** - "Actually, make it 4 travelers" works naturally
+- **Multi-Leg Trips** - "Fly into SFO, return from LAX" supported
+- **State-Based Suggestions** - Auto-suggests parks near user's location
 
 ### ⚡ Architecture
 - **React Native + Expo** - Cross-platform mobile app
 - **Express API** - Backend with Claude AI integration
+- **NPS API Integration** - Authoritative park data source
 - **MCP Server** - Claude Desktop compatibility
 - **Stateless Design** - No database, real-time API queries
 
@@ -181,90 +197,131 @@ Connect TripAgent to Claude Desktop as an MCP server!
 
 ## 🔑 API Setup
 
-### Amadeus (Primary Provider)
+### Required APIs
 
-1. Sign up at [developers.amadeus.com](https://developers.amadeus.com)
-2. Create a new app in your dashboard
-3. Copy your Client ID and Client Secret
-4. Add to `.env`:
+#### Anthropic (Claude AI)
+```env
+ANTHROPIC_API_KEY=sk-ant-api03-xxx
+```
+Sign up at [console.anthropic.com](https://console.anthropic.com)
+
+#### National Park Service
+```env
+NPS_API_KEY=your_nps_key
+```
+Sign up at [developer.nps.gov](https://www.nps.gov/subjects/developer/get-started.htm) - **Free, 1000 calls/hour**
+
+#### Amadeus (Flights, Hotels, Cars)
 ```env
 AMADEUS_CLIENT_ID=your_client_id
 AMADEUS_CLIENT_SECRET=your_client_secret
 ```
+Sign up at [developers.amadeus.com](https://developers.amadeus.com) - **Free tier: 2,000 calls/month**
 
-**Free Tier Limits:**
-- Flight offers: 2,000 calls/month
-- Hotel search: 2,000 calls/month
-- Test environment included
+### Optional APIs (Enhanced Features)
 
-### Future Providers (Planned)
+#### Yelp Fusion (Restaurants)
+```env
+YELP_API_KEY=your_yelp_key
+```
+Sign up at [fusion.yelp.com](https://fusion.yelp.com/) - **Free tier: 5,000 calls/day**
 
-- **Skyscanner** - Meta-search for price comparisons
-- **Duffel** - Modern flight booking API
-- **Expedia Rapid** - Hotels + Vrbo vacation rentals
+#### Google Maps (Driving Distance, Restaurant Fallback)
+```env
+GOOGLE_MAPS_API_KEY=your_google_key
+```
+Sign up at [console.cloud.google.com](https://console.cloud.google.com) - **$200 free credit/month**
+
+#### Unsplash (Photos)
+```env
+UNSPLASH_ACCESS_KEY=your_unsplash_key
+```
+Sign up at [unsplash.com/developers](https://unsplash.com/developers) - **Free tier: 50 calls/hour**
+
+#### OpenChargeMap (EV Charging)
+```env
+OPENCHARGEMAP_API_KEY=your_ocm_key
+```
+Sign up at [openchargemap.org](https://openchargemap.org/site/develop/api) - **Free**
 
 ## 📊 Project Structure
 
 ```
 tripagent/
-├── mobile/                # React Native app
+├── mobile/                    # React Native app
 │   ├── src/
-│   │   ├── screens/       # HomeScreen (chat UI)
-│   │   └── services/      # API client
-│   ├── assets/            # App icons
-│   ├── app.json           # Expo config
-│   └── eas.json           # EAS Build config
+│   │   ├── screens/           # HomeScreen (chat UI)
+│   │   ├── components/home/   # OnboardingFlow, ChatMessages, PhotoGallery
+│   │   ├── services/          # API client
+│   │   └── hooks/             # useUserProfile, useConversations, etc.
+│   ├── assets/                # App icons
+│   └── app.json               # Expo config
 ├── src/
-│   ├── api/               # Express server + Claude chat
-│   │   ├── server.ts      # API endpoints
-│   │   └── chat.ts        # Claude AI integration
-│   ├── cli/               # Command-line interface
-│   ├── domain/            # Core business logic
-│   │   ├── facade/        # TravelFacade orchestration
-│   │   └── types/         # TypeScript interfaces
-│   ├── mcp/               # MCP server (Claude Desktop)
-│   └── providers/         # Travel API adapters
-│       ├── flights/       # Amadeus flights
-│       ├── hotels/        # Hotel search
-│       └── cars/          # Car rentals
-├── scripts/               # Dev scripts
-├── Dockerfile             # Production deployment
-├── railway.json           # Railway config
-├── render.yaml            # Render config
-└── DEPLOYMENT.md          # Deployment guide
+│   ├── api/
+│   │   ├── server.ts          # Express API endpoints
+│   │   └── chat/              # Claude AI integration
+│   │       ├── index.ts       # Main handler, tool dispatch
+│   │       ├── types.ts       # ChatContext, TripLeg, resolveContextValue
+│   │       ├── systemPrompt.ts # System prompt with NPS injection
+│   │       ├── toolDefinitions.ts # 12 AI tools with park codes
+│   │       ├── parkFeatures.ts # Park-specific photo keywords
+│   │       └── responseProcessor.ts
+│   ├── utils/
+│   │   └── parkCodeLookup.ts  # NPS park data, findParkCode()
+│   ├── providers/             # External API adapters
+│   │   ├── NationalParksAdapter.ts
+│   │   ├── YelpAdapter.ts     # Restaurant search
+│   │   ├── GoogleMapsAdapter.ts
+│   │   ├── UnsplashAdapter.ts
+│   │   └── OpenChargeMapAdapter.ts
+│   ├── domain/facade/         # TravelFacade orchestration
+│   ├── mcp/                   # MCP server (Claude Desktop)
+│   └── cli/                   # Command-line interface
+├── scripts/                   # Dev scripts (restart-android.sh, etc.)
+├── .copilot-instructions.md   # AI assistant rules & context docs
+└── DEPLOYMENT.md              # Deployment guide
 ```
 
 ## 🏗️ Architecture Principles
 
-This project follows the same architecture patterns as the Fitness Hub MCP:
+### 1. **Authoritative Data Sources**
+All park data comes from the NPS API - never hardcoded:
+- Park names, codes, and states from `https://developer.nps.gov/api/v1/parks`
+- Park codes injected into system prompt and tool definitions
+- State-based park suggestions based on user location
 
-### 1. **Stateless Design**
-No database, no session state. Each request:
-1. Receives parameters from Claude
-2. Queries external APIs
-3. Returns results
-4. Completes
+### 2. **Context Priority System**
+User requests override saved preferences:
+```
+Leg Override > Conversation Override > Trip Context > Profile Defaults > System Defaults
+```
+Example: Profile says "budget traveler" but user asks "show me luxury hotels" → show luxury
 
-### 2. **Context Engineering**
-Connect to authoritative travel APIs rather than building proprietary data:
-- Amadeus for flights, hotels, cars (GDS-level data)
-- Skyscanner for meta-search comparisons
-- Direct vendor APIs for real-time availability
-
-### 3. **Provider Chain Pattern**
-Multiple providers per category with automatic fallback:
+### 3. **Multi-Leg Trip Support**
+Users can plan complex trips with different settings per segment:
 ```typescript
-const flightProviders = [
-  new AmadeusFlightAdapter(),   // Primary
-  new SkyscannerAdapter(),      // Fallback
-  new DuffelAdapter(),          // Additional
-];
+tripContext.legs = [
+  { type: 'flight', from: 'LAX', to: 'SFO', overrides: { ... } },
+  { type: 'stay', at: 'Yosemite' },
+  { type: 'flight', from: 'SFO', to: 'LAX' }
+]
 ```
 
-### 4. **Clear Tool Naming**
-MCP tools are named explicitly for Claude to understand:
-- ✅ `search_flights` (clear intent)
-- ✅ `search_hotels` (specific category)
+### 4. **Context-Aware Tools**
+All tools receive full ChatContext and use `resolveContextValue()`:
+```typescript
+const travelers = resolveContextValue<number>('numTravelers', context, activeLeg) || 1;
+```
+
+### 5. **Provider Fallback Pattern**
+Multiple providers per category with automatic fallback:
+- Restaurants: Yelp → Google Places
+- Photos: NPS → Unsplash
+
+### 6. **Clear Tool Naming**
+Tools are named explicitly for Claude to understand:
+- ✅ `search_national_parks` (clear intent)
+- ✅ `search_restaurants` (specific category)
 - ❌ `search` (ambiguous)
 
 ## 🚀 Deployment

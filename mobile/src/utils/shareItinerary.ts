@@ -34,12 +34,12 @@ const cleanMarkdown = (text: string): string => {
 export const formatConversationForShare = (conversation: SavedConversation): string => {
   const { metadata, messages } = conversation;
   
-  let content = '🏞️ TripAgent Conversation\n';
+  let content = 'TripAgent Conversation\n';
   content += '━━━━━━━━━━━━━━━━━━━━━━\n\n';
   
   // Trip header
   if (metadata.destination) {
-    content += `📍 ${metadata.destination}`;
+    content += `${metadata.destination}`;
     if (metadata.duration) content += ` • ${metadata.duration}`;
     if (metadata.travelDates) content += ` • ${metadata.travelDates}`;
     content += '\n\n';
@@ -49,7 +49,7 @@ export const formatConversationForShare = (conversation: SavedConversation): str
   for (const msg of messages) {
     if (msg.isError) continue;
     
-    const prefix = msg.type === 'user' ? '👤 Me: ' : '🤖 TripAgent: ';
+    const prefix = msg.type === 'user' ? 'Me: ' : 'TripAgent: ';
     let msgContent = cleanMarkdown(msg.content);
     
     // Truncate very long assistant messages
@@ -61,7 +61,7 @@ export const formatConversationForShare = (conversation: SavedConversation): str
   }
   
   content += '━━━━━━━━━━━━━━━━━━━━━━\n';
-  content += '📱 Planned with TripAgent';
+  content += 'Planned with TripAgent';
   
   return content;
 };
@@ -109,10 +109,10 @@ const extractPhotosFromConversation = (conversation: SavedConversation): PhotoRe
 };
 
 /**
- * Extract links from conversation content
+ * Extract links from conversation content, categorized by type
  */
-const extractLinksFromConversation = (conversation: SavedConversation): Array<{ text: string; url: string }> => {
-  const links: Array<{ text: string; url: string }> = [];
+const extractLinksFromConversation = (conversation: SavedConversation): Array<{ text: string; url: string; category?: string }> => {
+  const links: Array<{ text: string; url: string; category?: string }> = [];
   const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
   
   for (const msg of conversation.messages) {
@@ -121,7 +121,24 @@ const extractLinksFromConversation = (conversation: SavedConversation): Array<{ 
       while ((match = linkRegex.exec(msg.content)) !== null) {
         // Avoid duplicates
         if (!links.some(l => l.url === match![2])) {
-          links.push({ text: match[1], url: match[2] });
+          const url = match[2];
+          const text = match[1];
+          
+          // Categorize links by type
+          let category = 'general';
+          if (url.includes('opentable.com') || url.includes('resy.com') || text.toLowerCase().includes('reserv')) {
+            category = 'reservation';
+          } else if (url.includes('yelp.com') || url.includes('google.com/maps') || text.toLowerCase().includes('review')) {
+            category = 'review';
+          } else if (url.includes('nps.gov')) {
+            category = 'park';
+          } else if (url.includes('booking.com') || url.includes('hotels.com') || url.includes('airbnb.com')) {
+            category = 'lodging';
+          } else if (url.includes('amadeus') || url.includes('flight') || text.toLowerCase().includes('flight')) {
+            category = 'flight';
+          }
+          
+          links.push({ text, url, category });
         }
       }
     }
@@ -130,18 +147,56 @@ const extractLinksFromConversation = (conversation: SavedConversation): Array<{ 
 };
 
 /**
+ * Check if user declined an item in the conversation
+ */
+const isItemDeclined = (conversation: SavedConversation, itemName: string): boolean => {
+  const declinePatterns = [
+    /no,?\s*(i'?m?\s*)?(not|won't|don't|skip|pass|decline)/i,
+    /let'?s?\s*(skip|pass|not)/i,
+    /i('?ll|'?m)?\s*(skip|pass|not\s*(going|book|interest))/i,
+    /won'?t\s*(be\s*)?(book|go|need)/i,
+    /don'?t\s*(need|want|book)/i,
+  ];
+  
+  const itemLower = itemName.toLowerCase();
+  
+  for (const msg of conversation.messages) {
+    if (msg.type === 'user') {
+      const contentLower = msg.content.toLowerCase();
+      // Check if user mentioned the item and declined it
+      if (contentLower.includes(itemLower)) {
+        for (const pattern of declinePatterns) {
+          if (pattern.test(msg.content)) {
+            return true;
+          }
+        }
+      }
+    }
+  }
+  return false;
+};
+
+/**
  * Generate a polished itinerary from the conversation using AI
  */
 export const generateItinerary = async (
   conversation: SavedConversation,
-  onStatusUpdate?: (status: string) => void
+  onStatusUpdate?: (status: string) => void,
+  userProfile?: string
 ): Promise<{ content: string; photos: PhotoReference[]; links: Array<{ text: string; url: string }> } | null> => {
   try {
     onStatusUpdate?.('Creating your itinerary...');
     
     // Extract photos and links from conversation
     const photos = extractPhotosFromConversation(conversation);
-    const links = extractLinksFromConversation(conversation);
+    const allLinks = extractLinksFromConversation(conversation);
+    
+    // Categorize links for the prompt
+    const reservationLinks = allLinks.filter(l => l.category === 'reservation');
+    const reviewLinks = allLinks.filter(l => l.category === 'review');
+    const parkLinks = allLinks.filter(l => l.category === 'park');
+    const lodgingLinks = allLinks.filter(l => l.category === 'lodging');
+    const otherLinks = allLinks.filter(l => !['reservation', 'review', 'park', 'lodging'].includes(l.category || ''));
     
     // Extract key details from metadata
     const { metadata } = conversation;
@@ -153,10 +208,34 @@ export const generateItinerary = async (
       metadata.departingFrom && `Departing from: ${metadata.departingFrom}`,
     ].filter(Boolean).join('\n');
     
+    // Build user preferences context
+    let preferencesContext = '';
+    if (userProfile) {
+      preferencesContext = `\nTRAVELER PREFERENCES:\n${userProfile}\n`;
+    }
+    
+    // Build links context for the AI
+    let linksContext = '\nAVAILABLE LINKS TO INCLUDE:\n';
+    if (reservationLinks.length > 0) {
+      linksContext += `Reservation Links: ${reservationLinks.map(l => `[${l.text}](${l.url})`).join(', ')}\n`;
+    }
+    if (reviewLinks.length > 0) {
+      linksContext += `Review Links: ${reviewLinks.map(l => `[${l.text}](${l.url})`).join(', ')}\n`;
+    }
+    if (parkLinks.length > 0) {
+      linksContext += `Park Info Links: ${parkLinks.map(l => `[${l.text}](${l.url})`).join(', ')}\n`;
+    }
+    if (lodgingLinks.length > 0) {
+      linksContext += `Lodging Links: ${lodgingLinks.map(l => `[${l.text}](${l.url})`).join(', ')}\n`;
+    }
+    if (otherLinks.length > 0) {
+      linksContext += `Other Links: ${otherLinks.map(l => `[${l.text}](${l.url})`).join(', ')}\n`;
+    }
+    
     // Build conversation history - prioritize recent messages
     const relevantMessages = conversation.messages
       .filter(m => !m.isError)
-      .slice(-10); // Focus on the last 10 messages (most relevant)
+      .slice(-12); // Focus on the last 12 messages
     
     const conversationSummary = relevantMessages
       .map(m => `${m.type === 'user' ? 'User' : 'Assistant'}: ${m.content}`)
@@ -167,24 +246,32 @@ export const generateItinerary = async (
 
 TRIP DETAILS:
 ${tripContext || 'Not specified - infer from conversation'}
-
+${preferencesContext}
 CONVERSATION CONTEXT (most recent and important):
 ${conversationSummary}
-
-INSTRUCTIONS:
+${linksContext}
+CRITICAL INSTRUCTIONS:
 1. Create a polished, shareable itinerary based on the conversation above
 2. Use the most recent assistant recommendations as the primary source
 3. If specific dates aren't mentioned, use placeholder dates like "Day 1", "Day 2"
 4. If budget isn't specified, provide general cost estimates
 5. Fill in reasonable details based on the destination discussed
-6. IMPORTANT: Preserve any links from the conversation in markdown format [text](url)
-7. Format with clear sections for visual appeal
+6. IMPORTANT: Include relevant links from the AVAILABLE LINKS section above:
+   - Add reservation links next to restaurants (e.g., "Dinner at Restaurant Name - [Make Reservation](link)")
+   - Add review links so users can read more (e.g., "[Read Reviews](link)")
+   - Include park information links in relevant sections
+7. DO NOT include items the user explicitly declined or said they wouldn't book
+8. Consider the traveler preferences when formatting recommendations
+9. If the user is a Foodie, Coffee hound, Book worm, or Historian, highlight relevant spots
+10. Format with clear sections for visual appeal
 
 Generate the itinerary now with these sections:
 ## Trip Overview
-## Daily Itinerary  
+## Daily Itinerary (include restaurant reservations and activity links)
+## Dining Recommendations (with reservation links where available)
 ## Accommodations
 ## Transportation
+## Useful Links (categorized: Reviews, Reservations, Park Info)
 ## Estimated Budget
 ## Packing List
 ## Tips & Reminders
@@ -201,7 +288,7 @@ Be concise but comprehensive. This will be shared with friends and family.`;
       return {
         content: response.response,
         photos,
-        links,
+        links: allLinks,
       };
     }
     return null;

@@ -1,27 +1,40 @@
 /**
  * Claude tool definitions for TripAgent
+ * 
+ * Park codes sourced from NPS API (https://developer.nps.gov/api/v1/parks)
  */
 import Anthropic from '@anthropic-ai/sdk';
+import { NATIONAL_PARKS } from '../../utils/parkCodeLookup.js';
+
+// Build park code reference for tool descriptions
+const PARK_CODE_EXAMPLES = Object.values(NATIONAL_PARKS)
+  .slice(0, 10)
+  .map((p: { code: string; name: string }) => `"${p.code}" (${p.name.replace(' National Park', '').replace(' National Park & Preserve', '')})`)
+  .join(', ');
+
+const ALL_PARK_CODES = Object.values(NATIONAL_PARKS)
+  .map((p: { code: string }) => p.code)
+  .join(', ');
 
 export const tools: Anthropic.Tool[] = [
   {
     name: 'search_national_parks',
-    description: 'Search for US National Parks by name. Returns park info, entrance fees, and activities.',
+    description: 'Search for US National Parks by name. Returns park info, entrance fees, and activities. Valid park codes: ' + ALL_PARK_CODES,
     input_schema: {
       type: 'object' as const,
       properties: {
-        query: { type: 'string', description: 'Park name to search (e.g., "Yosemite", "Yellowstone")' },
+        query: { type: 'string', description: 'Park name to search (e.g., "Yosemite", "Yellowstone", "Grand Canyon")' },
       },
       required: ['query'],
     },
   },
   {
     name: 'plan_park_trip',
-    description: 'Get a complete trip plan for a National Park including flights, lodging, hikes, and budget tips.',
+    description: `Get a complete trip plan for a National Park including flights, lodging, hikes, and budget tips. Use official NPS park codes: ${PARK_CODE_EXAMPLES}, etc.`,
     input_schema: {
       type: 'object' as const,
       properties: {
-        park_code: { type: 'string', description: 'Park code (e.g., "yose", "yell", "grca", "zion")' },
+        park_code: { type: 'string', description: `NPS park code. Examples: ${PARK_CODE_EXAMPLES}. Full list: ${ALL_PARK_CODES}` },
         origin_airport: { type: 'string', description: 'Departure airport code (e.g., "LAX", "JFK")' },
         arrival_date: { type: 'string', description: 'Arrival date YYYY-MM-DD' },
         departure_date: { type: 'string', description: 'Departure date YYYY-MM-DD' },
@@ -32,11 +45,11 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'get_park_hikes',
-    description: 'Get popular hiking trails for a National Park with difficulty, distance, and highlights.',
+    description: `Get popular hiking trails for a National Park with difficulty, distance, and highlights. Use official NPS park codes: ${ALL_PARK_CODES}`,
     input_schema: {
       type: 'object' as const,
       properties: {
-        park_code: { type: 'string', description: 'Park code (e.g., "yose", "yell", "grca")' },
+        park_code: { type: 'string', description: `NPS park code. Examples: ${PARK_CODE_EXAMPLES}` },
       },
       required: ['park_code'],
     },
@@ -115,11 +128,11 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'search_activities',
-    description: 'Search for tours, activities, and experiences near a location. Returns bookable activities with prices and descriptions.',
+    description: `Search for tours, activities, and experiences near a National Park or destination. Returns bookable activities with prices and descriptions. Use official park names from NPS.`,
     input_schema: {
       type: 'object' as const,
       properties: {
-        location: { type: 'string', description: 'City or destination (e.g., "Grand Canyon", "Yellowstone")' },
+        location: { type: 'string', description: 'National Park or destination (e.g., "Grand Canyon National Park", "Yellowstone National Park", "Yosemite Valley")' },
         latitude: { type: 'number', description: 'Latitude of the location (optional, improves accuracy)' },
         longitude: { type: 'number', description: 'Longitude of the location (optional, improves accuracy)' },
       },
@@ -128,16 +141,46 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'refresh_photos',
-    description: 'Get new/different photos for a destination, event, or activity. Use this when the user asks for photos of specific events (wildflowers, wildlife, sunsets, waterfalls, fall colors), activities (hiking, camping, stargazing), or wants different background images for their trip.',
+    description: `Get new/different photos for a National Park, event, or activity. Use official NPS park names. Use this for photos of specific events (wildflowers, wildlife, sunsets, waterfalls, fall colors), activities (hiking, camping, stargazing), or different background images.`,
     input_schema: {
       type: 'object' as const,
       properties: {
-        destination: { type: 'string', description: 'The destination or location (e.g., "Yosemite National Park", "Grand Canyon", "Yellowstone")' },
+        destination: { type: 'string', description: 'National Park or destination using official NPS name (e.g., "Yosemite National Park", "Grand Canyon National Park", "Yellowstone National Park")' },
         event: { type: 'string', description: 'Specific event or phenomenon to photograph (e.g., "Old Faithful eruption", "wildflower bloom", "fall foliage", "elk rut", "sunset", "northern lights", "waterfall")' },
         style: { type: 'string', description: 'Photo style: "landscape", "wildlife", "hiking", "camping", "scenic", "adventure", "aerial", "night sky"' },
         count: { type: 'number', description: 'Number of photos to return (default: 8, max: 12)' },
       },
       required: ['destination'],
+    },
+  },
+  {
+    name: 'search_restaurants',
+    description: `Search for restaurants near a National Park or destination. Use this when users ask about dining options, places to eat, or food recommendations. Use official NPS park names or nearby town names.`,
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        location: { type: 'string', description: 'Location to search near - use park gateway towns (e.g., "Yosemite Valley, CA", "Grand Canyon Village, AZ", "West Yellowstone, MT", "Springdale, UT" for Zion)' },
+        cuisine: { type: 'string', description: 'Type of cuisine (e.g., "Mexican", "Italian", "BBQ", "breakfast", "steakhouse"). Leave empty for all types.' },
+        price_level: { type: 'number', description: 'Maximum price level 1-4 (1=cheap, 4=expensive). Leave empty for all price ranges.' },
+        radius: { type: 'number', description: 'Search radius in meters (default: 5000, max: 50000)' },
+      },
+      required: ['location'],
+    },
+  },
+  {
+    name: 'get_reservation_link',
+    description: 'Generate a reservation link for a specific restaurant. IMPORTANT: Use the city and state from the restaurant search results (where the restaurant is located), NOT the user\'s home location. For example, if a restaurant near Yellowstone is in West Yellowstone, MT, use city="West Yellowstone" and state="MT".',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        restaurant_name: { type: 'string', description: 'Exact name of the restaurant from search results' },
+        city: { type: 'string', description: 'City where the RESTAURANT is located (from search results, e.g., "West Yellowstone", "Springdale", "Grand Canyon Village")' },
+        state: { type: 'string', description: 'State where the RESTAURANT is located (from search results, e.g., "MT", "UT", "AZ") - NOT the user\'s home state' },
+        date: { type: 'string', description: 'Reservation date in YYYY-MM-DD format' },
+        time: { type: 'string', description: 'Reservation time in HH:MM format (24-hour, e.g., "19:00" for 7pm)' },
+        party_size: { type: 'number', description: 'Number of guests (default: 2)' },
+      },
+      required: ['restaurant_name', 'city', 'state'],
     },
   },
 ];

@@ -1,6 +1,9 @@
 /**
  * Park-specific features for photo searches
- * Maps park codes to notable features, attractions, and activities
+ * Maps NPS park codes to notable features, attractions, and activities
+ * 
+ * Park codes sourced from NPS API (https://developer.nps.gov/api/v1/parks)
+ * Last updated: 2026-01-17
  */
 
 export const PARK_FEATURES: Record<string, string[]> = {

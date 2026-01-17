@@ -32,6 +32,7 @@ export interface PhotoResult {
   caption: string;
   credit: string;
   source: 'unsplash';
+  photographerId?: string; // Unsplash username for deduplication
 }
 
 export class UnsplashAdapter {
@@ -74,6 +75,7 @@ export class UnsplashAdapter {
         caption: photo.alt_description || photo.description || query,
         credit: `Photo by ${photo.user.name} on Unsplash`,
         source: 'unsplash' as const,
+        photographerId: photo.user.username, // For deduplication
       }));
     } catch (error) {
       console.error('[Unsplash] Search failed:', error);

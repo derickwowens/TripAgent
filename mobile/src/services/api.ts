@@ -185,9 +185,74 @@ export const sendChatMessage = async (
   messages: ChatMessage[],
   context: ChatContext,
   model?: string
-): Promise<{ response: string; photos?: PhotoReference[]; fallback?: boolean }> => {
+): Promise<{ response: string; photos?: PhotoReference[]; segments?: string[]; fallback?: boolean }> => {
   const response = await chatApi.post('/api/chat', { messages, context, model });
   return response.data;
+};
+
+// Chat with tool status updates
+// Note: React Native doesn't support streaming fetch, so we use the regular endpoint
+// with simulated status updates based on response time
+export const sendChatMessageWithStream = async (
+  messages: ChatMessage[],
+  context: ChatContext,
+  model: string | undefined,
+  onToolStatus: (message: string) => void
+): Promise<{ response: string; photos?: PhotoReference[]; segments?: string[]; fallback?: boolean }> => {
+  // Show initial status
+  onToolStatus('Thinking...');
+  
+  // Detect what the user is asking about to show relevant status messages
+  const lastMessage = messages[messages.length - 1]?.content?.toLowerCase() || '';
+  
+  // Build context-aware status messages based on user's request
+  const statusMessages: string[] = ['Analyzing your request...'];
+  
+  if (lastMessage.includes('restaurant') || lastMessage.includes('food') || lastMessage.includes('eat') || lastMessage.includes('dining')) {
+    statusMessages.push('Gathering restaurant information...');
+    statusMessages.push('Checking reviews and ratings...');
+  } else if (lastMessage.includes('flight') || lastMessage.includes('fly')) {
+    statusMessages.push('Searching for flights...');
+    statusMessages.push('Comparing prices and routes...');
+  } else if (lastMessage.includes('hotel') || lastMessage.includes('lodge') || lastMessage.includes('stay') || lastMessage.includes('campground')) {
+    statusMessages.push('Searching for lodging options...');
+    statusMessages.push('Checking availability...');
+  } else if (lastMessage.includes('hike') || lastMessage.includes('trail')) {
+    statusMessages.push('Finding hiking trails...');
+    statusMessages.push('Checking trail conditions...');
+  } else if (lastMessage.includes('park') || lastMessage.includes('national')) {
+    statusMessages.push('Gathering park information...');
+    statusMessages.push('Loading activities and attractions...');
+  } else if (lastMessage.includes('car') || lastMessage.includes('rental') || lastMessage.includes('drive')) {
+    statusMessages.push('Searching for car rentals...');
+    statusMessages.push('Comparing vehicle options...');
+  } else if (lastMessage.includes('reservation') || lastMessage.includes('book')) {
+    statusMessages.push('Finding reservation options...');
+    statusMessages.push('Checking availability...');
+  } else if (lastMessage.includes('ev') || lastMessage.includes('charging') || lastMessage.includes('tesla')) {
+    statusMessages.push('Locating charging stations...');
+    statusMessages.push('Checking charger availability...');
+  } else {
+    statusMessages.push('Searching for information...');
+    statusMessages.push('Processing results...');
+  }
+  
+  let statusIndex = 0;
+  const statusInterval = setInterval(() => {
+    if (statusIndex < statusMessages.length) {
+      onToolStatus(statusMessages[statusIndex]);
+      statusIndex++;
+    }
+  }, 2500);
+
+  try {
+    const response = await chatApi.post('/api/chat', { messages, context, model });
+    clearInterval(statusInterval);
+    return response.data;
+  } catch (error) {
+    clearInterval(statusInterval);
+    throw error;
+  }
 };
 
 // Error logging

@@ -24,24 +24,27 @@ export const CollapsibleBottomPanel: React.FC<CollapsibleBottomPanelProps> = ({
   const animatedHeight = useRef(new Animated.Value(DEFAULT_HEIGHT)).current;
   const currentHeightRef = useRef(DEFAULT_HEIGHT);
 
-  const panResponder = useRef(
-    PanResponder.create({
-      onStartShouldSetPanResponder: () => true,
-      onMoveShouldSetPanResponder: (_, gestureState) => {
-        return Math.abs(gestureState.dy) > 3;
-      },
-      onPanResponderMove: (_, gestureState) => {
-        const newHeight = currentHeightRef.current - gestureState.dy;
-        const clampedHeight = Math.max(MIN_HEIGHT, Math.min(MAX_HEIGHT, newHeight));
-        animatedHeight.setValue(clampedHeight);
-      },
-      onPanResponderRelease: (_, gestureState) => {
-        const newHeight = currentHeightRef.current - gestureState.dy;
-        const clampedHeight = Math.max(MIN_HEIGHT, Math.min(MAX_HEIGHT, newHeight));
-        currentHeightRef.current = clampedHeight;
-      },
-    })
-  ).current;
+  const panResponder = PanResponder.create({
+    onStartShouldSetPanResponder: () => true,
+    onMoveShouldSetPanResponder: (_, gestureState) => {
+      return Math.abs(gestureState.dy) > 3;
+    },
+    onPanResponderMove: (_, gestureState) => {
+      const newHeight = currentHeightRef.current - gestureState.dy;
+      const clampedHeight = Math.max(MIN_HEIGHT, Math.min(MAX_HEIGHT, newHeight));
+      animatedHeight.setValue(clampedHeight);
+    },
+    onPanResponderRelease: (_, gestureState) => {
+      const newHeight = currentHeightRef.current - gestureState.dy;
+      const clampedHeight = Math.max(MIN_HEIGHT, Math.min(MAX_HEIGHT, newHeight));
+      currentHeightRef.current = clampedHeight;
+    },
+  });
+
+  // If no photos, just render children without the collapsible panel
+  if (!hasPhotos) {
+    return <View style={styles.inputOnly}>{children}</View>;
+  }
 
   return (
     <Animated.View style={[styles.container, { height: animatedHeight }]}>
@@ -79,5 +82,8 @@ const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
+  },
+  inputOnly: {
+    backgroundColor: 'transparent',
   },
 });

@@ -36,6 +36,16 @@ export const useUserProfile = () => {
     }
   }, [userProfile]);
 
+  // Update and persist in one call (for onboarding)
+  const updateAndPersistProfile = useCallback(async (profile: string) => {
+    setUserProfile(profile);
+    try {
+      await AsyncStorage.setItem(STORAGE_KEY, profile);
+    } catch (error) {
+      console.error('Failed to save user profile:', error);
+    }
+  }, []);
+
   const addSuggestion = (suggestion: string) => {
     const newProfile = userProfile 
       ? `${userProfile}, ${suggestion}`
@@ -50,6 +60,7 @@ export const useUserProfile = () => {
     profileExpanded,
     updateProfile,
     persistProfile,
+    updateAndPersistProfile,
     addSuggestion,
     toggleExpanded,
   };
