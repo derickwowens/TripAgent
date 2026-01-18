@@ -21,26 +21,28 @@ import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGenera
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
 
-// Variety of nature/national park backgrounds for new conversations
+// Local bundled nature/national park backgrounds for new conversations
 const DEFAULT_BACKGROUNDS = [
-  // Forests & Mountains
-  'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800', // Misty forest
-  'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800', // Mountain peaks
-  'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800', // Snowy mountains
-  'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800', // Alpine sunrise
-  // Canyons & Deserts
-  'https://images.unsplash.com/photo-1474044159687-1ee9f3a51722?w=800', // Grand Canyon
-  'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800', // Desert road
-  'https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=800', // Arches
-  // Lakes & Water
-  'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800', // Mountain lake
-  'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800', // Beach sunset
-  'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=800', // Waterfall
-  // National Parks
-  'https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800', // Deer in meadow
-  'https://images.unsplash.com/photo-1414609245224-afa02bfb3fda?w=800', // Yosemite valley
-  'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800', // Camping tent
-  'https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=800', // Redwood trees
+  require('../../assets/backgrounds/bg-01-forest.jpg'),
+  require('../../assets/backgrounds/bg-02-mountain.jpg'),
+  require('../../assets/backgrounds/bg-03-valley.jpg'),
+  require('../../assets/backgrounds/bg-04-fog.jpg'),
+  require('../../assets/backgrounds/bg-05-sunforest.jpg'),
+  require('../../assets/backgrounds/bg-06-lake.jpg'),
+  require('../../assets/backgrounds/bg-07-sunrise.jpg'),
+  require('../../assets/backgrounds/bg-08-alpine.jpg'),
+  require('../../assets/backgrounds/bg-09-waterfall.jpg'),
+  require('../../assets/backgrounds/bg-10-canyon.jpg'),
+  require('../../assets/backgrounds/bg-11-path.jpg'),
+  require('../../assets/backgrounds/bg-12-sunbeam.jpg'),
+  require('../../assets/backgrounds/bg-13-meadow.jpg'),
+  require('../../assets/backgrounds/bg-14-snow.jpg'),
+  require('../../assets/backgrounds/bg-15-autumn.jpg'),
+  require('../../assets/backgrounds/bg-16-dusk.jpg'),
+  require('../../assets/backgrounds/bg-17-cliff.jpg'),
+  require('../../assets/backgrounds/bg-18-river.jpg'),
+  require('../../assets/backgrounds/bg-19-sunset.jpg'),
+  require('../../assets/backgrounds/bg-20-peaks.jpg'),
 ];
 
 // Get a random background for new conversations
@@ -424,7 +426,10 @@ const HomeScreen: React.FC = () => {
   };
 
   // Use first destination photo as background if available, otherwise use random default
-  const backgroundUrl = allPhotos.length > 0 ? allPhotos[0].url : defaultBackground;
+  // defaultBackground is a local require() result, allPhotos[0].url is a remote URL
+  const backgroundSource = allPhotos.length > 0 
+    ? { uri: allPhotos[0].url } 
+    : defaultBackground;
 
   // Show loading state while checking onboarding status
   if (onboardingLoading) {
@@ -448,7 +453,7 @@ const HomeScreen: React.FC = () => {
   return (
     <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
       <ImageBackground
-        source={{ uri: backgroundUrl }}
+        source={backgroundSource}
         style={styles.backgroundImage}
         resizeMode="cover"
       >

@@ -245,11 +245,20 @@ This ensures users can easily look up and recognize these destinations.
 
 Use real-time data and incorporate ACTUAL PRICES naturally into your response.
 
-IMPORTANT - BOOKING LINKS (use EXACT formats below, replacing values):
+IMPORTANT - BOOKING LINKS:
 
-FLIGHTS - Use Kayak format (TESTED & WORKING):
-🔗 [Search flights](https://www.kayak.com/flights/LAX-JFK/2026-03-15/2026-03-20)
-Format: https://www.kayak.com/flights/{ORIGIN}-{DEST}/{DEPART-DATE}/{RETURN-DATE}
+FLIGHTS - ALWAYS use the bookingLinks from search_flights tool results:
+When the search_flights tool returns results, it includes "bookingLinks" with pre-built URLs for both Kayak and Google Flights.
+ALWAYS use these exact links - do NOT construct your own flight links.
+Provide BOTH options to users for price comparison:
+
+Example: If tool returns:
+  bookingLinks.kayak: "https://www.kayak.com/flights/DEN-JAC/2026-03-15/2026-03-20"
+  bookingLinks.googleFlights: "https://www.google.com/travel/flights?q=..."
+
+Use:
+🔗 [Search on Kayak](https://www.kayak.com/flights/DEN-JAC/2026-03-15/2026-03-20)
+🔗 [Search on Google Flights](https://www.google.com/travel/flights?q=...)
 
 HOTELS - Use Booking.com format (TESTED & WORKING):
 🔗 [Find hotels](https://www.booking.com/searchresults.html?ss=Yosemite%20National%20Park&checkin=2026-03-15&checkout=2026-03-20)
@@ -264,14 +273,11 @@ NATIONAL PARKS:
 🔗 [Park info](https://www.nps.gov/yose/index.htm)
 Format: https://www.nps.gov/{PARK-CODE}/index.htm
 
-CRITICAL - FRESH LINKS FOR EACH SEARCH:
-Every time you generate a booking link, you MUST use the parameters from the CURRENT search only:
-1. Extract the origin, destination, and dates from the user's LATEST message
-2. Generate a completely NEW link using those exact parameters
-3. NEVER copy or reuse a link from earlier in the conversation
-4. NEVER use placeholder values like "LAX-JFK" - always use the actual airports being discussed
-
-Example: If the user first asked about a trip to Yosemite (flying to FAT) and then asks about Yellowstone (flying to JAC), the Yellowstone links MUST use JAC, not FAT.
+CRITICAL - USE PROVIDED LINKS:
+1. For FLIGHTS: ALWAYS copy the exact "bookingLink" from search_flights tool results
+2. For other bookings: Use the searchParams from tool results to build links
+3. NEVER reuse links from earlier in the conversation
+4. NEVER construct flight links yourself - always use the provided bookingLink
 
 Dates must be YYYY-MM-DD format. If no dates specified, use reasonable placeholder dates 2-3 months from now.
 
@@ -341,8 +347,22 @@ export function buildContextInfo(context: {
   userLocation?: { city: string; state: string; nearestAirport: string };
   tripContext?: { destination?: string; numDays?: number; numTravelers?: number };
   userProfile?: string;
+  activeDestination?: { name: string; airport?: string; city?: string };
 }): string {
   let contextInfo = '';
+  
+  // CRITICAL: If there's an active destination, make it VERY prominent
+  // This prevents Claude from reusing old destinations from conversation history
+  if (context.activeDestination) {
+    contextInfo += `\n⚠️ ACTIVE DESTINATION FOR ALL LINKS: ${context.activeDestination.name}`;
+    if (context.activeDestination.airport) {
+      contextInfo += ` (Airport: ${context.activeDestination.airport})`;
+    }
+    if (context.activeDestination.city) {
+      contextInfo += ` (Gateway: ${context.activeDestination.city})`;
+    }
+    contextInfo += `\nALL flight, hotel, and car rental links MUST use this destination, NOT any previous destinations from earlier in the conversation.\n\n`;
+  }
   
   if (context.userLocation) {
     contextInfo += `User is located in ${context.userLocation.city}, ${context.userLocation.state}. Nearest airport: ${context.userLocation.nearestAirport}.\n`;

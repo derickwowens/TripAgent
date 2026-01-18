@@ -609,7 +609,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
   return (
     <View style={styles.background}>
       <Animated.Image
-        source={{ uri: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=3840&q=80' }}
+        source={require('../../../assets/backgrounds/bg-10-canyon.jpg')}
         style={[
           styles.backgroundImage,
           {

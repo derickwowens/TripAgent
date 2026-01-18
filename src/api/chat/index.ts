@@ -265,8 +265,17 @@ export async function createChatHandler(facade: TravelFacade) {
       throw new Error('ANTHROPIC_API_KEY not configured');
     }
 
-    // Build context message
-    const contextInfo = buildContextInfo(context);
+    // Build context message - include active destination from cache to prevent stale links
+    const activeDestCache = getDestinationCache();
+    const contextWithActiveDestination = {
+      ...context,
+      activeDestination: activeDestCache ? {
+        name: activeDestCache.parkName,
+        city: activeDestCache.gatewayCity,
+        airport: undefined, // Will be resolved by gateway lookup if needed
+      } : undefined,
+    };
+    const contextInfo = buildContextInfo(contextWithActiveDestination);
     const systemPrompt = contextInfo ? `${SYSTEM_PROMPT}\n\nCurrent context:\n${contextInfo}` : SYSTEM_PROMPT;
 
     // Convert messages to Anthropic format
@@ -506,6 +515,20 @@ async function handleSearchNationalParks(
   collectedPhotos: PhotoReference[]
 ): Promise<{ result: any; destination?: string; searchQuery?: string; npsGateway?: { city: string; state: string } }> {
   const rawQuery = input.query.toLowerCase();
+  
+  // Clear cache if searching for a different park than what's cached
+  const currentCache = getDestinationCache();
+  if (currentCache) {
+    const queryLower = rawQuery.toLowerCase();
+    const cacheParkLower = currentCache.parkName.toLowerCase();
+    
+    // If searching for a different park, clear both caches
+    if (!cacheParkLower.includes(queryLower) && !queryLower.includes(cacheParkLower.replace(' national park', ''))) {
+      console.log(`[Park Search] New park "${rawQuery}" differs from cached "${currentCache.parkName}" - clearing caches`);
+      clearDestinationCache();
+      clearRestaurantCache();
+    }
+  }
   
   // Try to find park code from our lookup table first
   const knownParkCode = findParkCode(rawQuery);
@@ -846,6 +869,32 @@ async function handleSearchFlights(
   context: ChatContext,
   activeLeg?: number
 ): Promise<any> {
+  // Clear and update destination cache when searching flights to a new destination
+  // This prevents stale park/restaurant cache from affecting flight searches
+  const currentCache = getDestinationCache();
+  if (input.destination) {
+    const destLower = input.destination.toLowerCase();
+    
+    if (currentCache) {
+      const cacheParkLower = currentCache.parkName.toLowerCase();
+      const cacheCityLower = currentCache.gatewayCity.toLowerCase();
+      
+      // If the flight destination doesn't match the cached park/city, clear and update cache
+      if (!cacheParkLower.includes(destLower) && !destLower.includes(cacheParkLower) &&
+          !cacheCityLower.includes(destLower) && !destLower.includes(cacheCityLower)) {
+        console.log(`[Flight Search] New destination "${input.destination}" differs from cached "${currentCache.parkName}" - updating cache`);
+        clearDestinationCache();
+        clearRestaurantCache();
+        // Set new destination cache with the flight destination (airport code)
+        setDestinationCache(input.destination, input.destination, input.destination, '');
+      }
+    } else {
+      // No cache exists, set it to the flight destination
+      console.log(`[Flight Search] Setting destination cache to "${input.destination}"`);
+      setDestinationCache(input.destination, input.destination, input.destination, '');
+    }
+  }
+  
   // Resolve values with context priority: leg override > conversation override > input > profile default
   const travelers = input.adults || resolveContextValue<number>('numTravelers', context, activeLeg) || 1;
   const origin = input.origin || resolveContextValue<string>('homeAirport', context, activeLeg) || context.userLocation?.nearestAirport;
@@ -857,12 +906,47 @@ async function handleSearchFlights(
     returnDate: input.return_date,
     adults: travelers,
   });
+  
+  // DETERMINISTIC: Generate booking links directly with exact parameters
+  // This ensures Claude uses the correct links without constructing from memory
+  
+  // Kayak link format
+  const kayakLink = input.return_date
+    ? `https://www.kayak.com/flights/${origin}-${input.destination}/${input.departure_date}/${input.return_date}`
+    : `https://www.kayak.com/flights/${origin}-${input.destination}/${input.departure_date}`;
+  
+  // Google Flights link format - uses query string for prefilled search
+  // Note: Google Flights has no public API for prices, but link prefills the search
+  const googleFlightsQuery = input.return_date
+    ? `Flights from ${origin} to ${input.destination} on ${input.departure_date} returning ${input.return_date}`
+    : `Flights from ${origin} to ${input.destination} on ${input.departure_date} one way`;
+  const googleFlightsLink = `https://www.google.com/travel/flights?q=${encodeURIComponent(googleFlightsQuery)}`;
+  
+  console.log(`[Flight Search] Generated links - Kayak: ${kayakLink}, Google: ${googleFlightsLink}`);
+  
   return {
     flights: flightResults.results.slice(0, 5).map(f => ({
       price: `$${f.price.total}`,
       airline: f.validatingAirline,
       duration: f.itineraries[0]?.duration,
     })),
+    // Provide pre-built booking links so Claude doesn't need to construct them
+    searchParams: {
+      origin: origin,
+      destination: input.destination,
+      departureDate: input.departure_date,
+      returnDate: input.return_date,
+      travelers: travelers,
+    },
+    bookingLinks: {
+      kayak: kayakLink,
+      googleFlights: googleFlightsLink,
+    },
+    // Primary link for Claude to use
+    bookingLink: kayakLink,
+    bookingLinkText: `Search ${origin} → ${input.destination} flights`,
+    // Note about Google Flights
+    note: "Google Flights link also available for price comparison (no API prices available, but link prefills the search)",
   };
 }
 
