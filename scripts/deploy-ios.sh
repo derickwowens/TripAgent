@@ -1,6 +1,6 @@
 #!/bin/bash
 # TripAgent - iOS Deployment Script
-# Usage: ./scripts/deploy-ios.sh [major|minor|hotfix] [--rc]
+# Usage: ./scripts/deploy-ios.sh [major|minor|hotfix] [--rc] [--validate-links]
 
 set -e
 
@@ -13,11 +13,15 @@ NC='\033[0m' # No Color
 # Parse arguments
 BUMP_TYPE=""
 RC_BUILD=false
+VALIDATE_LINKS=false
 
 for arg in "$@"; do
     case $arg in
         --rc)
             RC_BUILD=true
+            ;;
+        --validate-links)
+            VALIDATE_LINKS=true
             ;;
         major|minor|hotfix)
             BUMP_TYPE=$arg
@@ -30,11 +34,12 @@ BUMP_TYPE=${BUMP_TYPE:-minor}
 
 if [[ ! "$BUMP_TYPE" =~ ^(major|minor|hotfix)$ ]]; then
     echo -e "${RED}Error: Invalid bump type '$BUMP_TYPE'${NC}"
-    echo "Usage: ./scripts/deploy-ios.sh [major|minor|hotfix] [--rc]"
-    echo "  major  - Bump major version (1.0.0 -> 2.0.0)"
-    echo "  minor  - Bump minor version (1.0.0 -> 1.1.0)"
-    echo "  hotfix - Bump patch version (1.0.0 -> 1.0.1)"
-    echo "  --rc   - Build as Release Candidate for closed testing"
+    echo "Usage: ./scripts/deploy-ios.sh [major|minor|hotfix] [--rc] [--validate-links]"
+    echo "  major           - Bump major version (1.0.0 -> 2.0.0)"
+    echo "  minor           - Bump minor version (1.0.0 -> 1.1.0)"
+    echo "  hotfix          - Bump patch version (1.0.0 -> 1.0.1)"
+    echo "  --rc            - Build as Release Candidate for closed testing"
+    echo "  --validate-links - Run NPS link validation before build (requires NPS_API_KEY)"
     exit 1
 fi
 
@@ -48,11 +53,26 @@ else
     echo -e "Build type: ${YELLOW}Production${NC}"
     BUILD_PROFILE="production"
 fi
+if [ "$VALIDATE_LINKS" = true ]; then
+    echo -e "Link validation: ${YELLOW}Enabled${NC}"
+fi
 echo ""
 
 # Navigate to project root
 cd "$(dirname "$0")/.."
 PROJECT_ROOT=$(pwd)
+
+# Run link validation if requested
+if [ "$VALIDATE_LINKS" = true ]; then
+    echo -e "\n${GREEN}🔗 Running NPS Link Validation...${NC}"
+    if [ -z "$NPS_API_KEY" ]; then
+        echo -e "${RED}Error: NPS_API_KEY environment variable is required for link validation${NC}"
+        echo "Get a free API key at: https://www.nps.gov/subjects/developer/get-started.htm"
+        exit 1
+    fi
+    npm run validate-links
+    echo -e "${GREEN}✅ Link validation complete${NC}\n"
+fi
 
 # Read current version from app.config.js
 CURRENT_VERSION=$(grep 'version:' mobile/app.config.js | head -1 | sed 's/.*version: "\([^"]*\)".*/\1/')

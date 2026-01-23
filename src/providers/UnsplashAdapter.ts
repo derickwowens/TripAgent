@@ -1,9 +1,20 @@
 /**
- * Unsplash Adapter - Now uses local static photos to avoid API quota usage
+ * Unsplash Adapter - API-first approach with static fallbacks
  * 
- * Previously used Unsplash API (Free tier: 50 requests/hour)
- * Now returns curated local photos for all requests to conserve API calls
+ * Strategy (in order):
+ * 1. Check cache from previous API calls
+ * 2. Try Unsplash API if configured and quota available
+ * 3. Fall back to park-specific curated photos (parkPhotos.ts)
+ * 4. Return empty array if no photos found
+ * 
+ * Note: NPS photos are handled separately in chat handler and take priority.
+ * This adapter supplements NPS photos with Unsplash content.
+ * 
+ * Free tier: 50 requests/hour - we use caching to minimize calls
  */
+
+import axios from 'axios';
+import { PARK_PHOTOS, findParkKeyFromQuery, ParkPhoto } from '../data/parkPhotos.js';
 
 export interface PhotoResult {
   url: string;
@@ -13,31 +24,20 @@ export interface PhotoResult {
   photographerId?: string;
 }
 
-// Local curated nature/landscape photos - no API calls needed
-const LOCAL_PHOTOS: PhotoResult[] = [
-  { url: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=1200', caption: 'Misty forest landscape', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-1' },
-  { url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200', caption: 'Mountain peaks', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-2' },
-  { url: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=1200', caption: 'Valley view', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-3' },
-  { url: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200', caption: 'Foggy mountains', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-4' },
-  { url: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200', caption: 'Sun through forest', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-5' },
-  { url: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200', caption: 'Mountain lake', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-6' },
-  { url: 'https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=1200', caption: 'Sunrise over hills', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-7' },
-  { url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200', caption: 'Alpine sunrise', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-8' },
-  { url: 'https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=1200', caption: 'Waterfall in forest', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-9' },
-  { url: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1200', caption: 'Canyon vista', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-10' },
-  { url: 'https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=1200', caption: 'Forest path', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-11' },
-  { url: 'https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1200', caption: 'Sunbeam through trees', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-12' },
-  { url: 'https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?w=1200', caption: 'Mountain meadow', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-13' },
-  { url: 'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200', caption: 'Snowy peaks', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-14' },
-  { url: 'https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=1200', caption: 'Autumn forest', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-15' },
-  { url: 'https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=1200', caption: 'Dusk sky', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-16' },
-  { url: 'https://images.unsplash.com/photo-1542224566-6e85f2e6772f?w=1200', caption: 'Coastal cliffs', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-17' },
-  { url: 'https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=1200', caption: 'River bend', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-18' },
-  { url: 'https://images.unsplash.com/photo-1508739773434-c26b3d09e071?w=1200', caption: 'Sunset colors', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-19' },
-  { url: 'https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=1200', caption: 'Mountain peaks', credit: 'Photo on Unsplash', source: 'unsplash', photographerId: 'local-20' },
-];
+// API response cache to minimize calls
+interface PhotoCache {
+  query: string;
+  photos: PhotoResult[];
+  timestamp: number;
+}
 
-// Shuffle helper for variety
+const photoCache: Map<string, PhotoCache> = new Map();
+const CACHE_TTL_MS = 3600000; // 1 hour
+
+// Rate limiting
+let lastApiCall = 0;
+const MIN_API_INTERVAL_MS = 2000; // 2 seconds between calls
+
 function shuffleArray<T>(array: T[]): T[] {
   const shuffled = [...array];
   for (let i = shuffled.length - 1; i > 0; i--) {
@@ -47,34 +47,100 @@ function shuffleArray<T>(array: T[]): T[] {
   return shuffled;
 }
 
+
 export class UnsplashAdapter {
-  constructor(_accessKey?: string) {
-    // Access key no longer needed - using local photos
+  private accessKey: string | null = null;
+
+  constructor(accessKey?: string) {
+    this.accessKey = accessKey || process.env.UNSPLASH_ACCESS_KEY || null;
+    if (this.accessKey) {
+      console.log('[Unsplash] API configured with access key');
+    } else {
+      console.log('[Unsplash] No API key - using curated photos only');
+    }
   }
 
   isConfigured(): boolean {
-    // Always return true since we use local photos
-    return true;
+    return true; // Always return true - we have fallbacks
+  }
+
+  hasApiAccess(): boolean {
+    return !!this.accessKey;
   }
 
   async searchPhotos(query: string, perPage: number = 5): Promise<PhotoResult[]> {
-    // Return shuffled local photos instead of API call
-    console.log(`[Unsplash] Using local photos for query: "${query}" (no API call)`);
-    const shuffled = shuffleArray(LOCAL_PHOTOS);
-    return shuffled.slice(0, Math.min(perPage, LOCAL_PHOTOS.length)).map(photo => ({
-      ...photo,
-      caption: `${query} - ${photo.caption}`,
-    }));
+    const cacheKey = query.toLowerCase();
+
+    // 1. Check cache from previous API calls
+    const cached = photoCache.get(cacheKey);
+    if (cached && Date.now() - cached.timestamp < CACHE_TTL_MS) {
+      console.log(`[Unsplash] Cache hit for: "${query}"`);
+      return shuffleArray(cached.photos).slice(0, perPage);
+    }
+
+    // 2. Try Unsplash API if configured and rate limit allows
+    if (this.accessKey && Date.now() - lastApiCall > MIN_API_INTERVAL_MS) {
+      try {
+        lastApiCall = Date.now();
+        console.log(`[Unsplash] API call for: "${query}"`);
+        
+        const response = await axios.get('https://api.unsplash.com/search/photos', {
+          params: {
+            query: `${query} landscape nature`,
+            per_page: Math.min(perPage * 2, 20),
+            orientation: 'landscape',
+          },
+          headers: {
+            Authorization: `Client-ID ${this.accessKey}`,
+          },
+          timeout: 5000,
+        });
+
+        const photos: PhotoResult[] = response.data.results.map((photo: any) => ({
+          url: `${photo.urls.regular}&w=1200`,
+          caption: photo.description || photo.alt_description || query,
+          credit: `Photo by ${photo.user.name} on Unsplash`,
+          source: 'unsplash' as const,
+          photographerId: photo.user.id,
+        }));
+
+        // Cache results
+        if (photos.length > 0) {
+          photoCache.set(cacheKey, {
+            query: cacheKey,
+            photos,
+            timestamp: Date.now(),
+          });
+          console.log(`[Unsplash] API returned ${photos.length} photos for: "${query}"`);
+          return photos.slice(0, perPage);
+        }
+        // If API returned empty, fall through to static fallback
+        console.log(`[Unsplash] API returned no photos for: "${query}", using fallback`);
+      } catch (error: any) {
+        console.warn(`[Unsplash] API error for "${query}":`, error.message);
+        // Fall through to static fallback
+      }
+    }
+
+    // 3. Fallback: park-specific curated photos from parkPhotos.ts
+    const parkKey = findParkKeyFromQuery(query);
+    if (parkKey && PARK_PHOTOS[parkKey]) {
+      const parkPhotos = PARK_PHOTOS[parkKey];
+      console.log(`[Unsplash] Using static fallback for park: "${parkKey}" (${parkPhotos.length} available)`);
+      const shuffled = shuffleArray(parkPhotos);
+      return shuffled.slice(0, Math.min(perPage, parkPhotos.length)).map(photo => ({
+        ...photo,
+        caption: photo.caption,
+      }));
+    }
+
+    // No photos available - return empty array (NPS photos should be primary source)
+    console.log(`[Unsplash] No photos available for: "${query}"`);
+    return [];
   }
 
   async getPhotosByParkName(parkName: string, count: number = 3): Promise<PhotoResult[]> {
-    // Return local photos for park requests
-    console.log(`[Unsplash] Using local photos for park: "${parkName}" (no API call)`);
-    const shuffled = shuffleArray(LOCAL_PHOTOS);
-    return shuffled.slice(0, Math.min(count, LOCAL_PHOTOS.length)).map(photo => ({
-      ...photo,
-      caption: `${parkName} - ${photo.caption}`,
-    }));
+    return this.searchPhotos(parkName, count);
   }
 }
 

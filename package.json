@@ -18,7 +18,9 @@
     "mobile:start": "cd mobile && npx expo start",
     "mobile:android": "cd mobile && npx expo start --android",
     "mobile:build:android": "cd mobile && eas build --platform android --profile production",
-    "mobile:build:preview": "cd mobile && eas build --platform android --profile preview"
+    "mobile:build:preview": "cd mobile && eas build --platform android --profile preview",
+    "validate-links": "tsx scripts/validate-nps-links.ts",
+    "prebuild:validate": "npm run validate-links && npm run build"
   },
   "bin": {
     "tripagent": "./src/cli/simple.ts"
