@@ -78,6 +78,7 @@ const HomeScreen: React.FC = () => {
     toggleFavorite,
     addMessage,
     addMessagesToConversation,
+    ensureConversationId,
   } = useConversations(userLocation?.nearestAirport);
   
   // Derived loading state for current conversation
@@ -210,8 +211,9 @@ const HomeScreen: React.FC = () => {
   const handleSend = async () => {
     if (!inputText.trim() || isLoading) return;
 
-    // Track which conversation this request belongs to
-    const requestConversationId = currentConversationId;
+    // CRITICAL: Ensure conversation has an ID before sending to prevent race conditions
+    // when user switches conversations while requests are in-flight
+    const requestConversationId = ensureConversationId();
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -383,8 +385,8 @@ const HomeScreen: React.FC = () => {
   const handleSendWithMessage = async (messageContent: string) => {
     if (!messageContent.trim() || isLoading) return;
 
-    // Track which conversation this request belongs to (null for new conversations)
-    const requestConversationId = currentConversationId;
+    // CRITICAL: Ensure conversation has an ID before sending to prevent race conditions
+    const requestConversationId = ensureConversationId();
 
     const userMessage: Message = {
       id: Date.now().toString(),

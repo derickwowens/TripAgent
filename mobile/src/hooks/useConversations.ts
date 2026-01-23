@@ -72,17 +72,60 @@ const NATIONAL_PARKS_LOOKUP: Array<{ key: string; name: string }> = [
 ];
 
 /**
+ * Known park combinations that are commonly visited together
+ * These take priority over single park matches
+ */
+const COMBINED_PARKS: Array<{ keys: string[]; name: string }> = [
+  { keys: ['sequoia', 'kings canyon'], name: 'Sequoia & Kings Canyon National Parks' },
+  { keys: ['yellowstone', 'grand teton'], name: 'Yellowstone & Grand Teton National Parks' },
+  { keys: ['death valley', 'joshua tree'], name: 'Death Valley & Joshua Tree National Parks' },
+  { keys: ['arches', 'canyonlands'], name: 'Arches & Canyonlands National Parks' },
+  { keys: ['zion', 'bryce canyon'], name: 'Zion & Bryce Canyon National Parks' },
+  { keys: ['glacier', 'waterton'], name: 'Glacier-Waterton International Peace Park' },
+  { keys: ['redwood', 'crater lake'], name: 'Redwood & Crater Lake National Parks' },
+  { keys: ['olympic', 'mount rainier'], name: 'Olympic & Mount Rainier National Parks' },
+  { keys: ['great smoky', 'shenandoah'], name: 'Great Smoky Mountains & Shenandoah National Parks' },
+];
+
+/**
  * Extract destination from text using authoritative park data
- * Prioritizes longer matches to avoid "glacier" matching before "kenai fjords"
+ * Prioritizes combined parks, then longer matches to avoid "glacier" matching before "kenai fjords"
  */
 function extractDestinationFromText(text: string): string | null {
   const textLower = text.toLowerCase();
   
-  // NATIONAL_PARKS_LOOKUP is already sorted by key length (longest first)
+  // First check for combined park trips (higher priority)
+  for (const combo of COMBINED_PARKS) {
+    const allKeysPresent = combo.keys.every(key => textLower.includes(key));
+    if (allKeysPresent) {
+      return combo.name;
+    }
+  }
+  
+  // Then check for multiple parks mentioned (build dynamic string)
+  const foundParks: string[] = [];
   for (const park of NATIONAL_PARKS_LOOKUP) {
     if (textLower.includes(park.key)) {
-      return park.name;
+      // Avoid adding parks that are substrings of already-found parks
+      const alreadyFound = foundParks.some(found => 
+        found.toLowerCase().includes(park.key) || park.name.toLowerCase().includes(found.toLowerCase().replace(' national park', ''))
+      );
+      if (!alreadyFound) {
+        foundParks.push(park.name);
+      }
+      // Limit to 2 parks for display
+      if (foundParks.length >= 2) break;
     }
+  }
+  
+  if (foundParks.length === 2) {
+    // Build combined name: "Park A & Park B" (remove "National Park" from first)
+    const first = foundParks[0].replace(' National Park', '');
+    return `${first} & ${foundParks[1]}`;
+  }
+  
+  if (foundParks.length === 1) {
+    return foundParks[0];
   }
   
   return null;
@@ -269,16 +312,25 @@ export const useConversations = (nearestAirport?: string) => {
       if (currentId) {
         const index = conversations.findIndex(c => c.id === currentId);
         if (index >= 0) {
+          // Update existing conversation
           conversations[index] = {
             ...conversations[index],
             messages: clonedMessages,
             metadata: { ...conversations[index].metadata, ...metadata, updatedAt: new Date().toISOString() },
           };
+        } else {
+          // ID exists but conversation not in list - add it (ensureConversationId case)
+          conversations.unshift({
+            id: currentId,
+            messages: clonedMessages,
+            metadata,
+          });
         }
       } else {
+        // No ID yet - generate one and add conversation
         const newId = Date.now().toString();
         setCurrentConversationId(newId);
-        currentConversationIdRef.current = newId; // Update ref immediately
+        currentConversationIdRef.current = newId;
         conversations.unshift({
           id: newId,
           messages: clonedMessages,
@@ -306,6 +358,23 @@ export const useConversations = (nearestAirport?: string) => {
   const startNewConversation = () => {
     setMessages([]);
     setCurrentConversationId(null);
+  };
+
+  /**
+   * Ensures the current conversation has an ID.
+   * If null, generates and sets one immediately.
+   * Returns the guaranteed non-null conversation ID.
+   * CRITICAL: Call this before sending a message to prevent race conditions
+   * when user switches conversations while requests are in-flight.
+   */
+  const ensureConversationId = (): string => {
+    if (currentConversationIdRef.current) {
+      return currentConversationIdRef.current;
+    }
+    const newId = Date.now().toString();
+    setCurrentConversationId(newId);
+    currentConversationIdRef.current = newId;
+    return newId;
   };
 
   const deleteConversation = async (id: string) => {
@@ -432,5 +501,6 @@ export const useConversations = (nearestAirport?: string) => {
     toggleFavorite,
     addMessage,
     addMessagesToConversation,
+    ensureConversationId,
   };
 };
