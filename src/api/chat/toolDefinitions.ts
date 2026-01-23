@@ -188,7 +188,7 @@ export const tools: Anthropic.Tool[] = [
       type: 'object' as const,
       properties: {
         park_code: { type: 'string', description: `NPS park code. Examples: ${PARK_CODE_EXAMPLES}` },
-        category: { type: 'string', description: 'Filter by category: "mammals", "birds", "reptiles", "amphibians", "insects", "plants". Leave empty for top species across all categories.' },
+        category: { type: 'string', description: 'Filter by category: "mammals", "birds", "reptiles", "amphibians", "fish", "insects", "plants", "fungi". Leave empty for top species across all categories.' },
       },
       required: ['park_code'],
     },

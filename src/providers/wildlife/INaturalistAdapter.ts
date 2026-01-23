@@ -92,6 +92,7 @@ export interface WildlifeSummary {
   birds: SpeciesCount[];
   reptiles: SpeciesCount[];
   amphibians: SpeciesCount[];
+  fish: SpeciesCount[];
   insects: SpeciesCount[];
   plants: SpeciesCount[];
   fungi: SpeciesCount[];
@@ -251,17 +252,19 @@ export class INaturalistAdapter extends BaseAdapter {
       if (catLower === 'birds' || catLower === 'bird') return summary.birds;
       if (catLower === 'reptiles' || catLower === 'reptile') return summary.reptiles;
       if (catLower === 'amphibians' || catLower === 'amphibian') return summary.amphibians;
+      if (catLower === 'fish' || catLower === 'fishes') return summary.fish;
       if (catLower === 'insects' || catLower === 'insect' || catLower === 'bugs') return summary.insects;
       if (catLower === 'plants' || catLower === 'plant' || catLower === 'flowers') return summary.plants;
       if (catLower === 'fungi' || catLower === 'mushrooms') return summary.fungi;
     }
 
-    // Return top species from all categories
+    // Return top species from all animal categories
     const all = [
       ...summary.mammals.slice(0, 5),
       ...summary.birds.slice(0, 5),
       ...summary.reptiles.slice(0, 3),
       ...summary.amphibians.slice(0, 2),
+      ...summary.fish.slice(0, 2),
     ];
 
     return all.sort((a, b) => b.count - a.count).slice(0, 15);
@@ -323,6 +326,7 @@ export class INaturalistAdapter extends BaseAdapter {
       birds: [],
       reptiles: [],
       amphibians: [],
+      fish: [],
       insects: [],
       plants: [],
       fungi: [],
@@ -347,6 +351,7 @@ export class INaturalistAdapter extends BaseAdapter {
       else if (category === 'birds') summary.birds.push(species);
       else if (category === 'reptiles') summary.reptiles.push(species);
       else if (category === 'amphibians') summary.amphibians.push(species);
+      else if (category === 'fish') summary.fish.push(species);
       else if (category === 'insects') summary.insects.push(species);
       else if (category === 'plants') summary.plants.push(species);
       else if (category === 'fungi') summary.fungi.push(species);
@@ -357,6 +362,7 @@ export class INaturalistAdapter extends BaseAdapter {
     summary.birds.sort((a, b) => b.count - a.count);
     summary.reptiles.sort((a, b) => b.count - a.count);
     summary.amphibians.sort((a, b) => b.count - a.count);
+    summary.fish.sort((a, b) => b.count - a.count);
     summary.insects.sort((a, b) => b.count - a.count);
     summary.plants.sort((a, b) => b.count - a.count);
     summary.fungi.sort((a, b) => b.count - a.count);
@@ -366,6 +372,7 @@ export class INaturalistAdapter extends BaseAdapter {
     summary.birds = summary.birds.slice(0, 30);
     summary.reptiles = summary.reptiles.slice(0, 15);
     summary.amphibians = summary.amphibians.slice(0, 10);
+    summary.fish = summary.fish.slice(0, 15);
     summary.insects = summary.insects.slice(0, 15);
     summary.plants = summary.plants.slice(0, 20);
     summary.fungi = summary.fungi.slice(0, 10);
@@ -385,6 +392,7 @@ export class INaturalistAdapter extends BaseAdapter {
       birds: [],
       reptiles: [],
       amphibians: [],
+      fish: [],
       insects: [],
       plants: [],
       fungi: [],

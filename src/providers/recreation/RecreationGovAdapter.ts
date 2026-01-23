@@ -25,6 +25,67 @@ interface RIDBFacility {
   Reservable: boolean;
   Enabled: boolean;
   LastUpdatedDate: string;
+  FacilityDirections?: string;
+  FacilityAdaAccess?: string;
+  FACILITYADDRESS?: RIDBAddress[];
+  ACTIVITY?: RIDBActivity[];
+  CAMPSITE?: RIDBCampsite[];
+  LINK?: RIDBLink[];
+}
+
+interface RIDBAddress {
+  FacilityAddressID: string;
+  FacilityID: string;
+  FacilityAddressType: string;
+  FacilityStreetAddress1: string;
+  FacilityStreetAddress2: string;
+  FacilityStreetAddress3: string;
+  City: string;
+  PostalCode: string;
+  AddressStateCode: string;
+  AddressCountryCode: string;
+}
+
+interface RIDBActivity {
+  ActivityID: number;
+  FacilityID: string;
+  ActivityName: string;
+  FacilityActivityDescription: string;
+  FacilityActivityFeeDescription: string;
+}
+
+interface RIDBCampsite {
+  CampsiteID: string;
+  FacilityID: string;
+  CampsiteName: string;
+  CampsiteType: string;
+  TypeOfUse: string;
+  Loop: string;
+  CampsiteAccessible: boolean;
+  CampsiteReservable: boolean;
+  ATTRIBUTES?: RIDBAttribute[];
+  PERMITTEDEQUIPMENT?: RIDBEquipment[];
+}
+
+interface RIDBAttribute {
+  AttributeID: number;
+  AttributeName: string;
+  AttributeValue: string;
+}
+
+interface RIDBEquipment {
+  EquipmentName: string;
+  MaxLength: number;
+}
+
+interface RIDBLink {
+  EntityLinkID: string;
+  LinkType: string;
+  EntityID: string;
+  EntityType: string;
+  Title: string;
+  Description: string;
+  URL: string;
 }
 
 interface RIDBRecAreaResponse {
@@ -59,7 +120,22 @@ export interface RecreationFacility {
   reservationUrl: string;
   coordinates: { latitude: number; longitude: number };
   phone: string;
+  email?: string;
   feeDescription: string;
+  directions?: string;
+  adaAccess?: string;
+  address?: {
+    street: string;
+    city: string;
+    state: string;
+    zip: string;
+  };
+  activities?: string[];
+  amenities?: string[];
+  campsiteTypes?: string[];
+  totalCampsites?: number;
+  equipmentAllowed?: string[];
+  links?: { title: string; url: string }[];
 }
 
 export interface RecreationArea {
@@ -193,7 +269,7 @@ export class RecreationGovAdapter extends BaseAdapter {
       }
 
       const response = await fetch(
-        `${this.baseUrl}/recareas/${recAreaId}/facilities?limit=50&apikey=${this.apiKey}`,
+        `${this.baseUrl}/recareas/${recAreaId}/facilities?limit=50&full=true&apikey=${this.apiKey}`,
         {
           headers: {
             'Accept': 'application/json',
@@ -268,6 +344,49 @@ export class RecreationGovAdapter extends BaseAdapter {
   }
 
   private transformFacility(facility: RIDBFacility): RecreationFacility {
+    // Extract address if available
+    const addr = facility.FACILITYADDRESS?.[0];
+    const address = addr ? {
+      street: [addr.FacilityStreetAddress1, addr.FacilityStreetAddress2, addr.FacilityStreetAddress3]
+        .filter(Boolean).join(', '),
+      city: addr.City || '',
+      state: addr.AddressStateCode || '',
+      zip: addr.PostalCode || '',
+    } : undefined;
+
+    // Extract activities
+    const activities = facility.ACTIVITY?.map(a => a.ActivityName).filter(Boolean) || [];
+
+    // Extract campsite types and count
+    const campsites = facility.CAMPSITE || [];
+    const campsiteTypes = [...new Set(campsites.map(c => c.CampsiteType).filter(Boolean))];
+    
+    // Extract equipment allowed from campsites
+    const equipmentSet = new Set<string>();
+    campsites.forEach(c => {
+      c.PERMITTEDEQUIPMENT?.forEach(e => {
+        if (e.EquipmentName) {
+          equipmentSet.add(e.MaxLength > 0 ? `${e.EquipmentName} (max ${e.MaxLength}ft)` : e.EquipmentName);
+        }
+      });
+    });
+
+    // Extract amenities from campsite attributes
+    const amenitiesSet = new Set<string>();
+    campsites.forEach(c => {
+      c.ATTRIBUTES?.forEach(a => {
+        if (a.AttributeValue && a.AttributeValue !== 'N/A' && a.AttributeValue !== 'No') {
+          amenitiesSet.add(`${a.AttributeName}: ${a.AttributeValue}`);
+        }
+      });
+    });
+
+    // Extract links
+    const links = facility.LINK?.map(l => ({
+      title: l.Title || l.LinkType,
+      url: l.URL,
+    })).filter(l => l.url) || [];
+
     return {
       id: facility.FacilityID,
       name: facility.FacilityName,
@@ -280,7 +399,17 @@ export class RecreationGovAdapter extends BaseAdapter {
         longitude: facility.FacilityLongitude || 0,
       },
       phone: facility.FacilityPhone || '',
+      email: facility.FacilityEmail || undefined,
       feeDescription: facility.FacilityUseFeeDescription || '',
+      directions: facility.FacilityDirections || undefined,
+      adaAccess: facility.FacilityAdaAccess || undefined,
+      address: address?.street ? address : undefined,
+      activities: activities.length > 0 ? activities : undefined,
+      amenities: amenitiesSet.size > 0 ? [...amenitiesSet].slice(0, 20) : undefined,
+      campsiteTypes: campsiteTypes.length > 0 ? campsiteTypes : undefined,
+      totalCampsites: campsites.length > 0 ? campsites.length : undefined,
+      equipmentAllowed: equipmentSet.size > 0 ? [...equipmentSet] : undefined,
+      links: links.length > 0 ? links : undefined,
     };
   }
 
