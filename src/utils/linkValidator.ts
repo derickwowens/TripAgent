@@ -402,6 +402,7 @@ export async function validateLinksInResponse(responseText: string): Promise<str
   }
   
   let processedText = responseText;
+  const seenUrls = new Set<string>();
   
   // Validate each link using pattern matching (no HTTP requests)
   for (const link of links) {
@@ -409,12 +410,20 @@ export async function validateLinksInResponse(responseText: string): Promise<str
     
     if (!validation.isValid) {
       if (validation.fixedUrl) {
-        // Replace with fixed URL
-        console.log(`[LinkValidator] Fixing broken link: ${link.url} -> ${validation.fixedUrl}`);
-        processedText = processedText.replace(
-          link.match,
-          `[${link.text}](${validation.fixedUrl})`
-        );
+        // Check if we've already seen this fixed URL
+        if (seenUrls.has(validation.fixedUrl)) {
+          // Duplicate - remove the link entirely, keep just text
+          console.log(`[LinkValidator] Removing duplicate link: ${link.url} (already have ${validation.fixedUrl})`);
+          processedText = processedText.replace(link.match, link.text);
+        } else {
+          // Replace with fixed URL and track it
+          console.log(`[LinkValidator] Fixing broken link: ${link.url} -> ${validation.fixedUrl}`);
+          seenUrls.add(validation.fixedUrl);
+          processedText = processedText.replace(
+            link.match,
+            `[${link.text}](${validation.fixedUrl})`
+          );
+        }
       } else if (validation.shouldRemove) {
         // Remove the entire link, keep just the text
         console.log(`[LinkValidator] Removing broken link: ${link.url}`);
@@ -424,6 +433,9 @@ export async function validateLinksInResponse(responseText: string): Promise<str
         console.log(`[LinkValidator] Converting broken link to text: ${link.url}`);
         processedText = processedText.replace(link.match, link.text);
       }
+    } else {
+      // Valid link - track it to prevent duplicates
+      seenUrls.add(link.url);
     }
   }
   

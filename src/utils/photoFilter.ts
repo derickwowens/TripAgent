@@ -65,9 +65,15 @@ export function calculatePhotoConfidence(
     score += 25; // NPS photos are authoritative, boost to pass threshold
   }
   
-  // BONUS: Unsplash photos that match query get a small boost (quality source)
-  if (url.includes('unsplash') && hasQueryMatch) {
-    score += 5;
+  // BONUS: Unsplash photos get a boost (quality source, pre-curated)
+  // Higher boost if it's a static fallback photo (images.unsplash.com URL)
+  if (url.includes('unsplash')) {
+    if (hasQueryMatch) {
+      score += 10;
+    } else {
+      // Even without direct query match, Unsplash photos are curated and likely relevant
+      score += 20;
+    }
   }
   
   // BONUS: Keyword appears in conversation context

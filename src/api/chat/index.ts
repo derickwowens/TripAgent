@@ -511,7 +511,7 @@ async function handleToolCall(
       break;
 
     case 'get_wildlife':
-      result = await handleGetWildlife(toolUse.input as any, facade);
+      result = await handleGetWildlife(toolUse.input as any, facade, collectedPhotos);
       break;
 
     case 'get_campgrounds':
@@ -622,21 +622,25 @@ async function handleSearchNationalParks(
     // Collect NPS photos
     await collectNpsPhotos(parksForPhotos, collectedPhotos, TARGET_NPS_PHOTOS);
     
-    // Supplement with Unsplash if needed
+    // Supplement with Unsplash if needed (only if we have NPS photos already)
     const unsplash = getUnsplashAdapter();
-    if (collectedPhotos.length < TARGET_NPS_PHOTOS && unsplash.isConfigured()) {
-      const needed = TARGET_NPS_PHOTOS - collectedPhotos.length;
-      console.log(`[Chat] Supplementing with ${needed} Unsplash landscape photos for "${parkName}"`);
-      const unsplashPhotos = await unsplash.searchPhotos(`${parkName} landscape nature`, needed);
-      unsplashPhotos.forEach(photo => {
-        collectedPhotos.push({
-          keyword: parkName,
-          url: photo.url,
-          caption: `${parkName} - ${photo.caption} (${photo.credit})`,
-          source: 'unsplash',
-          photographerId: photo.photographerId,
+    if (collectedPhotos.length > 0 && collectedPhotos.length < TARGET_NPS_PHOTOS && unsplash.isConfigured()) {
+      try {
+        const needed = TARGET_NPS_PHOTOS - collectedPhotos.length;
+        console.log(`[Chat] Supplementing with ${needed} Unsplash landscape photos for "${parkName}"`);
+        const unsplashPhotos = await unsplash.searchPhotos(`${parkName} landscape nature`, needed);
+        unsplashPhotos.forEach(photo => {
+          collectedPhotos.push({
+            keyword: parkName,
+            url: photo.url,
+            caption: `${parkName} - ${photo.caption} (${photo.credit})`,
+            source: 'unsplash',
+            photographerId: photo.photographerId,
+          });
         });
-      });
+      } catch (error: any) {
+        console.error(`[Chat] Unsplash supplement failed: ${error.message} - continuing without fallback photos`);
+      }
     }
     
     // Fetch activity/event photos
@@ -644,24 +648,8 @@ async function handleSearchNationalParks(
       await collectActivityPhotos(facade, parkCode, parkName, collectedPhotos, TARGET_TOTAL_PHOTOS);
     }
   } else {
-    // No NPS match - fall back to Unsplash
-    console.log(`[Chat] No NPS parks matched "${cleanQuery}", falling back to Unsplash`);
-    const unsplash = getUnsplashAdapter();
-    if (unsplash.isConfigured()) {
-      const searchTerm = cleanQuery.length > 2 ? cleanQuery : rawQuery;
-      console.log(`[Chat] Fetching ${TARGET_TOTAL_PHOTOS} Unsplash photos for "${searchTerm}"`);
-      const unsplashPhotos = await unsplash.searchPhotos(`${searchTerm} national park landscape`, TARGET_TOTAL_PHOTOS);
-      const displayName = searchTerm.split(' ').map((w: string) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-      unsplashPhotos.forEach(photo => {
-        collectedPhotos.push({
-          keyword: searchTerm,
-          url: photo.url,
-          caption: `${displayName} - ${photo.caption} (${photo.credit})`,
-          source: 'unsplash',
-          photographerId: photo.photographerId,
-        });
-      });
-    }
+    // No NPS match - do NOT use Unsplash fallback in production
+    console.log(`[Chat] No NPS parks matched "${cleanQuery}" - no photos will be displayed`);
   }
   
   // Extract gateway city from first park if available
@@ -767,20 +755,25 @@ async function collectActivityPhotos(
     for (const feature of uniqueFeatures) {
       if (collectedPhotos.length >= targetTotal) break;
       
-      const searchQueryStr = `${parkName} ${feature}`;
-      const photos = await unsplash.searchPhotos(searchQueryStr, 1);
-      
-      if (photos.length > 0) {
-        const photo = photos[0];
-        if (!collectedPhotos.some(p => p.url === photo.url)) {
-          collectedPhotos.push({
-            keyword: feature,
-            url: photo.url,
-            caption: `${parkName} - ${feature} (${photo.credit})`,
-            source: 'unsplash',
-            photographerId: photo.photographerId,
-          });
+      try {
+        const searchQueryStr = `${parkName} ${feature}`;
+        const photos = await unsplash.searchPhotos(searchQueryStr, 1);
+        
+        if (photos.length > 0) {
+          const photo = photos[0];
+          if (!collectedPhotos.some(p => p.url === photo.url)) {
+            collectedPhotos.push({
+              keyword: feature,
+              url: photo.url,
+              caption: `${parkName} - ${feature} (${photo.credit})`,
+              source: 'unsplash',
+              photographerId: photo.photographerId,
+            });
+          }
         }
+      } catch (error: any) {
+        console.error(`[Chat] Unsplash activity photo failed for "${feature}": ${error.message}`);
+        // Continue without this photo
       }
     }
     
@@ -1128,27 +1121,37 @@ async function handleRefreshPhotos(
   }
   
   console.log(`[Chat] Refreshing photos for "${destination}" with query: "${photoSearchQuery}"`);
-  const freshPhotos = await unsplashAdapter.searchPhotos(photoSearchQuery, photoCount);
   
-  freshPhotos.forEach(photo => {
-    collectedPhotos.push({
-      keyword: event || destination,
-      url: photo.url,
-      caption: photo.caption || photoCaption,
-      source: 'unsplash',
-      photographerId: photo.photographerId,
+  try {
+    const freshPhotos = await unsplashAdapter.searchPhotos(photoSearchQuery, photoCount);
+    
+    freshPhotos.forEach(photo => {
+      collectedPhotos.push({
+        keyword: event || destination,
+        url: photo.url,
+        caption: photo.caption || photoCaption,
+        source: 'unsplash',
+        photographerId: photo.photographerId,
+      });
     });
-  });
-  
-  return {
-    message: event 
-      ? `Found ${freshPhotos.length} photos of ${event} at ${destination}`
-      : `Found ${freshPhotos.length} new photos for ${destination}`,
-    photoCount: freshPhotos.length,
-    destination: destination,
-    event: event || null,
-    style: style || 'general',
-  };
+    
+    return {
+      message: event 
+        ? `Found ${freshPhotos.length} photos of ${event} at ${destination}`
+        : `Found ${freshPhotos.length} new photos for ${destination}`,
+      photoCount: freshPhotos.length,
+      destination: destination,
+      event: event || null,
+      style: style || 'general',
+    };
+  } catch (error: any) {
+    console.error(`[Chat] Unsplash refresh_photos failed: ${error.message}`);
+    return {
+      error: 'Photo service temporarily unavailable',
+      message: 'Unable to fetch new photos at this time',
+      photoCount: 0,
+    };
+  }
 }
 
 async function handleSearchRestaurants(
@@ -1568,7 +1571,8 @@ async function handleGetReservationLink(
 
 async function handleGetWildlife(
   input: { park_code: string; category?: string },
-  facade: TravelFacade
+  facade: TravelFacade,
+  collectedPhotos: PhotoReference[]
 ): Promise<any> {
   const parkCode = input.park_code.toLowerCase();
   console.log(`[Chat] Wildlife query for park: ${parkCode}, category: ${input.category || 'all'}`);
@@ -1584,6 +1588,18 @@ async function handleGetWildlife(
       };
     }
 
+    // Collect wildlife photos for gallery
+    species.slice(0, 12).forEach(s => {
+      if (s.photoUrl) {
+        collectedPhotos.push({
+          keyword: s.commonName,
+          url: s.photoUrl,
+          caption: `${s.commonName} - ${s.count} observations (iNaturalist)`,
+          source: 'other',
+        });
+      }
+    });
+
     // Group by category for better display
     const grouped: Record<string, typeof species> = {};
     for (const s of species) {
@@ -1591,6 +1607,17 @@ async function handleGetWildlife(
       if (!grouped[cat]) grouped[cat] = [];
       grouped[cat].push(s);
     }
+
+    // Generate links for species with Wikipedia pages
+    const links: Array<{ label: string; url: string }> = [];
+    species.slice(0, 5).forEach(s => {
+      if (s.wikipediaUrl) {
+        links.push({
+          label: `${s.commonName} on Wikipedia`,
+          url: s.wikipediaUrl,
+        });
+      }
+    });
 
     return {
       parkCode,
@@ -1604,6 +1631,7 @@ async function handleGetWildlife(
         photoUrl: s.photoUrl,
         wikipediaUrl: s.wikipediaUrl,
       })),
+      links: links.length > 0 ? links : undefined,
       dataSource: 'iNaturalist (research-grade observations)',
     };
   } catch (error: any) {
@@ -1635,6 +1663,23 @@ async function handleGetCampgrounds(
       };
     }
 
+    // Generate reservation links for campgrounds
+    const links: Array<{ label: string; url: string }> = [];
+    campgrounds.slice(0, 5).forEach(c => {
+      if (c.reservable && c.reservationUrl) {
+        links.push({
+          label: `Reserve ${c.name}`,
+          url: c.reservationUrl,
+        });
+      }
+    });
+    
+    // Add general NPS camping page
+    links.push({
+      label: 'NPS Camping Information',
+      url: `https://www.nps.gov/${parkCode}/planyourvisit/camping.htm`,
+    });
+
     return {
       parkCode,
       totalCampgrounds: campgrounds.length,
@@ -1648,6 +1693,7 @@ async function handleGetCampgrounds(
         feeDescription: c.feeDescription,
         coordinates: c.coordinates.latitude ? c.coordinates : undefined,
       })),
+      links: links.length > 0 ? links : undefined,
       dataSource: 'Recreation.gov RIDB API',
       bookingNote: 'Book campgrounds at recreation.gov - popular sites fill months in advance!',
     };

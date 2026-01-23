@@ -512,8 +512,8 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255,255,255,0.15)',
   },
   profileChip: {
-    backgroundColor: 'rgba(22, 101, 52, 0.6)',
-    borderColor: 'rgba(22, 101, 52, 0.8)',
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    borderColor: 'rgba(255,255,255,0.15)',
   },
   promptText: {
     color: '#FFFFFF',

@@ -3,7 +3,6 @@
  */
 import { PhotoReference } from './types.js';
 import { validateLinksInResponse } from '../../utils/linkValidator.js';
-import { filterPhotosByConfidence, PhotoReference as FilterablePhoto, PhotoFilterContext } from '../../utils/photoFilter.js';
 
 /**
  * Clean up formatting artifacts from Claude's response
@@ -45,65 +44,43 @@ export function cleanResponseFormatting(text: string): string {
 
 /**
  * Filter and validate photos from tool results
+ * Uses DETERMINISTIC rules - no confidence scoring
  */
 export function filterPhotos(
   collectedPhotos: PhotoReference[],
   tripDestination: string | undefined,
   searchQuery: string,
-  conversationText: string
+  _conversationText: string
 ): PhotoReference[] {
-  // IMPROVED FILTERING STRATEGY:
-  // - NPS photos: validate park name appears in keyword/caption/URL
-  // - Unsplash photos: apply confidence scoring
+  // DETERMINISTIC FILTERING:
+  // 1. NPS photos: validate URL is from nps.gov OR keyword matches destination
+  // 2. Unsplash photos: include all (they're already curated for the destination)
+  // 3. Other photos (wildlife, etc.): include all
+  
   const npsPhotos = collectedPhotos.filter(p => p.source === 'nps');
   const unsplashPhotos = collectedPhotos.filter(p => p.source === 'unsplash');
+  const otherPhotos = collectedPhotos.filter(p => p.source !== 'nps' && p.source !== 'unsplash');
   
-  // Validate NPS photos by string matching on park name
-  // Require ALL destination words to match (e.g., "joshua" AND "tree")
-  const cleanDestWords = (tripDestination || searchQuery || '')
-    .toLowerCase()
-    .replace(/national park/gi, '')
-    .replace(/national/gi, '')
-    .split(/\s+/)
-    .filter((w: string) => w.length >= 3);
-  
+  // For NPS photos, validate they're from official NPS source or match destination
+  const destLower = (tripDestination || searchQuery || '').toLowerCase();
   const validatedNpsPhotos = npsPhotos.filter(photo => {
-    const keyword = photo.keyword.toLowerCase();
-    const caption = (photo.caption || '').toLowerCase();
     const url = photo.url.toLowerCase();
-    const combined = `${keyword} ${caption} ${url}`;
+    const keyword = photo.keyword.toLowerCase();
     
-    // Require ALL destination words to appear (not just any one)
-    const allWordsMatch = cleanDestWords.length > 0 && 
-      cleanDestWords.every((word: string) => combined.includes(word));
+    // Accept if URL is from nps.gov (official source)
+    if (url.includes('nps.gov')) return true;
     
-    // Also accept if URL is from nps.gov (official source, trusted)
-    const isOfficialNps = url.includes('nps.gov');
+    // Accept if keyword matches part of destination
+    if (destLower && keyword.length > 2 && destLower.includes(keyword)) return true;
+    if (destLower && destLower.length > 2 && keyword.includes(destLower.split(' ')[0])) return true;
     
-    return allWordsMatch || isOfficialNps;
+    return false;
   });
   
-  console.log(`[Chat] NPS validation: kept ${validatedNpsPhotos.length} of ${npsPhotos.length} (all words: "${cleanDestWords.join(' + ')}")`);
+  console.log(`[Chat] Photos: ${validatedNpsPhotos.length} NPS, ${unsplashPhotos.length} Unsplash, ${otherPhotos.length} other`);
   
-  let filteredPhotos = [...validatedNpsPhotos];
-  
-  // Only filter Unsplash photos if we have a search query
-  if (unsplashPhotos.length > 0 && searchQuery) {
-    const filterContext: PhotoFilterContext = {
-      searchQuery: searchQuery,
-      destination: tripDestination,
-      conversationText: conversationText
-    };
-    const filteredUnsplash = filterPhotosByConfidence(unsplashPhotos as FilterablePhoto[], filterContext, 50);
-    filteredPhotos.push(...filteredUnsplash as PhotoReference[]);
-    console.log(`[Chat] Unsplash: kept ${filteredUnsplash.length} of ${unsplashPhotos.length} photos`);
-  } else {
-    filteredPhotos.push(...unsplashPhotos);
-  }
-  
-  console.log(`[Chat] Final: ${npsPhotos.length} NPS + ${filteredPhotos.length - validatedNpsPhotos.length} Unsplash = ${filteredPhotos.length} photos`);
-  
-  return filteredPhotos;
+  // Combine all photos - Unsplash and other sources are pre-curated, include them all
+  return [...validatedNpsPhotos, ...unsplashPhotos, ...otherPhotos];
 }
 
 /**
