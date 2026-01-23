@@ -14,6 +14,7 @@ NC='\033[0m' # No Color
 BUMP_TYPE=""
 RC_BUILD=false
 VALIDATE_LINKS=false
+INCREMENT_VERSION=false
 
 for arg in "$@"; do
     case $arg in
@@ -22,6 +23,9 @@ for arg in "$@"; do
             ;;
         --validate-links)
             VALIDATE_LINKS=true
+            ;;
+        -i|--increment)
+            INCREMENT_VERSION=true
             ;;
         major|minor|hotfix)
             BUMP_TYPE=$arg
@@ -34,12 +38,13 @@ BUMP_TYPE=${BUMP_TYPE:-minor}
 
 if [[ ! "$BUMP_TYPE" =~ ^(major|minor|hotfix)$ ]]; then
     echo -e "${RED}Error: Invalid bump type '$BUMP_TYPE'${NC}"
-    echo "Usage: ./scripts/deploy-android.sh [major|minor|hotfix] [--rc] [--validate-links]"
+    echo "Usage: ./scripts/deploy-android.sh [major|minor|hotfix] [--rc] [--validate-links] [-i|--increment]"
     echo "  major           - Bump major version (1.0.0 -> 2.0.0)"
     echo "  minor           - Bump minor version (1.0.0 -> 1.1.0)"
     echo "  hotfix          - Bump patch version (1.0.0 -> 1.0.1)"
     echo "  --rc            - Build as Release Candidate for closed testing"
     echo "  --validate-links - Run NPS link validation before build (requires NPS_API_KEY)"
+    echo "  -i, --increment - Increment version number (default: keep current version)"
     exit 1
 fi
 
@@ -80,29 +85,41 @@ CURRENT_VERSION_CODE=$(grep 'versionCode:' mobile/app.config.js | head -1 | sed 
 
 echo -e "Current version: ${YELLOW}$CURRENT_VERSION${NC} (versionCode: $CURRENT_VERSION_CODE)"
 
-# Parse version components
-IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_VERSION"
+# Strip any existing platform suffix and parse version components
+CLEAN_VERSION=$(echo "$CURRENT_VERSION" | sed 's/-ios$//' | sed 's/-android$//')
+IFS='.' read -r MAJOR MINOR PATCH <<< "$CLEAN_VERSION"
 
-# Calculate new version
-case $BUMP_TYPE in
-    major)
-        NEW_MAJOR=$((MAJOR + 1))
-        NEW_VERSION="$NEW_MAJOR.0.0"
-        ;;
-    minor)
-        NEW_MINOR=$((MINOR + 1))
-        NEW_VERSION="$MAJOR.$NEW_MINOR.0"
-        ;;
-    hotfix)
-        NEW_PATCH=$((PATCH + 1))
-        NEW_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
-        ;;
-esac
+# Calculate new version based on --increment flag
+if [ "$INCREMENT_VERSION" = true ]; then
+    case $BUMP_TYPE in
+        major)
+            NEW_MAJOR=$((MAJOR + 1))
+            BASE_VERSION="$NEW_MAJOR.0.0"
+            ;;
+        minor)
+            NEW_MINOR=$((MINOR + 1))
+            BASE_VERSION="$MAJOR.$NEW_MINOR.0"
+            ;;
+        hotfix)
+            NEW_PATCH=$((PATCH + 1))
+            BASE_VERSION="$MAJOR.$MINOR.$NEW_PATCH"
+            ;;
+    esac
+    # Increment versionCode when incrementing version
+    NEW_VERSION_CODE=$((CURRENT_VERSION_CODE + 1))
+else
+    # Keep current version, don't increment versionCode
+    BASE_VERSION="$MAJOR.$MINOR.$PATCH"
+    NEW_VERSION_CODE=$CURRENT_VERSION_CODE
+fi
 
-# Always increment versionCode
-NEW_VERSION_CODE=$((CURRENT_VERSION_CODE + 1))
+# Add Android suffix to differentiate from iOS builds in EAS
+NEW_VERSION="${BASE_VERSION}-android"
 
 echo -e "New version: ${GREEN}$NEW_VERSION${NC} (versionCode: $NEW_VERSION_CODE)"
+if [ "$INCREMENT_VERSION" = false ]; then
+    echo -e "${YELLOW}(Version not incremented - use -i to increment)${NC}"
+fi
 echo ""
 
 # Confirm with user
