@@ -5,7 +5,7 @@ export default ({ config }) => {
     ...config,
     name: "TripAgent",
     slug: "tripagent",
-    version: "1.9.0-ios",
+    version: "1.9.0",
     orientation: "portrait",
     icon: "./assets/icon.png",
     userInterfaceStyle: "automatic",

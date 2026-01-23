@@ -113,8 +113,8 @@ else
     NEW_BUILD_NUMBER=$CURRENT_BUILD_NUMBER
 fi
 
-# Add iOS suffix to differentiate from Android builds in EAS
-NEW_VERSION="${BASE_VERSION}-ios"
+# Version must be X.Y.Z format for Apple (no suffixes allowed)
+NEW_VERSION="${BASE_VERSION}"
 
 echo -e "New version: ${GREEN}$NEW_VERSION${NC} (buildNumber: $NEW_BUILD_NUMBER)"
 if [ "$INCREMENT_VERSION" = false ]; then
