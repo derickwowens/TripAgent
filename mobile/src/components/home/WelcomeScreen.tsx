@@ -1,24 +1,12 @@
 import React, { useState, useRef } from 'react';
 import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image, Animated } from 'react-native';
+import { NATIONAL_PARKS, getParksByStateProximity, NationalParkInfo } from '../../data/nationalParks';
 
 const QUICK_PROMPTS = [
   { label: 'Somewhere warm on a budget', template: 'Take me somewhere warm on a budget' },
   { label: 'Weekend mountain getaway', template: 'Plan a weekend mountain getaway' },
   { label: 'Beach destination', template: 'Find me a beach destination' },
   { label: 'City break nearby', template: 'Suggest a city break nearby' },
-];
-
-const NATIONAL_PARKS = [
-  { name: 'Yellowstone National Park', state: 'Wyoming/Montana/Idaho', activities: ['geysers', 'wildlife viewing', 'hiking', 'hot springs'] },
-  { name: 'Grand Canyon National Park', state: 'Arizona', activities: ['hiking', 'scenic viewpoints', 'river rafting', 'photography'] },
-  { name: 'Yosemite National Park', state: 'California', activities: ['waterfalls', 'rock climbing', 'giant sequoias', 'valley views'] },
-  { name: 'Zion National Park', state: 'Utah', activities: ['canyoneering', 'hiking', 'river walks', 'scenic drives'] },
-  { name: 'Great Smoky Mountains National Park', state: 'Tennessee/North Carolina', activities: ['mountain views', 'hiking', 'wildlife', 'historic buildings'] },
-  { name: 'Rocky Mountain National Park', state: 'Colorado', activities: ['alpine lakes', 'wildlife', 'mountain hiking', 'scenic drives'] },
-  { name: 'Acadia National Park', state: 'Maine', activities: ['coastal views', 'hiking', 'bike paths', 'sunrise spots'] },
-  { name: 'Arches National Park', state: 'Utah', activities: ['natural arches', 'hiking', 'photography', 'stargazing'] },
-  { name: 'Glacier National Park', state: 'Montana', activities: ['glaciers', 'mountain lakes', 'wildlife', 'scenic drives'] },
-  { name: 'Olympic National Park', state: 'Washington', activities: ['rainforests', 'beaches', 'mountains', 'hot springs'] },
 ];
 
 interface WelcomeScreenProps {
@@ -257,31 +245,10 @@ const generateProfilePrompt = (profile: string): string => {
 
 const generateRandomPrompt = (userLocation?: { city: string; state: string; nearestAirport: string }): string => {
   // Filter parks by proximity to user if location is available
-  let availableParks = NATIONAL_PARKS;
+  let availableParks: NationalParkInfo[] = NATIONAL_PARKS;
   
   if (userLocation) {
-    // Simple state-based proximity for now - prioritize parks in same or neighboring states
-    const userState = userLocation.state.toLowerCase();
-    const stateProximity: { [key: string]: string[] } = {
-      'california': ['california', 'nevada', 'arizona', 'oregon'],
-      'arizona': ['arizona', 'california', 'nevada', 'utah', 'new mexico'],
-      'utah': ['utah', 'arizona', 'colorado', 'new mexico', 'nevada', 'idaho', 'wyoming'],
-      'colorado': ['colorado', 'utah', 'wyoming', 'new mexico', 'nebraska', 'kansas', 'oklahoma'],
-      'wyoming': ['wyoming', 'colorado', 'utah', 'idaho', 'montana', 'nebraska', 'south dakota'],
-      'montana': ['montana', 'wyoming', 'idaho', 'north dakota', 'south dakota'],
-      'idaho': ['idaho', 'montana', 'wyoming', 'utah', 'washington', 'oregon', 'nevada'],
-      'washington': ['washington', 'oregon', 'idaho', 'montana'],
-      'oregon': ['oregon', 'washington', 'california', 'idaho', 'nevada'],
-      'nevada': ['nevada', 'california', 'arizona', 'utah', 'idaho', 'oregon'],
-      'tennessee': ['tennessee', 'north carolina', 'kentucky', 'virginia', 'georgia', 'alabama', 'mississippi', 'arkansas', 'missouri'],
-      'north carolina': ['north carolina', 'tennessee', 'virginia', 'south carolina', 'georgia', 'kentucky'],
-      'maine': ['maine', 'new hampshire', 'vermont', 'massachusetts'],
-    };
-    
-    const nearbyStates = stateProximity[userState] || [];
-    const nearbyParks = NATIONAL_PARKS.filter(park => 
-      nearbyStates.some(state => park.state.toLowerCase().includes(state))
-    );
+    const nearbyParks = getParksByStateProximity(userLocation.state);
     
     // If we found nearby parks, use them 70% of the time
     if (nearbyParks.length > 0 && Math.random() < 0.7) {
@@ -491,6 +458,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontWeight: '300',
     letterSpacing: 0.5,
+  },
+  subtitle: {
+    fontSize: 14,
+    color: 'rgba(255,255,255,0.6)',
+    textAlign: 'center',
+    fontWeight: '400',
+    marginTop: 8,
+    letterSpacing: 0.3,
   },
   loadingText: {
     fontSize: 20,

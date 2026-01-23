@@ -37,6 +37,7 @@ interface SideMenuProps {
   onNewConversation: () => void;
   onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
   onToggleFavorite?: (id: string) => void;
+  onResetOnboarding?: () => void;
 }
 
 export const SideMenu: React.FC<SideMenuProps> = ({
@@ -52,6 +53,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onNewConversation,
   onUpdateConversation,
   onToggleFavorite,
+  onResetOnboarding,
 }) => {
   const { isDarkMode } = useDarkModeContext();
   
@@ -109,6 +111,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               userProfile={userProfile}
               onSaveProfile={onSaveProfile}
               onAddSuggestion={onAddProfileSuggestion}
+              onResetOnboarding={onResetOnboarding}
             />
 
             <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>

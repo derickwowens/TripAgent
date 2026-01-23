@@ -1,6 +1,6 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal, KeyboardAvoidingView, Platform, ScrollView, ImageBackground } from 'react-native';
-import { SavedConversation, useDarkModeContext } from '../../hooks';
+import { SavedConversation, useDarkModeContext, getAllTripContexts, TripContextData } from '../../hooks';
 
 interface ConversationListProps {
   conversations: SavedConversation[];
@@ -53,6 +53,16 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   const [deleteModalVisible, setDeleteModalVisible] = useState(false);
   const [deletingConvId, setDeletingConvId] = useState<string | null>(null);
   const [deletingConvTitle, setDeletingConvTitle] = useState('');
+  const [tripContexts, setTripContexts] = useState<Record<string, TripContextData>>({});
+
+  // Load trip contexts for all conversations
+  useEffect(() => {
+    const loadContexts = async () => {
+      const contexts = await getAllTripContexts();
+      setTripContexts(contexts);
+    };
+    loadContexts();
+  }, [conversations]);
 
   // Sort by favorites first, then by last updated
   const filteredConversations = useMemo(() => {
@@ -133,6 +143,48 @@ export const ConversationList: React.FC<ConversationListProps> = ({
     return null;
   };
 
+  // Get trip summary from cached context
+  const getTripSummary = (convId: string): string | null => {
+    const ctx = tripContexts[convId];
+    if (!ctx) return null;
+    
+    const parts: string[] = [];
+    
+    if (ctx.park?.name) {
+      parts.push(ctx.park.name.replace(' National Park', ''));
+    } else if (ctx.destination?.name) {
+      parts.push(ctx.destination.name);
+    }
+    
+    if (ctx.travelDates?.arrival) {
+      parts.push(ctx.travelDates.arrival);
+    }
+    
+    if (ctx.travelers && ctx.travelers > 1) {
+      parts.push(`${ctx.travelers} travelers`);
+    }
+    
+    return parts.length > 0 ? parts.join(' • ') : null;
+  };
+
+  // Get additional trip details from cached context
+  const getTripDetails = (convId: string): { restaurants?: number; hikes?: number } | null => {
+    const ctx = tripContexts[convId];
+    if (!ctx) return null;
+    
+    const details: { restaurants?: number; hikes?: number } = {};
+    
+    if (ctx.restaurants && ctx.restaurants.length > 0) {
+      details.restaurants = ctx.restaurants.length;
+    }
+    
+    if (ctx.hikes && ctx.hikes.length > 0) {
+      details.hikes = ctx.hikes.length;
+    }
+    
+    return Object.keys(details).length > 0 ? details : null;
+  };
+
   return (
     <KeyboardAvoidingView 
       style={styles.keyboardAvoid}
@@ -153,6 +205,8 @@ export const ConversationList: React.FC<ConversationListProps> = ({
       <ScrollView style={styles.list} keyboardShouldPersistTaps="handled">
         {filteredConversations.map((conv) => {
           const photoUrl = getConversationPhoto(conv);
+          const tripSummary = getTripSummary(conv.id);
+          const tripDetails = getTripDetails(conv.id);
           
           const TileContent = (
             <>
@@ -169,7 +223,12 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                 <View style={styles.dateRow}>
                   <Text style={styles.date}>{formatDate(conv.metadata.createdAt)}</Text>
                 </View>
-                {conv.metadata.description ? (
+                {/* Show trip summary from cached context if available */}
+                {tripSummary ? (
+                  <Text style={styles.tripSummary} numberOfLines={1}>
+                    {tripSummary}
+                  </Text>
+                ) : conv.metadata.description ? (
                   <Text style={styles.description} numberOfLines={1}>
                     {conv.metadata.description}
                   </Text>
@@ -180,6 +239,17 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                     )}
                     {conv.metadata.travelDates && (
                       <Text style={styles.metaTag}>{conv.metadata.travelDates}</Text>
+                    )}
+                  </View>
+                )}
+                {/* Show trip details badges from cached context */}
+                {tripDetails && (
+                  <View style={styles.tripDetailsBadges}>
+                    {tripDetails.hikes && (
+                      <Text style={styles.tripBadge}>🥾 {tripDetails.hikes}</Text>
+                    )}
+                    {tripDetails.restaurants && (
+                      <Text style={styles.tripBadge}>🍽️ {tripDetails.restaurants}</Text>
                     )}
                   </View>
                 )}
@@ -450,6 +520,24 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: 'rgba(255,255,255,0.6)',
     fontStyle: 'italic',
+  },
+  tripSummary: {
+    fontSize: 12,
+    color: 'rgba(255,255,255,0.7)',
+    marginBottom: 4,
+  },
+  tripDetailsBadges: {
+    flexDirection: 'row',
+    gap: 8,
+    marginTop: 4,
+  },
+  tripBadge: {
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.6)',
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
   },
   actionBadge: {
     width: 28,

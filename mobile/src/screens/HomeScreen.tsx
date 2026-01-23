@@ -17,7 +17,7 @@ import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, 
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
-import { parseUserMessage, parseApiResponse } from '../utils/responseParser';
+import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
@@ -51,14 +51,19 @@ const getRandomBackground = () => DEFAULT_BACKGROUNDS[Math.floor(Math.random() *
 
 const HomeScreen: React.FC = () => {
   const [inputText, setInputText] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [loadingStatus, setLoadingStatus] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
   const [editingTitle, setEditingTitle] = useState(false);
   const [tempTitle, setTempTitle] = useState('');
   const [defaultBackground] = useState(() => getRandomBackground()); // Random bg per session
   const [showPhotoGallery, setShowPhotoGallery] = useState(true);
   const scrollViewRef = useRef<ScrollView>(null);
+  
+  // Per-conversation loading state (allows multiple conversations to load simultaneously)
+  const [conversationLoadingState, setConversationLoadingState] = useState<Map<string | null, { loading: boolean; status: string }>>(new Map());
+  
+  // Separate loading state for non-conversation operations (itinerary generation, etc.)
+  const [globalLoading, setGlobalLoading] = useState(false);
+  const [globalLoadingStatus, setGlobalLoadingStatus] = useState('');
 
   const { userLocation, locationLoading } = useLocation();
   const { 
@@ -72,7 +77,26 @@ const HomeScreen: React.FC = () => {
     updateConversation,
     toggleFavorite,
     addMessage,
+    addMessagesToConversation,
   } = useConversations(userLocation?.nearestAirport);
+  
+  // Derived loading state for current conversation
+  const currentLoadingState = conversationLoadingState.get(currentConversationId) || { loading: false, status: '' };
+  const isLoading = currentLoadingState.loading;
+  const loadingStatus = currentLoadingState.status;
+  
+  // Helper to update loading state for a specific conversation
+  const setConversationLoading = (conversationId: string | null, loading: boolean, status: string = '') => {
+    setConversationLoadingState(prev => {
+      const next = new Map(prev);
+      if (loading) {
+        next.set(conversationId, { loading, status });
+      } else {
+        next.delete(conversationId);
+      }
+      return next;
+    });
+  };
   const { 
     userProfile, 
     profileExpanded, 
@@ -83,7 +107,7 @@ const HomeScreen: React.FC = () => {
     toggleExpanded 
   } = useUserProfile();
   const { isDarkMode, toggleDarkMode } = useDarkMode();
-  const { hasCompletedOnboarding, isLoading: onboardingLoading, completeOnboarding } = useOnboarding();
+  const { hasCompletedOnboarding, isLoading: onboardingLoading, completeOnboarding, resetOnboarding } = useOnboarding();
   
   // Trip context cache - persists structured trip data locally
   const {
@@ -171,8 +195,23 @@ const HomeScreen: React.FC = () => {
     }
   }, [allPhotos.length]);
 
+  // Switching conversations - requests continue in background, loading state is per-conversation
+  const handleLoadConversation = (conversation: SavedConversation) => {
+    // Simply load the conversation - any in-flight requests for other conversations
+    // continue in the background and will update their respective conversations
+    loadConversation(conversation);
+  };
+
+  // Starting new conversation - requests continue in background
+  const handleStartNewConversation = () => {
+    startNewConversation();
+  };
+
   const handleSend = async () => {
     if (!inputText.trim() || isLoading) return;
+
+    // Track which conversation this request belongs to
+    const requestConversationId = currentConversationId;
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -189,8 +228,9 @@ const HomeScreen: React.FC = () => {
     setTimeout(() => {
       scrollViewRef.current?.scrollToEnd({ animated: true });
     }, 50);
-    setIsLoading(true);
-    setLoadingStatus('Thinking...');
+    
+    // Set loading state for THIS conversation
+    setConversationLoading(requestConversationId, true, 'Thinking...');
 
     try {
       const chatMessages: ApiChatMessage[] = updatedMessages.map(m => ({
@@ -227,45 +267,54 @@ const HomeScreen: React.FC = () => {
         ...(cachedContext || {}),
       };
 
-      // Start with initial loading state
-      setLoadingStatus('Thinking...');
-
       // Use streaming to get real-time tool status updates
       const response = await sendChatMessageWithStream(
         chatMessages, 
         context, 
         MODEL,
-        (toolStatus) => setLoadingStatus(toolStatus)
+        (toolStatus) => {
+          // Update status for this specific conversation
+          setConversationLoading(requestConversationId, true, toolStatus);
+        }
       );
       
-      // Parse response to extract and cache structured data
-      const parsedResponse = parseApiResponse(response.response);
-      if (parsedResponse.links.length > 0) {
-        addLinks(parsedResponse.links);
-      }
-      
-      // If segments are provided, create multiple message bubbles for better display
+      // Build response messages
+      let responseMessages: Message[];
       if (response.segments && response.segments.length > 1) {
-        const segmentMessages: Message[] = response.segments.map((segment, index) => ({
+        responseMessages = response.segments.map((segment, index) => ({
           id: (Date.now() + index + 1).toString(),
           type: 'assistant' as const,
           content: segment,
           timestamp: new Date(),
-          // Only attach photos to the last segment
           photos: index === response.segments!.length - 1 ? response.photos : undefined,
         }));
-        setMessages(prev => [...prev, ...segmentMessages]);
       } else {
-        // Single message as before
-        const assistantMessage: Message = {
+        responseMessages = [{
           id: (Date.now() + 1).toString(),
-          type: 'assistant',
+          type: 'assistant' as const,
           content: response.response,
           timestamp: new Date(),
           photos: response.photos,
-        };
-        setMessages(prev => [...prev, assistantMessage]);
+        }];
       }
+      
+      // Route response to the correct conversation
+      // If user is still on this conversation, update live state
+      // Otherwise, update the saved conversation in storage
+      if (currentConversationId === requestConversationId) {
+        setMessages(prev => [...prev, ...responseMessages]);
+      } else {
+        // User switched - update the background conversation
+        await addMessagesToConversation(requestConversationId, responseMessages);
+        console.log(`[Conversation Queue] Response routed to background conversation ${requestConversationId}`);
+      }
+      
+      // Validate and cache links AFTER displaying response (async, non-blocking)
+      parseApiResponseWithValidation(response.response).then(validated => {
+        if (validated.links.length > 0) {
+          addLinks(validated.links);
+        }
+      });
     } catch (error: any) {
       console.error('Chat error:', error);
       
@@ -315,16 +364,27 @@ const HomeScreen: React.FC = () => {
         isError: true,
         lastUserMessage: lastUserMsg || inputText,
       };
-      setMessages(prev => [...prev, errorMessage]);
+      
+      // Route error to the correct conversation
+      if (currentConversationId === requestConversationId) {
+        setMessages(prev => [...prev, errorMessage]);
+      } else {
+        await addMessagesToConversation(requestConversationId, [errorMessage]);
+      }
     } finally {
-      setIsLoading(false);
-      setLoadingStatus('');
-      setTimeout(() => scrollViewRef.current?.scrollToEnd({ animated: true }), 100);
+      // Clear loading state for this specific conversation
+      setConversationLoading(requestConversationId, false);
+      if (currentConversationId === requestConversationId) {
+        setTimeout(() => scrollViewRef.current?.scrollToEnd({ animated: true }), 100);
+      }
     }
   };
 
   const handleSendWithMessage = async (messageContent: string) => {
     if (!messageContent.trim() || isLoading) return;
+
+    // Track which conversation this request belongs to (null for new conversations)
+    const requestConversationId = currentConversationId;
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -335,8 +395,9 @@ const HomeScreen: React.FC = () => {
 
     const updatedMessages = [userMessage];
     setMessages(updatedMessages);
-    setIsLoading(true);
-    setLoadingStatus('Thinking...');
+    
+    // Set loading state for THIS conversation
+    setConversationLoading(requestConversationId, true, 'Thinking...');
 
     try {
       const chatMessages: ApiChatMessage[] = updatedMessages.map(m => ({
@@ -372,45 +433,51 @@ const HomeScreen: React.FC = () => {
         ...(cachedContext || {}),
       };
 
-      // Start with initial loading state
-      setLoadingStatus('Thinking...');
-
       // Use streaming to get real-time tool status updates
       const response = await sendChatMessageWithStream(
         chatMessages, 
         context, 
         MODEL,
-        (toolStatus) => setLoadingStatus(toolStatus)
+        (toolStatus) => {
+          // Update status for this specific conversation
+          setConversationLoading(requestConversationId, true, toolStatus);
+        }
       );
       
-      // Parse response to extract and cache structured data
-      const parsedResponse = parseApiResponse(response.response);
-      if (parsedResponse.links.length > 0) {
-        addLinks(parsedResponse.links);
-      }
-      
-      // If segments are provided, create multiple message bubbles for better display
+      // Build response messages
+      let responseMessages: Message[];
       if (response.segments && response.segments.length > 1) {
-        const segmentMessages: Message[] = response.segments.map((segment, index) => ({
+        responseMessages = response.segments.map((segment, index) => ({
           id: (Date.now() + index + 1).toString(),
           type: 'assistant' as const,
           content: segment,
           timestamp: new Date(),
-          // Only attach photos to the last segment
           photos: index === response.segments!.length - 1 ? response.photos : undefined,
         }));
-        setMessages(prev => [...prev, ...segmentMessages]);
       } else {
-        // Single message as before
-        const assistantMessage: Message = {
+        responseMessages = [{
           id: (Date.now() + 1).toString(),
-          type: 'assistant',
+          type: 'assistant' as const,
           content: response.response,
           timestamp: new Date(),
           photos: response.photos,
-        };
-        setMessages(prev => [...prev, assistantMessage]);
+        }];
       }
+      
+      // Route response to the correct conversation
+      if (currentConversationId === requestConversationId) {
+        setMessages(prev => [...prev, ...responseMessages]);
+      } else {
+        await addMessagesToConversation(requestConversationId, responseMessages);
+        console.log(`[Conversation Queue] Response routed to background conversation ${requestConversationId}`);
+      }
+      
+      // Validate and cache links AFTER displaying response (async, non-blocking)
+      parseApiResponseWithValidation(response.response).then(validated => {
+        if (validated.links.length > 0) {
+          addLinks(validated.links);
+        }
+      });
     } catch (error: any) {
       console.error('Chat error:', error);
       
@@ -422,27 +489,35 @@ const HomeScreen: React.FC = () => {
         isError: true,
         lastUserMessage: messageContent,
       };
-      setMessages(prev => [...prev, errorMessage]);
+      
+      // Route error to the correct conversation
+      if (currentConversationId === requestConversationId) {
+        setMessages(prev => [...prev, errorMessage]);
+      } else {
+        await addMessagesToConversation(requestConversationId, [errorMessage]);
+      }
     } finally {
-      setIsLoading(false);
-      setLoadingStatus('');
-      setTimeout(() => scrollViewRef.current?.scrollToEnd({ animated: true }), 100);
+      // Clear loading state for this specific conversation
+      setConversationLoading(requestConversationId, false);
+      if (currentConversationId === requestConversationId) {
+        setTimeout(() => scrollViewRef.current?.scrollToEnd({ animated: true }), 100);
+      }
     }
   };
 
   const handleGenerateItinerary = async (conversation: SavedConversation) => {
     setMenuOpen(false);
-    setIsLoading(true);
-    setLoadingStatus('Generating your itinerary...');
+    setGlobalLoading(true);
+    setGlobalLoadingStatus('Generating your itinerary...');
     
     try {
-      const itineraryData = await generateItinerary(conversation, setLoadingStatus, userProfile || undefined);
+      const itineraryData = await generateItinerary(conversation, setGlobalLoadingStatus, userProfile || undefined);
       
       if (itineraryData) {
-        setLoadingStatus('Creating shareable page...');
+        setGlobalLoadingStatus('Creating shareable page...');
         const saved = await saveItineraryToDevice(conversation, itineraryData);
-        setIsLoading(false);
-        setLoadingStatus('');
+        setGlobalLoading(false);
+        setGlobalLoadingStatus('');
         
         if (saved) {
           const hasHtmlUrl = !!saved.htmlUrl;
@@ -482,8 +557,8 @@ const HomeScreen: React.FC = () => {
       console.error('Error generating itinerary:', error);
       Alert.alert('Error', 'Something went wrong. Please try again.');
     } finally {
-      setIsLoading(false);
-      setLoadingStatus('');
+      setGlobalLoading(false);
+      setGlobalLoadingStatus('');
     }
   };
 
@@ -626,14 +701,15 @@ const HomeScreen: React.FC = () => {
             
             <ChatMessages
               messages={messages}
-              isLoading={isLoading}
-              loadingStatus={loadingStatus}
+              isLoading={isLoading || globalLoading}
+              loadingStatus={loadingStatus || globalLoadingStatus}
               onRetry={async (lastUserMessage) => {
+                const retryConversationId = currentConversationId;
+                
                 // Remove all error messages from conversation
                 const cleanedMessages = messages.filter(m => !m.isError);
                 setMessages(cleanedMessages);
-                setIsLoading(true);
-                setLoadingStatus('Retrying...');
+                setConversationLoading(retryConversationId, true, 'Retrying...');
                 
                 try {
                   // Use full conversation history for context
@@ -655,28 +731,34 @@ const HomeScreen: React.FC = () => {
                     chatMessages, 
                     context, 
                     MODEL,
-                    (toolStatus) => setLoadingStatus(toolStatus)
+                    (toolStatus) => setConversationLoading(retryConversationId, true, toolStatus)
                   );
                   
-                  // If segments are provided, create multiple message bubbles
+                  // Build response messages
+                  let responseMessages: Message[];
                   if (result.segments && result.segments.length > 1) {
-                    const segmentMessages: Message[] = result.segments.map((segment, index) => ({
+                    responseMessages = result.segments.map((segment, index) => ({
                       id: (Date.now() + index + 1).toString(),
                       type: 'assistant' as const,
                       content: segment,
                       timestamp: new Date(),
                       photos: index === result.segments!.length - 1 ? result.photos : undefined,
                     }));
-                    setMessages(prev => [...prev.filter(m => !m.isError), ...segmentMessages]);
                   } else {
-                    const assistantMessage: Message = {
+                    responseMessages = [{
                       id: (Date.now() + 1).toString(),
-                      type: 'assistant',
+                      type: 'assistant' as const,
                       content: result.response,
                       timestamp: new Date(),
                       photos: result.photos,
-                    };
-                    setMessages(prev => [...prev.filter(m => !m.isError), assistantMessage]);
+                    }];
+                  }
+                  
+                  // Route to correct conversation
+                  if (currentConversationId === retryConversationId) {
+                    setMessages(prev => [...prev.filter(m => !m.isError), ...responseMessages]);
+                  } else {
+                    await addMessagesToConversation(retryConversationId, responseMessages);
                   }
                 } catch (error: any) {
                   const errorMessage: Message = {
@@ -687,10 +769,13 @@ const HomeScreen: React.FC = () => {
                     isError: true,
                     lastUserMessage,
                   };
-                  setMessages(prev => [...prev.filter(m => !m.isError), errorMessage]);
+                  if (currentConversationId === retryConversationId) {
+                    setMessages(prev => [...prev.filter(m => !m.isError), errorMessage]);
+                  } else {
+                    await addMessagesToConversation(retryConversationId, [errorMessage]);
+                  }
                 } finally {
-                  setIsLoading(false);
-                  setLoadingStatus('');
+                  setConversationLoading(retryConversationId, false);
                 }
               }}
             />
@@ -728,11 +813,15 @@ const HomeScreen: React.FC = () => {
           onAddProfileSuggestion={addSuggestion}
           conversations={savedConversations}
           currentConversationId={currentConversationId}
-          onLoadConversation={loadConversation}
+          onLoadConversation={handleLoadConversation}
           onDeleteConversation={deleteConversation}
-          onNewConversation={startNewConversation}
+          onNewConversation={handleStartNewConversation}
           onUpdateConversation={updateConversation}
           onToggleFavorite={toggleFavorite}
+          onResetOnboarding={() => {
+            setMenuOpen(false);
+            resetOnboarding();
+          }}
         />
         </View>
       </ImageBackground>

@@ -19,6 +19,7 @@ import {
   generateTeslaChargerLink,
   generateAllTrailsLink,
   generateRecreationGovLink,
+  validateUrl,
 } from '../../utils/linkUtils.js';
 
 // Re-export types explicitly
@@ -1242,32 +1243,41 @@ async function handleSearchRestaurants(
     updateRestaurantCache(cachedRestaurants, input.location);
 
     return {
-      restaurants: yelpResults.businesses.map(r => ({
-        name: r.name,
-        address: r.location.displayAddress.join(', '),
-        city: r.location.city,           // Include for reservation links
-        state: r.location.state,         // Include for reservation links
-        rating: `${r.rating}/5`,
-        reviewCount: r.reviewCount,
-        reviewsUrl: r.url,               // Link to read reviews on Yelp
-        reviewSource: 'Yelp',
-        priceLevel: r.price || 'Price unknown',
-        cuisine: YelpAdapter.formatCategories(r.categories),
-        phone: r.displayPhone || 'No phone',
-        distanceMiles: r.distance ? (r.distance / 1609.34).toFixed(1) : null,
-        supportsReservation: r.transactions.includes('restaurant_reservation'),
-        reservationLink: YelpAdapter.generateReservationLink(r),
-        yelpUrl: r.url,
-        // Add Google Maps as fallback link
-        googleMapsUrl: generateGoogleMapsLink(r.name, r.location.city, r.location.state),
-        directionsUrl: generateDirectionsLink(`${r.name}, ${r.location.city}, ${r.location.state}`),
-        imageUrl: r.imageUrl,
-      })),
+      restaurants: yelpResults.businesses.map(r => {
+        const googleMapsUrl = generateGoogleMapsLink(r.name, r.location.city, r.location.state);
+        const reservationLink = r.transactions.includes('restaurant_reservation') 
+          ? YelpAdapter.generateReservationLink(r) 
+          : undefined;
+        
+        return {
+          name: r.name,
+          address: r.location.displayAddress.join(', '),
+          city: r.location.city,
+          state: r.location.state,
+          rating: `${r.rating}/5`,
+          reviewCount: r.reviewCount,
+          reviewsUrl: r.url,               // Verified - from Yelp API
+          reviewSource: 'Yelp',
+          priceLevel: r.price || 'Price unknown',
+          cuisine: YelpAdapter.formatCategories(r.categories),
+          phone: r.displayPhone || 'No phone',
+          distanceMiles: r.distance ? (r.distance / 1609.34).toFixed(1) : null,
+          supportsReservation: r.transactions.includes('restaurant_reservation'),
+          reservationLink: reservationLink, // Only included if restaurant supports reservations
+          yelpUrl: r.url,                  // Verified - from Yelp API (PREFER THIS)
+          googleMapsUrl: googleMapsUrl,    // Always valid fallback
+          directionsUrl: generateDirectionsLink(`${r.name}, ${r.location.city}, ${r.location.state}`),
+          imageUrl: r.imageUrl,
+          // Link priority hint for AI: yelpUrl > googleMapsUrl
+          preferredLink: r.url,
+        };
+      }),
       totalFound: yelpResults.total,
       searchLocation: input.location,
       cuisineFilter: input.cuisine || 'all types',
       source: 'yelp',
       photosAdded: yelpResults.businesses.filter(r => r.imageUrl).length,
+      linkNote: 'Use yelpUrl or googleMapsUrl for restaurant links. Reservation links may not always be available.',
     };
   }
 

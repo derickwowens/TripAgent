@@ -367,6 +367,9 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
                 <Text style={styles.featureText}>• Flights, hotels & restaurants</Text>
               </View>
               <View style={styles.featureRow}>
+                <Text style={styles.featureText}>• Hikes, campgrounds & events</Text>
+              </View>
+              <View style={styles.featureRow}>
                 <Text style={styles.featureText}>• Complete itineraries in minutes</Text>
               </View>
             </View>

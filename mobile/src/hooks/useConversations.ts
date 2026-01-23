@@ -348,6 +348,57 @@ export const useConversations = (nearestAirport?: string) => {
     setMessages(prev => [...prev, message]);
   };
 
+  /**
+   * Add messages to a specific conversation by ID
+   * Used by the conversation queue to route responses to the correct conversation
+   * If conversationId matches current, updates live state. Otherwise updates storage.
+   */
+  const addMessagesToConversation = async (
+    conversationId: string | null,
+    newMessages: Message[]
+  ): Promise<string> => {
+    // If this is for the current conversation, update live state
+    if (conversationId === currentConversationIdRef.current) {
+      setMessages(prev => [...prev, ...newMessages]);
+      return conversationId || '';
+    }
+    
+    // Otherwise, update the saved conversation in storage
+    try {
+      const saved = await AsyncStorage.getItem(STORAGE_KEY);
+      let conversations: SavedConversation[] = saved ? JSON.parse(saved) : [];
+      
+      if (conversationId) {
+        // Find and update existing conversation
+        const index = conversations.findIndex(c => c.id === conversationId);
+        if (index >= 0) {
+          conversations[index].messages = [...conversations[index].messages, ...newMessages];
+          conversations[index].metadata.updatedAt = new Date().toISOString();
+        }
+      } else {
+        // Create new conversation for null ID case
+        const newId = Date.now().toString();
+        const metadata = extractMetadata(newMessages);
+        conversations.unshift({
+          id: newId,
+          messages: newMessages,
+          metadata,
+        });
+        conversations = conversations.slice(0, MAX_CONVERSATIONS);
+        await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(conversations));
+        setSavedConversations(conversations);
+        return newId;
+      }
+      
+      await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(conversations));
+      setSavedConversations(conversations);
+      return conversationId || '';
+    } catch (error) {
+      console.error('Failed to add messages to conversation:', error);
+      return '';
+    }
+  };
+
   const toggleFavorite = async (id: string) => {
     try {
       const updated = savedConversations.map(c => {
@@ -380,5 +431,6 @@ export const useConversations = (nearestAirport?: string) => {
     updateConversation,
     toggleFavorite,
     addMessage,
+    addMessagesToConversation,
   };
 };

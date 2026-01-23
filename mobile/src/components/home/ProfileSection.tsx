@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable, Alert } from 'react-native';
 
 // Define mutually exclusive groups
 const EXCLUSIVE_GROUPS = {
@@ -148,12 +148,14 @@ interface ProfileSectionProps {
   userProfile: string;
   onSaveProfile: (profile: string) => void;
   onAddSuggestion: (suggestion: string) => void;
+  onResetOnboarding?: () => void;
 }
 
 export const ProfileSection: React.FC<ProfileSectionProps> = ({
   userProfile,
   onSaveProfile,
   onAddSuggestion,
+  onResetOnboarding,
 }) => {
   // Expanded by default for empty profiles, collapsed otherwise
   const [suggestionsExpanded, setSuggestionsExpanded] = useState(!userProfile || userProfile.trim().length === 0);
@@ -234,6 +236,23 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           <TouchableOpacity onPress={() => setPrivacyModalVisible(true)} style={styles.infoButton}>
             <Text style={styles.infoIcon}>ⓘ</Text>
           </TouchableOpacity>
+          {onResetOnboarding && (
+            <TouchableOpacity 
+              onPress={() => {
+                Alert.alert(
+                  'Restart Profile Setup',
+                  'This will reset your profile and take you through the setup process again. Your saved trips will not be affected.',
+                  [
+                    { text: 'Cancel', style: 'cancel' },
+                    { text: 'Restart', style: 'destructive', onPress: onResetOnboarding },
+                  ]
+                );
+              }} 
+              style={styles.resetButton}
+            >
+              <Text style={styles.resetIcon}>↻</Text>
+            </TouchableOpacity>
+          )}
           {showClearButton && (
             <TouchableOpacity onPress={() => onSaveProfile('')} style={styles.clearButton}>
               <Text style={styles.clearButtonText}>Clear</Text>
@@ -436,6 +455,13 @@ const styles = StyleSheet.create({
     padding: 2,
   },
   infoIcon: {
+    color: '#4A9FE8',
+    fontSize: 16,
+  },
+  resetButton: {
+    padding: 2,
+  },
+  resetIcon: {
     color: '#4A9FE8',
     fontSize: 16,
   },

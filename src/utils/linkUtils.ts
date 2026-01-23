@@ -1,6 +1,88 @@
 /**
- * Link utilities for generating short, user-friendly URLs
+ * Utility functions for generating various types of links for locations
  */
+
+/**
+ * Validate a URL by making a HEAD request to check if it returns a valid response
+ * Returns the URL if valid, or undefined if invalid (404, timeout, etc.)
+ */
+export async function validateUrl(url: string, timeoutMs: number = 3000): Promise<string | undefined> {
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+    
+    const response = await fetch(url, {
+      method: 'HEAD',
+      signal: controller.signal,
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (compatible; TripAgent/1.0)',
+      },
+    });
+    
+    clearTimeout(timeoutId);
+    
+    // Accept 2xx and 3xx status codes as valid
+    if (response.ok || (response.status >= 300 && response.status < 400)) {
+      return url;
+    }
+    
+    console.log(`[LinkValidation] URL returned ${response.status}: ${url}`);
+    return undefined;
+  } catch (error: any) {
+    // Don't log aborted requests (timeouts) at error level
+    if (error.name === 'AbortError') {
+      console.log(`[LinkValidation] URL timeout: ${url}`);
+    } else {
+      console.log(`[LinkValidation] URL validation failed: ${url}`, error.message);
+    }
+    return undefined;
+  }
+}
+
+/**
+ * Validate a URL and return fallback if invalid
+ */
+export async function validateUrlWithFallback(
+  primaryUrl: string | undefined,
+  fallbackUrl: string,
+  timeoutMs: number = 3000
+): Promise<string> {
+  if (!primaryUrl) {
+    return fallbackUrl;
+  }
+  
+  const validatedUrl = await validateUrl(primaryUrl, timeoutMs);
+  return validatedUrl || fallbackUrl;
+}
+
+/**
+ * Batch validate multiple URLs in parallel with a concurrency limit
+ * Returns a map of original URL -> validated URL (or undefined if invalid)
+ */
+export async function validateUrlsBatch(
+  urls: string[],
+  timeoutMs: number = 3000,
+  concurrency: number = 5
+): Promise<Map<string, string | undefined>> {
+  const results = new Map<string, string | undefined>();
+  
+  // Process in batches to avoid overwhelming the network
+  for (let i = 0; i < urls.length; i += concurrency) {
+    const batch = urls.slice(i, i + concurrency);
+    const batchResults = await Promise.all(
+      batch.map(async (url) => {
+        const validated = await validateUrl(url, timeoutMs);
+        return { url, validated };
+      })
+    );
+    
+    batchResults.forEach(({ url, validated }) => {
+      results.set(url, validated);
+    });
+  }
+  
+  return results;
+}
 
 /**
  * Generate a Google Maps search link for a location
@@ -10,12 +92,7 @@
  * @returns Google Maps search URL
  */
 export function generateGoogleMapsLink(name: string, city?: string, state?: string): string {
-  const query = city && state 
-    ? `${name}, ${city}, ${state}`
-    : city 
-      ? `${name}, ${city}`
-      : name;
-  
+  const query = [name, city, state].filter(Boolean).join(' ');
   return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
 }
 

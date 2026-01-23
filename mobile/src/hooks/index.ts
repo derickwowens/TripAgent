@@ -4,9 +4,11 @@ export { useLocation } from './useLocation';
 export { useDarkMode, useDarkModeContext, DarkModeContext } from './useDarkMode';
 export { getLoadingStatesForQuery } from './useLoadingStates';
 export { useOnboarding } from './useOnboarding';
-export { useTripContext } from './useTripContext';
+export { useTripContext, getTripContextForConversation, getAllTripContexts } from './useTripContext';
+export { useConversationQueue } from './useConversationQueue';
+export { useConversationManager } from './useConversationManager';
 export type { Message, SavedConversation, PhotoReference } from './useConversations';
-export type { UserLocation } from './useLocation';
+export type { ConversationRequest, ConversationResponse } from './useConversationQueue';
 export type { 
   TripContextData, 
   CachedPark, 

@@ -218,7 +218,8 @@ export const sendChatMessageWithStream = async (
   messages: ChatMessage[],
   context: ChatContext,
   model: string | undefined,
-  onToolStatus: (message: string) => void
+  onToolStatus: (message: string) => void,
+  abortSignal?: AbortSignal
 ): Promise<{ response: string; photos?: PhotoReference[]; segments?: string[]; fallback?: boolean }> => {
   // Show initial status
   onToolStatus('Thinking...');
@@ -267,11 +268,19 @@ export const sendChatMessageWithStream = async (
   }, 2500);
 
   try {
-    const response = await chatApi.post('/api/chat', { messages, context, model });
+    const response = await chatApi.post('/api/chat', { messages, context, model }, {
+      signal: abortSignal,
+    });
     clearInterval(statusInterval);
     return response.data;
-  } catch (error) {
+  } catch (error: any) {
     clearInterval(statusInterval);
+    // Re-throw abort errors with a specific type for handling upstream
+    if (error?.name === 'CanceledError' || error?.code === 'ERR_CANCELED' || abortSignal?.aborted) {
+      const abortError = new Error('Request aborted');
+      abortError.name = 'AbortError';
+      throw abortError;
+    }
     throw error;
   }
 };

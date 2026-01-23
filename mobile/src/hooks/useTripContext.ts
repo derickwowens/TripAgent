@@ -80,6 +80,38 @@ interface TripContextCache {
   [conversationId: string]: TripContextData;
 }
 
+/**
+ * Get cached trip context for a specific conversation (static lookup)
+ * Use this for displaying trip info in conversation tiles
+ */
+export async function getTripContextForConversation(convId: string): Promise<TripContextData | null> {
+  try {
+    const cached = await AsyncStorage.getItem(TRIP_CONTEXT_KEY);
+    if (cached) {
+      const allContexts: TripContextCache = JSON.parse(cached);
+      return allContexts[convId] || null;
+    }
+  } catch (error) {
+    console.error('Failed to get trip context:', error);
+  }
+  return null;
+}
+
+/**
+ * Get all cached trip contexts (for batch loading)
+ */
+export async function getAllTripContexts(): Promise<TripContextCache> {
+  try {
+    const cached = await AsyncStorage.getItem(TRIP_CONTEXT_KEY);
+    if (cached) {
+      return JSON.parse(cached);
+    }
+  } catch (error) {
+    console.error('Failed to get all trip contexts:', error);
+  }
+  return {};
+}
+
 export const useTripContext = (conversationId: string | null) => {
   const [tripContext, setTripContext] = useState<TripContextData | null>(null);
   const [isLoading, setIsLoading] = useState(true);

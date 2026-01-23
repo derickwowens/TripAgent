@@ -10,70 +10,14 @@ import {
   CachedLink, 
   CachedEvCharger 
 } from '../hooks/useTripContext';
-
-// Park name patterns for detection
-const NATIONAL_PARKS: Array<{ pattern: RegExp; name: string; code: string }> = [
-  { pattern: /yellowstone/i, name: 'Yellowstone National Park', code: 'yell' },
-  { pattern: /grand\s*canyon/i, name: 'Grand Canyon National Park', code: 'grca' },
-  { pattern: /yosemite/i, name: 'Yosemite National Park', code: 'yose' },
-  { pattern: /zion/i, name: 'Zion National Park', code: 'zion' },
-  { pattern: /glacier(?!\s*bay)/i, name: 'Glacier National Park', code: 'glac' },
-  { pattern: /grand\s*teton/i, name: 'Grand Teton National Park', code: 'grte' },
-  { pattern: /acadia/i, name: 'Acadia National Park', code: 'acad' },
-  { pattern: /rocky\s*mountain/i, name: 'Rocky Mountain National Park', code: 'romo' },
-  { pattern: /great\s*smoky|smokies/i, name: 'Great Smoky Mountains National Park', code: 'grsm' },
-  { pattern: /joshua\s*tree/i, name: 'Joshua Tree National Park', code: 'jotr' },
-  { pattern: /bryce\s*canyon/i, name: 'Bryce Canyon National Park', code: 'brca' },
-  { pattern: /arches/i, name: 'Arches National Park', code: 'arch' },
-  { pattern: /canyonlands/i, name: 'Canyonlands National Park', code: 'cany' },
-  { pattern: /olympic/i, name: 'Olympic National Park', code: 'olym' },
-  { pattern: /mount\s*rainier|mt\.?\s*rainier/i, name: 'Mount Rainier National Park', code: 'mora' },
-  { pattern: /death\s*valley/i, name: 'Death Valley National Park', code: 'deva' },
-  { pattern: /sequoia/i, name: 'Sequoia National Park', code: 'sequ' },
-  { pattern: /denali/i, name: 'Denali National Park', code: 'dena' },
-  { pattern: /everglades/i, name: 'Everglades National Park', code: 'ever' },
-  { pattern: /shenandoah/i, name: 'Shenandoah National Park', code: 'shen' },
-  { pattern: /big\s*bend/i, name: 'Big Bend National Park', code: 'bibe' },
-  { pattern: /crater\s*lake/i, name: 'Crater Lake National Park', code: 'crla' },
-  { pattern: /badlands/i, name: 'Badlands National Park', code: 'badl' },
-  { pattern: /redwood/i, name: 'Redwood National Park', code: 'redw' },
-  { pattern: /capitol\s*reef/i, name: 'Capitol Reef National Park', code: 'care' },
-];
-
-// Gateway cities for parks
-const PARK_GATEWAYS: Record<string, { city: string; state: string }> = {
-  'yell': { city: 'West Yellowstone', state: 'MT' },
-  'grca': { city: 'Tusayan', state: 'AZ' },
-  'yose': { city: 'Mariposa', state: 'CA' },
-  'zion': { city: 'Springdale', state: 'UT' },
-  'glac': { city: 'West Glacier', state: 'MT' },
-  'grte': { city: 'Jackson', state: 'WY' },
-  'acad': { city: 'Bar Harbor', state: 'ME' },
-  'romo': { city: 'Estes Park', state: 'CO' },
-  'grsm': { city: 'Gatlinburg', state: 'TN' },
-  'jotr': { city: 'Twentynine Palms', state: 'CA' },
-  'brca': { city: 'Bryce Canyon City', state: 'UT' },
-  'arch': { city: 'Moab', state: 'UT' },
-  'cany': { city: 'Moab', state: 'UT' },
-  'olym': { city: 'Port Angeles', state: 'WA' },
-  'mora': { city: 'Ashford', state: 'WA' },
-  'deva': { city: 'Furnace Creek', state: 'CA' },
-  'sequ': { city: 'Three Rivers', state: 'CA' },
-  'dena': { city: 'Denali Park', state: 'AK' },
-  'ever': { city: 'Homestead', state: 'FL' },
-  'shen': { city: 'Luray', state: 'VA' },
-  'bibe': { city: 'Terlingua', state: 'TX' },
-  'crla': { city: 'Prospect', state: 'OR' },
-  'badl': { city: 'Wall', state: 'SD' },
-  'redw': { city: 'Crescent City', state: 'CA' },
-  'care': { city: 'Torrey', state: 'UT' },
-};
+import { validateLinks, generateGoogleMapsFallback } from './linkValidator';
+import { PARK_DETECTION_PATTERNS, PARK_GATEWAYS } from '../data/nationalParks';
 
 /**
  * Detect park from text (user message or response)
  */
 export function detectParkFromText(text: string): CachedPark | null {
-  for (const park of NATIONAL_PARKS) {
+  for (const park of PARK_DETECTION_PATTERNS) {
     if (park.pattern.test(text)) {
       const gateway = PARK_GATEWAYS[park.code];
       return {
@@ -273,7 +217,7 @@ export function parseUserMessage(message: string): {
 }
 
 /**
- * Parse API response to extract cacheable data
+ * Parse API response to extract cacheable data (synchronous)
  */
 export function parseApiResponse(response: string): {
   links: CachedLink[];
@@ -281,6 +225,23 @@ export function parseApiResponse(response: string): {
 } {
   return {
     links: extractLinks(response),
+    restaurantMentions: extractRestaurantMentions(response),
+  };
+}
+
+/**
+ * Parse API response and validate links asynchronously
+ * Call this AFTER the response is displayed to avoid slowing down the UI
+ */
+export async function parseApiResponseWithValidation(response: string): Promise<{
+  links: CachedLink[];
+  restaurantMentions: string[];
+}> {
+  const rawLinks = extractLinks(response);
+  const validatedLinks = await validateLinks(rawLinks);
+  
+  return {
+    links: validatedLinks,
     restaurantMentions: extractRestaurantMentions(response),
   };
 }
