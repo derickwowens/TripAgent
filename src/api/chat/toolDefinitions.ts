@@ -181,4 +181,27 @@ export const tools: Anthropic.Tool[] = [
       required: ['restaurant_name'],
     },
   },
+  {
+    name: 'get_wildlife',
+    description: `Get wildlife information for a National Park. Returns common species (mammals, birds, reptiles) observed in the park with photos. Data from iNaturalist research-grade observations. Use official NPS park codes: ${ALL_PARK_CODES}`,
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        park_code: { type: 'string', description: `NPS park code. Examples: ${PARK_CODE_EXAMPLES}` },
+        category: { type: 'string', description: 'Filter by category: "mammals", "birds", "reptiles", "amphibians", "insects", "plants". Leave empty for top species across all categories.' },
+      },
+      required: ['park_code'],
+    },
+  },
+  {
+    name: 'get_campgrounds',
+    description: `Get campground and camping facility information for a National Park from Recreation.gov. Returns reservable campgrounds with descriptions and reservation links. Use official NPS park codes: ${ALL_PARK_CODES}`,
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        park_code: { type: 'string', description: `NPS park code. Examples: ${PARK_CODE_EXAMPLES}` },
+      },
+      required: ['park_code'],
+    },
+  },
 ];

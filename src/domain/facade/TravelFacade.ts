@@ -19,6 +19,16 @@ import {
   NationalPark, 
   ParkHike 
 } from '../../providers/parks/NationalParksAdapter.js';
+import { 
+  RecreationGovAdapter, 
+  RecreationFacility 
+} from '../../providers/recreation/RecreationGovAdapter.js';
+import { 
+  INaturalistAdapter, 
+  WildlifeObservation, 
+  WildlifeSummary, 
+  SpeciesCount 
+} from '../../providers/wildlife/INaturalistAdapter.js';
 
 export interface ParkTripPlanParams {
   parkCode: string;
@@ -34,19 +44,25 @@ export class TravelFacade {
   private carProviders: CarRentalProvider[];
   private activityProviders: ActivityProvider[];
   private parksAdapter: NationalParksAdapter | null = null;
+  private recreationAdapter: RecreationGovAdapter | null = null;
+  private wildlifeAdapter: INaturalistAdapter | null = null;
 
   constructor(
     flightProviders: FlightProvider[] = [],
     hotelProviders: HotelProvider[] = [],
     carProviders: CarRentalProvider[] = [],
     activityProviders: ActivityProvider[] = [],
-    parksAdapter?: NationalParksAdapter
+    parksAdapter?: NationalParksAdapter,
+    recreationAdapter?: RecreationGovAdapter,
+    wildlifeAdapter?: INaturalistAdapter
   ) {
     this.flightProviders = flightProviders;
     this.hotelProviders = hotelProviders;
     this.carProviders = carProviders;
     this.activityProviders = activityProviders;
     this.parksAdapter = parksAdapter || null;
+    this.recreationAdapter = recreationAdapter || null;
+    this.wildlifeAdapter = wildlifeAdapter || null;
   }
 
   // ============================================
@@ -219,6 +235,74 @@ export class TravelFacade {
     try {
       return await this.parksAdapter.getThingsToDo(parkCode);
     } catch {
+      return [];
+    }
+  }
+
+  // ============================================
+  // WILDLIFE (iNaturalist)
+  // ============================================
+  async getWildlifeForPark(parkCode: string, limit = 30): Promise<WildlifeObservation[]> {
+    if (!this.wildlifeAdapter) {
+      console.log('[TravelFacade] Wildlife adapter not configured');
+      return [];
+    }
+    try {
+      return await this.wildlifeAdapter.getWildlifeForPark(parkCode, limit);
+    } catch (error: any) {
+      console.error('Wildlife fetch failed:', error.message);
+      return [];
+    }
+  }
+
+  async getWildlifeSummaryForPark(parkCode: string): Promise<WildlifeSummary | null> {
+    if (!this.wildlifeAdapter) {
+      return null;
+    }
+    try {
+      return await this.wildlifeAdapter.getSpeciesCountsForPark(parkCode);
+    } catch (error: any) {
+      console.error('Wildlife summary failed:', error.message);
+      return null;
+    }
+  }
+
+  async getCommonWildlife(parkCode: string, category?: string): Promise<SpeciesCount[]> {
+    if (!this.wildlifeAdapter) {
+      return [];
+    }
+    try {
+      return await this.wildlifeAdapter.getCommonWildlife(parkCode, category);
+    } catch (error: any) {
+      console.error('Common wildlife fetch failed:', error.message);
+      return [];
+    }
+  }
+
+  // ============================================
+  // CAMPGROUNDS & RECREATION (Recreation.gov)
+  // ============================================
+  async getCampgroundsFromRecreationGov(parkCode: string): Promise<RecreationFacility[]> {
+    if (!this.recreationAdapter) {
+      console.log('[TravelFacade] Recreation.gov adapter not configured');
+      return [];
+    }
+    try {
+      return await this.recreationAdapter.getFacilitiesByParkCode(parkCode);
+    } catch (error: any) {
+      console.error('Recreation.gov campgrounds fetch failed:', error.message);
+      return [];
+    }
+  }
+
+  async searchRecreationFacilities(query: string): Promise<RecreationFacility[]> {
+    if (!this.recreationAdapter) {
+      return [];
+    }
+    try {
+      return await this.recreationAdapter.searchFacilities(query);
+    } catch (error: any) {
+      console.error('Recreation.gov search failed:', error.message);
       return [];
     }
   }

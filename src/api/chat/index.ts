@@ -510,6 +510,14 @@ async function handleToolCall(
       result = await handleGetReservationLink(toolUse.input as any, context);
       break;
 
+    case 'get_wildlife':
+      result = await handleGetWildlife(toolUse.input as any, facade);
+      break;
+
+    case 'get_campgrounds':
+      result = await handleGetCampgrounds(toolUse.input as any, facade);
+      break;
+
     default:
       result = { error: `Unknown tool: ${toolUse.name}` };
   }
@@ -1556,4 +1564,100 @@ async function handleGetReservationLink(
       ? `Here are reservation options for ${input.restaurant_name}:`
       : `${input.restaurant_name} may not be on OpenTable. Here are other ways to make a reservation:`,
   };
+}
+
+async function handleGetWildlife(
+  input: { park_code: string; category?: string },
+  facade: TravelFacade
+): Promise<any> {
+  const parkCode = input.park_code.toLowerCase();
+  console.log(`[Chat] Wildlife query for park: ${parkCode}, category: ${input.category || 'all'}`);
+
+  try {
+    const species = await facade.getCommonWildlife(parkCode, input.category);
+    
+    if (species.length === 0) {
+      return {
+        parkCode,
+        message: `No wildlife data available for park code "${parkCode}". This park may not have iNaturalist observations yet.`,
+        species: [],
+      };
+    }
+
+    // Group by category for better display
+    const grouped: Record<string, typeof species> = {};
+    for (const s of species) {
+      const cat = s.category || 'other';
+      if (!grouped[cat]) grouped[cat] = [];
+      grouped[cat].push(s);
+    }
+
+    return {
+      parkCode,
+      totalSpecies: species.length,
+      wildlife: grouped,
+      species: species.slice(0, 15).map(s => ({
+        name: s.commonName,
+        scientificName: s.scientificName,
+        category: s.category,
+        observations: s.count,
+        photoUrl: s.photoUrl,
+        wikipediaUrl: s.wikipediaUrl,
+      })),
+      dataSource: 'iNaturalist (research-grade observations)',
+    };
+  } catch (error: any) {
+    console.error('Wildlife fetch error:', error.message);
+    return {
+      parkCode,
+      error: `Failed to fetch wildlife data: ${error.message}`,
+      species: [],
+    };
+  }
+}
+
+async function handleGetCampgrounds(
+  input: { park_code: string },
+  facade: TravelFacade
+): Promise<any> {
+  const parkCode = input.park_code.toLowerCase();
+  console.log(`[Chat] Campgrounds query for park: ${parkCode}`);
+
+  try {
+    const campgrounds = await facade.getCampgroundsFromRecreationGov(parkCode);
+    
+    if (campgrounds.length === 0) {
+      return {
+        parkCode,
+        message: `No campground data found for park code "${parkCode}" on Recreation.gov. Try checking the NPS website directly.`,
+        campgrounds: [],
+        npsUrl: `https://www.nps.gov/${parkCode}/planyourvisit/camping.htm`,
+      };
+    }
+
+    return {
+      parkCode,
+      totalCampgrounds: campgrounds.length,
+      campgrounds: campgrounds.map(c => ({
+        name: c.name,
+        description: c.description,
+        type: c.type,
+        reservable: c.reservable,
+        reservationUrl: c.reservationUrl,
+        phone: c.phone,
+        feeDescription: c.feeDescription,
+        coordinates: c.coordinates.latitude ? c.coordinates : undefined,
+      })),
+      dataSource: 'Recreation.gov RIDB API',
+      bookingNote: 'Book campgrounds at recreation.gov - popular sites fill months in advance!',
+    };
+  } catch (error: any) {
+    console.error('Campgrounds fetch error:', error.message);
+    return {
+      parkCode,
+      error: `Failed to fetch campground data: ${error.message}`,
+      campgrounds: [],
+      npsUrl: `https://www.nps.gov/${parkCode}/planyourvisit/camping.htm`,
+    };
+  }
 }

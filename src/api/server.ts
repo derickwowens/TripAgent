@@ -10,6 +10,8 @@ import { AmadeusHotelAdapter } from '../providers/hotels/AmadeusHotelAdapter.js'
 import { AmadeusCarAdapter } from '../providers/cars/AmadeusCarAdapter.js';
 import { AmadeusActivitiesAdapter } from '../providers/activities/AmadeusActivitiesAdapter.js';
 import { NationalParksAdapter } from '../providers/parks/NationalParksAdapter.js';
+import { RecreationGovAdapter } from '../providers/recreation/RecreationGovAdapter.js';
+import { INaturalistAdapter } from '../providers/wildlife/INaturalistAdapter.js';
 import { createChatHandler, TOOL_DISPLAY_NAMES } from './chat.js';
 import { logError } from './errorLogger.js';
 import { storeItinerary, getItinerary } from './itineraryHost.js';
@@ -35,7 +37,9 @@ const facade = new TravelFacade(
   [new AmadeusHotelAdapter()],
   [new AmadeusCarAdapter()],
   [new AmadeusActivitiesAdapter()],
-  new NationalParksAdapter(process.env.NPS_API_KEY)
+  new NationalParksAdapter(process.env.NPS_API_KEY),
+  new RecreationGovAdapter(process.env.RECREATION_GOV_API_KEY),
+  new INaturalistAdapter()
 );
 
 // Error handling middleware
