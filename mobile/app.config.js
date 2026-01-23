@@ -17,7 +17,15 @@ export default ({ config }) => {
     },
     ios: {
       supportsTablet: true,
-      bundleIdentifier: "com.tripagent.app"
+      bundleIdentifier: "com.tripagent.app",
+      buildNumber: "5",
+      infoPlist: {
+        NSLocationWhenInUseUsageDescription: "TripAgent needs your location to find nearby parks, restaurants, and provide personalized travel recommendations.",
+        NSSpeechRecognitionUsageDescription: "TripAgent uses speech recognition for voice input to make trip planning easier.",
+        NSMicrophoneUsageDescription: "TripAgent needs microphone access to enable voice input for hands-free trip planning.",
+        NSPhotoLibraryUsageDescription: "TripAgent needs access to your photo library to save and share trip photos.",
+        ITSAppUsesNonExemptEncryption: false
+      }
     },
     android: {
       package: "com.tripagent.app",
