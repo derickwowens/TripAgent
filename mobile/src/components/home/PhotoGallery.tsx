@@ -2,13 +2,13 @@ import React, { memo, useState } from 'react';
 import {
   View,
   Text,
-  Image,
   TouchableOpacity,
   StyleSheet,
   ActivityIndicator,
   FlatList,
   Dimensions,
 } from 'react-native';
+import { Image } from 'expo-image';
 import { PhotoReference } from '../../hooks';
 import { ImageModal } from './ImageModal';
 
@@ -59,7 +59,9 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos, onClose
         <Image
           source={{ uri: item.url }}
           style={styles.thumbnail}
-          resizeMode="cover"
+          contentFit="cover"
+          cachePolicy="disk"
+          transition={150}
           onLoadStart={() => handleLoadStart(item.url)}
           onLoadEnd={() => handleLoadEnd(item.url)}
         />

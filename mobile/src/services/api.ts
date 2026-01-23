@@ -168,10 +168,31 @@ export interface ChatContext {
   };
   tripContext?: {
     destination?: string;
+    destinationType?: 'national_park' | 'city' | 'other';
     parkCode?: string;
+    parkName?: string;
     numDays?: number;
     numTravelers?: number;
+    travelDates?: {
+      arrival?: string;
+      departure?: string;
+    };
+    departingFrom?: string;
   };
+  // Cached context from local storage (reduces redundant API calls)
+  npsGatewayCity?: {
+    city: string;
+    state: string;
+    parkCode?: string;
+    parkName?: string;
+  };
+  knownRestaurants?: Array<{
+    name: string;
+    city: string;
+    state: string;
+    reservationLink?: string;
+  }>;
+  knownHikes?: string[];
   userProfile?: string;
 }
 

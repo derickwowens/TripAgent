@@ -12,6 +12,14 @@ import { OpenChargeMapAdapter } from '../../providers/OpenChargeMapAdapter.js';
 import { YelpAdapter } from '../../providers/YelpAdapter.js';
 import { findParkCode } from '../../utils/parkCodeLookup.js';
 import { getUnsplashAdapter } from '../../providers/UnsplashAdapter.js';
+import { 
+  generateGoogleMapsLink, 
+  generateDirectionsLink, 
+  generatePlugShareLink,
+  generateTeslaChargerLink,
+  generateAllTrailsLink,
+  generateRecreationGovLink,
+} from '../../utils/linkUtils.js';
 
 // Re-export types explicitly
 export type { ChatMessage, ChatContext, ChatResponse, PhotoReference, ToolResult, ToolStatusCallback, TripLeg, ContextDefaults } from './types.js';
@@ -987,6 +995,11 @@ async function handleSearchEvChargingStations(input: any, context: ChatContext):
       isTesla: s.isTeslaSupercharger,
       isFastCharger: s.isFastCharger,
       cost: s.usageCost,
+      // Add clickable links for each station
+      googleMapsUrl: generateGoogleMapsLink(s.name, s.city, s.state),
+      directionsUrl: generateDirectionsLink(`${s.name}, ${s.city}, ${s.state}`),
+      plugShareUrl: generatePlugShareLink(s.latitude, s.longitude),
+      teslaUrl: s.isTeslaSupercharger ? generateTeslaChargerLink(`${s.city}, ${s.state}`) : undefined,
     })),
     note: chargingStations.length > 0 
       ? `Found ${chargingStations.length} DC fast charging stations along your route`
@@ -1019,6 +1032,9 @@ async function handleSearchHotels(
       rating: h.rating,
       address: h.address,
       amenities: h.amenities?.slice(0, 5),
+      // Add clickable links for each hotel
+      googleMapsUrl: generateGoogleMapsLink(h.name, input.location),
+      directionsUrl: generateDirectionsLink(`${h.name}, ${input.location}`),
     })),
     totalFound: hotelResults.totalResults,
     providers: hotelResults.providers,
@@ -1242,6 +1258,9 @@ async function handleSearchRestaurants(
         supportsReservation: r.transactions.includes('restaurant_reservation'),
         reservationLink: YelpAdapter.generateReservationLink(r),
         yelpUrl: r.url,
+        // Add Google Maps as fallback link
+        googleMapsUrl: generateGoogleMapsLink(r.name, r.location.city, r.location.state),
+        directionsUrl: generateDirectionsLink(`${r.name}, ${r.location.city}, ${r.location.state}`),
         imageUrl: r.imageUrl,
       })),
       totalFound: yelpResults.total,
@@ -1298,8 +1317,9 @@ async function handleSearchRestaurants(
 
   return {
     restaurants: results.results.map(r => {
-      // Generate Google Maps URL for reviews
-      const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name + ' ' + r.address)}`;
+      // Generate Google Maps URL for reviews and navigation
+      const googleMapsUrl = generateGoogleMapsLink(r.name, cacheCity, cacheState);
+      const directionsUrl = generateDirectionsLink(`${r.name}, ${cacheCity}, ${cacheState}`);
       return {
         name: r.name,
         address: r.address,
@@ -1312,6 +1332,8 @@ async function handleSearchRestaurants(
         priceLevel: GoogleMapsAdapter.formatPriceLevel(r.priceLevel),
         cuisine: r.types?.slice(0, 3).join(', ') || 'Restaurant',
         openNow: r.openNow !== undefined ? (r.openNow ? 'Open now' : 'Closed') : 'Hours unknown',
+        googleMapsUrl: googleMapsUrl,
+        directionsUrl: directionsUrl,
         imageUrl: r.photoUrl,
       };
     }),

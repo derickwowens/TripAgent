@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const STORAGE_KEY = 'travel_conversations';
@@ -128,15 +128,47 @@ export const useConversations = (nearestAirport?: string) => {
   const [savedConversations, setSavedConversations] = useState<SavedConversation[]>([]);
   const [currentConversationId, setCurrentConversationId] = useState<string | null>(null);
 
+  // Refs for debouncing and preventing race conditions
+  const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const isSavingRef = useRef(false);
+  
+  // Refs to always have current values in async operations (prevents stale closures)
+  const messagesRef = useRef(messages);
+  const currentConversationIdRef = useRef(currentConversationId);
+  
+  // Keep refs in sync with state
+  useEffect(() => { messagesRef.current = messages; }, [messages]);
+  useEffect(() => { currentConversationIdRef.current = currentConversationId; }, [currentConversationId]);
+
   useEffect(() => {
     loadConversations();
   }, []);
 
+  // Debounced auto-save to prevent race conditions
+  const debouncedAutoSave = useCallback(() => {
+    if (saveTimeoutRef.current) {
+      clearTimeout(saveTimeoutRef.current);
+    }
+    
+    saveTimeoutRef.current = setTimeout(() => {
+      if (!isSavingRef.current) {
+        autoSaveConversation();
+      }
+    }, 500); // 500ms debounce
+  }, [nearestAirport]);
+
   useEffect(() => {
     if (messages.length > 0) {
-      autoSaveConversation();
+      debouncedAutoSave();
     }
-  }, [messages]);
+    
+    // Cleanup timeout on unmount
+    return () => {
+      if (saveTimeoutRef.current) {
+        clearTimeout(saveTimeoutRef.current);
+      }
+    };
+  }, [messages, debouncedAutoSave]);
 
   const loadConversations = async () => {
     try {
@@ -215,29 +247,41 @@ export const useConversations = (nearestAirport?: string) => {
   };
 
   const autoSaveConversation = async () => {
-    if (messages.length === 0) return;
+    // Use refs to get current values (prevents stale closure issues)
+    const currentMessages = messagesRef.current;
+    const currentId = currentConversationIdRef.current;
+    
+    if (currentMessages.length === 0) return;
+    
+    // Mutex lock to prevent concurrent saves
+    if (isSavingRef.current) return;
+    isSavingRef.current = true;
 
     try {
       const saved = await AsyncStorage.getItem(STORAGE_KEY);
       let conversations: SavedConversation[] = saved ? JSON.parse(saved) : [];
 
-      const metadata = extractMetadata(messages);
+      const metadata = extractMetadata(currentMessages);
+      
+      // Deep clone messages to prevent mutation bugs
+      const clonedMessages = JSON.parse(JSON.stringify(currentMessages));
 
-      if (currentConversationId) {
-        const index = conversations.findIndex(c => c.id === currentConversationId);
+      if (currentId) {
+        const index = conversations.findIndex(c => c.id === currentId);
         if (index >= 0) {
           conversations[index] = {
             ...conversations[index],
-            messages,
+            messages: clonedMessages,
             metadata: { ...conversations[index].metadata, ...metadata, updatedAt: new Date().toISOString() },
           };
         }
       } else {
         const newId = Date.now().toString();
         setCurrentConversationId(newId);
+        currentConversationIdRef.current = newId; // Update ref immediately
         conversations.unshift({
           id: newId,
-          messages,
+          messages: clonedMessages,
           metadata,
         });
       }
@@ -247,11 +291,15 @@ export const useConversations = (nearestAirport?: string) => {
       setSavedConversations(conversations);
     } catch (error) {
       console.error('Failed to auto-save:', error);
+    } finally {
+      isSavingRef.current = false;
     }
   };
 
   const loadConversation = (conversation: SavedConversation) => {
-    setMessages(conversation.messages);
+    // Deep clone to prevent mutation of stored conversation
+    const clonedMessages: Message[] = JSON.parse(JSON.stringify(conversation.messages));
+    setMessages(clonedMessages);
     setCurrentConversationId(conversation.id);
   };
 

@@ -14,9 +14,10 @@ import {
   TextInput,
 } from 'react-native';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
-import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding } from '../hooks';
+import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
+import { parseUserMessage, parseApiResponse } from '../utils/responseParser';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
@@ -83,6 +84,16 @@ const HomeScreen: React.FC = () => {
   } = useUserProfile();
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { hasCompletedOnboarding, isLoading: onboardingLoading, completeOnboarding } = useOnboarding();
+  
+  // Trip context cache - persists structured trip data locally
+  const {
+    tripContext,
+    updatePark,
+    updateRestaurants,
+    addLinks,
+    updateTravelDetails,
+    getContextForApi,
+  } = useTripContext(currentConversationId);
 
   // Handle onboarding completion
   const handleOnboardingComplete = async (profile: string, firstPrompt?: string) => {
@@ -187,6 +198,24 @@ const HomeScreen: React.FC = () => {
         content: m.content,
       }));
 
+      // Parse user message to extract trip details dynamically
+      const parsedUserInput = parseUserMessage(userMessage.content);
+      
+      // Update local context cache based on user input
+      if (parsedUserInput.park) {
+        updatePark(parsedUserInput.park);
+      }
+      if (parsedUserInput.travelDates || parsedUserInput.travelers || parsedUserInput.departingFrom) {
+        updateTravelDetails({
+          arrival: parsedUserInput.travelDates?.arrival,
+          departure: parsedUserInput.travelDates?.departure,
+          travelers: parsedUserInput.travelers,
+          departingFrom: parsedUserInput.departingFrom,
+        });
+      }
+      
+      // Build context with cached trip data (reduces redundant API calls)
+      const cachedContext = getContextForApi();
       const context: ChatContext = {
         userLocation: userLocation ? {
           city: userLocation.city,
@@ -194,6 +223,8 @@ const HomeScreen: React.FC = () => {
           nearestAirport: userLocation.nearestAirport,
         } : undefined,
         userProfile: userProfile || undefined,
+        // Include cached context from local storage
+        ...(cachedContext || {}),
       };
 
       // Start with initial loading state
@@ -206,6 +237,12 @@ const HomeScreen: React.FC = () => {
         MODEL,
         (toolStatus) => setLoadingStatus(toolStatus)
       );
+      
+      // Parse response to extract and cache structured data
+      const parsedResponse = parseApiResponse(response.response);
+      if (parsedResponse.links.length > 0) {
+        addLinks(parsedResponse.links);
+      }
       
       // If segments are provided, create multiple message bubbles for better display
       if (response.segments && response.segments.length > 1) {
@@ -307,6 +344,24 @@ const HomeScreen: React.FC = () => {
         content: m.content,
       }));
 
+      // Parse user message to extract trip details dynamically
+      const parsedUserInput = parseUserMessage(messageContent.trim());
+      
+      // Update local context cache based on user input
+      if (parsedUserInput.park) {
+        updatePark(parsedUserInput.park);
+      }
+      if (parsedUserInput.travelDates || parsedUserInput.travelers || parsedUserInput.departingFrom) {
+        updateTravelDetails({
+          arrival: parsedUserInput.travelDates?.arrival,
+          departure: parsedUserInput.travelDates?.departure,
+          travelers: parsedUserInput.travelers,
+          departingFrom: parsedUserInput.departingFrom,
+        });
+      }
+
+      // Build context with cached trip data
+      const cachedContext = getContextForApi();
       const context: ChatContext = {
         userLocation: userLocation ? {
           city: userLocation.city,
@@ -314,6 +369,7 @@ const HomeScreen: React.FC = () => {
           nearestAirport: userLocation.nearestAirport,
         } : undefined,
         userProfile: userProfile || undefined,
+        ...(cachedContext || {}),
       };
 
       // Start with initial loading state
@@ -326,6 +382,12 @@ const HomeScreen: React.FC = () => {
         MODEL,
         (toolStatus) => setLoadingStatus(toolStatus)
       );
+      
+      // Parse response to extract and cache structured data
+      const parsedResponse = parseApiResponse(response.response);
+      if (parsedResponse.links.length > 0) {
+        addLinks(parsedResponse.links);
+      }
       
       // If segments are provided, create multiple message bubbles for better display
       if (response.segments && response.segments.length > 1) {

@@ -2,7 +2,6 @@ import React, { memo, useCallback, useRef } from 'react';
 import {
   Modal,
   View,
-  Image,
   Text,
   TouchableOpacity,
   StyleSheet,
@@ -13,6 +12,7 @@ import {
   NativeSyntheticEvent,
   NativeScrollEvent,
 } from 'react-native';
+import { Image } from 'expo-image';
 import { PhotoReference } from '../../hooks';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
@@ -108,7 +108,9 @@ export const ImageModal: React.FC<ImageModalProps> = memo(({
                 <Image
                   source={{ uri: photo.url }}
                   style={[styles.image, loadingStates[index] && styles.hiddenImage]}
-                  resizeMode="contain"
+                  contentFit="contain"
+                  cachePolicy="disk"
+                  transition={200}
                   onLoadStart={() => handleLoadStart(index)}
                   onLoadEnd={() => handleLoadEnd(index)}
                   onError={() => handleError(index)}
