@@ -157,8 +157,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   onAddSuggestion,
   onResetOnboarding,
 }) => {
-  // Expanded by default for empty profiles, collapsed otherwise
-  const [suggestionsExpanded, setSuggestionsExpanded] = useState(!userProfile || userProfile.trim().length === 0);
+  // Always start collapsed
+  const [suggestionsExpanded, setSuggestionsExpanded] = useState(false);
   const [privacyModalVisible, setPrivacyModalVisible] = useState(false);
   const [foodieExpanded, setFoodieExpanded] = useState(false);
   const [coffeeExpanded, setCoffeeExpanded] = useState(false);
