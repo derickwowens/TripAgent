@@ -1,6 +1,6 @@
 /**
  * Photo Filtering Utility
- * Provides confidence scoring and filtering for photos from any source (NPS, Unsplash, etc.)
+ * Provides confidence scoring and filtering for photos from NPS and other sources
  */
 
 export interface PhotoReference {
@@ -8,7 +8,7 @@ export interface PhotoReference {
   url: string;
   caption?: string;
   confidence?: number;
-  source?: 'nps' | 'unsplash' | 'other';
+  source?: 'nps' | 'other';
 }
 
 export interface PhotoFilterContext {
@@ -63,17 +63,6 @@ export function calculatePhotoConfidence(
                           url.includes('nationalpark');
   if (isTrustedSource) {
     score += 25; // NPS photos are authoritative, boost to pass threshold
-  }
-  
-  // BONUS: Unsplash photos get a boost (quality source, pre-curated)
-  // Higher boost if it's a static fallback photo (images.unsplash.com URL)
-  if (url.includes('unsplash')) {
-    if (hasQueryMatch) {
-      score += 10;
-    } else {
-      // Even without direct query match, Unsplash photos are curated and likely relevant
-      score += 20;
-    }
   }
   
   // BONUS: Keyword appears in conversation context

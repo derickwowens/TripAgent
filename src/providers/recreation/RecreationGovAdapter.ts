@@ -165,12 +165,12 @@ const PARK_REC_AREA_IDS: Record<string, string> = {
   'olym': '2881',   // Olympic
   'havo': '2843',   // Hawaii Volcanoes
   'ever': '2731',   // Everglades
-  'grsm': '2751',   // Great Smoky Mountains
+  'grsm': '2739',   // Great Smoky Mountains
   'bibe': '2564',   // Big Bend
   'cany': '2724',   // Canyonlands
   'crla': '2855',   // Crater Lake
   'dena': '2728',   // Denali
-  'glba': '2739',   // Glacier Bay
+  'glba': '2726',   // Glacier Bay
   'grba': '2748',   // Great Basin
   'gumo': '2755',   // Guadalupe Mountains
   'hale': '2756',   // Haleakala
@@ -387,13 +387,28 @@ export class RecreationGovAdapter extends BaseAdapter {
       url: l.URL,
     })).filter(l => l.url) || [];
 
+    // Construct proper reservation URL using FacilityID if not provided
+    // Recreation.gov camping URL format: /camping/campgrounds/{FacilityID}
+    let reservationUrl = facility.FacilityReservationURL;
+    if (!reservationUrl && facility.FacilityID) {
+      // Check if it's a camping facility
+      const isCamping = facility.FacilityTypeDescription?.toLowerCase().includes('camping') ||
+                        facility.FacilityName?.toLowerCase().includes('campground') ||
+                        facility.FacilityName?.toLowerCase().includes('camp');
+      if (isCamping) {
+        reservationUrl = `https://www.recreation.gov/camping/campgrounds/${facility.FacilityID}`;
+      } else {
+        reservationUrl = `https://www.recreation.gov/search?q=${encodeURIComponent(facility.FacilityName)}`;
+      }
+    }
+    
     return {
       id: facility.FacilityID,
       name: facility.FacilityName,
       description: this.cleanDescription(facility.FacilityDescription),
       type: facility.FacilityTypeDescription || 'Facility',
       reservable: facility.Reservable || false,
-      reservationUrl: facility.FacilityReservationURL || 'https://www.recreation.gov',
+      reservationUrl: reservationUrl || 'https://www.recreation.gov',
       coordinates: {
         latitude: facility.FacilityLatitude || 0,
         longitude: facility.FacilityLongitude || 0,

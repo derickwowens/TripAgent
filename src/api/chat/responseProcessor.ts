@@ -54,12 +54,10 @@ export function filterPhotos(
 ): PhotoReference[] {
   // DETERMINISTIC FILTERING:
   // 1. NPS photos: validate URL is from nps.gov OR keyword matches destination
-  // 2. Unsplash photos: include all (they're already curated for the destination)
-  // 3. Other photos (wildlife, etc.): include all
+  // 2. Other photos (wildlife, etc.): include all
   
   const npsPhotos = collectedPhotos.filter(p => p.source === 'nps');
-  const unsplashPhotos = collectedPhotos.filter(p => p.source === 'unsplash');
-  const otherPhotos = collectedPhotos.filter(p => p.source !== 'nps' && p.source !== 'unsplash');
+  const otherPhotos = collectedPhotos.filter(p => p.source !== 'nps');
   
   // For NPS photos, validate they're from official NPS source or match destination
   const destLower = (tripDestination || searchQuery || '').toLowerCase();
@@ -77,10 +75,10 @@ export function filterPhotos(
     return false;
   });
   
-  console.log(`[Chat] Photos: ${validatedNpsPhotos.length} NPS, ${unsplashPhotos.length} Unsplash, ${otherPhotos.length} other`);
+  console.log(`[Chat] Photos: ${validatedNpsPhotos.length} NPS, ${otherPhotos.length} other`);
   
-  // Combine all photos - Unsplash and other sources are pre-curated, include them all
-  return [...validatedNpsPhotos, ...unsplashPhotos, ...otherPhotos];
+  // Combine NPS photos with other sources (wildlife, etc.)
+  return [...validatedNpsPhotos, ...otherPhotos];
 }
 
 /**
@@ -141,7 +139,8 @@ export async function validateAndCleanResponse(
   detectedDestination: string | undefined,
   originalSearchQuery: string | undefined,
   messages: { content: string }[],
-  tripDestination: string | undefined
+  tripDestination: string | undefined,
+  conversationSeenUrls?: Set<string>
 ): Promise<{ response: string; photos?: PhotoReference[]; segments?: string[] }> {
   // Post-process response to clean up formatting artifacts
   const cleanedResponse = cleanResponseFormatting(rawResponse);
@@ -161,8 +160,9 @@ export async function validateAndCleanResponse(
   }
   
   // Validate and fix any broken links in the response
+  // Pass conversationSeenUrls to track duplicates across the entire conversation
   try {
-    const validatedResponse = await validateLinksInResponse(cleanedResponse);
+    const validatedResponse = await validateLinksInResponse(cleanedResponse, conversationSeenUrls);
     const segments = splitResponseIntoSegments(validatedResponse);
     console.log(`[Chat] Returning response with ${filteredPhotos.length} photos, ${segments.length} segments`);
     return { 

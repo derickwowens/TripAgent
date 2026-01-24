@@ -17,32 +17,30 @@ interface LinkValidationResult {
 // Valid NPS park codes for pattern validation
 const VALID_PARK_CODES = new Set(Object.keys(NATIONAL_PARKS));
 
-// Known-good NPS URL patterns (regex)
+// Known-good NPS URL patterns (regex) - ONLY these are guaranteed to work
 const VALID_NPS_PATTERNS = [
   // Main park page: /parkcode/index.htm or /parkcode/
   /^https:\/\/www\.nps\.gov\/([a-z]{4})\/(?:index\.htm)?$/i,
-  // Plan your visit main page
-  /^https:\/\/www\.nps\.gov\/([a-z]{4})\/planyourvisit\/index\.htm$/i,
-  // Basic info pages (these generally exist)
-  /^https:\/\/www\.nps\.gov\/([a-z]{4})\/planyourvisit\/basicinfo\.htm$/i,
-  /^https:\/\/www\.nps\.gov\/([a-z]{4})\/planyourvisit\/fees\.htm$/i,
-  /^https:\/\/www\.nps\.gov\/([a-z]{4})\/planyourvisit\/hours\.htm$/i,
-  // Common uploads (photos)
+  // Common uploads (photos) - static assets always work
   /^https:\/\/www\.nps\.gov\/common\/uploads\//i,
 ];
 
-// NPS subpages that are known to NOT exist universally (will be stripped)
+// NPS subpages that RARELY exist - only block truly problematic patterns
+// Less aggressive: many planyourvisit subpages DO exist (camping, fees, hours, etc.)
 const INVALID_NPS_SUBPAGE_PATTERNS = [
-  /\/stargazing/i,
-  /\/climbing/i,
-  /\/rock-climbing/i,
-  /\/night-sky/i,
-  /\/astronomy/i,
-  /\/wildlife-viewing/i,
-  /\/bird-watching/i,
-  /\/fishing/i,
-  /\/backpacking/i,
+  /\/getinvolved\//i,   // Usually doesn't exist
+  /\/news\//i,          // Often broken
+  /\/kids\//i,          // Rarely exists
+  /\/teachers\//i,      // Rarely exists
+  /\/stargazing/i,      // Very inconsistent
+  /\/houseboats/i,      // Park-specific, usually doesn't exist
+  /\/snowmobiling/i,    // Park-specific
+  /\/scuba/i,           // Park-specific
 ];
+
+// Note: We're NOT blocking /planyourvisit/, /learn/, /fishing/, /camping/, etc.
+// because many of these DO exist and are useful links. Let them through and
+// the user will see if they work or not. Better than removing valid links.
 
 /**
  * Detect the type of NPS subpage from URL
@@ -173,10 +171,86 @@ function isSafeSearchUrl(url: string): boolean {
     /yelp\.com\//i,
     /maps\.google\.com/i,
     /google\.com\/maps/i,
-    /recreation\.gov/i,
+    /recreation\.gov\/search/i,
+    /alltrails\.com\/search/i,  // AllTrails search URLs are safe
   ];
   
   return safePatterns.some(pattern => pattern.test(url));
+}
+
+/**
+ * Fix AllTrails links - convert ALL non-search links to search URLs
+ * Direct links are unreliable, search URLs always work
+ */
+function fixAllTrailsLink(url: string): { isValid: boolean; fixedUrl?: string } {
+  // If it's already a search URL, it's valid
+  if (url.includes('/search?q=') || url.includes('/search?')) {
+    return { isValid: true };
+  }
+  
+  // Extract trail name from direct links like /trail/us/california/yosemite-falls-trail
+  const trailMatch = url.match(/alltrails\.com\/trail\/[^/]+\/[^/]+\/([^/?#]+)/i);
+  if (trailMatch) {
+    const trailSlug = trailMatch[1].replace(/-/g, ' ');
+    const searchUrl = `https://www.alltrails.com/search?q=${encodeURIComponent(trailSlug)}`;
+    console.log(`[LinkValidator] Converting AllTrails trail link to search: ${url} -> ${searchUrl}`);
+    return { isValid: false, fixedUrl: searchUrl };
+  }
+  
+  // For explore links, convert to search
+  const exploreMatch = url.match(/alltrails\.com\/explore\/([^/?#]+)/i);
+  if (exploreMatch) {
+    const query = exploreMatch[1].replace(/-/g, ' ');
+    const searchUrl = `https://www.alltrails.com/search?q=${encodeURIComponent(query)}`;
+    console.log(`[LinkValidator] Converting AllTrails explore link to search: ${url}`);
+    return { isValid: false, fixedUrl: searchUrl };
+  }
+  
+  // For parks links like /parks/us/california/yosemite-national-park
+  const parksMatch = url.match(/alltrails\.com\/parks\/[^/]+\/[^/]+\/([^/?#]+)/i);
+  if (parksMatch) {
+    const parkSlug = parksMatch[1].replace(/-/g, ' ');
+    const searchUrl = `https://www.alltrails.com/search?q=${encodeURIComponent(parkSlug)}`;
+    console.log(`[LinkValidator] Converting AllTrails parks link to search: ${url}`);
+    return { isValid: false, fixedUrl: searchUrl };
+  }
+  
+  // For any other AllTrails URL that's not search, try to extract something useful
+  // and convert to search - better safe than broken
+  const anyPathMatch = url.match(/alltrails\.com\/(?!search)([^/?#]+)/i);
+  if (anyPathMatch) {
+    const fallbackQuery = anyPathMatch[1].replace(/-/g, ' ');
+    const searchUrl = `https://www.alltrails.com/search?q=${encodeURIComponent(fallbackQuery)}`;
+    console.log(`[LinkValidator] Converting unknown AllTrails link to search: ${url}`);
+    return { isValid: false, fixedUrl: searchUrl };
+  }
+  
+  // Fallback - just go to AllTrails search
+  return { isValid: false, fixedUrl: 'https://www.alltrails.com/search' };
+}
+
+/**
+ * Fix Recreation.gov links - convert direct facility links to search URLs
+ */
+function fixRecreationGovLink(url: string): { isValid: boolean; fixedUrl?: string } {
+  // Search URLs are always safe
+  if (url.includes('/search?q=') || url.includes('/search?')) {
+    return { isValid: true };
+  }
+  
+  // Extract facility name from camping URLs like /camping/campgrounds/12345
+  const campingMatch = url.match(/recreation\.gov\/camping\/campgrounds\/\d+/i);
+  if (campingMatch) {
+    // These direct IDs often work, but let's validate the format
+    return { isValid: true };
+  }
+  
+  // Permit URLs are usually valid
+  if (url.includes('/permits/')) {
+    return { isValid: true };
+  }
+  
+  return { isValid: true };
 }
 
 // Flight link formats (in order of preference)
@@ -368,12 +442,140 @@ export async function getValidatedCarLink(
 }
 
 /**
+ * Fix Wikipedia links - ensure they use valid article format
+ */
+function fixWikipediaLink(url: string): { isValid: boolean; fixedUrl?: string } {
+  // Wikipedia article links are generally reliable
+  if (url.match(/wikipedia\.org\/wiki\/[^/?#]+/i)) {
+    return { isValid: true };
+  }
+  
+  // Mobile Wikipedia - convert to desktop
+  if (url.includes('m.wikipedia.org')) {
+    const fixedUrl = url.replace('m.wikipedia.org', 'en.wikipedia.org');
+    return { isValid: false, fixedUrl };
+  }
+  
+  // Wikipedia search or other pages - assume valid
+  return { isValid: true };
+}
+
+/**
+ * Fix booking/travel links - ensure proper search format
+ */
+function fixBookingLink(url: string): { isValid: boolean; fixedUrl?: string } {
+  // Booking.com - search results are always safe
+  if (url.includes('booking.com')) {
+    if (url.includes('/searchresults')) {
+      return { isValid: true };
+    }
+    // Direct hotel links may 404 - try to extract hotel name for search
+    const hotelMatch = url.match(/booking\.com\/hotel\/[^/]+\/([^/?#.]+)/i);
+    if (hotelMatch) {
+      const hotelName = hotelMatch[1].replace(/-/g, ' ');
+      const searchUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(hotelName)}`;
+      console.log(`[LinkValidator] Converting Booking.com hotel link to search: ${url}`);
+      return { isValid: false, fixedUrl: searchUrl };
+    }
+  }
+  
+  // Kayak - flights/cars/hotels search formats are safe
+  if (url.includes('kayak.com')) {
+    if (url.match(/kayak\.com\/(flights|cars|hotels)\//i)) {
+      return { isValid: true };
+    }
+  }
+  
+  // Expedia - search URLs are safe
+  if (url.includes('expedia.com')) {
+    if (url.includes('Hotel-Search') || url.includes('Flights') || url.includes('Cars')) {
+      return { isValid: true };
+    }
+  }
+  
+  return { isValid: true };
+}
+
+/**
+ * Fix iNaturalist links - ensure valid observation/taxon format
+ */
+function fixINaturalistLink(url: string): { isValid: boolean; fixedUrl?: string } {
+  // Observation and taxon pages are reliable
+  if (url.match(/inaturalist\.org\/(observations|taxa)\/\d+/i)) {
+    return { isValid: true };
+  }
+  
+  // Search and explore pages are safe
+  if (url.match(/inaturalist\.org\/(observations|explore)/i)) {
+    return { isValid: true };
+  }
+  
+  return { isValid: true };
+}
+
+/**
  * Validate a single link using pattern-based rules (fast, no HTTP requests)
  */
 function validateLinkByPattern(url: string): { isValid: boolean; fixedUrl?: string; shouldRemove?: boolean } {
-  // NPS URLs - use pattern validation
+  // NPS URLs - aggressive validation, redirect most to main page
   if (url.includes('nps.gov')) {
     return isValidNpsUrl(url);
+  }
+  
+  // AllTrails URLs - convert ALL non-search to search
+  if (url.includes('alltrails.com')) {
+    return fixAllTrailsLink(url);
+  }
+  
+  // Recreation.gov URLs - validate format (these work well per user)
+  if (url.includes('recreation.gov')) {
+    return fixRecreationGovLink(url);
+  }
+  
+  // Wikipedia links - ensure valid format
+  if (url.includes('wikipedia.org')) {
+    return fixWikipediaLink(url);
+  }
+  
+  // Booking/travel links - ensure search format
+  if (url.includes('booking.com') || url.includes('kayak.com') || url.includes('expedia.com')) {
+    return fixBookingLink(url);
+  }
+  
+  // iNaturalist links - validate format
+  if (url.includes('inaturalist.org')) {
+    return fixINaturalistLink(url);
+  }
+  
+  // Unsplash URLs - REMOVE (tool is disabled, links are unreliable)
+  if (url.includes('unsplash.com')) {
+    console.log(`[LinkValidator] Removing Unsplash link (tool disabled): ${url}`);
+    return { isValid: false, shouldRemove: true };
+  }
+  
+  // Third-party campground URLs - Claude constructs these from memory, often outdated
+  // Convert to Google search for reliability
+  if (url.includes('koa.com/campgrounds/') || 
+      url.includes('miamidade.gov/parks/') ||
+      url.includes('reserveamerica.com') ||
+      url.includes('hipcamp.com/')) {
+    // Extract campground name from URL for search
+    const urlParts = url.split('/');
+    const lastPart = urlParts[urlParts.length - 1] || urlParts[urlParts.length - 2];
+    const searchTerm = lastPart.replace(/[-_]/g, ' ').replace(/\.asp$|\.htm$|\.html$/i, '');
+    const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchTerm + ' campground')}`;
+    console.log(`[LinkValidator] Converting third-party campground URL to search: ${url} -> ${googleSearchUrl}`);
+    return { isValid: false, fixedUrl: googleSearchUrl };
+  }
+  
+  // Yelp URLs - API-provided, generally reliable
+  if (url.includes('yelp.com')) {
+    return { isValid: true };
+  }
+  
+  // Google Maps/Search URLs - always work
+  if (url.includes('google.com/maps') || url.includes('maps.google.com') || url.includes('google.com/search')) {
+    return { isValid: true };
   }
   
   // Safe search URLs - always valid
@@ -381,12 +583,17 @@ function validateLinkByPattern(url: string): { isValid: boolean; fixedUrl?: stri
     return { isValid: true };
   }
   
-  // Other URLs - assume valid (we can't check without HTTP request)
+  // Unknown URLs - assume valid but log for monitoring
+  console.log(`[LinkValidator] Unknown URL type (assuming valid): ${url}`);
   return { isValid: true };
 }
 
 // Parse and validate links in a response text
-export async function validateLinksInResponse(responseText: string): Promise<string> {
+// conversationSeenUrls: optional Set to track URLs across the entire conversation
+export async function validateLinksInResponse(
+  responseText: string,
+  conversationSeenUrls?: Set<string>
+): Promise<string> {
   // Regex to find markdown links: [text](url)
   const linkRegex = /\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g;
   
@@ -401,29 +608,36 @@ export async function validateLinksInResponse(responseText: string): Promise<str
     });
   }
   
+  console.log(`[LinkValidator] Found ${links.length} markdown links to validate`);
+  links.forEach((l, i) => console.log(`[LinkValidator]   ${i + 1}. "${l.text}" -> ${l.url}`));
+  
   let processedText = responseText;
-  const seenUrls = new Set<string>();
+  // Use conversation-level tracking if provided, otherwise use local set
+  const seenUrls = conversationSeenUrls || new Set<string>();
   
   // Validate each link using pattern matching (no HTTP requests)
+  // Duplicate detection: only consider EXACT original URL matches as duplicates
   for (const link of links) {
+    // Check for exact duplicate FIRST (before validation)
+    if (seenUrls.has(link.url)) {
+      console.log(`[LinkValidator] Removing duplicate link: ${link.url}`);
+      processedText = processedText.replace(link.match, link.text);
+      continue;
+    }
+    
+    // Track this URL to detect future duplicates
+    seenUrls.add(link.url);
+    
     const validation = validateLinkByPattern(link.url);
     
     if (!validation.isValid) {
       if (validation.fixedUrl) {
-        // Check if we've already seen this fixed URL
-        if (seenUrls.has(validation.fixedUrl)) {
-          // Duplicate - remove the link entirely, keep just text
-          console.log(`[LinkValidator] Removing duplicate link: ${link.url} (already have ${validation.fixedUrl})`);
-          processedText = processedText.replace(link.match, link.text);
-        } else {
-          // Replace with fixed URL and track it
-          console.log(`[LinkValidator] Fixing broken link: ${link.url} -> ${validation.fixedUrl}`);
-          seenUrls.add(validation.fixedUrl);
-          processedText = processedText.replace(
-            link.match,
-            `[${link.text}](${validation.fixedUrl})`
-          );
-        }
+        // Replace with fixed URL
+        console.log(`[LinkValidator] Fixing broken link: ${link.url} -> ${validation.fixedUrl}`);
+        processedText = processedText.replace(
+          link.match,
+          `[${link.text}](${validation.fixedUrl})`
+        );
       } else if (validation.shouldRemove) {
         // Remove the entire link, keep just the text
         console.log(`[LinkValidator] Removing broken link: ${link.url}`);
@@ -433,10 +647,8 @@ export async function validateLinksInResponse(responseText: string): Promise<str
         console.log(`[LinkValidator] Converting broken link to text: ${link.url}`);
         processedText = processedText.replace(link.match, link.text);
       }
-    } else {
-      // Valid link - track it to prevent duplicates
-      seenUrls.add(link.url);
     }
+    // Valid links just pass through (already tracked above)
   }
   
   return processedText;

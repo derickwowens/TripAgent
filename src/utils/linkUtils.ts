@@ -93,7 +93,9 @@ export async function validateUrlsBatch(
  */
 export function generateGoogleMapsLink(name: string, city?: string, state?: string): string {
   const query = [name, city, state].filter(Boolean).join(' ');
-  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+  console.log(`[LinkGen] Google Maps: name="${name}", city="${city || 'none'}", state="${state || 'none'}" -> ${url}`);
+  return url;
 }
 
 /**
@@ -102,7 +104,9 @@ export function generateGoogleMapsLink(name: string, city?: string, state?: stri
  * @returns Google Maps directions URL
  */
 export function generateDirectionsLink(destination: string): string {
-  return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
+  const url = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(destination)}`;
+  console.log(`[LinkGen] Directions: destination="${destination}" -> ${url}`);
+  return url;
 }
 
 /**
@@ -112,7 +116,9 @@ export function generateDirectionsLink(destination: string): string {
  * @returns PlugShare URL
  */
 export function generatePlugShareLink(lat: number, lng: number): string {
-  return `https://www.plugshare.com/map#/${lat}/${lng}`;
+  const url = `https://www.plugshare.com/map#/${lat}/${lng}`;
+  console.log(`[LinkGen] PlugShare: lat=${lat}, lng=${lng} -> ${url}`);
+  return url;
 }
 
 /**
@@ -121,7 +127,9 @@ export function generatePlugShareLink(lat: number, lng: number): string {
  * @returns Tesla find-us URL
  */
 export function generateTeslaChargerLink(location: string): string {
-  return `https://www.tesla.com/findus?search=${encodeURIComponent(location)}&type=supercharger`;
+  const url = `https://www.tesla.com/findus?search=${encodeURIComponent(location)}&type=supercharger`;
+  console.log(`[LinkGen] Tesla Charger: location="${location}" -> ${url}`);
+  return url;
 }
 
 /**
@@ -132,7 +140,9 @@ export function generateTeslaChargerLink(location: string): string {
  */
 export function generateAllTrailsLink(trailName: string, parkName?: string): string {
   const query = parkName ? `${trailName} ${parkName}` : trailName;
-  return `https://www.alltrails.com/search?q=${encodeURIComponent(query)}`;
+  const url = `https://www.alltrails.com/search?q=${encodeURIComponent(query)}`;
+  console.log(`[LinkGen] AllTrails: trail="${trailName}", park="${parkName || 'none'}" -> ${url}`);
+  return url;
 }
 
 /**
@@ -142,11 +152,15 @@ export function generateAllTrailsLink(trailName: string, parkName?: string): str
  * @returns NPS camping URL
  */
 export function generateNPSCampgroundLink(parkCode: string, campgroundName?: string): string {
+  let url: string;
   if (campgroundName) {
     // Search for specific campground on recreation.gov
-    return `https://www.recreation.gov/search?q=${encodeURIComponent(campgroundName)}`;
+    url = `https://www.recreation.gov/search?q=${encodeURIComponent(campgroundName)}`;
+  } else {
+    url = `https://www.nps.gov/${parkCode}/planyourvisit/camping.htm`;
   }
-  return `https://www.nps.gov/${parkCode}/planyourvisit/camping.htm`;
+  console.log(`[LinkGen] NPS Campground: parkCode="${parkCode}", campground="${campgroundName || 'none'}" -> ${url}`);
+  return url;
 }
 
 /**
@@ -155,7 +169,9 @@ export function generateNPSCampgroundLink(parkCode: string, campgroundName?: str
  * @returns Recreation.gov search URL
  */
 export function generateRecreationGovLink(query: string): string {
-  return `https://www.recreation.gov/search?q=${encodeURIComponent(query)}`;
+  const url = `https://www.recreation.gov/search?q=${encodeURIComponent(query)}`;
+  console.log(`[LinkGen] Recreation.gov: query="${query}" -> ${url}`);
+  return url;
 }
 
 /**

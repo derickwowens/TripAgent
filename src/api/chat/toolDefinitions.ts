@@ -139,20 +139,12 @@ export const tools: Anthropic.Tool[] = [
       required: ['location'],
     },
   },
-  {
-    name: 'refresh_photos',
-    description: `Get new/different photos for a National Park, event, or activity. Use official NPS park names. Use this for photos of specific events (wildflowers, wildlife, sunsets, waterfalls, fall colors), activities (hiking, camping, stargazing), or different background images.`,
-    input_schema: {
-      type: 'object' as const,
-      properties: {
-        destination: { type: 'string', description: 'National Park or destination using official NPS name (e.g., "Yosemite National Park", "Grand Canyon National Park", "Yellowstone National Park")' },
-        event: { type: 'string', description: 'Specific event or phenomenon to photograph (e.g., "Old Faithful eruption", "wildflower bloom", "fall foliage", "elk rut", "sunset", "northern lights", "waterfall")' },
-        style: { type: 'string', description: 'Photo style: "landscape", "wildlife", "hiking", "camping", "scenic", "adventure", "aerial", "night sky"' },
-        count: { type: 'number', description: 'Number of photos to return (default: 8, max: 12)' },
-      },
-      required: ['destination'],
-    },
-  },
+  // DISABLED: Unsplash tool removed due to unreliable links
+  // {
+  //   name: 'refresh_photos',
+  //   description: `Get new/different photos for a National Park...`,
+  //   ...
+  // },
   {
     name: 'search_restaurants',
     description: `Search for restaurants near a National Park or destination. Use this when users ask about dining options, places to eat, or food recommendations. Use official NPS park names or nearby town names.`,

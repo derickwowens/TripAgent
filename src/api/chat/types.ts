@@ -12,32 +12,22 @@ export interface PhotoReference {
   url: string;
   caption?: string;
   confidence?: number;
-  source?: 'nps' | 'unsplash' | 'other';
-  photographerId?: string; // For deduplication (Unsplash username)
+  source?: 'nps' | 'other';
+  photographerId?: string; // For deduplication
 }
 
 /**
- * Deduplicate photos by URL and photographer (one photo per Unsplash user)
+ * Deduplicate photos by URL
  */
 export function deduplicatePhotos(photos: PhotoReference[]): PhotoReference[] {
   const seenUrls = new Set<string>();
-  const seenPhotographers = new Set<string>();
   
   return photos.filter(photo => {
-    // Always filter out duplicate URLs
+    // Filter out duplicate URLs
     if (seenUrls.has(photo.url)) {
       return false;
     }
     seenUrls.add(photo.url);
-    
-    // For Unsplash photos, only allow one per photographer
-    if (photo.source === 'unsplash' && photo.photographerId) {
-      if (seenPhotographers.has(photo.photographerId)) {
-        return false;
-      }
-      seenPhotographers.add(photo.photographerId);
-    }
-    
     return true;
   });
 }
@@ -89,6 +79,8 @@ export interface ChatContext {
     parkCode?: string;
     parkName?: string;
   };
+  // Track URLs used in this conversation to prevent duplicates
+  seenUrls?: Set<string>;
 }
 
 /**

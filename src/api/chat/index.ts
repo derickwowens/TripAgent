@@ -11,7 +11,6 @@ import { GoogleMapsAdapter } from '../../providers/GoogleMapsAdapter.js';
 import { OpenChargeMapAdapter } from '../../providers/OpenChargeMapAdapter.js';
 import { YelpAdapter } from '../../providers/YelpAdapter.js';
 import { findParkCode } from '../../utils/parkCodeLookup.js';
-import { getUnsplashAdapter } from '../../providers/UnsplashAdapter.js';
 import { 
   generateGoogleMapsLink, 
   generateDirectionsLink, 
@@ -402,6 +401,11 @@ export async function createChatHandler(facade: TravelFacade) {
       const dedupedPhotos = deduplicatePhotos(collectedPhotos);
       console.log(`[Chat] Photos: ${collectedPhotos.length} collected, ${dedupedPhotos.length} after deduplication`);
       
+      // Initialize seenUrls in context if not present (for conversation-level duplicate tracking)
+      if (!context.seenUrls) {
+        context.seenUrls = new Set<string>();
+      }
+      
       // Process and validate response
       return validateAndCleanResponse(
         rawResponse,
@@ -409,7 +413,8 @@ export async function createChatHandler(facade: TravelFacade) {
         detectedDestination,
         originalSearchQuery,
         messages,
-        context.tripContext?.destination
+        context.tripContext?.destination,
+        context.seenUrls
       );
       
     } catch (error: any) {
@@ -496,9 +501,10 @@ async function handleToolCall(
       result = await handleSearchActivities(toolUse.input as any, facade);
       break;
 
-    case 'refresh_photos':
-      result = await handleRefreshPhotos(toolUse.input as any, collectedPhotos);
-      break;
+    // DISABLED: Unsplash tool removed due to unreliable links
+    // case 'refresh_photos':
+    //   result = await handleRefreshPhotos(toolUse.input as any, collectedPhotos);
+    //   break;
 
     case 'search_restaurants':
       // Use context.npsGatewayCity for deterministic location
@@ -515,7 +521,7 @@ async function handleToolCall(
       break;
 
     case 'get_campgrounds':
-      result = await handleGetCampgrounds(toolUse.input as any, facade);
+      result = await handleGetCampgrounds(toolUse.input as any, facade, context);
       break;
 
     default:
@@ -619,36 +625,10 @@ async function handleSearchNationalParks(
     const parkName = parksForPhotos[0].name.replace(' National Park', '').replace(' National', '');
     const parkCode = parksForPhotos[0].parkCode;
     
-    // Collect NPS photos
+    // Collect NPS photos only (Unsplash integration removed)
     await collectNpsPhotos(parksForPhotos, collectedPhotos, TARGET_NPS_PHOTOS);
-    
-    // Supplement with Unsplash if needed (only if we have NPS photos already)
-    const unsplash = getUnsplashAdapter();
-    if (collectedPhotos.length > 0 && collectedPhotos.length < TARGET_NPS_PHOTOS && unsplash.isConfigured()) {
-      try {
-        const needed = TARGET_NPS_PHOTOS - collectedPhotos.length;
-        console.log(`[Chat] Supplementing with ${needed} Unsplash landscape photos for "${parkName}"`);
-        const unsplashPhotos = await unsplash.searchPhotos(`${parkName} landscape nature`, needed);
-        unsplashPhotos.forEach(photo => {
-          collectedPhotos.push({
-            keyword: parkName,
-            url: photo.url,
-            caption: `${parkName} - ${photo.caption} (${photo.credit})`,
-            source: 'unsplash',
-            photographerId: photo.photographerId,
-          });
-        });
-      } catch (error: any) {
-        console.error(`[Chat] Unsplash supplement failed: ${error.message} - continuing without fallback photos`);
-      }
-    }
-    
-    // Fetch activity/event photos
-    if (unsplash.isConfigured()) {
-      await collectActivityPhotos(facade, parkCode, parkName, collectedPhotos, TARGET_TOTAL_PHOTOS);
-    }
   } else {
-    // No NPS match - do NOT use Unsplash fallback in production
+    // No NPS match - no photos will be displayed
     console.log(`[Chat] No NPS parks matched "${cleanQuery}" - no photos will be displayed`);
   }
   
@@ -674,8 +654,19 @@ async function handleSearchNationalParks(
     }
   }
   
+  // Add officialUrl to each park and log
+  const parksWithUrls = parks.slice(0, 3).map(park => {
+    const officialUrl = park.url || `https://www.nps.gov/${park.parkCode}/index.htm`;
+    console.log(`[LinkGen] Park "${park.name}": officialUrl=${officialUrl}`);
+    return {
+      ...park,
+      officialUrl,
+      _linkNote: 'USE officialUrl for park links - do NOT construct subpage URLs',
+    };
+  });
+  
   return {
-    result: { parks: parks.slice(0, 3) },
+    result: { parks: parksWithUrls },
     destination: detectedDest,
     searchQuery: cleanQuery,
     npsGateway
@@ -723,65 +714,7 @@ async function collectNpsPhotos(
   console.log(`[Chat] Park search: collected ${collectedPhotos.length} NPS photos`);
 }
 
-async function collectActivityPhotos(
-  facade: TravelFacade,
-  parkCode: string,
-  parkName: string,
-  collectedPhotos: PhotoReference[],
-  targetTotal: number
-): Promise<void> {
-  try {
-    const unsplash = getUnsplashAdapter();
-    const activities = await facade.getParkActivities(parkCode);
-    const hikes = facade.getParkHikes(parkCode);
-    
-    const features: string[] = [];
-    
-    activities.slice(0, 5).forEach((activity: any) => {
-      if (activity.title) features.push(activity.title);
-    });
-    
-    hikes.slice(0, 3).forEach(hike => {
-      features.push(hike.name);
-    });
-    
-    if (PARK_FEATURES[parkCode]) {
-      features.push(...PARK_FEATURES[parkCode]);
-    }
-    
-    const uniqueFeatures = [...new Set(features)].slice(0, 8);
-    console.log(`[Chat] Fetching event/activity photos for: ${uniqueFeatures.join(', ')}`);
-    
-    for (const feature of uniqueFeatures) {
-      if (collectedPhotos.length >= targetTotal) break;
-      
-      try {
-        const searchQueryStr = `${parkName} ${feature}`;
-        const photos = await unsplash.searchPhotos(searchQueryStr, 1);
-        
-        if (photos.length > 0) {
-          const photo = photos[0];
-          if (!collectedPhotos.some(p => p.url === photo.url)) {
-            collectedPhotos.push({
-              keyword: feature,
-              url: photo.url,
-              caption: `${parkName} - ${feature} (${photo.credit})`,
-              source: 'unsplash',
-              photographerId: photo.photographerId,
-            });
-          }
-        }
-      } catch (error: any) {
-        console.error(`[Chat] Unsplash activity photo failed for "${feature}": ${error.message}`);
-        // Continue without this photo
-      }
-    }
-    
-    console.log(`[Chat] Total photos after event matching: ${collectedPhotos.length}`);
-  } catch (err) {
-    console.log(`[Chat] Could not fetch activities for event photos:`, err);
-  }
-}
+// REMOVED: collectActivityPhotos function - Unsplash integration removed
 
 async function handlePlanParkTrip(
   input: any,
@@ -932,7 +865,16 @@ async function handleSearchFlights(
     : `Flights from ${origin} to ${input.destination} on ${input.departure_date} one way`;
   const googleFlightsLink = `https://www.google.com/travel/flights?q=${encodeURIComponent(googleFlightsQuery)}`;
   
-  console.log(`[Flight Search] Generated links - Kayak: ${kayakLink}, Google: ${googleFlightsLink}`);
+  // Generate airport Google Maps links
+  const originAirportUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(origin + ' Airport')}`;
+  const destAirportUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(input.destination + ' Airport')}`;
+  
+  console.log(`[LinkGen] Flight search:`);
+  console.log(`[LinkGen]   - origin: ${origin}, destination: ${input.destination}`);
+  console.log(`[LinkGen]   - kayakLink: ${kayakLink}`);
+  console.log(`[LinkGen]   - googleFlightsLink: ${googleFlightsLink}`);
+  console.log(`[LinkGen]   - originAirportUrl: ${originAirportUrl}`);
+  console.log(`[LinkGen]   - destAirportUrl: ${destAirportUrl}`);
   
   return {
     flights: flightResults.results.slice(0, 5).map(f => ({
@@ -951,6 +893,17 @@ async function handleSearchFlights(
     bookingLinks: {
       kayak: kayakLink,
       googleFlights: googleFlightsLink,
+    },
+    // Airport location links for Google Maps
+    airportLinks: {
+      origin: {
+        code: origin,
+        googleMapsUrl: originAirportUrl,
+      },
+      destination: {
+        code: input.destination,
+        googleMapsUrl: destAirportUrl,
+      },
     },
     // Primary link for Claude to use
     bookingLink: kayakLink,
@@ -988,21 +941,31 @@ async function handleSearchEvChargingStations(input: any, context: ChatContext):
     10
   );
   return {
-    stations: chargingStations.map(s => ({
-      name: s.name,
-      location: `${s.city}, ${s.state}`,
-      operator: s.operator,
-      powerKW: s.powerKW,
-      numChargers: s.numPoints,
-      isTesla: s.isTeslaSupercharger,
-      isFastCharger: s.isFastCharger,
-      cost: s.usageCost,
-      // Add clickable links for each station
-      googleMapsUrl: generateGoogleMapsLink(s.name, s.city, s.state),
-      directionsUrl: generateDirectionsLink(`${s.name}, ${s.city}, ${s.state}`),
-      plugShareUrl: generatePlugShareLink(s.latitude, s.longitude),
-      teslaUrl: s.isTeslaSupercharger ? generateTeslaChargerLink(`${s.city}, ${s.state}`) : undefined,
-    })),
+    stations: chargingStations.map(s => {
+      // PlugShare provides the most authoritative EV charging info
+      const officialUrl = generatePlugShareLink(s.latitude, s.longitude);
+      const googleMapsUrl = generateGoogleMapsLink(s.name, s.city, s.state);
+      
+      console.log(`[LinkGen] EV Station "${s.name}": officialUrl=${officialUrl}`);
+      
+      return {
+        name: s.name,
+        location: `${s.city}, ${s.state}`,
+        operator: s.operator,
+        powerKW: s.powerKW,
+        numChargers: s.numPoints,
+        isTesla: s.isTeslaSupercharger,
+        isFastCharger: s.isFastCharger,
+        cost: s.usageCost,
+        // AUTHORITATIVE URL from OpenChargeMap - Claude should use this
+        officialUrl: officialUrl,
+        googleMapsUrl: googleMapsUrl,
+        directionsUrl: generateDirectionsLink(`${s.name}, ${s.city}, ${s.state}`),
+        plugShareUrl: officialUrl,
+        teslaUrl: s.isTeslaSupercharger ? generateTeslaChargerLink(`${s.city}, ${s.state}`) : undefined,
+        _linkNote: 'USE officialUrl/plugShareUrl for charging station info - from OpenChargeMap API',
+      };
+    }),
     note: chargingStations.length > 0 
       ? `Found ${chargingStations.length} DC fast charging stations along your route`
       : 'No charging stations found along this route',
@@ -1026,20 +989,31 @@ async function handleSearchHotels(
     adults: travelers,
     rooms: rooms,
   });
+  // Generate booking link for hotels
+  const bookingSearchUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(input.location)}&checkin=${input.check_in_date}&checkout=${input.check_out_date}&group_adults=${travelers}&no_rooms=${rooms}`;
+  console.log(`[LinkGen] Hotel booking search: ${bookingSearchUrl}`);
+  
   return {
-    hotels: hotelResults.results.slice(0, 8).map(h => ({
-      name: h.name,
-      price: `$${h.price.total}`,
-      pricePerNight: `$${h.price.perNight}`,
-      rating: h.rating,
-      address: h.address,
-      amenities: h.amenities?.slice(0, 5),
-      // Add clickable links for each hotel
-      googleMapsUrl: generateGoogleMapsLink(h.name, input.location),
-      directionsUrl: generateDirectionsLink(`${h.name}, ${input.location}`),
-    })),
+    hotels: hotelResults.results.slice(0, 8).map(h => {
+      const googleMapsUrl = generateGoogleMapsLink(h.name, input.location);
+      const directionsUrl = generateDirectionsLink(`${h.name}, ${input.location}`);
+      console.log(`[LinkGen] Hotel "${h.name}": googleMaps=${googleMapsUrl}`);
+      return {
+        name: h.name,
+        price: `$${h.price.total}`,
+        pricePerNight: `$${h.price.perNight}`,
+        rating: h.rating,
+        address: h.address,
+        amenities: h.amenities?.slice(0, 5),
+        googleMapsUrl,
+        directionsUrl,
+      };
+    }),
     totalFound: hotelResults.totalResults,
     providers: hotelResults.providers,
+    bookingLinks: {
+      booking: bookingSearchUrl,
+    },
   };
 }
 
@@ -1056,6 +1030,12 @@ async function handleSearchCarRentals(input: any, facade: TravelFacade, context:
     pickupTime: input.pickup_time || '10:00',
     dropoffTime: input.dropoff_time || '10:00',
   });
+  
+  // Generate car rental booking links
+  const kayakCarsUrl = `https://www.kayak.com/cars/${encodeURIComponent(input.pickup_location)}/${input.pickup_date}/${input.dropoff_date}`;
+  console.log(`[LinkGen] Car rental: pickup="${input.pickup_location}", dates=${input.pickup_date} to ${input.dropoff_date}`);
+  console.log(`[LinkGen] Car rental Kayak: ${kayakCarsUrl}`);
+  
   return {
     cars: carResults.results.slice(0, 8).map(c => ({
       vendor: c.vendor,
@@ -1070,89 +1050,50 @@ async function handleSearchCarRentals(input: any, facade: TravelFacade, context:
     })),
     totalFound: carResults.totalResults,
     providers: carResults.providers,
+    bookingLinks: {
+      kayak: kayakCarsUrl,
+    },
   };
 }
 
 async function handleSearchActivities(input: any, facade: TravelFacade): Promise<any> {
+  console.log(`[LinkGen] Activities search for location: ${input.location}`);
+  
   const activityResults = await facade.searchActivities({
     location: input.location,
     radius: 50,
   });
+  
   return {
-    activities: activityResults.results.slice(0, 10).map(a => ({
-      name: a.name,
-      description: a.shortDescription?.substring(0, 150) + (a.shortDescription && a.shortDescription.length > 150 ? '...' : ''),
-      price: a.price?.amount ? `$${a.price.amount}` : 'Price varies',
-      rating: a.rating,
-      duration: a.duration,
-      bookingLink: a.bookingLink,
-    })),
+    activities: activityResults.results.slice(0, 10).map(a => {
+      // Amadeus provides authoritative booking links
+      const officialUrl = a.bookingLink;
+      const googleMapsUrl = a.coordinates 
+        ? `https://www.google.com/maps/search/?api=1&query=${a.coordinates.latitude},${a.coordinates.longitude}`
+        : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(a.name + ' ' + input.location)}`;
+      
+      console.log(`[LinkGen] Activity "${a.name}": officialUrl=${officialUrl || 'none'}, provider=${a.provider}`);
+      
+      return {
+        name: a.name,
+        description: a.shortDescription?.substring(0, 150) + (a.shortDescription && a.shortDescription.length > 150 ? '...' : ''),
+        price: a.price?.amount ? `$${a.price.amount}` : 'Price varies',
+        rating: a.rating,
+        duration: a.duration,
+        // AUTHORITATIVE URL from Amadeus - Claude MUST use this
+        officialUrl: officialUrl,
+        bookingLink: a.bookingLink,
+        googleMapsUrl,
+        provider: a.provider,
+        _linkNote: 'USE officialUrl/bookingLink for activity booking - these are from Amadeus API',
+      };
+    }),
     totalFound: activityResults.totalResults,
     providers: activityResults.providers,
   };
 }
 
-async function handleRefreshPhotos(
-  input: any,
-  collectedPhotos: PhotoReference[]
-): Promise<any> {
-  const destination = input.destination;
-  const event = input.event || '';
-  const style = input.style || '';
-  const photoCount = Math.min(input.count || 8, 12);
-  
-  const unsplashAdapter = getUnsplashAdapter();
-  if (!unsplashAdapter.isConfigured()) {
-    return { error: 'Photo service not available' };
-  }
-  
-  let photoSearchQuery: string;
-  let photoCaption: string;
-  
-  if (event) {
-    photoSearchQuery = `${destination} ${event}`;
-    photoCaption = `${event} at ${destination}`;
-  } else if (style) {
-    photoSearchQuery = `${destination} ${style} nature`;
-    photoCaption = `${destination} - ${style}`;
-  } else {
-    photoSearchQuery = `${destination} landscape nature scenic`;
-    photoCaption = destination;
-  }
-  
-  console.log(`[Chat] Refreshing photos for "${destination}" with query: "${photoSearchQuery}"`);
-  
-  try {
-    const freshPhotos = await unsplashAdapter.searchPhotos(photoSearchQuery, photoCount);
-    
-    freshPhotos.forEach(photo => {
-      collectedPhotos.push({
-        keyword: event || destination,
-        url: photo.url,
-        caption: photo.caption || photoCaption,
-        source: 'unsplash',
-        photographerId: photo.photographerId,
-      });
-    });
-    
-    return {
-      message: event 
-        ? `Found ${freshPhotos.length} photos of ${event} at ${destination}`
-        : `Found ${freshPhotos.length} new photos for ${destination}`,
-      photoCount: freshPhotos.length,
-      destination: destination,
-      event: event || null,
-      style: style || 'general',
-    };
-  } catch (error: any) {
-    console.error(`[Chat] Unsplash refresh_photos failed: ${error.message}`);
-    return {
-      error: 'Photo service temporarily unavailable',
-      message: 'Unable to fetch new photos at this time',
-      photoCount: 0,
-    };
-  }
-}
+// REMOVED: handleRefreshPhotos function - Unsplash integration removed
 
 async function handleSearchRestaurants(
   input: {
@@ -1260,6 +1201,10 @@ async function handleSearchRestaurants(
           ? YelpAdapter.generateReservationLink(r) 
           : undefined;
         
+        // Yelp provides authoritative URLs
+        const officialUrl = r.url;
+        console.log(`[LinkGen] Restaurant "${r.name}": officialUrl=${officialUrl}`);
+        
         return {
           name: r.name,
           address: r.location.displayAddress.join(', '),
@@ -1275,12 +1220,13 @@ async function handleSearchRestaurants(
           distanceMiles: r.distance ? (r.distance / 1609.34).toFixed(1) : null,
           supportsReservation: r.transactions.includes('restaurant_reservation'),
           reservationLink: reservationLink, // Only included if restaurant supports reservations
+          // AUTHORITATIVE URL from Yelp - Claude MUST use this
+          officialUrl: officialUrl,
           yelpUrl: r.url,                  // Verified - from Yelp API (PREFER THIS)
           googleMapsUrl: googleMapsUrl,    // Always valid fallback
           directionsUrl: generateDirectionsLink(`${r.name}, ${r.location.city}, ${r.location.state}`),
           imageUrl: r.imageUrl,
-          // Link priority hint for AI: yelpUrl > googleMapsUrl
-          preferredLink: r.url,
+          _linkNote: 'USE officialUrl/yelpUrl for restaurant info - from Yelp API',
         };
       }),
       totalFound: yelpResults.total,
@@ -1623,14 +1569,23 @@ async function handleGetWildlife(
       parkCode,
       totalSpecies: species.length,
       wildlife: grouped,
-      species: species.slice(0, 15).map(s => ({
-        name: s.commonName,
-        scientificName: s.scientificName,
-        category: s.category,
-        observations: s.count,
-        photoUrl: s.photoUrl,
-        wikipediaUrl: s.wikipediaUrl,
-      })),
+      species: species.slice(0, 15).map(s => {
+        // iNaturalist provides authoritative Wikipedia links
+        const officialUrl = s.wikipediaUrl;
+        console.log(`[LinkGen] Wildlife "${s.commonName}": officialUrl=${officialUrl || 'none'}`);
+        
+        return {
+          name: s.commonName,
+          scientificName: s.scientificName,
+          category: s.category,
+          observations: s.count,
+          photoUrl: s.photoUrl,
+          // AUTHORITATIVE URL from iNaturalist - Claude should use this
+          officialUrl: officialUrl,
+          wikipediaUrl: s.wikipediaUrl,
+          _linkNote: 'USE officialUrl/wikipediaUrl for species info - from iNaturalist API',
+        };
+      }),
       links: links.length > 0 ? links : undefined,
       dataSource: 'iNaturalist (research-grade observations)',
     };
@@ -1646,10 +1601,20 @@ async function handleGetWildlife(
 
 async function handleGetCampgrounds(
   input: { park_code: string },
-  facade: TravelFacade
+  facade: TravelFacade,
+  context: ChatContext
 ): Promise<any> {
   const parkCode = input.park_code.toLowerCase();
   console.log(`[Chat] Campgrounds query for park: ${parkCode}`);
+  
+  // Extract travel dates from context for prefilled links
+  const tripContext = context.tripContext;
+  const activeLeg = tripContext?.activeLeg;
+  const leg = activeLeg !== undefined ? tripContext?.legs?.[activeLeg] : tripContext?.legs?.[0];
+  const startDate = leg?.dates?.start;
+  const endDate = leg?.dates?.end;
+  
+  console.log(`[LinkGen] Campground dates from context: startDate=${startDate || 'none'}, endDate=${endDate || 'none'}`);
 
   try {
     const campgrounds = await facade.getCampgroundsFromRecreationGov(parkCode);
@@ -1683,25 +1648,103 @@ async function handleGetCampgrounds(
     return {
       parkCode,
       totalCampgrounds: campgrounds.length,
-      campgrounds: campgrounds.map(c => ({
-        name: c.name,
-        description: c.description,
-        type: c.type,
-        reservable: c.reservable,
-        reservationUrl: c.reservationUrl,
-        phone: c.phone,
-        email: c.email,
-        feeDescription: c.feeDescription,
-        coordinates: c.coordinates.latitude ? c.coordinates : undefined,
-        address: c.address,
-        directions: c.directions,
-        adaAccess: c.adaAccess,
-        activities: c.activities,
-        amenities: c.amenities,
-        campsiteTypes: c.campsiteTypes,
-        totalCampsites: c.totalCampsites,
-        equipmentAllowed: c.equipmentAllowed,
-      })),
+      campgrounds: campgrounds.map(c => {
+        // Generate Google Maps link using coordinates or address
+        let googleMapsUrl: string;
+        let directionsUrl: string;
+        
+        if (c.coordinates.latitude && c.coordinates.longitude) {
+          // Use coordinates for precise location
+          googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${c.coordinates.latitude},${c.coordinates.longitude}`;
+          directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${c.coordinates.latitude},${c.coordinates.longitude}`;
+          console.log(`[LinkGen] Campground "${c.name}" - Using coords: lat=${c.coordinates.latitude}, lng=${c.coordinates.longitude}`);
+        } else if (c.address) {
+          // Fallback to address search - address is an object, need to stringify
+          const addressStr = [c.address.street, c.address.city, c.address.state, c.address.zip]
+            .filter(Boolean)
+            .join(', ');
+          const addressQuery = encodeURIComponent(`${c.name}, ${addressStr}`);
+          googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${addressQuery}`;
+          directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${addressQuery}`;
+          console.log(`[LinkGen] Campground "${c.name}" - Using address: ${addressStr}`);
+        } else {
+          // Fallback to name search
+          const nameQuery = encodeURIComponent(c.name);
+          googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${nameQuery}`;
+          directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${nameQuery}`;
+          console.log(`[LinkGen] Campground "${c.name}" - Using name only (no coords/address)`);
+        }
+        
+        // Generate Recreation.gov search link WITH DESTINATION AND DATE PREFILL
+        // Recreation.gov URL format: /search?q=campground+name&inventory_type=camping&start_date=...&end_date=...
+        // The campground name is the primary prefill - this is what users want to search for
+        const campgroundSearchTerm = c.name;
+        let recGovSearchUrl = `https://www.recreation.gov/search?q=${encodeURIComponent(campgroundSearchTerm)}&inventory_type=camping`;
+        if (startDate && endDate) {
+          recGovSearchUrl += `&start_date=${startDate}&end_date=${endDate}`;
+        }
+        
+        // Also generate a direct campground page URL if we have the facility ID
+        // Recreation.gov camping URLs: /camping/campgrounds/{FACILITY_ID}
+        const facilityId = c.id; // From RIDB API
+        let directCampgroundUrl = facilityId 
+          ? `https://www.recreation.gov/camping/campgrounds/${facilityId}`
+          : null;
+        if (directCampgroundUrl && startDate && endDate) {
+          directCampgroundUrl += `?start_date=${startDate}&end_date=${endDate}`;
+        }
+        
+        // If we have a direct reservation URL from the API, add dates to it too
+        let prefilledReservationUrl = c.reservationUrl;
+        if (c.reservationUrl && startDate && endDate) {
+          // Recreation.gov camping pages accept date params
+          const separator = c.reservationUrl.includes('?') ? '&' : '?';
+          prefilledReservationUrl = `${c.reservationUrl}${separator}start_date=${startDate}&end_date=${endDate}`;
+        }
+        
+        // Priority: direct campground URL > API reservation URL > search URL
+        // Direct URL with facility ID is most reliable for taking user directly to campground
+        const officialUrl = directCampgroundUrl || prefilledReservationUrl || recGovSearchUrl;
+        
+        console.log(`[LinkGen] Campground "${c.name}" (ID: ${facilityId || 'none'}):`);
+        console.log(`[LinkGen]   - OFFICIAL URL (use this!): ${officialUrl}`);
+        console.log(`[LinkGen]   - destination prefilled: ${c.name}`);
+        console.log(`[LinkGen]   - dates prefilled: ${startDate && endDate ? `${startDate} to ${endDate}` : 'NO'}`);
+        console.log(`[LinkGen]   - directCampgroundUrl: ${directCampgroundUrl || 'none'}`);
+        console.log(`[LinkGen]   - googleMapsUrl: ${googleMapsUrl}`);
+        
+        return {
+          name: c.name,
+          description: c.description,
+          type: c.type,
+          reservable: c.reservable,
+          facilityId: facilityId, // Include facility ID for reference
+          // AUTHORITATIVE URL with destination and dates prefilled - Claude MUST use this
+          officialUrl: officialUrl,
+          // Direct link to campground page on Recreation.gov
+          directCampgroundUrl: directCampgroundUrl,
+          reservationUrl: prefilledReservationUrl,
+          recGovSearchUrl,
+          // Include dates for reference
+          travelDates: startDate && endDate ? { start: startDate, end: endDate } : undefined,
+          phone: c.phone,
+          email: c.email,
+          feeDescription: c.feeDescription,
+          coordinates: c.coordinates.latitude ? c.coordinates : undefined,
+          address: c.address,
+          directions: c.directions,
+          adaAccess: c.adaAccess,
+          activities: c.activities,
+          amenities: c.amenities,
+          campsiteTypes: c.campsiteTypes,
+          totalCampsites: c.totalCampsites,
+          equipmentAllowed: c.equipmentAllowed,
+          googleMapsUrl,
+          directionsUrl,
+          // Instruction for Claude
+          _linkNote: 'USE officialUrl for campground booking - do NOT construct your own URL',
+        };
+      }),
       links: links.length > 0 ? links : undefined,
       dataSource: 'Recreation.gov RIDB API',
       bookingNote: 'Book campgrounds at recreation.gov - popular sites fill months in advance!',
