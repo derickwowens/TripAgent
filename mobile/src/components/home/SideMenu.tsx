@@ -1,9 +1,35 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image, KeyboardAvoidingView, Platform } from 'react-native';
+import Slider from '@react-native-community/slider';
 import Constants from 'expo-constants';
 import { ProfileSection } from './ProfileSection';
 import { ConversationList } from './ConversationList';
-import { SavedConversation, useDarkModeContext } from '../../hooks';
+import { ToolSettingsPanel } from './ToolSettingsPanel';
+import { SavedConversation, useDarkModeContext, ToolSettings, MaxTravelDistance } from '../../hooks';
+
+// Distance slider presets (in miles) - same as ProfileSection
+const DISTANCE_PRESETS = [
+  50, 100, 150, 200, 250, 300, 350, 400, 450, 500,
+  600, 700, 800, 900, 1000,
+  1500, 2000, 2500, 3000, 4000, 5000,
+];
+
+const sliderValueToDistance = (value: number): MaxTravelDistance => {
+  if (value >= DISTANCE_PRESETS.length) return null;
+  return DISTANCE_PRESETS[Math.round(value)];
+};
+
+const distanceToSliderValue = (distance: MaxTravelDistance): number => {
+  if (distance === null) return DISTANCE_PRESETS.length;
+  const index = DISTANCE_PRESETS.indexOf(distance);
+  return index >= 0 ? index : DISTANCE_PRESETS.length;
+};
+
+const getDistanceDisplayText = (distance: MaxTravelDistance): string => {
+  if (distance === null) return 'Unlimited';
+  if (distance >= 1000) return `${(distance / 1000).toFixed(distance % 1000 === 0 ? 0 : 1)}k miles`;
+  return `${distance} miles`;
+};
 
 const APP_VERSION = Constants.expoConfig?.version || '1.0.0';
 const BUILD_SUFFIX = process.env.EXPO_PUBLIC_BUILD_SUFFIX || '';
@@ -38,6 +64,17 @@ interface SideMenuProps {
   onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
   onToggleFavorite?: (id: string) => void;
   onResetOnboarding?: () => void;
+  // Tool settings props
+  toolSettings?: ToolSettings;
+  onToggleTool?: (toolId: string) => void;
+  onSetLanguageModel?: (model: ToolSettings['languageModel']) => void;
+  onEnableAllTools?: () => void;
+  onDisableAllTools?: () => void;
+  enabledToolCount?: number;
+  totalToolCount?: number;
+  // Travel distance props
+  maxTravelDistance?: MaxTravelDistance;
+  onUpdateMaxTravelDistance?: (distance: MaxTravelDistance) => void;
 }
 
 export const SideMenu: React.FC<SideMenuProps> = ({
@@ -54,8 +91,18 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onUpdateConversation,
   onToggleFavorite,
   onResetOnboarding,
+  toolSettings,
+  onToggleTool,
+  onSetLanguageModel,
+  onEnableAllTools,
+  onDisableAllTools,
+  enabledToolCount = 0,
+  totalToolCount = 0,
+  maxTravelDistance,
+  onUpdateMaxTravelDistance,
 }) => {
   const { isDarkMode } = useDarkModeContext();
+  const [showToolSettings, setShowToolSettings] = useState(false);
   
   const handleLoadConversation = (conv: SavedConversation) => {
     onLoadConversation(conv);
@@ -74,8 +121,13 @@ export const SideMenu: React.FC<SideMenuProps> = ({
       transparent={true}
       onRequestClose={onClose}
     >
-      <View style={styles.overlay}>
-        <View style={styles.menu}>
+      <KeyboardAvoidingView 
+        style={styles.keyboardAvoidingContainer}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 0}
+      >
+        <View style={styles.overlay}>
+          <View style={styles.menu}>
           {/* Fixed Header */}
           <View style={styles.header}>
             <View style={styles.headerLeft}>
@@ -106,13 +158,43 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             contentContainerStyle={styles.scrollContentContainer}
             showsVerticalScrollIndicator={true}
             indicatorStyle="white"
+            keyboardShouldPersistTaps="handled"
           >
             <ProfileSection
               userProfile={userProfile}
               onSaveProfile={onSaveProfile}
               onAddSuggestion={onAddProfileSuggestion}
               onResetOnboarding={onResetOnboarding}
+              onOpenToolSettings={toolSettings ? () => setShowToolSettings(true) : undefined}
             />
+
+            {/* Max Travel Distance - standalone slider below profile */}
+            {onUpdateMaxTravelDistance && (
+              <View style={styles.distanceSection}>
+                <View style={styles.distanceHeader}>
+                  <Text style={styles.distanceLabel}>Max Travel Distance</Text>
+                  <Text style={styles.distanceValue}>{getDistanceDisplayText(maxTravelDistance ?? null)}</Text>
+                </View>
+                <Slider
+                  style={styles.distanceSlider}
+                  minimumValue={0}
+                  maximumValue={DISTANCE_PRESETS.length}
+                  step={1}
+                  value={distanceToSliderValue(maxTravelDistance ?? null)}
+                  onValueChange={(value) => onUpdateMaxTravelDistance(sliderValueToDistance(value))}
+                  minimumTrackTintColor="#22C55E"
+                  maximumTrackTintColor="rgba(255,255,255,0.2)"
+                  thumbTintColor="#22C55E"
+                />
+                <View style={styles.distanceLabelsRow}>
+                  <Text style={styles.distanceLabelSmall}>50 mi</Text>
+                  <Text style={styles.distanceLabelSmall}>Unlimited</Text>
+                </View>
+              </View>
+            )}
+
+            {/* Separator */}
+            <View style={styles.sectionSeparator} />
 
             <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>
               <Image 
@@ -123,6 +205,9 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               <Text style={styles.newChatText}>New Trip</Text>
             </TouchableOpacity>
 
+            {/* Separator */}
+            <View style={styles.sectionSeparator} />
+
             <ConversationList
               conversations={conversations}
               currentConversationId={currentConversationId}
@@ -132,18 +217,37 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               onToggleFavorite={onToggleFavorite}
             />
           </ScrollView>
+          </View>
+          <TouchableOpacity 
+            style={styles.backdrop} 
+            onPress={onClose}
+            activeOpacity={1}
+          />
         </View>
-        <TouchableOpacity 
-          style={styles.backdrop} 
-          onPress={onClose}
-          activeOpacity={1}
+      </KeyboardAvoidingView>
+
+      {/* Tool Settings Panel - overlays the menu */}
+      {toolSettings && onToggleTool && onSetLanguageModel && onEnableAllTools && onDisableAllTools && (
+        <ToolSettingsPanel
+          visible={showToolSettings}
+          onClose={() => setShowToolSettings(false)}
+          settings={toolSettings}
+          onToggleTool={onToggleTool}
+          onSetLanguageModel={onSetLanguageModel}
+          onEnableAll={onEnableAllTools}
+          onDisableAll={onDisableAllTools}
+          enabledCount={enabledToolCount}
+          totalCount={totalToolCount}
         />
-      </View>
+      )}
     </Modal>
   );
 };
 
 const styles = StyleSheet.create({
+  keyboardAvoidingContainer: {
+    flex: 1,
+  },
   overlay: {
     flex: 1,
     flexDirection: 'row',
@@ -241,5 +345,44 @@ const styles = StyleSheet.create({
     color: '#FFFFFF',
     fontSize: 14,
     fontWeight: '600',
+  },
+  sectionSeparator: {
+    height: 1,
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    marginHorizontal: 16,
+    marginVertical: 8,
+  },
+  distanceSection: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+  },
+  distanceHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  distanceLabel: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 12,
+    fontWeight: '500',
+  },
+  distanceValue: {
+    color: '#22C55E',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  distanceSlider: {
+    width: '100%',
+    height: 40,
+  },
+  distanceLabelsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: -8,
+  },
+  distanceLabelSmall: {
+    color: 'rgba(255,255,255,0.4)',
+    fontSize: 10,
   },
 });

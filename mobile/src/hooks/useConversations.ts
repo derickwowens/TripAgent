@@ -175,6 +175,9 @@ export const useConversations = (nearestAirport?: string) => {
   const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const isSavingRef = useRef(false);
   
+  // Flag to track if we're loading a conversation (to prevent updatedAt changes on view)
+  const isLoadingConversationRef = useRef(false);
+  
   // Refs to always have current values in async operations (prevents stale closures)
   const messagesRef = useRef(messages);
   const currentConversationIdRef = useRef(currentConversationId);
@@ -188,21 +191,23 @@ export const useConversations = (nearestAirport?: string) => {
   }, []);
 
   // Debounced auto-save to prevent race conditions
-  const debouncedAutoSave = useCallback(() => {
+  const debouncedAutoSave = useCallback((skipTimestampUpdate: boolean = false) => {
     if (saveTimeoutRef.current) {
       clearTimeout(saveTimeoutRef.current);
     }
     
     saveTimeoutRef.current = setTimeout(() => {
       if (!isSavingRef.current) {
-        autoSaveConversation();
+        autoSaveConversation(skipTimestampUpdate);
       }
     }, 500); // 500ms debounce
   }, [nearestAirport]);
 
   useEffect(() => {
     if (messages.length > 0) {
-      debouncedAutoSave();
+      // Check if we're just loading a conversation (don't update timestamp)
+      const skipTimestamp = isLoadingConversationRef.current;
+      debouncedAutoSave(skipTimestamp);
     }
     
     // Cleanup timeout on unmount
@@ -289,7 +294,7 @@ export const useConversations = (nearestAirport?: string) => {
     };
   };
 
-  const autoSaveConversation = async () => {
+  const autoSaveConversation = async (skipTimestampUpdate: boolean = false) => {
     // Use refs to get current values (prevents stale closure issues)
     const currentMessages = messagesRef.current;
     const currentId = currentConversationIdRef.current;
@@ -313,10 +318,20 @@ export const useConversations = (nearestAirport?: string) => {
         const index = conversations.findIndex(c => c.id === currentId);
         if (index >= 0) {
           // Update existing conversation
+          // Only update timestamp if this is a real user interaction, not just viewing
+          // Preserve original createdAt and conditionally preserve updatedAt
+          const originalCreatedAt = conversations[index].metadata.createdAt;
+          const originalUpdatedAt = conversations[index].metadata.updatedAt;
+          const updatedMetadata = {
+            ...conversations[index].metadata,
+            ...metadata,
+            createdAt: originalCreatedAt, // Always preserve original createdAt
+            updatedAt: skipTimestampUpdate ? originalUpdatedAt : new Date().toISOString(),
+          };
           conversations[index] = {
             ...conversations[index],
             messages: clonedMessages,
-            metadata: { ...conversations[index].metadata, ...metadata, updatedAt: new Date().toISOString() },
+            metadata: updatedMetadata,
           };
         } else {
           // ID exists but conversation not in list - add it (ensureConversationId case)
@@ -349,10 +364,24 @@ export const useConversations = (nearestAirport?: string) => {
   };
 
   const loadConversation = (conversation: SavedConversation) => {
+    // Set flag to prevent auto-save from updating updatedAt when just viewing
+    isLoadingConversationRef.current = true;
+    
+    // Clear any pending save timeout to prevent stale saves
+    if (saveTimeoutRef.current) {
+      clearTimeout(saveTimeoutRef.current);
+      saveTimeoutRef.current = null;
+    }
+    
     // Deep clone to prevent mutation of stored conversation
     const clonedMessages: Message[] = JSON.parse(JSON.stringify(conversation.messages));
     setMessages(clonedMessages);
     setCurrentConversationId(conversation.id);
+    
+    // Reset flag after a longer delay to ensure the debounced save completes with skipTimestamp=true
+    setTimeout(() => {
+      isLoadingConversationRef.current = false;
+    }, 1200); // Much longer than the 500ms debounce + save time
   };
 
   const startNewConversation = () => {

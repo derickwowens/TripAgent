@@ -15,13 +15,43 @@ import {
   GestureResponderEvent,
   PanResponderGestureState,
 } from 'react-native';
-import { useLocation } from '../../hooks';
+import Slider from '@react-native-community/slider';
+import { useLocation, MaxTravelDistance } from '../../hooks';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
+
+// Responsive sizing for tablets
+const IS_TABLET = SCREEN_WIDTH >= 768;
+const CONTENT_MAX_WIDTH = IS_TABLET ? 500 : SCREEN_WIDTH;
+const CONTENT_PADDING = IS_TABLET ? Math.max(24, (SCREEN_WIDTH - CONTENT_MAX_WIDTH) / 2) : 24;
 
 // Background image dimensions for panning effect - extra wide for dramatic panning
 const BG_WIDTH = SCREEN_WIDTH * 2.5;
 const BG_HEIGHT = SCREEN_HEIGHT * 1.2;
+
+// Distance slider presets (in miles)
+const DISTANCE_PRESETS = [
+  50, 100, 150, 200, 250, 300, 350, 400, 450, 500,
+  600, 700, 800, 900, 1000,
+  1500, 2000, 2500, 3000, 4000, 5000,
+];
+
+const sliderValueToDistance = (value: number): MaxTravelDistance => {
+  if (value >= DISTANCE_PRESETS.length) return null;
+  return DISTANCE_PRESETS[Math.round(value)];
+};
+
+const distanceToSliderValue = (distance: MaxTravelDistance): number => {
+  if (distance === null) return DISTANCE_PRESETS.length;
+  const index = DISTANCE_PRESETS.indexOf(distance);
+  return index >= 0 ? index : DISTANCE_PRESETS.length;
+};
+
+const getDistanceDisplayText = (distance: MaxTravelDistance): string => {
+  if (distance === null) return 'Unlimited';
+  if (distance >= 1000) return `${(distance / 1000).toFixed(distance % 1000 === 0 ? 0 : 1)}k miles`;
+  return `${distance} miles`;
+};
 
 // Profile badge options for onboarding
 const TRAVEL_STYLES = [
@@ -133,12 +163,18 @@ const QUICK_TRIP_IDEAS = [
 ];
 
 interface OnboardingFlowProps {
-  onComplete: (profile: string, firstPrompt?: string) => void;
+  onComplete: (profile: string, firstPrompt?: string, maxTravelDistance?: MaxTravelDistance) => void;
   onSkip: () => void;
 }
 
 export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSkip }) => {
   const [step, setStep] = useState(0);
+  const stepRef = useRef(step);
+  
+  // Keep stepRef in sync with step state
+  useEffect(() => {
+    stepRef.current = step;
+  }, [step]);
   const [selectedStyles, setSelectedStyles] = useState<string[]>([]);
   const [selectedInterests, setSelectedInterests] = useState<string[]>([]);
   
@@ -169,6 +205,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
   const [selectedHotel, setSelectedHotel] = useState<string[]>([]);
   const [selectedTrip, setSelectedTrip] = useState<string>('');
   const [customPrompt, setCustomPrompt] = useState('');
+  const [maxTravelDistance, setMaxTravelDistance] = useState<MaxTravelDistance>(null); // null = unlimited
 
   const toggleSelection = (
     id: string,
@@ -305,16 +342,31 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
   };
 
   const handleNext = () => {
-    if (step < 3) {
-      setStep(step + 1);
+    if (step === 0) {
+      // From intro, "Setup Traveler Profile" goes to step 1
+      setStep(1);
+    } else if (step === 1) {
+      // From profile setup, go to step 2
+      setStep(2);
+    } else if (step === 2) {
+      // From companions/preferences, go to step 3
+      setStep(3);
     } else {
-      onComplete(buildProfile(), getFirstPrompt());
+      // Step 3 - complete onboarding
+      onComplete(buildProfile(), getFirstPrompt(), maxTravelDistance);
     }
   };
 
   const handleBack = () => {
-    if (step > 0) {
-      setStep(step - 1);
+    if (step === 1) {
+      // From profile setup, go back to intro
+      setStep(0);
+    } else if (step === 2) {
+      // From companions, go back to profile setup
+      setStep(1);
+    } else if (step === 3) {
+      // From trip ideas, go back to companions
+      setStep(2);
     }
   };
 
@@ -323,7 +375,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
     return true;
   };
 
-  // Swipe gesture handler
+  // Swipe gesture handler - use stepRef.current to get current step value
   const swipeResponder = useRef(
     PanResponder.create({
       onStartShouldSetPanResponder: () => false,
@@ -333,12 +385,22 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
       },
       onPanResponderRelease: (_, gestureState) => {
         const SWIPE_THRESHOLD = 50;
-        if (gestureState.dx < -SWIPE_THRESHOLD && step < 3) {
-          // Swipe left - go to next step
-          setStep(prev => prev + 1);
-        } else if (gestureState.dx > SWIPE_THRESHOLD && step > 0) {
-          // Swipe right - go to previous step
-          setStep(prev => prev - 1);
+        const currentStep = stepRef.current;
+        
+        if (gestureState.dx < -SWIPE_THRESHOLD) {
+          // Swipe left - go to next step (wraps from 3 to 0)
+          if (currentStep === 3) {
+            setStep(0);
+          } else {
+            setStep(currentStep + 1);
+          }
+        } else if (gestureState.dx > SWIPE_THRESHOLD) {
+          // Swipe right - go to previous step (wraps from 0 to 3)
+          if (currentStep === 0) {
+            setStep(3);
+          } else {
+            setStep(currentStep - 1);
+          }
         }
       },
     })
@@ -438,6 +500,29 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
                 </TouchableOpacity>
               ))}
             </View>
+
+            <Text style={styles.sectionLabel}>max travel distance</Text>
+            <View style={styles.distanceContainer}>
+              <View style={styles.distanceHeader}>
+                <Text style={styles.distanceLabelText}>How far are you willing to travel?</Text>
+                <Text style={styles.distanceValue}>{getDistanceDisplayText(maxTravelDistance)}</Text>
+              </View>
+              <Slider
+                style={styles.distanceSlider}
+                minimumValue={0}
+                maximumValue={DISTANCE_PRESETS.length}
+                step={1}
+                value={distanceToSliderValue(maxTravelDistance)}
+                onValueChange={(value) => setMaxTravelDistance(sliderValueToDistance(value))}
+                minimumTrackTintColor="#22C55E"
+                maximumTrackTintColor="rgba(255,255,255,0.2)"
+                thumbTintColor="#22C55E"
+              />
+              <View style={styles.distanceLabelsRow}>
+                <Text style={styles.distanceLabelSmall}>50 mi</Text>
+                <Text style={styles.distanceLabelSmall}>Unlimited</Text>
+              </View>
+            </View>
           </View>
         );
 
@@ -445,8 +530,10 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
         const showFamilyOptions = selectedTravelWith.includes('family');
         return (
           <View style={styles.stepContent}>
-            <Text style={styles.stepTitle}>who are you traveling with?</Text>
-            <Text style={styles.stepSubtitle}>this helps us tailor recommendations</Text>
+            <Text style={styles.stepTitle}>how do you like to travel?</Text>
+            <Text style={styles.stepSubtitle}>select all that apply</Text>
+            
+            <Text style={styles.sectionLabel}>who are you traveling with?</Text>
             
             <View style={styles.optionsGrid}>
               {TRAVEL_WITH.map(tw => (
@@ -564,6 +651,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
                 </TouchableOpacity>
               ))}
             </View>
+
           </View>
         );
 
@@ -625,59 +713,37 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
       />
       <View style={styles.overlay}>
         <SafeAreaView style={styles.container}>
-          {/* Progress indicator */}
-          <View style={styles.progressContainer}>
-            {[0, 1, 2, 3].map(i => (
-              <View
-                key={i}
-                style={[
-                  styles.progressDot,
-                  i <= step && styles.progressDotActive
-                ]}
-              />
-            ))}
-          </View>
+          {/* Progress indicator - only show on steps 1, 2, 3 (not landing page) */}
+          {step > 0 && (
+            <View style={styles.progressContainer}>
+              {[1, 2, 3].map((stepNum) => (
+                <View
+                  key={stepNum}
+                  style={[
+                    styles.progressDot,
+                    step === stepNum && styles.progressDotActive
+                  ]}
+                />
+              ))}
+            </View>
+          )}
 
 
           <View style={styles.swipeContainer} {...swipeResponder.panHandlers}>
             <ScrollView 
               contentContainerStyle={styles.scrollContent}
-              showsVerticalScrollIndicator={false}
+              showsVerticalScrollIndicator={true}
+              indicatorStyle="white"
+              nestedScrollEnabled={true}
             >
               {renderStep()}
             </ScrollView>
           </View>
 
-          {/* Navigation buttons */}
-          <View style={styles.navButtons}>
-            {step > 0 && (
-              <TouchableOpacity style={styles.backButton} onPress={handleBack}>
-                <Text style={styles.backButtonText}>Back</Text>
-              </TouchableOpacity>
-            )}
-            <TouchableOpacity
-              style={[
-                styles.nextButton,
-                !canProceed() && styles.nextButtonDisabled
-              ]}
-              onPress={handleNext}
-              disabled={!canProceed()}
-            >
-              <Text style={styles.nextButtonText}>
-                {step === 3 ? "Let's Go!" : step === 0 ? 'Setup Traveler Profile' : 'Next'}
-              </Text>
-            </TouchableOpacity>
-          </View>
-          {/* Skip button - shown on all steps */}
-          {step === 0 ? (
-            <TouchableOpacity style={styles.skipOnboarding} onPress={onSkip}>
-              <Text style={styles.skipOnboardingText}>Skip for now</Text>
-            </TouchableOpacity>
-          ) : (
-            <TouchableOpacity style={styles.skipOnboardingCentered} onPress={onSkip}>
-              <Text style={styles.skipOnboardingText}>Skip</Text>
-            </TouchableOpacity>
-          )}
+          {/* Skip button at very bottom */}
+          <TouchableOpacity style={styles.skipButtonBottom} onPress={onSkip}>
+            <Text style={styles.skipButtonText}>Skip</Text>
+          </TouchableOpacity>
         </SafeAreaView>
       </View>
     </View>
@@ -734,12 +800,17 @@ const styles = StyleSheet.create({
   scrollContent: {
     flexGrow: 1,
     paddingHorizontal: 24,
-    paddingTop: 90,
-    paddingBottom: 20,
+    paddingTop: IS_TABLET ? 40 : 20,
+    paddingBottom: 40,
+    alignItems: 'center',
+    width: '100%',
   },
   stepContent: {
-    flex: 1,
-    justifyContent: 'center',
+    width: '100%',
+    maxWidth: CONTENT_MAX_WIDTH,
+    alignItems: 'center',
+    alignSelf: 'center',
+    paddingBottom: 20,
   },
   logoContainer: {
     alignItems: 'center',
@@ -768,9 +839,12 @@ const styles = StyleSheet.create({
   featureList: {
     backgroundColor: 'rgba(22, 101, 52, 0.2)',
     borderRadius: 16,
-    padding: 16,
+    padding: IS_TABLET ? 20 : 16,
     borderWidth: 1,
     borderColor: 'rgba(34, 197, 94, 0.3)',
+    width: '100%',
+    maxWidth: IS_TABLET ? 400 : '100%',
+    alignSelf: 'center',
   },
   featureRow: {
     flexDirection: 'row',
@@ -798,31 +872,39 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
   stepTitle: {
-    fontSize: 20,
+    fontSize: IS_TABLET ? 24 : 20,
     fontWeight: '500',
     color: '#22C55E',
     marginBottom: 4,
     letterSpacing: 0.3,
+    textAlign: 'center',
+    width: '100%',
   },
   stepSubtitle: {
-    fontSize: 13,
+    fontSize: IS_TABLET ? 15 : 13,
     color: 'rgba(255, 255, 255, 0.6)',
     marginBottom: 16,
     letterSpacing: 0.2,
+    textAlign: 'center',
+    width: '100%',
   },
   sectionLabel: {
-    fontSize: 11,
+    fontSize: IS_TABLET ? 12 : 11,
     color: 'rgba(34, 197, 94, 0.9)',
     fontWeight: '500',
     marginBottom: 10,
     marginTop: 12,
     letterSpacing: 0.5,
     textTransform: 'uppercase',
+    textAlign: 'center',
+    width: '100%',
   },
   optionsGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 10,
+    justifyContent: 'center',
+    width: '100%',
   },
   optionChip: {
     flexDirection: 'row',
@@ -870,6 +952,9 @@ const styles = StyleSheet.create({
   },
   tripOptions: {
     gap: 12,
+    width: '100%',
+    maxWidth: IS_TABLET ? 400 : '100%',
+    alignSelf: 'center',
   },
   tripOption: {
     backgroundColor: 'rgba(22, 101, 52, 0.35)',
@@ -908,7 +993,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     paddingHorizontal: 24,
     paddingBottom: 24,
+    marginTop: 0,
     gap: 12,
+    maxWidth: IS_TABLET ? CONTENT_MAX_WIDTH : undefined,
+    alignSelf: 'center',
+    width: IS_TABLET ? CONTENT_MAX_WIDTH : '100%',
   },
   backButton: {
     flex: 1,
@@ -926,7 +1015,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   nextButton: {
-    width: '50%',
+    width: IS_TABLET ? 200 : '50%',
     backgroundColor: '#166534',
     paddingVertical: 12,
     borderRadius: 10,
@@ -952,6 +1041,54 @@ const styles = StyleSheet.create({
   },
   skipOnboardingText: {
     color: 'rgba(34, 197, 94, 0.6)',
+    fontSize: 14,
+  },
+  distanceContainer: {
+    marginTop: 16,
+    paddingHorizontal: 8,
+    paddingVertical: 16,
+    backgroundColor: 'rgba(0, 0, 0, 0.3)',
+    borderRadius: 12,
+    width: '100%',
+  },
+  distanceHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  distanceLabelText: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 11,
+  },
+  distanceValue: {
+    color: '#22C55E',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  distanceSlider: {
+    width: '100%',
+    height: 40,
+  },
+  distanceLabelsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: -8,
+  },
+  distanceLabelSmall: {
+    color: 'rgba(255,255,255,0.4)',
+    fontSize: 10,
+  },
+  skipButtonBottom: {
+    position: 'absolute',
+    bottom: 40,
+    left: 0,
+    right: 0,
+    alignItems: 'center',
+    paddingVertical: 16,
+  },
+  skipButtonText: {
+    color: 'rgba(255, 255, 255, 0.6)',
     fontSize: 14,
   },
 });

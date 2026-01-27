@@ -1,5 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable, Alert } from 'react-native';
+import Slider from '@react-native-community/slider';
+import { MaxTravelDistance } from '../../hooks';
 
 // Define mutually exclusive groups
 const EXCLUSIVE_GROUPS = {
@@ -144,11 +146,44 @@ const PROFILE_SUGGESTIONS = [
   'Airbnb/VRBO',
 ];
 
+// Distance slider presets (in miles)
+// Below 500: 50mi increments, 500-1000: 100mi increments, above 1000: larger steps
+// Max ~5000 miles covers continental US to Hawaii/Alaska
+const DISTANCE_PRESETS = [
+  // 50mi increments below 500
+  { value: 50, label: '50 mi' },
+  { value: 100, label: '100 mi' },
+  { value: 150, label: '150 mi' },
+  { value: 200, label: '200 mi' },
+  { value: 250, label: '250 mi' },
+  { value: 300, label: '300 mi' },
+  { value: 350, label: '350 mi' },
+  { value: 400, label: '400 mi' },
+  { value: 450, label: '450 mi' },
+  { value: 500, label: '500 mi' },
+  // 100mi increments from 500-1000
+  { value: 600, label: '600 mi' },
+  { value: 700, label: '700 mi' },
+  { value: 800, label: '800 mi' },
+  { value: 900, label: '900 mi' },
+  { value: 1000, label: '1,000 mi' },
+  // Larger increments above 1000
+  { value: 1500, label: '1,500 mi' },
+  { value: 2000, label: '2,000 mi' },
+  { value: 2500, label: '2,500 mi' },
+  { value: 3000, label: '3,000 mi' },
+  { value: 4000, label: '4,000 mi' },
+  { value: 5000, label: '5,000 mi' },
+];
+
 interface ProfileSectionProps {
   userProfile: string;
   onSaveProfile: (profile: string) => void;
   onAddSuggestion: (suggestion: string) => void;
   onResetOnboarding?: () => void;
+  onOpenToolSettings?: () => void;
+  maxTravelDistance?: MaxTravelDistance;
+  onUpdateMaxTravelDistance?: (distance: MaxTravelDistance) => void;
 }
 
 export const ProfileSection: React.FC<ProfileSectionProps> = ({
@@ -156,6 +191,9 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   onSaveProfile,
   onAddSuggestion,
   onResetOnboarding,
+  onOpenToolSettings,
+  maxTravelDistance,
+  onUpdateMaxTravelDistance,
 }) => {
   // Always start collapsed
   const [suggestionsExpanded, setSuggestionsExpanded] = useState(false);
@@ -170,6 +208,26 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   const isCoffeeHound = userProfile.toLowerCase().includes('coffee hound');
   const isBookWorm = userProfile.toLowerCase().includes('book worm');
   const isHistorian = userProfile.toLowerCase().includes('historian');
+
+  // Convert slider value (0-7) to distance (null for unlimited, or preset value)
+  const sliderValueToDistance = (value: number): MaxTravelDistance => {
+    if (value >= DISTANCE_PRESETS.length) return null; // Unlimited
+    return DISTANCE_PRESETS[Math.round(value)].value;
+  };
+
+  // Convert distance to slider value
+  const distanceToSliderValue = (distance: MaxTravelDistance): number => {
+    if (distance === null) return DISTANCE_PRESETS.length; // Unlimited is at the end
+    const index = DISTANCE_PRESETS.findIndex(p => p.value === distance);
+    return index >= 0 ? index : DISTANCE_PRESETS.length;
+  };
+
+  // Get display text for current distance
+  const getDistanceDisplayText = (distance: MaxTravelDistance): string => {
+    if (distance === null) return 'Unlimited';
+    if (distance >= 1000) return `${(distance / 1000).toFixed(distance % 1000 === 0 ? 0 : 1)}k miles`;
+    return `${distance} miles`;
+  };
 
   // Count lines in profile (for clear button visibility)
   const profileLineCount = userProfile.trim() ? userProfile.trim().split(',').length : 0;
@@ -253,6 +311,14 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
               <Text style={styles.resetIcon}>↻</Text>
             </TouchableOpacity>
           )}
+          {onOpenToolSettings && (
+            <TouchableOpacity 
+              onPress={onOpenToolSettings} 
+              style={styles.toolSettingsButton}
+            >
+              <Text style={styles.toolSettingsIcon}>🔧</Text>
+            </TouchableOpacity>
+          )}
           {showClearButton && (
             <TouchableOpacity onPress={() => onSaveProfile('')} style={styles.clearButton}>
               <Text style={styles.clearButtonText}>Clear</Text>
@@ -270,6 +336,32 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
         numberOfLines={6}
         scrollEnabled
       />
+      
+      {/* Travel Distance Slider */}
+      {onUpdateMaxTravelDistance && (
+        <View style={styles.distanceContainer}>
+          <View style={styles.distanceHeader}>
+            <Text style={styles.distanceLabel}>Max Travel Distance</Text>
+            <Text style={styles.distanceValue}>{getDistanceDisplayText(maxTravelDistance ?? null)}</Text>
+          </View>
+          <Slider
+            style={styles.distanceSlider}
+            minimumValue={0}
+            maximumValue={DISTANCE_PRESETS.length}
+            step={1}
+            value={distanceToSliderValue(maxTravelDistance ?? null)}
+            onValueChange={(value) => onUpdateMaxTravelDistance(sliderValueToDistance(value))}
+            minimumTrackTintColor="#22C55E"
+            maximumTrackTintColor="rgba(255,255,255,0.2)"
+            thumbTintColor="#22C55E"
+          />
+          <View style={styles.distanceLabels}>
+            <Text style={styles.distanceLabelSmall}>50 mi</Text>
+            <Text style={styles.distanceLabelSmall}>Unlimited</Text>
+          </View>
+        </View>
+      )}
+
       {availableSuggestions.length > 0 && (
         <>
           <TouchableOpacity 
@@ -465,6 +557,12 @@ const styles = StyleSheet.create({
     color: '#4A9FE8',
     fontSize: 16,
   },
+  toolSettingsButton: {
+    padding: 2,
+  },
+  toolSettingsIcon: {
+    fontSize: 14,
+  },
   titleButtons: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -615,5 +713,41 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
     textAlign: 'center',
+  },
+  distanceContainer: {
+    marginTop: 12,
+    marginBottom: 8,
+    paddingTop: 12,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255,255,255,0.1)',
+  },
+  distanceHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 4,
+  },
+  distanceLabel: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 12,
+    fontWeight: '500',
+  },
+  distanceValue: {
+    color: '#22C55E',
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  distanceSlider: {
+    width: '100%',
+    height: 40,
+  },
+  distanceLabels: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: -8,
+  },
+  distanceLabelSmall: {
+    color: 'rgba(255,255,255,0.4)',
+    fontSize: 10,
   },
 });

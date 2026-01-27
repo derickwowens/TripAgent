@@ -14,7 +14,7 @@ import {
   TextInput,
 } from 'react-native';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
-import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext } from '../hooks';
+import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow } from '../components/home';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
@@ -101,14 +101,28 @@ const HomeScreen: React.FC = () => {
   const { 
     userProfile, 
     profileExpanded, 
+    maxTravelDistance,
+    blacklistedParkCodes,
     updateProfile, 
     persistProfile,
     updateAndPersistProfile,
     addSuggestion, 
-    toggleExpanded 
-  } = useUserProfile();
+    toggleExpanded,
+    updateMaxTravelDistance,
+  } = useUserProfile(userLocation ? { lat: userLocation.lat!, lng: userLocation.lng! } : undefined);
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { hasCompletedOnboarding, isLoading: onboardingLoading, completeOnboarding, resetOnboarding } = useOnboarding();
+  
+  // Tool settings for enabling/disabling API tools and language model selection
+  const {
+    settings: toolSettings,
+    toggleTool,
+    setLanguageModel,
+    enableAllTools,
+    disableAllTools,
+    enabledToolCount,
+    totalToolCount,
+  } = useToolSettings();
   
   // Trip context cache - persists structured trip data locally
   const {
@@ -121,10 +135,17 @@ const HomeScreen: React.FC = () => {
   } = useTripContext(currentConversationId);
 
   // Handle onboarding completion
-  const handleOnboardingComplete = async (profile: string, firstPrompt?: string) => {
+  const handleOnboardingComplete = async (profile: string, firstPrompt?: string, onboardingMaxDistance?: number | null) => {
     // Save the profile from onboarding - use updateAndPersistProfile to ensure it's saved immediately
     if (profile) {
       await updateAndPersistProfile(profile);
+    }
+    
+    // Save max travel distance if set during onboarding
+    if (onboardingMaxDistance !== undefined) {
+      updateMaxTravelDistance(onboardingMaxDistance);
+      // Persist immediately
+      persistProfile();
     }
     
     // Mark onboarding as complete
@@ -265,8 +286,15 @@ const HomeScreen: React.FC = () => {
           nearestAirport: userLocation.nearestAirport,
         } : undefined,
         userProfile: userProfile || undefined,
+        maxTravelDistance: maxTravelDistance ?? undefined,
+        blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
         // Include cached context from local storage
         ...(cachedContext || {}),
+        // Tool settings for API
+        toolSettings: {
+          languageModel: toolSettings.languageModel,
+          enabledTools: toolSettings.tools.filter(t => t.enabled).map(t => t.id),
+        },
       };
 
       // Use streaming to get real-time tool status updates
@@ -432,7 +460,14 @@ const HomeScreen: React.FC = () => {
           nearestAirport: userLocation.nearestAirport,
         } : undefined,
         userProfile: userProfile || undefined,
+        maxTravelDistance: maxTravelDistance ?? undefined,
+        blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
         ...(cachedContext || {}),
+        // Tool settings for API
+        toolSettings: {
+          languageModel: toolSettings.languageModel,
+          enabledTools: toolSettings.tools.filter(t => t.enabled).map(t => t.id),
+        },
       };
 
       // Use streaming to get real-time tool status updates
@@ -600,9 +635,18 @@ const HomeScreen: React.FC = () => {
           <StatusBar barStyle="light-content" />
         
         <View style={styles.header}>
-          <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
-            <Text style={styles.menuIcon}>☰</Text>
-          </TouchableOpacity>
+          <View style={styles.headerLeft}>
+            <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
+              <Text style={styles.menuIcon}>☰</Text>
+            </TouchableOpacity>
+            {messages.length > 0 && (
+              <Image 
+                source={require('../../assets/icon.png')} 
+                style={styles.menuLogo}
+                resizeMode="contain"
+              />
+            )}
+          </View>
           {messages.length > 0 ? (
             <Image 
               source={require('../../assets/icon.png')} 
@@ -698,6 +742,7 @@ const HomeScreen: React.FC = () => {
                 userProfile={userProfile}
                 userLocation={userLocation || undefined}
                 onSetPrompt={setInputText}
+                blacklistedParkCodes={blacklistedParkCodes}
               />
             )}
             
@@ -727,6 +772,13 @@ const HomeScreen: React.FC = () => {
                       nearestAirport: userLocation.nearestAirport,
                     } : undefined,
                     userProfile: userProfile || undefined,
+                    maxTravelDistance: maxTravelDistance ?? undefined,
+                    blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
+                    // Tool settings for API
+                    toolSettings: {
+                      languageModel: toolSettings.languageModel,
+                      enabledTools: toolSettings.tools.filter(t => t.enabled).map(t => t.id),
+                    },
                   };
                   
                   const result = await sendChatMessageWithStream(
@@ -824,6 +876,15 @@ const HomeScreen: React.FC = () => {
             setMenuOpen(false);
             resetOnboarding();
           }}
+          toolSettings={toolSettings}
+          onToggleTool={toggleTool}
+          onSetLanguageModel={setLanguageModel}
+          onEnableAllTools={enableAllTools}
+          onDisableAllTools={disableAllTools}
+          enabledToolCount={enabledToolCount}
+          totalToolCount={totalToolCount}
+          maxTravelDistance={maxTravelDistance}
+          onUpdateMaxTravelDistance={updateMaxTravelDistance}
         />
         </View>
       </ImageBackground>
@@ -868,6 +929,16 @@ const styles = StyleSheet.create({
   menuIcon: {
     fontSize: 28,
     color: '#FFFFFF',
+  },
+  headerLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  menuLogo: {
+    width: 32,
+    height: 32,
+    borderRadius: 6,
   },
   shareButton: {
     width: 40,

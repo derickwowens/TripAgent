@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { memo, useState, useCallback } from 'react';
 import {
   View,
   Text,
@@ -7,6 +7,7 @@ import {
   ActivityIndicator,
   FlatList,
   Dimensions,
+  Platform,
 } from 'react-native';
 import { Image } from 'expo-image';
 import { PhotoReference } from '../../hooks';
@@ -27,22 +28,22 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos, onClose
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
   const [loadingStates, setLoadingStates] = useState<Record<string, boolean>>({});
 
-  if (!photos || photos.length === 0) return null;
-
-  const handlePhotoPress = (index: number) => {
+  const handlePhotoPress = useCallback((index: number) => {
     setSelectedIndex(index);
     setModalVisible(true);
-  };
+  }, []);
 
-  const handleLoadStart = (url: string) => {
+  if (!photos || photos.length === 0) return null;
+
+  const handleLoadStart = useCallback((url: string) => {
     setLoadingStates(prev => ({ ...prev, [url]: true }));
-  };
+  }, []);
 
-  const handleLoadEnd = (url: string) => {
+  const handleLoadEnd = useCallback((url: string) => {
     setLoadingStates(prev => ({ ...prev, [url]: false }));
-  };
+  }, []);
 
-  const renderPhoto = ({ item, index }: { item: PhotoReference; index: number }) => (
+  const renderPhoto = useCallback(({ item, index }: { item: PhotoReference; index: number }) => (
     <TouchableOpacity
       style={styles.photoCard}
       onPress={() => handlePhotoPress(index)}
@@ -60,14 +61,15 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos, onClose
           source={{ uri: item.url }}
           style={styles.thumbnail}
           contentFit="cover"
-          cachePolicy="disk"
-          transition={150}
+          cachePolicy="memory-disk"
+          recyclingKey={item.url}
+          transition={Platform.OS === 'ios' ? 0 : 150}
           onLoadStart={() => handleLoadStart(item.url)}
           onLoadEnd={() => handleLoadEnd(item.url)}
         />
       </View>
     </TouchableOpacity>
-  );
+  ), [loadingStates, handleLoadStart, handleLoadEnd, handlePhotoPress]);
 
   return (
     <>
@@ -83,7 +85,12 @@ export const PhotoGallery: React.FC<PhotoGalleryProps> = memo(({ photos, onClose
         <FlatList
           data={photos}
           renderItem={renderPhoto}
-          keyExtractor={(item, index) => `${item.url}-${index}`}
+          keyExtractor={(item) => item.url}
+          extraData={loadingStates}
+          removeClippedSubviews={Platform.OS === 'android'}
+          initialNumToRender={8}
+          maxToRenderPerBatch={4}
+          windowSize={5}
           numColumns={NUM_COLUMNS}
           columnWrapperStyle={styles.row}
           showsVerticalScrollIndicator={true}

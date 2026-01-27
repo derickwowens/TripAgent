@@ -5,6 +5,8 @@ export interface UserLocation {
   city: string;
   state: string;
   nearestAirport: string;
+  lat?: number;
+  lng?: number;
 }
 
 // Singleton to cache location across the app
@@ -62,6 +64,8 @@ const fetchLocation = async (): Promise<UserLocation | null> => {
         city: address.city || 'Unknown',
         state: state,
         nearestAirport: nearestAirport,
+        lat: location.coords.latitude,
+        lng: location.coords.longitude,
       };
 
       return cachedLocation;

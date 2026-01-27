@@ -7,7 +7,7 @@ import {
   StyleSheet,
   Dimensions,
   ActivityIndicator,
-  Pressable,
+  Platform,
   ScrollView,
   NativeSyntheticEvent,
   NativeScrollEvent,
@@ -109,8 +109,9 @@ export const ImageModal: React.FC<ImageModalProps> = memo(({
                   source={{ uri: photo.url }}
                   style={[styles.image, loadingStates[index] && styles.hiddenImage]}
                   contentFit="contain"
-                  cachePolicy="disk"
-                  transition={200}
+                  cachePolicy="memory-disk"
+                  recyclingKey={photo.url}
+                  transition={Platform.OS === 'ios' ? 0 : 200}
                   onLoadStart={() => handleLoadStart(index)}
                   onLoadEnd={() => handleLoadEnd(index)}
                   onError={() => handleError(index)}

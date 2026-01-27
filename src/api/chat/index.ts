@@ -263,11 +263,23 @@ export async function createChatHandler(facade: TravelFacade) {
     let detectedDestination: string | undefined;
     let originalSearchQuery: string | undefined;
     
+    // Track which tools were called during this request
+    const toolsUsed: string[] = [];
+    
     // Create mutable context for storing NPS gateway city deterministically
     // This allows all tools to access the gateway city from context
     const mutableContext: ChatContext = { ...context };
     
-    const selectedModel = model || DEFAULT_MODEL;
+    // Use model from tool settings if provided, otherwise use the passed model or default
+    const selectedModel = context.toolSettings?.languageModel || model || DEFAULT_MODEL;
+    
+    // Filter tools based on enabled tools from settings
+    const enabledTools = context.toolSettings?.enabledTools;
+    const filteredTools = enabledTools && enabledTools.length > 0
+      ? tools.filter(t => enabledTools.includes(t.name))
+      : tools;
+    
+    console.log(`[Chat] Using model: ${selectedModel}, enabled tools: ${filteredTools.length}/${tools.length}`);
     
     if (!process.env.ANTHROPIC_API_KEY) {
       throw new Error('ANTHROPIC_API_KEY not configured');
@@ -299,7 +311,7 @@ export async function createChatHandler(facade: TravelFacade) {
         model: selectedModel,
         max_tokens: 8192,
         system: systemPrompt,
-        tools,
+        tools: filteredTools,
         messages: anthropicMessages,
       });
 
@@ -321,6 +333,11 @@ export async function createChatHandler(facade: TravelFacade) {
           let result: any;
           
           try {
+            // Track tool usage
+            if (!toolsUsed.includes(toolUse.name)) {
+              toolsUsed.push(toolUse.name);
+            }
+            
             // Notify about tool starting
             if (onToolStatus) {
               onToolStatus(toolUse.name, 'starting');
@@ -375,7 +392,7 @@ export async function createChatHandler(facade: TravelFacade) {
           model: selectedModel,
           max_tokens: 8192,
           system: systemPrompt,
-          tools,
+          tools: filteredTools,
           messages: anthropicMessages,
         });
         
@@ -414,7 +431,8 @@ export async function createChatHandler(facade: TravelFacade) {
         originalSearchQuery,
         messages,
         context.tripContext?.destination,
-        context.seenUrls
+        context.seenUrls,
+        toolsUsed
       );
       
     } catch (error: any) {

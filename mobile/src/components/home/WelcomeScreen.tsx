@@ -1,6 +1,12 @@
-import React, { useState, useRef } from 'react';
-import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image, Animated } from 'react-native';
-import { NATIONAL_PARKS, getParksByStateProximity, NationalParkInfo } from '../../data/nationalParks';
+import React, { useState, useRef, useMemo } from 'react';
+import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image, Animated, Dimensions } from 'react-native';
+import { NATIONAL_PARKS, getParksByStateProximity, NationalParkInfo, PARK_DETECTION_PATTERNS } from '../../data/nationalParks';
+
+const { width: SCREEN_WIDTH } = Dimensions.get('window');
+
+// Responsive sizing for tablets
+const IS_TABLET = SCREEN_WIDTH >= 768;
+const CONTENT_MAX_WIDTH = IS_TABLET ? 450 : SCREEN_WIDTH - 32;
 
 const QUICK_PROMPTS = [
   { label: 'Somewhere warm on a budget', template: 'Take me somewhere warm on a budget' },
@@ -14,6 +20,7 @@ interface WelcomeScreenProps {
   userProfile?: string;
   userLocation?: { city: string; state: string; nearestAirport: string };
   onSetPrompt: (prompt: string) => void;
+  blacklistedParkCodes?: string[];
 }
 
 const injectProfileContext = (template: string, profile?: string): string => {
@@ -243,17 +250,45 @@ const generateProfilePrompt = (profile: string): string => {
   return contextPrompt;
 };
 
-const generateRandomPrompt = (userLocation?: { city: string; state: string; nearestAirport: string }): string => {
+const generateRandomPrompt = (
+  userLocation?: { city: string; state: string; nearestAirport: string },
+  blacklistedParkCodes?: string[]
+): string => {
   // Filter parks by proximity to user if location is available
   let availableParks: NationalParkInfo[] = NATIONAL_PARKS;
+  
+  // Filter out blacklisted parks (outside user's travel distance)
+  if (blacklistedParkCodes && blacklistedParkCodes.length > 0) {
+    availableParks = availableParks.filter(park => {
+      // Find the park code from PARK_DETECTION_PATTERNS
+      const pattern = PARK_DETECTION_PATTERNS.find(p => p.name === park.name);
+      if (!pattern) return true; // Keep parks we can't identify
+      return !blacklistedParkCodes.includes(pattern.code);
+    });
+  }
   
   if (userLocation) {
     const nearbyParks = getParksByStateProximity(userLocation.state);
     
-    // If we found nearby parks, use them 70% of the time
-    if (nearbyParks.length > 0 && Math.random() < 0.7) {
-      availableParks = nearbyParks;
+    // Filter nearby parks by blacklist too
+    let filteredNearbyParks = nearbyParks;
+    if (blacklistedParkCodes && blacklistedParkCodes.length > 0) {
+      filteredNearbyParks = nearbyParks.filter(park => {
+        const pattern = PARK_DETECTION_PATTERNS.find(p => p.name === park.name);
+        if (!pattern) return true;
+        return !blacklistedParkCodes.includes(pattern.code);
+      });
     }
+    
+    // If we found nearby parks, use them 70% of the time
+    if (filteredNearbyParks.length > 0 && Math.random() < 0.7) {
+      availableParks = filteredNearbyParks;
+    }
+  }
+  
+  // Fallback if all parks are blacklisted
+  if (availableParks.length === 0) {
+    availableParks = NATIONAL_PARKS;
   }
   
   const park = availableParks[Math.floor(Math.random() * availableParks.length)];
@@ -275,7 +310,8 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   locationLoading, 
   userProfile,
   userLocation,
-  onSetPrompt 
+  onSetPrompt,
+  blacklistedParkCodes,
 }) => {
   const [expanded, setExpanded] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
@@ -415,7 +451,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
           
           <TouchableOpacity 
             style={styles.promptChip}
-            onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation), userProfile))}
+            onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile))}
           >
             <Text style={styles.promptText}>Surprise me!</Text>
           </TouchableOpacity>
@@ -439,25 +475,30 @@ const styles = StyleSheet.create({
   container: {
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: 40,
+    paddingTop: IS_TABLET ? 60 : 40,
     paddingHorizontal: 16,
+    width: '100%',
+    maxWidth: IS_TABLET ? CONTENT_MAX_WIDTH + 32 : undefined,
+    alignSelf: 'center',
   },
   headerSection: {
     alignItems: 'center',
     marginBottom: 24,
+    width: '100%',
   },
   logo: {
-    width: 100,
-    height: 100,
+    width: IS_TABLET ? 120 : 100,
+    height: IS_TABLET ? 120 : 100,
     marginBottom: 16,
-    borderRadius: 20,
+    borderRadius: IS_TABLET ? 24 : 20,
   },
   title: {
-    fontSize: 26,
+    fontSize: IS_TABLET ? 30 : 26,
     color: 'rgba(255,255,255,0.95)',
     textAlign: 'center',
     fontWeight: '300',
     letterSpacing: 0.5,
+    maxWidth: CONTENT_MAX_WIDTH,
   },
   subtitle: {
     fontSize: 14,
@@ -477,8 +518,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: 12,
-    paddingHorizontal: 24,
+    paddingVertical: IS_TABLET ? 14 : 12,
+    paddingHorizontal: IS_TABLET ? 32 : 24,
     backgroundColor: 'transparent',
     borderRadius: 20,
     borderWidth: 1.5,
@@ -499,17 +540,22 @@ const styles = StyleSheet.create({
   },
   promptContainer: {
     width: '100%',
+    maxWidth: CONTENT_MAX_WIDTH,
     gap: 10,
+    alignSelf: 'center',
+    alignItems: 'center',
   },
   promptChip: {
     flexDirection: 'row',
     alignItems: 'center',
+    justifyContent: 'center',
     backgroundColor: 'rgba(255,255,255,0.1)',
     paddingHorizontal: 16,
     paddingVertical: 14,
     borderRadius: 12,
     borderWidth: 1,
     borderColor: 'rgba(255,255,255,0.15)',
+    width: '100%',
   },
   profileChip: {
     backgroundColor: 'rgba(255,255,255,0.1)',
@@ -517,8 +563,9 @@ const styles = StyleSheet.create({
   },
   promptText: {
     color: '#FFFFFF',
-    fontSize: 15,
+    fontSize: IS_TABLET ? 16 : 15,
     fontWeight: '500',
     flex: 1,
+    textAlign: 'center',
   },
 });

@@ -1,4 +1,4 @@
-export { useUserProfile } from './useUserProfile';
+export { useUserProfile, MaxTravelDistance } from './useUserProfile';
 export { useConversations } from './useConversations';
 export { useLocation } from './useLocation';
 export { useDarkMode, useDarkModeContext, DarkModeContext } from './useDarkMode';
@@ -7,7 +7,9 @@ export { useOnboarding } from './useOnboarding';
 export { useTripContext, getTripContextForConversation, getAllTripContexts } from './useTripContext';
 export { useConversationQueue } from './useConversationQueue';
 export { useConversationManager } from './useConversationManager';
+export { useToolSettings } from './useToolSettings';
 export type { Message, SavedConversation, PhotoReference } from './useConversations';
+export type { ToolSettings, ToolConfig } from './useToolSettings';
 export type { ConversationRequest, ConversationResponse } from './useConversationQueue';
 export type { 
   TripContextData, 

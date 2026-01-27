@@ -92,18 +92,45 @@ When users ask about dining:
 Format restaurant results like:
 🍽️ Dining Options near [Location]
 ---
-• [Restaurant Name](yelpUrl or googleMapsUrl) - [Cuisine type]
-  ⭐ [rating] ([reviewCount] reviews on [reviewSource](reviewsUrl)) • [Price level]
+• **[Restaurant Name]** - [Cuisine type]
+  ⭐ [rating] ([reviewCount] reviews) • [Price level]
   📍 [Address]
   📞 [Phone number]
-  🔗 [Make reservation](reservationLink)
+  🔗 [Yelp](yelpUrl) • [Google](googleMapsUrl)
+  🔗 [Make reservation](reservationLink) (if available)
 ---
 
-The restaurant NAME itself must be a clickable link to Yelp or Google Maps.
-Restaurant results include yelpUrl, googleMapsUrl, and reviewsUrl fields - use them!
+Always show BOTH the Yelp link AND Google link for each restaurant.
+Restaurant results include yelpUrl, googleMapsUrl, and reviewsUrl fields - use them all!
 Include the restaurant's imageUrl in your response when available for richer display.
 
 Consider the user's profile for budget preferences when suggesting restaurants (frugal travelers prefer $ or $$ places).
+
+IMPORTANT - SOCIAL MEDIA DISCOVERY LINKS:
+When recommending destinations, restaurants, coffee shops, campgrounds, or attractions, include social media search links so users can discover trending content and real visitor experiences.
+
+Generate these links using URL encoding for the search term:
+- **TikTok**: https://www.tiktok.com/search?q={encoded_search_term}
+- **YouTube**: https://www.youtube.com/results?search_query={encoded_search_term}
+- **Reddit**: https://www.reddit.com/search/?q={encoded_search_term}
+
+Format social links like:
+📱 **See what's trending:**
+[TikTok](tiktok_url) • [YouTube](youtube_url) • [Reddit](reddit_url)
+
+Examples of search terms to encode:
+- For parks: "yellowstone national park travel" or "grand canyon hiking tips"
+- For restaurants: "restaurant name city" or "best restaurants in city"
+- For coffee shops: "coffee shop name city" or "best coffee city"
+- For campgrounds: "campground name camping review"
+
+Include social links when:
+1. Recommending a national park or major destination
+2. Suggesting popular restaurants or coffee shops
+3. Discussing campgrounds or lodging
+4. Mentioning events or seasonal activities
+
+This helps users see real visitor content, current conditions, and trending experiences.
 
 IMPORTANT - FOODIE TRAVELERS:
 When the user profile includes "foodie", proactively enhance their trip planning with culinary experiences:
@@ -481,6 +508,8 @@ export function buildContextInfo(context: {
   userLocation?: { city: string; state: string; nearestAirport: string };
   tripContext?: { destination?: string; numDays?: number; numTravelers?: number };
   userProfile?: string;
+  maxTravelDistance?: number;
+  blacklistedParkCodes?: string[];
   activeDestination?: { name: string; airport?: string; city?: string };
 }): string {
   let contextInfo = '';
@@ -524,6 +553,27 @@ export function buildContextInfo(context: {
 - For service animals specifically, note they are allowed in more areas than regular pets under ADA guidelines
 - IMPORTANT: "budget" or "budget-conscious" refers to TRAVEL STYLE (affordable, cost-conscious travel) - NOT the "Budget" rental car company. Do not assume a car rental company preference unless they explicitly mention a company name like "I prefer Hertz" or "I like Enterprise"
 \n`;
+  }
+
+  // Add travel distance preference and blacklisted parks
+  if (context.maxTravelDistance !== undefined) {
+    contextInfo += `\n📍 TRAVEL DISTANCE PREFERENCE: The user prefers destinations within ${context.maxTravelDistance.toLocaleString()} miles of their current location.
+- Prioritize destinations and parks that are within this distance
+- If suggesting destinations beyond this range, acknowledge the distance and ask if they're open to traveling further
+- For flight searches, consider that longer distances may exceed their preference
+\n`;
+    
+    // Add blacklisted parks if any
+    if (context.blacklistedParkCodes && context.blacklistedParkCodes.length > 0) {
+      contextInfo += `\n🚫 PARKS OUTSIDE USER'S TRAVEL RANGE (DO NOT RECOMMEND):
+The following park codes are beyond the user's ${context.maxTravelDistance.toLocaleString()} mile travel limit: ${context.blacklistedParkCodes.join(', ')}
+- Do NOT suggest these parks unless the user specifically asks about them
+- If the user asks about a blacklisted park, mention that it's outside their travel distance preference
+- Focus recommendations on parks within their range
+\n`;
+    }
+  } else {
+    contextInfo += `\n📍 TRAVEL DISTANCE: No distance limit - the user is open to destinations anywhere.\n`;
   }
   
   return contextInfo;

@@ -70,6 +70,10 @@ export interface ChatContext {
     activeLeg?: number;
   };
   userProfile?: string;
+  // Max travel distance preference (undefined = unlimited, number = miles)
+  maxTravelDistance?: number;
+  // Park codes that are outside the user's travel distance (blacklisted)
+  blacklistedParkCodes?: string[];
   // Parsed defaults from userProfile for programmatic access
   defaults?: ContextDefaults;
   // NPS gateway city from park lookups - deterministic location for restaurant/reservation searches
@@ -81,6 +85,11 @@ export interface ChatContext {
   };
   // Track URLs used in this conversation to prevent duplicates
   seenUrls?: Set<string>;
+  // Tool settings for controlling which API tools are enabled
+  toolSettings?: {
+    languageModel?: 'claude-sonnet-4-20250514' | 'claude-3-5-haiku-20241022';
+    enabledTools?: string[];
+  };
 }
 
 /**
@@ -119,6 +128,8 @@ export function resolveContextValue<T>(
 export interface ChatResponse {
   response: string;
   photos?: PhotoReference[];
+  segments?: string[];
+  toolsUsed?: string[];  // List of tool names that were called during this request
 }
 
 export interface ToolResult {

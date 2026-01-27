@@ -140,8 +140,9 @@ export async function validateAndCleanResponse(
   originalSearchQuery: string | undefined,
   messages: { content: string }[],
   tripDestination: string | undefined,
-  conversationSeenUrls?: Set<string>
-): Promise<{ response: string; photos?: PhotoReference[]; segments?: string[] }> {
+  conversationSeenUrls?: Set<string>,
+  toolsUsed?: string[]
+): Promise<{ response: string; photos?: PhotoReference[]; segments?: string[]; toolsUsed?: string[] }> {
   // Post-process response to clean up formatting artifacts
   const cleanedResponse = cleanResponseFormatting(rawResponse);
   
@@ -168,7 +169,8 @@ export async function validateAndCleanResponse(
     return { 
       response: validatedResponse, 
       photos: filteredPhotos.length > 0 ? filteredPhotos : undefined,
-      segments: segments.length > 1 ? segments : undefined
+      segments: segments.length > 1 ? segments : undefined,
+      toolsUsed: toolsUsed && toolsUsed.length > 0 ? toolsUsed : undefined
     };
   } catch (linkError) {
     console.warn('[Chat] Link validation failed, returning cleaned response:', linkError);
@@ -176,7 +178,8 @@ export async function validateAndCleanResponse(
     return { 
       response: cleanedResponse, 
       photos: filteredPhotos.length > 0 ? filteredPhotos : undefined,
-      segments: segments.length > 1 ? segments : undefined
+      segments: segments.length > 1 ? segments : undefined,
+      toolsUsed: toolsUsed && toolsUsed.length > 0 ? toolsUsed : undefined
     };
   }
 }

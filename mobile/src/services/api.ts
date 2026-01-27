@@ -194,6 +194,15 @@ export interface ChatContext {
   }>;
   knownHikes?: string[];
   userProfile?: string;
+  // Max travel distance preference (null = unlimited, number = miles)
+  maxTravelDistance?: number;
+  // Park codes that are outside the user's travel distance (blacklisted)
+  blacklistedParkCodes?: string[];
+  // Tool settings for controlling which API tools are enabled
+  toolSettings?: {
+    languageModel?: 'claude-sonnet-4-20250514' | 'claude-3-5-haiku-20241022';
+    enabledTools?: string[];
+  };
 }
 
 export interface PhotoReference {
@@ -211,9 +220,8 @@ export const sendChatMessage = async (
   return response.data;
 };
 
-// Chat with tool status updates
-// Note: React Native doesn't support streaming fetch, so we use the regular endpoint
-// with simulated status updates based on response time
+// Chat with real-time tool status updates via polling
+// Uses /api/chat/start to initiate request, then polls /api/chat/status for updates
 export const sendChatMessageWithStream = async (
   messages: ChatMessage[],
   context: ChatContext,
@@ -224,57 +232,80 @@ export const sendChatMessageWithStream = async (
   // Show initial status
   onToolStatus('Thinking...');
   
-  // Detect what the user is asking about to show relevant status messages
-  const lastMessage = messages[messages.length - 1]?.content?.toLowerCase() || '';
-  
-  // Build context-aware status messages based on user's request
-  const statusMessages: string[] = ['Analyzing your request...'];
-  
-  if (lastMessage.includes('restaurant') || lastMessage.includes('food') || lastMessage.includes('eat') || lastMessage.includes('dining')) {
-    statusMessages.push('Gathering restaurant information...');
-    statusMessages.push('Checking reviews and ratings...');
-  } else if (lastMessage.includes('flight') || lastMessage.includes('fly')) {
-    statusMessages.push('Searching for flights...');
-    statusMessages.push('Comparing prices and routes...');
-  } else if (lastMessage.includes('hotel') || lastMessage.includes('lodge') || lastMessage.includes('stay') || lastMessage.includes('campground')) {
-    statusMessages.push('Searching for lodging options...');
-    statusMessages.push('Checking availability...');
-  } else if (lastMessage.includes('hike') || lastMessage.includes('trail')) {
-    statusMessages.push('Finding hiking trails...');
-    statusMessages.push('Checking trail conditions...');
-  } else if (lastMessage.includes('park') || lastMessage.includes('national')) {
-    statusMessages.push('Gathering park information...');
-    statusMessages.push('Loading activities and attractions...');
-  } else if (lastMessage.includes('car') || lastMessage.includes('rental') || lastMessage.includes('drive')) {
-    statusMessages.push('Searching for car rentals...');
-    statusMessages.push('Comparing vehicle options...');
-  } else if (lastMessage.includes('reservation') || lastMessage.includes('book')) {
-    statusMessages.push('Finding reservation options...');
-    statusMessages.push('Checking availability...');
-  } else if (lastMessage.includes('ev') || lastMessage.includes('charging') || lastMessage.includes('tesla')) {
-    statusMessages.push('Locating charging stations...');
-    statusMessages.push('Checking charger availability...');
-  } else {
-    statusMessages.push('Searching for information...');
-    statusMessages.push('Processing results...');
-  }
-  
-  let statusIndex = 0;
-  const statusInterval = setInterval(() => {
-    if (statusIndex < statusMessages.length) {
-      onToolStatus(statusMessages[statusIndex]);
-      statusIndex++;
-    }
-  }, 2500);
-
   try {
-    const response = await chatApi.post('/api/chat', { messages, context, model }, {
+    // Start the chat request and get a request ID
+    const startResponse = await chatApi.post('/api/chat/start', { messages, context, model }, {
       signal: abortSignal,
     });
-    clearInterval(statusInterval);
-    return response.data;
+    
+    const { requestId } = startResponse.data;
+    
+    if (!requestId) {
+      // Fallback to synchronous endpoint if no requestId returned
+      const response = await chatApi.post('/api/chat', { messages, context, model }, {
+        signal: abortSignal,
+      });
+      return response.data;
+    }
+    
+    // Poll for status updates
+    let lastToolName = '';
+    
+    while (true) {
+      // Check if aborted
+      if (abortSignal?.aborted) {
+        const abortError = new Error('Request aborted');
+        abortError.name = 'AbortError';
+        throw abortError;
+      }
+      
+      // Wait before polling (500ms for responsive updates)
+      await new Promise(resolve => setTimeout(resolve, 500));
+      
+      try {
+        const statusResponse = await api.get(`/api/chat/status/${requestId}`, {
+          signal: abortSignal,
+        });
+        
+        const statusData = statusResponse.data;
+        
+        // Update tool status if it changed
+        if (statusData.toolName && statusData.toolName !== lastToolName) {
+          lastToolName = statusData.toolName;
+          onToolStatus(statusData.toolName);
+        }
+        
+        // Check if complete
+        if (statusData.status === 'complete') {
+          return {
+            response: statusData.response,
+            photos: statusData.photos,
+            segments: statusData.segments,
+            fallback: statusData.fallback,
+          };
+        }
+        
+        // Check if error
+        if (statusData.status === 'error') {
+          throw new Error(statusData.error || 'Chat request failed');
+        }
+        
+      } catch (pollError: any) {
+        // If polling fails with 404, the request may have completed and been cleaned up
+        if (pollError?.response?.status === 404) {
+          throw new Error('Request expired or not found');
+        }
+        // Re-throw abort errors
+        if (pollError?.name === 'AbortError' || pollError?.name === 'CanceledError' || pollError?.code === 'ERR_CANCELED') {
+          const abortError = new Error('Request aborted');
+          abortError.name = 'AbortError';
+          throw abortError;
+        }
+        // For other errors, continue polling (might be temporary network issue)
+        console.warn('Polling error, retrying:', pollError.message);
+      }
+    }
   } catch (error: any) {
-    clearInterval(statusInterval);
     // Re-throw abort errors with a specific type for handling upstream
     if (error?.name === 'CanceledError' || error?.code === 'ERR_CANCELED' || abortSignal?.aborted) {
       const abortError = new Error('Request aborted');

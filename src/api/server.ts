@@ -15,6 +15,20 @@ import { INaturalistAdapter } from '../providers/wildlife/INaturalistAdapter.js'
 import { createChatHandler, TOOL_DISPLAY_NAMES } from './chat.js';
 import { logError } from './errorLogger.js';
 import { storeItinerary, getItinerary } from './itineraryHost.js';
+import { randomUUID } from 'crypto';
+
+// In-memory store for active chat request statuses (for polling)
+const activeRequestStatuses = new Map<string, { status: string; toolName?: string; timestamp: number }>();
+
+// Clean up old statuses after 5 minutes
+setInterval(() => {
+  const now = Date.now();
+  for (const [requestId, data] of activeRequestStatuses.entries()) {
+    if (now - data.timestamp > 5 * 60 * 1000) {
+      activeRequestStatuses.delete(requestId);
+    }
+  }
+}, 60000);
 
 // Load environment variables
 config();
@@ -289,6 +303,96 @@ createChatHandler(facade).then(handler => {
   console.error('⚠️ Claude chat not available:', err.message);
 });
 
+// Start a chat request and get a request ID for polling
+app.post('/api/chat/start', asyncHandler(async (req: Request, res: Response) => {
+  const { messages, context, model } = req.body;
+
+  if (!messages || !Array.isArray(messages)) {
+    return res.status(400).json({ error: 'Missing required parameter: messages (array)' });
+  }
+
+  if (!chatHandler) {
+    return res.status(503).json({ 
+      error: 'Chat service not available. Set ANTHROPIC_API_KEY in .env',
+      fallback: true 
+    });
+  }
+
+  // Generate a unique request ID
+  const requestId = randomUUID();
+  
+  // Initialize status
+  activeRequestStatuses.set(requestId, { status: 'thinking', timestamp: Date.now() });
+  
+  // Return request ID immediately so client can start polling
+  res.json({ requestId });
+  
+  // Process the chat request asynchronously
+  const startTime = Date.now();
+  console.log(`[Chat] Request ${requestId} started - ${messages?.length || 0} messages`);
+  
+  try {
+    // Tool status callback to update the polling status
+    const onToolStatus = (toolName: string, status: 'starting' | 'complete') => {
+      if (status === 'starting') {
+        const displayName = TOOL_DISPLAY_NAMES[toolName] || `Using ${toolName}...`;
+        activeRequestStatuses.set(requestId, { 
+          status: 'tool', 
+          toolName: displayName, 
+          timestamp: Date.now() 
+        });
+        console.log(`[Chat] Request ${requestId} tool: ${displayName}`);
+      }
+    };
+    
+    const result = await chatHandler(messages, context || {}, model, onToolStatus);
+    const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.log(`[Chat] Request ${requestId} complete in ${duration}s - ${result.photos?.length || 0} photos`);
+    
+    // Store the result
+    activeRequestStatuses.set(requestId, { 
+      status: 'complete', 
+      timestamp: Date.now(),
+      result: { response: result.response, photos: result.photos, toolsUsed: (result as any).toolsUsed }
+    } as any);
+  } catch (error: any) {
+    const duration = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.error(`[Chat] Request ${requestId} error after ${duration}s:`, error.message);
+    activeRequestStatuses.set(requestId, { 
+      status: 'error', 
+      timestamp: Date.now(),
+      error: error.message
+    } as any);
+  }
+}));
+
+// Poll for chat request status
+app.get('/api/chat/status/:requestId', (req: Request, res: Response) => {
+  const { requestId } = req.params;
+  const statusData = activeRequestStatuses.get(requestId);
+  
+  if (!statusData) {
+    return res.status(404).json({ error: 'Request not found' });
+  }
+  
+  const { status, toolName, ...rest } = statusData as any;
+  
+  if (status === 'complete') {
+    // Clean up after delivering result
+    activeRequestStatuses.delete(requestId);
+    return res.json({ status: 'complete', ...rest.result });
+  }
+  
+  if (status === 'error') {
+    activeRequestStatuses.delete(requestId);
+    return res.status(500).json({ status: 'error', error: rest.error, fallback: true });
+  }
+  
+  // Still processing
+  res.json({ status, toolName });
+});
+
+// Legacy synchronous chat endpoint (kept for backwards compatibility)
 app.post('/api/chat', asyncHandler(async (req: Request, res: Response) => {
   const startTime = Date.now();
   const { messages, context, model } = req.body;
@@ -310,7 +414,7 @@ app.post('/api/chat', asyncHandler(async (req: Request, res: Response) => {
     const result = await chatHandler(messages, context || {}, model);
     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
     console.log(`[Chat] Response ready in ${duration}s - ${result.photos?.length || 0} photos`);
-    res.json({ response: result.response, photos: result.photos });
+    res.json({ response: result.response, photos: result.photos, toolsUsed: (result as any).toolsUsed });
   } catch (error: any) {
     const duration = ((Date.now() - startTime) / 1000).toFixed(1);
     console.error(`[Chat] Error after ${duration}s:`, error.message);
@@ -356,7 +460,8 @@ app.post('/api/chat/stream', asyncHandler(async (req: Request, res: Response) =>
     const finalEvent = { 
       type: 'complete', 
       response: result.response, 
-      photos: result.photos 
+      photos: result.photos,
+      segments: (result as any).segments,
     };
     res.write(`data: ${JSON.stringify(finalEvent)}\n\n`);
     

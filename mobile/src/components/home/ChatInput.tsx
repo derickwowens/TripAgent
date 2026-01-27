@@ -44,7 +44,8 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
   const [isListening, setIsListening] = useState(false);
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
   
-  const isDisabled = !inputText.trim() || isLoading;
+  // Only disable send button when no text - allow typing while loading
+  const isDisabled = !inputText.trim();
   
   const handleChangeText = useCallback((text: string) => {
     onChangeText(text);
@@ -149,7 +150,7 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
         maxLength={1000}
         autoCorrect={false}
         autoCapitalize="sentences"
-        editable={!isLoading}
+        editable={true}
         scrollEnabled={true}
       />
       {hasPhotos && onOpenGallery && !galleryOpen && (
