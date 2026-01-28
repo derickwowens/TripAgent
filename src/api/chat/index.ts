@@ -876,12 +876,17 @@ async function handleSearchFlights(
     ? `https://www.kayak.com/flights/${origin}-${input.destination}/${input.departure_date}/${input.return_date}`
     : `https://www.kayak.com/flights/${origin}-${input.destination}/${input.departure_date}`;
   
-  // Google Flights link format - uses query string for prefilled search
-  // Note: Google Flights has no public API for prices, but link prefills the search
-  const googleFlightsQuery = input.return_date
-    ? `Flights from ${origin} to ${input.destination} on ${input.departure_date} returning ${input.return_date}`
-    : `Flights from ${origin} to ${input.destination} on ${input.departure_date} one way`;
-  const googleFlightsLink = `https://www.google.com/travel/flights?q=${encodeURIComponent(googleFlightsQuery)}`;
+  // Google Flights link format - uses tfs parameter for structured prefill
+  // Format dates as YYYY-MM-DD for Google Flights
+  const formatGoogleDate = (date: string) => date; // Already in YYYY-MM-DD format
+  
+  // Build Google Flights URL with proper parameters
+  // tfs format: origin.destination.departure_date*destination.origin.return_date (for round trip)
+  const googleFlightsTfs = input.return_date
+    ? `${origin}.${input.destination}.${formatGoogleDate(input.departure_date)}*${input.destination}.${origin}.${formatGoogleDate(input.return_date)}`
+    : `${origin}.${input.destination}.${formatGoogleDate(input.departure_date)}`;
+  
+  const googleFlightsLink = `https://www.google.com/travel/flights?tfs=${encodeURIComponent(googleFlightsTfs)}&tfu=EgYIAhAAGAA`;
   
   // Generate airport Google Maps links
   const originAirportUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(origin + ' Airport')}`;

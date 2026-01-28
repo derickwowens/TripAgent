@@ -800,9 +800,10 @@ const styles = StyleSheet.create({
   scrollContent: {
     flexGrow: 1,
     paddingHorizontal: 24,
-    paddingTop: IS_TABLET ? 40 : 20,
+    paddingTop: IS_TABLET ? 60 : 40,
     paddingBottom: 40,
     alignItems: 'center',
+    justifyContent: 'center',
     width: '100%',
   },
   stepContent: {

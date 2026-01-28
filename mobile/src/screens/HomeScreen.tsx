@@ -635,18 +635,9 @@ const HomeScreen: React.FC = () => {
           <StatusBar barStyle="light-content" />
         
         <View style={styles.header}>
-          <View style={styles.headerLeft}>
-            <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
-              <Text style={styles.menuIcon}>☰</Text>
-            </TouchableOpacity>
-            {messages.length > 0 && (
-              <Image 
-                source={require('../../assets/icon.png')} 
-                style={styles.menuLogo}
-                resizeMode="contain"
-              />
-            )}
-          </View>
+          <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
+            <Text style={styles.menuIcon}>☰</Text>
+          </TouchableOpacity>
           {messages.length > 0 ? (
             <Image 
               source={require('../../assets/icon.png')} 
