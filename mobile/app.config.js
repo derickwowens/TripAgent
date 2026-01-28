@@ -5,7 +5,7 @@ export default ({ config }) => {
     ...config,
     name: "TripAgent",
     slug: "tripagent",
-    version: "1.9.6",
+    version: "1.9.7",
     orientation: "portrait",
     icon: "./assets/icon.png",
     userInterfaceStyle: "automatic",
@@ -29,7 +29,7 @@ export default ({ config }) => {
     },
     android: {
       package: "com.tripagent.app",
-      versionCode: 48,
+      versionCode: 49,
       adaptiveIcon: {
         foregroundImage: "./assets/adaptive-icon.png",
         backgroundColor: "#166534"
