@@ -15,6 +15,8 @@ BUMP_TYPE=""
 RC_BUILD=false
 VALIDATE_LINKS=false
 INCREMENT_VERSION=false
+AUTO_CONFIRM=false
+APPLE_ID=""
 
 for arg in "$@"; do
     case $arg in
@@ -27,24 +29,35 @@ for arg in "$@"; do
         -i|--increment)
             INCREMENT_VERSION=true
             ;;
+        -y|--yes)
+            AUTO_CONFIRM=true
+            ;;
+        --apple-id=*)
+            APPLE_ID="${arg#*=}"
+            ;;
         major|minor|hotfix)
             BUMP_TYPE=$arg
             ;;
     esac
 done
 
+# Default Apple ID from environment if not provided
+APPLE_ID=${APPLE_ID:-$EXPO_APPLE_ID}
+
 # Default to minor if not specified
 BUMP_TYPE=${BUMP_TYPE:-minor}
 
 if [[ ! "$BUMP_TYPE" =~ ^(major|minor|hotfix)$ ]]; then
     echo -e "${RED}Error: Invalid bump type '$BUMP_TYPE'${NC}"
-    echo "Usage: ./scripts/deploy-ios.sh [major|minor|hotfix] [--rc] [--validate-links] [-i|--increment]"
-    echo "  major           - Bump major version (1.0.0 -> 2.0.0)"
-    echo "  minor           - Bump minor version (1.0.0 -> 1.1.0)"
-    echo "  hotfix          - Bump patch version (1.0.0 -> 1.0.1)"
-    echo "  --rc            - Build as Release Candidate for closed testing"
-    echo "  --validate-links - Run NPS link validation before build (requires NPS_API_KEY)"
-    echo "  -i, --increment - Increment version number (default: keep current version)"
+    echo "Usage: ./scripts/deploy-ios.sh [major|minor|hotfix] [options]"
+    echo "  major              - Bump major version (1.0.0 -> 2.0.0)"
+    echo "  minor              - Bump minor version (1.0.0 -> 1.1.0)"
+    echo "  hotfix             - Bump patch version (1.0.0 -> 1.0.1)"
+    echo "  --rc               - Build as Release Candidate for closed testing"
+    echo "  --validate-links   - Run NPS link validation before build (requires NPS_API_KEY)"
+    echo "  -i, --increment    - Increment version number (default: keep current version)"
+    echo "  -y, --yes          - Auto-confirm all prompts (non-interactive mode)"
+    echo "  --apple-id=EMAIL   - Apple ID for App Store Connect (or set EXPO_APPLE_ID env var)"
     exit 1
 fi
 
@@ -122,12 +135,16 @@ if [ "$INCREMENT_VERSION" = false ]; then
 fi
 echo ""
 
-# Confirm with user
-read -p "Proceed with deployment? (y/n) " -n 1 -r
-echo
-if [[ ! $REPLY =~ ^[Yy]$ ]]; then
-    echo -e "${RED}Deployment cancelled${NC}"
-    exit 1
+# Confirm with user (skip if auto-confirm enabled)
+if [ "$AUTO_CONFIRM" = true ]; then
+    echo -e "${GREEN}Auto-confirm enabled, proceeding...${NC}"
+else
+    read -p "Proceed with deployment? (y/n) " -n 1 -r
+    echo
+    if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+        echo -e "${RED}Deployment cancelled${NC}"
+        exit 1
+    fi
 fi
 
 echo ""
@@ -159,7 +176,25 @@ echo "This may take 10-15 minutes on the free tier."
 echo ""
 
 cd mobile
-eas build --platform ios --profile $BUILD_PROFILE
+
+# Build EAS command with appropriate flags
+EAS_CMD="eas build --platform ios --profile $BUILD_PROFILE"
+
+if [ "$AUTO_CONFIRM" = true ]; then
+    EAS_CMD="$EAS_CMD --non-interactive"
+    
+    # Set Apple ID environment variable if provided
+    if [ -n "$APPLE_ID" ]; then
+        echo -e "Using Apple ID: ${YELLOW}$APPLE_ID${NC}"
+        export EXPO_APPLE_ID="$APPLE_ID"
+    else
+        echo -e "${YELLOW}Warning: No Apple ID provided. Set --apple-id=EMAIL or EXPO_APPLE_ID env var${NC}"
+    fi
+fi
+
+echo -e "Running: ${YELLOW}$EAS_CMD${NC}"
+echo ""
+$EAS_CMD
 
 echo ""
 echo -e "${GREEN}🎉 iOS Deployment complete!${NC}"
