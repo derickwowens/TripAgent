@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image, KeyboardAvoidingView, Platform } from 'react-native';
 import Slider from '@react-native-community/slider';
 import Constants from 'expo-constants';
@@ -6,6 +6,7 @@ import { ProfileSection } from './ProfileSection';
 import { ConversationList } from './ConversationList';
 import { ToolSettingsPanel } from './ToolSettingsPanel';
 import { SavedConversation, useDarkModeContext, ToolSettings, MaxTravelDistance } from '../../hooks';
+import { getWhitelistedParkNames } from '../../utils/parkDistanceFilter';
 
 // Distance slider presets (in miles) - same as ProfileSection
 const DISTANCE_PRESETS = [
@@ -75,6 +76,8 @@ interface SideMenuProps {
   // Travel distance props
   maxTravelDistance?: MaxTravelDistance;
   onUpdateMaxTravelDistance?: (distance: MaxTravelDistance) => void;
+  // Location for park filtering
+  userLocation?: { lat: number; lng: number } | null;
 }
 
 export const SideMenu: React.FC<SideMenuProps> = ({
@@ -100,9 +103,22 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   totalToolCount = 0,
   maxTravelDistance,
   onUpdateMaxTravelDistance,
+  userLocation,
 }) => {
   const { isDarkMode } = useDarkModeContext();
   const [showToolSettings, setShowToolSettings] = useState(false);
+  const [parksExpanded, setParksExpanded] = useState(false);
+  // Preview value for slider during drag (avoids recalculating parks on every tick)
+  const [sliderPreview, setSliderPreview] = useState<MaxTravelDistance | null>(null);
+
+  // Calculate whitelisted parks based on user location and max travel distance
+  // Only recalculates when actual maxTravelDistance changes (not during drag)
+  const whitelistedParks = useMemo(() => {
+    return getWhitelistedParkNames(userLocation?.lat, userLocation?.lng, maxTravelDistance ?? null);
+  }, [userLocation?.lat, userLocation?.lng, maxTravelDistance]);
+  
+  // Display value shows preview during drag, actual value otherwise
+  const displayDistance = sliderPreview !== null ? sliderPreview : (maxTravelDistance ?? null);
   
   const handleLoadConversation = (conv: SavedConversation) => {
     onLoadConversation(conv);
@@ -173,7 +189,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               <View style={styles.distanceSection}>
                 <View style={styles.distanceHeader}>
                   <Text style={styles.distanceLabel}>Max Travel Distance</Text>
-                  <Text style={styles.distanceValue}>{getDistanceDisplayText(maxTravelDistance ?? null)}</Text>
+                  <Text style={styles.distanceValue}>{getDistanceDisplayText(displayDistance)}</Text>
                 </View>
                 <Slider
                   style={styles.distanceSlider}
@@ -181,7 +197,11 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                   maximumValue={DISTANCE_PRESETS.length}
                   step={1}
                   value={distanceToSliderValue(maxTravelDistance ?? null)}
-                  onValueChange={(value) => onUpdateMaxTravelDistance(sliderValueToDistance(value))}
+                  onValueChange={(value) => setSliderPreview(sliderValueToDistance(value))}
+                  onSlidingComplete={(value) => {
+                    setSliderPreview(null);
+                    onUpdateMaxTravelDistance(sliderValueToDistance(value));
+                  }}
                   minimumTrackTintColor="#22C55E"
                   maximumTrackTintColor="rgba(255,255,255,0.2)"
                   thumbTintColor="#22C55E"
@@ -190,6 +210,37 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                   <Text style={styles.distanceLabelSmall}>50 mi</Text>
                   <Text style={styles.distanceLabelSmall}>Unlimited</Text>
                 </View>
+
+                {/* Parks Included - only show when not unlimited */}
+                {maxTravelDistance !== null && maxTravelDistance !== undefined && (
+                  <>
+                    <TouchableOpacity 
+                      style={styles.parksHeader}
+                      onPress={() => setParksExpanded(!parksExpanded)}
+                    >
+                      <Text style={styles.parksHeaderText}>
+                        {parksExpanded ? '▼' : '▶'} Parks Included ({whitelistedParks.length})
+                      </Text>
+                    </TouchableOpacity>
+                    {parksExpanded && (
+                      <View style={styles.parksContainer}>
+                        {whitelistedParks.length > 0 ? (
+                          <View style={styles.parksGrid}>
+                            {whitelistedParks.map((park, index) => (
+                              <View key={index} style={styles.parkChip}>
+                                <Text style={styles.parkChipText}>{park}</Text>
+                              </View>
+                            ))}
+                          </View>
+                        ) : (
+                          <Text style={styles.noParksText}>
+                            No parks within {getDistanceDisplayText(maxTravelDistance)}. Try increasing your travel distance.
+                          </Text>
+                        )}
+                      </View>
+                    )}
+                  </>
+                )}
               </View>
             )}
 
@@ -384,5 +435,43 @@ const styles = StyleSheet.create({
   distanceLabelSmall: {
     color: 'rgba(255,255,255,0.4)',
     fontSize: 10,
+  },
+  parksHeader: {
+    marginTop: 12,
+    paddingVertical: 6,
+  },
+  parksHeaderText: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 11,
+  },
+  parksContainer: {
+    marginTop: 6,
+    padding: 10,
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    borderRadius: 10,
+  },
+  parksGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    gap: 5,
+  },
+  parkChip: {
+    backgroundColor: 'rgba(34, 197, 94, 0.15)',
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: 'rgba(34, 197, 94, 0.3)',
+  },
+  parkChipText: {
+    color: 'rgba(34, 197, 94, 0.9)',
+    fontSize: 10,
+    fontWeight: '500',
+  },
+  noParksText: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 11,
+    textAlign: 'center',
+    fontStyle: 'italic',
   },
 });

@@ -541,13 +541,18 @@ export function buildContextInfo(context: {
   }
   
   if (context.userProfile) {
-    contextInfo += `\nUser profile/preferences:\n${context.userProfile}\n\nIMPORTANT: Use these preferences to personalize recommendations:
-- If they mention "family of four", assume 4 travelers
-- If they prefer warm destinations, suggest accordingly
-- If they have accessibility needs, prioritize accessible options
-- If they're traveling with a dog or service animal, provide pet-friendly lodging options, airline pet policies, and note any park restrictions on pets (most national parks restrict pets on trails but allow them in campgrounds and on paved roads)
-- For service animals specifically, note they are allowed in more areas than regular pets under ADA guidelines
-- IMPORTANT: "budget" or "budget-conscious" refers to TRAVEL STYLE (affordable, cost-conscious travel) - NOT the "Budget" rental car company. Do not assume a car rental company preference unless they explicitly mention a company name like "I prefer Hertz" or "I like Enterprise"
+    // Profile is now pre-formatted with clear, actionable sentences from the mobile app
+    // e.g., "I am a history enthusiast interested in historical sites and museums. I prefer American Airlines for flights."
+    contextInfo += `\n👤 USER PROFILE - Apply these preferences to ALL recommendations:
+${context.userProfile}
+
+IMPORTANT PROFILE RULES:
+- Every recommendation should reflect ALL of the user's stated preferences above
+- Match accommodation style (camping vs hotels vs vacation rentals)
+- Honor airline, car rental, and hotel brand preferences when making booking suggestions
+- Consider travel companions (solo, family, pets) when suggesting activities
+- Respect accessibility and mobility needs
+- "budget-conscious" refers to TRAVEL STYLE, not the "Budget" car rental company
 \n`;
   }
 

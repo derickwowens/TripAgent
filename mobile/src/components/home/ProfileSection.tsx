@@ -2,6 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable, Alert } from 'react-native';
 import Slider from '@react-native-community/slider';
 import { MaxTravelDistance } from '../../hooks';
+import { APP_NAME } from '../../utils/appName';
 
 // Define mutually exclusive groups
 const EXCLUSIVE_GROUPS = {
@@ -84,66 +85,67 @@ const HISTORIAN_PREFERENCES = [
   'Maritime history',
 ];
 
-const PROFILE_SUGGESTIONS = [
+// Profile suggestions with display labels and clear profile text for Claude
+const PROFILE_SUGGESTIONS: Array<{ label: string; profileText: string }> = [
   // Gender (mutually exclusive)
-  'Male',
-  'Female',
+  { label: 'Male', profileText: 'I am male' },
+  { label: 'Female', profileText: 'I am female' },
   // Family/Kids
-  'Kids 1-3 yrs',
-  'Kids 4-7 yrs',
-  'Kids 8-12 yrs',
-  'Kids 13+',
+  { label: 'Kids 1-3 yrs', profileText: 'I have toddlers (ages 1-3) and need kid-friendly, stroller-accessible options' },
+  { label: 'Kids 4-7 yrs', profileText: 'I have young children (ages 4-7) who need engaging but manageable activities' },
+  { label: 'Kids 8-12 yrs', profileText: 'I have older kids (ages 8-12) who can handle moderate hikes and activities' },
+  { label: 'Kids 13+', profileText: 'I have teenagers who can participate in more challenging activities' },
   // Vehicle (mutually exclusive)
-  'Gas vehicle',
-  'Tesla',
-  'Other EV',
+  { label: 'Gas vehicle', profileText: 'I drive a gas-powered vehicle' },
+  { label: 'Tesla', profileText: 'I drive a Tesla and need Supercharger stations along my route' },
+  { label: 'Other EV', profileText: 'I drive an electric vehicle (non-Tesla) and need EV charging stations' },
   // Climate preference (mutually exclusive)
-  'Warm destinations',
-  'Cold destinations',
+  { label: 'Warm destinations', profileText: 'I prefer warm weather destinations' },
+  { label: 'Cold destinations', profileText: 'I prefer cold weather destinations' },
   // Travel style
-  'Avoid crowds',
-  'Frugal traveler',
-  'Luxury travel',
-  'Backpacker',
-  'Love camping',
-  'Hotels only',
+  { label: 'Avoid crowds', profileText: 'I prefer to avoid crowded tourist areas and seek quieter experiences' },
+  { label: 'Frugal traveler', profileText: 'I am a budget-conscious traveler who prefers affordable options' },
+  { label: 'Luxury travel', profileText: 'I prefer luxury travel experiences and upscale accommodations' },
+  { label: 'Backpacker', profileText: 'I am a backpacker who enjoys adventure travel and budget accommodations' },
+  { label: 'Love camping', profileText: 'I love camping and prefer campgrounds over hotels when possible' },
+  { label: 'Hotels only', profileText: 'I only stay in hotels, not campgrounds or hostels' },
   // Interests
-  'Hiking/outdoors',
-  'Photography',
-  'Wildlife viewing',
-  'Cycling',
-  'Fishing',
-  'Skiing/snowboard',
-  'Water sports',
-  'Sunrise/sunset',
-  'Foodie',
-  'Coffee hound',
-  'Book worm',
-  'Historian',
+  { label: 'Hiking/outdoors', profileText: 'I am an outdoor enthusiast who loves hiking' },
+  { label: 'Photography', profileText: 'I am a photography enthusiast interested in scenic viewpoints and photo opportunities' },
+  { label: 'Wildlife viewing', profileText: 'I enjoy wildlife viewing and want to see animals in their natural habitat' },
+  { label: 'Cycling', profileText: 'I enjoy cycling and biking trails' },
+  { label: 'Fishing', profileText: 'I enjoy fishing and want fishing spot recommendations' },
+  { label: 'Skiing/snowboard', profileText: 'I enjoy skiing and snowboarding' },
+  { label: 'Water sports', profileText: 'I enjoy water sports like kayaking, swimming, and water activities' },
+  { label: 'Sunrise/sunset', profileText: 'I love watching sunrises and sunsets and want the best viewpoints' },
+  { label: 'Foodie', profileText: 'I am a foodie who loves exploring local cuisine and notable restaurants' },
+  { label: 'Coffee hound', profileText: 'I am a coffee enthusiast who seeks out local coffee shops and roasters' },
+  { label: 'Book worm', profileText: 'I am a book lover interested in bookshops and literary destinations' },
+  { label: 'Historian', profileText: 'I am a history enthusiast interested in historical sites and museums' },
   // Physical/Accessibility
-  'Traveling with dog',
-  'Accessible needs',
-  'Limited mobility',
-  'With seniors',
-  'Educational trips',
+  { label: 'Traveling with dog', profileText: 'I am traveling with my dog and need pet-friendly accommodations and activities' },
+  { label: 'Accessible needs', profileText: 'I have accessibility requirements and need ADA-compliant facilities' },
+  { label: 'Limited mobility', profileText: 'Someone in my group has limited mobility and needs easier walking options' },
+  { label: 'With seniors', profileText: 'I am traveling with seniors who may need easier trails and accessible facilities' },
+  { label: 'Educational trips', profileText: 'I want educational experiences for learning opportunities' },
   // Airlines (mutually exclusive)
-  'Delta',
-  'Southwest',
-  'United',
-  'American',
-  'JetBlue',
-  'Alaska',
+  { label: 'Delta', profileText: 'I prefer Delta Air Lines for flights' },
+  { label: 'Southwest', profileText: 'I prefer Southwest Airlines for flights' },
+  { label: 'United', profileText: 'I prefer United Airlines for flights' },
+  { label: 'American', profileText: 'I prefer American Airlines for flights' },
+  { label: 'JetBlue', profileText: 'I prefer JetBlue Airways for flights' },
+  { label: 'Alaska', profileText: 'I prefer Alaska Airlines for flights' },
   // Car rentals (mutually exclusive)
-  'Hertz',
-  'Enterprise',
-  'National',
-  'Budget',
+  { label: 'Hertz', profileText: 'I prefer Hertz for car rentals' },
+  { label: 'Enterprise', profileText: 'I prefer Enterprise Rent-A-Car' },
+  { label: 'National', profileText: 'I prefer National Car Rental' },
+  { label: 'Budget', profileText: 'I prefer Budget Car Rental' },
   // Hotels (mutually exclusive)
-  'Marriott',
-  'Hilton',
-  'IHG',
-  'Hyatt',
-  'Airbnb/VRBO',
+  { label: 'Marriott', profileText: 'I prefer Marriott hotels' },
+  { label: 'Hilton', profileText: 'I prefer Hilton hotels' },
+  { label: 'IHG', profileText: 'I prefer IHG hotels (Holiday Inn, InterContinental, etc.)' },
+  { label: 'Hyatt', profileText: 'I prefer Hyatt hotels' },
+  { label: 'Airbnb/VRBO', profileText: 'I prefer vacation rentals like Airbnb or VRBO over traditional hotels' },
 ];
 
 // Distance slider presets (in miles)
@@ -272,12 +274,13 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
     });
     
     return PROFILE_SUGGESTIONS.filter(suggestion => {
-      // Check if the text is already in the profile
-      if (profileLower.includes(suggestion.toLowerCase())) return false;
+      // Check if the label or profileText is already in the profile
+      if (profileLower.includes(suggestion.label.toLowerCase())) return false;
+      if (profileLower.includes(suggestion.profileText.toLowerCase())) return false;
       
       // Check if this suggestion belongs to a mutually exclusive group that already has a selection
       for (const [groupName, options] of Object.entries(EXCLUSIVE_GROUPS)) {
-        if (selectedExclusiveGroups.includes(groupName) && options.includes(suggestion)) {
+        if (selectedExclusiveGroups.includes(groupName) && options.includes(suggestion.label)) {
           return false;
         }
       }
@@ -378,9 +381,9 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
                 <TouchableOpacity
                   key={index}
                   style={styles.suggestionChip}
-                  onPress={() => onAddSuggestion(suggestion)}
+                  onPress={() => onAddSuggestion(suggestion.profileText)}
                 >
-                  <Text style={styles.suggestionText}>{suggestion}</Text>
+                  <Text style={styles.suggestionText}>{suggestion.label}</Text>
                 </TouchableOpacity>
               ))}
             </View>
@@ -506,7 +509,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
           <Pressable style={styles.modalContent} onPress={e => e.stopPropagation()}>
             <Text style={styles.modalTitle}>🔒 Your Privacy</Text>
             <Text style={styles.modalText}>
-              Your profile data is ephemeral and stored only on your device. TripAgent will never store, sell, or share your personal information.
+              Your profile data is ephemeral and stored only on your device. {APP_NAME} will never store, sell, or share your personal information.
             </Text>
             <Text style={styles.modalText}>
               Profile preferences are used solely to personalize your trip recommendations during this session.

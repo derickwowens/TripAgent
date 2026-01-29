@@ -182,3 +182,27 @@ export function getDistanceToPark(
   
   return Math.round(calculateDistanceMiles(userLat, userLng, coords.lat, coords.lng));
 }
+
+/**
+ * Get list of whitelisted (in-range) park display names for UI use
+ * Returns short names like "Yellowstone", "Grand Canyon" instead of full names
+ */
+export function getWhitelistedParkNames(
+  userLat: number | undefined,
+  userLng: number | undefined,
+  maxDistanceMiles: number | null
+): string[] {
+  // If no location or unlimited distance, return all parks
+  if (userLat === undefined || userLng === undefined || maxDistanceMiles === null) {
+    return Object.keys(PARK_COORDINATES).map(name => 
+      name.replace(/ National Park$/, '')
+          .replace(/ National and State Parks$/, '')
+    );
+  }
+  
+  const { parksInRange } = filterParksByDistance(userLat, userLng, maxDistanceMiles);
+  return parksInRange.map(name => 
+    name.replace(/ National Park$/, '')
+        .replace(/ National and State Parks$/, '')
+  );
+}

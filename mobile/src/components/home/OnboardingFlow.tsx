@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import {
   View,
   Text,
@@ -14,9 +14,12 @@ import {
   PanResponder,
   GestureResponderEvent,
   PanResponderGestureState,
+  Linking,
 } from 'react-native';
 import Slider from '@react-native-community/slider';
 import { useLocation, MaxTravelDistance } from '../../hooks';
+import { APP_NAME } from '../../utils/appName';
+import { getWhitelistedParkNames } from '../../utils/parkDistanceFilter';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
@@ -54,112 +57,104 @@ const getDistanceDisplayText = (distance: MaxTravelDistance): string => {
 };
 
 // Profile badge options for onboarding
+// Each option has: id, label (for UI display), profileText (clear sentence for Claude), and promptText (for initial prompt)
 const TRAVEL_STYLES = [
-  { id: 'frugal', label: 'Frugal traveler' },
-  { id: 'luxury', label: 'Luxury travel' },
-  { id: 'backpacker', label: 'Backpacker' },
-  { id: 'camping', label: 'Love camping' },
-  { id: 'hotels', label: 'Hotels only' },
-  { id: 'airbnb', label: 'Airbnb/VRBO' },
-  { id: 'avoid-crowds', label: 'Avoid crowds' },
+  { id: 'frugal', label: 'Frugal traveler', profileText: 'I am a budget-conscious traveler who prefers affordable options', promptText: 'budget-conscious' },
+  { id: 'luxury', label: 'Luxury travel', profileText: 'I prefer luxury travel experiences and upscale accommodations', promptText: 'luxury' },
+  { id: 'backpacker', label: 'Backpacker', profileText: 'I am a backpacker who enjoys adventure travel and budget accommodations', promptText: 'backpacker' },
+  { id: 'camping', label: 'Love camping', profileText: 'I love camping and prefer campgrounds over hotels when possible', promptText: 'camping enthusiast' },
+  { id: 'hotels', label: 'Hotels only', profileText: 'I only stay in hotels, not campgrounds or hostels', promptText: 'hotels-only' },
+  { id: 'airbnb', label: 'Airbnb/VRBO', profileText: 'I prefer vacation rentals like Airbnb or VRBO over traditional hotels', promptText: 'vacation rental' },
+  { id: 'avoid-crowds', label: 'Avoid crowds', profileText: 'I prefer to avoid crowded tourist areas and seek quieter experiences', promptText: 'crowd-avoiding' },
 ];
 
 const INTERESTS = [
-  { id: 'hiking', label: 'Hiking/outdoors' },
-  { id: 'photography', label: 'Photography' },
-  { id: 'wildlife', label: 'Wildlife viewing' },
-  { id: 'foodie', label: 'Foodie' },
-  { id: 'water', label: 'Water sports' },
-  { id: 'cycling', label: 'Cycling' },
-  { id: 'fishing', label: 'Fishing' },
-  { id: 'skiing', label: 'Skiing/snowboard' },
-  { id: 'sunrise', label: 'Sunrise/sunset' },
-  { id: 'coffee', label: 'Coffee hound' },
-  { id: 'bookworm', label: 'Book worm' },
-  { id: 'historian', label: 'Historian' },
+  { id: 'hiking', label: 'Hiking/outdoors', profileText: 'I am an outdoor enthusiast who loves hiking', promptText: 'hiking and the outdoors' },
+  { id: 'photography', label: 'Photography', profileText: 'I am a photography enthusiast interested in scenic viewpoints and photo opportunities', promptText: 'photography' },
+  { id: 'wildlife', label: 'Wildlife viewing', profileText: 'I enjoy wildlife viewing and want to see animals in their natural habitat', promptText: 'wildlife viewing' },
+  { id: 'foodie', label: 'Foodie', profileText: 'I am a foodie who loves exploring local cuisine and notable restaurants', promptText: 'local food and restaurants' },
+  { id: 'water', label: 'Water sports', profileText: 'I enjoy water sports like kayaking, swimming, and water activities', promptText: 'water sports' },
+  { id: 'cycling', label: 'Cycling', profileText: 'I enjoy cycling and biking trails', promptText: 'cycling' },
+  { id: 'fishing', label: 'Fishing', profileText: 'I enjoy fishing and want fishing spot recommendations', promptText: 'fishing' },
+  { id: 'skiing', label: 'Skiing/snowboard', profileText: 'I enjoy skiing and snowboarding', promptText: 'skiing and snowboarding' },
+  { id: 'sunrise', label: 'Sunrise/sunset', profileText: 'I love watching sunrises and sunsets and want the best viewpoints', promptText: 'sunrise and sunset viewpoints' },
+  { id: 'coffee', label: 'Coffee hound', profileText: 'I am a coffee enthusiast who seeks out local coffee shops and roasters', promptText: 'great coffee spots' },
+  { id: 'bookworm', label: 'Book worm', profileText: 'I am a book lover interested in bookshops and literary destinations', promptText: 'bookshops and literary sites' },
+  { id: 'historian', label: 'Historian', profileText: 'I am a history enthusiast interested in historical sites and museums', promptText: 'history and museums' },
 ];
 
 const TRAVEL_WITH = [
-  { id: 'solo', label: 'Solo' },
-  { id: 'partner', label: 'Partner' },
-  { id: 'family', label: 'Family' },
-  { id: 'friends', label: 'Friends' },
-  { id: 'dog', label: 'Traveling with dog' },
+  { id: 'solo', label: 'Solo', profileText: 'I am traveling solo', promptText: 'solo' },
+  { id: 'partner', label: 'Partner', profileText: 'I am traveling with my partner', promptText: 'with my partner' },
+  { id: 'family', label: 'Family', profileText: 'I am traveling with my family', promptText: 'with my family' },
+  { id: 'friends', label: 'Friends', profileText: 'I am traveling with friends', promptText: 'with friends' },
+  { id: 'dog', label: 'Traveling with dog', profileText: 'I am traveling with my dog and need pet-friendly accommodations and activities', promptText: 'with my dog' },
 ];
 
 // Family sub-options
 const FAMILY_OPTIONS = [
-  { id: 'toddlers', label: 'Kids 1-3 yrs' },
-  { id: 'young-kids', label: 'Kids 4-7 yrs' },
-  { id: 'older-kids', label: 'Kids 8-12 yrs' },
-  { id: 'teens', label: 'Kids 13+' },
-  { id: 'seniors', label: 'With seniors' },
-  { id: 'accessibility', label: 'Accessible needs' },
-  { id: 'limited-mobility', label: 'Limited mobility' },
-  { id: 'educational', label: 'Educational trips' },
+  { id: 'toddlers', label: 'Kids 1-3 yrs', profileText: 'I have toddlers (ages 1-3) and need kid-friendly, stroller-accessible options', promptText: 'toddlers (1-3 years)' },
+  { id: 'young-kids', label: 'Kids 4-7 yrs', profileText: 'I have young children (ages 4-7) who need engaging but manageable activities', promptText: 'young kids (4-7 years)' },
+  { id: 'older-kids', label: 'Kids 8-12 yrs', profileText: 'I have older kids (ages 8-12) who can handle moderate hikes and activities', promptText: 'older kids (8-12 years)' },
+  { id: 'teens', label: 'Kids 13+', profileText: 'I have teenagers who can participate in more challenging activities', promptText: 'teenagers' },
+  { id: 'seniors', label: 'With seniors', profileText: 'I am traveling with seniors who may need easier trails and accessible facilities', promptText: 'seniors' },
+  { id: 'accessibility', label: 'Accessible needs', profileText: 'I have accessibility requirements and need ADA-compliant facilities', promptText: 'accessibility needs' },
+  { id: 'limited-mobility', label: 'Limited mobility', profileText: 'Someone in my group has limited mobility and needs easier walking options', promptText: 'limited mobility considerations' },
+  { id: 'educational', label: 'Educational trips', profileText: 'I want educational experiences for learning opportunities', promptText: 'educational experiences' },
 ];
 
 // Climate preferences
 const CLIMATE_PREFS = [
-  { id: 'warm', label: 'Warm destinations' },
-  { id: 'cold', label: 'Cold destinations' },
+  { id: 'warm', label: 'Warm destinations', profileText: 'I prefer warm weather destinations' },
+  { id: 'cold', label: 'Cold destinations', profileText: 'I prefer cold weather destinations' },
 ];
 
 // Vehicle type
 const VEHICLE_TYPES = [
-  { id: 'gas', label: 'Gas vehicle' },
-  { id: 'tesla', label: 'Tesla' },
-  { id: 'other-ev', label: 'Other EV' },
+  { id: 'gas', label: 'Gas vehicle', profileText: 'I drive a gas-powered vehicle' },
+  { id: 'tesla', label: 'Tesla', profileText: 'I drive a Tesla and need Supercharger stations along my route' },
+  { id: 'other-ev', label: 'Other EV', profileText: 'I drive an electric vehicle (non-Tesla) and need EV charging stations' },
 ];
 
 // Preferred airlines
 const AIRLINES = [
-  { id: 'delta', label: 'Delta' },
-  { id: 'southwest', label: 'Southwest' },
-  { id: 'united', label: 'United' },
-  { id: 'american', label: 'American' },
-  { id: 'jetblue', label: 'JetBlue' },
-  { id: 'alaska', label: 'Alaska' },
+  { id: 'delta', label: 'Delta', profileText: 'I prefer Delta Air Lines for flights' },
+  { id: 'southwest', label: 'Southwest', profileText: 'I prefer Southwest Airlines for flights' },
+  { id: 'united', label: 'United', profileText: 'I prefer United Airlines for flights' },
+  { id: 'american', label: 'American', profileText: 'I prefer American Airlines for flights' },
+  { id: 'jetblue', label: 'JetBlue', profileText: 'I prefer JetBlue Airways for flights' },
+  { id: 'alaska', label: 'Alaska', profileText: 'I prefer Alaska Airlines for flights' },
 ];
 
 // Preferred car rentals
 const CAR_RENTALS = [
-  { id: 'hertz', label: 'Hertz' },
-  { id: 'enterprise', label: 'Enterprise' },
-  { id: 'national', label: 'National' },
-  { id: 'budget', label: 'Budget' },
+  { id: 'hertz', label: 'Hertz', profileText: 'I prefer Hertz for car rentals' },
+  { id: 'enterprise', label: 'Enterprise', profileText: 'I prefer Enterprise Rent-A-Car' },
+  { id: 'national', label: 'National', profileText: 'I prefer National Car Rental' },
+  { id: 'budget', label: 'Budget', profileText: 'I prefer Budget Car Rental' },
 ];
 
 // Preferred hotels
 const HOTELS = [
-  { id: 'marriott', label: 'Marriott' },
-  { id: 'hilton', label: 'Hilton' },
-  { id: 'ihg', label: 'IHG' },
-  { id: 'hyatt', label: 'Hyatt' },
+  { id: 'marriott', label: 'Marriott', profileText: 'I prefer Marriott hotels' },
+  { id: 'hilton', label: 'Hilton', profileText: 'I prefer Hilton hotels' },
+  { id: 'ihg', label: 'IHG', profileText: 'I prefer IHG hotels (Holiday Inn, InterContinental, etc.)' },
+  { id: 'hyatt', label: 'Hyatt', profileText: 'I prefer Hyatt hotels' },
 ];
 
-// Official US National Parks from NPS API
-const NATIONAL_PARKS = [
-  'Acadia', 'Arches', 'Badlands', 'Big Bend', 'Biscayne',
-  'Black Canyon Of The Gunnison', 'Bryce Canyon', 'Canyonlands', 'Capitol Reef', 'Carlsbad Caverns',
-  'Channel Islands', 'Congaree', 'Crater Lake', 'Cuyahoga Valley', 'Death Valley',
-  'Dry Tortugas', 'Everglades', 'Gateway Arch', 'Glacier', 'Grand Canyon',
-  'Grand Teton', 'Great Basin', 'Great Smoky Mountains', 'Guadalupe Mountains', 'Haleakalā',
-  'Hawaiʻi Volcanoes', 'Hot Springs', 'Indiana Dunes', 'Isle Royale', 'Joshua Tree',
-  'Kenai Fjords', 'Kobuk Valley', 'Lassen Volcanic', 'Mammoth Cave', 'Mesa Verde',
-  'Mount Rainier', 'North Cascades', 'Olympic', 'Petrified Forest', 'Pinnacles',
-  'Rocky Mountain', 'Saguaro', 'Shenandoah', 'Theodore Roosevelt', 'Virgin Islands',
-  'Voyageurs', 'White Sands', 'Wind Cave', 'Yellowstone', 'Yosemite', 'Zion',
-];
+// Helper to get a random park from the whitelisted parks
+const getRandomParkFromList = (parks: string[]): string => {
+  if (parks.length === 0) return 'Yellowstone'; // Fallback
+  return parks[Math.floor(Math.random() * parks.length)];
+};
 
-const getRandomPark = () => NATIONAL_PARKS[Math.floor(Math.random() * NATIONAL_PARKS.length)];
-
+// Quick trip idea definitions - getPrompt is called with whitelisted parks
 const QUICK_TRIP_IDEAS = [
-  { id: 'national-park', label: 'Plan a national park trip', getPrompt: () => `Help me plan a trip to ${getRandomPark()} National Park` },
-  { id: 'weekend', label: 'Weekend getaway', getPrompt: () => 'Help me plan a weekend getaway somewhere nearby' },
-  { id: 'road-trip', label: 'Road trip adventure', getPrompt: () => 'Help me plan a road trip adventure' },
-  { id: 'beach', label: 'Beach vacation', getPrompt: () => 'Help me find a great beach destination' },
-  { id: 'custom', label: 'I have something specific in mind', getPrompt: () => '' },
+  { id: 'national-park', label: 'Plan a national park trip', getPrompt: (parks: string[]) => `Help me plan a trip to ${getRandomParkFromList(parks)} National Park` },
+  { id: 'weekend', label: 'Weekend getaway', getPrompt: (_parks: string[]) => 'Help me plan a weekend getaway somewhere nearby' },
+  { id: 'road-trip', label: 'Road trip adventure', getPrompt: (_parks: string[]) => 'Help me plan a road trip adventure' },
+  { id: 'beach', label: 'Beach vacation', getPrompt: (_parks: string[]) => 'Help me find a great beach destination' },
+  { id: 'custom', label: 'I have something specific in mind', getPrompt: (_parks: string[]) => '' },
 ];
 
 interface OnboardingFlowProps {
@@ -206,6 +201,17 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
   const [selectedTrip, setSelectedTrip] = useState<string>('');
   const [customPrompt, setCustomPrompt] = useState('');
   const [maxTravelDistance, setMaxTravelDistance] = useState<MaxTravelDistance>(null); // null = unlimited
+  // Preview value for slider during drag (avoids recalculating parks on every tick)
+  const [sliderPreview, setSliderPreview] = useState<MaxTravelDistance | null>(null);
+
+  // Calculate whitelisted parks based on user location and max travel distance
+  // Only recalculates when actual maxTravelDistance changes (not during drag)
+  const whitelistedParks = useMemo(() => {
+    return getWhitelistedParkNames(userLocation?.lat, userLocation?.lng, maxTravelDistance);
+  }, [userLocation?.lat, userLocation?.lng, maxTravelDistance]);
+  
+  // Display value shows preview during drag, actual value otherwise
+  const displayDistance = sliderPreview !== null ? sliderPreview : maxTravelDistance;
 
   const toggleSelection = (
     id: string,
@@ -235,48 +241,73 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
   };
 
   const buildProfile = (): string => {
-    const parts: string[] = [];
+    const sentences: string[] = [];
     
-    // Add travel styles
+    // Add travel styles (using profileText for clear context)
     TRAVEL_STYLES.forEach(style => {
       if (selectedStyles.includes(style.id)) {
-        parts.push(style.label);
+        sentences.push(style.profileText);
       }
     });
     
     // Add climate preferences
     CLIMATE_PREFS.forEach(climate => {
       if (selectedClimate.includes(climate.id)) {
-        parts.push(climate.label);
+        sentences.push(climate.profileText);
       }
     });
     
     // Add interests
     INTERESTS.forEach(interest => {
       if (selectedInterests.includes(interest.id)) {
-        parts.push(interest.label);
+        sentences.push(interest.profileText);
       }
     });
     
     // Add travel companions
     TRAVEL_WITH.forEach(tw => {
       if (selectedTravelWith.includes(tw.id)) {
-        parts.push(tw.label);
+        sentences.push(tw.profileText);
       }
     });
     
     // Add family options
     FAMILY_OPTIONS.forEach(fo => {
       if (selectedFamilyOptions.includes(fo.id)) {
-        parts.push(fo.label);
+        sentences.push(fo.profileText);
       }
     });
     
-    // NOTE: Booking-specific preferences (vehicle, airline, car rental, hotel) are NOT included
-    // in the profile string. They are stored separately in 'defaults' for programmatic access
-    // when actually performing booking searches. This prevents them from cluttering location queries.
+    // Add vehicle type
+    VEHICLE_TYPES.forEach(vehicle => {
+      if (selectedVehicle.includes(vehicle.id)) {
+        sentences.push(vehicle.profileText);
+      }
+    });
     
-    return parts.join(', ');
+    // Add airline preference
+    AIRLINES.forEach(airline => {
+      if (selectedAirline.includes(airline.id)) {
+        sentences.push(airline.profileText);
+      }
+    });
+    
+    // Add car rental preference
+    CAR_RENTALS.forEach(rental => {
+      if (selectedCarRental.includes(rental.id)) {
+        sentences.push(rental.profileText);
+      }
+    });
+    
+    // Add hotel preference
+    HOTELS.forEach(hotel => {
+      if (selectedHotel.includes(hotel.id)) {
+        sentences.push(hotel.profileText);
+      }
+    });
+    
+    // Join with periods for clear sentence separation
+    return sentences.join('. ') + (sentences.length > 0 ? '.' : '');
   };
 
   const getFirstPrompt = (): string | undefined => {
@@ -288,10 +319,10 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
     // Build a comprehensive prompt from all selected preferences
     const promptParts: string[] = [];
     
-    // Get trip type prompt
+    // Get trip type prompt - pass whitelisted parks for national park trip
     const trip = QUICK_TRIP_IDEAS.find(t => t.id === selectedTrip);
     if (trip && trip.id !== 'custom') {
-      promptParts.push(trip.getPrompt());
+      promptParts.push(trip.getPrompt(whitelistedParks));
     }
     
     // Add context from selected preferences
@@ -299,43 +330,63 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
     
     // Travel style context
     if (selectedStyles.length > 0) {
-      const styles = TRAVEL_STYLES.filter(s => selectedStyles.includes(s.id)).map(s => s.label.toLowerCase());
+      const styles = TRAVEL_STYLES.filter(s => selectedStyles.includes(s.id)).map(s => s.promptText);
       if (styles.length > 0) {
-        contextParts.push(`I'm a ${styles.join(', ')} type of traveler`);
+        contextParts.push(`I'm a ${styles.join(' and ')} traveler`);
       }
     }
     
     // Interests context
     if (selectedInterests.length > 0) {
-      const interests = INTERESTS.filter(i => selectedInterests.includes(i.id)).map(i => i.label.toLowerCase());
+      const interests = INTERESTS.filter(i => selectedInterests.includes(i.id)).map(i => i.promptText);
       if (interests.length > 0) {
         contextParts.push(`interested in ${interests.join(', ')}`);
       }
     }
     
-    // Travel companions context
-    if (selectedTravelWith.length > 0) {
-      const companions = TRAVEL_WITH.filter(t => selectedTravelWith.includes(t.id)).map(t => t.label.toLowerCase());
-      if (companions.length > 0) {
-        contextParts.push(`traveling ${companions.join(' and ')}`);
+    // Travel companions context - build a natural sentence
+    if (selectedTravelWith.length > 0 || selectedFamilyOptions.length > 0) {
+      const companionParts: string[] = [];
+      
+      // Get base companion info
+      const companions = TRAVEL_WITH.filter(t => selectedTravelWith.includes(t.id));
+      const familyDetails = FAMILY_OPTIONS.filter(f => selectedFamilyOptions.includes(f.id));
+      
+      // Handle solo specially
+      if (companions.some(c => c.id === 'solo')) {
+        companionParts.push("I'm traveling solo");
+      } else if (companions.length > 0) {
+        // Build companion string without duplicate "with"
+        const companionTexts = companions.map(c => {
+          // Remove leading "with " if present, we'll add it once
+          return c.promptText.replace(/^with /, '');
+        });
+        companionParts.push(`I'm traveling with ${companionTexts.join(' and ')}`);
       }
-    }
-    
-    // Family details context
-    if (selectedFamilyOptions.length > 0) {
-      const familyDetails = FAMILY_OPTIONS.filter(f => selectedFamilyOptions.includes(f.id)).map(f => f.label.toLowerCase());
-      if (familyDetails.length > 0) {
-        contextParts.push(`with ${familyDetails.join(', ')}`);
+      
+      // Add family details if present (and not solo)
+      if (familyDetails.length > 0 && !companions.some(c => c.id === 'solo')) {
+        const familyTexts = familyDetails.map(f => f.promptText);
+        // If we already have companions, use "including"
+        if (companionParts.length > 0) {
+          companionParts[0] += `, including ${familyTexts.join(', ')}`;
+        } else {
+          companionParts.push(`our group includes ${familyTexts.join(', ')}`);
+        }
+      }
+      
+      if (companionParts.length > 0) {
+        contextParts.push(companionParts[0]);
       }
     }
     
     // Combine into a natural prompt
     if (promptParts.length > 0 && contextParts.length > 0) {
-      return `${promptParts[0]}. ${contextParts.join(', ')}.`;
+      return `${promptParts[0]}. ${contextParts.join('. ')}.`;
     } else if (promptParts.length > 0) {
       return promptParts[0];
     } else if (contextParts.length > 0) {
-      return `Help me plan a trip. ${contextParts.join(', ')}.`;
+      return `Help me plan a trip. ${contextParts.join('. ')}.`;
     }
     
     return undefined;
@@ -417,7 +468,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
                 style={styles.logo} 
               />
             </View>
-            <Text style={styles.welcomeTitle}>TripAgent</Text>
+            <Text style={styles.welcomeTitle}>{APP_NAME}</Text>
             <Text style={styles.welcomeSubtitle}>
               AI-powered travel planning
             </Text>
@@ -505,7 +556,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
             <View style={styles.distanceContainer}>
               <View style={styles.distanceHeader}>
                 <Text style={styles.distanceLabelText}>How far are you willing to travel?</Text>
-                <Text style={styles.distanceValue}>{getDistanceDisplayText(maxTravelDistance)}</Text>
+                <Text style={styles.distanceValue}>{getDistanceDisplayText(displayDistance)}</Text>
               </View>
               <Slider
                 style={styles.distanceSlider}
@@ -513,7 +564,11 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
                 maximumValue={DISTANCE_PRESETS.length}
                 step={1}
                 value={distanceToSliderValue(maxTravelDistance)}
-                onValueChange={(value) => setMaxTravelDistance(sliderValueToDistance(value))}
+                onValueChange={(value) => setSliderPreview(sliderValueToDistance(value))}
+                onSlidingComplete={(value) => {
+                  setSliderPreview(null);
+                  setMaxTravelDistance(sliderValueToDistance(value));
+                }}
                 minimumTrackTintColor="#22C55E"
                 maximumTrackTintColor="rgba(255,255,255,0.2)"
                 thumbTintColor="#22C55E"
@@ -689,6 +744,14 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
                 multiline
               />
             )}
+
+            {/* Complete button */}
+            <TouchableOpacity
+              style={styles.completeButton}
+              onPress={() => onComplete(buildProfile(), getFirstPrompt(), maxTravelDistance)}
+            >
+              <Text style={styles.completeButtonText}>Complete Setup</Text>
+            </TouchableOpacity>
           </View>
         );
 
@@ -740,10 +803,18 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
             </ScrollView>
           </View>
 
-          {/* Skip button at very bottom */}
-          <TouchableOpacity style={styles.skipButtonBottom} onPress={onSkip}>
-            <Text style={styles.skipButtonText}>Skip</Text>
-          </TouchableOpacity>
+          {/* Why link and Skip button at bottom */}
+          <View style={styles.bottomButtons}>
+            <TouchableOpacity 
+              style={styles.whyLink} 
+              onPress={() => Linking.openURL('https://travel-buddy-api-production.up.railway.app/public/why.html')}
+            >
+              <Text style={styles.whyLinkText}>Why {APP_NAME}?</Text>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.skipButton} onPress={onSkip}>
+              <Text style={styles.skipButtonText}>Skip</Text>
+            </TouchableOpacity>
+          </View>
         </SafeAreaView>
       </View>
     </View>
@@ -786,16 +857,6 @@ const styles = StyleSheet.create({
   },
   progressDotActive: {
     backgroundColor: '#22C55E',
-  },
-  skipButton: {
-    position: 'absolute',
-    top: 60,
-    right: 20,
-    zIndex: 1,
-  },
-  skipText: {
-    color: 'rgba(255, 255, 255, 0.6)',
-    fontSize: 14,
   },
   scrollContent: {
     flexGrow: 1,
@@ -1080,17 +1141,45 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.4)',
     fontSize: 10,
   },
-  skipButtonBottom: {
+  bottomButtons: {
     position: 'absolute',
     bottom: 40,
     left: 0,
     right: 0,
     alignItems: 'center',
-    paddingVertical: 16,
+    gap: 8,
+  },
+  whyLink: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+  },
+  whyLinkText: {
+    color: 'rgba(34, 197, 94, 0.8)',
+    fontSize: 13,
+    textDecorationLine: 'underline',
+  },
+  skipButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
   },
   skipButtonText: {
     color: 'rgba(255, 255, 255, 0.6)',
     fontSize: 14,
+  },
+  completeButton: {
+    marginTop: 24,
+    backgroundColor: '#22C55E',
+    paddingVertical: 16,
+    paddingHorizontal: 32,
+    borderRadius: 12,
+    width: '100%',
+    maxWidth: IS_TABLET ? 300 : '100%',
+    alignItems: 'center',
+  },
+  completeButtonText: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '700',
   },
 });
 

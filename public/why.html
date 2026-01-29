@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Choose Us? | AI-Powered Travel Planning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: #0a1a0f;
+      color: #ffffff;
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+    
+    /* Hero Section with Background */
+    .hero {
+      position: relative;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px;
+      overflow: hidden;
+    }
+    
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url('https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=2000&q=80');
+      background-size: cover;
+      background-position: center 40%;
+      z-index: 0;
+    }
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(10, 26, 15, 0.7) 0%, rgba(10, 26, 15, 0.85) 60%, rgba(10, 26, 15, 1) 100%);
+      z-index: 1;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+    
+    .logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 0 3px rgba(34, 197, 94, 0.3);
+      animation: slideInLogo 0.8s ease-out;
+    }
+    
+    @keyframes slideInLogo {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+    
+    .hero-content h1 {
+      animation: fadeInUp 0.8s ease-out 0.2s both;
+    }
+    
+    .hero-content > p {
+      animation: fadeInUp 0.8s ease-out 0.4s both;
+    }
+    
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .hero h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 16px;
+      letter-spacing: -0.02em;
+    }
+    
+    .hero h1 span {
+      color: #22C55E;
+    }
+    
+    .hero p {
+      font-size: 1.15rem;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    
+    /* Main Content */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 48px 24px 60px;
+    }
+    
+    .section {
+      background: rgba(22, 101, 52, 0.08);
+      border-radius: 20px;
+      padding: 36px;
+      margin-bottom: 28px;
+      border: 1px solid rgba(34, 197, 94, 0.15);
+      backdrop-filter: blur(10px);
+    }
+    
+    .section h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #22C55E;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      letter-spacing: -0.01em;
+    }
+    
+    .section h2 .icon {
+      font-size: 1.6rem;
+    }
+    
+    .section > p {
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
+    
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .section li {
+      padding: 14px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 0.98rem;
+    }
+    
+    .section li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+    
+    .section li:first-child {
+      padding-top: 0;
+    }
+    
+    .section li .bullet {
+      color: #22C55E;
+      font-weight: 600;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+    
+    .section li strong {
+      color: #ffffff;
+    }
+    
+    .section li span:not(.bullet) {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    
+    /* Comparison Grid */
+    .comparison {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 24px;
+    }
+    
+    @media (max-width: 640px) {
+      .comparison {
+        grid-template-columns: 1fr;
+      }
+      
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero {
+        min-height: 320px;
+        padding: 40px 20px;
+      }
+      
+      .logo {
+        width: 64px;
+        height: 64px;
+      }
+      
+      .section {
+        padding: 24px;
+      }
+    }
+    
+    .comparison-card {
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .comparison-card.us {
+      border: 2px solid #22C55E;
+      background: rgba(34, 197, 94, 0.08);
+    }
+    
+    .comparison-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: rgba(255, 255, 255, 0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    
+    .comparison-card.us h3 {
+      color: #22C55E;
+    }
+    
+    .comparison-card ul {
+      font-size: 0.9rem;
+    }
+    
+    .comparison-card li {
+      padding: 8px 0;
+    }
+    
+    .comparison-card li .bullet {
+      color: rgba(255, 255, 255, 0.3);
+    }
+    
+    .comparison-card.us li .bullet {
+      color: #22C55E;
+    }
+    
+    /* Privacy Badge */
+    .privacy-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(34, 197, 94, 0.15);
+      padding: 10px 18px;
+      border-radius: 24px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #22C55E;
+      margin-top: 20px;
+      border: 1px solid rgba(34, 197, 94, 0.25);
+    }
+    
+    /* Coming Soon Section */
+    .coming-soon-note {
+      margin-top: 24px;
+      padding: 20px;
+      background: rgba(251, 191, 36, 0.08);
+      border-radius: 14px;
+      border: 1px solid rgba(251, 191, 36, 0.2);
+    }
+    
+    .coming-soon-note p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+    }
+    
+    .coming-soon-note strong {
+      color: #fbbf24;
+    }
+    
+    /* CTA Section */
+    .cta {
+      text-align: center;
+      margin-top: 48px;
+      padding: 40px;
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(22, 101, 52, 0.15) 100%);
+      border-radius: 24px;
+      border: 1px solid rgba(34, 197, 94, 0.2);
+    }
+    
+    .cta p {
+      margin-bottom: 20px;
+      color: rgba(255,255,255,0.7);
+      font-size: 1.1rem;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: #22C55E;
+      color: #000;
+      padding: 16px 36px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 16px rgba(34, 197, 94, 0.25);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(34, 197, 94, 0.35);
+      background: #16a34a;
+    }
+    
+    /* Footer */
+    .footer {
+      text-align: center;
+      margin-top: 60px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 0.9rem;
+    }
+    
+    .footer p {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section with Background Image -->
+  <div class="hero">
+    <div class="hero-content">
+      <img src="icon.png" alt="App Logo" class="logo">
+      <h1>More Than Just <span>AI Chat</span></h1>
+      <p>We've built a specialized travel planning system that combines AI intelligence with real-time data from authoritative sources — not just another chatbot.</p>
+    </div>
+  </div>
+  
+  <div class="container">
+    
+    <div class="section">
+      <h2>Authoritative API Tools</h2>
+      <p>While generic AI assistants rely on training data that can be outdated, we connect directly to official sources:</p>
+      <ul>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>National Park Service API</strong> — Official park info, alerts, operating hours, and campground availability directly from NPS</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Recreation.gov</strong> — Real campsite reservations and permit availability</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Amadeus Travel API</strong> — Live flight prices, hotel rates, and car rental availability</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Yelp Fusion</strong> — Current restaurant ratings, hours, and reservation links</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Google Distance Matrix</strong> — Accurate drive times accounting for real road conditions</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>OpenChargeMap</strong> — EV charging station locations for Tesla and other EVs</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <h2>Context Engineering</h2>
+      <p>We don't just ask an AI to "plan a trip." We've engineered a sophisticated context system that makes every recommendation personalized:</p>
+      <ul>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Your Profile Drives Decisions</strong> — Tell us you're a "frugal traveler with kids" and every flight, hotel, and activity suggestion reflects that</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Location-Aware</strong> — We detect your location and prioritize nearby parks, calculate accurate drive times, and find your nearest airports</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Travel Distance Limits</strong> — Set a max travel distance and we'll only suggest destinations within your range</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Preference Memory</strong> — Your airline, hotel chain, and car rental preferences are remembered throughout your planning session</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="section">
+      <h2>Privacy-First Design</h2>
+      <p>Your travel preferences are yours alone:</p>
+      <ul>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Ephemeral Profile</strong> — Your profile is stored only on your device, never on our servers</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>No Account Required</strong> — Start planning immediately without creating an account or sharing personal data</span>
+        </li>
+        <li>
+          <span class="bullet">✓</span>
+          <span><strong>Session-Based Context</strong> — Your conversation context helps personalize recommendations but isn't stored long-term</span>
+        </li>
+      </ul>
+      <div class="privacy-badge">
+        Your data stays on your device
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>The Difference</h2>
+      <div class="comparison">
+        <div class="comparison-card">
+          <h3>Generic AI Chatbot</h3>
+          <ul>
+            <li>
+              <span class="bullet">✗</span>
+              <span>Outdated training data</span>
+            </li>
+            <li>
+              <span class="bullet">✗</span>
+              <span>Guesses at prices and availability</span>
+            </li>
+            <li>
+              <span class="bullet">✗</span>
+              <span>Broken or outdated links</span>
+            </li>
+            <li>
+              <span class="bullet">✗</span>
+              <span>Generic, one-size-fits-all advice</span>
+            </li>
+            <li>
+              <span class="bullet">✗</span>
+              <span>No real booking capabilities</span>
+            </li>
+          </ul>
+        </div>
+        <div class="comparison-card us">
+          <h3>Our Approach</h3>
+          <ul>
+            <li>
+              <span class="bullet">✓</span>
+              <span>Live API data in real-time</span>
+            </li>
+            <li>
+              <span class="bullet">✓</span>
+              <span>Actual prices and availability</span>
+            </li>
+            <li>
+              <span class="bullet">✓</span>
+              <span>Validated, working booking links</span>
+            </li>
+            <li>
+              <span class="bullet">✓</span>
+              <span>Personalized to your profile</span>
+            </li>
+            <li>
+              <span class="bullet">✓</span>
+              <span>Direct links to book flights, hotels, campgrounds</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>What's Coming Next</h2>
+      <p>We're constantly working to expand our capabilities. Here's what we're building toward:</p>
+      <ul>
+        <li>
+          <span class="bullet" style="color: #fbbf24;">◐</span>
+          <span><strong>State Park Data</strong> — Expanding beyond national parks to include state parks, regional parks, and public lands across all 50 states</span>
+        </li>
+        <li>
+          <span class="bullet" style="color: #fbbf24;">◐</span>
+          <span><strong>Social Media Integration</strong> — Discover trending destinations, see real visitor photos, and find hidden gems from Instagram, TikTok, and travel communities</span>
+        </li>
+        <li>
+          <span class="bullet" style="color: #fbbf24;">◐</span>
+          <span><strong>Direct Restaurant Booking</strong> — Book reservations directly through the app via OpenTable, Resy, and restaurant partners</span>
+        </li>
+        <li>
+          <span class="bullet" style="color: #fbbf24;">◐</span>
+          <span><strong>In-App Hotel Booking</strong> — Complete your hotel reservation without leaving the app, with exclusive deals from hotel partners</span>
+        </li>
+        <li>
+          <span class="bullet" style="color: #fbbf24;">◐</span>
+          <span><strong>Flight Booking Integration</strong> — Book flights directly with real-time pricing from airline partners</span>
+        </li>
+      </ul>
+      <div class="coming-soon-note">
+        <p>
+          <strong>Why aren't these available yet?</strong><br>
+          These features require API partnerships with state park systems, social media platforms, and booking providers. We're actively negotiating access with these partners to bring you the most comprehensive travel planning experience possible.
+        </p>
+      </div>
+    </div>
+    
+    <div class="cta">
+      <p>Ready to plan your next adventure?</p>
+      <a href="#" class="cta-button" onclick="window.close(); return false;">Return to App →</a>
+    </div>
+    
+    <div class="footer">
+      <p>Built for outdoor adventurers</p>
+      <p>Combining AI intelligence with authoritative travel data</p>
+      <p style="margin-top: 16px; font-size: 0.8rem; color: rgba(255,255,255,0.3);">
+        Hero photo by <a href="https://unsplash.com/@johnonolan" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.4); text-decoration: underline;">John O'Nolan</a> on <a href="https://unsplash.com" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.4); text-decoration: underline;">Unsplash</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

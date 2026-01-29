@@ -2,6 +2,7 @@ import { Share, Platform, ActionSheetIOS, Alert, Linking } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { SavedConversation, Message } from '../hooks';
 import { sendChatMessage, ChatMessage, createHtmlItinerary, PhotoReference } from '../services/api';
+import { APP_NAME } from './appName';
 
 const ITINERARIES_STORAGE_KEY = 'saved_itineraries';
 
@@ -34,7 +35,7 @@ const cleanMarkdown = (text: string): string => {
 export const formatConversationForShare = (conversation: SavedConversation): string => {
   const { metadata, messages } = conversation;
   
-  let content = 'TripAgent Conversation\n';
+  let content = `${APP_NAME} Conversation\n`;
   content += '━━━━━━━━━━━━━━━━━━━━━━\n\n';
   
   // Trip header
@@ -49,7 +50,7 @@ export const formatConversationForShare = (conversation: SavedConversation): str
   for (const msg of messages) {
     if (msg.isError) continue;
     
-    const prefix = msg.type === 'user' ? 'Me: ' : 'TripAgent: ';
+    const prefix = msg.type === 'user' ? 'Me: ' : `${APP_NAME}: `;
     let msgContent = cleanMarkdown(msg.content);
     
     // Truncate very long assistant messages
@@ -61,7 +62,7 @@ export const formatConversationForShare = (conversation: SavedConversation): str
   }
   
   content += '━━━━━━━━━━━━━━━━━━━━━━\n';
-  content += 'Planned with TripAgent';
+  content += `Planned with ${APP_NAME}`;
   
   return content;
 };
@@ -383,7 +384,7 @@ export const shareGeneratedItinerary = async (
     content += '━━━━━━━━━━━━━━━━━━━━━━\n\n';
     content += cleanMarkdown(itinerary.content);
     content += '\n\n━━━━━━━━━━━━━━━━━━━━━━\n';
-    content += 'Created with TripAgent';
+    content += `Created with ${APP_NAME}`;
     
     const result = await Share.share(
       {

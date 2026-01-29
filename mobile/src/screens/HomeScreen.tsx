@@ -876,6 +876,7 @@ const HomeScreen: React.FC = () => {
           totalToolCount={totalToolCount}
           maxTravelDistance={maxTravelDistance}
           onUpdateMaxTravelDistance={updateMaxTravelDistance}
+          userLocation={userLocation ? { lat: userLocation.lat!, lng: userLocation.lng! } : null}
         />
         </View>
       </ImageBackground>
