@@ -51,7 +51,8 @@ export default ({ config }) => {
           "microphonePermission": "Allow TripAgent to use the microphone for voice input.",
           "speechRecognitionPermission": "Allow TripAgent to use speech recognition for voice input."
         }
-      ]
+      ],
+      "@react-native-community/datetimepicker"
     ],
     extra: {
       eas: {

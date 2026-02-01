@@ -1,5 +1,5 @@
 import { StateParksAdapter, StatePark, StateParksSearchParams } from './StateParksAdapter.js';
-import { RecreationGovAdapter, Campground as RIDBCampground } from './RecreationGovAdapter.js';
+import { RecreationGovAdapter, Campground as RIDBCampground, StateRecreationArea } from './RecreationGovAdapter.js';
 import { OpenStreetMapAdapter, OSMCampground } from './OpenStreetMapAdapter.js';
 import { NationalParksAdapter, ParkCampground } from './NationalParksAdapter.js';
 
@@ -50,7 +50,7 @@ export interface UnifiedCampground {
   managedBy?: string;
 }
 
-// Unified State Park with campground data
+// Unified State Park with campground data and RIDB enrichment
 export interface UnifiedStatePark extends StatePark {
   campgrounds: UnifiedCampground[];
   hasCamping: boolean;
@@ -58,6 +58,19 @@ export interface UnifiedStatePark extends StatePark {
   // Computed fields for display
   acresFormatted: string;
   stateDisplayName: string;
+  // RIDB enrichment data
+  activities?: string[];
+  photos?: Array<{
+    url: string;
+    title?: string;
+    description?: string;
+    credits?: string;
+  }>;
+  officialWebsite?: string;
+  phone?: string;
+  email?: string;
+  feeDescription?: string;
+  reservationUrl?: string;
 }
 
 // State Park Summary for list views
@@ -99,6 +112,48 @@ export interface StateParkSearchResults {
 export interface CampgroundFilters {
   query?: string;
   radiusMiles?: number;
+}
+
+/**
+ * Normalize a park name for comparison/deduplication.
+ * Removes trailing numbers, normalizes spacing, and handles common variations.
+ */
+function normalizeParkName(name: string): string {
+  return name
+    .toLowerCase()
+    .trim()
+    // Remove trailing numbers (e.g., "Baraboo Hills Recreation Area 40" -> "baraboo hills recreation area")
+    .replace(/\s+\d+\s*$/, '')
+    // Normalize common word variations
+    .replace(/\bhills?\b/g, 'hill')
+    .replace(/\bparks?\b/g, 'park')
+    .replace(/\bareas?\b/g, 'area')
+    .replace(/\bforests?\b/g, 'forest')
+    .replace(/\blakes?\b/g, 'lake')
+    .replace(/\brivers?\b/g, 'river')
+    .replace(/\bcreeks?\b/g, 'creek')
+    // Remove extra whitespace
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+/**
+ * Deduplicate parks by normalized name, keeping the one with the largest acreage.
+ */
+function deduplicateParksByName<T extends { name: string; acres: number }>(parks: T[]): T[] {
+  const parkMap = new Map<string, T>();
+  
+  for (const park of parks) {
+    const normalizedName = normalizeParkName(park.name);
+    const existing = parkMap.get(normalizedName);
+    
+    // Keep the park with the larger acreage (likely the main unit)
+    if (!existing || park.acres > existing.acres) {
+      parkMap.set(normalizedName, park);
+    }
+  }
+  
+  return Array.from(parkMap.values());
 }
 
 /**
@@ -150,13 +205,18 @@ export class StateParkService {
     }
 
     const limit = params.limit || 30; // Lower default limit for efficiency
+    // Fetch more than needed to account for deduplication
     const parks = await this.parksAdapter.searchStateParks({
       ...params,
-      limit: limit + 1,
+      limit: (limit + 1) * 2, // Fetch extra to account for duplicates being removed
     });
 
-    const hasMore = parks.length > limit;
-    const resultParks = hasMore ? parks.slice(0, limit) : parks;
+    // Deduplicate similar park names (e.g., "Baraboo Hills Recreation Area 40" and "Baraboo Hill Recreation Area 42")
+    const deduplicatedParks = deduplicateParksByName(parks);
+    console.log(`[StateParkService] Deduplicated parks: ${parks.length} -> ${deduplicatedParks.length}`);
+
+    const hasMore = deduplicatedParks.length > limit;
+    const resultParks = hasMore ? deduplicatedParks.slice(0, limit) : deduplicatedParks;
     const campgroundsAvailable = this.recreationGovAdapter.isConfigured() || this.osmAdapter.isConfigured();
 
     // Return lightweight summaries - campground data is fetched separately via getParkDetails
@@ -188,7 +248,11 @@ export class StateParkService {
   async getParksByState(stateCode: string): Promise<StateParkSummary[]> {
     const parks = await this.parksAdapter.getStateParksByState(stateCode);
     
-    return parks.map(park => ({
+    // Deduplicate similar park names
+    const deduplicatedParks = deduplicateParksByName(parks);
+    console.log(`[StateParkService] getParksByState deduplicated: ${parks.length} -> ${deduplicatedParks.length}`);
+    
+    return deduplicatedParks.map(park => ({
       id: park.id,
       name: park.name,
       state: park.state,
@@ -205,6 +269,7 @@ export class StateParkService {
 
   /**
    * Get detailed park information with aggregated campgrounds from all sources
+   * Also enriches with RIDB data (activities, photos, links) when available
    */
   async getParkDetails(parkName: string, stateCode: string): Promise<UnifiedStatePark | null> {
     const park = await this.parksAdapter.getStateParkByName(parkName, stateCode);
@@ -213,8 +278,11 @@ export class StateParkService {
       return null;
     }
 
-    // Aggregate campgrounds from all sources
-    const campgrounds = await this.getAggregatedCampgrounds(parkName, stateCode);
+    // Fetch campgrounds and RIDB enrichment data in parallel
+    const [campgrounds, ridbData] = await Promise.all([
+      this.getAggregatedCampgrounds(parkName, stateCode),
+      this.getRIDBEnrichmentData(parkName, stateCode),
+    ]);
 
     return {
       ...park,
@@ -223,7 +291,47 @@ export class StateParkService {
       campgroundCount: campgrounds.length,
       acresFormatted: this.formatAcres(park.acres),
       stateDisplayName: park.stateFullName,
+      // RIDB enrichment
+      activities: ridbData?.activities,
+      photos: ridbData?.photos,
+      officialWebsite: ridbData?.website,
+      phone: ridbData?.phone,
+      email: ridbData?.email,
+      feeDescription: ridbData?.feeDescription,
+      reservationUrl: ridbData?.reservationUrl,
     };
+  }
+
+  /**
+   * Get RIDB enrichment data for a state park by searching for matching recreation areas
+   */
+  private async getRIDBEnrichmentData(parkName: string, stateCode: string): Promise<StateRecreationArea | null> {
+    if (!this.recreationGovAdapter.isConfigured()) {
+      return null;
+    }
+
+    try {
+      // Search RIDB for matching recreation area
+      const searchName = this.extractSearchableName(parkName);
+      const results = await this.recreationGovAdapter.searchRecreationAreasByName(searchName, stateCode);
+      
+      if (results.length === 0) {
+        return null;
+      }
+
+      // Find best match by name similarity
+      const normalizedSearch = searchName.toLowerCase();
+      const bestMatch = results.find(r => 
+        r.name.toLowerCase().includes(normalizedSearch) ||
+        normalizedSearch.includes(r.name.toLowerCase().replace(/state park|state recreation area/gi, '').trim())
+      ) || results[0];
+
+      console.log(`[StateParkService] RIDB enrichment found for "${parkName}": ${bestMatch.name}`);
+      return bestMatch;
+    } catch (error) {
+      console.warn(`[StateParkService] Failed to get RIDB enrichment for "${parkName}":`, error);
+      return null;
+    }
   }
 
   /**
@@ -523,6 +631,19 @@ export class StateParkService {
       .replace(/\s+SRA$/i, '')
       .trim();
   }
+
+  /**
+   * Get all state-managed recreation areas from RIDB for a state
+   * Returns enriched data including activities, photos, and contact info
+   */
+  async getStateRecreationAreas(stateCode: string): Promise<StateRecreationArea[]> {
+    if (!this.recreationGovAdapter.isConfigured()) {
+      console.warn('[StateParkService] Recreation.gov API not configured');
+      return [];
+    }
+
+    return this.recreationGovAdapter.getStateRecreationAreas(stateCode);
+  }
 }
 
 // Re-export types for convenience
@@ -533,7 +654,8 @@ export type {
 
 export type { 
   Campground as RIDBCampground,
-  CampgroundSearchParams 
+  CampgroundSearchParams,
+  StateRecreationArea,
 } from './RecreationGovAdapter.js';
 
 export type { OSMCampground } from './OpenStreetMapAdapter.js';

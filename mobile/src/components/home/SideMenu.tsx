@@ -7,7 +7,7 @@ import { ConversationList } from './ConversationList';
 import { ToolSettingsPanel } from './ToolSettingsPanel';
 import { ThemedLogo } from './ThemedLogo';
 import { SavedConversation, useDarkModeContext, ToolSettings, MaxTravelDistance, useParkTheme } from '../../hooks';
-import { getWhitelistedParkNames } from '../../utils/parkDistanceFilter';
+import { getWhitelistedParkNames, PARK_COORDINATES } from '../../utils/parkDistanceFilter';
 import { fetchStateParks, StateParkSummary } from '../../services/api';
 
 // Distance slider presets (in miles) - for National Parks mode
@@ -19,6 +19,20 @@ const DISTANCE_PRESETS = [
 
 // State Parks distance presets (shorter range - state level, up to 500 miles)
 const STATE_DISTANCE_PRESETS = [10, 25, 50, 75, 100, 150, 200, 300, 400, 500];
+
+// Helper to get NPS.gov URL for a national park name
+const getNPSUrl = (parkName: string): string => {
+  // Find the park in PARK_COORDINATES to get its code
+  for (const [fullName, data] of Object.entries(PARK_COORDINATES)) {
+    // Match by short name (e.g., "Yellowstone" matches "Yellowstone National Park")
+    if (fullName.toLowerCase().includes(parkName.toLowerCase()) || 
+        parkName.toLowerCase().includes(fullName.replace(' National Park', '').toLowerCase())) {
+      return `https://www.nps.gov/${data.code}/`;
+    }
+  }
+  // Fallback to Google Maps search if no match found
+  return `https://www.google.com/maps/search/${encodeURIComponent(parkName + ' National Park')}`;
+};
 
 // State name to code mapping for API calls
 const STATE_NAME_TO_CODE: Record<string, string> = {
@@ -127,6 +141,9 @@ interface SideMenuProps {
   // Park mode props
   parkMode?: ParkMode;
   onParkModeChange?: (mode: ParkMode) => void;
+  // State selection for State Parks mode
+  selectedState?: string;
+  onStateChange?: (stateCode: string) => void;
   // Tool settings props
   toolSettings?: ToolSettings;
   onToggleTool?: (toolId: string) => void;
@@ -138,6 +155,9 @@ interface SideMenuProps {
   // Travel distance props
   maxTravelDistance?: MaxTravelDistance;
   onUpdateMaxTravelDistance?: (distance: MaxTravelDistance) => void;
+  // Travel dates props
+  travelDates?: { departure?: string; return?: string };
+  onUpdateTravelDates?: (dates: { departure?: string; return?: string }) => void;
   // Location for park filtering
   userLocation?: { lat: number; lng: number; state?: string } | null;
 }
@@ -158,6 +178,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onResetOnboarding,
   parkMode = 'national',
   onParkModeChange,
+  selectedState,
+  onStateChange,
   toolSettings,
   onToggleTool,
   onSetLanguageModel,
@@ -167,6 +189,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   totalToolCount = 0,
   maxTravelDistance,
   onUpdateMaxTravelDistance,
+  travelDates,
+  onUpdateTravelDates,
   userLocation,
 }) => {
   const { isDarkMode } = useDarkModeContext();
@@ -181,6 +205,11 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   const [stateParksLoading, setStateParksLoading] = useState(false);
   const [stateParksExpanded, setStateParksExpanded] = useState(false);
   const [stateParksDistance, setStateParksDistance] = useState<number | null>(50); // Default 50 miles
+  const [statePickerVisible, setStatePickerVisible] = useState(false);
+  
+  // Get the effective state (selected or user's location state)
+  const effectiveState = selectedState || userLocation?.state || '';
+  const effectiveStateCode = effectiveState ? getStateCode(effectiveState) : '';
 
   // Calculate whitelisted parks based on user location and max travel distance (National Parks mode)
   const whitelistedParks = useMemo(() => {
@@ -188,13 +217,12 @@ export const SideMenu: React.FC<SideMenuProps> = ({
     return getWhitelistedParkNames(userLocation?.lat, userLocation?.lng, maxTravelDistance ?? null);
   }, [userLocation?.lat, userLocation?.lng, maxTravelDistance, isStateMode]);
 
-  // Fetch state parks when in State Parks mode and user has a state
+  // Fetch state parks when in State Parks mode and a state is selected
   useEffect(() => {
-    if (isStateMode && userLocation?.state) {
-      const stateCode = getStateCode(userLocation.state);
-      console.log('Fetching state parks for:', userLocation.state, '-> code:', stateCode);
+    if (isStateMode && effectiveStateCode) {
+      console.log('Fetching state parks for:', effectiveState, '-> code:', effectiveStateCode);
       setStateParksLoading(true);
-      fetchStateParks(stateCode, 100) // Fetch more to allow distance filtering
+      fetchStateParks(effectiveStateCode, 100) // Fetch more to allow distance filtering
         .then(parks => {
           // Filter duplicates by name
           const seen = new Set<string>();
@@ -209,7 +237,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
         })
         .finally(() => setStateParksLoading(false));
     }
-  }, [isStateMode, userLocation?.state]);
+  }, [isStateMode, effectiveStateCode]);
 
   // Filter state parks by distance from user's location
   const filteredStateParks = useMemo(() => {
@@ -327,6 +355,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               onAddSuggestion={onAddProfileSuggestion}
               onResetOnboarding={onResetOnboarding}
               onOpenToolSettings={toolSettings ? () => setShowToolSettings(true) : undefined}
+              travelDates={travelDates}
+              onUpdateTravelDates={onUpdateTravelDates}
             />
 
             {/* State Parks - show in State Parks mode based on user's state */}
@@ -357,21 +387,43 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                 </View>
 
                 {/* State Parks List */}
-                {filteredStateParks.length > 0 && (
+                {(filteredStateParks.length > 0 || effectiveState) && (
                   <>
-                    <TouchableOpacity 
-                      style={styles.parksHeader}
-                      onPress={() => setStateParksExpanded(!stateParksExpanded)}
-                    >
-                      <Text style={styles.parksHeaderText}>
-                        {stateParksExpanded ? '▼' : '▶'} {userLocation?.state || 'State'} Parks ({filteredStateParks.length})
-                      </Text>
-                    </TouchableOpacity>
+                    <View style={styles.stateParksHeaderRow}>
+                      <TouchableOpacity 
+                        style={styles.parksHeader}
+                        onPress={() => setStateParksExpanded(!stateParksExpanded)}
+                      >
+                        <Text style={styles.parksHeaderText}>
+                          {stateParksExpanded ? '▼' : '▶'} {effectiveState || 'State'} Parks ({filteredStateParks.length})
+                        </Text>
+                      </TouchableOpacity>
+                      <TouchableOpacity 
+                        style={[styles.statePickerButton, { backgroundColor: theme.buttonBackgroundLight, borderColor: theme.primaryMedium }]}
+                        onPress={() => setStatePickerVisible(true)}
+                      >
+                        <Text style={[styles.statePickerButtonText, { color: theme.primary }]}>
+                          {effectiveStateCode || 'Select'}
+                        </Text>
+                        <Text style={[styles.statePickerArrow, { color: theme.primary }]}>▼</Text>
+                      </TouchableOpacity>
+                    </View>
+                    {/* Show "Use Current Location" button when a different state is manually selected */}
+                    {selectedState && userLocation?.state && selectedState !== userLocation.state && onStateChange && (
+                      <TouchableOpacity 
+                        style={[styles.useCurrentLocationButton, { borderColor: theme.primaryMedium }]}
+                        onPress={() => onStateChange(undefined as any)}
+                      >
+                        <Text style={[styles.useCurrentLocationText, { color: theme.primary }]}>
+                          Use Current Location ({userLocation.state})
+                        </Text>
+                      </TouchableOpacity>
+                    )}
                     {stateParksExpanded && (
                       <View style={styles.parksContainer}>
                         <View style={styles.parksGrid}>
                           {filteredStateParks.map((park, index: number) => (
-                            <View 
+                            <TouchableOpacity 
                               key={park.id || index} 
                               style={[
                                 styles.parkChip,
@@ -380,11 +432,15 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                                   borderColor: theme.chipBorder,
                                 }
                               ]}
+                              onPress={() => {
+                                const searchQuery = encodeURIComponent(`${park.name} ${park.stateFullName || userLocation?.state || ''}`);
+                                Linking.openURL(`https://www.google.com/maps/search/${searchQuery}`);
+                              }}
                             >
                               <Text style={[styles.parkChipText, { color: theme.chipText }]}>
                                 {park.name}
                               </Text>
-                            </View>
+                            </TouchableOpacity>
                           ))}
                         </View>
                       </View>
@@ -437,7 +493,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                         {whitelistedParks.length > 0 ? (
                           <View style={styles.parksGrid}>
                             {whitelistedParks.map((park, index) => (
-                              <View 
+                              <TouchableOpacity 
                                 key={index} 
                                 style={[
                                   styles.parkChip,
@@ -446,9 +502,10 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                                     borderColor: theme.chipBorder,
                                   }
                                 ]}
+                                onPress={() => Linking.openURL(getNPSUrl(park))}
                               >
                                 <Text style={[styles.parkChipText, { color: theme.chipText }]}>{park}</Text>
-                              </View>
+                              </TouchableOpacity>
                             ))}
                           </View>
                         ) : (
@@ -510,6 +567,43 @@ export const SideMenu: React.FC<SideMenuProps> = ({
           parkMode={parkMode}
         />
       )}
+
+      {/* State Picker Modal */}
+      <Modal
+        visible={statePickerVisible}
+        transparent
+        animationType="fade"
+        onRequestClose={() => setStatePickerVisible(false)}
+      >
+        <View style={styles.statePickerModal}>
+          <View style={styles.statePickerContainer}>
+            <View style={styles.statePickerHeader}>
+              <Text style={styles.statePickerTitle}>Select State</Text>
+              <TouchableOpacity onPress={() => setStatePickerVisible(false)}>
+                <Text style={styles.statePickerClose}>Done</Text>
+              </TouchableOpacity>
+            </View>
+            <ScrollView style={styles.statePickerList}>
+              {Object.entries(STATE_NAME_TO_CODE).map(([stateName, stateCode]) => (
+                <TouchableOpacity
+                  key={stateCode}
+                  style={[
+                    styles.statePickerItem,
+                    effectiveStateCode === stateCode && styles.statePickerItemSelected,
+                  ]}
+                  onPress={() => {
+                    onStateChange?.(stateName);
+                    setStatePickerVisible(false);
+                  }}
+                >
+                  <Text style={styles.statePickerItemText}>{stateName}</Text>
+                  <Text style={styles.statePickerItemCode}>{stateCode}</Text>
+                </TouchableOpacity>
+              ))}
+            </ScrollView>
+          </View>
+        </View>
+      </Modal>
     </Modal>
   );
 };
@@ -737,5 +831,92 @@ const styles = StyleSheet.create({
   },
   parkModeButtonTextActiveState: {
     color: '#CD853F',
+  },
+  stateParksHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: 12,
+  },
+  statePickerButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 8,
+    borderWidth: 1,
+    gap: 4,
+  },
+  statePickerButtonText: {
+    fontSize: 12,
+    fontWeight: '600',
+  },
+  statePickerArrow: {
+    fontSize: 8,
+  },
+  statePickerModal: {
+    flex: 1,
+    backgroundColor: 'rgba(0,0,0,0.7)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  statePickerContainer: {
+    width: '85%',
+    maxHeight: '70%',
+    backgroundColor: '#1a1a1a',
+    borderRadius: 16,
+    overflow: 'hidden',
+  },
+  statePickerHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255,255,255,0.1)',
+  },
+  statePickerTitle: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  statePickerClose: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 14,
+  },
+  statePickerList: {
+    padding: 8,
+  },
+  statePickerItem: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    borderRadius: 8,
+  },
+  statePickerItemSelected: {
+    backgroundColor: 'rgba(139, 90, 43, 0.2)',
+  },
+  statePickerItemText: {
+    color: '#fff',
+    fontSize: 14,
+  },
+  statePickerItemCode: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 12,
+  },
+  useCurrentLocationButton: {
+    marginTop: 8,
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    borderWidth: 1,
+    alignSelf: 'flex-start',
+    backgroundColor: 'rgba(255,255,255,0.05)',
+  },
+  useCurrentLocationText: {
+    fontSize: 12,
+    fontWeight: '500',
   },
 });

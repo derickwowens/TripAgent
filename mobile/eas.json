@@ -31,7 +31,9 @@
     },
     "closed": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "gradleCommand": ":app:bundleRelease",
+        "withoutCredentials": false
       },
       "ios": {
         "autoIncrement": false
@@ -44,7 +46,9 @@
     },
     "production": {
       "android": {
-        "buildType": "app-bundle"
+        "buildType": "app-bundle",
+        "gradleCommand": ":app:bundleRelease",
+        "withoutCredentials": false
       },
       "ios": {
         "autoIncrement": false

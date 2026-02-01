@@ -92,6 +92,11 @@ export interface ChatContext {
     languageModel?: 'claude-sonnet-4-20250514' | 'claude-3-5-haiku-20241022';
     enabledTools?: string[];
   };
+  // Travel dates for booking links (departure/return in YYYY-MM-DD format)
+  travelDates?: {
+    departure?: string;
+    return?: string;
+  };
 }
 
 /**
@@ -145,31 +150,35 @@ export interface ToolResult {
 export type ToolStatusCallback = (toolName: string, status: 'starting' | 'complete') => void;
 
 // Human-readable tool names for loading states
+// These messages are shown to end users in the chat UI during tool execution
 export const TOOL_DISPLAY_NAMES: Record<string, string> = {
-  'search_national_parks': 'Searching national parks...',
-  'get_park_details': 'Getting park details...',
+  // National Parks tools
+  'search_national_parks': 'Searching for national parks...',
+  'get_park_details': 'Loading park details...',
   'get_park_hikes': 'Finding hiking trails...',
   'search_hikes': 'Finding hiking trails...',
-  'search_campgrounds': 'Searching campgrounds...',
-  'get_campgrounds': 'Finding campgrounds...',
-  'get_wildlife': 'Looking up wildlife...',
+  'search_campgrounds': 'Searching for campgrounds...',
+  'get_campgrounds': 'Finding campgrounds nearby...',
+  'get_wildlife': 'Discovering local wildlife...',
+  'plan_park_trip': 'Planning your park trip...',
   // State Parks tools
-  'search_state_parks': 'Searching state parks...',
-  'get_state_park_details': 'Getting state park details...',
-  'get_state_park_campgrounds': 'Finding state park campgrounds...',
-  // Travel tools
-  'search_flights': 'Searching flights...',
-  'search_hotels': 'Finding hotels...',
-  'search_restaurants': 'Finding restaurants...',
-  'search_car_rentals': 'Searching car rentals...',
-  'search_activities': 'Finding activities...',
-  'get_driving_distance': 'Calculating distance...',
-  'search_ev_charging_stations': 'Finding EV chargers...',
-  'get_weather': 'Checking weather...',
-  'search_ev_chargers': 'Finding EV chargers...',
-  'search_attractions': 'Discovering attractions...',
-  'get_destination_photos': 'Loading destination photos...',
-  'refresh_photos': 'Refreshing photos...',
-  'get_reservation_link': 'Generating reservation links...',
-  'plan_park_trip': 'Planning your trip...',
+  'search_state_parks': 'Searching for state parks...',
+  'get_state_park_details': 'Loading state park details...',
+  'get_state_park_campgrounds': 'Finding campgrounds at this state park...',
+  'get_state_park_hikes': 'Finding trails at this state park...',
+  // Travel booking tools
+  'search_flights': 'Searching for available flights...',
+  'search_hotels': 'Finding hotels and lodging...',
+  'search_restaurants': 'Finding nearby restaurants...',
+  'search_car_rentals': 'Searching for rental cars...',
+  'search_activities': 'Finding tours and activities...',
+  'get_reservation_link': 'Generating your reservation link...',
+  // Utility tools
+  'get_driving_distance': 'Calculating driving distance...',
+  'search_ev_charging_stations': 'Finding EV charging stations...',
+  'search_ev_chargers': 'Finding EV charging stations...',
+  'get_weather': 'Checking the weather forecast...',
+  'search_attractions': 'Discovering local attractions...',
+  'get_destination_photos': 'Loading photos of your destination...',
+  'refresh_photos': 'Refreshing destination photos...',
 };

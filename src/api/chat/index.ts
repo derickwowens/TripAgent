@@ -41,126 +41,12 @@ const stateParkService = new StateParkService(
   process.env.NPS_API_KEY
 );
 
-// Cache for storing restaurant search results to use correct location for reservations
-// This ensures we use the restaurant's actual location, not the user's home location
-interface CachedRestaurant {
-  name: string;
-  city: string;
-  state: string;
-  address: string;
-}
+// NOTE: Module-level caching removed to prevent stale/broken links
+// All link generation now uses fresh context data passed through the request
+// This ensures deterministic, reliable link generation
 
-interface RestaurantCache {
-  restaurants: CachedRestaurant[];
-  searchLocation: string;
-  timestamp: number;
-}
-
-let restaurantCache: RestaurantCache = {
-  restaurants: [],
-  searchLocation: '',
-  timestamp: 0,
-};
-
-// Deterministic destination cache - stores the current park/destination gateway city
-// This is set when a park is searched and used for all subsequent restaurant/reservation lookups
-interface DestinationCache {
-  parkName: string;
-  parkCode: string;
-  gatewayCity: string;
-  gatewayState: string;
-  timestamp: number;
-}
-
-let destinationCache: DestinationCache | null = null;
-
-function setDestinationCache(parkName: string, parkCode: string, city: string, state: string): void {
-  destinationCache = {
-    parkName,
-    parkCode,
-    gatewayCity: city,
-    gatewayState: state,
-    timestamp: Date.now(),
-  };
-  console.log(`[Destination Cache] Set: ${parkName} -> ${city}, ${state}`);
-}
-
-function getDestinationCache(): DestinationCache | null {
-  if (destinationCache) {
-    console.log(`[Destination Cache] Get: ${destinationCache.parkName} -> ${destinationCache.gatewayCity}, ${destinationCache.gatewayState}`);
-  } else {
-    console.log('[Destination Cache] Empty - no park searched yet');
-  }
-  return destinationCache;
-}
-
-function clearDestinationCache(): void {
-  destinationCache = null;
-  console.log('[Destination Cache] Cleared');
-}
-
-// Cache management functions
-function clearRestaurantCache(): void {
-  restaurantCache = {
-    restaurants: [],
-    searchLocation: '',
-    timestamp: 0,
-  };
-  console.log('[Restaurant Cache] Cleared');
-}
-
-function updateRestaurantCache(restaurants: CachedRestaurant[], searchLocation: string): void {
-  // Clear old cache and rebuild with new results
-  restaurantCache = {
-    restaurants,
-    searchLocation,
-    timestamp: Date.now(),
-  };
-  console.log(`[Restaurant Cache] Rebuilt with ${restaurants.length} restaurants from "${searchLocation}"`);
-}
-
-function getCachedRestaurant(name: string): CachedRestaurant | undefined {
-  const normalizedName = name.toLowerCase().trim();
-  // Also try without common suffixes/prefixes
-  const simplifiedName = normalizedName
-    .replace(/^the\s+/i, '')
-    .replace(/\s+(restaurant|cafe|bar|grill|bistro|kitchen|eatery)$/i, '');
-  
-  console.log(`[Cache Lookup] Searching for "${name}" (normalized: "${normalizedName}", simplified: "${simplifiedName}")`);
-  console.log(`[Cache Lookup] Cache has ${restaurantCache.restaurants.length} restaurants from "${restaurantCache.searchLocation}"`);
-  
-  const found = restaurantCache.restaurants.find(r => {
-    const rNormalized = r.name.toLowerCase().trim();
-    const rSimplified = rNormalized
-      .replace(/^the\s+/i, '')
-      .replace(/\s+(restaurant|cafe|bar|grill|bistro|kitchen|eatery)$/i, '');
-    
-    return (
-      rNormalized === normalizedName ||
-      rSimplified === simplifiedName ||
-      rNormalized.includes(normalizedName) ||
-      normalizedName.includes(rNormalized) ||
-      rSimplified.includes(simplifiedName) ||
-      simplifiedName.includes(rSimplified)
-    );
-  });
-  
-  if (found) {
-    console.log(`[Cache Lookup] FOUND: "${found.name}" at ${found.city}, ${found.state}`);
-  } else {
-    console.log(`[Cache Lookup] NOT FOUND. Available names:`, restaurantCache.restaurants.map(r => r.name));
-  }
-  
-  return found;
-}
-
-function getCacheInfo(): { count: number; location: string; ageMs: number } {
-  return {
-    count: restaurantCache.restaurants.length,
-    location: restaurantCache.searchLocation,
-    ageMs: restaurantCache.timestamp ? Date.now() - restaurantCache.timestamp : 0,
-  };
-}
+// Helper to resolve gateway city from park name using static lookup
+// This is deterministic and doesn't rely on cached state
 
 // Deterministic park gateway cities for restaurant searches
 // Maps park names/keywords to their correct gateway city and state
@@ -292,17 +178,8 @@ export async function createChatHandler(facade: TravelFacade) {
       throw new Error('ANTHROPIC_API_KEY not configured');
     }
 
-    // Build context message - include active destination from cache to prevent stale links
-    const activeDestCache = getDestinationCache();
-    const contextWithActiveDestination = {
-      ...context,
-      activeDestination: activeDestCache ? {
-        name: activeDestCache.parkName,
-        city: activeDestCache.gatewayCity,
-        airport: undefined, // Will be resolved by gateway lookup if needed
-      } : undefined,
-    };
-    const contextInfo = buildContextInfo(contextWithActiveDestination);
+    // Build context message using fresh context data (no caching)
+    const contextInfo = buildContextInfo(context);
     const systemPrompt = contextInfo ? `${SYSTEM_PROMPT}\n\nCurrent context:\n${contextInfo}` : SYSTEM_PROMPT;
 
     // Convert messages to Anthropic format
@@ -583,20 +460,6 @@ async function handleSearchNationalParks(
 ): Promise<{ result: any; destination?: string; searchQuery?: string; npsGateway?: { city: string; state: string } }> {
   const rawQuery = input.query.toLowerCase();
   
-  // Clear cache if searching for a different park than what's cached
-  const currentCache = getDestinationCache();
-  if (currentCache) {
-    const queryLower = rawQuery.toLowerCase();
-    const cacheParkLower = currentCache.parkName.toLowerCase();
-    
-    // If searching for a different park, clear both caches
-    if (!cacheParkLower.includes(queryLower) && !queryLower.includes(cacheParkLower.replace(' national park', ''))) {
-      console.log(`[Park Search] New park "${rawQuery}" differs from cached "${currentCache.parkName}" - clearing caches`);
-      clearDestinationCache();
-      clearRestaurantCache();
-    }
-  }
-  
   // Try to find park code from our lookup table first
   const knownParkCode = findParkCode(rawQuery);
   let parks;
@@ -692,10 +555,7 @@ async function handleSearchNationalParks(
       console.log(`[Chat] NPS gateway city from API (fallback): ${npsGateway.city}, ${npsGateway.state}`);
     }
     
-    // DETERMINISTIC: Store in module-level cache for all subsequent tool calls
-    if (npsGateway) {
-      setDestinationCache(firstPark.name, firstPark.parkCode, npsGateway.city, npsGateway.state);
-    }
+    // Gateway city is returned in result - no caching needed
   }
   
   // Add officialUrl to each park and log
@@ -856,41 +716,26 @@ async function handleSearchFlights(
   context: ChatContext,
   activeLeg?: number
 ): Promise<any> {
-  // Clear and update destination cache when searching flights to a new destination
-  // This prevents stale park/restaurant cache from affecting flight searches
-  const currentCache = getDestinationCache();
-  if (input.destination) {
-    const destLower = input.destination.toLowerCase();
-    
-    if (currentCache) {
-      const cacheParkLower = currentCache.parkName.toLowerCase();
-      const cacheCityLower = currentCache.gatewayCity.toLowerCase();
-      
-      // If the flight destination doesn't match the cached park/city, clear and update cache
-      if (!cacheParkLower.includes(destLower) && !destLower.includes(cacheParkLower) &&
-          !cacheCityLower.includes(destLower) && !destLower.includes(cacheCityLower)) {
-        console.log(`[Flight Search] New destination "${input.destination}" differs from cached "${currentCache.parkName}" - updating cache`);
-        clearDestinationCache();
-        clearRestaurantCache();
-        // Set new destination cache with the flight destination (airport code)
-        setDestinationCache(input.destination, input.destination, input.destination, '');
-      }
-    } else {
-      // No cache exists, set it to the flight destination
-      console.log(`[Flight Search] Setting destination cache to "${input.destination}"`);
-      setDestinationCache(input.destination, input.destination, input.destination, '');
-    }
-  }
-  
   // Resolve values with context priority: leg override > conversation override > input > profile default
   const travelers = input.adults || resolveContextValue<number>('numTravelers', context, activeLeg) || 1;
   const origin = input.origin || resolveContextValue<string>('homeAirport', context, activeLeg) || context.userLocation?.nearestAirport;
   
+  // Use travel dates from context if not provided in input
+  const departureDate = input.departure_date || context.travelDates?.departure;
+  const returnDate = input.return_date || context.travelDates?.return;
+  
+  if (!departureDate) {
+    return {
+      error: 'Departure date is required. Please specify travel dates in your profile or request.',
+      flights: [],
+    };
+  }
+  
   const flightResults = await facade.searchFlights({
     origin: origin,
     destination: input.destination,
-    departureDate: input.departure_date,
-    returnDate: input.return_date,
+    departureDate,
+    returnDate,
     adults: travelers,
   });
   
@@ -898,9 +743,9 @@ async function handleSearchFlights(
   // This ensures Claude uses the correct links without constructing from memory
   
   // Kayak link format
-  const kayakLink = input.return_date
-    ? `https://www.kayak.com/flights/${origin}-${input.destination}/${input.departure_date}/${input.return_date}`
-    : `https://www.kayak.com/flights/${origin}-${input.destination}/${input.departure_date}`;
+  const kayakLink = returnDate
+    ? `https://www.kayak.com/flights/${origin}-${input.destination}/${departureDate}/${returnDate}`
+    : `https://www.kayak.com/flights/${origin}-${input.destination}/${departureDate}`;
   
   // Google Flights link format - uses tfs parameter for structured prefill
   // Format dates as YYYY-MM-DD for Google Flights
@@ -908,9 +753,9 @@ async function handleSearchFlights(
   
   // Build Google Flights URL with proper parameters
   // tfs format: origin.destination.departure_date*destination.origin.return_date (for round trip)
-  const googleFlightsTfs = input.return_date
-    ? `${origin}.${input.destination}.${formatGoogleDate(input.departure_date)}*${input.destination}.${origin}.${formatGoogleDate(input.return_date)}`
-    : `${origin}.${input.destination}.${formatGoogleDate(input.departure_date)}`;
+  const googleFlightsTfs = returnDate
+    ? `${origin}.${input.destination}.${formatGoogleDate(departureDate)}*${input.destination}.${origin}.${formatGoogleDate(returnDate)}`
+    : `${origin}.${input.destination}.${formatGoogleDate(departureDate)}`;
   
   const googleFlightsLink = `https://www.google.com/travel/flights?tfs=${encodeURIComponent(googleFlightsTfs)}&tfu=EgYIAhAAGAA`;
   
@@ -1031,15 +876,26 @@ async function handleSearchHotels(
   const travelers = input.adults || resolveContextValue<number>('numTravelers', context, activeLeg) || 2;
   const rooms = input.rooms || Math.ceil(travelers / 2); // Estimate rooms needed
   
+  // Use travel dates from context if not provided in input
+  const checkInDate = input.check_in_date || context.travelDates?.departure;
+  const checkOutDate = input.check_out_date || context.travelDates?.return;
+  
+  if (!checkInDate || !checkOutDate) {
+    return {
+      error: 'Check-in and check-out dates are required. Please specify travel dates in your profile or request.',
+      hotels: [],
+    };
+  }
+  
   const hotelResults = await facade.searchHotels({
     location: input.location,
-    checkInDate: input.check_in_date,
-    checkOutDate: input.check_out_date,
+    checkInDate,
+    checkOutDate,
     adults: travelers,
     rooms: rooms,
   });
   // Generate booking link for hotels
-  const bookingSearchUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(input.location)}&checkin=${input.check_in_date}&checkout=${input.check_out_date}&group_adults=${travelers}&no_rooms=${rooms}`;
+  const bookingSearchUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(input.location)}&checkin=${checkInDate}&checkout=${checkOutDate}&group_adults=${travelers}&no_rooms=${rooms}`;
   console.log(`[LinkGen] Hotel booking search: ${bookingSearchUrl}`);
   
   return {
@@ -1072,17 +928,28 @@ async function handleSearchCarRentals(input: any, facade: TravelFacade, context:
                     context.userProfile?.toLowerCase().includes('electric') ||
                     context.defaults?.vehicle === 'ev';
   
+  // Use travel dates from context if not provided in input
+  const pickupDate = input.pickup_date || context.travelDates?.departure;
+  const dropoffDate = input.dropoff_date || context.travelDates?.return;
+  
+  if (!pickupDate || !dropoffDate) {
+    return {
+      error: 'Pickup and dropoff dates are required. Please specify travel dates in your profile or request.',
+      cars: [],
+    };
+  }
+  
   const carResults = await facade.searchCarRentals({
     pickupLocation: input.pickup_location,
-    pickupDate: input.pickup_date,
-    dropoffDate: input.dropoff_date,
+    pickupDate,
+    dropoffDate,
     pickupTime: input.pickup_time || '10:00',
     dropoffTime: input.dropoff_time || '10:00',
   });
   
   // Generate car rental booking links
-  const kayakCarsUrl = `https://www.kayak.com/cars/${encodeURIComponent(input.pickup_location)}/${input.pickup_date}/${input.dropoff_date}`;
-  console.log(`[LinkGen] Car rental: pickup="${input.pickup_location}", dates=${input.pickup_date} to ${input.dropoff_date}`);
+  const kayakCarsUrl = `https://www.kayak.com/cars/${encodeURIComponent(input.pickup_location)}/${pickupDate}/${dropoffDate}`;
+  console.log(`[LinkGen] Car rental: pickup="${input.pickup_location}", dates=${pickupDate} to ${dropoffDate}`);
   console.log(`[LinkGen] Car rental Kayak: ${kayakCarsUrl}`);
   
   return {
@@ -1157,22 +1024,15 @@ async function handleSearchRestaurants(
   console.log('[Restaurant] === handleSearchRestaurants called ===');
   console.log('[Restaurant] Input location from Claude:', input.location);
   
-  // DETERMINISTIC: Use module-level destination cache (set by park search)
-  const destCache = getDestinationCache();
+  // DETERMINISTIC: Use static gateway lookup (no caching - always fresh)
   const staticGateway = resolveGatewayCity(input.location);
-  
-  console.log('[Restaurant] Destination cache:', destCache);
   console.log('[Restaurant] Static gateway lookup result:', staticGateway);
   
-  // Priority: 1) Module-level destination cache, 2) Static gateway lookup, 3) Input location (last resort)
+  // Priority: 1) Static gateway lookup, 2) Input location (fallback)
   let searchLocation: string;
   let locationSource: string;
   
-  if (destCache) {
-    // BEST: Use the deterministic destination cache from park search
-    searchLocation = `${destCache.gatewayCity}, ${destCache.gatewayState}`;
-    locationSource = 'destination-cache';
-  } else if (staticGateway) {
+  if (staticGateway) {
     searchLocation = `${staticGateway.city}, ${staticGateway.state}`;
     locationSource = 'static-gateway-lookup';
   } else {
@@ -1241,7 +1101,7 @@ async function handleSearchRestaurants(
       state: r.location.state,
       address: r.location.displayAddress.join(', '),
     }));
-    updateRestaurantCache(cachedRestaurants, input.location);
+    // No caching - restaurant data returned directly in response
 
     return {
       restaurants: yelpResults.businesses.map(r => {
@@ -1317,30 +1177,20 @@ async function handleSearchRestaurants(
     }
   });
 
-  // Cache Google Places results for reservation lookups
-  // IMPORTANT: Use the actual searchLocation (which is the resolved gateway city), NOT the destination cache
-  // The destination cache stores the park name, but restaurants are in the gateway town
-  const cacheCity = staticGateway?.city || searchLocation.split(',')[0].trim();
-  const cacheState = staticGateway?.state || searchLocation.split(',')[1]?.trim() || '';
-  
-  const cachedGoogleRestaurants = results.results.map(r => ({
-    name: r.name,
-    city: cacheCity,
-    state: cacheState,
-    address: r.address,
-  }));
-  updateRestaurantCache(cachedGoogleRestaurants, input.location);
+  // Use resolved gateway city for location data (no caching)
+  const resolvedCity = staticGateway?.city || searchLocation.split(',')[0].trim();
+  const resolvedState = staticGateway?.state || searchLocation.split(',')[1]?.trim() || '';
 
   return {
     restaurants: results.results.map(r => {
       // Generate Google Maps URL for reviews and navigation
-      const googleMapsUrl = generateGoogleMapsLink(r.name, cacheCity, cacheState);
-      const directionsUrl = generateDirectionsLink(`${r.name}, ${cacheCity}, ${cacheState}`);
+      const googleMapsUrl = generateGoogleMapsLink(r.name, resolvedCity, resolvedState);
+      const directionsUrl = generateDirectionsLink(`${r.name}, ${resolvedCity}, ${resolvedState}`);
       return {
         name: r.name,
         address: r.address,
-        city: cacheCity,           // Include for reservation links
-        state: cacheState,         // Include for reservation links
+        city: resolvedCity,           // Include for reservation links
+        state: resolvedState,         // Include for reservation links
         rating: r.rating ? `${r.rating}/5` : 'No rating',
         reviewCount: r.userRatingsTotal || 0,
         reviewsUrl: googleMapsUrl,          // Link to read reviews on Google Maps
@@ -1417,57 +1267,37 @@ async function handleGetReservationLink(
   console.log('[Reservation] === handleGetReservationLink called ===');
   console.log('[Reservation] Input:', JSON.stringify(input, null, 2));
   
-  // CRITICAL: Look up restaurant in cache to get CORRECT location
-  // This is the primary source - the restaurant's actual location from Yelp search results
-  const cachedRestaurant = getCachedRestaurant(input.restaurant_name);
-  const cacheInfo = getCacheInfo();
-  console.log('[Reservation] Cached restaurant:', cachedRestaurant);
-  console.log('[Reservation] Cache info:', cacheInfo);
-  
-  // DETERMINISTIC: Get destination from module-level cache (set by park search)
-  const destCache = getDestinationCache();
-  console.log('[Reservation] Destination cache:', destCache);
-
-  // Priority: 1) Cached restaurant location, 2) Destination cache, 3) Static gateway lookup
+  // DETERMINISTIC: Use static gateway lookup or input city/state (no caching)
+  // Priority: 1) Input city/state from tool call, 2) Static gateway lookup
   let city: string | undefined;
   let state: string | undefined;
   let locationSource = 'unknown';
   
-  if (cachedRestaurant) {
-    // BEST: Use the restaurant's actual location from search results
-    city = cachedRestaurant.city;
-    state = cachedRestaurant.state;
-    locationSource = 'cache';
-    console.log(`[Reservation] Using cached location for "${input.restaurant_name}": ${city}, ${state}`);
-  } else if (destCache) {
-    // GOOD: Use destination cache from park search
-    city = destCache.gatewayCity;
-    state = destCache.gatewayState;
-    locationSource = 'destination-cache';
-    console.log(`[Reservation] Using destination cache: ${city}, ${state}`);
-  } else if (cacheInfo.location) {
-    // OK: Try static gateway city lookup from the search location in cache
-    const gatewayFromCache = resolveGatewayCity(cacheInfo.location);
-    if (gatewayFromCache) {
-      city = gatewayFromCache.city;
-      state = gatewayFromCache.state;
+  // First try static gateway lookup if a park/destination name is provided
+  if (input.city) {
+    const staticGateway = resolveGatewayCity(input.city);
+    if (staticGateway) {
+      city = staticGateway.city;
+      state = staticGateway.state;
       locationSource = 'static-gateway';
-      console.log(`[Reservation] Using static gateway city for "${cacheInfo.location}": ${city}, ${state}`);
+      console.log(`[Reservation] Using static gateway for "${input.city}": ${city}, ${state}`);
     }
   }
   
-  // NEVER use Claude's input for city/state - it's unreliable (often uses user's home location)
+  // Fall back to input city/state if provided
+  if (!city && input.city) {
+    city = input.city;
+    state = input.state;
+    locationSource = 'input';
+    console.log(`[Reservation] Using input location: ${city}, ${state}`);
+  }
+  
+  // If still no location, return error
   if (!city || !state) {
-    console.error(`[Reservation] ERROR: No trusted location source for "${input.restaurant_name}"`);
-    console.error(`[Reservation] Claude provided: ${input.city}, ${input.state} - IGNORED (unreliable)`);
+    console.error(`[Reservation] ERROR: No location provided for "${input.restaurant_name}"`);
     return {
-      error: 'Could not determine restaurant location. Please search for restaurants first.',
-      suggestion: 'Try searching for restaurants near the park before requesting a reservation link.',
-      debug: {
-        searchedFor: input.restaurant_name,
-        cacheInfo: cacheInfo,
-        destCache: destCache ? `${destCache.gatewayCity}, ${destCache.gatewayState}` : 'not set',
-      },
+      error: 'City and state are required for reservation links. Please provide the restaurant location.',
+      suggestion: 'Include the city and state where the restaurant is located.',
     };
   }
 
@@ -1657,11 +1487,9 @@ async function handleGetCampgrounds(
   console.log(`[Chat] Campgrounds query for park: ${parkCode}`);
   
   // Extract travel dates from context for prefilled links
-  const tripContext = context.tripContext;
-  const activeLeg = tripContext?.activeLeg;
-  const leg = activeLeg !== undefined ? tripContext?.legs?.[activeLeg] : tripContext?.legs?.[0];
-  const startDate = leg?.dates?.start;
-  const endDate = leg?.dates?.end;
+  // Priority: travelDates (from profile) > tripContext legs > none
+  const startDate = context.travelDates?.departure || context.tripContext?.legs?.[context.tripContext?.activeLeg || 0]?.dates?.start;
+  const endDate = context.travelDates?.return || context.tripContext?.legs?.[context.tripContext?.activeLeg || 0]?.dates?.end;
   
   console.log(`[LinkGen] Campground dates from context: startDate=${startDate || 'none'}, endDate=${endDate || 'none'}`);
 

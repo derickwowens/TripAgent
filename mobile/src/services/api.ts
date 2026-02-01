@@ -200,6 +200,11 @@ export interface ChatContext {
   blacklistedParkCodes?: string[];
   // Park mode: 'national' for 63 US National Parks, 'state' for state parks
   parkMode?: 'national' | 'state';
+  // Travel dates for booking links (departure/return in YYYY-MM-DD format)
+  travelDates?: {
+    departure?: string;
+    return?: string;
+  };
   // Tool settings for controlling which API tools are enabled
   toolSettings?: {
     languageModel?: 'claude-sonnet-4-20250514' | 'claude-3-5-haiku-20241022';

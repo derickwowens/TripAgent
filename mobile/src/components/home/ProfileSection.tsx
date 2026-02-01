@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable, Alert } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable, Alert, Platform } from 'react-native';
 import Slider from '@react-native-community/slider';
+import DateTimePicker, { DateTimePickerEvent } from '@react-native-community/datetimepicker';
 import { MaxTravelDistance, useParkTheme } from '../../hooks';
 import { APP_NAME } from '../../utils/appName';
 
@@ -178,6 +179,45 @@ const DISTANCE_PRESETS = [
   { value: 5000, label: '5,000 mi' },
 ];
 
+export interface TravelDates {
+  departure?: string; // ISO date string YYYY-MM-DD
+  return?: string;    // ISO date string YYYY-MM-DD
+}
+
+// Helper functions for date handling
+const formatDateForDisplay = (isoDate: string): string => {
+  if (!isoDate) return '';
+  const [year, month, day] = isoDate.split('-');
+  return `${month}/${day}/${year}`;
+};
+
+const parseDateInput = (input: string): string | null => {
+  // Handle MM/DD/YYYY format
+  const parts = input.replace(/[^0-9/]/g, '').split('/');
+  if (parts.length === 3 && parts[0].length <= 2 && parts[1].length <= 2 && parts[2].length === 4) {
+    const month = parts[0].padStart(2, '0');
+    const day = parts[1].padStart(2, '0');
+    const year = parts[2];
+    const monthNum = parseInt(month);
+    const dayNum = parseInt(day);
+    if (monthNum >= 1 && monthNum <= 12 && dayNum >= 1 && dayNum <= 31) {
+      return `${year}-${month}-${day}`;
+    }
+  }
+  return null;
+};
+
+const calculateTripDuration = (departure: string, returnDate: string): string => {
+  const start = new Date(departure);
+  const end = new Date(returnDate);
+  const diffTime = end.getTime() - start.getTime();
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+  if (diffDays < 0) return 'Invalid dates';
+  if (diffDays === 0) return 'Same day trip';
+  if (diffDays === 1) return '1 night';
+  return `${diffDays} nights`;
+};
+
 interface ProfileSectionProps {
   userProfile: string;
   onSaveProfile: (profile: string) => void;
@@ -186,6 +226,8 @@ interface ProfileSectionProps {
   onOpenToolSettings?: () => void;
   maxTravelDistance?: MaxTravelDistance;
   onUpdateMaxTravelDistance?: (distance: MaxTravelDistance) => void;
+  travelDates?: TravelDates;
+  onUpdateTravelDates?: (dates: TravelDates) => void;
 }
 
 export const ProfileSection: React.FC<ProfileSectionProps> = ({
@@ -196,6 +238,8 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   onOpenToolSettings,
   maxTravelDistance,
   onUpdateMaxTravelDistance,
+  travelDates,
+  onUpdateTravelDates,
 }) => {
   const { theme } = useParkTheme();
   // Always start collapsed
@@ -205,6 +249,10 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   const [coffeeExpanded, setCoffeeExpanded] = useState(false);
   const [bookwormExpanded, setBookwormExpanded] = useState(false);
   const [historianExpanded, setHistorianExpanded] = useState(false);
+  
+  // Date picker state
+  const [showDeparturePicker, setShowDeparturePicker] = useState(false);
+  const [showReturnPicker, setShowReturnPicker] = useState(false);
 
   // Check if user has special badges selected
   const isFoodie = userProfile.toLowerCase().includes('foodie');
@@ -341,6 +389,146 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
         scrollEnabled
       />
       
+      {/* Travel Dates */}
+      {onUpdateTravelDates && (
+        <View style={styles.travelDatesContainer}>
+          <Text style={styles.travelDatesLabel}>Travel Dates</Text>
+          <View style={styles.travelDatesRow}>
+            <TouchableOpacity 
+              style={styles.datePickerButton}
+              onPress={() => setShowDeparturePicker(true)}
+            >
+              <Text style={styles.datePickerLabel}>Departure</Text>
+              <Text style={[
+                styles.datePickerValue,
+                !travelDates?.departure && styles.datePickerPlaceholder
+              ]}>
+                {travelDates?.departure ? formatDateForDisplay(travelDates.departure) : 'Select date'}
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity 
+              style={styles.datePickerButton}
+              onPress={() => setShowReturnPicker(true)}
+            >
+              <Text style={styles.datePickerLabel}>Return</Text>
+              <Text style={[
+                styles.datePickerValue,
+                !travelDates?.return && styles.datePickerPlaceholder
+              ]}>
+                {travelDates?.return ? formatDateForDisplay(travelDates.return) : 'Select date'}
+              </Text>
+            </TouchableOpacity>
+          </View>
+          {travelDates?.departure && travelDates?.return && (
+            <Text style={[styles.tripDuration, { color: theme.primary }]}>
+              {calculateTripDuration(travelDates.departure, travelDates.return)}
+            </Text>
+          )}
+          {(travelDates?.departure || travelDates?.return) && (
+            <TouchableOpacity 
+              style={styles.clearDatesButton}
+              onPress={() => onUpdateTravelDates({})}
+            >
+              <Text style={styles.clearDatesText}>Clear dates</Text>
+            </TouchableOpacity>
+          )}
+          
+          {/* iOS Date Picker Modal - Calendar Style */}
+          {Platform.OS === 'ios' && showDeparturePicker && (
+            <Modal transparent animationType="slide">
+              <View style={styles.datePickerModal}>
+                <View style={styles.datePickerModalContent}>
+                  <View style={styles.datePickerModalHeader}>
+                    <Text style={styles.datePickerModalTitle}>Select Departure Date</Text>
+                    <TouchableOpacity onPress={() => setShowDeparturePicker(false)}>
+                      <Text style={[styles.datePickerModalDone, { color: theme.primary }]}>Done</Text>
+                    </TouchableOpacity>
+                  </View>
+                  <DateTimePicker
+                    value={travelDates?.departure ? new Date(travelDates.departure + 'T12:00:00') : new Date()}
+                    mode="date"
+                    display="inline"
+                    minimumDate={new Date()}
+                    onChange={(event: DateTimePickerEvent, date?: Date) => {
+                      if (date) {
+                        const isoDate = date.toISOString().split('T')[0];
+                        onUpdateTravelDates({ ...travelDates, departure: isoDate });
+                      }
+                    }}
+                    accentColor={theme.primary}
+                    themeVariant="dark"
+                    style={styles.inlineCalendar}
+                  />
+                </View>
+              </View>
+            </Modal>
+          )}
+          
+          {Platform.OS === 'ios' && showReturnPicker && (
+            <Modal transparent animationType="slide">
+              <View style={styles.datePickerModal}>
+                <View style={styles.datePickerModalContent}>
+                  <View style={styles.datePickerModalHeader}>
+                    <Text style={styles.datePickerModalTitle}>Select Return Date</Text>
+                    <TouchableOpacity onPress={() => setShowReturnPicker(false)}>
+                      <Text style={[styles.datePickerModalDone, { color: theme.primary }]}>Done</Text>
+                    </TouchableOpacity>
+                  </View>
+                  <DateTimePicker
+                    value={travelDates?.return ? new Date(travelDates.return + 'T12:00:00') : (travelDates?.departure ? new Date(travelDates.departure + 'T12:00:00') : new Date())}
+                    mode="date"
+                    display="inline"
+                    minimumDate={travelDates?.departure ? new Date(travelDates.departure + 'T12:00:00') : new Date()}
+                    onChange={(event: DateTimePickerEvent, date?: Date) => {
+                      if (date) {
+                        const isoDate = date.toISOString().split('T')[0];
+                        onUpdateTravelDates({ ...travelDates, return: isoDate });
+                      }
+                    }}
+                    accentColor={theme.primary}
+                    themeVariant="dark"
+                    style={styles.inlineCalendar}
+                  />
+                </View>
+              </View>
+            </Modal>
+          )}
+          
+          {/* Android Date Picker - Calendar Style */}
+          {Platform.OS === 'android' && showDeparturePicker && (
+            <DateTimePicker
+              value={travelDates?.departure ? new Date(travelDates.departure + 'T12:00:00') : new Date()}
+              mode="date"
+              display="calendar"
+              minimumDate={new Date()}
+              onChange={(event: DateTimePickerEvent, date?: Date) => {
+                setShowDeparturePicker(false);
+                if (event.type === 'set' && date) {
+                  const isoDate = date.toISOString().split('T')[0];
+                  onUpdateTravelDates({ ...travelDates, departure: isoDate });
+                }
+              }}
+            />
+          )}
+          
+          {Platform.OS === 'android' && showReturnPicker && (
+            <DateTimePicker
+              value={travelDates?.return ? new Date(travelDates.return + 'T12:00:00') : (travelDates?.departure ? new Date(travelDates.departure + 'T12:00:00') : new Date())}
+              mode="date"
+              display="calendar"
+              minimumDate={travelDates?.departure ? new Date(travelDates.departure + 'T12:00:00') : new Date()}
+              onChange={(event: DateTimePickerEvent, date?: Date) => {
+                setShowReturnPicker(false);
+                if (event.type === 'set' && date) {
+                  const isoDate = date.toISOString().split('T')[0];
+                  onUpdateTravelDates({ ...travelDates, return: isoDate });
+                }
+              }}
+            />
+          )}
+        </View>
+      )}
+
       {/* Travel Distance Slider */}
       {onUpdateMaxTravelDistance && (
         <View style={styles.distanceContainer}>
@@ -753,5 +941,114 @@ const styles = StyleSheet.create({
   distanceLabelSmall: {
     color: 'rgba(255,255,255,0.4)',
     fontSize: 10,
+  },
+  travelDatesContainer: {
+    marginTop: 12,
+    marginBottom: 8,
+    paddingTop: 12,
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(255,255,255,0.1)',
+  },
+  travelDatesLabel: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 12,
+    fontWeight: '500',
+    marginBottom: 8,
+  },
+  travelDatesRow: {
+    flexDirection: 'row',
+    gap: 12,
+  },
+  dateInputContainer: {
+    flex: 1,
+  },
+  dateInputLabel: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 10,
+    marginBottom: 4,
+  },
+  dateInput: {
+    backgroundColor: 'rgba(255,255,255,0.08)',
+    borderRadius: 8,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+    color: '#FFFFFF',
+    fontSize: 14,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.1)',
+  },
+  tripDuration: {
+    color: '#22C55E',
+    fontSize: 11,
+    fontWeight: '500',
+    marginTop: 8,
+    textAlign: 'center',
+  },
+  datePickerButton: {
+    flex: 1,
+    backgroundColor: 'rgba(255,255,255,0.08)',
+    borderRadius: 12,
+    padding: 12,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.15)',
+  },
+  datePickerLabel: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 10,
+    marginBottom: 4,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+  },
+  datePickerValue: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    fontWeight: '600',
+  },
+  datePickerPlaceholder: {
+    color: 'rgba(255,255,255,0.4)',
+    fontWeight: '400',
+  },
+  clearDatesButton: {
+    alignSelf: 'center',
+    marginTop: 8,
+    paddingVertical: 6,
+    paddingHorizontal: 12,
+  },
+  clearDatesText: {
+    color: 'rgba(255,255,255,0.5)',
+    fontSize: 12,
+  },
+  datePickerModal: {
+    flex: 1,
+    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(0,0,0,0.5)',
+  },
+  datePickerModalContent: {
+    backgroundColor: '#1a1a2e',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    paddingBottom: 40,
+  },
+  datePickerModalHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255,255,255,0.1)',
+  },
+  datePickerModalTitle: {
+    color: '#FFFFFF',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  datePickerModalDone: {
+    color: '#22C55E',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  inlineCalendar: {
+    height: 350,
+    marginHorizontal: 8,
   },
 });

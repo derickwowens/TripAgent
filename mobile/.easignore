@@ -1,0 +1,80 @@
+# EAS Build Ignore File
+# Reduces upload size by excluding unnecessary files from the build
+
+# Development and test files
+__tests__/
+*.test.js
+*.test.ts
+*.test.tsx
+*.spec.js
+*.spec.ts
+*.spec.tsx
+jest.config.js
+jest.setup.js
+
+# Documentation
+*.md
+!README.md
+docs/
+CHANGELOG*
+LICENSE*
+
+# Development configs
+.eslintrc*
+.prettierrc*
+tsconfig.json
+babel.config.js
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Build artifacts (already built on EAS)
+android/app/build/
+ios/build/
+ios/Pods/
+
+# Node modules dev dependencies (EAS installs fresh)
+node_modules/.cache/
+
+# Local environment files
+.env.local
+.env.development
+.env.test
+
+# Debug and log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+
+# Temporary files
+.tmp/
+.temp/
+tmp/
+temp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large unnecessary assets for build
+*.psd
+*.ai
+*.sketch

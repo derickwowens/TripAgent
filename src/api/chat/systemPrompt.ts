@@ -508,6 +508,7 @@ export function buildContextInfo(context: {
   blacklistedParkCodes?: string[];
   activeDestination?: { name: string; airport?: string; city?: string };
   parkMode?: 'national' | 'state';
+  travelDates?: { departure?: string; return?: string };
 }): string {
   let contextInfo = '';
   
@@ -599,6 +600,28 @@ IMPORTANT PROFILE RULES:
 - Consider travel companions (solo, family, pets) when suggesting activities
 - Respect accessibility and mobility needs
 - "budget-conscious" refers to TRAVEL STYLE, not the "Budget" car rental company
+\n`;
+  }
+
+  // Add travel dates if provided
+  if (context.travelDates?.departure) {
+    const formatDate = (isoDate: string): string => {
+      const date = new Date(isoDate + 'T12:00:00');
+      return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    };
+    contextInfo += `\n📅 TRAVEL DATES: ${formatDate(context.travelDates.departure)}`;
+    if (context.travelDates.return) {
+      contextInfo += ` - ${formatDate(context.travelDates.return)}`;
+      // Calculate duration
+      const start = new Date(context.travelDates.departure);
+      const end = new Date(context.travelDates.return);
+      const nights = Math.ceil((end.getTime() - start.getTime()) / (1000 * 60 * 60 * 24));
+      contextInfo += ` (${nights} night${nights !== 1 ? 's' : ''})`;
+    }
+    contextInfo += `
+- Use these EXACT dates when generating flight, hotel, and car rental links
+- Prefill booking links with departure: ${context.travelDates.departure}${context.travelDates.return ? `, return: ${context.travelDates.return}` : ''}
+- Calculate lodging costs based on the actual number of nights
 \n`;
   }
 

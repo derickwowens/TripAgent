@@ -334,14 +334,17 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
     }
   };
 
-  const extractMetadata = (msgs: Message[], userState?: string): SavedConversation['metadata'] => {
+  const extractMetadata = (msgs: Message[], userState?: string, parkModeOverride?: 'national' | 'state'): SavedConversation['metadata'] => {
     const allText = msgs.map(m => m.content).join(' ');
     const userMessages = msgs.filter(m => m.type === 'user').map(m => m.content.toLowerCase()).join(' ');
     const assistantMessages = msgs.filter(m => m.type === 'assistant').map(m => m.content).join(' ');
     
+    // Use the override parkMode if provided (for existing conversations), otherwise use current global parkMode
+    const effectiveParkMode = parkModeOverride ?? parkMode;
+    
     // Use authoritative park data with priority for longer/more specific matches
     // Pass parkMode to extract the right type of destination (national vs state park)
-    const destination = extractDestinationFromText(allText, parkMode, userState) || undefined;
+    const destination = extractDestinationFromText(allText, effectiveParkMode, userState) || undefined;
 
     let travelers: number | undefined;
     const allTextLower = allText.toLowerCase();
@@ -388,7 +391,7 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
       summary = parts.length > 0 ? parts.join(' • ') : undefined;
     } else {
       // No specific destination found - use a generic title based on park mode
-      if (parkMode === 'state') {
+      if (effectiveParkMode === 'state') {
         title = userState ? `${userState} State Parks` : 'State Park Trip';
       }
       const firstUserMsg = msgs.find(m => m.type === 'user')?.content || '';
@@ -405,7 +408,7 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
       summary,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
-      parkMode,
+      parkMode: effectiveParkMode,
     };
   };
 
@@ -424,8 +427,6 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
       const saved = await AsyncStorage.getItem(STORAGE_KEY);
       let conversations: SavedConversation[] = saved ? JSON.parse(saved) : [];
 
-      const metadata = extractMetadata(currentMessages, userState);
-      
       // Deep clone messages to prevent mutation bugs
       const clonedMessages = JSON.parse(JSON.stringify(currentMessages));
 
@@ -433,6 +434,10 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
         const index = conversations.findIndex(c => c.id === currentId);
         if (index >= 0) {
           // Update existing conversation
+          // Use the stored parkMode from the conversation to preserve correct title extraction
+          const storedParkMode = conversations[index].metadata.parkMode;
+          const metadata = extractMetadata(currentMessages, userState, storedParkMode);
+          
           // Only update timestamp if this is a real user interaction, not just viewing
           // Preserve original createdAt and conditionally preserve updatedAt
           const originalCreatedAt = conversations[index].metadata.createdAt;
@@ -450,6 +455,7 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
           };
         } else {
           // ID exists but conversation not in list - add it (ensureConversationId case)
+          const metadata = extractMetadata(currentMessages, userState);
           conversations.unshift({
             id: currentId,
             messages: clonedMessages,
@@ -458,6 +464,7 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
         }
       } else {
         // No ID yet - generate one and add conversation
+        const metadata = extractMetadata(currentMessages, userState);
         const newId = Date.now().toString();
         setCurrentConversationId(newId);
         currentConversationIdRef.current = newId;

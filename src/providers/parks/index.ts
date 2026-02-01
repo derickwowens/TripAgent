@@ -12,7 +12,8 @@ export type { StatePark, StateParksSearchParams } from './StateParksAdapter.js';
 export { RecreationGovAdapter } from './RecreationGovAdapter.js';
 export type { 
   Campground, 
-  CampgroundSearchParams 
+  CampgroundSearchParams,
+  StateRecreationArea,
 } from './RecreationGovAdapter.js';
 
 // OpenStreetMap Campground Adapter (Global, crowdsourced)

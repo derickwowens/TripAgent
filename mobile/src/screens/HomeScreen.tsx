@@ -14,7 +14,7 @@ import {
   TextInput,
 } from 'react-native';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer, fetchStateParks, StateParkSummary } from '../services/api';
-import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode } from '../hooks';
+import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode, useTravelDates } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo } from '../components/home';
 import type { ParkMode as ParkModeType } from '../hooks';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
@@ -62,6 +62,9 @@ const HomeScreen: React.FC = () => {
   
   // State parks near user for Quick Start prefills in state park mode
   const [nearbyStateParks, setNearbyStateParks] = useState<StateParkSummary[]>([]);
+  
+  // Selected state for State Parks mode (allows user to browse parks in other states)
+  const [selectedStateParkState, setSelectedStateParkState] = useState<string | undefined>(undefined);
   
   // Handle park mode change - close current conversation and show welcome screen
   const handleParkModeChange = (newMode: ParkMode) => {
@@ -129,6 +132,7 @@ const HomeScreen: React.FC = () => {
   } = useUserProfile(userLocation ? { lat: userLocation.lat!, lng: userLocation.lng! } : undefined);
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { hasCompletedOnboarding, isLoading: onboardingLoading, completeOnboarding, resetOnboarding } = useOnboarding();
+  const { travelDates, updateTravelDates, getFormattedDates } = useTravelDates();
   
   // Get theme colors based on current park mode
   const parkTheme = getThemeForMode(parkMode);
@@ -353,6 +357,11 @@ const HomeScreen: React.FC = () => {
         maxTravelDistance: maxTravelDistance ?? undefined,
         blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
         parkMode: parkMode, // 'national' or 'state' parks mode
+        // Travel dates for booking links
+        travelDates: travelDates.departure ? {
+          departure: travelDates.departure,
+          return: travelDates.return,
+        } : undefined,
         // Include cached context from local storage
         ...(cachedContext || {}),
         // Tool settings for API
@@ -948,6 +957,10 @@ const HomeScreen: React.FC = () => {
           userLocation={userLocation ? { lat: userLocation.lat!, lng: userLocation.lng!, state: userLocation.state } : null}
           parkMode={parkMode}
           onParkModeChange={handleParkModeChange}
+          selectedState={selectedStateParkState}
+          onStateChange={setSelectedStateParkState}
+          travelDates={travelDates}
+          onUpdateTravelDates={updateTravelDates}
         />
         </View>
       </ImageBackground>
