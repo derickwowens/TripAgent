@@ -163,10 +163,11 @@ export interface SavedConversation {
     createdAt: string;
     updatedAt: string;
     favorite?: boolean;
+    parkMode?: 'national' | 'state';
   };
 }
 
-export const useConversations = (nearestAirport?: string) => {
+export const useConversations = (nearestAirport?: string, parkMode: 'national' | 'state' = 'national') => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [savedConversations, setSavedConversations] = useState<SavedConversation[]>([]);
   const [currentConversationId, setCurrentConversationId] = useState<string | null>(null);
@@ -291,6 +292,7 @@ export const useConversations = (nearestAirport?: string) => {
       summary,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
+      parkMode,
     };
   };
 
@@ -518,10 +520,16 @@ export const useConversations = (nearestAirport?: string) => {
     }
   };
 
+  // Filter conversations by current parkMode (legacy conversations without parkMode show in national)
+  const filteredConversations = savedConversations.filter(c => 
+    (c.metadata.parkMode || 'national') === parkMode
+  );
+
   return {
     messages,
     setMessages,
     savedConversations,
+    filteredConversations,
     currentConversationId,
     loadConversation,
     startNewConversation,

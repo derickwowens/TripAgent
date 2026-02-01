@@ -198,6 +198,8 @@ export interface ChatContext {
   maxTravelDistance?: number;
   // Park codes that are outside the user's travel distance (blacklisted)
   blacklistedParkCodes?: string[];
+  // Park mode: 'national' for 63 US National Parks, 'state' for state parks
+  parkMode?: 'national' | 'state';
   // Tool settings for controlling which API tools are enabled
   toolSettings?: {
     languageModel?: 'claude-sonnet-4-20250514' | 'claude-3-5-haiku-20241022';
@@ -313,6 +315,30 @@ export const sendChatMessageWithStream = async (
       throw abortError;
     }
     throw error;
+  }
+};
+
+// State Parks API
+export interface StateParkSummary {
+  id: string;
+  name: string;
+  state: string;
+  stateFullName: string;
+  designationLabel: string;
+  acres: number;
+  acresFormatted: string;
+  publicAccess: 'Open' | 'Restricted' | 'Closed' | 'Unknown';
+}
+
+export const fetchStateParks = async (stateCode: string, limit: number = 20): Promise<StateParkSummary[]> => {
+  try {
+    const response = await api.get(`/api/state-parks/search`, {
+      params: { state: stateCode, limit }
+    });
+    return response.data.parks || [];
+  } catch (error) {
+    console.error('Failed to fetch state parks:', error);
+    return [];
   }
 };
 

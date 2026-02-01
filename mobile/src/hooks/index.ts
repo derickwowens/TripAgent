@@ -8,8 +8,10 @@ export { useTripContext, getTripContextForConversation, getAllTripContexts } fro
 export { useConversationQueue } from './useConversationQueue';
 export { useConversationManager } from './useConversationManager';
 export { useToolSettings } from './useToolSettings';
+export { useParkTheme, ParkThemeProvider, getThemeForMode, NATIONAL_THEME, STATE_THEME } from './useParkTheme';
 export type { Message, SavedConversation, PhotoReference } from './useConversations';
 export type { ToolSettings, ToolConfig } from './useToolSettings';
+export type { ParkMode, ParkTheme } from './useParkTheme';
 export type { ConversationRequest, ConversationResponse } from './useConversationQueue';
 export type { 
   TripContextData, 

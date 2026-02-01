@@ -10,6 +10,7 @@ import { TravelFacade } from '../../domain/facade/TravelFacade.js';
 import { GoogleMapsAdapter } from '../../providers/GoogleMapsAdapter.js';
 import { OpenChargeMapAdapter } from '../../providers/OpenChargeMapAdapter.js';
 import { YelpAdapter } from '../../providers/YelpAdapter.js';
+import { StateParkService } from '../../providers/parks/StateParkService.js';
 import { findParkCode } from '../../utils/parkCodeLookup.js';
 import { 
   generateGoogleMapsLink, 
@@ -33,6 +34,12 @@ import { validateAndCleanResponse } from './responseProcessor.js';
 import { PARK_FEATURES } from './parkFeatures.js';
 
 let anthropic: Anthropic | null = null;
+
+// Initialize StateParkService for state parks tools
+const stateParkService = new StateParkService(
+  process.env.RECREATION_GOV_API_KEY,
+  process.env.NPS_API_KEY
+);
 
 // Cache for storing restaurant search results to use correct location for reservations
 // This ensures we use the restaurant's actual location, not the user's home location
@@ -540,6 +547,21 @@ async function handleToolCall(
 
     case 'get_campgrounds':
       result = await handleGetCampgrounds(toolUse.input as any, facade, context);
+      break;
+
+    // ============================================
+    // STATE PARKS TOOLS
+    // ============================================
+    case 'search_state_parks':
+      result = await handleSearchStateParks(toolUse.input as any, collectedPhotos);
+      break;
+
+    case 'get_state_park_details':
+      result = await handleGetStateParkDetails(toolUse.input as any, collectedPhotos);
+      break;
+
+    case 'get_state_park_campgrounds':
+      result = await handleGetStateParkCampgrounds(toolUse.input as any, collectedPhotos);
       break;
 
     default:
@@ -1780,5 +1802,158 @@ async function handleGetCampgrounds(
       campgrounds: [],
       npsUrl: `https://www.nps.gov/${parkCode}/planyourvisit/camping.htm`,
     };
+  }
+}
+
+// ============================================
+// STATE PARKS TOOL HANDLERS
+// ============================================
+
+async function handleSearchStateParks(
+  input: { state: string; query?: string },
+  collectedPhotos: PhotoReference[]
+): Promise<any> {
+  console.log(`[State Parks] Searching parks in ${input.state}${input.query ? ` with query "${input.query}"` : ''}`);
+  
+  try {
+    const results = await stateParkService.searchParks({
+      state: input.state.toUpperCase(),
+      query: input.query,
+      limit: 20, // Keep results manageable
+    });
+
+    if (results.error) {
+      return { error: results.error };
+    }
+
+    return {
+      state: input.state.toUpperCase(),
+      parks: results.parks.map(park => ({
+        name: park.name,
+        state: park.stateFullName,
+        designation: park.designationLabel,
+        acres: park.acresFormatted,
+        publicAccess: park.publicAccess,
+      })),
+      totalCount: results.totalCount,
+      hasMore: results.hasMore,
+      campgroundsAvailable: results.campgroundsAvailable,
+      note: 'Use get_state_park_details or get_state_park_campgrounds for more info on a specific park',
+    };
+  } catch (error: any) {
+    console.error('State parks search error:', error.message);
+    return { error: `Failed to search state parks: ${error.message}` };
+  }
+}
+
+async function handleGetStateParkDetails(
+  input: { park_name: string; state: string },
+  collectedPhotos: PhotoReference[]
+): Promise<any> {
+  console.log(`[State Parks] Getting details for "${input.park_name}" in ${input.state}`);
+  
+  try {
+    const park = await stateParkService.getParkDetails(input.park_name, input.state.toUpperCase());
+
+    if (!park) {
+      return { 
+        error: `Park "${input.park_name}" not found in ${input.state}. Try searching with search_state_parks first.` 
+      };
+    }
+
+    // Add campground photos to gallery
+    if (park.campgrounds && park.campgrounds.length > 0) {
+      park.campgrounds.forEach(cg => {
+        if (cg.photos && cg.photos.length > 0) {
+          cg.photos.slice(0, 2).forEach(photo => {
+            collectedPhotos.push({
+              keyword: cg.name,
+              url: photo.url,
+              caption: photo.caption || `${cg.name} - Campground`,
+              source: 'nps',
+            });
+          });
+        }
+      });
+    }
+
+    return {
+      name: park.name,
+      state: park.stateFullName,
+      designation: park.designationLabel,
+      acres: park.acresFormatted,
+      publicAccess: park.publicAccess,
+      manager: park.managerName,
+      hasCamping: park.hasCamping,
+      campgroundCount: park.campgroundCount,
+      campgrounds: park.campgrounds.slice(0, 5).map(cg => ({
+        name: cg.name,
+        source: cg.source,
+        reservable: cg.reservable,
+        reservationUrl: cg.reservationUrl,
+        totalSites: cg.totalSites,
+        amenities: cg.amenities,
+        hasPhotos: cg.photos.length > 0,
+      })),
+    };
+  } catch (error: any) {
+    console.error('State park details error:', error.message);
+    return { error: `Failed to get park details: ${error.message}` };
+  }
+}
+
+async function handleGetStateParkCampgrounds(
+  input: { park_name: string; state: string },
+  collectedPhotos: PhotoReference[]
+): Promise<any> {
+  console.log(`[State Parks] Getting campgrounds for "${input.park_name}" in ${input.state}`);
+  
+  try {
+    const campgrounds = await stateParkService.getCampgroundsForPark(
+      input.park_name, 
+      input.state.toUpperCase()
+    );
+
+    // Add campground photos to gallery
+    campgrounds.forEach(cg => {
+      if (cg.photos && cg.photos.length > 0) {
+        cg.photos.slice(0, 2).forEach(photo => {
+          collectedPhotos.push({
+            keyword: cg.name,
+            url: photo.url,
+            caption: photo.caption || `${cg.name} - ${cg.source}`,
+            source: cg.source === 'nps' ? 'nps' : 'other',
+          });
+        });
+      }
+    });
+
+    return {
+      parkName: input.park_name,
+      state: input.state.toUpperCase(),
+      campgrounds: campgrounds.map(cg => ({
+        name: cg.name,
+        source: cg.source,
+        description: cg.description,
+        reservable: cg.reservable,
+        reservationUrl: cg.reservationUrl,
+        totalSites: cg.totalSites,
+        fees: cg.fees,
+        amenities: cg.amenities,
+        coordinates: cg.coordinates,
+        photos: cg.photos.slice(0, 3).map(p => ({
+          url: p.url,
+          caption: p.caption,
+        })),
+      })),
+      totalCount: campgrounds.length,
+      sources: ['recreation.gov', 'nps'],
+      note: campgrounds.length === 0 
+        ? 'No campgrounds found for this park. Try a nearby state park or check Recreation.gov directly.'
+        : 'Book campgrounds early - popular sites fill up months in advance!',
+    };
+  } catch (error: any) {
+    console.error('State park campgrounds error:', error.message);
+    return { error: `Failed to get campgrounds: ${error.message}` };
   }
 }

@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet, TextInput, Modal, KeyboardAvoidingView, Platform, ScrollView, ImageBackground } from 'react-native';
-import { SavedConversation, useDarkModeContext, getAllTripContexts, TripContextData } from '../../hooks';
+import { SavedConversation, useDarkModeContext, getAllTripContexts, TripContextData, useParkTheme } from '../../hooks';
 
 interface ConversationListProps {
   conversations: SavedConversation[];
@@ -45,6 +45,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
   onToggleFavorite,
 }) => {
   const { isDarkMode } = useDarkModeContext();
+  const { theme } = useParkTheme();
   const [editModalVisible, setEditModalVisible] = useState(false);
   const [editingConv, setEditingConv] = useState<SavedConversation | null>(null);
   const [editTitle, setEditTitle] = useState('');
@@ -257,7 +258,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
               <View style={styles.actions}>
                 {onToggleFavorite && (
                   <TouchableOpacity
-                    style={[styles.actionBadge, conv.metadata.favorite && styles.favoriteBadge]}
+                    style={[styles.actionBadge, { backgroundColor: theme.buttonBackgroundLight }, conv.metadata.favorite && styles.favoriteBadge]}
                     onPress={() => onToggleFavorite(conv.id)}
                   >
                     <Text style={[styles.actionIcon, styles.favoriteIcon, conv.metadata.favorite && styles.favoriteIconActive]}>
@@ -266,13 +267,13 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                   </TouchableOpacity>
                 )}
                 <TouchableOpacity
-                  style={[styles.actionBadge, isDarkMode && styles.actionBadgeDark]}
+                  style={[styles.actionBadge, { backgroundColor: theme.buttonBackgroundLight }]}
                   onPress={() => openEditModal(conv)}
                 >
                   <Text style={styles.actionIcon}>•••</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
-                  style={[styles.actionBadge, styles.deleteBadge, isDarkMode && styles.deleteBadgeDark]}
+                  style={[styles.actionBadge, { backgroundColor: theme.primaryLight }]}
                   onPress={() => openDeleteModal(conv)}
                 >
                   <Text style={[styles.actionIcon, styles.deleteIcon]}>×</Text>

@@ -14,8 +14,9 @@ import {
   TextInput,
 } from 'react-native';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
-import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings } from '../hooks';
-import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow } from '../components/home';
+import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode } from '../hooks';
+import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo } from '../components/home';
+import type { ParkMode as ParkModeType } from '../hooks';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
 
@@ -56,6 +57,7 @@ const HomeScreen: React.FC = () => {
   const [tempTitle, setTempTitle] = useState('');
   const [defaultBackground] = useState(() => getRandomBackground()); // Random bg per session
   const [showPhotoGallery, setShowPhotoGallery] = useState(true);
+  const [parkMode, setParkMode] = useState<ParkMode>('national');
   const scrollViewRef = useRef<ScrollView>(null);
   
   // Per-conversation loading state (allows multiple conversations to load simultaneously)
@@ -69,7 +71,8 @@ const HomeScreen: React.FC = () => {
   const { 
     messages, 
     setMessages,
-    savedConversations, 
+    savedConversations,
+    filteredConversations,
     currentConversationId,
     loadConversation, 
     startNewConversation, 
@@ -79,7 +82,7 @@ const HomeScreen: React.FC = () => {
     addMessage,
     addMessagesToConversation,
     ensureConversationId,
-  } = useConversations(userLocation?.nearestAirport);
+  } = useConversations(userLocation?.nearestAirport, parkMode);
   
   // Derived loading state for current conversation
   const currentLoadingState = conversationLoadingState.get(currentConversationId) || { loading: false, status: '' };
@@ -288,6 +291,7 @@ const HomeScreen: React.FC = () => {
         userProfile: userProfile || undefined,
         maxTravelDistance: maxTravelDistance ?? undefined,
         blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
+        parkMode: parkMode, // 'national' or 'state' parks mode
         // Include cached context from local storage
         ...(cachedContext || {}),
         // Tool settings for API
@@ -462,6 +466,7 @@ const HomeScreen: React.FC = () => {
         userProfile: userProfile || undefined,
         maxTravelDistance: maxTravelDistance ?? undefined,
         blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
+        parkMode: parkMode,
         ...(cachedContext || {}),
         // Tool settings for API
         toolSettings: {
@@ -624,14 +629,18 @@ const HomeScreen: React.FC = () => {
     );
   }
 
+  // Get theme colors based on park mode
+  const theme = getThemeForMode(parkMode);
+
   return (
+    <ParkThemeProvider mode={parkMode}>
     <DarkModeContext.Provider value={{ isDarkMode, toggleDarkMode }}>
       <ImageBackground
         source={backgroundSource}
         style={styles.backgroundImage}
         resizeMode="cover"
       >
-        <View style={styles.overlay}>
+        <View style={[styles.overlay, { backgroundColor: theme.overlay }]}>
           <StatusBar barStyle="light-content" />
         
         <View style={styles.header}>
@@ -639,11 +648,7 @@ const HomeScreen: React.FC = () => {
             <Text style={styles.menuIcon}>☰</Text>
           </TouchableOpacity>
           {messages.length > 0 ? (
-            <Image 
-              source={require('../../assets/icon.png')} 
-              style={styles.headerLogo}
-              resizeMode="contain"
-            />
+            <ThemedLogo size={32} style={styles.headerLogo} />
           ) : (
             <View style={styles.headerLogo} />
           )}
@@ -734,6 +739,7 @@ const HomeScreen: React.FC = () => {
                 userLocation={userLocation || undefined}
                 onSetPrompt={setInputText}
                 blacklistedParkCodes={blacklistedParkCodes}
+                parkMode={parkMode}
               />
             )}
             
@@ -765,6 +771,7 @@ const HomeScreen: React.FC = () => {
                     userProfile: userProfile || undefined,
                     maxTravelDistance: maxTravelDistance ?? undefined,
                     blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
+                    parkMode: parkMode,
                     // Tool settings for API
                     toolSettings: {
                       languageModel: toolSettings.languageModel,
@@ -856,7 +863,7 @@ const HomeScreen: React.FC = () => {
           userProfile={userProfile}
           onSaveProfile={updateProfile}
           onAddProfileSuggestion={addSuggestion}
-          conversations={savedConversations}
+          conversations={filteredConversations}
           currentConversationId={currentConversationId}
           onLoadConversation={handleLoadConversation}
           onDeleteConversation={deleteConversation}
@@ -876,11 +883,14 @@ const HomeScreen: React.FC = () => {
           totalToolCount={totalToolCount}
           maxTravelDistance={maxTravelDistance}
           onUpdateMaxTravelDistance={updateMaxTravelDistance}
-          userLocation={userLocation ? { lat: userLocation.lat!, lng: userLocation.lng! } : null}
+          userLocation={userLocation ? { lat: userLocation.lat!, lng: userLocation.lng!, state: userLocation.state } : null}
+          parkMode={parkMode}
+          onParkModeChange={setParkMode}
         />
         </View>
       </ImageBackground>
     </DarkModeContext.Provider>
+    </ParkThemeProvider>
   );
 };
 

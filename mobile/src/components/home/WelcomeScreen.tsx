@@ -1,6 +1,8 @@
 import React, { useState, useRef, useMemo } from 'react';
 import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image, Animated, Dimensions } from 'react-native';
 import { NATIONAL_PARKS, getParksByStateProximity, NationalParkInfo, PARK_DETECTION_PATTERNS } from '../../data/nationalParks';
+import { useParkTheme } from '../../hooks';
+import { ThemedLogo } from './ThemedLogo';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -8,12 +10,21 @@ const { width: SCREEN_WIDTH } = Dimensions.get('window');
 const IS_TABLET = SCREEN_WIDTH >= 768;
 const CONTENT_MAX_WIDTH = IS_TABLET ? 450 : SCREEN_WIDTH - 32;
 
-const QUICK_PROMPTS = [
+const NATIONAL_PARK_PROMPTS = [
   { label: 'Somewhere warm on a budget', template: 'Take me somewhere warm on a budget' },
   { label: 'Weekend mountain getaway', template: 'Plan a weekend mountain getaway' },
   { label: 'Beach destination', template: 'Find me a beach destination' },
   { label: 'City break nearby', template: 'Suggest a city break nearby' },
 ];
+
+const STATE_PARK_PROMPTS = [
+  { label: 'State park camping trip', template: 'Plan a camping trip to a state park near me' },
+  { label: 'Day hike at a state park', template: 'Find a state park with great day hikes nearby' },
+  { label: 'Scenic state park getaway', template: 'Recommend a scenic state park for a weekend getaway' },
+  { label: 'State park with campgrounds', template: 'Find state parks with available campgrounds in my area' },
+];
+
+type ParkMode = 'national' | 'state';
 
 interface WelcomeScreenProps {
   locationLoading: boolean;
@@ -21,6 +32,7 @@ interface WelcomeScreenProps {
   userLocation?: { city: string; state: string; nearestAirport: string };
   onSetPrompt: (prompt: string) => void;
   blacklistedParkCodes?: string[];
+  parkMode?: ParkMode;
 }
 
 const injectProfileContext = (template: string, profile?: string): string => {
@@ -312,9 +324,16 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   userLocation,
   onSetPrompt,
   blacklistedParkCodes,
+  parkMode = 'national',
 }) => {
   const [expanded, setExpanded] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
+  
+  // Get theme colors from context
+  const { theme } = useParkTheme();
+  
+  // Select prompts based on park mode
+  const quickPrompts = parkMode === 'state' ? STATE_PARK_PROMPTS : NATIONAL_PARK_PROMPTS;
   
   // Animation values
   const headerScale = useRef(new Animated.Value(1)).current;
@@ -414,21 +433,22 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
           opacity: headerOpacity,
         }
       ]}>
-        <Image 
-          source={require('../../../assets/icon.png')} 
-          style={styles.logo}
-          resizeMode="contain"
-        />
+        <ThemedLogo size={IS_TABLET ? 100 : 80} style={styles.logo} />
         <Text style={styles.title}>where would you like to explore?</Text>
       </Animated.View>
       
       <Animated.View style={{ transform: [{ scale: buttonScale }] }}>
         <TouchableOpacity 
-          style={[styles.quickStartButton, expanded && styles.quickStartButtonActive]}
+          style={[
+            styles.quickStartButton, 
+            expanded && styles.quickStartButtonActive,
+            { borderColor: theme.primary },
+            expanded && { backgroundColor: theme.primaryLight }
+          ]}
           onPress={toggleExpanded}
           activeOpacity={0.7}
         >
-          <Text style={styles.quickStartText}>Quick Start</Text>
+          <Text style={[styles.quickStartText, { color: theme.primary }]}>Quick Start</Text>
         </TouchableOpacity>
       </Animated.View>
       
@@ -442,27 +462,37 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
         ]}>
           {userProfile && userProfile.trim().length > 0 && (
             <TouchableOpacity 
-              style={[styles.promptChip, styles.profileChip]}
+              style={[
+                styles.promptChip, 
+                styles.profileChip,
+                { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
+              ]}
               onPress={() => onSetPrompt(generateProfilePrompt(userProfile))}
             >
-              <Text style={styles.promptText}>Trip from my profile</Text>
+              <Text style={[styles.promptText, { color: theme.chipText }]}>Trip from my profile</Text>
             </TouchableOpacity>
           )}
           
           <TouchableOpacity 
-            style={styles.promptChip}
+            style={[
+              styles.promptChip,
+              { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
+            ]}
             onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile))}
           >
-            <Text style={styles.promptText}>Surprise me!</Text>
+            <Text style={[styles.promptText, { color: theme.chipText }]}>Surprise me!</Text>
           </TouchableOpacity>
           
-          {QUICK_PROMPTS.map((prompt, index) => (
+          {quickPrompts.map((prompt, index) => (
             <TouchableOpacity 
               key={index}
-              style={styles.promptChip}
+              style={[
+                styles.promptChip,
+                { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
+              ]}
               onPress={() => onSetPrompt(injectProfileContext(prompt.template, userProfile))}
             >
-              <Text style={styles.promptText}>{prompt.label}</Text>
+              <Text style={[styles.promptText, { color: theme.chipText }]}>{prompt.label}</Text>
             </TouchableOpacity>
           ))}
         </Animated.View>

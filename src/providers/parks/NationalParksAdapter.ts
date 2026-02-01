@@ -101,6 +101,7 @@ export interface ParkActivity {
 export interface ParkCampground {
   id: string;
   name: string;
+  parkCode?: string;
   description: string;
   coordinates: { latitude: number; longitude: number };
   totalSites: number;
@@ -108,6 +109,8 @@ export interface ParkCampground {
   firstComeFirstServe: number;
   reservationUrl: string;
   fees: string;
+  amenities?: Record<string, string[]>;
+  images?: string[];
 }
 
 export interface ParkHike {
@@ -282,21 +285,79 @@ export class NationalParksAdapter extends BaseAdapter {
       }
 
       const data = await response.json() as NPSCampgroundResponse;
-      return data.data.map(camp => ({
-        id: camp.id,
-        name: camp.name,
-        description: camp.description?.substring(0, 200) || '',
-        coordinates: {
-          latitude: parseFloat(camp.latitude) || 0,
-          longitude: parseFloat(camp.longitude) || 0,
-        },
-        totalSites: (parseInt(camp.numberOfSitesReservable) || 0) + (parseInt(camp.numberOfSitesFirstComeFirstServe) || 0),
-        reservableSites: parseInt(camp.numberOfSitesReservable) || 0,
-        firstComeFirstServe: parseInt(camp.numberOfSitesFirstComeFirstServe) || 0,
-        reservationUrl: camp.reservationUrl || 'https://www.recreation.gov',
-        fees: camp.fees?.[0]?.cost ? `$${camp.fees[0].cost}` : 'Free',
-      }));
+      return data.data.map(camp => this.transformCampground(camp));
     });
+  }
+
+  /**
+   * Get all NPS campgrounds (paginated, up to limit)
+   */
+  async getAllCampgrounds(stateCode?: string, limit = 100): Promise<ParkCampground[]> {
+    const cacheKey = this.generateCacheKey('nps-all-campgrounds', { stateCode, limit });
+
+    return this.fetchWithCache(cacheKey, async () => {
+      if (!this.apiKey) {
+        throw new Error('NPS API key not configured.');
+      }
+
+      let url = `${this.baseUrl}/campgrounds?limit=${limit}&api_key=${this.apiKey}`;
+      if (stateCode) {
+        url += `&stateCode=${stateCode.toUpperCase()}`;
+      }
+
+      const response = await fetch(url);
+
+      if (!response.ok) {
+        throw new Error(`NPS API error: ${response.status}`);
+      }
+
+      const data = await response.json() as NPSCampgroundResponse;
+      return data.data.map(camp => this.transformCampground(camp));
+    });
+  }
+
+  /**
+   * Search campgrounds by name or location
+   */
+  async searchCampgrounds(query: string, limit = 50): Promise<ParkCampground[]> {
+    const cacheKey = this.generateCacheKey('nps-search-campgrounds', { query, limit });
+
+    return this.fetchWithCache(cacheKey, async () => {
+      if (!this.apiKey) {
+        throw new Error('NPS API key not configured.');
+      }
+
+      const response = await fetch(
+        `${this.baseUrl}/campgrounds?q=${encodeURIComponent(query)}&limit=${limit}&api_key=${this.apiKey}`
+      );
+
+      if (!response.ok) {
+        throw new Error(`NPS API error: ${response.status}`);
+      }
+
+      const data = await response.json() as NPSCampgroundResponse;
+      return data.data.map(camp => this.transformCampground(camp));
+    });
+  }
+
+  private transformCampground(camp: NPSCampground): ParkCampground {
+    return {
+      id: camp.id,
+      name: camp.name,
+      parkCode: camp.parkCode,
+      description: camp.description?.substring(0, 300) || '',
+      coordinates: {
+        latitude: parseFloat(camp.latitude) || 0,
+        longitude: parseFloat(camp.longitude) || 0,
+      },
+      totalSites: (parseInt(camp.numberOfSitesReservable) || 0) + (parseInt(camp.numberOfSitesFirstComeFirstServe) || 0),
+      reservableSites: parseInt(camp.numberOfSitesReservable) || 0,
+      firstComeFirstServe: parseInt(camp.numberOfSitesFirstComeFirstServe) || 0,
+      reservationUrl: camp.reservationUrl || 'https://www.recreation.gov',
+      fees: camp.fees?.[0]?.cost ? `$${camp.fees[0].cost}` : 'Free',
+      amenities: camp.amenities || {},
+      images: camp.images?.map(i => i.url) || [],
+    };
   }
 
   getHikes(parkCode: string): ParkHike[] {

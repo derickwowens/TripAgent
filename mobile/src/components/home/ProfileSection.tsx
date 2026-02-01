@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Modal, Pressable, Alert } from 'react-native';
 import Slider from '@react-native-community/slider';
-import { MaxTravelDistance } from '../../hooks';
+import { MaxTravelDistance, useParkTheme } from '../../hooks';
 import { APP_NAME } from '../../utils/appName';
 
 // Define mutually exclusive groups
@@ -197,6 +197,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
   maxTravelDistance,
   onUpdateMaxTravelDistance,
 }) => {
+  const { theme } = useParkTheme();
   // Always start collapsed
   const [suggestionsExpanded, setSuggestionsExpanded] = useState(false);
   const [privacyModalVisible, setPrivacyModalVisible] = useState(false);
@@ -380,10 +381,10 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
               {availableSuggestions.map((suggestion, index) => (
                 <TouchableOpacity
                   key={index}
-                  style={styles.suggestionChip}
+                  style={[styles.suggestionChip, { backgroundColor: theme.chipBackground, borderColor: theme.chipBorder }]}
                   onPress={() => onAddSuggestion(suggestion.profileText)}
                 >
-                  <Text style={styles.suggestionText}>{suggestion.label}</Text>
+                  <Text style={[styles.suggestionText, { color: theme.chipText }]}>{suggestion.label}</Text>
                 </TouchableOpacity>
               ))}
             </View>

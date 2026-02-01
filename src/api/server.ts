@@ -10,6 +10,7 @@ import { AmadeusHotelAdapter } from '../providers/hotels/AmadeusHotelAdapter.js'
 import { AmadeusCarAdapter } from '../providers/cars/AmadeusCarAdapter.js';
 import { AmadeusActivitiesAdapter } from '../providers/activities/AmadeusActivitiesAdapter.js';
 import { NationalParksAdapter } from '../providers/parks/NationalParksAdapter.js';
+import { StateParkService } from '../providers/parks/StateParkService.js';
 import { RecreationGovAdapter } from '../providers/recreation/RecreationGovAdapter.js';
 import { INaturalistAdapter } from '../providers/wildlife/INaturalistAdapter.js';
 import { createChatHandler, TOOL_DISPLAY_NAMES } from './chat.js';
@@ -54,6 +55,12 @@ const facade = new TravelFacade(
   new NationalParksAdapter(process.env.NPS_API_KEY),
   new RecreationGovAdapter(process.env.RECREATION_GOV_API_KEY),
   new INaturalistAdapter()
+);
+
+// Initialize State Park Service (aggregates PAD-US, Recreation.gov, OSM, NPS)
+const stateParkService = new StateParkService(
+  process.env.RECREATION_GOV_API_KEY,
+  process.env.NPS_API_KEY
 );
 
 // Error handling middleware
@@ -246,6 +253,102 @@ app.get('/api/parks/:parkCode/hikes', asyncHandler(async (req: Request, res: Res
 
   const hikes = facade.getParkHikes(parkCode);
   res.json({ parkCode, hikes, totalResults: hikes.length });
+}));
+
+// ============================================
+// STATE PARKS ENDPOINTS
+// ============================================
+app.get('/api/state-parks/states', asyncHandler(async (req: Request, res: Response) => {
+  const states = stateParkService.getStates();
+  res.json({ states, totalResults: states.length });
+}));
+
+app.get('/api/state-parks/overview', asyncHandler(async (req: Request, res: Response) => {
+  const overview = await stateParkService.getStatesOverview();
+  res.json({ states: overview, totalResults: overview.length });
+}));
+
+app.get('/api/state-parks/search', asyncHandler(async (req: Request, res: Response) => {
+  const { state, query, limit } = req.query;
+
+  // State is required to limit data volume
+  if (!state) {
+    return res.status(400).json({ 
+      error: 'State is required for state park searches. Please specify a state code (e.g., CA, TX, NY).',
+      example: '/api/state-parks/search?state=CA&query=beach'
+    });
+  }
+
+  const results = await stateParkService.searchParks({
+    state: state as string,
+    query: query as string | undefined,
+    limit: limit ? parseInt(limit as string) : 30,
+  });
+
+  res.json(results);
+}));
+
+app.get('/api/state-parks/state/:stateCode', asyncHandler(async (req: Request, res: Response) => {
+  const { stateCode } = req.params;
+
+  const parks = await stateParkService.getParksByState(stateCode.toUpperCase());
+  res.json({ stateCode, parks, totalResults: parks.length });
+}));
+
+app.get('/api/state-parks/campgrounds/:stateCode', asyncHandler(async (req: Request, res: Response) => {
+  const { stateCode } = req.params;
+
+  const campgrounds = await stateParkService.getCampgrounds(stateCode.toUpperCase());
+  res.json({ 
+    stateCode, 
+    campgrounds, 
+    totalResults: campgrounds.length,
+    sources: ['recreation.gov', 'openstreetmap', 'nps'],
+    note: 'For better performance, use /api/state-parks/park/:stateCode/:parkName/campgrounds for specific parks',
+  });
+}));
+
+// Lazy-load endpoint: Get campgrounds for a SPECIFIC park (preferred method)
+app.get('/api/state-parks/park/:stateCode/:parkName/campgrounds', asyncHandler(async (req: Request, res: Response) => {
+  const { stateCode, parkName } = req.params;
+
+  const campgrounds = await stateParkService.getCampgroundsForPark(
+    decodeURIComponent(parkName),
+    stateCode.toUpperCase()
+  );
+  
+  res.json({ 
+    stateCode,
+    parkName: decodeURIComponent(parkName),
+    campgrounds, 
+    totalResults: campgrounds.length,
+    sources: ['recreation.gov', 'nps'],
+  });
+}));
+
+app.get('/api/state-parks/campgrounds/nearby', asyncHandler(async (req: Request, res: Response) => {
+  const { lat, lng, radius } = req.query;
+
+  if (!lat || !lng) {
+    return res.status(400).json({ error: 'Missing required parameters: lat, lng' });
+  }
+
+  const campgrounds = await stateParkService.getCampgroundsNearby(
+    parseFloat(lat as string),
+    parseFloat(lng as string),
+    radius ? parseInt(radius as string) : 50
+  );
+
+  res.json({ 
+    campgrounds, 
+    totalResults: campgrounds.length,
+    sources: ['recreation.gov', 'openstreetmap'],
+  });
+}));
+
+app.get('/api/state-parks/designations', asyncHandler(async (req: Request, res: Response) => {
+  const designations = await stateParkService.getDesignationTypes();
+  res.json({ designations, totalResults: designations.length });
 }));
 
 // ============================================
@@ -494,6 +597,10 @@ app.listen(PORT, () => {
   console.log(`   GET  /api/parks/search?query=yosemite`);
   console.log(`   GET  /api/parks/:parkCode`);
   console.log(`   GET  /api/parks/:parkCode/hikes`);
+  console.log(`   GET  /api/state-parks/states`);
+  console.log(`   GET  /api/state-parks/overview`);
+  console.log(`   GET  /api/state-parks/search?state=CA&query=beach`);
+  console.log(`   GET  /api/state-parks/campgrounds/:stateCode`);
   console.log(`   POST /api/trips/plan-park-trip`);
   console.log(`   GET  /api/airports/:iataCode`);
 });

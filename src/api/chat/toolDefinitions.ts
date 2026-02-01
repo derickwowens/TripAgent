@@ -196,4 +196,43 @@ export const tools: Anthropic.Tool[] = [
       required: ['park_code'],
     },
   },
+  // ============================================
+  // STATE PARKS TOOLS (use when parkMode is 'state')
+  // ============================================
+  {
+    name: 'search_state_parks',
+    description: 'Search for state parks in a specific US state. Returns park names, acreage, and designation type. REQUIRES a state code - always ask user which state they want to explore. Use 2-letter state codes (CA, TX, NY, etc).',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        state: { type: 'string', description: 'Required 2-letter US state code (e.g., "CA", "TX", "NY", "CO")' },
+        query: { type: 'string', description: 'Optional search term to filter parks by name (e.g., "beach", "mountain", "forest")' },
+      },
+      required: ['state'],
+    },
+  },
+  {
+    name: 'get_state_park_details',
+    description: 'Get detailed information about a specific state park including campground availability. Use this after search_state_parks to get details for a specific park the user is interested in.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        park_name: { type: 'string', description: 'Name of the state park (e.g., "Big Basin Redwoods State Park")' },
+        state: { type: 'string', description: '2-letter US state code where the park is located (e.g., "CA")' },
+      },
+      required: ['park_name', 'state'],
+    },
+  },
+  {
+    name: 'get_state_park_campgrounds',
+    description: 'Get campground information for a specific state park. Returns aggregated campground data from Recreation.gov, OpenStreetMap, and NPS sources with photos, amenities, and reservation links.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        park_name: { type: 'string', description: 'Name of the state park' },
+        state: { type: 'string', description: '2-letter US state code (e.g., "CA")' },
+      },
+      required: ['park_name', 'state'],
+    },
+  },
 ];

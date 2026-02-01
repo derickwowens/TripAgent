@@ -1,5 +1,6 @@
 import React, { memo, useCallback, useState, useEffect } from 'react';
 import { View, TextInput, TouchableOpacity, Text, StyleSheet, Platform, Alert } from 'react-native';
+import { useParkTheme } from '../../hooks';
 
 // Try to import speech recognition - may not be available in Expo Go
 let ExpoSpeechRecognitionModule: any = null;
@@ -43,6 +44,7 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
 }) => {
   const [isListening, setIsListening] = useState(false);
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
+  const { theme } = useParkTheme();
   
   // Only disable send button when no text - allow typing while loading
   const isDisabled = !inputText.trim();
@@ -155,7 +157,7 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
       />
       {hasPhotos && onOpenGallery && !galleryOpen && (
         <TouchableOpacity
-          style={styles.photoButton}
+          style={[styles.photoButton, { backgroundColor: theme.buttonBackgroundLight }]}
           onPress={onOpenGallery}
         >
           <View style={styles.photoIcon}>
@@ -167,7 +169,11 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
         </TouchableOpacity>
       )}
       <TouchableOpacity
-        style={[styles.sendButton, isDisabled && styles.sendButtonDisabled]}
+        style={[
+          styles.sendButton, 
+          { backgroundColor: theme.buttonBackground },
+          isDisabled && styles.sendButtonDisabled,
+        ]}
         onPress={handleSubmit}
         disabled={isDisabled}
       >
@@ -221,7 +227,6 @@ const styles = StyleSheet.create({
     width: 48,
     height: 48,
     borderRadius: 24,
-    backgroundColor: 'rgba(22, 101, 52, 0.6)',
     alignItems: 'center',
     justifyContent: 'center',
   },

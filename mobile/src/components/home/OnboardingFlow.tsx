@@ -18,6 +18,7 @@ import {
 } from 'react-native';
 import Slider from '@react-native-community/slider';
 import { useLocation, MaxTravelDistance } from '../../hooks';
+import { ThemedLogo } from './ThemedLogo';
 import { APP_NAME } from '../../utils/appName';
 import { getWhitelistedParkNames } from '../../utils/parkDistanceFilter';
 
@@ -463,10 +464,7 @@ export const OnboardingFlow: React.FC<OnboardingFlowProps> = ({ onComplete, onSk
         return (
           <View style={styles.stepContent}>
             <View style={styles.logoContainer}>
-              <Image 
-                source={require('../../../assets/icon.png')} 
-                style={styles.logo} 
-              />
+              <ThemedLogo size={IS_TABLET ? 120 : 100} />
             </View>
             <Text style={styles.welcomeTitle}>{APP_NAME}</Text>
             <Text style={styles.welcomeSubtitle}>

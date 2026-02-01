@@ -17,12 +17,17 @@ export interface ToolSettings {
 }
 
 const DEFAULT_TOOLS: ToolConfig[] = [
-  // Parks category
-  { id: 'search_national_parks', name: 'Park Search', description: 'Search for US National Parks', category: 'parks', enabled: true },
+  // National Parks category
+  { id: 'search_national_parks', name: 'National Park Search', description: 'Search for US National Parks', category: 'parks', enabled: true },
   { id: 'plan_park_trip', name: 'Trip Planner', description: 'Complete park trip planning', category: 'parks', enabled: true },
   { id: 'get_park_hikes', name: 'Hiking Trails', description: 'Get hiking trail info', category: 'parks', enabled: true },
   { id: 'get_wildlife', name: 'Wildlife Info', description: 'Wildlife species in parks', category: 'parks', enabled: true },
-  { id: 'get_campgrounds', name: 'Campgrounds', description: 'Campground availability', category: 'parks', enabled: true },
+  { id: 'get_campgrounds', name: 'NPS Campgrounds', description: 'National Park campgrounds', category: 'parks', enabled: true },
+  
+  // State Parks category
+  { id: 'search_state_parks', name: 'State Park Search', description: 'Search state parks by state', category: 'parks', enabled: true },
+  { id: 'get_state_park_details', name: 'State Park Details', description: 'Get state park info', category: 'parks', enabled: true },
+  { id: 'get_state_park_campgrounds', name: 'State Park Campgrounds', description: 'State park camping info', category: 'parks', enabled: true },
   
   // Travel category
   { id: 'search_flights', name: 'Flight Search', description: 'Search for flights', category: 'travel', enabled: true },

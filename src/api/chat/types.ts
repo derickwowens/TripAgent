@@ -151,6 +151,11 @@ export const TOOL_DISPLAY_NAMES: Record<string, string> = {
   'search_campgrounds': 'Searching campgrounds...',
   'get_campgrounds': 'Finding campgrounds...',
   'get_wildlife': 'Looking up wildlife...',
+  // State Parks tools
+  'search_state_parks': 'Searching state parks...',
+  'get_state_park_details': 'Getting state park details...',
+  'get_state_park_campgrounds': 'Finding state park campgrounds...',
+  // Travel tools
   'search_flights': 'Searching flights...',
   'search_hotels': 'Finding hotels...',
   'search_restaurants': 'Finding restaurants...',

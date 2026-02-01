@@ -1,19 +1,59 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { View, Text, TouchableOpacity, Modal, StyleSheet, Dimensions, Linking, ScrollView, Image, KeyboardAvoidingView, Platform } from 'react-native';
 import Slider from '@react-native-community/slider';
 import Constants from 'expo-constants';
 import { ProfileSection } from './ProfileSection';
 import { ConversationList } from './ConversationList';
 import { ToolSettingsPanel } from './ToolSettingsPanel';
-import { SavedConversation, useDarkModeContext, ToolSettings, MaxTravelDistance } from '../../hooks';
+import { ThemedLogo } from './ThemedLogo';
+import { SavedConversation, useDarkModeContext, ToolSettings, MaxTravelDistance, useParkTheme } from '../../hooks';
 import { getWhitelistedParkNames } from '../../utils/parkDistanceFilter';
+import { fetchStateParks, StateParkSummary } from '../../services/api';
 
-// Distance slider presets (in miles) - same as ProfileSection
+// Distance slider presets (in miles) - for National Parks mode
 const DISTANCE_PRESETS = [
   50, 100, 150, 200, 250, 300, 350, 400, 450, 500,
   600, 700, 800, 900, 1000,
   1500, 2000, 2500, 3000, 4000, 5000,
 ];
+
+// State Parks distance presets (shorter range - state level, up to 500 miles)
+const STATE_DISTANCE_PRESETS = [10, 25, 50, 75, 100, 150, 200, 300, 400, 500];
+
+// State name to code mapping for API calls
+const STATE_NAME_TO_CODE: Record<string, string> = {
+  'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA',
+  'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE', 'Florida': 'FL', 'Georgia': 'GA',
+  'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA',
+  'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD',
+  'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS', 'Missouri': 'MO',
+  'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ',
+  'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH',
+  'Oklahoma': 'OK', 'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
+  'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT',
+  'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY',
+  'District of Columbia': 'DC',
+};
+
+const getStateCode = (stateName: string): string => {
+  return STATE_NAME_TO_CODE[stateName] || stateName;
+};
+
+const stateSliderValueToDistance = (value: number): number | null => {
+  if (value >= STATE_DISTANCE_PRESETS.length) return null;
+  return STATE_DISTANCE_PRESETS[Math.round(value)];
+};
+
+const stateDistanceToSliderValue = (distance: number | null): number => {
+  if (distance === null) return STATE_DISTANCE_PRESETS.length;
+  const index = STATE_DISTANCE_PRESETS.indexOf(distance);
+  return index >= 0 ? index : STATE_DISTANCE_PRESETS.length;
+};
+
+const getStateDistanceDisplayText = (distance: number | null): string => {
+  if (distance === null) return 'All';
+  return `${distance} miles`;
+};
 
 const sliderValueToDistance = (value: number): MaxTravelDistance => {
   if (value >= DISTANCE_PRESETS.length) return null;
@@ -37,12 +77,12 @@ const BUILD_SUFFIX = process.env.EXPO_PUBLIC_BUILD_SUFFIX || '';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
-const DarkModeToggle: React.FC = () => {
+const DarkModeToggle: React.FC<{ theme: any }> = ({ theme }) => {
   const { isDarkMode, toggleDarkMode } = useDarkModeContext();
   
   return (
     <TouchableOpacity 
-      style={styles.darkModeToggle} 
+      style={[styles.darkModeToggle, { backgroundColor: theme.buttonBackgroundLight }]} 
       onPress={toggleDarkMode}
       activeOpacity={0.7}
     >
@@ -50,6 +90,9 @@ const DarkModeToggle: React.FC = () => {
     </TouchableOpacity>
   );
 };
+
+// Park mode type
+export type ParkMode = 'national' | 'state';
 
 interface SideMenuProps {
   visible: boolean;
@@ -65,6 +108,9 @@ interface SideMenuProps {
   onUpdateConversation: (id: string, updates: { title?: string; description?: string }) => void;
   onToggleFavorite?: (id: string) => void;
   onResetOnboarding?: () => void;
+  // Park mode props
+  parkMode?: ParkMode;
+  onParkModeChange?: (mode: ParkMode) => void;
   // Tool settings props
   toolSettings?: ToolSettings;
   onToggleTool?: (toolId: string) => void;
@@ -77,7 +123,7 @@ interface SideMenuProps {
   maxTravelDistance?: MaxTravelDistance;
   onUpdateMaxTravelDistance?: (distance: MaxTravelDistance) => void;
   // Location for park filtering
-  userLocation?: { lat: number; lng: number } | null;
+  userLocation?: { lat: number; lng: number; state?: string } | null;
 }
 
 export const SideMenu: React.FC<SideMenuProps> = ({
@@ -94,6 +140,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   onUpdateConversation,
   onToggleFavorite,
   onResetOnboarding,
+  parkMode = 'national',
+  onParkModeChange,
   toolSettings,
   onToggleTool,
   onSetLanguageModel,
@@ -106,16 +154,38 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   userLocation,
 }) => {
   const { isDarkMode } = useDarkModeContext();
+  const { theme, isStateMode } = useParkTheme();
   const [showToolSettings, setShowToolSettings] = useState(false);
   const [parksExpanded, setParksExpanded] = useState(false);
   // Preview value for slider during drag (avoids recalculating parks on every tick)
   const [sliderPreview, setSliderPreview] = useState<MaxTravelDistance | null>(null);
+  
+  // State parks data and UI state
+  const [stateParks, setStateParks] = useState<StateParkSummary[]>([]);
+  const [stateParksLoading, setStateParksLoading] = useState(false);
+  const [stateParksExpanded, setStateParksExpanded] = useState(false);
+  const [stateParksDistance, setStateParksDistance] = useState<number | null>(50); // Default 50 miles
 
-  // Calculate whitelisted parks based on user location and max travel distance
-  // Only recalculates when actual maxTravelDistance changes (not during drag)
+  // Calculate whitelisted parks based on user location and max travel distance (National Parks mode)
   const whitelistedParks = useMemo(() => {
+    if (isStateMode) return [];
     return getWhitelistedParkNames(userLocation?.lat, userLocation?.lng, maxTravelDistance ?? null);
-  }, [userLocation?.lat, userLocation?.lng, maxTravelDistance]);
+  }, [userLocation?.lat, userLocation?.lng, maxTravelDistance, isStateMode]);
+
+  // Fetch state parks when in State Parks mode and user has a state
+  useEffect(() => {
+    if (isStateMode && userLocation?.state) {
+      const stateCode = getStateCode(userLocation.state);
+      console.log('Fetching state parks for:', userLocation.state, '-> code:', stateCode);
+      setStateParksLoading(true);
+      fetchStateParks(stateCode, 30)
+        .then(parks => {
+          console.log('Fetched state parks:', parks.length);
+          setStateParks(parks);
+        })
+        .finally(() => setStateParksLoading(false));
+    }
+  }, [isStateMode, userLocation?.state]);
   
   // Display value shows preview during drag, actual value otherwise
   const displayDistance = sliderPreview !== null ? sliderPreview : (maxTravelDistance ?? null);
@@ -147,13 +217,9 @@ export const SideMenu: React.FC<SideMenuProps> = ({
           {/* Fixed Header */}
           <View style={styles.header}>
             <View style={styles.headerLeft}>
-              <Image 
-                source={require('../../../assets/icon.png')} 
-                style={styles.logo}
-                resizeMode="contain"
-              />
+              <ThemedLogo size={36} />
               <TouchableOpacity 
-                style={styles.feedbackButton} 
+                style={[styles.feedbackButton, { backgroundColor: theme.buttonBackgroundLight, borderColor: theme.primaryMedium }]} 
                 onPress={() => Linking.openURL(`https://travel-buddy-api-production.up.railway.app/public/survey.html?version=${APP_VERSION}`)}
               >
                 <Text style={styles.feedbackText}>Feedback</Text>
@@ -161,7 +227,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               <Text style={styles.versionText}>v{APP_VERSION}{BUILD_SUFFIX}</Text>
             </View>
             <View style={styles.headerRight}>
-              <DarkModeToggle />
+              <DarkModeToggle theme={theme} />
               <TouchableOpacity onPress={onClose} style={styles.closeButtonContainer}>
                 <Text style={styles.closeButton}>✕</Text>
               </TouchableOpacity>
@@ -176,6 +242,39 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             indicatorStyle="white"
             keyboardShouldPersistTaps="handled"
           >
+            {/* Park Mode Toggle */}
+            {onParkModeChange && (
+              <View style={styles.parkModeContainer}>
+                <Text style={styles.parkModeLabel}>Park Mode</Text>
+                <View style={styles.parkModeButtons}>
+                  <TouchableOpacity
+                    style={[
+                      styles.parkModeButton,
+                      parkMode === 'national' && styles.parkModeButtonActive,
+                    ]}
+                    onPress={() => onParkModeChange('national')}
+                  >
+                    <Text style={[
+                      styles.parkModeButtonText,
+                      parkMode === 'national' && styles.parkModeButtonTextActive,
+                    ]}>National Parks</Text>
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={[
+                      styles.parkModeButton,
+                      parkMode === 'state' && styles.parkModeButtonActiveState,
+                    ]}
+                    onPress={() => onParkModeChange('state')}
+                  >
+                    <Text style={[
+                      styles.parkModeButtonText,
+                      parkMode === 'state' && styles.parkModeButtonTextActiveState,
+                    ]}>State Parks</Text>
+                  </TouchableOpacity>
+                </View>
+              </View>
+            )}
+
             <ProfileSection
               userProfile={userProfile}
               onSaveProfile={onSaveProfile}
@@ -184,12 +283,75 @@ export const SideMenu: React.FC<SideMenuProps> = ({
               onOpenToolSettings={toolSettings ? () => setShowToolSettings(true) : undefined}
             />
 
-            {/* Max Travel Distance - standalone slider below profile */}
-            {onUpdateMaxTravelDistance && (
+            {/* State Parks - show in State Parks mode based on user's state */}
+            {isStateMode && (
+              <View style={styles.distanceSection}>
+                <View style={styles.distanceHeader}>
+                  <Text style={styles.distanceLabel}>State Parks Near You</Text>
+                  <Text style={[styles.distanceValue, { color: theme.primary }]}>
+                    {stateParksLoading ? 'Loading...' : `${stateParks.length} parks`}
+                  </Text>
+                </View>
+                <Slider
+                  style={styles.distanceSlider}
+                  minimumValue={0}
+                  maximumValue={STATE_DISTANCE_PRESETS.length}
+                  step={1}
+                  value={stateDistanceToSliderValue(stateParksDistance)}
+                  onValueChange={(value) => setStateParksDistance(stateSliderValueToDistance(value))}
+                  minimumTrackTintColor={theme.sliderTrack}
+                  maximumTrackTintColor="rgba(255,255,255,0.2)"
+                  thumbTintColor={theme.sliderThumb}
+                />
+                <View style={styles.distanceLabelsRow}>
+                  <Text style={styles.distanceLabelSmall}>10 mi</Text>
+                  <Text style={styles.distanceLabelSmall}>500 mi</Text>
+                </View>
+
+                {/* State Parks List */}
+                {stateParks.length > 0 && (
+                  <>
+                    <TouchableOpacity 
+                      style={styles.parksHeader}
+                      onPress={() => setStateParksExpanded(!stateParksExpanded)}
+                    >
+                      <Text style={styles.parksHeaderText}>
+                        {stateParksExpanded ? '▼' : '▶'} {userLocation?.state || 'State'} Parks ({stateParks.length})
+                      </Text>
+                    </TouchableOpacity>
+                    {stateParksExpanded && (
+                      <View style={styles.parksContainer}>
+                        <View style={styles.parksGrid}>
+                          {stateParks.map((park: StateParkSummary, index: number) => (
+                            <View 
+                              key={park.id || index} 
+                              style={[
+                                styles.parkChip,
+                                { 
+                                  backgroundColor: theme.chipBackground,
+                                  borderColor: theme.chipBorder,
+                                }
+                              ]}
+                            >
+                              <Text style={[styles.parkChipText, { color: theme.chipText }]}>
+                                {park.name}
+                              </Text>
+                            </View>
+                          ))}
+                        </View>
+                      </View>
+                    )}
+                  </>
+                )}
+              </View>
+            )}
+
+            {/* Max Travel Distance - only show in National Parks mode */}
+            {onUpdateMaxTravelDistance && !isStateMode && (
               <View style={styles.distanceSection}>
                 <View style={styles.distanceHeader}>
                   <Text style={styles.distanceLabel}>Max Travel Distance</Text>
-                  <Text style={styles.distanceValue}>{getDistanceDisplayText(displayDistance)}</Text>
+                  <Text style={[styles.distanceValue, { color: theme.primary }]}>{getDistanceDisplayText(displayDistance)}</Text>
                 </View>
                 <Slider
                   style={styles.distanceSlider}
@@ -202,9 +364,9 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                     setSliderPreview(null);
                     onUpdateMaxTravelDistance(sliderValueToDistance(value));
                   }}
-                  minimumTrackTintColor="#22C55E"
+                  minimumTrackTintColor={theme.sliderTrack}
                   maximumTrackTintColor="rgba(255,255,255,0.2)"
-                  thumbTintColor="#22C55E"
+                  thumbTintColor={theme.sliderThumb}
                 />
                 <View style={styles.distanceLabelsRow}>
                   <Text style={styles.distanceLabelSmall}>50 mi</Text>
@@ -227,8 +389,17 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                         {whitelistedParks.length > 0 ? (
                           <View style={styles.parksGrid}>
                             {whitelistedParks.map((park, index) => (
-                              <View key={index} style={styles.parkChip}>
-                                <Text style={styles.parkChipText}>{park}</Text>
+                              <View 
+                                key={index} 
+                                style={[
+                                  styles.parkChip,
+                                  { 
+                                    backgroundColor: theme.chipBackground,
+                                    borderColor: theme.chipBorder,
+                                  }
+                                ]}
+                              >
+                                <Text style={[styles.parkChipText, { color: theme.chipText }]}>{park}</Text>
                               </View>
                             ))}
                           </View>
@@ -247,12 +418,11 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             {/* Separator */}
             <View style={styles.sectionSeparator} />
 
-            <TouchableOpacity style={styles.newChatButton} onPress={handleNewConversation}>
-              <Image 
-                source={require('../../../assets/icon.png')} 
-                style={styles.newChatIcon}
-                resizeMode="contain"
-              />
+            <TouchableOpacity 
+              style={[styles.newChatButton, { backgroundColor: theme.buttonBackground }]} 
+              onPress={handleNewConversation}
+            >
+              <ThemedLogo size={20} />
               <Text style={styles.newChatText}>New Trip</Text>
             </TouchableOpacity>
 
@@ -473,5 +643,50 @@ const styles = StyleSheet.create({
     fontSize: 11,
     textAlign: 'center',
     fontStyle: 'italic',
+  },
+  parkModeContainer: {
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    borderBottomWidth: 1,
+    borderBottomColor: 'rgba(255,255,255,0.1)',
+  },
+  parkModeLabel: {
+    color: 'rgba(255,255,255,0.6)',
+    fontSize: 12,
+    fontWeight: '500',
+    marginBottom: 8,
+  },
+  parkModeButtons: {
+    flexDirection: 'row',
+    gap: 8,
+  },
+  parkModeButton: {
+    flex: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 12,
+    borderRadius: 10,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.2)',
+    backgroundColor: 'rgba(255,255,255,0.05)',
+    alignItems: 'center',
+  },
+  parkModeButtonActive: {
+    borderColor: '#22C55E',
+    backgroundColor: 'rgba(34, 197, 94, 0.15)',
+  },
+  parkModeButtonActiveState: {
+    borderColor: '#8B5A2B',
+    backgroundColor: 'rgba(139, 90, 43, 0.2)',
+  },
+  parkModeButtonText: {
+    color: 'rgba(255,255,255,0.7)',
+    fontSize: 13,
+    fontWeight: '500',
+  },
+  parkModeButtonTextActive: {
+    color: '#22C55E',
+  },
+  parkModeButtonTextActiveState: {
+    color: '#CD853F',
   },
 });
