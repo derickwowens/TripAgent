@@ -8,7 +8,7 @@ import {
   ScrollView,
   Dimensions,
 } from 'react-native';
-import { ToolSettings, ToolConfig } from '../../hooks/useToolSettings';
+import { ToolSettings, ToolConfig, ParkMode, isToolAvailableInMode, isToolLockedInMode } from '../../hooks/useToolSettings';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -22,14 +22,15 @@ interface ToolSettingsPanelProps {
   onDisableAll: () => void;
   enabledCount: number;
   totalCount: number;
+  parkMode?: ParkMode;
 }
 
 const CATEGORY_LABELS: Record<ToolConfig['category'], string> = {
-  parks: '🏞️ National Parks',
-  travel: '✈️ Transportation',
-  lodging: '🏨 Lodging',
-  food: '🍽️ Dining',
-  activities: '🎯 Activities',
+  parks: 'Park Capabilities',
+  travel: 'Transportation',
+  lodging: 'Lodging',
+  food: 'Dining',
+  activities: 'Activities',
 };
 
 const CATEGORY_ORDER: ToolConfig['category'][] = ['parks', 'travel', 'lodging', 'food', 'activities'];
@@ -44,6 +45,7 @@ export const ToolSettingsPanel: React.FC<ToolSettingsPanelProps> = ({
   onDisableAll,
   enabledCount,
   totalCount,
+  parkMode = 'national',
 }) => {
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(['parks']));
 
@@ -71,7 +73,7 @@ export const ToolSettingsPanel: React.FC<ToolSettingsPanelProps> = ({
       {/* Header */}
       <View style={styles.header}>
         <View style={styles.headerLeft}>
-          <Text style={styles.headerIcon}>🔧</Text>
+          <Text style={styles.headerIcon}>Settings</Text>
           <Text style={styles.headerTitle}>Tool Settings</Text>
         </View>
         <TouchableOpacity onPress={onClose} style={styles.closeButton}>
@@ -82,7 +84,7 @@ export const ToolSettingsPanel: React.FC<ToolSettingsPanelProps> = ({
       <ScrollView style={styles.scrollContent} showsVerticalScrollIndicator={true}>
         {/* Info Banner */}
         <View style={styles.infoBanner}>
-          <Text style={styles.infoIcon}>ℹ️</Text>
+          <Text style={styles.infoIcon}>[i]</Text>
           <Text style={styles.infoText}>
             More tools = more comprehensive responses, but longer wait times. Disable tools you don't need to speed up responses.
           </Text>
@@ -90,7 +92,7 @@ export const ToolSettingsPanel: React.FC<ToolSettingsPanelProps> = ({
 
         {/* Language Model Selection */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>🤖 Language Model</Text>
+          <Text style={styles.sectionTitle}>Language Model</Text>
           <View style={styles.modelOptions}>
             <TouchableOpacity
               style={[
@@ -162,21 +164,36 @@ export const ToolSettingsPanel: React.FC<ToolSettingsPanelProps> = ({
 
               {isExpanded && (
                 <View style={styles.toolList}>
-                  {tools.map(tool => (
-                    <View key={tool.id} style={styles.toolItem}>
-                      <View style={styles.toolInfo}>
-                        <Text style={styles.toolName}>{tool.name}</Text>
-                        <Text style={styles.toolDescription}>{tool.description}</Text>
+                  {tools.map(tool => {
+                    const isLocked = isToolLockedInMode(tool, parkMode);
+                    const isAvailable = isToolAvailableInMode(tool, parkMode);
+                    
+                    return (
+                      <View key={tool.id} style={[styles.toolItem, isLocked && styles.toolItemLocked]}>
+                        <View style={styles.toolInfo}>
+                          <Text style={[styles.toolName, isLocked && styles.toolNameLocked]}>
+                            {tool.name}
+                            {isLocked && (
+                              <Text style={styles.lockedBadge}>
+                                {' '}({tool.parkMode === 'national' ? 'National' : 'State'} only)
+                              </Text>
+                            )}
+                          </Text>
+                          <Text style={[styles.toolDescription, isLocked && styles.toolDescriptionLocked]}>
+                            {tool.description}
+                          </Text>
+                        </View>
+                        <Switch
+                          value={isAvailable && tool.enabled}
+                          onValueChange={() => { if (!isLocked) onToggleTool(tool.id); }}
+                          disabled={isLocked}
+                          trackColor={{ false: '#3e3e3e', true: isLocked ? '#3e3e3e' : 'rgba(22, 101, 52, 0.6)' }}
+                          thumbColor={isLocked ? '#666' : (tool.enabled ? '#22c55e' : '#9ca3af')}
+                          ios_backgroundColor="#3e3e3e"
+                        />
                       </View>
-                      <Switch
-                        value={tool.enabled}
-                        onValueChange={() => onToggleTool(tool.id)}
-                        trackColor={{ false: '#3e3e3e', true: 'rgba(22, 101, 52, 0.6)' }}
-                        thumbColor={tool.enabled ? '#22c55e' : '#9ca3af'}
-                        ios_backgroundColor="#3e3e3e"
-                      />
-                    </View>
-                  ))}
+                    );
+                  })}
                 </View>
               )}
             </View>
@@ -366,6 +383,21 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.4)',
     fontSize: 12,
     marginTop: 2,
+  },
+  toolItemLocked: {
+    opacity: 0.5,
+  },
+  toolNameLocked: {
+    color: 'rgba(255,255,255,0.5)',
+  },
+  toolDescriptionLocked: {
+    color: 'rgba(255,255,255,0.25)',
+  },
+  lockedBadge: {
+    fontSize: 11,
+    color: 'rgba(255,255,255,0.4)',
+    fontWeight: '400',
+    fontStyle: 'italic',
   },
   bottomPadding: {
     height: 40,

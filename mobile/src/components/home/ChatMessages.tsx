@@ -1,12 +1,13 @@
 import React from 'react';
 import { View, Text, ActivityIndicator, StyleSheet, Linking, TouchableOpacity } from 'react-native';
-import { Message, useDarkModeContext } from '../../hooks';
+import { Message, useDarkModeContext, useParkTheme } from '../../hooks';
 
 interface ChatMessagesProps {
   messages: Message[];
   isLoading: boolean;
   loadingStatus: string;
   onRetry?: (lastUserMessage: string) => void;
+  parkMode?: 'national' | 'state';
 }
 
 // Dark mode colors for softer appearance
@@ -229,8 +230,10 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
   isLoading, 
   loadingStatus,
   onRetry,
+  parkMode = 'national',
 }) => {
   const { isDarkMode } = useDarkModeContext();
+  const { theme } = useParkTheme();
   
   return (
     <>
@@ -239,9 +242,9 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           key={message.id}
           style={[
             styles.bubble,
-            message.type === 'user' ? styles.userBubble : styles.assistantBubble,
-            message.type === 'user' && isDarkMode && styles.userBubbleDark,
-            message.type === 'assistant' && isDarkMode && styles.assistantBubbleDark,
+            message.type === 'user' ? styles.userBubble : [styles.assistantBubble, { backgroundColor: theme.buttonBackground }],
+            message.type === 'user' && isDarkMode && [styles.userBubbleDark, { backgroundColor: theme.buttonBackgroundLight }],
+            message.type === 'assistant' && isDarkMode && { backgroundColor: theme.primaryDark },
             message.isError && styles.errorBubble,
           ]}
         >
@@ -255,7 +258,7 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
               style={styles.retryButton}
               onPress={() => onRetry(message.lastUserMessage!)}
             >
-              <Text style={styles.retryText}>🔄 Tap to retry</Text>
+              <Text style={styles.retryText}>Tap to retry</Text>
             </TouchableOpacity>
           )}
         </View>
@@ -266,7 +269,8 @@ export const ChatMessages: React.FC<ChatMessagesProps> = ({
           styles.bubble, 
           styles.assistantBubble, 
           styles.loadingBubble,
-          isDarkMode && styles.assistantBubbleDark,
+          { backgroundColor: theme.buttonBackground },
+          isDarkMode && { backgroundColor: theme.primaryDark },
         ]}>
           <ActivityIndicator size="small" color="#FFFFFF" style={styles.spinner} />
           <Text style={styles.loadingText}>{loadingStatus || 'Thinking...'}</Text>

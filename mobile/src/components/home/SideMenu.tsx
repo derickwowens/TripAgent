@@ -55,6 +55,22 @@ const getStateDistanceDisplayText = (distance: number | null): string => {
   return `${distance} miles`;
 };
 
+// Calculate distance between two coordinates using Haversine formula (returns miles)
+const calculateDistance = (
+  lat1: number, lon1: number,
+  lat2: number, lon2: number
+): number => {
+  const R = 3959; // Earth's radius in miles
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = 
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return R * c;
+};
+
 const sliderValueToDistance = (value: number): MaxTravelDistance => {
   if (value >= DISTANCE_PRESETS.length) return null;
   return DISTANCE_PRESETS[Math.round(value)];
@@ -178,14 +194,44 @@ export const SideMenu: React.FC<SideMenuProps> = ({
       const stateCode = getStateCode(userLocation.state);
       console.log('Fetching state parks for:', userLocation.state, '-> code:', stateCode);
       setStateParksLoading(true);
-      fetchStateParks(stateCode, 30)
+      fetchStateParks(stateCode, 100) // Fetch more to allow distance filtering
         .then(parks => {
-          console.log('Fetched state parks:', parks.length);
-          setStateParks(parks);
+          // Filter duplicates by name
+          const seen = new Set<string>();
+          const uniqueParks = parks.filter(park => {
+            const normalizedName = park.name.toLowerCase().trim();
+            if (seen.has(normalizedName)) return false;
+            seen.add(normalizedName);
+            return true;
+          });
+          console.log('Fetched state parks:', parks.length, '-> unique:', uniqueParks.length);
+          setStateParks(uniqueParks);
         })
         .finally(() => setStateParksLoading(false));
     }
   }, [isStateMode, userLocation?.state]);
+
+  // Filter state parks by distance from user's location
+  const filteredStateParks = useMemo(() => {
+    if (!userLocation?.lat || !userLocation?.lng || stateParksDistance === null) {
+      return stateParks; // No filtering if no location or "All" selected
+    }
+    
+    return stateParks
+      .map(park => ({
+        ...park,
+        distance: park.coordinates?.latitude && park.coordinates?.longitude
+          ? calculateDistance(
+              userLocation.lat!,
+              userLocation.lng!,
+              park.coordinates.latitude,
+              park.coordinates.longitude
+            )
+          : Infinity,
+      }))
+      .filter(park => park.distance <= stateParksDistance)
+      .sort((a, b) => a.distance - b.distance);
+  }, [stateParks, userLocation?.lat, userLocation?.lng, stateParksDistance]);
   
   // Display value shows preview during drag, actual value otherwise
   const displayDistance = sliderPreview !== null ? sliderPreview : (maxTravelDistance ?? null);
@@ -269,7 +315,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                     <Text style={[
                       styles.parkModeButtonText,
                       parkMode === 'state' && styles.parkModeButtonTextActiveState,
-                    ]}>State Parks</Text>
+                    ]}>State Parks (Alpha)</Text>
                   </TouchableOpacity>
                 </View>
               </View>
@@ -289,7 +335,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                 <View style={styles.distanceHeader}>
                   <Text style={styles.distanceLabel}>State Parks Near You</Text>
                   <Text style={[styles.distanceValue, { color: theme.primary }]}>
-                    {stateParksLoading ? 'Loading...' : `${stateParks.length} parks`}
+                    {stateParksLoading ? 'Loading...' : `${filteredStateParks.length} parks`}
                   </Text>
                 </View>
                 <Slider
@@ -304,25 +350,27 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                   thumbTintColor={theme.sliderThumb}
                 />
                 <View style={styles.distanceLabelsRow}>
-                  <Text style={styles.distanceLabelSmall}>10 mi</Text>
-                  <Text style={styles.distanceLabelSmall}>500 mi</Text>
+                  <Text style={[styles.distanceLabelSmall, { color: theme.primary }]}>
+                    {getDistanceDisplayText(stateParksDistance)}
+                  </Text>
+                  <Text style={styles.distanceLabelSmall}>Unlimited</Text>
                 </View>
 
                 {/* State Parks List */}
-                {stateParks.length > 0 && (
+                {filteredStateParks.length > 0 && (
                   <>
                     <TouchableOpacity 
                       style={styles.parksHeader}
                       onPress={() => setStateParksExpanded(!stateParksExpanded)}
                     >
                       <Text style={styles.parksHeaderText}>
-                        {stateParksExpanded ? '▼' : '▶'} {userLocation?.state || 'State'} Parks ({stateParks.length})
+                        {stateParksExpanded ? '▼' : '▶'} {userLocation?.state || 'State'} Parks ({filteredStateParks.length})
                       </Text>
                     </TouchableOpacity>
                     {stateParksExpanded && (
                       <View style={styles.parksContainer}>
                         <View style={styles.parksGrid}>
-                          {stateParks.map((park: StateParkSummary, index: number) => (
+                          {filteredStateParks.map((park, index: number) => (
                             <View 
                               key={park.id || index} 
                               style={[
@@ -459,6 +507,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
           onDisableAll={onDisableAllTools}
           enabledCount={enabledToolCount}
           totalCount={totalToolCount}
+          parkMode={parkMode}
         />
       )}
     </Modal>

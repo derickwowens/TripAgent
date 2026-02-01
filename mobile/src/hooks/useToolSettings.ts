@@ -9,6 +9,8 @@ export interface ToolConfig {
   description: string;
   category: 'parks' | 'travel' | 'lodging' | 'food' | 'activities';
   enabled: boolean;
+  // Which park mode this tool is for (undefined = both modes)
+  parkMode?: 'national' | 'state';
 }
 
 export interface ToolSettings {
@@ -17,32 +19,33 @@ export interface ToolSettings {
 }
 
 const DEFAULT_TOOLS: ToolConfig[] = [
-  // National Parks category
-  { id: 'search_national_parks', name: 'National Park Search', description: 'Search for US National Parks', category: 'parks', enabled: true },
-  { id: 'plan_park_trip', name: 'Trip Planner', description: 'Complete park trip planning', category: 'parks', enabled: true },
-  { id: 'get_park_hikes', name: 'Hiking Trails', description: 'Get hiking trail info', category: 'parks', enabled: true },
-  { id: 'get_wildlife', name: 'Wildlife Info', description: 'Wildlife species in parks', category: 'parks', enabled: true },
-  { id: 'get_campgrounds', name: 'NPS Campgrounds', description: 'National Park campgrounds', category: 'parks', enabled: true },
+  // National Parks tools (only available in National Parks mode)
+  { id: 'search_national_parks', name: 'National Park Search', description: 'Search for US National Parks', category: 'parks', enabled: true, parkMode: 'national' },
+  { id: 'plan_park_trip', name: 'Trip Planner', description: 'Complete park trip planning', category: 'parks', enabled: true, parkMode: 'national' },
+  { id: 'get_park_hikes', name: 'Hiking Trails', description: 'Get hiking trail info', category: 'parks', enabled: true, parkMode: 'national' },
+  { id: 'get_wildlife', name: 'Wildlife Info', description: 'Wildlife species in parks (iNaturalist)', category: 'parks', enabled: true },
+  { id: 'get_campgrounds', name: 'NPS Campgrounds', description: 'National Park campgrounds', category: 'parks', enabled: true, parkMode: 'national' },
   
-  // State Parks category
-  { id: 'search_state_parks', name: 'State Park Search', description: 'Search state parks by state', category: 'parks', enabled: true },
-  { id: 'get_state_park_details', name: 'State Park Details', description: 'Get state park info', category: 'parks', enabled: true },
-  { id: 'get_state_park_campgrounds', name: 'State Park Campgrounds', description: 'State park camping info', category: 'parks', enabled: true },
+  // State Parks tools (only available in State Parks mode)
+  { id: 'search_state_parks', name: 'State Park Search', description: 'Search state parks by state', category: 'parks', enabled: true, parkMode: 'state' },
+  { id: 'get_state_park_details', name: 'State Park Details', description: 'Get state park info', category: 'parks', enabled: true, parkMode: 'state' },
+  { id: 'get_state_park_campgrounds', name: 'State Park Campgrounds', description: 'State park camping info', category: 'parks', enabled: true, parkMode: 'state' },
+  { id: 'get_state_park_hikes', name: 'State Park Hikes', description: 'Hiking trails via AllTrails', category: 'parks', enabled: true, parkMode: 'state' },
   
-  // Travel category
+  // Travel category (available in both modes)
   { id: 'search_flights', name: 'Flight Search', description: 'Search for flights', category: 'travel', enabled: true },
   { id: 'search_car_rentals', name: 'Car Rentals', description: 'Search rental cars', category: 'travel', enabled: true },
   { id: 'get_driving_distance', name: 'Driving Distance', description: 'Calculate drive times', category: 'travel', enabled: true },
   { id: 'search_ev_charging_stations', name: 'EV Charging', description: 'Find charging stations', category: 'travel', enabled: true },
   
-  // Lodging category
+  // Lodging category (available in both modes)
   { id: 'search_hotels', name: 'Hotel Search', description: 'Search for hotels', category: 'lodging', enabled: true },
   
-  // Food category
+  // Food category (available in both modes)
   { id: 'search_restaurants', name: 'Restaurant Search', description: 'Find restaurants nearby', category: 'food', enabled: true },
   { id: 'get_reservation_link', name: 'Reservations', description: 'Restaurant reservation links', category: 'food', enabled: true },
   
-  // Activities category
+  // Activities category (available in both modes)
   { id: 'search_activities', name: 'Activities & Tours', description: 'Tours and experiences', category: 'activities', enabled: true },
 ];
 
@@ -51,7 +54,24 @@ const DEFAULT_SETTINGS: ToolSettings = {
   tools: DEFAULT_TOOLS,
 };
 
-export const useToolSettings = () => {
+export type ParkMode = 'national' | 'state';
+
+// Helper to check if a tool is available in the current park mode
+export const isToolAvailableInMode = (tool: ToolConfig, currentMode: ParkMode): boolean => {
+  // Tools without parkMode are available in both modes
+  if (!tool.parkMode) return true;
+  // Tool's parkMode must match current mode
+  return tool.parkMode === currentMode;
+};
+
+// Helper to check if a tool is locked (cannot be toggled) in current mode
+export const isToolLockedInMode = (tool: ToolConfig, currentMode: ParkMode): boolean => {
+  // Tools with a parkMode that doesn't match current mode are locked
+  if (tool.parkMode && tool.parkMode !== currentMode) return true;
+  return false;
+};
+
+export const useToolSettings = (parkMode: ParkMode = 'national') => {
   const [settings, setSettings] = useState<ToolSettings>(DEFAULT_SETTINGS);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -133,12 +153,27 @@ export const useToolSettings = () => {
     });
   }, []);
 
+  // Get enabled tool IDs, filtered by current park mode
   const getEnabledToolIds = useCallback(() => {
-    return settings.tools.filter(t => t.enabled).map(t => t.id);
-  }, [settings.tools]);
+    return settings.tools
+      .filter(t => t.enabled && isToolAvailableInMode(t, parkMode))
+      .map(t => t.id);
+  }, [settings.tools, parkMode]);
 
-  const enabledToolCount = settings.tools.filter(t => t.enabled).length;
-  const totalToolCount = settings.tools.length;
+  // Get tools filtered by current park mode (for display in settings)
+  const getToolsForCurrentMode = useCallback(() => {
+    return settings.tools.map(tool => ({
+      ...tool,
+      // Tool is locked if it belongs to the other park mode
+      isLocked: isToolLockedInMode(tool, parkMode),
+      // Tool is effectively disabled if locked or user disabled it
+      effectiveEnabled: isToolAvailableInMode(tool, parkMode) && tool.enabled,
+    }));
+  }, [settings.tools, parkMode]);
+
+  // Count only tools available in current mode
+  const enabledToolCount = settings.tools.filter(t => t.enabled && isToolAvailableInMode(t, parkMode)).length;
+  const totalToolCount = settings.tools.filter(t => isToolAvailableInMode(t, parkMode)).length;
 
   return {
     settings,
@@ -148,7 +183,9 @@ export const useToolSettings = () => {
     enableAllTools,
     disableAllTools,
     getEnabledToolIds,
+    getToolsForCurrentMode,
     enabledToolCount,
     totalToolCount,
+    parkMode,
   };
 };

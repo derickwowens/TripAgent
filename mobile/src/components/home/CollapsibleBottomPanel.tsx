@@ -6,6 +6,7 @@ import {
   PanResponder,
   Dimensions,
 } from 'react-native';
+import { useParkTheme } from '../../hooks';
 
 const SCREEN_HEIGHT = Dimensions.get('window').height;
 const MIN_HEIGHT = 70;
@@ -21,6 +22,7 @@ export const CollapsibleBottomPanel: React.FC<CollapsibleBottomPanelProps> = ({
   children,
   hasPhotos,
 }) => {
+  const { theme } = useParkTheme();
   const animatedHeight = useRef(new Animated.Value(0)).current;
   const currentHeightRef = useRef(DEFAULT_HEIGHT);
 
@@ -58,7 +60,7 @@ export const CollapsibleBottomPanel: React.FC<CollapsibleBottomPanelProps> = ({
 
   return (
     <Animated.View style={[styles.container, { height: animatedHeight }]}>
-      <View style={styles.handle} {...panResponder.panHandlers}>
+      <View style={[styles.handle, { backgroundColor: theme.buttonBackground }]} {...panResponder.panHandlers}>
         <View style={styles.handleBar} />
       </View>
       

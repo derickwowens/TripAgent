@@ -13,7 +13,7 @@ import {
   Image,
   TextInput,
 } from 'react-native';
-import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer } from '../services/api';
+import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer, fetchStateParks, StateParkSummary } from '../services/api';
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo } from '../components/home';
 import type { ParkMode as ParkModeType } from '../hooks';
@@ -60,6 +60,20 @@ const HomeScreen: React.FC = () => {
   const [parkMode, setParkMode] = useState<ParkMode>('national');
   const scrollViewRef = useRef<ScrollView>(null);
   
+  // State parks near user for Quick Start prefills in state park mode
+  const [nearbyStateParks, setNearbyStateParks] = useState<StateParkSummary[]>([]);
+  
+  // Handle park mode change - close current conversation and show welcome screen
+  const handleParkModeChange = (newMode: ParkMode) => {
+    if (newMode !== parkMode) {
+      setParkMode(newMode);
+      // Clear current conversation to show welcome/new trip screen
+      startNewConversation();
+      // Close the side menu
+      setMenuOpen(false);
+    }
+  };
+  
   // Per-conversation loading state (allows multiple conversations to load simultaneously)
   const [conversationLoadingState, setConversationLoadingState] = useState<Map<string | null, { loading: boolean; status: string }>>(new Map());
   
@@ -82,7 +96,7 @@ const HomeScreen: React.FC = () => {
     addMessage,
     addMessagesToConversation,
     ensureConversationId,
-  } = useConversations(userLocation?.nearestAirport, parkMode);
+  } = useConversations(userLocation?.nearestAirport, parkMode, userLocation?.state);
   
   // Derived loading state for current conversation
   const currentLoadingState = conversationLoadingState.get(currentConversationId) || { loading: false, status: '' };
@@ -116,6 +130,9 @@ const HomeScreen: React.FC = () => {
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { hasCompletedOnboarding, isLoading: onboardingLoading, completeOnboarding, resetOnboarding } = useOnboarding();
   
+  // Get theme colors based on current park mode
+  const parkTheme = getThemeForMode(parkMode);
+  
   // Tool settings for enabling/disabling API tools and language model selection
   const {
     settings: toolSettings,
@@ -125,7 +142,8 @@ const HomeScreen: React.FC = () => {
     disableAllTools,
     enabledToolCount,
     totalToolCount,
-  } = useToolSettings();
+    getToolsForCurrentMode,
+  } = useToolSettings(parkMode);
   
   // Trip context cache - persists structured trip data locally
   const {
@@ -136,6 +154,49 @@ const HomeScreen: React.FC = () => {
     updateTravelDetails,
     getContextForApi,
   } = useTripContext(currentConversationId);
+
+  // Fetch nearby state parks when in state mode for Quick Start prefills
+  useEffect(() => {
+    const loadNearbyStateParks = async () => {
+      if (parkMode === 'state' && userLocation?.state) {
+        try {
+          // Fetch state parks for the user's state
+          const parks = await fetchStateParks(userLocation.state);
+          // Filter by distance if maxTravelDistance is set and parks have coordinates
+          let filteredParks = parks;
+          if (maxTravelDistance && userLocation.lat && userLocation.lng) {
+            filteredParks = parks.filter(park => {
+              if (!park.coordinates) return true; // Keep parks without coordinates
+              const distance = calculateDistance(
+                userLocation.lat!,
+                userLocation.lng!,
+                park.coordinates.latitude,
+                park.coordinates.longitude
+              );
+              return distance <= maxTravelDistance;
+            });
+          }
+          setNearbyStateParks(filteredParks.slice(0, 20)); // Limit to 20 parks
+        } catch (error) {
+          console.error('Failed to fetch nearby state parks:', error);
+          setNearbyStateParks([]);
+        }
+      }
+    };
+    loadNearbyStateParks();
+  }, [parkMode, userLocation?.state, maxTravelDistance]);
+
+  // Haversine distance calculation for state park filtering
+  const calculateDistance = (lat1: number, lng1: number, lat2: number, lng2: number): number => {
+    const R = 3959; // Earth's radius in miles
+    const dLat = (lat2 - lat1) * Math.PI / 180;
+    const dLng = (lng2 - lng1) * Math.PI / 180;
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+      Math.sin(dLng / 2) * Math.sin(dLng / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c;
+  };
 
   // Handle onboarding completion
   const handleOnboardingComplete = async (profile: string, firstPrompt?: string, onboardingMaxDistance?: number | null) => {
@@ -654,7 +715,7 @@ const HomeScreen: React.FC = () => {
           )}
           {messages.length > 0 ? (
             <TouchableOpacity 
-              style={styles.shareButton} 
+              style={[styles.shareButton, { backgroundColor: parkTheme.buttonBackground }]} 
               onPress={() => {
                 const currentConv = savedConversations.find(c => c.id === currentConversationId);
                 if (currentConv) {
@@ -740,6 +801,7 @@ const HomeScreen: React.FC = () => {
                 onSetPrompt={setInputText}
                 blacklistedParkCodes={blacklistedParkCodes}
                 parkMode={parkMode}
+                nearbyStateParks={nearbyStateParks}
               />
             )}
             
@@ -885,7 +947,7 @@ const HomeScreen: React.FC = () => {
           onUpdateMaxTravelDistance={updateMaxTravelDistance}
           userLocation={userLocation ? { lat: userLocation.lat!, lng: userLocation.lng!, state: userLocation.state } : null}
           parkMode={parkMode}
-          onParkModeChange={setParkMode}
+          onParkModeChange={handleParkModeChange}
         />
         </View>
       </ImageBackground>

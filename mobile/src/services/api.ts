@@ -328,6 +328,10 @@ export interface StateParkSummary {
   acres: number;
   acresFormatted: string;
   publicAccess: 'Open' | 'Restricted' | 'Closed' | 'Unknown';
+  coordinates: {
+    latitude: number;
+    longitude: number;
+  };
 }
 
 export const fetchStateParks = async (stateCode: string, limit: number = 20): Promise<StateParkSummary[]> => {

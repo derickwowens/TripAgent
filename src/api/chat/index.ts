@@ -553,15 +553,19 @@ async function handleToolCall(
     // STATE PARKS TOOLS
     // ============================================
     case 'search_state_parks':
-      result = await handleSearchStateParks(toolUse.input as any, collectedPhotos);
+      result = await handleSearchStateParks(toolUse.input as any, collectedPhotos, facade);
       break;
 
     case 'get_state_park_details':
-      result = await handleGetStateParkDetails(toolUse.input as any, collectedPhotos);
+      result = await handleGetStateParkDetails(toolUse.input as any, collectedPhotos, facade);
       break;
 
     case 'get_state_park_campgrounds':
       result = await handleGetStateParkCampgrounds(toolUse.input as any, collectedPhotos);
+      break;
+
+    case 'get_state_park_hikes':
+      result = handleGetStateParkHikes(toolUse.input as any);
       break;
 
     default:
@@ -1811,7 +1815,8 @@ async function handleGetCampgrounds(
 
 async function handleSearchStateParks(
   input: { state: string; query?: string },
-  collectedPhotos: PhotoReference[]
+  collectedPhotos: PhotoReference[],
+  facade?: TravelFacade
 ): Promise<any> {
   console.log(`[State Parks] Searching parks in ${input.state}${input.query ? ` with query "${input.query}"` : ''}`);
   
@@ -1824,6 +1829,29 @@ async function handleSearchStateParks(
 
     if (results.error) {
       return { error: results.error };
+    }
+
+    // Fetch photos from iNaturalist for the first few parks
+    if (facade && results.parks.length > 0) {
+      const parksToPhoto = results.parks.slice(0, 3);
+      for (const park of parksToPhoto) {
+        try {
+          const observations = await facade.searchWildlifeObservations(park.name, 3);
+          observations.forEach(obs => {
+            if (obs.photoUrl) {
+              collectedPhotos.push({
+                keyword: obs.commonName || park.name,
+                url: obs.photoUrl,
+                caption: `${obs.commonName} at ${park.name} (iNaturalist)`,
+                source: 'other',
+              });
+            }
+          });
+        } catch (photoError) {
+          // Continue without photos for this park
+        }
+      }
+      console.log(`[State Parks] Added ${collectedPhotos.length} iNaturalist photos for state parks search`);
     }
 
     return {
@@ -1848,7 +1876,8 @@ async function handleSearchStateParks(
 
 async function handleGetStateParkDetails(
   input: { park_name: string; state: string },
-  collectedPhotos: PhotoReference[]
+  collectedPhotos: PhotoReference[],
+  facade?: TravelFacade
 ): Promise<any> {
   console.log(`[State Parks] Getting details for "${input.park_name}" in ${input.state}`);
   
@@ -1859,6 +1888,26 @@ async function handleGetStateParkDetails(
       return { 
         error: `Park "${input.park_name}" not found in ${input.state}. Try searching with search_state_parks first.` 
       };
+    }
+
+    // Fetch photos from iNaturalist for the state park
+    if (facade) {
+      try {
+        const observations = await facade.searchWildlifeObservations(input.park_name, 8);
+        observations.forEach(obs => {
+          if (obs.photoUrl) {
+            collectedPhotos.push({
+              keyword: obs.commonName || input.park_name,
+              url: obs.photoUrl,
+              caption: `${obs.commonName} at ${input.park_name} (iNaturalist)`,
+              source: 'other',
+            });
+          }
+        });
+        console.log(`[State Parks] Added ${observations.filter(o => o.photoUrl).length} iNaturalist photos for ${input.park_name}`);
+      } catch (photoError) {
+        console.log('[State Parks] Could not fetch iNaturalist photos:', photoError);
+      }
     }
 
     // Add campground photos to gallery
@@ -1956,4 +2005,70 @@ async function handleGetStateParkCampgrounds(
     console.error('State park campgrounds error:', error.message);
     return { error: `Failed to get campgrounds: ${error.message}` };
   }
+}
+
+// State name lookup for full names
+const STATE_NAMES: Record<string, string> = {
+  'AL': 'Alabama', 'AK': 'Alaska', 'AZ': 'Arizona', 'AR': 'Arkansas', 'CA': 'California',
+  'CO': 'Colorado', 'CT': 'Connecticut', 'DE': 'Delaware', 'FL': 'Florida', 'GA': 'Georgia',
+  'HI': 'Hawaii', 'ID': 'Idaho', 'IL': 'Illinois', 'IN': 'Indiana', 'IA': 'Iowa',
+  'KS': 'Kansas', 'KY': 'Kentucky', 'LA': 'Louisiana', 'ME': 'Maine', 'MD': 'Maryland',
+  'MA': 'Massachusetts', 'MI': 'Michigan', 'MN': 'Minnesota', 'MS': 'Mississippi', 'MO': 'Missouri',
+  'MT': 'Montana', 'NE': 'Nebraska', 'NV': 'Nevada', 'NH': 'New Hampshire', 'NJ': 'New Jersey',
+  'NM': 'New Mexico', 'NY': 'New York', 'NC': 'North Carolina', 'ND': 'North Dakota', 'OH': 'Ohio',
+  'OK': 'Oklahoma', 'OR': 'Oregon', 'PA': 'Pennsylvania', 'RI': 'Rhode Island', 'SC': 'South Carolina',
+  'SD': 'South Dakota', 'TN': 'Tennessee', 'TX': 'Texas', 'UT': 'Utah', 'VT': 'Vermont',
+  'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming',
+};
+
+function handleGetStateParkHikes(
+  input: { park_name: string; state: string }
+): any {
+  console.log(`[State Parks] Getting hikes for "${input.park_name}" in ${input.state}`);
+  
+  const stateCode = input.state.toUpperCase();
+  const stateName = STATE_NAMES[stateCode] || input.state;
+  const parkName = input.park_name;
+  
+  // Generate AllTrails search URL for the park
+  const allTrailsSearchQuery = encodeURIComponent(`${parkName} ${stateName}`);
+  const allTrailsUrl = `https://www.alltrails.com/search?q=${allTrailsSearchQuery}`;
+  
+  // Generate Google Maps hiking search as backup
+  const googleMapsQuery = encodeURIComponent(`${parkName} hiking trails`);
+  const googleMapsUrl = `https://www.google.com/maps/search/${googleMapsQuery}`;
+  
+  return {
+    parkName: parkName,
+    state: stateCode,
+    stateName: stateName,
+    trailResources: [
+      {
+        name: 'AllTrails',
+        description: 'Browse hiking trails with reviews, photos, difficulty ratings, and trail maps',
+        url: allTrailsUrl,
+        features: ['Trail maps', 'Difficulty ratings', 'User reviews', 'Photos', 'Offline maps'],
+      },
+      {
+        name: 'Google Maps',
+        description: 'View trail locations and get directions',
+        url: googleMapsUrl,
+        features: ['Directions', 'Satellite view', 'Nearby amenities'],
+      },
+    ],
+    hikingTips: [
+      'Check trail conditions before your visit - state park websites often have alerts',
+      'Bring plenty of water, especially on longer hikes',
+      'Start early to avoid crowds and afternoon heat',
+      'Download offline maps before heading out (AllTrails Pro or Google Maps)',
+      'Check if permits are required for backcountry trails',
+    ],
+    searchSuggestions: [
+      `Search AllTrails for "${parkName}" to see all available trails`,
+      'Filter by difficulty: Easy, Moderate, or Hard',
+      'Sort by rating to find the most popular trails',
+      'Check recent reviews for current trail conditions',
+    ],
+    note: `Click the AllTrails link to browse all hiking trails at ${parkName}. You can filter by distance, difficulty, and rating.`,
+  };
 }

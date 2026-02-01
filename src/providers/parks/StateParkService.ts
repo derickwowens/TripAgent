@@ -72,6 +72,10 @@ export interface StateParkSummary {
   publicAccess: 'Open' | 'Restricted' | 'Closed' | 'Unknown';
   hasCamping: boolean;
   campgroundCount: number;
+  coordinates: {
+    latitude: number;
+    longitude: number;
+  };
 }
 
 // State Overview for state selection
@@ -167,6 +171,7 @@ export class StateParkService {
       publicAccess: park.publicAccess,
       hasCamping: false, // Unknown until user requests park details
       campgroundCount: 0,
+      coordinates: park.coordinates,
     }));
 
     return {
@@ -194,6 +199,7 @@ export class StateParkService {
       publicAccess: park.publicAccess,
       hasCamping: false,
       campgroundCount: 0,
+      coordinates: park.coordinates,
     }));
   }
 

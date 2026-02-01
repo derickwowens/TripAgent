@@ -57,6 +57,8 @@ export interface ChatContext {
     state: string;
     nearestAirport: string;
   };
+  // Park mode: 'national' for National Parks, 'state' for State Parks
+  parkMode?: 'national' | 'state';
   tripContext?: {
     destination?: string;
     parkCode?: string;

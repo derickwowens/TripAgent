@@ -508,7 +508,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
       >
         <Pressable style={styles.modalOverlay} onPress={() => setPrivacyModalVisible(false)}>
           <Pressable style={styles.modalContent} onPress={e => e.stopPropagation()}>
-            <Text style={styles.modalTitle}>🔒 Your Privacy</Text>
+            <Text style={styles.modalTitle}>Your Privacy</Text>
             <Text style={styles.modalText}>
               Your profile data is ephemeral and stored only on your device. {APP_NAME} will never store, sell, or share your personal information.
             </Text>
@@ -516,7 +516,7 @@ export const ProfileSection: React.FC<ProfileSectionProps> = ({
               Profile preferences are used solely to personalize your trip recommendations during this session.
             </Text>
             <TouchableOpacity 
-              style={styles.modalButton} 
+              style={[styles.modalButton, { backgroundColor: theme.buttonBackground }]} 
               onPress={() => setPrivacyModalVisible(false)}
             >
               <Text style={styles.modalButtonText}>Got it</Text>

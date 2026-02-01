@@ -507,8 +507,54 @@ export function buildContextInfo(context: {
   maxTravelDistance?: number;
   blacklistedParkCodes?: string[];
   activeDestination?: { name: string; airport?: string; city?: string };
+  parkMode?: 'national' | 'state';
 }): string {
   let contextInfo = '';
+  
+  // Add park mode context
+  if (context.parkMode === 'state') {
+    contextInfo += `\n🏞️ MODE: STATE PARKS
+You are helping the user plan trips to STATE PARKS (not National Parks).
+
+STATE PARK TOOLS:
+- Use search_state_parks to find state parks in a specific US state
+- Use get_state_park_details for detailed info about a specific state park
+- Use get_state_park_campgrounds for campground information
+- Use get_state_park_hikes to get hiking trail information and AllTrails links for a state park
+- Use get_wildlife with the state park's full name (e.g., "Annadel State Park") to get wildlife observations from iNaturalist
+- Do NOT use National Park tools (search_national_parks, get_park_details, get_park_hikes, get_campgrounds)
+
+TRAVEL & BOOKING TOOLS (use these for state park trips too!):
+- search_flights: Find flights to nearby airports
+- search_hotels: Find lodging near the state park
+- search_car_rentals: Find rental cars for the trip
+- search_restaurants: Find restaurants near the state park gateway city
+- search_activities: Find activities and attractions in the area
+- get_driving_distance: Calculate drive times from airports or user location
+- search_ev_charging_stations: Find EV chargers along the route (if user has EV)
+- get_weather: Check weather forecast for the destination
+
+IMPORTANT: State park trips deserve the SAME level of trip planning as National Parks:
+- Suggest nearby restaurants and dining options
+- Recommend lodging (hotels, cabins, camping)
+- Provide flight options if traveling from far away
+- Include car rental suggestions
+- Show driving distances and directions
+- Create a complete day-by-day itinerary when asked
+
+ALLTRAILS LINKS FOR STATE PARKS:
+When mentioning hiking trails at a state park, ALWAYS include the park name in AllTrails links:
+- Format: https://www.alltrails.com/search?q=[Trail Name] [Park Name] [State]
+- Example: https://www.alltrails.com/search?q=Lake Ilsanjo Trail Annadel State Park California
+- NEVER use generic AllTrails links without the park name - they won't find the right trails!
+\n`;
+  } else {
+    contextInfo += `\n🏔️ MODE: NATIONAL PARKS
+You are helping the user plan trips to NATIONAL PARKS.
+- Use search_national_parks, get_park_details, get_park_hikes for National Parks
+- National Parks are managed by the National Park Service (NPS)
+\n`;
+  }
   
   // CRITICAL: If there's an active destination, make it VERY prominent
   // This prevents Claude from reusing old destinations from conversation history

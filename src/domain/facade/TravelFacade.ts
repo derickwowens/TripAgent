@@ -279,6 +279,23 @@ export class TravelFacade {
     }
   }
 
+  /**
+   * Search wildlife observations by text query (for state parks)
+   * Uses iNaturalist search API to find observations matching the query
+   */
+  async searchWildlifeObservations(query: string, limit = 15): Promise<WildlifeObservation[]> {
+    if (!this.wildlifeAdapter) {
+      console.log('[TravelFacade] Wildlife adapter not configured');
+      return [];
+    }
+    try {
+      return await this.wildlifeAdapter.searchObservations(query, limit);
+    } catch (error: any) {
+      console.error('Wildlife search failed:', error.message);
+      return [];
+    }
+  }
+
   // ============================================
   // CAMPGROUNDS & RECREATION (Recreation.gov)
   // ============================================

@@ -13,22 +13,59 @@ export interface UserLocation {
 let cachedLocation: UserLocation | null = null;
 let locationPromise: Promise<UserLocation | null> | null = null;
 
+// Complete mapping of all US states to major airports
 const AIRPORT_MAPPING: Record<string, string> = {
-  'California': 'LAX',
-  'New York': 'JFK',
-  'Texas': 'DFW',
-  'Florida': 'MIA',
-  'Illinois': 'ORD',
-  'Washington': 'SEA',
-  'Colorado': 'DEN',
+  'Alabama': 'BHM',
+  'Alaska': 'ANC',
   'Arizona': 'PHX',
-  'Nevada': 'LAS',
+  'Arkansas': 'LIT',
+  'California': 'LAX',
+  'Colorado': 'DEN',
+  'Connecticut': 'BDL',
+  'Delaware': 'PHL',
+  'Florida': 'MIA',
   'Georgia': 'ATL',
+  'Hawaii': 'HNL',
+  'Idaho': 'BOI',
+  'Illinois': 'ORD',
+  'Indiana': 'IND',
+  'Iowa': 'DSM',
+  'Kansas': 'MCI',
+  'Kentucky': 'SDF',
+  'Louisiana': 'MSY',
+  'Maine': 'PWM',
+  'Maryland': 'BWI',
   'Massachusetts': 'BOS',
-  'Pennsylvania': 'PHL',
-  'Ohio': 'CLE',
   'Michigan': 'DTW',
+  'Minnesota': 'MSP',
+  'Mississippi': 'JAN',
+  'Missouri': 'STL',
+  'Montana': 'BZN',
+  'Nebraska': 'OMA',
+  'Nevada': 'LAS',
+  'New Hampshire': 'MHT',
+  'New Jersey': 'EWR',
+  'New Mexico': 'ABQ',
+  'New York': 'JFK',
+  'North Carolina': 'CLT',
+  'North Dakota': 'FAR',
+  'Ohio': 'CLE',
+  'Oklahoma': 'OKC',
   'Oregon': 'PDX',
+  'Pennsylvania': 'PHL',
+  'Rhode Island': 'PVD',
+  'South Carolina': 'CHS',
+  'South Dakota': 'FSD',
+  'Tennessee': 'BNA',
+  'Texas': 'DFW',
+  'Utah': 'SLC',
+  'Vermont': 'BTV',
+  'Virginia': 'IAD',
+  'Washington': 'SEA',
+  'West Virginia': 'CRW',
+  'Wisconsin': 'MKE',
+  'Wyoming': 'JAC',
+  'District of Columbia': 'DCA',
 };
 
 // Fetch location once and cache it
@@ -57,8 +94,10 @@ const fetchLocation = async (): Promise<UserLocation | null> => {
         longitude: location.coords.longitude,
       });
 
-      const state = address.region || 'California';
-      const nearestAirport = AIRPORT_MAPPING[state] || 'LAX';
+      const state = address.region || '';
+      // Use the user's actual state airport, or leave empty if unknown
+      // This prevents defaulting to LAX for users not in California
+      const nearestAirport = state ? (AIRPORT_MAPPING[state] || '') : '';
 
       cachedLocation = {
         city: address.city || 'Unknown',

@@ -287,7 +287,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
               key={conv.id}
               style={[
                 styles.item,
-                currentConversationId === conv.id && styles.activeItem,
+                currentConversationId === conv.id && [styles.activeItem, { backgroundColor: theme.primaryLight, borderColor: theme.primaryDark }],
               ]}
             >
               {photoUrl ? (
@@ -351,7 +351,7 @@ export const ConversationList: React.FC<ConversationListProps> = ({
                 <Text style={styles.cancelButtonText}>Cancel</Text>
               </TouchableOpacity>
               <TouchableOpacity
-                style={styles.saveButton}
+                style={[styles.saveButton, { backgroundColor: theme.buttonBackground }]}
                 onPress={saveEdit}
               >
                 <Text style={styles.saveButtonText}>Save</Text>

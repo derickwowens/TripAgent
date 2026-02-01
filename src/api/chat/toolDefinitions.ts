@@ -175,11 +175,11 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'get_wildlife',
-    description: `Get wildlife information for a National Park. Returns common species (mammals, birds, reptiles) observed in the park with photos. Data from iNaturalist research-grade observations. Use official NPS park codes: ${ALL_PARK_CODES}`,
+    description: `Get wildlife information for a park (National or State Park). Returns common species (mammals, birds, reptiles) observed in the park with photos. Data from iNaturalist research-grade observations. For National Parks, use official NPS park codes: ${ALL_PARK_CODES}. For State Parks, use the full park name (e.g., "Annadel State Park").`,
     input_schema: {
       type: 'object' as const,
       properties: {
-        park_code: { type: 'string', description: `NPS park code. Examples: ${PARK_CODE_EXAMPLES}` },
+        park_code: { type: 'string', description: `For National Parks: NPS park code (e.g., ${PARK_CODE_EXAMPLES}). For State Parks: full park name (e.g., "Big Basin Redwoods State Park", "Annadel State Park").` },
         category: { type: 'string', description: 'Filter by category: "mammals", "birds", "reptiles", "amphibians", "fish", "insects", "plants", "fungi". Leave empty for top species across all categories.' },
       },
       required: ['park_code'],
@@ -230,6 +230,18 @@ export const tools: Anthropic.Tool[] = [
       type: 'object' as const,
       properties: {
         park_name: { type: 'string', description: 'Name of the state park' },
+        state: { type: 'string', description: '2-letter US state code (e.g., "CA")' },
+      },
+      required: ['park_name', 'state'],
+    },
+  },
+  {
+    name: 'get_state_park_hikes',
+    description: 'Get hiking trail information for a state park. Returns AllTrails search links and trail recommendations. Use this when users ask about hiking, trails, or outdoor activities at a state park.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        park_name: { type: 'string', description: 'Name of the state park (e.g., "Annadel State Park", "Big Basin Redwoods State Park")' },
         state: { type: 'string', description: '2-letter US state code (e.g., "CA")' },
       },
       required: ['park_name', 'state'],

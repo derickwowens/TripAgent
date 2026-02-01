@@ -587,19 +587,19 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`🚀 TripAgent API running on http://localhost:${PORT}`);
-  console.log(`📚 Endpoints:`);
+  console.log(`TripAgent API running on http://localhost:${PORT}`);
+  console.log(`Endpoints:`);
   console.log(`   GET  /health`);
-  console.log(`   GET  /api/flights/search?origin=LAX&destination=JFK&departureDate=2026-06-15`);
-  console.log(`   GET  /api/hotels/search?location=NYC&checkInDate=2026-06-15&checkOutDate=2026-06-18`);
-  console.log(`   GET  /api/cars/search?pickupLocation=LAX&pickupDate=2026-06-15&dropoffDate=2026-06-18`);
-  console.log(`   GET  /api/activities/search?location=Paris`);
-  console.log(`   GET  /api/parks/search?query=yosemite`);
+  console.log(`   GET  /api/flights/search?origin={origin}&destination={destination}&departureDate={YYYY-MM-DD}`);
+  console.log(`   GET  /api/hotels/search?location={location}&checkInDate={YYYY-MM-DD}&checkOutDate={YYYY-MM-DD}`);
+  console.log(`   GET  /api/cars/search?pickupLocation={location}&pickupDate={YYYY-MM-DD}&dropoffDate={YYYY-MM-DD}`);
+  console.log(`   GET  /api/activities/search?location={location}`);
+  console.log(`   GET  /api/parks/search?query={parkName}`);
   console.log(`   GET  /api/parks/:parkCode`);
   console.log(`   GET  /api/parks/:parkCode/hikes`);
   console.log(`   GET  /api/state-parks/states`);
   console.log(`   GET  /api/state-parks/overview`);
-  console.log(`   GET  /api/state-parks/search?state=CA&query=beach`);
+  console.log(`   GET  /api/state-parks/search?state={stateCode}&query={query}`);
   console.log(`   GET  /api/state-parks/campgrounds/:stateCode`);
   console.log(`   POST /api/trips/plan-park-trip`);
   console.log(`   GET  /api/airports/:iataCode`);

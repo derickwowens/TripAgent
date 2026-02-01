@@ -3,6 +3,7 @@ import { View, Text, ActivityIndicator, StyleSheet, TouchableOpacity, Image, Ani
 import { NATIONAL_PARKS, getParksByStateProximity, NationalParkInfo, PARK_DETECTION_PATTERNS } from '../../data/nationalParks';
 import { useParkTheme } from '../../hooks';
 import { ThemedLogo } from './ThemedLogo';
+import { StateParkSummary } from '../../services/api';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
 
@@ -33,6 +34,8 @@ interface WelcomeScreenProps {
   onSetPrompt: (prompt: string) => void;
   blacklistedParkCodes?: string[];
   parkMode?: ParkMode;
+  // State parks near the user (filtered by distance) for state park mode prompts
+  nearbyStateParks?: StateParkSummary[];
 }
 
 const injectProfileContext = (template: string, profile?: string): string => {
@@ -318,6 +321,54 @@ const generateRandomPrompt = (
   return prompt;
 };
 
+// Generate a state park prompt with a random park name from the nearby parks
+const generateStateParkPrompt = (
+  template: string,
+  nearbyStateParks?: StateParkSummary[],
+  userLocation?: { city: string; state: string; nearestAirport: string },
+  userProfile?: string
+): string => {
+  if (!nearbyStateParks || nearbyStateParks.length === 0) {
+    // If no state parks available, use generic prompt with user's state
+    if (userLocation?.state) {
+      let prompt = template.replace('near me', `in ${userLocation.state}`).replace('nearby', `in ${userLocation.state}`);
+      prompt = `${prompt} I'm located in ${userLocation.city}, ${userLocation.state}.`;
+      // Inject profile context
+      return injectProfileContext(prompt, userProfile);
+    }
+    return injectProfileContext(template, userProfile);
+  }
+  
+  // Pick a random state park from nearby parks
+  const randomPark = nearbyStateParks[Math.floor(Math.random() * nearbyStateParks.length)];
+  const parkName = randomPark.name;
+  const stateName = randomPark.stateFullName || randomPark.state;
+  
+  // Build well-formed prompts based on the template type
+  let prompt: string;
+  
+  if (template.includes('camping trip')) {
+    prompt = `Plan a camping trip to ${parkName} in ${stateName}. Include campground options, hiking trails, and a suggested itinerary.`;
+  } else if (template.includes('day hikes')) {
+    prompt = `Find the best day hikes at ${parkName} in ${stateName}. Include trail difficulty, distance, and highlights.`;
+  } else if (template.includes('weekend getaway')) {
+    prompt = `Plan a weekend getaway to ${parkName} in ${stateName}. Include activities, camping or lodging options, and must-see attractions.`;
+  } else if (template.includes('campgrounds')) {
+    prompt = `Find campgrounds at ${parkName} in ${stateName}. Include amenities, availability, and reservation information.`;
+  } else {
+    // Fallback: generic state park prompt
+    prompt = `Tell me about ${parkName} in ${stateName}. Include activities, facilities, and visitor tips.`;
+  }
+  
+  // Add location context
+  if (userLocation) {
+    prompt += ` I'm currently located in ${userLocation.city}, ${userLocation.state}.`;
+  }
+  
+  // Inject profile context (vehicle type, travel companions, preferences, etc.)
+  return injectProfileContext(prompt, userProfile);
+};
+
 export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ 
   locationLoading, 
   userProfile,
@@ -325,6 +376,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   onSetPrompt,
   blacklistedParkCodes,
   parkMode = 'national',
+  nearbyStateParks,
 }) => {
   const [expanded, setExpanded] = useState(false);
   const [showOptions, setShowOptions] = useState(false);
@@ -332,8 +384,10 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
   // Get theme colors from context
   const { theme } = useParkTheme();
   
+  const isStateMode = parkMode === 'state';
+  
   // Select prompts based on park mode
-  const quickPrompts = parkMode === 'state' ? STATE_PARK_PROMPTS : NATIONAL_PARK_PROMPTS;
+  const quickPrompts = isStateMode ? STATE_PARK_PROMPTS : NATIONAL_PARK_PROMPTS;
   
   // Animation values
   const headerScale = useRef(new Animated.Value(1)).current;
@@ -460,7 +514,8 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             transform: [{ translateY: optionsTranslate }],
           }
         ]}>
-          {userProfile && userProfile.trim().length > 0 && (
+          {/* Trip from my profile - National Parks mode only */}
+          {!isStateMode && userProfile && userProfile.trim().length > 0 && (
             <TouchableOpacity 
               style={[
                 styles.promptChip, 
@@ -473,15 +528,18 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             </TouchableOpacity>
           )}
           
-          <TouchableOpacity 
-            style={[
-              styles.promptChip,
-              { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
-            ]}
-            onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile))}
-          >
-            <Text style={[styles.promptText, { color: theme.chipText }]}>Surprise me!</Text>
-          </TouchableOpacity>
+          {/* Surprise me! - National Parks mode only */}
+          {!isStateMode && (
+            <TouchableOpacity 
+              style={[
+                styles.promptChip,
+                { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
+              ]}
+              onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile))}
+            >
+              <Text style={[styles.promptText, { color: theme.chipText }]}>Surprise me!</Text>
+            </TouchableOpacity>
+          )}
           
           {quickPrompts.map((prompt, index) => (
             <TouchableOpacity 
@@ -490,7 +548,13 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
                 styles.promptChip,
                 { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
               ]}
-              onPress={() => onSetPrompt(injectProfileContext(prompt.template, userProfile))}
+              onPress={() => {
+                // In State Parks mode, use state park prefills; in National Parks mode, use profile injection
+                const finalPrompt = isStateMode
+                  ? generateStateParkPrompt(prompt.template, nearbyStateParks, userLocation, userProfile)
+                  : injectProfileContext(prompt.template, userProfile);
+                onSetPrompt(finalPrompt);
+              }}
             >
               <Text style={[styles.promptText, { color: theme.chipText }]}>{prompt.label}</Text>
             </TouchableOpacity>
