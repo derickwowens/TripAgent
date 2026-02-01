@@ -15,6 +15,7 @@ BUMP_TYPE=""
 RC_BUILD=false
 VALIDATE_LINKS=false
 INCREMENT_VERSION=false
+INCREMENT_BUILD_ONLY=false
 AUTO_CONFIRM=false
 APPLE_ID=""
 
@@ -28,6 +29,9 @@ for arg in "$@"; do
             ;;
         -i|--increment)
             INCREMENT_VERSION=true
+            ;;
+        -b|--build-only)
+            INCREMENT_BUILD_ONLY=true
             ;;
         -y|--yes)
             AUTO_CONFIRM=true
@@ -55,7 +59,8 @@ if [[ ! "$BUMP_TYPE" =~ ^(major|minor|hotfix)$ ]]; then
     echo "  hotfix             - Bump patch version (1.0.0 -> 1.0.1)"
     echo "  --rc               - Build as Release Candidate for closed testing"
     echo "  --validate-links   - Run NPS link validation before build (requires NPS_API_KEY)"
-    echo "  -i, --increment    - Increment version number (default: keep current version)"
+    echo "  -i, --increment    - Increment version number and build number"
+    echo "  -b, --build-only   - Increment build number only (keep version)"
     echo "  -y, --yes          - Auto-confirm all prompts (non-interactive mode)"
     echo "  --apple-id=EMAIL   - Apple ID for App Store Connect (or set EXPO_APPLE_ID env var)"
     exit 1
@@ -102,7 +107,7 @@ echo -e "Current version: ${YELLOW}$CURRENT_VERSION${NC} (buildNumber: $CURRENT_
 CLEAN_VERSION=$(echo "$CURRENT_VERSION" | sed 's/-ios$//' | sed 's/-android$//')
 IFS='.' read -r MAJOR MINOR PATCH <<< "$CLEAN_VERSION"
 
-# Calculate new version based on --increment flag
+# Calculate new version based on flags
 if [ "$INCREMENT_VERSION" = true ]; then
     case $BUMP_TYPE in
         major)
@@ -120,8 +125,12 @@ if [ "$INCREMENT_VERSION" = true ]; then
     esac
     # Increment buildNumber when incrementing version
     NEW_BUILD_NUMBER=$((CURRENT_BUILD_NUMBER + 1))
+elif [ "$INCREMENT_BUILD_ONLY" = true ]; then
+    # Keep current version, only increment buildNumber
+    BASE_VERSION="$MAJOR.$MINOR.$PATCH"
+    NEW_BUILD_NUMBER=$((CURRENT_BUILD_NUMBER + 1))
 else
-    # Keep current version, don't increment buildNumber
+    # Keep current version and buildNumber
     BASE_VERSION="$MAJOR.$MINOR.$PATCH"
     NEW_BUILD_NUMBER=$CURRENT_BUILD_NUMBER
 fi
@@ -130,8 +139,10 @@ fi
 NEW_VERSION="${BASE_VERSION}"
 
 echo -e "New version: ${GREEN}$NEW_VERSION${NC} (buildNumber: $NEW_BUILD_NUMBER)"
-if [ "$INCREMENT_VERSION" = false ]; then
-    echo -e "${YELLOW}(Version not incremented - use -i to increment)${NC}"
+if [ "$INCREMENT_VERSION" = false ] && [ "$INCREMENT_BUILD_ONLY" = false ]; then
+    echo -e "${YELLOW}(No changes - use -i to increment version+build, -b for build only)${NC}"
+elif [ "$INCREMENT_BUILD_ONLY" = true ]; then
+    echo -e "${YELLOW}(Build number only - version unchanged)${NC}"
 fi
 echo ""
 
