@@ -16,7 +16,7 @@ import {
 } from 'react-native';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer, fetchStateParks, StateParkSummary } from '../services/api';
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode, useTravelDates } from '../hooks';
-import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo } from '../components/home';
+import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo, DraggableConversationPanel } from '../components/home';
 import type { ParkMode as ParkModeType } from '../hooks';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
@@ -826,6 +826,7 @@ const HomeScreen: React.FC = () => {
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
           keyboardVerticalOffset={Platform.OS === 'ios' ? 90 : 20}
         >
+          <DraggableConversationPanel hasMessages={messages.length > 0}>
           <ScrollView
             ref={scrollViewRef}
             style={styles.messagesContainer}
@@ -954,6 +955,7 @@ const HomeScreen: React.FC = () => {
             galleryOpen={showPhotoGallery}
             onOpenGallery={() => setShowPhotoGallery(true)}
           />
+          </DraggableConversationPanel>
           
           {messages.length > 0 && allPhotos.length > 0 && showPhotoGallery && (
             <CollapsibleBottomPanel hasPhotos={true}>

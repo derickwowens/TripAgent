@@ -8,5 +8,6 @@ export { ProfileSection } from './ProfileSection';
 export { ModelSelector } from './ModelSelector';
 export { ConversationList } from './ConversationList';
 export { CollapsibleBottomPanel } from './CollapsibleBottomPanel';
+export { DraggableConversationPanel } from './DraggableConversationPanel';
 export { OnboardingFlow } from './OnboardingFlow';
 export { ThemedLogo } from './ThemedLogo';
