@@ -77,11 +77,11 @@ dist/
 build/
 *.tsbuildinfo
 
-# API server files (not needed for mobile build)
-src/api/
-src/providers/
-src/utils/
-src/data/parkPhotos.ts
+# API server files (not needed for mobile build) - use absolute paths from root
+/src/api/
+/src/providers/
+/src/utils/
+/src/data/
 
 # Package lock files (yarn.lock or package-lock.json is sufficient)
 # Keep package-lock.json, remove yarn.lock if not used
