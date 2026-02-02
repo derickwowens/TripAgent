@@ -1,5 +1,6 @@
 import React, { memo, useCallback, useState, useEffect } from 'react';
 import { View, TextInput, TouchableOpacity, Text, StyleSheet, Platform, Alert } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useParkTheme } from '../../hooks';
 
 // Try to import speech recognition - may not be available in Expo Go
@@ -45,6 +46,10 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
   const [isListening, setIsListening] = useState(false);
   const [hasPermission, setHasPermission] = useState<boolean | null>(null);
   const { theme } = useParkTheme();
+  const insets = useSafeAreaInsets();
+  
+  // Only add bottom safe area padding when gallery is closed (chat input is at bottom of screen)
+  const bottomPadding = galleryOpen ? 8 : Math.max(insets.bottom, 8);
   
   // Only disable send button when no text - allow typing while loading
   const isDisabled = !inputText.trim();
@@ -137,7 +142,7 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
   };
 
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, { paddingBottom: bottomPadding }]}>
       <TextInput
         style={styles.input}
         placeholder="Ask about parks, flights, or trips..."
@@ -188,8 +193,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'flex-end',
     paddingHorizontal: 16,
-    paddingVertical: 16,
-    paddingBottom: 34,
+    paddingTop: 12,
     gap: 10,
   },
   input: {
