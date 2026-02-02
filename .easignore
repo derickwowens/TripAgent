@@ -12,15 +12,8 @@ docs/
 README.md
 CHANGELOG.md
 
-# Screenshots and media
+# Screenshots and media (only exclude root level screenshots folder)
 screenshots/
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.svg
-!mobile/assets/**
-!mobile/src/assets/**
 
 # Git and version control
 .git/
