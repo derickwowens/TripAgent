@@ -49,9 +49,18 @@ temp/
 /tmp/
 
 # Scripts not needed for build
-scripts/restart-ios.sh
-scripts/deploy-ios.sh
-scripts/deploy-android.sh
+scripts/
+
+# Data files and scripts (large, not needed for mobile build)
+data/
+
+# Park data cache (large, not needed for mobile build)
+.park-data/
+
+# Docker files
+Dockerfile
+.dockerignore
+docker-compose*.yml
 
 # Source maps (already generated during build)
 *.map
