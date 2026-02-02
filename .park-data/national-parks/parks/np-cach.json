@@ -1,0 +1,155 @@
+{
+  "id": "np-cach",
+  "name": "Canyon de Chelly National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "This canyon is home to Diné families who raise livestock, grow crops and live here. People have lived in these canyons for nearly 5,000 years, which is longer than anyone has lived continuously on the Colorado Plateau. In this place called Tsegi, their homes and images tell us their stories. Today, the park and Navajo Nation work together to manage the rich cultural and natural resources.",
+  "shortDescription": "This canyon is home to Diné families who raise livestock, grow crops and live here. People have lived in these canyons for nearly 5,000 years, which is longer than anyone has lived continuously on the...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.14319567,
+    "longitude": -109.3388303
+  },
+  "nationalParkInfo": {
+    "parkCode": "cach",
+    "npsId": "869BAD2B-C46F-4FEB-891B-EBA119B64B48",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cach/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cach/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9286745500",
+    "email": "cach_interpretation@nps.gov",
+    "website": "https://www.nps.gov/cach/index.htm",
+    "address": {
+      "line1": "3 miles E of Highway 191 on Indian Route 7",
+      "line2": "",
+      "city": "Chinle",
+      "state": "AZ",
+      "postalCode": "86503"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "North Rim Drive, South Rim Drive, 9 overlooks open daily all year round. The Welcome Center is open daily from 8AM to 5PM and closed for Thanksgiving, Christmas, and New Years Day. Welcome Center gates open and close daily with regular business hours. No entrance fee for park."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Canyon de Chelly's elevation is about 5,500 feet. Spring is cool and windy; highs from 50 to 70; lows of 35 degrees. Expect dust storms and canyon flooding. Summer is hot and dry; highs from 85 to 100; lows of 51 degrees. Drink plenty of water outdoors. Fall is warm and often wet; highs from 60 to 80; lows of 40 degrees. Expect lightning, thunderstorms, and flash floods. Winter is cold and breezy; highs from 40 to 60; lows of 18 degrees. Expect 1-4 inches of snow and freezing nighttime temperatures."
+  },
+  "images": [
+    {
+      "id": "cach-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C840D48-1DD8-B71B-0B7CD1781BEC0D0D.png",
+      "title": "Canyon Farm",
+      "altText": "Farm in the canyon",
+      "caption": "Navajo families continue to live and farm in the canyon they call Tsegi",
+      "credit": "Ravis Henry",
+      "isPrimary": true
+    },
+    {
+      "id": "cach-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C840E8F-1DD8-B71B-0B9CAE7D27053CED.png",
+      "title": "Canyon Hike",
+      "altText": "Hiking in the canyon",
+      "caption": "Visitors can enjoy a free ranger led hike into the canyon",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cach-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C841C12-1DD8-B71B-0B9699DA373071C8.png",
+      "title": "Spider Rock",
+      "altText": "View of Spider Rock from the overlook",
+      "caption": "Her home on top of Spider Rock, Spider Woman taught the Navajo people how to weave",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cach-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C843338-1DD8-B71B-0BE9B8553A3271E5.png",
+      "title": "Canyon View",
+      "altText": "View of the canyon from the White House Trail",
+      "caption": "The Navajo people call the canyon Tsegi meaning \"within the rocks\"",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cach-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C843473-1DD8-B71B-0BE91D1BE38D2DD1.png",
+      "title": "White House",
+      "altText": "View of White House Ruin",
+      "caption": "Ancient Puebloans built villages like White House that offered opportunities for trade, ceremony, and social gatherings.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cach/index.htm",
+    "directions": "http://www.nps.gov/cach/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Cliff Dwellings",
+    "Native American Heritage",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

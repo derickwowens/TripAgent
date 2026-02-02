@@ -1,0 +1,169 @@
+{
+  "id": "np-vama",
+  "name": "Vanderbilt Mansion National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.",
+  "shortDescription": "Built by of one of the first families of wealth in America. Designed by one of the nation's preeminent architects. The Vanderbilt Mansion is a home built expressly for the aristocratic lifestyle.",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 41.79697937,
+    "longitude": -73.94205557
+  },
+  "nationalParkInfo": {
+    "parkCode": "vama",
+    "npsId": "C200ADA5-F162-4D77-A820-950E13925129",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/vama/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/vama/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "845-444-9166",
+    "email": "michael_autenrieth@nps.gov",
+    "website": "https://www.nps.gov/vama/index.htm",
+    "address": {
+      "line1": "81 Vanderbilt Park Road",
+      "line2": "",
+      "city": "Hyde Park",
+      "state": "NY",
+      "postalCode": "12538"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 3:30PM",
+    "tuesday": "10:00AM - 3:30PM",
+    "wednesday": "10:00AM - 3:30PM",
+    "thursday": "10:00AM - 3:30PM",
+    "friday": "10:00AM - 3:30PM",
+    "saturday": "10:00AM - 3:30PM",
+    "sunday": "10:00AM - 3:30PM",
+    "description": "Tours of the mansion are offered daily."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entrance to the Vanderbilt Mansion is by guided tour only.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 40°F to 70°F. Rain is not uncommon. Summer: Temperatures usually range from 70° F to 100° F. Humidity can be high throughout the summer months with periods of rain. Fall: Temperatures usually range from 40° F to 70° F. Peak leaf season is mid-October. Rain is not uncommon. Winter: Temperatures usually range from 30° F to 50°F. Ice, Freezing Rain and Snow are not uncommon."
+  },
+  "images": [
+    {
+      "id": "vama-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C810D33-1DD8-B71B-0B857963C3AEC92E.jpg",
+      "title": "Vanderbilt Mansion National Historic Site",
+      "altText": "Misty April Morning",
+      "caption": "A misty Spring morning at the Vanderbilt Mansion",
+      "credit": "NPS Photo/Bill Urbin",
+      "isPrimary": true
+    },
+    {
+      "id": "vama-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C810EB8-1DD8-B71B-0BE87CD40E856268.jpg",
+      "title": "Vanderbilt Mansion National Historic Site",
+      "altText": "Fall Colors in the Hudson Valley",
+      "caption": "Thousands of visitors flock to the Hudson Valley in the Fall to see the leaves change colors.",
+      "credit": "NPS Photo/Bill Urbin",
+      "isPrimary": false
+    },
+    {
+      "id": "vama-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C811008-1DD8-B71B-0B83B94A806778B3.jpg",
+      "title": "The F. W. Vanderbilt Formal Gardens",
+      "altText": "The Formal Gardens",
+      "caption": "The formal gardens of the Vanderbilt Estate consist of multiple tiers defined over a hillside, surrounded by a graceful landscape.",
+      "credit": "NPS Photo/Bill Urbin",
+      "isPrimary": false
+    },
+    {
+      "id": "vama-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81117C-1DD8-B71B-0BDD0C3E90741B37.jpg",
+      "title": "Overlook",
+      "altText": "View of the Hudson River looking North from the Overlook",
+      "caption": "The inspiring historic view of the Hudson River from the Overlook at Vanderbilt Mansion.",
+      "credit": "NPS Photo/Kevin Oldenburg",
+      "isPrimary": false
+    },
+    {
+      "id": "vama-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82026B-1DD8-B71B-0B638961A8277FF6.jpg",
+      "title": "Summer Concert Series",
+      "altText": "West Point Band performs at the Vanderbilt Mansion",
+      "caption": "West Point Band performs at Vanderbilt Mansion, part of the Summer Concert Series.",
+      "credit": "NPS Photo/Bill Urbin",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/vama/index.htm",
+    "directions": "http://www.nps.gov/vama/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Trails",
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

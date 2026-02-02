@@ -1,0 +1,92 @@
+{
+  "id": "np-cibs",
+  "name": "Carlisle Federal Indian Boarding School National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "More than 7,800 children from 140 Tribes went to the Carlisle School from 1879 to 1918. The National Park Service will collaborate with families, affiliated Tribal Nations, the US Army, historians, and partners to develop resources and share the story of the children, families, and communities impacted by Carlisle Federal Indian Boarding School.",
+  "shortDescription": "More than 7,800 children from 140 Tribes went to the Carlisle School from 1879 to 1918. The National Park Service will collaborate with families, affiliated Tribal Nations, the US Army, historians, an...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.2094,
+    "longitude": -77.17971
+  },
+  "nationalParkInfo": {
+    "parkCode": "cibs",
+    "npsId": "F67AB14C-AFCF-4BD1-BE62-7BA87DF21DDA",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cibs/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/cibs/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "717-585-5135",
+    "email": "asknps@nps.gov",
+    "website": "https://www.nps.gov/cibs/index.htm",
+    "address": {
+      "line1": "870 Jim Thorpe Road",
+      "line2": "",
+      "city": "Carlisle Barracks",
+      "state": "PA",
+      "postalCode": "17013"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 3:00PM",
+    "tuesday": "7:00AM - 3:00PM",
+    "wednesday": "7:00AM - 3:00PM",
+    "thursday": "7:00AM - 3:00PM",
+    "friday": "7:00AM - 3:00PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Standard hours and days are subject to change on short notice. The park is not accessible on weekends and federal holidays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winter: Generally, cooler weather starts in September. The first snowfall often occurs in mid-October and can extend through mid-April. Spring: During the spring months, temperatures typically range from the 50s-70s. Summer: June through August are seasonably warm with high humidity and temperatures in the 80s and 90s. Fall: Generally, cooler weather starts in September. The first snowfall occurs in mid-October and can extend through mid-April."
+  },
+  "images": [
+    {
+      "id": "cibs-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E8C9CDA6-E69B-8060-4B02ABC94A23AB34.jpg",
+      "title": "Carlisle Federal Indian Boarding SchoolThe campus of the Carlisle Indian Industrial School, as seen",
+      "altText": "Historic black and white image of a large boarding school campus",
+      "caption": "The campus of the Carlisle Indian Industrial School, as seen in 1909.",
+      "credit": "US Army/Dickinson College",
+      "isPrimary": true
+    },
+    {
+      "id": "cibs-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E8DF79BB-9418-E325-BD61C15093DCC5FE.jpg",
+      "title": "Carlisle Barracks",
+      "altText": "Campus with large buildings, trees, and walkways",
+      "caption": "The location of the Carlisle Federal Indian Boarding School, as seen today.",
+      "credit": "US Army",
+      "isPrimary": false
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cibs/index.htm",
+    "directions": "https://www.nps.gov/cibs/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "National Monument",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

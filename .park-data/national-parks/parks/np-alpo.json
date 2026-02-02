@@ -1,0 +1,241 @@
+{
+  "id": "np-alpo",
+  "name": "Allegheny Portage Railroad National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "The first railroad to cross the Allegheny Mountains, the Allegheny Portage Railroad was the final piece of the Pennsylvania Main Line Canal. \"The Portage\" opened in 1834, marking the first time that there was one, direct route between Philadelphia and Pittsburgh. All things to all people, it served merchants, passengers, slaves in pursuit of freedom, and soldiers from the Mexican War.",
+  "shortDescription": "The first railroad to cross the Allegheny Mountains, the Allegheny Portage Railroad was the final piece of the Pennsylvania Main Line Canal. \"The Portage\" opened in 1834, marking the first time that t...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 40.42977467,
+    "longitude": -78.57431622
+  },
+  "nationalParkInfo": {
+    "parkCode": "alpo",
+    "npsId": "3350C18C-8E07-487B-930E-37AD873D31AD",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/alpo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/alpo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8148866150",
+    "email": "alpo_interpretation@nps.gov",
+    "website": "https://www.nps.gov/alpo/index.htm",
+    "address": {
+      "line1": "110 Federal Park Road",
+      "line2": "",
+      "city": "Gallitzin",
+      "state": "PA",
+      "postalCode": "16641"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Visitor Center, Engine House No. 6 Exhibit Shelter and the Lemon House are closed on Wednesdays and Thursdays. Buildings are open Fridays through Tuesday from 9:00 a.m. to 5:00 p.m.\n\nPark grounds and trails are open daily from sunrise to sunset, weather permitting.\n\nPark buildings are closed on Thanksgiving Day, Christmas Day, and New Year's Day.\n\nTimes listed in \"All Park Hours\" reflect building operations."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park is located in Cambria County, PA, and is at the summit of the Allegheny Mountains. Therefore, the park often takes on winter extremes. If planning on traveling from a long distance, please contact the park beforehand to ensure that the facilities are open. Please consult weather forecasts to ensure conditions are safe to travel in. Spring, summer, and fall are generally uneventful, but severe thunderstorms can occur."
+  },
+  "images": [
+    {
+      "id": "alpo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2C12F155-DE91-DD44-9108A954EB6F3DF6.jpg",
+      "title": "Engine House 6 Exhibit Shelter and the Lemon House",
+      "altText": "Engine House and tavern",
+      "caption": "Engine House 6 Exhibit Shelter and the Lemon House at the Summit Level of the Allegheny Portage Railroad.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "alpo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2C2C400A-AA7C-F524-8DE034A012E236DE.jpg",
+      "title": "Engine House 6 Exhibit Shelter",
+      "altText": "Engine house",
+      "caption": "Engine House 6 Exhibit Shelter",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/35902275-1DD8-B71B-0B41A4998139B89F.jpg",
+      "title": "Lemon House tavern",
+      "altText": "Lemon House",
+      "caption": "The Lemon House was a stop for Allegheny Portage Railroad travelers on the summit.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2C263305-C039-15B5-BFAAAB317A69A0DA.jpg",
+      "title": "Summit Level Visitor Center",
+      "altText": "Stone building",
+      "caption": "The Summit Level Visitor Center contains exhibits, restrooms, park movie and bookstore.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2C33513A-BB9C-CC0C-E443C1672759B110.jpg",
+      "title": "Boardwalk to the historic area",
+      "altText": "Boardwalk",
+      "caption": "The boardwalk takes you to the historic area at the park",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2C3E5892-DF3F-B6CF-050662A2DEFDB59C.jpg",
+      "title": "Staple Bend Tunnel",
+      "altText": "Tunnel",
+      "caption": "The Staple Bend Tunnel sat at the top of inclined plane 1, just a few miles from Johnstown. The Staple Bend Tunnel can be accessed by hiking or biking approximately 2 miles from the trailhead",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2CAD3742-E5F2-AEC4-AF86148FCC922056.jpg",
+      "title": "Skew Arch Bridge",
+      "altText": "Bridge",
+      "caption": "Skew Arch Bridge",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BE3E1666-FDEA-8508-86A5E30176841B3C.jpeg",
+      "title": "The Visitor Center bookstore offers a variety of items for sale.",
+      "altText": "Bookstore",
+      "caption": "The Visitor Center bookstore offers a variety of items for sale.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BE6AB335-0334-3175-76577187C04546C8.jpeg",
+      "title": "The theater features a 20 minute park movie.",
+      "altText": "Theater",
+      "caption": "The theater features a 20 minute park movie.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "alpo-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BE77D3FE-FB8B-3D66-D82497CBCD748596.jpeg",
+      "title": "Barrels and crates in the Visitor Center show items that traveled on the Main Line Canal.",
+      "altText": "Barrel",
+      "caption": "Barrels and crates in the Visitor Center show items that traveled on the Main Line Canal.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/alpo/index.htm",
+    "directions": "http://www.nps.gov/alpo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Commerce",
+    "Trade",
+    "Engineering",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Laborer and Worker",
+    "Military",
+    "Infantry and Militia",
+    "Social Movements",
+    "Abolition Movement",
+    "Transportation",
+    "Canals",
+    "Tunnels",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "Mexican War",
+    "Westward Expansion",
+    "Mountains",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Trails",
+    "National Historic Site",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

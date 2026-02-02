@@ -1,0 +1,248 @@
+{
+  "id": "np-natr",
+  "name": "Natchez Trace Parkway",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "The Natchez Trace Parkway is a 444-mile recreational road and scenic drive through three states. It roughly follows the \"Old Natchez Trace,\" a historic travel corridor used by American Indians, \"Kaintucks,\" European settlers, slave traders, soldiers, and future presidents. Today, people can enjoy a scenic drive as well as hiking, biking, horseback riding, and camping along the Parkway.",
+  "shortDescription": "The Natchez Trace Parkway is a 444-mile recreational road and scenic drive through three states. It roughly follows the \"Old Natchez Trace,\" a historic travel corridor used by American Indians, \"Kaint...",
+  "designation": "Parkway",
+  "coordinates": {
+    "latitude": 33.78002293,
+    "longitude": -89.03092439
+  },
+  "nationalParkInfo": {
+    "parkCode": "natr",
+    "npsId": "E8A0F0B6-983F-4B9A-9A67-BFF6F9E4204A",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/natr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/natr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6626804027",
+    "email": "natr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/natr/index.htm",
+    "address": {
+      "line1": "2680 Natchez Trace Parkway",
+      "line2": "",
+      "city": "Tupelo",
+      "state": "MS",
+      "postalCode": "38804"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Natchez Trace Parkway motor road is open all year, day and night. Operating hours for information centers and some locations do vary. Severe weather resulting in washouts and downed trees can cause temporary road closures. Questions about road condition should be directed to the Parkway's visitor center by calling 1-800-305-7417."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Mississippi, Alabama, and most of Tennessee are classified as humid subtropical climates. The weather ranges from mild winters to hot summers. Average high temperatures reach into the high 90's in summer and often heat indices are over 100 degrees F. Winters are mild with daytime temperatures around 50 F but lows below freezing are not uncommon. Thunderstorms are common in the southeast and the southern part of Mississippi is occasionally affected by hurricanes. Check local forecasts to plan your trip."
+  },
+  "images": [
+    {
+      "id": "natr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80016C-1DD8-B71B-0B91B2FA75DF0C02.jpg",
+      "title": "Natchez Trace Parkway in Early Fall",
+      "altText": "A slightly curvy section of the Natchez Trace Parkway in Early Fall",
+      "caption": "The Natchez Trace Parkway commemorates a historic travel route that helped build the young United States. The Parkway 444 miles, with plenty of stops to allow you to explore some of the history or enjoy the scenery along the way.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "natr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FFB07-1DD8-B71B-0B35C15D0834A556.jpg",
+      "title": "Double Arch Bridge over Birdsong Hollow (milepost 438) on the Natchez Trace Parkway",
+      "altText": "View of the Double Arch Bridge from Birdsong Hollow",
+      "caption": "The elegant Double Arch Bridge won the Presidential Award for Design Excellence in 1995. It spans Birdsong Hollow and Tennessee Highway 96. To see it from below, take the TN 96 exit and stop at the pulloff before you get to the highway.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "natr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FFE3F-1DD8-B71B-0B9E86CB3BBD9041.jpg",
+      "title": "Mount Locust Historic House (milepost 15.5) on the Natchez Trace Parkway",
+      "altText": "Mount Locust Historic House",
+      "caption": "Mount Locust served as a family home and as a stand, or inn, for Natchez Trace travelers. Built around 1780, the home and grounds are open for visitors during operating hours.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "natr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FFFCC-1DD8-B71B-0B86D0A48B59ADCE.jpg",
+      "title": "Old Trace (milepost 221.4) on the Natchez Trace Parkway",
+      "altText": "A foggy section of the Old Trace in autumn",
+      "caption": "The \"Old Trace,\" the historic trail commemorated by the Natchez Trace Parkway today, still survives in segments. The Old Trace was the main road through the Old Southwest, connecting Natchez to Nashville by going through Chickasaw and Choctaw lands.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/natr/index.htm",
+    "directions": "http://www.nps.gov/natr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Military",
+    "Battlefields",
+    "Native American Heritage",
+    "Transportation",
+    "Bridges",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fire",
+    "Night Sky",
+    "Parkway",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

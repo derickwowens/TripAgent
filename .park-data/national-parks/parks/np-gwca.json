@@ -1,0 +1,191 @@
+{
+  "id": "np-gwca",
+  "name": "George Washington Carver National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "The young child known as the \"Plant Doctor\" tended his secret garden while observing the day-to-day operations of a 19th century farm. Nature and nurture ultimately influenced George on his quest for education to becoming a renowned agricultural scientist, educator, and humanitarian.",
+  "shortDescription": "The young child known as the \"Plant Doctor\" tended his secret garden while observing the day-to-day operations of a 19th century farm. Nature and nurture ultimately influenced George on his quest for ...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.9871322,
+    "longitude": -94.35522737
+  },
+  "nationalParkInfo": {
+    "parkCode": "gwca",
+    "npsId": "56A5A3B1-4F49-4517-86B8-AE2F272D0C42",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gwca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/gwca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "417.325.4151",
+    "email": "gwca_interpretation@nps.gov",
+    "website": "https://www.nps.gov/gwca/index.htm",
+    "address": {
+      "line1": "5646 Carver Road",
+      "line2": "",
+      "city": "Diamond",
+      "state": "MO",
+      "postalCode": "64840"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "George Washington Carver National Monument is open 9:00 AM to 5:00 PM daily, except Thanksgiving Day, December 25, and January 1.  There is no park entrance fee."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "George Washington Carver National Monument is located in southwestern Missouri just outside of Diamond and about 10 miles from Joplin. Summer temperatures generally range from 75-100 degrees with high humidity. Winter temperatures generally range from 0-50 degrees with periods of intermittent freezing."
+  },
+  "images": [
+    {
+      "id": "gwca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C13C3-1DD8-B71B-0B1164958433C548.jpg",
+      "title": "Statue of young George Washington Carver on the Carver trail",
+      "altText": "Bronze status of young George Washington Carver atop a large boulder, on the Carver trail.",
+      "caption": "\"Boy Carver Statue,\" sculpted by Robert Amendola in 1960.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "gwca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/32DE87E0-BE6A-C33A-61BD3A26E497AA3A.jpg",
+      "title": "George Washington Carver NM Entrance",
+      "altText": "An entrance sign to George Washington Carver National Monument with wildflower and plants.",
+      "caption": "Entrance sign to George Washington Carver NM will wildflower and plants.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gwca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/32F75295-D8D0-F076-B0467EF5C1D1DF8D.jpg",
+      "title": "George Washington Carver NM Prairie",
+      "altText": "Sunflowers in a prairie at George Washington Carver NM.",
+      "caption": "Prairie at George Washington Carver NM with sunflowers.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gwca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/33656CFE-EC5D-5E00-68F515AD079719B1.jpg",
+      "title": "George Washington Carver NM Science Classroom",
+      "altText": "Park's science classroom with lab tables and wall exhibits on George Washington Carver.",
+      "caption": "George Washington Carver NM science classroom modeled after one of the George Washington Carver's lab at Tuskegee Institute.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gwca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/33D94E3D-9B90-2F77-2EB5639EE1997F6A.jpg",
+      "title": "George Washington Carver Bust",
+      "altText": "A cast concrete bust of George Washington Carver and prairie in the background.",
+      "caption": "A cast concrete bust for George Washington Carver by Audrey Corwin, 1952.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gwca/index.htm",
+    "directions": "https://www.nps.gov/gwca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Painting",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Reconstruction",
+    "Religion and Spirituality",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Civil Rights",
+    "Conservation Movement",
+    "Wars and Conflicts",
+    "Civil War",
+    "World War II",
+    "Women's History",
+    "Climate Change",
+    "Fire",
+    "Night Sky",
+    "Trails",
+    "National Monument",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

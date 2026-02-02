@@ -1,0 +1,259 @@
+{
+  "id": "np-nisi",
+  "name": "Ninety Six National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "SC",
+  "stateName": "South Carolina",
+  "region": "southeast",
+  "description": "Settlers struggled against the harsh backcountry to survive. Cherokee Indians hunted and fought to keep their land. Two towns and a trading post were formed then abandoned to the elements. And two Revolutionary War battles claimed over 100 lives. Come discover the 18th century history of South Carolina.",
+  "shortDescription": "Settlers struggled against the harsh backcountry to survive. Cherokee Indians hunted and fought to keep their land. Two towns and a trading post were formed then abandoned to the elements. And two Rev...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 34.14273587,
+    "longitude": -82.01636079
+  },
+  "nationalParkInfo": {
+    "parkCode": "nisi",
+    "npsId": "1291920D-2428-4FEA-9670-7EBC45284A59",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/nisi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/nisi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8645434068",
+    "email": "NISI_Information@nps.gov",
+    "website": "https://www.nps.gov/nisi/index.htm",
+    "address": {
+      "line1": "Ninety Six National Historic Site",
+      "line2": "1103 Hwy 248",
+      "city": "Ninety Six",
+      "state": "SC",
+      "postalCode": "29666"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park grounds are open from sunrise to sunset. There are eight parking spots located outside of the front gate for early and late visitors."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures for the area range from very hot and humid in the summer to cool and moderate in the winter."
+  },
+  "images": [
+    {
+      "id": "nisi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79EFE2-1DD8-B71B-0BE1C97AF62D94F2.jpg",
+      "title": "Cannon and Maham Tower",
+      "altText": "A cannon is in the left foreground with the Maham rifle tower in the distance.",
+      "caption": "Cannon and Maham Tower",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "nisi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F0FF-1DD8-B71B-0B476CEEDAF28DEA.jpg",
+      "title": "Exhibit in the Fog",
+      "altText": "A corten steel figure of a Native American stands sentinel in the fog.",
+      "caption": "A corten steel figure of a Native American stands sentinel in the fog.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nisi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F20F-1DD8-B71B-0BA401E232EAEA6D.jpg",
+      "title": "1781 Battlefield View",
+      "altText": "The walking trail winds past a cannon and a rifle tower.",
+      "caption": "The walking trail winds past a cannon and a rifle tower.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nisi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F31D-1DD8-B71B-0BDFD3FA08B9A0EA.jpg",
+      "title": "Road Signs",
+      "altText": "A wooden sign shows the direction of important places in 1781.",
+      "caption": "A wooden sign shows the direction of important places in 1781.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nisi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F40A-1DD8-B71B-0B03601EB18A76CB.jpg",
+      "title": "Birmingham Monument",
+      "altText": "A monument to James Birmingham, the first South Carolinian to die in the American Revolution",
+      "caption": "A monument to patriot James Birmingham, the first South Carolinian to die in the American Revolution",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nisi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F515-1DD8-B71B-0BEFDF920A9D5DAA.jpg",
+      "title": "Tent Row",
+      "altText": "A British regimental coat hangs on a tent.",
+      "caption": "A British regimental coat hangs on the middle tent during a special event.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nisi-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F63C-1DD8-B71B-0BF2225B89817140.jpg",
+      "title": "Divine Service",
+      "altText": "Reenactors listen as another reenactor presents and 18th century church service.",
+      "caption": "Reenactors sit in chairs in front of the Black Swan Tavern as another reenactor presents and 18th century church service.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nisi-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F730-1DD8-B71B-0BA7CCFF8FD401FB.jpg",
+      "title": "Flag at Stockade",
+      "altText": "A British flag flies over the stockade fort.",
+      "caption": "A British flag flies over the stockade fort.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nisi-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F834-1DD8-B71B-0BD9E83D7AEE142D.jpg",
+      "title": "Sign and Flag",
+      "altText": "A blue Liberty flag is in the right foreground with the park entrance sign behind it.",
+      "caption": "A blue Liberty flag is in the right foreground with the park entrance sign behind it during a special event.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/nisi/index.htm",
+    "directions": "http://www.nps.gov/nisi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Forts",
+    "Military",
+    "Infantry and Militia",
+    "Battlefields",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "National Historic Site",
+    "SC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

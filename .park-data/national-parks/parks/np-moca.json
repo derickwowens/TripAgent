@@ -1,0 +1,197 @@
+{
+  "id": "np-moca",
+  "name": "Montezuma Castle National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Established December 8, 1906, Montezuma Castle is the third National Monument dedicated to preserving Native American culture. This 20 room high-rise apartment, nestled into a towering limestone cliff, tells a story of ingenuity, survival and ultimately, prosperity in an unforgiving desert landscape.",
+  "shortDescription": "Established December 8, 1906, Montezuma Castle is the third National Monument dedicated to preserving Native American culture. This 20 room high-rise apartment, nestled into a towering limestone cliff...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 34.62237771,
+    "longitude": -111.8147857
+  },
+  "nationalParkInfo": {
+    "parkCode": "moca",
+    "npsId": "D87E3D6F-8007-46F0-971A-B3BC191CC888",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/moca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/moca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9285673322",
+    "email": "moca_tuzi_info@nps.gov",
+    "website": "https://www.nps.gov/moca/index.htm",
+    "address": {
+      "line1": "2800 Montezuma Castle Road",
+      "line2": "",
+      "city": "Camp Verde",
+      "state": "AZ",
+      "postalCode": "86322"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:45PM",
+    "tuesday": "9:00AM - 4:45PM",
+    "wednesday": "9:00AM - 4:45PM",
+    "thursday": "9:00AM - 4:45PM",
+    "friday": "9:00AM - 4:45PM",
+    "saturday": "9:00AM - 4:45PM",
+    "sunday": "9:00AM - 4:45PM",
+    "description": "Montezuma Castle is open daily with the exception of Thanksgiving Day, December 25, and January 1. Please note that the park gate is one mile from the visitor center and closes at 4:45pm. Parking on the road or in front of the gate is not allowed at any time."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "This entrance fee covers one adult, aged 16 and over, for entrance to Montezuma Castle and Tuzigoot National Monuments for 7 days.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summer: Hot. Temperatures range from 95°F (35°C) to 115°F (46°C). Nighttime temperatures can be much cooler, around 70°F (21°C). From July through September, heavy rains called monsoons are common in the afternoons. Winter: Cool. Highs average around 55°F (13°C); lows may be in the teens (-10°C). Snow is rare, but possible. For detailed information, visit the National Weather Service: http://forecast.weather.gov/MapClick.php?lat=34.61151944900047&lon=-111.8389592099997#.Vi_FZX6rSUk"
+  },
+  "images": [
+    {
+      "id": "moca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D225B-1DD8-B71B-0B0DBFDBFAA82723.jpg",
+      "title": "Montezuma Castle in the Cliff",
+      "altText": "A 5-story masonry dwelling sits in a cliff alcove.",
+      "caption": "Montezuma Castle was built in an alcove about 90 feet up a cliff. This protects the dwelling from flooding.",
+      "credit": "NPS Photo/Sharlot Hart",
+      "isPrimary": true
+    },
+    {
+      "id": "moca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/193DAD11-B32B-19F0-0959AAC359D8B386.jpg",
+      "title": "Window in Montezuma Castle",
+      "altText": "Sun shines on the window sill in a masonry wall; trees in fall color are seen outside the window.",
+      "caption": "Visitors to Montezuma Castle usually only get to see the dwelling from the outside.  This view shows what the Sinagua might have seen.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7ACA59-1DD8-B71B-0B68D8F8681AA81D.jpg",
+      "title": "Storage Room at Montezuma Castle",
+      "altText": "Two masonry walls with a dark doorway in a short cliff ledge.",
+      "caption": "The Sinagua used space efficiently - here a storage room sits in a short cliff space below the main Castle.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D24B8-1DD8-B71B-0BB914B45A478699.jpg",
+      "title": "Montezuma Well",
+      "altText": "Two cliff dwellings and a tree with yellow leaves above a pond.",
+      "caption": "Montezuma Well provided a stable source of water to the Sinagua.",
+      "credit": "NPS Photo/Greg Webb",
+      "isPrimary": false
+    },
+    {
+      "id": "moca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F45E85C2-E02B-C165-AA36D3793469BF62.jpg",
+      "title": "Montezuma Well Overlook",
+      "altText": "a blue sinkhole surrounded by algae, reeds, and cattails in a desert landscape",
+      "caption": "From the overlook, visitors can view some of the dwellings alongside Montezuma Well.",
+      "credit": "NPS Photo / Lauren Reid",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/moca/index.htm",
+    "directions": "http://www.nps.gov/moca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Cliff Dwellings",
+    "Arts",
+    "Photography",
+    "Commerce",
+    "Trade",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Fire",
+    "Groundwater",
+    "Unique Species",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

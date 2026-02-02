@@ -1,0 +1,194 @@
+{
+  "id": "np-keaq",
+  "name": "Kenilworth Park & Aquatic Gardens",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the water. The wind dances with the dragonflies, rustling through the trees, carrying the song of the birds until it brushes across your face, fading to a whisper, saying \"come join.\"",
+  "shortDescription": "Deep within Kenilworth lies an oasis, hidden behind trees and cattails. It's a place where beavers build their homes and turtles sleep on logs. Lotus blooms rise from the muck and lilies sit on the wa...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.9128,
+    "longitude": -76.9434
+  },
+  "nationalParkInfo": {
+    "parkCode": "keaq",
+    "npsId": "A1901BAE-94DB-44E4-96D4-1E07422EDF6E",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/keaq/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/keaq/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1571",
+    "email": "keaq_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/keaq/index.htm",
+    "address": {
+      "line1": "1550 Anacostia Ave. NE",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20019"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 4:00PM",
+    "tuesday": "8:00AM - 4:00PM",
+    "wednesday": "8:00AM - 4:00PM",
+    "thursday": "8:00AM - 4:00PM",
+    "friday": "8:00AM - 4:00PM",
+    "saturday": "8:00AM - 4:00PM",
+    "sunday": "8:00AM - 4:00PM",
+    "description": "Open daily from 8:00 a.m. to 4:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "June-September expect warm and humid weather. Average high temperatures are in the 80s, though often in the low 90s. On humid days, showers and thunderstorms often build in the late afternoon. July and August are the warmest months. The coldest month is January, with average daytime highs in the low 40s and overnight lows in the upper 20s."
+  },
+  "images": [
+    {
+      "id": "keaq-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C819F7C-1DD8-B71B-0BE9077BC0E39492.jpg",
+      "title": "Lotus pond bloom",
+      "altText": "Pink lotus flower blooms in a pond.",
+      "caption": "Lotus flowers bloom in many ponds during the hot humid summer months.",
+      "credit": "NPS Photo/Miguel A. Marquez",
+      "isPrimary": true
+    },
+    {
+      "id": "keaq-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81A0E5-1DD8-B71B-0BA98A148F520896.jpg",
+      "title": "Fall Colors",
+      "altText": "Aquatic ponds during the fall with trees displaying orange and yellow colors.",
+      "caption": "As the seasons change, so do the colors around the ponds which can be seen as reflections on the water.",
+      "credit": "NPS Photo/Miguel A. Marquez.",
+      "isPrimary": false
+    },
+    {
+      "id": "keaq-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81A243-1DD8-B71B-0BFAF6170F21B206.jpg",
+      "title": "Hanging around",
+      "altText": "Turtles basking in the sun.",
+      "caption": "As the temperatures warm up during spring and summer months many reptiles including turtles can be seen basking in the sun on logs, tree stumps or the banks of the ponds.",
+      "credit": "NPS Photo/Miguel A. Marquez.",
+      "isPrimary": false
+    },
+    {
+      "id": "keaq-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81A3BB-1DD8-B71B-0B97E9013EA332BD.jpg",
+      "title": "Capturing Moments",
+      "altText": "A woman taking a photo of lotus flowers",
+      "caption": "The summer blooms in and around the ponds attract many photographers and artist from around the world.",
+      "credit": "NPS Photo/Miguel A. Marquez",
+      "isPrimary": false
+    },
+    {
+      "id": "keaq-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81A515-1DD8-B71B-0BDEDFA8A3A3FF69.jpg",
+      "title": "Flight in Fall",
+      "altText": "Great Blue Heron in flight over the ponds during the fall.",
+      "caption": "The wetlands and marsh habitat many shore birds and they can be seen wading in and around the ponds for food.",
+      "credit": "NPS Photo/Miguel A. Marquez",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/keaq/index.htm",
+    "directions": "https://www.nps.gov/keaq/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Native American Heritage",
+    "Schools and Education",
+    "Urban America",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Grasslands",
+    "Meadows",
+    "River and Riparian",
+    "Trails",
+    "Water Trails",
+    "Watersheds",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "id": "np-memy",
+  "name": "Medgar and Myrlie Evers Home National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "MS",
+  "stateName": "Mississippi",
+  "region": "southeast",
+  "description": "Medgar and Myrlie Evers were partners in the civil rights struggle. The assassination of Medgar Evers in the carport of their home on June 12, 1963, was the first murder of a nationally significant leader of the American Civil Rights Movement, and it became a catalyst for passage of the Civil Rights Act of 1964. Myrlie Evers continues to promote issues of racial equality and social justice.",
+  "shortDescription": "Medgar and Myrlie Evers were partners in the civil rights struggle. The assassination of Medgar Evers in the carport of their home on June 12, 1963, was the first murder of a nationally significant le...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 32.34096274,
+    "longitude": -90.21264553
+  },
+  "nationalParkInfo": {
+    "parkCode": "memy",
+    "npsId": "01DE3F7C-354D-4468-AC36-2CF5274AB68E",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/memy/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/memy/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "601-345-7211",
+    "email": "memy_admininstration@nps.gov",
+    "website": "https://www.nps.gov/memy/index.htm",
+    "address": {
+      "line1": "2332 Margaret Walker Alexander Drive",
+      "line2": "",
+      "city": "Jackson",
+      "state": "MS",
+      "postalCode": "39213"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "Closed",
+    "description": "Our service hours are Tuesday-Saturday 9am-4pm, CLOSED from 12-1pm for lunch.\n\nGrounds of the home are open sunrise to sunset every day. Please respect neighbors' privacy and private property."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 50 F to 83 F. Rain is common. Summer: Be prepared for heat and humidity. Temperatures usually range from 70 F to 95 F. Thunderstorms are common. Fall: Temperatures usually range from 55 F to 79 F. Winter: Temperatures range from 40 F to 63 F. Rain is common."
+  },
+  "images": [
+    {
+      "id": "memy-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A9FDD030-BEAF-C4EE-7688C55E2902CB09.jpg",
+      "title": "Medgar and Myrlie Evers Home",
+      "altText": "A small ranch-style home, aqua in color with light brown brick accents, sits on a shaded lot.",
+      "caption": "Medgar and Myrlie Evers Home National Monument",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "memy-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4AE26CFC-C1F5-2B9C-2D590D913A3CDF8D.jpg",
+      "title": "Medgar Evers",
+      "altText": "Close up black and white portrait of a black man with a thin mustache",
+      "caption": "Medgar Evers",
+      "credit": "Francis H. Mitchell - Ebony Collection",
+      "isPrimary": false
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/memy/index.htm",
+    "directions": "http://www.nps.gov/memy/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Civil Rights",
+    "Tragic Events",
+    "Assassinations",
+    "National Monument",
+    "MS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

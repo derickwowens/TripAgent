@@ -1,0 +1,170 @@
+{
+  "id": "np-mopi",
+  "name": "Mormon Pioneer National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "IL",
+  "stateName": "Illinois",
+  "region": "midwest",
+  "description": "Explore the Mormon Pioneer National Historic Trail across five states to see the 1,300-mile route traveled by Mormons who fled Nauvoo, Illinois, to the Great Salt Lake Valley in 1846-1847.",
+  "shortDescription": "Explore the Mormon Pioneer National Historic Trail across five states to see the 1,300-mile route traveled by Mormons who fled Nauvoo, Illinois, to the Great Salt Lake Valley in 1846-1847.",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 41.2650321741,
+    "longitude": -101.84083756
+  },
+  "nationalParkInfo": {
+    "parkCode": "mopi",
+    "npsId": "AD731EF0-685F-4397-88C1-A9BB21EBF034",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mopi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mopi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/mopi/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7, & 8",
+      "line2": "Mormon Pioneer National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Mormon Pioneer National Historic Trail is not a clearly marked hiking trail. Instead it is a corridor that passes through communities, urban areas, public lands, and Wilderness. The route travels across a variety of land ownerships and management, including private land. Each location varies as to the hours of operation and access. Please contact individual trail sites before your visit for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of the Mormon Pioneer National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: weather.gov"
+  },
+  "images": [
+    {
+      "id": "mopi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DB6E0-1DD8-B71B-0BF585CE20DBD781.jpg",
+      "title": "Echo Canyon, Utah",
+      "altText": "Red cliffs line a highway as seen from a high point with grass in the foreground.",
+      "caption": "Echo Canyon on the way from Wyoming to Salt Lake City, Utah is both beautiful and historic.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mopi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DB518-1DD8-B71B-0BB500A79506970B.jpg",
+      "title": "Brigham Young grave, Utah",
+      "altText": "A bronze plaque with description on a metal fence surrounding Brigham Young's grave.",
+      "caption": "Brigham Young's grave lies in the heart of downtown Salt Lake City, Utah",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mopi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/55FECCFF-0E5C-407A-6EAACFFD5EB9278B.jpg",
+      "title": "Monument Rock, Utah.",
+      "altText": "Red rock monolith in a rocky canyon",
+      "caption": "Monument Rock in Echo Canyon, Utah.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mopi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/55D6F5F6-0332-D097-5DFDB9261AEDFCE4.jpg",
+      "title": "Joseph & Emma Smith House, Nauvoo, Illinois",
+      "altText": "A large, white, two-story historic wood home with a red roof and white picket fence.",
+      "caption": "Joseph & Emma Smith  House in Nauvoo, Illinois.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mopi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/55F46FD9-0354-C5CC-612F2D332CAC5D58.jpg",
+      "title": "Mormon Pioneer Trail in Utah",
+      "altText": "A hiking trail with a trail sign.",
+      "caption": "There are places you can hike on the historic trail!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mopi/index.htm",
+    "directions": "http://www.nps.gov/mopi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "Westward Expansion",
+    "Rock Landscapes and Features",
+    "Trails",
+    "National Historic Trail",
+    "IL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

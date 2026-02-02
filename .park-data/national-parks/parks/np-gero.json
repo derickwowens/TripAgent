@@ -1,0 +1,192 @@
+{
+  "id": "np-gero",
+  "name": "George Rogers Clark National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "IN",
+  "stateName": "Indiana",
+  "region": "midwest",
+  "description": "The British flag would not be raised above Fort Sackville Feb. 25, 1779. At 10 A.M., the garrison surrendered to American Colonel George Rogers Clark. His American army, aided by French residents of the Illinois country, had marched through freezing floodwaters to gain this victory. The fort’s capture assured United States claims to the frontier, an area nearly as large as the original 13 states.",
+  "shortDescription": "The British flag would not be raised above Fort Sackville Feb. 25, 1779. At 10 A.M., the garrison surrendered to American Colonel George Rogers Clark. His American army, aided by French residents of t...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 38.67912659,
+    "longitude": -87.53545212
+  },
+  "nationalParkInfo": {
+    "parkCode": "gero",
+    "npsId": "48C4BDA1-98A3-441A-87FF-BAAB3AA043AE",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gero/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gero/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8128821776",
+    "email": "GERO_Ranger_Activities@nps.gov",
+    "website": "https://www.nps.gov/gero/index.htm",
+    "address": {
+      "line1": "401 S. 2nd Street",
+      "line2": "",
+      "city": "Vincennes",
+      "state": "IN",
+      "postalCode": "47591"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The George Rogers Clark National Historical Park Visitor Center is a great place to start your visit. The visitor center contains a small exhibit area, bookstore, and restrooms. The 30-minute introductory movie called \"Long Knives\" shares the backstory of George Rogers Clark and his campaign during the American Revolution. Before going to the Clark Memorial, check-in with a ranger at the visitor center."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in the area is quite typical for the Midwest. The average temperature for the winter months is in the mid 30s, but the summers can often be hot and humid with temperatures reaching into the 90s."
+  },
+  "images": [
+    {
+      "id": "gero-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C795C28-1DD8-B71B-0BB8A40DEE3F49FD.jpg",
+      "title": "Clark Memorial at Sunset",
+      "altText": "Sun setting behind the Clark Memorial",
+      "caption": "Many people enjoy watching the sun set behind the George Rogers Clark Memorial on the banks of the Wabash River",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "gero-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7959D2-1DD8-B71B-0B0CA5B2DD69D956.jpg",
+      "title": "George Rogers Clark Memorial",
+      "altText": "George Rogers Clark Memorial entrance",
+      "caption": "Thousands of visitors ascend the steps of the Clark Memorial and gain a glimpse of the heroic eagle above the entrance doors.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gero-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C795B05-1DD8-B71B-0B0EF1922A505EC3.jpg",
+      "title": "Francis Vigo Statue",
+      "altText": "Sun setting behind the Francis Vigo Statue",
+      "caption": "At the end of each day, visitors gather in the shadow of Vigo to watch the sun set over the Wabash River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gero-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B8C82C16-AF6E-357D-4B3D00B8C67EF1F4.jpg",
+      "title": "Purple Sunset Memorial",
+      "altText": "cloudy purple sky with memorial",
+      "caption": "Sunset over the memorial",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gero-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B8E339A2-BD5E-9EC2-A2ADA3A7BFFB4A14.jpg",
+      "title": "Father Gibault",
+      "altText": "Statue of a man wearing a cloak with trees in background",
+      "caption": "Father Gibault an often overlooked part of the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gero/index.htm",
+    "directions": "http://www.nps.gov/gero/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Explorers and Expeditions",
+    "Forts",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Schools and Education",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Night Sky",
+    "Astronomy",
+    "National Historical Park",
+    "IN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

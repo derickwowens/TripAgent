@@ -1,0 +1,255 @@
+{
+  "id": "np-laro",
+  "name": "Lake Roosevelt National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "region": "pacific",
+  "description": "The ancient geologic landscape of the upper Columbia River cradles Lake Roosevelt in walls of stone carved by massive ice age floods. Come explore the shorelines and learn the stories of American Indians, traders and trappers, settlers and dam builders who called this place home. Swim, boat, hike, camp, and fish at this hidden gem in Northeast Washington, created by the Grand Coulee Dam.",
+  "shortDescription": "The ancient geologic landscape of the upper Columbia River cradles Lake Roosevelt in walls of stone carved by massive ice age floods. Come explore the shorelines and learn the stories of American Indi...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 48.17148735,
+    "longitude": -118.3513713
+  },
+  "nationalParkInfo": {
+    "parkCode": "laro",
+    "npsId": "B548FF88-8155-4E56-8E77-FB140D06E1EC",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/laro/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/laro/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "509-754-7800",
+    "email": "laro_web_master@nps.gov",
+    "website": "https://www.nps.gov/laro/index.htm",
+    "address": {
+      "line1": "Lake Roosevelt National Recreation Area",
+      "line2": "1008 Crest Drive",
+      "city": "Coulee Dam",
+      "state": "WA",
+      "postalCode": "99116"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is open 24 hours per day, unless otherwise designated. Day use areas are open from dawn until dusk. Administrative buildings are closed to public."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Lake Roosevelt is generally a cool or cold place from fall through spring with overcast skies. In the summer, the skies clear and present warm to hot days. More information on weather can be found under Alerts and Conditions."
+  },
+  "images": [
+    {
+      "id": "laro-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C878C15-1DD8-B71B-0B3F6762ED559E9B.jpg",
+      "title": "Lake Roosevelt 1",
+      "altText": "Looking down Lake Roosevelt with clear skies and treed shorelines.",
+      "caption": "Looking down Lake Roosevelt with clear skies and treed shorelines.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "laro-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C878DAA-1DD8-B71B-0B4CF81C1F46022F.jpg",
+      "title": "Lake Roosevelt 2",
+      "altText": "People canoeing down Lake Roosevelt on a day with blue skies.",
+      "caption": "Visitors enjoying canoeing around the Hawk Creek area.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "laro-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C878F09-1DD8-B71B-0B86DE98B7C35AF9.jpg",
+      "title": "Lake Roosevelt 3",
+      "altText": "A glow is coming over the horizon and bringing first light to Lake Roosevelt and Crescent Bay Lake.",
+      "caption": "The glow of first light is hitting Lake Roosevelt and Crescent Bay Lake.",
+      "credit": "NPS/Bausch",
+      "isPrimary": false
+    },
+    {
+      "id": "laro-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8791E4-1DD8-B71B-0B5B84AE35F46BB8.jpg",
+      "title": "Lake Roosevelt 4",
+      "altText": "Snow falls over a small peninsula with its clear reflection over the waters.",
+      "caption": "Snow falls over a small peninsula with its clear reflection over the waters.",
+      "credit": "NPS/Cadwell",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/laro/index.htm",
+    "directions": "http://www.nps.gov/laro/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Forts",
+    "Military",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "National Recreation Area",
+    "WA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

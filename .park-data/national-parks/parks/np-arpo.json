@@ -1,0 +1,260 @@
+{
+  "id": "np-arpo",
+  "name": "Arkansas Post National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "AR",
+  "stateName": "Arkansas",
+  "region": "southeast",
+  "description": "Located at the confluence of two rivers, Arkansas Post has served as a gathering place for many cultures throughout human history - it represents cultural cooperation, conflict, synthesis, and diversity.",
+  "shortDescription": "Located at the confluence of two rivers, Arkansas Post has served as a gathering place for many cultures throughout human history - it represents cultural cooperation, conflict, synthesis, and diversi...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 34.00389998,
+    "longitude": -91.30837178
+  },
+  "nationalParkInfo": {
+    "parkCode": "arpo",
+    "npsId": "6876F4F4-9B8F-4648-89EA-C1BBF770C494",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/arpo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/arpo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8705482207",
+    "email": "arpo_information@nps.gov",
+    "website": "https://www.nps.gov/arpo/index.htm",
+    "address": {
+      "line1": "1741 Old Post Road",
+      "line2": "",
+      "city": "Gillett",
+      "state": "AR",
+      "postalCode": "72055"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - Sunset",
+    "tuesday": "7:00AM - Sunset",
+    "wednesday": "7:00AM - Sunset",
+    "thursday": "7:00AM - Sunset",
+    "friday": "7:00AM - Sunset",
+    "saturday": "7:00AM - Sunset",
+    "sunday": "7:00AM - Sunset",
+    "description": "The park grounds are open daily: 7:00 am to sunset. The visitor center is open Thursday through Monday: 8:30 am to 5 pm. Please visit the Visitor Center section on this page for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Arkansas shares the same climate classification as the rest of the southeastern United States: humid subtropical. This type of climate features relatively mild winters and hot, steamy summers."
+  },
+  "images": [
+    {
+      "id": "arpo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C847F86-1DD8-B71B-0B476A9BC4ABFDBB.jpg",
+      "title": "Arkansas Post National Monument",
+      "altText": "confluence of two rivers",
+      "caption": "Located at the confluence of two rivers, Arkansas Post has served as a gathering place for many cultures.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "arpo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8480F1-1DD8-B71B-0BAC91B673F7D3BF.jpg",
+      "title": "Arkansas Post National Monument",
+      "altText": "the Alligator Slough footbridge",
+      "caption": "The Alligator Slough footbridge",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "arpo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84849C-1DD8-B71B-0BBE2C31886E6605.jpg",
+      "title": "Arkansas Post National Monument",
+      "altText": "Arkansas Post National Memorial is in the Lower Mississippi Riverine Forest ecoregion.",
+      "caption": "Located at the confluence of two rivers, Arkansas Post has served as a gathering place for many cultures throughout human history - it represents cultural cooperation, conflict, synthesis, and diversity.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "arpo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C848237-1DD8-B71B-0B63D135E8D708F2.jpg",
+      "title": "Arkansas Post National Monument",
+      "altText": "Over the three centuries of history at Arkansas Post, the area has been greatly changed by both natu",
+      "caption": "Located at the northern edge of the Gulf coastal plain, the Arkansas Post's native growth ranges from prairie grasses and lowland hardwood forests to wetland marshes near the bayous and river.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "arpo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C848373-1DD8-B71B-0BD4F4F6875AA6FC.jpg",
+      "title": "Living History",
+      "altText": "Arkansas Post National Monument cannon firing",
+      "caption": "During the Civil War, Confederate troops tried to maintain tactical control of the confluence of the Arkansas and White Rivers, and in 1862 they constructed a massive earthen fortification known as Fort Hindman at the Post. In January 1863 Union troops d",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/arpo/index.htm",
+    "directions": "http://www.nps.gov/arpo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Asian American Heritage",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Hispanic American Heritage",
+    "Immigration",
+    "Migrations",
+    "Military",
+    "Infantry and Militia",
+    "US Army",
+    "US Navy",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Native American Heritage",
+    "Transportation",
+    "Canals",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "Westward Expansion",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Natural Sounds",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Wetlands",
+    "National Memorial",
+    "AR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

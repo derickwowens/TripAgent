@@ -1,0 +1,226 @@
+{
+  "id": "np-biso",
+  "name": "Big South Fork National River & Recreation Area",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "KY",
+  "stateName": "Kentucky",
+  "region": "southeast",
+  "description": "Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National River and Recreation Area protects the free-flowing Big South Fork of the Cumberland River and its tributaries. The area boasts miles of scenic gorges and sandstone bluffs, is rich with natural and historic features and has been developed to provide visitors with a wide range of outdoor recreational activities.",
+  "shortDescription": "Encompassing 125,000 acres of the Cumberland Plateau, Big South Fork National River and Recreation Area protects the free-flowing Big South Fork of the Cumberland River and its tributaries. The area b...",
+  "designation": "National River & Recreation Area",
+  "coordinates": {
+    "latitude": 36.5348388,
+    "longitude": -84.66506688
+  },
+  "nationalParkInfo": {
+    "parkCode": "biso",
+    "npsId": "61EC5C9A-1A38-4040-AE38-E62FD2A9A836",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/biso/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/biso/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4235699778",
+    "email": "biso_information@nps.gov",
+    "website": "https://www.nps.gov/biso/index.htm",
+    "address": {
+      "line1": "4564 Leatherwood Road",
+      "line2": "",
+      "city": "Oneida",
+      "state": "TN",
+      "postalCode": "37841"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is always open."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather along the Cumberland Plateau can be best described as unpredictable. Each season brings its own weather patterns. Summers are generally hot and humid, with high temperatures sometimes eclipsing 90 degrees. The low temperatures in winter often dip below freezing. Spring sees the most amount of precipitation, but rainfall can occur in various amounts throughout the year."
+  },
+  "images": [
+    {
+      "id": "biso-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C793E18-1DD8-B71B-0B815C3EA6EF7F23.jpg",
+      "title": "Big South Fork NRRA in Fall",
+      "altText": "Big South Fork NRRA in Fall",
+      "caption": "Big South Fork NRRA in Fall",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "586B4949-8D1B-4F03-8F6D-D1FCFE01AEF4",
+      "name": "Pool Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/biso/index.htm",
+    "directions": "http://www.nps.gov/biso/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Industry",
+    "Mining",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Fire",
+    "Geology",
+    "Grasslands",
+    "Night Sky",
+    "Astronomy",
+    "Rock Landscapes and Features",
+    "Arches",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "National River & Recreation Area",
+    "KY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

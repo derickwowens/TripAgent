@@ -1,0 +1,158 @@
+{
+  "id": "np-wicl",
+  "name": "President William Jefferson Clinton Birthplace Home National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AR",
+  "stateName": "Arkansas",
+  "region": "southeast",
+  "description": "Named for the father who died shortly before his birth, William Jefferson Blythe III later became the 42nd President of the United States. In Hope, the experiences shared with his mother and grandparents in rural Arkansas developed the broad views on race relations, social justice, and public service that defined his presidency and life after the White House. For Bill Clinton, \"Hope was home.\"",
+  "shortDescription": "Named for the father who died shortly before his birth, William Jefferson Blythe III later became the 42nd President of the United States. In Hope, the experiences shared with his mother and grandpare...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 33.66758356,
+    "longitude": -93.59641868
+  },
+  "nationalParkInfo": {
+    "parkCode": "wicl",
+    "npsId": "E7C945ED-4224-4539-B2AE-97A5B229FA74",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wicl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wicl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(870) 777-4455",
+    "email": "Wicl_Visitor_Center@nps.gov",
+    "website": "https://www.nps.gov/wicl/index.htm",
+    "address": {
+      "line1": "117 South Hervey Street",
+      "line2": "",
+      "city": "Hope",
+      "state": "AR",
+      "postalCode": "71801"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "Closed",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "The President William Jefferson Clinton Birthplace Home NHS Visitor Center is closed on Thursdays, New Year's Day, Thanksgiving Day and Christmas Day. \n\nThe NHS grounds and the Virginia Clinton Kelley Memorial Garden are open daily for public visitation and use from sunrise until sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Average temperatures in Hope can range from 30ºF to 60ºF in winter, 40ºF to 80ºF in the spring, 65ºF to 95ºF in summer, and 50ºF to 75ºF in the fall. Humidity in late spring, summer and early fall can make temperatures feel hotter and lead to dehydration or heatstroke. We recommend that visitors in these seasons dress comfortably and drink plenty of water to beat the heat. Inclement weather (tornadoes, thunderstorms) are possible at times, so check local weather conditions before your visit to Arkansas."
+  },
+  "images": [
+    {
+      "id": "wicl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B417-1DD8-B71B-0B6F982FAD0B0CE9.jpg",
+      "title": "Birthplace Home",
+      "altText": "The birthplace home of President Bill Clinton illuminated at dusk.",
+      "caption": "President Clinton spent the first four years of his life in this home being raised by his maternal grandparents.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "wicl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F997253B-AFD4-9972-07A4542D7A84967B.jpg",
+      "title": "Visitor Center",
+      "altText": "Exterior of Visitor Center building with landscape surrounding",
+      "caption": "Exterior of Visitor Center from Hervey Street",
+      "credit": "NPS-WICL-2019",
+      "isPrimary": false
+    },
+    {
+      "id": "wicl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/34197C63-ED31-DA1A-6DBEC37FD11DB564.jpg",
+      "title": "The living room inside the Clinton Birthplace Home",
+      "altText": "A view of the living room with a fireplace, rug, recliner and other furniture",
+      "caption": "The living room inside the Clinton Birthplace Home",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wicl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/33CFED5E-C797-3A13-1BC59A1AB0A80335.jpg",
+      "title": "The formal living room of the Clinton Birthplace Home",
+      "altText": "A view of the formal living room features a tricycle, table and chairs, and radio",
+      "caption": "The formal living room of the Clinton Birthplace Home",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wicl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7FF4FE93-071E-4CE5-32154D31E3507074.jpg",
+      "title": "Memorial Garden",
+      "altText": "Memorial garden for his mother, Virginia",
+      "caption": "Memorial garden for his mother, Virginia",
+      "credit": "NPS-WICL-2019",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wicl/index.htm",
+    "directions": "http://www.nps.gov/wicl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Birthplace",
+    "Presidents",
+    "Schools and Education",
+    "Social Movements",
+    "Civil Rights",
+    "National Historic Site",
+    "AR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

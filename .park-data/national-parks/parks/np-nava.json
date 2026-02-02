@@ -1,0 +1,140 @@
+{
+  "id": "np-nava",
+  "name": "Navajo National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "For centuries, the Hopi, San Juan Southern Paiute, Zuni, and Navajo people have lived in the canyons. Springs fed farmlands on the canyon floor and homes were built in the natural sandstone alcoves. The cliff dwellings of Betatakin, Keet Seel, and Inscription House were last physically occupied around 1300 AD but the villages have a spiritual presence that can still be felt today.",
+  "shortDescription": "For centuries, the Hopi, San Juan Southern Paiute, Zuni, and Navajo people have lived in the canyons. Springs fed farmlands on the canyon floor and homes were built in the natural sandstone alcoves. T...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.71755643,
+    "longitude": -110.5504015
+  },
+  "nationalParkInfo": {
+    "parkCode": "nava",
+    "npsId": "C4F477D4-D34A-486B-BC6C-94FB2FAA8D67",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/nava/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/nava"
+    }
+  ],
+  "contact": {
+    "phone": "9286722700",
+    "email": "justin_yazzie@nps.gov",
+    "website": "https://www.nps.gov/nava/index.htm",
+    "address": {
+      "line1": "End of AZ Highway 564",
+      "line2": "",
+      "city": "Shonto",
+      "state": "AZ",
+      "postalCode": "86054"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:30PM",
+    "tuesday": "8:00AM - 5:30PM",
+    "wednesday": "8:00AM - 5:30PM",
+    "thursday": "8:00AM - 5:30PM",
+    "friday": "8:00AM - 5:30PM",
+    "saturday": "8:00AM - 5:30PM",
+    "sunday": "8:00AM - 5:30PM",
+    "description": "Summer Season Visitor Center Hours of Operation"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Check weather updates at NOAA.gov and enter city Betatakin, and State, Arizona."
+  },
+  "images": [
+    {
+      "id": "nava-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C821A96-1DD8-B71B-0B6A3DE748A3EA81.jpg",
+      "title": "Betatakin Cliff dwelling and Alcove",
+      "altText": "view from inside the Betatakin Cliff Dwelling looking out.",
+      "caption": "Betatakin Cliff Dwelling was home to the Ancestral Puebloans over 700 years ago.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/nava/index.htm",
+    "directions": "http://www.nps.gov/nava"
+  },
+  "keywords": [
+    "Archeology",
+    "Cliff Dwellings",
+    "Native American Heritage",
+    "Trails",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "id": "np-upde",
+  "name": "Upper Delaware Scenic & Recreational River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Canoe through rapids and quiet pools as the Delaware River winds its way through a valley of swiftly changing scenery or fish amid rolling hills and riverfront villages in one of the finest fishing rivers in the northeastern United States. The clean water of the Delaware, the last major undammed river in the eastern United States, supports a healthy ecosystem and offers tranquility and excitement.",
+  "shortDescription": "Canoe through rapids and quiet pools as the Delaware River winds its way through a valley of swiftly changing scenery or fish amid rolling hills and riverfront villages in one of the finest fishing ri...",
+  "designation": "Scenic & Recreational River",
+  "coordinates": {
+    "latitude": 41.66172578,
+    "longitude": -75.03861562
+  },
+  "nationalParkInfo": {
+    "parkCode": "upde",
+    "npsId": "09812D3A-1E2B-4402-9ABC-31C79BCB9F6B",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/upde/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/upde/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5706854871",
+    "email": "upde_interpretation@nps.gov",
+    "website": "https://www.nps.gov/upde/index.htm",
+    "address": {
+      "line1": "274 River Road",
+      "line2": "",
+      "city": "Beach Lake",
+      "state": "PA",
+      "postalCode": "18405"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Upper Delaware Scenic and Recreational River is open year-round. Limited river access may occur during winter months due to ice and snow build up on public accesses. River information may be obtained by calling the park's River Hotline at 845-252-7100. This hotline is available 24 hours a day, 7 days a week from May 1 to October 1."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from lows of 26°F to highs of 80°F with average rainfall of 5 inches. Summer: Temperatures usually range from lows of 55°F to highs of 85°F with average rainfall of 4 inches. Fall: Temperatures usually range from lows of 30°F to highs of 83°F. Fall foliage is at its peak sometime in October as daily mountain temperatures vary frequently and influence the change. Winter: Temperatures usually range from lows of 15°F to highs of 49°F."
+  },
+  "images": [
+    {
+      "id": "upde-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CCDE00F6-1DD8-B71B-0BF8D6AEEFB16FAC.jpg",
+      "title": "Upper Delaware Scenic and Recreational River",
+      "altText": "a view of the Delaware River",
+      "caption": "A view of Upper Delaware Scenic and Recreational River",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "upde-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD123899-1DD8-B71B-0BDDF82BB429114F.jpg",
+      "title": "Park Ranger - Upper Delaware Scenic and Recreational River",
+      "altText": "a Park Ranger shows children the wonders of nature",
+      "caption": "A Park Ranger shows children the wonders of nature",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "upde-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD21EF64-1DD8-B71B-0B7828B4E7DB12A6.jpg",
+      "title": "Upper Delaware Scenic and Recreational River",
+      "altText": "a rocky shore of the Delaware River",
+      "caption": "Geological wonders of Upper Delaware Scenic and Recreational River",
+      "credit": "NPS Photo / Dave Soete",
+      "isPrimary": false
+    },
+    {
+      "id": "upde-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD4534B6-1DD8-B71B-0B3123CAF4EAC62E.jpg",
+      "title": "Zane Grey Museum - Upper Delaware Scenic and Recreational River",
+      "altText": "the Zane Grey Museum at Upper Delaware Scenic and Recreational River",
+      "caption": "The Zane Grey Museum at Upper Delaware Scenic and Recreational River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "upde-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD5A898D-1DD8-B71B-0B14C701B538CF14.jpg",
+      "title": "Roebling's Delaware Aqueduct - Upper Delaware Scenic and Recreational River",
+      "altText": "Roebling's Delaware Aqueduct at Upper Delaware Scenic and Recreational River",
+      "caption": "Roebling's Delaware Aqueduct at Upper Delaware Scenic and Recreational River",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "upde-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD6C7346-1DD8-B71B-0BC90615DE962D11.jpg",
+      "title": "Lackawaxen, PA River Access at Upper Delaware Scenic and Recreational River",
+      "altText": "park ranger canoes on the shore at Upper Delaware Scenic and Recreational River",
+      "caption": "Park Ranger canoes on the shore at Upper Delaware Scenic and Recreational River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "0F2CC530-8DD9-4328-98AA-E514918AD206",
+      "name": "River Tubing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/upde/index.htm",
+    "directions": "http://www.nps.gov/upde/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Poetry and Literature",
+    "Commerce",
+    "Engineering",
+    "Industry",
+    "Laborer and Worker",
+    "Military",
+    "Battlefields",
+    "Native American Heritage",
+    "Transportation",
+    "Bridges",
+    "Canals",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Geology",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "Scenic & Recreational River",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

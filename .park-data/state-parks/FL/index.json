@@ -1,0 +1,360 @@
+{
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "totalParks": 32,
+  "lastSynced": "2026-02-02T02:30:24.146Z",
+  "parks": [
+    {
+      "id": "fl-bahia-honda-state-park",
+      "name": "Bahia Honda State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-john-pennekamp-coral-reef-state-park",
+      "name": "John Pennekamp Coral Reef State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-myakka-river-state-park",
+      "name": "Myakka River State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-ichetucknee-springs-state-park",
+      "name": "Ichetucknee Springs State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-blue-spring-state-park",
+      "name": "Blue Spring State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-rainbow-springs-state-park",
+      "name": "Rainbow Springs State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-st-andrews-state-park",
+      "name": "St. Andrews State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-edward-ball-wakulla-springs-state-park",
+      "name": "Edward Ball Wakulla Springs State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-hillsborough-river-state-park",
+      "name": "Hillsborough River State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-anastasia-state-park",
+      "name": "Anastasia State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-big-lagoon-state-park",
+      "name": "Big Lagoon State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-blackwater-river-state-park",
+      "name": "Blackwater River State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-caladesi-island-state-park",
+      "name": "Caladesi Island State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-cayo-costa-state-park",
+      "name": "Cayo Costa State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-collier-seminole-state-park",
+      "name": "Collier-Seminole State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-de-leon-springs-state-park",
+      "name": "De Leon Springs State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-devils-millhopper-geological-state-park",
+      "name": "Devil's Millhopper Geological State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-falling-waters-state-park",
+      "name": "Falling Waters State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-florida-caverns-state-park",
+      "name": "Florida Caverns State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-fort-clinch-state-park",
+      "name": "Fort Clinch State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-grayton-beach-state-park",
+      "name": "Grayton Beach State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-henderson-beach-state-park",
+      "name": "Henderson Beach State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-highlands-hammock-state-park",
+      "name": "Highlands Hammock State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-ellie-schiller-homosassa-springs-wildlife-state-park",
+      "name": "Ellie Schiller Homosassa Springs Wildlife State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-honeymoon-island-state-park",
+      "name": "Honeymoon Island State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-jonathan-dickinson-state-park",
+      "name": "Jonathan Dickinson State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-paynes-prairie-preserve-state-park",
+      "name": "Paynes Prairie Preserve State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-sebastian-inlet-state-park",
+      "name": "Sebastian Inlet State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-silver-springs-state-park",
+      "name": "Silver Springs State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-stephen-foster-folk-culture-center-state-park",
+      "name": "Stephen Foster Folk Culture Center State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-topsail-hill-preserve-state-park",
+      "name": "Topsail Hill Preserve State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "fl-wekiwa-springs-state-park",
+      "name": "Wekiwa Springs State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    }
+  ]
+}

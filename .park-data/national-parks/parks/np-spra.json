@@ -1,0 +1,100 @@
+{
+  "id": "np-spra",
+  "name": "Springfield 1908 Race Riot National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "IL",
+  "stateName": "Illinois",
+  "region": "midwest",
+  "description": "In August 1908, a large White mob attacked the Black community in Springfield, Illinois. Rioters destroyed homes and businesses and lynched two men. The event led to the founding of the National Association for the Advancement of Colored People (NAACP). Today, archeological evidence gives a rare glimpse into a community devastated by the race riots of the early 20th century.",
+  "shortDescription": "In August 1908, a large White mob attacked the Black community in Springfield, Illinois. Rioters destroyed homes and businesses and lynched two men. The event led to the founding of the National Assoc...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 39.8027,
+    "longitude": -89.6422
+  },
+  "nationalParkInfo": {
+    "parkCode": "spra",
+    "npsId": "8E5D875F-418A-40FD-B8C4-DBE8026A5CC5",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/spra/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/spra/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(573) 880-3120",
+    "email": "quinn_gilly@nps.gov",
+    "website": "https://www.nps.gov/spra/index.htm",
+    "address": {
+      "line1": "400 N. 9th Street",
+      "line2": "",
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "62702"
+    }
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers in Illinois are hot and humid. Winters can be cold and windy."
+  },
+  "images": [
+    {
+      "id": "spra-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9C79FA2A-CEE8-E14A-A7FC097D059161B7.jpg",
+      "title": "Illinois State Militia",
+      "altText": "Historic photo of militia members standing in the remains of a burned building.",
+      "caption": "The Illinois State Militia stands in the burned home of a Black resident at the corner of 9th Street and Madison in Springfield.",
+      "credit": "Smithsonian National Museum of African American History and Culture",
+      "isPrimary": true
+    },
+    {
+      "id": "spra-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9C5613D6-C51D-C63B-C5C9F9EC92C9D3C6.jpg",
+      "title": "Destroyed Home at 9th and Madison Streets",
+      "altText": "Historic photo of two people using a hose to extinguish a burning building.",
+      "caption": "Two people attempt to extinguish a burning building in 1908.",
+      "credit": "Collection of the Smithsonian National Museum of African American History and Culture",
+      "isPrimary": false
+    },
+    {
+      "id": "spra-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9C470C24-0773-2B3B-07BE553ED8E2B447.jpg",
+      "title": "View of the Park Today",
+      "altText": "A narrow grassy lot surrounded by fence.",
+      "caption": "View of Springfield 1908 Race Riot National Monument Today",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/spra/index.htm",
+    "directions": "https://www.nps.gov/spra/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Colonization and Settlement",
+    "Commerce",
+    "Social Movements",
+    "Civil Rights",
+    "Tragic Events",
+    "Massacres",
+    "Urban America",
+    "National Monument",
+    "IL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

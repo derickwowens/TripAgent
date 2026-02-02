@@ -1,0 +1,322 @@
+{
+  "id": "np-maca",
+  "name": "Mammoth Cave National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "KY",
+  "stateName": "Kentucky",
+  "region": "southeast",
+  "description": "Rolling hills, deep river valleys, and the world's longest known cave system. Mammoth Cave National Park is home to thousands of years of human history and a rich diversity of plant and animal life, earning it the title of UNESCO World Heritage Site and International Biosphere Region.",
+  "shortDescription": "Rolling hills, deep river valleys, and the world's longest known cave system. Mammoth Cave National Park is home to thousands of years of human history and a rich diversity of plant and animal life, e...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 37.19760458,
+    "longitude": -86.13090198
+  },
+  "nationalParkInfo": {
+    "parkCode": "maca",
+    "npsId": "6A1737A1-6848-4087-AAF7-68A427247357",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/maca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/maca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2707582180",
+    "email": "maca_information@nps.gov",
+    "website": "https://www.nps.gov/maca/index.htm",
+    "address": {
+      "line1": "1 Visitor Center Parkway",
+      "line2": "",
+      "city": "Mammoth Cave",
+      "state": "KY",
+      "postalCode": "42259-0007"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Mammoth Cave National Park is open 24-hours a day, although services such as cave tours and the visitor center are limited after-hours. There is no gate at the park entrance. Please note that camping is only possible either in designated campgrounds or backcountry campsites with a valid reservation or permit."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Kentucky has a moderate climate with warm, yet moist conditions. Summers average in the high 80s; winters average in the low 40s. Southern Kentucky, where Mammoth Cave is located, receives the highest average precipitation for the state, about 50 inches per year, mostly in spring. Winter can bring mild to moderate snow and ice. Storms happen year-round, and can include tornadoes and flooding in low-lying areas, but severe weather is infrequent. The temperature deep in the cave is a constant 54°F (12°C)."
+  },
+  "images": [
+    {
+      "id": "maca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/95EAA431-F26B-66EB-E9E6B108F47F70B0.jpg",
+      "title": "Waterfall at Historic Entrance",
+      "altText": "A cascade of water pours over a rock ledge. Green foliage is in the background.",
+      "caption": "The sound of falling water welcomes visitors into the natural entrance of Mammoth Cave.",
+      "credit": "NPS Photo/ Deb Spillman",
+      "isPrimary": true
+    },
+    {
+      "id": "maca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/947D4300-ECE7-A506-8A6FF2BA4AECCFBB.jpg",
+      "title": "Historic Entrance",
+      "altText": "A long staircase travels down a slope into the dark cave opening.",
+      "caption": "The Historic Entrance to Mammoth Cave has welcomed explorers for centuries.",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "isPrimary": false
+    },
+    {
+      "id": "maca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/94A76787-FA1B-8DC8-71277FDFA5E7CC79.jpg",
+      "title": "Cleaveland Avenue",
+      "altText": "A long cave passage with an oval shape.",
+      "caption": "The network of cave passages in the Mammoth Cave system stretches over 400 miles.",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "isPrimary": false
+    },
+    {
+      "id": "maca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/94F61E66-ACE7-ED8C-FC411F6BFDD80490.jpg",
+      "title": "Good Spring Baptist Church",
+      "altText": "A small white church building with yellow flowers in the foreground.",
+      "caption": "Three historic church structures still stand, shedding light on the pre-park communities that once existed here.",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "isPrimary": false
+    },
+    {
+      "id": "maca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9472C6B0-DF25-7F27-BA8D162F34D2CB2F.jpg",
+      "title": "Heritage Trail",
+      "altText": "A wooden boardwalk leads into the forest.",
+      "caption": "The half-mile Heritage Trail leads to panoramic views of the Green River.",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "isPrimary": false
+    },
+    {
+      "id": "maca-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/95357AD9-E6A5-DDCF-432D3E3832808431.jpg",
+      "title": "Green River Valley",
+      "altText": "A view of a river valley with hills covered in trees. A blue sky with white clouds stands above.",
+      "caption": "Rolling hills and valleys can be seen from many of the overlooks in the park.",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "isPrimary": false
+    },
+    {
+      "id": "maca-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/958C8BC3-9657-7E73-D0697F507A869B69.jpg",
+      "title": "Gothic Avenue",
+      "altText": "A large stacked stone pillar reaches the flat ceiling containing signatures in a cave passage.",
+      "caption": "Over two hundred years of guided tours leads to the history of Mammoth Cave.",
+      "credit": "NPS Photo/ Jackie Wheet",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/maca/index.htm",
+    "directions": "http://www.nps.gov/maca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Industry",
+    "Mining",
+    "Medicine",
+    "Hospital",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Churches",
+    "Transportation",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "War of 1812",
+    "World War I",
+    "Women's History",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Caves, Caverns and Karst",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "Mineral Deposits",
+    "Groundwater",
+    "Freshwater Springs",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "Wetlands",
+    "National Park",
+    "KY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

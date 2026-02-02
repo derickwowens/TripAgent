@@ -1,0 +1,206 @@
+{
+  "id": "np-cahi",
+  "name": "Capitol Hill Parks",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "The Capitol Hill Parks include several park areas east of the U.S. Capitol. Included in this group are Folger, Lincoln, Stanton, and Marion Parks, the Eastern Market and Potomac Avenue Metro stations, and several smaller land parcels such as Seward Square, Twining Square, the Maryland Avenue Triangles, the Pennsylvania Avenue Medians, and 59 inner-city triangles and squares.",
+  "shortDescription": "The Capitol Hill Parks include several park areas east of the U.S. Capitol. Included in this group are Folger, Lincoln, Stanton, and Marion Parks, the Eastern Market and Potomac Avenue Metro stations,...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.889993,
+    "longitude": -76.990332
+  },
+  "nationalParkInfo": {
+    "parkCode": "cahi",
+    "npsId": "96DC2172-0201-4ABB-BD77-2687F4726C9B",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cahi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cahi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1453",
+    "email": "nace_superintendent@nps.gov",
+    "website": "https://www.nps.gov/cahi/index.htm",
+    "address": {
+      "line1": "Capitol Hill Parks are spread out in various locations on Capitol Hill",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20003"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "Open: 6:00 a.m. to 10:00 p.m. daily"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winter: Temperatures usually range from 30 to 50 F. There is occasional snow. Spring: Temperatures usually range widely from 40 to 70 F. Rain is common. Summer: Temperatures usually range from 70 to 90 F. Humidity is usually high. Be prepared and drink plenty of water. There is a water fountain in the visitor center. Fall: Temperatures usually range widely from 40 to 70 F. Humidity can remain high in the earlier part of the season."
+  },
+  "images": [
+    {
+      "id": "cahi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83F12F-1DD8-B71B-0BEFAC8C0BD90E8F.jpg",
+      "title": "Lincoln Park",
+      "altText": "Emancipation Group Memorial",
+      "caption": "Emancipation Group Memorial Statue",
+      "credit": "NPS Photo/Kenneth Chandler",
+      "isPrimary": true
+    },
+    {
+      "id": "cahi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8C2B3F26-B968-86EE-55EF12B38C2B234D.jpg",
+      "title": "Lincoln Park",
+      "altText": "Sunlight streams through backlit trees illuminating a bicyclist on a sidewalk.",
+      "caption": "Lincoln Park",
+      "credit": "NPS / Claire Hassler",
+      "isPrimary": false
+    },
+    {
+      "id": "cahi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8C60689F-E0A5-2139-E2D21B1DD8A73D4C.jpg",
+      "title": "Emancipation Memorial",
+      "altText": "Bronze statue of Abraham Lincoln standing over an enslaved man rising from kneeling.",
+      "caption": "Emancipation Memorial in Lincoln Park.",
+      "credit": "NPS / Claire Hassler",
+      "isPrimary": false
+    },
+    {
+      "id": "cahi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83F519-1DD8-B71B-0B463C7B56F9AE14.jpg",
+      "title": "Stanton Park",
+      "altText": "Stanton",
+      "caption": "Stanton Park",
+      "credit": "NPS Photo/Kenneth Chandler",
+      "isPrimary": false
+    },
+    {
+      "id": "cahi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83EFA3-1DD8-B71B-0B0CFF59BA0F5510.jpg",
+      "title": "Folger Park",
+      "altText": "Folger",
+      "caption": "Folger Park",
+      "credit": "NPS Photo/Kenneth Chandler",
+      "isPrimary": false
+    },
+    {
+      "id": "cahi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83F6D4-1DD8-B71B-0BE4EFE3209A383B.jpg",
+      "title": "Mary McLeod Bethune Memorial",
+      "altText": "Bethune Memorial",
+      "caption": "Bethune Memorial in Lincoln Park across from Emancipation Group Memorial",
+      "credit": "NPS Photo/John T. Fowler, II",
+      "isPrimary": false
+    },
+    {
+      "id": "cahi-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83F2F1-1DD8-B71B-0BEF6F7BEA53923D.jpg",
+      "title": "Marion Park",
+      "altText": "Marion",
+      "caption": "Marion Park Playground",
+      "credit": "NPS Photo/Kenneth Chandler",
+      "isPrimary": false
+    },
+    {
+      "id": "cahi-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8C72203B-A5C7-780A-35B0CCC4069EC99A.jpg",
+      "title": "Mary McLeod Bethune Memorial",
+      "altText": "Bronze statue of Mary McLeod Bethune and a boy and girl.",
+      "caption": "Mary McLeod Bethune Memorial, Lincoln Park.",
+      "credit": "NPS / Claire Hassler",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cahi/index.htm",
+    "directions": "http://www.nps.gov/cahi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Sculpture",
+    "Enslavement",
+    "Landscape Design",
+    "Monuments and Memorials",
+    "Presidents",
+    "Reconstruction",
+    "Schools and Education",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Tragic Events",
+    "Assassinations",
+    "Urban America",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "id": "np-hamp",
+  "name": "Hampton National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Hampton National Historic Site preserves what remains of a once 25,000-acre enslavement plantation. For hundreds of years, enslaved people, indentured servants, tenant farmers, paid laborers, and the Ridgely family all made their own contributions to Hampton, creating a space where cruelty and decadence collide to provide a complex history of the United States.",
+  "shortDescription": "Hampton National Historic Site preserves what remains of a once 25,000-acre enslavement plantation. For hundreds of years, enslaved people, indentured servants, tenant farmers, paid laborers, and the ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.4175296,
+    "longitude": -76.58781182
+  },
+  "nationalParkInfo": {
+    "parkCode": "hamp",
+    "npsId": "5FD56750-4A13-4615-B987-793AC356B320",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hamp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hamp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "410-962-4290 (option 2)",
+    "email": "HAMP_Interpretation@nps.gov",
+    "website": "https://www.nps.gov/hamp/index.htm",
+    "address": {
+      "line1": "535 Hampton Lane",
+      "line2": "",
+      "city": "Towson",
+      "state": "MD",
+      "postalCode": "21286"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "The Visitor Contact Station is open 9am – 4pm Thursday through Sunday.\n\nGrounds are open every day from dawn to dusk.\n\nPark is closed every year on Thanksgiving, Christmas Day, and New Years Day.\n\nThe park, or portions of the park, may be closed at any time for weather, emergency, or security reasons in order to protect the resource, visitors, and staff.  Park gates may also be closed during these situations."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather during the spring and fall months tend to be mild. Visitors can expect mild to severe seasonal weather during the winter and summer months. Inclement weather may impact park hours of operation year round. Refer to the park alerts or call ahead to confirm operating hours."
+  },
+  "images": [
+    {
+      "id": "hamp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/30E70993-1DD8-B71B-0BF669D83ECFDB7A.jpg",
+      "title": "Hampton Mansion Historic Site",
+      "altText": "Hampton Mansion in the fall",
+      "caption": "Hampton Mansion in the Fall",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hamp/index.htm",
+    "directions": "http://www.nps.gov/hamp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Poetry and Literature",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Engineering",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Great Depression",
+    "Industry",
+    "Landscape Design",
+    "Military",
+    "Armories",
+    "Music",
+    "Reconstruction",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Conservation Movement",
+    "Voting Rights and Suffrage",
+    "Tragic Events",
+    "Urban America",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "War of 1812",
+    "Civil War",
+    "World War I",
+    "World War II",
+    "Westward Expansion",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Natural Sounds",
+    "Scenic Views",
+    "Trails",
+    "National Historic Site",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

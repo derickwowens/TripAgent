@@ -1,0 +1,218 @@
+{
+  "id": "np-liho",
+  "name": "Lincoln Home National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "IL",
+  "stateName": "Illinois",
+  "region": "midwest",
+  "description": "Abraham Lincoln believed in the ideal that everyone in America should have the opportunity to improve their economic and social condition. Lincoln’s life was the embodiment of that idea. We know him as the sixteenth president but he was also a spouse, parent, and neighbor who experienced the same hopes, dreams, and challenges of life that are still experienced by many people today.",
+  "shortDescription": "Abraham Lincoln believed in the ideal that everyone in America should have the opportunity to improve their economic and social condition. Lincoln’s life was the embodiment of that idea. We know him a...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.79715642,
+    "longitude": -89.64513397
+  },
+  "nationalParkInfo": {
+    "parkCode": "liho",
+    "npsId": "FF52F034-53E3-4F36-AA31-4BEBCC5F007A",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/liho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/liho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2174924241",
+    "email": "liho_information@nps.gov",
+    "website": "https://www.nps.gov/liho/index.htm",
+    "address": {
+      "line1": "426 S. 7th Street",
+      "line2": "",
+      "city": "Springfield",
+      "state": "IL",
+      "postalCode": "62701"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Visitor Center is open 9:00 AM to 5:00 PM. Here, visitors are able to reserve tickets, get site orientation, and view the park films. The visitor center is your go to place for information and accessibility needs and serves as the location for bathrooms, water refill station, and souvenirs/gifts."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures at our site can range from 0°F (-18°C) in the winter to 95°F (35°C) or warmer in the summer. Summers can be very humid, with both intense sun, rainstorms, and thunderstorms. Winter sees clear skies as well as snow. Please dress appropriate for potential weather conditions. We recommend wearing shoes comfortable for walking."
+  },
+  "images": [
+    {
+      "id": "liho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/519B9677-A5DA-1824-C11B59B1C565188B.jpg",
+      "title": "Lincoln Home Draped in Bunting",
+      "altText": "2 story tan house with green shutters. Red, white, and blue striped bunting draped below its fence",
+      "caption": "The original home where Abraham Lincoln lived before his presidency still stands and welcomes visitors to explore Lincoln's pre-presidential legacy.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "liho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/51C34FF9-F510-47BB-39D38D4E21EE6D5B.jpg",
+      "title": "Lincoln Home National Historic Site Visitor Center",
+      "altText": "One story brick building with plants and shrubs.",
+      "caption": "Information, restrooms, tour tickets, and park films are all available at the Lincoln Home visitor center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "liho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/51D81627-C52B-0814-56829F898A7D110A.jpg",
+      "title": "Harriet Dean House",
+      "altText": "2 story brown house with dark green shutters and white fence.",
+      "caption": "The first floor of the Dean House has exhibits focusing on changes in the Lincoln Home and family over the years.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "liho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/52058C62-0ACB-7255-B986F7DBF35E29A7.jpg",
+      "title": "Arnold House",
+      "altText": "1 story small gray house with stairs leading up to door.",
+      "caption": "Exhibits in the Arnold House explore historic preservation of the neighborhood",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "liho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/53D34926-B49C-430E-80061819051DF555.jpg",
+      "title": "Wayside Exhibits Along 8th Street",
+      "altText": "Graveled road with wooden boardwalks. Waist-high wayside exhibits next to boardwalks.",
+      "caption": "Explore the stories of Lincoln's neighborhood by reading the outdoor wayside exhibits are scattered along 8th street.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "liho-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/537357E7-F18A-8D2A-0D09D54EFE1A61DF.jpg",
+      "title": "Heirloom Garden",
+      "altText": "Garden with green plants surrounded by white picket fence",
+      "caption": "The heirloom garden in the Dean House backyard grows heirloom vegetables in the summer and autumn.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/liho/index.htm",
+    "directions": "http://www.nps.gov/liho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Enslavement",
+    "Military",
+    "Presidents",
+    "Schools and Education",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Tragic Events",
+    "Assassinations",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "National Historic Site",
+    "IL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

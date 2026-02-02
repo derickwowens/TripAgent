@@ -1,0 +1,182 @@
+{
+  "id": "np-fous",
+  "name": "Fort Union Trading Post National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MT",
+  "stateName": "Montana",
+  "region": "west",
+  "description": "Between 1828 and 1867, Fort Union was the most important fur trade post on the Upper Missouri River. Here, the Assiniboine and six other Northern Plains Tribes exchanged buffalo robes and smaller furs for goods from around the world, including cloth, guns, blankets, and beads. A bastion of peaceful coexistence, the post annually traded over 25,000 buffalo robes and $100,000 in merchandise.",
+  "shortDescription": "Between 1828 and 1867, Fort Union was the most important fur trade post on the Upper Missouri River. Here, the Assiniboine and six other Northern Plains Tribes exchanged buffalo robes and smaller furs...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 48.00075828,
+    "longitude": -104.0375238
+  },
+  "nationalParkInfo": {
+    "parkCode": "fous",
+    "npsId": "60B1534B-5C3A-402A-ABC6-700B756F69A2",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fous/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fous/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7015729083",
+    "email": "fous_socialmedia@nps.gov",
+    "website": "https://www.nps.gov/fous/index.htm",
+    "address": {
+      "line1": "15550 Highway 1804",
+      "line2": "",
+      "city": "Williston",
+      "state": "ND",
+      "postalCode": "58801"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The park grounds and visitor center share the same hours. Hours are in the Central time zone."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in western North Dakota can be harsh, with extremes in temperature and sudden, violent storms. Be prepared for rapidly changing conditions. Summers are warm with average high temperatures in the 80s-90s May through September. Winters are cold with average lows in the single digits December through February. Wind is considerable year-round. Conditions can change quickly. Travelers should be aware of the potential for violent thunderstorms in the summer and the possibility of blizzards."
+  },
+  "images": [
+    {
+      "id": "fous-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81ACEF-1DD8-B71B-0B1AD164BE2F3313.jpg",
+      "title": "River View of Fort Union",
+      "altText": "View from Missouri River bottoms of Southwest bastion",
+      "caption": "Viewing Fort Union Trading Post from the Missouri River bottoms one can imagine how grandiose the site would appear to weary steamboat travelers.",
+      "credit": "NPS Photo / Kris Baxter",
+      "isPrimary": true
+    },
+    {
+      "id": "fous-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81AE61-1DD8-B71B-0B1A0633A6BBCB44.jpg",
+      "title": "Twilight View of the Bourgeois House",
+      "altText": "Candles illuminate the Bourgeois House porch at dusk",
+      "caption": "Volunteer reenactors relax on the Bourgeois House porch",
+      "credit": "NPS Photo / Kris Baxter",
+      "isPrimary": false
+    },
+    {
+      "id": "fous-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82B4A5-1DD8-B71B-0BDFBD8B53AA8C44.jpg",
+      "title": "Fort Union Trading Post Courtyard",
+      "altText": "Courtyard of Fort Union Trading Post with Bourgeois House, Tipis and US Flag",
+      "caption": "Ranging from employee housing, workshops, storage warehouses, domestic animal pens and horse corrals, the courtyard housed the world at Fort Union.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fous-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82B631-1DD8-B71B-0BB22BBC7D080D84.jpg",
+      "title": "Fort Union and the Missouri River Valley",
+      "altText": "View of Fort Union and the Missouri River looking south",
+      "caption": "Visitors hiking the scenic Bodmer Trail experience a historical view of Fort Union, and the same view painted by Karl Bodmer in 1833.",
+      "credit": "NPS Photo / Leif Halvorson",
+      "isPrimary": false
+    },
+    {
+      "id": "fous-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C81EB52A-A00B-4740-E224A3129B30263F.jpg",
+      "title": "Tipis fill the fields around at Fort Union",
+      "altText": "White canvas tipis in grassy area, Fort in background.",
+      "caption": "During the height of the spring trade season camps from various Upper Missouri Tribes would fill the plateau around Fort Union.",
+      "credit": "NPS / EMILY SUNBLADE",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fous/index.htm",
+    "directions": "http://www.nps.gov/fous/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Commerce",
+    "Trade",
+    "Forts",
+    "Native American Heritage",
+    "Reconstruction",
+    "National Historic Site",
+    "MT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

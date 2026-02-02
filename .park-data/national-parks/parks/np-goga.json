@@ -1,0 +1,344 @@
+{
+  "id": "np-goga",
+  "name": "Golden Gate National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history from California’s indigenous cultures, Spanish colonialism, the Mexican Republic, US military expansion and the growth of San Francisco. All of this and more awaits you, so get out and find your park.",
+  "shortDescription": "Experience a park so rich it supports 19 distinct ecosystems with over 2,000 plant and animal species. Go for a hike, enjoy a vista, have a picnic or learn about the centuries of overlapping history f...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 37.85982543,
+    "longitude": -122.6007386
+  },
+  "nationalParkInfo": {
+    "parkCode": "goga",
+    "npsId": "0E797FA8-6E31-418B-A68F-13CEE37A2AF5",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/goga/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/goga/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "415-561-4700",
+    "email": "goga_socialmedia_goga@nps.gov",
+    "website": "https://www.nps.gov/goga/index.htm",
+    "address": {
+      "line1": "Golden Gate National Recreation Area",
+      "line2": "201 Fort Mason",
+      "city": "San Francisco",
+      "state": "CA",
+      "postalCode": "94123"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Although this urban park is accessible 24 hours a day in most areas, most parking lots are open between sunrise to sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winter is characterized by sporadic rain and cool weather punctuated by brilliant sunshine. In winter the grass greens. Trees and flowers dormant through winter start blooming in late February or early March and last until May or June. By July, summer fog predominates in most coastal areas of the park. Grasses and plants have now turned to the golden brown and muted grays characteristic of California summer and fall. September and October skies are clear and sunshine is abundant everywhere in the park."
+  },
+  "images": [
+    {
+      "id": "goga-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FEE17-1DD8-B71B-0BA285725552D8E3.jpg",
+      "title": "Morning Fog at Crissy Field",
+      "altText": "White buildings with red roofs at Crissy Field with blue bay and Golden Gate Bridge and fog behind.",
+      "caption": "Visiting Crissy Field is an ever changing experience as the fog comes in and dissipates.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": true
+    },
+    {
+      "id": "goga-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FE3B8-1DD8-B71B-0B91991C4D692710.jpg",
+      "title": "Spring Flowers at Mori Point",
+      "altText": "Mori Point view north with yellow an blue flowers, the blue-green Pacific Ocean and Mt. Tamalpais.",
+      "caption": "View north from Mori Point showing abundant spring flowers and Mt. Tamalpais in the background.",
+      "credit": "Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "goga-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FE813-1DD8-B71B-0BE722D07B80503A.jpg",
+      "title": "Stinson Beach from Bolinas Ridge",
+      "altText": "View over the Pacific from Bolinas Ridge; Stinson Beach, Bolinas Lagoon and head in mid-ground.",
+      "caption": "Bolinas Ridge offers outstanding panaramas of the Pacific Coast, here including Stinson Beach and Lagoon.",
+      "credit": "Kirke Wrench",
+      "isPrimary": false
+    },
+    {
+      "id": "goga-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FE978-1DD8-B71B-0B5B04277B391AE4.jpg",
+      "title": "Storm over the Golden Gate",
+      "altText": "Orange Golden Gate Bridge with waves crashing in foreground and storm clouds behind.",
+      "caption": "The Golden Gate Bridge is an iconic attraction year-round.",
+      "credit": "Kirke Wrench",
+      "isPrimary": false
+    },
+    {
+      "id": "goga-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FEAD0-1DD8-B71B-0B27C7C76C4A0492.jpg",
+      "title": "Marin Headlands and Rodeo Beach",
+      "altText": "View south with family on road in foreground and Rodeo Beach and cove in front of Point Bonita.",
+      "caption": "Trails in the Marin Headlands offer a fun and spectacular hiking experience for all.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "goga-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FECA7-1DD8-B71B-0B0766C254B04EED.jpg",
+      "title": "Montgomery Street Barracks, Presidio of San Francisco",
+      "altText": "Row of red brick barracks with white-columned porches where infantry soldiers lived.",
+      "caption": "The Presidio offers an outdoor museum of military architecture over the centuries.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "goga-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C801934-1DD8-B71B-0B9C7A3F85A2B6E1.jpg",
+      "title": "Alcatraz Island from Crissy Field",
+      "altText": "Closeup shot of Alcatraz Island showing lighthouse and prison with yellow flowers on slope in front.",
+      "caption": "Visitors can learn about the complex layered history of Alcatraz Island.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "goga-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FD457F81-C06F-457A-310C9781E0C97448.jpg",
+      "title": "Golden Gate Bridge from Battery",
+      "altText": "Person jogging along a path with golden gate bridge in the background.",
+      "caption": "Golden Gate from Battery East",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/goga/index.htm",
+    "directions": "http://www.nps.gov/goga/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Photography",
+    "Asian American Heritage",
+    "Aviation",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Forts",
+    "Hispanic American Heritage",
+    "Incarceration",
+    "Jails and Prisons",
+    "Japanese-American Internment",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Immigration",
+    "Latino American Heritage",
+    "LGB American Heritage",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Medicine",
+    "Hospital",
+    "Migrations",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "US Coast Guard",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Conservation Movement",
+    "Transportation",
+    "Bridges",
+    "Tragic Events",
+    "Catastrophic Fires",
+    "Forced Marches",
+    "Urban America",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Mexican War",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Vietnam War",
+    "Cold War",
+    "Westward Expansion",
+    "The Gold Rush",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Dunes",
+    "Estuaries and Mangroves",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "Natural Sounds",
+    "Oceans",
+    "Whales",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "Wetlands",
+    "Marshes",
+    "National Recreation Area",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

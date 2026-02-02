@@ -1,0 +1,297 @@
+{
+  "id": "np-romo",
+  "name": "Rocky Mountain National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "Rocky Mountain National Park's 415 square miles (265,807 acres) encompasses a spectacular range of mountain environments. From meadows found in the montane life zone to glistening alpine lakes and up to the towering mountain peaks, there is something for everyone to discover. Along the way explore over 300 miles of hiking trails and incredible wildlife viewing.",
+  "shortDescription": "Rocky Mountain National Park's 415 square miles (265,807 acres) encompasses a spectacular range of mountain environments. From meadows found in the montane life zone to glistening alpine lakes and up ...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 40.3556924,
+    "longitude": -105.6972879
+  },
+  "nationalParkInfo": {
+    "parkCode": "romo",
+    "npsId": "67A56B17-F533-4A56-B2DA-26091C6AD295",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/romo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/romo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9705861206",
+    "email": "romo_information@nps.gov",
+    "website": "https://www.nps.gov/romo/index.htm",
+    "address": {
+      "line1": "1000 US Hwy 36",
+      "line2": "",
+      "city": "Estes Park",
+      "state": "CO",
+      "postalCode": "80517"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "While certain roads and facilities may be closed for the winter season, Rocky Mountain National Park is open 24 hours a day, 365 days a year."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "1-Day Vehicle Entrance Pass. This pass is valid for one private vehicle to enter RMNP for one day only. All passengers inside the vehicle are covered. Park entrance passes may be purchased in person at any of the park's entrance stations or in advance online at www.recreation.gov.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "7-Day Vehicle Entrance Pass. This vehicle entrance pass is valid for one vehicle to enter RMNP for 7 consecutive days. All passengers inside the vehicle are covered. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "1-Day Per Person Entrance Pass. This park entrance fee is for individuals, walk-ins, bicycles, and non-commercial groups to enter RMNP for 1-day only. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 1 day. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "7-Day Per Person Entrance Pass. This park entrance fee is for individuals, walk-ins, bicycles, and non-commercial groups to enter RMNP for 7 consecutive days. Park entrance passes may be purchased in person at the any of the park's entrance stations or in advance online at www.recreation.gov.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Rocky Mountain National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Weather can change quickly in Rocky Mountain National Park due to the mountains and elevation. Elevation in the park ranges from 7,800 feet above sea level to over 14,000 feet at the top of the tallest mountain peaks. Weather conditions can change quickly throughout the day. For detailed weather information, visit https://www.nps.gov/romo/planyourvisit/all-about-weather.htm For the most up-to-date weather forecasts, visit the National Weather Service webpage for Rocky at https://www.weather.gov/bou/rmnp"
+  },
+  "images": [
+    {
+      "id": "romo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/75F451C0-9879-9221-DBFF3B28A5C7DAA9.jpg",
+      "title": "Morning winter light",
+      "altText": "Morning light in RMNP",
+      "caption": "Morning winter light in RMNP",
+      "credit": "NPS Photo/D. Turk",
+      "isPrimary": true
+    },
+    {
+      "id": "romo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/76167D19-94CE-099A-880C02D7295AEE1F.jpg",
+      "title": "Enjoy wildlife in winter",
+      "altText": "Ptarmigan in winter coat",
+      "caption": "Enjoy wildlife in winter",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "romo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7602A8AD-934E-88BF-B713609A9D43E609.jpg",
+      "title": "Ski with a ranger",
+      "altText": "Four park visitors are skiing across a meadow with a park ranger",
+      "caption": "Ski with a park ranger",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "romo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/76567B9B-A556-1100-D5EF01B6AE2320F9.jpg",
+      "title": "Experience Ice Fishing",
+      "altText": "Park visitors are drilling a hole in ice for ice fishing",
+      "caption": "Experience Ice Fishing",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "romo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/766480E8-FC07-A0D5-7B64BF7AED60BAD3.jpg",
+      "title": "Stop by a visitor center",
+      "altText": "Front entrance to Beaver Meadows Visitor Center",
+      "caption": "Stop by any RMNP visitor center to ask questions and learn more about Rocky",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "romo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7677BCE7-9708-B249-CA446A8B9F9B9938.jpg",
+      "title": "Enjoy a ranger-led program",
+      "altText": "A park ranger is leading a program",
+      "caption": "Enjoy a ranger-led program",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "romo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/76881020-A722-10B9-3CEEDC1A677CF039.jpg",
+      "title": "Go snowshoeing",
+      "altText": "Two people are snowshoeing",
+      "caption": "Go snowshoeing",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "romo-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/76923F46-F62E-D579-BD993F92E811984D.jpg",
+      "title": "Mule deer in winter",
+      "altText": "A mule deer buck with a little snow in a meadow in winter",
+      "caption": "Mule deer are common to see in the winter",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/romo/index.htm",
+    "directions": "http://www.nps.gov/romo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Geology",
+    "Glaciers",
+    "Lakes",
+    "Night Sky",
+    "Astronomy",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "Wilderness",
+    "National Park",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "np-elis",
+  "name": "Ellis Island Part of Statue of Liberty National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NJ",
+  "stateName": "New Jersey",
+  "region": "northeast",
+  "description": "Millions of Americans and people around the world have ancestors who came through Ellis Island. The Main Immigration Building was the epicenter of one of the greatest migrations in modern history. Today, Ellis Island is a memorial to all who pursued the American dream and have made this nation their adopted home.",
+  "shortDescription": "Millions of Americans and people around the world have ancestors who came through Ellis Island. The Main Immigration Building was the epicenter of one of the greatest migrations in modern history. Tod...",
+  "designation": "Part of Statue of Liberty National Monument",
+  "coordinates": {
+    "latitude": 40.69946,
+    "longitude": -74.0401
+  },
+  "nationalParkInfo": {
+    "parkCode": "elis",
+    "npsId": "73A512A3-807A-457C-8A3B-5862C9C28BBD",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/elis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/elis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2123633200",
+    "email": "stli_info@nps.gov",
+    "website": "https://www.nps.gov/elis/index.htm",
+    "address": {
+      "line1": "Ellis Island National Museum of Immigration",
+      "line2": "Statue of Liberty National Monument",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10004"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Access to Liberty and Ellis Islands is by Statue City Cruises ferry only. For ferry departure times and ticketing information, visit http://www.statuecitycruises.com or call 1-877-LADY-TIX. \n\nThe last entrance into the statue is at 3:30 PM."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "It is typically colder and more windy in New York Harbor than elsewhere in New York City. Winters are cold and damp. Spring and Fall can range from chilly to warm. Summers are warm to hot and humid."
+  },
+  "images": [
+    {
+      "id": "elis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C856FAB-1DD8-B71B-0B0DD7A0B6955955.jpg",
+      "title": "Ellis Island Museum of Immigration",
+      "altText": "Beaux-Arts brick and limestone building with large arched windows and cupola-topped towers.",
+      "caption": "Over 12 million immigrants were processed at Ellis Island during the peak years of 1892-1924, most through this building which opened in 1900.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "elis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85712F-1DD8-B71B-0B34087F99512E73.jpg",
+      "title": "Ellis Island's Registry Room",
+      "altText": "Great Hall has terra cotta-colored tile floor, a balcony, large arched windows, and vaulted ceiling",
+      "caption": "The Registry Room, also known as the Great Hall, is where millions of immigrants were inspected. They were required to pass both a medical and legal inspection before being allowed to enter the United States.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8572BD-1DD8-B71B-0B81C6A8E9D0420C.jpg",
+      "title": "Ellis Island Museum of Immigration",
+      "altText": "Brick and limestone building with maroon canopy leading to entrance.",
+      "caption": "Visitors to the museum today arrive by ferry, just like immigrants did a century ago.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8573F0-1DD8-B71B-0B81984644CB246E.jpg",
+      "title": "Replica Inspection Desk in the Registry Room",
+      "altText": "Honey oak colored tall desk on tiled floor in Great Hall with arched windows and vaulted ceiling.",
+      "caption": "Inspectors at Ellis Island would conduct the legal examination from behind desks like these a century ago.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C857565-1DD8-B71B-0B2A86EE555A1F4D.jpg",
+      "title": "Bird's Eye View of Ellis Island",
+      "altText": "Artificially-expanded largely rectangular island with straight seawalls and large buildings.",
+      "caption": "Ellis Island was expanded from just a couple acres to over 30 to make room for a large immigration processing station, that included a state of the art hospital complex.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/elis/index.htm",
+    "directions": "http://www.nps.gov/elis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Immigration",
+    "Maritime",
+    "Coastal Defenses",
+    "Migrations",
+    "Tragic Events",
+    "Floods",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Part of Statue of Liberty National Monument",
+    "NJ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "id": "np-jeff",
+  "name": "Gateway Arch National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "Gateway Arch National Park commemorates President Jefferson’s vision of a continental nation, the individuals and cultural groups who helped shape its history, St. Louis’ role in westward expansion, and Dred and Harriet Scott, who sued for their freedom in the Old Courthouse.",
+  "shortDescription": "Gateway Arch National Park commemorates President Jefferson’s vision of a continental nation, the individuals and cultural groups who helped shape its history, St. Louis’ role in westward expansion, a...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 38.6258069,
+    "longitude": -90.1892508
+  },
+  "nationalParkInfo": {
+    "parkCode": "jeff",
+    "npsId": "BD588493-EC77-4B97-B73E-3BA444864DC5",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jeff/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jeff/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3146551600",
+    "email": "jeff_superintendent@nps.gov",
+    "website": "https://www.nps.gov/jeff/index.htm",
+    "address": {
+      "line1": "11 North 4th Street",
+      "line2": "",
+      "city": "St. Louis",
+      "state": "MO",
+      "postalCode": "63102"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 6:00PM",
+    "tuesday": "9:00AM - 6:00PM",
+    "wednesday": "9:00AM - 6:00PM",
+    "thursday": "9:00AM - 6:00PM",
+    "friday": "9:00AM - 6:00PM",
+    "saturday": "9:00AM - 6:00PM",
+    "sunday": "9:00AM - 6:00PM",
+    "description": "The Gateway Arch is open year-round, closed only on Thanksgiving, Christmas, and New Year’s Day. Summer Hours (9am-6pm, Sunday through Thursday and 9am-8pm Friday and Saturday) run the Friday before Memorial Day through Labor Day weekend and are the primary visitor season. During Regular Hours (the day after Labor Day through Friday before Memorial Day) we are open from 9am to 6pm. Around the holidays we occasionally have extended hours."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Prices vary by date of visit. \n\nBegin your tour with an interactive pre-boarding experience featuring 60s-inspired animation and Gateway Arch trivia. Then, be transported 630 feet to the top of Arch for exhilarating views. Please allow 45 - 60 minutes for your Tram Ride to the Top experience.\n\nAdult (16 and up): Starting at $15\n\nChild (3-15): Starting at $11\n\nInfant (2 and under): FREE\n\nPark Pass Holder: Starting at $12\n\nTickets available at www.gatewayarch.com",
+      "cost": "19.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Normal Daily Mean Temperature (in degrees Fahrenheit)* January - 29.3 February - 33.9 March - 45.1 April - 56.7 May - 66.1 June - 75.4 July - 79.8 August - 77.6 September - 70.2 October - 58.4 November - 46.2 December - 33.9 Average Percent of Days with Sunshine* January - 50% February - 52% March - 54% April - 56% May - 59% June - 66% July - 68% August - 65% September - 63% October - 60% November - 46% December - 53% *Source: National Oceanic and Atmospheric Administration"
+  },
+  "images": [
+    {
+      "id": "jeff-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/200BA7E6-D782-9A97-A8C36AC178DEB31C.jpg",
+      "title": "Cherry trees in bloom",
+      "altText": "The Gateway Arch and Old Courthouse with a row of pink blooming cherry trees in front",
+      "caption": "The blooming cherry trees in Kiener Plaza provide a wonderful foreground for the Gateway Arch and Old Courthouse in spring.",
+      "credit": "NPS photo/Jennifer Clark",
+      "isPrimary": true
+    },
+    {
+      "id": "jeff-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE538-1DD8-B71B-0BFF11B2DBCF6E6E.jpg",
+      "title": "Reaching for the Clouds",
+      "altText": "Arch and clouds",
+      "caption": "Arch reaching toward the clouds.",
+      "credit": "NPS Photo/Sue Ford",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/348E44EA-F431-FA18-DCB014F7BAA8D225.jpg",
+      "title": "The Gateway Arch reflected",
+      "altText": "The Gateway Arch reflected in the waters of of the north pond",
+      "caption": "A walk around the Gateway Arch grounds provide many chances to view the Arch from many different angles.",
+      "credit": "NPS photo/Jennifer Clark",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/34E649C6-F06F-EB7F-0F9B8B092450772F.jpg",
+      "title": "The Old Courthouse",
+      "altText": "looking across the green lawn in Smith Square to the Old Courthouse",
+      "caption": "The Old Courthouse",
+      "credit": "NPS photo/Jennifer Clark",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/51613AEB-9CC1-53CF-90B993791222A9CB.jpg",
+      "title": "West Entrance to the Gateway Arch Visitor Center",
+      "altText": "West Entrance to the Gateway Arch Visitor Center",
+      "caption": "Welcome to the Gateway Arch",
+      "credit": "NPS Photo/Sue Ford",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE38B-1DD8-B71B-0BBBE77BE3A2180A.jpg",
+      "title": "Gateway Arch",
+      "altText": "Gateway Arch",
+      "caption": "Over a million people visit the Gateway Arch each year.",
+      "credit": "NPS Photo/Sue Ford",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/347D5E5B-B4B0-917D-A3F2C03D113E911E.jpg",
+      "title": "Old Courthouse",
+      "altText": "Dred and Harriet Scott statue in front of the columns of the Old Courthouse in the morning light",
+      "caption": "The Old Courthouse",
+      "credit": "NPS photo/Jennifer Clark",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD9B5-1DD8-B71B-0B598216CE4E46D0.jpg",
+      "title": "Gateway Arch at Sunrise",
+      "altText": "Gateway Arch at Sunrise",
+      "caption": "The sunrise coming up behind the Gateway Arch.",
+      "credit": "NPS Photo/Sue Ford",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/210F20E5-CC93-0F9A-2A188CA8A29F29CC.jpg",
+      "title": "Sunrise at the Gateway Arch",
+      "altText": "the sun coming up and illuminated clouds behind the Gateway Arch",
+      "caption": "Sunrise at the Gateway Arch",
+      "credit": "NPS Photo/Sue Ford",
+      "isPrimary": false
+    },
+    {
+      "id": "jeff-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0BEDA5BC-0EEE-7EE5-17B82A3F665BB398.jpg",
+      "title": "Twlight Just Before the Fireworks",
+      "altText": "People waiting on the Arch grounds waiting for the 4th of July Fireworks show to start.",
+      "caption": "A large crowd waits for the fireworks show to start at the Gateway Arch",
+      "credit": "NPS Photo/Barbara Michel",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jeff/index.htm",
+    "directions": "http://www.nps.gov/jeff/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Colonization and Settlement",
+    "Engineering",
+    "Explorers and Expeditions",
+    "Landscape Design",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Presidents",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Homesteading",
+    "Women's History",
+    "National Park",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

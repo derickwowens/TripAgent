@@ -1,0 +1,187 @@
+{
+  "id": "np-stea",
+  "name": "Steamtown National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Feel the heat from the firebox, smell hot steam and oil; hear the whistle and the \"chuff-chuff\" from the smokestack, feel the ground vibrate, and watch as one-ton drive rods turn steel wheels. Discover how steam railroading helped shaped our nation's history and culture. Learn about the stories of the people who built, repaired and rode, and about the ongoing work to preserve railroading history.",
+  "shortDescription": "Feel the heat from the firebox, smell hot steam and oil; hear the whistle and the \"chuff-chuff\" from the smokestack, feel the ground vibrate, and watch as one-ton drive rods turn steel wheels. Discove...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 41.40757521,
+    "longitude": -75.67037255
+  },
+  "nationalParkInfo": {
+    "parkCode": "stea",
+    "npsId": "3BF9BCEE-F6AE-4DEC-8F80-9CD23C0767BE",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/stea/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/stea/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(570) 445-1898",
+    "email": "stea_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/stea/index.htm",
+    "address": {
+      "line1": "350 Cliff Street",
+      "line2": "",
+      "city": "Scranton",
+      "state": "PA",
+      "postalCode": "18503"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:30AM - 5:00PM",
+    "tuesday": "9:30AM - 5:00PM",
+    "wednesday": "9:30AM - 5:00PM",
+    "thursday": "9:30AM - 5:00PM",
+    "friday": "9:30AM - 5:00PM",
+    "saturday": "9:30AM - 5:00PM",
+    "sunday": "9:30AM - 5:00PM",
+    "description": "The park is open daily from 9:30 a.m. to 5:00 p.m.  \n\nDuring severe weather events, the hours of operation may be impacted. For updated information, please check the alerts section at the top of this website. Please plan accordingly.\n\nThe connecting walkway to the \"Marketplace at Steamtown\" is not the property of the National Park Service. The walkway is typically closed from November through April due to icy and other unpredictable weather conditions."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Warm and sometimes humid summers; cold and rainy or snowy winters. Wear seasonable clothing and good walking shoes. For travel aboard the summer and fall seasonal excursion trains, please note that the commuter-type coaches are not air-conditioned, or may not be heated. Therefore, we recommend that you dress appropriately for the season that you plan to visit us!"
+  },
+  "images": [
+    {
+      "id": "stea-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/602A3D89-EDEA-FD1D-5BBB631A9E78AD13.jpg",
+      "title": "6039 on the turntable",
+      "altText": "large black train with number 6039 painted in white lettering, sitting on turntable track",
+      "caption": "No. 6039 sits on the turntable within Steamtown's Roundhouse complex",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "stea-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8C4271D7-DA2A-91D0-352FDDC192DB531B.jpg",
+      "title": "Pennsylvania Box Car and Lackawanna Caboose",
+      "altText": "Black and yellow diesel engine 514 pulling a faded red box car and a dark red caboose",
+      "caption": "Nickel Plate Road No. 514 can often be seen moving cars around in the rail yard at Steamtown National Historic Site.  Here, it can be seen pulling a Box Car and Caboose.",
+      "credit": "NPS Photo / Alan Schulze",
+      "isPrimary": false
+    },
+    {
+      "id": "stea-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/891601BD-FEEB-C958-5613E65A5D4C2938.jpg",
+      "title": "Steam Locomotives",
+      "altText": "Historic Baldwin Locomotive Works engine number 26 out for a test run on the tracks.",
+      "caption": "Did you know that Steamtown's locomotives are operated by volunteers? Every year, volunteers must complete hands-on training required by the Federal Rail Authority (FRA), Northeast Operating Rules Advisory Committee (NORAC), & National Park Service (NPS)",
+      "credit": "NPS Photo / Alan Schulze",
+      "isPrimary": false
+    },
+    {
+      "id": "stea-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5DDC254B-A747-5596-7F1FD318A51135B3.jpg",
+      "title": "Big Boy returns to Display",
+      "altText": "large black train stationed on a track to the left of a paved road",
+      "caption": "Union Pacific \"Big Boy\" No. 4012 has returned to permanent exhibition",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stea-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8556AE-1DD8-B71B-0B9880327AB526DC.jpg",
+      "title": "Sparks fly",
+      "altText": "A mechanic grinds metal in the Locomotive Shop causing sparks to fly towards ground.",
+      "caption": "Locomotive maintenance and repairs never end. Many employees and volunteers work year-round in the Locomotive Shop to repair the engines within Steamtown's collection.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stea-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C855290-1DD8-B71B-0B852B73698E718F.jpg",
+      "title": "Aerial view of Steamtown NHS",
+      "altText": "An aerial view of Steamtown which falls within the boundaries of a mid-size city.",
+      "caption": "This aerial overview of Steamtown NHS, which was created within the former railyards of the Delaware, Lackawanna & Western \"Scranton Yards\"",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stea-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5F316860-C14F-E9E7-B5446BF9143C55AF.jpg",
+      "title": "Diesel No. 514 pulling the \"Big Boy\"",
+      "altText": "black train with yellow horizontal stripes and the number 514 pulling a larger black train on tracks",
+      "caption": "\"Big Boy\" No. 4012 is pulled along the tracks",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/stea/index.htm",
+    "directions": "https://www.nps.gov/stea/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Industry",
+    "Transportation",
+    "Trains and Railroads",
+    "National Historic Site",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

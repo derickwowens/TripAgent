@@ -1,0 +1,266 @@
+{
+  "id": "np-viis",
+  "name": "Virgin Islands National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "VI",
+  "stateName": "VI",
+  "region": "southeast",
+  "description": "Go beyond Virgin Islands National Park's stunning white-sand beaches. Hike to historic plantation sites to learn about a challenging past when sugar and enslaved labor dominated life on the island. Visit the Indigenous Taino's ancient petroglyphs. Snorkel coral reefs to discover hidden marine life. Two-thirds of the island of St. John is national park, making it a unique destination for visitors.",
+  "shortDescription": "Go beyond Virgin Islands National Park's stunning white-sand beaches. Hike to historic plantation sites to learn about a challenging past when sugar and enslaved labor dominated life on the island. Vi...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 18.34279656,
+    "longitude": -64.74194451
+  },
+  "nationalParkInfo": {
+    "parkCode": "viis",
+    "npsId": "C65070FE-942C-4E00-8C2B-64CA33C85B4A",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/viis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/viis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3407766201",
+    "email": "viis_interpretation@nps.gov",
+    "website": "https://www.nps.gov/viis/index.htm",
+    "address": {
+      "line1": "1300 Cruz Bay Creek",
+      "line2": "",
+      "city": "St. John",
+      "state": "VI",
+      "postalCode": "00830"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:15AM - 4:00PM",
+    "tuesday": "8:15AM - 4:00PM",
+    "wednesday": "8:15AM - 4:00PM",
+    "thursday": "8:15AM - 4:00PM",
+    "friday": "8:15AM - 1:30PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Virgin Islands National Park is always open! The Visitor Center and store are open from 8:15 a.m. until 4 p.m. Monday - Thursday and 8:15 a.m. until 1:30 p.m. on Fridays. It is closed on weekends, the Fourth of July, Thanksgiving Day, and Christmas Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Mostly Perfect! The Tradewinds (the Easterlies) dominate the weather in the Virgin Islands, blowing east to west across the tropical Atlantic. The winter tends to bring stronger winds and less rain, and the summer tends to bring more rain and lighter winds. Be sure to check the forecast often during hurricane season or winter swell events."
+  },
+  "images": [
+    {
+      "id": "viis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F0534AF-91EB-443B-41760F790BE42778.jpg",
+      "title": "Trunk Bay",
+      "altText": "Turquoise water laps white sandy shore fringed with lush green vegetation.",
+      "caption": "Renowned for its beauty, Trunk Bay is a visitor favorite.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "viis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79CEF6-1DD8-B71B-0BE2B171E1C38905.jpg",
+      "title": "Queen Angel Fish",
+      "altText": "Queen Angel Fish",
+      "caption": "A Beautiful Queen Angel Fish",
+      "credit": "Judy Bucholz",
+      "isPrimary": false
+    },
+    {
+      "id": "viis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F2D548F-E180-9786-F4EA73BBE299B47F.jpg",
+      "title": "Sunset Bench at Lind Point",
+      "altText": "A sunset colors the horizon as seen from an overlook above the bay.",
+      "caption": "Lind Point Overlook is a perfect spot to enjoy a Virgin Islands sunset.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "viis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D033-1DD8-B71B-0B99DCE07EFF9D58.jpg",
+      "title": "Four Stilts for the Bird Watchers",
+      "altText": "Four Stilts in the Francis Bay Pond",
+      "caption": "Four Stilts in the Francis Bay Pond",
+      "credit": "Caroline Rogers",
+      "isPrimary": false
+    },
+    {
+      "id": "viis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D149-1DD8-B71B-0B90F4272FF2EB3F.jpg",
+      "title": "Sunset Paddle",
+      "altText": "A Sunset Paddle",
+      "caption": "A Sunset Paddle, a perfect end to your day.",
+      "credit": "Stephanie Guyer-Stevens",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/viis/index.htm",
+    "directions": "http://www.nps.gov/viis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Maritime",
+    "Piracy and Privateering",
+    "Ships and Shipwrecks",
+    "Transportation",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Estuaries and Mangroves",
+    "Oceans",
+    "Coral Reefs",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Waterfalls",
+    "National Park",
+    "VI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

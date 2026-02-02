@@ -1,0 +1,192 @@
+{
+  "id": "np-azru",
+  "name": "Aztec Ruins National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Aztec Ruins has some of the best-preserved Chacoan structures of its kind. Learn more about the ancestral Pueblo people in the park's museum and explore the Aztec West great house to see exceptionally advanced architecture, original wooden beams, and a restored Great Kiva. Aztec Ruins is a deeply sacred place to many Indigenous peoples across the American Southwest. Please visit with respect.",
+  "shortDescription": "Aztec Ruins has some of the best-preserved Chacoan structures of its kind. Learn more about the ancestral Pueblo people in the park's museum and explore the Aztec West great house to see exceptionally...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.83682216,
+    "longitude": -107.9999245
+  },
+  "nationalParkInfo": {
+    "parkCode": "azru",
+    "npsId": "CD54150B-24F6-4B96-8D6F-B23AF92A70F2",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/azru/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/azru/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5053346174",
+    "email": "azru_information@nps.gov",
+    "website": "https://www.nps.gov/azru/index.htm",
+    "address": {
+      "line1": "725 Ruins Road",
+      "line2": "",
+      "city": "Aztec",
+      "state": "NM",
+      "postalCode": "87410"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 5:00PM",
+    "tuesday": "7:00AM - 5:00PM",
+    "wednesday": "7:00AM - 5:00PM",
+    "thursday": "7:00AM - 5:00PM",
+    "friday": "7:00AM - 5:00PM",
+    "saturday": "7:00AM - 5:00PM",
+    "sunday": "7:00AM - 5:00PM",
+    "description": "Aztec Ruins National Monument is open to the public from 7:00am-5:00pm, which includes the parking areas, archeological sites, picnic areas, and trails. The visitor center is open from 9:00am-5:00pm daily. The monument and visitor center close on Thanksgiving, Christmas, and New Year's Days. Unless there is a public program scheduled, there is no after-hours access. Vehicles are not permitted to be left in the parking lot after closing."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer High temperatures range between 80°F and 99°F degrees with a few days over 100°F. Afternoon thunderstorms usually cool things down in late July and August. Fall Usually pleasant, with mild days and crisp nights. Winter Daytime temperatures range between 20°F and 50°F with cold nights that can reach 0°F. Snow is periodic, but accumulations are typically only 1-2 inches. Spring Weather is especially unpredictable: it can be windy, cold, and wet, or still, warm, and dry."
+  },
+  "images": [
+    {
+      "id": "azru-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80AFE4-1DD8-B71B-0BE2EEFC92413401.jpg",
+      "title": "Great Kiva in Aztec West plaza",
+      "altText": "Reconstructed stone kiva amidst stone ruins",
+      "caption": "Great Kiva in Aztec West plaza",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "azru-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80ACCA-1DD8-B71B-0B0BCE587DB51606.jpg",
+      "title": "Great Kiva",
+      "altText": "Interior of a reconstructed great kiva",
+      "caption": "The reconstructed Great Kiva",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "azru-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80ADDD-1DD8-B71B-0B3BC9BFA515A233.jpg",
+      "title": "Rainbow over the Great Kiva",
+      "altText": "Rainbow over the reconstructed Great Kiva",
+      "caption": "Rainbow over the reconstructed Great Kiva",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "azru-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80AEDE-1DD8-B71B-0B0832D47B050F9A.jpg",
+      "title": "Winter snow on Aztec West great house",
+      "altText": "Winter snow on stone ruins",
+      "caption": "Winter snow on Aztec West great house",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "azru-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B0EC-1DD8-B71B-0B547C0BF2907EF8.jpg",
+      "title": "T-shaped doorway in Aztec West",
+      "altText": "Original \"T-shaped\" doorway in stone ruins",
+      "caption": "Original \"T-shaped\" doorway in Aztec West",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "azru-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B309-1DD8-B71B-0BB4F9B21491B47D.jpg",
+      "title": "Original ancestral Pueblo roof structure",
+      "altText": "Three layers of original intact roof beams",
+      "caption": "Original ancestral Pueblo roof structures",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/azru/index.htm",
+    "directions": "http://www.nps.gov/azru/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Commerce",
+    "Trade",
+    "Engineering",
+    "Farming and Agriculture",
+    "Music",
+    "Native American Heritage",
+    "Schools and Education",
+    "Animals",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

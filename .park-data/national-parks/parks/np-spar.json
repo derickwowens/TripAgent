@@ -1,0 +1,193 @@
+{
+  "id": "np-spar",
+  "name": "Springfield Armory National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "For nearly two centuries, the U.S. Armed Forces and American industry looked to Springfield Armory for innovative engineering and superior firearms. Springfield Armory National Historic Site commemorates the critical role of the nation’s first armory by preserving and interpreting the world's largest historic US military small arms collection, along with historic archives, buildings and landscape.",
+  "shortDescription": "For nearly two centuries, the U.S. Armed Forces and American industry looked to Springfield Armory for innovative engineering and superior firearms. Springfield Armory National Historic Site commemora...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.1086368,
+    "longitude": -72.57967415
+  },
+  "nationalParkInfo": {
+    "parkCode": "spar",
+    "npsId": "E01A7425-C74B-4E71-853D-681AD2FB948A",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/spar/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/spar/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4137348551",
+    "email": "spar_interpretation@nps.gov",
+    "website": "https://www.nps.gov/spar/index.htm",
+    "address": {
+      "line1": "Springfield Armory National Historic Site",
+      "line2": "One Armory Square",
+      "city": "Springfield",
+      "state": "MA",
+      "postalCode": "01105"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:30AM - 4:00PM",
+    "thursday": "9:30AM - 4:00PM",
+    "friday": "9:30AM - 4:00PM",
+    "saturday": "9:30AM - 4:00PM",
+    "sunday": "9:30AM - 4:00PM",
+    "description": "The Park MUSEUM & VISITOR CENTER\nThe Park is OPEN Wednesday through Sunday from 9:30am to 4:00pm. \nThe Park is CLOSED Monday and Tuesday\n\nThe park is closed for the following holidays:\n\n•New Year's Day\n•Thanksgiving Day\n•Christmas Day"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Springfield Armory National Historic Site is situated in the heart of Western Massachusetts and the Pioneer Valley. Our year is marked by four distinct seasons. Summers tend to be pleasant, but can at times be very hot and very humid. Autumn features brilliant foliage and cooler, calmer weather. Winter storms are capable of closing the park and can make travel dangerous. Springtime in New England is pleasant."
+  },
+  "images": [
+    {
+      "id": "spar-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D351A3D5-1DD8-B71B-0B9E169EA16305E9.jpg",
+      "title": "Springfield Armory National Historic Site",
+      "altText": "The Main Arsenal",
+      "caption": "The Main Arsenal at Springfield Armory National Historic Site was first built in 1850 and today houses the park's amazing collection of historic firearms.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "spar-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EE59D277-BB59-B95A-FE0BCA4D6B22DC70.jpg",
+      "title": "Blank Firing Demostration",
+      "altText": "Three Park Volunteers, holding historic firearms, on the grounds of the Armory against a cloudy sky.",
+      "caption": "Park Volunteers give a blank firing demonstration of historic firearms.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "spar-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EE8C00C2-BDE4-9CC3-2686707A304148B6.jpg",
+      "title": "Springfield Armory Clock Tower",
+      "altText": "The tower of the Armory with the flag at full mast blowing in the wind on a cloudy day.",
+      "caption": "Following the closure of the Springfield Armory in 1968, public action would drive Congress to create Springfield Armory National Historic Site in the late 1970s.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "spar-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EF74A0C2-E271-6041-2D2A097B9A5D86A4.jpg",
+      "title": "Organ of Muskets",
+      "altText": "A double musket rack holding 645 Springfield US Model 1861 rifle muskets.",
+      "caption": "Named after a poem by Henry Wadsworth Longfellow, the Organ of Muskets consists of 647 Model 1861 Rifle Muskets. This structure would have held 1100 muskets when fully stocked and would have been one of many that filled the Arsenal during the Civil War.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "spar-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EF9A4AF9-EFC3-BF6E-7224498221C4EB81.jpg",
+      "title": "Springfield Main Arsenal on a Fall Day",
+      "altText": "The Springfield Armory Main Arsenal on a fall day, with blue skies and the flag at half staff.",
+      "caption": "Springfield Armory began the production of small arms in 1794 and continued until its close in 1968. In 1978, the Armory reopened under the direction of the National Park Service as a National Historic Site.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/spar/index.htm",
+    "directions": "http://www.nps.gov/spar/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Industry",
+    "Factories",
+    "Laborer and Worker",
+    "Maritime - Military",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "US Coast Guard",
+    "US Air Force (Army Air Corps)",
+    "Indigenous and Native Warrior",
+    "Armories",
+    "Battlefields",
+    "Native American Heritage",
+    "Presidents",
+    "Science, Technology and Innovation",
+    "Urban America",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "French and Indian War",
+    "American Revolutionary War",
+    "War of 1812",
+    "Mexican War",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Korean War",
+    "Vietnam War",
+    "Cold War",
+    "Women's History",
+    "National Historic Site",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

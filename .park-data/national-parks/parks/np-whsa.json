@@ -1,0 +1,209 @@
+{
+  "id": "np-whsa",
+  "name": "White Sands National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Rising from the heart of the Tularosa Basin is one of the world's great natural wonders - the glistening white sands of New Mexico. Great wave-like dunes of gypsum sand have engulfed 275 square miles of desert, creating the world's largest gypsum dunefield. White Sands National Park preserves a major portion of this unique dunefield, along with the plants and animals that live here.",
+  "shortDescription": "Rising from the heart of the Tularosa Basin is one of the world's great natural wonders - the glistening white sands of New Mexico. Great wave-like dunes of gypsum sand have engulfed 275 square miles ...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 32.77907858,
+    "longitude": -106.3333461
+  },
+  "nationalParkInfo": {
+    "parkCode": "whsa",
+    "npsId": "32D2B528-193E-43FA-BF38-32493D9E317D",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/whsa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/whsa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5754796124",
+    "email": "whsa_interpretation@nps.gov",
+    "website": "https://www.nps.gov/whsa/index.htm",
+    "address": {
+      "line1": "19955 Hwy 70 W",
+      "line2": "",
+      "city": "Alamogordo",
+      "state": "NM",
+      "postalCode": "88310"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - Sunset",
+    "tuesday": "7:00AM - Sunset",
+    "wednesday": "7:00AM - Sunset",
+    "thursday": "7:00AM - Sunset",
+    "friday": "7:00AM - Sunset",
+    "saturday": "7:00AM - Sunset",
+    "sunday": "7:00AM - Sunset",
+    "description": "The park gates always open at 7:00 am with closing hours changing with sunset. The park closes 30 minutes after local sunset. Local sunset is 8 minutes earlier than Alamogordo's predicted sunset. Sunset times can be found at https://sunrise-sunset.org/us/alamogordo-nm"
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Per vehicle fee is charged to visitors for entry by a single, private non-commercial vehicle. Entrance fees are valid for reentry for seven consecutive days from the date of purchase.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Per person fee is charged to visitors for entry by means other than a single, private non-commercial vehicle. This includes, but is not limited to, individuals who enter the park by walking and bicycling. Entrance fees are valid for reentry for seven consecutive days from the date of purchase.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Commercial bus/van tours are charged a flat rate based on the capacity of the vehicle (not the number of persons on board).",
+      "cost": "50.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Commercial bus/van tours are charged a flat rate based on the capacity of the vehicle (not the number of persons on board).",
+      "cost": "60.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Commercial bus/van tours are charged a flat rate based on the capacity of the vehicle (not the number of persons on board).",
+      "cost": "150.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Temperatures at White Sands vary greatly throughout the year. Summer time temperatures can be very hot. Winters are mild with cool evenings. Spring time is the windy season. Fall is very enjoyable with mild daytime and night time temperatures."
+  },
+  "images": [
+    {
+      "id": "whsa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7CA16410-A412-1F05-2D92EB04EEB27980.jpg",
+      "title": "Sunset",
+      "altText": "White dunes in foreground with sun setting behind mountain.",
+      "caption": "Sunsets are one of the most popular times to visit White Sands. Visitors can experience sunset every day of the year.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "whsa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FE53E-1DD8-B71B-0BE4AEBECAB602AD.jpg",
+      "title": "Aerial of Dunefield",
+      "altText": "Aerial of white sand dunes.",
+      "caption": "The dunes at White Sands cover 275 square miles of the Tularosa Basin.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "whsa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FE691-1DD8-B71B-0B21F94DBD31A965.jpg",
+      "title": "Ripples",
+      "altText": "Close up view of ripples on a dune.",
+      "caption": "The wind shapes and moves the dunes as a whole but gives each individual dune the texture of ripples.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "whsa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C819076-1DD8-B71B-0BBCE3AA4AF4D2CD.jpg",
+      "title": "Fall Colors",
+      "altText": "Cottonwood trees with orange leaves.",
+      "caption": "Fall is a wonderful time to visit as most of our plants with leaves change beautiful colors.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "whsa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8191DC-1DD8-B71B-0BCE7EF56096C614.jpg",
+      "title": "Shaded Dunes",
+      "altText": "Grey shadows on dunes.",
+      "caption": "As the sun changes its angle through the sky it allows shadow to roll across the dunes.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/whsa/index.htm",
+    "directions": "http://www.nps.gov/whsa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Dunes",
+    "Fossils and Paleontology",
+    "Geology",
+    "Groundwater",
+    "National Park",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

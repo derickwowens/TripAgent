@@ -1,0 +1,148 @@
+{
+  "id": "np-foth",
+  "name": "Ford's Theatre National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "On April 14, 1865, President Abraham Lincoln was assassinated at Ford’s Theatre. Discover how everyday people experienced a national tragedy and how we have remembered a fallen leader. Today, in partnership with Ford’s Theatre Society, live dramatic productions highlight Lincoln’s love of the theatre and the power of stories to connect us to ourselves and our history.",
+  "shortDescription": "On April 14, 1865, President Abraham Lincoln was assassinated at Ford’s Theatre. Discover how everyday people experienced a national tragedy and how we have remembered a fallen leader. Today, in partn...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.89668819,
+    "longitude": -77.02577944
+  },
+  "nationalParkInfo": {
+    "parkCode": "foth",
+    "npsId": "C1D82E29-1291-415B-9834-5A0480D2732C",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/foth/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/foth/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202.426.6924",
+    "email": "fords_theatre@nps.gov",
+    "website": "https://www.nps.gov/foth/index.htm",
+    "address": {
+      "line1": "511 10th Street NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20004"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Ford's Theatre National Historic Site is generally open 7 days a week from 9:00 a.m. to 5:00 p.m. The box office opens daily at 8:30 a.m. for tickets and reservations. As Ford's is a working theatre, parts of the site, especially the theatre, may be closed or operating with modified hours. For the daily schedule of what is open, what can be included in your visit, and what tickets are available, please visit the Ford's Theatre Society calendar webpage."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Make your reservation on the Ford's Theatre Society website at the link below. The reservation includes a self-guided tour through the museum, Petersen House (the house where Lincoln died), and Aftermath exhibits. Because Ford's Theatre is an active theatre, some tours or tour elements may occasionally be unavailable. Free, same-day tickets may be available on a first-come, first-served basis at the Ford's Theatre box office; supplies are limited.",
+      "cost": "5.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees"
+  },
+  "images": [
+    {
+      "id": "foth-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C815286-1DD8-B71B-0BF2AD2960AE4AF6.jpg",
+      "title": "Ford's Theatre Front",
+      "altText": "Picture of the front of Ford's Theatre",
+      "caption": "Where a nations destiny was met.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "foth-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C815409-1DD8-B71B-0BAC8D32EE392B5B.jpg",
+      "title": "Ford's Theatre Box",
+      "altText": "Presidential Box at Ford's Theatre",
+      "caption": "Where President Lincoln was shot",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "foth-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8155AE-1DD8-B71B-0B79EA81C5585F29.jpg",
+      "title": "Petersen House",
+      "altText": "Front of Petersen House",
+      "caption": "Place where Lincoln died.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "foth-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D22C037A-90D4-6C71-37D8DCE211A9B5FC.jpg",
+      "title": "State Box at Ford's Theatre",
+      "altText": "Luxuriously furnished theatre box with red carpet wallpaper, rocking chair & upholstered furniture.",
+      "caption": "Recreated State Box where Lincoln was assassinated by John Wilkes Booth",
+      "credit": "NPS Photo/ D Byers",
+      "isPrimary": false
+    },
+    {
+      "id": "foth-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F07E3501-D262-12B3-59A49E75169D641F.jpg",
+      "title": "Ford's Theatre Interior",
+      "altText": "Three levels of auditorium style seating with red carpeting and upholstered seats",
+      "caption": "Ford's Theatre Interior",
+      "credit": "NPS/ D Byers",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/foth/index.htm",
+    "directions": "http://www.nps.gov/foth/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Monuments and Memorials",
+    "Presidents",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Historic Site",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

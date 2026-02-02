@@ -1,0 +1,155 @@
+{
+  "id": "np-cawo",
+  "name": "Carter G. Woodson Home National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Before Dr. Carter G. Woodson, there was very little accurate written history about the lives and experiences of Americans of African descent. Today a National Historic Site, Dr. Woodson’s home served as the headquarters for the Association for the Study of African American Life and History. Dr. Woodson established Negro History Week here in 1926, which we celebrate today as Black History Month.",
+  "shortDescription": "Before Dr. Carter G. Woodson, there was very little accurate written history about the lives and experiences of Americans of African descent. Today a National Historic Site, Dr. Woodson’s home served ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.91089286,
+    "longitude": -77.02431104
+  },
+  "nationalParkInfo": {
+    "parkCode": "cawo",
+    "npsId": "D040C2B5-BFCD-4DED-AADC-BA28E29CC560",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cawo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cawo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1499",
+    "email": "cawo_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/cawo/index.htm",
+    "address": {
+      "line1": "1538 Ninth Street NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20001"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Carter G. Woodson Home National Historic Site is temporarily closed for construction."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winter: Temperatures usually range from 30 to 50 F. There is occasional snow. Spring: Temperatures usually range widely from 40 to 70 F. Rain is common. Summer: Temperatures usually range from 70 to 90 F. Humidity is usually high. Be prepared and drink plenty of water. There is a water fountain in the visitor center. Fall: Temperatures usually range widely from 40 to 70 F. Humidity can remain high in the earlier part of the season."
+  },
+  "images": [
+    {
+      "id": "cawo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/93C3FA3C-028F-9E45-D5C31B4A283F60AC.jpg",
+      "title": "Carter G. Woodson Home National Historic Site",
+      "altText": "The restored facades of three historic Victorian row-homes on an urban street in Washington, DC",
+      "caption": "The view from across the street of the facades of the Carter G. Woodson Home National Historic Site.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "cawo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/93EB0485-006C-847F-F0473D0429C3B0FA.jpg",
+      "title": "Handicapped Accessibility at the back of the Carter G. Woodson Home NHS",
+      "altText": "The backs of the three restored homes that make up the Woodson Home NHS with accessibility",
+      "caption": "Handicapped Accessibility (ramp, parking space) at the back of the Carter G. Woodson Home NHS.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "cawo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/940F7B68-B12B-5A43-6B0C1EB24A49677C.jpg",
+      "title": "Hallway and staircases on second level",
+      "altText": "The second level in a historic home with wooden floorboards, steps, railings, light fixtures, window",
+      "caption": "The second floor of the Woodson Home with restored original floorboards, steps, and railings.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "cawo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/94FFBBC1-F1FD-4768-92BC888E697440E1.jpg",
+      "title": "Typewriter",
+      "altText": "Old-fashioned type writers sits on top of a desk with other office supplies",
+      "caption": "An old-fashioned typewriter sits on top of a desk along with other office supplies in the reception area and office space of Dr. Woodson's office-home.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "cawo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1FF8B5CC-0DCA-01D4-1133CE75A7BD049E.jpg",
+      "title": "Carter G. Woodson Home exterior",
+      "altText": "A red brick townhouse",
+      "caption": "Carter G. Woodson Home",
+      "credit": "NPS / Tim Ervin",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cawo/index.htm",
+    "directions": "http://www.nps.gov/cawo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Schools and Education",
+    "Social Movements",
+    "Civil Rights",
+    "Urban America",
+    "Women's History",
+    "National Historic Site",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

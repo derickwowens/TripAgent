@@ -1,0 +1,201 @@
+{
+  "id": "np-wrbr",
+  "name": "Wright Brothers National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "Wind, sand, and a dream of flight brought Wilbur and Orville Wright to Kitty Hawk, North Carolina where, after four years of scientific experimentation, they achieved the first successful airplane flights on December 17, 1903. With courage and perseverance, these self-taught engineers relied on teamwork and application of the scientific process. What they achieved changed our world forever.",
+  "shortDescription": "Wind, sand, and a dream of flight brought Wilbur and Orville Wright to Kitty Hawk, North Carolina where, after four years of scientific experimentation, they achieved the first successful airplane fli...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 36.01637713,
+    "longitude": -75.66997163
+  },
+  "nationalParkInfo": {
+    "parkCode": "wrbr",
+    "npsId": "E2AE772D-7A2B-49CC-9AFA-E8F068506B22",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wrbr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wrbr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2524732111",
+    "email": "caha_public_affairs@nps.gov",
+    "website": "https://www.nps.gov/wrbr/index.htm",
+    "address": {
+      "line1": "1000 North Croatan Highway",
+      "line2": "",
+      "city": "Kill Devil Hills",
+      "state": "NC",
+      "postalCode": "27948"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "These are the times the park grounds and visitor center are open for visitors."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Fee is charged per-person, NOT per vehicle. Ages 15 and younger are free of charge.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "$25 plus $7 per person.  Sedans have a capacity of 1-6 people.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "A flat fee for all Van/ Small Bus with a seating capacity of 7-16 passengers",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Fee is charged for any commercial vehicle with a capacity of 16-25 individuals.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Fees charged for commercial vehicles with a capacity of over 26 individuals.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Structured educational visits that serve a curriculum need for a class may apply for a waiver for entrance fees in advance.",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Weather on the Outer Banks varies seasonally and daily. Summers can be very hot and sunny (wear sunscreen and drink water), while winters can be cold and wet. High winds are always a possibility any time of the year. It is not uncommon for a brief winter snow each year. Being on a barrier island, the memorial is susceptible to storm impacts, including hurricanes in the summer and nor'easters in the winter. No matter what time of year you visit, dress for the weather, and be ready for wind!"
+  },
+  "images": [
+    {
+      "id": "wrbr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C835C3E-1DD8-B71B-0BD5373635F58D88.jpg",
+      "title": "First Flight",
+      "altText": "Orville takes to the air in the flyer for the first time as Wilbur assists.",
+      "caption": "Orville takes to the air in the flyer for the first time on December 17, 1903.",
+      "credit": "Wilbur Wright, Orville Wright, and John Daniels",
+      "isPrimary": true
+    },
+    {
+      "id": "wrbr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C835D5F-1DD8-B71B-0BA12FCABDD65927.jpg",
+      "title": "Busts and Moon",
+      "altText": "Copper busts of the two brothers with the moon visible in the blue sky.",
+      "caption": "Copper busts of Wilbur and Orville Wright stand atop Big Kill Devil Hill.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wrbr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C835E80-1DD8-B71B-0BC326D2D33DF6D8.jpg",
+      "title": "First Flight Boulder",
+      "altText": "The large boulder and plaque sit where the Wright brothers first flew in their 1903 flyer.",
+      "caption": "This boulder marks the spot where the Wright brothers first flew in their 1903 flyer.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wrbr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C835FBE-1DD8-B71B-0BA225CDA6DAAB34.jpg",
+      "title": "Walking Along History",
+      "altText": "Visitors walk along the flight line where Wilbur and Orville Wright flew and landed.",
+      "caption": "Visitors explore the landing spots of the Wright brothers' first flights.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wrbr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8360DD-1DD8-B71B-0B539D0C7FCB6714.jpg",
+      "title": "Wright Brothers Monument",
+      "altText": "View straight up at the monument with the Sun directly behind the stonework.",
+      "caption": "Black-and-white image of the Wright Brothers Monument",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wrbr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C836230-1DD8-B71B-0B79A6C076CAD4DC.jpg",
+      "title": "National Aviation Day",
+      "altText": "Two young girls look across the grounds of Wright Brothers National Memorial.",
+      "caption": "Visitors enjoy celebrating aviation where modern aviation was born.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wrbr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83637E-1DD8-B71B-0BC882075FD2D8AB.jpg",
+      "title": "Journey to the Top",
+      "altText": "Visitors moving along a sidewalk to the top of the hill where the monument stands.",
+      "caption": "Visitors climb Big Kill Devil Hill to visit the Wright Brothers Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wrbr/index.htm",
+    "directions": "http://www.nps.gov/wrbr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Aviation",
+    "Birthplace",
+    "Engineering",
+    "Monuments and Memorials",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "National Memorial",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

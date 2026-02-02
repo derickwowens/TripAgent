@@ -1,0 +1,157 @@
+{
+  "id": "np-bost",
+  "name": "Boston National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "Discover how one city could be the Cradle of Liberty, site of the first major battle of American Revolution, and home to many who espoused that freedom can be extended to all.",
+  "shortDescription": "Discover how one city could be the Cradle of Liberty, site of the first major battle of American Revolution, and home to many who espoused that freedom can be extended to all.",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.36957407,
+    "longitude": -71.05536763
+  },
+  "nationalParkInfo": {
+    "parkCode": "bost",
+    "npsId": "81F81EBD-0FE7-4811-88EF-AB071E737D97",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bost/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bost/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6172425601",
+    "email": "bost_rangers@nps.gov",
+    "website": "https://www.nps.gov/bost/index.htm",
+    "address": {
+      "line1": "Boston National Historical Park",
+      "line2": "21 Second Ave",
+      "city": "Charlestown",
+      "state": "MA",
+      "postalCode": "02129"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 5:00PM",
+    "tuesday": "10:00AM - 5:00PM",
+    "wednesday": "10:00AM - 5:00PM",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "Boston National Historical Park is a unique collaboration of federally, municipally, and privately owned and operated historic sites. Most of the park is along Boston's Freedom Trail®, a 2.5 mile (4 km) walking path marked by a red brick or painted line weaving through Downtown Boston, the North End, and Charlestown.\n\nThe trail itself is outdoors and open year round. Every site along the trail has its own hours which vary throughout the season. Please check ahead before planning your visit."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures range from warm, humid summer days to cold New England winter days. Wear comfortable sportswear in season, with comfortable walking shoes."
+  },
+  "images": [
+    {
+      "id": "bost-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/96C1990B-1DD8-B71B-0B8920EBAE88BC49.jpg",
+      "title": "Colonial Town Meeting",
+      "altText": "View of the Colonial Town Meeting program from the desk",
+      "caption": "The Revolutionary Town Meeting program is one of the park's most popular.",
+      "credit": "Boston National Historical Park",
+      "isPrimary": true
+    },
+    {
+      "id": "bost-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/96AD2B27-1DD8-B71B-0B2B3FC8BCA9B4BC.jpg",
+      "title": "Rainbow over Faneuil Hall",
+      "altText": "Rainbow over Faneuil Hall",
+      "caption": "Rare image of rainbow was captured over Faneuil Hall",
+      "credit": "Boston National Historical Park",
+      "isPrimary": false
+    },
+    {
+      "id": "bost-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/96A3AFDF-1DD8-B71B-0BECF3535FC1317B.jpg",
+      "title": "Paul Revere House Sign",
+      "altText": "Paul Revere House Sign",
+      "caption": "Paul Revere House is a proud partner of Boston National Historical Park",
+      "credit": "Boston National Historical Park",
+      "isPrimary": false
+    },
+    {
+      "id": "bost-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9698669F-1DD8-B71B-0BAF19BCD480270D.jpg",
+      "title": "Commandant's House",
+      "altText": "Commandant's House in Spring",
+      "caption": "Commandant's House is the oldest structure in the Charlestown Navy Yard.",
+      "credit": "Boston National Historical Park",
+      "isPrimary": false
+    },
+    {
+      "id": "bost-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/96D87235-1DD8-B71B-0B747DE0CE309802.jpg",
+      "title": "Navy Yard from the harbor",
+      "altText": "View of the Navy Yard from the harbor showing the USS Constution, USS Cassin Young and Bunker Hill",
+      "caption": "More than 200 years of Navy history and tradition can be found in the Charlestown Navy Yard.",
+      "credit": "Boston National Historical Park",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bost/index.htm",
+    "directions": "http://www.nps.gov/bost/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Laborer and Worker",
+    "Maritime",
+    "Maritime - Military",
+    "Military",
+    "Infantry and Militia",
+    "US Navy",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Abolition Movement",
+    "Voting Rights and Suffrage",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "World War II",
+    "Women's History",
+    "Climate Change",
+    "National Historical Park",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

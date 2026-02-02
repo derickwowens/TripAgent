@@ -1,0 +1,178 @@
+{
+  "id": "np-moru",
+  "name": "Mount Rushmore National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "SD",
+  "stateName": "South Dakota",
+  "region": "midwest",
+  "description": "Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, development and preservation of this country. From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face with the rich heritage we all share.",
+  "shortDescription": "Majestic figures of George Washington, Thomas Jefferson, Theodore Roosevelt and Abraham Lincoln, surrounded by the beauty of the Black Hills of South Dakota, tell the story of the birth, growth, devel...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 43.88037021,
+    "longitude": -103.4525186
+  },
+  "nationalParkInfo": {
+    "parkCode": "moru",
+    "npsId": "5590468F-2446-4B46-A8C1-42505177C298",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/moru/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/moru/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6055742523",
+    "email": "moru_information@nps.gov",
+    "website": "https://www.nps.gov/moru/index.htm",
+    "address": {
+      "line1": "13000 Highway 244",
+      "line2": "Building 31, Suite 1",
+      "city": "Keystone",
+      "state": "SD",
+      "postalCode": "57751"
+    }
+  },
+  "operatingHours": {
+    "monday": "5:00AM - 11:00PM",
+    "tuesday": "5:00AM - 11:00PM",
+    "wednesday": "5:00AM - 11:00PM",
+    "thursday": "5:00AM - 11:00PM",
+    "friday": "5:00AM - 11:00PM",
+    "saturday": "5:00AM - 11:00PM",
+    "sunday": "5:00AM - 11:00PM",
+    "description": "Weather permitting, the grounds at Mount Rushmore are open every day of the year.  The Information Center, Visitor Center, Gift Shop and Carvers' Cafe are open every day except December 25th."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather at Mount Rushmore can be highly variable in any season. Summer high temperatures range from 70 to 100 degrees Fahrenheit. Fall high temperatures range from 45 to 80 degrees Fahrenheit. Winter high temperatures range from 20 to 40 degrees Fahrenheit. Spring high temperatures range from 30 to 70 degrees Fahrenheit. Typically, July and August are the warmest months and January and February are the coldest. March and April receive the most snow, while May and June receive the most rain."
+  },
+  "images": [
+    {
+      "id": "moru-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B8BC21F3-9292-822E-797779C6FA2B9497.jpg",
+      "title": "Mount Rushmore Summer Sky",
+      "altText": "Photo of Mount Rushmore under a bright blue sky with puffy clouds floating over.",
+      "caption": "Photo of Mount Rushmore under a bright blue sky with puffy clouds floating over.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "moru-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7F64FD4B-FBD4-5B1B-3492A37C207C73A4.jpg",
+      "title": "Mount Rushmore and the Avenue of Flags",
+      "altText": "Visitors walking along the Avenue of Flags with Mount Rushmore in the background.",
+      "caption": "Visitors walking along the Avenue of Flags with Mount Rushmore in the background.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moru-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7FCF-1DD8-B71B-0B1C13F43534232D.jpg",
+      "title": "Mount Rushmore Through the Trees",
+      "altText": "Mount Rushmore viewed from a distance through ponderosa pine trees.",
+      "caption": "Mount Rushmore viewed from a distance through ponderosa pine trees.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moru-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C8154-1DD8-B71B-0B4E439C3CE14388.jpg",
+      "title": "Closeup of Mount Rushmore",
+      "altText": "Closeup photo of Mount Rushmore under a bright blue sky.",
+      "caption": "Closeup photo of Mount Rushmore under a bright blue sky.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moru-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C82BE-1DD8-B71B-0BB0E19046FD1F17.jpg",
+      "title": "Mount Rushmore With Talus Slope",
+      "altText": "Mount Rushmore above the talus slope, where rock removed from the mountain fell.",
+      "caption": "Mount Rushmore above the talus slope, where rock removed from the mountain fell.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moru-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C8502-1DD8-B71B-0B147A5B029A69D7.jpg",
+      "title": "Mount Rushmore At Night",
+      "altText": "Mount Rushmore illuminated under a darkening evening sky.",
+      "caption": "Mount Rushmore illuminated under a darkening evening sky.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/moru/index.htm",
+    "directions": "http://www.nps.gov/moru/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Sculpture",
+    "Monuments and Memorials",
+    "Presidents",
+    "Animals",
+    "Birds",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "National Memorial",
+    "SD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

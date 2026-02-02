@@ -1,0 +1,236 @@
+{
+  "_meta": {
+    "state": "FL",
+    "stateName": "Florida",
+    "lastUpdated": "2026-02-02",
+    "lastValidated": "2026-02-02T02:25:47.463Z",
+    "totalParks": 32,
+    "notes": "Top Florida state parks. We are the authoritative source!"
+  },
+  "parks": {
+    "bahia-honda-state-park": {
+      "name": "Bahia Honda State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/bahia-honda-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "john-pennekamp-coral-reef-state-park": {
+      "name": "John Pennekamp Coral Reef State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/john-pennekamp-coral-reef-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "myakka-river-state-park": {
+      "name": "Myakka River State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/myakka-river-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "ichetucknee-springs-state-park": {
+      "name": "Ichetucknee Springs State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/ichetucknee-springs-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "blue-spring-state-park": {
+      "name": "Blue Spring State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/blue-spring-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "rainbow-springs-state-park": {
+      "name": "Rainbow Springs State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/rainbow-springs-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "st-andrews-state-park": {
+      "name": "St. Andrews State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/st-andrews-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "edward-ball-wakulla-springs-state-park": {
+      "name": "Edward Ball Wakulla Springs State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/edward-ball-wakulla-springs-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "hillsborough-river-state-park": {
+      "name": "Hillsborough River State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/hillsborough-river-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "anastasia-state-park": {
+      "name": "Anastasia State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/anastasia-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "big-lagoon-state-park": {
+      "name": "Big Lagoon State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/big-lagoon-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "blackwater-river-state-park": {
+      "name": "Blackwater River State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/blackwater-river-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "caladesi-island-state-park": {
+      "name": "Caladesi Island State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/caladesi-island-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "cayo-costa-state-park": {
+      "name": "Cayo Costa State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/cayo-costa-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "collier-seminole-state-park": {
+      "name": "Collier-Seminole State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/collier-seminole-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "de-leon-springs-state-park": {
+      "name": "De Leon Springs State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/de-leon-springs-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "devils-millhopper-geological-state-park": {
+      "name": "Devil's Millhopper Geological State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/devils-millhopper-geological-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "falling-waters-state-park": {
+      "name": "Falling Waters State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/falling-waters-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "florida-caverns-state-park": {
+      "name": "Florida Caverns State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/florida-caverns-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "fort-clinch-state-park": {
+      "name": "Fort Clinch State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/fort-clinch-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "grayton-beach-state-park": {
+      "name": "Grayton Beach State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/grayton-beach-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "henderson-beach-state-park": {
+      "name": "Henderson Beach State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/henderson-beach-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "highlands-hammock-state-park": {
+      "name": "Highlands Hammock State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/highlands-hammock-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "ellie-schiller-homosassa-springs-wildlife-state-park": {
+      "name": "Ellie Schiller Homosassa Springs Wildlife State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/ellie-schiller-homosassa-springs-wildlife-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "honeymoon-island-state-park": {
+      "name": "Honeymoon Island State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/honeymoon-island-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "jonathan-dickinson-state-park": {
+      "name": "Jonathan Dickinson State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "paynes-prairie-preserve-state-park": {
+      "name": "Paynes Prairie Preserve State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/paynes-prairie-preserve-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "sebastian-inlet-state-park": {
+      "name": "Sebastian Inlet State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/sebastian-inlet-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "silver-springs-state-park": {
+      "name": "Silver Springs State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/silver-springs-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "stephen-foster-folk-culture-center-state-park": {
+      "name": "Stephen Foster Folk Culture Center State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/stephen-foster-folk-culture-center-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "topsail-hill-preserve-state-park": {
+      "name": "Topsail Hill Preserve State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/topsail-hill-preserve-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    },
+    "wekiwa-springs-state-park": {
+      "name": "Wekiwa Springs State Park",
+      "links": {
+        "official": "https://www.floridastateparks.org/parks-and-trails/wekiwa-springs-state-park",
+        "reservation": "https://reserve.floridastateparks.org/Web/"
+      }
+    }
+  }
+}

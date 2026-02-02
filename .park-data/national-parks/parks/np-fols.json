@@ -1,0 +1,199 @@
+{
+  "id": "np-fols",
+  "name": "Fort Larned National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "KS",
+  "stateName": "Kansas",
+  "region": "midwest",
+  "description": "Discover a complete and authentic army post from the 1860s -1870s! This well-preserved fort on the Santa Fe Trail shares a tumultuous history of the Indian Wars era. The sandstone constructed buildings sheltered troops who were known as the Guardians of the Santa Fe Trail.",
+  "shortDescription": "Discover a complete and authentic army post from the 1860s -1870s! This well-preserved fort on the Santa Fe Trail shares a tumultuous history of the Indian Wars era. The sandstone constructed building...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.18047491,
+    "longitude": -99.21836664
+  },
+  "nationalParkInfo": {
+    "parkCode": "fols",
+    "npsId": "6C6ABAB9-7F52-4172-8009-817612726CFF",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fols/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fols/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "620-285-6911",
+    "email": "fols_internet@nps.gov",
+    "website": "https://www.nps.gov/fols/index.htm",
+    "address": {
+      "line1": "1767 KS Hwy 156",
+      "line2": "",
+      "city": "Larned",
+      "state": "KS",
+      "postalCode": "67550"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 4:30PM",
+    "tuesday": "8:30AM - 4:30PM",
+    "wednesday": "8:30AM - 4:30PM",
+    "thursday": "8:30AM - 4:30PM",
+    "friday": "8:30AM - 4:30PM",
+    "saturday": "8:30AM - 4:30PM",
+    "sunday": "8:30AM - 4:30PM",
+    "description": "Staff begin closing the grounds and visitor center at 4:30 p.m. The parking lot gate is closed and locked for the night at 5 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Central Kansas has a four-season climate. Winter tends to be cold and dry, with average daytime highs below 40F (4C). Foehn winds blowing across the Great Plains from the Southwest periodically raise temperatures above 80F (27C). Unsettled warmer air, higher winds, and severe weather arrive in the spring and often last through early July. Late summer days hover above 90F (32C) and readings over 100F (38C) are not uncommon. Fall is variable but generally milder with showers changing to snow and ice later."
+  },
+  "images": [
+    {
+      "id": "fols-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B90DB-1DD8-B71B-0BC969A75425CFE9.jpg",
+      "title": "Artillery Demonstration",
+      "altText": "Men in 19th century U.S. Army uniforms fire a reproduction period cannon.",
+      "caption": "Volunteers demonstrating the use of a mountain howitzer during one of Fort Larned's living history weekends.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fols-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B8DB1-1DD8-B71B-0B0526F3A76B7F39.jpg",
+      "title": "Aerial Photo of Fort Larned",
+      "altText": "Sandstone army buildings arranged in a square around parade ground.",
+      "caption": "The historic sandstone buildings at Fort Larned date to 1868",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fols-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B8F64-1DD8-B71B-0B93FAD14C1B726B.jpg",
+      "title": "Blacksmith Demonstrations at Fort Larned",
+      "altText": "Man in leather apron hammering hot steel in blacksmith shop.",
+      "caption": "The blacksmith demonstration is one of the most popular living history demonstrations.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fols-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B9290-1DD8-B71B-0B4B809A91A8385F.jpg",
+      "title": "Flag Retreat",
+      "altText": "Men in 19th century U.S. Army uniforms lower an American flag.",
+      "caption": "Volunteers help recreate the U.S. Army flag lowering ceremony known as Retreat.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fols-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B93FD-1DD8-B71B-0B9A3D7F91E51630.jpg",
+      "title": "Visitors in the Barracks",
+      "altText": "Man in 19th century U.S. Army uniform interacts with visitors in period barracks.",
+      "caption": "A volunteer shows visitors how soldiers lived during the 1860s at Fort Larned.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fols-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B958F-1DD8-B71B-0B7BE1F935C61FC0.jpg",
+      "title": "Visiting Santa",
+      "altText": "Three young children having their picture taken with Santa Claus in a period room.",
+      "caption": "Young visitors get their picture taken with Santa during the fort's Christmas Past event.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fols-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B972A-1DD8-B71B-0BA65E810A1BED99.jpg",
+      "title": "Buffalo Soldiers",
+      "altText": "African American men in 19th century cavalry uniforms on horseback.",
+      "caption": "Buffalo Soldier re-enactors help bring Fort Larned's history to life.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fols/index.htm",
+    "directions": "http://www.nps.gov/fols/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Commerce",
+    "Trade",
+    "Forts",
+    "Hispanic American Heritage",
+    "Latino American Heritage",
+    "Military",
+    "Infantry and Militia",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Grasslands",
+    "Prairies",
+    "National Historic Site",
+    "KS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

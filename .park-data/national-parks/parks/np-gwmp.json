@@ -1,0 +1,165 @@
+{
+  "id": "np-gwmp",
+  "name": "George Washington Memorial Parkway",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "The George Washington Memorial Parkway was designed for recreational driving. It links sites that commemorate important episodes in American history and preserve habitat for local wildlife. The parkway and its associated trails provide a scenic place to play and rest in the busy Washington, DC metropolitan area.",
+  "shortDescription": "The George Washington Memorial Parkway was designed for recreational driving. It links sites that commemorate important episodes in American history and preserve habitat for local wildlife. The parkwa...",
+  "designation": "Memorial Parkway",
+  "coordinates": {
+    "latitude": 38.9628,
+    "longitude": -77.1495
+  },
+  "nationalParkInfo": {
+    "parkCode": "gwmp",
+    "npsId": "E6D5BB41-3251-469F-ABDA-7B43B966F0CF",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gwmp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gwmp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7032892500",
+    "email": "gwmp_superintendent@nps.gov",
+    "website": "https://www.nps.gov/gwmp/index.htm",
+    "address": {
+      "line1": "George Washington Memorial Parkway Headquarters",
+      "line2": "700 George Washington Memorial Parkway",
+      "city": "McLean",
+      "state": "VA",
+      "postalCode": "22101"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:15AM - 4:15PM",
+    "tuesday": "8:15AM - 4:15PM",
+    "wednesday": "8:15AM - 4:15PM",
+    "thursday": "8:15AM - 4:15PM",
+    "friday": "8:15AM - 4:15PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Parkway headquarters is open Monday through Friday from 8:15 am to 4:15 pm. It is closed on weekends and holidays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers on the parkway are generally hot and humid, with daytime highs frequently above 90 degrees Fahrenheit and scattered afternoon thunderstorms. Please carry water while participating in physical activity and be prepared to take shelter from lightning. Winters on the parkway are generally cold, with nighttime lows frequently near freezing and occasional snowfall. Please be alert for snowplows and icy spots on roadways. Weather during spring and fall is generally moderate, but can change quickly."
+  },
+  "images": [
+    {
+      "id": "gwmp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C645D155-EDA3-ED3B-6DE6F6A95D3A8A6F.jpg",
+      "title": "George Washington Memorial Parkway Stone Bridge",
+      "altText": "Stone Bridge Along the George Washington Memorial Parkway",
+      "caption": "George Washington Memorial Parkway",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "gwmp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C828BAC-1DD8-B71B-0B1A9857AB2A50E1.jpg",
+      "title": "George Washington Memorial Parkway",
+      "altText": "A view of the Parkway",
+      "caption": "A beautiful drive",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "gwmp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C828D01-1DD8-B71B-0B0D6670F49CDAA6.jpg",
+      "title": "United States Marine Corps War Memorial",
+      "altText": "United States Marine Corps War Memorial",
+      "caption": "United States Marine Corps War Memorial at night",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "gwmp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C828EB7-1DD8-B71B-0B02C6FF324B9024.jpg",
+      "title": "Netherlands Carillon in Spring",
+      "altText": "Netherlands Carillon in Spring",
+      "caption": "Netherlands Carillon in Spring",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "gwmp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C828FFF-1DD8-B71B-0BC324016E82FE46.jpg",
+      "title": "The Navy and Merchant Marine Memorial",
+      "altText": "The Navy and Merchant Marine Memorial",
+      "caption": "The Navy and Merchant Marine Memorial",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gwmp/index.htm",
+    "directions": "http://www.nps.gov/gwmp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Forts",
+    "Military",
+    "Artillery",
+    "US Marines",
+    "Monuments and Memorials",
+    "Music",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "World War II",
+    "Trails",
+    "Wetlands",
+    "Memorial Parkway",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "id": "np-ciro",
+  "name": "City Of Rocks National Reserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "ID",
+  "stateName": "Idaho",
+  "region": "west",
+  "description": "Described by California Trail emigrants as “a city of tall spires,” “steeple rocks,” and “the silent city,” this awe-inspiring landscape continues to captivate. Today, it beckons rock climbers, hikers, campers, hunters, and adventurers with its dramatic scenery, fascinating geology, and echoes of the Old West. The Silent City is ready for you to explore.",
+  "shortDescription": "Described by California Trail emigrants as “a city of tall spires,” “steeple rocks,” and “the silent city,” this awe-inspiring landscape continues to captivate. Today, it beckons rock climbers, hikers...",
+  "designation": "National Reserve",
+  "coordinates": {
+    "latitude": 42.0699024,
+    "longitude": -113.7124097
+  },
+  "nationalParkInfo": {
+    "parkCode": "ciro",
+    "npsId": "FC72FEF5-362F-4C9B-B6A1-88FA559D84CE",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ciro/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://home.nps.gov/ciro/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "208-824-5901",
+    "email": "ciro_superintendent@nps.gov",
+    "website": "https://www.nps.gov/ciro/index.htm",
+    "address": {
+      "line1": "City of Rocks National Reserve",
+      "line2": "3035 Elba-Almo Road",
+      "city": "Almo",
+      "state": "ID",
+      "postalCode": "83312"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The National Reserve is open 365 days a year, 7 days a week, 24 hours a day.  Many roads are not maintained during the winter and may become impassable from late November through March. For current conditions visitors are encouraged to check with the Visitor Center or watch for alerts on our website and social media.\n\nDuring summer the Visitor Center is open every day 8:00 am to 4:30 pm. During fall/winter the Visitor Center is open 8:00 am to 4:30 pm Tuesday-Saturday, closed Sundays, Mondays, and holidays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "City of Rocks is located in south-central Idaho within the northern edge of the Basin and Range geologic province. Outdoor recreation can be pleasant from April through October. Summers are generally dry with 10 to 15 inches of precipitation in winter and spring. Summer temperatures range widely with night time lows occasionally approaching freezing and midday highs nearing 100° F; however, the typical range of low and high temperature is 45-85. Thunderstorms are common in the summer months (June - August)"
+  },
+  "images": [
+    {
+      "id": "ciro-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6969795B-C212-F59F-32D18D86BCB8ACDE.jpg",
+      "title": "City of Rocks Granite",
+      "altText": "Snow dusted granite formations jut up from a mountainous juniper covered landscape.",
+      "caption": "Explore the City",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "ciro-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E9C491CA-E6B2-9B7E-68A22E261CA08942.jpg",
+      "title": "City of Rocks",
+      "altText": "3 silhouetted foggy granite formations highlighted by golden sunlight.",
+      "caption": "City of Rocks offers sweeping vistas and awe-inspiring scenery.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/619F4A94-B2F9-FA28-D935F3A03CACE093.jpg",
+      "title": "Indian Grove Overlook",
+      "altText": "Grand scenic view looking down from a high elevation. Granite spires jut up from the landscape.",
+      "caption": "The majority of outcrops in City of Rocks and all of the pinnacles are either Almo Pluton or Green Creek Complex granite.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/54D6C83C-0760-48AD-4EB8DE2C2C329980.jpg",
+      "title": "Twin Sisters",
+      "altText": "Two granite pinnacles right next to each other that are similar in size and shape.",
+      "caption": "Twin Sisters may be similar in size and shape, but one is 2.5 billion years old, the younger sister is only 28 million years old.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A31DB8E0-1DD8-B71B-0B550930E432F744.jpg",
+      "title": "Window Arch at City of Rocks",
+      "altText": "A granite arch is displayed on the horizon",
+      "caption": "Forces of nature sculpt unexpected features in granite such as Window Arch",
+      "credit": "NPS Photo/Wallace Keck",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A3EEC606-1DD8-B71B-0BF3EE58623BFA22.jpg",
+      "title": "Replica Emigrant Wagons at City of Rocks",
+      "altText": "Replica emigrant wagons rest unhitched at sunrise",
+      "caption": "Nearly 250,000 California-bound emigrants traveled through City of Rocks (1843-1882)",
+      "credit": "NPS Photo/Wallace Keck",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A44B43D1-1DD8-B71B-0B8199695433AD1A.jpg",
+      "title": "Emigrant Signatures at City of Rocks",
+      "altText": "Emigrant signature written with axle-grease on granite",
+      "caption": "California-bound emigrants painted their signature on Register Rock in 1850",
+      "credit": "NPS Photo/Wallace Keck",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/546038F0-AE75-3D80-8D108601CC958158.jpg",
+      "title": "Climber on Morning Glory Spire",
+      "altText": "A climber ascends a granite spire with mountains in the distance.",
+      "caption": "Over half of the 100,000 annual visitors to City of Rocks come to experience climbing",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3B9553BA-CE1C-8FB6-9D4FDC3A165293CB.jpg",
+      "title": "Window Arch",
+      "altText": "Granite arch with sunset peeking through.",
+      "caption": "Window Arch is one of many impressive rock features found in City of Rocks.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ciro-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/07DCF410-D6AB-025C-FB46E259857A1BD6.jpg",
+      "title": "Silent City of Rocks",
+      "altText": "Snowy granite pinnacles.",
+      "caption": "Winter is a great time to experience quiet and solitude in City of Rocks.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "7C822207-214A-48E8-8794-2F42F7CFB56F",
+      "name": "Ice Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "5FF5B286-E9C3-430E-B612-3380D8138600",
+      "name": "Ice Skating"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ciro/index.htm",
+    "directions": "http://home.nps.gov/ciro/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Native American Heritage",
+    "Westward Expansion",
+    "Homesteading",
+    "The Gold Rush",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Wilderness",
+    "National Reserve",
+    "ID"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

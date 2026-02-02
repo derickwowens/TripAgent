@@ -1,0 +1,98 @@
+{
+  "id": "np-tupe",
+  "name": "Tupelo National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "MS",
+  "stateName": "Mississippi",
+  "region": "southeast",
+  "description": "In July, 1864, federal forces, including men from the United States Colored Troops, marched into Tupelo, Mississippi. Disorganized Confederate soldiers fought fiercely but could not overpower the federal troops. Neither side could claim a clear victory, but Union troops had succeeded in their main goal: keeping the Confederates away from Union railroads in Tennessee.",
+  "shortDescription": "In July, 1864, federal forces, including men from the United States Colored Troops, marched into Tupelo, Mississippi. Disorganized Confederate soldiers fought fiercely but could not overpower the fede...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 34.25557705,
+    "longitude": -88.73708623
+  },
+  "nationalParkInfo": {
+    "parkCode": "tupe",
+    "npsId": "0C7D40DF-85BC-439E-BE58-34E11C1D4095",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tupe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tupe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "18003057417",
+    "email": "natr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/tupe/index.htm",
+    "address": {
+      "line1": "2083 Main St",
+      "line2": "",
+      "city": "Tupelo",
+      "state": "MS",
+      "postalCode": "38801"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The grounds of Tupelo National Battlefield are open during daylight hours everyday of the year. The National Park Service administers the National Battlefield through the Natchez Trace Parkway. Visitors are welcome to ask questions and learn more about the battlefield at the Parkway Visitor Center (Milepost 266) located about six miles north of the monument. The Visitor Center is open every day of the year except Thanksgiving,December 25, and January 1 9:00 a.m. to 4:30 p.m. (Central Time)."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Mississippi is classified as a humid subtropical climate, the weather ranges from mild winters to hot summers with high humidity between May and September. Average high temperatures reach into the high 80's in summer, and into the high 40's in winter. Check local forecasts to plan your trip."
+  },
+  "images": [
+    {
+      "id": "tupe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C844354-1DD8-B71B-0B1A7DB85F697FC5.jpg",
+      "title": "Tupelo National Battlefield Monument",
+      "altText": "The monument with a cannon",
+      "caption": "In July, 1864, Union forces, including men from the United States Colored Troops, marched into Tupelo, Mississippi.  Disorganized Confederate soldiers fought fiercely but could not overpower the federal troops.  Neither side could claim a clear victory,",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tupe/index.htm",
+    "directions": "http://www.nps.gov/tupe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Battlefield",
+    "MS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

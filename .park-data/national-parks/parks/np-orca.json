@@ -1,0 +1,232 @@
+{
+  "id": "np-orca",
+  "name": "Oregon Caves National Monument & Preserve",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "OR",
+  "stateName": "Oregon",
+  "region": "pacific",
+  "description": "Deep within the Siskiyou Mountains are dark, twisting passages that await your discovery. Eons of acidic water seeping into marble rock created and decorated the wondrous “Marble Halls of Oregon.” Join a tour, get a taste of what caving is all about, and explore a mountain from the inside and out!",
+  "shortDescription": "Deep within the Siskiyou Mountains are dark, twisting passages that await your discovery. Eons of acidic water seeping into marble rock created and decorated the wondrous “Marble Halls of Oregon.” Joi...",
+  "designation": "National Monument & Preserve",
+  "coordinates": {
+    "latitude": 42.10319143,
+    "longitude": -123.4018586
+  },
+  "nationalParkInfo": {
+    "parkCode": "orca",
+    "npsId": "480702B9-E8B5-45A1-ACB4-7B044C13F7A2",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/orca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/orca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5415925125",
+    "email": "orca_information@nps.gov",
+    "website": "https://www.nps.gov/orca/index.htm",
+    "address": {
+      "line1": "21000 Caves Hwy",
+      "line2": "",
+      "city": "Cave Junction",
+      "state": "OR",
+      "postalCode": "97523"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Cave tours are suspended at this time. We do not have a current opening date but hope to resume by late spring. Please continue to check this website for updates. We apologize for any inconvenience this may cause.\n\nPlease call our Illinois Valley Visitor Center at 541-592-5125 if you have any questions."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Offered Thursday through Monday, 10 AM to 4 PM. Duration: 90 minutes. Difficulty: Moderately strenuous. Tickets are $20 for adults, $15 for youth (15 and under, must be at least 42 inches tall), $10 for America the Beautiful Senior Pass holders (ages 62 and over; discount applies to the cardholder only) and America the Beautiful Annual Pass holders (discount applies to the cardholder only), and $7.50 for youths with an America the Beautiful Annual Pass.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "This 60-minute guided tour offers a unique experience, illuminating the cave’s features by candlelight. The tour is moderately strenuous, and participants must be 10 years or older to join. Tickets are $20 for adults, $15 for youth (ages 10 to 15), $10 for America the Beautiful Senior Pass holders (ages 62 and over; discount applies to the cardholder only) and America the Beautiful Annual Pass holders (discount applies to the cardholder only), and $7.50 for youths with an America the Beautiful Annual Pass.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Designed for families with children. Duration: 90 minutes. Difficulty: moderately strenuous. At least one child must be in the group, and all children must be over 42 inches tall. Tickets are $20 for adults, $15 for youth (ages 15 and under), $10 for America the Beautiful Senior Pass holders (ages 62 and over; discount applies to the cardholder only) and America the Beautiful Annual Pass holders (discount applies to the cardholder only), and $7.50 for youths with an America the Beautiful Annual Pass.",
+      "cost": "20.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "For current weather conditions visit https://forecast.weather.gov/MapClick.php?lat=42.07376224008719&lon=-123.3984375&site=mfr&smap=1&unit=0&lg=en&FcstType=text#.YCGJRWhKjIV"
+  },
+  "images": [
+    {
+      "id": "orca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8507A5-1DD8-B71B-0B921718CA5479A5.jpg",
+      "title": "Milller's Chapel",
+      "altText": "Miller's Chapel at Oregon Caves",
+      "caption": "Miller's Chapel at Oregon Caves National Monument and Preserve",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "orca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C850A42-1DD8-B71B-0B1597D0AFDDF25F.jpg",
+      "title": "Mountain Meadows at Bigelow Lakes",
+      "altText": "Mountain Meadows at Bigelow Lakes",
+      "caption": "Mountain Meadows at Bigelow Lakes at Oregon Caves National Preserve",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "orca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2D6F089A-EA59-3EBD-76E36A701B6D8F91.jpg",
+      "title": "Banana Grove formations",
+      "altText": "Cave speliothems",
+      "caption": "Speliothems in the Banana Grove room, Oregon Caves.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "orca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4372CFA7-A075-F5CE-F3A8B54DA0DD6A42.jpg",
+      "title": "Speleothems",
+      "altText": "Flowstone and drapery in a dome pit",
+      "caption": "Paradise Lost",
+      "credit": "NPS Photo/ Summer Vogel",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/orca/index.htm",
+    "directions": "http://www.nps.gov/orca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Birds",
+    "Caves, Caverns and Karst",
+    "National Monument & Preserve",
+    "OR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

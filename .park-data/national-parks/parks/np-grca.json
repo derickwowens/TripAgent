@@ -1,0 +1,292 @@
+{
+  "id": "np-grca",
+  "name": "Grand Canyon National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Entirely within the state of Arizona, the park encompasses 278 miles (447 km) of the Colorado River and adjacent uplands. Located on the ancestral homelands of 11 present day Tribal Communities, Grand Canyon is one of the most spectacular examples of erosion anywhere in the world—a mile deep canyon unmatched in the incomparable vistas it offers visitors from both north and south rims.",
+  "shortDescription": "Entirely within the state of Arizona, the park encompasses 278 miles (447 km) of the Colorado River and adjacent uplands. Located on the ancestral homelands of 11 present day Tribal Communities, Grand...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 36.0001165336,
+    "longitude": -112.121516363
+  },
+  "nationalParkInfo": {
+    "parkCode": "grca",
+    "npsId": "B7FF43E5-3A95-4C8E-8DBE-72D8608D6588",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/grca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/grca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "928-638-7888",
+    "email": "grca_information@nps.gov",
+    "website": "https://www.nps.gov/grca/index.htm",
+    "address": {
+      "line1": "20 South Entrance Road",
+      "line2": "Grand Canyon National Park Headquarters",
+      "city": "Grand Canyon",
+      "state": "AZ",
+      "postalCode": "86023"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Both Desert View (East Entrance) and South Entrance are Open 24 hours/day and 7 Days/week. Credit cards, and America the Beautiful passes are accepted for entry. Cash is not accepted at this time. The South Entrance Station, near Tusayan, Arizona, receives the most traffic, an experiences long lines and up to 2 hour wait times between 9:30 am and 4 pm. The East Entrance at Desert View - 32 miles east of the village (accessed via US 89 to Cameron, AZ, then west on SR 64, usually has shorter wait times."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one single, private, non-commercial vehicle and all its passengers, up to a 15 person passenger van. Organized non-commercial groups over 16 passengers require different charges. Commercial groups are not eligible for the vehicle permit.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Individual ($20 valid for 7 days): for bicyclists, hikers, and pedestrians.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Grand Canyon National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Since Grand Canyon has elevations that range from 2,500 feet at the bottom to 8,400 feet on the North Rim, weather can vary significantly depending on the season and the specific location within the park. Winters tend to be cold and snowy, and summers have periods of excessive heat. High temperatures inside the canyon tend to be 20 to 30 degrees warmer then on the canyon's rims. Weather conditions can change rapidly, so it's wise to check forecasts before visiting."
+  },
+  "images": [
+    {
+      "id": "grca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B12D1-1DD8-B71B-0BCE0712F9CEA155.jpg",
+      "title": "Grand Canyon Mather Point Sunset on the South Rim",
+      "altText": "The canyon glows orange as people visit Mather Point, a rock outcropping that juts into Grand Canyon",
+      "caption": "People come from all over the world to view Grand Canyon's sunset",
+      "credit": "NPS/M.Quinn",
+      "isPrimary": true
+    },
+    {
+      "id": "grca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B15A4-1DD8-B71B-0BFADECB506765CC.jpg",
+      "title": "Grand Canyon National Park: Desert View Watchtower (South Rim)",
+      "altText": "The Desert View Watchtower looms 70 feet into the air over a vast and dramatic view of the canyon.",
+      "caption": "The Watchtower is located at Desert View, the eastern-most developed area on the South Rim of Grand Canyon National Park.",
+      "credit": "NPS/M.Quinn",
+      "isPrimary": false
+    },
+    {
+      "id": "grca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B1720-1DD8-B71B-0B74DCF6F887A960.jpg",
+      "title": "Looking down the Colorado River from Nankoweap at river mile 53",
+      "altText": "Tall canyon walls frame the wide Colorado river weaving back and forth.",
+      "caption": "A view down the Colorado river from Nankoweap in Marble canyon.",
+      "credit": "NPS/M.Quinn",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/grca/index.htm",
+    "directions": "http://www.nps.gov/grca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Aviation",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Engineering",
+    "Explorers and Expeditions",
+    "Native American Heritage",
+    "Schools and Education",
+    "Transportation",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Animals",
+    "Birds",
+    "Bison",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Caves, Caverns and Karst",
+    "Fire",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "Groundwater",
+    "Freshwater Springs",
+    "Grasslands",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "National Park",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

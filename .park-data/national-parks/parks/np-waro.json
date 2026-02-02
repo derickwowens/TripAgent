@@ -1,0 +1,93 @@
+{
+  "id": "np-waro",
+  "name": "Washington-Rochambeau Revolutionary Route National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "“Of the happiness I have enjoyed in our private friendship. The remembrance of which will be one of the most pleasing Circumstances of my life.”– Comte de Rochambeau on his relationship with George Washington",
+  "shortDescription": "“Of the happiness I have enjoyed in our private friendship. The remembrance of which will be one of the most pleasing Circumstances of my life.”– Comte de Rochambeau on his relationship with George Wa...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 40.0958204557,
+    "longitude": -74.8563515109
+  },
+  "nationalParkInfo": {
+    "parkCode": "waro",
+    "npsId": "3D547E73-F0BF-4FEA-9CAC-9611D024E2FF",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/waro/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/waro/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "610-783-1006",
+    "email": "Johnny_Carawan@NPS.gov",
+    "website": "https://www.nps.gov/waro/index.htm",
+    "address": {
+      "line1": "Washington-Rochambeau National Historic Trail",
+      "line2": "Make requests of Trail Administrator at Johnny_Carawan@NPS.gov",
+      "city": "King of Prussia",
+      "state": "PA",
+      "postalCode": "19406"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Washington-Rochambeau Revolutionary Route NHT can be travelled year-round. The NHT connects national, state, and local parks as well a great number of historic sites and landmarks. Visitors should contact sites or attractions individually as operating hours vary widely by site and season."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "With over 680 miles of land and water trails and hundreds of historical sites, there is a wide variety in weather. Please check with your favorite weather website before traveling."
+  },
+  "images": [
+    {
+      "id": "waro-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/38D13B48-1DD8-B71B-0B557C5D33E45D9D.jpg",
+      "title": "Washington Rochambeau",
+      "altText": "Flag marking the trail",
+      "caption": "Washington-Rochambeau NHT banner on 2nd Street in Philadelphia, Pennsylvania.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/waro/index.htm",
+    "directions": "http://www.nps.gov/waro/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Maritime",
+    "Maritime - Military",
+    "Military",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Trails",
+    "Water Trails",
+    "National Historic Trail",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

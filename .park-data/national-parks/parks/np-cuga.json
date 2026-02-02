@@ -1,0 +1,185 @@
+{
+  "id": "np-cuga",
+  "name": "Cumberland Gap National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "KY",
+  "stateName": "Kentucky",
+  "region": "southeast",
+  "description": "Cumberland Gap was the first great gateway to the west. Come follow the path of bison, Native Americans, longhunters, and pioneers. Walk where 300,000 people crossed the Appalachians to settle America. Explore 85 miles of trails and 14,000 acres of wilderness. Stand in 3 states at once. Explore a cave, see Hensley Settlement, or camp under the stars. Come find your connection to Cumberland Gap.",
+  "shortDescription": "Cumberland Gap was the first great gateway to the west. Come follow the path of bison, Native Americans, longhunters, and pioneers. Walk where 300,000 people crossed the Appalachians to settle America...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 36.62503076,
+    "longitude": -83.6114083
+  },
+  "nationalParkInfo": {
+    "parkCode": "cuga",
+    "npsId": "F341E5A4-959B-4D87-B886-23A884633D33",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cuga/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cuga/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6062482817",
+    "email": "cuga_interpretation@nps.gov",
+    "website": "https://www.nps.gov/cuga/index.htm",
+    "address": {
+      "line1": "100 Pinnacle View Rd.",
+      "line2": "",
+      "city": "Middlesboro",
+      "state": "KY",
+      "postalCode": "40965"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "The park is open 24 hours a day to pedestrian and cyclist, weather permitting. Some services and facilities have separate hours, however; please see descriptions of those facilities elsewhere."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers at Cumberland Gap are hot and humid, with temperatures commonly in the mid to upper 90s. Winters are generally mild with rain and some periods of snow January through March. Temperatures usually range in the 30s and 40s. Weather can sometimes be unpredictable, especially at higher elevations."
+  },
+  "images": [
+    {
+      "id": "cuga-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87BB9F-1DD8-B71B-0B03EA00319ED876.jpg",
+      "title": "Hensley Settlement",
+      "altText": "Hensley Settlement",
+      "caption": "Weathered log cabins greet visitors to Hensley Settlement",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cuga-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87BA5D-1DD8-B71B-0B9E79FC9A030567.jpg",
+      "title": "Mountain View",
+      "altText": "View from the Pinnacle Overlook",
+      "caption": "View from the Pinnacle Overlook",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuga-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87BCDB-1DD8-B71B-0B1870F1DBD697AD.jpg",
+      "title": "Pioneers Crossing Creek",
+      "altText": "Pioneers",
+      "caption": "History comes alive",
+      "credit": "Harold Jerrell",
+      "isPrimary": false
+    },
+    {
+      "id": "cuga-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87BE0E-1DD8-B71B-0B74E3953C7C83EF.jpg",
+      "title": "Hiker in Sand Cave",
+      "altText": "Sand Cave",
+      "caption": "Sand Cave is a massive sandstone rockshelter found in the backcountry",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuga-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87B8D9-1DD8-B71B-0B67040F789E2506.jpg",
+      "title": "Gap Cave",
+      "altText": "Cleopatra's Pool in the Gap Cave",
+      "caption": "Cleopatra's Pool is located deep in the Gap Cave",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cuga/index.htm",
+    "directions": "http://www.nps.gov/cuga/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Migrations",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Civil War",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Caves, Caverns and Karst",
+    "Forests and Woodlands",
+    "Geology",
+    "Mountains",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "National Historical Park",
+    "KY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

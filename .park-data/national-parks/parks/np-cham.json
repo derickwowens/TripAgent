@@ -1,0 +1,194 @@
+{
+  "id": "np-cham",
+  "name": "Chamizal National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Chamizal is more than just an urban park to recreate or enjoy a quiet afternoon. These grounds are a reminder of the harmonious settlement of a 100-year boundary dispute between the United States and Mexico. We celebrate the cultures of the borderlands to promote the same mutual respect that helped to diplomatically resolve an international disagreement.",
+  "shortDescription": "Chamizal is more than just an urban park to recreate or enjoy a quiet afternoon. These grounds are a reminder of the harmonious settlement of a 100-year boundary dispute between the United States and ...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 31.76729634,
+    "longitude": -106.4544011
+  },
+  "nationalParkInfo": {
+    "parkCode": "cham",
+    "npsId": "EA328EBD-71CC-49B9-8F64-97C8A188BCA4",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cham/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cham/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "915-532-7273",
+    "email": "cham_information@nps.gov",
+    "website": "https://www.nps.gov/cham/index.htm",
+    "address": {
+      "line1": "800 South San Marcial Street",
+      "line2": "",
+      "city": "El Paso",
+      "state": "TX",
+      "postalCode": "79905"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 7:00PM",
+    "tuesday": "7:00AM - 7:00PM",
+    "wednesday": "7:00AM - 7:00PM",
+    "thursday": "7:00AM - 7:00PM",
+    "friday": "7:00AM - 7:00PM",
+    "saturday": "7:00AM - 7:00PM",
+    "sunday": "7:00AM - 7:00PM",
+    "description": "The Memorial grounds are open to vehicle and foot traffic only when the gates are open."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Chamizal National Memorial is open year-round, but periodic winter weather conditions may cause closure. Please check for alerts on the park website: www.nps.gov/cham. Thunderstorms typically occur during summer and early fall. There may be no shelter to avoid lightning, so please prepare by looking at weather forecasts and paying attention to developing weather conditions."
+  },
+  "images": [
+    {
+      "id": "cham-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CCC23-1DD8-B71B-0BD6AD7C38B32185.jpg",
+      "title": "Mountain View",
+      "altText": "a bench next to a tree with U.S. and Mexican flags flying against a mountain background",
+      "caption": "Chamizal National Memorial stands as a reminder of the effectiveness of diplomacy and the power of friendship.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cham-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CCEAB-1DD8-B71B-0BAA8BD2A7F12AA1.jpg",
+      "title": "Junior Rangers",
+      "altText": "a group of children with hand raised in front of park rangers and ground squirrel mascot",
+      "caption": "Junior Rangers learn about Chamizal National Memorial.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cham-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CD04D-1DD8-B71B-0B5CC4E892EE0641.jpg",
+      "title": "Trails",
+      "altText": "walking trails cross a field of green grass with mountain in the background",
+      "caption": "Enjoy the green space of Chamizal in the heart of El Paso.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cham-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CD234-1DD8-B71B-0B90C9EB7A26A0FD.jpg",
+      "title": "Theater Performances",
+      "altText": "Women in swirling skirts and men with sombreros and colorful ponchos dance onstage",
+      "caption": "Take in a theater performance such as this ballet folklorico.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cham-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CD8B5-1DD8-B71B-0B7C0CB3DE73AD01.jpg",
+      "title": "Franklin G. Smith Gallery",
+      "altText": "paintings hang from art gallery walls",
+      "caption": "Browse art from the borderland in the Franklin G. Smith Gallery.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cham/index.htm",
+    "directions": "http://www.nps.gov/cham/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Painting",
+    "Photography",
+    "Poetry and Literature",
+    "Sculpture",
+    "Hispanic American Heritage",
+    "Latino American Heritage",
+    "Presidents",
+    "Urban America",
+    "Wars and Conflicts",
+    "Mexican War",
+    "Cold War",
+    "Animals",
+    "River and Riparian",
+    "National Memorial",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

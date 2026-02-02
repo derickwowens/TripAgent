@@ -247,4 +247,45 @@ export const tools: Anthropic.Tool[] = [
       required: ['park_name', 'state'],
     },
   },
+  // ============================================
+  // AUTHORITATIVE PARK DATABASE (S3)
+  // ============================================
+  {
+    name: 'lookup_park_database',
+    description: 'Look up detailed park information from our authoritative database. This contains comprehensive data for 550+ parks including all 474 NPS sites (parks, monuments, historic sites) and 76+ state parks. Use this for accurate park details, coordinates, official links, fees, and activities.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        query: { type: 'string', description: 'Park name or keyword to search (e.g., "Yellowstone", "Devils Lake", "Statue of Liberty")' },
+        park_id: { type: 'string', description: 'Specific park ID if known (e.g., "np-yell", "wi-devilslake")' },
+        category: { type: 'string', enum: ['national', 'state', 'all'], description: 'Filter by park category' },
+        state_code: { type: 'string', description: 'Filter by 2-letter state code (e.g., "WI", "FL")' },
+      },
+      required: [],
+    },
+  },
+  {
+    name: 'get_parks_near_location',
+    description: 'Find parks near a specific location. Returns parks within a given radius sorted by distance.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        latitude: { type: 'number', description: 'Latitude of the location' },
+        longitude: { type: 'number', description: 'Longitude of the location' },
+        radius_miles: { type: 'number', description: 'Search radius in miles (default: 50)' },
+        category: { type: 'string', enum: ['national', 'state', 'all'], description: 'Filter by park category' },
+        limit: { type: 'number', description: 'Maximum number of results (default: 10)' },
+      },
+      required: ['latitude', 'longitude'],
+    },
+  },
+  {
+    name: 'get_park_database_stats',
+    description: 'Get statistics about the park database including total parks, coverage by state, and last update time.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {},
+      required: [],
+    },
+  },
 ];

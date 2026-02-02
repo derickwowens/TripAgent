@@ -1,0 +1,212 @@
+{
+  "id": "np-appa",
+  "name": "Appalachian National Scenic Trail",
+  "category": "national",
+  "parkType": "national_scenic_trail",
+  "stateCode": "CT",
+  "stateName": "Connecticut",
+  "region": "northeast",
+  "description": "The Appalachian Trail is a 2,190+ mile long public footpath that traverses the scenic, wooded, pastoral, wild, and culturally resonant lands of the Appalachian Mountains. Conceived in 1921, built by private citizens, and completed in 1937, today the trail is managed by the National Park Service, US Forest Service, Appalachian Trail Conservancy, numerous state agencies and thousands of volunteers.",
+  "shortDescription": "The Appalachian Trail is a 2,190+ mile long public footpath that traverses the scenic, wooded, pastoral, wild, and culturally resonant lands of the Appalachian Mountains. Conceived in 1921, built by p...",
+  "designation": "National Scenic Trail",
+  "coordinates": {
+    "latitude": 40.41029575,
+    "longitude": -76.4337548
+  },
+  "nationalParkInfo": {
+    "parkCode": "appa",
+    "npsId": "FAEF5684-83A4-4CF2-A701-60CF8D4014BD",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/appa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/appa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3045356278",
+    "email": "0@0",
+    "website": "https://www.nps.gov/appa/index.htm",
+    "address": {
+      "line1": "Appalachian Trail Park Office",
+      "line2": "P.O. Box 50",
+      "city": "Harpers Ferry",
+      "state": "WV",
+      "postalCode": "25425"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "In general, the Appalachian Trail is open year-round. The northern terminus at Mount Katahdin in Maine is within Baxter State Park, which may be closed in winter months, depending on weather conditions. \nParticular sections of the Trail, and less-developed roads accessing the Trail, may be closed temporarily for a number of reasons, but otherwise the trail is open."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "It is your responsibility to be prepared for all weather conditions, including extreme and unexpected weather changes year-round. As the trail runs from Georgia to Maine there will be different weather conditions depending on your location. For weather along specific sections of the trail and at specific shelters, please refer to: http://www.atweather.org/"
+  },
+  "images": [
+    {
+      "id": "appa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8397D6-1DD8-B71B-0BEF4C54462A1EB3.jpg",
+      "title": "McAfee Knob",
+      "altText": "Silhouette of a man with backpack standing on McAfee Knob at sunset with mountains in the distance.",
+      "caption": "McAfee Knob is one of the most popular locations along the A.T. to take photographs.",
+      "credit": "Photo Credit: ATC/Benjamin Hays",
+      "isPrimary": true
+    },
+    {
+      "id": "appa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83A128-1DD8-B71B-0B02DED286AFD8C6.jpg",
+      "title": "Appalachian Trail",
+      "altText": "The Appalachian Trail runs across a mountain ridge line with views to the horizon of mountain range.",
+      "caption": "Crossing into thirteen states, hikers experience a variety of scenery along the way.",
+      "credit": "Photo Credit: ATC",
+      "isPrimary": false
+    },
+    {
+      "id": "appa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83A2B0-1DD8-B71B-0B4589220F4D60D9.jpg",
+      "title": "The Infamous White Blaze of the A.T.",
+      "altText": "A white blaze marks a tree in the foreground, with a man and child walking away on the wooded trail.",
+      "caption": "The white blaze marks the Appalachian Trail as a way for hikers to identify the route.",
+      "credit": "Photo Credit: ATC/Matthew Davis",
+      "isPrimary": false
+    },
+    {
+      "id": "appa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83A442-1DD8-B71B-0BD0A5F2BD69B9F6.jpg",
+      "title": "Volunteer on the A.T.",
+      "altText": "A volunteer is carrying a split log while walking across a wooden footbridge in the woods.",
+      "caption": "The Appalachian Trail is maintained largely by volunteers.",
+      "credit": "Photo Credit: Maine Appalachian Trail Club",
+      "isPrimary": false
+    },
+    {
+      "id": "appa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83A59A-1DD8-B71B-0BBFB87BBDDAABD6.jpg",
+      "title": "Winter on the A.T.",
+      "altText": "A snowy winter view from the A.T. overlooking snowy mountains and clouds in the distance.",
+      "caption": "Hikers can experience many seasons along the A.T. all year round. It is important to be prepared.",
+      "credit": "Photo Credit: ATC/Greg Walter",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "89DA72D0-16D6-4C1C-89D4-103D94F1F63D",
+      "name": "Orienteering"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/appa/index.htm",
+    "directions": "http://www.nps.gov/appa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Horses (wild)",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Wilderness",
+    "National Scenic Trail",
+    "CT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "np-tosy",
+  "name": "Touro Synagogue National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "RI",
+  "stateName": "Rhode Island",
+  "region": "northeast",
+  "description": "Touro Synagogue, a building of exquisite beauty and design, steeped in history and ideals, and one of the most historically significant Jewish buildings in America, was designated a National Historic Site in 1946. Dedicated in 1763, it still serves an active congregation and each year greets over 30,000 visitors who come to see the magnificent interior and hear its remarkable story.",
+  "shortDescription": "Touro Synagogue, a building of exquisite beauty and design, steeped in history and ideals, and one of the most historically significant Jewish buildings in America, was designated a National Historic ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 41.4893,
+    "longitude": -71.3121
+  },
+  "nationalParkInfo": {
+    "parkCode": "tosy",
+    "npsId": "5216C131-B847-4A97-ACF1-4864714007FF",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tosy/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.tourosynagogue.org/visit/directions"
+    }
+  ],
+  "contact": {
+    "phone": "4018474794",
+    "email": "info@tourosynagogue.org",
+    "website": "https://www.nps.gov/tosy/index.htm",
+    "address": {
+      "line1": "85 Touro Street",
+      "line2": "",
+      "city": "Newport",
+      "state": "RI",
+      "postalCode": "02840"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Touro Synagogue Congregation manages the operations of the facility and operating hours can be found on Tourosynagogue.org/visit/hours-tours-tickets"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer temperatures range from 56-83F. Fall temperatures range from 30-70F. Winter temperatures range from 20-45F. Spring temperatures range from 30-70F."
+  },
+  "images": [
+    {
+      "id": "tosy-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82D5FA-1DD8-B71B-0B69EBF05C11248B.jpg",
+      "title": "Touro Synagogue Park",
+      "altText": "Image of Touro Synagogue",
+      "caption": "Sunny view of the Touro Synagogue",
+      "credit": "Tourosynagogue.org",
+      "isPrimary": true
+    },
+    {
+      "id": "tosy-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82D49E-1DD8-B71B-0BAAB1938F2C837E.jpg",
+      "title": "Touro Synagogue",
+      "altText": "Front view of Touro Synagogue",
+      "caption": "Sunny view of Touro Synagogue",
+      "credit": "Tourosynagogue.org",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tosy/index.htm",
+    "directions": "http://www.tourosynagogue.org/visit/directions"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "National Historic Site",
+    "RI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

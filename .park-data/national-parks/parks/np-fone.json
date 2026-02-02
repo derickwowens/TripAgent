@@ -1,0 +1,184 @@
+{
+  "id": "np-fone",
+  "name": "Fort Necessity National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "The battle at Fort Necessity in the summer of 1754 was the opening action of the French and Indian War. This war was a clash of British, French and American Indian cultures. It ended with the removal of French power from North America. The stage was set for the American Revolution.",
+  "shortDescription": "The battle at Fort Necessity in the summer of 1754 was the opening action of the French and Indian War. This war was a clash of British, French and American Indian cultures. It ended with the removal ...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 39.81306048,
+    "longitude": -79.59033344
+  },
+  "nationalParkInfo": {
+    "parkCode": "fone",
+    "npsId": "D2E64293-4B46-4F1A-8902-7D0FCAD268C0",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fone/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fone/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(724) 329-5805",
+    "email": "fone_interpretation@nps.gov",
+    "website": "https://www.nps.gov/fone/index.htm",
+    "address": {
+      "line1": "3 Washington Parkway",
+      "line2": "",
+      "city": "Farmington",
+      "state": "PA",
+      "postalCode": "15437"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Entrance to Fort Necessity National Battlefield is allowed from sunrise until sunset.  The park visitor center and Mount Washington Tavern museum have specific hours.  Please see the listing for each facility."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather varies considerably within each season. Be prepared with layered clothing. Precipitation is common throughout the year. Spring: Temperatures usually range from 25°F to 70°F. On average, May is the wettest month. Summer: Temperatures usually range from 50°F to 80°F. July is the warmest month. Fall: Temperatures usually range from 30°F to 70°F. Fall foliage is at its peak around mid-October. Winter: Temperatures range from 15°F to 40°F. January is the coldest month."
+  },
+  "images": [
+    {
+      "id": "fone-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F78F68EB-E4CB-1C1A-9A36EE67336D8B60.jpg",
+      "title": "Fort Necessity",
+      "altText": "Circular stockade in the middle of a meadow. Dramatic clouds build in the blue sky.",
+      "caption": "The small circular stockade of Fort Necessity served as a supply depot for George Washington's Virginia Regiment during their 1754 campaign.",
+      "credit": "NPS Photo/Tom Markwardt",
+      "isPrimary": true
+    },
+    {
+      "id": "fone-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C861A68-1DD8-B71B-0BF41816F135441F.jpg",
+      "title": "Fort Necessity in Winter",
+      "altText": "cabin and stockade casting shadows on the snow",
+      "caption": "Fort Necessity National Battlefield is open year round.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fone-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C861B80-1DD8-B71B-0B95A0219BA1CF5A.jpg",
+      "title": "Fort Necessity",
+      "altText": "Fort Necessity and the Great Meadow with trail and tree in the foreground",
+      "caption": "Fort Necessity was the site of George Washington's first military experience at the beginning of the French and Indian War",
+      "credit": "NPS photo / Mike Soohey",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fone/index.htm",
+    "directions": "http://www.nps.gov/fone/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Forts",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "French and Indian War",
+    "National Battlefield",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

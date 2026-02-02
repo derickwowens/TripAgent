@@ -1,0 +1,234 @@
+{
+  "id": "np-fola",
+  "name": "Fort Laramie National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "WY",
+  "stateName": "Wyoming",
+  "region": "west",
+  "description": "Originally established as a private fur trading fort in 1834, Fort Laramie evolved into the largest and best-known military post on the Northern Plains before its abandonment in 1890. Nicknamed the “Grand Old Post,” Fort Laramie witnessed the entire sweeping saga of America’s western expansion and Indian resistance to encroachment on their territories.",
+  "shortDescription": "Originally established as a private fur trading fort in 1834, Fort Laramie evolved into the largest and best-known military post on the Northern Plains before its abandonment in 1890. Nicknamed the “G...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.20301694,
+    "longitude": -104.5459112
+  },
+  "nationalParkInfo": {
+    "parkCode": "fola",
+    "npsId": "53C5C818-EB7C-4FEB-B94F-892588205D64",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fola/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fola/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3078372221",
+    "email": "FOLA_Visitor_Information@nps.gov",
+    "website": "https://www.nps.gov/fola/index.htm",
+    "address": {
+      "line1": "965 Gray Rocks Road",
+      "line2": "",
+      "city": "Fort Laramie",
+      "state": "WY",
+      "postalCode": "82212"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park grounds are open from dawn until dusk every day of the year. Some historic buildings may be closed in winter. Post trader store and cavalry barracks are open daily - weather permitting."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Fort Laramie summer days can be quite hot (over 100F/37C), average highs are in the 80s and 90s (30-35C) with cool nights and low humidity. Winters are often bitterly cold and windy with subzero wind chills. The region is semi-arid with a distinct winter dry season. About 70% of annual precipitation falls as thunderstorms during the spring and early summer. Breezy days are common year-round and peak in the winter when wind speeds can approach hurricane-strength."
+  },
+  "images": [
+    {
+      "id": "fola-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A3251779-B98C-568E-63313006F25C5488.jpg",
+      "title": "Old Bedlam",
+      "altText": "A large two story white building with pillars. Several windows with green shutters",
+      "caption": "Oldest Building in the State of Wyoming.",
+      "credit": "Chase Swift Photography/Chase Swift",
+      "isPrimary": true
+    },
+    {
+      "id": "fola-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81EEDF-1DD8-B71B-0BDE55A22806D364.jpg",
+      "title": "Parade Ground from the Porch of \"Old Bedlam\"",
+      "altText": "View of the parade ground from the porch of \"Old Bedlam\".",
+      "caption": "A fall view of the parade ground from \"Old Bedlam\" the oldest surviving structure at Fort Laramie and in the state of Wyoming, constructed in 1849.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81F045-1DD8-B71B-0BBF0F81E85B03F3.jpg",
+      "title": "Post Trader at Work",
+      "altText": "Living history interpreter portraying the Post Trader.",
+      "caption": "In the summer living history interpreters bring the post to life, including the Post Trader in the refurnished 1849 store.",
+      "credit": "Chase Swift Photography/Chase Swift",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81ED25-1DD8-B71B-0B9D3808BF7383CD.jpg",
+      "title": "Fur Trade Fort Laramie Event",
+      "altText": "Living history interpreter explaining the life of a trapper/trader to young visitors",
+      "caption": "Special attention is given to helping our young visitors understand the past at Fort Laramie National Historic Site.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81F6C0-1DD8-B71B-0B7A2395384F119E.jpg",
+      "title": "Arial View of Fort Laramie NHS From the South",
+      "altText": "Aerial view of Fort Laramie NHS from the South",
+      "caption": "Overview of Fort Laramie as it exists today with many of the historic buildings fully restored and refurnished and numerous other ruins and foundations.",
+      "credit": "John Gilpin",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C820080-1DD8-B71B-0BDDB963C056A188.jpg",
+      "title": "Tipis Across Laramie River in Fall",
+      "altText": "Two tipis across the Laramie River from the fort in fall",
+      "caption": "Tipis were a common scene at Fort Laramie from 1834-1872.  At times, during treaty negotiations dozens of tipis could be found here.",
+      "credit": "Mike Evans/NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8F1A76F6-AA51-C2D5-7A5ACA069FACF260.jpg",
+      "title": "Fall colors on the Parade Ground",
+      "altText": "Ash and cottonwood trees show their fall colors next to an open grass field.",
+      "caption": "Fall colors paint the parade grounds near Old Bedlam.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8F4DB411-CA1F-37E9-92CE9429BFB78222.jpg",
+      "title": "Powder Magazine in Winter",
+      "altText": "Ruins of a concrete structure with snow on top.",
+      "caption": "Ruins of the powder magazine within the winter snows.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8F6917CA-A9CA-EDB8-21A359265C2E8CC2.jpg",
+      "title": "Morning Fog at the Old Holtclaw Tract",
+      "altText": "A deer looking up in morning fog near the shelter belt at the old Holtclaw Tract homestead.",
+      "caption": "Morning fog north of Fort Laramie",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fola-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8FCD2F89-BC10-A438-8737503C680E6520.jpg",
+      "title": "11th Kansas Ride Past the Cavalry Barracks",
+      "altText": "A group of mounted individuals ride hors near a concrete historic structure.",
+      "caption": "Riding past the Cavalry Barracks",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fola/index.htm",
+    "directions": "http://www.nps.gov/fola/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Forts",
+    "Migrations",
+    "Military",
+    "Infantry and Militia",
+    "Cavalry",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "National Historic Site",
+    "WY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

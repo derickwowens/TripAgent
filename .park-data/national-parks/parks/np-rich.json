@@ -1,0 +1,178 @@
+{
+  "id": "np-rich",
+  "name": "Richmond National Battlefield Park",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "The center of Confederate manufacturing fueled a modern war, one of the South’s largest hospitals gave care to the sick and wounded, and armies battled on open fields and in miles of defensive earthworks. From 1861 to 1865, Richmond’s fate would determine America’s future.",
+  "shortDescription": "The center of Confederate manufacturing fueled a modern war, one of the South’s largest hospitals gave care to the sick and wounded, and armies battled on open fields and in miles of defensive earthwo...",
+  "designation": "National Battlefield Park",
+  "coordinates": {
+    "latitude": 37.48774472,
+    "longitude": -77.29107785
+  },
+  "nationalParkInfo": {
+    "parkCode": "rich",
+    "npsId": "3D026091-7EFB-405D-A8F2-D9109DE9740A",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/rich/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/rich/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "804-226-1981",
+    "email": "stephanie_pooler@nps.gov",
+    "website": "https://www.nps.gov/rich/index.htm",
+    "address": {
+      "line1": "3215 E. Broad Street",
+      "line2": "",
+      "city": "Richmond",
+      "state": "VA",
+      "postalCode": "23223"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Visitor center focusing on Civil War medical practices. Exhibits and 17 minute orientation film.\nLocated at 3215 E. Broad Street, Richmond VA 23223."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer, hot and humid. Fall and Spring, mild. Winter, cold with occasional ice and snow."
+  },
+  "images": [
+    {
+      "id": "rich-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79860B-1DD8-B71B-0BF764186C0B45DF.jpg",
+      "title": "Earthworks at Fort Harrison",
+      "altText": "Earthworks at Fort Harrison",
+      "caption": "Earthworks like these at Fort Harrison can be found throughout the park",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "rich-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/81593210-FD14-5769-C6EB06FEAD84C0AA.jpg",
+      "title": "Cold Harbor Battlefield Visitor Center",
+      "altText": "A small brick visitor center building beside a flagpole.",
+      "caption": "Cold Harbor Battlefield Visitor Center",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "rich-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/816EE112-9C5D-2560-D10FE798B013A447.jpg",
+      "title": "Chimborazo Visitor Center",
+      "altText": "A two story gray brick building and a wooden sign reading \"Chimborazo Visitor Center\"",
+      "caption": "Chimborazo Visitor Center",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "rich-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/817DB1C4-F8F3-DA1A-FAC43EC136019B12.jpg",
+      "title": "Drewry's Bluff",
+      "altText": "A large, black Civil War cannon overlooking a river from a high bluff.",
+      "caption": "Drewry's Bluff unit of Richmond National Battlefield Park overlooking the James River",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/rich/index.htm",
+    "directions": "http://www.nps.gov/rich/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Forts",
+    "Industry",
+    "Factories",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Social Movements",
+    "Civil Rights",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Battlefield Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

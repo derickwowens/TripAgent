@@ -1,0 +1,256 @@
+{
+  "id": "np-rocr",
+  "name": "Rock Creek Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Rock Creek Park is truly a gem in our nation's capital. This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federal government. It offers visitors the opportunity to escape the bustle of the city and find a peaceful refuge, recreation, fresh air, majestic trees, wild animals, and thousands of years of human history.",
+  "shortDescription": "Rock Creek Park is truly a gem in our nation's capital. This 1,754 acre city park was officially authorized in 1890, making it the third national park to be designated by the federal government. It of...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.95125063,
+    "longitude": -77.05002838
+  },
+  "nationalParkInfo": {
+    "parkCode": "rocr",
+    "npsId": "D06293DF-25C4-4065-B0C7-BA5A225D3BF3",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/rocr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/rocr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202-895-6000",
+    "email": "rocr_superintendent@nps.gov",
+    "website": "https://www.nps.gov/rocr/index.htm",
+    "address": {
+      "line1": "5200 Glover Rd, NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20015"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Unless otherwise designated, all park land is open sunrise to sunset. Roads are open 24 hours unless posted otherwise."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in D.C. is often erratic Spring: Pleasant, Avg. High: 67° Avg. Low: 44.3°, Avg. Precipitation: 12.1” Summer: Hot & Humid, Avg. High: 87°, Avg. Low: 66°, Avg. Precipitation: 12.7”, July is the hottest month Fall: Pleasant, Avg. High: 69°, Avg. Low: 48.3°, Avg. Precipitation: 11.6” Winter: Mild, Avg. High: 45°, Avg. Low: 27.3°, Avg. Precipitation: 9.3”, Avg. Snowfall: 15.4” January is coolest month Hurricanes may impact D.C. in late summer and fall Light droughts are not uncommon in summer"
+  },
+  "images": [
+    {
+      "id": "rocr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5578822B-0F57-D3E7-A49D70F3D88C1509.jpg",
+      "title": "Rock Creek Park's Boulder Bridge",
+      "altText": "Stone bridge and fall leaves",
+      "caption": "Boulder Bridge in Rock Creek Park",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "rocr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/55F58D72-A55D-7573-6D04AFFB2E33F50F.jpg",
+      "title": "Rocks in the Creek",
+      "altText": "Water swirls around large boulders in a creek.  Trees in autumn colors line the bank",
+      "caption": "Rock Creek in Autumn",
+      "credit": "NPS Photo/ K. Cain",
+      "isPrimary": false
+    },
+    {
+      "id": "rocr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/49BAB6E4-91B3-9624-43F4A6C4F1E1BFD8.jpg",
+      "title": "Nature Center",
+      "altText": "a one story building nestled among green leafy trees",
+      "caption": "Rock Creek Park Nature Center and Planetarium",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rocr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/56BA4FB4-C346-393E-5AF6167E2C54AA85.jpg",
+      "title": "Rocks in Rock Creek",
+      "altText": "Dark boulders scattered through a narrow creek.  Green trees rise up on either bank.",
+      "caption": "Rock Creek",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rocr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79683C-1DD8-B71B-0BEDB5CD59B5341A.jpg",
+      "title": "Peirce Mill",
+      "altText": "A stone mill house",
+      "caption": "Peirce Mill",
+      "credit": "NPS Photo/Michael Zwelling",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "C9F18B83-61AA-4877-A26F-C3F677AD8DF7",
+      "name": "Planetarium"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "3F3ABD16-2C52-4EAA-A1F6-4235DE5686F0",
+      "name": "Golf"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/rocr/index.htm",
+    "directions": "http://www.nps.gov/rocr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Engineering",
+    "Farming and Agriculture",
+    "Plantations",
+    "Forts",
+    "Industry",
+    "Mills",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Social Movements",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Park",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

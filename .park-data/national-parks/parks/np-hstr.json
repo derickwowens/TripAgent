@@ -1,0 +1,162 @@
+{
+  "id": "np-hstr",
+  "name": "Harry S Truman National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "President Harry S Truman took America from its traditional isolationism into the age of international involvement. Despite his power, he never forgot where he came from. Today, visitors can experience the surroundings Truman knew as a young man of modest ambition through his political career and final years as a former president.",
+  "shortDescription": "President Harry S Truman took America from its traditional isolationism into the age of international involvement. Despite his power, he never forgot where he came from. Today, visitors can experience...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.92711967,
+    "longitude": -94.5162488
+  },
+  "nationalParkInfo": {
+    "parkCode": "hstr",
+    "npsId": "76F393BA-D39F-43E9-B0A3-F746E2FEAD85",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hstr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hstr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "816-254-9929",
+    "email": "HSTR_Ranger@nps.gov",
+    "website": "https://www.nps.gov/hstr/index.htm",
+    "address": {
+      "line1": "219 North Delaware Street (Truman Home)",
+      "line2": "223 North Main Street (Visitor Center)---Ticketing Location",
+      "city": "Independence",
+      "state": "MO",
+      "postalCode": "64050"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Take a guided tour of the historic Truman Home. With thousands of artifacts on display, the home is an insightful glimpse into the personal lives of the Trumans. \n\n Visitors must stop by the visitor center first to obtain tickets to tour the Home. Tickets are not issued at the Truman Home itself.\n\nAll tickets first come, first served on the day of. We can't make exceptions.\n\nThe Noland Home is self guided...you can stop in before or after your tour. (We recommend before.)"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Located on the western edge of Missouri, the park enjoys each of the four seasons. Early spring brings frequent and rapid fluctuations in weather. The summer season has warm days, periods of high heat and humidity, and mild nights. The fall season is normally mild with sunny days and cool nights. Winters can be cold. The January low averages 21 degrees. The area receives a yearly average of 37 inches of rain per year and around 18 inches of snow. Our zip code is 64050 if you wish to go to www.weather.gov"
+  },
+  "images": [
+    {
+      "id": "hstr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79AC3C-1DD8-B71B-0BB54731F4D0538A.jpg",
+      "title": "The Truman Home",
+      "altText": "The Truman home near sunset.",
+      "caption": "Although Harry Truman was a 20th century president, his home was from the Victorian era.",
+      "credit": "NPS Photo/Matt Turner",
+      "isPrimary": true
+    },
+    {
+      "id": "hstr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79ADD6-1DD8-B71B-0BD9463738E1C170.jpg",
+      "title": "The Truman Farm Home",
+      "altText": "The Truman Farm Home sits behind Autumn trees.",
+      "caption": "From when he was 22 until he was 33 years old, Harry Truman lived on his grandmother's farm.",
+      "credit": "NPS Photo/Matt Turner",
+      "isPrimary": false
+    },
+    {
+      "id": "hstr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79AEF0-1DD8-B71B-0B257E6DB727C757.jpg",
+      "title": "The Noland Home",
+      "altText": "The Noland home sits across the street from the Truman home.",
+      "caption": "Harry Truman's cousins, the Nolands, lived right across the street from him.",
+      "credit": "NPS Photo/Matt Turner",
+      "isPrimary": false
+    },
+    {
+      "id": "hstr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B1A4-1DD8-B71B-0B1D077DC79DD1CD.jpg",
+      "title": "The George Wallace Home",
+      "altText": "The George Wallace home with the Truman home in the background.",
+      "caption": "Bess Truman's brother, George, and his wife, May, lived right behind the Truman home.",
+      "credit": "NPS Photo/Matt Turner",
+      "isPrimary": false
+    },
+    {
+      "id": "hstr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E8300CC9-E60E-87BC-A06E532440E50ED5.jpg",
+      "title": "219 North Delaware Street...Then and Now",
+      "altText": "The Truman Home, Then and Now!",
+      "caption": "Once the home of a flour mill partner, it later was the home of a president.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "hstr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79AFEB-1DD8-B71B-0BD99D0239E6B490.jpg",
+      "title": "The Frank Wallace Home",
+      "altText": "The Frank Wallace home where Bess Truman's brother lived.",
+      "caption": "Bess Truman's brother, Frank, and his wife Natalie, lived in this small bungalow right behind the Truman home.",
+      "credit": "NPS Photo/Matt Turner",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hstr/index.htm",
+    "directions": "http://www.nps.gov/hstr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Farming and Agriculture",
+    "Presidents",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "National Historic Site",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

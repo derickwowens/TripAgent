@@ -1,0 +1,163 @@
+{
+  "id": "np-pagr",
+  "name": "Paterson Great Falls National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NJ",
+  "stateName": "New Jersey",
+  "region": "northeast",
+  "description": "Silk cloth and steam locomotives; textiles and continuous paper rolls; firearms and aircraft engines. What do these things have in common? All were manufactured in the same place - Paterson, NJ. In 1792, Paterson was established as America's first planned industrial city, centered around the Great Falls of the Passaic River. From humble mills rose industries that changed the face of the nation.",
+  "shortDescription": "Silk cloth and steam locomotives; textiles and continuous paper rolls; firearms and aircraft engines. What do these things have in common? All were manufactured in the same place - Paterson, NJ. In 17...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 40.91584645,
+    "longitude": -74.18021494
+  },
+  "nationalParkInfo": {
+    "parkCode": "pagr",
+    "npsId": "9604169F-6A23-4E70-937B-3BE7315590F2",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pagr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pagr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "973-523-0370",
+    "email": "ilyse_goldman@nps.gov",
+    "website": "https://www.nps.gov/pagr/index.htm",
+    "address": {
+      "line1": "72 McBride Avenue Extension",
+      "line2": "",
+      "city": "Paterson",
+      "state": "NJ",
+      "postalCode": "07501"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "All Day",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Grounds are open 7 days a weel and Rangers are available 9:00AM-4:30PM Wednesday-Sunday . Please call 973-523-0370 or 201-458-3475(park cell number) the day of your visit to ensure tour availability. Grounds open suggested time for visiting grounds between sunrise-sunset.\nThe National Park's main visitor parking lot at 72 McBride Avenue Extension will be closed every day sometime after dark and reopened every morning between 7:45am and 8:45am."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "http://forecast.weather.gov/MapClick.php?lat=40.91475800178142&lon=-74.1678490947591#.VusP4uIrK71"
+  },
+  "images": [
+    {
+      "id": "pagr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3F720292-1DD8-B71B-0BBF0A529555D377.jpg",
+      "title": "Windy Day at the Falls",
+      "altText": "Wind blows US Flag and surrounding area",
+      "caption": "Doesn't get more photogenic than this",
+      "credit": "NPS Photo/ Terry McKenna",
+      "isPrimary": true
+    },
+    {
+      "id": "pagr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3F7DA6E2-1DD8-B71B-0B8B16D14181A699.jpg",
+      "title": "Find Your Park at Paterson Great Falls!",
+      "altText": "Sunny day and waterfall view",
+      "caption": "Find Your Park at Paterson Great Falls National Historical Park!",
+      "credit": "NPS Photo/Brady O'Connor",
+      "isPrimary": false
+    },
+    {
+      "id": "pagr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3EDC4916-1DD8-B71B-0B4282C70FC365B7.jpg",
+      "title": "Winter Wonderland",
+      "altText": "snow covered hydro plant and waterfall",
+      "caption": "Lovely winter day at Paterson Great Falls",
+      "credit": "NPS Photo/Ilyse Goldman",
+      "isPrimary": false
+    },
+    {
+      "id": "pagr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/40ABF103-1DD8-B71B-0B381AAC1F9EAD21.jpg",
+      "title": "Selfie at the Falls",
+      "altText": "Man overlooking the falls while taking a selfie",
+      "caption": "Talk about a selfie!",
+      "credit": "NPS Photo/Terry McKenna",
+      "isPrimary": false
+    },
+    {
+      "id": "pagr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/40B3D9B4-1DD8-B71B-0BB17EB9041E793A.jpg",
+      "title": "Misty Overlook",
+      "altText": "Mist coming up from where the water drops into the passaic river",
+      "caption": "One of the best spots to overlook the falls and Garret Mountain, Paterson's largest mountain.",
+      "credit": "NPS Photo/Terry McKenna",
+      "isPrimary": false
+    },
+    {
+      "id": "pagr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/40D199BC-1DD8-B71B-0BB9D6DF983E1769.jpg",
+      "title": "Green Day at the Raceways!",
+      "altText": "summer foliage surrounding a bridge",
+      "caption": "bridge over the upper raceway to the old stoney road trail",
+      "credit": "NPS Photo/Terry McKenna",
+      "isPrimary": false
+    },
+    {
+      "id": "pagr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/943223D7-FBFD-D119-7F4E2999C50730A0.jpg",
+      "title": "Cherry Blossoms",
+      "altText": "Walking path behind the falls, during sunset with cherry blossom trees in full bloom.",
+      "caption": "Cherry blossoms in bloom along the pathway behind the falls.",
+      "credit": "NPS/VIP Terry",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pagr/index.htm",
+    "directions": "http://www.nps.gov/pagr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Waterfalls",
+    "National Historical Park",
+    "NJ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

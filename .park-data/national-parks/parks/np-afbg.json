@@ -1,0 +1,157 @@
+{
+  "id": "np-afbg",
+  "name": "African Burial Ground National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery played in shaping New York's development.",
+  "shortDescription": "The African Burial Ground is the oldest and largest known excavated burial ground in North America for both free and enslaved Africans. It serves to protect and honor the historic role that slavery pl...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.71452681,
+    "longitude": -74.00447358
+  },
+  "nationalParkInfo": {
+    "parkCode": "afbg",
+    "npsId": "E6E1D22A-7A89-47F8-813C-B611059A8CF9",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/afbg/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/afbg/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2122384367",
+    "email": "african_burial_ground@nps.gov",
+    "website": "https://www.nps.gov/afbg/index.htm",
+    "address": {
+      "line1": "African Burial Ground National Monument",
+      "line2": "290 Broadway",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10007"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "INDOOR VISITOR CENTER AND MUSEUM"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&lat=40.7198&lon=-73.993#.Vqj8OvkrJlZ"
+  },
+  "images": [
+    {
+      "id": "afbg-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8554EA-1DD8-B71B-0BE6FF3BF04C18B8.jpg",
+      "title": "African Burial Ground Memorial",
+      "altText": "African Burial Ground Memorial",
+      "caption": "African Burial Ground Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "afbg-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7DD7997F-1DD8-B71B-0B31BFA87CFF6B77.jpg",
+      "title": "Visitor Center Entrance",
+      "altText": "Entrance to visitor center with four banners above doorway.",
+      "caption": "Entrance to the African Burial Ground National Monument visitor center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "afbg-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7DE9E906-1DD8-B71B-0BE6C87ADBA53620.jpg",
+      "title": "Outdoor Memorial Entrance",
+      "altText": "Outdoor memorial entrance with closed gate.",
+      "caption": "Outdoor memorial entrance with closed gate.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "afbg-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7DF18622-1DD8-B71B-0BC858B0C844569E.jpg",
+      "title": "Memorial's circle of diaspora.",
+      "altText": "Memorial's circle of diaspora.",
+      "caption": "Memorial's circle of diaspora.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "afbg-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7DF85D09-1DD8-B71B-0BAB5B558B9CEAA9.jpg",
+      "title": "Exhibits within visitor center.",
+      "altText": "Exhibits within visitor center.",
+      "caption": "Exhibits within visitor center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/afbg/index.htm",
+    "directions": "http://www.nps.gov/afbg/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Urban America",
+    "Women's History",
+    "National Monument",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.831Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

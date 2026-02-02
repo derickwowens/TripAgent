@@ -1,0 +1,130 @@
+{
+  "id": "np-edal",
+  "name": "Edgar Allan Poe National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Described as horrifying, mystifying, and brilliant, Poe’s writing has engaged readers all over the world. The six years Edgar Allan Poe lived in Philadelphia were his happiest and most productive. Yet Poe also struggled with bad luck, personal demons and his wife’s illness. In Poe’s humble home, reflect on the human spirit surmounting crushing obstacles, and celebrate Poe’s astonishing creativity.",
+  "shortDescription": "Described as horrifying, mystifying, and brilliant, Poe’s writing has engaged readers all over the world. The six years Edgar Allan Poe lived in Philadelphia were his happiest and most productive. Yet...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.96195482,
+    "longitude": -75.1500062
+  },
+  "nationalParkInfo": {
+    "parkCode": "edal",
+    "npsId": "7D06F9D0-1D89-48B5-AFC6-E096C3288C1E",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/edal/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/edal/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "215-965-2305",
+    "email": "indevisitorinfo@nps.gov",
+    "website": "https://www.nps.gov/edal/index.htm",
+    "address": {
+      "line1": "532 N. 7th Street",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "postalCode": "19123"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "The site is temporarily closed for maintenance. Check back in Spring of 2025 for updated hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are typically hot and muggy, fall and spring are generally mild, and winter is cold. Snowfall is highly variable, with some winters bringing only light snow and others bringing several major snowstorms, with the normal seasonal snowfall standing at 22.4 in (57 cm). Precipitation is generally spread throughout the year, with eight to twelve wet days per month."
+  },
+  "images": [
+    {
+      "id": "edal-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AD5D5-1DD8-B71B-0BAF630A8D440C44.jpg",
+      "title": "Poe House, exterior",
+      "altText": "Color photo of a rectangular three story brick home with rows of windows on each floor.",
+      "caption": "Edgar Allan Poe lived in Philadelphia for six years, but he resided at this home for about a year, 1843-1844.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "edal-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AD771-1DD8-B71B-0BF92D5BF1AA42AD.jpg",
+      "title": "Parlor",
+      "altText": "Color photo of the parlor in the Poe House showing illustrations of furniture on the walls.",
+      "caption": "Wall mounted illustrations show how the room may have been furnished when Edgar Allan Poe lived in the house.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "edal-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AD91A-1DD8-B71B-0BE6FA39AD8699F5.jpg",
+      "title": "Basement",
+      "altText": "Color photo of the basement with brick floor, false chimney, and wooden staircase.",
+      "caption": "Is this where Poe got his inspiration for \"The Black Cat?\"  Descend to the basement and decide for yourself.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "edal-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7ADB03-1DD8-B71B-0B9758787DC596DC.jpg",
+      "title": "Raven statue",
+      "altText": "Color photo showing a large raven statue with wings outspread on a metal plinth.",
+      "caption": "Stand in the shadow of the raven statue in the yard.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "edal-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7ADC91-1DD8-B71B-0BA4AAA889D0F489.jpg",
+      "title": "The Reading Room",
+      "altText": "A small red-carpeted room with faux marble table, red upholstered chairs and sofa, and red curtains.",
+      "caption": "The Reading Room at the Edgar Allan Poe National Historical Site is furnished according to Poe's satirical essay \"The Philosophy of Furniture.\"",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/edal/index.htm",
+    "directions": "http://www.nps.gov/edal/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Poetry and Literature",
+    "National Historic Site",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "np-thko",
+  "name": "Thaddeus Kosciuszko National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Visit the house where wounded Polish freedom fighter Thaddeus Kosciuszko lived and hear how this brilliant military engineer designed successful fortifications during the American Revolution. See the room where he received notable visitors such as Chief Little Turtle and Thomas Jefferson.",
+  "shortDescription": "Visit the house where wounded Polish freedom fighter Thaddeus Kosciuszko lived and hear how this brilliant military engineer designed successful fortifications during the American Revolution. See the ...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 39.94345312,
+    "longitude": -75.14732045
+  },
+  "nationalParkInfo": {
+    "parkCode": "thko",
+    "npsId": "2CA10B86-DCA3-456F-8C9A-A3A6C9288573",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/thko/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/thko/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2159652305",
+    "email": "indevisitorinfo@nps.gov",
+    "website": "https://www.nps.gov/thko/index.htm",
+    "address": {
+      "line1": "3rd and Pine Streets",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "postalCode": "19106"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Closed for the season. The site will reopen in Spring of 2026. Usual hours are Saturdays and Sundays, 12 noon to 4 pm."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are typically hot and muggy, fall and spring are generally mild, and winter is cold. Snowfall is highly variable, with some winters bringing only light snow and others bringing several major snowstorms, with the normal seasonal snowfall standing at 22.4 in (57 cm). Precipitation is generally spread throughout the year, with eight to twelve wet days per month."
+  },
+  "images": [
+    {
+      "id": "thko-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7ADDD2-1DD8-B71B-0B128C61D6236420.jpg",
+      "title": "Kosciuszko House, exterior",
+      "altText": "Color photo showing a three story brick rowhouse on a corner lot.",
+      "caption": "The Thaddeus Kosciuszko house is a national memorial to an international champion of human rights. Kosciuszko fought in the American Revolutionary War, as well as an uprising in his native Poland..",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "thko-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4706DA8B-CF75-5928-70521FE49F65E707.jpg",
+      "title": "Kosciuszko House - exhibit area",
+      "altText": "Photo of exhibit area with exhibit panels showing images, text, and a map of the eastern U.S.",
+      "caption": "Explore the exhibit area to learn about Polish military engineer Thaddeus Kosciuszko's role in designing fortifications at West Point.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "thko-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7ADF1B-1DD8-B71B-0BDD41F7E4C51CD8.jpg",
+      "title": "Bedroom",
+      "altText": "Color photo of the bedroom with a orange upholstered sofa and a bed in the small room.",
+      "caption": "Wounded Polish freedom fighter Thaddeus Kosciuszko  received notable visitors in this home, including Chief Little Turtle and Thomas Jefferson",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "thko-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AE068-1DD8-B71B-0BDCF6A732223CC5.jpg",
+      "title": "Kosciuszko House, ca. 1960",
+      "altText": "Black and white photo, circa 1960, showing a three story brick rowhouse situated on a corner lot.",
+      "caption": "The home where Thaddeus Kosciuszko once lived fell into disrepair.  The site became a National Memorial in 1972.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/thko/index.htm",
+    "directions": "http://www.nps.gov/thko/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Engineering",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "National Memorial",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "_meta": {
+    "state": "WI",
+    "stateName": "Wisconsin",
+    "lastUpdated": "2026-02-02",
+    "lastValidated": "2026-02-02T02:27:08.013Z",
+    "totalParks": 44,
+    "notes": "Complete list of Wisconsin state parks. We are the authoritative source!"
+  },
+  "parks": {
+    "amnicon": {
+      "name": "Amnicon Falls State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/amnicon",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/amnicon/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/amnicon/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "aztalan": {
+      "name": "Aztalan State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/aztalan",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "belmont": {
+      "name": "Belmont Mound State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/belmont",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/belmont/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/belmont/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "bigbay": {
+      "name": "Big Bay State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/bigbay",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/bigbay/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/bigbay/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "bigfoot": {
+      "name": "Big Foot Beach State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/bigfoot",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/bigfoot/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/bigfoot/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "bluemound": {
+      "name": "Blue Mound State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/bluemound",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/bluemound/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/bluemound/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "brunetisland": {
+      "name": "Brunet Island State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/brunetisland",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/brunetisland/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/brunetisland/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "buckhorn": {
+      "name": "Buckhorn State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/buckhorn",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/buckhorn/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/buckhorn/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "copperculture": {
+      "name": "Copper Culture State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/copperculture",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "copperfalls": {
+      "name": "Copper Falls State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/copperfalls",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/copperfalls/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/copperfalls/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "councilgrounds": {
+      "name": "Council Grounds State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/councilgrounds",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/councilgrounds/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/councilgrounds/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "devilslake": {
+      "name": "Devil's Lake State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/devilslake",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/devilslake/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/devilslake/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "govdodge": {
+      "name": "Governor Dodge State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/govdodge",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/govdodge/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/govdodge/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "govnelson": {
+      "name": "Governor Nelson State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/govnelson",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/govnelson/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/govnelson/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "govthompson": {
+      "name": "Governor Thompson State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/govthompson",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/govthompson/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/govthompson/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "harringtonbeach": {
+      "name": "Harrington Beach State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/harringtonbeach",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/harringtonbeach/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/harringtonbeach/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "hartmancreek": {
+      "name": "Hartman Creek State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/hartmancreek",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/hartmancreek/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/hartmancreek/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "highcliff": {
+      "name": "High Cliff State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/highcliff",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/highcliff/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/highcliff/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "interstate": {
+      "name": "Interstate State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/interstate",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/interstate/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/interstate/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "kinnickinnic": {
+      "name": "Kinnickinnic State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "kohlerandrae": {
+      "name": "Kohler-Andrae State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/kohlerandrae",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/kohlerandrae/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/kohlerandrae/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "lakekegonsa": {
+      "name": "Lake Kegonsa State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/lakekegonsa",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/lakekegonsa/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/lakekegonsa/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "lakewissota": {
+      "name": "Lake Wissota State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/lakewissota",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/lakewissota/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/lakewissota/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "lakeshore": {
+      "name": "Lakeshore State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/lakeshore",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/lakeshore/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/lakeshore/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "merrick": {
+      "name": "Merrick State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/merrick",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/merrick/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/merrick/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "millbluff": {
+      "name": "Mill Bluff State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/millbluff",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/millbluff/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/millbluff/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "mirrorlake": {
+      "name": "Mirror Lake State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/mirrorlake",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/mirrorlake/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/mirrorlake/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "naturalbridge": {
+      "name": "Natural Bridge State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/naturalbridge",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/naturalbridge/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/naturalbridge/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "nelsondewey": {
+      "name": "Nelson Dewey State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/nelsondewey",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/nelsondewey/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/nelsondewey/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "ngwoods": {
+      "name": "New Glarus Woods State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/ngwoods",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/ngwoods/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/ngwoods/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "newport": {
+      "name": "Newport State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/newport",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/newport/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/newport/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "pattison": {
+      "name": "Pattison State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/pattison",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/pattison/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/pattison/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "peninsula": {
+      "name": "Peninsula State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/peninsula",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/peninsula/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/peninsula/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "perrot": {
+      "name": "Perrot State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/perrot",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/perrot/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/perrot/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "potawatomi": {
+      "name": "Potawatomi State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/potawatomi",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/potawatomi/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/potawatomi/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "ribmt": {
+      "name": "Rib Mountain State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/ribmt",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/ribmt/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/ribmt/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "rockisland": {
+      "name": "Rock Island State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/rockisland",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/rockisland/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/rockisland/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "rockyarbor": {
+      "name": "Rocky Arbor State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/rockyarbor",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/rockyarbor/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/rockyarbor/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "towerhill": {
+      "name": "Tower Hill State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/towerhill",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/towerhill/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/towerhill/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "whitefish": {
+      "name": "Whitefish Dunes State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/whitefish",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/whitefish/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/whitefish/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "wildcat": {
+      "name": "Wildcat Mountain State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/wildcat",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/wildcat/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/wildcat/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "willowriver": {
+      "name": "Willow River State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/willowriver",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/willowriver/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/willowriver/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "wyalusing": {
+      "name": "Wyalusing State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/wyalusing",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/wyalusing/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/wyalusing/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    },
+    "yellowstone": {
+      "name": "Yellowstone Lake State Park",
+      "links": {
+        "official": "https://dnr.wisconsin.gov/topic/parks/yellowstone",
+        "recreation": "https://dnr.wisconsin.gov/topic/parks/yellowstone/recreation",
+        "maps": "https://dnr.wisconsin.gov/topic/parks/yellowstone/maps",
+        "reservation": "https://wisconsin.goingtocamp.com/"
+      }
+    }
+  }
+}

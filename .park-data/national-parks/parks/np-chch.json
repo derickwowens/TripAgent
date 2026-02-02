@@ -1,0 +1,242 @@
+{
+  "id": "np-chch",
+  "name": "Chickamauga & Chattanooga National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "In 1863, Union and Confederate forces fought for control of Chattanooga, known as the \"Gateway to the Deep South.\" The Confederates were victorious at nearby Chickamauga in September. However, renewed fighting in Chattanooga that November provided Union troops victory and control of the city. After the fighting, a Confederate soldier ominously wrote, \"This...is the death-knell of the Confederacy.\"",
+  "shortDescription": "In 1863, Union and Confederate forces fought for control of Chattanooga, known as the \"Gateway to the Deep South.\" The Confederates were victorious at nearby Chickamauga in September. However, renewed...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 34.94317623,
+    "longitude": -85.28749537
+  },
+  "nationalParkInfo": {
+    "parkCode": "chch",
+    "npsId": "FD536267-125D-4CEB-8978-2B2767C3B2FF",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/chch/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/chch/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "706-866-9241",
+    "email": "chch_information@nps.gov",
+    "website": "https://www.nps.gov/chch/index.htm",
+    "address": {
+      "line1": "3370 LaFayette Road",
+      "line2": "",
+      "city": "Fort Oglethorpe",
+      "state": "GA",
+      "postalCode": "30742"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "All units of Chickamauga and Chattanooga National Military Park are open during daylight hours, with the following exceptions: Chickamauga Battlefield Visitor Center and Lookout Mountain Battlefield Visitor Center are currently open 8:30 am to 5 pm, daily. Visitor centers are closed Dec. 25 and Jan. 1. Point Park main entrance opens at 8:30 am, daily. US Hwy 27 Picnic Area, Wilder Brigade Monument, & Signal Mountain restrooms are closed Dec.1 - March 15."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entrance fees only apply to Point Park, on Lookout Mountain. If you plan to visit Chickamauga Battlefield, parts of Lookout Mountain Battlefield, exclusive of Point Park, Missionary Ridge, Orchard Knob, Signal Point, or Moccasin Bend National Archeological District, entrance to the park areas is FREE.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The climate in northern Georgia is generally temperate. Short, cool winters give relief from hot summers. Most visitors enjoy this area during long, mild fall and spring seasons."
+  },
+  "images": [
+    {
+      "id": "chch-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C0A34-1DD8-B71B-0B9DCF42DA23DD8C.jpg",
+      "title": "Kelley Cabin on Chickamauga Battlefield",
+      "altText": "Kelley Cabin",
+      "caption": "Living Historians are seen in Kelley Field and in the distance at the Kelley Cabin during the 150th anniversary",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "chch-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C0BA6-1DD8-B71B-0B80F322614F6BA6.jpg",
+      "title": "Illinois Monument at Bragg Reservation on Missionary Ridge",
+      "altText": "Illinois Monument",
+      "caption": "Silent sentinels stand on the Illinois Monument at the Bragg Reservation on Missionary Ridge Battlefield",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chch-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C0D28-1DD8-B71B-0B079B9682455B46.jpg",
+      "title": "Cannon on Lookout Mountain",
+      "altText": "Cannon on Lookout Mountain",
+      "caption": "As the sun sets on Lookout Mountain, a lone cannon guards the valley below.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chch-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C0F06-1DD8-B71B-0B2CD45119952675.jpg",
+      "title": "Lookout Mountain and the National Cemetery",
+      "altText": "Lookout Mountain and the National Cemetery",
+      "caption": "The graves of fallen soldiers from Chickamauga to present dot the landscape in Chattanooga as Lookout Mountain looms in the background",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chch-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C10A1-1DD8-B71B-0BF44242A1B713F9.jpg",
+      "title": "Living Historians on Orchard Knob in Chattanooga",
+      "altText": "Living Historians on Orchard Knob",
+      "caption": "Confederate soldiers stand watch from Orchard Knob during the 150th anniversary of the Battles for Chattanooga in 2013.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/chch/index.htm",
+    "directions": "http://www.nps.gov/chch/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Military",
+    "US Army",
+    "Battlefields",
+    "Native American Heritage",
+    "Tragic Events",
+    "Forced Marches",
+    "Wars and Conflicts",
+    "Civil War",
+    "World War I",
+    "Scenic Views",
+    "National Military Park",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

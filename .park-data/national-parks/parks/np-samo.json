@@ -1,0 +1,221 @@
+{
+  "id": "np-samo",
+  "name": "Santa Monica Mountains National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "The Santa Monica Mountains offer easy access to surprisingly wild places. Experience the famous beaches of Malibu or explore more than 500 miles of trails. The park abounds with historical and cultural sites, from old movie ranches to Native American centers. What will you and your family discover?",
+  "shortDescription": "The Santa Monica Mountains offer easy access to surprisingly wild places. Experience the famous beaches of Malibu or explore more than 500 miles of trails. The park abounds with historical and cultura...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 34.09777606,
+    "longitude": -118.7708619
+  },
+  "nationalParkInfo": {
+    "parkCode": "samo",
+    "npsId": "6E020F5D-3F97-4A43-88E6-C68254B55F2C",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/samo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/samo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8053702301",
+    "email": "samo_interpretation@nps.gov",
+    "website": "https://www.nps.gov/samo/index.htm",
+    "address": {
+      "line1": "26876 Mulholland Highway",
+      "line2": "",
+      "city": "Calabasas",
+      "state": "CA",
+      "postalCode": "91302"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park sites are open year-round.\nOur parking lots are open from 8 am to sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are hot and dry while winters are cool and wet."
+  },
+  "images": [
+    {
+      "id": "samo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1562B20E-ECB2-8C39-845FD157BDF14D22.jpg",
+      "title": "Point Mugu Sunset",
+      "altText": "Sunbeams reaching from glowing sun over the ocean.",
+      "caption": "Point Mugu Sunset",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "samo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/66BA4AE8-DAE0-F0F1-9ED90F241922BCAE.jpg",
+      "title": "Zuma Canyon in Spring",
+      "altText": "Trail view with yellow flowers in the foreground that lead to green mountains against a blue sky.",
+      "caption": "Zuma Canyon in spring.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "samo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/14B63768-E50D-70A8-F75875138E37D4C3.jpg",
+      "title": "Mountains",
+      "altText": "Mountain silhouettes at sunrise.",
+      "caption": "View from Sandstone Peak at Sunrise",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "samo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/158D19A5-00CD-A8B1-F56AAAA01022901C.jpg",
+      "title": "Malibu Creek Overlook",
+      "altText": "Wispy cloud covered sky over chaparral covered mountains.",
+      "caption": "Malibu Creek Overlook",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "samo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2AD947F8-AC77-D7AC-A14885CD0B367414.jpg",
+      "title": "Equestrians on Trail",
+      "altText": "People riding horses into the sunset on a mountain trail.",
+      "caption": "Equestrians on Trail",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "samo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1582CA00-9CFA-A7D8-B3CD3A88936850F8.jpg",
+      "title": "Leo Carrillo Beach",
+      "altText": "Rocks emerging from ocean.",
+      "caption": "Leo Carrillo Beach",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "samo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2ACEECB4-B801-F666-2017C6E891F95AF3.jpg",
+      "title": "Sunset Views",
+      "altText": "Two individuals sitting atop a rocky outcrop while watching the sun set.",
+      "caption": "Sunset Views",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "samo-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/156A4184-CB1A-59BC-149E2B50B0C33DEF.jpg",
+      "title": "Paramount Ranch Night Sky",
+      "altText": "Milky way shines in night sky over a mountain and oak tree.",
+      "caption": "Paramount Ranch Night Sky",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/samo/index.htm",
+    "directions": "http://www.nps.gov/samo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Farming and Agriculture",
+    "Ranches",
+    "Schools and Education",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Climate Change",
+    "Fire",
+    "Fossils and Paleontology",
+    "Geology",
+    "Mountains",
+    "National Recreation Area",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

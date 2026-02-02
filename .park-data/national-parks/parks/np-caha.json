@@ -1,0 +1,246 @@
+{
+  "id": "np-caha",
+  "name": "Cape Hatteras National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "The sound of ocean waves, the starry night sky, or the calm of the salt marshes, you can experience it all. Shaped by the forces of water, wind, and storms these islands are ever changing. The plants, wildlife, and people who live here adapt continually. Whether you are enjoying the beach, kayaking the sound, or climbing the Cape Hatteras Lighthouse there is something for everyone to explore!",
+  "shortDescription": "The sound of ocean waves, the starry night sky, or the calm of the salt marshes, you can experience it all. Shaped by the forces of water, wind, and storms these islands are ever changing. The plants,...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 35.41370839,
+    "longitude": -75.65061112
+  },
+  "nationalParkInfo": {
+    "parkCode": "caha",
+    "npsId": "7B9F59AE-D223-4A99-B6DF-A418D876DD82",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/caha/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/caha/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2524732111",
+    "email": "caha_public_affairs@nps.gov",
+    "website": "https://www.nps.gov/caha/index.htm",
+    "address": {
+      "line1": "46375 Lighthouse Road",
+      "line2": "Cape Hatteras Light Station",
+      "city": "Buxton",
+      "state": "NC",
+      "postalCode": "27920"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The grounds of Cape Hatteras National Seashore are always open for visitors, though there are resource closures that seasonally affect different parts of the beach."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather along the Outer Banks varies throughout the year and even throughout the day. Please check the National Weather Service information at http://www.weather.gov/mhx/ for forecast information."
+  },
+  "images": [
+    {
+      "id": "caha-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C835612-1DD8-B71B-0BA2C4F36928F354.jpg",
+      "title": "Fresnel Lens",
+      "altText": "The first-order Fresnel lens is visible in the lantern room of the Bodie Island Lighthouse.",
+      "caption": "Bodie Island Lighthouse still has its first-order Fresnel lens.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "caha-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8354E7-1DD8-B71B-0B7954E06B1E2CEB.jpg",
+      "title": "Paddling Pamlico Sound",
+      "altText": "A young girl paddles across the water with the Cape Hatteras Lighthouse visible in the distance.",
+      "caption": "Lots of recreation opportunities await visits on the sound side of the barrier islands.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "caha-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C835299-1DD8-B71B-0B6B4B43AA87EAF1.jpg",
+      "title": "Cape Hatteras Lighthouse",
+      "altText": "Black and white painting of the brick Cape Hatteras Lighthouse.",
+      "caption": "Black and white spirals decorate the Cape Hatteras Lighthouse.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "caha-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8353B5-1DD8-B71B-0BF7DB7E885477F8.jpg",
+      "title": "Playing in the Sand",
+      "altText": "Two kids play in the sand.",
+      "caption": "Two kids enjoy the sands of Cape Hatteras.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/caha/index.htm",
+    "directions": "http://www.nps.gov/caha/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Maritime",
+    "Lighthouses",
+    "Piracy and Privateering",
+    "Ships and Shipwrecks",
+    "Military",
+    "US Navy",
+    "US Coast Guard",
+    "US Air Force (Army Air Corps)",
+    "Science, Technology and Innovation",
+    "Wars and Conflicts",
+    "Civil War",
+    "World War II",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Night Sky",
+    "Astronomy",
+    "Oceans",
+    "Unique Species",
+    "Endangered",
+    "National Seashore",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "id": "np-daav",
+  "name": "Dayton Aviation Heritage National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "OH",
+  "stateName": "Ohio",
+  "region": "midwest",
+  "description": "Dayton Aviation Heritage National Historical Park was established to honor the lives and achievements of poet and author Paul Laurence Dunbar and aviation pioneers Wilbur and Orville Wright. Through perseverance and dedication Orville, Wilbur and Paul were able to overcome obstacles in their lives and leave their respective marks on history. Start your visit at one of our locations today.",
+  "shortDescription": "Dayton Aviation Heritage National Historical Park was established to honor the lives and achievements of poet and author Paul Laurence Dunbar and aviation pioneers Wilbur and Orville Wright. Through p...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 39.78944467,
+    "longitude": -84.10442045
+  },
+  "nationalParkInfo": {
+    "parkCode": "daav",
+    "npsId": "C62B89CF-F912-46F4-878C-8EEBD843CEC6",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/daav/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/daav/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "937-345-0433",
+    "email": "daav_info@nps.gov",
+    "website": "https://www.nps.gov/daav/index.htm",
+    "address": {
+      "line1": "16 South Williams Street",
+      "line2": "",
+      "city": "Dayton",
+      "state": "OH",
+      "postalCode": "45402"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "The Wright-Dunbar Interpretive Center is located just west of downtown Dayton on South Williams Street, directly south of Third Street. Interpretive displays, interactive exhibits and the park introductory film are all available at the WDIC. A small gift shop is also on site and is stocked with souvenirs and books related to the Wrights and Paul Laurence Dunbar."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park lies in a humid continental zone with a generally temperate climate. Winters are mildly cold with average temperatures around 39 degrees (F). Summers are hot and humid with an average temperature around 74 degrees (F). Average annual total rainfall is just above 41\". Snowfall in the winter is generally light with an average total snowfall of about 25\"."
+  },
+  "images": [
+    {
+      "id": "daav-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B28E77A-B721-B2D1-7549D561D8CE4722.jpg",
+      "title": "Wright-Dunbar Interpretive Center",
+      "altText": "A three-story brick building with tall green windows and a tall photo mural on the glass wall",
+      "caption": "The main entrance to the Wright-Dunbar Interpretive Center",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": true
+    },
+    {
+      "id": "daav-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/74D64FE5-D38C-EC86-6E083224164BE3DD.jpg",
+      "title": "Wright Cycle Company Bike Shop",
+      "altText": "A two-story brick building with tall windows and shutters on them with sign \"The Wright Cycle Co.\"",
+      "caption": "A front view of the building housing The Wright Cycle Company bike shop.",
+      "credit": "NPS / Ryan Qualls",
+      "isPrimary": false
+    },
+    {
+      "id": "daav-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B4D85B9-F211-67FC-279911A81D66DE5E.jpg",
+      "title": "Wrights and Dunbar mural",
+      "altText": "A brick wall with artwork of three men and an airplane etched out of the brick.",
+      "caption": "An artistic mural etched out of the red brick wall at the Wright-Dunbar Interpretive Center entrance.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "daav-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B5CD289-A9A4-1373-BE8012599762E14A.jpg",
+      "title": "Huffman Prairie Interpretive Center",
+      "altText": "A one story stone building with a small tower jutting out of the middle and three people walking out",
+      "caption": "The main entrance to the Huffman Prairie Interpretive Center",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "daav-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B7E2F10-FECA-5CD6-8CDFA0F2144FBFFE.jpg",
+      "title": "The Wright Brothers memorial",
+      "altText": "A tall gray stone monolith with a brown bronze plaque affixed to the front with trees in background",
+      "caption": "The Wright Brothers Memorial at the Huffman Prairie Interpretive Center grounds.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "daav-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/74E81164-C18C-EE48-9EF3CF05D2CABA8F.jpg",
+      "title": "1905 Replica Hangar at Huffman Prairie Flying Field",
+      "altText": "The fog lifts as the suns rays peek through the mist revealing a wood-frame hangar and flag pole.",
+      "caption": "The replica 1905 hangar at Huffman Prairie Flying Field.",
+      "credit": "NPS / Ryan Qualls",
+      "isPrimary": false
+    },
+    {
+      "id": "daav-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B9C0C84-CF79-8680-F94D3E6271EC690F.jpg",
+      "title": "Huffman Prairie Flying Field replica catapault",
+      "altText": "A long wood and steel rail leading to a pyramid tower structure in the background.",
+      "caption": "A replica catapault system similar to what the Wrights used during their trials at Huffman Prairie.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "daav-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0BC22569-C0C8-19DB-5160DC5BBEDB27B2.jpg",
+      "title": "Huffman Prairie Flying Field entrance",
+      "altText": "A dirt road between tall trees with a stone sign reading Huffman Prairie Flying Field.",
+      "caption": "The main entrance road into Huffman Prairie Flying Field.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "daav-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0BD2B3D8-9054-8585-B5616984AC1FAAFE.jpg",
+      "title": "Paul Laurence Dunbar House Historic Site",
+      "altText": "A two-story home with peaked gray roof and two chimneys with green shutters around the windows",
+      "caption": "The Paul Laurence Dunbar House Historic Site in Dayton, Ohio.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/daav/index.htm",
+    "directions": "http://www.nps.gov/daav/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Poetry and Literature",
+    "Aviation",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "National Historical Park",
+    "OH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

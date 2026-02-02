@@ -1,0 +1,317 @@
+{
+  "id": "np-slbe",
+  "name": "Sleeping Bear Dunes National Lakeshore",
+  "category": "national",
+  "parkType": "national_lakeshore",
+  "stateCode": "MI",
+  "stateName": "Michigan",
+  "region": "midwest",
+  "description": "Miles of sand beach, bluffs that tower 450’ above Lake Michigan, lush forests, clear inland lakes, unique flora and fauna make up the natural world of Sleeping Bear Dunes. High dunes afford spectacular views across the lake. An island lighthouse, US Life-Saving Service stations, coastal villages, and picturesque farmsteads reflect the park’s rich maritime, agricultural, and recreational history.",
+  "shortDescription": "Miles of sand beach, bluffs that tower 450’ above Lake Michigan, lush forests, clear inland lakes, unique flora and fauna make up the natural world of Sleeping Bear Dunes. High dunes afford spectacula...",
+  "designation": "National Lakeshore",
+  "coordinates": {
+    "latitude": 44.92844962,
+    "longitude": -86.02706591
+  },
+  "nationalParkInfo": {
+    "parkCode": "slbe",
+    "npsId": "739AFEBE-BF00-4A3E-A369-85E74F6E6739",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/slbe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/slbe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2313264700",
+    "email": "sleepingbearinfo@nps.gov",
+    "website": "https://www.nps.gov/slbe/index.htm",
+    "address": {
+      "line1": "9922 Front Street",
+      "line2": "",
+      "city": "Empire",
+      "state": "MI",
+      "postalCode": "49630"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Lakeshore is open 24 hours a day. Campgrounds, visitor centers, and facilities have separate hours, however, please see descriptions of those facilities elsewhere."
+  },
+  "fees": [
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Sedan\n1-6 Person Capacity\n$25.00 + $10.00 Per Person 16 years or older (up to a maximum of $40.00)",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Van\n7-15 Person Capacity\n$40.00",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Mini Bus\n16-25 Person Capacity\n$40.00",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Motorcoach\n26+ Person Capacity\n$100.00",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Entrance pass - vehicle 1-7 day.",
+      "cost": "25.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 40 F to 70 F. Rain is common. Summer: Temperatures usually range from from 50 F to 83 F. Rain and sun are equally common. On very sunny days, be prepared with plenty of water--heat exhaustion is common, especially when hiking on the dunes. Fall: Temperatures range from 40 F to 70 F. Fall foliage is at its peak around mid September. Winter: Temperatures range from 15 F to 40 F. Snow is common and is on the ground for most of the winter. Dress in warm layers."
+  },
+  "images": [
+    {
+      "id": "slbe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6039A7C7-076A-897E-9E33B512C1067A09.jpg",
+      "title": "Beach pebbles",
+      "altText": "Sand and pebbles in foreground with turquoise water in background",
+      "caption": "Lake and beach",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "slbe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83211B-1DD8-B71B-0B994B42F70185F2.jpg",
+      "title": "Lake Michigan overlook sun",
+      "altText": "A bright sun begins to set into Lake Michigan",
+      "caption": "Sunset viewing is a favorite activity--especially from the Lake Michigan overlook.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "slbe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FDFEAB66-BE14-5198-2192383739CEEA99.jpg",
+      "title": "Glen Lakes Overlook",
+      "altText": "An overlook of two blue lakes surrounded by trees with fall leaves",
+      "caption": "Glen Lakes overlook",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "slbe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FE0D1CEF-9466-CDC6-A6A653182170C3EC.jpg",
+      "title": "Empire Bluffs at Sunset",
+      "altText": "A trail overlooking a large lake at sunset",
+      "caption": "Empire Bluffs Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "slbe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FE163D0D-A986-011C-9F4DFDF5435EDA49.jpg",
+      "title": "Glen Haven Beach",
+      "altText": "Waves crashing to shore with sand dunes in the background",
+      "caption": "Glen Haven Beach",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "slbe-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FE226757-0FCB-FE5B-71F12F996CD0E127.jpeg",
+      "title": "Narada Lake at Sunset",
+      "altText": "A stunning lake surrounded by the setting sun",
+      "caption": "Narada Lake at Sunset",
+      "credit": "NPS / Keith Furguson",
+      "isPrimary": false
+    },
+    {
+      "id": "slbe-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FE556ADB-0D7C-3B2F-787829EE1D576C60.jpg",
+      "title": "North Bar Lake Sunset",
+      "altText": "Dunes at sunset surrounded by two lakes",
+      "caption": "North Bar Lake Sunset",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "slbe-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/00D893AA-0DF6-0628-D91892B25263BF5F.jpg",
+      "title": "Dunes",
+      "altText": "Grass covered sand dunes",
+      "caption": "Sand dunes at the Lakeshore",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/slbe/index.htm",
+    "directions": "http://www.nps.gov/slbe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Farming and Agriculture",
+    "Maritime",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Native American Heritage",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Dunes",
+    "Forests and Woodlands",
+    "Glaciers",
+    "Lakes",
+    "Night Sky",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Wetlands",
+    "Wilderness",
+    "National Lakeshore",
+    "MI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

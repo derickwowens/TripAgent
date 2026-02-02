@@ -1,0 +1,139 @@
+{
+  "id": "np-haha",
+  "name": "Harmony Hall",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "The 18th century Harmony Hall mansion is located on a 62.5-acre open pasture land estate along the Potomac River. This estate was purchased by the National Park Service in 1966, to preserve southern Maryland cultural heritage. Surrounded by a rich landscape, it offers visitors many chances to connect with Colonial History. The park also home to the remains of the Want Water House and canal.",
+  "shortDescription": "The 18th century Harmony Hall mansion is located on a 62.5-acre open pasture land estate along the Potomac River. This estate was purchased by the National Park Service in 1966, to preserve southern M...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.74646351,
+    "longitude": -77.00377069
+  },
+  "nationalParkInfo": {
+    "parkCode": "haha",
+    "npsId": "211E9758-FA5F-4BAA-AABF-D939B7C07A79",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/haha/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/haha/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1555",
+    "email": "haha_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/haha/index.htm",
+    "address": {
+      "line1": "10702 Livingston Road",
+      "line2": "",
+      "city": "Fort Washington",
+      "state": "MD",
+      "postalCode": "20744"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "Park grounds are open daily from 6:00 a.m. to 10:00 p.m. There is no vehicle access or on-site parking. Historic structures are closed, and no facilities or amenities are available. Please do not attempt to enter any structures."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are generally hot and humid, with daytime highs frequently above 90 degrees Fahrenheit and scattered afternoon thunderstorms. Winters are generally cold, with nighttime lows frequently near freezing and occasional snowfall. Weather during spring and fall is generally moderate, but can change quickly.."
+  },
+  "images": [
+    {
+      "id": "haha-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/28A04A53-CF37-9979-72C9072811BC2DD0.jpg",
+      "title": "Harmony Hall",
+      "altText": "Flowers on a tree with a large brick house in the background.",
+      "caption": "Harmony Hall is a two and a half story Georgian style house built in 1723.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "haha-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E14F9-1DD8-B71B-0BA3A6484D2478A3.jpg",
+      "title": "Historic Harmony Hall",
+      "altText": "black and white photo of a large two story brick manor",
+      "caption": "Historic image of Harmony Hall, circa 1938.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "haha-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/23E36EFF-0786-E6DE-5DD75943A7108172.jpg",
+      "title": "Broad Creek",
+      "altText": "a creek from ground level",
+      "caption": "Broad Creek runs through the Harmony Hall property",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "haha-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0FE3-1DD8-B71B-0B1C488118933897.jpg",
+      "title": "Harmony Hall Mansion",
+      "altText": "Photo Harmony Hall Mansion",
+      "caption": "East elevation of Harmony Hall Mansion",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "haha-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/288B666B-B8A3-7DCC-08BC1303CC54BF2D.jpg",
+      "title": "Want Water Ruins",
+      "altText": "Ruins of a brick chimney and wall.",
+      "caption": "The ruins of Want Water, a colonial era home",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "haha-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/23F48D37-FA22-FC35-9AEC6FB1CA90B907.jpg",
+      "title": "Looking out from Harmony Hall",
+      "altText": "A sweeping view of a grass field dotted with trees",
+      "caption": "The view from the backyard of Harmony Hall",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/haha/index.htm",
+    "directions": "http://www.nps.gov/haha/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

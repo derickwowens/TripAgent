@@ -1,0 +1,230 @@
+{
+  "id": "np-vafo",
+  "name": "Valley Forge National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Valley Forge is the place where George Washington and the Continental Army took refuge during the winter of 1777-1778. Today the park protects 3,500 acres of meadows, woodlands, historic landscapes, and monuments commemorating the resolve of the Revolutionary War generation and honoring the power of people to pull together, overcome adversity, and find renewal through transformation.",
+  "shortDescription": "Valley Forge is the place where George Washington and the Continental Army took refuge during the winter of 1777-1778. Today the park protects 3,500 acres of meadows, woodlands, historic landscapes, a...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 40.10054985,
+    "longitude": -75.44581889
+  },
+  "nationalParkInfo": {
+    "parkCode": "vafo",
+    "npsId": "41813A9C-A947-4078-9DAA-4CE952F4E512",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/vafo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/vafo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6107831000",
+    "email": "vafo_superintendent@nps.gov",
+    "website": "https://www.nps.gov/vafo/index.htm",
+    "address": {
+      "line1": "1400 North Outer Line Drive",
+      "line2": "",
+      "city": "King of Prussia",
+      "state": "PA",
+      "postalCode": "19406"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - Sunset",
+    "tuesday": "7:00AM - Sunset",
+    "wednesday": "7:00AM - Sunset",
+    "thursday": "7:00AM - Sunset",
+    "friday": "7:00AM - Sunset",
+    "saturday": "7:00AM - Sunset",
+    "sunday": "7:00AM - Sunset",
+    "description": "The park grounds including roads, parking lots, trails, and monuments are open from 7am to dark (30 minutes after sunset) year round. \n\nPark grounds remain open on Thanksgiving, Christmas and New Years Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winters at Valley Forge are cold and damp with a cool spring and fall and a hot and humid summer. Sturdy hiking shoes are recommended for outdoor recreation during the snowy winter season. Find more detailed weather information on the <a href=https://www.nps.gov/vafo/planyourvisit/weather.htm>Weather page.</a>"
+  },
+  "images": [
+    {
+      "id": "vafo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B0AC3B46-F1F9-B2A1-4DA9CE223B32166F.jpg",
+      "title": "Fall Wildflowers near Washington's Headquarters",
+      "altText": "Field of yellow flowers in the foreground with two log huts and a paved trail in the middle distance",
+      "caption": "Fall wildflowers (Bearded Beggarticks) bloom along the Joseph Plumb Martin trail near Washington's Headquarters.",
+      "credit": "NPS Photo / B. Dhunjisha",
+      "isPrimary": true
+    },
+    {
+      "id": "vafo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4745A057-0C77-874C-62AC3C99AF2F2293.jpg",
+      "title": "Muhlenberg's Brigade at Sunset",
+      "altText": "outdoors, log huts, gravel path, sunset, clouds",
+      "caption": "The sun sets at Muhlenberg's Brigade.",
+      "credit": "NPS Photo / Gregory Purifoy",
+      "isPrimary": false
+    },
+    {
+      "id": "vafo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B80E3760-CFE2-C231-72E4B8673F726EC2.jpg",
+      "title": "Visitor Center at Valley Forge",
+      "altText": "a building that extends into a hillside with a flagpole and landscaping out front",
+      "caption": "The front entrance to the Visitor Center at Valley Forge.",
+      "credit": "NPS Photo/ G. Purifoy",
+      "isPrimary": false
+    },
+    {
+      "id": "vafo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/477DC760-C260-8CA6-F7919D83F4973A81.jpg",
+      "title": "Wayne Statue",
+      "altText": "outdoors, monument, statue, man on horse, grass, trees, clouds.",
+      "caption": "The Anthony Wayne Statue at Valley Forge.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "vafo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/476F62D7-DDCA-AAAE-26AFDC0A99E7F820.jpg",
+      "title": "National Memorial Arch",
+      "altText": "outdoors, arch, monument, snow, trees",
+      "caption": "The National Memorial Arch at Valley Forge.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "vafo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/475A0ACD-A99B-1FB6-D9A34F7A61509BB4.jpg",
+      "title": "Washington's Headquarters",
+      "altText": "outdoors, grass, trees, stone house, blue sky",
+      "caption": "Washington's Headquarters in spring.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/vafo/index.htm",
+    "directions": "http://www.nps.gov/vafo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Monuments and Memorials",
+    "Presidents",
+    "Schools and Education",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "National Historical Park",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

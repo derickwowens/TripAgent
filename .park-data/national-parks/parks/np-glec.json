@@ -1,0 +1,148 @@
+{
+  "id": "np-glec",
+  "name": "Glen Echo Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Glen Echo Park began in 1891 as a National Chautauqua Assembly \"to promote liberal and practical education.\" By 1911, it transformed into DC's premier amusement park until it closed in 1968. Since 1971, the National Park Service has owned and operated the site and today, with the help of the Glen Echo Park Partnership for Arts and Culture, offers year-round cultural and recreational activities.",
+  "shortDescription": "Glen Echo Park began in 1891 as a National Chautauqua Assembly \"to promote liberal and practical education.\" By 1911, it transformed into DC's premier amusement park until it closed in 1968. Since 197...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.96912315,
+    "longitude": -77.14012206
+  },
+  "nationalParkInfo": {
+    "parkCode": "glec",
+    "npsId": "3FBC6D2D-C61B-4399-BC35-1B00C92C406A",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/glec/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/glec/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3013201400",
+    "email": "gwmp_glen_echo@nps.gov",
+    "website": "https://www.nps.gov/glec/index.htm",
+    "address": {
+      "line1": "7300 MacArthur Boulevard",
+      "line2": "",
+      "city": "Glen Echo",
+      "state": "MD",
+      "postalCode": "20812"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 1:00AM",
+    "tuesday": "6:00AM - 1:00AM",
+    "wednesday": "6:00AM - 1:00AM",
+    "thursday": "6:00AM - 1:00AM",
+    "friday": "6:00AM - 1:00AM",
+    "saturday": "6:00AM - 1:00AM",
+    "sunday": "6:00AM - 1:00AM",
+    "description": "The grounds of Glen Echo Park are open daily from 6 a.m. to 1 a.m. (the next day).  No overnight parking."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather for Washington, D.C. and Bethesda, Maryland areas."
+  },
+  "images": [
+    {
+      "id": "glec-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C848FDE-1DD8-B71B-0BE1393F7AFBC3D4.jpg",
+      "title": "Busy Day outside Carousel",
+      "altText": "groups of families, adults and children strolling in Glen Echo Park near Carousel Building",
+      "caption": "Glen Echo Park and the Dentzel Carousel are enjoyed by children and adults.",
+      "credit": "NPS Photo/Bruce Douglas",
+      "isPrimary": true
+    },
+    {
+      "id": "glec-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C848E7B-1DD8-B71B-0BBAA0366FDA5B58.jpg",
+      "title": "Dancing in the Bumper Car Pavilion",
+      "altText": "outdoor scene of open dance pavilion illuminated and evening dance crowd inside.",
+      "caption": "Evening Dance in the Bumper Car Pavilion",
+      "credit": "NPS Photo/Bruce Douglas",
+      "isPrimary": false
+    },
+    {
+      "id": "glec-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C848D11-1DD8-B71B-0BC49FD5EE187494.jpg",
+      "title": "Labor Day Art Show in Spanish Ballroom",
+      "altText": "people walking around large room during art show",
+      "caption": "Visitors enjoy the Labor Day Art Show which highlights pieces created by students from the Glen Echo Park art programs.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glec-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C849327-1DD8-B71B-0B64DA209DFC98B9.jpg",
+      "title": "Glen Echo Park Junior Rangers working on booklet.",
+      "altText": "three children seated at a picnic table working on a Glen Echo Park Junior Ranger Booklet.",
+      "caption": "Completing the Glen Echo Park Junior Ranger Booklet to earn the Junior Ranger Badge.",
+      "credit": "NPS Photo/Bruce Douglas",
+      "isPrimary": false
+    },
+    {
+      "id": "glec-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84917B-1DD8-B71B-0B9EAFE7DD8C3A13.jpg",
+      "title": "Glen Echo Picnic area",
+      "altText": "people gathered at picnic tables enjoying a lunch in Glen Echo Park",
+      "caption": "Glen Echo Park has a large picnic area with many tables, restrooms and a playground.",
+      "credit": "NPS Photo/Bruce Douglas",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/glec/index.htm",
+    "directions": "http://www.nps.gov/glec/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Music",
+    "Social Movements",
+    "Civil Rights",
+    "Park",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

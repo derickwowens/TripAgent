@@ -1,0 +1,212 @@
+{
+  "id": "np-peco",
+  "name": "Pecos National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Pecos is a natural and cultural crossroads through which hunters, gatherers, traders, missionaries, immigrants, soldiers, ranchers, and other travelers passed and lived. Follow in their footsteps and imagine Pecos through the centuries. Visit sites where cultural demonstrations and traditional practices continue today - a living legacy of the people who passed this way. At Pecos, past is present.",
+  "shortDescription": "Pecos is a natural and cultural crossroads through which hunters, gatherers, traders, missionaries, immigrants, soldiers, ranchers, and other travelers passed and lived. Follow in their footsteps and ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 35.54192238,
+    "longitude": -105.6814684
+  },
+  "nationalParkInfo": {
+    "parkCode": "peco",
+    "npsId": "8CBA3879-59AB-4EFE-8523-1DC6F77FB212",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/peco/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/peco/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5057577241",
+    "email": "peco_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/peco/index.htm",
+    "address": {
+      "line1": "Pecos National Historical Park",
+      "line2": "1 Peach Drive",
+      "city": "Pecos",
+      "state": "NM",
+      "postalCode": "87552"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 4:30PM",
+    "tuesday": "8:00AM - 4:30PM",
+    "wednesday": "8:00AM - 4:30PM",
+    "thursday": "8:00AM - 4:30PM",
+    "friday": "8:00AM - 4:30PM",
+    "saturday": "8:00AM - 4:30PM",
+    "sunday": "8:00AM - 4:30PM",
+    "description": "Pecos National Historical Park is open daily from 8:00 am to 4:30 pm. The park is not open on Thanksgiving Day, Christmas Day, or New Years Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Pecos National Historical Park is located at nearly 7,000 feet in altitude in the high desert region of Northern New Mexico. Please know your limits at this high desert altitude. We recommend that you wear clothing appropriate to the season, bring plenty of water, stop for a snack or lunch at one of the picnic tables, wear comfortable shoes, and put on plenty of sunscreen. Specific daily Pecos weather information may be accessed at this link: http://www.nps.gov/peco/planyourvisit/weather.htm."
+  },
+  "images": [
+    {
+      "id": "peco-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0457F740-1DD8-B71B-0B9462AD0E72A834.jpg",
+      "title": "Mission Church and Kiva",
+      "altText": "Church and preservation workers in distance, kiva in foreground.jpg (943 kb)",
+      "caption": "Clouds gather on a summer day at the mission church",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "peco-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8A13221C-0BDB-C09A-6A982032BF2914F8.jpg",
+      "title": "Mission from front",
+      "altText": "An adobe building under cloudy skies.",
+      "caption": "As the largest remaining building from the 1700s, the Mission Church draws in folks on the Ancestral Sites Trail every day.",
+      "credit": "NPS Photo / Stan Ford",
+      "isPrimary": false
+    },
+    {
+      "id": "peco-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8C8ABAB3-BEC8-03CA-1A642819210D6430.jpg",
+      "title": "Civil War Encampment",
+      "altText": "Reenactors prepare a cannon under a mesa and blue skies.",
+      "caption": "Civil War Encampment reenactors ready a black powder cannon demonstration in front of Glorieta Mesa,",
+      "credit": "NPS Photo / Gary Cascio",
+      "isPrimary": false
+    },
+    {
+      "id": "peco-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8D91E761-FEC7-6849-802334D2BA65071C.jpg",
+      "title": "Feast Day at Pecos Pueblo",
+      "altText": "A line of people walk past adobe bricks, trees, and the road.",
+      "caption": "The Feast Day of Pecos Pueblo draws in hundreds from Jemez Pueblo, Pecos, and the surrounding communities each year.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "peco-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8DA4AC62-DB28-59CD-B0C883187C756D6C.jpg",
+      "title": "Winter at Pecos",
+      "altText": "Snow covers a landscape with trees and mesas.",
+      "caption": "Winter at Pecos can have snow blanketing the pass and local area.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/peco/index.htm",
+    "directions": "http://www.nps.gov/peco/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Hispanic American Heritage",
+    "Latino American Heritage",
+    "Migrations",
+    "Military",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Mexican War",
+    "Civil War",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Elk",
+    "Fish",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "Rock Landscapes and Features",
+    "National Historical Park",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "id": "np-libo",
+  "name": "Lincoln Boyhood National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "IN",
+  "stateName": "Indiana",
+  "region": "midwest",
+  "description": "Abraham Lincoln grew from youth to manhood on this southern Indiana soil. Many character and moral traits of one of the world's most respected leaders was formed and nurtured here. Explore Lincoln's boyhood and learn about the boy who would one day become the leader of our nation.",
+  "shortDescription": "Abraham Lincoln grew from youth to manhood on this southern Indiana soil. Many character and moral traits of one of the world's most respected leaders was formed and nurtured here. Explore Lincoln's b...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 38.11817004,
+    "longitude": -86.99656861
+  },
+  "nationalParkInfo": {
+    "parkCode": "libo",
+    "npsId": "E9A0608F-46D6-4072-939F-C81E27AAB236",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/libo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/libo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8129374541",
+    "email": "LIBO_superintendent@nps.gov",
+    "website": "https://www.nps.gov/libo/index.htm",
+    "address": {
+      "line1": "3027 East South Street",
+      "line2": "",
+      "city": "Lincoln City",
+      "state": "IN",
+      "postalCode": "47552"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Park Grounds and Trails are open year-round.\n\nFor Memorial Visitor Center Hours see Visitor Center tab below. \nThe Memorial Visitor Center is open certain hours and days with some exceptions (generally open from 9:00 am to 3:00 pm and closes between 12:00 pm and 1:00 pm Wednesday through Sunday)."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Southern Indiana has a moderate climate, characterized by warm, yet moist conditions. Summers are usually warm, and winters cool. Much of the area's average 46 inches of precipitation falls in spring, the rainiest season."
+  },
+  "images": [
+    {
+      "id": "libo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/04C50A1E-1DD8-B71B-0B89814283E6E886.jpg",
+      "title": "Lincoln Living Historical Farm",
+      "altText": "Cabin and smokehouse in the fall",
+      "caption": "Replica cabin at re-created 1820s homestead which is on four of the original 160 acres owned by Thomas LIncoln.",
+      "credit": "NPS Photo/Paula Alexander",
+      "isPrimary": true
+    },
+    {
+      "id": "libo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C794095-1DD8-B71B-0B27006290E3733B.jpg",
+      "title": "Cabin at Living Historical Farm",
+      "altText": "Park ranger is period dress standing near fireplace, cooking in the cabin.",
+      "caption": "Park rangers depict pioneer life in the 1820s.",
+      "credit": "NPS Photo/Paula Alexander",
+      "isPrimary": false
+    },
+    {
+      "id": "libo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/11D86084-DF58-8412-113C636E586ACBB6.jpg",
+      "title": "Memorial Visitor Center",
+      "altText": "Memorial Building",
+      "caption": "Memorial Building contains memorial halls to remember Abraham Lincoln and his family.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "libo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D6DA7DB2-BBD1-9286-2133CD10BC9DEC6E.jpg",
+      "title": "Gravesite of Nancy Hanks Lincoln",
+      "altText": "White marble headstone of Nancy Hanks Lincoln in cemetery surrounded by iron fence and trees.",
+      "caption": "The headstone, erected in 1879, marks the burial spot of Abraham Lincoln's mother, who died of milk sickness in 1818.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "libo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7944B5-1DD8-B71B-0B8D623F04926480.jpg",
+      "title": "Cabin Site Memorial",
+      "altText": "Bronze casting on the ground covering bottom logs of a cabin and fireplace.",
+      "caption": "The site of what is believed Memorial at the site of the third Lincoln cabin.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/libo/index.htm",
+    "directions": "http://www.nps.gov/libo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Monuments and Memorials",
+    "Presidents",
+    "National Memorial",
+    "IN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

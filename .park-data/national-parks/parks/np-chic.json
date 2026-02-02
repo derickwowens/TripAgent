@@ -1,0 +1,290 @@
+{
+  "id": "np-chic",
+  "name": "Chickasaw National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "OK",
+  "stateName": "Oklahoma",
+  "region": "southwest",
+  "description": "Springs, streams, lakes - whatever its form, water is the attraction at Chickasaw National Recreation Area.",
+  "shortDescription": "Springs, streams, lakes - whatever its form, water is the attraction at Chickasaw National Recreation Area.",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 34.46050507,
+    "longitude": -97.00715669
+  },
+  "nationalParkInfo": {
+    "parkCode": "chic",
+    "npsId": "16809469-7649-4DFA-9C76-57F2B9946DDC",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/chic/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/chic/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5806227234",
+    "email": "chic_interpretation@nps.gov",
+    "website": "https://www.nps.gov/chic/index.htm",
+    "address": {
+      "line1": "901 W. 1st Street",
+      "line2": "",
+      "city": "Sulphur",
+      "state": "OK",
+      "postalCode": "73086"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Many outdoor areas are available 24 hours a day. Please visit the current conditions page for details."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are hot and humid. Temperatures above 100ºF occur, and humidity often exceeds 50%. Winters are mild and prolonged freezes are rare. Thunderstorms are common April through July."
+  },
+  "images": [
+    {
+      "id": "chic-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81C510-1DD8-B71B-0B34D1FBCE6AA1C6.jpg",
+      "title": "Lincoln Bridge",
+      "altText": "Lincoln Bridge with Travertine Creek flowing below",
+      "caption": "Lincoln Bridge stands out as one of the oldest park structures",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "chic-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81C9E1-1DD8-B71B-0B8AD7A9945AA21E.jpg",
+      "title": "Lake of the Arbuckles",
+      "altText": "Lake boating on a summer day",
+      "caption": "Lake of the Arbuckles attracts many boaters each summer for various recreational activities",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chic-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C820DF4-1DD8-B71B-0B9B7413DBDBA279.jpg",
+      "title": "Family Fishing Fun",
+      "altText": "Lake fishing with family",
+      "caption": "Learning to Fish at Veterns Lake",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chic-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81C806-1DD8-B71B-0BB5E77E3DC0B9C2.jpg",
+      "title": "Park Bison",
+      "altText": "Herd of bison",
+      "caption": "The park has a herd of bison which are very popular",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chic-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81C66C-1DD8-B71B-0B93E7FF7118D3CE.jpg",
+      "title": "Hiking to Buffalo Springs",
+      "altText": "Two people hiking over a water feature",
+      "caption": "Two people walk towards Buffalo Springs, one of the park's many fresh water springs",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "7503433C-3856-4E82-AFF3-0B1649766ED3",
+      "name": "Jet Skiing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "8A1C7B17-C2C6-4F7C-9539-EA1E19971D80",
+      "name": "Water Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/chic/index.htm",
+    "directions": "http://www.nps.gov/chic/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Native American Heritage",
+    "Social Movements",
+    "Conservation Movement",
+    "Transportation",
+    "Bridges",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Bison",
+    "Fish",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Fossils and Paleontology",
+    "Geology",
+    "Groundwater",
+    "Aquifers",
+    "Freshwater Springs",
+    "Lakes",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "National Recreation Area",
+    "OK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

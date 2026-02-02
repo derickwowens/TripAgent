@@ -1,0 +1,245 @@
+{
+  "id": "np-morr",
+  "name": "Morristown National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NJ",
+  "stateName": "New Jersey",
+  "region": "northeast",
+  "description": "Morristown National Historical Park commemorates the sites of General Washington and the Continental Army’s winter encampment from December 1779 to June 1780, where soldiers survived the coldest winter on record. The park also maintains a museum and library collection related to the encampments and to George Washington, as well as items from both pre- and post-Revolutionary America.",
+  "shortDescription": "Morristown National Historical Park commemorates the sites of General Washington and the Continental Army’s winter encampment from December 1779 to June 1780, where soldiers survived the coldest winte...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 40.7650755,
+    "longitude": -74.53455122
+  },
+  "nationalParkInfo": {
+    "parkCode": "morr",
+    "npsId": "D68D9424-CD32-434F-88BF-3069ADFB2744",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/morr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/morr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "973.539.2016",
+    "email": "morr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/morr/index.htm",
+    "address": {
+      "line1": "30 Washington Place",
+      "line2": "",
+      "city": "Morristown",
+      "state": "NJ",
+      "postalCode": "07960"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00AM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "Washington's Headquarters Museum: Open Thursday-Sunday 10:00 AM to 4:00 PM.\nJockey Hollow Visitor Center: Open Thursday-Sunday 10:00 AM to 4:00 PM."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in this part of New Jersey is typical of the mid-Atlantic region--a humid continental climate with hot, humid summers and moderately cold winters."
+  },
+  "images": [
+    {
+      "id": "morr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C804A08-1DD8-B71B-0B73C1F0A0ACAD7A.jpg",
+      "title": "Wick House",
+      "altText": "The Wick House surrounded by colorful fall leaves",
+      "caption": "The Wick House in the fall.",
+      "credit": "NPS Photo/Dan Beards",
+      "isPrimary": true
+    },
+    {
+      "id": "morr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C804BB2-1DD8-B71B-0BD3719BE49A0FDD.jpg",
+      "title": "Washington's Headquarters Museum",
+      "altText": "The front facade of the Washington's Headquarters Museum",
+      "caption": "The front facade of the Washington's Headquarters Museum, which was designed in 1933 to look similar to Washington's Mt Vernon home.",
+      "credit": "NPS Photo/Dan Beards",
+      "isPrimary": false
+    },
+    {
+      "id": "morr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C804D28-1DD8-B71B-0B577BE90E49B5E8.jpg",
+      "title": "Replica Soldier Huts in Jockey Hollow",
+      "altText": "Four replica wooden soldier huts on a hillside in winter",
+      "caption": "These replica soldier huts represent the location of the Pennsylvania Brigade encampment site in Jockey Hollow",
+      "credit": "NPS Photo/Dan Beards",
+      "isPrimary": false
+    },
+    {
+      "id": "morr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C804E96-1DD8-B71B-0B9824672DCF8A75.jpg",
+      "title": "Cross Estate Mansion and Gardens",
+      "altText": "The Cross Estate mansion in the springtime",
+      "caption": "The Cross Estate property was the site of the New Jersey Brigade winter encampement in 1779-1780. Today the encampment site is preserved while the estate is host to several beautiful gardens.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "morr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B1188067-B906-30A8-AEC7161B5DB3EB7B.jpg",
+      "title": "Jockey Hollow Visitor Center",
+      "altText": "View of the front facede of the Jockey Hollow Visitor Center--a dark brown brick buildings",
+      "caption": "View of the front facade of the Jockey Hollow Visitor Center",
+      "credit": "NPS Photo/T. Winslow",
+      "isPrimary": false
+    },
+    {
+      "id": "morr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9724784C-DDBF-6BEA-6F811FA1134B74B8.jpg",
+      "title": "Wick House Kitchen Garden",
+      "altText": "Garden with flowers and plants and 18th century farm house in background",
+      "caption": "A 18th century style kitchen garden with vegetables and herbs",
+      "credit": "NPS photos/T. Winslow",
+      "isPrimary": false
+    },
+    {
+      "id": "morr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/80714BF5-98A7-2DF6-121C95ECD95C2820.jpg",
+      "title": "Ford Mansion with Washington Statue",
+      "altText": "White georgian/colonial building with statue of officer on horse in foreground",
+      "caption": "The Ford Mansion where General Washington headquartered during the winter of 1779-80",
+      "credit": "NPS photo/T. Winslow",
+      "isPrimary": false
+    },
+    {
+      "id": "morr-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/804F2573-98D3-9220-1E99A9DDF34C1521.jpg",
+      "title": "View from Fort Nonsense",
+      "altText": "Overlook with cannon in foreground",
+      "caption": "Fort Nonsense--the site of an earthen fort during the American Revolution-offers a view toward New York City",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "morr-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4F56716A-A21E-33B7-2D8F4863C3C5551C.jpg",
+      "title": "Ford Mansion",
+      "altText": "A white colonial building with snow in the foreground and a blue sky and trees in the background",
+      "caption": "The Ford Mansion was the headquarters for General George Washington during the \"Hard Winter\" of 1779-1780",
+      "credit": "NPS photo/T. Winslow",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/morr/index.htm",
+    "directions": "http://www.nps.gov/morr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Farming and Agriculture",
+    "Military",
+    "Presidents",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Trails",
+    "Watersheds",
+    "National Historical Park",
+    "NJ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

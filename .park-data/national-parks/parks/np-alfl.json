@@ -1,0 +1,150 @@
+{
+  "id": "np-alfl",
+  "name": "Alibates Flint Quarries National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "13,000 years ago, Alibates Flint was used by mammoth hunters as a source of flint for tools. Learn how important this site was to the survival, commerce, and culture of the people of the High Plains.",
+  "shortDescription": "13,000 years ago, Alibates Flint was used by mammoth hunters as a source of flint for tools. Learn how important this site was to the survival, commerce, and culture of the people of the High Plains.",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.5819662,
+    "longitude": -101.6717008
+  },
+  "nationalParkInfo": {
+    "parkCode": "alfl",
+    "npsId": "6D82D070-995A-4524-A56E-C1CE182E7D9B",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/alfl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/alfl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8068576680",
+    "email": "lamr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/alfl/index.htm",
+    "address": {
+      "line1": "37084 Alibates Rd.",
+      "line2": "",
+      "city": "Potter County",
+      "state": "TX",
+      "postalCode": "79036"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "Alibates Visitor Center has museum exhibits, theater, bookstore, and a 7 themed garden with a Monarch Waystation and other native plants. The Alibates Flint Quarries are accessible by guided tour only. Please call for reservations. There is a short self-guided walking trail with an accompanying brochure that lets you see the Canadian River Valley."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Texas Panhandle experiences a wide variety of weather conditions throughout the year. Winters are cold and windy, and summers are hot and dry. It is usually a good idea to bring a jacket with you if you are planning on hiking to the quarries with a ranger because the mesa gets very windy, even in the summer."
+  },
+  "images": [
+    {
+      "id": "alfl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EFA64-1DD8-B71B-0BD2E6EF7D52B0BF.jpg",
+      "title": "Turtle Petroglyph",
+      "altText": "Turtle Petroglyph at Antelope Creek Village Site",
+      "caption": "Turtle Petroglyph at Antelope Creek Village Site",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "alfl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EEB4ED5A-C735-67E9-6E61B710C6E01D72.jpg",
+      "title": "Alibates Visitor Center",
+      "altText": "A view of the gardens and Alibates Visitor Center.",
+      "caption": "The gardens and Alibates Visitor Center host activities and ranger-led programs throughout the year.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alfl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8458AC-1DD8-B71B-0B159537D27B805A.jpg",
+      "title": "Alibates Flint",
+      "altText": "Colorful chunks of Alibates Flint.",
+      "caption": "Used for at least 13,000 years, Alibates Flint was the choice of many tribes for their stone tools, spearpoints and arrowheads.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alfl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C845A12-1DD8-B71B-0B5DCB73747198EF.jpg",
+      "title": "Alibates Flint Quarries Trail",
+      "altText": "Stair steps up the Alibates Flint Quarries Trail.",
+      "caption": "Take a hike up the Quarries Trail to learn about this important stone.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alfl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C845BA9-1DD8-B71B-0B63C45334DC3128.jpg",
+      "title": "Snowy Alibates",
+      "altText": "A snowy mesa, as seen from the Alibates Visitor Center.",
+      "caption": "Every season hold special beauty at Alibates Flint Quarries National Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/alfl/index.htm",
+    "directions": "http://www.nps.gov/alfl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Native American Heritage",
+    "Geology",
+    "National Monument",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "id": "np-juba",
+  "name": "Juan Bautista de Anza National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "The Juan Bautista de Anza National Historic Trail covers over 1200 miles through the homelands of 70+ Tribal communities. It follows the historic route of the 1775-76 Spanish colonizing expedition from Sonora, Mexico to San Francisco, CA. Whether urban or rural, the trail offers adventure, diverse cultural perspectives, and an opportunity to experience history.",
+  "shortDescription": "The Juan Bautista de Anza National Historic Trail covers over 1200 miles through the homelands of 70+ Tribal communities. It follows the historic route of the 1775-76 Spanish colonizing expedition fro...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 33.8743390994,
+    "longitude": -117.224179857
+  },
+  "nationalParkInfo": {
+    "parkCode": "juba",
+    "npsId": "062F89B7-8DB4-4ACD-88D1-573669E63091",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/juba/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/juba/planyourvisit/placestogo.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(510) 232-5050",
+    "email": "juba_info@nps.gov",
+    "website": "https://www.nps.gov/juba/index.htm",
+    "address": {
+      "line1": "440 Civic Center Plaza, Suite 300",
+      "line2": "",
+      "city": "Richmond",
+      "state": "CA",
+      "postalCode": "94804"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:30AM - 5:00PM",
+    "tuesday": "9:30AM - 5:00PM",
+    "wednesday": "9:30AM - 5:00PM",
+    "thursday": "9:30AM - 5:00PM",
+    "friday": "9:30AM - 5:00PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Hours listed are for the Richmond, California administrative office of the Anza Trail (admin office not currently open to public). The 1,200-mile Anza Trail connects historic, cultural, and recreation sites from Nogales, AZ, to the San Francisco Bay Area that reveal the legacy of our Spanish colonial heritage. To learn more, visit http://www.nps.gov/juba. Each site along the Anza Trail is managed independently. Contact individual sites for hours, directions, and other details."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The 1,200-mile Anza Trail connects historic, cultural, and recreation sites from Nogales, AZ, to the San Francisco Bay Area. To learn more, visit http://www.nps.gov/juba. Each site along the Anza Trail is managed independently. Contact individual sites for hours, directions, and other details."
+  },
+  "images": [
+    {
+      "id": "juba-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C3282C7-B83C-1360-AB17FCF75CC68F02.jpg",
+      "title": "The Anza Trail in San Juan Bautista",
+      "altText": "Two people and a dog walk down a dirt trail that cuts into a grassy hill with large trees",
+      "caption": "The Anza Trail in San Juan Bautista",
+      "credit": "",
+      "isPrimary": true
+    },
+    {
+      "id": "juba-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C4A472D-A1D9-76B3-44AF2EE1BD63C3FA.jpg",
+      "title": "San Juan Bautista Trailhead with Equestrians",
+      "altText": "equestrians walk down a dirt trail with an Anza Trail marker",
+      "caption": "Equestrians walk the Anza Trail",
+      "credit": "",
+      "isPrimary": false
+    },
+    {
+      "id": "juba-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C872DB3-1DD8-B71B-0B6201C88B96A87D.jpg",
+      "title": "Anza Trail Logo",
+      "altText": "Anza Trail Logo",
+      "caption": "The Anza Trail is one of 30 National Scenic and Historic Trails",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "juba-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C873402-1DD8-B71B-0B17F59DE3D57871.jpg",
+      "title": "Trails & Rails",
+      "altText": "trails & rails",
+      "caption": "Anza Trail volunteers ride the Amtrak Coast Starlight to share about California's landscape and history.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "juba-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C87D8F2-FBEF-A731-BC71D0D332A3AA84.jpg",
+      "title": "Los Angeles Junior Rangers",
+      "altText": "Kids stand holding their Anza Trail Junior Ranger badges",
+      "caption": "Kids stand holding their Anza Trail Junior Ranger badges",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/juba/index.htm",
+    "directions": "http://www.nps.gov/juba/planyourvisit/placestogo.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Hispanic American Heritage",
+    "Immigration",
+    "Latino American Heritage",
+    "Native American Heritage",
+    "Transportation",
+    "Trains and Railroads",
+    "Trails",
+    "National Historic Trail",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

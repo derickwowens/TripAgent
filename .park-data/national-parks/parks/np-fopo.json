@@ -1,0 +1,163 @@
+{
+  "id": "np-fopo",
+  "name": "Fort Point National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "From its vantage point overlooking the spectacular Golden Gate, Fort Point defended the San Francisco Bay following California's Gold Rush through World War II. Its beautifully arched casemates display the art of 3rd system brick masonry and interacts gracefully with the Golden Gate Bridge.",
+  "shortDescription": "From its vantage point overlooking the spectacular Golden Gate, Fort Point defended the San Francisco Bay following California's Gold Rush through World War II. Its beautifully arched casemates displa...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 37.80837439,
+    "longitude": -122.473747
+  },
+  "nationalParkInfo": {
+    "parkCode": "fopo",
+    "npsId": "7FF57085-3B53-498D-86B5-96F5F1493A06",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fopo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fopo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "415-561-4959",
+    "email": "goga_fopo_socialmedia@nps.gov",
+    "website": "https://www.nps.gov/fopo/index.htm",
+    "address": {
+      "line1": "Fort Point National Historic Site",
+      "line2": "Building 999, Marine Drive",
+      "city": "San Francisco",
+      "state": "CA",
+      "postalCode": "94129"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 5:00PM",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "The days in which Fort Point is open varies throughout the year. Fall through Spring the fort is generally open Friday through Sunday. During the summer season the fort is open 5 days a week most years. The timing of the shift in days is not consistent from year to year but generally occurs in October and May. Hours are 10 am to 5 pm. Closed on Thanksgiving, Christmas, and New Year's Day. Visit our web site for current open days."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Fort Point is typically cold and windy throughout the year. Fog is especially common in the summer months. Come prepared with layers and windbreakers for maximum comfort."
+  },
+  "images": [
+    {
+      "id": "fopo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C800CC0-1DD8-B71B-0B80D91C47D8ACE5.jpg",
+      "title": "Fort Point from Marine Drive",
+      "altText": "Fort Point with visitors approaching on road in front and Golden Gate Bridge above.",
+      "caption": "Fort Point offers stunning views from under the south end of the Golden Gate Bridge.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": true
+    },
+    {
+      "id": "fopo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C801171-1DD8-B71B-0BE6AFF91B05532B.jpg",
+      "title": "Fort Point Sunset View",
+      "altText": "Golden sunset light on the roof of Fort Point with Golden Gate Bridge and bay behind.",
+      "caption": "Visitors can enjoy winter sunsets from the top of Fort Point.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "fopo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80132D-1DD8-B71B-0BAE3D20C07909AD.jpg",
+      "title": "Brick Casemates",
+      "altText": "Arched red brick casemates extend into the distance at Fort Point.",
+      "caption": "Fort Point is known for its masterful masonry work.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "fopo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C801528-1DD8-B71B-0B869B86127D73A4.jpg",
+      "title": "Civil War Days at Fort Point",
+      "altText": "A cannon stands in front of Civil War re-enactors talking to the public.",
+      "caption": "Visitors can interact with Civil War re-enactors twice in January and August at the Fort.",
+      "credit": "NPS Photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "fopo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8017DE-1DD8-B71B-0B1115FD23682551.jpg",
+      "title": "Fort Point Lighthouse",
+      "altText": "View of Fort Point lighthouse through red brick arches",
+      "caption": "Fort Point has a historic lighthouse mounted on its top.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fopo/index.htm",
+    "directions": "http://www.nps.gov/fopo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Forts",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Military",
+    "Artillery",
+    "US Army",
+    "Wars and Conflicts",
+    "Civil War",
+    "World War II",
+    "Scenic Views",
+    "National Historic Site",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

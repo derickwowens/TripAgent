@@ -1,0 +1,297 @@
+{
+  "id": "np-prwi",
+  "name": "Prince William Forest Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Prince William Forest Park is an oasis, a respite of quiet and calm. In 1936, Chopawamsic Recreation Area opened its gates to house children's 'relief' camps during the Great Depression. Renamed Prince William Forest Park in 1948, these fragrant woods and trickling streams have welcomed generations of campers, hikers, bikers and nature lovers. Discover Northern Virginia's best kept secret!",
+  "shortDescription": "Prince William Forest Park is an oasis, a respite of quiet and calm. In 1936, Chopawamsic Recreation Area opened its gates to house children's 'relief' camps during the Great Depression. Renamed Princ...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.58589108,
+    "longitude": -77.38910997
+  },
+  "nationalParkInfo": {
+    "parkCode": "prwi",
+    "npsId": "28ECD546-FD68-4640-8A31-773F7F7A5211",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/prwi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/prwi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "703-221-7181",
+    "email": "prwi_info@nps.gov",
+    "website": "https://www.nps.gov/prwi/index.htm",
+    "address": {
+      "line1": "18170 Park Entrance Road",
+      "line2": "",
+      "city": "Triangle",
+      "state": "VA",
+      "postalCode": "22172"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The trails at Prince William Forest Park are open every day from sunrise to sunset for recreation use. The visitor center is open every day of the week from 8:00 a.m. to 4:00 p.m. The visitor center is closed on Thanksgiving Day, Christmas Day, and New Year's Day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Valid seven (7) consecutive days.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Valid seven (7) consecutive days.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Prince William Forest Park experiences all four seasons. Spring and fall are generally comfortable with precipitation possible. Summers can be hot and humid with average temperatures in the high 80s and with sudden thunderstorms possible. July and August are the hottest months. Winters can be cold with average temperatures in the winter of 41 degrees with variable precipitation. The main park roads can close due to snowy conditions, though cross-country skiing and snow-shoeing are permitted."
+  },
+  "images": [
+    {
+      "id": "prwi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82646F-1DD8-B71B-0BBBC3BB74314991.jpg",
+      "title": "Carter Pond",
+      "altText": "Carter Pond on a sunny day in summer",
+      "caption": "Carter Pond is a great place to fish.",
+      "credit": "NPS Photo/Cecilia Lynch",
+      "isPrimary": true
+    },
+    {
+      "id": "prwi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C826997-1DD8-B71B-0B7F4E484362B7A1.jpg",
+      "title": "Farms to Forest Trail",
+      "altText": "Farms to Forest Trail surrounded by ferns",
+      "caption": "The Farms to Forest Trail is a favorite among visitors.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "prwi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C826DB1-1DD8-B71B-0B970A23B0173404.jpg",
+      "title": "Mountain Laurel",
+      "altText": "Mountain Laurel blooming near Parking Lot I.",
+      "caption": "Mountain Laurel can be spotted throughout the park.",
+      "credit": "NPS Photo/Cecilia Lynch",
+      "isPrimary": false
+    },
+    {
+      "id": "prwi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C826EFC-1DD8-B71B-0B4CFE1C6964BEFC.jpg",
+      "title": "Fall Foliage",
+      "altText": "A tree with orange leaves against the blue sky",
+      "caption": "Fall is a beautiful time of year in the park.",
+      "credit": "NPS Photo/Cecilia Lynch",
+      "isPrimary": false
+    },
+    {
+      "id": "prwi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82F09C-1DD8-B71B-0B11BB096430EAEB.jpg",
+      "title": "Near Parking Lot H",
+      "altText": "Fall colors come alive near Parking Lot H",
+      "caption": "Many people visit the park to see the brilliant fall colors",
+      "credit": "NPS Photo/Cecilia Lynch",
+      "isPrimary": false
+    },
+    {
+      "id": "prwi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82F519-1DD8-B71B-0B60F81DB269AB7E.jpg",
+      "title": "Tree on South Valley Trail",
+      "altText": "Tuliptrees grow tall with blue sky above them",
+      "caption": "Tuliptrees are a mid-secession tree in the forest.",
+      "credit": "NPS Photo/Cecilia Lynch",
+      "isPrimary": false
+    },
+    {
+      "id": "prwi-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82F835-1DD8-B71B-0B8F32A29F4BDF0B.jpg",
+      "title": "Historic Park Sign for Chopawamsic RDA",
+      "altText": "An original 1930's sign for Chopawamsic National Recreational Demonstration Area",
+      "caption": "A sign on Joplin Road marks the park entrance in the mid-1930s.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "89DA72D0-16D6-4C1C-89D4-103D94F1F63D",
+      "name": "Orienteering"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/prwi/index.htm",
+    "directions": "http://www.nps.gov/prwi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "American Revolution",
+    "Arts",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Great Depression",
+    "Industry",
+    "Mining",
+    "Native American Heritage",
+    "Transportation",
+    "Bridges",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "World War II",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "Trails",
+    "Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

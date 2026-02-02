@@ -1,0 +1,235 @@
+{
+  "id": "np-deto",
+  "name": "Devils Tower National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "WY",
+  "stateName": "Wyoming",
+  "region": "west",
+  "description": "The Tower is an astounding geologic feature that protrudes out of the prairie surrounding the Black Hills. It is considered sacred by Northern Plains Indians and indigenous people. Hundreds of parallel cracks make it one of the finest crack climbing areas in North America. Devils Tower entices us to learn more, explore more and define our place in the natural and cultural world.",
+  "shortDescription": "The Tower is an astounding geologic feature that protrudes out of the prairie surrounding the Black Hills. It is considered sacred by Northern Plains Indians and indigenous people. Hundreds of paralle...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 44.59064655,
+    "longitude": -104.7156341
+  },
+  "nationalParkInfo": {
+    "parkCode": "deto",
+    "npsId": "335368E4-B5CE-4370-8324-4A841AFA5025",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/deto/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/deto/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3074675283",
+    "email": "deto_interpretation@nps.gov",
+    "website": "https://www.nps.gov/deto/index.htm",
+    "address": {
+      "line1": "149 State Highway 110",
+      "line2": "",
+      "city": "Devils Tower",
+      "state": "WY",
+      "postalCode": "82714"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Park roads and trails are open 24 hours/day.  This visitor center bookstore is open on a limited basis. The Belle Fourche River Campground is open mid-May to mid-October."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Fee for a single, private, non-commercial vehicle and all its passengers.  Note: In summer it's a good idea to arrive at the entrance station before 10 am or after 4 pm to avoid congestion and find better parking options.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Note: In summer it's a good idea to arrive at the entrance station before 10 am or after 4 pm to avoid congestion and find better parking options.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual when entering on foot or bicycle. Individuals 15 years of age or younger are admitted free. This may also be used to calculate cost for organized non-profit groups (service organizations, scout groups, religious groups, etc.)",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "These entrance fees are based upon the seating capacity of the commercial tour vehicle - not the actual number of passengers. The fee is $25 plus $15/person, not to exceed $40.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "These entrance fees are based upon the seating capacity of the commercial tour vehicle - not the actual number of passengers.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "These entrance fees are based upon the seating capacity of the commercial tour vehicle - not the actual number of passengers.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "These entrance fees are based upon the seating capacity of the commercial tour vehicle - not the actual number of passengers.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Obtain forecast information before beginning your adventure at Devils Tower National Monument and observe changing weather conditions. Thunderstorms can develop quickly bringing lightning, hail, rain, slippery rock surfaces, and hypothermia. Summer days can bring very hot temperatures. Carry enough water, and realize the rock of the Tower can reach over 100 degrees Fahrenheit. Winter weather can bring blowing snow and road closures. Check local forecasts and road conditions before visiting."
+  },
+  "images": [
+    {
+      "id": "deto-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C812956-1DD8-B71B-0B0AB4D807441C9D.jpg",
+      "title": "Devils Tower looming above the trees",
+      "altText": "Devils Tower looming above the trees",
+      "caption": "Devils Tower looming above the trees",
+      "credit": "NPS/ S. Carter",
+      "isPrimary": true
+    },
+    {
+      "id": "deto-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C812B21-1DD8-B71B-0B46E0A561AF4ABA.jpg",
+      "title": "Devils Tower from the Joyner Ridge Trail",
+      "altText": "Devils Tower from the Joyner Ridge Trail",
+      "caption": "Devils Tower from the Joyner Ridge Trail",
+      "credit": "NPS/ S. Carter",
+      "isPrimary": false
+    },
+    {
+      "id": "deto-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C812C79-1DD8-B71B-0BC6A4C111355453.jpg",
+      "title": "Fall at Devils Tower",
+      "altText": "Fall at Devils Tower",
+      "caption": "Fall at Devils Tower",
+      "credit": "NPS/ S. Carter",
+      "isPrimary": false
+    },
+    {
+      "id": "deto-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C812E11-1DD8-B71B-0BB94F4B2FEAAEE7.jpg",
+      "title": "Prairie dogs at Devils Tower",
+      "altText": "Prairie dogs at Devils Tower",
+      "caption": "Prairie dogs at Devils Tower",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "deto-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C812F78-1DD8-B71B-0B434971F59DAE06.jpg",
+      "title": "Devils Tower overlooking the Circle of Sacred Smoke Sculpture",
+      "altText": "Devils Tower overlooking the Circle of Sacred Smoke Sculpture",
+      "caption": "Devils Tower overlooking the Circle of Sacred Smoke Sculpture",
+      "credit": "NPS/ S. Carter",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/deto/index.htm",
+    "directions": "http://www.nps.gov/deto/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Explorers and Expeditions",
+    "Native American Heritage",
+    "Presidents",
+    "Schools and Education",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Westward Expansion",
+    "Homesteading",
+    "The Gold Rush",
+    "Women's History",
+    "Forests and Woodlands",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Buttes",
+    "Trails",
+    "National Monument",
+    "WY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

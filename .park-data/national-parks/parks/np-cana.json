@@ -1,0 +1,217 @@
+{
+  "id": "np-cana",
+  "name": "Canaveral National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Discover a dynamic barrier island shaped by dunes, coastal hammocks, and Mosquito Lagoon. Walk among ancient Timucua shell mounds and connect with thousands of years of human history. Immerse yourself in a protected sanctuary where diverse plants and wildlife thrive—making Canaveral National Seashore a place where nature, history, and discovery come together.",
+  "shortDescription": "Discover a dynamic barrier island shaped by dunes, coastal hammocks, and Mosquito Lagoon. Walk among ancient Timucua shell mounds and connect with thousands of years of human history. Immerse yourself...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 28.78637529,
+    "longitude": -80.75419576
+  },
+  "nationalParkInfo": {
+    "parkCode": "cana",
+    "npsId": "FFD294C0-8027-42EC-B395-9C3BF2B80F49",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cana/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cana/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3864283384",
+    "email": "cana_interpretation@nps.gov",
+    "website": "https://www.nps.gov/cana/index.htm",
+    "address": {
+      "line1": "Apollo Visitor Center,",
+      "line2": "7611 S Atlantic Ave",
+      "city": "New Smyrna Beach",
+      "state": "FL",
+      "postalCode": "32169"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 6:00PM",
+    "tuesday": "6:00AM - 6:00PM",
+    "wednesday": "6:00AM - 6:00PM",
+    "thursday": "6:00AM - 6:00PM",
+    "friday": "6:00AM - 6:00PM",
+    "saturday": "6:00AM - 6:00PM",
+    "sunday": "6:00AM - 6:00PM",
+    "description": "Canaveral National Seashore is open 7 days a week. Visitor hours are 6:00 am to 6:00 pm. Last entry into the seashore is at 5:00 pm."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits the passholder and passengers of a single vehicle. Good for 7 consecutive days at all park entrances.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Good for 7 consecutive days at all park entrances. Admits one individual hiker, bicyclist, or pedestrian.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summer: Hot & humid (Temperatures average in the 90's) Winter months: Temperatures in the 40–70-degree range, with a \"cold spell\" where temperatures lower to the mid-30's). Hurricane Season: June 1st through November 30th (most activity normally occurs in August through October)"
+  },
+  "images": [
+    {
+      "id": "cana-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/55D27C61-D079-2CAA-76210898EB90B25C.jpg",
+      "title": "Apollo Beach",
+      "altText": "Dune plants, beach, and ocean.",
+      "caption": "Enjoy a day at the beach.",
+      "credit": "NPS Photo Lord",
+      "isPrimary": true
+    },
+    {
+      "id": "cana-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5D4B4EAF-1DD8-B71B-0BBF464ECF9C9CFD.png",
+      "title": "Eldora State House",
+      "altText": "Eldora State House is an early 20th century homestead along Moquito Lagoon.",
+      "caption": "Eldora State House is an early 20th century homestead along Moquito Lagoon.",
+      "credit": "NPS/Photo: L. Peters",
+      "isPrimary": false
+    },
+    {
+      "id": "cana-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EA883D61-07B3-771E-430860E22CC87D2D.jpg",
+      "title": "Park Entrance Sign",
+      "altText": "Park entrance sign with blue sky as a back drop.",
+      "caption": "Apollo Beach and Playalinda Beach both display this entrance sign before the entrance stations.",
+      "credit": "NPS/Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cana-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/55A658E5-A431-F686-8F2AAEDD03AC5DCA.jpg",
+      "title": "Apollo Visitor Center",
+      "altText": "On the dock facing the visitor center.",
+      "caption": "The Apollo Visitor Center as viewed from the dock.",
+      "credit": "NPS Photo Lord",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cana/index.htm",
+    "directions": "http://www.nps.gov/cana/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Tortoises and Turtles",
+    "Wetlands",
+    "National Seashore",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

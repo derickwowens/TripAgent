@@ -1,0 +1,146 @@
+{
+  "id": "np-arho",
+  "name": "Arlington House, The Robert E. Lee Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Arlington House is the nation’s memorial to Robert E. Lee. It honors him for specific reasons, including his role in promoting peace and reunion after the Civil War. In a larger sense it exists as a place of study and contemplation of the meaning of some of the most difficult aspects of American history: military service; sacrifice; citizenship; duty; loyalty; slavery and freedom.",
+  "shortDescription": "Arlington House is the nation’s memorial to Robert E. Lee. It honors him for specific reasons, including his role in promoting peace and reunion after the Civil War. In a larger sense it exists as a p...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.8822021484,
+    "longitude": -77.0734786987
+  },
+  "nationalParkInfo": {
+    "parkCode": "arho",
+    "npsId": "E84B1E08-CCE8-4FFF-8DB6-B92F40953225",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/arho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/arho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7032351530",
+    "email": "gwmp_superintendent@nps.gov",
+    "website": "https://www.nps.gov/arho/index.htm",
+    "address": {
+      "line1": "Arlington House, The Robert E. Lee Memorial",
+      "line2": "Arlington National Cemetery",
+      "city": "Arlington",
+      "state": "VA",
+      "postalCode": "22211"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:30AM - 4:30PM",
+    "tuesday": "9:30AM - 4:30PM",
+    "wednesday": "9:30AM - 4:30PM",
+    "thursday": "9:30AM - 4:30PM",
+    "friday": "9:30AM - 4:30PM",
+    "saturday": "9:30AM - 4:30PM",
+    "sunday": "9:30AM - 4:30PM",
+    "description": "Arlington House and grounds, the museum, and the Enslaved People's Quarters-North and the Enslaved People's Quarters-South are open daily from 9:30 a.m. to 4:30 p.m. Last entry into the plantation house is 4:00 p.m.\n\nThe bookstore is open from 9:00 a.m. to 4:30 p.m. but closes daily for a half hour lunch.\n\nClosed on New Year's Day, Thanksgiving Day, and Christmas Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers at Arlington House are generally hot and humid, with daytime highs frequently above 90 degrees Fahrenheit and scattered afternoon thunderstorms. Please carry water while participating in physical activity and be prepared to take shelter from lightning. Winters at Arlington are generally cold, with nighttime lows frequently near freezing and occasional snowfall. Please be alert for snowplows and icy spots on roadways. Weather during spring and fall is generally moderate, but can change quickly."
+  },
+  "images": [
+    {
+      "id": "arho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6780B46-B0C0-FB79-E17378C527E54DA7.jpeg",
+      "title": "Arlington House, The Robert E. Lee Memorial",
+      "altText": "Columns of Arlington House",
+      "caption": "Arlington House, The Robert E. Lee Memorial",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "arho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1E8E848E-FB49-785E-92A1CF5486BE6539.jpg",
+      "title": "Arlington House - Aerial photo",
+      "altText": "Aerial view of Arlington House surrounded by fall foliage.",
+      "caption": "This image was captured from a manned helicopter flight.",
+      "credit": "NPS / Marcey Frutchey",
+      "isPrimary": false
+    },
+    {
+      "id": "arho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1ED797FB-AC9B-5464-F5D8B715F795F420.jpg",
+      "title": "Arlington House - Interior",
+      "altText": "Plates and a kettle on a table.",
+      "caption": "Explore inside Arlington House and its buildings.",
+      "credit": "NPS / Liz Macro",
+      "isPrimary": false
+    },
+    {
+      "id": "arho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F050F7E-AB95-6C93-052E28C7508E9D09.jpg",
+      "title": "Arlington House Interior",
+      "altText": "Portraits hang on the walls of the parlor room with red velvet furniture and a small dining table.",
+      "caption": "The parlor room in Arlington House",
+      "credit": "NPS / Liz Macro",
+      "isPrimary": false
+    },
+    {
+      "id": "arho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F3EE25F-AB7C-AA8D-3CD1B7773A1D83C5.jpg",
+      "title": "View from Arlington House",
+      "altText": "A park ranger talks to people overlooking Washington, DC",
+      "caption": "Get great views of Washington, DC, from Arlington House!",
+      "credit": "NPS / Marcey Frutchey",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/arho/index.htm",
+    "directions": "https://www.nps.gov/arho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "American Revolution",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Military",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Civil War",
+    "Women's History",
+    "",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

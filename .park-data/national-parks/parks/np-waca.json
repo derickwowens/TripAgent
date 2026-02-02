@@ -1,0 +1,216 @@
+{
+  "id": "np-waca",
+  "name": "Walnut Canyon National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Since time immemorial, Indigenous Peoples have lived and traveled throughout Walnut Canyon’s dynamic landscape. Vibrant communities built their homes in the cliffs and farmed along the canyon’s rim. Today the park preserves this landscape, and the ancestral homes in and around the canyon.",
+  "shortDescription": "Since time immemorial, Indigenous Peoples have lived and traveled throughout Walnut Canyon’s dynamic landscape. Vibrant communities built their homes in the cliffs and farmed along the canyon’s rim. T...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.16822994,
+    "longitude": -111.5024239
+  },
+  "nationalParkInfo": {
+    "parkCode": "waca",
+    "npsId": "8DFC9C19-FF0A-4B48-A34F-FD3D02BFE100",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/waca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/waca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9285263367",
+    "email": "flag_information@nps.gov",
+    "website": "https://www.nps.gov/waca/index.htm",
+    "address": {
+      "line1": "3 Walnut Canyon Road",
+      "line2": "",
+      "city": "Flagstaff",
+      "state": "AZ",
+      "postalCode": "86004"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Walnut Canyon National Monument is open daily from 9:00 a.m. to 5:00 p.m. Access to park's trails and views of the canyon are not accessible outside of operating hours. \n\nAccess to the Island Trail closes at 4:00 pm. Visitors are encouraged to begin the Rim Trail by 4:30 p.m. to ensure enough time to complete the trail by 5:00 p.m. when the park's gates are closed.\n\n*The park is closed on December 25th, and January 1st. During these closures there is no access to park trails or viewpoints."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This pass covers the pass holder and up to 15 passengers of a single, private (non-commercial) vehicle at Walnut Canyon National Monuments for 1-7 days.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual bicyclist, hiker, or pedestrian visiting the facility without a private vehicle. Good for Walnut Canyon National Monument for 1-7 days. A pass is not required for individuals 15 or younger.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial groups pay the per person fee up until the cost exceeds that of the commercial rate for the same size vehicle.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Bona fide educational institutions visiting for non-recreational purposes whose visit pertains directly to established curriculum are exempt from paying entry fees. Apply for an educational fee waiver at least 4 weeks in advance by submitting an educational fee waiver. Please see the below link to access the waiver.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Covers occupants of a vehicle with an occupancy of 1-6 individuals at Sunset Crater, Wupatki, and Walnut Canyon for 1 day. A commercial group is defined as a group that is entering for the purpose of providing commercial tour services within the unit. A commercial group consists of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure/recreational purpose by an organization that realizes financial gain through the provision of the service.",
+      "cost": "28.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Covers occupants of a vehicle with an occupancy of 7-15 individuals at Sunset Crater, Wupatki, and Walnut Canyon for 1 day. A commercial group is defined as a group that is entering for the purpose of providing commercial tour services within the unit. A commercial group consists of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure/recreational purpose by an organization that realizes financial gain through the provision of the service.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Covers occupants of a vehicle with an occupancy of 16+ individuals at Sunset Crater, Wupatki, and Walnut Canyon for 1 day. A commercial group is defined as a group that is entering for the purpose of providing commercial tour services within the unit. A commercial group consists of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure/recreational purpose by an organization that realizes financial gain through the provision of the service.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Be prepared for variable and extreme weather conditions. You may expect high winds any time of year, summer temperatures above 95ºF (35ºC), afternoon storms July–September, and heavy snow from fall to spring. Dress in layers, as weather at Walnut Canyon can change quickly at any time of year."
+  },
+  "images": [
+    {
+      "id": "waca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BD960798-C876-B810-51981256E26FDB64.jpg",
+      "title": "Walnut Canyon, cliff dwellings, and the San Francisco Peaks",
+      "altText": "Walnut Canyon's cliff dwellings are illuminated by the afternoon sun.",
+      "caption": "The dynamic landscape of Walnut Canyon was home to a thriving Native American community roughly 900 years ago.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "waca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E56A7-1DD8-B71B-0B9142948979784E.jpg",
+      "title": "Cliff Dwellings",
+      "altText": "sunlight illuminates stone walls in a canyon cliff dwelling",
+      "caption": "Walnut Canyon National Monument protects a series of ancient cliff dwellings built between 1125 and 1250 CE.",
+      "credit": "NPS Photo / Marge Ullmann",
+      "isPrimary": false
+    },
+    {
+      "id": "waca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E5BAF-1DD8-B71B-0BFDC7B12D25E70F.jpg",
+      "title": "Walnut Canyon Raven",
+      "altText": "a common raven landing on a barren juniper branch",
+      "caption": "At the rim of Walnut Canyon, visitors stand at eye level with soaring ravens, eagles, and other birds",
+      "credit": "NPS Photo / Case Griffing",
+      "isPrimary": false
+    },
+    {
+      "id": "waca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E5A17-1DD8-B71B-0B1E9FC73E4E3962.jpg",
+      "title": "Walnut Canyon Snow",
+      "altText": "warm sunlight illuminates a cliff dwelling wall beside a snowy trail",
+      "caption": "The 0.9-mile (1.4 km) Island Trail leads visitors down 240 stairs to explore 25 cliff dwelling rooms.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "waca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E5E9C-1DD8-B71B-0B4DBC28FEC5F0A0.jpg",
+      "title": "A Visitor at Walnut Canyon",
+      "altText": "a visitor looks out over Walnut Canyon from the trail",
+      "caption": "More than 125,000 people visit Walnut Canyon each year.",
+      "credit": "NPS Photo / Case Griffing",
+      "isPrimary": false
+    },
+    {
+      "id": "waca-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E5887-1DD8-B71B-0B755A17D0EF3190.jpg",
+      "title": "Walnut Canyon Rim Overlook",
+      "altText": "a circular overlook at the edge of the canyon rim",
+      "caption": "The 0.7-mile (1.1 km) Rim Trail reveals expansive views of Walnut Canyon and its cliff dwellings.",
+      "credit": "NPS Photo / Marge Ullmann",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/waca/index.htm",
+    "directions": "http://www.nps.gov/waca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Cliff Dwellings",
+    "Native American Heritage",
+    "Canyons and Canyonlands",
+    "Natural Sounds",
+    "Scenic Views",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

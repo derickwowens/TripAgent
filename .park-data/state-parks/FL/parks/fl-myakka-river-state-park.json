@@ -1,0 +1,44 @@
+{
+  "id": "fl-myakka-river-state-park",
+  "name": "Myakka River State Park",
+  "parkType": "state_park",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "coordinates": {
+    "latitude": 0,
+    "longitude": 0
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.floridastateparks.org/parks-and-trails/myakka-river-state-park",
+      "isPrimary": true,
+      "source": "manual"
+    },
+    {
+      "type": "reservation",
+      "url": "https://reserve.floridastateparks.org/Web/",
+      "isPrimary": true,
+      "source": "manual"
+    }
+  ],
+  "contact": {
+    "phone": "850-245-2157",
+    "reservationUrl": "https://reserve.floridastateparks.org/"
+  },
+  "quickLinks": {
+    "officialWebsite": "https://www.floridastateparks.org/parks-and-trails/myakka-river-state-park",
+    "reservations": "https://reserve.floridastateparks.org/Web/"
+  },
+  "metadata": {
+    "sources": [
+      {
+        "source": "manual",
+        "lastSynced": "2026-02-02T02:30:24.137Z"
+      }
+    ],
+    "createdAt": "2026-02-02T02:30:24.137Z",
+    "updatedAt": "2026-02-02T02:30:24.137Z",
+    "version": 1
+  }
+}

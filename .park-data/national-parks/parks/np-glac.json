@@ -1,0 +1,409 @@
+{
+  "id": "np-glac",
+  "name": "Glacier National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MT",
+  "stateName": "Montana",
+  "region": "west",
+  "description": "A showcase of melting glaciers, alpine meadows, carved valleys, and spectacular lakes. With over 700 miles of trails, Glacier is a paradise for adventurous visitors seeking a landscape steeped in human culture. Relive the days of old through historic chalets, lodges, and the famous Going-to-the-Sun Road.",
+  "shortDescription": "A showcase of melting glaciers, alpine meadows, carved valleys, and spectacular lakes. With over 700 miles of trails, Glacier is a paradise for adventurous visitors seeking a landscape steeped in huma...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 48.68414678,
+    "longitude": -113.8009306
+  },
+  "nationalParkInfo": {
+    "parkCode": "glac",
+    "npsId": "2B5178C6-2446-488C-AC31-47E3CEBF7159",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/glac/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/glac/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "406-888-7800",
+    "email": "glac_questions@nps.gov",
+    "website": "https://www.nps.gov/glac/index.htm",
+    "address": {
+      "line1": "64 Grinnell Drive",
+      "line2": "Glacier National Park Headquarters",
+      "city": "West Glacier",
+      "state": "MT",
+      "postalCode": "59936"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Glacier National Park is open 24 hours a day 365 days of the year. An entrance fee is required, even when entrance stations are not staffed. Instructions are available at each entrance for self-payment."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "(Winter Rate - $25.00, November 1 to April 30)\nThis is an entrance fee for all persons traveling in a single, private, non-commercial vehicle (car/truck/van). The pass is good for seven days and is non-transferable. Visitors can enter the park at any time, if the entrance station is not staffed, a self-registration area is available for purchasing a 7-day park pass.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "(Winter Rate - $15.00, November 1 to April 30)\nThis is a per person entrance fee for a visitor traveling on foot, bicycle, or for individuals traveling together in a vehicle as a non-commercial, organized group. The pass is good for seven days and is non-transferable.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "(Winter Rate - $20.00, November 1 to April 30)\nValid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Entrance fees are based on the seating capacity of the vehicle (driver not included). Commercial Sedan entrance fee is $25, plus $20 per person, 16 years of age or older. The pass is good for seven days and is non-transferable.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Entrance fees are based on the seating capacity of the vehicle (driver not included). Commercial Van entrance fee is $75 regardless of occupancy. The pass is good for seven days and is non-transferable.",
+      "cost": "75.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Entrance fees are based on the seating capacity of the vehicle (driver not included). Commercial Mini-bus entrance fee is $100 regardless of occupancy. The pass is good for seven days and is non-transferable.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Entrance fees are based on the seating capacity of the vehicle (driver not included). Commercial Motor Coach fee is $200 regardless of occupancy. The pass is good for seven days and is non-transferable.",
+      "cost": "200.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Glacier National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Glacier's weather is highly variable and can be extreme. Expect warm, sunny summer days but be ready for any type of conditions. In the winter, temperatures can fall well below freezing and typically the park receives considerable amounts of snow. Glacier's geography, straddling the Continental Divide, sets the stage for clashes of two very different climates. Warm, wet Pacific air moves in from the west, and cold, dry Arctic air flows from the northeast. They meet at the Divide."
+  },
+  "images": [
+    {
+      "id": "glac-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C20E6CD3-CDF7-B3AB-8448CDCD7FD590FF.jpg",
+      "title": "Glacier Lilies near Logan Pass",
+      "altText": "Large mountains dotted with snow loom above a rocky meadow filled with yellow flowers.",
+      "caption": "Glacier lilies dot the landscape off the Highline Trail.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "glac-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C19B20BB-C8CC-5BAB-22E3CA6AF9B2B67C.jpg",
+      "title": "St. Mary Falls",
+      "altText": "A double waterfall blurs over layered rocks.",
+      "caption": "Glacier National Park is sculpted by water.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glac-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FF648-1DD8-B71B-0B074AA63C93947A.jpg",
+      "title": "Lobby of the Lake McDonald Lodge",
+      "altText": "Looking down into the lobby of the Lake McDonald Lodge from the balcony",
+      "caption": "Lobby of the historic Lake McDonald Lodge",
+      "credit": "NPS Photo / Jacob W. Frank",
+      "isPrimary": false
+    },
+    {
+      "id": "glac-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/656FC997-DD74-8921-C68040FE1A2CA8D2.jpg",
+      "title": "Alpine Sunset",
+      "altText": "Clouds of orange and red sit above dark-gray mountains; snow dots the mountain peaks.",
+      "caption": "Majestic Heavens Peak is easily viewed from the Going-to-the-Sun Road.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glac-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/89491DA7-0FDD-BDB9-D0D03D996091EA72.jpg",
+      "title": "Swiftcurrent Fire Lookout",
+      "altText": "A small, brown and white structure sits on a rocky top with mountain peaks in the distance.",
+      "caption": "The historic Swiftcurrent Lookout was built in a Swiss chalet architectural style.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glac-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C1C49B92-9BE9-6A08-F2C851A2A4ACEC8D.jpg",
+      "title": "East Side Sunset",
+      "altText": "Jagged peaks rise out of a forested valley and an empty road curves off into the distance.",
+      "caption": "Going-to-the-Sun Road in the St. Mary Valley",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glac-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8B6A7473-B676-45CC-5663F191736048A4.jpg",
+      "title": "Glacier's Night Sky",
+      "altText": "Silhouetted mountains and flowers against a night sky filled with stars and a milky band of light.",
+      "caption": "Glacier's dark sky is important to wildlife and people.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "977B3209-68A2-4BCE-97A9-EA0CAC320664",
+      "name": "Mountain Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/glac/index.htm",
+    "directions": "http://www.nps.gov/glac/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Colonization and Settlement",
+    "Engineering",
+    "Great Depression",
+    "Music",
+    "Native American Heritage",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Trains and Railroads",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Fossils and Paleontology",
+    "Geology",
+    "Glaciers",
+    "Grasslands",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Wilderness",
+    "National Park",
+    "MT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

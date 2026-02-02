@@ -1,0 +1,215 @@
+{
+  "id": "np-hocu",
+  "name": "Hopewell Culture National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "OH",
+  "stateName": "Ohio",
+  "region": "midwest",
+  "description": "Nearly 2000 years ago, Native Americans built dozens of monumental mounds and earthen enclosures in southern Ohio. These earthwork complexes were ceremonial landscapes used for feasts, funerals, rituals, and rites of passage associated with a Native American religious movement that swept over half the continent for almost 400 years. Come walk among the earthworks and experience the past.",
+  "shortDescription": "Nearly 2000 years ago, Native Americans built dozens of monumental mounds and earthen enclosures in southern Ohio. These earthwork complexes were ceremonial landscapes used for feasts, funerals, ritua...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 39.31594374,
+    "longitude": -83.08049456
+  },
+  "nationalParkInfo": {
+    "parkCode": "hocu",
+    "npsId": "BE344FC9-4366-493D-B881-4E5AD4973CF5",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hocu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hocu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7407741125",
+    "email": "hocu_info@nps.gov",
+    "website": "https://www.nps.gov/hocu/index.htm",
+    "address": {
+      "line1": "16062 State Route 104",
+      "line2": "",
+      "city": "Chillicothe",
+      "state": "OH",
+      "postalCode": "45601"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The following list represents the hours for the park grounds at Mound City Group, Hopewell Mound Group, Hopeton Earthworks and Seip Earthworks are open every day of the year, during daylight hours.  All park grounds officially close at sunset and re-open at sunrise.  For hours of operation of the park's visitor center, please proceed to the \"Visitor Center\" section.  There you will find the normal hours of operation for the park's only visitor center at Mound City Group."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park lies in a humid continental zone with a generally temperate climate. Winters are mildly cold with average temperatures around 30 degrees (F). Summers are hot and humid with an average temperature around 75 degrees (F). Average annual total rainfall is just under 38\". Snowfall in the winter is generally light with an average total snowfall of less than 24\"."
+  },
+  "images": [
+    {
+      "id": "hocu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C0231CE-C54D-AE33-ACAB8874C99A1B84.jpg",
+      "title": "Mound City Group sunrise",
+      "altText": "An early morning sun casting long shadows over grass-covered mounds.",
+      "caption": "Dawn at the Mound City Group as the sun casts long shadows over the grass.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": true
+    },
+    {
+      "id": "hocu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C19804E-C9FA-0044-CA3D9B9AE87C8E71.jpg",
+      "title": "The Mound City Group visitor center",
+      "altText": "A tan building with a red-peaked roof surrounded by green grass and tan sidewalks",
+      "caption": "The Mound City Group visitor center main entrance with Mound City Group in the background view",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C34A236-F215-9A7D-92B3A6134E6B1F65.jpg",
+      "title": "Hopeton Earthworks",
+      "altText": "A green, grassy field with taller areas of uncut grass in geometric shapes under a partly cloudy sky",
+      "caption": "The overlook area of Hopeton Earthworks allowing visitors to view the interpretive mowing of the geometric shapes",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C4799B2-E5CA-86AF-7B9B1A5FA18FD503.jpg",
+      "title": "Hopewell Mound Group overlook",
+      "altText": "An overlook area showing a green grassy field with a panel showing artwork and text",
+      "caption": "The main overlook area of Hopewell Mound Group showing the enormity of the site.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C5C4856-F2E5-7515-9F4353DC56C90C2F.jpg",
+      "title": "Seip Earthworks",
+      "altText": "A grassy trail running between tall trees in a green field leads to a large grass-covered mound",
+      "caption": "A cut grass trail leading to the large Seip Mound at Seip Earthworks.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C9A7FB8-DCE9-0BB7-8944A44404F98587.jpg",
+      "title": "Ranger Desk",
+      "altText": "A tan-orange curved information desk with a man sitting behind the counter",
+      "caption": "The information desk inside of the Mound City Group visitor center.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0CB5A3A5-DE3C-2D8C-18F4DF716EADD7DD.jpg",
+      "title": "School field trips at the park",
+      "altText": "Several children walking with a park ranger in a flat hat near grass-covered mounds.",
+      "caption": "A school field trip visiting the Mound City Group as a ranger leads them on a tour.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0CCD1B11-B52E-F908-4DBF32381F9F2C5A.jpg",
+      "title": "The Mound City Group bookstore",
+      "altText": "Several square pedestals hold books and other gifts in the middle of a carpeted floor",
+      "caption": "The bookstore inside of the Mound City Group visitor center.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0CF8245C-001D-3703-E535AF4CC704236B.jpg",
+      "title": "Mound City Group river walk",
+      "altText": "An asphalt path with a steel handrail on the left with green vegetative slope to the right.",
+      "caption": "The paved river walk trail at the Mound City Group.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "hocu-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0D19BD3C-EB7E-0902-5EBA93680882BA45.jpg",
+      "title": "A coyote in the park",
+      "altText": "A gray coyote begins walking in the grass in front of a grass-covered mound",
+      "caption": "A lone coyote stares at the photographer while walking in front of a mound at Mound City Group.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hocu/index.htm",
+    "directions": "http://www.nps.gov/hocu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "World War I",
+    "Animals",
+    "National Historical Park",
+    "OH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

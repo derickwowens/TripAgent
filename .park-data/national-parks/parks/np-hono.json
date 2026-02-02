@@ -1,0 +1,178 @@
+{
+  "id": "np-hono",
+  "name": "Honouliuli National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "HI",
+  "stateName": "Hawaii",
+  "region": "hawaii",
+  "description": "The park is working on our General Management Plan, which we hope to be able to share with you soon.",
+  "shortDescription": "The park is working on our General Management Plan, which we hope to be able to share with you soon.",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 21.38817536,
+    "longitude": -158.0574991
+  },
+  "nationalParkInfo": {
+    "parkCode": "hono",
+    "npsId": "88F37F00-EAD0-44C4-88D1-F42D52BF661B",
+    "region": "hawaii"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hono/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hono/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "email": "hono_superintendent@nps.gov",
+    "website": "https://www.nps.gov/hono/index.htm",
+    "address": {
+      "line1": "National Park Service",
+      "line2": "Honouliuli National Historic Site",
+      "city": "Honolulu",
+      "state": "HI",
+      "postalCode": "96818"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Honouliuli National Monument is currently closed to the public."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The temperature ranges from 70°F/22°C to 85°F/29°C year round with light tropical showers common."
+  },
+  "images": [
+    {
+      "id": "hono-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86BF53-1DD8-B71B-0BB227CD8FE92BD2.png",
+      "title": "Honouliuli Historic Overlay",
+      "altText": "Satellite image of Honouliuli Gulch with a historic overlay illustrating Honouliuli's layout",
+      "caption": "Historic overlay illustrating the layout of Honouliuli Internment and POW Camp",
+      "credit": "National Register Boundary (NPS), Historic and Modern Features by Jeff Burton and Mary Farrell",
+      "isPrimary": true
+    },
+    {
+      "id": "hono-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86C1A2-1DD8-B71B-0BACB6449A996407.jpg",
+      "title": "Honouliuli Aqueduct",
+      "altText": "View down the aqueduct at Honouliuli Gulch",
+      "caption": "An aqueduct separated prisoners of war from internees at Honouliuli Internment Camp. The aqueduct provided water for both internment and prisoners of war camps.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0931A5F6-1DD8-B71B-0B3151727B3D1A29.jpg",
+      "title": "Honouliuli Retaining Wall",
+      "altText": "A stone wall",
+      "caption": "This stone wall played a crucial role in the rediscovery of Honouliuli",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0973F49C-1DD8-B71B-0B1BBB182460AB61.jpg",
+      "title": "Stakeholders Meeting",
+      "altText": "Group photo of Honouliuli stakeholders",
+      "caption": "The first Honouliuli National Monument stakeholders meeting",
+      "credit": "NPS Photo by Rebecca Schwab",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0983793E-1DD8-B71B-0BD22DCF41299C3C.jpg",
+      "title": "Modern view South from Honouliuli Overlook",
+      "altText": "Overlook towards south of Honouliuli Gulch",
+      "caption": "Looking towards the south of the gulch with Pearl Harbor in the distance",
+      "credit": "NPS Photo by Rebecca Rinas",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0998BECC-1DD8-B71B-0B1820DF48689802.jpg",
+      "title": "Modern view across from Honouliuli Overlook",
+      "altText": "Looking across the Honouliuil Gulch",
+      "caption": "A look across the gulch from the overlook",
+      "credit": "NPS Photo by Rebecca Rinas",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/09ACFADB-1DD8-B71B-0B9D5B847EB8D40C.jpg",
+      "title": "Modern view North from Honouliuli Overlook",
+      "altText": "Overview of Honouliuli Gulch looking north",
+      "caption": "Overview towards the north with the Wai‘anae range in the distance",
+      "credit": "NPS Photo by Rebecca Rinas",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/76D791A4-1DD8-B71B-0B57E2192C2AD422.jpg",
+      "title": "Honouliuli internee barracks",
+      "altText": "An overview of the American Internee barracks",
+      "caption": "The American Internee barracks at Honouliuli Compound #5, circa 1945",
+      "credit": "Photograph by R. H. Lodge. Courtesy of Japanese Cultural Center of Hawai‘i / Hawaii’s Plantation Vil",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/770AB77D-1DD8-B71B-0BA58C6592C18F6A.jpg",
+      "title": "Park Ranger",
+      "altText": "A park ranger speaking to a young visitor about the National Park",
+      "caption": "A Park Ranger helping a young visitor",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hono-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7713A3DA-1DD8-B71B-0B9A2E4F2B6F76B7.jpg",
+      "title": "USS Arizona Memorial",
+      "altText": "The USS Arizona Memorial",
+      "caption": "The USS Arizona Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hono/index.htm",
+    "directions": "http://www.nps.gov/hono/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Asian American Heritage",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Wars and Conflicts",
+    "World War II",
+    "National Historic Site",
+    "HI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

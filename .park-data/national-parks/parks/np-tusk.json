@@ -1,0 +1,163 @@
+{
+  "id": "np-tusk",
+  "name": "Tule Springs Fossil Beds National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NV",
+  "stateName": "Nevada",
+  "region": "west",
+  "description": "Over the last ~570,000 years, water has transformed the Upper Las Vegas Valley. Tule Springs Fossil Beds National Monument is an urban park that preserves the unique story of this ever-changing environment.",
+  "shortDescription": "Over the last ~570,000 years, water has transformed the Upper Las Vegas Valley. Tule Springs Fossil Beds National Monument is an urban park that preserves the unique story of this ever-changing enviro...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.3893217,
+    "longitude": -115.3202223
+  },
+  "nationalParkInfo": {
+    "parkCode": "tusk",
+    "npsId": "A576B9F9-5C0A-453C-8DB0-939883FFA57A",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tusk/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tusk/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7022938853 (Information Line)",
+    "email": "tusk_information@nps.gov",
+    "website": "https://www.nps.gov/tusk/index.htm",
+    "address": {
+      "line1": "Tule Springs Fossil Beds National Monument",
+      "line2": "Durango & Moccasin Parking Area",
+      "city": "Las Vegas",
+      "state": "NV",
+      "postalCode": "89143"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Tule Springs Fossil Beds National Monument is open during daylight hours. The park is closed at night."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Tule Springs Fossil Beds is located within the Mojave Desert, with summer temperatures often exceeding 110° F (43.3° C). There are no sources of water or shade at Tule Springs, so it is recommended that you plan your summer visit (May - September) to Tule Springs before the hottest part of the day and exercise caution. Winter temperatures range, on average, from the low 30's F to low 70's F."
+  },
+  "images": [
+    {
+      "id": "tusk-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F41B-1DD8-B71B-0B8406CBCA19D911.jpg",
+      "title": "Tule Springs Fossil Beds National Monument",
+      "altText": "Tule Springs during winter",
+      "caption": "Tule Springs during winter",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tusk/index.htm",
+    "directions": "http://www.nps.gov/tusk/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Military",
+    "US Air Force (Army Air Corps)",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Trains and Railroads",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Dunes",
+    "Fossils and Paleontology",
+    "Geology",
+    "Groundwater",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "National Monument",
+    "NV"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

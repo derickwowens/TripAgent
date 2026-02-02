@@ -1,0 +1,308 @@
+{
+  "id": "np-bicy",
+  "name": "Big Cypress National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "The freshwaters of the Big Cypress Swamp, essential to the health of the neighboring Everglades, support the rich marine estuaries along Florida's southwest coast. Conserving over 729,000 acres of this vast swamp, Big Cypress National Preserve contains a mixture of tropical and temperate plant communities that are home to diverse wildlife, including the Endangered Florida panther.",
+  "shortDescription": "The freshwaters of the Big Cypress Swamp, essential to the health of the neighboring Everglades, support the rich marine estuaries along Florida's southwest coast. Conserving over 729,000 acres of thi...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 25.97079602,
+    "longitude": -81.08120629
+  },
+  "nationalParkInfo": {
+    "parkCode": "bicy",
+    "npsId": "E0F4D5E3-3E4A-4345-B86A-1B0CAD7461F1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bicy/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bicy/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2396952000",
+    "email": "bicy_information@nps.gov",
+    "website": "https://www.nps.gov/bicy/index.htm",
+    "address": {
+      "line1": "33100 Tamiami Trail East",
+      "line2": "",
+      "city": "Ochopee",
+      "state": "FL",
+      "postalCode": "34141"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The preserve is open 24 hours a day 365 days a year.  The Oasis Visitor Center and the Nathaniel P. Reed Visitor Center are closed on December 25th. No fee is charged for access to the preserve."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Big Cypress National Preserve experiences two predominant seasons- wet and dry. RAINY SEASON (May through October) While visiting during this season you may find daily afternoon thunderstorms, high humidity, temperatures in the mid-to-high 80s and a multitude of mosquitoes. DRY SEASON (November through April) Falling water levels within Big Cypress make this a pleasant time to hike, camp, and watch wildlife."
+  },
+  "images": [
+    {
+      "id": "bicy-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C224B1D4-CDDA-B563-05F29F0ECFF365A4.jpg",
+      "title": "Small Alligator",
+      "altText": "A small alligator basking on top of dry vegetation.",
+      "caption": "Alligators, big and small, call Big Cypress National Preserve home.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "bicy-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C251B53C-FE76-6924-BEC14D7FA6DC2A57.jpg",
+      "title": "Depths of the Swamp",
+      "altText": "A water filled swamp filled with lush green ferns and trees.",
+      "caption": "Cypress swamps while appearing mysterious, are peaceful and serene.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bicy-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/64775590-9B08-F0CC-DEF538861F03F0F6.jpg",
+      "title": "Big Cypress Milky Way",
+      "altText": "The milky way dominating a starry night sky over palm trees.",
+      "caption": "As an International Dark Sky Park, Big Cypress protects a beautiful night sky.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bicy-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87CBC3-1DD8-B71B-0B1A0639FD11D95E.jpg",
+      "title": "Canoeing through mangrove tunnels",
+      "altText": "two visitors in a canoe go through mangrove tunnels on the Turner River",
+      "caption": "Canoeing is one of the many activities you can enjoy in Big Cypress",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bicy-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87C79D-1DD8-B71B-0BB51B9A589AEC2D.jpg",
+      "title": "Florida Panther",
+      "altText": "a Florida Panther sits in a tree",
+      "caption": "The Florida Panther is one of the most iconic animals of Big Cypress",
+      "credit": "John Kellam",
+      "isPrimary": false
+    },
+    {
+      "id": "bicy-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87CDFC-1DD8-B71B-0B810266A3A23068.jpg",
+      "title": "Sunrise in Big Cypress",
+      "altText": "palm trees emerge out of the fog in an orange sunrise",
+      "caption": "palm trees emerge out of the fog as an orange sunrise dots the landscape",
+      "credit": "Richard Eskin",
+      "isPrimary": false
+    },
+    {
+      "id": "bicy-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87CCCC-1DD8-B71B-0B54E8FBA86B93C2.jpg",
+      "title": "Prairies and Pine Lands in Big Cypress",
+      "altText": "A prairie foreground with tall pine trees in the background. A large blue sky with white cloud",
+      "caption": "large open expanses of prairie bordered by pine lands create stunning landscapes",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bicy-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87C8DD-1DD8-B71B-0B0027F88F090A39.jpg",
+      "title": "Alligators of Big Cypress",
+      "altText": "Two Alligators rest on a river bank",
+      "caption": "Two Alligators rest on a river bank",
+      "credit": "Al Sunshine",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "BBC79C28-EBA7-4CE9-8614-02D00AA21558",
+      "name": "ATV Off-Roading"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bicy/index.htm",
+    "directions": "http://www.nps.gov/bicy/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Native American Heritage",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Cats (wild)",
+    "Estuaries and Mangroves",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Groundwater",
+    "Grasslands",
+    "Night Sky",
+    "River and Riparian",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "Wetlands",
+    "Swamps",
+    "National Preserve",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

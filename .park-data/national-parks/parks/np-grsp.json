@@ -1,0 +1,140 @@
+{
+  "id": "np-grsp",
+  "name": "Green Springs",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Green Springs National Historic Landmark District in Virginia’s Piedmont encompasses over 14,000 acres. Its landscapes and structures, privately owned today but viewable from public roads, offer a continuum of rural vernacular architecture with minimal alteration. Many of the farmsteads, often dating to the 19th century and connecting to one another visually, are preserved through easements.",
+  "shortDescription": "Green Springs National Historic Landmark District in Virginia’s Piedmont encompasses over 14,000 acres. Its landscapes and structures, privately owned today but viewable from public roads, offer a con...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.037099,
+    "longitude": -78.189823
+  },
+  "nationalParkInfo": {
+    "parkCode": "grsp",
+    "npsId": "67B6A06A-1B09-44DE-BCA4-C013EE30DDD0",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/grsp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/grsp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(267) 290 - 2870",
+    "email": "NPS_NHL_NEReview@nps.gov",
+    "website": "https://www.nps.gov/grsp/index.htm",
+    "address": {
+      "line1": "Western Louisa County",
+      "line2": "",
+      "city": "Multiple Privately Owned Properties",
+      "state": "VA",
+      "postalCode": "23093"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The land and buildings within the District are privately owned"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Louisa County, Virginia enjoys a temperate climate with hot, humid summers and cool winters."
+  },
+  "images": [
+    {
+      "id": "grsp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/00E4FBBD-1DD8-B71B-0B674A3BE15ACF42.jpg",
+      "title": "Green Springs",
+      "altText": "Historic building at Green Springs",
+      "caption": "Green Springs has numerous historic structures",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "grsp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/00EBC88F-1DD8-B71B-0B2B91E661E76586.jpg",
+      "title": "Green Springs",
+      "altText": "Historic church",
+      "caption": "Green Springs has numerous historic structures",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grsp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/00F290F1-1DD8-B71B-0BE667F9DDB5B4FA.jpg",
+      "title": "Green Springs",
+      "altText": "Yellow historic house",
+      "caption": "Green Springs has numerous historic structures",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grsp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/00FC4065-1DD8-B71B-0B14E3F4007B7C37.jpg",
+      "title": "Green Springs",
+      "altText": "Yellow Historic House",
+      "caption": "Green Springs has numerous historic structures",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grsp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0101673E-1DD8-B71B-0B62C3114C477782.jpg",
+      "title": "Green Springs",
+      "altText": "White historic house",
+      "caption": "Green Springs has numerous historic structures",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/grsp/index.htm",
+    "directions": "http://www.nps.gov/grsp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

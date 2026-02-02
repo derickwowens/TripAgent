@@ -1,0 +1,247 @@
+{
+  "id": "np-buff",
+  "name": "Buffalo National River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AR",
+  "stateName": "Arkansas",
+  "region": "southeast",
+  "description": "Established in 1972, Buffalo National River flows freely for 135 miles and is one of the few remaining undammed rivers in the lower 48 states. Once you arrive, prepare to journey from running rapids to quiet pools while surrounded by massive bluffs as you cruise through the Ozark Mountains down to the White River.",
+  "shortDescription": "Established in 1972, Buffalo National River flows freely for 135 miles and is one of the few remaining undammed rivers in the lower 48 states. Once you arrive, prepare to journey from running rapids t...",
+  "designation": "National River",
+  "coordinates": {
+    "latitude": 36.04116481,
+    "longitude": -92.90761584
+  },
+  "nationalParkInfo": {
+    "parkCode": "buff",
+    "npsId": "DBD2FCBF-D0DD-4262-A04E-93090888F0F5",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/buff/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/buff/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8704392502",
+    "email": "buff_information@nps.gov",
+    "website": "https://www.nps.gov/buff/index.htm",
+    "address": {
+      "line1": "170 Ranger Road",
+      "line2": "",
+      "city": "St. Joe",
+      "state": "AR",
+      "postalCode": "72675"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Buffalo National River is 135 miles long. The park is open 24 hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer in the Ozarks can be very hot and humid. Please check the weather forecast prior to your arrival and plan accordingly. The weather the rest of the year has the potential to be wet and cool or dry and warm. Please pay special attention to river levels and the rain forecast when planning a trip on the river. River levels can rise dramatically in a short period of time so please be aware of conditions."
+  },
+  "images": [
+    {
+      "id": "buff-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AAA8F-1DD8-B71B-0B030B40F222703A.jpg",
+      "title": "Indian Rockhouse",
+      "altText": "A large bluff shelter near Buffalo Point.",
+      "caption": "Every year thousands of people hike to the Indian Rockhouse to admire this large bluff shelter.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "buff-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AAF4E-1DD8-B71B-0B9952E34C998383.jpg",
+      "title": "Skull Rock",
+      "altText": "Kayakers floating towards Skull Rock near Buffalo Point.",
+      "caption": "A peaceful day on the Buffalo River as kayakers approach Skull Rock and Buffalo Point.",
+      "credit": "NPS Photo/Ryan Stokes",
+      "isPrimary": false
+    },
+    {
+      "id": "buff-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D6A90-1DD8-B71B-0BD085428D039686.jpg",
+      "title": "Steel Creek Campground",
+      "altText": "Camping at Steel Creek",
+      "caption": "Camping along the Buffalo River is a wonderful way to enjoy the park.",
+      "credit": "NPS Photo/Terra Fondriest",
+      "isPrimary": false
+    },
+    {
+      "id": "buff-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D6BE9-1DD8-B71B-0BE7024117A6287B.jpg",
+      "title": "Floating the Buffalo",
+      "altText": "Floaters on the river.",
+      "caption": "Canoeing and kayaking the river is a wonderful way to spend a day at the Buffalo.",
+      "credit": "NPS Photo/Terra Fondriest",
+      "isPrimary": false
+    },
+    {
+      "id": "buff-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D6D7F-1DD8-B71B-0BF797192FC50639.jpg",
+      "title": "Sod Collier Homestead",
+      "altText": "Historic homestead built by the Collier Family.",
+      "caption": "Many historic structures are scattered along the Buffalo River reminding us of the hardworking settlers that once called this river valley home.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "buff-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D6F2B-1DD8-B71B-0B2457BFA7A9D318.jpg",
+      "title": "Smallmouth Bass Fishing",
+      "altText": "Fisherman with smallmouth bass.",
+      "caption": "Fishing for smallmouth bass is a popular activity on the Buffalo River.",
+      "credit": "NPS Photo/Ryan Stokes",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/buff/index.htm",
+    "directions": "http://www.nps.gov/buff/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Animals",
+    "Birds",
+    "Elk",
+    "Caves, Caverns and Karst",
+    "Fire",
+    "Forests and Woodlands",
+    "Geology",
+    "River and Riparian",
+    "Watersheds",
+    "National River",
+    "AR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

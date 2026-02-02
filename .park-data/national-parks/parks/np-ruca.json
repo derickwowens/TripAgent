@@ -1,0 +1,167 @@
+{
+  "id": "np-ruca",
+  "name": "Russell Cave National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "Russell Cave National Monument is an archeological site with one of the most complete records of prehistoric cultures in the Southeast. In the 1950s, archeologists uncovered a large quantity of artifacts representing 12,000 years of use in a single place. Although you cannot go in the cave, the discovered artifacts help bring to light many cultural developments of phenomenal human journeys.",
+  "shortDescription": "Russell Cave National Monument is an archeological site with one of the most complete records of prehistoric cultures in the Southeast. In the 1950s, archeologists uncovered a large quantity of artifa...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 34.97402063,
+    "longitude": -85.81560314
+  },
+  "nationalParkInfo": {
+    "parkCode": "ruca",
+    "npsId": "FDD929A5-1D56-41DD-8A04-5FF77023340C",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ruca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ruca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2564952672",
+    "email": "RUCA_Information@nps.gov",
+    "website": "https://www.nps.gov/ruca/index.htm",
+    "address": {
+      "line1": "3729 County Road 98",
+      "line2": "",
+      "city": "Bridgeport",
+      "state": "AL",
+      "postalCode": "35740"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 4:30PM",
+    "tuesday": "8:00AM - 4:30PM",
+    "wednesday": "8:00AM - 4:30PM",
+    "thursday": "8:00AM - 4:30PM",
+    "friday": "8:00AM - 4:30PM",
+    "saturday": "8:00AM - 4:30PM",
+    "sunday": "8:00AM - 4:30PM",
+    "description": "The park is closed on New Year's Day, Thanksgiving, and Christmas.  All operating hours are in central time and the main gate into the park closes at 4:30 pm."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in Bridgeport, Alabama is mild. The average temperature in the winter is in the low 50's. The average summer temperature is in the high 80's. We receive about 50 inches of rain each year. Snowfall varies, but only lasts a few days per event."
+  },
+  "images": [
+    {
+      "id": "ruca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8726D8-1DD8-B71B-0BD90F30D72A98BF.jpg",
+      "title": "Russell Cave in Spring",
+      "altText": "Russell Cave in Spring",
+      "caption": "Prehistoric people continuously used Russell Cave for over 10,000 years",
+      "credit": "NPS Photo / Mary Dawson",
+      "isPrimary": true
+    },
+    {
+      "id": "ruca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C872522-1DD8-B71B-0B89883F1BC8FD30.jpg",
+      "title": "Winter flood in December 2015",
+      "altText": "Winter flood in December 2015",
+      "caption": "14,000 acres drain into Russell Cave",
+      "credit": "NPS Photo / Mary Dawson",
+      "isPrimary": false
+    },
+    {
+      "id": "ruca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C872BFB-1DD8-B71B-0B78CA89CD61BF25.jpg",
+      "title": "Looking out of the cave shelter",
+      "altText": "Looking out of the cave shelter",
+      "caption": "Looking out of the cave shelter in the fall",
+      "credit": "NPS Photo / Mary Dawson",
+      "isPrimary": false
+    },
+    {
+      "id": "ruca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C872878-1DD8-B71B-0BCA73C1709C59ED.jpg",
+      "title": "Northern Cardinal",
+      "altText": "Northern Cardinal",
+      "caption": "Russell Cave is site 44 on the Alabama birding Trail.",
+      "credit": "NPS Photo / Mary Dawson",
+      "isPrimary": false
+    },
+    {
+      "id": "ruca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8729F8-1DD8-B71B-0BD29F85896F3BE3.jpg",
+      "title": "Deer behind visitor center",
+      "altText": "Deer behind visitor center",
+      "caption": "For a park of its size, Russell Cave National Monument has a diverse landscape that provides a remarkable habitat for wildlife observation.",
+      "credit": "NPS Photo / Mary Dawson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ruca/index.htm",
+    "directions": "http://www.nps.gov/ruca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Native American Heritage",
+    "Animals",
+    "National Monument",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

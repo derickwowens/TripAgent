@@ -1,0 +1,241 @@
+{
+  "id": "np-ande",
+  "name": "Andersonville National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "Nearly 13,000 men died on these grounds, a site that became infamous even before the Civil War ended. Their burial grounds became Andersonville National Cemetery, where veterans continue to be buried today. This place, where tens of thousands suffered captivity so others could be free, is also home to the National Prisoner of War Museum and serves as a memorial to all American prisoners of war.",
+  "shortDescription": "Nearly 13,000 men died on these grounds, a site that became infamous even before the Civil War ended. Their burial grounds became Andersonville National Cemetery, where veterans continue to be buried ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 32.19831758,
+    "longitude": -84.12988898
+  },
+  "nationalParkInfo": {
+    "parkCode": "ande",
+    "npsId": "00E65872-53F7-4C9B-BD29-B9BC99930D0D",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ande/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ande/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2299240343",
+    "email": "ande_information@nps.gov",
+    "website": "https://www.nps.gov/ande/index.htm",
+    "address": {
+      "line1": "National Prisoner of War Museum",
+      "line2": "",
+      "city": "Andersonville",
+      "state": "GA",
+      "postalCode": "31711"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:00PM",
+    "tuesday": "8:00AM - 5:00PM",
+    "wednesday": "8:00AM - 5:00PM",
+    "thursday": "8:00AM - 5:00PM",
+    "friday": "8:00AM - 5:00PM",
+    "saturday": "8:00AM - 5:00PM",
+    "sunday": "8:00AM - 5:00PM",
+    "description": "The National Prisoner of War Museum is open daily from 9:30 am to 4:30 pm. Park grounds, including the National Cemetery, are open daily from 8:00 AM to 5:00 PM. On Thanksgiving Day, Christmas Day, and New Year's Day, the National Prisoner of War Museum and prison site are closed but Andersonville National Cemetery is open from 8:00 AM to 5:00 PM pending staff availability."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer temperatures reach highs in the 80s-90s and high humidity. Winter temperatures tend to be in the 40s and below. Snow can occur but is rare. Average annual precipitation is 46.24 inches and is fairly evenly distributed throughout the year. The National Prisoner of War Museum is maintained at a cool temperature to help preserve artifacts; dressing in layers is recommended."
+  },
+  "images": [
+    {
+      "id": "ande-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87F1CB-1DD8-B71B-0B8B6223F6173DF9.jpg",
+      "title": "Historic Site of Camp Sumter Civil War Military Prison at Andersonville",
+      "altText": "A cannon sits out in front of a replica of part of the wooden stockade walls once at Andersonville",
+      "caption": "Camp Sumter Military Prison, known as Andersonville, was the deadliest ground of the Civil War. Nearly 13,000 American soldiers died here.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "ande-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C5E6EBE-CC0F-1064-9A42AB568287B226.jpg",
+      "title": "The National Prisoner of War Museum",
+      "altText": "Large brick museum with a sign in front reading \"The National Prisoner of War Museum\"",
+      "caption": "The National Prisoner of War Museum",
+      "credit": "ANDE / Teri Surber",
+      "isPrimary": false
+    },
+    {
+      "id": "ande-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87F605-1DD8-B71B-0B73B72CF996A70A.jpg",
+      "title": "Summer of 1865 at Andersonville Photo by A.J. Riddle",
+      "altText": "A historic photo of thousands of emaciated Union soldiers held prisoner in 1865",
+      "caption": "Over 32,000 Union soldiers languished at Andersonville in August 1865 when this photo was taken by A.J. Riddle.",
+      "credit": "NPS Photo/Andersonville Archives",
+      "isPrimary": false
+    },
+    {
+      "id": "ande-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C50C6F7-C56C-0B45-39D9D2B85DC3403C.jpg",
+      "title": "Memorial Courtyard",
+      "altText": "stone statue stands with his arms stretched forward. Two large stone walls sit behind him.",
+      "caption": "Memorial Courtyard",
+      "credit": "ANDE / Grace Janik",
+      "isPrimary": false
+    },
+    {
+      "id": "ande-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87F7DF-1DD8-B71B-0B5AA0A3945D8371.jpg",
+      "title": "Andersonville National Cemetery",
+      "altText": "Fog rests on a stone monument of a Civil War soldier standing among hundreds of graves.",
+      "caption": "The site where the nearly 13,000 Union soldiers who died at Andersonville, designated as a National Cemetery in 1865, is still an active cemetery. Nearly 21,000 American military veterans rest here in honor.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ande-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C43A050-0F26-E208-FC031266FAF4E69F.jpg",
+      "title": "New York Monument Sunset",
+      "altText": "large stone monument with a pink and purple sunset in the background.",
+      "caption": "New York Monument Sunset",
+      "credit": "ANDE / Teri Surber",
+      "isPrimary": false
+    },
+    {
+      "id": "ande-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6C9AD171-9CB6-360A-5992899E7B163D2A.jpg",
+      "title": "Magnolia Trees of Andersonville National Cemetery",
+      "altText": "green leaves with a large white flower in the center.",
+      "caption": "Magnolia Trees of Andersonville National Cemetery",
+      "credit": "ANDE / Grace Janik",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ande/index.htm",
+    "directions": "http://www.nps.gov/ande/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "American Revolution",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Hispanic American Heritage",
+    "Incarceration",
+    "Jails and Prisons",
+    "Military",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Schools and Education",
+    "Tragic Events",
+    "Forced Marches",
+    "Wars and Conflicts",
+    "French and Indian War",
+    "American Revolutionary War",
+    "War of 1812",
+    "Mexican War",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Korean War",
+    "Vietnam War",
+    "Cold War",
+    "Women's History",
+    "National Historic Site",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

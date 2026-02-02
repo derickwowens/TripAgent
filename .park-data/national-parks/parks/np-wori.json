@@ -1,0 +1,166 @@
+{
+  "id": "np-wori",
+  "name": "Women's Rights National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Women’s Rights National Historical Park tells the story of the first Women’s Rights Convention, held in Seneca Falls, New York on July 19-20, 1848. It is a story of struggles for civil rights, human rights, and equality, global struggles that continue today. The efforts of women’s rights leaders, abolitionists, and other 19th century reformers remind us that all people must be accepted as equals.",
+  "shortDescription": "Women’s Rights National Historical Park tells the story of the first Women’s Rights Convention, held in Seneca Falls, New York on July 19-20, 1848. It is a story of struggles for civil rights, human r...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.90817073,
+    "longitude": -76.81655558
+  },
+  "nationalParkInfo": {
+    "parkCode": "wori",
+    "npsId": "09689FA5-2147-4BF2-935C-AE92AB85A2E5",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wori/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wori/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3155680024",
+    "email": "wori_information_desk@nps.gov",
+    "website": "https://www.nps.gov/wori/index.htm",
+    "address": {
+      "line1": "136 Fall Street",
+      "line2": "",
+      "city": "Seneca Falls",
+      "state": "NY",
+      "postalCode": "13148"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 4:00PM",
+    "tuesday": "10:00AM - 4:00PM",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Visitor Center and Wesleyan Chapel share a site at 136 Fall Street in Seneca Falls. The building hours change by season. See below for current hours. Declaration Park, also at this address, is open dawn to dusk."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "In the winter, temperatures range from 0-40 degrees with an average of 10 inches of snow per month. Summer temperatures range from 60-85 degrees with high humidity."
+  },
+  "images": [
+    {
+      "id": "wori-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C700A-1DD8-B71B-0B5C2C42B93C9B76.jpg",
+      "title": "Wesleyan Chapel",
+      "altText": "The Wesleyan Chapel in summer",
+      "caption": "The Wesleyan Chapel, site of the first Women's Rights Convention",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "wori-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7D60543-B27A-28C0-1A46885336AB041F.jpg",
+      "title": "Waterwall and Mural",
+      "altText": "A gold and purple mural featuring faces of historic figures, over a stone wall.",
+      "caption": "Women's Rights NHP celebrates the American Women's Rights Movement and its inception in Seneca Falls, New York.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wori-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7B7D8EA-EC49-9EB9-B0AFF30F0E3F19FB.jpg",
+      "title": "Visitor Center",
+      "altText": "Front of Women's Rights National Historical Park Visitor Center",
+      "caption": "Visitors can come to learn about the largest social movement in history, the women's rights movement.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wori-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F79EA066-957C-F6F1-62943C2A05A10DAC.jpg",
+      "title": "First Wave Statue",
+      "altText": "A bronze statue group of people wearing 19th-century clothing.",
+      "caption": "The First Wave Statue is one of the iconic sites of Women's Rights NHP.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wori-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C43745A-D091-945D-67BD560C3C450291.jpg",
+      "title": "Elizabeth Cady Stanton House",
+      "altText": "The Elizabeth Cady Stanton House with a tree and National Park Service sign in the front yard",
+      "caption": "Take a ranger led tour in the home where Elizabeth Cady Stanton led the women's rights movement and raised 7 children",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wori/index.htm",
+    "directions": "http://www.nps.gov/wori/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Arts",
+    "Sculpture",
+    "Enslavement",
+    "Industry",
+    "Mills",
+    "Laborer and Worker",
+    "Labor Movement",
+    "LGB American Heritage",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "Churches",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Religious Freedom",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Canals",
+    "Women's History",
+    "National Historical Park",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

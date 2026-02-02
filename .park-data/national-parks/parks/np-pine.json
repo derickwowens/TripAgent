@@ -1,0 +1,83 @@
+{
+  "id": "np-pine",
+  "name": "New Jersey Pinelands National Reserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "NJ",
+  "stateName": "New Jersey",
+  "region": "northeast",
+  "description": "This is truly a special place. It's classified as a United States Biosphere Reserve and in 1978 was established by Congress as the country’s first National Reserve. It includes portions of seven southern New Jersey counties, and encompasses over one-million acres of farms, forests and wetlands. It contains 56 communities, from hamlets to suburbs, with over 700,000 permanent residents.",
+  "shortDescription": "This is truly a special place. It's classified as a United States Biosphere Reserve and in 1978 was established by Congress as the country’s first National Reserve. It includes portions of seven south...",
+  "designation": "National Reserve",
+  "coordinates": {
+    "latitude": 39.9384,
+    "longitude": -74.625
+  },
+  "nationalParkInfo": {
+    "parkCode": "pine",
+    "npsId": "D0F897A0-9545-4901-A1B8-7128E11A51FA",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pine/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nj.gov/pinelands/about/direct/"
+    }
+  ],
+  "contact": {
+    "phone": "(609) 894-7300",
+    "email": "ner_external_affairs@nps.gov",
+    "website": "https://www.nps.gov/pine/index.htm",
+    "address": {
+      "line1": "15 Springfield Road",
+      "line2": "",
+      "city": "New Lisbon",
+      "state": "NJ",
+      "postalCode": "08064"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Pinelands National Reserve stretches across portions of seven counties in southern New Jersey, covering about 22% of the state. The area is comprised of both public and private lands. Public lands include parks, forests, wildlife refuges, and military bases. Private lands include 56 communities that range in size from small from villages to large towns. More than 700,000 permanent residents live the Pinelands National Reserve. The public lands are open 24 hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: 50-70F, sunny with some rain Summer: 70-90F, mostly sunny with some rain Winter: 0-35F, snow is common Fall: 50-70F"
+  },
+  "images": [
+    {
+      "id": "pine-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6A36EF6A-1DD8-B71B-0B6EF527BB26F6F0.jpg",
+      "title": "Batona Trail in the NJ Pinelands",
+      "altText": "Tall pine trees surround a thin unpaved trail",
+      "caption": "Batona Trail in the Brendan T. Byrne State Forest part of the NJ Pinelands",
+      "credit": "Farmartin",
+      "isPrimary": true
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pine/index.htm",
+    "directions": "http://www.nj.gov/pinelands/about/direct/"
+  },
+  "keywords": [
+    "National Reserve",
+    "NJ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

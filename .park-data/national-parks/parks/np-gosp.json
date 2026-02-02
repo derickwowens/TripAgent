@@ -1,0 +1,234 @@
+{
+  "id": "np-gosp",
+  "name": "Golden Spike National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "One of the greatest technological achievements of the 19th century is the completion of the first transcontinental railroad across the United States. Visitors to the park can see the location of the Last Spike Site, 1869 railroad construction features, walk or drive on the original railroad grade, and get an up close view of Victorian era replica locomotives.",
+  "shortDescription": "One of the greatest technological achievements of the 19th century is the completion of the first transcontinental railroad across the United States. Visitors to the park can see the location of the L...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 41.61947508,
+    "longitude": -112.5242653
+  },
+  "nationalParkInfo": {
+    "parkCode": "gosp",
+    "npsId": "8F858FBE-8E28-491A-BCBD-67E23D535EEA",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gosp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gosp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4354712209",
+    "email": "gosp_interpretation@nps.gov",
+    "website": "https://www.nps.gov/gosp/index.htm",
+    "address": {
+      "line1": "6200 North 22300 West",
+      "line2": "",
+      "city": "Promontory, Utah",
+      "state": "UT",
+      "postalCode": "84307"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "WINTER HOURS\nAll park landscapes and outdoor features are open seven days a week, sunrise to sunset, year-round. This includes the Big Fill Trail, Historic Last Spike Site, East Auto Tour, picnic areas, outdoor exhibits, and restrooms. \nNOTE: Seasonal access to some areas may be limited during the winter months due to weather events and other unforeseen circumstances. See Visitor Center and Park Alerts for seasonal schedules and closures."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "The per vehicle fee covers all occupants in a single private vehicle. The fee will allow visitors access to all resources open to the public, including auto tours, walking trails, films, exhibit areas, ranger guided programs, and other seasonal activities. \n\nIf visitors have any of the America the Beautiful Inter-agency passes, these will cover the pass holder and anyone that is in their personal vehicle.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. The fee will allow visitors access to all resources open to the public, including auto tours, walking trails, films, exhibit area, ranger guided programs, other seasonal activities. \nIf visitors have any of the America the Beautiful Inter-agency passes, these will cover the pass holder and the passenger of the motorcycle.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car. This pass is typically used for bicyclists, and pedestrians. Youth 15 and under are admitted free. The fee will allow visitor access to all resources open to the public, including auto tours, walking trails, films, exhibit area, ranger guided programs, other seasonal activities. If visitors have any of the America the Beautiful Inter-agency passes, these will cover the pass holder.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Golden Spike National Historical Park is located in a high desert environment in the Promontory Mountains near the north end of the Great Salt Lake. The temperatures can reach over 100 degrees in the summer and dip into single digits in the winter, with much of the park blanketed in snow. Visitors are recommended to check forecasts before coming to our site and come prepared for changing weather conditions."
+  },
+  "images": [
+    {
+      "id": "gosp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7FBB-1DD8-B71B-0BA82B3A17812A08.jpg",
+      "title": "Replica Locomotives Jupiter and #119 at the Last Spike Site",
+      "altText": "Two replica victorian age steam locomotives face each other on the original railroad grade",
+      "caption": "Connect with the history by viewing the site's replica steam locomotives in action",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "gosp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2CC190EB-CE7A-ECB7-99614DA27C6C9737.png",
+      "title": "Golden Spike National Historical Park Visitor Center",
+      "altText": "The Golden Spike National Historical Park's Visitor Center colorful stone entrance",
+      "caption": "Golden Spike's Visitor Center is the best the best place to start your exploration of this unique piece of American History.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gosp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2D399A66-D26D-B190-75511CDDB6EB1874.jpg",
+      "title": "Golden Spike Park Entrance Sign",
+      "altText": "Winter View of Golden Spike Entrance Sign",
+      "caption": "Winter View of Golden Spike Entrance Sign",
+      "credit": "Courtesy of NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "gosp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7E7F-1DD8-B71B-0BE4BA2472C9524B.jpg",
+      "title": "The Big Fill",
+      "altText": "The Big Fill is a 400 foot long 80 foot high mound of packed earth that bridged a ravine",
+      "caption": "Visitors can explore fifteen miles of the historic grade that was prepared for track by the two railroad companies",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gosp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5E31D97A-C3BC-52E9-0FD2931B64031348.jpg",
+      "title": "The Golden Spike",
+      "altText": "The Golden Spike",
+      "caption": "Photo of actual Golden Spike courtesy of Cantor Arts Center at Stanford University",
+      "credit": "Cantor Arts Center of Stanford University",
+      "isPrimary": false
+    },
+    {
+      "id": "gosp-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E6239B8B-9578-B3EC-0A5CA803C8823B9E.png",
+      "title": "Locomotives 119 and Jupiter nose to nose at the last spike site.",
+      "altText": "Two locomotives the 119 and Jupiter facing each other on a track.",
+      "caption": "Each day the locomotives are moved to the last spike site to recreate the marriage of the rails.",
+      "credit": "Photographer at GOSP",
+      "isPrimary": false
+    },
+    {
+      "id": "gosp-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5E53F51F-ABDD-7A49-C09B1A4FAA056470.jpg",
+      "title": "Winter View on the Big Fill Trail",
+      "altText": "Winter View on the Big Fill Trail",
+      "caption": "Sunner winter day on the Big Fill Loop Trail.",
+      "credit": "Courtesy NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "gosp-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5FC77CF3-FB05-2120-F496FCDCB0894E16.jpg",
+      "title": "Recreation of May 10th Champagne Photo",
+      "altText": "Recreation of May 10th Champagne Photo",
+      "caption": "Recreation of famous Champagne photo during annual May 10th Commemoration.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gosp/index.htm",
+    "directions": "http://www.nps.gov/gosp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Asian American Heritage",
+    "Laborer and Worker",
+    "Migrant Workers",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Trains and Railroads",
+    "Westward Expansion",
+    "Animals",
+    "Bison",
+    "Unique Species",
+    "National Historical Park",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

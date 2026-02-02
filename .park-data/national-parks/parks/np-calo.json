@@ -1,0 +1,244 @@
+{
+  "id": "np-calo",
+  "name": "Cape Lookout National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "A boat ride three miles off-shore brings you to the barrier islands of Cape Lookout National Seashore. Horse watching, shelling, fishing, birding, camping, lighthouse climbing, and touring historic villages--there’s something for everyone at Cape Lookout. Be sure to bring all the food, water, and supplies you need (and carry your trash out of the park) when visiting these remote beaches.",
+  "shortDescription": "A boat ride three miles off-shore brings you to the barrier islands of Cape Lookout National Seashore. Horse watching, shelling, fishing, birding, camping, lighthouse climbing, and touring historic vi...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 34.8267961,
+    "longitude": -76.34319082
+  },
+  "nationalParkInfo": {
+    "parkCode": "calo",
+    "npsId": "3BA4ACE6-0FFE-4B56-8C07-B3F05DC304DB",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/calo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/calo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2527282250",
+    "email": "CALO_VC@nps.gov",
+    "website": "https://www.nps.gov/calo/index.htm",
+    "address": {
+      "line1": "1800 Island Rd",
+      "line2": "",
+      "city": "Harkers Island",
+      "state": "NC",
+      "postalCode": "28531"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Cape Lookout National Seashore has 3 offshore barrier islands that are open 24 hours and 365 days a year (weather permitting). Operating hours for visitor centers and other services will vary throughout the year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures generally range from 50 F to 70+ F. Rain & wind are common Summer: Temperatures usually range from 80 F to 100 F with high humidity (80-90%). Average wind speed is 10-15 mph. Be prepared with plenty of water. With little shade on the islands, an umbrella to provide shade from the sun is a good idea. Fall: Temperatures usually range from the high 70 F to the upper 40 F. Winter: Temperatures usually range from 50 F - 32 F. Winds can be strong. Dress in layers."
+  },
+  "images": [
+    {
+      "id": "calo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86A358-1DD8-B71B-0BC275CB93DB8D43.jpg",
+      "title": "Cape Lookout Lighthouse",
+      "altText": ": Black & white patterned tower of the Cape Lookout Lighthouse stands against a blue & white cloud f",
+      "caption": "The Cape Lookout Lighthouse is still an active aid-to-navigation, warning ships of the nearby shoals.  Climbing to up to see the view from the gallery level, 14 stories above the ground, is also a popular activity by visitors during the summer.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "calo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D6A6C7B3-FB79-E0BB-46EF5A26D80627CD.jpg",
+      "title": "American Oystercatcher",
+      "altText": "A bird with orange bill and orange legs runs along the tide line. Waves in the background",
+      "caption": "The American Oystercatcher, one of the protected species in the park, forages along the shoreline.",
+      "credit": "NPS Photo / Sabrina Godin",
+      "isPrimary": false
+    },
+    {
+      "id": "calo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D6F5397E-D4CE-568F-76B033BE644D370C.jpg",
+      "title": "Camping Under the Stars",
+      "altText": "A red light illuminates a tent on the sand, with a star filled sky behind it.",
+      "caption": "Campers enjoying the preserved night sky at Cape Lookout National Seashore.",
+      "credit": "NPS Photo / Sabrina Godin",
+      "isPrimary": false
+    },
+    {
+      "id": "calo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D91FD805-ABA5-2D22-8FC4CF84D7610737.jpg",
+      "title": "Shelling at the Seashore",
+      "altText": "A seashell lays in the sand, with the sun setting in the background.",
+      "caption": "A perfect shell waits to pick up by a sheller.",
+      "credit": "NPS Photo / Sabrina Godin",
+      "isPrimary": false
+    },
+    {
+      "id": "calo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D728E422-907E-4F01-57653FC7CEFC9E23.jpg",
+      "title": "Loggerhead Sea Turtle",
+      "altText": "A sand covered turtles flings sand on the beach while laying eggs.",
+      "caption": "A Loggerhead sea turtle, one of 4 species that nest at Cape Lookout, crawls on the beach.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "calo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D95446A8-C2B7-6787-7F14A2F008E1ACA0.jpg",
+      "title": "Beach Driving",
+      "altText": "A Jeep drives on the sand in between grass covered dunes.",
+      "caption": "Visitors drive on the beach at Cape Lookout National Seashore",
+      "credit": "NPS Photo / Sabrina Godin",
+      "isPrimary": false
+    },
+    {
+      "id": "calo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D9B56B32-B84A-DA13-837BA4D99EC54CA7.jpg",
+      "title": "Angler on the Seashore",
+      "altText": "A angler sits in a chair, with two fishing poles in the sand. Lighthouse in background.",
+      "caption": "An angler enjoys the remoteness of South Core Banks.",
+      "credit": "NPS Photo / Sabrina Godin",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "BBC79C28-EBA7-4CE9-8614-02D00AA21558",
+      "name": "ATV Off-Roading"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/calo/index.htm",
+    "directions": "http://www.nps.gov/calo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Maritime",
+    "Coastal Defenses",
+    "Lighthouses",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Horses (wild)",
+    "Tortoises and Turtles",
+    "Night Sky",
+    "Astronomy",
+    "Unique Species",
+    "Endangered",
+    "National Seashore",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "id": "np-brca",
+  "name": "Bryce Canyon National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's high elevations include numerous life communities, fantastic dark skies, and geological wonders that defy description.",
+  "shortDescription": "Hoodoos (irregular columns of rock) exist on every continent, but here is the largest concentration found anywhere on Earth. Situated along a high plateau at the top of the Grand Staircase, the park's...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 37.58399144,
+    "longitude": -112.1826689
+  },
+  "nationalParkInfo": {
+    "parkCode": "brca",
+    "npsId": "6B1D053D-714F-46D1-B410-04BE868F14C1",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/brca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/brca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4358345322",
+    "email": "brca_information@nps.gov",
+    "website": "https://www.nps.gov/brca/index.htm",
+    "address": {
+      "line1": "Highway 63",
+      "line2": "Bryce Canyon National Park",
+      "city": "Bryce",
+      "state": "UT",
+      "postalCode": "84764"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Bryce Canyon National Park is open 365 days a year, 24 hours a day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one private, non-commercial vehicle (15 passenger capacity or less) and all occupants.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car to the park - typically used for bicyclists and walk-ins. Youth 15 and under are admitted free.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Commercial tour vehicle rates are based on vehicle capacity. Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers.\n\nA commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles t",
+      "cost": "50.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Commercial tour vehicle rates are based on vehicle capacity. Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers.\n\nA commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles t",
+      "cost": "50.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Commercial tour vehicle rates are based on vehicle capacity. Pass is valid for the day o\n\nA commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "60.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Commercial tour vehicle rates are based on vehicle capacity. Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers.\n\nA commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles.",
+      "cost": "150.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Bryce Canyon National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Due of its high elevation climate, weather at Bryce Canyon through autumn, winter, and spring can be highly variable. From October to May temperatures fall below freezing nearly every night. The park typically experiences its coldest and snowiest periods from December through February. Spring storms in March and April can still produce heavy snowfall that may impact travel in the region. Summer highs are typically in the 70s-80s F and afternoon thunderstorms are common in July and August."
+  },
+  "images": [
+    {
+      "id": "brca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/61F08520-E14F-18F2-BF5F3D89482631BD.jpg",
+      "title": "Bryce Amphitheater from Inspiration Point",
+      "altText": "A red rock landscape and plateau forest glows with the morning sun",
+      "caption": "Viewpoints of the iconic Bryce Amphitheater are located along the first 3 miles of the park road and are a popular destination at sunrise.",
+      "credit": "NPS Photo / Peter Densmore",
+      "isPrimary": true
+    },
+    {
+      "id": "brca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/600067EF-E1B2-18B1-6120394EC23521DB.jpg",
+      "title": "Winter sunrise at Sunset Point",
+      "altText": "Snow blankets a red rock landscape of tall rock spires beneath an early morning sky",
+      "caption": "Here at 8,000' (2438 m) winter comes early and stays late. Snow transforms the landscape and requires seasonal closures in some areas and trails.",
+      "credit": "NPS Photo / Keith Moore",
+      "isPrimary": false
+    },
+    {
+      "id": "brca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/613FFA94-B2F5-FBBF-090B96462B7CAB18.jpg",
+      "title": "Milky Way over the Hoodoos",
+      "altText": "The center of the Milky Way galaxy is seen rising above a horizon of forest and red rock spires",
+      "caption": "Bryce Canyon's clean air and dark night skies are some of its most precious and vulnerable resources. Full moon nights also provide a unique experience of seeing the park after dark.",
+      "credit": "Derek Demeter",
+      "isPrimary": false
+    },
+    {
+      "id": "brca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/60400EC2-B3DA-DAD5-18BF97EA3403B692.jpg",
+      "title": "Queen's Garden Trail",
+      "altText": "A lone white rock tower stands surrounded by red rock walls and forest along a trail",
+      "caption": "More strenuous trails below the rim provide up-close views of the hoodoo rock spires, while easier walks along the rim give perspective from above.",
+      "credit": "NPS Photo / Peter Densmore",
+      "isPrimary": false
+    },
+    {
+      "id": "brca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/609317A5-D0B1-4B67-C2413B5852192FB6.jpg",
+      "title": "Bristlecone Loop trail near Yovimpa Point",
+      "altText": "Red and white rock cliffs lightly dusted with snow with a forest atop them and a long view beyond",
+      "caption": "The park's highest elevations at its southern end and backcountry areas provide views of over 100 miles (161 km) atop high steep cliffs.",
+      "credit": "NPS Photo / Peter Densmore",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/brca/index.htm",
+    "directions": "http://www.nps.gov/brca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Canyons and Canyonlands",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Grasslands",
+    "Meadows",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "National Park",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

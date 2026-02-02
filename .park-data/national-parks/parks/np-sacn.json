@@ -1,0 +1,219 @@
+{
+  "id": "np-sacn",
+  "name": "Saint Croix National Scenic Riverway",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "WI",
+  "stateName": "Wisconsin",
+  "region": "midwest",
+  "description": "Grab your paddle and your longing for adventure and head to the St. Croix and Namekagon rivers! Together they form the St. Croix National Scenic Riverway, offering over 200 miles of clean water that glides and rushes through a forested landscape. Paddle, boat, fish, and camp among this wild and scenic beauty. Hiking and historic towns also beckon.",
+  "shortDescription": "Grab your paddle and your longing for adventure and head to the St. Croix and Namekagon rivers! Together they form the St. Croix National Scenic Riverway, offering over 200 miles of clean water that g...",
+  "designation": "National Scenic Riverway",
+  "coordinates": {
+    "latitude": 45.70019235,
+    "longitude": -92.36126685
+  },
+  "nationalParkInfo": {
+    "parkCode": "sacn",
+    "npsId": "5CB26B91-B888-46E0-95E1-0683A63C45B0",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sacn/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sacn/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7154832274",
+    "email": "SACN_Info@nps.gov",
+    "website": "https://www.nps.gov/sacn/index.htm",
+    "address": {
+      "line1": "401 North Hamilton Street",
+      "line2": "",
+      "city": "St. Croix Falls",
+      "state": "WI",
+      "postalCode": "54024"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The St. Croix and Namekagon rivers are open all-day, year-round except for periods of dangerous water conditions. Access to landings and trails is seasonal."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Access to the Riverway is year-round. Early spring temperatures can reach into the 40's resulting in high, fast, and cold water from melting snow and ice. Summers are warm and humid. Severe weather can be experienced anytime from mid-spring through late summer. Fall colors begin in late September with high temperatures averaging in the 60's. Winter can set in early with high temperatures in the teens, lows falling below zero, and occasional heavy snow. The rivers can begin to freeze over by early December."
+  },
+  "images": [
+    {
+      "id": "sacn-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FDF3ACBD-9525-5BD1-4CEC071C9F2BD6DE.png",
+      "title": "The St Croix River from Osceola Bluff Autumn",
+      "altText": "A blue river winds through a valley lined with trees in autumn color.",
+      "caption": "One of many beautiful views of the St. Croix River",
+      "credit": "NPS / Pete Wintersteen",
+      "isPrimary": true
+    },
+    {
+      "id": "sacn-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82D82E-1DD8-B71B-0BA50602B2B786DD.jpg",
+      "title": "Kayaking on the St. Croix River",
+      "altText": "A woman paddles a kayak past cliffs on a forested river.",
+      "caption": "Paddling is an excellent way to experience the St. Croix National Scenic Riverway.",
+      "credit": "NPS Photo / Konopacz",
+      "isPrimary": false
+    },
+    {
+      "id": "sacn-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82DC48-1DD8-B71B-0BD70C0C62ACE7E0.jpg",
+      "title": "The St. Croix Dalles",
+      "altText": "Kayakers pass impressive cliffs.",
+      "caption": "The scenic Dalles of the St. Croix River provide dramatic backdrops for paddlers.",
+      "credit": "NPS Photo / VanTatenhove",
+      "isPrimary": false
+    },
+    {
+      "id": "sacn-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82D9B1-1DD8-B71B-0B22EF948984D549.jpg",
+      "title": "Fast Water on the St. Croix River.",
+      "altText": "A fast river flows over large rocks in a forested landscape.",
+      "caption": "There are opportunities to paddle stretches of fast and slow water on the Riverway.",
+      "credit": "NPS Photo / Schaeppi",
+      "isPrimary": false
+    },
+    {
+      "id": "sacn-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82D31A-1DD8-B71B-0BB199A9644A51B5.jpg",
+      "title": "Fishing the St. Croix River",
+      "altText": "A man holds a large fish while sitting in a boat near a forested shore.",
+      "caption": "The fishing is spectacular on the St. Croix and Namekagon rivers.",
+      "credit": "NPS Photo / Butler",
+      "isPrimary": false
+    },
+    {
+      "id": "sacn-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82DAFA-1DD8-B71B-0B042435F96D7124.jpg",
+      "title": "Evening on the St. Croix River.",
+      "altText": "A man stands next to a river watching a sunset.",
+      "caption": "Watch scenic sunsets from shoreline campsites.",
+      "credit": "NPS Photo / Schaeppi",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sacn/index.htm",
+    "directions": "http://www.nps.gov/sacn/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Fish",
+    "Natural Sounds",
+    "Trails",
+    "Water Trails",
+    "National Scenic Riverway",
+    "WI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

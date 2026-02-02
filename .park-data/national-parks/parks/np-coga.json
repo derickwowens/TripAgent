@@ -1,0 +1,129 @@
+{
+  "id": "np-coga",
+  "name": "Constitution Gardens",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Officially established in 1965, National Mall and Memorial Parks actually protects some of the older parkland in the National Park System. Areas within this premier park provide visitors with ample opportunities to commemorate presidential legacies; honor the courage and sacrifice of war veterans; and celebrate the United States commitment to freedom and equality.",
+  "shortDescription": "Officially established in 1965, National Mall and Memorial Parks actually protects some of the older parkland in the National Park System. Areas within this premier park provide visitors with ample op...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.8909354,
+    "longitude": -77.04409306
+  },
+  "nationalParkInfo": {
+    "parkCode": "coga",
+    "npsId": "B2F2941A-1BC1-42ED-B02F-541EBC80AEE4",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/coga/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/coga/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/coga/index.htm",
+    "address": {
+      "line1": "1850 Constitution Ave. NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20002"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The sites of National Mall and Memorial Parks (other than the Washington Monument) are always open to the public. Restrooms, museums and elevators close in the evenings (check individual sites for hours)."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "coga-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C815721-1DD8-B71B-0B6B84757C7F343E.jpg",
+      "title": "Constitution Garden",
+      "altText": "Shot of the Garden Pond with the Washington Monument in the background",
+      "caption": "A quiet spot in the midst of the Nations Capital",
+      "credit": "NPS Photo/Brian Hall",
+      "isPrimary": true
+    },
+    {
+      "id": "coga-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/58E331F7-DAC5-965E-7E820EAD17250486.jpg",
+      "title": "Constitution Gardens",
+      "altText": "Jogger and two bicyclists on a path by a pond",
+      "caption": "Visitors enjoying Constitution Gardens",
+      "credit": "NPS / Victoria Stauffenberg",
+      "isPrimary": false
+    },
+    {
+      "id": "coga-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5935F209-044C-1D8B-A0B92CFBC2867B09.jpg",
+      "title": "Constitution Gardens",
+      "altText": "A weeping willow tree with a monument in the background",
+      "caption": "A view of the Washington Monument from Constitution Gardens",
+      "credit": "Carol M. Highsmith",
+      "isPrimary": false
+    },
+    {
+      "id": "coga-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/596EAB74-EFEE-AA23-EBE6AC5C4DB4A085.jpg",
+      "title": "Constitution Gardens",
+      "altText": "People walking on a sidewalk near water and a bridge",
+      "caption": "A beautiful day in Constitution Gardens",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "coga-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1D37C60C-C644-8175-4F808DC8319C24F5.jpg",
+      "title": "56 Signers of the Declaration of Independence Memorial",
+      "altText": "A low stone semicircle adjacent to a lake with the Washington Monument in the background.",
+      "caption": "The 56 Signers of the Declaration of Independence Memorial is on the island in the center of Constitution Gardens's pond.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/coga/index.htm",
+    "directions": "http://www.nps.gov/coga/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Scenic Views",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

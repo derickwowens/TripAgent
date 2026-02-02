@@ -1,0 +1,183 @@
+{
+  "id": "np-hafo",
+  "name": "Hagerman Fossil Beds National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "ID",
+  "stateName": "Idaho",
+  "region": "west",
+  "description": "During the Pliocene, this place looked quite different. Lush wetlands, forests, and grasslands provided excellent habitat for a variety of animals. From fascinating, now-extinct creatures like the saber-toothed cat, mastodon, and ground sloth, to more familiar animals like horses, beavers, and birds, the scientific study of Pliocene fossils is the key to Hagerman.",
+  "shortDescription": "During the Pliocene, this place looked quite different. Lush wetlands, forests, and grasslands provided excellent habitat for a variety of animals. From fascinating, now-extinct creatures like the sab...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 42.79074114,
+    "longitude": -114.9443074
+  },
+  "nationalParkInfo": {
+    "parkCode": "hafo",
+    "npsId": "BEE3E4AA-D61B-4197-A2A0-567D15734766",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hafo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hafo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2089334105",
+    "email": "hafo_information@nps.gov",
+    "website": "https://www.nps.gov/hafo/index.htm",
+    "address": {
+      "line1": "17970 U.S. Hwy 30",
+      "line2": "",
+      "city": "Hagerman",
+      "state": "ID",
+      "postalCode": "83332"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The road leading to the Monument is a public road and is open 24 hours a day.  \nAccess to the Monument Overlooks closes at dusk.  The Visitor Center has separate hours.\n\nPlease be aware that the overlooks and trails are not maintained during winter."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Hagerman, Idaho, gets 10 inches of rain per year. On average, there are 213 sunny days per year in Hagerman, Idaho. The July high is around 94 degrees. The January low is 22. Our comfort index, which is based on humidity during the hot months, is a 78 out of 100, where higher is more comfortable. The US average on the comfort index is 44."
+  },
+  "images": [
+    {
+      "id": "hafo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3DE8A223-C218-D1DA-CB8CF6266B45585F.jpg",
+      "title": "Fossil Exhibits at the Thousand Springs Visitor Center",
+      "altText": "A fossil horse stands in the center of a room filled with posters and display cases",
+      "caption": "The Thousand Springs Visitor Center is the only place at the monument to see fossils.",
+      "credit": "NPS/S. Lacy",
+      "isPrimary": true
+    },
+    {
+      "id": "hafo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3D8D0614-0D98-C696-1C209934805FE0A4.jpg",
+      "title": "Hagerman Fossil Beds National Monument in Southern Idaho",
+      "altText": "Steep, rocky bluffs line a river, awash in warm sunset colors",
+      "caption": "The Glenns Ferry Formation contains one of the world's richest Pliocene fossil deposits.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hafo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3DBB48EE-0CE9-B1D2-C104169F6AD58A8A.jpg",
+      "title": "Thousand Springs Visitor Center",
+      "altText": "A sidewalk leads to a boxy, wood-paneled building labelled as \"visitor center\"",
+      "caption": "The Thousand Springs Visitor Center, opening in 2022, marks a new partnership between the National Park Service and Idaho Department of Parks and Recreation.",
+      "credit": "NPS/S. Lacy",
+      "isPrimary": false
+    },
+    {
+      "id": "hafo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3E046477-A494-8F5C-73025B4525B98FA9.jpg",
+      "title": "Snake River Overlook in Hagerman Fossil Beds National Monument",
+      "altText": "A wooden platform with railing, along with two exhibit signs, overlooks the river and fossil beds.",
+      "caption": "Enjoy scenic vistas and learn about Hagerman's Pliocene past at the Snake River Overlook.",
+      "credit": "NPS/S. Lacy",
+      "isPrimary": false
+    },
+    {
+      "id": "hafo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3E18F67D-A8F5-9D9E-04F17CB99336EB85.jpg",
+      "title": "Oregon Trail Overlook at Hagerman Fossil Beds National Monument",
+      "altText": "An educational exhibit along a trail overlooks panoramic views of the Hagerman Valley.",
+      "caption": "Enjoy scenic vistas and learn about Hagerman's human and paleontological history at the Oregon Trail Overlook.",
+      "credit": "NPS/S. Lacy",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hafo/index.htm",
+    "directions": "http://www.nps.gov/hafo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Native American Heritage",
+    "Westward Expansion",
+    "Climate Change",
+    "Fossils and Paleontology",
+    "Geology",
+    "Scenic Views",
+    "Trails",
+    "National Monument",
+    "ID"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

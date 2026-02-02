@@ -1,0 +1,209 @@
+{
+  "id": "np-cuis",
+  "name": "Cumberland Island National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "St Marys is the gateway to Cumberland Island, Georgia's largest and southernmost barrier island. Here pristine maritime forests, undeveloped beaches and wide marshes whisper the stories of both man and nature. Natives, missionaries, enslaved African Americans and Wealthy Industrialists all walked here. Cumberland Island is also home to over 9,800 acres of Congressionally designated Wilderness.",
+  "shortDescription": "St Marys is the gateway to Cumberland Island, Georgia's largest and southernmost barrier island. Here pristine maritime forests, undeveloped beaches and wide marshes whisper the stories of both man an...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 30.85857484,
+    "longitude": -81.45253575
+  },
+  "nationalParkInfo": {
+    "parkCode": "cuis",
+    "npsId": "EF680908-DE76-4336-BD51-F33BEB09B4D7",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cuis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cuis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9128824336",
+    "email": "cuis_info@nps.gov",
+    "website": "https://www.nps.gov/cuis/index.htm",
+    "address": {
+      "line1": "113 St. Marys St W",
+      "line2": "",
+      "city": "St. Marys",
+      "state": "GA",
+      "postalCode": "31558"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park is open 24 hours a day, all year. The island is only accessible by boat. The visitor center, other facilities, ferry operations, and docks for private boats all have separate hours, however; please see descriptions of those facilities elsewhere."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Cumberland Island National Seashore has a per-person entrance fee. This fee is waived for America the Beautiful pass holder plus three adults. Must present pass at time of check-in.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Cumberland Island’s climate is hot and humid during summer when temperatures tend to be in the 80's (>26 C) and mild during winter when temperatures tend to be in the 60's (<20 C). The warmest month of the year is July with an average high of 90 degrees F (32 C), while the coldest is January with an average low of 45 degrees F (44 C). Visit the Current Conditions page for an up-to-date local forecast: https://www.nps.gov/cuis/planyourvisit/conditions.htm#weather"
+  },
+  "images": [
+    {
+      "id": "cuis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C803FAD-1DD8-B71B-0BF8968CDECF2468.jpg",
+      "title": "Vegetated Dunes",
+      "altText": "Sand dunes covered with shrubs and grasses",
+      "caption": "Vegetation holds dunes in place providing a barrier to erosion forces and creating essential interdune meadows to support island life.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cuis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C804128-1DD8-B71B-0B7FDC20E9D9373F.jpg",
+      "title": "Home To Wildlife",
+      "altText": "Alligator resting on a log in pond",
+      "caption": "Cumberland Island National Seashore encompasses a variety of forest, marsh, and coastal landscapes providing a home for numerous species including American Alligators.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C804293-1DD8-B71B-0B3C50A212C19199.jpg",
+      "title": "Undeveloped Coast",
+      "altText": "Ocean beach at sunrise",
+      "caption": "Cumberland Island National Seashore encompasses nearly 18 miles of undeveloped beach offering recreation for visitors and essential nesting area for birds and sea turtles.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C804721-1DD8-B71B-0B674DD331D1FC2B.jpg",
+      "title": "Plum Orchard Mansion",
+      "altText": "large, white mansion behind oak trees draped with Spanish Moss",
+      "caption": "Visitors can take a guided tour of the Plum Orchard Mansion and experience the luxuries of Victorian high society as well as the effort and ingenuity it took to make it possible.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C805318-1DD8-B71B-0BEE73A8A7441F08.jpg",
+      "title": "Island Bluffs Shaped By Tides",
+      "altText": "rippled sands of a beach in front of pine tree covered bluffs",
+      "caption": "Tidal forces continue to shape the land today as they have for thousands of years forming high bluffs used for fortifications and ship docking throughout the island’s history.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuis-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C805E82-1DD8-B71B-0B894349D0BBFF6B.jpg",
+      "title": "Historic Main Road",
+      "altText": "huge oak trees and palm shrubs line a sand road",
+      "caption": "While visitors to the island cannot bring vehicles, they can travel the historic main park road by foot and bicycle. Some remaining island residents will still drive vehicles on the road to reach their residences as they have for generations.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuis-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C806429-1DD8-B71B-0B9351B8366AB7C2.jpg",
+      "title": "Dungeness Ruins",
+      "altText": "brick and stone ruins of a large mansion at sunset under colorful clouds",
+      "caption": "Dugeness was the largest mansion built on the island as part of the Carnegie Estate. Though lost to fire in 1959, the ruins of the mansion and several of its support structures are a reminder of the island’s rich history.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuis-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8065C5-1DD8-B71B-0B3CC16BCC695D70.jpg",
+      "title": "The Settlement",
+      "altText": "small white one room church, old red house in the background, under cloudy skies",
+      "caption": "The remote north end of the island is home to the First African Baptist Church and The Settlement, where African American residents were able to purchase their first deeded property on the island at the end of the 1800s.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cuis-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C806748-1DD8-B71B-0B9947D4C0E897DE.jpg",
+      "title": "Tidal Creek",
+      "altText": "tidal creek at low tide surrounded by palm and oak trees",
+      "caption": "Rising tides bring valuable nutrients into tidal creeks, while receding tides remove waste. This makes the tide cycle the beating heart of the island’s tidal creeks, salt marshes, and estuaries.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cuis/index.htm",
+    "directions": "http://www.nps.gov/cuis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Fire",
+    "National Seashore",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

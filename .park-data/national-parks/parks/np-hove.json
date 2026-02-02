@@ -1,0 +1,184 @@
+{
+  "id": "np-hove",
+  "name": "Hovenweep National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "Hovenweep preserves six prehistoric sites built between A.D. 1200 and 1300 which may have served as ceremonial centers. Explore a variety of structures, including multistory towers perched on canyon rims and balanced on boulders. The construction and attention to detail will leave you marveling at the skill and motivation of the builders.",
+  "shortDescription": "Hovenweep preserves six prehistoric sites built between A.D. 1200 and 1300 which may have served as ceremonial centers. Explore a variety of structures, including multistory towers perched on canyon r...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.39134092,
+    "longitude": -109.0047977
+  },
+  "nationalParkInfo": {
+    "parkCode": "hove",
+    "npsId": "BA84404E-743C-4841-9F83-87CEDA164E5B",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hove/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hove/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9705624282",
+    "email": "hoveinfo@nps.gov",
+    "website": "https://www.nps.gov/hove/index.htm",
+    "address": {
+      "line1": "Along the border between southeast Utah and southwest Colorado",
+      "line2": "Just north and west of Cortez, CO",
+      "city": "Cortez",
+      "state": "CO",
+      "postalCode": "81321"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Hovenweep National Monument is typically open year-round. Park trails are open only sunrise to sunset."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Entry fee is valid for 7 days and grants entry for driver and passengers in one private vehicle. Does not cover camping costs.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car. This fee type is typically used for bicyclists and pedestrians. Youth 15 and under are admitted free. Entry fee is valid for 7 days.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Hovenweep is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F."
+  },
+  "images": [
+    {
+      "id": "hove-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EFD89-1DD8-B71B-0B19BADA80708922.jpg",
+      "title": "Milky Way at Square Tower Group",
+      "altText": "a stone structure at night with the Milky Way arcing overhead",
+      "caption": "Hovenweep National Monument was designated an International Dark Sky Park in 2014.",
+      "credit": "NPS Photo / Jacob W. Frank",
+      "isPrimary": true
+    },
+    {
+      "id": "hove-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F08D5-1DD8-B71B-0B2963D07B899AC4.jpg",
+      "title": "Claretcup Cactus",
+      "altText": "a bright red cactus flower",
+      "caption": "Claretcup Cactus is a common plant at Hovenweep National Monument",
+      "credit": "NPS Photo / Jacob W. Frank",
+      "isPrimary": false
+    },
+    {
+      "id": "hove-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F078B-1DD8-B71B-0BC4A670042B5D47.jpg",
+      "title": "Stronghold House",
+      "altText": "a stone structure resting on a cliff edge",
+      "caption": "Stronghole House is one of several structures at the Square Tower Group",
+      "credit": "NPS Photo / Andrew Kuhn",
+      "isPrimary": false
+    },
+    {
+      "id": "hove-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F063F-1DD8-B71B-0B6A20C52C3CE8EB.jpg",
+      "title": "Cajon Unit",
+      "altText": "a stone structure with blue sky and clouds overhead",
+      "caption": "The Cajon Unit is one of several outlying units at Hovenweep National Monument.",
+      "credit": "NPS Photo / Neal Herbert",
+      "isPrimary": false
+    },
+    {
+      "id": "hove-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EFBD8-1DD8-B71B-0B61D8C95F53348D.jpg",
+      "title": "Collared Lizard",
+      "altText": "a green lizard with yellow head, yellow spots and black collar",
+      "caption": "Collard lizards are one of many species that call Hovenweep home.",
+      "credit": "NPS Photo / Jacob W. Frank",
+      "isPrimary": false
+    },
+    {
+      "id": "hove-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D58B73D7-038D-9E4A-4042558274ED6A42.jpg",
+      "title": "Holly Group",
+      "altText": "remains of a stone structure with wood beams on the edge of a canyon",
+      "caption": "The Holly Group is one of Hovenweep's outlying sites, but worth the drive or hike.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hove/index.htm",
+    "directions": "http://www.nps.gov/hove/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Cliff Dwellings",
+    "Native American Heritage",
+    "Animals",
+    "National Monument",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

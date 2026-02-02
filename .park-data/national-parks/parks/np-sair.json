@@ -1,0 +1,137 @@
+{
+  "id": "np-sair",
+  "name": "Saugus Iron Works National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "In the 1600's, on the banks of the Saugus River, something extraordinary happened! Explore the place where European iron makers brought their special skills to a young Massachusetts colony. Saugus Iron Works is a twelve-acre National Historic Site that includes working waterwheels, forges, mills, a historic 17th century home, and a lush river basin.",
+  "shortDescription": "In the 1600's, on the banks of the Saugus River, something extraordinary happened! Explore the place where European iron makers brought their special skills to a young Massachusetts colony. Saugus Iro...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.46830664,
+    "longitude": -71.0076953
+  },
+  "nationalParkInfo": {
+    "parkCode": "sair",
+    "npsId": "A83EFD38-9FCF-4996-A957-FE416A8C6B6D",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sair/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/sair/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "781-233-0050",
+    "email": "SAMA_Information@nps.gov",
+    "website": "https://www.nps.gov/sair/index.htm",
+    "address": {
+      "line1": "244 Central St",
+      "line2": "",
+      "city": "Saugus",
+      "state": "MA",
+      "postalCode": "01906"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "All outdoor spaces including the grounds and walking paths are accessible 7 days a week. Please check the visitor center hours to learn more about which facilities are open."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "New England weather is unpredictable year-round. Monthly averages, in degrees Fahrenheit, are: January: 37 high, 20 low February: 40 high, 23 low March: 47 high, 30 low April: 57 high, 38 low May: 67 high, 48 low June: 76 high, 58 low July: 82 high, 63 low August: 80 high, 62 low September: 73 high, 55 low October: 62 high, 45 low November: 52 high, 37 low December: 42 high, 27 low"
+  },
+  "images": [
+    {
+      "id": "sair-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C852E9B-1DD8-B71B-0BA7396E0D076BDB.jpg",
+      "title": "Saugus Iron Works Landscape",
+      "altText": "Several wooden structures amid green fields and trees under partly cloudy sky and beside river.",
+      "caption": "A view of Saugus Iron Works from the Saugus River",
+      "credit": "NPS Photo / Don Woods",
+      "isPrimary": true
+    },
+    {
+      "id": "sair-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/838FD1C1-064E-FCB5-82DE23B12CF51362.jpg",
+      "title": "Iron Forge",
+      "altText": "Approximately 15' by 15' spoked wooden wheel beside river and under blue sky.",
+      "caption": "The forge is where bars of pig iron created at the blast furnace were changed into a new kind of iron that a blacksmith was able to use.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sair-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/83A5CA79-099C-220B-DD37490775CD89C4.jpg",
+      "title": "Blast Furnace",
+      "altText": "Rectangular wooden structure between orange deciduous trees and wooden bridge with walkway.",
+      "caption": "The blast furnace is where bog ore was smelted to create cast iron \"pig\" bars.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sair/index.htm",
+    "directions": "https://www.nps.gov/sair/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Colonization and Settlement",
+    "Engineering",
+    "Incarceration",
+    "Industry",
+    "Laborer and Worker",
+    "Religion and Spirituality",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Animals",
+    "Trails",
+    "National Historic Site",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

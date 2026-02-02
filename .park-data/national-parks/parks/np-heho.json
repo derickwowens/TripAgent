@@ -1,0 +1,205 @@
+{
+  "id": "np-heho",
+  "name": "Herbert Hoover National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "IA",
+  "stateName": "Iowa",
+  "region": "midwest",
+  "description": "Orphaned at age nine, Herbert Hoover left West Branch never to live here again. In later years, he returned to his humble birthplace to celebrate his long career of public service. A memorial landscape remains to tell his story: how community, hard work, honesty, and usefulness to others opened a world of opportunity— and the presidency of the United States— to a child of simple beginnings.",
+  "shortDescription": "Orphaned at age nine, Herbert Hoover left West Branch never to live here again. In later years, he returned to his humble birthplace to celebrate his long career of public service. A memorial landscap...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 41.66793558,
+    "longitude": -91.35232139
+  },
+  "nationalParkInfo": {
+    "parkCode": "heho",
+    "npsId": "43AC146A-0903-4E4A-BD7D-7169655009C7",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/heho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/heho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3196432541",
+    "email": "heho_information@nps.gov",
+    "website": "https://www.nps.gov/heho/index.htm",
+    "address": {
+      "line1": "110 Parkside Drive",
+      "line2": "",
+      "city": "West Branch",
+      "state": "IA",
+      "postalCode": "52358"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "From April 1 - October 31, historic buildings and the visitor center are open 9:00 a.m. to 5:00 p.m. \nFrom November 1 - March 31, historic buildings are open 9:00 a.m. to 4:30 p.m. and the visitor center is open 9:00 a.m. to 5:00 p.m.\n\nThe grounds of the historic site are open 24 hours. Overnight parking is not allowed in the park."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring and fall are mild with moderate temperatures. Average high temperatures in the spring and fall are between 50° and 60° F, with lows from 40° F to 50° F. Summer is hot and humid with average highs around 85° F. Winter can be cold, windy, and snowy with highs averaging 30° F or lower. Rain and thunderstorms are most frequent in the spring and summer."
+  },
+  "images": [
+    {
+      "id": "heho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7924AC-1DD8-B71B-0BEDCDE2B64225D5.jpg",
+      "title": "Herbert Hoover Birthplace Cottage",
+      "altText": "A one story wood frame house has board-and-batten exterior siding and a picket fence painted white.",
+      "caption": "Herbert Hoover called his humble birthplace \"physical proof of the unbounded opportunity of American life.\"",
+      "credit": "NPS Photo/John Eicher",
+      "isPrimary": true
+    },
+    {
+      "id": "heho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C792782-1DD8-B71B-0BCA6D30498E1D77.jpg",
+      "title": "Gravesite of President & Mrs. Hoover",
+      "altText": "Two marble ledger stones each mark a grave in a semicircular landscaped plot with a flagpole.",
+      "caption": "Two simple marble slabs mark the graves of Herbert and Lou Henry Hoover.",
+      "credit": "NPS Photo/Steven Lonergan",
+      "isPrimary": false
+    },
+    {
+      "id": "heho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C792A71-1DD8-B71B-0B5102E66A2B6ED1.jpg",
+      "title": "Herbert Hoover Presidential Library & Museum",
+      "altText": "A sprawling one story public building of rough-faced yellowish stone has a white portico entrance.",
+      "caption": "Exhibit galleries and archival collections tell of the triumphs and tragedies of Hoover’s long career in public service.",
+      "credit": "NARA/Lynn Smith",
+      "isPrimary": false
+    },
+    {
+      "id": "heho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C792600-1DD8-B71B-0B560B18E7EC1A12.jpg",
+      "title": "Blacksmith Shop",
+      "altText": "A low brown barn-like building with three large doorways has a large horseshoe on its facade.",
+      "caption": "Herbert Hoover's father Jesse owned a blacksmith shop similar to the one at Herbert Hoover NHS.",
+      "credit": "NPS Photo/John Tobiason",
+      "isPrimary": false
+    },
+    {
+      "id": "heho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79287E-1DD8-B71B-0B153C0073FE5D2F.jpg",
+      "title": "Schoolhouse",
+      "altText": "A one-story wooden building painted off-white has two windows and a central doorway.",
+      "caption": "Many rural Midwestern towns like West Branch placed a high value on education.",
+      "credit": "NPS Photo/John Tobiason",
+      "isPrimary": false
+    },
+    {
+      "id": "heho-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C792B5A-1DD8-B71B-0B17ACFC572CAF4C.jpg",
+      "title": "Friends Meetinghouse",
+      "altText": "Two doorways, one on either side, of a broad white wood frame building divides the sexes.",
+      "caption": "The plainly appointed Friends Meetinghouse and the practices within express Quaker values of peace, simplicity, integrity, and service to others.",
+      "credit": "NPS Photo/John Tobiason",
+      "isPrimary": false
+    },
+    {
+      "id": "heho-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79297D-1DD8-B71B-0B816D9E82328999.jpg",
+      "title": "Statue of Isis",
+      "altText": "A cast bronze figure of a veiled goddess sits on a throne mounted on a concrete pedestal.",
+      "caption": "The people of Belgium gave Herbert Hoover the statue \"Isis, Goddess of Life\" in gratitude for his famine relief efforts on their behalf during the First World War.",
+      "credit": "NPS Photo/John Tobiason",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/heho/index.htm",
+    "directions": "http://www.nps.gov/heho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Sculpture",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Commerce",
+    "Landscape Design",
+    "Presidents",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Grasslands",
+    "Prairies",
+    "River and Riparian",
+    "Trails",
+    "National Historic Site",
+    "IA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

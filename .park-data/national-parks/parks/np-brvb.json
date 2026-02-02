@@ -1,0 +1,142 @@
+{
+  "id": "np-brvb",
+  "name": "Brown v. Board of Education National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "KS",
+  "stateName": "Kansas",
+  "region": "midwest",
+  "description": "The path to equality has been anything but smooth. It's taken courage and dedication by everyday people coming together for a common goal to carry the country toward true equality. Parents, teachers, secretaries, welders, ministers, and students drove their communities, and the country along with them, toward justice in a series of often unsteady turns leading to the Brown v. Board decision.",
+  "shortDescription": "The path to equality has been anything but smooth. It's taken courage and dedication by everyday people coming together for a common goal to carry the country toward true equality. Parents, teachers, ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 39.03787665,
+    "longitude": -95.67614437
+  },
+  "nationalParkInfo": {
+    "parkCode": "brvb",
+    "npsId": "E2F59F29-1F3A-43B9-A361-7E74E5FDDEB1",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/brvb/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/brvb/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7853544273",
+    "email": "BRVB_Special_Events@nps.gov",
+    "website": "https://www.nps.gov/brvb/index.htm",
+    "address": {
+      "line1": "1515 SE Monroe Street",
+      "line2": "",
+      "city": "Topeka",
+      "state": "KS",
+      "postalCode": "66612-1143"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "Closed",
+    "description": "We are currently open Tuesday through Saturday. We are closed for Thanksgiving, Christmas, and New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Kansas has a temperate but continental climate, with great extremes between summer and winter temperatures but few long periods of extreme hot or cold."
+  },
+  "images": [
+    {
+      "id": "brvb-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8422BD-1DD8-B71B-0BB53F08D10856B9.jpg",
+      "title": "Brown v Board NHP Exterior",
+      "altText": "Brown v Board National Historical Park",
+      "caption": "The Monroe Elementary School Building.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "brvb-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C841E0A-1DD8-B71B-0B3E19DB45C972CA.jpg",
+      "title": "Monroe Elementary School",
+      "altText": "Monroe School and park visitor center",
+      "caption": "Monroe Elementary School, was one of the four segregated elementary schools for African American children in Topeka",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "brvb-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C841FAD-1DD8-B71B-0BB85298CF63B947.jpg",
+      "title": "Monroe Classroom",
+      "altText": "Historic classroom image, 1949",
+      "caption": "Monroe School Class Photo 1949",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "brvb-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C842123-1DD8-B71B-0B1D7792CB6E50A0.jpg",
+      "title": "Exterior of Monroe School",
+      "altText": "Front entrance to Monroe school",
+      "caption": "Front entrance to historic Monroe school.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "brvb-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C842464-1DD8-B71B-0B93EE2F82B75EE6.jpg",
+      "title": "National park programs",
+      "altText": "Visitors join a national park program around the Monroe school building and grounds",
+      "caption": "Visitors join a national park program around the Monroe school building and grounds",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/brvb/index.htm",
+    "directions": "http://www.nps.gov/brvb/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Hispanic American Heritage",
+    "Schools and Education",
+    "Social Movements",
+    "Civil Rights",
+    "Women's History",
+    "National Historical Park",
+    "KS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

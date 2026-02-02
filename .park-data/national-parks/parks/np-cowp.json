@@ -1,0 +1,178 @@
+{
+  "id": "np-cowp",
+  "name": "Cowpens National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "SC",
+  "stateName": "South Carolina",
+  "region": "southeast",
+  "description": "A pasturing area at the time of the battle, this Revolutionary War site commemorates the place where Daniel Morgan and his army turned the flanks of Banastre Tarleton's British army. This classic military tactic, known as a double envelopment, secured a patriot victory.",
+  "shortDescription": "A pasturing area at the time of the battle, this Revolutionary War site commemorates the place where Daniel Morgan and his army turned the flanks of Banastre Tarleton's British army. This classic mili...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 35.13160654,
+    "longitude": -81.80935433
+  },
+  "nationalParkInfo": {
+    "parkCode": "cowp",
+    "npsId": "9F7919AF-7B0B-4FDB-98B7-9D0FB3B9E4F1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cowp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cowp/"
+    }
+  ],
+  "contact": {
+    "phone": "8644612828",
+    "email": "COWP_information@nps.gov",
+    "website": "https://www.nps.gov/cowp/index.htm",
+    "address": {
+      "line1": "Cowpens National Battlefield",
+      "line2": "4001 Chesnee Hwy",
+      "city": "Gaffney",
+      "state": "SC",
+      "postalCode": "29341"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The visitor center parking lot is open 9:00 am - 5:00 pm. The front gate closes at 5:00 pm. Loop Road closes at 4:30 pm. After hours parking is located 1 mile east at the intersection of Hwy 11 and Hayes Road and is open dawn to dusk.\n\nVisitor Center is open Wed - Sunday 9 - 5."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures for the area range from very hot and humid in the summer to cool and moderate in the winter. http://forecast.weather.gov/MapClick.php?lat=35.1346&lon=-81.7036#.VhkrZ-xVhBc"
+  },
+  "images": [
+    {
+      "id": "cowp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C797008-1DD8-B71B-0B2C546FE940A6F3.jpg",
+      "title": "Sunrise on Green River Road",
+      "altText": "The sun is coming up on the battlefield in the direction that the Americans would have been facing.",
+      "caption": "Sunrise on Green River Road",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cowp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C797105-1DD8-B71B-0B8DE06D4BE4FA23.jpg",
+      "title": "Visitor Center and US Monument in the Fall",
+      "altText": "The Visitor Center and US Monument are framed by orange and yellow trees.",
+      "caption": "Visitor Center and US Monument in the Fall",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cowp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7971FE-1DD8-B71B-0B317547012C304A.jpg",
+      "title": "Robert Scruggs House",
+      "altText": "Robert Scruggs House",
+      "caption": "Robert Scruggs House",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cowp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79730F-1DD8-B71B-0B7EF6B08FEC4A2E.jpg",
+      "title": "Washington Light Infantry Monument in the Fog",
+      "altText": "Fog shrouds the 1856 Washington Light Infantry Monument",
+      "caption": "Washington Light Infantry Monument in the Fog",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cowp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C797412-1DD8-B71B-0B951A0DE0D54838.jpg",
+      "title": "Tom Turkey",
+      "altText": "A tom turkey displays his feathers behind the Visitor Center.",
+      "caption": "Tom Turkey",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cowp-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79767D-1DD8-B71B-0B0AD92A2C7655DB.jpg",
+      "title": "Militiaman Firing Musket",
+      "altText": "Smoke puffs up from the vent and a flame shoots out of the muzzle as a militiaman fires his musket.",
+      "caption": "Militiaman Firing Musket",
+      "credit": "Richard Crowley for NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cowp/index.htm",
+    "directions": "http://www.nps.gov/cowp/"
+  },
+  "keywords": [
+    "American Revolution",
+    "Military",
+    "Battlefields",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "National Battlefield",
+    "SC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

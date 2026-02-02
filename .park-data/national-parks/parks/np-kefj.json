@@ -1,0 +1,305 @@
+{
+  "id": "np-kefj",
+  "name": "Kenai Fjords National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "At the edge of the Kenai Peninsula lies a land where the ice age lingers. Nearly 40 glaciers flow from the Harding Icefield, Kenai Fjords' crowning feature. Wildlife thrives in icy waters and lush forests along the fjords once carved by the vast expanse of ice. Today, shrinking glaciers bear witness to the effects of our changing climate.",
+  "shortDescription": "At the edge of the Kenai Peninsula lies a land where the ice age lingers. Nearly 40 glaciers flow from the Harding Icefield, Kenai Fjords' crowning feature. Wildlife thrives in icy waters and lush for...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 59.81804414,
+    "longitude": -150.106502
+  },
+  "nationalParkInfo": {
+    "parkCode": "kefj",
+    "npsId": "11E73438-0CCC-4441-A76A-1995F67F2D89",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kefj/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/kefj/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9073182040",
+    "email": "kefjinformation@nps.gov",
+    "website": "https://www.nps.gov/kefj/index.htm",
+    "address": {
+      "line1": "411 Washington Street",
+      "line2": "",
+      "city": "Seward",
+      "state": "AK",
+      "postalCode": "99664"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is open year-round.  The primary months to visit are June, July, and August.  There are reduced services in the area during the months of May and September.\n\nThe road to the Exit Glacier area is not plowed during the winter months, and is closed to vehicle traffic once it is covered in snow and ice.\n\nThe park's coastal backcountry in also largely inaccessible late fall through the early spring due to rough seas."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in Kenai Fjords is difficult to predict and can change rapidly. The area generally enjoys a relatively temperate maritime climate, primarily due to the influence of warmer ocean currents that flows through the Gulf of Alaska. Summer daytime temperatures range from the mid 40s°F to the low 70s°F. Overcast and cool rainy days are frequent. Winter temperatures can range from the low 30s°F to -20°F."
+  },
+  "images": [
+    {
+      "id": "kefj-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C798EAB-1DD8-B71B-0BC4BEFB197F2C90.jpg",
+      "title": "Bear Glacier Aerial",
+      "altText": "aerial image of Bear Glacier",
+      "caption": "Bear Glacier is the largest of nearly 40 glaciers that flow from the Harding Icefield.",
+      "credit": "USGS/Bruce Molnia",
+      "isPrimary": true
+    },
+    {
+      "id": "kefj-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE352-1DD8-B71B-0B35831ADF254DE0.jpg",
+      "title": "Aialik Bay Kayakers",
+      "altText": "kayakers in front of a tidewater glacier",
+      "caption": "Kayakers enjoy the spectacular scenery in the fjords in Aialik Bay.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kefj-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE50D-1DD8-B71B-0B23431BC04ACB33.jpg",
+      "title": "Humpback Whale Breach",
+      "altText": "a humpback whale breaches",
+      "caption": "A humpback whale breaches in Kenai Fjords National Park",
+      "credit": "NPS Photo/Thoresen",
+      "isPrimary": false
+    },
+    {
+      "id": "kefj-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE88C-1DD8-B71B-0B3F02FD7F30F1AF.jpg",
+      "title": "Above Bear Glacier",
+      "altText": "aerial view of Bear Glacier from Harding Icefield",
+      "caption": "Flightseeing over the Harding Icefield provides amazing opportunities to view glaciers, like Bear Glacier, from a different perspective.",
+      "credit": "USGS/Bruce Molnia",
+      "isPrimary": false
+    },
+    {
+      "id": "kefj-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DEEE0-1DD8-B71B-0B7B85B29F07C371.jpg",
+      "title": "Exit Glacier View",
+      "altText": "visitors at accessible overlook of Exit Glacier and Exit Creek.",
+      "caption": "A stroll to Glacier View provides a nice overlook of Exit Glacier as part of a 1 mile accessible walk.",
+      "credit": "NPS Photo/Jim Pfeiffenberger",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "977B3209-68A2-4BCE-97A9-EA0CAC320664",
+      "name": "Mountain Climbing"
+    },
+    {
+      "id": "7C822207-214A-48E8-8794-2F42F7CFB56F",
+      "name": "Ice Climbing"
+    },
+    {
+      "id": "8C495067-8E94-4D78-BBD4-3379DACF6550",
+      "name": "Dog Sledding"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "A7536632-1115-41E3-9A63-8E7A6B9003D6",
+      "name": "Helicopter Flying"
+    },
+    {
+      "id": "C06FE528-9671-4EC1-909F-B7D3720A1D89",
+      "name": "Fixed Wing Flying"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kefj/index.htm",
+    "directions": "http://www.nps.gov/kefj/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "World War II",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Rainforest",
+    "Geology",
+    "Glaciers",
+    "Mountains",
+    "Night Sky",
+    "Aurora Borealis",
+    "Oceans",
+    "Whales",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "Waterfalls",
+    "Wilderness",
+    "National Park",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

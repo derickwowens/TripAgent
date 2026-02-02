@@ -1,0 +1,142 @@
+{
+  "id": "np-maac",
+  "name": "Maine Acadian Culture",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "ME",
+  "stateName": "Maine",
+  "region": "northeast",
+  "description": "Maine Acadians share beliefs and experiences tying them to a common religion, languages, and history. The St. John River, land, and family are essential to their culture. The National Park Service supports the Maine Acadian Heritage Council, an association of historical societies, cultural clubs, towns, and museums that work together to support Maine Acadian culture in the St. John Valley.",
+  "shortDescription": "Maine Acadians share beliefs and experiences tying them to a common religion, languages, and history. The St. John River, land, and family are essential to their culture. The National Park Service sup...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 47.25102114,
+    "longitude": -68.59447532
+  },
+  "nationalParkInfo": {
+    "parkCode": "maac",
+    "npsId": "A609887A-BB48-47AA-A6F6-4C7F77346FC6",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/maac/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/maac/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2077286826",
+    "email": "acadia_information@nps.gov",
+    "website": "https://www.nps.gov/maac/index.htm",
+    "address": {
+      "line1": "PO Box 88",
+      "line2": "",
+      "city": "Madawaska",
+      "state": "ME",
+      "postalCode": "04756"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Maine Acadian Culture is a collection of sites dealing with Acadian history and culture. The National Park Service does not operate any sites as part of Maine Acadian Culture. Many of the attractions in the St. John Valley are privately operated by non-profit organizations that are part of the Maine Acadian Heritage Council."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Located in remote northern Maine, Aroostook County experiences all four seasons. Summers temperatures average highs near 75° F (23° C) while winter temperatures average lows often below 0° F (-17° C). Snow falls typically from November through April and averages well over 100 inches of snow per winter."
+  },
+  "images": [
+    {
+      "id": "maac-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B3A97-1DD8-B71B-0BCDEEBD8170AEE0.jpg",
+      "title": "Acadian Village",
+      "altText": "Scenic view of Acadian Village",
+      "caption": "Scenic view of Acadian Village",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "maac-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B3D6B-1DD8-B71B-0B4EF1854FFA3650.jpg",
+      "title": "Our Lady of Assumption Church, Acadian Village",
+      "altText": "Our Lady of Assumption Church, Acadian Village",
+      "caption": "Our Lady of Assumption Church, Acadian Village",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "maac-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B3EE0-1DD8-B71B-0B489A51A45FA82C.jpg",
+      "title": "Mont-Carmel",
+      "altText": "Mont-Carmel, newly painted in original color scheme.",
+      "caption": "Mont-Carmel, newly painted in original color scheme.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "maac-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B4044-1DD8-B71B-0BDAE48C1C7FD84D.jpg",
+      "title": "St Francis Historical Society and Gardens",
+      "altText": "St Francis Historical Society and Gardens",
+      "caption": "St Francis Historical Society and Gardens",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "maac-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B4469-1DD8-B71B-0BFBFEB48111481B.jpg",
+      "title": "Bangor/Aroostook Caboose & Green Water Tank",
+      "altText": "This site preserves one of a few surviving train water tanks in the United States and a 1940s era ca",
+      "caption": "This site preserves one of a few surviving train water tanks in the United States and a 1940s era caboose",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/maac/index.htm",
+    "directions": "http://www.nps.gov/maac/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Animals",
+    "Birds",
+    "Forests and Woodlands",
+    "",
+    "ME"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

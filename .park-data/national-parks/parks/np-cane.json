@@ -1,0 +1,179 @@
+{
+  "id": "np-cane",
+  "name": "Camp Nelson National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "KY",
+  "stateName": "Kentucky",
+  "region": "southeast",
+  "description": "The US Army established Camp Nelson as a fortified supply depot in April 1863. Over the next 3 years, the site evolved into a massive recruitment and training center for United States Colored Troops and a refugee camp for their families. It served as a shelter for civilians fleeing war and for enslaved people hoping to secure their freedom and aid in the destruction of slavery.",
+  "shortDescription": "The US Army established Camp Nelson as a fortified supply depot in April 1863. Over the next 3 years, the site evolved into a massive recruitment and training center for United States Colored Troops a...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.7970179913,
+    "longitude": -84.598168306
+  },
+  "nationalParkInfo": {
+    "parkCode": "cane",
+    "npsId": "2FB7A664-0F66-49A3-9460-194F4073BA3F",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cane/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cane/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(859) 881-5716",
+    "email": "cane_info@nps.gov",
+    "website": "https://www.nps.gov/cane/index.htm",
+    "address": {
+      "line1": "6614 Old Danville Loop 2 Road",
+      "line2": "",
+      "city": "Nicholasville",
+      "state": "KY",
+      "postalCode": "40356"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The grounds featuring nearly 5-miles of unpaved trails and dozens of wayside exhibits explaining the significance of Camp Nelson, are open 7-days a week from sunrise to sunset. \n\nPlease see the Visitor Center tab for opening and closing hours, and seasonal changes."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Kentucky has a moderate climate, where summers are humid with highs typically in the upper 80s, and winter highs are in the low 40s. Of course, be aware of the possibility of storms or more extreme temperatures on occasion. The wettest months are March - July when about 4 inches of rain per month are expected, with other months of the year are usually drier."
+  },
+  "images": [
+    {
+      "id": "cane-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/90265CF2-ADE6-04D6-1CDC533B004D9746.jpg",
+      "title": "Camp Nelson National Monument Visitor Center",
+      "altText": "A paved path leads to a gray wooden building with US Flag flying.",
+      "caption": "Camp Nelson National Monument Visitor Center and Museum",
+      "credit": "NPS/A. Goetz",
+      "isPrimary": true
+    },
+    {
+      "id": "cane-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/090E9C4A-FC3A-4F38-7EB194A4A38CA49C.png",
+      "title": "In the Footsteps of Freedom at Camp Nelson National Monument",
+      "altText": "A living historian wearing a US Army Civil War uniform and park ranger walk on a mowed path.",
+      "caption": "A Park Ranger and a United States Colored Troops [USCT] soldier walking on a trail. Trees and people can be seen in the background.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "cane-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/119F3F0E-B0B2-A7CA-B9FAEA96181BD118.jpg",
+      "title": "Camp Nelson National Monument's Pastoral Landscape",
+      "altText": "Open fields of green grass with trees during a colorful sunrise.",
+      "caption": "View of Camp Nelson's pastoral landscape looking northeast near the Visitor Center.",
+      "credit": "NPS/SP",
+      "isPrimary": false
+    },
+    {
+      "id": "cane-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/904F0DFA-BAA1-A135-3E90B02C269E5D41.jpg",
+      "title": "Interior of Soldiers' Barrack Building",
+      "altText": "A row of rough, wooden bunk beds in the soldiers' barrack house.",
+      "caption": "Visit the barracks to imagine life at Camp Nelson during the Civil War.",
+      "credit": "NPS/ A. Goetz",
+      "isPrimary": false
+    },
+    {
+      "id": "cane-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AA6B7615-AE22-7890-A0DD3E829F771918.jpg",
+      "title": "Perry House",
+      "altText": "A white, 2 story farm house with a Civil War cannon sitting in front of it",
+      "caption": "The Perry House at Camp Nelson",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cane-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7E9967CB-F590-F434-375F758A63F9A9E8.jpg",
+      "title": "United States Colored Troops at Camp Nelson, KY during the Civil War",
+      "altText": "African American Civil War soldiers stand at attention outside their barracks.",
+      "caption": "African American Civil War soldiers fighting for the Union stand at attention outside their barracks at Camp Nelson, KY.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cane-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1194DC6B-95A3-8392-CEBFAE943BAC1C01.jpg",
+      "title": "Living History Demonstration at Camp Nelson National Monument",
+      "altText": "Living Historians portraying US Army artillery practice loading a cannon",
+      "caption": "14th Kentucky Light Artillery performing an artillery demonstration at Camp Nelson National Monument.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cane/index.htm",
+    "directions": "http://www.nps.gov/cane/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Forts",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Tragic Events",
+    "Forced Marches",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Trails",
+    "National Monument",
+    "KY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "id": "np-brcr",
+  "name": "Brices Cross Roads National Battlefield Site",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "MS",
+  "stateName": "Mississippi",
+  "region": "southeast",
+  "description": "The Confederate victory at Brices Cross Roads was a significant victory for Major General Nathan Bedford Forrest, but its long-term effect on the war proved costly for the Confederates.",
+  "shortDescription": "The Confederate victory at Brices Cross Roads was a significant victory for Major General Nathan Bedford Forrest, but its long-term effect on the war proved costly for the Confederates.",
+  "designation": "National Battlefield Site",
+  "coordinates": {
+    "latitude": 34.50611958,
+    "longitude": -88.72889343
+  },
+  "nationalParkInfo": {
+    "parkCode": "brcr",
+    "npsId": "F6555AB7-654F-4418-8827-F91F54536C04",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/brcr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/brcr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "18003057417",
+    "email": "natr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/brcr/index.htm",
+    "address": {
+      "line1": "260 Bethany Rd",
+      "line2": "",
+      "city": "Guntown",
+      "state": "MS",
+      "postalCode": "38849"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The grounds of the Brices Cross Roads National Battlefield Site are open sunrise to sunset everyday of the year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Mississippi is classified as a humid subtropical climate, the weather ranges from mild winters to hot summers with high humidity between May and September. Average high temperatures reach into the high 80's in summer, and into the high 40's in winter. Check local forecasts to plan your trip."
+  },
+  "images": [
+    {
+      "id": "brcr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C844204-1DD8-B71B-0BF8D1D53809C1E1.jpg",
+      "title": "Brices Crossroads Monument",
+      "altText": "The monument with cannons on each side",
+      "caption": "The Confederate victory at Brices Cross Roads was a significant victory for Major General Nathan Bedford Forrest, but its long term effect on the war proved costly for the Confederates. Brices Cross Roads is an excellent example of winning the battle, bu",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/brcr/index.htm",
+    "directions": "http://www.nps.gov/brcr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Battlefield Site",
+    "MS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "id": "np-mono",
+  "name": "Monocacy National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "During the summer of 1864, the Confederacy carried out a bold plan to turn the tide of the Civil War in their favor. They planned to capture Washington, DC and influence the election of 1864. On July 9, however, Federal soldiers outnumbered three to one, fought gallantly along the banks of the Monocacy River in an effort to buy time for Union reinforcement to arrive in Washington, DC.",
+  "shortDescription": "During the summer of 1864, the Confederacy carried out a bold plan to turn the tide of the Civil War in their favor. They planned to capture Washington, DC and influence the election of 1864. On July ...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 39.36084236,
+    "longitude": -77.39637677
+  },
+  "nationalParkInfo": {
+    "parkCode": "mono",
+    "npsId": "8F17B3D6-BFA2-49F2-B553-C10B2B3A3EED",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mono/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mono/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3016623515",
+    "email": "mono_mail@nps.gov",
+    "website": "https://www.nps.gov/mono/index.htm",
+    "address": {
+      "line1": "5201 Urbana Pike",
+      "line2": "",
+      "city": "Frederick",
+      "state": "MD",
+      "postalCode": "21704"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:30AM - Sunset",
+    "tuesday": "7:30AM - Sunset",
+    "wednesday": "7:30AM - Sunset",
+    "thursday": "7:30AM - Sunset",
+    "friday": "7:30AM - Sunset",
+    "saturday": "7:30AM - Sunset",
+    "sunday": "7:30AM - Sunset",
+    "description": "The park grounds are open daily from 7:30 until 20 minutes after sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring (March - May) Temperatures: Average high is 67 degrees with a low of 53 degrees Summer (June - August) Temperatures: Average high is 87 degrees with a low of 65 degrees Fall (September - November) Temperatures: Average high is 68 degrees with a low of 48 degrees Winter (December - February) Temperatures: Average high is 45 degrees with a low of 27 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "mono-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80BC8B-1DD8-B71B-0B7C449D99556A3F.jpg",
+      "title": "The Worthington House",
+      "altText": "Federal style house with trees behind it during the fall season.",
+      "caption": "The Worthington House is one of the most iconic locations on the battlefield.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mono-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80BB11-1DD8-B71B-0B44E666A872E8AF.jpg",
+      "title": "14 New Jersey Regiment Monument",
+      "altText": "The sun setting behind a monument.",
+      "caption": "The monument recognizes the sacrifices of the \"Monocacy Regiment.\"",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mono-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80C0D1-1DD8-B71B-0B447286D8182A2A.jpg",
+      "title": "The Secondary House",
+      "altText": "Sun rise and fog behind the historic Secondary House on the Best Farm.",
+      "caption": "Built in the 1790s this house was one of the first structures in the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mono-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80C467-1DD8-B71B-0B265910DE1D0AFA.jpg",
+      "title": "Artillery Firing",
+      "altText": "Smoke and fire erupt from an artillery piece as it is fired by Union soldiers.",
+      "caption": "Union soldiers fire an artillery piece in commemoration of the battle.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mono-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80CAA5-1DD8-B71B-0BF2F18333EFC395.jpg",
+      "title": "Memorial Day Flag Display",
+      "altText": "Small flags fly in the breeze in front of the visitor center.",
+      "caption": "2,300 Union and Confederate National Flags are set out to commemorate the Battle of Monocacy casualties.",
+      "credit": "NSP Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mono-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/987F4E33-9015-643E-305B410A43AA65C6.jpg",
+      "title": "Cannon at the Best Farm",
+      "altText": "A cannon sits in a green field in front of a small white building, the sun is setting.",
+      "caption": "Confederate artillery used the fields of the Best Farm to stage their attack on Union forces across the river.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mono-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/98B1DDB4-04C5-C889-F779B5375313165D.jpg",
+      "title": "History Comes Alive at Monocacy",
+      "altText": "Living history demonstrators dressed as Union soldiers fire small arms.",
+      "caption": "Living history volunteers bring the past to the present through demonstrating small arms firing at Monocacy.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mono/index.htm",
+    "directions": "http://www.nps.gov/mono/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Enslavement",
+    "Incarceration",
+    "Industry",
+    "Mills",
+    "Military",
+    "Infantry and Militia",
+    "US Army",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Presidents",
+    "Transportation",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "National Battlefield",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

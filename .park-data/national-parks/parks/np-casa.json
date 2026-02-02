@@ -1,0 +1,153 @@
+{
+  "id": "np-casa",
+  "name": "Castillo de San Marcos National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Built by the Spanish in St. Augustine to defend Florida and the Atlantic trade route, Castillo de San Marcos National Monument preserves the oldest masonry fortification in the continental United States and interprets more than 450 years of cultural intersections.",
+  "shortDescription": "Built by the Spanish in St. Augustine to defend Florida and the Atlantic trade route, Castillo de San Marcos National Monument preserves the oldest masonry fortification in the continental United Stat...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 29.89785701,
+    "longitude": -81.31217173
+  },
+  "nationalParkInfo": {
+    "parkCode": "casa",
+    "npsId": "E455313B-782A-4CDC-A6A5-8B506FA3A4C1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/casa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/casa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9048296506",
+    "email": "casa_ranger_activities@nps.gov",
+    "website": "https://www.nps.gov/casa/index.htm",
+    "address": {
+      "line1": "11 South Castillo Drive",
+      "line2": "",
+      "city": "Saint Augustine",
+      "state": "FL",
+      "postalCode": "32084"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Castillo de San Marcos is open to the public 7 days per week, except Thanksgiving Day (fourth Thursday in November) and Christmas Day (December 25). A maximum capacity of 100 visitors in the historic fort at any time will be in effect. First admission is at 9:00 a.m. and last admission is at 5:00 p.m. The Castillo closes and visitors must exit at 5:15 p.m. The park grounds are closed from midnight until 5:30 a.m."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "The Castillo de San Marcos is considered to be a \"walk-in\" park. The entrance fee applies to each individual. Tickets are not transferable and cannot be given to other guests. Adults (Age 16 and above) entrance is $15.00 and valid for 7 consecutive days. Children (age 15 and under) are admitted free of charge but must be accompanied by an adult.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "St. Augustine has a semi-tropical climate with over 300 days of sunshine each year. Summers (May-September) are hot, bright, and humid with afternoon thunderstorms common. Temperatures range from the lower 70s to the mid 90s F. Spring (March-mid-May) and Autumn (October-late November) can be pleasant with temperatures ranging from the upper 50s into the 80s F. The Winter months (December-March) are usually dry. Temperatures can be cool ranging from the upper 30s through the 60sF."
+  },
+  "images": [
+    {
+      "id": "casa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E9A99-1DD8-B71B-0B5C1C290617CA10.jpg",
+      "title": "Castillo Drawbridge",
+      "altText": "Drawbridge entrance to the Castillo de San Marcos",
+      "caption": "Crossing a dry moat, this drawbridge was the only way into the Castillo.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "casa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E9C21-1DD8-B71B-0BD0130B2301D251.jpg",
+      "title": "Castillo de San Marcos Hot Shot Furnace",
+      "altText": "Furnace for heating cannon balls",
+      "caption": "This furnace, in the water battery on the east side of the Castillo, heated cannonballs red hot to be fired at wooden vessels.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "casa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E9D4A-1DD8-B71B-0BF818568C6A02B4.jpg",
+      "title": "Castillo de San Marcos Cannon",
+      "altText": "Four black iron cannon mounted on carriages line the walls of the Castillo.",
+      "caption": "The Castillo features both iron and bronze cannon and mortar from the period.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "casa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E9EBA-1DD8-B71B-0B74E5FB66D9CBB0.jpg",
+      "title": "Castillo de San Marcos Cannon Firing",
+      "altText": "Re-enactors of the first Spanish period cover their ears while firing a cannon.",
+      "caption": "Cannon firing demonstrations are scheduled five times a day every Friday, Saturday, and Sunday.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "casa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EA03D-1DD8-B71B-0B1EB4B61FB5F117.jpg",
+      "title": "Castillo de San Marcos Aerial View",
+      "altText": "Aerial view of the Castillo and the city of St. Augustine",
+      "caption": "the Castillo commands the northern edge of the heart of downtown St. Augsutine.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/casa/index.htm",
+    "directions": "http://www.nps.gov/casa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Forts",
+    "Hispanic American Heritage",
+    "Maritime",
+    "Coastal Defenses",
+    "Military",
+    "Artillery",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "National Monument",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

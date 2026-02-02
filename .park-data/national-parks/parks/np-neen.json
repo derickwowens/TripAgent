@@ -1,0 +1,160 @@
+{
+  "id": "np-neen",
+  "name": "New England National Scenic Trail",
+  "category": "national",
+  "parkType": "national_scenic_trail",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "From the Sound to the summits: the New England Trail covers 235 miles from Long Island Sound across long ridges to scenic mountain summits in Connecticut and Massachusetts. The trail offers panoramic vistas and close-ups of New England’s natural and cultural landscape: traprock ridges, historic village centers, farmlands, unfragmented forests, quiet streams, steep river valleys and waterfalls.",
+  "shortDescription": "From the Sound to the summits: the New England Trail covers 235 miles from Long Island Sound across long ridges to scenic mountain summits in Connecticut and Massachusetts. The trail offers panoramic ...",
+  "designation": "National Scenic Trail",
+  "coordinates": {
+    "latitude": 42.2915819137,
+    "longitude": -72.5242767334
+  },
+  "nationalParkInfo": {
+    "parkCode": "neen",
+    "npsId": "CF83E09C-3E55-4B5A-9D8B-E833CF6FEB5A",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/neen/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://newenglandtrail.org/interactive-map/"
+    }
+  ],
+  "contact": {
+    "phone": "413-351-8182",
+    "email": "net@nps.gov",
+    "website": "https://www.nps.gov/neen/index.htm",
+    "address": {
+      "line1": "New England Trail",
+      "line2": "c/o Springfield Armory National Historic Site",
+      "city": "Springfield",
+      "state": "MA",
+      "postalCode": "01105"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "As the New England trail crosses private property and state land, many locations along the trail do not permit night hiking or overnight parking. Before going out on a hike, check the hours of local parks for parking and hiking regulations."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures range from warm, humid summer days to cold New England winter days."
+  },
+  "images": [
+    {
+      "id": "neen-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/498B6E55-9C9A-07E3-AB0896A77C5485DD.jpg",
+      "title": "Sunset on the trail",
+      "altText": "Hiker in trees at overlook with sunset in background",
+      "caption": "Scenic views on the New England Trail",
+      "credit": "AMC Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "neen-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/62EEBADD-1DD8-B71B-0B610F999ED4F0F5.jpg",
+      "title": "Fall on the NET",
+      "altText": "Fall trees on the mountains of the trail",
+      "caption": "Fall on the New England Trail",
+      "credit": "Xiomaro",
+      "isPrimary": false
+    },
+    {
+      "id": "neen-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/62D44561-1DD8-B71B-0B2578338FED38F1.jpg",
+      "title": "Mt Tom Overlook",
+      "altText": "Overview of the trail in the fall",
+      "caption": "Mount Tom Overlook",
+      "credit": "Xiomaro",
+      "isPrimary": false
+    },
+    {
+      "id": "neen-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/62F72936-1DD8-B71B-0B5B48155625FADB.jpg",
+      "title": "NET College Network Retreat",
+      "altText": "Youth gather around a trail head",
+      "caption": "Youth hike to Farley Ledge",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "neen-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/635981EA-1DD8-B71B-0B7883BC650623A0.jpg",
+      "title": "YAP on Mt Higby",
+      "altText": "Two youth pointing out over the trail from the top of Mt Higby",
+      "caption": "Hikers pointing out over Mount Higby",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/neen/index.htm",
+    "directions": "https://newenglandtrail.org/interactive-map/"
+  },
+  "keywords": [
+    "Animals",
+    "Forests and Woodlands",
+    "Natural Sounds",
+    "Night Sky",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "Wilderness",
+    "National Scenic Trail",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

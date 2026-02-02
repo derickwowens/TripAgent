@@ -1,0 +1,214 @@
+{
+  "id": "np-fomr",
+  "name": "Fort Monroe National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Fort Monroe's story spans from prehistory to the 2000s. Kecoughtan Indians occupied Old Point Comfort before the arrival of English colonists. The first enslaved Africans arrived in 1619. Those escaping slavery sought their freedom at the fort during the Civil War. The fort remained bastion of national defense until 2011, when it became a national park.",
+  "shortDescription": "Fort Monroe's story spans from prehistory to the 2000s. Kecoughtan Indians occupied Old Point Comfort before the arrival of English colonists. The first enslaved Africans arrived in 1619. Those escapi...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.01733343,
+    "longitude": -76.30103195
+  },
+  "nationalParkInfo": {
+    "parkCode": "fomr",
+    "npsId": "BDE93DB8-0A71-4C18-9F10-489815E742CC",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fomr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fomr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "757-722-FORT (3678)",
+    "email": "fomr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/fomr/index.htm",
+    "address": {
+      "line1": "30 Ingalls Road",
+      "line2": "",
+      "city": "Fort Monroe",
+      "state": "VA",
+      "postalCode": "23651-1001"
+    }
+  },
+  "operatingHours": {
+    "monday": "5:00AM - 11:59PM",
+    "tuesday": "5:00AM - 11:59PM",
+    "wednesday": "5:00AM - 11:59PM",
+    "thursday": "5:00AM - 11:59PM",
+    "friday": "5:00AM - 11:59PM",
+    "saturday": "5:00AM - 11:59PM",
+    "sunday": "5:00AM - 11:59PM",
+    "description": "Fort Monroe National Monument is open year-round for outdoor activities like walking and exploring the historic grounds. Residents occupy many of the buildings. Respect their privacy by not peering into windows or opening gates."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures range from 40 F to 70 F with rain being common. Summer: Temperatures range from 75 F to 100 F with rain and sun equally common. On very sunny days, be prepared with plenty of water. Fall: Temperatures usually range from 40 F to 65 F. Hurricanes are more likely to threaten the are at this time of year. If planning a visit during this time, please be mindful of the storm activity. Winter: Temperatures range from 40 F to 50 F on average with snow being uncommon."
+  },
+  "images": [
+    {
+      "id": "fomr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C859CCE-1DD8-B71B-0B87DECA53D748EB.jpg",
+      "title": "Fort Monroe Aerial View",
+      "altText": "Aerial View of Fort Monroe",
+      "caption": "A unique perspective only available from the air brings the entire scope of Fort Monroe into focus in one image.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fomr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C859DCD-1DD8-B71B-0B6B17D24733CD9C.jpg",
+      "title": "Fort Monroe with USS Kearsarge",
+      "altText": "Fort Monroe in foreground with USS Kearsarge in background.",
+      "caption": "Fort Monroe's Flagstaff is the first US flag the sailors of the USS Kearsage see when returning to the waters of Hampton Roads.",
+      "credit": "NPS Photo/Aaron Firth",
+      "isPrimary": false
+    },
+    {
+      "id": "fomr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C859EC7-1DD8-B71B-0BF84920C57F623E.jpg",
+      "title": "Fort Monroe Flagstaff Bastion",
+      "altText": "sun setting over the moat of Fort Monroe",
+      "caption": "Brilliant colors of the setting sun offer unique views of the largest stone fortification ever built in the United States.",
+      "credit": "NPS Photo/Aaron Firth",
+      "isPrimary": false
+    },
+    {
+      "id": "fomr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C859FC5-1DD8-B71B-0BA185AE9A0B4A44.jpg",
+      "title": "Algernourne Oak: Standing Sentinel",
+      "altText": "sunrise over the Parade Ground illuminates Algernourne Oak.",
+      "caption": "The rising sun illuminates Algernourne Oak as it stands sentinel over the Parade Ground as it has done for almost 500 years.",
+      "credit": "NPS Photo/Aaron Firth",
+      "isPrimary": false
+    },
+    {
+      "id": "fomr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85A10E-1DD8-B71B-0B8CA1EB47053028.jpg",
+      "title": "Osprey Perches on Live Oak",
+      "altText": "an Osprey dries its wings perched on a live oak.",
+      "caption": "An Osprey, once endangered, dries its wings in the on-shore breeze while perched on a live oak.",
+      "credit": "NPS Photo/Aaron Firth",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fomr/index.htm",
+    "directions": "http://www.nps.gov/fomr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "Monuments and Memorials",
+    "Presidents",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Civil War",
+    "World War II",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Night Sky",
+    "Astronomy",
+    "National Monument",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

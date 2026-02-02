@@ -1,0 +1,343 @@
+{
+  "id": "np-shen",
+  "name": "Shenandoah National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is a land bursting with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over 200,000 acres of protected lands that are haven to deer, songbirds, and black bear, there's so much to explore...and your journey begins right here!",
+  "shortDescription": "Just 75 miles from the bustle of Washington, D.C., Shenandoah National Park is a land bursting with cascading waterfalls, spectacular vistas, fields of wildflowers, and quiet wooded hollows. With over...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 38.49236644,
+    "longitude": -78.46907715
+  },
+  "nationalParkInfo": {
+    "parkCode": "shen",
+    "npsId": "E991C8BC-C203-4A09-AFD5-87380CF5C387",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/shen/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/shen/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5409993500",
+    "email": "shen_info@nps.gov",
+    "website": "https://www.nps.gov/shen/index.htm",
+    "address": {
+      "line1": "Shenandoah National Park",
+      "line2": "3655 U.S. Highway 211 East",
+      "city": "Luray",
+      "state": "VA",
+      "postalCode": "22835"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Shenandoah National Park is always open. However, portions of Skyline Drive, the only public road through the Park, are periodically closed during inclement weather. Visitors can still enter the Park on foot to hike, even when the Skyline Drive is closed. Campgrounds, services, and facilities have separate hours; please see descriptions of those facilities elsewhere on our website."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Unlimited entry for one vehicle and all passengers for seven consecutive days, beginning on the day of purchase. Admits the pass holder and occupants of a single, private non-commercial vehicle.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entry for walk-up or bicycling visitors, when 16 years of age or older (children under 16 are admitted for free). Includes entering the Park by all means other than a private, non-commercial vehicle. A family traveling together shall pay no more than the vehicle fee.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "The total cost is calculated: $25 + $10 per passenger.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "This fee is for commercial use between 1-6 passengers (sedan). The total cost is calculated: $25 for the vehicle + $10 per passenger.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Based upon the total capacity of a vehicle that can carry 7-15 passengers, regardless of the actual number of passengers.",
+      "cost": "75.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Based upon the total capacity of a vehicle that can carry 16-25 passengers, regardless of the actual number of passengers.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Based upon the total capacity of a vehicle that can carry 26 or more passengers, regardless of the actual number of passengers.",
+      "cost": "200.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "National Park Service regulations allow school groups and other approved national and international academic institutions to obtain a waiver of Park entrance fees, provided that visit is for educational or scientific purposes, and the resources or facilities that the group intends to use, support those purposes. Request an academic fee waiver through the education section of our website.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Fee is calculated per person for anyone 16 years of age or older (children under 16 are admitted for free). Groups will not be charged more than the equivalent commercial group fee.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Shenandoah National Park has four very distinct seasons. Spring typically brings mild temperatures, rain, and wildflowers. Summer brings lush green forests, but can be hot and very humid. Fall follows with cooler temperatures and spectacular fall foliage. Winter can bring snow and ice. The park spans roughly 100 miles, which means that weather can vary greatly depending on your location. The mountain is usually 10°F cooler than the valley below. Always check the forecast, dress in layers, and be prepared."
+  },
+  "images": [
+    {
+      "id": "shen-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B539-1DD8-B71B-0BEAAA4AC31E7D5B.jpg",
+      "title": "Adventure Awaits",
+      "altText": "A man stands on a rocky outcrop overlooking the receding mountains.",
+      "caption": "There are over 60 peaks with an elevation over 3,000 feet in Shenandoah.",
+      "credit": "NPS Photo / Neal Lewis",
+      "isPrimary": true
+    },
+    {
+      "id": "shen-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B63B-1DD8-B71B-0BAC3145E329FC99.jpg",
+      "title": "Wonderful Waterfalls",
+      "altText": "A man stands with his back facing us, looking at a waterfall.",
+      "caption": "Dark Hollow Falls, at 70 feet, is our most visited waterfall.",
+      "credit": "NPS Photo / Katy Cain",
+      "isPrimary": false
+    },
+    {
+      "id": "shen-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B752-1DD8-B71B-0B0FAB718671DC3E.jpg",
+      "title": "Red-Bellied Woodpecker",
+      "altText": "A close up shot of a Red-Bellied Woodpecker with a blurry teal background.",
+      "caption": "There are over 200 species of bird that call Shenandoah \"home.\"",
+      "credit": "NPS Photo / Neal Lewis",
+      "isPrimary": false
+    },
+    {
+      "id": "shen-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B867-1DD8-B71B-0B328321E4420769.jpg",
+      "title": "Driving on Skyline Drive",
+      "altText": "A road surrounded by fall foliage turns a curve around a small waterfall.",
+      "caption": "There are 105 miles to explore on Skyline Drive.",
+      "credit": "NPS Photo / Neal Lewis",
+      "isPrimary": false
+    },
+    {
+      "id": "shen-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80B989-1DD8-B71B-0B3A418BF2F78CF0.jpg",
+      "title": "Find Yourself in Nature",
+      "altText": "Looking up at a poplar stand canopy, which is turning yellow in fall.",
+      "caption": "This poplar stand at mile 8 is a popular stop for visitors entering from the north entrance.",
+      "credit": "NPS Photo / Katy Cain",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/shen/index.htm",
+    "directions": "http://www.nps.gov/shen/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Great Depression",
+    "Presidents",
+    "Schools and Education",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Geology",
+    "Grasslands",
+    "Meadows",
+    "Mountains",
+    "Night Sky",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "Waterfalls",
+    "Wilderness",
+    "National Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

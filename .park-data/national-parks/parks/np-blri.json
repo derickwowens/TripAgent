@@ -1,0 +1,232 @@
+{
+  "id": "np-blri",
+  "name": "Blue Ridge Parkway",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "A Blue Ridge Parkway experience is unlike any other: a slow-paced and relaxing drive revealing stunning long-range vistas and close-up views of the rugged mountains and pastoral landscapes of the Appalachian Highlands. The Parkway meanders for 469 miles, protecting a diversity of plants and animals, and providing opportunities for enjoying all that makes this region of the country so special.",
+  "shortDescription": "A Blue Ridge Parkway experience is unlike any other: a slow-paced and relaxing drive revealing stunning long-range vistas and close-up views of the rugged mountains and pastoral landscapes of the Appa...",
+  "designation": "Parkway",
+  "coordinates": {
+    "latitude": 35.5657195274,
+    "longitude": -82.486484587
+  },
+  "nationalParkInfo": {
+    "parkCode": "blri",
+    "npsId": "712044CE-4C85-48C2-813E-310A9C6C74E1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/blri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/blri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8283483400",
+    "email": "blri_info@nps.gov",
+    "website": "https://www.nps.gov/blri/index.htm",
+    "address": {
+      "line1": "Milepost 384",
+      "line2": "",
+      "city": "Asheville",
+      "state": "NC",
+      "postalCode": "28803"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The road is open 24 hours a day, weather permitting. Road closures due to inclement weather occur most frequently during winter. Sections of the road may also be closed during road maintenance projects. Check our road closure map to verify that the parkway is open before traveling.\n\nVisitor centers and other facilities have hours and seasons that vary. Most picnic areas, campgrounds, and visitor centers are closed from the beginning of November until early May."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather on the parkway can vary widely along its 469-mile route. Precipitation is possible any time of the year. Winter can be cold and snowy, especially at the higher elevations. Spring and fall can have large temperature swings, from near freezing to over 80 degrees Fahrenheit. Summers are hot in the lower elevations, but the highest elevations remain cooler. Summertime thunderstorms are common, so be prepared for weather changes."
+  },
+  "images": [
+    {
+      "id": "blri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/87E985D9-BF92-9DC3-74B91467FBA15010.jpg",
+      "title": "Evening on the Blue Ridge",
+      "altText": "A long pine tree stands in front of distant mountain ridges beneath an orange sunset",
+      "caption": "Evening on the Blue Ridge Parkway",
+      "credit": "Harold Blackwood Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "blri-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E7D5-1DD8-B71B-0B44F2F58F98099D.jpg",
+      "title": "Mountain vista",
+      "altText": "Mountain vista and clouds on the Blue Ridge Parkway",
+      "caption": "Beautiful mountain in North Carolina draw visitors from around the world to the Blue Ridge Parkway",
+      "credit": "David Smart",
+      "isPrimary": false
+    },
+    {
+      "id": "blri-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A7DF66E8-E20E-7839-71FA8E9735088BB8.jpg",
+      "title": "Sunset from Cowee Mountain Overlook",
+      "altText": "Storm clouds breaking over the mountains at sunset, with fog hugging the valleys",
+      "caption": "Sunset from Cowee Mountain Overlook",
+      "credit": "Jim Ruff Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blri-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/88321370-F808-59B5-820F10686B1E531A.jpg",
+      "title": "Linn Cove Viaduct",
+      "altText": "A roadway on piers follows the curve of a mountainside, running toward distant mountains.",
+      "caption": "Linn Cove Viaduct is one of the most iconic features of the Blue Ridge Parkway",
+      "credit": "Harold Blackwood Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blri-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/88113186-C82C-0C45-EB7789FE6E4D8DC2.jpg",
+      "title": "Black Bear",
+      "altText": "Black Bear sitting on large rocks at the edge of a forest",
+      "caption": "Black bears are among the many mammals found across the Blue Ridge Parkway.",
+      "credit": "Harold Blackwood Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blri-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E68A-1DD8-B71B-0B6752AF1737BF62.jpg",
+      "title": "Mabry Mill",
+      "altText": "Summer colors at Mabry Mill",
+      "caption": "Located in Virginia's Plateau district, picturesque Mabry Mill is one of the most iconic features of the Blue Ridge Parkway",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blri-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E949-1DD8-B71B-0B1ECE00402BA348.jpg",
+      "title": "Linville Falls",
+      "altText": "water cascading into Linville Falls plunge basin",
+      "caption": "The Linville Gorge offers visitors the opportunity to learn about fascinating geology and view magnificent waterfalls.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/blri/index.htm",
+    "directions": "http://www.nps.gov/blri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Engineering",
+    "Landscape Design",
+    "Music",
+    "Transportation",
+    "Bridges",
+    "Roads, Routes and Highways",
+    "Tunnels",
+    "Tragic Events",
+    "Animals",
+    "Birds",
+    "Elk",
+    "Fish",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Mountains",
+    "Scenic Views",
+    "Trails",
+    "Parkway",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

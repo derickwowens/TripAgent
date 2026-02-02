@@ -1,0 +1,202 @@
+{
+  "id": "np-waba",
+  "name": "Washita Battlefield National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "OK",
+  "stateName": "Oklahoma",
+  "region": "southwest",
+  "description": "On November 27, 1868, Lt. Colonel George Armstrong Custer led the 7th US Cavalry on a surprise dawn attack on a Cheyenne village led by Peace Chief Black Kettle. The event was an example of the tragic clash of cultures that occurred during the Great Plains Wars. It is also a place of remembrance and reflection for those who died here. Read More",
+  "shortDescription": "On November 27, 1868, Lt. Colonel George Armstrong Custer led the 7th US Cavalry on a surprise dawn attack on a Cheyenne village led by Peace Chief Black Kettle. The event was an example of the tragic...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 35.62083963,
+    "longitude": -99.70445143
+  },
+  "nationalParkInfo": {
+    "parkCode": "waba",
+    "npsId": "BE27CCA2-1ECA-4A6A-90E7-8EB38029FEF3",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/waba/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/waba/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5804972742",
+    "email": "waba_interpretation@nps.gov",
+    "website": "https://www.nps.gov/waba/index.htm",
+    "address": {
+      "line1": "18555 Hwy 47A, Ste. A",
+      "line2": "",
+      "city": "Cheyenne",
+      "state": "OK",
+      "postalCode": "73628"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The overlook and trail of Washita Battlefield National Historic Site are open 30 minutes before sunrise and close 30 minutes after sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in western Oklahoma can vary considerably. Winters can be mild to severe with ice storms being the biggest concern. Spring is usually short but pleasant although severe weather, including tornadoes, is still a possibility. Usually a strong breeze is associated with spring weather. Summers are brutally hot and visitors should be cautioned about spending any length of time in the heat. Falls are cool with a bitter wind."
+  },
+  "images": [
+    {
+      "id": "waba-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84A0E2-1DD8-B71B-0BD431BE8524A232.jpg",
+      "title": "Tipis at Sunset",
+      "altText": "Cheyenne tipis backlite by sunset",
+      "caption": "Cheyenne tipis backlite by sunset",
+      "credit": "NPS Photo / Gene Eakins",
+      "isPrimary": true
+    },
+    {
+      "id": "waba-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B41AF-1DD8-B71B-0B231B3DF18873A0.jpg",
+      "title": "Washita River",
+      "altText": "The Washita River in winter covered in ice and snow",
+      "caption": "The Washita River looking much the same as it did during the attack on November 27, 1868",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "waba-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84A22F-1DD8-B71B-0BA5D7DD7E9C28E5.jpg",
+      "title": "Cheyenne Dog Soldier Telling Stories",
+      "altText": "A Cheyenne Dog Soldier tells stories inside his tipi",
+      "caption": "A Cheyenne Dog Soldier tells stories inside his tipi",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "waba-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84A3ED-1DD8-B71B-0B367D74A0735570.jpg",
+      "title": "The Washita Battlefield National Historic Site Visitor Center",
+      "altText": "The Washita Battlefield National Historic Site Visitor Center on a summer day",
+      "caption": "The Washita Battlefield National Historic Site Visitor Center on a summer day",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "waba-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84A54B-1DD8-B71B-0BC33ECFD61CBDB4.jpg",
+      "title": "Learning Something New at Washita",
+      "altText": "A Park Ranger knells down among Junior Rangers so only his hat shows within the crowd of children.",
+      "caption": "A Park Ranger helps children with their Jr. Ranger books.",
+      "credit": "NPS Photo / Rachael E. Shockley",
+      "isPrimary": false
+    },
+    {
+      "id": "waba-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84A7F5-1DD8-B71B-0BF5A9B422A597CA.jpg",
+      "title": "\"Meeting the Enemy\"",
+      "altText": "A Cheyenne Warrior and U.S. Cavalry soldier hold a meeting next to a tipi",
+      "caption": "A Cheyenne Warrior and U.S. Cavalry soldier hold a meeting next to a tipi",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/waba/index.htm",
+    "directions": "https://www.nps.gov/waba/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "Cavalry",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Tragic Events",
+    "Massacres",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Foothills, Plains and Valleys",
+    "Grasslands",
+    "Scenic Views",
+    "Trails",
+    "National Historic Site",
+    "OK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

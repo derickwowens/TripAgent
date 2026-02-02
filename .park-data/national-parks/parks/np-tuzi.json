@@ -1,0 +1,178 @@
+{
+  "id": "np-tuzi",
+  "name": "Tuzigoot National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Water flows under and through this landscape, feeding the growth of people and towns. The Verde Valley is watered by snowmelt, summer monsoons, and springs that well up from the ancient sedimentary rocks. In the heart of the valley, a thousand years ago, people began to build a little hilltop pueblo that would grow into one of the largest villages in the area.",
+  "shortDescription": "Water flows under and through this landscape, feeding the growth of people and towns. The Verde Valley is watered by snowmelt, summer monsoons, and springs that well up from the ancient sedimentary ro...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 34.77296377,
+    "longitude": -112.0279069
+  },
+  "nationalParkInfo": {
+    "parkCode": "tuzi",
+    "npsId": "64B7871C-C058-45BA-BB7C-D3EAD50B23E8",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tuzi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tuzi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "928-634-5564",
+    "email": "moca_tuzi_info@nps.gov",
+    "website": "https://www.nps.gov/tuzi/index.htm",
+    "address": {
+      "line1": "25 Tuzigoot Rd",
+      "line2": "",
+      "city": "Clarkdale",
+      "state": "AZ",
+      "postalCode": "86324"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:45PM",
+    "tuesday": "9:00AM - 4:45PM",
+    "wednesday": "9:00AM - 4:45PM",
+    "thursday": "9:00AM - 4:45PM",
+    "friday": "9:00AM - 4:45PM",
+    "saturday": "9:00AM - 4:45PM",
+    "sunday": "9:00AM - 4:45PM",
+    "description": "Tuzigoot National Monument is open every day with the exception of Thanksgiving Day, December 25, and January 1. During regular operating hours, last vehicle entry is at 4:45 pm."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Tuzigoot Entrance Fee - Per Adult - $10.00\n\nThis entrance fee covers one adult, aged 16 and over, for entrance to Montezuma Castle and Tuzigoot National Monuments for 7 days.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summers are hot! Temperatures range from 95°F (35°C) to 115°F (46°C). There is no shade on the Pueblo Trail or Marsh Overlook Trail. Nighttime temperatures can be much cooler, around 70°F (21°C). From June through August, heavy monsoon rains are common in the afternoons. Winters are cooler, sometimes cold. Highs average around 55°F (13°C); lows can be around 15F (-10°C). Snow is rare, but possible. Rainy days are common in the spring."
+  },
+  "images": [
+    {
+      "id": "tuzi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E3BF6-1DD8-B71B-0B9CC85A87942B5C.jpg",
+      "title": "Tuzigoot with Tavasci Marsh",
+      "altText": "A marsh with open water, cattails, and a masonry dwelling beyond.",
+      "caption": "Tuzigoot Pueblo sits on a hilltop above an area perfect for farming. Tavasci Marsh provides water and other resources.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "tuzi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E38AB-1DD8-B71B-0B459BC481F2FBCD.jpg",
+      "title": "Tuzigoot with Snow!",
+      "altText": "4 foot masonry walls covered in snow",
+      "caption": "Even central Arizona can get a lot of snow!  Check out the dwellings at Tuzigoot covered in a winter storm.",
+      "credit": "NPS Photo/Krystina Mucha",
+      "isPrimary": false
+    },
+    {
+      "id": "tuzi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E3A60-1DD8-B71B-0B74854F34F85BF3.jpg",
+      "title": "Tuzigoot with Black Hills",
+      "altText": "4 foot masonry walls with mountains and clouds behind them.",
+      "caption": "Tuzigoot was built on a low hilltop in the Verde Valley. The Verde River and Black Hills provided a variety of resource areas for the Sinagua.",
+      "credit": "NPS Photo/Case Griffing",
+      "isPrimary": false
+    },
+    {
+      "id": "tuzi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0086821C-008A-00AB-CAECB7A6780B16B8.jpg",
+      "title": "Tuzigoot Pueblo",
+      "altText": "A sunny day at Tuzigoot",
+      "caption": "A pueblo built by the Sinagua",
+      "credit": "NPS Photo Paul Santellan",
+      "isPrimary": false
+    },
+    {
+      "id": "tuzi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E416E-1DD8-B71B-0B58F753A3057BFE.jpg",
+      "title": "Inside Tuzigoot",
+      "altText": "The inside of a masonry room with wood posts supporting the roof.",
+      "caption": "Rebuilt in the 1930s, this room at Tuzigoot would not originally have had a roof. Today, you can climb through the room to experience the landscape that surrounds this enduring Pueblo.",
+      "credit": "NPS Photo/Sharlot Hart",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tuzi/index.htm",
+    "directions": "http://www.nps.gov/tuzi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Colonization and Settlement",
+    "Industry",
+    "Mining",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Groundwater",
+    "Freshwater Springs",
+    "River and Riparian",
+    "Thickets and Shrublands",
+    "Wetlands",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

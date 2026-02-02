@@ -1,0 +1,282 @@
+{
+  "id": "np-bith",
+  "name": "Big Thicket National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Life of all types abounds in the Big Thicket. This national preserve protects the incredible diversity of life found where multiple habitats meet in southeast Texas. Hiking trails and waterways meander through nine different ecosystems, from longleaf pine forests to cypress-lined bayous. It is a place of discovery, a place to wander and explore, a place to marvel at the richness of nature.",
+  "shortDescription": "Life of all types abounds in the Big Thicket. This national preserve protects the incredible diversity of life found where multiple habitats meet in southeast Texas. Hiking trails and waterways meande...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 30.457983431,
+    "longitude": -94.386742115
+  },
+  "nationalParkInfo": {
+    "parkCode": "bith",
+    "npsId": "3AA12AD8-4FEB-491D-AEB2-CC0F74CD00E0",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bith/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bith/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "409-951-6700",
+    "email": "bith_information@nps.gov",
+    "website": "https://www.nps.gov/bith/index.htm",
+    "address": {
+      "line1": "6102 FM 420",
+      "line2": "",
+      "city": "Kountze",
+      "state": "TX",
+      "postalCode": "77625"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Big Thicket National Preserve is open 24 hours. To camp in the preserve, you need a backcountry camping permit, available from the visitor center."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "SPRING: Expect comfortable weather in Mar/Apr, with heat & humidity increasing in May. SUMMER: High heat, high humidity, and thunderstorms are common. Hurricane & tropical storm activity peaks in late summer. FALL: Early fall can be hot, while Oct/Nov bring pleasant temperatures. WINTER: Mild, chilly weather with occasional cold spells. Snow is rare. Some Dec/Jan/Feb nights may dip below freezing."
+  },
+  "images": [
+    {
+      "id": "bith-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FA692D17-BDCC-E98F-C537FAF2CE0D7796.jpg",
+      "title": "Wintry Cypress Slough",
+      "altText": "Leafless bald cypress trees and knees stand in a swamp filled with leaves and branches in winter.",
+      "caption": "Winter brings a different mood to Big Thicket's sloughs.",
+      "credit": "NPS Photo / Steve Heineke",
+      "isPrimary": true
+    },
+    {
+      "id": "bith-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/39EC3CA1-9934-FE72-CF899277FA59400B.jpg",
+      "title": "Beaver Slide Trail",
+      "altText": "Tupelo trees growing on the edge of a reflective pond in the woods in spring.",
+      "caption": "A still pond reflects the bright shades of green of early spring.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A095BD13-F0BB-FC3B-538C6E3F6A94D08F.jpg",
+      "title": "Kirby Nature Trail",
+      "altText": "A leaf-covered trail leading through a tree tunnel of dense green vegetation.",
+      "caption": "A thicket is a dense forest of trees and shrubs.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5D2AE499-F59C-A379-5714B0E6024F9188.jpg",
+      "title": "Staley Cabin",
+      "altText": "A log cabin in a forest beneath a canopy of sprawling live oak trees.",
+      "caption": "Historic Staley Cabin sits at the start of the Kirby Nature Trail.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A1C1AD18-FFEA-54AC-1AE0A1F15E1E20AF.jpg",
+      "title": "Palmettos",
+      "altText": "A patch of palmettos glowing in warm afternoon sunlight in a forest.",
+      "caption": "Dwarf palmettos add a jungle-like atmosphere to the Big Thicket.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5E0F3C64-0778-094B-17BCF61C3B0909E6.jpg",
+      "title": "Pitcher Plant",
+      "altText": "Close-up of a carnivorous pitcher plant with the shadow of an insect inside.",
+      "caption": "Visit in spring to see carnivorous pitcher plants.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5E81C2C0-CE7C-092A-B2FBDC0C058958D8.jpg",
+      "title": "Red-Headed Woodpecker",
+      "altText": "A woodpecker with bright red head clinging to a dead tree.",
+      "caption": "Look for woodpeckers in Big Thicket's pine forests.",
+      "credit": "NPS Photo / Nathan Pattee",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A234EDCB-029E-0510-504D8E364BD5F601.jpg",
+      "title": "Collins Pond, Woodlands Trail",
+      "altText": "A calm pond reflecting red, green, and yellow foliage of trees along its shore.",
+      "caption": "Big Thicket's fall colors typically peak late November through early December.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/60F6F249-D0F2-9EAA-3B863696CC12C4B0.jpg",
+      "title": "Village Creek Bridge",
+      "altText": "An iron bridge above a murky creek surrounded by dense woods.",
+      "caption": "The bridge over Village Creek connects the Kirby Nature Trail to the Turkey Creek Trail.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    },
+    {
+      "id": "bith-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/60B44B03-C641-7B6F-0D0A2E1B31AA8C5E.jpg",
+      "title": "Cypress Knees",
+      "altText": "Shadowy-looking cypress knees and their reflections in still water.",
+      "caption": "Cypress knees, extensions of bald cypresses' roots, are abundant in Big Thicket waters.",
+      "credit": "NPS Photo / Scott Sharaga",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bith/index.htm",
+    "directions": "http://www.nps.gov/bith/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Industry",
+    "Mining",
+    "Logging and Timber Cutting",
+    "Social Movements",
+    "Conservation Movement",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Cats (wild)",
+    "Tortoises and Turtles",
+    "Fire",
+    "Forests and Woodlands",
+    "River and Riparian",
+    "Thickets and Shrublands",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "Wetlands",
+    "National Preserve",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "id": "np-gumo",
+  "name": "Guadalupe Mountains National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Come experience mountains and canyons, desert and dunes, night skies and spectacular vistas within a place unlike any other. Guadalupe Mountains National Park protects the world's most extensive Permian fossil reef, the four highest peaks in Texas, an environmentally diverse collection of flora and fauna, and the stories of lives shaped through conflict, cooperation and survival.",
+  "shortDescription": "Come experience mountains and canyons, desert and dunes, night skies and spectacular vistas within a place unlike any other. Guadalupe Mountains National Park protects the world's most extensive Permi...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 31.92304462,
+    "longitude": -104.885527
+  },
+  "nationalParkInfo": {
+    "parkCode": "gumo",
+    "npsId": "6510001B-685D-4688-A963-4ECE7AB609DB",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gumo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gumo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "915-828-3251",
+    "email": "gumo_information@nps.gov",
+    "website": "https://www.nps.gov/gumo/index.htm",
+    "address": {
+      "line1": "400 Pine Canyon",
+      "line2": "",
+      "city": "Salt Flat",
+      "state": "TX",
+      "postalCode": "79847"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Pine Springs area, including the campground, visitor center, trailhead, and associated parking areas are open and accessible all of the time during normal operations. Camping is permitted in designated campsites only."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "An entrance fee of $10 per person (16 years of age and older) is required; entrance fees/passes permit 1-7 consecutive days of use in this national park. Holders of the Annual, Senior, Military, 4th grade and Access Pass can bring in 3 adults free of charge under their pass. Any pass must be displayed in a vehicle while in the national park.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Entrance fee waivers are available to groups when the purpose of their visit is educational rather than recreational. Completed applications along with required documentation must be submitted via email. \nFee waiver requests must be submitted at least six weeks before a scheduled visit to allow for consideration.",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The Guadalupe Mountains are known for high winds year-round; gusts can reach 60MPH or higher. In winter the mountains experiences occasional, light snowfalls which seldom last more than a day. From May through October, temperatures vary with highs between 80F-100F+ with lows in the 40F-60F range. November to April is generally milder with highs in between 50F-70F with lows in the 30F-50F range. Elevations above 8,000’ will be about 10F cooler than headquarters, with corresponding wind-chill."
+  },
+  "images": [
+    {
+      "id": "gumo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C825533-1DD8-B71B-0B6FDF436F604A3C.jpg",
+      "title": "El Capitan",
+      "altText": "El Capitan with blooming claret cup cacti",
+      "caption": "Blossoming claret cup cacti add a splash of color to the Chihuahuan desert.",
+      "credit": "NPS/Bieri",
+      "isPrimary": true
+    },
+    {
+      "id": "gumo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C825A11-1DD8-B71B-0BAAA0BDF174AA2F.jpg",
+      "title": "Flooded Salt Flats",
+      "altText": "the slat flats become flooded during monsoon months after large rain events.",
+      "caption": "After the monsoon storms, the salt flats will often become flooded creating a seasonal lake.",
+      "credit": "NPS/Yates",
+      "isPrimary": false
+    },
+    {
+      "id": "gumo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8256DA-1DD8-B71B-0B7E4BE83A8B56F9.jpg",
+      "title": "Devil's Hall Fall Colors",
+      "altText": "Fall colors in Devil's Hall",
+      "caption": "Changing maple trees line the Devil's Hall trail during the fall months.",
+      "credit": "NPS/Flores",
+      "isPrimary": false
+    },
+    {
+      "id": "gumo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82588D-1DD8-B71B-0B233383D71368EB.jpg",
+      "title": "Pratt Cabin",
+      "altText": "Pratt Cabin in McKittrick Canyon",
+      "caption": "Pratt Cabin is nestled in McKittrick Canyon with abundant trees and",
+      "credit": "NPS/Buehler",
+      "isPrimary": false
+    },
+    {
+      "id": "gumo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82A652-1DD8-B71B-0B7E219169341CAD.jpg",
+      "title": "The Bowl wildflowers",
+      "altText": "wildflowers blossom along The Bowl trail",
+      "caption": "During the spring months, wildflowers are a common sight along The Bowl trail.",
+      "credit": "NPS Photo/Bieri",
+      "isPrimary": false
+    },
+    {
+      "id": "gumo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AC3F41C8-CB05-1F59-18AFF80496BA94D1.jpg",
+      "title": "Entrance Sign",
+      "altText": "A metal and stone entrance sign stands in front of a building and desert mountains",
+      "caption": "Entrance sign at Pine Springs",
+      "credit": "NPS/K/ Poteet",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gumo/index.htm",
+    "directions": "http://www.nps.gov/gumo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Colonization and Settlement",
+    "Farming and Agriculture",
+    "Ranches",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Animals",
+    "Birds",
+    "Canyons and Canyonlands",
+    "Dunes",
+    "Fire",
+    "Fossils and Paleontology",
+    "Geology",
+    "Mountains",
+    "Rock Landscapes and Features",
+    "Trails",
+    "National Park",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

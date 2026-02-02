@@ -1,0 +1,172 @@
+{
+  "id": "np-poex",
+  "name": "Pony Express National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "It is hard to believe that young men once rode horses to carry mail from Missouri to California in the unprecedented time of only 10 days. This relay system along the Pony Express National Historic Trail in eight states was the most direct and practical means of east-west communications before the telegraph.",
+  "shortDescription": "It is hard to believe that young men once rode horses to carry mail from Missouri to California in the unprecedented time of only 10 days. This relay system along the Pony Express National Historic Tr...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 42.2365761128,
+    "longitude": -109.266148417
+  },
+  "nationalParkInfo": {
+    "parkCode": "poex",
+    "npsId": "A0125F49-080E-4292-BD91-C1FA1657F547",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/poex/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/poex/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/poex/index.htm",
+    "address": {
+      "line1": "National Trails Regions Office, Regions 6, 7, & 8",
+      "line2": "Pony Express National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Pony Express National Historic Trail is not a clearly marked hiking trail. Instead it is a route that passes through communities, urban areas, public lands, and Wilderness. The route travels across a variety of land ownerships and management, including private land. Each location varies as to the hours of operations and access. Please contact individual trail sites before your visit for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of the Pony Express National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: weather.gov"
+  },
+  "images": [
+    {
+      "id": "poex-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DBDE9-1DD8-B71B-0B1F370DE4F54140.jpg",
+      "title": "Simpson Spring NPEA rider, Utah",
+      "altText": "A rider in a red vest on a horse in a grassy patch surrounded by sagebrush with clouds in the sky.",
+      "caption": "A National Pony Express Association rider poses at Simpson Springs in Utah.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "poex-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DB875-1DD8-B71B-0BE5099AF762C684.jpg",
+      "title": "Devil's Gate, Wyoming",
+      "altText": "A tall rock buttress with a cleft in the center sits behind a sagebrush covered valley.",
+      "caption": "Devil's Gate was an important landmark on the trail in Wyoming.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "poex-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DBC60-1DD8-B71B-0B9F79E85C441052.jpg",
+      "title": "Schelbourne Station, Nevada",
+      "altText": "A footbridge leads to a dark steel silhouette of a Pony Express rider.",
+      "caption": "A Pony Express rider silhouette can be found at the Schelbourne Station site in Nevada.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "poex-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DBA26-1DD8-B71B-0B84C188F6EDE09F.jpg",
+      "title": "Fort Laramie NHS monument, Wyoming",
+      "altText": "A tall obelisk monument with bronze plaques sits on a paved pathway in front of a building.",
+      "caption": "A monument and plaque about the Pony Express can be found at Fort Laramie in Wyoming.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "poex-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6415306F-DAAC-38F2-DDDA1EC538160855.jpg",
+      "title": "Stables at St. Joseph",
+      "altText": "A large brick historic stable.",
+      "caption": "Visit the historic stables in St. Joseph, Missouri.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/poex/index.htm",
+    "directions": "http://www.nps.gov/poex/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Monuments and Memorials",
+    "Westward Expansion",
+    "Trails",
+    "National Historic Trail",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

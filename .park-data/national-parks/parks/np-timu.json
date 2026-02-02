@@ -1,0 +1,244 @@
+{
+  "id": "np-timu",
+  "name": "Timucuan Ecological & Historic Preserve",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Visit one of the last unspoiled coastal wetlands on the Atlantic Coast. Discover 6,000 years of human history and experience the beauty of salt marshes, coastal dunes, and hardwood hammocks. The Timucuan Preserve includes Fort Caroline and Kingsley Plantation.",
+  "shortDescription": "Visit one of the last unspoiled coastal wetlands on the Atlantic Coast. Discover 6,000 years of human history and experience the beauty of salt marshes, coastal dunes, and hardwood hammocks. The Timuc...",
+  "designation": "Ecological & Historic Preserve",
+  "coordinates": {
+    "latitude": 30.47251894,
+    "longitude": -81.49950104
+  },
+  "nationalParkInfo": {
+    "parkCode": "timu",
+    "npsId": "A1C5A868-68A9-4403-B762-531EBA300E3C",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/timu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/timu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "904-641-7155",
+    "email": "timu_information@nps.gov",
+    "website": "https://www.nps.gov/timu/index.htm",
+    "address": {
+      "line1": "12713 Fort Caroline Road",
+      "line2": "",
+      "city": "Jacksonville",
+      "state": "FL",
+      "postalCode": "32225"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The grounds for Fort Caroline and Kingsley Plantation are open 9:00 a.m. to 5:00 p.m., Wednesday through Sunday; closed on Thanksgiving, Christmas Day, and New Year's Day.  \n\nThe preserve headquarters is open 7:45 a.m. to 4:15 p.m., Monday through Friday; closed on all government holidays.  \nCedar Point and the Theodore Roosevelt Area are open sunrise - sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "We have mild winters and hot summers. In the winter average highs are in the 60's, lows in the 40's. The summer temperatures reach up into the 90's."
+  },
+  "images": [
+    {
+      "id": "timu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B4D58-1DD8-B71B-0B40B94C4363CBFB.jpg",
+      "title": "Kingsley Plantation Slave Quarters",
+      "altText": "slave cabins made of tabby with wooden roofs",
+      "caption": "The tabby cabins at Kingsley Plantation were the homes of many enslaved people.",
+      "credit": "NPS Photo/Darryl Herring",
+      "isPrimary": true
+    },
+    {
+      "id": "timu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B4E9C-1DD8-B71B-0B1B56529F86BEBF.jpg",
+      "title": "Nana dune at American Beach",
+      "altText": "sand dune and blue sky",
+      "caption": "The sand dune at American Beach is a protected part of the Timucuan Preserve.",
+      "credit": "NPS Photo/Charles Stankiewicz",
+      "isPrimary": false
+    },
+    {
+      "id": "timu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B5019-1DD8-B71B-0B8694BFD33E8B3C.jpg",
+      "title": "Fort Caroline",
+      "altText": "fort gate",
+      "caption": "The fort exhibit at Fort Caroline teaches visitors of the failed French colony in Florida.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "timu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B517E-1DD8-B71B-0BDEF144F71ABF91.jpg",
+      "title": "Theodore Roosevelt Area",
+      "altText": "park bench alongside a trail",
+      "caption": "The Theodore Roosevelt Area trails provide a getaway from the urban hustle within the city of Jacksonville.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "timu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B53EE-1DD8-B71B-0BB1726DB7396E9B.jpg",
+      "title": "Baby Fox",
+      "altText": "A baby fox pops it's head from a burrow",
+      "caption": "The Timucuan Preserve hosts wondrous biodiversity.",
+      "credit": "NPS Photo/Tracy Pellicer",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/timu/index.htm",
+    "directions": "http://www.nps.gov/timu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Incarceration",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Civil War",
+    "Women's History",
+    "Dunes",
+    "Trails",
+    "Wetlands",
+    "Ecological & Historic Preserve",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

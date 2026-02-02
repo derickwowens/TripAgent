@@ -1,0 +1,270 @@
+{
+  "id": "np-gett",
+  "name": "Gettysburg National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "The Battle of Gettysburg was a turning point in the Civil War, the Union victory that ended General Robert E. Lee's second and most ambitious invasion of the North. Often referred to as the \"High Water Mark of the Rebellion\", Gettysburg was the Civil War's bloodiest battle and was also the inspiration for President Abraham Lincoln's immortal \"Gettysburg Address\".",
+  "shortDescription": "The Battle of Gettysburg was a turning point in the Civil War, the Union victory that ended General Robert E. Lee's second and most ambitious invasion of the North. Often referred to as the \"High Wate...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 39.81557366,
+    "longitude": -77.23246758
+  },
+  "nationalParkInfo": {
+    "parkCode": "gett",
+    "npsId": "8C330DA3-6194-4034-8948-C6B6772B82A0",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gett/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gett/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "email": "GETT_Superintendent@nps.gov",
+    "website": "https://www.nps.gov/gett/index.htm",
+    "address": {
+      "line1": "1195 Baltimore Pike",
+      "line2": "",
+      "city": "Gettysburg",
+      "state": "PA",
+      "postalCode": "17325"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The battlefield and roads are open thirty minutes before sunrise to thirty minutes after sunset.\nVisitors can plan their visit and obtain a listing of sunrise and sunset times by day in Gettysburg, PA at: https://sunrise-sunset.org/us/gettysburg-pa."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "https://www.nps.gov/gett/planyourvisit/weather.htm"
+  },
+  "images": [
+    {
+      "id": "gett-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C5B413E6-FD8C-00FC-60191939A57FE501.jpg",
+      "title": "The Henry Slocum Monument",
+      "altText": "A canon sits in front of an equestrian statue.",
+      "caption": "This statue of Henry Slocum sits on Steven's Knoll near Culp's Hill.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "gett-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8194A0-1DD8-B71B-0BD717F4FDE2A545.jpg",
+      "title": "The Mississippi Monument at sunrise",
+      "altText": "The Mississippi Monument at sunrise",
+      "caption": "The Mississippi Monument at sunrise.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gett-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C819A5B-1DD8-B71B-0BDC501C0730326F.jpg",
+      "title": "The Irish Brigade Monument",
+      "altText": "The Irish Brigade Monument",
+      "caption": "The Irish Brigade Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gett-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81961A-1DD8-B71B-0B344898BBA96443.jpg",
+      "title": "The Soldiers' National Cemetery during special illumination event",
+      "altText": "The Soldiers' National Cemetery during special illumination event",
+      "caption": "The Soldiers' National Cemetery during special illumination event.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gett-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C819D64-1DD8-B71B-0BABA5013E6D8929.jpg",
+      "title": "A ranger-led interpretive program",
+      "altText": "A ranger-led interpretive program",
+      "caption": "A ranger-led interpretive program.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gett-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C819787-1DD8-B71B-0B0D052F23017472.jpg",
+      "title": "A rainbow over the Abraham Brian Farm on Cemetery Ridge",
+      "altText": "A rainbow over the Abraham Brian Farm on Cemetery Ridge",
+      "caption": "A rainbow over the Abraham Brian Farm on Cemetery Ridge.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gett-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C819BF7-1DD8-B71B-0B02C21F76479742.jpg",
+      "title": "A ranger-led interpretive program",
+      "altText": "A ranger-led interpretive program",
+      "caption": "A ranger-led interpretive program.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gett-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8198DD-1DD8-B71B-0BCDAB86E7BFF414.jpg",
+      "title": "The Cyclorama painting",
+      "altText": "The Cyclorama painting",
+      "caption": "The Cyclorama painting.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gett-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81933E-1DD8-B71B-0B1D3D82C99E2A6E.jpg",
+      "title": "The view from Little Round Top",
+      "altText": "The view from Little Round Top",
+      "caption": "The view from Little Round Top.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gett/index.htm",
+    "directions": "http://www.nps.gov/gett/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Presidents",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Transportation",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Fire",
+    "Grasslands",
+    "Prairies",
+    "Meadows",
+    "Scenic Views",
+    "Wetlands",
+    "National Military Park",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

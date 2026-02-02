@@ -1,0 +1,254 @@
+{
+  "id": "np-cany",
+  "name": "Canyonlands National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "Canyonlands invites you to explore a wilderness of countless canyons and fantastically formed buttes carved by the Colorado River and its tributaries. Rivers divide the park into four districts: Island in the Sky, The Needles, The Maze, and the rivers themselves. These areas share a primitive desert atmosphere, but each offers different opportunities for sightseeing and adventure.",
+  "shortDescription": "Canyonlands invites you to explore a wilderness of countless canyons and fantastically formed buttes carved by the Colorado River and its tributaries. Rivers divide the park into four districts: Islan...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 38.24555783,
+    "longitude": -109.8801624
+  },
+  "nationalParkInfo": {
+    "parkCode": "cany",
+    "npsId": "319E07D8-E176-41F8-98A9-1E3F8099D0AB",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cany/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cany/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "435-719-2313",
+    "email": "canyinfo@nps.gov",
+    "website": "https://www.nps.gov/cany/index.htm",
+    "address": {
+      "line1": "Island in the Sky - 33 miles from Moab on UT 313",
+      "line2": "The Needles - 49 miles from Monticello on UT 211",
+      "city": "Moab",
+      "state": "UT",
+      "postalCode": "84532"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Canyonlands National Park is generally open 24 hours a day, year-round."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one private, non-commercial vehicle (15 passenger capacity or less) and all its occupants.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car. Typically used for bicyclists, hikers, and pedestrians. Youth 15 and under are admitted free.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Canyonlands is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F."
+  },
+  "images": [
+    {
+      "id": "cany-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A525D-1DD8-B71B-0B8E59D2EB39F6D0.jpg",
+      "title": "Mesa Arch",
+      "altText": "a broad stone arch with rock pinnacles in the distance",
+      "caption": "Mesa Arch, at Island in the Sky, is a great spot for photographers.",
+      "credit": "NPS/Neal Herbert",
+      "isPrimary": true
+    },
+    {
+      "id": "cany-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A53BC-1DD8-B71B-0BFF7AD2A83FC7A8.jpg",
+      "title": "Pothole Point",
+      "altText": "shallow pools with a double rainbow in the background",
+      "caption": "Pothole Point Trail",
+      "credit": "NPS/Neal Herbert",
+      "isPrimary": false
+    },
+    {
+      "id": "cany-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A4FC2-1DD8-B71B-0B13118C99270C08.jpg",
+      "title": "The Maze",
+      "altText": "a rugged canyon",
+      "caption": "The Maze is the most remote district of the park. Visiting requires four-wheel drive, self-reliance, and extra time.",
+      "credit": "NPS/Neal Herbert",
+      "isPrimary": false
+    },
+    {
+      "id": "cany-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A5534-1DD8-B71B-0B3887A48C037633.jpg",
+      "title": "White Rim Road",
+      "altText": "a long gravel road with cyclists on it",
+      "caption": "The White Rim Road at Island in the Sky is a popular road for mountain bikers.",
+      "credit": "NPS/Neal Herbert",
+      "isPrimary": false
+    },
+    {
+      "id": "cany-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A5677-1DD8-B71B-0BD6CF7287668A78.jpg",
+      "title": "The Needles in Chesler Park",
+      "altText": "pinnacles of horizontally striped sandstone",
+      "caption": "The Needles, pinnacles of Cedar Mesa Sandstone, are visible in many parts of the Needles District, including this view in Chesler Park.",
+      "credit": "NPS/Neal Herbert",
+      "isPrimary": false
+    },
+    {
+      "id": "cany-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A5840-1DD8-B71B-0B3C87EB4677BFA5.jpg",
+      "title": "Boating on the Colorado River",
+      "altText": "a person rowing a dory on the Colorado River",
+      "caption": "Boating the Colorado and Green rivers is a popular activity at Canyonlands (permit required).",
+      "credit": "NPS/Neal Herbert",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cany/index.htm",
+    "directions": "http://www.nps.gov/cany/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Canyons and Canyonlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "Groundwater",
+    "Impact Craters",
+    "Natural Sounds",
+    "Night Sky",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Trails",
+    "National Park",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "np-ania",
+  "name": "Aniakchak National Monument & Preserve",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Given its remote location and challenging weather conditions, Aniakchak is one of the most wild and least visited places in the National Park System. This landscape is a vibrant reminder of Alaska's location in the volcanically active \"Ring of Fire,\" as it is home to an impressive six mile (10 km) wide, 2,500 ft (762 m) deep caldera formed during a massive volcanic eruption 3,500 years ago.",
+  "shortDescription": "Given its remote location and challenging weather conditions, Aniakchak is one of the most wild and least visited places in the National Park System. This landscape is a vibrant reminder of Alaska's l...",
+  "designation": "National Monument & Preserve",
+  "coordinates": {
+    "latitude": 56.85317675,
+    "longitude": -157.5544362
+  },
+  "nationalParkInfo": {
+    "parkCode": "ania",
+    "npsId": "7FF37F14-88C8-469E-A447-ACE6D9AF44D2",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ania/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ania/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9072463305",
+    "email": "KATM_Visitor_Information@nps.gov",
+    "website": "https://www.nps.gov/ania/index.htm",
+    "address": {
+      "line1": "1000 Silver St., Bldg. 603",
+      "line2": "PO Box 7",
+      "city": "KIng Salmon",
+      "state": "AK",
+      "postalCode": "99613"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Aniakchak National Monument is a truly primitive environment with no federally-maintained public facilities. The NPS imposes no operating hours or seasonal restrictions. Access to and movement within Aniachak, however, may be limited or restricted at any time depending upon prevailing weather conditions."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "When you visit, be prepared to encounter all types of weather. On average, wet and cool conditions predominate in spring, summer, and fall. Strong winds can delay the departure and arrival of boats and floatplanes."
+  },
+  "images": [
+    {
+      "id": "ania-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A78AD-1DD8-B71B-0BF20886BAA0C0DA.jpg",
+      "title": "Floating the Gates of Aniakchak",
+      "altText": "A lone raft floats the Aniakchak Wild River as it flows through the \"Gates\"",
+      "caption": "A lone raft floats the Aniakchak Wild River as it flows through the \"Gates\"",
+      "credit": "NPS Photo/Troy Hamon",
+      "isPrimary": true
+    },
+    {
+      "id": "ania-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A7A2E-1DD8-B71B-0BF4777A154558A4.jpg",
+      "title": "Aniakchak Caldera",
+      "altText": "Aerial shot of Aniakchak Caldera",
+      "caption": "Aerial shot of Aniakchak Caldera",
+      "credit": "NPS Photo/Roy Wood",
+      "isPrimary": false
+    },
+    {
+      "id": "ania-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A7D1E-1DD8-B71B-0B03A4FBF4D86D31.jpg",
+      "title": "Black Nose, Aniakchak Caldera",
+      "altText": "Black Nose, Aniakchak Caldera",
+      "caption": "Black Nose, Aniakchak Caldera",
+      "credit": "NPS Photo/Roy Wood",
+      "isPrimary": false
+    },
+    {
+      "id": "ania-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A7E85-1DD8-B71B-0BEDEFFC89815B42.jpg",
+      "title": "Maar Lake, Aniakchak Caldera",
+      "altText": "Maar Lake, Aniakchak Caldera",
+      "caption": "Maar Lake, Aniakchak Caldera",
+      "credit": "NPS Photo/Roy Wood",
+      "isPrimary": false
+    },
+    {
+      "id": "ania-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A7FDE-1DD8-B71B-0B357DE404A64A20.jpg",
+      "title": "The Gates of Aniakchak",
+      "altText": "The Gates of Aniakchak",
+      "caption": "The Gates of Aniakchak",
+      "credit": "NPS Photo/Roy Wood",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "977B3209-68A2-4BCE-97A9-EA0CAC320664",
+      "name": "Mountain Climbing"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ania/index.htm",
+    "directions": "http://www.nps.gov/ania/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Animals",
+    "Arctic",
+    "Tundra",
+    "Geothermal",
+    "Mountains",
+    "Volcanoes",
+    "Wilderness",
+    "National Monument & Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

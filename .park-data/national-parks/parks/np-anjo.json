@@ -1,0 +1,166 @@
+{
+  "id": "np-anjo",
+  "name": "Andrew Johnson National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "TN",
+  "stateName": "Tennessee",
+  "region": "southeast",
+  "description": "Andrew Johnson's complex presidency (1865-69) illustrates the Constitution at work following the Civil War. As the President and Congress disagreed on Reconstruction methods, the Constitution served as their guide on balance of powers, vetoes, and impeachment. In the end, it evolved as a living document with pivotal amendments on freedom, citizenship, and voting rights - topics still vital today.",
+  "shortDescription": "Andrew Johnson's complex presidency (1865-69) illustrates the Constitution at work following the Civil War. As the President and Congress disagreed on Reconstruction methods, the Constitution served a...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 36.15624509,
+    "longitude": -82.83709021
+  },
+  "nationalParkInfo": {
+    "parkCode": "anjo",
+    "npsId": "2ED6E071-57AA-4B08-8DDA-5CB09FBB75C8",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/anjo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/anjo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4236383551",
+    "email": "anjo_information@nps.gov",
+    "website": "https://www.nps.gov/anjo/index.htm",
+    "address": {
+      "line1": "Andrew Johnson NHS",
+      "line2": "",
+      "city": "Greeneville",
+      "state": "TN",
+      "postalCode": "37743"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "Summer Hours: Generally open daily from 9 am to 4pm \n\nWinter/Spring Hours: Generally open Wednesday through Sunday from 9 am to 4 pm.\n\nThe historic Andrew Johnson Homestead, 209 South Main Street may be open by guided tour at 10:00, 11:00, 2:00 & 3:00, based on staffing. Tours are limited to 10. Tickets are available at the Visitor Center until 15 minutes prior to tour time. Check with Visitor Center desk for availability, as schedule modifications are sometimes necessary."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "There are four distinct seasons in East Tennessee, but temperature and weather conditions can vary widely within those seasons. Spring and Fall are generally pleasant with frequent rain showers. Summer and Winter ranges can be extreme. The President's Homestead is not climate controlled and may be closed at times during excessive highs or lows in the summer and winter."
+  },
+  "images": [
+    {
+      "id": "anjo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD3972B0-AAA1-30C5-EB867099B9E2B89A.jpg",
+      "title": "Andrew Johnson Homestead",
+      "altText": "Andrew Johnson Homestead with snow",
+      "caption": "Home of the 17th President from 1851-1875",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "anjo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD3FF02D-ECB7-9694-F2B666CB44B542EE.jpg",
+      "title": "Early Home",
+      "altText": "Andrew Johnson's Early Home",
+      "caption": "The Johnson family home from the 1830s - 1851",
+      "credit": "NPS Photo/Kendra Hinkle",
+      "isPrimary": false
+    },
+    {
+      "id": "anjo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD53E417-DE5A-BD47-87C36F72B27329EC.jpg",
+      "title": "Andrew Johnson Monument",
+      "altText": "Andrew Johnson Monument",
+      "caption": "Gravestone of President and Mrs. Andrew Johnson",
+      "credit": "NPS Photo/Kendra Hinkle",
+      "isPrimary": false
+    },
+    {
+      "id": "anjo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD59B176-E6BD-4D65-F9B6E051B2F40877.jpg",
+      "title": "Visitor Center",
+      "altText": "The entrance sidewalk to the Visitor Center with the Memorial Building in view",
+      "caption": "The entrance to the Visitor Center",
+      "credit": "NPS Image",
+      "isPrimary": false
+    },
+    {
+      "id": "anjo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD5FDDA0-E665-105C-AF1DE64ACA9AB639.jpg",
+      "title": "The Lodge - Park Headquarters",
+      "altText": "A view of the lodge in snow",
+      "caption": "The old caretaker's Lodge in the National Cemetery now serves as Park Headquarters",
+      "credit": "NPS Image",
+      "isPrimary": false
+    },
+    {
+      "id": "anjo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/87E21A99-036E-695B-1A4C6B720ED8491D.jpg",
+      "title": "Andrew Johnson Museum",
+      "altText": "A view of the museum with center case and wall exhibits",
+      "caption": "The Museum tells the story of a controversial presidency",
+      "credit": "NPS Image",
+      "isPrimary": false
+    },
+    {
+      "id": "anjo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD65A1F5-0B0B-A242-2872945DFCF93FA1.jpg",
+      "title": "The National Cemtery",
+      "altText": "A view of Monument Hill studded with veteran headstones",
+      "caption": "The commanding view of Monument Hill with veteran headstones",
+      "credit": "NPS Image",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/anjo/index.htm",
+    "directions": "http://www.nps.gov/anjo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Presidents",
+    "Reconstruction",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Historic Site",
+    "TN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

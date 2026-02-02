@@ -1,0 +1,274 @@
+{
+  "id": "np-hosp",
+  "name": "Hot Springs National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AR",
+  "stateName": "Arkansas",
+  "region": "southeast",
+  "description": "Hot Springs National Park has a rich cultural past. The grand architecture of our historic bathhouses is equally matched by the natural curiosities that have been drawing people here for hundreds of years. Ancient thermal springs, mountain views, incredible geology, forested hikes, and abundant creeks – all in the middle of town – make Hot Springs National Park a unique and beautiful destination.",
+  "shortDescription": "Hot Springs National Park has a rich cultural past. The grand architecture of our historic bathhouses is equally matched by the natural curiosities that have been drawing people here for hundreds of y...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 34.52414366,
+    "longitude": -93.06332936
+  },
+  "nationalParkInfo": {
+    "parkCode": "hosp",
+    "npsId": "ED9C0322-68FB-4DE1-A884-61C623281C9D",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hosp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hosp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5016206715",
+    "email": "hosp_park_information@nps.gov",
+    "website": "https://www.nps.gov/hosp/index.htm",
+    "address": {
+      "line1": "369 Central Avenue",
+      "line2": "",
+      "city": "Hot Springs",
+      "state": "AR",
+      "postalCode": "71901"
+    }
+  },
+  "operatingHours": {
+    "monday": "5:00AM - 10:00PM",
+    "tuesday": "5:00AM - 10:00PM",
+    "wednesday": "5:00AM - 10:00PM",
+    "thursday": "5:00AM - 10:00PM",
+    "friday": "5:00AM - 10:00PM",
+    "saturday": "5:00AM - 10:00PM",
+    "sunday": "5:00AM - 10:00PM",
+    "description": "Arlington Lawn, Grand Promenade, sidewalks on Bathhouse Row, Reserve Street, and Fountain Street, except for walk through traffic, are open from to 5:00 am to 10:00 pm, daily. \n\nRoads to Hot Springs Mountain, North Mountain and West Mountain Summit are open to vehicle traffic from 8:00 am to 10:00 pm."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Average temperatures in Hot Springs can range from about 90°F (32°C) to less than 27°F (-2.7°C). Summer days can be hot and humid, with heat index values up to 110ºF (43ºC). Winter wind chills can make temperatures feel much colder, as low as 15ºF (-9.4ºC). Spring and fall typically have the most rainfall. Generally, Hot Springs experiences mild weather throughout the year."
+  },
+  "images": [
+    {
+      "id": "hosp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C0D8DFDD-F151-C5B0-3004B0088C98BA5A.jpg",
+      "title": "Bathhouse Row Evening",
+      "altText": "A pink sky above gentle white buildings",
+      "caption": "Bathhouse Row as the sun sets",
+      "credit": "Mitch Smith",
+      "isPrimary": true
+    },
+    {
+      "id": "hosp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C13C707D-B623-9D92-5CF6C917AA1B9078.jpg",
+      "title": "Hot Water Cascade",
+      "altText": "Misty water evaporating from a cascade",
+      "caption": "The Arlington Lawn holds a beautiful thermal cascade",
+      "credit": "Mitch Smith",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C11CC032-E6FC-33A3-A850BBC58A6DBD3C.jpg",
+      "title": "Bathhouse Row From The Waters",
+      "altText": "A sky view of large bathhouse buildings",
+      "caption": "The Waters offers a great view of bathhouse row",
+      "credit": "Mitch Smith",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2417D601-FF9E-BFD8-5C6BD4375064FAD1.jpg",
+      "title": "Bathhouse Row",
+      "altText": "Stone entrance pillars in front of a row of four bathouses",
+      "caption": "Visitors and patients come to take the thermal waters",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/23BF1E9D-A964-3BFE-BDEBFB703DE79463.jpeg",
+      "title": "Take A Hike!",
+      "altText": "Close up of a hiking boot on the trail a hiker in the distance",
+      "caption": "Hot Springs National Park has 26 miles of hiking trails to explore.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/23D55284-B7DD-D42F-4689A73DDA1DC0B9.jpg",
+      "title": "Hiker at bridge Whittington Park Creek",
+      "altText": "Hiker sits at the edge of the creek, with a bridge in the background",
+      "caption": "Visitors hike and enjoy the cool shady places in the park.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/243E69E8-B5AB-6E14-DDD7BF3A6FEFE437.jpg",
+      "title": "Bridge with fall colors",
+      "altText": "Stone bridge surrounded by brilliant yellow and green leaves",
+      "caption": "The park is beautiful year round",
+      "credit": "NPS photo Mark David Artist In Residence 2015",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C14F1D4A-FAF7-A20F-163F60EBF0B127F9.jpg",
+      "title": "Thermal Water Trough",
+      "altText": "A stone tough in a green forest with water flowing down",
+      "caption": "Along the hiking trails of Hot Springs Mountain are active troughs for directing the thermal water",
+      "credit": "Mitch Smith",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/245F811B-A97D-0C77-41A3D373703FB1FB.jpg",
+      "title": "Visitor at the edge of the pools of the hot water cascade",
+      "altText": "women sitting on the stone wall at the hot water cascade as the vapor rises",
+      "caption": "The natural curiosity of the thermal water can be seen and experienced",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hosp-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C189E13D-FC70-0C3B-AFE8915E5B27F434.jpg",
+      "title": "Balanced Rock Overlook",
+      "altText": "Sun setting over rolling hills",
+      "caption": "Along Sunset Trail is the spectacular view over Balanced Rock",
+      "credit": "Mitch Smith",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hosp/index.htm",
+    "directions": "http://www.nps.gov/hosp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Landscape Design",
+    "Medicine",
+    "Native American Heritage",
+    "Science, Technology and Innovation",
+    "Tragic Events",
+    "Catastrophic Fires",
+    "Floods",
+    "Urban America",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Geology",
+    "Mineral Deposits",
+    "Groundwater",
+    "Freshwater Springs",
+    "Geothermal",
+    "Hot Springs",
+    "Mountains",
+    "Scenic Views",
+    "Trails",
+    "Watersheds",
+    "National Park",
+    "AR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

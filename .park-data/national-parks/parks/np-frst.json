@@ -1,0 +1,208 @@
+{
+  "id": "np-frst",
+  "name": "First State National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "DE",
+  "stateName": "Delaware",
+  "region": "northeast",
+  "description": "Famous as the First State to ratify the Constitution, Delaware was born out of a conflict among three world powers for dominance of the Delaware Valley. From this beginning, the region developed a distinct character that tolerated diversity in religion and national origin and valued independence.",
+  "shortDescription": "Famous as the First State to ratify the Constitution, Delaware was born out of a conflict among three world powers for dominance of the Delaware Valley. From this beginning, the region developed a dis...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 39.83076929,
+    "longitude": -75.56353942
+  },
+  "nationalParkInfo": {
+    "parkCode": "frst",
+    "npsId": "7861C177-A600-4B37-B217-E9E64DC04F34",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frst/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/frst/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "302-317-3854",
+    "email": "firststate@nps.gov",
+    "website": "https://www.nps.gov/frst/index.htm",
+    "address": {
+      "line1": "First State National Historical Park",
+      "line2": "",
+      "city": "New Castle",
+      "state": "DE",
+      "postalCode": "19720"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "1:30PM - 4:30PM",
+    "description": "211 Delaware Street, New Castle DE 19720\n\nThe New Castle Court House Museum is open Wednesday - Saturday 10:00AM to 4:00PM, and Sunday 1:30PM to 4:30PM with tours being offered every hour. Please be aware that during tours the New Castle Court House Museum does lock their doors, they re-open the doors at the next available tour time. The New Castle Court House Museum is closed on Tuesdays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "For details and information, visit, http://www.nps.gov/frst/index.htm."
+  },
+  "images": [
+    {
+      "id": "frst-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B32AE55E-DDFD-3C76-F3BF23EB7F8FE2AB.jpg",
+      "title": "The Dover Green",
+      "altText": "Red, yellow, and green leaves lay on the grass in front of a colonial building.",
+      "caption": "Each fall, an 18th Century Market Fair is recreated to commemorate the original purpose of The Green.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "frst-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BEAD404F-1DD8-B71B-0B3324BE4EFD6BFD.jpg",
+      "title": "John Dickinson Plantation",
+      "altText": "A view of the front of the John Dickinson House on the Plantation.",
+      "caption": "John Dickinson is most famously known as the \"Penman of the Revolution\" at this site, visitors learn the stories of the many residents: tenant farmers, indentured servants, free and enslaved Black men, women, and children and the Dickinson family.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frst-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B2F02B9C-AABC-7C19-080B20689161D873.jpg",
+      "title": "Old Swedes Historic Site",
+      "altText": "A brick bath leads to a door of an old church surrounded by vegetation.",
+      "caption": "Old Swedes Historic Site contains burials that can be traced back to the original settlement of the Swedes.",
+      "credit": "NPS Pohto",
+      "isPrimary": false
+    },
+    {
+      "id": "frst-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B30018E0-C082-E5B7-4FEBBA0373CCE3C5.jpg",
+      "title": "New Castle Court House",
+      "altText": "Pews line the side of the room leading to the English style court room.",
+      "caption": "The New Castle Court House Museum was the first court of Delaware and has seen a variety of significant moments in history.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frst-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B2BE43AE-F527-DF72-2128343A2C155557.jpg",
+      "title": "Brandywine Valley",
+      "altText": "Rolling agricultural hills on a bright sunny day.",
+      "caption": "The Brandywine Valley unit is most known for its recreational opportunities.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frst-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B2D3DE78-A3E9-4059-2EF875E99FA3FD24.jpg",
+      "title": "Fort Christina",
+      "altText": "A replica of the original Kalmar Nyckel ship sails by the monument at Fort Christina.",
+      "caption": "This site commernmates the Swedes original landing and the fort that once stood in the area.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frst/index.htm",
+    "directions": "http://www.nps.gov/frst/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Forts",
+    "Incarceration",
+    "Jails and Prisons",
+    "Maritime",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "Churches",
+    "Social Movements",
+    "Urban America",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Forests and Woodlands",
+    "Trails",
+    "National Historical Park",
+    "DE"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

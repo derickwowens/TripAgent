@@ -1,0 +1,202 @@
+{
+  "id": "np-lowe",
+  "name": "Lowell National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "Lowell’s water-powered textile mills catapulted the nation – including immigrant families and early female factory workers – into an uncertain new industrial era. Nearly 200 years later, the changes that began here still reverberate in our shifting global economy. Explore Lowell, a living testament to the dynamic human story of the industrial revolution.",
+  "shortDescription": "Lowell’s water-powered textile mills catapulted the nation – including immigrant families and early female factory workers – into an uncertain new industrial era. Nearly 200 years later, the changes t...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.6455371,
+    "longitude": -71.31588673
+  },
+  "nationalParkInfo": {
+    "parkCode": "lowe",
+    "npsId": "FA6450A4-D2F1-4B35-9817-EA01918597A6",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lowe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/lowe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9789705000",
+    "email": "LOWE_Public_Information@nps.gov",
+    "website": "https://www.nps.gov/lowe/index.htm",
+    "address": {
+      "line1": "115 John Street",
+      "line2": "",
+      "city": "Lowell",
+      "state": "MA",
+      "postalCode": "01852"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "Current Hours\n\nThe Visitor Center (246 Market St.) is open:\nSaturday and Sunday: 10:00 a.m. - 4:00 p.m.\n\nThe Boott Cotton Mills Museum (115 John Street) is open: \nMonday-Friday: 12:00 p.m.- 4:00 p.m.\nSaturday and Sunday: 10:00 a.m. - 4:00 p.m. \n\nThe Mogan Cultural Center (40 French Street) is open:\nMonday-Friday: 12:00 p.m. - 4:00 p.m.\nSaturday and Sunday: 10:00 a.m. - 12:00 p.m., 1:00 p.m - 4:00 p.m"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer: Throughout the summer, temperatures range from the mid 60s to mid 90s during the day, with rain and thunderstorms more common in the months of July and August. Boats and trolleys operate rain or shine and are only cancelled in cases of extreme weather or the presence of thunder and lightning. Winter: Winters are typically cold with temperatures in the mid 30s and 40s (with occasional single digit temperatures) and snow storms with a few inches accumulation occur frequently throughout the season."
+  },
+  "images": [
+    {
+      "id": "lowe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/540E0A41-958B-903A-9034B50FD25C4D69.jpg",
+      "title": "Boott Cotton Mills",
+      "altText": "5 story brick factories with a clocktower surrounding a central courtyard",
+      "caption": "The Boott Cotton Mills is one of the best, most-intact complexes of cotton mills from Lowell's heyday in the 19th century.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "lowe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D2D96-1DD8-B71B-0BB7225181B9E6B6.jpg",
+      "title": "Tsongas Center Programs",
+      "altText": "Two students weaving on the looms at the education center.",
+      "caption": "The Tsongas Industrial History Center, a partnership of Lowell National Historical Park and UMass Lowell's Graduate School of Education, offers hands-on interactive education workshops for more than 50,000 students each year.",
+      "credit": "NPS Photo/David Byers",
+      "isPrimary": false
+    },
+    {
+      "id": "lowe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D2A20-1DD8-B71B-0BCE6F45096D30F1.jpg",
+      "title": "Lowell NHP Trolley",
+      "altText": "Streetcar guided through Lowell by motormen with lots of passengers",
+      "caption": "Lowell National Historical Park operates reproduction vintage streetcars throughout the park and downtown Lowell. Climb onboard for a ride or a ranger-guided tour.",
+      "credit": "NPS Photo/James Higgins",
+      "isPrimary": false
+    },
+    {
+      "id": "lowe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D2BF1-1DD8-B71B-0BE36B49DC090AE1.jpg",
+      "title": "Boott Mills Weave Room",
+      "altText": "Two young visitors look over the rail at a room full of working looms",
+      "caption": "The working weave room at the Boott Cotton Mills Museum surrounds you with the sights and sounds of a turn-of-the-century working cotton textile factory.",
+      "credit": "NPS Photo/Andy Pearson",
+      "isPrimary": false
+    },
+    {
+      "id": "lowe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D31BD-1DD8-B71B-0B6E59CD838FDB56.jpg",
+      "title": "Lowell Folk Festival",
+      "altText": "Street scene with lots of tents and crowds listening to Folk Festival music at Boardinghouse Park.",
+      "caption": "The Lowell Folk Festival, Lowell's signature annual event, brings traditional folk performers to 5 stages throughout the city and a huge variety of traditional ethnic foods from all around the world.",
+      "credit": "NPS Photo/ Andy Pearson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lowe/index.htm",
+    "directions": "http://www.nps.gov/lowe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Dams",
+    "Engineering",
+    "Industry",
+    "Factories",
+    "Mills",
+    "Immigration",
+    "Laborer and Worker",
+    "Migrant Workers",
+    "Labor Movement",
+    "Science, Technology and Innovation",
+    "Canals",
+    "Floods",
+    "Urban America",
+    "Women's History",
+    "National Historical Park",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

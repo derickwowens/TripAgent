@@ -1,0 +1,222 @@
+{
+  "id": "np-buis",
+  "name": "Buck Island Reef National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "VI",
+  "stateName": "VI",
+  "region": "southeast",
+  "description": "Welcome to Buck Island Reef National Monument, called “the finest marine garden in the Caribbean Sea” by President John F. Kennedy. Snorkel the famous underwater trail, explore endangered elkhorn coral reefs. Hike the trails on the 176-acre island to the observation platform for an unparallel view. Discover a vibrant world above and beneath the waves in this Caribbean paradise.",
+  "shortDescription": "Welcome to Buck Island Reef National Monument, called “the finest marine garden in the Caribbean Sea” by President John F. Kennedy. Snorkel the famous underwater trail, explore endangered elkhorn cora...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 17.81026717,
+    "longitude": -64.6222179
+  },
+  "nationalParkInfo": {
+    "parkCode": "buis",
+    "npsId": "1172F473-8129-42CA-9A47-C9D0AC5CAF66",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/buis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/buis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(340) 773.1460",
+    "email": "CHRI_Education@nps.gov",
+    "website": "https://www.nps.gov/buis/index.htm",
+    "address": {
+      "line1": "2100 Church St. #100",
+      "line2": "",
+      "city": "Christiansted, St. Croix",
+      "state": "VI",
+      "postalCode": "00820"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 5:00PM",
+    "tuesday": "7:00AM - 5:00PM",
+    "wednesday": "7:00AM - 5:00PM",
+    "thursday": "7:00AM - 5:00PM",
+    "friday": "7:00AM - 5:00PM",
+    "saturday": "7:00AM - 5:00PM",
+    "sunday": "7:00AM - 5:00PM",
+    "description": "Buck Island Reef National Monument is open year-round, every day of the week. The current operating hours are 7:00 am to 5:00 pm.\n\nThere is no overnight camping on the island; the park is closed at night to protect nesting sea turtles.\n\nCamping is not allowed on the island."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Welcome to the tropics!"
+  },
+  "images": [
+    {
+      "id": "buis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9166F458-AD79-8637-97F62EDA1485FF6A.jpg",
+      "title": "Elkhorn Coral at Buck Island Reef NM",
+      "altText": "Snorkeler swimming by Elkhorn Coral at Buck Island Reef NM.",
+      "caption": "Snorkelers may view Elkhorn Coral at the Underwater Trail, Buck Island Reef NM",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "buis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D116BDF4-1DD8-B71B-0B053DE4FE43FCDC.jpg",
+      "title": "Buck Island Reef NM Underwater Trail",
+      "altText": "Snorkelers in formation departing the concessioner's vessel in route to the underwater trail.",
+      "caption": "Snorkelers are lead in small groups through the underwater trail at Buck Island Reef NM.",
+      "credit": "Susan Duke",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E775585A-1DD8-B71B-0B363BC0780E766A.jpg",
+      "title": "Tropical dry forest, Buck Island",
+      "altText": "Photograph of the trees and vegetation along the hiking trail on Buck Island",
+      "caption": "The plants that make up the subtropical dry forest on Buck Island range from old historic tamarinds to gumbo limbo, from cactus to delicate orchids.",
+      "credit": "Photo by S. Corsaut, Digital Island",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E762DB55-1DD8-B71B-0B90BC186F386696.jpg",
+      "title": "Snorkeling at Buck Island",
+      "altText": "Photograph of snorkeler among the coral reefs at Buck Island",
+      "caption": "Enjoy snorkeling the reefs and see lots of tropical reef fish.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9181A257-0296-0E89-6C5E87058B02FF8B.jpg",
+      "title": "Green sea turtle hatchling",
+      "altText": "green sea turtle hatchling on beach heading towards the ocean",
+      "caption": "For over 30 years scientists have studied sea turtle nesting habits on Buck Island, training over 100 students in the field of biology.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E78E3DAB-1DD8-B71B-0BCD0C7FB3FCB7BB.jpg",
+      "title": "End of the rainbow",
+      "altText": "Photograph of rainbow at Buck Island",
+      "caption": "Buck Island is a magical place! Come snorkel the waters and hike the trails.",
+      "credit": "Cori Lopazanski",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/91A9FFE7-ECB0-C8B4-F043E543F849476D.jpg",
+      "title": "Beach at Buck Island",
+      "altText": "the forest meets the sandy beach and waves",
+      "caption": "Come see the unspoiled beauty of Buck Island",
+      "credit": "S. Corsaut, Digital Island",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/91D910CE-DF98-0E95-0992FD7B944F97AC.jpg",
+      "title": "Buck Island from the water",
+      "altText": "view of Buck Island from the water",
+      "caption": "From the highest ridge to the water and reefs below, Buck Island offers adventure and learning.",
+      "credit": "S. Corsaut, Digital Island",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/91F5DF48-0722-3666-CC50AB0A76AB4EEA.jpg",
+      "title": "Coral garden",
+      "altText": "fish swimming among the corals",
+      "caption": "Our underwater trail will take you through beautiful gardens of coral.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "buis-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9217E625-91A1-3B79-628F58F9CDF8C7EC.jpg",
+      "title": "Hiking trail",
+      "altText": "hiking trail wandering through a beachside forest",
+      "caption": "Take our hiking trail through beach forests up to the observation deck at 300 feet above sea leve.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/buis/index.htm",
+    "directions": "https://www.nps.gov/buis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Colonization and Settlement",
+    "Maritime",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Geology",
+    "Oceans",
+    "Coral Reefs",
+    "Trails",
+    "Water Trails",
+    "The Tropics",
+    "National Monument",
+    "VI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

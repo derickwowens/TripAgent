@@ -1,0 +1,151 @@
+{
+  "id": "np-wamo",
+  "name": "Washington Monument",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Built to honor George Washington, the United States' first president, the 555-foot marble obelisk towers over Washington, D.C.",
+  "shortDescription": "Built to honor George Washington, the United States' first president, the 555-foot marble obelisk towers over Washington, D.C.",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.88948,
+    "longitude": -77.035207
+  },
+  "nationalParkInfo": {
+    "parkCode": "wamo",
+    "npsId": "37E34290-2E37-4A67-8C95-7A3442F354B1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wamo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wamo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202-426-6841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/wamo/index.htm",
+    "address": {
+      "line1": "2 15th St. NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20024"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Operating Hours\nThe Washington Monument is open daily except July 4 and December 25.\n\nRegular Hours\n9:00 a.m. to 5:00 p.m.\nLast tour begins by 4:00 p.m."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Park",
+      "description": "Advance reservations open 30 days before the tour date. Additional reservations open 24 hours in advance of the tour date. Advance reservations carry a $1 non-refundable processing fee. Free, same-day, walk-up reservations are available at the Washington Monument Lodge starting at 8:45 am. Maximum 6 tickets per customer. Tickets typically sell out.\nGroup tours must reserve in advance at recreation.gov, maximum 55 tickets. Same-day tickets are not available for group tours.",
+      "cost": "1.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Washington, DC experiences all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "wamo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C815A59-1DD8-B71B-0B153A3989783B78.jpg",
+      "title": "Washington Monument at Dusk",
+      "altText": "Washington Monument at Dusk",
+      "caption": "The Monument stands against the backdrop of night",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "wamo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C815B9B-1DD8-B71B-0BC8E3B0292F3658.jpg",
+      "title": "Birds eye view",
+      "altText": "Aerial View of the Washington Monument",
+      "caption": "A birds eye view of the top of the Washington Monument",
+      "credit": "NPS/USPP Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wamo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C815CF2-1DD8-B71B-0B620EDA6BA14E0F.jpg",
+      "title": "Washington Monument Flag",
+      "altText": "Washington Monument Flag",
+      "caption": "One of fifty flags flying around the base of the Monument",
+      "credit": "NPS Photo/Brian Hall",
+      "isPrimary": false
+    },
+    {
+      "id": "wamo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/271D461C-C676-4479-71A3FCD2D15C325F.jpg",
+      "title": "Washington Monument",
+      "altText": "The Washington Monument, a white marble obelisk, towers above a ring of US Flags.",
+      "caption": "It's hard to miss the Washington Monument, a prominent landmark flanked by vast green spaces.",
+      "credit": "NPS / Terry Adams",
+      "isPrimary": false
+    },
+    {
+      "id": "wamo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/275EE01E-D0BB-2946-2235E5F411F9BE6D.jpg",
+      "title": "Washington Monument illuminated",
+      "altText": "Washington Monument lit at night.",
+      "caption": "Experience the memorials at night!",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wamo/index.htm",
+    "directions": "http://www.nps.gov/wamo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Engineering",
+    "Monuments and Memorials",
+    "Presidents",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

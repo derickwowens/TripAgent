@@ -1,0 +1,222 @@
+{
+  "id": "np-ulsg",
+  "name": "Ulysses S Grant National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "Ulysses S. Grant is known as the victorious Civil War general who saved the Union and the 18th President of the United States. He first met Julia Dent, his future wife, at her family home, named White Haven. From 1854 to 1859 the Dents, Grants and an enslaved African-American workforce lived on the property.",
+  "shortDescription": "Ulysses S. Grant is known as the victorious Civil War general who saved the Union and the 18th President of the United States. He first met Julia Dent, his future wife, at her family home, named White...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.55182374,
+    "longitude": -90.35169255
+  },
+  "nationalParkInfo": {
+    "parkCode": "ulsg",
+    "npsId": "89303609-703C-43CB-BA65-5BB96C3698C2",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ulsg/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ulsg/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3148421867",
+    "email": "ulsg_interpretation@nps.gov",
+    "website": "https://www.nps.gov/ulsg/index.htm",
+    "address": {
+      "line1": "7400 Grant Road",
+      "line2": "",
+      "city": "St. Louis",
+      "state": "MO",
+      "postalCode": "63123"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Ulysses S. Grant National Historic Site’s hours of operation are 9AM – 5PM, with the last tour of the historic house at 4 pm."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "St. Louis weather can be uncomfortable and occasionally severe, so please plan your visit accordingly. High heat and humidity, severe thunderstorms, snow and ice, and extreme cold are all possible depending upon the season. For an update of inclement weather conditions which may affect your visit, call (314)842-1867 and follow the instructions to connect to the inclement weather report."
+  },
+  "images": [
+    {
+      "id": "ulsg-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C827360-1DD8-B71B-0BF9ADC1F4742F80.jpg",
+      "title": "White Haven in Autumn",
+      "altText": "View of house with fence. Autumn colored leaves on trees",
+      "caption": "White Haven is picturesque in all seasons, but in the fall the trees are especially beautiful.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "ulsg-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C827651-1DD8-B71B-0B3887AC34057898.jpg",
+      "title": "White Haven",
+      "altText": "view of house from side and back. The house has several additions. Stone summer kitchen on right",
+      "caption": "Behind the house is stone summer kitchen.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ulsg-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8277AE-1DD8-B71B-0B99AAADE2FBE255.jpg",
+      "title": "Outbuildings",
+      "altText": "To the left is the ice house and to right is chicken house.",
+      "caption": "Ice house and chicken house behind the main house.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ulsg-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8278E3-1DD8-B71B-0BB0B90612089D1C.jpg",
+      "title": "Tack Room",
+      "altText": "Saddles in tack room",
+      "caption": "The historic stable tack room.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ulsg-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C827A43-1DD8-B71B-0B4504B65B107615.jpg",
+      "title": "Museum Exhibits",
+      "altText": "boy looking at touchscreen in museum",
+      "caption": "The interactive museum is located in the historic stable.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ulsg-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C827B91-1DD8-B71B-0BA8AC33F2669F55.jpg",
+      "title": "Winter at White Haven",
+      "altText": "Historic green house with snow on ground",
+      "caption": "Visiting the park in the winter can be beautiful and peaceful.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ulsg-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C827E9B-1DD8-B71B-0B8A392673E74A10.jpg",
+      "title": "White Haven in Early Spring",
+      "altText": "View of house from front with budding tree branch in foreground that is also covered in ice.",
+      "caption": "Snowfall in early spring.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ulsg/index.htm",
+    "directions": "http://www.nps.gov/ulsg/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Military",
+    "Presidents",
+    "Reconstruction",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Wars and Conflicts",
+    "Mexican War",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Westward Expansion",
+    "Women's History",
+    "National Historic Site",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

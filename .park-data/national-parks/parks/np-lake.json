@@ -1,0 +1,405 @@
+{
+  "id": "np-lake",
+  "name": "Lake Mead National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Experience outdoor thrills, striking landscapes, and brilliant blue waters. This year-round recreation area spreads across 1.5 million acres of mountains, canyons, valleys and two vast reservoirs. Visitors come here for scenic drives, biking, hiking, boating, fishing, camping, and much more.",
+  "shortDescription": "Experience outdoor thrills, striking landscapes, and brilliant blue waters. This year-round recreation area spreads across 1.5 million acres of mountains, canyons, valleys and two vast reservoirs. Vis...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 35.96622528,
+    "longitude": -114.3469067
+  },
+  "nationalParkInfo": {
+    "parkCode": "lake",
+    "npsId": "7B43EA5B-298C-4BAB-B22D-860B852B40A5",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lake/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/lake/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7022938990",
+    "email": "LAKE_information@nps.gov",
+    "website": "https://www.nps.gov/lake/index.htm",
+    "address": {
+      "line1": "Lake Mead Visitor Center",
+      "line2": "10 Lakeshore Rd",
+      "city": "Boulder City",
+      "state": "NV",
+      "postalCode": "89005"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Lake Mead National Recreation Area is open 24 hours a day, 7 days a week. Please note that while the majority of the park is accessible at all hours, our Visitor Center operates on a specific schedule. Be sure to plan your visit accordingly, as the Visitor Center is open during designated hours to provide you with valuable information, maps, and assistance from our knowledgeable staff."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits a private non-commercial vehicle for 1-7 days.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits a single individual walking/bicycling for 1-7 days.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Admits vehicles at the per person rate for groups using vehicles for 12 or more people. The $15 cost is per person ages 16+, not to exceed the flat rate paid commercial tours for same type of vehicle.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Admits education/academic groups as long as a fee waiver form is filled out and approved.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Admits a sedan of 1-6 people.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Admits a van of 7-16 persons.",
+      "cost": "50.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Admits a mini-bus of 16-25 persons.",
+      "cost": "60.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Admits a motor coach of 26+ persons.",
+      "cost": "150.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring (April, May and June): Daytime highs 80 °F to 98 °F. Nighttime lows 50 °F to 66 °F Summer* (July, August and September): Daytime highs 89 °F to 103 °F (It can get up to 117 °F.) Fall (October, November and December): Daytime highs 59 °F to 83 °F. Nighttime lows 32 °F to 50 °F. Winter (January, February and March) Daytime highs 57 °F to 69 °F. Nighttime lows 30 °F to 40 °F. *Summer can be a dangerous time due to excessive heat. Some trails are closed for public safety."
+  },
+  "images": [
+    {
+      "id": "lake-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D292-1DD8-B71B-0B9A850B0D5AAAFC.jpg",
+      "title": "Black Canyon at Lake Mead NRA",
+      "altText": "sun rising on Black Canyon",
+      "caption": "Visit Black Canyon Water Trail for rafting or kayaking",
+      "credit": "NPS Photo/Andrew Cattoir",
+      "isPrimary": true
+    },
+    {
+      "id": "lake-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D3DE-1DD8-B71B-0B0E3FD563EACFB5.jpg",
+      "title": "Redstone Picnic Area Lake Mead NRA",
+      "altText": "picnic area at Redstone",
+      "caption": "There are many picnic areas at Lake Mead NRA",
+      "credit": "NPS Photo/Andrew Cattoir",
+      "isPrimary": false
+    },
+    {
+      "id": "lake-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D527-1DD8-B71B-0BFDE5F1DB86714E.jpg",
+      "title": "Boating at lakes Mead and Mohave",
+      "altText": "power boaters on Lake Mead",
+      "caption": "Boating is a popular activity at lakes Mead and Mohave",
+      "credit": "NPS Photo/Andrew Cattoir",
+      "isPrimary": false
+    },
+    {
+      "id": "lake-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D698-1DD8-B71B-0BB120A5375B45E6.jpg",
+      "title": "Tour Operators Guide You through the Park",
+      "altText": "people on a tour operated craft exploring the lake.",
+      "caption": "There are many tour operators to provide you with an excellent visit to Lake Mead NRA.",
+      "credit": "NPS Photo/Andrew Cattoir",
+      "isPrimary": false
+    },
+    {
+      "id": "lake-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D824-1DD8-B71B-0BF17A042C954AA2.jpg",
+      "title": "Bighorn Sheep Enjoying the View at Lake Mead NRA",
+      "altText": "A group of bighorn sheep overlooking Lake Mead.",
+      "caption": "With wilderness comes wildlife. Bighorn sheep can be spotted at most areas of the park.",
+      "credit": "NPS Photo/Andrew Cattoir",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "7503433C-3856-4E82-AFF3-0B1649766ED3",
+      "name": "Jet Skiing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "8A1C7B17-C2C6-4F7C-9539-EA1E19971D80",
+      "name": "Water Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lake/index.htm",
+    "directions": "http://www.nps.gov/lake/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Aviation",
+    "Dams",
+    "Industry",
+    "Mining",
+    "Native American Heritage",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Tortoises and Turtles",
+    "Canyons and Canyonlands",
+    "Geology",
+    "Groundwater",
+    "Aquifers",
+    "Freshwater Springs",
+    "Geothermal",
+    "Hot Springs",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "Wilderness",
+    "National Recreation Area",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

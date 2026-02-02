@@ -1,0 +1,217 @@
+{
+  "id": "np-elmo",
+  "name": "El Morro National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Imagine the refreshment of finding water after days of dusty travel. A reliable waterhole hidden at the base of a sandstone bluff made El Morro (the headland) a popular campsite for hundreds of years. Here, ancestral Puebloans, Spanish, and American travelers carved over 2,000 signatures, dates, messages, and petroglyphs. Make El Morro National Monument a stopping point on your travels.",
+  "shortDescription": "Imagine the refreshment of finding water after days of dusty travel. A reliable waterhole hidden at the base of a sandstone bluff made El Morro (the headland) a popular campsite for hundreds of years....",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.03895916,
+    "longitude": -108.3463984
+  },
+  "nationalParkInfo": {
+    "parkCode": "elmo",
+    "npsId": "F894BEB4-0058-4FB9-9E5B-68DB9A5BD198",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/elmo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/elmo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5057834226",
+    "email": "wendy_gordge@nps.gov",
+    "website": "https://www.nps.gov/elmo/index.htm",
+    "address": {
+      "line1": "Mile Marker 44.6 Hwy 53",
+      "line2": "",
+      "city": "Ramah",
+      "state": "NM",
+      "postalCode": "87321"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Winter Hours (October 19, 2025 - May 23, 2026). Visitor center and trails open 5 days/week. Closed Tuesdays and Wednesdays. \n\nTrail access begins at 9:00 am. Last admittance to the Headland Trail is at 3:00 pm MT. Last admittance to the Inscription Loop Trail is at 4:00 pm MT. There is no access to park trails once the visitor center closes at 5:00 pm.\n\nClosed Thanksgiving Day, December 25, and January 1. \n\nSummer Hours (May 24, 2026 - October 17, 2026). Park visitor center and trails open 7 days/week."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "At an elevation of 7,219 feet (2200 meters) winters can be cold and snowy. Summers are warm with afternoon thunder showers from mid-July through mid-September. Trails can close unexpectedly due to severe weather. Average snowfall: 40 inches per year. Average precipitation (snowmelt and rain): 16 inches per year. Warmest month: July, with average highs of 84 degrees and lows of 52 degrees. Coldest months: December and January, with average lows of 14-15 degrees, and average highs of 44-45 degrees."
+  },
+  "images": [
+    {
+      "id": "elmo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E4D4D-1DD8-B71B-0B9B5562C2BAACFC.jpg",
+      "title": "El Morro with Sunflowers",
+      "altText": "El Morro with Sunflowers",
+      "caption": "El Morro with Sunflowers",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "elmo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E4EBE-1DD8-B71B-0BC4CD28327D4CA3.jpg",
+      "title": "Pool at El Morro",
+      "altText": "Pool at El Morro",
+      "caption": "A drinking hole for visitors for hundreds of years, the pool at El Morro has significant cultural and historical value.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elmo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E51EC-1DD8-B71B-0BAE3175FC22CDD3.jpg",
+      "title": "Trail at El Morro",
+      "altText": "Trail at El Morro",
+      "caption": "Constructed by the CCC, the historic headland trail at El Morro offers visitors great views and the archaeological site of Atsinna.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elmo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E538A-1DD8-B71B-0B547055F3B736AB.jpg",
+      "title": "Atsinna Pueblo",
+      "altText": "Atsinna Pueblo",
+      "caption": "Atsinna Pueblo sits atop the headland at El Morro",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elmo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E4BB4-1DD8-B71B-0BED7A15B3E33FCC.jpg",
+      "title": "El Morro in snow",
+      "altText": "Headland in Snow",
+      "caption": "El Morro blanketed with snow",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/elmo/index.htm",
+    "directions": "http://www.nps.gov/elmo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Hispanic American Heritage",
+    "Migrations",
+    "Military",
+    "US Army",
+    "Schools and Education",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Foothills, Plains and Valleys",
+    "Plateaus and Mesas",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Grasslands",
+    "Night Sky",
+    "Scenic Views",
+    "Trails",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

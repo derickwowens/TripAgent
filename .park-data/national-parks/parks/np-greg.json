@@ -1,0 +1,243 @@
+{
+  "id": "np-greg",
+  "name": "Great Egg Harbor River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NJ",
+  "stateName": "New Jersey",
+  "region": "northeast",
+  "description": "Both the harbor and river were named for the shorebird and waterfowl eggs covering their meadows. During the American Revolution, privateers hid here. Established as a National Park Service site in 1992, Great Egg Harbor National Wild and Scenic River is one of nation's best birding spots. Local jurisdictions administer its lands. The 129-mile river system flows through Pinelands National Reserve.",
+  "shortDescription": "Both the harbor and river were named for the shorebird and waterfowl eggs covering their meadows. During the American Revolution, privateers hid here. Established as a National Park Service site in 19...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 39.3042,
+    "longitude": -74.6497
+  },
+  "nationalParkInfo": {
+    "parkCode": "greg",
+    "npsId": "5B1021C9-5F48-4747-B0E4-6F508FDF96AE",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/greg/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.aclink.org/PARKS/mainpages/estell.asp"
+    }
+  ],
+  "contact": {
+    "email": "lambert_nicole@aclink.org",
+    "website": "https://www.nps.gov/greg/index.htm",
+    "address": {
+      "line1": "Route 50",
+      "line2": "",
+      "city": "Estell Manor",
+      "state": "NJ",
+      "postalCode": "08330"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Great Egg Harbor River is a 55.0-mile-long (88.5 km) river in southern New Jersey in the United States. It is one of the major rivers that traverse the largely pristine Pinelands, draining 308 square miles (800 km2) of wetlands into the Atlantic Ocean at Great Egg Harbor, from which it takes its name. At river location in Estell Manor Park - please check (609) 625-1897 for hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperate, with a moderating influence of the Atlantic Ocean. NOAA Weather Seven-Day Forecast for Mays Landing, New Jersey: https://forecast.weather.gov/MapClick.php?lat=39.4521478&lon=-74.7275318 Tide information for Mays Landing, Great Egg Harbor River, New Jersey: https://www.usharbors.com/harbor/new-jersey/mays-landing-great-egg-harbor-river-nj/tides/"
+  },
+  "images": [
+    {
+      "id": "greg-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/69830EAB-1DD8-B71B-0B2995AFD827B8FB.jpg",
+      "title": "Great Egg Harbor River",
+      "altText": "Still river in the winter with leafless trees on either side",
+      "caption": "Great Egg Harbor River downstream from Mill Street (New Jersey Route 559) in Mays Landing, New Jersey",
+      "credit": "Tim Kiser",
+      "isPrimary": true
+    },
+    {
+      "id": "greg-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/425BFE7C-1DD8-B71B-0BEAD91965AC7890.jpg",
+      "title": "Gibson Creek",
+      "altText": "Sun setting over the river.",
+      "caption": "Gibson Creek",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "greg-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4264700A-1DD8-B71B-0BE6A35701B10E72.jpg",
+      "title": "Floating Classrooms",
+      "altText": "School group examines a fish held by the instructor.",
+      "caption": "Students learn about river resources on a floating classroom.",
+      "credit": "Akers",
+      "isPrimary": false
+    },
+    {
+      "id": "greg-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4276EC67-1DD8-B71B-0B3D7FCEDB5CFD39.jpg",
+      "title": "Haley's Comet over the Great Egg Harbor River",
+      "altText": "Bright white comet in the early night sky reflects over the river.",
+      "caption": "Haley's Comet over the Great Egg Harbor River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "greg-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4289A3A9-1DD8-B71B-0BFCF884DB700B09.jpg",
+      "title": "Great Egg Harbor River",
+      "altText": "Winding river surrounded by grasslands on a cloudy day.",
+      "caption": "The Great Egg Harbor River",
+      "credit": "Palmer",
+      "isPrimary": false
+    },
+    {
+      "id": "greg-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/42912E18-1DD8-B71B-0BB2C9B86833D9CF.jpg",
+      "title": "Tuckahoe Osprey",
+      "altText": "Medium sized Osprey in a next along the river",
+      "caption": "Tuckahoe Osprey",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "0F2CC530-8DD9-4328-98AA-E514918AD206",
+      "name": "River Tubing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/greg/index.htm",
+    "directions": "http://www.aclink.org/PARKS/mainpages/estell.asp"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Estuaries and Mangroves",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Trails",
+    "Water Trails",
+    "Watersheds",
+    "Headwaters",
+    "Wetlands",
+    "Wilderness",
+    "",
+    "NJ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

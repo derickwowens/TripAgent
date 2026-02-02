@@ -1,0 +1,258 @@
+{
+  "id": "np-sahi",
+  "name": "Sagamore Hill National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Sagamore Hill was the home of Theodore Roosevelt, 26th President of the United States, from 1885 until his death in 1919. During Roosevelt's time in office, his \"Summer White House\" was the focus of international attention. Explore 83 acres of natural surroundings, historic buildings and trails to become inspired by the legacy of one of America's most popular presidents.",
+  "shortDescription": "Sagamore Hill was the home of Theodore Roosevelt, 26th President of the United States, from 1885 until his death in 1919. During Roosevelt's time in office, his \"Summer White House\" was the focus of i...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 40.88579128,
+    "longitude": -73.49686438
+  },
+  "nationalParkInfo": {
+    "parkCode": "sahi",
+    "npsId": "BA5A0D58-E05F-44AE-94F1-10A88A4AF143",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sahi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sahi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5169224788",
+    "email": "sahi_information@nps.gov",
+    "website": "https://www.nps.gov/sahi/index.htm",
+    "address": {
+      "line1": "20 Sagamore Hill Road",
+      "line2": "",
+      "city": "Oyster Bay",
+      "state": "NY",
+      "postalCode": "11771"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park grounds are open every day from sunrise to 30 minutes after sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Atlantic Ocean and Long Island Sound moderates the climate of Long Island and Sagamore Hill. Spring: Highs average between 50 F and 70 F. Snow in early March becomes rain by April. Summer: Average highs range between 70 F and the upper 80s F. Summers are drier but thunderstorms are possible. Fall: Highs are from the mid-50s F to the mid-70s F. Fall is the driest season, but showers are possible. Winter: Highs are around 40 F. Snow showers are common; the largest accumulations come in February."
+  },
+  "images": [
+    {
+      "id": "sahi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/ECB04F63-907D-CA88-695806E416BB05D8.jpg",
+      "title": "Theodore Roosevelt Home",
+      "altText": "A large house painted gray with green lawn and trees.",
+      "caption": "Theodore Roosevelt Home at Sagamore Hill",
+      "credit": "NPS/Audrey Tiernan",
+      "isPrimary": true
+    },
+    {
+      "id": "sahi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/967E5356-DA4D-FE4D-5C6D4AEA82281C5B.jpg",
+      "title": "Rendering of Sagamore Hill Landscape Circa 1918",
+      "altText": "A digital rendering of the Roosevelt home and landscapes of Sagamore Hill circa 1918.",
+      "caption": "A digital rendering of the Roosevelt home and landscapes of Sagamore Hill circa 1918.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "sahi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/976261D3-B132-4721-0F97F0B7522EE18D.jpg",
+      "title": "North Room",
+      "altText": "The North Room of the Theodore Roosevelt Home",
+      "caption": "The North Room of the Theodore Roosevelt Home",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "sahi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6D6F4EEA-1DD8-B71B-0BEF1F4ABBDC5190.jpg",
+      "title": "Nature Trail",
+      "altText": "A nature trail to Cold Spring Harbor passes through woods.",
+      "caption": "Walk the grounds and explore the place the Roosevelt family called home.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sahi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9423F8D1-91E5-774F-775D51B8648D47BF.jpg",
+      "title": "Library and Office",
+      "altText": "A view of President Roosevelt's library and office at Sagamore Hill.",
+      "caption": "A view of President Roosevelt's library and office at Sagamore Hill.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "sahi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/ECC1F2D7-9542-D923-D10D269AC661A004.jpg",
+      "title": "Eel Creek",
+      "altText": "A tidal creek with high grass on the banks, trees in the background and blue sky.",
+      "caption": "Eel Creek is a tidal salt marsh near the Roosevelt family's beach.",
+      "credit": "NPS/Audrey Tiernan",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sahi/index.htm",
+    "directions": "http://www.nps.gov/sahi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Military",
+    "Cavalry",
+    "US Army",
+    "Monuments and Memorials",
+    "Presidents",
+    "Social Movements",
+    "Conservation Movement",
+    "Tragic Events",
+    "Assassinations",
+    "Urban America",
+    "Wars and Conflicts",
+    "Spanish-American War",
+    "World War I",
+    "Animals",
+    "Birds",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Trails",
+    "Wetlands",
+    "Marshes",
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

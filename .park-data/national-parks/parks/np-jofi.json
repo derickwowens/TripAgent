@@ -1,0 +1,132 @@
+{
+  "id": "np-jofi",
+  "name": "John Fitzgerald Kennedy National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "JFK’s parents never expected that their second son would grow up to be president. Yet in his birthplace home he learned values that inspired a life in public service. His mother, Rose Kennedy, recreated her family’s first home to share her memories of those early years with visitors. We commemorate not only his early life, but the ideas and principles he left behind.",
+  "shortDescription": "JFK’s parents never expected that their second son would grow up to be president. Yet in his birthplace home he learned values that inspired a life in public service. His mother, Rose Kennedy, recreat...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.34693694,
+    "longitude": -71.12323846
+  },
+  "nationalParkInfo": {
+    "parkCode": "jofi",
+    "npsId": "13E32BB8-D80B-45FA-ABF7-9C0CA5417ADC",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jofi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jofi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "617-566-7937",
+    "email": "gabriella_hornbeck@nps.gov",
+    "website": "https://www.nps.gov/jofi/index.htm",
+    "address": {
+      "line1": "83 Beals Street",
+      "line2": "",
+      "city": "Brookline",
+      "state": "MA",
+      "postalCode": "02446"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Hours for the visitor center and house at John Fitzgerald Kennedy National Historic Site vary by season. The grounds are open year-round, dawn to dusk.\n\nThe site is currently closed for the off season. During the off season, late-October through late-May, the house and visitor center are closed to the public, with tours available Wednesdays and Fridays, by appointment, with at least two weeks advanced notice. In the open season, late-May through late-October, the site is open Thursdays through Sundays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Typical New England Weather: Warm, humid summers and cold winters. Any available outdoor programs take place rain or shine but may be modified or canceled due to high heat index."
+  },
+  "images": [
+    {
+      "id": "jofi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C820F63-1DD8-B71B-0BA806C2D92161BF.jpg",
+      "title": "John Fitzgerald Kennedy National Historic Site",
+      "altText": "John Fitzgerald Kennedy National Historic Site",
+      "caption": "Photograph of the birthplace of John F. Kennedy on Beals st. in Brookline, MA",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "jofi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4AC1549C-BD5C-B852-7B4D8CBCD5B2AF86.jpg",
+      "title": "Nursery",
+      "altText": "Room with white wicker furniture, including bassinet and rocking chair. Long white baby dress hangs.",
+      "caption": "The Kennedy christening gown on a stand next to the bassinet in which all the Kennedy children slept, at the John F. Kennedy National Historic Site.",
+      "credit": "NPS / Robert Perron",
+      "isPrimary": false
+    },
+    {
+      "id": "jofi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4AA5B49F-ECA2-C60D-69B4B0B6D59BAA5D.jpg",
+      "title": "Kennedy Dining Room",
+      "altText": "Dining room with oval dining table with six place settings of silver and fine china.",
+      "caption": "The dining table is set with the fine china and silver that Rose Kennedy received as a wedding present.",
+      "credit": "NPS / Robert Perron",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jofi/index.htm",
+    "directions": "http://www.nps.gov/jofi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Birthplace",
+    "Immigration",
+    "Monuments and Memorials",
+    "Presidents",
+    "Urban America",
+    "Women's History",
+    "National Historic Site",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

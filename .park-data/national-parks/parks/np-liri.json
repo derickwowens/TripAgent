@@ -1,0 +1,273 @@
+{
+  "id": "np-liri",
+  "name": "Little River Canyon National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "Little River is unique because it flows for most of its length atop Lookout Mountain in northeast Alabama. Forested uplands, waterfalls, canyon rims and bluffs, pools, boulders, and sandstone cliffs offer settings for a variety of recreational activities. Natural resources and cultural heritage come together to tell the story of the Preserve, a special place in the Southern Appalachians.",
+  "shortDescription": "Little River is unique because it flows for most of its length atop Lookout Mountain in northeast Alabama. Forested uplands, waterfalls, canyon rims and bluffs, pools, boulders, and sandstone cliffs o...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 34.41461863,
+    "longitude": -85.61734327
+  },
+  "nationalParkInfo": {
+    "parkCode": "liri",
+    "npsId": "C03CF86E-BFB5-470E-AFF3-C1798A61FFE5",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/liri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/liri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2568459605",
+    "email": "liri_information@nps.gov",
+    "website": "https://www.nps.gov/liri/index.htm",
+    "address": {
+      "line1": "4322 Little River Trail NE Ste 100",
+      "line2": "",
+      "city": "Fort Payne",
+      "state": "AL",
+      "postalCode": "35967"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The main park is open during daylight hours every day including holidays."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits all persons traveling in a single, private, non-commercial vehicle (car/truck/van/motorcycle) into Canyon Mouth Park for one day. The pass is non-transferable. Insert cash only (no bills larger than a $20) into the fee machine to gain entrance. Place the receipt on the dashboard of your vehicle, making sure the face of the receipt is visible.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 1 day. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. The pass is non-transferable. Insert cash only (no bills larger than a $20) into the fee machine to gain entrance. Place the receipt on the dashboard of your vehicle, making sure the face of the receipt is visible.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The weather in Fort Payne, Alabama is mild. The average temperature in the winter is in the 50's. The average summer temperature is in the high 80's with high humidity. We receive about 55 inches of rain each year. Snowfall varies, but only lasts a few days per event."
+  },
+  "images": [
+    {
+      "id": "liri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C870F95-1DD8-B71B-0B1A89976F5B3292.jpg",
+      "title": "Little River Canyon in the Fall",
+      "altText": "Fall Season in the Canyon",
+      "caption": "Little River Canyon in the Fall",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "liri-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C871122-1DD8-B71B-0BA3CC6A7CFE8F33.jpg",
+      "title": "Little River Falls in the Spring",
+      "altText": "Little River Falls in the Spring, located on AL Hwy 35",
+      "caption": "Little River Falls in the Spring",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "liri-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C871272-1DD8-B71B-0BAB8ECC34CDFAB1.jpg",
+      "title": "Little River Falls in the Fall",
+      "altText": "Little River Falls in the Fall, located on AL Hwy 35",
+      "caption": "Little River Falls in the Fall",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "liri-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8715EF-1DD8-B71B-0BB9222FFF98A466.jpg",
+      "title": "Scenic Drive (AL Hwy 176) in the Fall",
+      "altText": "Scenic Driver (AL Hwy 176) in the Fall",
+      "caption": "Scenic Drive (AL Hwy 176) in the Fall",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "liri-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C871B98-1DD8-B71B-0B9503B9A40341DA.jpg",
+      "title": "DeSoto Scout Trail Bridge",
+      "altText": "DeSoto Scout Trail Bridge located in the Backcountry Area",
+      "caption": "Take a hike along the DeSoto Scout Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/liri/index.htm",
+    "directions": "http://www.nps.gov/liri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Canyons and Canyonlands",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Fossils and Paleontology",
+    "Geology",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "Waterfalls",
+    "National Preserve",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

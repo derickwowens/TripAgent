@@ -1,0 +1,230 @@
+{
+  "id": "np-chat",
+  "name": "Chattahoochee River National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "Today the river valley attracts us for so many reasons. Take a solitary walk to enjoy nature’s display, raft leisurely through the rocky shoals with friends, fish the misty waters as the sun comes up, or have a picnic on a Sunday afternoon. Get Outdoors and experience your Chattahoochee River National Recreation Area as you have never done before.",
+  "shortDescription": "Today the river valley attracts us for so many reasons. Take a solitary walk to enjoy nature’s display, raft leisurely through the rocky shoals with friends, fish the misty waters as the sun comes up,...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 33.99698333,
+    "longitude": -84.28953177
+  },
+  "nationalParkInfo": {
+    "parkCode": "chat",
+    "npsId": "021F297B-D672-4794-8C5E-BB58743F252A",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/chat/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/chat/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "678-538-1200",
+    "email": "chat_superintendent@nps.gov",
+    "website": "https://www.nps.gov/chat/index.htm",
+    "address": {
+      "line1": "8800 Roberts Drive",
+      "line2": "",
+      "city": "Sandy Springs",
+      "state": "GA",
+      "postalCode": "30350"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park lands and waters are open for visitation from 30 minutes before sunrise to 30 minutes after sunset seven days a week.\n\nThe Island Ford Visitor Center located in historic Hewlett Lodge is open from 9 am to 5 pm seven days a week except Thanksgiving Day and December 25."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Required for visitors age 16+ entering on foot or by bicycle. Valid for one day.",
+      "cost": "5.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Private vehicle pass admits one private vehicle and its occupants for one day.",
+      "cost": "5.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 1 day. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "5.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summers typically consist of long spells of warm, humid weather. Average highs are in the lower 90's and overnight lows range from the upper 60's to lower 70's. Winters are more variable with highs averaging from the mid 50's to lower 60's while the lows average in the mid 30's. Oftentimes, stretches of mild weather will alternate with cold spells. Spring and Autumn seasons are characterized by much variability from day to day and from year to year."
+  },
+  "images": [
+    {
+      "id": "chat-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C8083BD1-1DD8-B71B-0BB3FE7205EBC05D.jpg",
+      "title": "Family Time",
+      "altText": "Two adult Great Blue Herons stand watch over their 3 young chicks in the nest.",
+      "caption": "Great Blue Herons are plentyful along the river. Look towards the tree tops along the river to spot their nest. If you're lucky the whole will be home.",
+      "credit": "NPS Photo/Tom Wilson",
+      "isPrimary": true
+    },
+    {
+      "id": "chat-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C84762FD-1DD8-B71B-0B753F1F7255A1B9.jpg",
+      "title": "Look Closely",
+      "altText": "Park ranger showing a group of school children the critter on his arm.",
+      "caption": "School children from the city enjoy visiting the park on a ranger-led hike.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "chat-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C877BEFD-1DD8-B71B-0BC94CDB1B8075BE.jpg",
+      "title": "Marietta Paper Mill",
+      "altText": "Stone ruins of the Marietta Paper Mill surrounded by lush green vegatation.",
+      "caption": "All that is left of the Marietta Paper Mill is a few stone walls in the woods. Hike to the ruins and you'll get a closeup of Sope Creek that was harnessed by the mills.",
+      "credit": "NPS/David Ek",
+      "isPrimary": false
+    },
+    {
+      "id": "chat-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C8BC70DE-1DD8-B71B-0BF932BB754A6269.jpg",
+      "title": "Landing A Rainbow",
+      "altText": "Angler in waders landing a fish using a landing net.",
+      "caption": "Fishing the Chattahoochee River can be a great way to spend an afternoon out of the office or as a diversion from rush hour traffic.",
+      "credit": "NPS/Tom Wilson",
+      "isPrimary": false
+    },
+    {
+      "id": "chat-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C9265B1A-1DD8-B71B-0B8D232058D0E4C9.jpg",
+      "title": "Inviting Trail",
+      "altText": "Trail heading off under a canopy of trees.",
+      "caption": "Trails along the Chattahoochee River are calling you to visit.",
+      "credit": "NPS/Tom Wilson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "0F2CC530-8DD9-4328-98AA-E514918AD206",
+      "name": "River Tubing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/chat/index.htm",
+    "directions": "http://www.nps.gov/chat/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Photography",
+    "Industry",
+    "Mills",
+    "Transportation",
+    "Bridges",
+    "Urban America",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Wetlands",
+    "National Recreation Area",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

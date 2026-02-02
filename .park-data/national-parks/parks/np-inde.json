@@ -1,0 +1,201 @@
+{
+  "id": "np-inde",
+  "name": "Independence National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "The park represents the founding ideals of the nation, and preserves national and international symbols of freedom and democracy, including Independence Hall and the Liberty Bell. The Declaration of Independence and US Constitution were both debated and signed inside Independence Hall, a UNESCO World Heritage Site.",
+  "shortDescription": "The park represents the founding ideals of the nation, and preserves national and international symbols of freedom and democracy, including Independence Hall and the Liberty Bell. The Declaration of I...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 39.94746112,
+    "longitude": -75.14794157
+  },
+  "nationalParkInfo": {
+    "parkCode": "inde",
+    "npsId": "CF35CC35-12CE-473D-9E4C-703916105B78",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/inde/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/inde/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "215-965-2305",
+    "email": "indevisitorinfo@nps.gov",
+    "website": "https://www.nps.gov/inde/index.htm",
+    "address": {
+      "line1": "599 Market Street",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "postalCode": "19106"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Independence National Historical Park operates daily from 9:00 am to 5:00 pm.  Hours of operation for certain historical buildings and facilities change seasonally throughout the year.  Most of the park grounds are open 24 hours a day to pedestrians.  All buildings are closed on Thanksgiving Day, Christmas Day, and New Year's Day. Please see the park's website for hours of operation.  http://www.nps.gov/inde/planyourvisit/hours.htm"
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Entrance to Independence Hall requires a guided tour. Tickets are required.",
+      "cost": "1.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summers are typically hot and muggy, fall and spring are generally mild, and winter is cold. Snowfall is highly variable, with some winters bringing only light snow and others bringing several major snowstorms, with the normal seasonal snowfall standing at 22.4 in (57 cm). Precipitation is generally spread throughout the year, with eight to twelve wet days per month."
+  },
+  "images": [
+    {
+      "id": "inde-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7AFE0115-FFFB-4779-4787C9D078489E1C.jpg",
+      "title": "The Liberty Bell",
+      "altText": "Color photo of the Liberty Bell with Independence Hall in the background.",
+      "caption": "Recognizable for its crack, the Liberty Bell remains significant today for its message of liberty.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "inde-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F9D13-1DD8-B71B-0BE8FB36B0FC184C.jpg",
+      "title": "Independence Visitor Center",
+      "altText": "A color photo of the Independence Visitor Center showing a brick building with tall windows.",
+      "caption": "Plan your visit, use the restrooms, and take advantage of the free WiFi  in the Independence Visitor Center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "inde-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F9AA9-1DD8-B71B-0B50D16068B72863.jpg",
+      "title": "Independence Hall",
+      "altText": "Color photo of Independence Hall as seen from the north side of Chestnut Street.",
+      "caption": "Known as the birthplace of the United States, Independence Hall houses the room where the Declaration of Independence and U.S. Constitution were both signed.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "inde-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80F321-1DD8-B71B-0B30426D759187FC.jpg",
+      "title": "The Assembly Room in Independence Hall",
+      "altText": "A color photo of the Assembly Room showing 18th century chairs and green, cloth covered tables",
+      "caption": "The Assembly Room in Independence Hall is where the Declaration of Independence and U.S. Constitution were both signed.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "inde-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F9F2F-1DD8-B71B-0B289DF989464918.jpg",
+      "title": "The Benjamin Franklin Museum",
+      "altText": "A color photo of the exterior of the Benjamin Franklin Museum in Franklin Court.",
+      "caption": "Explore Franklin's life and character in the Benjamin Franklin Museum. The museum features artifacts, computer animations, and interactive displays that are geared toward visitors of all ages.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "inde-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FA0CA-1DD8-B71B-0B5334A33809A90D.jpg",
+      "title": "The Franklin Court Printing Office",
+      "altText": "A color photo of a printing press in the Franklin Court Printing Office.",
+      "caption": "Franklin's printing office no longer survives, but it would have had equipment similar to what you'll see in the Franklin Court Printing Office.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "inde-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C801AB4-1DD8-B71B-0B13B3AC52A62C06.jpg",
+      "title": "Portrait Gallery in the Second Bank of the United States",
+      "altText": "The exterior of the Second Bank of the United States showing a marble building with eight columns.",
+      "caption": "The Second Bank of the United States houses a fine collection of over 100 portraits, many of them by 18th century artist Charles Willson Peale.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/inde/index.htm",
+    "directions": "http://www.nps.gov/inde/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Arts",
+    "Painting",
+    "Banking",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Military",
+    "US Navy",
+    "Monuments and Memorials",
+    "Presidents",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Religious Freedom",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "Women's History",
+    "National Historical Park",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

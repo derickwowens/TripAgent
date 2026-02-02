@@ -1,0 +1,147 @@
+name: Sync Park Data
+
+on:
+  # Run weekly on Sunday at 2 AM UTC
+  schedule:
+    - cron: '0 2 * * 0'
+  
+  # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      sync_type:
+        description: 'Type of sync to run'
+        required: true
+        default: 'state'
+        type: choice
+        options:
+          - state
+          - national
+          - all
+      state_code:
+        description: 'State code (e.g., WI, FL) or "all" for all priority states'
+        required: false
+        default: 'all'
+
+env:
+  NODE_VERSION: '20'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      
+      - name: Run park data sync
+        env:
+          RECREATION_GOV_API_KEY: ${{ secrets.RECREATION_GOV_API_KEY }}
+          NPS_API_KEY: ${{ secrets.NPS_API_KEY }}
+          PARK_DATA_S3_BUCKET: ${{ secrets.PARK_DATA_S3_BUCKET }}
+        run: |
+          SYNC_TYPE="${{ github.event.inputs.sync_type || 'state' }}"
+          STATE_CODE="${{ github.event.inputs.state_code || 'all' }}"
+          
+          echo "Running sync: type=$SYNC_TYPE, state=$STATE_CODE"
+          npx tsx data/sync/runSync.ts "$SYNC_TYPE" "$STATE_CODE"
+      
+      - name: Upload sync logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sync-logs-${{ github.run_id }}
+          path: |
+            *.log
+          retention-days: 30
+      
+      - name: Notify on failure
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            await github.rest.issues.create({
+              owner,
+              repo,
+              title: `Park Data Sync Failed - ${new Date().toISOString().split('T')[0]}`,
+              body: `The scheduled park data sync failed. Check the [workflow run](${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}) for details.`,
+              labels: ['bug', 'data-sync']
+            });
+
+  # Separate job for Wisconsin (can run in parallel with other states)
+  sync-wisconsin:
+    if: github.event.inputs.state_code == 'WI' || github.event.inputs.state_code == 'all' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      
+      - name: Sync Wisconsin state parks
+        env:
+          RECREATION_GOV_API_KEY: ${{ secrets.RECREATION_GOV_API_KEY }}
+          PARK_DATA_S3_BUCKET: ${{ secrets.PARK_DATA_S3_BUCKET }}
+        run: npx tsx data/sync/runSync.ts state WI
+
+  # Separate job for Florida (can run in parallel with other states)
+  sync-florida:
+    if: github.event.inputs.state_code == 'FL' || github.event.inputs.state_code == 'all' || github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      
+      - name: Sync Florida state parks
+        env:
+          RECREATION_GOV_API_KEY: ${{ secrets.RECREATION_GOV_API_KEY }}
+          PARK_DATA_S3_BUCKET: ${{ secrets.PARK_DATA_S3_BUCKET }}
+        run: npx tsx data/sync/runSync.ts state FL

@@ -1,0 +1,247 @@
+{
+  "id": "np-katm",
+  "name": "Katmai National Park & Preserve",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "A landscape is alive underneath our feet, filled with creatures that remind us what it is to be wild. Katmai was established in 1918 to protect the volcanically devastated region surrounding Novarupta and the Valley of Ten Thousand Smokes. Today, Katmai National Park and Preserve also protects 9,000 years of human history and important habitat for salmon and thousands of brown bears.",
+  "shortDescription": "A landscape is alive underneath our feet, filled with creatures that remind us what it is to be wild. Katmai was established in 1918 to protect the volcanically devastated region surrounding Novarupta...",
+  "designation": "National Park & Preserve",
+  "coordinates": {
+    "latitude": 58.62235668,
+    "longitude": -155.0126574
+  },
+  "nationalParkInfo": {
+    "parkCode": "katm",
+    "npsId": "B712CB0C-B3DD-48A6-AA4F-CCD72C87F48B",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/katm/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/katm/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9072463305",
+    "email": "KATM_Visitor_Information@nps.gov",
+    "website": "https://www.nps.gov/katm/index.htm",
+    "address": {
+      "line1": "1000 Silver Street",
+      "line2": "Building 603",
+      "city": "King Salmon",
+      "state": "AK",
+      "postalCode": "99613"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Katmai is open 24 hours per day, seven days per week."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Located between the stormy north Pacific Ocean and the even stormier Bering Sea, the Katmai region is often a battleground between weather systems. When you visit, be prepared to encounter all types of weather. On average, wet and cool conditions predominate in spring, summer, and fall. Winters are drier and colder."
+  },
+  "images": [
+    {
+      "id": "katm-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0FDB-1DD8-B71B-0B8933ACA92FE6B3.jpg",
+      "title": "Salmon jumping at Brooks Falls",
+      "altText": "salmon jumping at waterfall",
+      "caption": "Each year, 200,000 to 400,000 sockeye salmon jump Brooks Falls.",
+      "credit": "NPS/David Jacob",
+      "isPrimary": true
+    },
+    {
+      "id": "katm-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A32DB-1DD8-B71B-0B37F66E9D0832AF.jpg",
+      "title": "Bear catching jumping salmon",
+      "altText": "Bear standing at the edge of a waterfall while a salmon is leaping towards it.",
+      "caption": "In July, brown bears often stand on the lip of Brooks Falls to try to catch leaping salmon.",
+      "credit": "NPS/David Jacob",
+      "isPrimary": false
+    },
+    {
+      "id": "katm-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A3473-1DD8-B71B-0B65158B5807CE0D.jpg",
+      "title": "Bear family walks near sleeping bear",
+      "altText": "Three bears walk near a sleeping bear",
+      "caption": "Salmon streams in Katmai attract high numbers of brown bears.",
+      "credit": "NPS/Bryanna Plog",
+      "isPrimary": false
+    },
+    {
+      "id": "katm-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A35BF-1DD8-B71B-0BB1644AA6CF4C8B.jpg",
+      "title": "Mount Katmai caldera",
+      "altText": "lake inside of an ash and glacier covered volcano",
+      "caption": "Mount Katmai's summit collapsed during the 1912 Novarupta-Katmai eruption. Today, the caldera is filled with a deep lake.",
+      "credit": "NPS/Roy Wood",
+      "isPrimary": false
+    },
+    {
+      "id": "katm-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A3776-1DD8-B71B-0BB94C2392CD5B01.jpg",
+      "title": "sedge meadows and volcanoes at Hallo",
+      "altText": "meadow in foreground and snow capped volcanoes on the horizon",
+      "caption": "Glacially clad volcanoes loom over the sedge meadows of Hallo Bay",
+      "credit": "NPS/Michael Fitz",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/katm/index.htm",
+    "directions": "http://www.nps.gov/katm/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Aviation",
+    "Explorers and Expeditions",
+    "Native American Heritage",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Wolves",
+    "Arctic",
+    "Tundra",
+    "Coasts, Islands and Atolls",
+    "Fire",
+    "Geology",
+    "Geothermal",
+    "Glaciers",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Aurora Borealis",
+    "Oceans",
+    "Whales",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wilderness",
+    "National Park & Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

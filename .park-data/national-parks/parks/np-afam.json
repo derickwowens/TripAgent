@@ -1,0 +1,132 @@
+{
+  "id": "np-afam",
+  "name": "African American Civil War Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Over 200,000 African-American soldiers and sailors served in the U.S. Army and Navy during the Civil War. Their service helped to end the war and free over four million slaves. The African American Civil War Memorial honors their service and sacrifice.",
+  "shortDescription": "Over 200,000 African-American soldiers and sailors served in the U.S. Army and Navy during the Civil War. Their service helped to end the war and free over four million slaves. The African American Ci...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.9166,
+    "longitude": -77.026
+  },
+  "nationalParkInfo": {
+    "parkCode": "afam",
+    "npsId": "1A47416F-DAA3-4137-9F30-14AF86B4E547",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/afam/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/afam/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/afam/index.htm",
+    "address": {
+      "line1": "1925 Vermont Avenue Northwest",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20001"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The African American Civil War Memorial is always open to the public.  There are no Rangers on duty at this site (except for special events). The United States Park Police are on duty 24 hours a day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "afam-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C816B50-1DD8-B71B-0BF380049FB6B6A2.jpg",
+      "title": "African American Civil War Statue",
+      "altText": "Site Statue",
+      "caption": "A poignant reminder of our nations past",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "afam-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C816C97-1DD8-B71B-0B7B2A0DD09C870A.jpg",
+      "title": "African American Sailor",
+      "altText": "African American Sailor Close up",
+      "caption": "African American Civil War Sailor",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "afam-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C816DF6-1DD8-B71B-0B5D792777650EA4.jpg",
+      "title": "African American Soldier",
+      "altText": "African American Soldier Close up",
+      "caption": "African American Civil War Soldier",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "afam-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1DA05382-E7D7-BD05-0A4A7ED42138D49D.jpg",
+      "title": "African American Civil War Memorial",
+      "altText": "Bronze statue of African American Civil War soldiers.",
+      "caption": "African American Civil War Memorial",
+      "credit": "NPS / Liz Macro",
+      "isPrimary": false
+    },
+    {
+      "id": "afam-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1E29A16A-C551-66A4-9DABCD61403D61C7.jpg",
+      "title": "African American Civil War Memorial",
+      "altText": "Bronze statue of African American Civil War soldier.",
+      "caption": "African American Civil War Memorial",
+      "credit": "NPS / Liz Macro",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/afam/index.htm",
+    "directions": "http://www.nps.gov/afam/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Civil War",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.831Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

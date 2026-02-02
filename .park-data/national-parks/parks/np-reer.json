@@ -1,0 +1,158 @@
+{
+  "id": "np-reer",
+  "name": "Reconstruction Era National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "SC",
+  "stateName": "South Carolina",
+  "region": "southeast",
+  "description": "The Reconstruction era,1861-1900 the historic period in which the United States grappled with the question of how to integrate millions of newly freed African Americans into social, political, economic, and labor systems, was a time of significant transformation. The people, places, and events in Beaufort County, South Carolina, reflect on the most important issues of this tumultuous time period.",
+  "shortDescription": "The Reconstruction era,1861-1900 the historic period in which the United States grappled with the question of how to integrate millions of newly freed African Americans into social, political, economi...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 32.3868598938,
+    "longitude": -80.6511077881
+  },
+  "nationalParkInfo": {
+    "parkCode": "reer",
+    "npsId": "31B7A1C7-104D-4D35-BC85-FEFAC3FECEB0",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/reer/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/reer/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(843) 962-0039",
+    "email": "reer_information@nps.gov",
+    "website": "https://www.nps.gov/reer/index.htm",
+    "address": {
+      "line1": "706 Craven Street",
+      "line2": "",
+      "city": "Beaufort",
+      "state": "SC",
+      "postalCode": "29902"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The park grounds are open daily from sunrise to sunset. In addition, the park maintains several visitor centers and contact stations throughout the region."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winters can be mild, with periods of cold weather. During the Spring and Fall, weather is typically nice, with highs in the 70s and 80s. Summers can be very hot, with high temperatures and high humidity. Located in a coastal region, the park is susceptible to hurricanes during the Summer and Fall."
+  },
+  "images": [
+    {
+      "id": "reer-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C1E96A3D-D248-AD79-ABDA8E7BE3A38597.jpg",
+      "title": "Brick Baptist Church",
+      "altText": "A two story brick building flanked by large live oak trees",
+      "caption": "Brick Baptist Church, located on the Penn Center National Historic Landmark District, was home to the Penn School between 1862-1865",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "reer-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C1F3E299-D51F-831A-B9361E36856265EB.jpg",
+      "title": "The Old Beaufort Fire House",
+      "altText": "A one story brick building with large arched windows",
+      "caption": "The Old Beaufort Firehouse, located in downtown Beaufort, serves as the park headquarters and visitor center",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "reer-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C20B34B0-BC7B-36E2-751393ECC8B2CB84.jpg",
+      "title": "A Ranger Guided Tour at Brick Church",
+      "altText": "A park ranger holds a sign while talking to young people.",
+      "caption": "Ranger guided tours and programs are a great way to explore Reconstruction Era National Historical Park",
+      "credit": "Hannah Hicks",
+      "isPrimary": false
+    },
+    {
+      "id": "reer-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C278D9AB-9587-6489-705DDF54D1716B82.jpg",
+      "title": "Camp Saxton",
+      "altText": "A Park Ranger points at the ruins of a tabby wall with three people looking on",
+      "caption": "Camp Saxton it partly located on SCDNR and US Navy Property. It was here that Black soldiers during the Civil War took their first steps towards citizenship.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "reer-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C2883716-EE20-5EBD-1B8DF629D3297F89.jpg",
+      "title": "Darrah Hall",
+      "altText": "A crowd of people stand in front of a large white wooden building",
+      "caption": "Darrah Hall is the oldest building on the campus of the Penn Center, and serves as the base of operations for the park in the Penn Center National Historic Landmark District",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "reer-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C2997746-D47E-84C7-1C854884CDEF916C.jpg",
+      "title": "The Penn Center",
+      "altText": "A large crowd of people gather in a field. In the foreground is an NPS sign",
+      "caption": "The Penn Center is one of the park's partners to help preserve and tell the story of education during the Reconstruction Era",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/reer/index.htm",
+    "directions": "https://www.nps.gov/reer/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Military",
+    "Reconstruction",
+    "Social Movements",
+    "Civil Rights",
+    "National Historical Park",
+    "SC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

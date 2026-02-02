@@ -1,0 +1,119 @@
+{
+  "id": "np-buov",
+  "name": "Butterfield Overland National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "In 1857, businessman and transportation entrepreneur John Butterfield was awarded a contract to establish an overland mail route between the eastern United States and growing populations in the Far West. What became known as the Butterfield Overland Trail made an arcing sweep across the southern rim of the country. Stagecoaches left twice a week carrying passengers, freight, and mail.",
+  "shortDescription": "In 1857, businessman and transportation entrepreneur John Butterfield was awarded a contract to establish an overland mail route between the eastern United States and growing populations in the Far We...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 32.2768237589,
+    "longitude": -106.796583304
+  },
+  "nationalParkInfo": {
+    "parkCode": "buov",
+    "npsId": "F2A0D649-ED66-4BB7-A3EC-001CC42921CF",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/buov/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/buov/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/buov/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7 & 8",
+      "line2": "Butterfield Overland National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Butterfield Overland National Historic Trail is not a clearly marked hiking trail. Instead, it is a corridor that passes through communities, urban areas, public lands, and Wilderness. The route travels across a variety of land ownerships and management, including private land. Each location varies as to the hours of operation and access. Please contact individual trail sites before your visit for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of the trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: weather.gov"
+  },
+  "images": [
+    {
+      "id": "buov-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9FE3B918-08B8-B25B-1BDD48E090045099.jpg",
+      "title": "Presidio Chapel of San Elizario",
+      "altText": "A cross and bell on the roof alcove of a white stucco church.",
+      "caption": "A site along the Butterfield Overland National Historic Trail",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "buov-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A0402204-FBD7-DC23-F626D64AEE7FE482.jpg",
+      "title": "Old Pinery Butterfield Overland NHT",
+      "altText": "A historic stone wall stands in ruins next to a hiking trail leading into the Guadalupe Mountains NP",
+      "caption": "Visit the Butterfield Overland National Historic Trail to a take a step back in time.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "buov-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A08BBA41-FBAC-9ED1-EDD0A32E39B8278A.jpg",
+      "title": "Saguaro Forest on the Butterfield Overland NHT",
+      "altText": "A forest of tall, multi-armed Saguaro cacti stretches out towards the horizon.",
+      "caption": "The Butterfield Overland NHT traversed thousands of miles of desert on the delivery route.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "buov-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A0C65CB2-B5B4-2A05-B674624D23E692C8.jpg",
+      "title": "Butterfield Station site at Picacho Village in Dona Ana County, NM",
+      "altText": "A neighborhood street lined with single story ranch homes.",
+      "caption": "The Butterfield Overland NHT passes through modern city neighborhoods.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "buov-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A0FB2B66-B108-1BEB-CB3FB20958D8CF8F.jpg",
+      "title": "El Paso Station Marker",
+      "altText": "A large stone monument sits on the side of a historic city street with brick buildings.",
+      "caption": "Historic El Paso, Texas offers an opportunity to visit the trail in a busy city.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/buov/index.htm",
+    "directions": "http://www.nps.gov/buov/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "National Historic Trail",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

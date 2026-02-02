@@ -1,0 +1,172 @@
+{
+  "id": "np-olsp",
+  "name": "Old Spanish National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Follow the routes of mule pack trains across the Southwest on the Old Spanish National Historic Trail between Santa Fe, New Mexico, and Los Angeles, California. New Mexican traders moved locally produced merchandise across what are now six states to exchange for mules and horses.",
+  "shortDescription": "Follow the routes of mule pack trains across the Southwest on the Old Spanish National Historic Trail between Santa Fe, New Mexico, and Los Angeles, California. New Mexican traders moved locally produ...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 37.0791782514,
+    "longitude": -112.114693431
+  },
+  "nationalParkInfo": {
+    "parkCode": "olsp",
+    "npsId": "8B07C05F-9C4A-4799-8428-DFA2BBB733AC",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/olsp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/olsp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/olsp/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7, & 8",
+      "line2": "Old Spanish National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "There are many places of history and commemoration on the Old Spanish National Historic Trail to visit. Museums, interpretive centers, and historic sites provide information and interpretation. Please contact each site before you go to obtain current information on closures, changes in hours, and fees."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of Old Spanish National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: weather.gov"
+  },
+  "images": [
+    {
+      "id": "olsp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EA8D2-1DD8-B71B-0B9050CB4DDFC559.jpg",
+      "title": "Santa Rosa de Lima de Abiquiú, Abiquiú, New Mexico",
+      "altText": "crumbling adobe structure with blue sky",
+      "caption": "Santa Rosa de Lima de Abiquiú provided a way station for travelers along the Old Spanish Trail in the 1800s. It is privately owned by the Archdiocese of Santa Fe.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "olsp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EAA6E-1DD8-B71B-0B6B6888AB3DA9B8.jpg",
+      "title": "Rio Chama River, Abiquiú, New Mexico",
+      "altText": "hikers walk beside a river with cottonwoods alongside the river",
+      "caption": "This section of the Rio Chama River, tributary of the Rio Grande, is located about six miles north of Abiquiú, New Mexico and flows through the Carson National Forest.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "olsp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EABF1-1DD8-B71B-0B7DEEAB877D5337.jpg",
+      "title": "Sierra Blanca, San Luis Valley, Colorado",
+      "altText": "desert scrub in foreground, spiky mountains in background, clouds",
+      "caption": "Sierra Blanca is a prominent mountain in the Sangre de Cristo Range along San Luis Valley on Highway 17. Locating landmarks were essential to traveling the Old Spanish Trail.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "olsp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EAD83-1DD8-B71B-0B52022335D76519.jpg",
+      "title": "San Rafael Swell, Utah",
+      "altText": "desert scenery, dead tree, blue sky with puffy coulds",
+      "caption": "The San Rafael Swell is a huge craggy geologic feature (an anticline), about 75 miles by 40 miles, located in south-central Utah approximately 30 miles west of Green River.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "olsp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EAEDB-1DD8-B71B-0BB4910C3A9C67C3.jpg",
+      "title": "Virgin River Canyon, Arizona",
+      "altText": "a river carves through the landscape, greenery in the foreground, mountains and redrock backdrop",
+      "caption": "This section of the Virgin River Canyon Recreation Area is off Interstate 15 about 20 miles southwest of St. George, Utah and about 20 miles northeast of Mesquite, Nevada",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "olsp-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EB2EF-1DD8-B71B-0BECD6A6AC240936.jpg",
+      "title": "Old Spanish Trail segment, Nevada",
+      "altText": "rocky trail through desert with yucca, mountain in the background",
+      "caption": "This trail segment is 5.25 miles, and is part of the Old Spanish Trail/Mormon Road Historic District, outside Blue Diamond, Clark County, Nevada.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "olsp-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EB4A7-1DD8-B71B-0B2D8F31E6140253.jpg",
+      "title": "Mojave Road, California",
+      "altText": "trail through desert scrub with Joshua trees, mountains in the distance, puffy clouds",
+      "caption": "Old Spanish Trail travelers used this section of the historic Mojave Road is within Mojave National Preserve.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/olsp/index.htm",
+    "directions": "http://www.nps.gov/olsp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Photography",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Hispanic American Heritage",
+    "Westward Expansion",
+    "Trails",
+    "National Historic Trail",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

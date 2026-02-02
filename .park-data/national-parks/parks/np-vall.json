@@ -1,0 +1,306 @@
+{
+  "id": "np-vall",
+  "name": "Valles Caldera National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "About 1.2 million years ago, a spectacular volcanic eruption created a 14-mile-wide circular depression in the earth now known as Valles Caldera. The preserve is known for its huge mountain meadows, abundant wildlife, and meandering streams. The area also preserves the homeland of ancestral native peoples and embraces a rich ranching history.",
+  "shortDescription": "About 1.2 million years ago, a spectacular volcanic eruption created a 14-mile-wide circular depression in the earth now known as Valles Caldera. The preserve is known for its huge mountain meadows, a...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 35.91682872,
+    "longitude": -106.5195724
+  },
+  "nationalParkInfo": {
+    "parkCode": "vall",
+    "npsId": "8908E0CA-3603-4578-B957-837F9813E6D5",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/vall/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/vall/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "505-670-1612",
+    "email": "vall_info@nps.gov",
+    "website": "https://www.nps.gov/vall/index.htm",
+    "address": {
+      "line1": "39201 New Mexico Highway 4",
+      "line2": "",
+      "city": "Jemez Springs",
+      "state": "NM",
+      "postalCode": "87025"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Valle Grande Main Entrance is located at mile marker 39.2 along New Mexico Highway 4."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "The entrance fee for a private vehicle covers seven consecutive days of entrance to Valles Caldera National Preserve.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "The per-person entrance fee covers seven consecutive days of entrance to Valles Caldera National Preserve.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Each season offers a different experience: lush springs, moderate summers, golden falls, and snowy winters. Average temperatures are 22°F (-6 C) in January and 60°F (16 C) in July. Temperature extremes range from a high of 84°F (29 C) in summer to -30°F (-34C) in winter. Precipitation is heavier during summer monsoon rains (thunderstorms) in July and August and winter snowstorms in December through March. Higher elevation lends to much cooler temperatures than nearby Albuquerque."
+  },
+  "images": [
+    {
+      "id": "vall-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/921E6FBB-90EE-2BF0-6F3D52902F3DA89D.jpg",
+      "title": "Wide Open Views of Valles Caldera",
+      "altText": "Scattered clouds over landscape view of winding river and brown grasslands",
+      "caption": "The views of Valles Caldera are some of nature's best",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "vall-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8DB2060F-DEE0-EAD7-DE87220D060A15CD.jpeg",
+      "title": "Coyote on Thin Ice",
+      "altText": "A coyote walks across a frozen stream in a snowy valley.",
+      "caption": "A coyote crossing the frozen East Fork Jemez River",
+      "credit": "NPS/Corey Lycopolus",
+      "isPrimary": false
+    },
+    {
+      "id": "vall-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84ABE7-1DD8-B71B-0BA9D89DC6B7D276.jpg",
+      "title": "San Antonio Cabin",
+      "altText": "San Antonio cabin under a mostly cloudy sky",
+      "caption": "San Antonio Cabin often housed cowboys when the preserve was privately-owned and operating as a ranch.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "vall-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84AF3D-1DD8-B71B-0B2FA3C605E6A11D.jpg",
+      "title": "Elk Bulls Fighting",
+      "altText": "Two bull elk fighting.",
+      "caption": "The fall elk rut is a big attraction for visitors to see bull elk sparing and to hear the bulls bugle.",
+      "credit": "NPS Photo / Dan Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "vall-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8D6CBE97-98D3-EDE2-2F0AF5FBD451BA18.jpg",
+      "title": "East Fork",
+      "altText": "A narrow stream meanders through a montane grassland.",
+      "caption": "The East Fork Jemez River overlook is one of the first places that visitors stop for photos.",
+      "credit": "NPS/Irene Owsley",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/vall/index.htm",
+    "directions": "http://www.nps.gov/vall/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Hispanic American Heritage",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Latino American Heritage",
+    "Native American Heritage",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Tragic Events",
+    "Catastrophic Fires",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Climate Change",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Groundwater",
+    "Freshwater Springs",
+    "Geothermal",
+    "Grasslands",
+    "Meadows",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Wetlands",
+    "National Preserve",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

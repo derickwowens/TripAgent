@@ -1,0 +1,177 @@
+{
+  "id": "np-frla",
+  "name": "Frederick Law Olmsted National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "Frederick Law Olmsted (1822-1903) is recognized as the founder of American landscape architecture and the nation's foremost parkmaker. Olmsted moved his home to suburban Boston in 1883 and established the world's first full-scale professional office for the practice of landscape design. During the next century, his sons and successors perpetuated Olmsted's design ideals, philosophy, and influence.",
+  "shortDescription": "Frederick Law Olmsted (1822-1903) is recognized as the founder of American landscape architecture and the nation's foremost parkmaker. Olmsted moved his home to suburban Boston in 1883 and established...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.32424266,
+    "longitude": -71.13202567
+  },
+  "nationalParkInfo": {
+    "parkCode": "frla",
+    "npsId": "CDC0FE7F-C249-466C-88B2-B81FC5279B91",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frla/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/frla/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6175661689",
+    "email": "frla_interpretation@nps.gov",
+    "website": "https://www.nps.gov/frla/index.htm",
+    "address": {
+      "line1": "99 Warren Street",
+      "line2": "",
+      "city": "Brookline",
+      "state": "MA",
+      "postalCode": "02445"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "9:30AM - 4:30PM",
+    "saturday": "9:30AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "Hours for the visitor center and house at Frederick Law Olmsted National Historic Site vary by season.  The grounds are open year-round, dawn to dusk.\nIn the summer, the site is open Thursday to Sunday.  In the spring and fall, the site is open Fridays and Saturdays.  During the winter season, the house is closed to the public, with tours available by appointment only."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer: Warm temperatures, average high temperature around 80 degrees Fahrenheit, often with humidity. July and August bring the hottest temperatures. Fall: Cooler temperatures, mean temperatures between 45 and 65 degrees Fahrenheit, sometimes rainy. Peak fall foliage is in mid-October. Winter: Cold, with snow, average low temperature around 25 degrees Fahrenheit. Spring: Cold to cool temperatures, average mean temperatures between 40 and 60 degrees Fahrenheit."
+  },
+  "images": [
+    {
+      "id": "frla-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C853BE9-1DD8-B71B-0B625B6B8B89F1A0.jpg",
+      "title": "Frederick Law Olmsted National Historic Site",
+      "altText": "Fairsted",
+      "caption": "Fairsted, the home and office of landscape architect Frederick Law Olmsted. Frederick Law Olmsted National Historic Site.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "frla-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/95700E1B-E576-306D-59E3C9EB03E1F82F.jpg",
+      "title": "Drafting Table",
+      "altText": "Dark wood box with four shallow drawers on large wooden table with blueprint",
+      "caption": "A box of colored pencils and a draftsmen's handbook sit on a table in the drafting room. These materials reflect the period during which Frederick Law Olmsted, Jr. was the senior partner in the Brookline, MA landscape architecture firm.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frla-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/957B0A62-B397-2547-EB145C134E3B9D99.jpg",
+      "title": "The Hollow",
+      "altText": "A shaded bench and plants in a sunken garden surrounded by bushes",
+      "caption": "Landscape Architect Frederick Law Olmsted designed the Hollow on his Brookline, MA property to be a peaceful, picturesque sunken garden.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frla-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F62A9C77-9FB6-4235-F2763AB94A93491D.jpg",
+      "title": "Plant Room",
+      "altText": "Wicker chairs around table in room with rock covered wall with views outside",
+      "caption": "Fairsted's Plant Room was the Olmsted family's favorite room in the house. With the rock walls and large windows to view the South Lawn, it was the perfect mix of interior and exterior.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frla-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F63AC0EF-A178-9C58-85C2F693D9A26848.jpg",
+      "title": "South Lawn",
+      "altText": "Large flat grassy area with one tree in middle, other on sides, next to large house",
+      "caption": "Fairsted's South Lawn served as an apple orchard for the previous owners, but the Olmsted's turned it into a sprawling open lawn where they hosted gatherings.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frla-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F64C534C-D5E0-CBC7-5C75F2B37B738D2C.jpg",
+      "title": "Vault",
+      "altText": "Many pieces of paper wrapped around wooden rods stacked on top of each other",
+      "caption": "The Vault at Fairsted houses over one million pieces of paper, dating from Frederick Law Olmsted Sr.'s time to 1979, when the firm closed.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frla-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F65A8537-B59F-AA0C-C22A85A9C2ECCDE5.jpg",
+      "title": "Drafting Department",
+      "altText": "Large room with wooden tables and stools",
+      "caption": "The Drafting Department housed the most office employees, with drafting being a crucial stage in a landscape design project.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frla-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F66B283D-0E82-08CB-12A7D7F643675E74.jpeg",
+      "title": "Photo Records Room",
+      "altText": "Room with wooded drawers along all the walls",
+      "caption": "In nearly one hundred years of active practice, the Olmsted office would produce sixty thousand images, all stored in wooden boxes along the walls",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frla/index.htm",
+    "directions": "http://www.nps.gov/frla/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Landscape Design",
+    "Schools and Education",
+    "Social Movements",
+    "Conservation Movement",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Historic Site",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

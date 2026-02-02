@@ -1,0 +1,177 @@
+{
+  "id": "np-grko",
+  "name": "Grant-Kohrs Ranch National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MT",
+  "stateName": "Montana",
+  "region": "west",
+  "description": "Wide open spaces, the hard-working cowboy, his spirited cow pony, and vast herds of cattle are among the strongest symbols of the American West. Once the headquarters of a 10 million acre cattle empire, Grant-Kohrs Ranch National Historic Site preserves these symbols and commemorates the role of cattlemen in American history.",
+  "shortDescription": "Wide open spaces, the hard-working cowboy, his spirited cow pony, and vast herds of cattle are among the strongest symbols of the American West. Once the headquarters of a 10 million acre cattle empir...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 46.41358923,
+    "longitude": -112.7467024
+  },
+  "nationalParkInfo": {
+    "parkCode": "grko",
+    "npsId": "72A30002-12FA-4738-BCA7-1FA8062214CB",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/grko/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/grko/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4068462070",
+    "email": "grko_interpretation@nps.gov",
+    "website": "https://www.nps.gov/grko/index.htm",
+    "address": {
+      "line1": "251 Grant Circle",
+      "line2": "",
+      "city": "Deer Lodge",
+      "state": "MT",
+      "postalCode": "59722"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Hours for the main historic area of Grant-Kohrs Ranch, the Visitor Center and Interpretive Ranger programs."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures can fluctuate greatly. Sub-freezing temperatures in the morning can give way to mild days. Snow in early spring, rain in late season. Summer: Temperatures can average 70-80 F, but can reach highs of 100 F. Rain rare. Dry and hot. Fall: Temperatures can fluctuate greatly. Sub-freezing mornings can give way to mild days. Rain in early fall likely. Winter: Temperature can fall to -30 F, with highs of 10-20 F. Snow is possible. Cold weather gear is highly recommended."
+  },
+  "images": [
+    {
+      "id": "grko-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F26F9-1DD8-B71B-0B805195D3FAF5BF.jpg",
+      "title": "The Ranch House",
+      "altText": "A front view of the ranch house.",
+      "caption": "The front portion of the ranch house was originally built by Canadian fur trader Johnny Grant in 1862.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "grko-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F237D-1DD8-B71B-0B7D5D0FC50EE860.jpg",
+      "title": "The Ranch House",
+      "altText": "A view of the rear of the ranch house.",
+      "caption": "The rear portion of the ranch house was an addition put on by Conrad Kohrs in 1891.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grko-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F2592-1DD8-B71B-0B473ACBB50D926C.jpg",
+      "title": "Deer Lodge Mountain",
+      "altText": "Deer Lodge Mountain rises up over the pastures of Grant-Kohrs Ranch National Historic Site.",
+      "caption": "Deer Lodge Mountain, and the rest of the Flint Creek Range, directly influence the weather in the valley below.",
+      "credit": "NPS Photo / Austin Bousquet",
+      "isPrimary": false
+    },
+    {
+      "id": "grko-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/97BD6FCE-CCEB-AAD1-B663745ABDB7CE5C.jpg",
+      "title": "Reveal",
+      "altText": "Fenced green pasture in front, 3 ranch buildings across center, blue sky with large white clouds.",
+      "caption": "Many people are surprised by the first glimpse of the historic ranch buildings.",
+      "credit": "NPS Photo/ Richard Headley",
+      "isPrimary": false
+    },
+    {
+      "id": "grko-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BF36CC91-07B5-850E-124A16A2D39982DD.jpg",
+      "title": "Cattle Herd Moving",
+      "altText": "Herd of cattle moving from back right to front left in front of historic buildings",
+      "caption": "The ranch cattle herd contains Hereford, Shorthorn and Texas Longhorn, which were popular breeds during the Open Range Cattle Era",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grko-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BFB894D0-C2B7-08B9-95B480E9905BF808.jpg",
+      "title": "Cowboy on Horseback with Cattle",
+      "altText": "Historic buildings surround fenced pasture, cattle being moved by cowboy on horseback toward viewer.",
+      "caption": "The American Cowboy developed during the Open Range Era and became a cultural icon.",
+      "credit": "NPS Photo/ Lori Jensen",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/grko/index.htm",
+    "directions": "http://www.nps.gov/grko/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Farming and Agriculture",
+    "Ranches",
+    "Animals",
+    "Birds",
+    "National Historic Site",
+    "MT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

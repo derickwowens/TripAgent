@@ -1,0 +1,119 @@
+{
+  "id": "np-frpe",
+  "name": "Frances Perkins National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "ME",
+  "stateName": "Maine",
+  "region": "northeast",
+  "description": "Known as the first woman to hold a presidential cabinet position and the “Woman behind the New Deal,” Frances Perkins championed many labor rights that Americans enjoy today, including safety standards, Social Security, and shorter workweeks. Her impressive career and accomplishments, including as Secretary of Labor, opened the door for other women to hold high government positions.",
+  "shortDescription": "Known as the first woman to hold a presidential cabinet position and the “Woman behind the New Deal,” Frances Perkins championed many labor rights that Americans enjoy today, including safety standard...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 44.0052,
+    "longitude": -69.5568
+  },
+  "nationalParkInfo": {
+    "parkCode": "frpe",
+    "npsId": "32BA62F5-5678-4202-9E68-6EC5ED9FA0CC",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frpe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/frpe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "207-385-6393",
+    "email": "FRPE_superintendent@nps.gov",
+    "website": "https://www.nps.gov/frpe/index.htm",
+    "address": {
+      "line1": "478 River Road",
+      "line2": "",
+      "city": "Newcastle",
+      "state": "ME",
+      "postalCode": "04553"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The historic buildings of the homestead are currently closed until summer of 2025, including the Perkins’ family ancestral home known as the “Brick House”. The grounds are open from sunrise to sunset daily year-round."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 40 F to 70 F. Snow or rain is common. Summer: Temperatures usually range from 70 F to 100 F. Rain and sun are equally common. On very sunny days, be prepared to bring plenty of water - heat exhaustion is a common complaint among park visitors who are unprepared. Fall: Temperatures usually range from 40 F to 70 F. Fall foliage is at its peak around late September. Winter: Temperatures range from -30 F to -10 F. Be prepared with cold weather gear."
+  },
+  "images": [
+    {
+      "id": "frpe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2CC7130F-941F-CA23-DB43310BB9EA5AAB.jpg",
+      "title": "A profile view of the Frances Perkins Homestead",
+      "altText": "A two-story red brick home stands just beyond a row of green ferns.",
+      "caption": "A profile view of the Frances Perkins Homestead",
+      "credit": "DOI Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "frpe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/23D7DAC2-C5B7-1185-AF838FB3E67DBDCA.jpg",
+      "title": "On the Homestead Trail",
+      "altText": "A moss-lined trail continues ahead through tall green pine trees.",
+      "caption": "On the Homestead Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frpe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/23F044BC-D30D-0BC8-D7F62B9544DE0559.jpg",
+      "title": "Approach to the Frances Perkins Homestead",
+      "altText": "A sandy brown driveway curves through green grass towards the two story-red brick homestead and grey",
+      "caption": "Approach to the Frances Perkins Homestead",
+      "credit": "NPS Photo/Kari Herer",
+      "isPrimary": false
+    },
+    {
+      "id": "frpe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/240D591F-9EB7-1E08-D8D2574E7DBABF33.jpg",
+      "title": "Inside the Homestead Barn",
+      "altText": "The sun shines upon wooden wagon wheels and other antique farm implements lining the rustic hewn wal",
+      "caption": "Inside the Homestead Barn",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frpe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/241F351E-0BE7-0DCE-83D185717E974F54.jpg",
+      "title": "Inside the Perkins Homestead",
+      "altText": "Two white sofa chairs stand in front of two windows in a room with red walls and a portait of Perkin",
+      "caption": "Inside the Perkins Homestead",
+      "credit": "NPS Photo/Kari Herer",
+      "isPrimary": false
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frpe/index.htm",
+    "directions": "https://www.nps.gov/frpe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "National Monument",
+    "ME"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

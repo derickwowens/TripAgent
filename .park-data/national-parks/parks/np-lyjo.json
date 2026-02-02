@@ -1,0 +1,200 @@
+{
+  "id": "np-lyjo",
+  "name": "Lyndon B Johnson National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Lyndon B. Johnson National Historical Park tells the story of our 36th president beginning with his ancestors until his final resting place on his beloved LBJ Ranch. This entire \"circle of life\" gives the visitor a unique perspective into one of America's most noteworthy citizens by providing the most complete picture of any American president.",
+  "shortDescription": "Lyndon B. Johnson National Historical Park tells the story of our 36th president beginning with his ancestors until his final resting place on his beloved LBJ Ranch. This entire \"circle of life\" gives...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 30.2519655,
+    "longitude": -98.60692433
+  },
+  "nationalParkInfo": {
+    "parkCode": "lyjo",
+    "npsId": "ECDFABE2-6448-46EA-886E-FE79ACBBF16E",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lyjo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/lyjo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8308687128",
+    "email": "lyjo_information@nps.gov",
+    "website": "https://www.nps.gov/lyjo/index.htm",
+    "address": {
+      "line1": "100 Ladybird Lane",
+      "line2": "",
+      "city": "Johnson City",
+      "state": "TX",
+      "postalCode": "78636"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The park is open every day except Thanksgiving, Christmas and New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Overall, the park enjoys a sunny, mild climate during three seasons of the year. Spring: Temperatures range from 45 F to 85 F (7 C/29 C). Rain is common in April and May. Summer: Temperatures range from 70 F to 95 F (21 C/35 C). Temperatures can exceed 100 F (38 C) in July and August. Lightweight clothing and sunscreen are advisable. Be prepared with plenty of water. Fall: Temperatures range from 45 F to 85 F (7 C/29 C). Winter: Temperatures range from 35 F to 65 F (2 C/18 C) . Snow and ice are rare."
+  },
+  "images": [
+    {
+      "id": "lyjo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FE93563C-B920-FCC4-73E75A4CE886A72F.jpg",
+      "title": "President and Mrs. Johnson with Yuki in front of the Texas White House",
+      "altText": "President and Mrs. Johnson stand with their small, white dog in front of the Texas White House.",
+      "caption": "The Johnsons pose with their dog Yuki in front of the Texas White House. This was one of several photos from which they would choose for their 1972 Christmas card.",
+      "credit": "LBJ Library Photo by Frank Wolfe",
+      "isPrimary": true
+    },
+    {
+      "id": "lyjo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EE1EE-1DD8-B71B-0B4C9A3E1D87F3BF.jpg",
+      "title": "Texas White House",
+      "altText": "View of Texas White House from front lawn.",
+      "caption": "Because President Johnson spent one-fourth of his term a president in Texas, the press referred to this home as the \"Texas White House\"",
+      "credit": "NPS Photo/Cynthia Dorminey",
+      "isPrimary": false
+    },
+    {
+      "id": "lyjo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EE4B7-1DD8-B71B-0BCAC6E33F0FC4B8.jpg",
+      "title": "Boyhood Home",
+      "altText": "View of a one-story, white-frame house surrounded by a white picket fence.",
+      "caption": "Lyndon Johnson was 5 years old when he moved to this home with his family. His childhood in a small rural town had great impact on his futur.",
+      "credit": "NPS Photo/Diane Kirkendall",
+      "isPrimary": false
+    },
+    {
+      "id": "lyjo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EE7BF-1DD8-B71B-0B5C83773D7D443A.jpg",
+      "title": "Touring the LBJ Ranch",
+      "altText": "A brown and white Hereford calf stands alongside the road as a car approaches from behind.",
+      "caption": "A park visitor meets one of the ranch's Hereford cattle while driving the tour route.",
+      "credit": "NPS Photo / Diane Kirkendall",
+      "isPrimary": false
+    },
+    {
+      "id": "lyjo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EE9CA-1DD8-B71B-0B5A1FB5F104DAE5.jpg",
+      "title": "Cyclists in the LBJ 100",
+      "altText": "Luci Johnson (center in gray jersey) leads a bike tour",
+      "caption": "Many special events, such as the LBJ 100 bike ride, take place during the year.",
+      "credit": "NPS Photo / Diane Kirkendall",
+      "isPrimary": false
+    },
+    {
+      "id": "lyjo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EEB9B-1DD8-B71B-0BEADE4E04EAD621.jpg",
+      "title": "Gravestones for Lyndon and Lady Bird Johnson",
+      "altText": "Pink granite headstones mark the graves of President Lyndon Johnson and First Lady Lady Bird Johnson",
+      "caption": "Pink granite headstones mark the graves of President Lyndon Johnson and First Lady Lady Bird Johnson",
+      "credit": "NPS Photo / David Valdez",
+      "isPrimary": false
+    },
+    {
+      "id": "lyjo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EEEC1-1DD8-B71B-0B6CAEA0C295D7E2.jpg",
+      "title": "Portrait of the Johnsons",
+      "altText": "President and Mrs. Johnson stand outside the Texas White House with dog Yuki.",
+      "caption": "For their 1972 Christmas card, the Johnsons stand outside the Texas White House with their dog Yuki.",
+      "credit": "LBJ Library Photo by Frank Wolfe",
+      "isPrimary": false
+    },
+    {
+      "id": "lyjo-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EF020-1DD8-B71B-0B592BA332749DA6.jpg",
+      "title": "Pedernales River",
+      "altText": "The Pedernales River with tree-lined banks under a blue sky dotted with clouds.",
+      "caption": "The Pedernales River forms flows past the LBJ Ranch",
+      "credit": "NPS Photo / Cynthia Dorminey",
+      "isPrimary": false
+    },
+    {
+      "id": "lyjo-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EF17D-1DD8-B71B-0B139A80B332E9B7.jpg",
+      "title": "Lockheed Jetstar",
+      "altText": "An exterior view of a White and blue jet with presidential seal painted just below the cockpit.",
+      "caption": "One of the five Lockheed Jetstars in service during the Johnson Presidency is now on display at the LBJ Ranch..",
+      "credit": "NPS Photo / Cynthia Dorminey",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lyjo/index.htm",
+    "directions": "http://www.nps.gov/lyjo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Ranches",
+    "Presidents",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Fire",
+    "Geology",
+    "Groundwater",
+    "Grasslands",
+    "River and Riparian",
+    "Trails",
+    "National Historical Park",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

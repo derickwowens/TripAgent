@@ -1,0 +1,238 @@
+{
+  "id": "np-yuch",
+  "name": "Yukon - Charley Rivers National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Located in Interior Alaska, Yukon-Charley Rivers offers exploration in a largely untouched landscape. Whether you float the mighty Yukon River or paddle the Charley River's whitewater, your memories will last a lifetime. Geology, cultural history, gold rush remnants, wildlife, and vast scenery will be a part of your experience. But, the strongest element will be solitude. Your adventure awaits.",
+  "shortDescription": "Located in Interior Alaska, Yukon-Charley Rivers offers exploration in a largely untouched landscape. Whether you float the mighty Yukon River or paddle the Charley River's whitewater, your memories w...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 65.0935608,
+    "longitude": -142.7960021
+  },
+  "nationalParkInfo": {
+    "parkCode": "yuch",
+    "npsId": "6F550E4D-AE26-4250-A674-397E2DF88092",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/yuch/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/yuch/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "907-459-3730",
+    "email": "fair_information@nps.gov",
+    "website": "https://www.nps.gov/yuch/index.htm",
+    "address": {
+      "line1": "101 Dunkel St",
+      "line2": "Suite 110",
+      "city": "Fairbanks",
+      "state": "AK",
+      "postalCode": "99701"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The preserve is open 24-hours a day"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The area that Yukon-Charley Rivers encompasses is generally classified as sub-arctic, with exceptionally cold winters, relatively warm summers, low annual precipitation, and generally high winds."
+  },
+  "images": [
+    {
+      "id": "yuch-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5441BF50-05AD-F33E-6A0339476B5B18EF.jpg",
+      "title": "Aerial view of the Yukon River",
+      "altText": "Aerial view of the Yukon River during fall colors",
+      "caption": "The Yukon River is a vast body of water that has carved its path into the landscape over millions of years.",
+      "credit": "NPS Photo / Josh Spice",
+      "isPrimary": true
+    },
+    {
+      "id": "yuch-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A625C-1DD8-B71B-0B937F599D9D10DF.jpg",
+      "title": "Coal Creek Dredge",
+      "altText": "Historic Coal Creek Dredge",
+      "caption": "The historic Coal Creek Dredge sits nonoperational at its original site, near Slaven's Roadhouse",
+      "credit": "NPS Photo / Josh Spice",
+      "isPrimary": false
+    },
+    {
+      "id": "yuch-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A6453-1DD8-B71B-0BD5799A0348C713.jpg",
+      "title": "Eagle Visitor Center",
+      "altText": "Eagle Visitor Center in front of Eagle Bluff",
+      "caption": "The Eagle Visitor Center sits atop a small bluff overlooking the Yukon River.",
+      "credit": "NPS Photo / Greg Kinman",
+      "isPrimary": false
+    },
+    {
+      "id": "yuch-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/56A9969F-9BE7-F7A4-2DF42106328FEFBE.jpg",
+      "title": "Slaven's Roadhouse during fall colors",
+      "altText": "Slaven's Roadhouse during fall colors",
+      "caption": "A historic roadhouse and public use cabin on the Yukon River",
+      "credit": "NPS Photo / Josh Spice",
+      "isPrimary": false
+    },
+    {
+      "id": "yuch-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/576A1897-A20F-B183-CE6A8AB15207E519.jpg",
+      "title": "Calico Bluff and the Yukon River",
+      "altText": "Calico Bluff rising above the Yukon River that also winds into the distance behind the bluff",
+      "caption": "Calico Bluff, showing 4 million years of rock layers, rises above the Yukon River and is one of many bluffs along the 130 miles of river in the preserve",
+      "credit": "NPS Photo / Josh Spice",
+      "isPrimary": false
+    },
+    {
+      "id": "yuch-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/586B0BCE-D61C-2105-5C518EB2E5A138C0.jpg",
+      "title": "The Wild and Scenic Charley River",
+      "altText": "Aerial view of the Charley River winding through the tundra and mountains",
+      "caption": "The 105 mile-long Wild and Scenic Charley River's watershed is completely protected within the preserve boundary.",
+      "credit": "NPS Photo / Josh Spice",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "8C495067-8E94-4D78-BBD4-3379DACF6550",
+      "name": "Dog Sledding"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/yuch/index.htm",
+    "directions": "http://www.nps.gov/yuch/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Industry",
+    "Mining",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Tragic Events",
+    "Floods",
+    "Westward Expansion",
+    "The Gold Rush",
+    "Animals",
+    "Birds",
+    "Wolves",
+    "Arctic",
+    "Tundra",
+    "Fire",
+    "Geology",
+    "Night Sky",
+    "Aurora Borealis",
+    "Trails",
+    "Water Trails",
+    "Watersheds",
+    "Wilderness",
+    "National Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

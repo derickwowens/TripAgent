@@ -1,0 +1,232 @@
+{
+  "id": "np-cebr",
+  "name": "Cedar Breaks National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "Crowning the Grand Staircase, Cedar Breaks sits at over 10,000 feet and looks down into a half-mile deep geologic amphitheater. Come wander among timeless bristlecone pines, stand in lush meadows of wildflowers, ponder crystal-clear night skies and experience the richness of our subalpine forest.",
+  "shortDescription": "Crowning the Grand Staircase, Cedar Breaks sits at over 10,000 feet and looks down into a half-mile deep geologic amphitheater. Come wander among timeless bristlecone pines, stand in lush meadows of w...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.63545562,
+    "longitude": -112.845268
+  },
+  "nationalParkInfo": {
+    "parkCode": "cebr",
+    "npsId": "DFC1B0DB-832E-4C21-9CB9-79FB726B97D5",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cebr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/cebr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(435) 986-7120",
+    "email": "cedarbreaksinfo@nps.gov",
+    "website": "https://www.nps.gov/cebr/index.htm",
+    "address": {
+      "line1": "Cedar Breaks National Monument",
+      "line2": "4730 South Highway 148",
+      "city": "Brian Head",
+      "state": "UT",
+      "postalCode": "84719"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Visitor access, services, and activities vary by season. The road through the park, State Route-148, is open to vehicle access between late-May and mid-October. Road access is snow dependent. Visitor services and facilities vary, visit the Operating Hours and Seasons or Current Conditions pages for more information."
+  },
+  "fees": [
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "All Commercial Vehicles are $10 per person.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one private, non-commercial vehicle (15 passenger capacity or less) and all its occupants for 7 days.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car. Typically used for bicyclists, hikers, and pedestrians. Youth 15 and under are admitted free.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Cedar Breaks sits at over 10,000 feet in elevation and is usually 10-20 degrees cooler than surrounding parks. Be prepared for cooler temperatures and unpredictable weather. Snow, sleet, and hail can occur at any time of the year, even in the summer! Summer-time highs are between 60 and 70°F and night-time lows dip to 30-40s°F. Thunderstorms frequently develop in the afternoons. Be aware of lightning and avoid exposed trails and overlooks until storms pass."
+  },
+  "images": [
+    {
+      "id": "cebr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0046-1DD8-B71B-0B98037C3E2F685B.jpg",
+      "title": "Cedar Breaks Amphitheater",
+      "altText": "The ground falls away from the viewer creating brilliant rock formations of pink, red, and orange.",
+      "caption": "Cedar Breaks Amphitheater",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cebr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DFB7D-1DD8-B71B-0B5DA56B2CB9F9AC.jpg",
+      "title": "Cedar Breaks Information Center",
+      "altText": "A small log cabin with a stone chimney on one side.",
+      "caption": "This log cabin built in 1937 housing the information center and park store.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cebr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DFD20-1DD8-B71B-0B0408934F62F8FD.jpg",
+      "title": "Wildflowers",
+      "altText": "Yellow sunflowers and orange paint-brush wildflowers in a meadow.",
+      "caption": "Cedar Breaks is famous for wildflowers blooming throughout the summer!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cebr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DFEBF-1DD8-B71B-0B954E7ACEE7E5B5.jpg",
+      "title": "Bristle-cone Pine Tree",
+      "altText": "Ancient Bristle-cone pine with sun shining through the branches.",
+      "caption": "Ancient Bristle-cone pines grow along the rim at Cedar Breaks National Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cebr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0210-1DD8-B71B-0B157C7B966EF93B.jpg",
+      "title": "Bluebells on the Rim",
+      "altText": "Bluebell flowers growing on the rim of the Cedar Breaks Amphitheater.",
+      "caption": "Bluebell flowers growing on the rim.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cebr/index.htm",
+    "directions": "https://www.nps.gov/cebr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Forests and Woodlands",
+    "Geology",
+    "Groundwater",
+    "Lakes",
+    "Mountains",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "National Monument",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

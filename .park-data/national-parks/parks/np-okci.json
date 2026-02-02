@@ -1,0 +1,142 @@
+{
+  "id": "np-okci",
+  "name": "Oklahoma City National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "OK",
+  "stateName": "Oklahoma",
+  "region": "southwest",
+  "description": "The outdoor symbolic memorial is a place of quiet reflection, honoring victims, survivors, rescuers, and all who were changed forever on April 19, 1995. It encompasses the now sacred soil where the Alfred P. Murrah Federal Building once stood, capturing and preserving forever the place and events that changed the world.",
+  "shortDescription": "The outdoor symbolic memorial is a place of quiet reflection, honoring victims, survivors, rescuers, and all who were changed forever on April 19, 1995. It encompasses the now sacred soil where the Al...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 35.473,
+    "longitude": -97.5171
+  },
+  "nationalParkInfo": {
+    "parkCode": "okci",
+    "npsId": "5837B4BA-86B4-4162-803C-E9DF325D5FC6",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/okci/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/okci/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4056098859",
+    "email": "OKCI_superintendent@nps.gov",
+    "website": "https://www.nps.gov/okci/index.htm",
+    "address": {
+      "line1": "Oklahoma City National Memorial",
+      "line2": "620 N. Harvey Ave.",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "postalCode": "73102"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Outdoor Symbolic Memorial is open 24 hours a day, seven days a week, all year long."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Ticket prices are $18 for Adults, $16 for Seniors 62+, $16 for Military with ID, and $15 for Students (Age 6 through college with ID). Children 5 and under are free. Group Rates are available. Free parking in Memorial garage with admission. Ticket sales end one hour before close.",
+      "cost": "18.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summers are very warm with temperatures averaging mid-high 90’s. Also, be mindful of the heat index. Spring weather brings mild temperatures, 60’s-70’s, but the ability to produce severe storms that could include heavy rains, strong winds, hail, and tornadoes. While winters are generally mild delivering temperatures in the 30’s and 40’s, the wind chill can be brutal. No matter the season you are planning to visit, be prepared for the winds to be gusting."
+  },
+  "images": [
+    {
+      "id": "okci-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F67B-1DD8-B71B-0B799239B62FEB48.jpg",
+      "title": "Children's Area",
+      "altText": "Tiles with hand prints and chalkboards set into the ground for children.",
+      "caption": "This area provides letter shaped chalkboards to allow the continued emotional expressions from those young and old. A surrounding wall displays a collection of painted tiles sent by schools, showing their compassion for the bombing-affected community",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "okci-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F79B-1DD8-B71B-0BD14779809F811D.jpg",
+      "title": "Memorial Fence",
+      "altText": "Fencing with pictures, stuffed animals and other tokens left on it.",
+      "caption": "This 200 foot section of chain link fence was taken from the original barrier surrounding the bombing site. The fence served as the first spontaneous memorial and a location for people to leave tokens of collective grief. It retains this purpose still to",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "okci-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F8B3-1DD8-B71B-0B42BD5B47E91976.jpg",
+      "title": "Summer Nights",
+      "altText": "Summer evening photo of the Memorial lit up at night",
+      "caption": "Beat the summer heat, on an evening stroll through the illuminated Field of Empty Chairs, the Gates of Time, and the Survivor Tree. All walkways are brightened to allow enjoyment of this peaceful time of day.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "okci-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F9BE-1DD8-B71B-0B3ABFFE82E626E3.jpg",
+      "title": "Snow on Empty Chairs",
+      "altText": "Snow covered Field of Empty Chairs",
+      "caption": "The Memorial becomes a silent place during the rare winter snow storms that blow through. The cold and quiet house a stillness made for reflection as one walks through the Field of Empty Chairs.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "okci-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C860237-1DD8-B71B-0B44D9672085422D.jpg",
+      "title": "Rescuers' Orchard in Fall",
+      "altText": "Bright Red Chinese Pastiche tree in the Rescuers' Orchard.",
+      "caption": "This Chinese Pastiche is located in the small orchard that was planted in recognition of the over 12,000 rescue workers who responded to the bombing. Its vibrant hues draw attention to the tremendous work these heroes accomplished.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/okci/index.htm",
+    "directions": "http://www.nps.gov/okci/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Monuments and Memorials",
+    "Tragic Events",
+    "Murders",
+    "National Memorial",
+    "OK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

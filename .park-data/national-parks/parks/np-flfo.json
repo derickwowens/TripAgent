@@ -1,0 +1,204 @@
+{
+  "id": "np-flfo",
+  "name": "Florissant Fossil Beds National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "Beneath a grassy mountain valley in central Colorado lies one of the richest and most diverse fossil deposits in the world. Petrified redwood stumps up to 14 feet wide and thousands of detailed fossils of insects and plants reveal the story of a very different, prehistoric Colorado.",
+  "shortDescription": "Beneath a grassy mountain valley in central Colorado lies one of the richest and most diverse fossil deposits in the world. Petrified redwood stumps up to 14 feet wide and thousands of detailed fossil...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 38.91260586,
+    "longitude": -105.2803396
+  },
+  "nationalParkInfo": {
+    "parkCode": "flfo",
+    "npsId": "1F38885B-538E-499C-B5A6-30D76267AC7F",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/flfo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/flfo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7197483253",
+    "email": "flfo_information@nps.gov",
+    "website": "https://www.nps.gov/flfo/index.htm",
+    "address": {
+      "line1": "15807 Teller County Road 1",
+      "line2": "",
+      "city": "Florissant",
+      "state": "CO",
+      "postalCode": "80816"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "Winter hours begin in November, with the Visitor Center open five days a week, Wednesday through Sunday. On Mondays and Tuesdays, the Visitor Center parking lot, restrooms, and trails remain accessible. \n\nThe Visitor Center parking lot gate is locked daily at 4:30 PM. \n\nBe sure to park at the Hornbek Homestead if you think your hike may run late - this lot is open 24 hours a day as a designated Dark Sky viewing area."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "$10 per adult (age 16 or older). Admission is good for 7 days. Children ages 15 or under are admitted free. Fee covers entrance to all areas of the park including visitor center exhibits, film, outdoor exhibit area, hiking trails, picnic areas, Hornbek Homestead, self-guided tours, and ranger programs.\n\nPay ahead of your visit at https://www.recreation.gov/sitepass/2683.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Winter months - average high 40 degrees F; average low 5 degrees F; Summer months - average high 75 degrees F; average low 40 degrees F;"
+  },
+  "images": [
+    {
+      "id": "flfo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F8744-1DD8-B71B-0BB99F85D26FBB5C.jpg",
+      "title": "Big Stump",
+      "altText": "Fossil redwood stump",
+      "caption": "Walk the Petrified Trail Loop to see fossil redwood stumps",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "flfo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F88E4-1DD8-B71B-0B26E619DB1C533F.png",
+      "title": "Ancient Wasp Fossil",
+      "altText": "palaeovespa, ancient wasp",
+      "caption": "Captured 34 million years ago, this ancient wasp and other insects are on display at Florissant Fossil Beds NM.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "flfo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80D8B6-1DD8-B71B-0B08C5F28E49A6A1.jpg",
+      "title": "Hornbek Homestead Visitors",
+      "altText": "Visitors at Hornbek Homestead",
+      "caption": "Visitors explore the Hornbek Homestead, built in 1878.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "flfo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80DB34-1DD8-B71B-0B28B71EF34F8758.jpg",
+      "title": "Junior Rangers",
+      "altText": "Junior Rangers in Visitors Center",
+      "caption": "Youth of all ages participate in the Junior Rangers program at the Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "flfo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9AAA363E-BFEC-B238-94998A10627C89D9.jpg",
+      "title": "Self Guided Trails",
+      "altText": "View of the Florissant valley with grassy meadows and mountains in the distance",
+      "caption": "View from the top of the self-guided Geologic Trail",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/flfo/index.htm",
+    "directions": "http://www.nps.gov/flfo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Animals",
+    "Elk",
+    "Fossils and Paleontology",
+    "Petrified Wood",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "National Monument",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

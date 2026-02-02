@@ -1,0 +1,244 @@
+{
+  "id": "np-niob",
+  "name": "Niobrara National Scenic River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NE",
+  "stateName": "Nebraska",
+  "region": "midwest",
+  "description": "With a little something for everyone, the Niobrara National Scenic River is a destination for crossing adventures off your bucket list. Most popular for river recreation, you can float the Niobrara River on a canoe, tube, or kayak as a beginner and have a blast. Hiking, biking, and wildlife watching keep our visitors busy. Oh! And we haven't even told you about the waterfalls yet.",
+  "shortDescription": "With a little something for everyone, the Niobrara National Scenic River is a destination for crossing adventures off your bucket list. Most popular for river recreation, you can float the Niobrara Ri...",
+  "designation": "National Scenic River",
+  "coordinates": {
+    "latitude": 42.79413083,
+    "longitude": -99.91870646
+  },
+  "nationalParkInfo": {
+    "parkCode": "niob",
+    "npsId": "406594CB-1532-45CD-82EA-0C03FD2F0422",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/niob/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/niob/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4023761901",
+    "email": "niobrara_nsr@nps.gov",
+    "website": "https://www.nps.gov/niob/index.htm",
+    "address": {
+      "line1": "214 W US Highway 20",
+      "line2": "",
+      "city": "Valentine",
+      "state": "NE",
+      "postalCode": "69201"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Most of the river itself is open 24 hours a day, with the exception of the river that flows through Fort Niobrara National Wildlife Refuge. The river in that stretch is open from sunrise to sunset. Please use caution: because the NPS does not own the land, different sites and private businesses have their own hours. Please ensure that you are following individual landowner regulations when you launch, take out, or visit individual areas."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer (June-August): highs - low 80s to low 100s; lows - 50s to 60s, with occasional thunderstorms and associated strong winds. Moderate dry winds are common in the summer. 8.3\" is average summer rainfall. Winter (November-April): Average highs 20-30s, average lows 0-10s with 5.5\"/month average snowfall. Spring (April/May) and Fall (September/October) have cooler temperatures: average highs 60-70s, average lows 30-40s with 7.3\" average rain/snowfall."
+  },
+  "images": [
+    {
+      "id": "niob-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C95AD-1DD8-B71B-0B9C962E8BA62E89.jpg",
+      "title": "Berry Falls along the Niobrara NSR.",
+      "altText": "A beautiful, if short, waterfall empties into the side of the Niobrara NSR.",
+      "caption": "Berry Falls is one of over 200 waterfalls that visitors may see along the Niobrara National Scenic River's bluffs.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "niob-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CA02C-1DD8-B71B-0BCEA25352ED688A.jpg",
+      "title": "Taking photos along the Niobrara NSR",
+      "altText": "A man takes a photo of a meandering river from an overlook.",
+      "caption": "Parts of the river are shallow and meandering, making beautiful backdrops for people to take photographs.",
+      "credit": "NPS Photo/Ryan Schmieder",
+      "isPrimary": false
+    },
+    {
+      "id": "niob-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C9E7E-1DD8-B71B-0BA958173B164D34.jpg",
+      "title": "Fall colors along the Niobrara NSR",
+      "altText": "Yellows, oranges, and greens dominate the fall colors along the Niobrara NSR.",
+      "caption": "Autumn is a perfect time to enjoy the beauty of the Niobrara National Scenic River, from the river or the banks.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "niob-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C948A-1DD8-B71B-0B91A2ACA9AACDDF.jpg",
+      "title": "Canoeing the Niobrara NSR",
+      "altText": "Two people in one canoe paddle along the bluffs of the Niobrara NSR.",
+      "caption": "The Niobrara is a peaceful place to paddle during the week.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "niob-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C9873-1DD8-B71B-0B9C787CAE2BC09F.jpg",
+      "title": "Relaxing canoeing on the Niobrara NSR",
+      "altText": "A view from a canoe, with the photographer's feet resting on the bow, of the Niobrara NSR.",
+      "caption": "Much of the Niobrara National Scenic River is easy paddling, suitable for novice canoers.",
+      "credit": "NPS Photo/Ryan Schmieder",
+      "isPrimary": false
+    },
+    {
+      "id": "niob-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C9A47-1DD8-B71B-0BFF627C036B27B1.jpg",
+      "title": "Egelhoffs Rapids on the Niobrara NSR",
+      "altText": "A paddler in a canoe goes through Class II Rapids on the Niobrara NSR.",
+      "caption": "An experienced canoer takes on the Class II Egelhoffs Rapids along the Niobrara National Scenic River.",
+      "credit": "NPS Photo/Solveig Perrett",
+      "isPrimary": false
+    },
+    {
+      "id": "niob-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CA6F5-1DD8-B71B-0B9425F70CB40B05.jpg",
+      "title": "Tubers congregate at Smith Falls State Park",
+      "altText": "Many people on tubes float down the Niobrara.",
+      "caption": "On Saturdays, the Niobrara National Scenic River is a great place to meet hundreds of other tubers.",
+      "credit": "NPS Photo/Solveig Perrett",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "0F2CC530-8DD9-4328-98AA-E514918AD206",
+      "name": "River Tubing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/niob/index.htm",
+    "directions": "http://www.nps.gov/niob/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Farming and Agriculture",
+    "Ranches",
+    "Forts",
+    "Animals",
+    "Birds",
+    "Bison",
+    "Elk",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Fossils and Paleontology",
+    "Geology",
+    "Groundwater",
+    "Aquifers",
+    "Freshwater Springs",
+    "Grasslands",
+    "Prairies",
+    "Night Sky",
+    "River and Riparian",
+    "Scenic Views",
+    "Unique Species",
+    "Waterfalls",
+    "National Scenic River",
+    "NE"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

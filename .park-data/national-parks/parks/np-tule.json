@@ -1,0 +1,158 @@
+{
+  "id": "np-tule",
+  "name": "Tule Lake National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Tule Lake National Monument includes both Tule Lake Segregation Center, the largest and most controversial of the sites where Japanese Americans were incarcerated during World War II, and Camp Tulelake, which was first a Civilian Conservation Corps camp, then an additional facility to detain Japanese Americans, and finally a prisoner of war camp.",
+  "shortDescription": "Tule Lake National Monument includes both Tule Lake Segregation Center, the largest and most controversial of the sites where Japanese Americans were incarcerated during World War II, and Camp Tulelak...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 41.88727902,
+    "longitude": -121.3744818
+  },
+  "nationalParkInfo": {
+    "parkCode": "tule",
+    "npsId": "C315119F-1597-4C44-A8FA-60D707730FF0",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tule/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tule/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(530) 664 4015",
+    "email": "TULE_Information@nps.gov",
+    "website": "https://www.nps.gov/tule/index.htm",
+    "address": {
+      "line1": "44340 Hwy 139",
+      "line2": "",
+      "city": "Tuelake",
+      "state": "CA",
+      "postalCode": "96134"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "The visitor center is open Fridays - Sunday from 9:00am to 4:30pm, till then end of June. Operating hours will likely expand in July. Please check the calendar for the most accurate information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer daytime highs average 75° to 80°F; lows average 50°F. Occasional thunderstorms occur in summer. Winter daytime highs average 40°F; lows average 20°F. Morning fog is frequent from autumn through spring."
+  },
+  "images": [
+    {
+      "id": "tule-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/529AA262-F23D-E5D9-A8B28ED0215975DD.jpg",
+      "title": "Tule Lake National Monument Visitor Center",
+      "altText": "White house with a concrete deck and flag poll in the front.",
+      "caption": "Tule Lake Visitor Center",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "tule-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81F835-1DD8-B71B-0B2F390826C60693.jpg",
+      "title": "Tule Lake Segregation Center Jail with Castle Rock in the back ground",
+      "altText": "Tule Lake Segregation Center Jail with Castle Rock in the background",
+      "caption": "Tule Lake Segregation Center Jail with Castle Rock in the back ground",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tule-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81F9A3-1DD8-B71B-0B5FAB1A656FBCD0.jpg",
+      "title": "Camp Tulelake as a CCC Camp in 1936",
+      "altText": "Camp Tulelake as a CCC Camp in 1936",
+      "caption": "Camp Tulelake as a CCC Camp in 1936",
+      "credit": "BOR Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tule-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81FB0F-1DD8-B71B-0BA38BA494DD23FD.jpg",
+      "title": "Camp Tulelake Barrack",
+      "altText": "Camp Tulelake Barrack",
+      "caption": "Camp Tulelake Barrack",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tule-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81FD03-1DD8-B71B-0BF30B6078C6AC02.jpg",
+      "title": "Tule Lake Segregation Center in 1946",
+      "altText": "Tule Lake Segregation Center in 1946",
+      "caption": "Tule Lake Segregation Center in 1946",
+      "credit": "WRA",
+      "isPrimary": false
+    },
+    {
+      "id": "tule-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81FE8A-1DD8-B71B-0BDB13A0FDC9F53C.jpg",
+      "title": "On top of Castle Rock looking down on Tule Lake Segregation Center",
+      "altText": "On top of Castle Rock looking down on Tule Lake Segregation Center",
+      "caption": "On top of Castle Rock looking down on Tule Lake Segregation Center",
+      "credit": "Densho",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tule/index.htm",
+    "directions": "http://www.nps.gov/tule/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Asian American Heritage",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Wars and Conflicts",
+    "World War II",
+    "National Monument",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "np-hagr",
+  "name": "Hamilton Grange National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Merchant’s clerk, Revolutionary War soldier, first Secretary Treasury of the United States: Alexander Hamilton’s life is memorialized at The Grange, the home he built on a country estate in uptown Manhattan. A faithful testament to early American architecture, it stands today as a tribute to its first owner’s many accomplishments.",
+  "shortDescription": "Merchant’s clerk, Revolutionary War soldier, first Secretary Treasury of the United States: Alexander Hamilton’s life is memorialized at The Grange, the home he built on a country estate in uptown Man...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 40.81871605,
+    "longitude": -73.94878487
+  },
+  "nationalParkInfo": {
+    "parkCode": "hagr",
+    "npsId": "4E169088-14AC-41DB-A6B2-BB3925B1CF0A",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hagr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hagr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "646-494-5366",
+    "email": "HAGR_info@nps.gov",
+    "website": "https://www.nps.gov/hagr/index.htm",
+    "address": {
+      "line1": "414 West 141st Street",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10031"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00AM",
+    "description": "On Wednesdays, Thursdays and Fridays, tours are offered at 11:30, 1:30 and 3:30. On Saturdays and Sundays, tours will be offered at 10:30, 11:30, 1:30, 2:30 and 3:30."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "New York City has a temperate climate, and temperatures in northern Manhattan are frequently several degrees cooler than those in the southern part of the city."
+  },
+  "images": [
+    {
+      "id": "hagr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80DC70-1DD8-B71B-0B9CB85978295244.jpg",
+      "title": "Hamilton Grange National Memorial",
+      "altText": "Hamilton Grange National Memorial",
+      "caption": "Hamilton Grange National Memorial",
+      "credit": "NPS Photo/Kevin Daley",
+      "isPrimary": true
+    },
+    {
+      "id": "hagr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80DD5F-1DD8-B71B-0B5992963B1A030F.jpg",
+      "title": "Hamilton Grange National Memorial, Entrance",
+      "altText": "Hamilton Grange National Memorial, Entrance",
+      "caption": "Hamilton Grange National Memorial, Entrance",
+      "credit": "NPS Photo/Jennifer Ladd",
+      "isPrimary": false
+    },
+    {
+      "id": "hagr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80DF02-1DD8-B71B-0BCDD1F96C8964E7.jpg",
+      "title": "Hamilton Grange On The Move",
+      "altText": "Hamilton Grange On The Move",
+      "caption": "The Grange on its way to a new home in St. Nicholas Park.",
+      "credit": "NPS Photo/Kevin Daley",
+      "isPrimary": false
+    },
+    {
+      "id": "hagr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E018-1DD8-B71B-0B6AA1EDE3500733.jpg",
+      "title": "Hamilton Grange National Memorial, Foyer",
+      "altText": "Hamilton Grange National Memorial, Foyer",
+      "caption": "Hamilton Grange National Memorial, Foyer",
+      "credit": "NPS Photo/Kevin Daley",
+      "isPrimary": false
+    },
+    {
+      "id": "hagr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E176-1DD8-B71B-0BFB7C46CA9AF249.jpg",
+      "title": "Hamilton Grange National Memorial, Parlor",
+      "altText": "Hamilton Grange National Memorial, Parlor",
+      "caption": "Hamilton Grange National Memorial, Parlor",
+      "credit": "NPS Photo/Kevin Daley",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hagr/index.htm",
+    "directions": "http://www.nps.gov/hagr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "National Memorial",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

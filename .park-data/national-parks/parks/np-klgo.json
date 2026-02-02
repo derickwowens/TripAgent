@@ -1,0 +1,268 @@
+{
+  "id": "np-klgo",
+  "name": "Klondike Gold Rush National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Headlines screamed \"Gold!\" The dream of a better life catapulted thousands of people to Alaska and the Yukon Territory. Their journey shaped them, and changed the people they encountered and the north forever. Today, the park remembers the trails, boomtowns, and stories of the Klondike Gold Rush.",
+  "shortDescription": "Headlines screamed \"Gold!\" The dream of a better life catapulted thousands of people to Alaska and the Yukon Territory. Their journey shaped them, and changed the people they encountered and the north...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 59.61042373,
+    "longitude": -135.2618535
+  },
+  "nationalParkInfo": {
+    "parkCode": "klgo",
+    "npsId": "5D4AA834-B601-44A8-B786-FF3306BA8A39",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/klgo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/klgo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9079839200",
+    "email": "klgo_information@nps.gov",
+    "website": "https://www.nps.gov/klgo/index.htm",
+    "address": {
+      "line1": "Klondike Gold Rush National Historical Park",
+      "line2": "291 Broadway",
+      "city": "Skagway",
+      "state": "AK",
+      "postalCode": "99840"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Klondike Gold Rush National Historical Park is open year-round. Visitor services and access to historic buildings are most abundant early May through late September. Limited services are offered October 1 through late April by appointment only."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Skagway has a highly variable climate with frequent rain and high winds. Average temperatures May through September range from 47-60ºF. Average temperatures October through April range from 28-38ºF."
+  },
+  "images": [
+    {
+      "id": "klgo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BBEAE-1DD8-B71B-0B469DDC9151A4CA.jpg",
+      "title": "Gateway to the gold rush",
+      "altText": "Aerial view of town in a valley with cruise ships in port",
+      "caption": "The historic district in Skagway, Alaska is one of three units of the park in Alaska.",
+      "credit": "NPS Photo/S. Millard",
+      "isPrimary": true
+    },
+    {
+      "id": "klgo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BBA39-1DD8-B71B-0BF0A524F09A191A.jpg",
+      "title": "Skagway Historic District",
+      "altText": "Colorful buildings",
+      "caption": "Explore history with the restored buildings at Klondike Gold Rush National Historical Park",
+      "credit": "NPS Photo/S. Millard",
+      "isPrimary": false
+    },
+    {
+      "id": "klgo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A10EF-1DD8-B71B-0BD0E96DA5F417E5.jpg",
+      "title": "Walking Tour",
+      "altText": "People standing around a ranger in front of a building.",
+      "caption": "Enjoy a free historic walking tour with a ranger.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "klgo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BBBA0-1DD8-B71B-0BBE49A649E59052.jpg",
+      "title": "The Chilkoot Trail",
+      "altText": "View from a mountain pass down a valley",
+      "caption": "Each summer thousands of people hike along the \"worlds longest museum\"",
+      "credit": "NPS Photo/AJ Conley",
+      "isPrimary": false
+    },
+    {
+      "id": "klgo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BBD15-1DD8-B71B-0BEC60828B881F61.jpg",
+      "title": "Captain William Moore Cabin",
+      "altText": "Group of people gathered around a log cabin with a ranger",
+      "caption": "The first building in Skagway was built in 1887, ten years before the Klondike gold rush.",
+      "credit": "NPS photo/K. Pontius",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "977B3209-68A2-4BCE-97A9-EA0CAC320664",
+      "name": "Mountain Climbing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/klgo/index.htm",
+    "directions": "http://www.nps.gov/klgo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Asian American Heritage",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Engineering",
+    "Explorers and Expeditions",
+    "Industry",
+    "Mining",
+    "Logging and Timber Cutting",
+    "Immigration",
+    "Maritime",
+    "Migrations",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Massacres",
+    "Westward Expansion",
+    "Homesteading",
+    "The Gold Rush",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Rainforest",
+    "Geology",
+    "Glaciers",
+    "Mountains",
+    "Natural Sounds",
+    "Oceans",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Wilderness",
+    "National Historical Park",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

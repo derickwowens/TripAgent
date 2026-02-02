@@ -1,0 +1,164 @@
+{
+  "id": "np-tica",
+  "name": "Timpanogos Cave National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "The visitor center, caves, and cave tours have not yet opened for the 2026 season. Hike your way past stunning vistas to explore a hidden underground world. Taste the thrill of caving as you twist and bend to enter beautifully decorated rooms. Learn the science behind formations and hear stories of cave exploration and preservation. Experience and discover as you go – geologic mysteries await",
+  "shortDescription": "The visitor center, caves, and cave tours have not yet opened for the 2026 season. Hike your way past stunning vistas to explore a hidden underground world. Taste the thrill of caving as you twist and...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.44039719,
+    "longitude": -111.7093944
+  },
+  "nationalParkInfo": {
+    "parkCode": "tica",
+    "npsId": "26FBF456-94A2-413C-87D9-DDBCD96815FA",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tica/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tica/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(801)756-5239",
+    "email": "tica_info@nps.gov",
+    "website": "https://www.nps.gov/tica/index.htm",
+    "address": {
+      "line1": "2038 W. Alpine Loop Road",
+      "line2": "",
+      "city": "American Fork",
+      "state": "UT",
+      "postalCode": "84003"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 5:30PM",
+    "tuesday": "7:00AM - 5:30PM",
+    "wednesday": "7:00AM - 5:30PM",
+    "thursday": "7:00AM - 5:30PM",
+    "friday": "7:00AM - 5:30PM",
+    "saturday": "7:00AM - 5:30PM",
+    "sunday": "7:00AM - 5:30PM",
+    "description": "The Visitor Center is currently open for the season."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Open seasonally depending on weather. Caves cannot be accessed without a ticket. Tickets are between $2.00 and $12.00 depending on age and are 50% off for the passholder only with a Senior or Access Pass.\nThis tour spends 55 minutes inside of the cave system with a ranger walking along a 1/3 mile trail. There are multiple stairs and places you must bend and twist. Visitors on this tour will see Hansen Cave, Middle Cave, and Timpanogos Cave.",
+      "cost": "12.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Open seasonally depending on weather. Caves cannot be accessed without a ticket. \nSpend an hour inside the Timpanogos Cave System with a ranger on a lantern guided tour. Discover what early explorers experienced as they traveled through the dark passages of the cave. Hear stories of early exploration and marvel at the cave’s geology by the glow of your lantern and experience the caves in a way that hasn't been done in decades.\n\nThis tour is limited to those 7 years of age and older.",
+      "cost": "17.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Open seasonally depending on weather. Caves cannot be accessed without a ticket. With a helmet and headlamp you are ready to experience Hansen Cave in its natural state. With a ranger, you'll scramble and sometimes even crawl on the trail leading to Hansen Cave Lake, along the same route Martin Hansen conducted tours in the late 1800s. The tour is considered strenuous. Must be 14 years of age or older to participate.",
+      "cost": "22.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Although inside the caves its always 43-48 F, temperatures on the cave trail can range from the 30s up to above 100 degrees F, depending on time of year. Carrying drinking water is a necessity, especially in summer. In the mountains, weather sometimes presents interesting challenges. The cave and cave trail do not close due to rain, unless that rain is heavy enough to bring rockfall. They will close due to high winds/rockfall, or in lightning storms. Call the visitor center if you have specific concerns."
+  },
+  "images": [
+    {
+      "id": "tica-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83CDD6-1DD8-B71B-0B2C642E4C17AC62.jpg",
+      "title": "Helictites in Timpanogos Cave",
+      "altText": "Twisty helictites growing off a stalactite",
+      "caption": "Timpanogos Cave is filled with twisting helictites and other beautiful formations",
+      "credit": "NPS/Ryan R Maurer",
+      "isPrimary": true
+    },
+    {
+      "id": "tica-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83CF7E-1DD8-B71B-0B6DCF204720F0BF.jpg",
+      "title": "Timpanogos Cave's \"Chimes Chamber\"",
+      "altText": "Visitors gaze at delicate cave formations in Timpanogos Cave's Chimes Chamber",
+      "caption": "Timpanogos Cave's beautiful Chimes Chamber is filled with delicate cave formations",
+      "credit": "NPS/Ryan R. Maurer",
+      "isPrimary": false
+    },
+    {
+      "id": "tica-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83D0F5-1DD8-B71B-0B6B836D16BB41AD.jpg",
+      "title": "Hansen Cave-Introduction to Caving Tour",
+      "altText": "Two cavers look at large formations in Hansen Cave",
+      "caption": "Cavers on the Introduction to Caving Tour admire magnificent formations.",
+      "credit": "NPS/Ryan R. Maurer",
+      "isPrimary": false
+    },
+    {
+      "id": "tica-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83D278-1DD8-B71B-0B98C72E848B1357.jpg",
+      "title": "View from the Timpanogos Cave Trail",
+      "altText": "Utah Valley beyond the steep cliffs and fir trees of American Fork Canyon",
+      "caption": "The scenic view from the trail to the caves is one people often remember.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "tica-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83D3E3-1DD8-B71B-0B425FC7EE6AEB47.jpg",
+      "title": "Along the Trail to the Caves",
+      "altText": "White-orange quartzite surrounded by greenery stands against a blue sky",
+      "caption": "The trail to the cave leads the hiker past layer after layer of geologic time",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tica/index.htm",
+    "directions": "http://www.nps.gov/tica/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Explorers and Expeditions",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Native American Heritage",
+    "Animals",
+    "Caves, Caverns and Karst",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "National Monument",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

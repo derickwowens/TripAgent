@@ -1,0 +1,302 @@
+{
+  "id": "np-jotr",
+  "name": "Joshua Tree National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. A fascinating variety of plants and animals make their homes in a land sculpted by strong winds and occasional torrents of rain. Dark night skies, a rich cultural history, and surreal geologic features add to the wonder of this vast wilderness in southern California. Come explore for yourself!",
+  "shortDescription": "Two distinct desert ecosystems, the Mojave and the Colorado, come together in Joshua Tree National Park. A fascinating variety of plants and animals make their homes in a land sculpted by strong winds...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 33.91418525,
+    "longitude": -115.8398125
+  },
+  "nationalParkInfo": {
+    "parkCode": "jotr",
+    "npsId": "F5CD58FB-05DC-4074-99DA-F327A537F1BC",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jotr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jotr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7603675500",
+    "email": "jotr_info@nps.gov",
+    "website": "https://www.nps.gov/jotr/index.htm",
+    "address": {
+      "line1": "74485 National Park Drive",
+      "line2": "",
+      "city": "Twentynine Palms",
+      "state": "CA",
+      "postalCode": "92277-3597"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Joshua Tree National Park is open 24 hours a day, 7 days a week, 365 days a year. Visitation increases as temperatures moderate in the fall, peaks during the spring wildflower season, and diminishes during the heat of summer. Some areas of the park are designated for day use only. Visitor centers keep separate hours; please see descriptions."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "7-day vehicle permit, admitting the passengers of a single, non-commercial vehicle on the day of purchase and for the next six days.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "7-day entrance fee, per person on foot or bike.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Days are typically clear with less than 25% humidity. Temperatures are most comfortable in the spring and fall, with an average highs around 85°F (29°C) and average lows around 50°F (10°C) respectively. Winter brings cooler days, around 60°F (15°C), and freezing nights. It occasionally snows at higher elevations. Summers are hot, over 100°F (38°C) during the day and not cooling much below 75°F (24°C) at night."
+  },
+  "images": [
+    {
+      "id": "jotr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/306D0D93-9CCA-76E1-AD48268F8D7A7E3E.jpg",
+      "title": "Quail Springs Area at Sunset",
+      "altText": "The sky turns hues of pink and purple over a field of Joshua trees.",
+      "caption": "Quail Springs area at sunset",
+      "credit": "NPS / Emily Hassell",
+      "isPrimary": true
+    },
+    {
+      "id": "jotr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85EDAE-1DD8-B71B-0B3E7EAC7E299A23.jpg",
+      "title": "Jumbo Rocks at Sunset",
+      "altText": "people climbing on boulders are silhouetted against a colorful sunset sky",
+      "caption": "Jumbo Rocks Campground is a fun place to explore the park's bouldered landscape.",
+      "credit": "NPS/Brad Sutton",
+      "isPrimary": false
+    },
+    {
+      "id": "jotr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85EC5C-1DD8-B71B-0B3B00469411625A.jpg",
+      "title": "Joshua Tree Junior Ranger",
+      "altText": "a little girl smiles while wearing a Jr. Ranger hat and badge",
+      "caption": "Kids of all ages can take part in Joshua Tree National Park's Junior Ranger program.",
+      "credit": "NPS/Kurt Moses",
+      "isPrimary": false
+    },
+    {
+      "id": "jotr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85E84D-1DD8-B71B-0B188E7820D60F14.jpg",
+      "title": "Hidden Valley Hiker",
+      "altText": "hiker looks over Hidden Valley",
+      "caption": "Scrambling to the top of boulders in Joshua Tree can get you a great view.",
+      "credit": "NPS/Hannah Schwalbe",
+      "isPrimary": false
+    },
+    {
+      "id": "jotr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85EA46-1DD8-B71B-0B28B646B53F0C37.jpg",
+      "title": "Historic Keys Ranch",
+      "altText": "an historic wood house seen through the missing windshield of an old, rusty vehicle",
+      "caption": "The historic Keys Ranch can be visited only on a ranger-guided tour.",
+      "credit": "NPS/Kurt Moses",
+      "isPrimary": false
+    },
+    {
+      "id": "jotr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85EF02-1DD8-B71B-0B467F2B5F7483AC.jpg",
+      "title": "Lost Horse Valley",
+      "altText": "Joshua trees grow on a flat plain with boulder outcrops and mountains in the distance",
+      "caption": "Take in views of the park's iconic Joshua trees and rock outcrops in Lost Horse Valley.",
+      "credit": "NPS/Brad Sutton",
+      "isPrimary": false
+    },
+    {
+      "id": "jotr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85E941-1DD8-B71B-0BCAA9F8A0BD4E0F.jpg",
+      "title": "Joshua Tree Sunset",
+      "altText": "a fiery sky behind the silhouette of a Joshua tree",
+      "caption": "The wide-open desert of Joshua Tree National Park makes for stunning sunsets.",
+      "credit": "NPS/Brad Sutton",
+      "isPrimary": false
+    },
+    {
+      "id": "jotr-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85EB5A-1DD8-B71B-0BACA59CC5E5A620.jpg",
+      "title": "Stars Over the Park Entrance",
+      "altText": "night scene showing stars of the Milky Way over a sign saying \"Entering Joshua Tree National Park\"",
+      "caption": "Enjoy some of the darkest night skies in Southern California.",
+      "credit": "NPS/Lian Law",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jotr/index.htm",
+    "directions": "http://www.nps.gov/jotr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Farming and Agriculture",
+    "Ranches",
+    "Industry",
+    "Mining",
+    "Native American Heritage",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Geology",
+    "Groundwater",
+    "Freshwater Springs",
+    "Night Sky",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Wilderness",
+    "National Park",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

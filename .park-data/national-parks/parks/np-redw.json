@@ -1,0 +1,364 @@
+{
+  "id": "np-redw",
+  "name": "Redwood National and State Parks",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Renowned for the world’s tallest trees, Redwood’s landscapes span from open prairies and oak woodlands to pristine rivers and untamed coastline. This ancient home has supported people for thousands of years. The National Park Service and California State Parks now work to safeguard and rejuvenate these lands for everyone’s enjoyment, learning, and inspiration.",
+  "shortDescription": "Renowned for the world’s tallest trees, Redwood’s landscapes span from open prairies and oak woodlands to pristine rivers and untamed coastline. This ancient home has supported people for thousands of...",
+  "designation": "National and State Parks",
+  "coordinates": {
+    "latitude": 41.37237268,
+    "longitude": -124.0318129
+  },
+  "nationalParkInfo": {
+    "parkCode": "redw",
+    "npsId": "041B325C-A34F-4027-8E41-1DF3F9A1D799",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/redw/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/redw/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7074646101",
+    "email": "redw_info@nps.gov",
+    "website": "https://www.nps.gov/redw/index.htm",
+    "address": {
+      "line1": "1111 Second Street",
+      "line2": "",
+      "city": "Crescent City",
+      "state": "CA",
+      "postalCode": "95531"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The national and state parks are always open to enjoy. \nRoads, trails and public access remain open year round.\n\nSome campgrounds and visitor centers are closed - or have reduced hours - in the off-season (October-May)"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Visitors should be prepared for cooler and damp weather. Dress in layers and expect to get wet. Year-round temperatures along California's redwood coast: mid-40s°F (7°C) to mid-60s°F (18°C). Summer can be foggy, with highs occasionally reaching low 70s°F (20°C). Winters are cooler with considerable rain. October through April averages 60-80 inches of rain over the region."
+  },
+  "images": [
+    {
+      "id": "redw-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD69DD56-E050-4F4E-DDF622317D38250E.jpg",
+      "title": "Fish-eye view of Redwood canopy",
+      "altText": "View from forest floor looking straight up. Ferns as seen close up and redwood trunks meet.",
+      "caption": "The redwood forest is a complicated and beautiful series of habitats.",
+      "credit": "NPS Photo / Steve Olson",
+      "isPrimary": true
+    },
+    {
+      "id": "redw-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/13FB649C-1DD8-B71B-0B50D0E826025619.jpg",
+      "title": "Howland Hill Road",
+      "altText": "Redwood trees line a narrow dirt road.",
+      "caption": "With a small car, you can expericne close-up Redwoods along a century old, narrow road.",
+      "credit": "",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/13C2D9FD-1DD8-B71B-0B3C56643E2A396D.jpg",
+      "title": "Tide pooling at Enderts Beach",
+      "altText": "Two visitors looking at tidepools.",
+      "caption": "We have forty miles of coastline to explore.",
+      "credit": "NPS Photo / John Chao",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6B440E44-1DD8-B71B-0B6E95D9C432231F.jpg",
+      "title": "Visitors Plan Their Redwood Trip",
+      "altText": "Five young women read the park map.",
+      "caption": "A great redwood trip starts with good trip planning.",
+      "credit": "NPS: John Chao",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/13E30047-1DD8-B71B-0B03D2E0CECCE8AD.jpg",
+      "title": "Ranger Program at Klamath River Overlook",
+      "altText": "Visitors chatting with a ranger above a river mouth.",
+      "caption": "Coastal overlooks provide amazing places to whale watch.. and more.",
+      "credit": "NPS Photo / John Chao",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CCDEEABE-CDBA-3C8D-B3E050B3DE5B0B55.jpg",
+      "title": "Visitors on walkway to Lady Bird Johnson Grove",
+      "altText": "Three people stand on a walkway in the trees. It is foggy.",
+      "caption": "Visitors to the Lady Bird Johnson Grove cross a road using a walkway.",
+      "credit": "NPS Photo / Steve Olson",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6B56ACA8-1DD8-B71B-0BB0C6228E534168.jpg",
+      "title": "A New Junior Ranger",
+      "altText": "A ranger helps a father and son learn about being a junior ranger.",
+      "caption": "Becoming a junior ranger at Redwoods is a fun and educational for the whole family.",
+      "credit": "NPS: John Chao",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1427B3E7-1DD8-B71B-0BFA87FE718FB3A6.jpg",
+      "title": "\"Big Tree\" wayside.",
+      "altText": "Visitors pose with one of the widest Redwood trees.",
+      "caption": "For those short of time, the \"Big Tree\" offers easy access for all to a very photogenic tree.",
+      "credit": "NPS Photo / John Chao",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6B306966-1DD8-B71B-0B36E955A7B3205F.jpg",
+      "title": "Incoming Tide at  Redwood National Park",
+      "altText": "Rocks, rockpools and waves",
+      "caption": "40 miles of coastline are part of Redwood National Park",
+      "credit": "NPS: John Chao",
+      "isPrimary": false
+    },
+    {
+      "id": "redw-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CD559BD9-FAB5-0FA1-F544AB5BF977C571.jpg",
+      "title": "Nurse log on the side of a trail.",
+      "altText": "A tree stump is covered with plants.",
+      "caption": "A fallen redwood tree will be on the forest floor for centuries providing habitat for a new generation of plants and animals.",
+      "credit": "NPS Photo / Steven Olson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/redw/index.htm",
+    "directions": "http://www.nps.gov/redw/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Farming and Agriculture",
+    "Ranches",
+    "Industry",
+    "Mills",
+    "Logging and Timber Cutting",
+    "Maritime",
+    "Coastal Defenses",
+    "Native American Heritage",
+    "Social Movements",
+    "Conservation Movement",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Tragic Events",
+    "Massacres",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Groundwater",
+    "Grasslands",
+    "Prairies",
+    "Oceans",
+    "Whales",
+    "River and Riparian",
+    "Scenic Views",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "Headwaters",
+    "Wilderness",
+    "National and State Parks",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

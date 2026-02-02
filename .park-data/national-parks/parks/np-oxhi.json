@@ -1,0 +1,193 @@
+{
+  "id": "np-oxhi",
+  "name": "Oxon Cove Park & Oxon Hill Farm",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "The diverse history of Maryland and our national heritage can be experienced at Oxon Cove Park. Through hands-on programs and other activities, you can experience farm life and how its changed over time. Explore how the park evolved from a plantation home during the War of 1812, to a hospital farm, to the park you can visit today.",
+  "shortDescription": "The diverse history of Maryland and our national heritage can be experienced at Oxon Cove Park. Through hands-on programs and other activities, you can experience farm life and how its changed over ti...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.80578214,
+    "longitude": -77.01131457
+  },
+  "nationalParkInfo": {
+    "parkCode": "oxhi",
+    "npsId": "5536A389-5457-4E3F-84E2-D67861BB34D9",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/oxhi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/oxhi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1536",
+    "email": "oxhi_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/oxhi/index.htm",
+    "address": {
+      "line1": "1967 Bald Eagle Road",
+      "line2": "",
+      "city": "Oxon Hill",
+      "state": "MD",
+      "postalCode": "20745"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 4:30PM",
+    "tuesday": "8:00AM - 4:30PM",
+    "wednesday": "8:00AM - 4:30PM",
+    "thursday": "8:00AM - 4:30PM",
+    "friday": "8:00AM - 4:30PM",
+    "saturday": "8:00AM - 4:30PM",
+    "sunday": "8:00AM - 4:30PM",
+    "description": "Open daily from 8:00 a.m. to 4:30 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Make sure that you wear appropriate shoes and clothing. Closed-toe shoes are recommended, sneakers or comfortable boots are best. Dress for the season, light clothes in summer, layers in spring and fall, and warm coats in winter. Cooler days are often the best days to visit Oxon Hill Farm if you’re interested in seeing farm animals or wildlife out and about. There are still lots of things to see and do on hotter days, just make sure to keep hydrated and take frequent breaks."
+  },
+  "images": [
+    {
+      "id": "oxhi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/34B552FE-055B-F687-3DBC825302910582.jpg",
+      "title": "Cows",
+      "altText": "Two brown cows graze in a field",
+      "caption": "Two Jersey cows graze in their pasture",
+      "credit": "(NPS/CLaBarge)",
+      "isPrimary": true
+    },
+    {
+      "id": "oxhi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C60A9-1DD8-B71B-0BF24255DCA7767D.jpg",
+      "title": "Farm Sunrise",
+      "altText": "Sunrise at the Farm",
+      "caption": "Sunrise at the Farm",
+      "credit": "NPS Photo/Ranger Jamie Euken",
+      "isPrimary": false
+    },
+    {
+      "id": "oxhi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C64D9-1DD8-B71B-0B4AB0C6DE8DF59C.jpg",
+      "title": "Farrier",
+      "altText": "Farrier repairs horse hooves",
+      "caption": "Our farrier regularly maintains the hooves of the horses at Oxon Hill Farm.",
+      "credit": "NPS Photo/Ranger Jamie Euken",
+      "isPrimary": false
+    },
+    {
+      "id": "oxhi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C61ED-1DD8-B71B-0BABF301354F80F4.jpg",
+      "title": "Pigs",
+      "altText": "Young visitors meet the pigs.",
+      "caption": "Young visitors meet the pigs at Oxon Hill Farm.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "oxhi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/362F6FCA-EADD-B5D5-DBB9659740D07B41.jpg",
+      "title": "Mount Welby",
+      "altText": "A white brick two story building",
+      "caption": "Mount Welby is the oldest structure on the farm, built around 1811",
+      "credit": "(NPS/CLaBarge)",
+      "isPrimary": false
+    },
+    {
+      "id": "oxhi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/35116E6E-BF03-4E02-7CB0A2BB37A29DE0.jpg",
+      "title": "Oxon Cove Trail",
+      "altText": "A paved walkway along a wooded shoreline",
+      "caption": "The Oxon Cove trail takes hikers and bikers through forest and meadow ecosystems and along Oxon Cove",
+      "credit": "(NPS/SBreault)",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/oxhi/index.htm",
+    "directions": "http://www.nps.gov/oxhi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Laborer and Worker",
+    "Schools and Education",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Animals",
+    "Birds",
+    "Trails",
+    "",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

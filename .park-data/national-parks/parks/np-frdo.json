@@ -1,0 +1,165 @@
+{
+  "id": "np-frdo",
+  "name": "Frederick Douglass National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Frederick Douglass spent his life fighting for justice and equality. Born into slavery in 1818, he escaped as a young man and became a leading voice in the abolitionist movement. People everywhere still find inspiration today in his tireless struggle, brilliant words, and inclusive vision of humanity. Douglass's legacy is preserved here at Cedar Hill, where he lived his last 17 years.",
+  "shortDescription": "Frederick Douglass spent his life fighting for justice and equality. Born into slavery in 1818, he escaped as a young man and became a leading voice in the abolitionist movement. People everywhere sti...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.86298458,
+    "longitude": -76.98508147
+  },
+  "nationalParkInfo": {
+    "parkCode": "frdo",
+    "npsId": "F6831504-A456-45C8-B87B-0FCE1D849A12",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frdo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/frdo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1499",
+    "email": "frdo_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/frdo/index.htm",
+    "address": {
+      "line1": "1411 W Street SE",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20020"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "The historic house is open for guided tours at scheduled times Tuesday through Saturday; hours vary by season, and reservations are strongly encouraged. The site is open from 9:00 a.m. to 4:30 p.m. on those days from October 1 through March 31, and from 9:00 a.m. to 5:00 p.m. from April 1 through September 30."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "The guided tour includes the upper and lower floors of the home and provides an intimate window into the life of Frederick Douglass.\n\nSpace on each tour is limited. You are strongly encouraged to make a reservation to secure your spot on a tour. While walk-ins without a reservation are permitted if space is available, tours are frequently completely full well in advance. Plan ahead and reserve your tour today!",
+      "cost": "1.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Winter: Temperatures usually range from 30 to 50 F. There is occasional snow. Spring: Temperatures usually range widely from 40 to 70 F. Rain is common. Summer: Temperatures usually range from 70 to 90 F. Humidity is usually high. Be prepared and drink plenty of water. There is a water fountain in the visitor center. Fall: Temperatures usually range widely from 40 to 70 F. Humidity can remain high in the earlier part of the season."
+  },
+  "images": [
+    {
+      "id": "frdo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BDCB8-1DD8-B71B-0BB04B6313FE6EF1.jpg",
+      "title": "Cedar Hill",
+      "altText": "Visitors take photos in front of a historic house",
+      "caption": "Rangers guide daily tours of the historic house at scheduled times.",
+      "credit": "NPS Photo / Nate Johnson",
+      "isPrimary": true
+    },
+    {
+      "id": "frdo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BDEC6-1DD8-B71B-0B5F0591764FD200.jpg",
+      "title": "The Growlery",
+      "altText": "A tiny stone cabin surrounded by fall foliage",
+      "caption": "Frederick Douglass retreated to this stone cabin to read, write, and think in seclusion.",
+      "credit": "NPS Photo / Nate Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "frdo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE042-1DD8-B71B-0B373631B36D4F20.jpg",
+      "title": "View of Washington, D.C.",
+      "altText": "View of downtown Washington, D.C., including the Washington Monument and U.S. Capitol",
+      "caption": "Frederick Douglass's view from Cedar Hill continues to impress visitors today.",
+      "credit": "NPS Photo / Nate Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "frdo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BE216-1DD8-B71B-0B9689720804C283.jpg",
+      "title": "Bust of Frederick Douglass",
+      "altText": "A plaster bust of Frederick Douglass",
+      "caption": "Hundreds of original objects, such as this bust, furnish the historic house.",
+      "credit": "NPS Photo / Nate Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "frdo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/21F4D4A9-CCFA-FD33-626732C8CD2E3CD2.jpg",
+      "title": "Frederick Douglass Bicentennial Weekend",
+      "altText": "A park ranger gestures to a group of people outside the Frederick Douglass home.",
+      "caption": "A park ranger speaks to park visitors.",
+      "credit": "NPS / Rachel Hendrix",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frdo/index.htm",
+    "directions": "http://www.nps.gov/frdo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Enslavement",
+    "Incarceration",
+    "Reconstruction",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Historic Site",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

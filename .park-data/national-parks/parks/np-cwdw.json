@@ -1,0 +1,204 @@
+{
+  "id": "np-cwdw",
+  "name": "Civil War Defenses of Washington",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "On forested hills surrounding the nation's capital are the remnants of a complex system of Civil War fortifications. These strategic buttresses transformed the young capital into one of the world's most fortified cities. By 1865, 68 forts and 93 batteries armed with over 800 cannons encircled Washington, DC. Today, you can visit 18 of the original sites now managed by the National Park Service.",
+  "shortDescription": "On forested hills surrounding the nation's capital are the remnants of a complex system of Civil War fortifications. These strategic buttresses transformed the young capital into one of the world's mo...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.9644,
+    "longitude": -77.0292
+  },
+  "nationalParkInfo": {
+    "parkCode": "cwdw",
+    "npsId": "8A6C3A35-C48B-4125-82E1-939A1B3A535C",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cwdw/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/cwdw/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202-895-6000",
+    "email": "rocr_superintendent@nps.gov",
+    "website": "https://www.nps.gov/cwdw/index.htm",
+    "address": {
+      "line1": "Civil War Defenses of Washington",
+      "line2": "6625 Georgia Ave NW",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20012"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park grounds at Battery Kemble, Battleground National Cemetery, Fort Bayard, Fort Bunker Hill, Fort DeRussy, Fort Reno, Fort Slocum, Fort Stevens, and Fort Totten are managed by Rock Creek Park\n\nThese sites are open daily from dawn to dusk."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Check the weather forecast for each individual site for accurate information."
+  },
+  "images": [
+    {
+      "id": "cwdw-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82F2B8-1DD8-B71B-0BEE3AC8B175885F.jpg",
+      "title": "Civil War Defenses Of Washington",
+      "altText": "Historic Fort Davis",
+      "caption": "Fort Davis (Fall Day)",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cwdw-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E6977351-AC07-1344-3202DF3CFAF7E1F7.jpg",
+      "title": "Battleground National Cemetery",
+      "altText": "Luminaries light a cemetery with a monument and homes in the background.",
+      "caption": "Battleground National Cemetery Luminary",
+      "credit": "NPS/Phan",
+      "isPrimary": false
+    },
+    {
+      "id": "cwdw-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E6C02E26-E3F6-9D3B-898FA345B581B896.jpg",
+      "title": "History at Sunset",
+      "altText": "Park Ranger delivering a program to visitors.",
+      "caption": "History at Sunset at Fort Stevens Park, 2021.",
+      "credit": "NPS/S.Phan",
+      "isPrimary": false
+    },
+    {
+      "id": "cwdw-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E6FCD392-C46C-A879-E52995032085F953.jpg",
+      "title": "Washington DC at War",
+      "altText": "NPS Park Sign for Fort Stevens",
+      "caption": "Fort Stevens Park in Washington DC",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "cwdw-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E709D662-E09B-D2CA-0D845DB9F7470E58.jpg",
+      "title": "The Civil War Defenses Then & Now",
+      "altText": "Historic image of Fort Totten on layered on modern image.",
+      "caption": "Fort Totten Then & Now",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cwdw/index.htm",
+    "directions": "https://www.nps.gov/cwdw/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Forts",
+    "Industry",
+    "Mills",
+    "Laborer and Worker",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Trails",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "id": "np-anac",
+  "name": "Anacostia Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Welcome to Anacostia Park, your neighborhood national park in the heart of Washington, DC! Enjoy exercise along the river trail or relax by the water, Anacostia Park is a breath of fresh air and a space to unwind amid a bustling city.",
+  "shortDescription": "Welcome to Anacostia Park, your neighborhood national park in the heart of Washington, DC! Enjoy exercise along the river trail or relax by the water, Anacostia Park is a breath of fresh air and a spa...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.8782,
+    "longitude": -76.9703
+  },
+  "nationalParkInfo": {
+    "parkCode": "anac",
+    "npsId": "9463E25C-7342-4A34-9537-4A6DA74B2B06",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/anac/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/anac/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1571",
+    "email": "anac_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/anac/index.htm",
+    "address": {
+      "line1": "1900 Anacostia Drive SE",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20020"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "Open: 6:00 a.m. to 10:00 p.m. daily"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring brings mild temperatures and a light breeze along with springtime flower blooms. Summer can be hot and humid. Fall cools down and changing of the seasons brings changing of the colors in leaves. Winter gets cold and temperatures may drop below freezing."
+  },
+  "images": [
+    {
+      "id": "anac-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82A965-1DD8-B71B-0B42F2CD698E11A7.jpg",
+      "title": "Anacostia Drive",
+      "altText": "Aerial view of Anacostia Drive and the playground",
+      "caption": "Anacostia Drive and the Anacostia river Trail run along side the Anacostia river. Views of the Navy Yard and Nats. Stadium can be seen as across the river.",
+      "credit": "NPS Photo/Miguel Marquez",
+      "isPrimary": true
+    },
+    {
+      "id": "anac-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E90FE9D6-0571-1A74-ECA594CE99431972.jpg",
+      "title": "Recreation at Anacostia",
+      "altText": "A few men are playing basketball at Anacostia with the Anacostia River in the background.",
+      "caption": "Anacostia is a great place for sports, including basketball and tennis courts.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "anac-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E92300B8-A71B-CCA4-3E64717D74B8149A.jpg",
+      "title": "The Anacostia River Trail",
+      "altText": "A view of the Anacostia River and a marina from the Anacostia River Trail.",
+      "caption": "The Anacostia River trail is a wonderful paved trail that is great for biking, jogging and walking.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "anac-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E93463E4-973F-F00C-F3FD4C81F20D5A8F.jpg",
+      "title": "The Anacostia Skating Pavilion",
+      "altText": "A sidewalk approaches the Anacostia skating pavilion.",
+      "caption": "The Anacostia skating pavilion is a great place to roller skate. It is an open-air rink that has a cover for rain and sun protection.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "anac-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E99A9CE8-911F-16D5-752156D21DD9C15A.jpg",
+      "title": "Bring your dog to the park!",
+      "altText": "A man jogs his two dogs along a paved multi-use trial.",
+      "caption": "The Anacostia River trail is a great place to bring your dog for some exercise. Dogs must be on a leash and please clean up after your pet.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "94369BFD-F186-477E-8713-AE2A745154DA",
+      "name": "Team Sports"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/anac/index.htm",
+    "directions": "http://www.nps.gov/anac/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Urban America",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Animals",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Wetlands",
+    "Park",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

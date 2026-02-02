@@ -1,0 +1,133 @@
+{
+  "id": "np-clba",
+  "name": "Clara Barton National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Clara Barton dedicated her life and energies to help others in times of need - both home and abroad, in peacetime as well as during military emergencies. Glen Echo was her home the last 15 years of her life, and the structure illustrates her dedication and concern for those less fortunate than herself.",
+  "shortDescription": "Clara Barton dedicated her life and energies to help others in times of need - both home and abroad, in peacetime as well as during military emergencies. Glen Echo was her home the last 15 years of he...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.96762882,
+    "longitude": -77.14009689
+  },
+  "nationalParkInfo": {
+    "parkCode": "clba",
+    "npsId": "80B93073-3A9D-4BD8-A8F5-5CB84CD35FE1",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/clba/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/clba/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3013201400",
+    "email": "gwmp_clara_barton_nhs@nps.gov",
+    "website": "https://www.nps.gov/clba/index.htm",
+    "address": {
+      "line1": "5801 Oxford Road",
+      "line2": "",
+      "city": "Glen Echo",
+      "state": "MD",
+      "postalCode": "20812"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "1:00PM - 5:00PM",
+    "saturday": "1:00PM - 5:00PM",
+    "sunday": "Closed",
+    "description": "The unfurnished first floor of the Clara Barton National Historic Site is open for public visitation Fridays and Saturdays by guided tours at 1:00 pm, 2:00 pm, 3:00pm, and 4:00 pm.\nClosed Sun. Dec. 25 & Sun. Jan. 1"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather for the Washington, D.C. area."
+  },
+  "images": [
+    {
+      "id": "clba-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8477E7-1DD8-B71B-0BF1DE30138186A7.jpg",
+      "title": "Clara Barton National Historic Site Front View",
+      "altText": "two and half story wooden frame house with double porch and stone corner posts.",
+      "caption": "Clara Barton National Historic Site",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "clba-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84793C-1DD8-B71B-0B1AE285290AA295.jpg",
+      "title": "Clara Barton National Historic Site West Side",
+      "altText": "side view of Clara Barton's house with Red Cross flag and American Flag.",
+      "caption": "Clara Barton National HIstoric Site",
+      "credit": "NPS Photo/Bruce Douglas",
+      "isPrimary": false
+    },
+    {
+      "id": "clba-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C847A89-1DD8-B71B-0BE6EE3B706DCEA8.jpg",
+      "title": "Front Parlor",
+      "altText": "front parlor, two easy chairs, American Flag and Red Cross flag in corner behind one chair.",
+      "caption": "Front Parlor, Clara Barton's favorite chair in front of flags.",
+      "credit": "NPS/Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "clba-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C847CC8-1DD8-B71B-0B60E21DD3938F0A.jpg",
+      "title": "Main Hallway",
+      "altText": "large potbelly stove in center hallway with open view to third floor",
+      "caption": "Main Hallway in Clara Barton's home.",
+      "credit": "NPS/Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "clba-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C847E4B-1DD8-B71B-0BFC51CA50D5B973.jpg",
+      "title": "Red Cross Windows",
+      "altText": "Red Cross stained glass windows in room with stored furniture.",
+      "caption": "Red Cross windows in the third floor storage room.",
+      "credit": "NPS Photo/Bruce Douglas",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/clba/index.htm",
+    "directions": "http://www.nps.gov/clba/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Social Movements",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "National Historic Site",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

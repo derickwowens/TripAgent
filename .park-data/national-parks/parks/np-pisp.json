@@ -1,0 +1,234 @@
+{
+  "id": "np-pisp",
+  "name": "Pipe Spring National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "The rich history of Pipe Spring and its flowing water comes alive as you explore the traditions of the Kaibab Paiute and the Mormon settlers through the museum, historic fort, cabins, and garden. Hike the Ridge Trail to enjoy geologic wonders, plants, and wildlife. Attend living history demonstrations and talks and be sure to visit with our amazing ranch animals!",
+  "shortDescription": "The rich history of Pipe Spring and its flowing water comes alive as you explore the traditions of the Kaibab Paiute and the Mormon settlers through the museum, historic fort, cabins, and garden. Hike...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.86282666,
+    "longitude": -112.7398567
+  },
+  "nationalParkInfo": {
+    "parkCode": "pisp",
+    "npsId": "97145E4E-3909-4669-8102-9559F3C405D1",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pisp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pisp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9286437105",
+    "email": "pipespring_info@nps.gov",
+    "website": "https://www.nps.gov/pisp/index.htm",
+    "address": {
+      "line1": "Pipe Spring National Monument",
+      "line2": "",
+      "city": "Fredonia",
+      "state": "AZ",
+      "postalCode": "86022"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 4:30PM",
+    "tuesday": "8:30AM - 4:30PM",
+    "wednesday": "8:30AM - 4:30PM",
+    "thursday": "8:30AM - 4:30PM",
+    "friday": "8:30AM - 4:30PM",
+    "saturday": "8:30AM - 4:30PM",
+    "sunday": "8:30AM - 4:30PM",
+    "description": "Visitor Center, Museum, and Monument open 8:30AM to 4:30PM, 7 days a week.  Closed Thanksgiving, Christmas, and New Year's Day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "There is a $10 fee per person 16 years of age and older.  Children under 15 enter for free.  This fee includes a $3/person Tribal use fee to the Kaibab Band of Paiute Indians.  All Interagency Passes are accepted.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Weather is hot in summer and cold in winter. Expect summer highs to be 80-100 degrees Fahrenheit and winter highs to be 30-50 degrees. Early morning and late afternoon can be considerably cooler; dress in layers and bring plenty of sunscreen. Arizona climate is very dry -- bring at least 1 liter of water per person per visit to Pipe Spring."
+  },
+  "images": [
+    {
+      "id": "pisp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C865B7C-1DD8-B71B-0BC81C6B55603669.jpg",
+      "title": "Milky Way over the Chuckwagon",
+      "altText": "A glittering sky of stars glows above a historic covered wagon.",
+      "caption": "The Milky Way glitters above the chuckwagon at Pipe Spring National Monument. The monument has great night sky clarity because it is located inside the first Dark Sky Nation: The Kaibab Indian Reservation.",
+      "credit": "NPS Photo/Kait Thomas",
+      "isPrimary": true
+    },
+    {
+      "id": "pisp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C865CD5-1DD8-B71B-0BB4186C2B055C98.jpg",
+      "title": "Winsor Castle",
+      "altText": "A sandstone fort rests between desert scrub in the foreground and a mountain in the distance.",
+      "caption": "Winsor Castle, constructed in 1870-72, is surrounded by the harsh beauty of Utah and Arizona's canyon country.",
+      "credit": "NPS Photo/Paul Kister",
+      "isPrimary": false
+    },
+    {
+      "id": "pisp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C865E17-1DD8-B71B-0BFCD97B38531840.jpg",
+      "title": "Historic Garden at Pipe Spring",
+      "altText": "A lush garden filled with settler and native crops grows in front of a sandstone fort",
+      "caption": "Pipe Spring maintains a living history garden that grows settler and native crops as they would have grown in the 1870s. In the fall, visitors may harvest free fruit and veggies.",
+      "credit": "NPS Photo/Paul Kister",
+      "isPrimary": false
+    },
+    {
+      "id": "pisp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86604B-1DD8-B71B-0B9B50572BEDA3A2.jpg",
+      "title": "West Cabin in Snow",
+      "altText": "A red-orange sandstone cabin surrounded by white snow.",
+      "caption": "Wintertime showcases a stark peace and stillness at the historic buildings. Pictured here, West Cabin sticks out after a snowstorm.",
+      "credit": "NPS Photo/Evan Cram",
+      "isPrimary": false
+    },
+    {
+      "id": "pisp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8661FC-1DD8-B71B-0B513CB63AB902C2.jpg",
+      "title": "Longhorn Cattle",
+      "altText": "A large longhorn cattle steer shows off his 6-foot span horns inside a corral.",
+      "caption": "Whitmore and Tess, two Texas Longhorns, greet visitors. Longhorns were brought to Pipe Spring in the 1860s.",
+      "credit": "NPS Photo/Evan Cram",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pisp/index.htm",
+    "directions": "http://www.nps.gov/pisp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Explorers and Expeditions",
+    "Forts",
+    "Military",
+    "Infantry and Militia",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Social Movements",
+    "Religious Freedom",
+    "Tragic Events",
+    "Massacres",
+    "Murders",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Westward Expansion",
+    "Climate Change",
+    "Geology",
+    "Groundwater",
+    "Aquifers",
+    "Freshwater Springs",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "Watersheds",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

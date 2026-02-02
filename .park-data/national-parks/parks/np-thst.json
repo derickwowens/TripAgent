@@ -1,0 +1,165 @@
+{
+  "id": "np-thst",
+  "name": "Thomas Stone National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "In 1776, Thomas Stone and 55 others signed the Declaration of Independence. In doing so, Stone risked his home, his family's security, and even his life to support the Declaration of Independence's promise of freedom.",
+  "shortDescription": "In 1776, Thomas Stone and 55 others signed the Declaration of Independence. In doing so, Stone risked his home, his family's security, and even his life to support the Declaration of Independence's pr...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.52934443,
+    "longitude": -77.037813
+  },
+  "nationalParkInfo": {
+    "parkCode": "thst",
+    "npsId": "DD9075B8-4AC2-4FA4-83F4-A08DFD705C25",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/thst/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/thst/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "804-224-1732",
+    "email": "gewa_thst_information@nps.gov",
+    "website": "https://www.nps.gov/thst/index.htm",
+    "address": {
+      "line1": "6655 Rose Hill Road",
+      "line2": "",
+      "city": "Port Tobacco",
+      "state": "MD",
+      "postalCode": "20677"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "Thomas Stone National Historic Site is open Saturdays and Sundays from 10:00 a.m. to 4:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Thomas Stone National Historic Site experiences all four seasons. Temperatures can be very warm and humid in the summer months and wet and rainy in the winter months."
+  },
+  "images": [
+    {
+      "id": "thst-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1045ACA0-BB5B-C428-2272CC5E8E76A87C.jpg",
+      "title": "Mansion at Haberdeventure",
+      "altText": "5 part Mansion at Haberdeventure",
+      "caption": "Mansion at Haberdeventure",
+      "credit": "NPS Photo / Stephen Girimont",
+      "isPrimary": true
+    },
+    {
+      "id": "thst-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/10801BF0-A5EC-1E9D-A56A31F57B4A31C6.jpg",
+      "title": "Stone Family Cemetery",
+      "altText": "Small family cemetery with grave markers",
+      "caption": "Stone Family Cemetery",
+      "credit": "NPS Photo / Stephen Girimont",
+      "isPrimary": false
+    },
+    {
+      "id": "thst-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/10214C9E-0656-3AE1-429ED5F9A087A93A.jpg",
+      "title": "Outbuildings",
+      "altText": "Roof of horse barn with tobacco barn and corn crib in background",
+      "caption": "Outbuildings",
+      "credit": "NPS Photo / Stephen Girimont",
+      "isPrimary": false
+    },
+    {
+      "id": "thst-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/10B21926-0B88-BEB9-AF5CD47AC4CEBF5D.jpg",
+      "title": "Nature Trail System",
+      "altText": "Leaf covered nature trail",
+      "caption": "Nature Trail System",
+      "credit": "NPS Photo / Stephen Girimont",
+      "isPrimary": false
+    },
+    {
+      "id": "thst-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/10DA7147-C8C3-2AAD-C9562A7EF253D8E5.jpg",
+      "title": "Tenet House",
+      "altText": "Tenet House with shadow of tree limbs",
+      "caption": "Tenet House",
+      "credit": "NPS Photo / Stephen Girimont",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/thst/index.htm",
+    "directions": "https://www.nps.gov/thst/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Landscape Design",
+    "Social Movements",
+    "Religious Freedom",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Animals",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "Natural Sounds",
+    "Trails",
+    "Wetlands",
+    "National Historic Site",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

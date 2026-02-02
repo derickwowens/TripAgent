@@ -1,0 +1,171 @@
+{
+  "id": "np-gate",
+  "name": "Gateway National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Spanning 27,000 acres from Sandy Hook in New Jersey to Breezy Point in New York City, the park is both the gateway from the ocean into New York Harbor, and the gateway to the National Park Service for millions of visitors every year. Gateway offers green spaces and beaches alongside historic structures and cultural landscapes. Every day, Gateway is open for you to explore, envision, and enjoy!",
+  "shortDescription": "Spanning 27,000 acres from Sandy Hook in New Jersey to Breezy Point in New York City, the park is both the gateway from the ocean into New York Harbor, and the gateway to the National Park Service for...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 40.56536246,
+    "longitude": -73.9171087
+  },
+  "nationalParkInfo": {
+    "parkCode": "gate",
+    "npsId": "BBC5BE3F-E921-40B5-A850-F259D9FAF88C",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gate/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gate/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7183544606",
+    "email": "daphne_yun@nps.gov",
+    "website": "https://www.nps.gov/gate/index.htm",
+    "address": {
+      "line1": "210 New York Avenue",
+      "line2": "",
+      "city": "Staten Island",
+      "state": "NY",
+      "postalCode": "10305"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 9:00PM",
+    "tuesday": "6:00AM - 9:00PM",
+    "wednesday": "6:00AM - 9:00PM",
+    "thursday": "6:00AM - 9:00PM",
+    "friday": "6:00AM - 9:00PM",
+    "saturday": "6:00AM - 9:00PM",
+    "sunday": "6:00AM - 9:00PM",
+    "description": "Includes Bergen Beach, Floyd Bennett Field, Fort Tilden, Frank Charles Park, Hamilton Beach, Jamaica Bay Wildlife Refuge, Canarsie Pier, Jacob Riis Park, North Channel Bridge, Plumb Beach and Spring Creek."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Gateway National Recreation Area includes several separate land areas spread throughout the New York metropolitan area. The New York area experiences four distinct seasons. Temperatures are moderate in the spring and fall, but range from the high 90's during the summer to snow and sleet in winter."
+  },
+  "images": [
+    {
+      "id": "gate-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85156E-1DD8-B71B-0BBB764337412E34.jpg",
+      "title": "You can camp at all three units of Gateway",
+      "altText": "Tent at  Floyd Bennett Field campsite in Gateway's Jamaica Bay unit.",
+      "caption": "You can camp at all three units of Gateway, in the shadow of NYC.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "gate-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8518CD-1DD8-B71B-0B6CEBA11C295B38.jpg",
+      "title": "Enjoying a summer's day at Jacob Riis Park",
+      "altText": "Visitors enjoying the sun and sand at Jacob Riis Park",
+      "caption": "Millions of visitors visit Gateway's beaches every summer.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gate-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C851E18-1DD8-B71B-0BBD48DFDC6DB80D.jpg",
+      "title": "Jamaica Bay Wildlife Refuge",
+      "altText": "The Jamaica Bay Wildlife Refuge Visitor Center",
+      "caption": "The Jamaica Bay Wildlife Refuge is the only wildlife refuge in the National Park Service",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gate-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C852120-1DD8-B71B-0B85070979DC9284.jpg",
+      "title": "The Sandy Hook Lighthouse",
+      "altText": "The Sandy Hook lighthouse and keepers quarters",
+      "caption": "The Sandy Hook Lighthouse is the oldest continuously operating lighthouse in the United States.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gate-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C852619-1DD8-B71B-0B6D168C73AFBBA8.jpg",
+      "title": "Battery Weed",
+      "altText": "Battery Weed is the fort under the Verrazano Narrows Bridge in Staten Island.",
+      "caption": "Battery Weeds guards the entrance to the New York harbor.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gate/index.htm",
+    "directions": "http://www.nps.gov/gate/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Forts",
+    "Maritime",
+    "Military",
+    "US Coast Guard",
+    "Monuments and Memorials",
+    "Urban America",
+    "Wars and Conflicts",
+    "Animals",
+    "Fish",
+    "Dunes",
+    "Natural Sounds",
+    "Scenic Views",
+    "Watersheds",
+    "Wetlands",
+    "Marshes",
+    "National Recreation Area",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

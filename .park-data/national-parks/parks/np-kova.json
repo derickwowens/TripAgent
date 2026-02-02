@@ -1,0 +1,234 @@
+{
+  "id": "np-kova",
+  "name": "Kobuk Valley National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Caribou, sand dunes, the Kobuk River, Onion Portage - just some of the facets of Kobuk Valley National Park. Thousands of caribou migrate through, their tracks crisscrossing sculpted dunes. The Kobuk River is an ancient and current corridor for people and wildlife. For 9000 years, people came to Onion Portage to harvest caribou as they swam the river. Even today, that rich tradition continues.",
+  "shortDescription": "Caribou, sand dunes, the Kobuk River, Onion Portage - just some of the facets of Kobuk Valley National Park. Thousands of caribou migrate through, their tracks crisscrossing sculpted dunes. The Kobuk ...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 67.35631336,
+    "longitude": -159.2002293
+  },
+  "nationalParkInfo": {
+    "parkCode": "kova",
+    "npsId": "691831BF-F280-4E02-BF4A-FF476BC66B23",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kova/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/kova/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9073182230",
+    "email": "wear_webmail@nps.gov",
+    "website": "https://www.nps.gov/kova/index.htm",
+    "address": {
+      "line1": "171 3rd Ave",
+      "line2": "",
+      "city": "Kotzebue",
+      "state": "AK",
+      "postalCode": "99752"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Northwest Arctic Heritage Center is the visitor center for Kobuk Valley National Park.  Since there are no roads in to Kobuk Valley, the visitor center is located in Kotzebue, AK.  From Kotzebue, visitors will charter an air taxi to transport them into the actual national park which is open 24/7 every day of the year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Snow, rain, and freezing temperatures can occur any time of the year. Always travel with good quality rain gear and warm layers. Be especially careful to stay dry. Hypothermia can set in on a windy, wet day, even when it doesn't feel that cold."
+  },
+  "images": [
+    {
+      "id": "kova-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1214-1DD8-B71B-0B00D823BD9BF4CF.jpg",
+      "title": "Kobuk Sand Dunes",
+      "altText": "sun setting on sand dunes",
+      "caption": "The setting sun casts shadows of black spruce on the dunes and colors the water of Ahnewetut Creek a deep blue.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "kova-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9B41FCED-9287-749E-01E2C1A2DFE31A1A.jpg",
+      "title": "Canoe on the Kobuk River",
+      "altText": "A green pack canoe sits on the bank of the Kobuk River. Clouds are mirrored on the water's surface.",
+      "caption": "A quick pause on a canoe trip down the Kobuk River.",
+      "credit": "NPS Photo / Justine Schmidt",
+      "isPrimary": false
+    },
+    {
+      "id": "kova-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A134A-1DD8-B71B-0B3C2789713B6113.jpg",
+      "title": "Mountains as Far as the Eye Can See",
+      "altText": "aerial view of snow capped mountains",
+      "caption": "The peaks of the Baird Mountains stretch far into the distance and are so remote that many of them have not been named.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kova-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9B57B97E-9471-A430-A0233761F8133CE6.jpg",
+      "title": "The Jade Mountains reflected in the Kobuk River",
+      "altText": "The Jade Mountains reflected in the Kobuk River",
+      "caption": "The Jade Mountains reflected in the Kobuk River as seen near Onion Portage.",
+      "credit": "NPS Photo / Annie Carlson",
+      "isPrimary": false
+    },
+    {
+      "id": "kova-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A168D-1DD8-B71B-0B5167863DD39B57.jpg",
+      "title": "Kobuk Locoweed",
+      "altText": "pink flower growing in sand",
+      "caption": "Oxytropis kobukensis (Kobuk Locoweed) is a member of the pea family and adds a splash of pink to the sand dunes. The blossoms have that typical pea/ bean flower shape that many gardeners know.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kova-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A147D-1DD8-B71B-0BCC5182A7F0918A.jpg",
+      "title": "Left Behind",
+      "altText": "Caribou bone sitting in the sand",
+      "caption": "Caribou migrate across the Great Kobuk Sand Dunes, heading north in the summer and south in the fall. Some survive and some don't, which is a reality of life",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kova-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1563-1DD8-B71B-0B76572CC32EBD25.jpg",
+      "title": "Lone Rangifer tarandus",
+      "altText": "Single caribou with antlers in velvet",
+      "caption": "A single caribou of the 240,000+ strong Western Arctic herd on its fall migration south across Kobuk Valley National Park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kova-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9B843EAB-BE9D-AF8A-7D23CF259CD9FCB9.jpg",
+      "title": "A rainbow over Niaktovik Creek",
+      "altText": "Dark skies shadow the horizon. A rainbow is illuminated above Niaktovik Creek",
+      "caption": "Dark skies shadow the horizon. A rainbow is illuminated above Niaktovik Creek.",
+      "credit": "NPS Photo / Amy Martin (2022 Artist in Residence)",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "C06FE528-9671-4EC1-909F-B7D3720A1D89",
+      "name": "Fixed Wing Flying"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kova/index.htm",
+    "directions": "http://www.nps.gov/kova/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Migrations",
+    "Animals",
+    "Arctic",
+    "Dunes",
+    "Night Sky",
+    "Aurora Borealis",
+    "Unique Species",
+    "Rare",
+    "Watersheds",
+    "Wilderness",
+    "National Park",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

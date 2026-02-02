@@ -1,0 +1,167 @@
+{
+  "id": "np-elro",
+  "name": "Eleanor Roosevelt National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Visit the home of Eleanor Roosevelt. Here, Franklin and Eleanor entertained friends, the press, activists, and official state visitors in the relaxed atmosphere of Val-Kill. Explore the Roosevelt saga in the homes of Franklin and Eleanor Roosevelt, the exhibits at the nation’s first Presidential Library, and over a thousand acres of gardens and trails.",
+  "shortDescription": "Visit the home of Eleanor Roosevelt. Here, Franklin and Eleanor entertained friends, the press, activists, and official state visitors in the relaxed atmosphere of Val-Kill. Explore the Roosevelt saga...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 41.76208482,
+    "longitude": -73.89894026
+  },
+  "nationalParkInfo": {
+    "parkCode": "elro",
+    "npsId": "04CB5DB1-522B-4C2C-BB3F-C36361E391E7",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/elro/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/elro/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "845-229-9422",
+    "email": "kevin_oldenburg@nps.gov",
+    "website": "https://www.nps.gov/elro/index.htm",
+    "address": {
+      "line1": "54 Valkill Park Road",
+      "line2": "",
+      "city": "Hyde Park",
+      "state": "NY",
+      "postalCode": "12538"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "Eleanor Roosevelt's Val-Kill Cottage is open seasonally.\nThe grounds, trails, and gardens are open every day except Thanksgiving, Christmas, and New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 40°F to 70°F. Rain is not uncommon. Summer: Temperatures usually range from 70° F to 100° F. Humidity can be high throughout the summer months with periods of rain. Fall: Temperatures usually range from 40° F to 70° F. Peak leaf season is mid-October. Rain is not uncommon. Winter: Temperatures usually range from 30° F to 50°F. Ice, Freezing Rain and Snow are not uncommon."
+  },
+  "images": [
+    {
+      "id": "elro-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7CAE9A2C-B352-222A-CCF3649457EC357F.jpg",
+      "title": "Val-Kill Cottage",
+      "altText": "Val-Kill Cottage in the Summer",
+      "caption": "Val-Kill Cottage",
+      "credit": "NPS Photo / Bill Urbin",
+      "isPrimary": true
+    },
+    {
+      "id": "elro-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A8D74EA7-92B0-F367-16BEFCE757BF5073.jpg",
+      "title": "Stone Cottage at Val-Kill",
+      "altText": "A small fieldstone cottage on a lush lawn with flowering shrubs.",
+      "caption": "The Stone Cottage at Val-Kill serves as the park's Visitor Center.",
+      "credit": "NPS Photo / Frank Futral",
+      "isPrimary": false
+    },
+    {
+      "id": "elro-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A85B75C0-EBB4-06E0-E9A71A9B76C5BC38.jpg",
+      "title": "Val-Kill Park Road",
+      "altText": "A winding road through green fields and shade trees.",
+      "caption": "The entrance drive to Val-Kill winds through a meadow.",
+      "credit": "NPS Photo / Frank Futral",
+      "isPrimary": false
+    },
+    {
+      "id": "elro-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7CE8477B-D4CF-33ED-D43D8B45297CE15C.jpg",
+      "title": "Living Room at Val-Kill",
+      "altText": "A paneled room with comfortable furniture and a baby grand piano.",
+      "caption": "Mrs. Roosevelt's Living Room at Val-Kill Cottage",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elro-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7CFF49AA-DA50-A00A-2CBAC50604D1F940.jpg",
+      "title": "The Screened Porch",
+      "altText": "A stone fireplace enclosed by a screend porch.",
+      "caption": "The Porch at Val-Kill",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elro-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7D0D09BC-C00C-85E9-52A55FF5F187C157.jpg",
+      "title": "Eleanor Roosevelt's Room at Val-Kill",
+      "altText": "A bedroom with walls covered in framed photographs.",
+      "caption": "Mrs. Roosevelt's Room at Val-Kill",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "elro-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AAEE8276-C1A0-6E85-EBD4B2F69CF10C38.jpg",
+      "title": "The Pond",
+      "altText": "A pond with meadow in the background.",
+      "caption": "Val-Kill Pond",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/elro/index.htm",
+    "directions": "http://www.nps.gov/elro/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Women's History",
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,303 @@
+{
+  "id": "np-fomc",
+  "name": "Fort McHenry National Monument and Historic Shrine",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "by the dawn's early light, a large red, white and blue banner? Whose broad stripes and bright stars... were so gallantly streaming...over Fort McHenry! The valiant defense of the fort during the Battle of Baltimore on September 13-14, 1814 inspired Francis Scott Key to write the words that became the U.S. national anthem. The fort's history holds many other stories too, from the Civil War to WWII.",
+  "shortDescription": "by the dawn's early light, a large red, white and blue banner? Whose broad stripes and bright stars... were so gallantly streaming...over Fort McHenry! The valiant defense of the fort during the Battl...",
+  "designation": "National Monument and Historic Shrine",
+  "coordinates": {
+    "latitude": 39.26395314,
+    "longitude": -76.58044165
+  },
+  "nationalParkInfo": {
+    "parkCode": "fomc",
+    "npsId": "B0DE766C-E87F-48BE-A94F-C9D774AD52FD",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fomc/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fomc/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4109624290",
+    "email": "FOMC_Interpretation@nps.gov",
+    "website": "https://www.nps.gov/fomc/index.htm",
+    "address": {
+      "line1": "2400 East Fort Avenue",
+      "line2": "",
+      "city": "Baltimore",
+      "state": "MD",
+      "postalCode": "21230"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Park Grounds and Parking lot: 9:00 a.m. - 5:00 p.m.\n\nStar Fort, Visitor Center, gift shop, and restrooms close 15 minutes before the park closes. Closing times indicate when the gates will be close; all visitors must exit by this time."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Access to the historic zone (where the star fort is located) requires an entrance fee.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "There is no group rate for the entrance fee. All groups must pay $15 per adult. Children in the groups are free, however, they must be accompanied by an adult in the historic zone. Interagency passes are allowed to be used to assist with group entry fees.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "All commercial groups wishing to visitor Fort McHenry NM&HS must first obtain a Commercial Use Authorization (CUA). Groups with an active CUA are subject to the same $15 per person fee to enter the historic zone, however their employees conducting business (tour guides, bus drivers, etc.) are not subject to the entrance fee. Interagency passes may be used to assist with fee payment.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Temperatures and weather in the spring and fall months tend to be mild. Ice, snow, and freezing temperatures can occur during winter. Extreme heat can occur during the summer months. Inclement weather may impact park hours of operation year round. Refer to the park alerts or call ahead to confirm operating hours."
+  },
+  "images": [
+    {
+      "id": "fomc-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8F45A684-F00A-CB5C-85186E42923EFBC1.jpg",
+      "title": "Fort McHenry National Monument and Historic Shrine",
+      "altText": "Fort McHenry",
+      "caption": "Blue Angels fly over Fort McHenry",
+      "credit": "Tim Ervin",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "D99BCDA3-4363-438B-B3A8-06E6EA204C83",
+      "name": "Downhill Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fomc/index.htm",
+    "directions": "http://www.nps.gov/fomc/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Poetry and Literature",
+    "Sculpture",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Commerce",
+    "Trade",
+    "Engineering",
+    "Enslavement",
+    "Forts",
+    "Great Depression",
+    "Incarceration",
+    "Jails and Prisons",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Piracy and Privateering",
+    "Ships and Shipwrecks",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "US Coast Guard",
+    "US Air Force (Army Air Corps)",
+    "Armories",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Presidents",
+    "Reconstruction",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Bridges",
+    "Tunnels",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "American Revolutionary War",
+    "War of 1812",
+    "Mexican War",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Watersheds",
+    "Waterfalls",
+    "Wetlands",
+    "Marshes",
+    "National Monument and Historic Shrine",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

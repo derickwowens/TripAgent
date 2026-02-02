@@ -1,0 +1,138 @@
+{
+  "id": "np-wing",
+  "name": "Wing Luke Museum Affiliated Area",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "region": "pacific",
+  "description": "More than a museum, the Wing is an experience. A chance to truly understand what it was - and is - to be Asian American in the Pacific Northwest. Take a guided tour of a historic hotel and learn the inside story about what makes the local Chinatown-International District unique. Visitors explore thought-provoking exhibitions of real stories, including actor and martial arts master Bruce Lee.",
+  "shortDescription": "More than a museum, the Wing is an experience. A chance to truly understand what it was - and is - to be Asian American in the Pacific Northwest. Take a guided tour of a historic hotel and learn the i...",
+  "designation": "Affiliated Area",
+  "coordinates": {
+    "latitude": 47.59820859,
+    "longitude": -122.3228912
+  },
+  "nationalParkInfo": {
+    "parkCode": "wing",
+    "npsId": "CEC8BD62-9229-4455-ABE8-F4310F4AB623",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wing/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wing/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "206.623.5124",
+    "email": "visit@wingluke.org",
+    "website": "https://www.nps.gov/wing/index.htm",
+    "address": {
+      "line1": "719 South King Street",
+      "line2": "",
+      "city": "Seattle",
+      "state": "WA",
+      "postalCode": "98104"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "For current hours, please see www.wingluke.org/visit/ or call 206.623.5124.\n\nThe Museum is closed New Year’s Day, Juneteenth, July 4th, Christmas Eve, Christmas Day, and occasionally in the case of inclement weather."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Seattle has a temperate climate with average winter temperatures in the 50s and average summer temperatures in the 70s. Overcast skies and light rain are common from October through May."
+  },
+  "images": [
+    {
+      "id": "wing-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81D25A-1DD8-B71B-0B9DAC16CFECEC36.jpg",
+      "title": "Nippon Kan Theatre curtain",
+      "altText": "theatre curtain painted with Japanese characters advertising local businesses",
+      "caption": "Nippon Kan Theatre curtain, painted with logos and ads for local Japanese-American businesses",
+      "credit": "Lindsay Kennedy",
+      "isPrimary": true
+    },
+    {
+      "id": "wing-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81CE2A-1DD8-B71B-0B1714B6C4C5AF73.jpg",
+      "title": "Nippon Kan Theatre curtain detail",
+      "altText": "Japanese characters from advertisements are painted on a theatre curtain",
+      "caption": "Detail of advertisements from the Nippon Kan Theatre curtain that hangs in the museum",
+      "credit": "Lindsay Kennedy",
+      "isPrimary": false
+    },
+    {
+      "id": "wing-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81CB2F-1DD8-B71B-0B90378FD5C9894B.jpg",
+      "title": "\"Letter Cloud\"",
+      "altText": "a mobile of letters written on white paper hangs in the museum lobby",
+      "caption": "“Letter Cloud,” by Erin Shie Palmer, is made up of letters written by immigrants to family and friends",
+      "credit": "Dean Wong",
+      "isPrimary": false
+    },
+    {
+      "id": "wing-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81CC78-1DD8-B71B-0B5AD50A668E5314.jpg",
+      "title": "\"Letter Cloud\"",
+      "altText": "a mobile of letters written on white paper hangs in the museum lobby",
+      "caption": "“Letter Cloud,” by Erin Shie Palmer, is made up of letters written by immigrants to family and friends",
+      "credit": "Lindsay Kennedy",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wing/index.htm",
+    "directions": "http://www.nps.gov/wing/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Asian American Heritage",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Affiliated Area",
+    "WA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

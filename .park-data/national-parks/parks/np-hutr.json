@@ -1,0 +1,144 @@
+{
+  "id": "np-hutr",
+  "name": "Hubbell Trading Post National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Wóshdę́ę́, please come in where the squeaky wooden floors greet your entry into the oldest operating Trading Post on the Navajo Nation. As your eyes adjust to the dim light in the \"bullpen\", you'll find you've just entered a mercantile. Hubbell's in Ganado has been selling goods and trading Native American Art since 1878. Discover Hubbell Trading Post NHS, sheep, rugs, jewelry and so much more...",
+  "shortDescription": "Wóshdę́ę́, please come in where the squeaky wooden floors greet your entry into the oldest operating Trading Post on the Navajo Nation. As your eyes adjust to the dim light in the \"bullpen\", you'll fi...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 35.70727324,
+    "longitude": -109.5599515
+  },
+  "nationalParkInfo": {
+    "parkCode": "hutr",
+    "npsId": "E2A4E070-D68B-42D6-8353-4438ED2F43AB",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hutr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hutr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9287553475",
+    "email": "HUTR_ranger_activities@nps.gov",
+    "website": "https://www.nps.gov/hutr/index.htm",
+    "address": {
+      "line1": "1/2 mile west of Hwy 191/264",
+      "line2": "",
+      "city": "Ganado",
+      "state": "AZ",
+      "postalCode": "86505-0150"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:00PM",
+    "tuesday": "8:00AM - 5:00AM",
+    "wednesday": "8:00AM - 5:00AM",
+    "thursday": "8:00AM - 5:00PM",
+    "friday": "8:00AM - 5:00AM",
+    "saturday": "8:00AM - 5:00PM",
+    "sunday": "8:00AM - 5:00PM",
+    "description": "Winter park operational hours is 8:00 A.M. to 5:00 P.M. with visitor center opening at 8:00 A.M.\nTrading Post opens and closes with Park Entrance hours. Winter hours generally begin during October and end in May of each year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring is normally windy. Summer can reach into high 90s with thunderstorms beginning in July into August. Fall is cooling off. Last couple of Winters have been dry and with a couple of inches of snow."
+  },
+  "images": [
+    {
+      "id": "hutr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C91D7-1DD8-B71B-0B54C08912784B29.jpg",
+      "title": "Navajo-Churro ewe with lambs",
+      "altText": "Spring lambs with their Navajo-Churro ewe.",
+      "caption": "Each spring Navajo-Churro ewes give birth to their lambs at Hubbell Trading Post.",
+      "credit": "NPS Photo/LHenio",
+      "isPrimary": true
+    },
+    {
+      "id": "hutr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C9341-1DD8-B71B-0B78493AB15560C0.jpg",
+      "title": "Front of Trading Post",
+      "altText": "Steer skull greets visitors.",
+      "caption": "Above the entry way into the trading post, there is a sun-bleached steer skull.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hutr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C850365-1DD8-B71B-0BA8B449AE6715F7.jpg",
+      "title": "Hubbell Family Home",
+      "altText": "Inside the Hubbell Family home, looking south.",
+      "caption": "Thousands of visitors have visited the Hubbell Family home in the past 50 years.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hutr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8504D2-1DD8-B71B-0B8FC943198A3197.jpg",
+      "title": "Hubbell Trading Post bullpen",
+      "altText": "Bullpen inside the trading post.",
+      "caption": "Thousands of visitors and community members walk through the bullpen of the trading post.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hutr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85061A-1DD8-B71B-0B901A9F8D676603.jpg",
+      "title": "Interpretive exhibits inside the Visitor Center",
+      "altText": "Interpretive exhibit has Mr. JL Hubbell holding his grand daughter LaCharles.",
+      "caption": "New interpretive exhibits on the family, trading post, and weaving.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hutr/index.htm",
+    "directions": "http://www.nps.gov/hutr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Commerce",
+    "Trade",
+    "Native American Heritage",
+    "National Historic Site",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

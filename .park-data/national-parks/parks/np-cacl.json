@@ -1,0 +1,114 @@
+{
+  "id": "np-cacl",
+  "name": "Castle Clinton National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Located at the southern tip of Manhattan Island, Castle Clinton stands where New York City began, and represents not only the city’s growth, but the growth of a nation. Initially intended to prevent a British invasion in 1812, the fortification has transformed over the years to welcome theatergoers, immigrants, sightseers, and now, millions of visitors to New York Harbor.",
+  "shortDescription": "Located at the southern tip of Manhattan Island, Castle Clinton stands where New York City began, and represents not only the city’s growth, but the growth of a nation. Initially intended to prevent a...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.70347795,
+    "longitude": -74.01680558
+  },
+  "nationalParkInfo": {
+    "parkCode": "cacl",
+    "npsId": "061F7BA2-8C57-4471-A31E-302AD99E3F6A",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cacl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cacl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2123447220",
+    "email": "cacl_info@nps.gov",
+    "website": "https://www.nps.gov/cacl/index.htm",
+    "address": {
+      "line1": "Battery Park",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10004"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:45AM - 5:00PM",
+    "tuesday": "7:45AM - 5:00PM",
+    "wednesday": "7:45AM - 5:00PM",
+    "thursday": "7:45AM - 5:00PM",
+    "friday": "7:45AM - 5:00PM",
+    "saturday": "7:45AM - 5:00PM",
+    "sunday": "7:45AM - 5:00PM",
+    "description": "Castle Clinton is open daily except Thanksgiving day and Christmas Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Castle Clinton National Monument has a variety of weather. New York City has hot summers and cold winters. Spring can have heavy rains and Autumn can be cool. http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&lat=40.7198&lon=-73.993#.Vqj8OvkrJlZ"
+  },
+  "images": [
+    {
+      "id": "cacl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8541DF-1DD8-B71B-0BFFEA05DAED37D6.jpg",
+      "title": "Castle Clinton National Monument",
+      "altText": "Castle Clinton NM Entrance",
+      "caption": "Castle Clinton stands where New York City began.",
+      "credit": "NPS Photo/Laura Brennan",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cacl/index.htm",
+    "directions": "http://www.nps.gov/cacl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Forts",
+    "Immigration",
+    "Maritime",
+    "Coastal Defenses",
+    "Military",
+    "Music",
+    "Urban America",
+    "Wars and Conflicts",
+    "War of 1812",
+    "National Monument",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

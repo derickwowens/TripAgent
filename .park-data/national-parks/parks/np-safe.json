@@ -1,0 +1,176 @@
+{
+  "id": "np-safe",
+  "name": "Santa Fe National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "You can almost hear the whoops and cries of \"All's set!\" as trail hands hitched their oxen to freight wagons carrying cargo between western Missouri and Santa Fe, New Mexico. Follow the Santa Fe National Historic Trail through five states and you'll find adventure and evidence of past travelers who made this remarkable trip before you!",
+  "shortDescription": "You can almost hear the whoops and cries of \"All's set!\" as trail hands hitched their oxen to freight wagons carrying cargo between western Missouri and Santa Fe, New Mexico. Follow the Santa Fe Natio...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 37.7276522226,
+    "longitude": -99.921969227
+  },
+  "nationalParkInfo": {
+    "parkCode": "safe",
+    "npsId": "2B14155F-0E31-43F3-8B87-8B1DA6FA0BF7",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/safe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/safe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/safe/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7, & 8",
+      "line2": "Santa Fe National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "There are many places of history and commemoration on the Santa Fe National Historic Trail to visit. Museums, interpretive centers, and historic sites provide information and interpretation. Please contact each site before you go to obtain current information on closures, changes in hours, and fees."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of the Santa Fe National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: weather.gov"
+  },
+  "images": [
+    {
+      "id": "safe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5580C726-C882-0DDF-0171D443948EB5F4.jpg",
+      "title": "Cimarron National Grassland",
+      "altText": "Warm light from the setting sun gives an orange glow to a rock bluff overlooking a grassland.",
+      "caption": "Visit Cimarron National Grassland to experience the Santa Fe Trail.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "safe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5591CACE-D5FE-92A5-77E2904F1E7F5AD9.jpg",
+      "title": "Neosho River Crossing, Council Grove",
+      "altText": "A wide river with green grass parks on the side.",
+      "caption": "The Neosho River in Council Grove was an important crossing on the trail.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "safe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E722D-1DD8-B71B-0B1689F2366B4E44.jpg",
+      "title": "Bent's Old Fort National Historic Site, La Junta, Colorado",
+      "altText": "emigrant wagons pulled by oxen and horses cross the prairie with people walking alongside",
+      "caption": "After spending weeks crossing hundreds of miles of lonely and desolate prairie, a trading post appeared: a welcome respite where travelers could repair their wagon and trade for coffee, sugar, blankets, and ammunition.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "safe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E737A-1DD8-B71B-0B11950104991FA3.jpg",
+      "title": "Wagon Mound, Mora County, New Mexico",
+      "altText": "desert landscape with a mountain that looks like a wagon from a distance, verdant green grasses",
+      "caption": "Wagon Mound was a landmark on the Santa Fe Trail. Coming from Raton, New Mexico, travelers looked for this wagon-like hill to know that they were close to Santa Fe. Leave Interstate 25 at the village of Wagon Mound in Mora County to find this landmark.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "safe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/55A8E9A9-D7BB-3F66-8EE743A527AE5FED.jpg",
+      "title": "Fort Union, New Mexico",
+      "altText": "A stone path leads into the distance next to adobe ruins.",
+      "caption": "The Santa Fe Trail traverses through Fort Union.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/safe/index.htm",
+    "directions": "http://www.nps.gov/safe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Photography",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Forts",
+    "Military",
+    "Native American Heritage",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Spanish-American War",
+    "Westward Expansion",
+    "Grasslands",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "National Historic Trail",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

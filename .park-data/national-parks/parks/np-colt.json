@@ -1,0 +1,150 @@
+{
+  "id": "np-colt",
+  "name": "Coltsville National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "CT",
+  "stateName": "Connecticut",
+  "region": "northeast",
+  "description": "When Samuel Colt started his Hartford factory on the banks of the Connecticut River in 1847, it followed years of mismanagement and failure. Soon, demand for Colt's revolver would change his fortunes and the Colt empire was born. Following Colt's untimely death in 1862, his wife, Elizabeth Colt, would lead the company to its legendary status, and influence Hartford for over 40 years.",
+  "shortDescription": "When Samuel Colt started his Hartford factory on the banks of the Connecticut River in 1847, it followed years of mismanagement and failure. Soon, demand for Colt's revolver would change his fortunes ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.4677505493,
+    "longitude": -73.203666687
+  },
+  "nationalParkInfo": {
+    "parkCode": "colt",
+    "npsId": "42E23CFA-4849-43D1-B9C7-77509C0AB85B",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/colt/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/colt/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(860) 500-6078",
+    "email": "colt@nps.gov",
+    "website": "https://www.nps.gov/colt/index.htm",
+    "address": {
+      "line1": "120 Huyshope Ave",
+      "line2": "",
+      "city": "Hartford",
+      "state": "CT",
+      "postalCode": "06106"
+    }
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Hartford experiences all four seasons. It is typically hot in the summer and cold in the winter with a pleasant spring and autumn."
+  },
+  "images": [
+    {
+      "id": "colt-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C06E016C-F1BC-766E-AB4A5E99E2FF8F50.jpg",
+      "title": "Colt Armory Complex",
+      "altText": "Blue dome atop a large factory behind a river",
+      "caption": "The Colt Armory Complex next to the CT River with its signature Blue Onion Dome",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "colt-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EB096218-ED23-E8AF-49E048261B1677DF.jpg",
+      "title": "Coltsville Dome and the Church of the Good Shepherd",
+      "altText": "The Blue Onion Dome of the Armory and the spire of the Church against a cloudy blue sky.",
+      "caption": "The Blue Onion Dome was rebuilt after the fire in February of 1864. Today it graces the skyline of Hartford, just as the the Church of the Good Shepherd does, reminding those who see if of the Colts and their legacy.",
+      "credit": "Nick Caito",
+      "isPrimary": false
+    },
+    {
+      "id": "colt-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EB2CF528-E321-D96B-CD91D782D29281DE.jpg",
+      "title": "The Church of the Good Shepherd",
+      "altText": "A church and trees against the backdrop of a bight blue sky and clouds.",
+      "caption": "The Church of the Good Shepherd was built by Elizabeth Colt as memorial to her husband, Samuel Colt, and their three children who passed in infancy. It was designed by Edward Tuckerman Potter and dedicate in 1869.",
+      "credit": "Nick Caito",
+      "isPrimary": false
+    },
+    {
+      "id": "colt-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EAE88851-BE73-F97E-6FF7828FA3B27823.jpg",
+      "title": "Armsmear",
+      "altText": "A tan and brown building, built in the Italian Villa style with rounded arches and balconies.",
+      "caption": "Armsmear was the family home of Samuel and Elizabeth Colt built between 1856 and 1857. It would remain the family home, until the death of Elizabeth in 1905. Today it is a non-profit organization that provides housing for senior women of limited means.",
+      "credit": "Nick Caito",
+      "isPrimary": false
+    },
+    {
+      "id": "colt-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EB5CB0A0-C288-F7F4-51A32A9B0F833A31.jpeg",
+      "title": "The Caldwell Memorial Parish House",
+      "altText": "A tan and brown building with numerous design elements meant resemble a ship, against a blue sky.",
+      "caption": "The Caldwell Memorial Parish House was built in memory of Caldwell Colt, Elizabeth and Samuel's son. It was designed by Edward Tuckerman Potter and dedicated in 1896.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colt-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EC0063F5-ADB1-DDF2-DC8EC209E0D20BA1.jpg",
+      "title": "The Colt Carriage House",
+      "altText": "A red brown building with a wooden enclosed spaced in front of trees on a cloudy day.",
+      "caption": "The Carriage House is located in Colt Park next to the Gardner House.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colt-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EC838CC3-A3A8-8741-8BB4EF01634AFC88.jpg",
+      "title": "Samuel Colt Statue",
+      "altText": "A memorial statue of a young and adult Samuel Colt",
+      "caption": "The statute was built as a memorial to Samuel by his wife, Elizabeth Colt. It was dedicated in 1906 after her passing in 1905.",
+      "credit": "Nick Caito",
+      "isPrimary": false
+    },
+    {
+      "id": "colt-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/21C00959-C6CD-FA80-FA566997E106B193.jpg",
+      "title": "Samuel Colt Statue",
+      "altText": "A statue of a young and an adult Samuel Colt in front of a tree with a cloudy sky.",
+      "caption": "The statue was built as a memorial to Samuel Colt by his wife, Elizabeth Colt. It was dedicated in 1906 after her passing in 1905. The statue serves as a reminder the role the Colts had in the development of the City of Hartford.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colt-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/21D8D4BC-C880-F883-303F67A65143C1C1.jpeg",
+      "title": "Coltsville Worker Housing",
+      "altText": "A white stone building with multiple windows and three chimneys with green grass and a black fence.",
+      "caption": "Twenty worker houses were built behind the Colt Firearm Armory in 1856. These houses provided a living space for the workers of the Colt Factory.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/colt/index.htm",
+    "directions": "http://www.nps.gov/colt/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Industry",
+    "Factories",
+    "Military",
+    "Armories",
+    "Wars and Conflicts",
+    "National Historical Park",
+    "CT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

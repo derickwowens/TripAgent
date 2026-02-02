@@ -1,0 +1,155 @@
+{
+  "id": "np-edis",
+  "name": "Thomas Edison National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NJ",
+  "stateName": "New Jersey",
+  "region": "northeast",
+  "description": "Today, the brick buildings on Main Street in West Orange, NJ seem quiet, betraying little evidence of the research, development, and innovation of their heyday. Visitors can step back in time to Thomas Edison’s home and laboratory, when machines were run by belts and pulleys and music was played on phonographs. Discover where America’s greatest inventor changed our world forever.",
+  "shortDescription": "Today, the brick buildings on Main Street in West Orange, NJ seem quiet, betraying little evidence of the research, development, and innovation of their heyday. Visitors can step back in time to Thoma...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 40.78549896,
+    "longitude": -74.23821139
+  },
+  "nationalParkInfo": {
+    "parkCode": "edis",
+    "npsId": "BFE248C8-40CD-4DC8-AC07-AE61A0D81FF3",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/edis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/edis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "973-736-0550",
+    "email": "edis.interpretation@gmail.com",
+    "website": "https://www.nps.gov/edis/index.htm",
+    "address": {
+      "line1": "211 Main Street",
+      "line2": "",
+      "city": "West Orange",
+      "state": "NJ",
+      "postalCode": "07052"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "All visitors must go to the Laboratory Complex first to obtain their entry pass and Glenmont Grounds pass. (Glenmont is currently only open on Saturday and Sunday)"
+  },
+  "fees": [
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "THIS GUIDED WALKING TOUR IS FOR Elementary, Middle, and College Groups to learn about Thomas Edison’s West Orange Laboratory as a working invention factory where ideas became products, and those products became industries we all enjoy today.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Children 15 and under free of charge. Visitors may pay the fee on the day of their visit at the visitor center, or may choose to pay it online via Recreation.gov. Visitors to Glenmont and the Edison home must also pay this entrance fee. Credit or debt card payments only.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring and Fall weather can be cool, while summer is usually warm and humid. Winter is frequently snowy and cold. It is recommended that visitors dress for the weather. Visitors may need jackets or rain gear as they will be walking between buildings as they tour the park during inclement weather. Please keep any rain gear/umbrellas with you during your visit."
+  },
+  "images": [
+    {
+      "id": "edis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81E2B0-1DD8-B71B-0B55C38EB2E224A5.jpg",
+      "title": "Glenmont - Home of Thomas Edison",
+      "altText": "Large salmon colored Victorian mansion with green lawn and blue sky",
+      "caption": "Thomas Edison purchased Glenmont as a wedding present for his wife Mina in 1886, for the cost of $125,000 USD.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "edis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81E418-1DD8-B71B-0BC491FC962D191C.jpg",
+      "title": "Heavy Machine Shop at the Edison Laboratory Complex",
+      "altText": "Large work space room with machines connected to belts and pullies",
+      "caption": "One of main machine shops, where Thomas Edison and his staff worked on research and development, prototypes, and products.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "edis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81E5DB-1DD8-B71B-0BE0C40555D35573.jpg",
+      "title": "Glenmont Garage",
+      "altText": "Cream colored, two story cement building surrounded by large trees",
+      "caption": "Thomas Edison's poured concrete garage houses both electric and gas powered vehicles belonging to the Edison family.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "edis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81E760-1DD8-B71B-0BDD84F26F839FA7.jpg",
+      "title": "Park Entrance",
+      "altText": "Small red building next to large brick building with a water tower in the background.",
+      "caption": "Just as Thomas Edison did every morning, visitors can walk in his footsteps by entering the laboratory complex's iron main gate.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "edis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81E919-1DD8-B71B-0B2945F0D219EBCF.jpg",
+      "title": "Replica Black Maria",
+      "altText": "Large black building covered in tar paper surrounded by a barrier fence",
+      "caption": "The Black Maria was the first building built for the recording of motion pictures. This exact replica of the original was built as a movie set for the film \"Edison the Man\", starring Spencer Tracy, in 1954.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/edis/index.htm",
+    "directions": "http://www.nps.gov/edis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Industry",
+    "Factories",
+    "Music",
+    "Science, Technology and Innovation",
+    "Tragic Events",
+    "Catastrophic Fires",
+    "Wars and Conflicts",
+    "World War I",
+    "Geothermal",
+    "National Historical Park",
+    "NJ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

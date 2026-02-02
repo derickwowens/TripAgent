@@ -1,0 +1,167 @@
+{
+  "id": "np-hofr",
+  "name": "Home Of Franklin D Roosevelt National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Home to the 32nd and longest-serving president of the United States, Franklin D. Roosevelt returned to Hyde Park often, drawing on this place to renew his spirit during times of personal and political crisis. Explore the Roosevelt saga in the homes of Franklin and Eleanor Roosevelt, the exhibits at the nation’s first Presidential Library, and over a thousand acres of gardens and trails.",
+  "shortDescription": "Home to the 32nd and longest-serving president of the United States, Franklin D. Roosevelt returned to Hyde Park often, drawing on this place to renew his spirit during times of personal and political...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 41.76639758,
+    "longitude": -73.92516857
+  },
+  "nationalParkInfo": {
+    "parkCode": "hofr",
+    "npsId": "BBA0A580-E05B-42DD-A64F-7C6F958091C5",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hofr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hofr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "845-229-5320",
+    "email": "kevin_oldenburg@nps.gov",
+    "website": "https://www.nps.gov/hofr/index.htm",
+    "address": {
+      "line1": "114 Estates Lane",
+      "line2": "",
+      "city": "Hyde Park",
+      "state": "NY",
+      "postalCode": "12538"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:30AM - 3:30PM",
+    "tuesday": "9:30AM - 3:30PM",
+    "wednesday": "9:30AM - 3:30PM",
+    "thursday": "9:30AM - 3:30PM",
+    "friday": "9:30AM - 3:30PM",
+    "saturday": "9:30AM - 3:30PM",
+    "sunday": "9:30AM - 3:30PM",
+    "description": "Tours of FDR's home are offered daily.  Tour times change seasonally."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entrance to the Home of FDR is by guided tour only.  Tickets are sold on a first come, first served basis.  There are no advanced reservations for individuals.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "The Franklin D. Roosevelt Presidential Library and Museum is open 7 days a week, from 9:00 a.m. to 5:00 p.m. (NOV-MAR) and 9:00 a.m. to 6:00 p.m. (APR-OCT). Online tickets may be purchased at the link below. You will receive an email confirmation after making a purchase (be sure to check your SPAM folder).  Bring this confirmation -- printed or on smart device -- as proof of purchase.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 40°F to 70°F. Rain is not uncommon. Summer: Temperatures usually range from 70° F to 100° F. Humidity can be high throughout the summer months with periods of rain. Fall: Temperatures usually range from 40° F to 70° F. Peak leaf season is mid-October. Rain is not uncommon. Winter: Temperatures usually range from 30° F to 50°F. Ice, Freezing Rain and Snow are not uncommon."
+  },
+  "images": [
+    {
+      "id": "hofr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/236415B1-F65A-709B-C946C5447868BB66.jpg",
+      "title": "Springwood",
+      "altText": "A stucco and fieldstone house with white trim and circular portico.",
+      "caption": "Springwood, birthplace and home of Franklin D. Roosevelt.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "hofr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F842E1A-A485-9411-3E46BD32361A8F77.jpg",
+      "title": "View of the Hudson Highlands",
+      "altText": "A vast lawn with apple orchard and mountain range in the distance.",
+      "caption": "A view toward the Hudson Highlands from the south lawn at Springwood.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hofr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1F5D8BBB-A031-F720-E20995D7067F39CE.jpg",
+      "title": "Springwood in the Snow",
+      "altText": "A stucco house with wood portico surrounded by a snowy lawn.",
+      "caption": "Springwood in winter.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hofr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1FBD8248-FE0B-4795-B1473CC625C159FA.jpg",
+      "title": "The Living Room at Springwood",
+      "altText": "A richly furnished room with bookcases and fireplace with portrait hanging above.",
+      "caption": "The living room at Springwood.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hofr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1FA52D78-E0FE-B80B-4434E34812B9B643.jpg",
+      "title": "East Terrace of Springwood",
+      "altText": "A large stucco house with white wood portico and white balustrade.",
+      "caption": "The west terrace, or main entrance, to Springwood.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hofr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1FD28FE2-0183-CE14-1678651AA8F4359D.jpg",
+      "title": "The Marble Headstone Marking Franklin and Eleanor Roosevelt's Burial Site",
+      "altText": "A marble stone carved with the names of Franklin D. Roosevelt and Eleanor Roosevelt on a green lawn.",
+      "caption": "The burial site of Franklin and Eleanor Roosevelt in the family rose garden.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hofr/index.htm",
+    "directions": "http://www.nps.gov/hofr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Presidents",
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

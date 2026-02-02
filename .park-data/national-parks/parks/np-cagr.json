@@ -1,0 +1,187 @@
+{
+  "id": "np-cagr",
+  "name": "Casa Grande Ruins National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "An Ancestral Sonoran Desert People's farming community and \"Great House\" are preserved at Casa Grande Ruins. Whether a gathering place for people or simply a waypoint marker in an extensive system of canals and trading partners, the structures are a large part of the story of this site. Explore the history and stories of an extended network of communities and irrigation canals.",
+  "shortDescription": "An Ancestral Sonoran Desert People's farming community and \"Great House\" are preserved at Casa Grande Ruins. Whether a gathering place for people or simply a waypoint marker in an extensive system of ...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 32.99702582,
+    "longitude": -111.5325383
+  },
+  "nationalParkInfo": {
+    "parkCode": "cagr",
+    "npsId": "FF6B2CDF-10F5-4A7F-9437-74C1E7104C65",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cagr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cagr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5207233172",
+    "email": "cagr_ranger_activities@nps.gov",
+    "website": "https://www.nps.gov/cagr/index.htm",
+    "address": {
+      "line1": "1100 W. Ruins Drive",
+      "line2": "",
+      "city": "Coolidge",
+      "state": "AZ",
+      "postalCode": "85128"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "The monument is open 7 days a week, with the exception of being closed Juneteenth, Independence Day, Thanksgiving, and Christmas. \n\nThe gate closes 15 minutes prior to closing, with access for exiting the park still available on the outgoing side."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer daytime temperatures frequently exceed 100 degrees F. Winter temperatures range from the 60's to the 80's F. Spring and fall are warm and dry, with highs in the 80's and 90's F. During summer months, be prepared for hot temperatures. Protective clothing, hats, sunscreen and personal water containers are highly recommended. BE AWARE: Walls of dirt and debris, usually miles wide and thousands of feet high, are pushed across dry desert terrain by high winds, causing dust to engulf highways."
+  },
+  "images": [
+    {
+      "id": "cagr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D9776-1DD8-B71B-0B4D6AE7F16F082E.jpg",
+      "title": "Great House",
+      "altText": "eathern building under modern roof structure",
+      "caption": "The Great House at Casa Grande Ruins has existed for over 600 years.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cagr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D9904-1DD8-B71B-0B3C8ECB25C6B23E.jpg",
+      "title": "Great House from the South",
+      "altText": "earthern ruins including the Great House and other parts",
+      "caption": "A highlight of Compound A is the Great House but it is not the only earthern building to intrigue visitors.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cagr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D9C42-1DD8-B71B-0B8517554C3471EE.jpg",
+      "title": "Great House in the Sonoran Desert",
+      "altText": "earthern Great House with its roof among desert plants",
+      "caption": "The Great House at Casa Grande Ruins is a sentinel of the desert.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cagr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D9E06-1DD8-B71B-0BB8059CC583426B.jpg",
+      "title": "Morning from the Northeast",
+      "altText": "earthern Great House standing out in the Sonoran Desert plants",
+      "caption": "The Great House at Casa Grande may have been an orientation point for travelers and traders.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cagr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D9FC6-1DD8-B71B-0B202381A00477C5.jpg",
+      "title": "Historic Sign",
+      "altText": "historic copper sign with Great House and saguaro flanking",
+      "caption": "The park's historic copper sign was relocated with roadway changes, and now sits near the visitor center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cagr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DA145-1DD8-B71B-0B64585CAF0B63B2.jpg",
+      "title": "Actors Recreating Jewelry",
+      "altText": "child, adult female, adult male American Indian actors in costume making jewelry in movie shoot",
+      "caption": "In this scene from the park movie, actors demonstrate jewelry making as done in ancestral times.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cagr/index.htm",
+    "directions": "http://www.nps.gov/cagr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Explorers and Expeditions",
+    "Great Depression",
+    "Music",
+    "Native American Heritage",
+    "Social Movements",
+    "Conservation Movement",
+    "Transportation",
+    "Canals",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

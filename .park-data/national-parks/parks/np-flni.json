@@ -1,0 +1,170 @@
+{
+  "id": "np-flni",
+  "name": "Flight 93 National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "On Tuesday morning, September 11, 2001, the U.S. came under attack when four commercial airliners were hijacked and used to strike targets on the ground. Nearly 3,000 people tragically lost their lives. Because of the actions of the 40 passengers and crew aboard one of the planes, Flight 93, the attack on the U.S. Capitol was thwarted.",
+  "shortDescription": "On Tuesday morning, September 11, 2001, the U.S. came under attack when four commercial airliners were hijacked and used to strike targets on the ground. Nearly 3,000 people tragically lost their live...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 40.06061476,
+    "longitude": -78.89456905
+  },
+  "nationalParkInfo": {
+    "parkCode": "flni",
+    "npsId": "CA3ABD4B-B2BB-4949-9705-60CADB175FC4",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/flni/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/flni/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8148936322",
+    "email": "flni_superintendent@nps.gov",
+    "website": "https://www.nps.gov/flni/index.htm",
+    "address": {
+      "line1": "6424 Lincoln Highway",
+      "line2": "",
+      "city": "Stoystown",
+      "state": "PA",
+      "postalCode": "15563"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Park grounds and trails are open 7 days a week, 365 days a year, from sunrise to sunset. Harsh winter weather may result in delayed openings and closures. Occasionally, the gates may be closed, prohibiting entrance to the grounds, when adverse weather occurs or is predicted, to allow road crews to work safely to clear all roads within the national memorial. Call 814-893-6585 for weather-related updates."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Fall-Winter Cooler weather starts in September with warm days and cool nights. The first snowfall of the season occurs by mid-October and extends through late March to mid-April. Daytime temperatures range in the mid-20s to 30s, with periodic warming in the 40s and 50s. The average annual snowfall is approximately 80 inches for Somerset County. Spring-Summer May is more predictable for warmer weather with daytime temperatures in the 60s and 70s. July and August are also mild with highs in the 80s-90s"
+  },
+  "images": [
+    {
+      "id": "flni-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85D857-1DD8-B71B-0BEB65F3AD1A3466.jpg",
+      "title": "Wildflower field at the Memorial Plaza at the crash site",
+      "altText": "Field of white and yellow wildflowers with a white wall in the distance and blue sky above.",
+      "caption": "Wildflower field at the Memorial Plaza at the crash site",
+      "credit": "NPS/Brendan Wilson",
+      "isPrimary": true
+    },
+    {
+      "id": "flni-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0A7DF941-EFE4-1A34-F3BC6DA004CC105E.jpg",
+      "title": "Wall of Names at the Memorial Plaza at the crash site",
+      "altText": "A white marble wall with names engraved on the the walls and the Ceremonial Gate. Blue sky above.",
+      "caption": "Wall of Names at the Memorial Plaza at the crash site",
+      "credit": "NPS/Courtney Claycomb",
+      "isPrimary": false
+    },
+    {
+      "id": "flni-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/04B92119-CFAE-61AB-5B200ECBAE73814B.jpg",
+      "title": "Tower of Voices",
+      "altText": "Wildflower and tall grass with the Tower of Voices behind.",
+      "caption": "The Tower of Voices is the world's tallest chime structure.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "flni-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85D65B-1DD8-B71B-0B159FDB3CF53843.jpg",
+      "title": "Entrance to the Visitor Center",
+      "altText": "Tall gray walls with a black metal overhang and glass walls",
+      "caption": "Entrance to the Visitor Center",
+      "credit": "NPS Photo/Brenda Schwartz",
+      "isPrimary": false
+    },
+    {
+      "id": "flni-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/10BAD632-AD12-B21C-C9DAC330F7193A67.jpg",
+      "title": "Memorial Gateway Entrance",
+      "altText": "The memorial entrance sign with wilflowers.",
+      "caption": "The Gateway Entrance to Flight 93 with wildflowers.",
+      "credit": "NPS Photo/Courtney Claycomb",
+      "isPrimary": false
+    },
+    {
+      "id": "flni-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85D548-1DD8-B71B-0B8157AABD7A0D42.jpg",
+      "title": "Visitor Center",
+      "altText": "Tall gray walls with a gap and black pathway leading to the gap",
+      "caption": "Flight Path Walkway and Visitor Center",
+      "credit": "NPS/Brenda Schwartz",
+      "isPrimary": false
+    },
+    {
+      "id": "flni-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0708B1D0-AAC3-3C30-9A8BEA556F9B4FB5.jpg",
+      "title": "View of the Memorial Plaza from the Flight Path Overlook",
+      "altText": "Long glass panel with view of a long black wall and set of white walls in a field below.",
+      "caption": "View of the Memorial Plaza from the Flight Path Overlook",
+      "credit": "NPS/Courtney Claycomb",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/flni/index.htm",
+    "directions": "http://www.nps.gov/flni/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Monuments and Memorials",
+    "Tragic Events",
+    "Forests and Woodlands",
+    "National Memorial",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

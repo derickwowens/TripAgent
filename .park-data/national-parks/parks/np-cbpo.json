@@ -1,0 +1,155 @@
+{
+  "id": "np-cbpo",
+  "name": "Chesapeake Bay",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Over 41 million acres are connected through the waters that flow to and through Chesapeake Bay. The National Park Service strives to connect people to the opportunities and adventures throughout the watershed. Inspiring stewardship across this vast region supports recreation, business, tourism, learning, and a thriving natural resource for all to enjoy.",
+  "shortDescription": "Over 41 million acres are connected through the waters that flow to and through Chesapeake Bay. The National Park Service strives to connect people to the opportunities and adventures throughout the w...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.971601,
+    "longitude": -76.483355
+  },
+  "nationalParkInfo": {
+    "parkCode": "cbpo",
+    "npsId": "25554F74-A4AB-4C49-9071-341F00F0DAB8",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cbpo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/chba/planyourvisit/directions-and-transportation.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4102602470",
+    "email": "chesapeake_info@nps.gov",
+    "website": "https://www.nps.gov/cbpo/index.htm",
+    "address": {
+      "line1": "1750 Forest Drive",
+      "line2": "Suite 140",
+      "city": "Annapolis",
+      "state": "MD",
+      "postalCode": "21401"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "All Park Hours above refers to the core hours the Chesapeake Bay Program Office is open. This program office manages the National Park Service's responsibilities under the Chesapeake Bay Initiative and the Chesapeake Gateways & Water Trails Network. \n\nThe office core hours are from 9 am to 4 pm Monday through Friday. The office is closed on federal holidays. Quite frequently, the office is open for business at least one hour earlier and one hour later than core hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Annapolis, Maryland has a warm humid temperate climate with hot summers and no dry season. Over the course of a year, the temperature typically varies from 29°F to 86°F and is rarely below 19°F or above 91°F. The warm season lasts from May 30 to September 18 with an average daily high temperature above 77°F. The cold season lasts from November 29 to March 4 with an average daily high temperature below 50°F."
+  },
+  "images": [
+    {
+      "id": "cbpo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C825EB4-1DD8-B71B-0BCF3FF1FE0211DA.jpg",
+      "title": "Cape Charles",
+      "altText": "A view of docks and boats in the waterside town of Cape Charles VA",
+      "caption": "Cape Charles on Virginia's lower Eastern Shore is a bayside gem with many opportunities for visitors to enjoy the water.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cbpo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C826015-1DD8-B71B-0B3CDF09AEBFA11E.jpg",
+      "title": "Calvert Cliffs",
+      "altText": "A family walks along the beach searching for fossils at Calvert Cliffs.",
+      "caption": "Calvert Cliffs is a well known destination for fossil hunting.",
+      "credit": "NPS Photo / Middleton Evans",
+      "isPrimary": false
+    },
+    {
+      "id": "cbpo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C826312-1DD8-B71B-0B699076B0C70998.jpg",
+      "title": "Great Falls",
+      "altText": "A series of waterfalls and rocky conditions show the fall line on the Potomac River",
+      "caption": "Great Falls marks the fall line of the Potomac River.",
+      "credit": "NPS Photo / Middleton Evans",
+      "isPrimary": false
+    },
+    {
+      "id": "cbpo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C826814-1DD8-B71B-0BB73B2866CC1D8F.jpg",
+      "title": "Tangier Island",
+      "altText": "At sunset, a boater returns to the docks used by working watermen at Tangier Island.",
+      "caption": "At sunset, a boater returns to the docks used by working watermen at Tangier Island.",
+      "credit": "NPS Photo / Starke Jett",
+      "isPrimary": false
+    },
+    {
+      "id": "cbpo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C826C46-1DD8-B71B-0B35810F198CDD66.jpg",
+      "title": "Kayak Kids",
+      "altText": "Four youngsters paddle kayaks on calm waters of the Susquehanna River",
+      "caption": "Four youngsters paddle kayaks on calm waters of the Susquehanna River in Pennsylvania.",
+      "credit": "Susquehanna Greenway Partnership",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cbpo/index.htm",
+    "directions": "https://www.nps.gov/chba/planyourvisit/directions-and-transportation.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Maritime",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Trails",
+    "Water Trails",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "id": "np-semo",
+  "name": "Selma To Montgomery National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "Established by Congress in 1996, the Selma to Montgomery National Historic Trail commemorates the people, events, and route of the 1965 Voting Rights March in Alabama. Led by Dr. Martin Luther King, Jr., Black and White non-violent supporters fought for the right to vote in Central Alabama. Today, you can connect with this history and trace the events of these marches along the 54-mile trail.",
+  "shortDescription": "Established by Congress in 1996, the Selma to Montgomery National Historic Trail commemorates the people, events, and route of the 1965 Voting Rights March in Alabama. Led by Dr. Martin Luther King, J...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 32.27082092,
+    "longitude": -86.72823702
+  },
+  "nationalParkInfo": {
+    "parkCode": "semo",
+    "npsId": "F5676388-94E5-45D2-8A51-344C825F5C12",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/semo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/semo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "334-877-1983",
+    "email": "tegan_sorensen@nps.gov",
+    "website": "https://www.nps.gov/semo/index.htm",
+    "address": {
+      "line1": "7002 U.S. Highway 80 West",
+      "line2": "",
+      "city": "White Hall",
+      "state": "AL",
+      "postalCode": "36040"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "The Lowndes and Montgomery Interpretive Centers are open Monday - Saturday. The Selma Interpretive Center is closed at this time for major construction.\nThe Selma to Montgomery National Historic Trail Interpretive Centers are closed on Thanksgiving Day, Christmas Day, and New Year's Day annually."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Depending on the season, temperatures can soar from the extremes of heat and humidity in the summer to damp, wet cold temperatures in the winter. During the summer season visitors should wear light, comfortable clothing, shoes and use sunscreen. High temperatures and humidity create higher risk of heat cramps, heat exhaustion and heatstroke. During the fall visitors should have a light jacket available as temperatures can drop suddenly. Winter temperatures can be range from mild to extremely cold."
+  },
+  "images": [
+    {
+      "id": "semo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C878A7E-1DD8-B71B-0B5F97E4D222FACF.jpg",
+      "title": "50th Anniversary Walking Classroom",
+      "altText": "50th Anniversary Walking Classroom Participants.",
+      "caption": "During the 50th Anniversary Walking Classroom event participants marched nearly 54-miles from Selma to Montgomery.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "semo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C879072-1DD8-B71B-0B8BFBF4A9142404.jpg",
+      "title": "A Tribute to The Civil Rights Martys",
+      "altText": "A tribute to remember.",
+      "caption": "A tribute program to the martyrs of the movement near the Viola Liuzzo Memorial in Lowndes County.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "semo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C877F44-1DD8-B71B-0BFAC33A7892A147.jpg",
+      "title": "Marching Towards The State Alabama Capitol",
+      "altText": "Marching with a purpose.",
+      "caption": "Hundreds March Through The Streets of Montgomery.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "semo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8782EE-1DD8-B71B-0BDA57BF78776454.jpg",
+      "title": "Interpretive Talk on Highway 80",
+      "altText": "Interpretive Programs are available all year round.",
+      "caption": "Hundreds of Visitors Pause for An Interpretive Program along Highway 80",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "semo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C878807-1DD8-B71B-0BC176341394EEDD.jpg",
+      "title": "Words from The Heart",
+      "altText": "A Park Ranger speaks from the heart.",
+      "caption": "Hundreds of visitors take a moment to listen a Park Ranger speak from the heart.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/semo/index.htm",
+    "directions": "http://www.nps.gov/semo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Reconstruction",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Trails",
+    "National Historic Trail",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

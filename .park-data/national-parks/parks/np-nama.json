@@ -1,0 +1,205 @@
+{
+  "id": "np-nama",
+  "name": "National Mall and Memorial Parks",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "This is where the nation comes to remember and where history is made. As “America’s Front Yard,” the National Mall and Memorial Parks is home to many of our country’s most iconic memorials telling the story of people and events that shaped us as a nation. Each year, millions of people come to recreate, commemorate presidential legacies, honor our veterans, and make their voices heard.",
+  "shortDescription": "This is where the nation comes to remember and where history is made. As “America’s Front Yard,” the National Mall and Memorial Parks is home to many of our country’s most iconic memorials telling the...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.8899,
+    "longitude": -77.026
+  },
+  "nationalParkInfo": {
+    "parkCode": "nama",
+    "npsId": "1E521374-B73C-41CD-B524-89E4AC6495F5",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/nama/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/nama/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202-426-6841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/nama/index.htm",
+    "address": {
+      "line1": "1100 Ohio Drive SW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20242"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The public may visit the sites of National Mall and Memorial Parks 24 hours a day, with the exception of the Washington Monument which is open 9 a.m. to 5 p.m. \n\nRangers are on duty at the sites to answer questions from 9:30 a.m. to 8 p.m. in November - February. They are on duty from 9:30 a.m. to 10 p.m. in March - October. Rangers offer interpretive programs daily and provide programs and information upon request. Rangers and volunteers will not be available Dec. 25, the park is still open to visitors."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington, DC has all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees. Can get into the 100s. Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "nama-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C821F64-1DD8-B71B-0B7C29BA3E4F549E.jpg",
+      "title": "National Mall West",
+      "altText": "Aerial of the west side of National Mall and Memorial Parks",
+      "caption": "Honoring our Nation",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "nama-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8222D8-1DD8-B71B-0B12C76CA8403035.jpg",
+      "title": "National Mall Center",
+      "altText": "Aerial View of the Washington Monument and sites north",
+      "caption": "From Founding Father to Presidents Park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nama-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82245D-1DD8-B71B-0B4C36FA70C6ECE4.jpg",
+      "title": "National Mall East",
+      "altText": "Aerial View of the East End of the National Mall",
+      "caption": "From Founding Father to Capitol",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nama-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F21A2832-CB76-B6BF-DA57BF889048F59E.jpg",
+      "title": "National Mall view from Lincoln Memorial Reflecting Pool",
+      "altText": "Reflection on Washington Monument along pool with US Capitol in background",
+      "caption": "Looking East from the Lincoln Memorial Reflecting Pool with Washington Monument and US Capitol in view",
+      "credit": "NPS/RMendoza",
+      "isPrimary": false
+    },
+    {
+      "id": "nama-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F24579B9-0653-7122-07B014B0AD8C5C29.jpg",
+      "title": "National Mall Aerial View from Lincoln Memorial",
+      "altText": "Aerial view from West to East showing Lincoln Memorial, Washington Monument and US Capitol",
+      "caption": "A 2 mile stretch view of the National Mall from Lincoln Memorial to US Capitol",
+      "credit": "Library of Congress/Carol Highsmith",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "3F3ABD16-2C52-4EAA-A1F6-4235DE5686F0",
+      "name": "Golf"
+    },
+    {
+      "id": "88B2BCB1-0940-4B45-911B-2C3102290CAE",
+      "name": "Mini-Golf"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/nama/index.htm",
+    "directions": "http://www.nps.gov/nama/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Wars and Conflicts",
+    "Civil War",
+    "World War II",
+    "Korean War",
+    "Vietnam War",
+    "Women's History",
+    "Animals",
+    "Climate Change",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

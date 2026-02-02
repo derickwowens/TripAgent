@@ -1,0 +1,129 @@
+{
+  "id": "np-fofo",
+  "name": "Fort Foote Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Fort Foote was constructed in 1863 atop Rozier's Bluff to strengthen the ring of fortifications that encircled Washington, D.C. Two of the Guns that protected Washington are still there along with the remains of the fort's earthworks.",
+  "shortDescription": "Fort Foote was constructed in 1863 atop Rozier's Bluff to strengthen the ring of fortifications that encircled Washington, D.C. Two of the Guns that protected Washington are still there along with the...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.76901785,
+    "longitude": -77.02812387
+  },
+  "nationalParkInfo": {
+    "parkCode": "fofo",
+    "npsId": "649C339B-35AE-4A4D-96A5-B54E46BA8D71",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fofo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fofo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1536",
+    "email": "fowa_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/fofo/index.htm",
+    "address": {
+      "line1": "8915 Fort Foote Road",
+      "line2": "",
+      "city": "Oxon Hill",
+      "state": "MD",
+      "postalCode": "20745"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "The park is open daily for pedestrian access from 6:00 a.m. to 10:00 p.m., and the parking lot is open from 9:00 a.m. to 10:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are generally hot and humid, with daytime highs frequently above 90 degrees Fahrenheit and scattered afternoon thunderstorms. Please carry water while participating in physical activity and be prepared to take shelter from lightning. Winters are generally cold, with nighttime lows frequently near freezing and occasional snowfall. Weather during spring and fall is generally moderate, but can change quickly."
+  },
+  "images": [
+    {
+      "id": "fofo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/29827F7B-FB58-C388-8417892C807E7940.jpg",
+      "title": "Cannon at Fort Foote",
+      "altText": "A cannon in front of fall leaves",
+      "caption": "Rodman gun at Fort Foote.",
+      "credit": "NPS / Rachel Hendrix",
+      "isPrimary": true
+    },
+    {
+      "id": "fofo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C796010-1DD8-B71B-0BB8DB26C7FF2283.jpg",
+      "title": "Drawing of Fort Foote",
+      "altText": "Drawing of Fort Foote Park, depicting the fort in 1865.",
+      "caption": "Drawing of fort in 1865.",
+      "credit": "NPS Image",
+      "isPrimary": false
+    },
+    {
+      "id": "fofo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/29881978-D1B9-0ACF-BD47BAFA79E77803.jpg",
+      "title": "Fort Foote",
+      "altText": "A cannon in front of fall leaves.",
+      "caption": "Rodman gun at Fort Foote.",
+      "credit": "NPS / Rachel Hendrix",
+      "isPrimary": false
+    },
+    {
+      "id": "fofo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E69C6772-A8E8-ADE6-BE6CBF2F91A0306B.jpg",
+      "title": "Rozier's Bluff",
+      "altText": "a small sandy beach with trees",
+      "caption": "At the southern end of Fort Foote Park lies a small beach.",
+      "credit": "NPS/Cindy LaBarge",
+      "isPrimary": false
+    },
+    {
+      "id": "fofo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E6E38402-D1E3-41B4-6D94F91E73A12911.jpg",
+      "title": "Fort Foote River Trail",
+      "altText": "a thin trail through a young forest",
+      "caption": "Hiking trails at Fort Foote Park traverse through diverse forest ecosystems",
+      "credit": "NPS/ Cindy LaBarge",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fofo/index.htm",
+    "directions": "http://www.nps.gov/fofo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Forts",
+    "Military",
+    "US Army",
+    "Wars and Conflicts",
+    "Civil War",
+    "Park",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

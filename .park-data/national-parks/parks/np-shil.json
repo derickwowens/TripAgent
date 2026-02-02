@@ -1,0 +1,270 @@
+{
+  "id": "np-shil",
+  "name": "Shiloh National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "TN",
+  "stateName": "Tennessee",
+  "region": "southeast",
+  "description": "Visit the sites of the most epic struggle in the Western Theater of the Civil War. Nearly 110,000 American troops clashed in a bloody contest that resulted in 23,746 casualties; more casualties than in all of America's previous wars combined. Explore both the Shiloh and Corinth battlefields to discover the impact of this struggle on the soldiers and on the nation.",
+  "shortDescription": "Visit the sites of the most epic struggle in the Western Theater of the Civil War. Nearly 110,000 American troops clashed in a bloody contest that resulted in 23,746 casualties; more casualties than i...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 35.13850907,
+    "longitude": -88.3421072
+  },
+  "nationalParkInfo": {
+    "parkCode": "shil",
+    "npsId": "B6E3A992-3217-4BC0-AC64-A699B45971CA",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/shil/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/shil/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7316895696",
+    "email": "shil_interpretation@nps.gov",
+    "website": "https://www.nps.gov/shil/index.htm",
+    "address": {
+      "line1": "1055 Pittsburg Landing Road",
+      "line2": "",
+      "city": "Shiloh",
+      "state": "TN",
+      "postalCode": "38376"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park grounds remain open daily from sunrise to sunset. The Shiloh Battlefield visitor center is open from 9:00 am - 5:00 pm daily. The park film, \"Shiloh: Fiery Trial\" shows on the hour beginning at 9:00 am with the last showing at 4:00 pm.\n\nThe Corinth Civil War Interpretive Center is open from 9:00 am - 5:00 pm daily. \n\nThe America's National Parks Store at Shiloh is open from 8:30 am - 5:00 pm daily during the summer season."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Shiloh National Military Park traditionally experiences mild winters and hot summers with an average high of 90 degrees in the summer and 50 in winter; average lows in the winter are 34 degrees but single digits are not unusual. Rainfall in the area averages 57 inches a year with an additional 2-3 inches of ice/snow and violent thunderstorms can take place at any time of year."
+  },
+  "images": [
+    {
+      "id": "shil-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C17670A9-D87F-BF06-7D5D3B3C515AAFDF.jpg",
+      "title": "Ruggles Battery",
+      "altText": "Ruggles Battery at Shiloh",
+      "caption": "Ruggles' Battery",
+      "credit": "NPS Photo/Mekow",
+      "isPrimary": true
+    },
+    {
+      "id": "shil-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1533030B-1DD8-B71B-0B0489384B4168D9.jpg",
+      "title": "Shiloh National Cemetery",
+      "altText": "Sunrise in the Shiloh National Cemetery",
+      "caption": "Sunrise in the Shiloh National Cemetery",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3E8BC55E-1DD8-B71B-0B440A8B87772492.jpg",
+      "title": "Park Visitor Center",
+      "altText": "Photo of the front of the visitor center",
+      "caption": "Visitor Center at Shiloh National Military Park",
+      "credit": "NPS Photo/Mekow",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C13B2265-0B20-94C2-DE3139BFD359EFA0.jpg",
+      "title": "Mississippi Monument",
+      "altText": "The Mississippi Monument at Shiloh",
+      "caption": "The Mississippi Monument",
+      "credit": "NPS Photo/Mekow",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C147943B-C7AC-2B13-E74CED9C388599FE.jpg",
+      "title": "Bloody Pond",
+      "altText": "Cannon overlooking the Bloody Pond",
+      "caption": "Cannon Overlooking the Bloody Pond",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C1511463-DF33-023F-22DBF834A9391117.jpg",
+      "title": "Shiloh Bookstore",
+      "altText": "The bookstore at Shiloh",
+      "caption": "Bookstore at Shiloh",
+      "credit": "NPS Photo/Mekow",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C18A4CA4-CEB1-09B9-18B08AE603B41AE5.jpg",
+      "title": "Illinois Cavalry Monument at Shiloh",
+      "altText": "The monument commemorating Illinois cavalry units at Shiloh",
+      "caption": "Illinois Cavalry Monument",
+      "credit": "NPS Photo/Mekow",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B713F48B-BA85-098E-F1396DF3C1279134.jpg",
+      "title": "Two Gun Battery at Corinth",
+      "altText": "Two cannon is a reconstructed earthwork",
+      "caption": "Two Gun Battery",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B72F8F9F-E5C3-4B42-3C072300BFF6BEEF.jpg",
+      "title": "Display in the Corinth Civil War Interpretive Center",
+      "altText": "Boxes of muskets as part of a museum display",
+      "caption": "Display Depicting what Railroads were Transporting",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "shil-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B78446C4-A94E-CBB9-8F7E5844800371B4.jpg",
+      "title": "Stream of American History at Corinth",
+      "altText": "A water feature at Corinth",
+      "caption": "Stream of American History",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/shil/index.htm",
+    "directions": "http://www.nps.gov/shil/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "River and Riparian",
+    "Trails",
+    "National Military Park",
+    "TN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

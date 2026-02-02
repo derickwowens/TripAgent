@@ -1,0 +1,183 @@
+{
+  "id": "np-fosc",
+  "name": "Fort Scott National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "KS",
+  "stateName": "Kansas",
+  "region": "midwest",
+  "description": "Promises made and broken! Who deserves to be free? The fight for freedom! Soldiers fighting settlers! Each of these stories is a link in the chain of events that encircled Fort Scott from 1842-1873. All of the site's structures, its parade ground, and its tallgrass prairie bear witness to this era when the country was forged from a young republic into a united transcontinental nation.",
+  "shortDescription": "Promises made and broken! Who deserves to be free? The fight for freedom! Soldiers fighting settlers! Each of these stories is a link in the chain of events that encircled Fort Scott from 1842-1873. A...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 37.84358849,
+    "longitude": -94.70429174
+  },
+  "nationalParkInfo": {
+    "parkCode": "fosc",
+    "npsId": "8CA5777A-FFDF-45AE-9705-C4DE268D1BCC",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fosc/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fosc/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6202230310",
+    "email": "fosc_interpretation@nps.gov",
+    "website": "https://www.nps.gov/fosc/index.htm",
+    "address": {
+      "line1": "1 Old Fort Blvd.",
+      "line2": "",
+      "city": "Fort Scott",
+      "state": "KS",
+      "postalCode": "66701"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Park Visitor Center and historic building hours listed under 'Visitor Centers.' \n\nVisitors may walk the park grounds, walkways, and parking lot from ½ hour before sunrise until ½ hour after sunset, except during periods of snow, ice, or other inclement weather conditions that make the grounds unsafe."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring and autumn are pleasant with mild temperatures. Summers are generally hot and humid, while winters are mild with periods of cold weather, snowfall, and ice storms. Thunderstorms, some severe, are common throughout the spring and summer. During periods of severe weather, visitors should seek shelter, as the area is prone to lightning strikes. Visitors are advised to check the weather prior to traveling."
+  },
+  "images": [
+    {
+      "id": "fosc-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C837EE2-1DD8-B71B-0BD0F84088C06269.jpg",
+      "title": "Sunflowers at Fort Scott",
+      "altText": "A field of sunflowers next to a stone building.  Wood frame structures in background.",
+      "caption": "A field of sunflowers adds a splash of color to a view of the parade ground at Fort Scott.",
+      "credit": "NPS Pnoto",
+      "isPrimary": true
+    },
+    {
+      "id": "fosc-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5C2BEB72-C4C5-A44F-A70329AD93CA1999.jpg",
+      "title": "Post Hospital",
+      "altText": "Picture of the post hospital with the parade ground and trees in the background.",
+      "caption": "Picture of the Post Hospital",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosc-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C838241-1DD8-B71B-0B6E926E9F23908F.jpg",
+      "title": "Officers Quarters at Sunset",
+      "altText": "Wood frame structures with stairs next to a stone walkway. Structures reflect afternoon sunlight.",
+      "caption": "Officers quarters at Fort Scott bathed in the light of the afternoon sun.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosc-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8383F1-1DD8-B71B-0B3AA4D574749439.jpg",
+      "title": "Dragoons on the Prairie",
+      "altText": "Four soldiers on horseback in a line riding through prairie grass.",
+      "caption": "Soldiers on horseback patrol the prairie.",
+      "credit": "NPS Photo/Michelle Martin",
+      "isPrimary": false
+    },
+    {
+      "id": "fosc-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C838A0F-1DD8-B71B-0B0A1C3D2CE08AEF.jpg",
+      "title": "Laundry Day",
+      "altText": "Women dressed as laundresses with laundry buckets and scrub boards stand on a stone porch.",
+      "caption": "High school students dressed as laundresses demonstrate laundry methods of the 1840s",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosc-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5C504EDF-C3C7-321E-1625C477DC7B3E35.jpg",
+      "title": "Symbols of Sacrifice",
+      "altText": "Picture of rows of flags across the parade ground with trees in the background.",
+      "caption": "Image of flags from the Symbols of Sacrifice event.",
+      "credit": "NPS Photo: B. Boyko",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fosc/index.htm",
+    "directions": "http://www.nps.gov/fosc/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Forts",
+    "Incarceration",
+    "Jails and Prisons",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Schools and Education",
+    "Transportation",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "Mexican War",
+    "Civil War",
+    "Westward Expansion",
+    "Women's History",
+    "Grasslands",
+    "Prairies",
+    "National Historic Site",
+    "KS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

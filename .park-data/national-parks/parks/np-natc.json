@@ -1,0 +1,153 @@
+{
+  "id": "np-natc",
+  "name": "Natchez National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MS",
+  "stateName": "Mississippi",
+  "region": "southeast",
+  "description": "Discover the history of all the peoples of Natchez, Mississippi, from European settlement, African enslavement, the American cotton economy, to the Civil Rights struggle on the lower Mississippi River.",
+  "shortDescription": "Discover the history of all the peoples of Natchez, Mississippi, from European settlement, African enslavement, the American cotton economy, to the Civil Rights struggle on the lower Mississippi River...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 31.54697621,
+    "longitude": -91.39040665
+  },
+  "nationalParkInfo": {
+    "parkCode": "natc",
+    "npsId": "259CE799-32C4-4CA9-BBDF-2F305018289C",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/natc/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/natc/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6014465790",
+    "email": "natc_superintendent@nps.gov",
+    "website": "https://www.nps.gov/natc/index.htm",
+    "address": {
+      "line1": "640 South Canal Street",
+      "line2": "",
+      "city": "Natchez",
+      "state": "MS",
+      "postalCode": "39120"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Natchez Visitor Center is currently closed due to the installation of a new HVAC system.  Melrose is open 7 days a week with guided tours of the mansion at 10:00, 11:00 am, 2:00, 3:00, and 4:00. Reservations for the tour should be made on Recreation.gov.  The first floor of the William Johnson House is open although the second floor containing the family living quarters remains closed at this time.   The Fort Rosalie site is open daily from sunup to sundown, as is the Forks of the Road site."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 50 F to 83 F. Rain is common. Summer: Temperatures usually range from 70 F to 95 F. Rain and sun are equally common. On very sunny days, be prepared with plenty of water - heat exhaustion is common if you are not prepared. Fall: Temperatures usually range from 55 F to 79 F. Winter: Temperatures range from 40 F to 63 F. Rain is common."
+  },
+  "images": [
+    {
+      "id": "natc-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BC2BF996-9A1D-637F-B279C39E2232C4C4.jpg",
+      "title": "Melrose Mansion",
+      "altText": "Two story brick mansion with columns",
+      "caption": "Melrose and its landscape present a comprehensive picture of the Southern planter class and the enslaved people who lived and worked there.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "natc-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81B15F-1DD8-B71B-0BB55AA9504C9A9A.jpg",
+      "title": "William Johnson House",
+      "altText": "Two story brick townhouse",
+      "caption": "The William Johnson House provides a window into the life of a free man of color whose published diary and personal papers provide a detailed account of daily life in the antebellum south.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "natc-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81B2EC-1DD8-B71B-0BC23CDD587DFBA5.jpg",
+      "title": "Melrose Slave Cabin",
+      "altText": "One story wood frame house with two doors and two windows",
+      "caption": "One of two remaining slave cabins at the Melrose estate",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "natc-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81B4C3-1DD8-B71B-0BE3A29CF3697BBC.jpg",
+      "title": "Inside Melrose Slave Cabin",
+      "altText": "Room containing very simple wood table and chair, and baby cradle with fireplace in background",
+      "caption": "The furnished slave cabin at Melrose helps to illustrate  the daily life of the enslaved.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "natc-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81B61B-1DD8-B71B-0B02E907D6D77626.jpg",
+      "title": "Inside the William Johnson House",
+      "altText": "room with tall windows and fireplace, round table containing lamp and surrounded by chairs",
+      "caption": "Visitors to the William Johnson House can see many original furnishings.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/natc/index.htm",
+    "directions": "http://www.nps.gov/natc/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Enslavement",
+    "Native American Heritage",
+    "Tragic Events",
+    "Murders",
+    "National Historical Park",
+    "MS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

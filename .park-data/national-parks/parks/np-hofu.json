@@ -1,0 +1,292 @@
+{
+  "id": "np-hofu",
+  "name": "Hopewell Furnace National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Hopewell Furnace showcases an early American landscape of industrial operations from 1771-1883, Hopewell and other iron plantations laid the foundation for the transformation of the United States into an industrial giant for the time. The park's 848 acres and historic structures illustrate the business, technology and lifestyle of our growing nation.",
+  "shortDescription": "Hopewell Furnace showcases an early American landscape of industrial operations from 1771-1883, Hopewell and other iron plantations laid the foundation for the transformation of the United States into...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 40.20610637,
+    "longitude": -75.76766355
+  },
+  "nationalParkInfo": {
+    "parkCode": "hofu",
+    "npsId": "D709F8AB-E094-4C58-8B9E-2E4958AA2BF2",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hofu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hofu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6105828773",
+    "email": "hofu_superintendent@nps.gov",
+    "website": "https://www.nps.gov/hofu/index.htm",
+    "address": {
+      "line1": "2 Mark Bird Lane",
+      "line2": "",
+      "city": "Elverson",
+      "state": "PA",
+      "postalCode": "19520"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Hopewell Furnace National Historic Site is open Wednesday through Sunday from 9:00AM to 5:00PM.\nOn days the park is closed, its historic buildings, parking lot and visitor center are unavailable for use, but its trails (which interconnect with trails from French Creek State Park) remain open. Restrooms will remain open from 9 a.m. to 3 p.m. on days that the park is closed between Memorial Day and Labor Day. During the rest of the year, restrooms will remain closed on days when the park is closed."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are generally humid with daily temps. averaging 83 degrees (F) for a high and 60 degrees (F) for a low. Daily temps. in January average 38 degrees (F) for a high and 20 degrees (F) for a low. Precipitation averages 3-5 inches of rain per month during spring, summer and autumn. During winter conditions can be icy with snow accumulating up to several inches."
+  },
+  "images": [
+    {
+      "id": "hofu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/ED657889-A026-6AB1-4CA4B6E1D598793B.jpg",
+      "title": "Hopewell Furnace Village",
+      "altText": "buildings varying in size on either side of a gravel path.",
+      "caption": "A community grew around the furnace, it yielded iron and a way of life.",
+      "credit": "NPS Image",
+      "isPrimary": true
+    },
+    {
+      "id": "hofu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/07E33D3B-1DD8-B71B-0BB0978D03079D7B.jpg",
+      "title": "Hopewell Furnace's Boarding House",
+      "altText": "Front of Hopewell Furnace's Boarding House",
+      "caption": "Hopewell Furnace's Boarding House housed single men or those living away from their families, who came to work at the furnace.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hofu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/08475132-1DD8-B71B-0B2CA141C1F9566A.jpg",
+      "title": "Blacksmith Shop & Cast House",
+      "altText": "Side view of blacksmith shop with cast house behind it.",
+      "caption": "The Cast House was the industrial center of the ironworks.  It is were iron ore was smelted into iron metal and products.  The smaller blacksmith shop formed iron metal into all kinds of necessary tools and goods used in everyday life.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hofu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/08ACB3DD-1DD8-B71B-0B3BBB847B459559.jpg",
+      "title": "Hopewell Stove",
+      "altText": "Side view of Hopewell Stove in front of wagon running gear.",
+      "caption": "The most notable manufactured product Hopewell Furnace made was its stoves.  They were produced by the thousands at Hopewell and other like furnaces in the early 19th century and were transported for sale by horse and wagon.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hofu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/09205130-1DD8-B71B-0B6D2D12C6918F4D.jpg",
+      "title": "Charcoal Pile",
+      "altText": "Demonstration charcoal pile smoldering.",
+      "caption": "Charcoal was the fuel used to fire Hopewell Furnace and other furnaces of its age.  Thousands of bushles of charcoal were made from hardwood trees on the furnace lands and entered into the furnace to keep it \"in blast.\"",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hofu/index.htm",
+    "directions": "http://www.nps.gov/hofu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Arts",
+    "Burial, Cemetery and Gravesite",
+    "Commerce",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Incarceration",
+    "Jails and Prisons",
+    "Industry",
+    "Factories",
+    "Mills",
+    "Mining",
+    "Logging and Timber Cutting",
+    "Immigration",
+    "Laborer and Worker",
+    "Medicine",
+    "Military",
+    "Artillery",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Reconstruction",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Social Movements",
+    "Conservation Movement",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Canals",
+    "Roads, Routes and Highways",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Geology",
+    "Mineral Deposits",
+    "Grasslands",
+    "Meadows",
+    "Night Sky",
+    "Rock Landscapes and Features",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Wilderness",
+    "National Historic Site",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

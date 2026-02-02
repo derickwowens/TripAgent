@@ -1,0 +1,127 @@
+{
+  "id": "np-bicr",
+  "name": "Birmingham Civil Rights National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "In 1963, images of snarling police dogs unleashed against non-violent protesters and of children being sprayed with high-pressure hoses appeared in print and television news around the world. These dramatic scenes of violent police aggression against civil rights protesters in Birmingham, Alabama were vivid examples of segregation and racial injustice in America.",
+  "shortDescription": "In 1963, images of snarling police dogs unleashed against non-violent protesters and of children being sprayed with high-pressure hoses appeared in print and television news around the world. These dr...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 33.5154266357,
+    "longitude": -86.814666748
+  },
+  "nationalParkInfo": {
+    "parkCode": "bicr",
+    "npsId": "99907F85-7E09-40FE-BF5E-A9AB7F09A7E2",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bicr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/bicr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "205-679-0065",
+    "email": "bicr_information@nps.gov",
+    "website": "https://www.nps.gov/bicr/index.htm",
+    "address": {
+      "line1": "A.G. Gaston Motel",
+      "line2": "1510 5th Avenue North",
+      "city": "Birmingham",
+      "state": "AL",
+      "postalCode": "35203"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 3:00PM",
+    "thursday": "10:00AM - 3:00PM",
+    "friday": "10:00AM - 3:00PM",
+    "saturday": "10:00AM - 3:00PM",
+    "sunday": "Closed",
+    "description": "Birmingham Civil Rights National Monument brochures and NPS passport stamp are available for visitors at the Birmingham Civil Rights Institute on Sunday's, 1:00 - 5:00 PM and Tuesday - Saturday, 10:00 AM - 5:00 PM. The A.G. Gaston Motel is currently closed to the public and updates for the Motel opening will be available on the NPS park website at a later date."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures can soar to extremes of heat and humidity in the summer and fall to damp, wet, cold in the winter. Visitors should dress in comfortable clothing during the summer season, wear comfortable shoes, and use sunscreen. Drink plenty of fluids to maintain hydration. In the spring and fall, visitors should have a light jacket available as temperatures can drop suddenly. Winter temperatures can be unpredictable, ranging from mild to extremely cold."
+  },
+  "images": [
+    {
+      "id": "bicr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D22DF28C-CD37-750E-EB966436CB1DB631.jpeg",
+      "title": "Mural Sculpture of the four little girls",
+      "altText": "4 separate statues of the four little girls who were killed in the 16th st Baptist Church bombing",
+      "caption": "Hundreds of people visit Kelly Ingram Park each year to learn about the Civil Rights Movement in Birmingham",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "bicr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D2364DA9-9311-7D39-478170FB4393F3C0.jpeg",
+      "title": "Kelly Ingram Park foot soldiers statue",
+      "altText": "Statue of a boy being grabbed by a policemen who is holding a dog posed to bite on a leash",
+      "caption": "Statue in Kelly Ingram park dedicated to Birmingham Foot soldiers",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bicr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FABE8744-AFA8-3C95-7817F3C50D012CBB.jpeg",
+      "title": "16th St. Baptist Church",
+      "altText": "Colored Photo of the front of the 16th St. Baptist Church",
+      "caption": "Hundreds of people visit Birmingham each year to see the 16th St. Baptist Church and learn about its important role in Birmingham's Civil Rights Movement",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bicr/index.htm",
+    "directions": "https://www.nps.gov/bicr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Incarceration",
+    "Jails and Prisons",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "Churches",
+    "Social Movements",
+    "Civil Rights",
+    "Tragic Events",
+    "Explosions",
+    "Murders",
+    "Urban America",
+    "Women's History",
+    "National Monument",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "id": "np-mlkm",
+  "name": "Martin Luther King, Jr. Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Located in downtown Washington, DC, the memorial honors Martin Luther King, Jr.'s legacy and the struggle for freedom, equality, and justice. A prominent leader in the modern civil rights movement, Dr. King was a tireless advocate for racial equality, working class, and the oppressed around the world.",
+  "shortDescription": "Located in downtown Washington, DC, the memorial honors Martin Luther King, Jr.'s legacy and the struggle for freedom, equality, and justice. A prominent leader in the modern civil rights movement, Dr...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.8862276865,
+    "longitude": -77.0442195534
+  },
+  "nationalParkInfo": {
+    "parkCode": "mlkm",
+    "npsId": "855C9CDC-89B3-4143-9496-D9E6AE292CA1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mlkm/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mlkm/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/mlkm/index.htm",
+    "address": {
+      "line1": "1850 West Basin Drive SW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20024"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The sites of National Mall and Memorial Parks (other than the Washington Monument) are always open to the public. Restrooms, museums and elevators close in the evenings (check individual sites for hours)"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "mlkm-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C817680-1DD8-B71B-0B2377795A1029FE.jpg",
+      "title": "Martin Luther King, Jr.",
+      "altText": "Statue of Martin Luther King, Jr.",
+      "caption": "Statue of Martin Luther King, Jr.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mlkm-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C817385-1DD8-B71B-0B0B7932C9E739A9.jpg",
+      "title": "Mountain of Despair",
+      "altText": "Mountain of Despair",
+      "caption": "Out from a Mountain of Despair comes...",
+      "credit": "NPS Photo/Brian Hall",
+      "isPrimary": false
+    },
+    {
+      "id": "mlkm-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C817510-1DD8-B71B-0B7968BC02D101BF.jpg",
+      "title": "Stone of Hope",
+      "altText": "Stone of Hope",
+      "caption": "A Stone of hope breaks free from the Mountain of Despair",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mlkm-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7239CD9-0FBF-5187-651FF23965AC1120.jpg",
+      "title": "Stone of Hope, Martin Luther King, Jr. Memorial",
+      "altText": "A sculpture of Martin Luther King, Jr.",
+      "caption": "A picturesque view of the Martin Luther King, Jr. Memorial.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mlkm-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/265EB71A-D7E2-79C6-64DEE93F20FB6E8C.jpg",
+      "title": "4th of July",
+      "altText": "Look upward, fireworks burst behind the stone sculpture of Martin Luther King, Jr.",
+      "caption": "Martin Luther King, Jr. Memorial during Independence Day fireworks.",
+      "credit": "NPS / Anthony DeYoung",
+      "isPrimary": false
+    },
+    {
+      "id": "mlkm-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2F541BCB-B2A5-81B5-DF895A8FBFA0B86A.jpg",
+      "title": "Cherry Blossoms at the Martin Luther King Jr. Memorial",
+      "altText": "Cherry Blossoms surround the Martin Luther King Jr. Memorial",
+      "caption": "Cherry Blossoms at the Martin Luther King Jr. Memorial",
+      "credit": "NPS / Kelsey Graczyk",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mlkm/index.htm",
+    "directions": "http://www.nps.gov/mlkm/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Civil Rights",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

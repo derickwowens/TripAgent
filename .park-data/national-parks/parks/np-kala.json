@@ -1,0 +1,182 @@
+{
+  "id": "np-kala",
+  "name": "Kalaupapa National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "HI",
+  "stateName": "Hawaii",
+  "region": "hawaii",
+  "description": "When Hansen's disease (leprosy) was introduced to the Hawaiian Islands, King Kamehameha V banished all afflicted to the isolated Kalaupapa Peninsula on the north shore of Molokai. Since 1866, more than 8,000 people, mostly Hawaiians, have died at Kalaupapa. Once a prison, Kalaupapa is now a refuge for the few remaining residents who are cured but were forced to live their lives in isolation.",
+  "shortDescription": "When Hansen's disease (leprosy) was introduced to the Hawaiian Islands, King Kamehameha V banished all afflicted to the isolated Kalaupapa Peninsula on the north shore of Molokai. Since 1866, more tha...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 21.1731108,
+    "longitude": -156.9511609
+  },
+  "nationalParkInfo": {
+    "parkCode": "kala",
+    "npsId": "3C869976-DF2E-4D99-9918-366DFE637846",
+    "region": "hawaii"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kala/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/kala/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8085676802",
+    "email": "kala_superintendent@nps.gov",
+    "website": "https://www.nps.gov/kala/index.htm",
+    "address": {
+      "line1": "7 Puahi Street",
+      "line2": "",
+      "city": "Kalaupapa",
+      "state": "HI",
+      "postalCode": "96742"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Kalaupapa National Historical Park is home to an active community of people, including patient-residents and State and Federal employees. Because of this, there are no park opening or closing hours, though tours are only given during daylight hours. Visitation is restricted in accordance with Hawai'i State Law. All visitors must have a permit."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Hawaii enjoys warm temperatures year-round, although site conditions at the park can vary depending on weather and time of year. The rainy season is in the winter with the more hot and humid days in the summer. Trade winds are fairly constant and typically blow from the northeast. Daytime temperatures range from 65–75° F in the winter to 80-90°F in the summer. Nighttime temperatures are often in the 60-70°F range."
+  },
+  "images": [
+    {
+      "id": "kala-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B6CD-1DD8-B71B-0BB2B4265DD8C023.jpg",
+      "title": "Overview of Kalaupapa Peninsula",
+      "altText": "View of Kalaupapa Peninsula from Overlook",
+      "caption": "The Kalaupapa peninsula was once a prison for those inflicted with Hansen's disease.  Approximately 8000 people were forced to live their lives in isolation here.",
+      "credit": "Tylor Tanaka",
+      "isPrimary": true
+    },
+    {
+      "id": "kala-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B7CD-1DD8-B71B-0B8DB166CD47FFDB.jpg",
+      "title": "Pali (Sea cliffs) at Kalaupapa",
+      "altText": "View of pali (sea cliffs) on the north shore of Molokai",
+      "caption": "Kalaupapa National Historical Park contains some of the world's tallest sea cliffs, which formed a natural barrier to the Hansen's disease settlement.",
+      "credit": "Tylor Tanaka",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B8BD-1DD8-B71B-0B3642258A7FDC63.jpg",
+      "title": "Kalaupapa Settlement",
+      "altText": "View of residences along Damien Road",
+      "caption": "Patients lived in a combination of group homes and single family residences at Kalaupapa.",
+      "credit": "NPS Photo / T. Scott Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B9C9-1DD8-B71B-0B1470C968F06B2B.jpg",
+      "title": "Kalawao at Sunrise",
+      "altText": "View of the sunrise over the north shore of Molokai",
+      "caption": "Kalawao with its rocky shoreline was the landing spot for the first Hansen's disease patients sent to Kalaupapa.",
+      "credit": "NPS Photo / T. Scott Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79BAC7-1DD8-B71B-0B078B6EFFA7389B.jpg",
+      "title": "Black Sand Beach",
+      "altText": "View of Black Sand Beach and Awahua Bay",
+      "caption": "Black Sand Beach is one of several sandy beaches at Kalaupapa, most known for its sea turtle nesting habitat.",
+      "credit": "NPS Photo / T. Scott Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79BC2E-1DD8-B71B-0B49012B61D78A2D.jpg",
+      "title": "Archeological Sites at Kalaupapa",
+      "altText": "View of rock walls and native Hawaiian archeological sites at Kalaupapa.",
+      "caption": "Kalaupapa is also home to one of the most well-preserved archeological complexes in all of Hawaii.",
+      "credit": "Ricki Cooke",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79BD53-1DD8-B71B-0BB4FD504DF437D9.jpg",
+      "title": "Siloama Church at Kalawao",
+      "altText": "Siloama Church at Kalawao settlement",
+      "caption": "Siloama Church was the first church established at Kalawao in 1866.  It is one of two remaining buildings at Kalawao today.",
+      "credit": "NPS Photo / T. Scott Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79BE86-1DD8-B71B-0B01A4BC9D46895E.jpg",
+      "title": "St. Damien's Grave",
+      "altText": "View of St. Damien's Grave at Kalawao with ocean in background.",
+      "caption": "Saint Damien is one of two Catholic saints at Kalaupapa who came to serve the Hansen's disease patients in the late 19th century.",
+      "credit": "NPS photo / Carrie Mardorf",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79C017-1DD8-B71B-0BD168E88DAC63D3.jpg",
+      "title": "Paschoal Hall",
+      "altText": "View of Paschoal Hall also known as the Kalaupapa Social Hall",
+      "caption": "Paschoal Hall, also known as the Kalaupapa Social Hall, served as the community's recreational center with movies, entertainers, and dances.",
+      "credit": "NPS Photo / Carrie Mardorf",
+      "isPrimary": false
+    },
+    {
+      "id": "kala-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79C154-1DD8-B71B-0BC5CA3DB22D958E.jpg",
+      "title": "Papaloa Cemetery",
+      "altText": "View of grave markers at Papaloa Cemetery in Kalaupapa",
+      "caption": "Kalaupapa is the final resting place for approximately 8000 people. Papaloa Cemetery is the largest cemetery located along the west shoreline of the peninsula.",
+      "credit": "NPS Photo / Carrie Mardorf",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kala/index.htm",
+    "directions": "http://www.nps.gov/kala/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Asian American Heritage",
+    "Incarceration",
+    "Pacific Islander Heritage",
+    "Science, Technology and Innovation",
+    "Tragic Events",
+    "National Historical Park",
+    "HI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

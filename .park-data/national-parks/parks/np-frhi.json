@@ -1,0 +1,158 @@
+{
+  "id": "np-frhi",
+  "name": "Friendship Hill National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Albert Gallatin is best remembered for his thirteen year tenure as Secretary of the Treasury during the Jefferson and Madison administrations. In that time he reduced the national debt, purchased the Louisiana Territory and funded the Lewis & Clark exploration. Gallatin's accomplishments and contributions are highlighted at Friendship Hill, his restored country estate.",
+  "shortDescription": "Albert Gallatin is best remembered for his thirteen year tenure as Secretary of the Treasury during the Jefferson and Madison administrations. In that time he reduced the national debt, purchased the ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.77543423,
+    "longitude": -79.92504169
+  },
+  "nationalParkInfo": {
+    "parkCode": "frhi",
+    "npsId": "F6D0ABED-2C07-4194-8CB7-09476271EDB9",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frhi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/frhi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "724-329-2501",
+    "email": "frhi_interpretation@nps.gov",
+    "website": "https://www.nps.gov/frhi/index.htm",
+    "address": {
+      "line1": "223 New Geneva Rd.",
+      "line2": "",
+      "city": "Point Marion",
+      "state": "PA",
+      "postalCode": "15470"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Park Grounds and Trails are open daily from sunrise to sunset, all year. Please note: While the park is open Sunrise to Sunset - the Gallatin House Visitor Center may be closed. If open, the house will be open 9 AM to 5 PM."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather varies considerably within each season. Be prepared with layered clothing. Precipitation is common throughout the year. Spring: Temperatures usually range from 25°F to 70°F. On average, May is the wettest month. Summer: Temperatures usually range from 50°F to 80°F. July is the warmest month. Fall: Temperatures usually range from 30°F to 70°F. Fall foliage is at its peak around mid-October. Winter: Temperatures range from 15°F to 40°F. January is the coldest month."
+  },
+  "images": [
+    {
+      "id": "frhi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7B7689B8-BF0B-AE71-290D810DFE3D0968.jpg",
+      "title": "Gallatin House in Winter",
+      "altText": "Gallatin House - Stone House and South Wing in snow with blue sky",
+      "caption": "The Gallatin House is open weekends in the winter months.",
+      "credit": "NPS Photo/Rene Benson",
+      "isPrimary": true
+    },
+    {
+      "id": "frhi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85E483-1DD8-B71B-0B3038074D3BF415.jpg",
+      "title": "Gallatin House - Stone House and well",
+      "altText": "Gallatin house",
+      "caption": "Friendship Hill was the country home of Albert Gallatin",
+      "credit": "NPS Photo / Tom Markwardt",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frhi/index.htm",
+    "directions": "http://www.nps.gov/frhi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Banking",
+    "Explorers and Expeditions",
+    "Industry",
+    "Factories",
+    "Mills",
+    "Mining",
+    "Logging and Timber Cutting",
+    "Native American Heritage",
+    "Presidents",
+    "Schools and Education",
+    "Social Movements",
+    "Abolition Movement",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Westward Expansion",
+    "Geology",
+    "Scenic Views",
+    "Trails",
+    "National Historic Site",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

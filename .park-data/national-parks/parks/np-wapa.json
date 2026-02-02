@@ -1,0 +1,144 @@
+{
+  "id": "np-wapa",
+  "name": "War In The Pacific National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "GU",
+  "stateName": "GU",
+  "region": "pacific",
+  "description": "War in the Pacific National Historical Park was established to commemorate the bravery and sacrifice of those participating in the campaigns of the Pacific Theater of World War II and to conserve and interpret outstanding natural, scenic, and historic values and objects of the island of Guam.",
+  "shortDescription": "War in the Pacific National Historical Park was established to commemorate the bravery and sacrifice of those participating in the campaigns of the Pacific Theater of World War II and to conserve and ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 13.43795691,
+    "longitude": 144.6922461
+  },
+  "nationalParkInfo": {
+    "parkCode": "wapa",
+    "npsId": "D44FE5CB-71B4-4B7C-A52A-41BE9D9211B3",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wapa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wapa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(671) 333 4055",
+    "email": "wapa_interpretation@nps.gov",
+    "website": "https://www.nps.gov/wapa/index.htm",
+    "address": {
+      "line1": "135 Murray Blvd.",
+      "line2": "Ste. 100",
+      "city": "Hagatna",
+      "state": "GU",
+      "postalCode": "96910"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Park grounds are open, but visitors should follow local health guidance."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "https://forecast.weather.gov/MapClick.php?lat=13.443563908000044&lon=144.77762780500007"
+  },
+  "images": [
+    {
+      "id": "wapa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84E1DA-1DD8-B71B-0B51C510B3B8336F.jpg",
+      "title": "Asan Beach Overlook",
+      "altText": "Mountain view down toward beach.",
+      "caption": "Overlooking the invasion Asan Beach, this overlook honors the men and women killed on Guam in World War II.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "wapa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84E351-1DD8-B71B-0BDBBD15FE0FC3C5.jpg",
+      "title": "Memorial Day Flag Honors at Asan Beach",
+      "altText": "Night view of light up US flags.",
+      "caption": "Honoring the Chamorro citizens and US service personnel killed during World War II.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wapa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84E4CE-1DD8-B71B-0B99E1F20C5F2041.jpg",
+      "title": "Apaca point",
+      "altText": "Calm water beach at sunset.",
+      "caption": "This serene scene of Apaca Point does not reveal the intensity felt on the July 21, 1944 invasion.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wapa/index.htm",
+    "directions": "http://www.nps.gov/wapa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "US Army",
+    "US Marines",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Pacific Islander Heritage",
+    "Wars and Conflicts",
+    "World War II",
+    "Oceans",
+    "Coral Reefs",
+    "National Historical Park",
+    "GU"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

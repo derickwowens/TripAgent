@@ -1,0 +1,227 @@
+{
+  "id": "np-knri",
+  "name": "Knife River Indian Villages National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "ND",
+  "stateName": "North Dakota",
+  "region": "midwest",
+  "description": "Earthlodge people hunted bison and other game, but were in essence farmers living in villages along the Missouri and its tributaries. The site was a major Native American trade center for hundreds of years prior to becoming an important market place for fur traders after 1750.",
+  "shortDescription": "Earthlodge people hunted bison and other game, but were in essence farmers living in villages along the Missouri and its tributaries. The site was a major Native American trade center for hundreds of ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 47.3540219,
+    "longitude": -101.3860533
+  },
+  "nationalParkInfo": {
+    "parkCode": "knri",
+    "npsId": "0103833B-8114-4483-9754-11B5171BCB20",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/knri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/knri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7017453300",
+    "email": "KNRI_Information@nps.gov",
+    "website": "https://www.nps.gov/knri/index.htm",
+    "address": {
+      "line1": "564 County Road 37",
+      "line2": "",
+      "city": "Stanton",
+      "state": "ND",
+      "postalCode": "58571"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Knife River Indian Villages National Historic Site is open from sunrise to sunset, every day of the year. Even when visitor center is closed, the park itself remains open."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are warm and sunny with temperatures occasionally reaching 100 degrees F and frequent afternoon thunderstorms. Winters are invigorating, with extremely cold temperatures as low as -35 degrees F. High winds and sunny skies are common in winter. Snow is sporadic in the relatively dry climate, but blizzards are common."
+  },
+  "images": [
+    {
+      "id": "knri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C812613-1DD8-B71B-0B29B74AAFA56DE7.jpg",
+      "title": "Earthlodge",
+      "altText": "Summer view of Earthlodge",
+      "caption": "Summer view of Earthlodge",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "knri-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8127F4-1DD8-B71B-0BE7BEB35219164E.jpg",
+      "title": "Interior View of Earthlodge",
+      "altText": "Interior View of Earthlodge",
+      "caption": "Interior View of Earthlodge",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "knri-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C813FB3-1DD8-B71B-0BA4497C2A70C7E8.jpg",
+      "title": "Winter Earthlodge",
+      "altText": "Winter Earthlodge",
+      "caption": "Winter Earthlodge",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "knri-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C814266-1DD8-B71B-0BFF0A037013C9BA.jpg",
+      "title": "Garden",
+      "altText": "Garden",
+      "caption": "Garden",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "knri-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81440A-1DD8-B71B-0B07E8FB404C1563.jpg",
+      "title": "Sakakawea Village",
+      "altText": "Sakakawea Village",
+      "caption": "Sakakawea Village",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/knri/index.htm",
+    "directions": "http://www.nps.gov/knri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Explorers and Expeditions",
+    "Military",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Schools and Education",
+    "Women's History",
+    "Animals",
+    "Grasslands",
+    "Prairies",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Trails",
+    "National Historic Site",
+    "ND"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

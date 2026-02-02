@@ -1,0 +1,214 @@
+{
+  "id": "np-jeca",
+  "name": "Jewel Cave National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "SD",
+  "stateName": "South Dakota",
+  "region": "midwest",
+  "description": "Immerse yourself in one of the longest caves in the world. With over 220 miles of mapped and surveyed passages, this underground wilderness appeals to human curiosity. Its splendor is revealed through fragile formations and glimpses of brilliant color. Its maze of passages lures explorers, and its scientific wealth remains a mystery. This resource is truly a jewel in the National Park Service.",
+  "shortDescription": "Immerse yourself in one of the longest caves in the world. With over 220 miles of mapped and surveyed passages, this underground wilderness appeals to human curiosity. Its splendor is revealed through...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 43.73102945,
+    "longitude": -103.829994
+  },
+  "nationalParkInfo": {
+    "parkCode": "jeca",
+    "npsId": "A71EF659-5A33-4CCC-93CE-340F23A88E3E",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jeca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jeca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6056738300",
+    "email": "jeca_information@nps.gov",
+    "website": "https://www.nps.gov/jeca/index.htm",
+    "address": {
+      "line1": "11149 U.S. Hwy. 16",
+      "line2": "Building B12",
+      "city": "Custer",
+      "state": "SD",
+      "postalCode": "57730"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 4:30PM",
+    "tuesday": "8:30AM - 4:30PM",
+    "wednesday": "8:30AM - 4:30PM",
+    "thursday": "8:30AM - 4:30PM",
+    "friday": "8:30AM - 4:30PM",
+    "saturday": "8:30AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "Jewel Cave National Monument is a day-use area and is available for outdoor recreation on a daily basis throughout the year. However, although the monument is normally open for surface activities year round, the visitor center, park store, and ranger-guided cave tours and operational hours vary from season to season. This means that the surface features and recreational areas are open year round, yet staffing levels and visitor services may be limited during the off-season."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in the Black Hills varies significantly throughout the year and may be drastically different from the northern hills to the southern hills. The temperatures listed are for average lows to average highs in the location of Custer, South Dakota. Spring ~ Temp. Range of 29°F to 53°F / Summer ~ Temp. Range of 54°F to 80°F / Fall ~ Temp. Range of 33°F to 58°F / Winter ~ Temp. Range of 14°F to 37°F The yearly average rain is 19 in., with May being the wettest month. The yearly average snow is 48 in."
+  },
+  "images": [
+    {
+      "id": "jeca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6DE6447-A12D-692B-419DBA224FA0D35B.jpg",
+      "title": "Target Room",
+      "altText": "The target room inside Jewel Cave.",
+      "caption": "The target room inside Jewel Cave.",
+      "credit": "NPS Staff Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "jeca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D11EA-1DD8-B71B-0BCC921BDE9A9253.jpg",
+      "title": "Hourglass Lake",
+      "altText": "A cave explorer sits on some rocks and looks at a clear blue lake in Jewel Cave.",
+      "caption": "Volunteer cave explorers discovered Hourglass Lake in October 2015, the first sizable body of water found within Jewel Cave.",
+      "credit": "NPS Photo / Dan Austin",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D1365-1DD8-B71B-0BEF0C64C6FA265F.jpg",
+      "title": "Inner Sanctum",
+      "altText": "A park ranger is standing on a metal platform within a long passageway with a vaulted ceiling.",
+      "caption": "The Inner Sanctum is one of the longest and largest passageways along the Scenic Tour route, located near the Torture Room.",
+      "credit": "NPS Photo / Dan Austin",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D14CA-1DD8-B71B-0BFB17D039DD3B5F.jpg",
+      "title": "The Brain Drain",
+      "altText": "A caver squeezes through a very small and tight opening, surrounded by multi-colored rocks.",
+      "caption": "The Brain Drain is approximately eight inches high by 24 inches wide and is the tightest passage on the Wild Caving Tour.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D1629-1DD8-B71B-0BC7B364204E089C.jpg",
+      "title": "The Heavenly Room",
+      "altText": "A park ranger stands as a silhouette in a large room in Jewel Cave.",
+      "caption": "The Heavenly Room is a large room along the Historic Lantern Tour within the historic entrance of Jewel Cave.",
+      "credit": "NPS Photo / Dan Austin",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D1784-1DD8-B71B-0B48192F22E64243.jpg",
+      "title": "Nailhead Spar",
+      "altText": "White-colored crystals with blunt tips sparkle against a black background.",
+      "caption": "Calcite crystals, such as nailhead spar, cover most of the walls, ceilings, and floors within Jewel Cave.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/64C79BE0-A659-8840-42FFC92F36170B12.jpg",
+      "title": "Rocky Mountain Bighorn Sheep",
+      "altText": "A bighorn sheep ram stands in the highway, with a camper stopped in the other lane.",
+      "caption": "Rocky mountain bighorn sheep are commonly seen within the monument, usually along Highway 16.",
+      "credit": "NPS Photo / Bradley Block",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6631318F-9E50-F1B1-5C46DBD78B098DC0.jpg",
+      "title": "Red Squirrel",
+      "altText": "A small red squirrel stands on a dead pine branch.",
+      "caption": "Red squirrels are commonly observed along the Roof Trail near the visitor center.",
+      "credit": "NPS Photo / VIP Melissa Oehler",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/666058D9-0055-1D9F-119532F940F10BB9.jpg",
+      "title": "Fall Season Foliage in Fog",
+      "altText": "Fog filters through a stand of pine trees, with red and yellow foliage on the forest floor.",
+      "caption": "Autumn is a beautiful time of year to visit the monument. The colors of fall are often the best during mid to late September.",
+      "credit": "NPS Photo / Bradley Block",
+      "isPrimary": false
+    },
+    {
+      "id": "jeca-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6683C845-E7F9-D3F7-FA56BC263BEE5F1E.jpg",
+      "title": "Winter in the Pines",
+      "altText": "Snow covers the ground and flocks pine trees.",
+      "caption": "Although a \"slower\" time of year, the winter season offers some of the best scenery of the ponderosa pine forest.",
+      "credit": "NPS Photo / Bradley Block",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jeca/index.htm",
+    "directions": "http://www.nps.gov/jeca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Explorers and Expeditions",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Caves, Caverns and Karst",
+    "Fire",
+    "Geology",
+    "Trails",
+    "National Monument",
+    "SD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

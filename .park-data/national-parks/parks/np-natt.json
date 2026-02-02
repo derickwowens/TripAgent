@@ -1,0 +1,115 @@
+{
+  "id": "np-natt",
+  "name": "Natchez Trace National Scenic Trail",
+  "category": "national",
+  "parkType": "national_scenic_trail",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "The Natchez Trace National Scenic Trail is five sections of hiking trail running roughly parallel to the 444-mile long Natchez Trace Parkway scenic motor road. The foot trails total more than 60 miles and offer opportunities to explore wetlands, swamps, hardwood forest, and the history of the area.",
+  "shortDescription": "The Natchez Trace National Scenic Trail is five sections of hiking trail running roughly parallel to the 444-mile long Natchez Trace Parkway scenic motor road. The foot trails total more than 60 miles...",
+  "designation": "National Scenic Trail",
+  "coordinates": {
+    "latitude": 34.330290333,
+    "longitude": -88.7100104094
+  },
+  "nationalParkInfo": {
+    "parkCode": "natt",
+    "npsId": "3ACC9199-1234-4E50-B80E-65DB783B4BB7",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/natt/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/natt/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "18003057417",
+    "email": "natr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/natt/index.htm",
+    "address": {
+      "line1": "2680 Natchez Trace Parkway",
+      "line2": "",
+      "city": "Tupelo",
+      "state": "MS",
+      "postalCode": "38804"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Natchez Trace National Scenic Trail is open every day during daylight hours. Severe weather resulting in washouts and downed trees can cause temporary trail closures. The trail is located entirely within the property boundaries of the Natchez Trace Parkway and questions about the trail and its condition should be directed to the Parkway's visitor center by calling 1-800-305-7417."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Mississippi, Alabama, and most of Tennessee are classified as humid subtropical climates. The weather ranges from mild winters to hot summers. Average high temperatures reach into the high 80's in summer, and into the high 40's in winter. Thunderstorms are common in Mississippi, especially in the southern part of the state, and from June through November, the state is occasionally affected by hurricanes moving north from the Gulf of Mexico. Check local forecasts to plan your trip."
+  },
+  "images": [
+    {
+      "id": "natt-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C843CE5-1DD8-B71B-0BAFBFE2E37ADA31.jpg",
+      "title": "Potkopinu Section of the Natchez Trace National Scenic Trail",
+      "altText": "Potkopinu Section of the Natchez Trace National Scenic Trail",
+      "caption": "The Potkopinu section, between milepost 17 and 20, follows the historic Old Trace. The \"sunken\" nature of the trail is due to the footsteps of thousands of travelers between the 1780s and 1820s in the soft loess soil.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "natt-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C843EB9-1DD8-B71B-0B958F0F60585D20.jpg",
+      "title": "Rocky Springs Section of the Natchez Trace National Scenic Trail",
+      "altText": "A section of the Old Trace at Rocky Springs (MP 52.4-59)",
+      "caption": "A section of the Old Trace at Rocky Springs (MP 52.4-59)",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "natt-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C844095-1DD8-B71B-0BC51A5324727B09.jpg",
+      "title": "Yockanookany Section Trail Head at Cypress Swamp",
+      "altText": "A fork in the trail with directional signs",
+      "caption": "Access to the Yockanookany section of the National Scenic Trail at Cypress Swamp (MP 122)",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/natt/index.htm",
+    "directions": "http://www.nps.gov/natt/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Trails",
+    "National Scenic Trail",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

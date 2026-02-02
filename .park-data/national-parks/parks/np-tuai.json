@@ -1,0 +1,142 @@
+{
+  "id": "np-tuai",
+  "name": "Tuskegee Airmen National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "Before the first African American military pilots became known as the \"Red Tails\" they wore striped tails as they began their flight training in the Army's PT-17 Stearman bi-plane. Their flying adventure started at Moton Field, in Tuskegee, Alabama, where the Army Air Corps conducted a military test to determine if African Americans could be trained to fly combat aircraft.",
+  "shortDescription": "Before the first African American military pilots became known as the \"Red Tails\" they wore striped tails as they began their flight training in the Army's PT-17 Stearman bi-plane. Their flying advent...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 32.45538671,
+    "longitude": -85.67983321
+  },
+  "nationalParkInfo": {
+    "parkCode": "tuai",
+    "npsId": "5AAB8CB5-2F62-4BD7-82D1-E19963FA94C1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tuai/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tuai/directions"
+    }
+  ],
+  "contact": {
+    "phone": "(334) 727-1247",
+    "email": "tuai_information@nps.gov",
+    "website": "https://www.nps.gov/tuai/index.htm",
+    "address": {
+      "line1": "1616 Chappie James Ave.",
+      "line2": "",
+      "city": "Tuskegee",
+      "state": "AL",
+      "postalCode": "36083"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "The park is open Monday-Saturday 9:00 am - 4:30 pm CST.  The park is closed Thanksgiving Day, Christmas Day, and New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in Tuskegee is generally sunny, averaging around 218 sunny days annually. Average rainfall is 52 inches a year, with an average snowfall of 0 inches. The high temperature in July is around 92 degrees, and average low in January is around 42 degrees."
+  },
+  "images": [
+    {
+      "id": "tuai-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87CA3F-1DD8-B71B-0B1A6DBC5E5DF262.jpg",
+      "title": "The \"Duchess Arlene\" -  flown by Robert Williams, Pilot class",
+      "altText": "Red-Tail P-51D Mustang In Flight Exhibit",
+      "caption": "One of the most beloved and recognized airplanes of World War II -  North American P-51D Mustang",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "tuai-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87D300-1DD8-B71B-0BA370BA5F1C6609.jpg",
+      "title": "Training Days at Tuskegee",
+      "altText": "A World War II flight simulator and PT-17 bi-wing training plane",
+      "caption": "Take a  \"Walk Back In Time\" in Hangar #1 to see the faces and visit the places where cadets trained as America's first African-American military pilots and support crews.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tuai-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87D884-1DD8-B71B-0B24DC2C235825AA.jpg",
+      "title": "And There Were Women...",
+      "altText": "Female Mechanic works on military aircraft",
+      "caption": "Many are amazed to learn of the vital role women played as part of the Tuskee \"Airmen\" Experience.",
+      "credit": "Air Force Historical Research Agency",
+      "isPrimary": false
+    },
+    {
+      "id": "tuai-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87E45C-1DD8-B71B-0B08D9001F7902E2.jpg",
+      "title": "First Flight - Eleanor Roosevelt was the first First Lady to fly with a Negro Pilot.",
+      "altText": "Small Yellow training plane used in the Civilian Pilot Training Prograj - J3 Piper Cub",
+      "caption": "Visitors are surprised to see the small size of the airplane in which First Lady Eleanor Roosevelt took a flight with Negro Pilot Charles A. Anderson.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tuai-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87E890-1DD8-B71B-0BB7C4487A4AF442.jpg",
+      "title": "History Lives at Moton Field",
+      "altText": "Two airplane hangars - Hangar #1 in foreground and Hangar #2 in background at Moton Field.",
+      "caption": "Come, experience the \"power of place\" where the Tuskegee Airmen blazed a trail that led to the civil rights movement.of the 1950's and 1960's.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tuai/index.htm",
+    "directions": "http://www.nps.gov/tuai/directions"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Aviation",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "World War II",
+    "National Historic Site",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

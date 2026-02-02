@@ -1,0 +1,235 @@
+{
+  "id": "np-nepe",
+  "name": "Nez Perce National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "ID",
+  "stateName": "Idaho",
+  "region": "west",
+  "description": "Since time immemorial, the valleys, prairies, mountains, and plateaus of the inland northwest have been home to the nimíipuu (Nez Perce) people. Extremely resilient, they survived the settling of the United States and adapted to a changed world. Nez Perce National Historical Park consists of 38 places important to the history and culture of the nimíipuu. Explore these places. Learn their stories.",
+  "shortDescription": "Since time immemorial, the valleys, prairies, mountains, and plateaus of the inland northwest have been home to the nimíipuu (Nez Perce) people. Extremely resilient, they survived the settling of the ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 46.07019093,
+    "longitude": -115.8761258
+  },
+  "nationalParkInfo": {
+    "parkCode": "nepe",
+    "npsId": "05F2A0A7-317D-4C4F-95D6-F046BE96310C",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/nepe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/nepe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "208-843-7009",
+    "email": "nepe_superintendent@nps.gov",
+    "website": "https://www.nps.gov/nepe/index.htm",
+    "address": {
+      "line1": "Nez Perce National Historical Park",
+      "line2": "39063 US Hwy 95",
+      "city": "Lapwai",
+      "state": "ID",
+      "postalCode": "83540-9715"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "8:30AM - 4:00PM",
+    "wednesday": "8:30AM - 4:00PM",
+    "thursday": "8:30AM - 4:00PM",
+    "friday": "8:30AM - 4:00PM",
+    "saturday": "8:30AM - 4:00PM",
+    "sunday": "Closed",
+    "description": "Summer visitor center operating hours are 8:30 am - 4:00 pm daily. In the winter, the visitor center is open 5-days a week from Tuesday - Saturday from 8:30 am - 4:00 pm.  Closed Sunday and Monday.  The visitor center is closed Thanksgiving, Christmas, and New Year's days."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Elevations in the Park range from 700 feet above sea level to over 8,000, providing a wide range of climatic conditions, that follow the four seasons. Be prepared for very warm weather in the summer months, in particular in the river valleys. The spring and fall are moderate and comfortable. Winter conditions can be severe in the higher elevations, with snow and ice making travel difficult and dangerous. Please visit the National Weather Service for comprehensive weather information."
+  },
+  "images": [
+    {
+      "id": "nepe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87B14F-1DD8-B71B-0B562F4DFC141863.jpg",
+      "title": "Painted Tipi",
+      "altText": "Colorful painted tipi on green lawn",
+      "caption": "Every morning in the summer Rangers put a tipi on the front lawn of the visitor center. Visitors are always welcome to help.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "nepe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87AFBC-1DD8-B71B-0BE33C27113E993C.jpg",
+      "title": "Buffalo Eddy",
+      "altText": "Petroglyph carvings on the bank of the Snake River.",
+      "caption": "Buffalo Eddy contains many petroglyphs and is considered a ancient crossing place.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nepe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C879308-1DD8-B71B-0B32D10FCFA3C59F.jpg",
+      "title": "Take Flight",
+      "altText": "Birds in flight across a grassy field.",
+      "caption": "Birds take flight across a grassy field.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nepe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87B26A-1DD8-B71B-0B8572F892412699.jpg",
+      "title": "Buffalo Hide Tipi",
+      "altText": "Elder (Mylie Lawyer) sitting in front of Old Buffalo hide tipi.",
+      "caption": "The only known remaining complete buffalo hide tipi belonging to a Nez Perce.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nepe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87B38F-1DD8-B71B-0B01C01A2154CABB.jpg",
+      "title": "Appaloosa Horse Parade",
+      "altText": "Horses and riders dressed in native regalia.",
+      "caption": "This horse parade was held in the Spalding picnic area during the parks 50th anniversary in 2015.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nepe-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87B657-1DD8-B71B-0B0970B12C65A5F7.jpg",
+      "title": "Weippe Camas",
+      "altText": "Blue Camas flowers in a prairie field.",
+      "caption": "Camas has been a food staple of the Nez Perce for thousands of years.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/nepe/index.htm",
+    "directions": "http://www.nps.gov/nepe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Military",
+    "Cavalry",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Churches",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Homesteading",
+    "The Gold Rush",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Canyons and Canyonlands",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Geology",
+    "Grasslands",
+    "Meadows",
+    "Mountains",
+    "River and Riparian",
+    "Scenic Views",
+    "Watersheds",
+    "National Historical Park",
+    "ID"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

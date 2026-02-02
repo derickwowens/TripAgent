@@ -1,0 +1,179 @@
+{
+  "id": "np-bepa",
+  "name": "Belmont-Paul Women's Equality National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Home to the National Woman's Party for more than 90 years, this was the epicenter of the struggle for women's rights. From this house in the shadow of the U.S. Capitol and Supreme Court, Alice Paul and the NWP developed innovative strategies and tactics to advocate for the Equal Rights Amendment and equality for women. President Barack Obama designated the national monument on April 12, 2016.",
+  "shortDescription": "Home to the National Woman's Party for more than 90 years, this was the epicenter of the struggle for women's rights. From this house in the shadow of the U.S. Capitol and Supreme Court, Alice Paul an...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 38.89231541,
+    "longitude": -77.00381882
+  },
+  "nationalParkInfo": {
+    "parkCode": "bepa",
+    "npsId": "E7E4E103-5FA9-45AC-8843-05DE554CDBB7",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bepa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bepa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202-999-9999",
+    "email": "bepa_info@nps.gov",
+    "website": "https://www.nps.gov/bepa/index.htm",
+    "address": {
+      "line1": "144 Constitution Ave NE",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20002"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "Belmont-Paul Women's Equality National Monument is open Fridays, Saturdays and Sundays from 10 a.m. to 5 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "bepa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6E4F7F3F-1DD8-B71B-0BBDE514BEF76FDF.jpg",
+      "title": "Belmont-Paul Women's Equality NM House",
+      "altText": "Belmont-Paul Women's Equality NM House",
+      "caption": "411th Unit of the National Park Service",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "bepa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9D4A4DD0-1DD8-B71B-0BF6DF9405E5BC27.jpg",
+      "title": "Suffrage Banner",
+      "altText": "Suffrage Banner",
+      "caption": "Calling out for Women Suffrage",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bepa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9D5C0E5A-1DD8-B71B-0BBDD767A7BEE294.jpg",
+      "title": "Stained Glass Entrance",
+      "altText": "Stained Glass Entrance",
+      "caption": "Entry way beauty",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bepa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9D7C5824-1DD8-B71B-0B25227D25F19408.jpg",
+      "title": "Thinking Woman Statue",
+      "altText": "Thinking Woman Statue",
+      "caption": "A moment of repose",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bepa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9D84D528-1DD8-B71B-0B6E904FFF508773.jpg",
+      "title": "Susan B. Anthony's Desk",
+      "altText": "Susan B. Anthony's Desk",
+      "caption": "To write a letter...",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bepa-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5C0BAB61-0992-5286-6BD35F34D5D9409A.jpg",
+      "title": "Hall of Portraits with Mirror",
+      "altText": "Interior photo of the Hall of Portraits lit by sunlight streaming through stained glass",
+      "caption": "Vase of flowers in Hall of Portraits illuminated by sunlight streaming through stained glass fan light",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bepa/index.htm",
+    "directions": "http://www.nps.gov/bepa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Hispanic American Heritage",
+    "Incarceration",
+    "Jails and Prisons",
+    "Immigration",
+    "Laborer and Worker",
+    "Migrant Workers",
+    "Labor Movement",
+    "LGB American Heritage",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "War of 1812",
+    "World War I",
+    "Women's History",
+    "National Monument",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

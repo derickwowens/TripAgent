@@ -1,0 +1,185 @@
+{
+  "id": "np-cakr",
+  "name": "Cape Krusenstern National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "A bridge to the past and a land for the future, Cape Krusenstern National Monument protects approximately 560,000 acres of diverse Arctic coastal, and upland ecosystems. Inhabited by the Iñupiaq people since time-immemorial, over 5,000 years of sequential human use is documented in the 114 successive beach ridges. Rich connections to the land and waters are preserved through subsistence practices.",
+  "shortDescription": "A bridge to the past and a land for the future, Cape Krusenstern National Monument protects approximately 560,000 acres of diverse Arctic coastal, and upland ecosystems. Inhabited by the Iñupiaq peopl...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 67.41499986,
+    "longitude": -163.5037786
+  },
+  "nationalParkInfo": {
+    "parkCode": "cakr",
+    "npsId": "77566B98-D9CC-40FB-AA6E-FAA0F56E2059",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cakr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cakr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9073182230",
+    "email": "wear_webmail@nps.gov",
+    "website": "https://www.nps.gov/cakr/index.htm",
+    "address": {
+      "line1": "171 3rd Ave",
+      "line2": "",
+      "city": "Kotzebue",
+      "state": "AK",
+      "postalCode": "99752"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Since there are no roads into Cape Krusenstern National Monument, the visitor center is located at the Northwest Arctic Heritage Center in Kotzebue, AK.  From Kotzebue, visitors will charter an air taxi to transport them into the actual national monument which is open 24/7 every day of the year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Snow, rain, and freezing temperatures can occur any time of the year. Always travel with good quality rain gear and warm layers. Be especially careful to stay dry. Hypothermia can set in on a windy, wet day, even when it doesn't feel that cold."
+  },
+  "images": [
+    {
+      "id": "cakr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A2014-1DD8-B71B-0B764AD7207B0477.jpg",
+      "title": "Muskox and Geese",
+      "altText": "muskox standing on the tundra",
+      "caption": "Muskox and Greater White-fronted Geese on vegetated beach ridges in front of the Igichuk Hills.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cakr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A2166-1DD8-B71B-0BE90EF7A1E217D2.jpg",
+      "title": "Winter Moon",
+      "altText": "moon over snow covered hills",
+      "caption": "January light and a bright moon at 2 pm over the Igichuk Hills in Cape Krusenstern National Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cakr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A22E8-1DD8-B71B-0B2389DB9F76E3B9.jpg",
+      "title": "Beach Ridges on the Shore of Cape Krusenstern",
+      "altText": "aerial view of beach ridges",
+      "caption": "Beach ridges created by years of wave action during storms can be seen as parallel lines in the fall vegetation covering the old gravel.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cakr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A26FE-1DD8-B71B-0B19AD3D540ED878.jpg",
+      "title": "Fish on a Drying Rack",
+      "altText": "fish hanging on rack",
+      "caption": "Pike (left and right) and trout (middle) dry on a rack at a subsistence camp. The slash marks allow more air to circulate and dry the meat more quickly.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cakr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A2CD6-1DD8-B71B-0BF06D8320081526.jpg",
+      "title": "Old House Uncovered",
+      "altText": "archaeologist digging",
+      "caption": "A University of Washington archeology crew conducts research on an old semi-subterranean house along the beach ridges of Cape Krusenstern. Old house timbers are slowly revealed about 4 feet down",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "C06FE528-9671-4EC1-909F-B7D3720A1D89",
+      "name": "Fixed Wing Flying"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cakr/index.htm",
+    "directions": "http://www.nps.gov/cakr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Colonization and Settlement",
+    "Animals",
+    "Birds",
+    "Arctic",
+    "Tundra",
+    "Night Sky",
+    "Aurora Borealis",
+    "Unique Species",
+    "National Monument",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

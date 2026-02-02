@@ -1,0 +1,221 @@
+{
+  "id": "np-lecl",
+  "name": "Lewis & Clark National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "IA",
+  "stateName": "Iowa",
+  "region": "midwest",
+  "description": "The Lewis and Clark National Historic Trail winds nearly 4,900 miles through the homelands of more than 60 Tribal nations. It follows the historic outbound and inbound routes of the Lewis and Clark Expedition of 1803-1806 from Pittsburgh, Pennsylvania to the Pacific Ocean. Follow the trail to find the people, places, and stories that make up the complex legacy of the expedition.",
+  "shortDescription": "The Lewis and Clark National Historic Trail winds nearly 4,900 miles through the homelands of more than 60 Tribal nations. It follows the historic outbound and inbound routes of the Lewis and Clark Ex...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 41.2646141052,
+    "longitude": -95.9245147705
+  },
+  "nationalParkInfo": {
+    "parkCode": "lecl",
+    "npsId": "5D443C5F-19A0-4A06-9CE4-30534A3DD81A",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lecl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/lecl/"
+    }
+  ],
+  "contact": {
+    "phone": "4026611804",
+    "email": "lecl_information@nps.gov",
+    "website": "https://www.nps.gov/lecl/index.htm",
+    "address": {
+      "line1": "601 Riverfront Dr.",
+      "line2": "",
+      "city": "Omaha",
+      "state": "NE",
+      "postalCode": "68102"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 4:30PM",
+    "tuesday": "8:30AM - 4:30PM",
+    "wednesday": "8:30AM - 4:30PM",
+    "thursday": "8:30AM - 4:30PM",
+    "friday": "8:30AM - 4:30PM",
+    "saturday": "8:30AM - 4:30PM",
+    "sunday": "8:30AM - 4:30PM",
+    "description": "Lewis and Clark National Historic Trail Visitor Center is located on the Missouri River in Omaha, Nebraska."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "In winter, watch for ice on trails and sidewalks. In summer, make sure to drink plenty of water and wear sunscreen on hot days. Keep in mind the Trail covers 16 states, use www.weather.gov to look up the specific area you plan to visit."
+  },
+  "images": [
+    {
+      "id": "lecl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FA29AF56-DF2B-8692-40F8422E38FB9093.jpg",
+      "title": "Giant Springs",
+      "altText": "Small waterfall with brown rocks and green moss",
+      "caption": "Giant springs is a site along the Lewis and Clark National Historic Site located in Great Falls, Montana",
+      "credit": "NPS Photo / Alex Wiles",
+      "isPrimary": true
+    },
+    {
+      "id": "lecl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F1C7153C-B6EF-4136-AA61C1984938D01A.jpg",
+      "title": "Sunset at Missouri Headwaters State Park, Montana",
+      "altText": "sun dips behind mountains. In the foreground and meandering river catches the light. Leafy trees sur",
+      "caption": "Sunset over Missouri River headwaters",
+      "credit": "NPS Photo / Alex Wiles",
+      "isPrimary": false
+    },
+    {
+      "id": "lecl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F1E53C07-CAC7-1E47-F3002F9102E59BA6.jpg",
+      "title": "Biking the Lewis and Clark National Historic Trail",
+      "altText": "Cyclist biking dirt path along riverfront. Leafy trees and wetlands habitat in distance.",
+      "caption": "Cyclist along the riverfront along the Lewis and Clark National Historic Trail",
+      "credit": "NPS Photo / Alex Wiles",
+      "isPrimary": false
+    },
+    {
+      "id": "lecl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F21788EE-E877-C00C-257B0EB8AD8F49DB.jpg",
+      "title": "Beacon Rock",
+      "altText": "Water in the foreground with large conical rock on shore",
+      "caption": "Beacon Rock along the Columbia River in Washington.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lecl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F24E8939-E10B-C0DE-12D5E248708871EA.jpg",
+      "title": "Park overlooking Ohio River in Wheeling, West Virginia",
+      "altText": "Interpretive sign overlooking park and river in the background",
+      "caption": "Lewis and Clark interpretive sign overlooking park and the Ohio River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lecl/index.htm",
+    "directions": "https://www.nps.gov/lecl/"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Arts",
+    "Sculpture",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Dams",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Military",
+    "US Army",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Presidents",
+    "Religion and Spirituality",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Westward Expansion",
+    "Women's History",
+    "Animals",
+    "Climate Change",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Grasslands",
+    "Prairies",
+    "Meadows",
+    "Mountains",
+    "Oceans",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Buttes",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Wilderness",
+    "National Historic Trail",
+    "IA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

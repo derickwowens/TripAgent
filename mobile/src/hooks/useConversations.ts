@@ -306,7 +306,7 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
         autoSaveConversation(skipTimestampUpdate);
       }
     }, 500); // 500ms debounce
-  }, [nearestAirport]);
+  }, [nearestAirport, parkMode, userState]);
 
   useEffect(() => {
     if (messages.length > 0) {

@@ -1,0 +1,180 @@
+{
+  "id": "np-abli",
+  "name": "Abraham Lincoln Birthplace National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "KY",
+  "stateName": "Kentucky",
+  "region": "southeast",
+  "description": "For over a century people from around the world have come to rural Central Kentucky to honor the humble beginnings of our 16th president, Abraham Lincoln. His early life on Kentucky's frontier shaped his character and prepared him to lead the nation through Civil War. Visit our country's first memorial to Lincoln, built with donations from young and old, and the site of his childhood home.",
+  "shortDescription": "For over a century people from around the world have come to rural Central Kentucky to honor the humble beginnings of our 16th president, Abraham Lincoln. His early life on Kentucky's frontier shaped ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 37.5858662,
+    "longitude": -85.67330523
+  },
+  "nationalParkInfo": {
+    "parkCode": "abli",
+    "npsId": "77E0D7F0-1942-494A-ACE2-9004D2BDC59E",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/abli/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/abli/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2703583137",
+    "email": "ABLI_Administration@nps.gov",
+    "website": "https://www.nps.gov/abli/index.htm",
+    "address": {
+      "line1": "2995 Lincoln Farm Road",
+      "line2": "",
+      "city": "Hodgenville",
+      "state": "KY",
+      "postalCode": "42748"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Memorial Building:\nopen 9:00 am - 4:30 pm eastern time.\n\nBirthplace Unit Visitor Center and Grounds: \nopen 9:00 am - 5:00 pm eastern time."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "There are four distinct seasons in Central Kentucky. However, temperature and weather conditions can vary widely within those seasons. Spring and Fall are generally pleasant with frequent rain showers. Summer is usually hot and humid. Winter is moderately cold with mixed precipitation."
+  },
+  "images": [
+    {
+      "id": "abli-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2803B7F0-C045-8B5C-97C10486D366C0C6.jpg",
+      "title": "The Memorial Building with Christmas Lights",
+      "altText": "The Memorial Building at night lit up by white light",
+      "caption": "Over 200,000 people a year come to walk up the steps of the Memorial Building to visit the site where Abraham Lincoln was born",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "abli-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C861263-1DD8-B71B-0B71EF9B95F9644F.jpg",
+      "title": "The Memorial Building",
+      "altText": "The first memorial erected to honor Abraham Lincoln",
+      "caption": "The Memorial Building constructed on the traditional site of the birth of Abraham Lincoln.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "abli-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86137D-1DD8-B71B-0B978BACD7EBAEF1.jpg",
+      "title": "The Symbolic Birth Cabin of Abraham Lincoln",
+      "altText": "The symbolic birth cabin on the traditional site of the birth of Abraham Lincoln.",
+      "caption": "The symbolic birth cabin of Abraham Lincoln.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "abli-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8614D1-1DD8-B71B-0B1AF72CA452B051.jpg",
+      "title": "Statue of the Lincoln Family in the Visitor Center",
+      "altText": "Statue of the Lincoln family in the park's Visitor Center",
+      "caption": "Visitors to the park can view the statue of the Lincoln family.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/abli/index.htm",
+    "directions": "http://www.nps.gov/abli/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Birthplace",
+    "Presidents",
+    "Animals",
+    "Birds",
+    "Caves, Caverns and Karst",
+    "Geology",
+    "Groundwater",
+    "Freshwater Springs",
+    "Night Sky",
+    "National Historical Park",
+    "KY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.830Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

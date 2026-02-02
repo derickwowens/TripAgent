@@ -1,0 +1,199 @@
+{
+  "id": "np-muwo",
+  "name": "Muir Woods National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Walk among old growth coast redwoods, cooling their roots in the fresh water of Redwood Creek and lifting their crowns to reach the sun and fog. Federally protected as a National Monument since 1908, this primeval forest is both refuge and laboratory, revealing our relationship with the living landscape. What will you discover in Muir Woods?",
+  "shortDescription": "Walk among old growth coast redwoods, cooling their roots in the fresh water of Redwood Creek and lifting their crowns to reach the sun and fog. Federally protected as a National Monument since 1908, ...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.89658027,
+    "longitude": -122.5808047
+  },
+  "nationalParkInfo": {
+    "parkCode": "muwo",
+    "npsId": "126A6227-E39F-44F4-A279-B1EA257CBCDA",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/muwo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/muwo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "415-561-2850",
+    "email": "goga_muwo_socialmedia@nps.gov",
+    "website": "https://www.nps.gov/muwo/index.htm",
+    "address": {
+      "line1": "Muir Woods National Monument",
+      "line2": "1 Muir Woods Rd",
+      "city": "Mill Valley",
+      "state": "CA",
+      "postalCode": "94941"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:00PM",
+    "tuesday": "8:00AM - 5:00PM",
+    "wednesday": "8:00AM - 5:00PM",
+    "thursday": "8:00AM - 5:00PM",
+    "friday": "8:00AM - 5:00PM",
+    "saturday": "8:00AM - 5:00PM",
+    "sunday": "8:00AM - 5:00PM",
+    "description": "Muir Woods is open every day of the year, with exceptions for inclement weather and hazardous conditions. Our core winter hours are 8AM-5PM; in the spring, summer, and fall we are open later based on increased daylight hours. Updates on closures will be posted as an alert to the website and on social-media pages."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "$15 per person 16 years of age and older. Entrance fees may be purchased in advance with your parking/shuttle reservation or upon arrival to the park. Parking/shuttle reservations are required for all vehicles and shuttle riders visiting Muir Woods National Monument. Reservation fees are separate from entrance fees. Please visit GoMuirWoods.com for parking/shuttle reservations.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The coast redwood forest is cool most times of the year with temperatures ranging from 40 - 70 F/ 4 - 21 C. Always come prepared with layers. From late October to early May, expect cool weather & possible rain. Summer months (June-August) can be warmer, but it is generally cool and dry. Expect heavy fog in the morning, burning off in the afternoon. Often, the fall (September-October) is the warmest time of year."
+  },
+  "images": [
+    {
+      "id": "muwo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B8948A3E-F88D-F366-93C97C2CE440F386.jpg",
+      "title": "Muir Woods National Monument",
+      "altText": "Wooden sign and entrance to Muir Woods National Monument",
+      "caption": "Entrance to Muir Woods National Monument",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "muwo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CA33A-1DD8-B71B-0B079C22EF081D8A.jpg",
+      "title": "Bridge through Muir Woods",
+      "altText": "A wooden bridge crosses Redwood Creek in the redwood forest",
+      "caption": "Summer is a busy time at Muir Woods. Visit early in the morning for the most pleasant experience.",
+      "credit": "Alice Kong",
+      "isPrimary": false
+    },
+    {
+      "id": "muwo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CAB0D-1DD8-B71B-0BEBE88513B77274.jpg",
+      "title": "Bohemian Grove",
+      "altText": "Sun rays shine down on a visitor among very tall redwood trees",
+      "caption": "Later afternoon is a gorgeous time of day to visit Bohemian Grove, inside Muir Woods.",
+      "credit": "Alice Kong",
+      "isPrimary": false
+    },
+    {
+      "id": "muwo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CB0A8-1DD8-B71B-0BD784613755F996.jpg",
+      "title": "Banana Slug",
+      "altText": "A yellow banana slug creeping along a twig",
+      "caption": "Banana slugs creep along the forest floor in Muir Woods and are likely to be abundant in the warmer days of winter.",
+      "credit": "NPS Photo/Kristen Henderson",
+      "isPrimary": false
+    },
+    {
+      "id": "muwo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9A502984-E749-2058-CA545187A051912D.jpg",
+      "title": "Informal interpretation at Muir Woods",
+      "altText": "in a shady forest, a ranger in a flat hat and green uniform speaks with a small group of visitors",
+      "caption": "Muir Woods rangers deliver daily tree talks to connect visitors with the redwood forest ecosystem.",
+      "credit": "NPS/ Jace Ritchey",
+      "isPrimary": false
+    },
+    {
+      "id": "muwo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9AA707B6-DBF4-06FC-B75ADAC18231C721.jpg",
+      "title": "Rangers speaking with school group",
+      "altText": "Two rangers stand next to a big sign and speak to visitors seated in the foreground",
+      "caption": "More than just a forest, Muir Woods has rich cultural history.",
+      "credit": "NPS/ Jace Ritchey",
+      "isPrimary": false
+    },
+    {
+      "id": "muwo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9C2E67B2-9017-25D4-73AE0A8E6BAF43E8.jpg",
+      "title": "Visitor at MUWO sign",
+      "altText": "a visitor points to a sign that says muir woods",
+      "caption": "Visitors can receive orientation at the front entrance before visiting the forest.",
+      "credit": "NPS/ Jace Ritchey",
+      "isPrimary": false
+    },
+    {
+      "id": "muwo-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9C3CBB3F-CEF9-08C9-502E7345F7791A80.jpg",
+      "title": "rangers pointing at redwoods",
+      "altText": "two rangers in flat hats with their backs to the camera point at trees in the distance",
+      "caption": "Rangers are always available at Muir Woods to welcome visitors, answer questions, and provide orientation.",
+      "credit": "NPS/ Jace Ritchey",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/muwo/index.htm",
+    "directions": "http://www.nps.gov/muwo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Fish",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "River and Riparian",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "National Monument",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,391 @@
+{
+  "id": "np-care",
+  "name": "Capitol Reef National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "Located in south-central Utah in the heart of red rock country, Capitol Reef National Park is a hidden treasure filled with cliffs, canyons, domes, and bridges in the Waterpocket Fold, a geologic monocline (a wrinkle on the earth) extending almost 100 miles.",
+  "shortDescription": "Located in south-central Utah in the heart of red rock country, Capitol Reef National Park is a hidden treasure filled with cliffs, canyons, domes, and bridges in the Waterpocket Fold, a geologic mono...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 38.2821653131,
+    "longitude": -111.247048378
+  },
+  "nationalParkInfo": {
+    "parkCode": "care",
+    "npsId": "2F05E2B8-CDA3-434E-9C4C-C7DD828CAC3B",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/care/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/care/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "435-425-3791",
+    "email": "care_information@nps.gov",
+    "website": "https://www.nps.gov/care/index.htm",
+    "address": {
+      "line1": "52 West Headquarters Drive",
+      "line2": "",
+      "city": "Torrey",
+      "state": "UT",
+      "postalCode": "84775"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Capitol Reef is a 24 hour park, open all day, every day. The visitor center is open daily, except for some major holidays. Visitor center hours vary, call 435-425-3791 and follow the prompts for current visitor center information."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "An entrance fee is charged per vehicle.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car. Typically used for bicyclists and pedestrians.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "Commercial Road-Based Tours are required to obtain a Commercial Use Authorization before visiting Capitol Reef.\n\nWhen visiting the park, the tour must then pay the separate entrance fee at the visitor center (or through pay.gov).\n\nTours with vehicle capacity of 15 or less should apply for a CUA in the \"Guided Interpretive Tours\" category. Tours of this size fall under the Guided Activities entry fee structure.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Commercial Road-Based Tours are required to obtain a Commercial Use Authorization before visiting Capitol Reef National Park.\n\nWhen visiting the park, the tour must then pay the separate entrance fee at the visitor center (or through pay.gov).\n\nVehicle capacity of 16 seats or greater: $100.00 entrance fee",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Commercial Road-Based Tours are required to obtain a Commercial Use Authorization before visiting Capitol Reef National Park.\n\nWhen visiting the park, the tour must then pay the separate entrance fee at the visitor center (or through pay.gov).\n\nVehicle capacity of 16 seats or greater: $100.00 entrance fee",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "Guided Activities include all types of guided services, such as bike and motorcycle tours, hiking guides, photography classes, hiking shuttles, and road-based commercial tours with vehicles <16 capacity.\n\nGuided activity groups are charged the per person fee of $10.00 per client, excluding the trip leader or guide. If a client has an America the Beautiful Resident pass (annual, senior, access, etc.) it covers 4 people in the group. (Non-resident annual passes cover only the pass owner.)",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Weather is posted daily; check at the park visitor center for weather updates. Do not enter into narrow canyons if there is a threat of rain or if rain has been falling in the area. Rain and snow may also make dirt roads impassable to vehicles."
+  },
+  "images": [
+    {
+      "id": "care-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E3C7-1DD8-B71B-0B4181834EE46AED.jpg",
+      "title": "Gifford House and Pendleton Barn",
+      "altText": "Wingate Sandstone cliffs behind historic barn and farmhouse",
+      "caption": "Windgate sandstone towers above historic Fruita farms and homes",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "care-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E4FB-1DD8-B71B-0B8614194A6D08FA.jpg",
+      "title": "Hickman Bridge",
+      "altText": "A hiker stands beside Hickman Bridge, a natural sandstone bridge",
+      "caption": "Hickman Bridge, a natural sandstone bridge, is a popular hike in the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "care-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E601-1DD8-B71B-0BCB6A40DE28B1CB.jpg",
+      "title": "Strike Valley",
+      "altText": "Exposed layers of rock in the Waterpocket fold",
+      "caption": "The Strike Valley shows colorful layers in the Waterpocket fold.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "care-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E740-1DD8-B71B-0B6FC6B644FB96D0.jpg",
+      "title": "Capitol Reef Visitor Center with \"The Castle\"",
+      "altText": "Cliffs known as \"The Castle\" tower above the Capitol Reef Visitor Center",
+      "caption": "The Capitol Reef Visitor Center sits below cliffs known as \"The Castle\".",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "care-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E9BB-1DD8-B71B-0B30AEA8D8052350.jpg",
+      "title": "Capitol Reef Peach Orchard",
+      "altText": "Fruit tree with peaches in front of red sandstone cliffs",
+      "caption": "The Capitol Reef Orchards, planted in the pioneer era, remain a popular place for visitors today.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "07CBCA6A-46B8-413F-8B6C-ABEDEBF9853E",
+      "name": "Canyoneering"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/care/index.htm",
+    "directions": "http://www.nps.gov/care/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Industry",
+    "Mining",
+    "Military",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Westward Expansion",
+    "Homesteading",
+    "Women's History",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Canyons and Canyonlands",
+    "Climate Change",
+    "Dunes",
+    "Foothills, Plains and Valleys",
+    "Plateaus and Mesas",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Fossils and Paleontology",
+    "Dinosaur",
+    "Petrified Wood",
+    "Geology",
+    "Mineral Deposits",
+    "Glaciers",
+    "Grasslands",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Arches",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Volcanoes",
+    "Waterfalls",
+    "National Park",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

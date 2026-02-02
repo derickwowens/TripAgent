@@ -1,0 +1,265 @@
+{
+  "id": "np-fopu",
+  "name": "Fort Pulaski National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "For much of the 19th century, masonry fortifications were the United States’ main defense against overseas enemies. However, during the Civil War, new technology proved its superiority over these forts. Using rifled cannons, the U.S. Army compelled the Confederate garrison inside Fort Pulaski to surrender. The siege was a landmark experiment in the history of military science and invention.",
+  "shortDescription": "For much of the 19th century, masonry fortifications were the United States’ main defense against overseas enemies. However, during the Civil War, new technology proved its superiority over these fort...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 32.0308274,
+    "longitude": -80.93361681
+  },
+  "nationalParkInfo": {
+    "parkCode": "fopu",
+    "npsId": "3249A652-F901-40F2-A608-635B0F41574B",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fopu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fopu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(912) 219-4233",
+    "email": "fopu_information@nps.gov",
+    "website": "https://www.nps.gov/fopu/index.htm",
+    "address": {
+      "line1": "101 Fort Pulaski Road",
+      "line2": "Fort Pulaski Visitor Center",
+      "city": "Savannah",
+      "state": "GA",
+      "postalCode": "31410"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Fort Pulaski National Monument is open year round from 9:00 a.m. to 5:00 pm, except for New Years, Thanksgiving, and Christmas Days. Last entry into the park is at 4:30 pm. Historic Fort Pulaski is open 9:00 a.m. to 4:30 pm and the Visitor Center is open from 9:00 am to 5:00 pm."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "A per person fee of $10 is required to visit Fort Pulaski and the surrounding areas. Admission is valid for 7 consecutive days. Youth 15 and under are admitted free of charge. Only available at the entrance station to Fort Pulaski National Monument. Credit/Debit Only",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "Commercial bus/van tours are charged the per person fee for the number of persons on board.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Savannah has a humid sub tropical climate with over two hundred days of sunshine each year. Summers are typically hot, bright and humid with afternoon thunderstorms common. Temperatures often range from the lower 70s to the mid 90s F. Spring and autumn can be quite pleasant with temperatures ranging from the upper 50s into the 80s F. The winter months are usually dry. Temperatures can be cooler than one would expect, ranging from the upper 30s through the 60s F generally, though sudden cold snaps can occur."
+  },
+  "images": [
+    {
+      "id": "fopu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C870DCA-1DD8-B71B-0B2574219E50694B.jpg",
+      "title": "The Battered Walls of Fort Pulaski",
+      "altText": "The red masonry walls of Fort Pulaski still show battle damage over 150 years later.",
+      "caption": "A walk along the outside of Fort Pulaski reveals damaged walls over 150 years after the Civil War.",
+      "credit": "NPS Photo / Joel Cadoff",
+      "isPrimary": true
+    },
+    {
+      "id": "fopu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8719E2-1DD8-B71B-0B319275F4595F01.jpg",
+      "title": "The Casemates of a Fort",
+      "altText": "The brick of the fort glow in the late afternoon light. The arches inside the fort reveal a cannon i",
+      "caption": "Fort Pulaski shows off its classic arched architecture and cannon.",
+      "credit": "NPS Photo / Joel Cadoff",
+      "isPrimary": false
+    },
+    {
+      "id": "fopu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C870BDE-1DD8-B71B-0BC14E049D336470.jpg",
+      "title": "The Cockspur Island Lighthouse",
+      "altText": "The white masonry Cockspur Island lighthouse sits in the Savannah River.",
+      "caption": "The Cockspur Island Lighthouse still stands guard over the south channel of the Savannah River and Fort Pulaski.",
+      "credit": "NPS Photo / Joel Cadoff",
+      "isPrimary": false
+    },
+    {
+      "id": "fopu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C871D54-1DD8-B71B-0B9341FBDACB1E23.jpg",
+      "title": "The Sentinel",
+      "altText": "A great blue heron stands watch on top of the fort's brick walls.",
+      "caption": "A great blue heron stands on the top of Fort Pulaski like a lonely sentinel.",
+      "credit": "NPS Photo / Joel Cadoff",
+      "isPrimary": false
+    },
+    {
+      "id": "fopu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C871F0A-1DD8-B71B-0B1C54DD395F2A3B.jpg",
+      "title": "The Ladies of a Fort",
+      "altText": "Two women dressed in mid nineteenth century civilian attire watch through looking glasses",
+      "caption": "Volunteer living historians play an important role for the National Park Service and Fort Pulaski National Monument.",
+      "credit": "NPS Photo / Joel Cadoff",
+      "isPrimary": false
+    },
+    {
+      "id": "fopu-img-5",
+      "url": "https://www.nps.gov/customcf/structured_data/upload/Cannon2.jpg",
+      "title": "Night Cannon Firing at Fort Pulaski",
+      "altText": "The night sky is illuminated as a cannon fires at Fort Pulaski",
+      "caption": "Artillery demonstrations are an important part of the interpretation program at Fort Pulaski.",
+      "credit": "NPS Photo / Joel Cadoff",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fopu/index.htm",
+    "directions": "http://www.nps.gov/fopu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "Engineering",
+    "Enslavement",
+    "Forts",
+    "Great Depression",
+    "Incarceration",
+    "Jails and Prisons",
+    "Maritime",
+    "Coastal Defenses",
+    "Lighthouses",
+    "Military",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Coast Guard",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Civil War",
+    "World War I",
+    "World War II",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Forests and Woodlands",
+    "Trails",
+    "Wetlands",
+    "Marshes",
+    "National Monument",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

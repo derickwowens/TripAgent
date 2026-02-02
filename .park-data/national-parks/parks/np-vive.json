@@ -1,0 +1,134 @@
+{
+  "id": "np-vive",
+  "name": "Vietnam Veterans Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Honoring the men and women who served in the controversial Vietnam War, the Vietnam Veterans Memorial chronologically lists the names of 58,318 Americans who gave their lives in service to their country.",
+  "shortDescription": "Honoring the men and women who served in the controversial Vietnam War, the Vietnam Veterans Memorial chronologically lists the names of 58,318 Americans who gave their lives in service to their count...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.89096297,
+    "longitude": -77.04765735
+  },
+  "nationalParkInfo": {
+    "parkCode": "vive",
+    "npsId": "DFCBAD2C-0B0A-47E8-9C3C-BF55BB3409B2",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/vive/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/vive/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202-426-6841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/vive/index.htm",
+    "address": {
+      "line1": "5 Henry Bacon Drive NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20002"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Vietnam Veterans Memorial is open to the public 24 hours a day. Park rangers and volunteers are generally available from 9 a.m. to 5 p.m. to answer questions and provide assistance."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "vive-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B7747C16-EFF0-AE6C-C2CCE4E52D34F1F7.jpg",
+      "title": "Vietnam Veterans Memorial at night",
+      "altText": "Lights glow at the base of the wall of the Vietnam Veterans Memorial with Washington Monument.",
+      "caption": "Visiting after dark completely changes the character of the memorial.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "vive-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8227F3-1DD8-B71B-0B5B658A71E00D4C.jpg",
+      "title": "Vietnam Women's Memorial",
+      "altText": "Bronze statue of three women with a wounded soldier.",
+      "caption": "Women in Service to their country during Vietnam",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "vive-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B7898634-9A0B-C18A-FA508E1DA029BFBB.jpg",
+      "title": "Three Servicemen Statue",
+      "altText": "A bronze statue of three soldiers standing together, carrying weapons, and looking to their right.",
+      "caption": "The Three Servicemen statue and the flagpole were added shortly after the memorial opened in its original configuration.",
+      "credit": "NPS / Terry Adams",
+      "isPrimary": false
+    },
+    {
+      "id": "vive-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B7CF274B-EF17-1E6A-D15447F644FCE633.jpg",
+      "title": "Visitors to the wall",
+      "altText": "A man kneels and takes a photo of the wall surrounded by other people. Flowers are at the wall base.",
+      "caption": "Memorial Day weekend is a special time to visit the Vietnam Veterans Memorial.",
+      "credit": "NPS / Nathan King",
+      "isPrimary": false
+    },
+    {
+      "id": "vive-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2626367E-9CA6-A782-8F1E08D6BE2C86BC.jpg",
+      "title": "Vietnam Veterans Memorial",
+      "altText": "Notes and flags set at the base of the Vietnam Veterans Memorial, a black wall inscribed with names.",
+      "caption": "Many have left memories of the fallen over the years.",
+      "credit": "NPS / Terry Adams",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/vive/index.htm",
+    "directions": "http://www.nps.gov/vive/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Wars and Conflicts",
+    "Vietnam War",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

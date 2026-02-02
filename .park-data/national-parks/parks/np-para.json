@@ -1,0 +1,168 @@
+{
+  "id": "np-para",
+  "name": "Grand Canyon-Parashant National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Despite the hardships created by rugged isolation and the lack of natural waters, Parashant has a long human history spanning more than 11,000 years, and an equally rich geologic history spanning almost two billion years. Full of natural splendor and a sense of solitude, this area remains remote and unspoiled, qualities that are essential to the protection of its scientific and historic resources.",
+  "shortDescription": "Despite the hardships created by rugged isolation and the lack of natural waters, Parashant has a long human history spanning more than 11,000 years, and an equally rich geologic history spanning almo...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.41535465,
+    "longitude": -113.6682797
+  },
+  "nationalParkInfo": {
+    "parkCode": "para",
+    "npsId": "F614E6C5-1283-431A-AF44-15FC849D65FE",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/para/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/para/planyourvisit/4x4-vehicles-and-off-pavement-travel-safety.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(435) 688-3200",
+    "email": "para_interpretation@nps.gov",
+    "website": "https://www.nps.gov/para/index.htm",
+    "address": {
+      "line1": "Public Lands Visitor Center",
+      "line2": "4001 E. Aviator Drive",
+      "city": "Saint George",
+      "state": "UT",
+      "postalCode": "84790"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The monument is open every day of the year, however many areas may be inaccessible when roads are impassable. Within the boundaries of Grand Canyon-Parashant there are no facilities or visitor contact stations. Do not rely on your cellphone - there is no cell service on the monument. Roads can be impassable during the monsoon season, July through September, and after winter storms."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Parashant is split between low elevation Mojave Desert on the west side and high elevation pinyon/juniper/ponderosa highlands on the east side. Expect sun on average 310 days per year. The summer months of June through September are very hot on the west side with highs above 100°F daily (80°F+ at night) below 2,500 feet. The high elevation east side is ~15°F cooler. Expect heavy afternoon monsoon storms June - September. Roads often stay muddy/icy above 5,500 feet December - February."
+  },
+  "images": [
+    {
+      "id": "para-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5FEA14DD-DA42-DE40-C979416A86C8A4AC.jpg",
+      "title": "Hudson Point",
+      "altText": "Near a cliff edge the sun sets in the distance.",
+      "caption": "The sun sets behind the Pakoon Basin.",
+      "credit": "NPS/T. Miller",
+      "isPrimary": true
+    },
+    {
+      "id": "para-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6045DD15-EB92-8627-85342FA4F06DCEBE.jpg",
+      "title": "Driving the sage flat",
+      "altText": "A UTV drives down a road surrounded on both sides by sage",
+      "caption": "Visitors enjoy exploring the roads on the monument.",
+      "credit": "NPS/M. Draper",
+      "isPrimary": false
+    },
+    {
+      "id": "para-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/604CD29B-9450-FC46-149B6651316A4349.jpg",
+      "title": "Camping sunset",
+      "altText": "The sun sets behind a grove of ponderosa trees lighting up an orange tent with a warm glow",
+      "caption": "Campsites on the monument are primitive as there is no designated campground.",
+      "credit": "NPS/M. Draper",
+      "isPrimary": false
+    },
+    {
+      "id": "para-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/60798D9F-974F-C923-0C99B0DB97F2BF2C.jpg",
+      "title": "Waring Ranch",
+      "altText": "Looking across a long narrow stockpond. Green grass slopes towards the water.",
+      "caption": "Areas such as Waring Ranch give a glimpse into ranching operations in the early and mid-20th century",
+      "credit": "NPS/M. Draper",
+      "isPrimary": false
+    },
+    {
+      "id": "para-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6099FCCB-C94F-7811-EC4ED5DFD0FE679A.jpg",
+      "title": "Fall sunset",
+      "altText": "The setting sun sits above trees and shrubs adorned with hues of orange, red and green.",
+      "caption": "Sunrise and sunsets hallmark the vast landscapes of the monument.",
+      "credit": "NPS/G. Woodall",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/para/index.htm",
+    "directions": "https://www.nps.gov/para/planyourvisit/4x4-vehicles-and-off-pavement-travel-safety.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Trails",
+    "Wilderness",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

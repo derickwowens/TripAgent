@@ -1,0 +1,169 @@
+{
+  "id": "np-efmo",
+  "name": "Effigy Mounds National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "IA",
+  "stateName": "Iowa",
+  "region": "midwest",
+  "description": "The mounds preserved here are considered sacred by many Americans, especially the Monument's 20 culturally associated American Indian tribes. A visit offers opportunities to contemplate the meanings of the mounds and the people who built them. The 200 plus American Indian mounds are located in one of the most picturesque sections of the Upper Mississippi River Valley.",
+  "shortDescription": "The mounds preserved here are considered sacred by many Americans, especially the Monument's 20 culturally associated American Indian tribes. A visit offers opportunities to contemplate the meanings o...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 43.08095081,
+    "longitude": -91.19687517
+  },
+  "nationalParkInfo": {
+    "parkCode": "efmo",
+    "npsId": "0265E5A4-576A-4626-882A-05971DEE9B76",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/efmo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/efmo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5638733491",
+    "email": "efmo_interpretation@nps.gov",
+    "website": "https://www.nps.gov/efmo/index.htm",
+    "address": {
+      "line1": "151 Hwy 76",
+      "line2": "",
+      "city": "Harpers Ferry",
+      "state": "IA",
+      "postalCode": "52146"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Park trails are open daily from dawn to dusk."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "All four seasons are represented in this area with summer temperature in the upper 80’s with higher heat indexes due to humidity and winter daytime highs in the 20's. Temperatures are in °Fahrenheit."
+  },
+  "images": [
+    {
+      "id": "efmo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BB1E2-1DD8-B71B-0B5500DF447CB89D.jpg",
+      "title": "Marching Bear in Spring",
+      "altText": "Bear Effigy Mounds with visitor walking nearby.",
+      "caption": "Marching Bear Mound Group in summer.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "efmo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BB6EE-1DD8-B71B-0BDC4A0D83D76902.jpg",
+      "title": "Scenic Overlook at Fire Point",
+      "altText": "Scenic view of the steep bluffs adjacent to the Mississippi River as trees start to change color.",
+      "caption": "Scenic overlook from the popular Fire Point Trail overlooking the Mississippi River and Driftless area bluffs.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "efmo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BB8AE-1DD8-B71B-0BCEF3BB013A5F6A.jpg",
+      "title": "Mounds on a Foggy Morning",
+      "altText": "Three conical mounds in a foggy morning setting.",
+      "caption": "Three Conical mounds along the Fire Point Trail during a foggy morning.",
+      "credit": "NPS / Kat Busse",
+      "isPrimary": false
+    },
+    {
+      "id": "efmo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/20611706-1DD8-B71B-0BEA4697A628DD12.jpg",
+      "title": "Conical Mounds Leading to Fire Point",
+      "altText": "Circular mounds in a single line.",
+      "caption": "Follow a line of conical mounds that will lead you out to Fire Point which overlooks the Mississippi River.",
+      "credit": "NPS Photo/ Eaton Cote'",
+      "isPrimary": false
+    },
+    {
+      "id": "efmo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F85753B6-B25D-9133-25E16AA606D6E814.jpg",
+      "title": "Bear Mound",
+      "altText": "View from the air of a mound covered in short green vegetation with forest behind.",
+      "caption": "A bear mound visible along the park's North Unit trail.",
+      "credit": "NPS / Eaton Cote'",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/efmo/index.htm",
+    "directions": "http://www.nps.gov/efmo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Fire",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "Scenic Views",
+    "Wetlands",
+    "National Monument",
+    "IA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

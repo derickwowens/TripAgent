@@ -1,0 +1,376 @@
+{
+  "id": "np-ozar",
+  "name": "Ozark National Scenic Riverways",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "Ozark National Scenic Riverways is the first national park area to protect a river system. The Current and Jacks Fork rivers are two of the finest floating rivers found anywhere. Spring-fed, cold and clear: they are a delight to canoe, swim, boat, or fish. Besides these two famous rivers, the park is home to hundreds of freshwater springs, caves, trails, and historic sites such as Alley Mill.",
+  "shortDescription": "Ozark National Scenic Riverways is the first national park area to protect a river system. The Current and Jacks Fork rivers are two of the finest floating rivers found anywhere. Spring-fed, cold and ...",
+  "designation": "National Scenic Riverways",
+  "coordinates": {
+    "latitude": 37.13968894,
+    "longitude": -91.25709817
+  },
+  "nationalParkInfo": {
+    "parkCode": "ozar",
+    "npsId": "CEC2A157-CDDC-4F11-BBE5-0AA2CEA35ADB",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ozar/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ozar/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(573) 323-4236",
+    "email": "ozar_interpretation@nps.gov",
+    "website": "https://www.nps.gov/ozar/index.htm",
+    "address": {
+      "line1": "Multiple locations - Alley Spring Visitor Center: 12185 Alley Hollow Road, Eminence, MO 65466",
+      "line2": "Big Spring Entrance Station: Hwy 103, Van Buren, MO 63965",
+      "city": "Van Buren",
+      "state": "MO",
+      "postalCode": "63965"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Generally, the park grounds are open 24-hours a day throughout the year. Some visitor centers will have different hours depending on season and staff availability. Likewise, certain roads, trails, or river access points may be seasonally closed."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Ozark National Scenic Riverways is located in southeastern Missouri. Summer temperatures generally range from 75-100 degrees (°F) with high humidity. Winter temperatures generally range from 0-50 (°F) degrees with periods of intermittent freezing and snow. Periods of excessive heat are typical in summer, while heavy rains or flooding can occur throughout the year. Be sure to plan accordingly when camping, hiking, or floating."
+  },
+  "images": [
+    {
+      "id": "ozar-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/44F55489-0B88-97AB-548A8C5373A6E8D1.jpg",
+      "title": "Clubhouse Overlook",
+      "altText": "Sunset picture with high vantage point overlooking river with fall colors and sun setting in distanc",
+      "caption": "Ozark National Scenic Riverways has some spectacular scenery.",
+      "credit": "Brock Davis",
+      "isPrimary": true
+    },
+    {
+      "id": "ozar-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B30728EF-08ED-D80B-A70B905439773245.jpg",
+      "title": "Rocky Falls in Summer",
+      "altText": "A rocky \"shut-in\" with a modest waterfall.",
+      "caption": "Rocky Falls is a popular picnic area and swimming hole located near the center of Ozark National Scenic Riverways.",
+      "credit": "NPS Photo / Wil Marischen",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B31B4115-D6A6-D038-EEECBC5D84171EB0.jpg",
+      "title": "Floaters in Fall",
+      "altText": "A woman paddles down a river while wearing a personal flotation device.",
+      "caption": "Floating the Current and Jacks Fork Rivers is the perfect way to enjoy the Ozarks, no matter the season.",
+      "credit": "Courtesy of Wil Marischen",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/86273471-A414-DB16-FAB6AA9362CE4D71.jpg",
+      "title": "Klepzig Mill",
+      "altText": "fall colors on leaves of trees surrounding a creek with an old wooden mill on the right",
+      "caption": "Klepzig Mill is a little off the beaten path but worth the trip.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8635B6F1-D42D-85BF-59AE2567E62B6817.jpg",
+      "title": "Alley Mill-Winter",
+      "altText": "a red mill with snow on roof with a stream emanating from it.",
+      "caption": "Alley Mill is a popular destination.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8647B7A5-D59F-78F5-5B17C003F18E2D43.jpg",
+      "title": "Klepzig Mill-Shut In",
+      "altText": "brown rocks with water flowing over like a waterfall",
+      "caption": "Klepzig Mill has a series of shut-ins along the creek",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81882B-1DD8-B71B-0BB6270ECBB772DC.jpg",
+      "title": "Big Spring",
+      "altText": "A sunrise photo with blue turbulent water and a algae colored rock with trees overhanging",
+      "caption": "Big Spring produces more than 250 million gallons of water per day.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C818988-1DD8-B71B-0BF4BE0D63DA6DF9.jpg",
+      "title": "Prairie Hollow Gorge",
+      "altText": "looking down through large brown/grey/purple boulders with creek in middle and forest in distance",
+      "caption": "Prairie Hollow Gorge is located near the Two Rivers junction, off State Route V.",
+      "credit": "NPS Photo/JoAnn Miller",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B3532B39-BCC8-D93C-5A425F619A595FC9.jpg",
+      "title": "Floaters in Early Fall",
+      "altText": "A canoe floats down a river surrounded in fall color.",
+      "caption": "The Current River is one of the finest recreational rivers in the entire country.",
+      "credit": "Courtesy of Wil Marischen",
+      "isPrimary": false
+    },
+    {
+      "id": "ozar-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C818ACD-1DD8-B71B-0B91F9B923E1E7A7.jpg",
+      "title": "Current River near Pulltite",
+      "altText": "A red canoe on gravel bar with clear blue stream behind and green forest",
+      "caption": "The clear water of the Current River is perfect for floating.",
+      "credit": "NPS Photo/JoAnn Miller",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "0F2CC530-8DD9-4328-98AA-E514918AD206",
+      "name": "River Tubing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ozar/index.htm",
+    "directions": "http://www.nps.gov/ozar/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Colonization and Settlement",
+    "Dams",
+    "Farming and Agriculture",
+    "Ranches",
+    "Great Depression",
+    "Industry",
+    "Mills",
+    "Logging and Timber Cutting",
+    "Schools and Education",
+    "Tragic Events",
+    "Catastrophic Fires",
+    "Floods",
+    "Wars and Conflicts",
+    "Civil War",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Horses (wild)",
+    "Tortoises and Turtles",
+    "Caves, Caverns and Karst",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Geology",
+    "Groundwater",
+    "Aquifers",
+    "Freshwater Springs",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "Wilderness",
+    "National Scenic Riverways",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

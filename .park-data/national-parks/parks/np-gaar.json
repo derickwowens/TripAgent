@@ -1,0 +1,199 @@
+{
+  "id": "np-gaar",
+  "name": "Gates Of The Arctic National Park & Preserve",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "This vast landscape does not contain any roads or trails. Visitors discover intact ecosystems where people have lived with the land for over ten thousand years. Wild rivers meander through glacier-carved valleys, caribou migrate along age-old trails, endless summer light fades into aurora-lit night skies of winter. Virtually unchanged, except by the forces of nature.",
+  "shortDescription": "This vast landscape does not contain any roads or trails. Visitors discover intact ecosystems where people have lived with the land for over ten thousand years. Wild rivers meander through glacier-car...",
+  "designation": "National Park & Preserve",
+  "coordinates": {
+    "latitude": 67.75961636,
+    "longitude": -153.2917758
+  },
+  "nationalParkInfo": {
+    "parkCode": "gaar",
+    "npsId": "BC195D18-71C8-4A99-BF8E-10BFAB849679",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gaar/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gaar/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "907-459-3730",
+    "email": "fair_information@nps.gov",
+    "website": "https://www.nps.gov/gaar/index.htm",
+    "address": {
+      "line1": "101 Dunkel St",
+      "line2": "",
+      "city": "Fairbanks",
+      "state": "AK",
+      "postalCode": "99701"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "No closed times or seasons for Gates of the Arctic National Park & Preserve. Visitor Center hours vary greatly by location and season. See Visitor Center Hours for more information!"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The climate of Gates of the Arctic National Park & Preserve is generally classified as arctic and sub-arctic, with exceptionally cold winters, relatively mild summers, low annual precipitation, and generally high winds. The weather is influenced by many different systems, and can change rapidly.!!"
+  },
+  "images": [
+    {
+      "id": "gaar-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A8B6B-1DD8-B71B-0B8B89FE0C6B6F4F.jpg",
+      "title": "Alatna River",
+      "altText": "Aerial view of the Alatna River as it winds through a valley",
+      "caption": "Aerial view of the Alatna River as it winds through a valley",
+      "credit": "NPS Photo / Sean Tevebaugh",
+      "isPrimary": true
+    },
+    {
+      "id": "gaar-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A89F4-1DD8-B71B-0B52204A2EBF61A4.jpg",
+      "title": "Arrigetch Peaks",
+      "altText": "Alpenglow on the granite cliffs of mountains",
+      "caption": "A spring alpenglow brightens the granite walls of the Arrigetch Peaks",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gaar-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A8CFC-1DD8-B71B-0BF455202A395DA6.jpg",
+      "title": "Entering Oolah Valley",
+      "altText": "A hiker crosses a stream with mountains in the background",
+      "caption": "A hiker crosses a stream and enters Oolah Valley.",
+      "credit": "Photo courtesy of Paxson Woebler",
+      "isPrimary": false
+    },
+    {
+      "id": "gaar-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A8E6D-1DD8-B71B-0B34C967D29F5940.jpg",
+      "title": "Blueberries",
+      "altText": "Handful of blueberries",
+      "caption": "Pausing to pick blueberries can result in a handful of delicious snacks.",
+      "credit": "Photo courtesy of Paxson Wobelber",
+      "isPrimary": false
+    },
+    {
+      "id": "gaar-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A8FC3-1DD8-B71B-0BB9EF068FF8EFF7.jpg",
+      "title": "Hikers crossing a mountain pass",
+      "altText": "Two hikers climb up a mountain pass",
+      "caption": "Hikers choose river valleys as corridors when hiking over mountain passes.",
+      "credit": "Photo courtesy of Paxson Woebler",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "977B3209-68A2-4BCE-97A9-EA0CAC320664",
+      "name": "Mountain Climbing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gaar/index.htm",
+    "directions": "http://www.nps.gov/gaar/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Arts",
+    "Explorers and Expeditions",
+    "Military",
+    "Native American Heritage",
+    "Westward Expansion",
+    "The Gold Rush",
+    "Arctic",
+    "Tundra",
+    "Climate Change",
+    "Fire",
+    "River and Riparian",
+    "Trails",
+    "Water Trails",
+    "Wilderness",
+    "National Park & Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

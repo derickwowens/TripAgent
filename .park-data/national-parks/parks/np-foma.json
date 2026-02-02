@@ -1,0 +1,193 @@
+{
+  "id": "np-foma",
+  "name": "Fort Matanzas National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Fort Matanzas National Monument preserves the fortified coquina watchtower, completed in 1742, which defended the southern approach to the Spanish military settlement of St. Augustine. It also protects approximately 300 acres of Florida coastal environment containing dunes, marsh, maritime forest, and associated flora and fauna, including threatened and endangered species.",
+  "shortDescription": "Fort Matanzas National Monument preserves the fortified coquina watchtower, completed in 1742, which defended the southern approach to the Spanish military settlement of St. Augustine. It also protect...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 29.7121489,
+    "longitude": -81.23567535
+  },
+  "nationalParkInfo": {
+    "parkCode": "foma",
+    "npsId": "31E84ADD-24C1-400B-9D8B-4588D8DC521C",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/foma/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/foma/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9044710116",
+    "email": "CASA_Ranger_Activities@nps.gov",
+    "website": "https://www.nps.gov/foma/index.htm",
+    "address": {
+      "line1": "8635 A1A South",
+      "line2": "",
+      "city": "Saint Augustine",
+      "state": "FL",
+      "postalCode": "32080"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:30PM",
+    "tuesday": "9:00AM - 5:30PM",
+    "wednesday": "9:00AM - 5:30PM",
+    "thursday": "9:00AM - 5:30PM",
+    "friday": "9:00AM - 5:30PM",
+    "saturday": "9:00AM - 5:30PM",
+    "sunday": "9:00AM - 5:30PM",
+    "description": "NO FERRY SERVICE TO FORT MATANZAS ON TUESDAYS OR WEDNESDAYS\n\nThe outdoor areas at the Fort Matanzas Visitor Center Area are open from 9 a.m. to 5:30 p.m. Public restrooms, nature trails, fishing access, and basic visitor information and orientation services are available.\n\nFort tours are running Thursday through Monday with limited capacity. Boarding passes are available on a first come, first served basis. Tours may fill up early in the day.\n\nNo oversized parking is available."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "All areas of the park are free of charge including the ferry to the fort. However, you must stop in the Fort Matanzas Visitor Center (NOT the St. Augustine city Visitor Center) to get your free boarding pass for the ferry. Family members of all ages must have a pass to board the ferry. Passes are Free",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summers are hot and humid with afternoon thundershowers. Sunscreen, a hat, UV protective sunglasses, and are recommended. Drink plenty of water. Winters are cool to mild with some cold spells, especially with wind from the north or off the water. Fall and spring are temperate with temperatures around 70F-80F (21C-26C). During danger of lightning, the fort will be closed and ferry service will be suspended. June-November is hurricane season so check for tropical storms before visiting."
+  },
+  "images": [
+    {
+      "id": "foma-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E811D610-C355-6074-0A04E6DFF40C6EEC.jpg",
+      "title": "Fort Matanzas",
+      "altText": "Fort Matanzas, a fortified watch tower made form coquina.",
+      "caption": "Fort Matanzas sits on Rattlesnake Island in the middle of the Matanzas River.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "foma-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7D5C0251-B061-B813-CF99153BDB71438E.jpg",
+      "title": "Visitor Center",
+      "altText": "Two story building with stone base and wood second floor, oak trees, grass, two signs.",
+      "caption": "Here you can find information about the fort tour, exhibits, park movie, passport stamp, and more.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "foma-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EA1F5-1DD8-B71B-0B371F7E1287E254.jpg",
+      "title": "Nature Trail",
+      "altText": "A nature trail boardwalk with seating area.",
+      "caption": "Follow an elevated boardwalk through some pristine Florida barrier island habitat.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "foma-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EA50D-1DD8-B71B-0B2EE41EAB44A178.jpg",
+      "title": "Soldier's Quarters",
+      "altText": "Wooden bunks and uniform items in the soldier's quarters.",
+      "caption": "The few enlisted soldiers at Fort Matanzas shared a small, sparse room as living space.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "foma-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EA66A-1DD8-B71B-0B5D8C4377B7007A.jpg",
+      "title": "Protecting the riverway",
+      "altText": "The cannon of Fort Matanzas point toward the river's inlet.",
+      "caption": "Fort Matanzas protected the southern river approach to Saint Augustine.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "foma-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EA7A0-1DD8-B71B-0BABFEF62662AEE5.jpg",
+      "title": "Recreational Opportunities",
+      "altText": "People wading in the river and relaxing on the beach.",
+      "caption": "More the half-a-million people visit Fort Matanzas each year to enjoy both the river and ocean beaches.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/foma/index.htm",
+    "directions": "http://www.nps.gov/foma/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Forts",
+    "Hispanic American Heritage",
+    "Maritime",
+    "Coastal Defenses",
+    "Military",
+    "Monuments and Memorials",
+    "Tragic Events",
+    "Massacres",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Animals",
+    "Dunes",
+    "Estuaries and Mangroves",
+    "Geology",
+    "Natural Sounds",
+    "Night Sky",
+    "Oceans",
+    "Scenic Views",
+    "The Tropics",
+    "Unique Species",
+    "Endangered",
+    "Wetlands",
+    "Marshes",
+    "National Monument",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

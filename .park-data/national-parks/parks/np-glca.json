@@ -1,0 +1,297 @@
+{
+  "id": "np-glca",
+  "name": "Glen Canyon National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Encompassing over 1.25 million acres, Glen Canyon National Recreation Area offers unparalleled opportunities for water-based & backcountry recreation. The recreation area stretches for hundreds of miles from Lees Ferry in Arizona to the Orange Cliffs of southern Utah, encompassing scenic vistas, geologic wonders, and a vast panorama of human history.",
+  "shortDescription": "Encompassing over 1.25 million acres, Glen Canyon National Recreation Area offers unparalleled opportunities for water-based & backcountry recreation. The recreation area stretches for hundreds of mil...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 36.9357464677,
+    "longitude": -111.485594268
+  },
+  "nationalParkInfo": {
+    "parkCode": "glca",
+    "npsId": "F7EB51F0-240D-49BC-968C-792756A3B1A0",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/glca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/glca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9286086200",
+    "email": "glca_information@nps.gov",
+    "website": "https://www.nps.gov/glca/index.htm",
+    "address": {
+      "line1": "691 Scenic View Rd.",
+      "line2": "Park Headquarters",
+      "city": "Page",
+      "state": "AZ",
+      "postalCode": "86040"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Glen Canyon National Recreation Area is open 24 hours per day, year-round. If there is not a person staffing the entrance station, you may pay your entrance fee at the automated fee machine. Launch ramps are open all day, unless closed due to low water."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one single, private, non-commercial vehicle and all its passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual when entering on foot or bicycle. Individuals 15 years of age and younger are admitted free.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Fees are assessed based on the passenger capacity of the vehicle. Pass is only valid for the same group to which it was issued.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Fees are assessed based on the passenger capacity of the vehicle. Pass is only valid for the same group to which it was issued.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Fees are assessed based on the passenger capacity of the vehicle. Pass is only valid for the same group to which it was issued.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Academic fee waivers must be submitted and returned before you visit Glen Canyon National Recreation Area.",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The weather in Glen Canyon National Recreation Area is usually typical for the high deserts. Summers are extremely hot with little, if any, shade. Winters are moderately cold with night time lows often below freezing. Spring weather is highly variable and unpredictable with extended periods of winds. Fall weather is usually nice and mild, a great time to beat the heat (and the crowds!)."
+  },
+  "images": [
+    {
+      "id": "glca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F1632-1DD8-B71B-0B783D849BA99EC8.jpg",
+      "title": "Enjoy Lake Powell",
+      "altText": "Woman raises her arms while standing in front of a sandstone butte",
+      "caption": "Spending time on Lake Powell near Tower Butte can make anyone excited.",
+      "credit": "NPS Photo / T Sigmon",
+      "isPrimary": true
+    },
+    {
+      "id": "glca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F1785-1DD8-B71B-0B81A2F06EBCF732.jpg",
+      "title": "Horseshoe Bend",
+      "altText": "Green river winds through high cliffs.",
+      "caption": "The Colorado River makes a 270 degree turn at Horseshoe Bend. Watch your step at the 1000 foot drop!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F18D2-1DD8-B71B-0B2F7E916D696EF7.jpg",
+      "title": "Glen Canyon Dam",
+      "altText": "A concrete dam plugs high canyon walls. Buildings and wires on the sides.",
+      "caption": "Glen Canyon Dam is the country's second largest gravity arch dam. Take a tour from the Carl Hayden Visitor Center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F1A6A-1DD8-B71B-0BB523B0A6434359.jpg",
+      "title": "So Many Ways to Find Your Park",
+      "altText": "Three kayaks on the lake.",
+      "caption": "If motorized recreation isn't your thing, take a kayak and paddle through the high side canyons of Lake Powell.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F1D3F-1DD8-B71B-0BB2954FE3F5E82A.jpg",
+      "title": "Lonely Dell Ranch at Lees Ferry Historic District",
+      "altText": "Log cabin and fences with a wooden wagon.",
+      "caption": "Glen Canyon isn't just houseboats and wakeboards. Come down to Lees Ferry Historic District to relive pioneer times when crossing the river was a major undertaking.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "BBC79C28-EBA7-4CE9-8614-02D00AA21558",
+      "name": "ATV Off-Roading"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "7503433C-3856-4E82-AFF3-0B1649766ED3",
+      "name": "Jet Skiing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/glca/index.htm",
+    "directions": "http://www.nps.gov/glca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Cliff Dwellings",
+    "Dams",
+    "Explorers and Expeditions",
+    "Religion and Spirituality",
+    "Missions",
+    "Transportation",
+    "Bridges",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Fossils and Paleontology",
+    "Lakes",
+    "Night Sky",
+    "Scenic Views",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Wilderness",
+    "National Recreation Area",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

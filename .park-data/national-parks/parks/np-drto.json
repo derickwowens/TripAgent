@@ -1,0 +1,241 @@
+{
+  "id": "np-drto",
+  "name": "Dry Tortugas National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Almost 70 miles (113 km) west of Key West lies the remote Dry Tortugas National Park. This 100-square mile park is mostly open water with seven small islands. Accessible only by boat or seaplane, the park is known the world over as the home of magnificent Fort Jefferson, picturesque blue waters, superlative coral reefs and marine life, and the vast assortment of bird life that frequents the area.",
+  "shortDescription": "Almost 70 miles (113 km) west of Key West lies the remote Dry Tortugas National Park. This 100-square mile park is mostly open water with seven small islands. Accessible only by boat or seaplane, the ...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 24.628741,
+    "longitude": -82.87319
+  },
+  "nationalParkInfo": {
+    "parkCode": "drto",
+    "npsId": "167A05D1-5793-49E0-89FE-0A1DDFA9A7F4",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/drto/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/drto/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3052427700",
+    "email": "drto_information@nps.gov",
+    "website": "https://www.nps.gov/drto/index.htm",
+    "address": {
+      "line1": "40001 SR-9336",
+      "line2": "",
+      "city": "Homestead",
+      "state": "FL",
+      "postalCode": "33034"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Dry Tortugas is open 24 hours, 7 days a week. This includes holidays."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "The entrance fee for Dry Tortugas National Park is $15.00 per person and is good for 7 consecutive days. Any person 15 years old and under is exempt from paying an entrance fees (including international visitors).\n\nFerry tickets include the cost of entrance to the park, but NOT camping fees.\n\nSeaplane will charge the entrance fee upon arrival. Plan to bring cash for each person aged 16-years of age and older.\n\nPrivate boaters may purchase a digital pass in advance or pay cash/check at Garden Key main dock.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The climate in the Dry Tortugas is subtropical, which basically means that it has warm and tropical weather in the range of 60°F to 90°F. The two main seasons are the winter stormy season from December through March which is windier and sees rougher seas, and the summertime tropical storm season from June through November where there is a higher chance of isolated storms. During the summers it is hot and humid. During the winter the temperature is milder and drier."
+  },
+  "images": [
+    {
+      "id": "drto-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81050F-1DD8-B71B-0B45EDC68B621860.jpg",
+      "title": "Night sky at the Dry Tortugas",
+      "altText": "A few of the stars at night with a view of Fort Jefferson.",
+      "caption": "The Dry Tortugas is so remote that night sky viewing is possible.",
+      "credit": "NPS Photo / Brett Seymour",
+      "isPrimary": true
+    },
+    {
+      "id": "drto-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80FF02-1DD8-B71B-0B39AC51BF7B2FA2.jpg",
+      "title": "Sunset at Fort Jefferson",
+      "altText": "Park visitors enjoy a sunset on the moat wall.",
+      "caption": "Sunsets at the Dry Tortugas are breathtaking. Visitors who choose to camp over night can view the sun set at Fort Jefferson.",
+      "credit": "NPS Photo / Maria Belen Farias",
+      "isPrimary": false
+    },
+    {
+      "id": "drto-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8103D0-1DD8-B71B-0B6DB5CF9A4AC58F.jpg",
+      "title": "Inside Fort Jefferson",
+      "altText": "A view inside Fort Jefferson.",
+      "caption": "Garden Key is the second largest island in the Dry Tortugas, about 14 acres in size, and has had the most human impact. Located on Garden Key is historic Fort Jefferson, one of the nation’s largest 19th century forts and a central cultural feature of Dry",
+      "credit": "NPS Photo / Maria Belen Farias",
+      "isPrimary": false
+    },
+    {
+      "id": "drto-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C810626-1DD8-B71B-0B1DFF7BCF9A0682.jpg",
+      "title": "Diving at the Dry Tortugas",
+      "altText": "Two divers dive the Windjammer Wreck",
+      "caption": "The Dry Tortugas has over 300 sunken ships. One of the most accessible is the Winjammer Wreck which can be dove or snorkeled.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "drto-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C810258-1DD8-B71B-0BE07AC43C736990.jpg",
+      "title": "Loggerhead Key",
+      "altText": "A boat passes in front of Loggerhead Key during sunset.",
+      "caption": "The largest island in the Dry Tortugas, Loggerhead Key is a site of shipwrecks, a significant lighthouse installation, and where the historic Carnegie Laboratory for Marine Ecology once stood. Named for its abundance of loggerhead sea turtles, Loggerhead",
+      "credit": "NPS Photo / Maria Belen Farias",
+      "isPrimary": false
+    },
+    {
+      "id": "drto-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C810049-1DD8-B71B-0B0040641619D4A6.jpg",
+      "title": "Fort Jefferson",
+      "altText": "A view of Fort Jefferson from the moat all.",
+      "caption": "ort Jefferson is a massive but unfinished coastal fortress. It is the largest masonry structure in the Americas, and is composed of over 16 million bricks.",
+      "credit": "NPS Photo / Maria Belen Farias",
+      "isPrimary": false
+    },
+    {
+      "id": "drto-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C810722-1DD8-B71B-0BAD4B445F0C3D8C.jpg",
+      "title": "Aerial view of the Dry Tortugas",
+      "altText": "An aerial view of the Dry Tortugas",
+      "caption": "The Dry Tortugas is made up of seven islands.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/drto/index.htm",
+    "directions": "http://www.nps.gov/drto/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Forts",
+    "Maritime",
+    "Coastal Defenses",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Military",
+    "US Army",
+    "US Navy",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Geology",
+    "Natural Sounds",
+    "Night Sky",
+    "Oceans",
+    "Coral Reefs",
+    "Unique Species",
+    "Endangered",
+    "National Park",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

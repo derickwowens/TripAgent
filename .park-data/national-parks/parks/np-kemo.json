@@ -1,0 +1,202 @@
+{
+  "id": "np-kemo",
+  "name": "Kennesaw Mountain National Battlefield Park",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "Kennesaw Mountain National Battlefield Park is a 2,965 acre National Battlefield that preserves a Civil War battleground of the Atlanta Campaign. Opposing forces maneuvered and fought here from June 19, 1864 until July 2, 1864. Although most famous as a Civil War battlefield, Kennesaw Mountain has a much richer story.",
+  "shortDescription": "Kennesaw Mountain National Battlefield Park is a 2,965 acre National Battlefield that preserves a Civil War battleground of the Atlanta Campaign. Opposing forces maneuvered and fought here from June 1...",
+  "designation": "National Battlefield Park",
+  "coordinates": {
+    "latitude": 33.95370717,
+    "longitude": -84.59214186
+  },
+  "nationalParkInfo": {
+    "parkCode": "kemo",
+    "npsId": "AA1E3B48-8B98-4F47-A642-C266A92AB523",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kemo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/kemo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "770-427-4686",
+    "email": "kemo_administration@nps.gov",
+    "website": "https://www.nps.gov/kemo/index.htm",
+    "address": {
+      "line1": "900 Kennesaw Mountain Dr",
+      "line2": "",
+      "city": "Kennesaw",
+      "state": "GA",
+      "postalCode": "30152"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:30AM - 8:30PM",
+    "tuesday": "6:30AM - 8:30PM",
+    "wednesday": "6:30AM - 8:30PM",
+    "thursday": "6:30AM - 8:30PM",
+    "friday": "6:30AM - 8:30PM",
+    "saturday": "6:30AM - 8:30PM",
+    "sunday": "6:30AM - 8:30PM",
+    "description": "Kennesaw Mountain NBP is open from 6:30 AM - 8:30 PM during Daylight Saving Time (March - November) and 6:30 AM - 6:30 PM Standard Time (December - February) \n\nThese hours apply to all trails and parking lots.*\n*Cheatham Hill Parking Lot opens at 8:00 am"
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "The Daily Pass is valid for the date of purchase only. It admits all persons traveling in a single, private, non-commercial vehicle (car/truck/van) and is non-transferable. This pass does NOT guarantee a parking spot.",
+      "cost": "5.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "The Daily Pass is valid for the date of purchase only. It admits all walk-in visitors aged 16 and older.",
+      "cost": "5.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "To request an Academic Fee Waiver for your group, click on the link for further details.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "$100 Motor Coach/Commercial Tour Groups with 26 or more people",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "$40 per passenger bus with 16-25 people",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "$25 per passenger bus/sedan with 1-6 people",
+      "cost": "25.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Before you start your trip to the mountain, check the local weather forecast to be sure that you will have a dry time. Though we are located north of Atlanta, we're still have the same hot summers and mild winters as our neighbors. The mountain top generally ranges 8-10 degrees cooler than at the base. In fall and winter, be prepared with a light weight jacket on hand. After planning your activities, check back to see what the weather will have in store for your day."
+  },
+  "images": [
+    {
+      "id": "kemo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D087031F-1DD8-B71B-0BB9898C84464224.jpg",
+      "title": "Fall at Kennesaw Mountain",
+      "altText": "Cannon with front field and Visitor Center in background.",
+      "caption": "Cannon with front field and Visitor Center in background.",
+      "credit": "Tom Wilson",
+      "isPrimary": true
+    },
+    {
+      "id": "kemo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CB5DF472-ED7B-85BD-C4BF83B81CF6DEF0.jpg",
+      "title": "Sunset on the Mountain",
+      "altText": "The sun sets in the background with the exposed rock of Kennesaw Mountain in the foreground.",
+      "caption": "Kennesaw Mountain at twilight",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kemo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0AF3092-1DD8-B71B-0BA0839FF68F8071.jpg",
+      "title": "Illinois Monument at Kennesaw Mountain",
+      "altText": "Illinois Monument at Kennesaw Mountain.",
+      "caption": "Illinois Monument at Kennesaw Mountain.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kemo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0C24881-1DD8-B71B-0B10784870E5F3FB.jpg",
+      "title": "Infantry Demonstration at Kennesaw Mountain",
+      "altText": "Infantry Demonstration at Kennesaw Mountain.",
+      "caption": "Infantry Demonstration at Kennesaw Mountain.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kemo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0D81A83-1DD8-B71B-0B746691E9EEC035.jpg",
+      "title": "Kolb Farmhouse at Kennesaw Mountain",
+      "altText": "Kolb Farmhouse at Kennesaw Mountain.",
+      "caption": "Kolb Farmhouse at Kennesaw Mountain.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kemo/index.htm",
+    "directions": "http://www.nps.gov/kemo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "Native American Heritage",
+    "Social Movements",
+    "Civil Rights",
+    "Conservation Movement",
+    "Wars and Conflicts",
+    "Civil War",
+    "Geology",
+    "Mountains",
+    "Trails",
+    "National Battlefield Park",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

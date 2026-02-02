@@ -1,0 +1,269 @@
+{
+  "id": "np-grpo",
+  "name": "Grand Portage National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "MN",
+  "stateName": "Minnesota",
+  "region": "midwest",
+  "description": "Travel into the past to discover the present. Explore the partnership between the Grand Portage Anishinaabe and the North West Company during the North American fur trade. Experience the sights and smells of a bustling depot reconstructed in its historic location. See how it shaped co-management with the NPS today. Follow pathways to the past to imagine a drum echo over Gichigami - Lake Superior.",
+  "shortDescription": "Travel into the past to discover the present. Explore the partnership between the Grand Portage Anishinaabe and the North West Company during the North American fur trade. Experience the sights and sm...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 47.99294217,
+    "longitude": -89.75573031
+  },
+  "nationalParkInfo": {
+    "parkCode": "grpo",
+    "npsId": "E463E13F-FCD4-41B3-AEF3-BA3199E04399",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/grpo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/grpo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(218) 475-0123",
+    "email": "grpo_information@nps.gov",
+    "website": "https://www.nps.gov/grpo/index.htm",
+    "address": {
+      "line1": "170 Mile Creek Road",
+      "line2": "",
+      "city": "Grand Portage",
+      "state": "MN",
+      "postalCode": "55605"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Anishinaabe Oodena (Ojibwe Village), the grounds outside of the palisade, and the Mount Rose and Grand Portage trails are open daily year-round."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Short, warm summers and long, cold winters define the climate of northern Minnesota. Average range of summer temperature is from 55°F to 78°F in July and average range of winter temperatures is from –11°F to 12°F in January. Average annual precipitation in Grand Portage, MN is about 32 inches."
+  },
+  "images": [
+    {
+      "id": "grpo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/242F987D-A5C9-C97D-FA692D01CE985AE4.jpg",
+      "title": "Historic Depot in Snow",
+      "altText": "Historic wooden buildings behind a palisade in a snowy landscape.",
+      "caption": "The Depot is closed in winter and the Heritage Center and trails are open.",
+      "credit": "NPS Photo / GM Spoto",
+      "isPrimary": true
+    },
+    {
+      "id": "grpo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/12235CDB-D43A-4807-EFA0C9F352813A42.jpg",
+      "title": "Historic Depot in Spring",
+      "altText": "Historic wooden buildings on a bright green lawn in front of a lake.",
+      "caption": "Experience fur trade history on the shore of Lake Superior.",
+      "credit": "NPS Photo / GM Spoto",
+      "isPrimary": false
+    },
+    {
+      "id": "grpo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C2F07-1DD8-B71B-0B85AFDB9962EAE1.jpg",
+      "title": "Mount Rose Trail overlooks Historic Depot & Grand Portage Bay",
+      "altText": "Stockade fence and log building overlooking Lake Superior",
+      "caption": "Beautiful scenary welcomes Fall visitors to Grand Portage.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grpo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C8EA4-1DD8-B71B-0B4BF6FB13E9E98D.jpg",
+      "title": "Ojibwe Village (Anishinaabe Odena)",
+      "altText": "Birch bark lodges among trees.",
+      "caption": "The Ojibwe Village is located in the Historic Depot",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grpo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C4D12-1DD8-B71B-0B0DC781CF2D7501.jpg",
+      "title": "Seneca Sunflowers Canoe Warehouse",
+      "altText": "Sunflowers blossoms in front of log building",
+      "caption": "Colorful blossoms in the Three Sister's Garden",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grpo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C8B5E-1DD8-B71B-0BA20EF8040D873E.jpg",
+      "title": "Historic Depot, Hat Point",
+      "altText": "Three log buildings with Lake and point of land in background.",
+      "caption": "Fall is a great time to hike the Mount Rose Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grpo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C8D39-1DD8-B71B-0BF3949196825188.jpg",
+      "title": "Historic Depot From Mount Rose",
+      "altText": "Log buildings, stockade fence and dock near Lake.",
+      "caption": "Fall is a great time to hike to the mount Rose overlook.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/grpo/index.htm",
+    "directions": "http://www.nps.gov/grpo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Forests and Woodlands",
+    "Geology",
+    "Lakes",
+    "Night Sky",
+    "Aurora Borealis",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Wetlands",
+    "Wilderness",
+    "National Monument",
+    "MN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

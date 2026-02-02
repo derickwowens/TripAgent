@@ -1,0 +1,200 @@
+{
+  "id": "np-chyo",
+  "name": "Charles Young Buffalo Soldiers National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "OH",
+  "stateName": "Ohio",
+  "region": "midwest",
+  "description": "Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of the most respected leaders of his time. A well-rounded man with a steadfast devotion to duty, Young led by example and inspired a generation of new leaders.",
+  "shortDescription": "Throughout his life, Charles Young overcame countless obstacles in his ascent to prominence. In spite of overt racism and stifling inequality, Young rose through the military ranks to become one of th...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 39.70817829,
+    "longitude": -83.89328575
+  },
+  "nationalParkInfo": {
+    "parkCode": "chyo",
+    "npsId": "22177869-21C7-49A1-961C-3F2114F01007",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/chyo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/chyo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9373526757",
+    "email": "chyo_info@nps.gov",
+    "website": "https://www.nps.gov/chyo/index.htm",
+    "address": {
+      "line1": "1120 U.S. Route 42 E",
+      "line2": "",
+      "city": "Wilberforce",
+      "state": "OH",
+      "postalCode": "45384"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "The Young family home, Youngsholm, has reopened after a multi-year restoration. Contact the park by email at chyo_info@nps.gov if you have questions or concerns. The park grounds are accessible sunrise to sunset every day. \n\nYou can view the searchable park calendar to see what events are planned or visit our social media pages to stay up-to-date on current park happenings."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park lies in a humid continental zone with a generally temperate climate. Winters are mildly cold with average temperatures around 29 degrees (F). Summers are hot and humid with an average temperature around 74 degrees (F). Average annual total rainfall is just under 40\". Snowfall in the winter is generally light with an average total snowfall of about 22\"."
+  },
+  "images": [
+    {
+      "id": "chyo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0645BF55-CF33-994E-F247098090A7E65C.jpg",
+      "title": "Youngsholm, June 2020",
+      "altText": "A large grey house with dark grey shutters with a green lawn out front under a blue sky",
+      "caption": "The front of Youngsholm, the park's visitor center",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": true
+    },
+    {
+      "id": "chyo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0650361A-A527-4765-CA1903FD4FFA564B.jpg",
+      "title": "Charles Young House Boulder",
+      "altText": "A large gray stone boulder with a bronze plaque on it indicating a national historical landmark",
+      "caption": "The large stone boulder with Historic Plaque affixed to it, sits in the front yard of Youngsholm",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/06674F05-E23D-C441-FAB331D1A88DEE34.jpg",
+      "title": "Charles Young Spingarn Award",
+      "altText": "An African American man in a military uniform holding a sabre and wearing a cap sitting in a chair",
+      "caption": "Charles Young poses for a portrait shortly before he was awarded the NAACP Spingarn Medal.",
+      "credit": "National Afro-American Museum & Cultural Center",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/07108E33-B0F0-6617-C177D194A83D49CC.jpg",
+      "title": "Charles Young on his mount",
+      "altText": "An African American man in a military uniform sitting high on a horse being saluted by a boy",
+      "caption": "Charles Young poses for a portrait with one of his horses as he is saluted by a young, unidentified boy.",
+      "credit": "National Afro-American Museum & Cultural Center",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/07201C79-0019-4E99-03AB3EA2239FB72C.jpg",
+      "title": "Charles Young and family",
+      "altText": "An african american family posing for a portrait with the mother standing behind the father and kids",
+      "caption": "Charles Young (far right) poses with his family, Ada Young (standing rear), Charles Noel (far left), and Marie Aurelia (sitting middle).",
+      "credit": "National Afro-American Museum & Cultural Center",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0742E37B-FB57-8B09-09BE1B364A96C677.jpg",
+      "title": "24th Infantry in Philippine",
+      "altText": "A long row of African American soldiers standing at attention",
+      "caption": "The 24th Infantry Buffalo Soldiers while in the Philippines, c.1902",
+      "credit": "U.S. Army",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0759AA61-CF03-1A81-80B49CF57E1FBBA1.jpg",
+      "title": "25th Infantry in Montana",
+      "altText": "Several African American soldiers standing and sitting for a casual portrait",
+      "caption": "Buffalo Soldiers of the 25th Infantry pose for a portrait near Fort Keough, Montana, c.1890.",
+      "credit": "Library of Congress",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/07695B10-AD16-6FBB-6C4696402C96998B.jpg",
+      "title": "9th Cavalry, K Troop",
+      "altText": "African American soldiers sitting, kneeling and standing for a casual photo",
+      "caption": "Troopers from the 9th Cav, K Troop posing for a group photo, c.1890.",
+      "credit": "U.S. Army",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/07ABBA20-F7A5-F83D-6B088C7BF7C54C5D.jpg",
+      "title": "10th Cavalry, Troop K on the move",
+      "altText": "Several african american soldiers on horseback parading down a dirt road.",
+      "caption": "Buffalo Soldiers of K Troop, 10th Cavalry on the move in Chickamauga, Ga., c.1898",
+      "credit": "Library of Congress",
+      "isPrimary": false
+    },
+    {
+      "id": "chyo-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/07C8EB42-B3C1-17C6-1155A6CC8D1F7546.gif",
+      "title": "Harlem Hellfighters",
+      "altText": "Several African American soldiers waving while standing and sitting on a boat's deck",
+      "caption": "Buffalo Soldiers of the 369th regiment, Harlem Hellfighters, returning home from France during WWI.",
+      "credit": "Library of Congress",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/chyo/index.htm",
+    "directions": "http://www.nps.gov/chyo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Military",
+    "Infantry and Militia",
+    "Cavalry",
+    "US Army",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "National Monument",
+    "OH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

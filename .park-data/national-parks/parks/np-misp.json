@@ -1,0 +1,109 @@
+{
+  "id": "np-misp",
+  "name": "Mill Springs Battlefield National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "KY",
+  "stateName": "Kentucky",
+  "region": "southeast",
+  "description": "The US won a significant victory early in the Civil War at the Battle of Mill Springs. Explore the rolling fields of Kentucky where the battle took place and learn about that state's strategic importance to both sides of the fight.",
+  "shortDescription": "The US won a significant victory early in the Civil War at the Battle of Mill Springs. Explore the rolling fields of Kentucky where the battle took place and learn about that state's strategic importa...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.0688158602,
+    "longitude": -84.7375361304
+  },
+  "nationalParkInfo": {
+    "parkCode": "misp",
+    "npsId": "0260D050-761A-4446-AB05-641986F9FDFB",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/misp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/misp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "606-636-4045",
+    "email": "misp_information@nps.gov",
+    "website": "https://www.nps.gov/misp/index.htm",
+    "address": {
+      "line1": "Mill Springs Battlefield National Monument",
+      "line2": "9020 West Highway 80",
+      "city": "Nancy",
+      "state": "KY",
+      "postalCode": "42544"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "The Visitor Center is open Wednesday through Sunday, 10:00 am to 4:00 pm and is closed Monday and Tuesdays. The grounds and driving tour are open from dawn till dusk, seven days per week. When the Visitor Center is closed passport stamps with current date and driving tour guides are available outside to the left of the front door."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Nancy, Kentucky, on average, gets 50 inches of rain per year and 11 inches of snow. July is usually the warmest month with temperatures around 86 F. January can reach a low of 25 F."
+  },
+  "images": [
+    {
+      "id": "misp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/145ADAC5-07E3-1AA1-D902CCF0A4219664.jpg",
+      "title": "Sunset on the National Cemetery",
+      "altText": "A orange sunset over the white granite headstones in the national cemetery with silhouetted cannon.",
+      "caption": "A glorious orange sunset back drops the Mill Springs National Cemetery.",
+      "credit": "NPS",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/misp/index.htm",
+    "directions": "https://www.nps.gov/misp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Monument",
+    "KY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "id": "np-frri",
+  "name": "Freedom Riders National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "In 1961, a small interracial band of “Freedom Riders” challenged discriminatory laws requiring separation of the races in interstate travel. They were attacked by white segregationists, who firebombed the bus. Images of the attack appeared in hundreds of newspapers, shocking the American public and spurring the Federal Government to issue regulations banning segregation in interstate travel.",
+  "shortDescription": "In 1961, a small interracial band of “Freedom Riders” challenged discriminatory laws requiring separation of the races in interstate travel. They were attacked by white segregationists, who firebombed...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 33.635269165,
+    "longitude": -85.9064331055
+  },
+  "nationalParkInfo": {
+    "parkCode": "frri",
+    "npsId": "FFEB6894-949B-4C17-924D-646B63966718",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/frri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "205-568-3963",
+    "email": "frri_information@nps.gov",
+    "website": "https://www.nps.gov/frri/index.htm",
+    "address": {
+      "line1": "Freedom Riders National Monument",
+      "line2": "1031 Gurnee Ave",
+      "city": "Anniston",
+      "state": "AL",
+      "postalCode": "36201"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "10:00AM - 4:00PM",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "The historic Anniston Greyhound Bus Depot, located at 1031 Gurnee Avenue. This is the Greyhound Depot the Freedom Riders attempted to integrate on May 14, 1961."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures can soar to extremes of heat and humidity in the summer and fall to a damp, wet, cold in the winter. During the summer season visitors should dress in light, comfortable clothing, wear comfortable shoes and use sunscreen. Drink plenty of fluids to maintain hydration. In the spring and fall, visitors should have a light jacket available as temperatures can drop suddenly. Winter temperatures can be unpredictable, ranging from mild to extremely cold"
+  },
+  "images": [
+    {
+      "id": "frri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/89E23FDC-9BE7-D83A-83DEECF7210BD97D.jpg",
+      "title": "Greyhound Mural",
+      "altText": "Colored Greyhound mural with historical information about the Freedom Riders",
+      "caption": "Greyhound mural at the Anniston Greyhound Bus Depot.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "frri-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/088175F5-E687-659C-7A4E06FD56ADAF52.jpg",
+      "title": "Anniston Greyhound Bus Depot",
+      "altText": "street view of a yellow brick bus depot, with a black awning and NPS sign, and an alley entrance.",
+      "caption": "The Anniston Greyhound Bus Depot at Freedom Riders National Monument in Anniston AL, site of an attack on Freedom Riders in May of 1961.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frri/index.htm",
+    "directions": "https://www.nps.gov/frri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Incarceration",
+    "Jails and Prisons",
+    "Social Movements",
+    "Civil Rights",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Tragic Events",
+    "Explosions",
+    "National Monument",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

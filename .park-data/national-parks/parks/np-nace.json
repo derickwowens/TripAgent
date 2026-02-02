@@ -1,0 +1,181 @@
+{
+  "id": "np-nace",
+  "name": "National Capital Parks-East",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C. and Maryland. From the riverside trails of Anacostia Park to the homes of American leaders like Frederick Douglass and Carter G. Woodson, each of our 17 nationally significant parks offers a distinct experience.",
+  "shortDescription": "National Capital Parks — East invites you to explore more than 8,000 acres of scenic parkland, historic landmarks, and vibrant community spaces across Washington, D.C. and Maryland. From the riverside...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.8659,
+    "longitude": -76.994
+  },
+  "nationalParkInfo": {
+    "parkCode": "nace",
+    "npsId": "BA3C1A1D-AA6A-49EB-9237-0222CEEE2670",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/nace/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/nace/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1453",
+    "email": "nace_superintendent@nps.gov",
+    "website": "https://www.nps.gov/nace/index.htm",
+    "address": {
+      "line1": "1900 Anacostia Drive SE",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20020"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 4:00PM",
+    "tuesday": "8:00AM - 4:00PM",
+    "wednesday": "8:00AM - 4:00PM",
+    "thursday": "8:00AM - 4:00PM",
+    "friday": "8:00AM - 4:00PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "National Capital Parks — East is an administrative unit that manages multiple park sites throughout the District of Columbia and Maryland. The headquarters building is located in Anacostia Park. Please note that headquarters hours differ from Anacostia Park’s operating hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are generally hot and humid, with daytime highs frequently above 90 degrees Fahrenheit, high humidity, and scattered afternoon thunderstorms. Winters are generally cold, with nighttime lows frequently near freezing and occasional snowfall. Weather during spring and fall is generally moderate, but can change quickly."
+  },
+  "images": [
+    {
+      "id": "nace-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82B782-1DD8-B71B-0B692035768B7064.jpg",
+      "title": "Oxon Cove Park",
+      "altText": "The red barns and outbuildings at Oxon Hill Farm",
+      "caption": "The Barnyard at Oxon Hill Farm",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "nace-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82B89F-1DD8-B71B-0B83D546B43BD349.jpg",
+      "title": "Mary McLeod Bethune National Historic Site",
+      "altText": "Photo of the outside of the Mary McLeod Bethune Council House",
+      "caption": "Mary McLeod Bethune Council House in Washington D.C.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82BA2D-1DD8-B71B-0BD77C70BF37D1E9.jpg",
+      "title": "Baltimore-Washington Parkway",
+      "altText": "Cars driving on the Baltimore0Washington Parkway",
+      "caption": "Baltimore-Washington Parkway is managed by National Capital Park-East",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82BB4D-1DD8-B71B-0B5854E45462FFF9.jpg",
+      "title": "Kenilworth Aquatic Gardens",
+      "altText": "Image of a three red and white water lilies.",
+      "caption": "Water lilies that can be found at Kenilworth Aquatic Gardens",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82BC63-1DD8-B71B-0B2640B5624E7EBA.jpg",
+      "title": "Frederick Douglass National Historic Site",
+      "altText": "Photo of Cedar Hill, home of Frederick Douglass",
+      "caption": "Cedar Hill, Frederick Douglass' Washington D.C. home.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82BD6B-1DD8-B71B-0B0E49552107D0B2.jpg",
+      "title": "Greenbelt Park",
+      "altText": "Image of Still Creek running through the trees at Greenbelt Park.",
+      "caption": "Still Creek at Greenbelt Park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82BF0F-1DD8-B71B-0BE15EDE790BE1D9.jpg",
+      "title": "Fort Dupont",
+      "altText": "Hundreds of audience member watching the Summer Theater program at Fort Dupont.",
+      "caption": "Summer Theater is an annual event at Fort Dupont Park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82C0C7-1DD8-B71B-0BAE1553BC5451CD.jpg",
+      "title": "Anacostia Park",
+      "altText": "A photo of the Urban Tree House.  The tree house is a wooden outline of the United States.",
+      "caption": "The tree house is a wooden outline of the United States.  Used as an outdoor classroom.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82C1F2-1DD8-B71B-0BF244B97CE6E952.jpg",
+      "title": "Fort Washington Park",
+      "altText": "Photo of the parade ground inside the historic fort.",
+      "caption": "Fort Washington's parade ground facing the main entrance.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nace-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82C316-1DD8-B71B-0BD2336D2323D7EC.jpg",
+      "title": "Piscataway Park",
+      "altText": "Photo of Accokeek Creek Site, as the fog rises in the early morning.",
+      "caption": "Accokeek Creek Site is a part of Piscataway Park.  The boardwalk takes you over the wetlands.",
+      "credit": "NPS Photo/MJ Garcia",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/nace/index.htm",
+    "directions": "http://www.nps.gov/nace/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Schools and Education",
+    "Urban America",
+    "Animals",
+    "Forests and Woodlands",
+    "Grasslands",
+    "Meadows",
+    "River and Riparian",
+    "Trails",
+    "Water Trails",
+    "Watersheds",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

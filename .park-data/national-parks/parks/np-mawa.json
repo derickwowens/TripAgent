@@ -1,0 +1,140 @@
+{
+  "id": "np-mawa",
+  "name": "Maggie L Walker National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Maggie Lena Walker devoted her life to civil rights advancement, economic empowerment, and educational opportunities for Jim Crow-era African Americans and women. As a bank president, newspaper editor, and fraternal leader, Walker served as an inspiration of pride and progress. Today, Walker’s home is preserved as a tribute to her enduring legacy of vision, courage, and determination.",
+  "shortDescription": "Maggie Lena Walker devoted her life to civil rights advancement, economic empowerment, and educational opportunities for Jim Crow-era African Americans and women. As a bank president, newspaper editor...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 37.54781499,
+    "longitude": -77.43746979
+  },
+  "nationalParkInfo": {
+    "parkCode": "mawa",
+    "npsId": "70090004-4DA3-4E20-8F70-9DE064C2AA69",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mawa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mawa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "804-226-5040",
+    "email": "Benjamin_Anderson@nps.gov",
+    "website": "https://www.nps.gov/mawa/index.htm",
+    "address": {
+      "line1": "600 N. 2nd Street",
+      "line2": "",
+      "city": "Richmond",
+      "state": "VA",
+      "postalCode": "23219"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "The site will be open Tuesdays, Wednesdays, and Thursdays for reserved group tours, and Fridays and Saturdays for walk-ins only.\n\nThe site is closed on Thanksgiving, December 25th and January 1st."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer is hot and humid, spring and winter are pleasant/mild, winter can be cold and occasionally snowy."
+  },
+  "images": [
+    {
+      "id": "mawa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E74592AC-CD3E-4D60-942681DBCAC34FCD.jpg",
+      "title": "Maggie L. Walker National Historic Site",
+      "altText": "Maggie L. Walker's home and adjacent buildings",
+      "caption": "Maggie L. Walker's stately home was located on a street dubbed \"Quality Row.\"",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mawa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7798EDED-C0A7-D333-9FDBE01E4C7AF4B1.jpg",
+      "title": "The Back Parlor of the Historic Walker Home",
+      "altText": "The back parlor with piano, couch, floor lamp and fireplace",
+      "caption": "The back parlor served as an entertainment location for the Walker family",
+      "credit": "NPS Photo/Maggie L Walker NHS",
+      "isPrimary": false
+    },
+    {
+      "id": "mawa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/77B88318-C9A9-A069-00B4BCEA3EC6BE63.jpg",
+      "title": "The Library of the Walker House",
+      "altText": "A room with a wall of full bookcases, chairs and several diplomas on the wall",
+      "caption": "The Library served as both a relaxing place and a work place for Mrs. Walker",
+      "credit": "NPS Photo/Maggie L Walker NHS",
+      "isPrimary": false
+    },
+    {
+      "id": "mawa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AD5BCE0D-A1D3-53AF-7168D41C9E387310.jpg",
+      "title": "The Maggie L. Walker Visitor Center",
+      "altText": "3 red brick, two-story buildings, with a US flag flying and an overcast sky",
+      "caption": "The Maggie L. Walker Visitor Center serves as a gateway into Mrs. Walker's life in Jackson Ward",
+      "credit": "Maggie L. Walker NHS/Mike Anderson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mawa/index.htm",
+    "directions": "http://www.nps.gov/mawa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Banking",
+    "Reconstruction",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "National Historic Site",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

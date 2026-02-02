@@ -1,0 +1,200 @@
+{
+  "id": "np-agfo",
+  "name": "Agate Fossil Beds National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NE",
+  "stateName": "Nebraska",
+  "region": "midwest",
+  "description": "In the early 1900s, paleontologists unearthed the Age of Mammals when they found full skeletons of extinct Miocene mammals in the hills of Nebraska -- species previously only known through fragments. At the same time, an age of friendship began between rancher James Cook and Chief Red Cloud of the Lakota. These two unprecedented events are preserved and protected here... at Agate Fossil Beds.",
+  "shortDescription": "In the early 1900s, paleontologists unearthed the Age of Mammals when they found full skeletons of extinct Miocene mammals in the hills of Nebraska -- species previously only known through fragments. ...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 42.42170419,
+    "longitude": -103.753886
+  },
+  "nationalParkInfo": {
+    "parkCode": "agfo",
+    "npsId": "64B9F127-31ED-43C9-882D-D7CD471AF314",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/agfo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/agfo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3086654113",
+    "email": "agfo_ranger_activities@nps.gov",
+    "website": "https://www.nps.gov/agfo/index.htm",
+    "address": {
+      "line1": "301 River Road",
+      "line2": "",
+      "city": "Harrison",
+      "state": "NE",
+      "postalCode": "69346"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park's two trails are open from dawn till dusk every day.\n\nVisitor Center features Miocene Mammal fossils, a 12 minute movie, and the James H. Cook Collection,  a unique collection of American Indian artifacts that were gifts to James Cook and his family."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers can be very warm, high 90's to 100 with the frequent afternoon thunderstorms. Plan to hike early and come down from the higher points if storms threaten. Winter temperatures can dip as low as -20 with snow and wind. Heaviest snows can be expected in late Spring."
+  },
+  "images": [
+    {
+      "id": "agfo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A058F-1DD8-B71B-0B188ED102F7285F.jpg",
+      "title": "Visitor Center on the Prairie",
+      "altText": "The visitor center sits in the middle of mixed grass prairie.",
+      "caption": "From the Fossil Hills Trail the Visitor Center is a ship in a sea of prairie grasses.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "agfo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A06A9-1DD8-B71B-0BA914D99661189C.jpg",
+      "title": "The Agate Fossil Hills and Tipis",
+      "altText": "Tipis and Fossil Hills represent the two subjects that Agate Fossil Beds interprets.",
+      "caption": "One of the first impressions that visitors have are the tipis and the Fossil Hills.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "agfo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A07B9-1DD8-B71B-0B077C3CA4979281.jpg",
+      "title": "A July Storm Passes",
+      "altText": "Thunderheads are common in July.",
+      "caption": "Summer storms include thunderheads and lightning and can be exciting and dangerous.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "agfo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A08CC-1DD8-B71B-0B129817C3E756C3.jpg",
+      "title": "Dinohyus in the Visitor Center Fossil Diorama",
+      "altText": "The Dinohyus was a scavenger, nicknamed \"Terrible Pig\"",
+      "caption": "Visitors stare in wonder at the huge head of the \"apex\" predator of the plains some 20 million years ago.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "agfo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0A12-1DD8-B71B-0BC1CC6CDF2CFD4E.jpg",
+      "title": "The James H. Cook collection",
+      "altText": "This buckskin shirt decorated with quills was worn by Red Cloud.",
+      "caption": "Visitors agree that this shirt decorated with quillwork and worn by Red Cloud of the Oglala Lakota is a priceless piece of history.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/agfo/index.htm",
+    "directions": "http://www.nps.gov/agfo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Farming and Agriculture",
+    "Ranches",
+    "Native American Heritage",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Fossils and Paleontology",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "Night Sky",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "National Monument",
+    "NE"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.831Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

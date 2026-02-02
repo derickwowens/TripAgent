@@ -1,0 +1,257 @@
+{
+  "id": "np-york",
+  "name": "Yorktown Battlefield Part of Colonial National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Discover what it took for the United States to be independent as you explore the site of the last major battle of the Revolutionary War. Here at Yorktown, in the fall of 1781, General George Washington, with allied American and French forces, besieged General Charles Lord Cornwallis’s British army. On October 19, Cornwallis surrendered, effectively ending the war and ensuring independence.",
+  "shortDescription": "Discover what it took for the United States to be independent as you explore the site of the last major battle of the Revolutionary War. Here at Yorktown, in the fall of 1781, General George Washingto...",
+  "designation": "Part of Colonial National Historical Park",
+  "coordinates": {
+    "latitude": 37.2195,
+    "longitude": -76.4983
+  },
+  "nationalParkInfo": {
+    "parkCode": "york",
+    "npsId": "D09FF0F8-B16E-4D2B-9C37-03202D6B8176",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/york/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/york/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7578982410",
+    "email": "colo_info@nps.gov",
+    "website": "https://www.nps.gov/york/index.htm",
+    "address": {
+      "line1": "Yorktown Battlefield",
+      "line2": "1000 Colonial Parkway",
+      "city": "Yorktown",
+      "state": "VA",
+      "postalCode": "23690"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Yorktown Battlefield Visitor Center and the Eastern National Store is open 9:00 am to 5:00PM Daily. . The Moore House, The Cemetery Lodge and the Poor Potter are closed but their grounds are open for visitation.\nThe Nelson House is open as staffing permits.\nThe Battlefield Tour Roads are open till Sunset."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Adult (16 and older) -$15; good for 7 days entrance to Yorktown Battlefield (and NPS areas at Historic Jamestowne); can be upgraded to see Preservation Virginia areas at Historic Jamestowne for an additional $15 at the Historic Jamestowne Visitor Center. Yorktown Battlefield will not be selling the $30 entrance permit for Historic Jamestowne",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Yorktown, VA climate is warm during summer when temperatures tend to be in the 80's and cold during winter when temperatures tend to be in the 30's. The warmest month of the year is July with an average maximum temperature of 89.00 degrees Fahrenheit, while the coldest month of the year is January with an average minimum temperature of 28.10 degrees Fahrenheit. For closures in due to inclement weather at Colonial National Historical Park please phone this 24 hour phone number (757) 856-1240."
+  },
+  "images": [
+    {
+      "id": "york-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DF20A-1DD8-B71B-0B6F95C33437A94D.jpg",
+      "title": "Cannon at Sunset Yorktown Battlefield",
+      "altText": "Cannon at sunset at Yorktown Battlefield",
+      "caption": "Cannon on earthworks at sunset.  Yorktown Battlefield",
+      "credit": "NPS Photo/Linda Williams",
+      "isPrimary": true
+    },
+    {
+      "id": "york-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DF3BE-1DD8-B71B-0BA3070E3D7843A9.jpg",
+      "title": "Lamb's Artillery Fire 18 pounder Cannon Yorktown Battlefield",
+      "altText": "Lamb's Artillery Fire 18 pounder Cannon Yorktown Battlefield",
+      "caption": "We have artillery firing programs twice a month throughout the summer at Yorktown Battlefield",
+      "credit": "NPS Photo/Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "york-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DF5C5-1DD8-B71B-0B930002068FF0F0.jpg",
+      "title": "The Moore House",
+      "altText": "The Moore House",
+      "caption": "The Moore House where the terms of surrender were negotiated.",
+      "credit": "NPS Photo/Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "york-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DF840-1DD8-B71B-0B96BEC911E1F5B8.jpg",
+      "title": "National Cemetery",
+      "altText": "National Cemetery showing tombstones, American Flag and Cemetery Lodge in sunlight.",
+      "caption": "Civil War National Cemetery",
+      "credit": "NPS Photo/Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "york-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DF9BE-1DD8-B71B-0B58076431E15B17.jpg",
+      "title": "The Nelson House",
+      "altText": "Nelson house on main street.",
+      "caption": "The Nelson house on main street of Yorktown.  Home of Thomas Nelson Jr.  a signer of the Declaration of Independence.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "york-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0CC0-1DD8-B71B-0B1A15C76D70B217.jpg",
+      "title": "Yorktown Victory Monument",
+      "altText": "Yorktown Victory Monument",
+      "caption": "Yorktown Victory Monument",
+      "credit": "NPS Photo/Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "york-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0E49-1DD8-B71B-0BF744104FAD9A8A.jpg",
+      "title": "Yorktown Battlefield Earthworks:Redoubt 9",
+      "altText": "Yorktown Battlefield Earthworks:Redoubt 9",
+      "caption": "Yorktown Battlefield Earthworks:Redoubt 9",
+      "credit": "NPS Photo/Linda Williams",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/york/index.htm",
+    "directions": "http://www.nps.gov/york/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "American Revolution",
+    "Colonization and Settlement",
+    "Forts",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Presidents",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Natural Sounds",
+    "Night Sky",
+    "River and Riparian",
+    "Scenic Views",
+    "Watersheds",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "Part of Colonial National Historical Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

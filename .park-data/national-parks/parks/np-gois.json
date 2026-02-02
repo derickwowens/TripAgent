@@ -1,0 +1,175 @@
+{
+  "id": "np-gois",
+  "name": "Governors Island National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "From 1794 to 1966, the U.S. Army on Governors Island was part of the social, political, and economic tapestry of New York City. It was home to the US Coast Guard from 1966 to 1996. Today, the island is a vibrant venue of art, culture, and performance against the backdrop of two centuries of military heritage and the skyline of one of the great cities of the world. The island is open to the public.",
+  "shortDescription": "From 1794 to 1966, the U.S. Army on Governors Island was part of the social, political, and economic tapestry of New York City. It was home to the US Coast Guard from 1966 to 1996. Today, the island i...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.69164233,
+    "longitude": -74.01670765
+  },
+  "nationalParkInfo": {
+    "parkCode": "gois",
+    "npsId": "F7DA09B4-41C4-4372-9EBB-15AD1526B391",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gois/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://nps.gov/gois/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2128253054",
+    "email": "GOIS_information@nps.gov",
+    "website": "https://www.nps.gov/gois/index.htm",
+    "address": {
+      "line1": "Governors Island",
+      "line2": "New York Harbor",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10004-1921"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Fort Jay will be closed for the winter. It will re-open in April"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "During the summer public access season from May to September, the weather is typical of the mid-Atlantic region. Thunderstorms can come quickly with short downpours. There may be extended periods of heat or humidity that might last a week or more. The island is generally a few degrees cooler than the city due to the fairly constant breeze."
+  },
+  "images": [
+    {
+      "id": "gois-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85A2A1-1DD8-B71B-0B50FD84825F4474.jpg",
+      "title": "Fort Jay gate house and moat.",
+      "altText": "Bridge over dry moat leading into a gated fort.",
+      "caption": "An early spring morning view of Fort Jay. The gate house is the oldest structure on Governors Island dating back to 1794.",
+      "credit": "NPS photo / Michael B. Shaver",
+      "isPrimary": true
+    },
+    {
+      "id": "gois-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85A4CD-1DD8-B71B-0BF93977105773BC.jpg",
+      "title": "Castle Williams at Governors Island National Monument",
+      "altText": "Front of sandstone brick fort with arched entrance way.",
+      "caption": "Castle Williams at Governors Island National Monument was constructed in 1811 and was a pioneering design in American fortifications.",
+      "credit": "NPS photo / Katherine Moscowitch",
+      "isPrimary": false
+    },
+    {
+      "id": "gois-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85A7A6-1DD8-B71B-0B3BB515B76253BF.jpg",
+      "title": "Ranger guided tour of Castle Williams at Governors Island National Monument",
+      "altText": "A park ranger talking to a group of visitors inside a large stone room in a fort.",
+      "caption": "Ranger-led tours of Castle Williams show the pioneering features of fortification architecture that would be used in other masonry forts constructed in the 1800s.",
+      "credit": "NPS photo / Katherine Moscowitch",
+      "isPrimary": false
+    },
+    {
+      "id": "gois-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3EA79439-F805-D292-5493E29579C4D5DA.jpg",
+      "title": "Manhattan from Fort Jay",
+      "altText": "Manhattan Skyline stands behind the barracks of Fort Jay",
+      "caption": "History frames our understanding of the present",
+      "credit": "NPS Photo / Sierra Willoughby",
+      "isPrimary": false
+    },
+    {
+      "id": "gois-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/14F6F12D-D98B-A5BE-50BF4FD9277B0DA4.jpg",
+      "title": "Manhattan from Castle Williams",
+      "altText": "Canon and Manhattan Skyline from top of castle",
+      "caption": "A civil war era canon sitting upon the top of Castle Williams juxtaposes the new and old, with the glimering shine of Manhattan in the background",
+      "credit": "NPS Photo / Sierra Willoughby",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gois/index.htm",
+    "directions": "https://nps.gov/gois/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Forts",
+    "Incarceration",
+    "Jails and Prisons",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Military",
+    "US Army",
+    "US Coast Guard",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "National Monument",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

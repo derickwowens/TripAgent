@@ -1,0 +1,222 @@
+{
+  "id": "np-arch",
+  "name": "Arches National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "Discover a landscape of contrasting colors, land forms, and textures unlike any other. The park has over 2,000 natural stone arches, hundreds of soaring pinnacles, massive rock fins, and giant balanced rocks. This red-rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.",
+  "shortDescription": "Discover a landscape of contrasting colors, land forms, and textures unlike any other. The park has over 2,000 natural stone arches, hundreds of soaring pinnacles, massive rock fins, and giant balance...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 38.72261844,
+    "longitude": -109.5863666
+  },
+  "nationalParkInfo": {
+    "parkCode": "arch",
+    "npsId": "36240051-018E-4915-B6EA-3F1A7F24FBE4",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/arch/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/arch/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4357192299",
+    "email": "archinfo@nps.gov",
+    "website": "https://www.nps.gov/arch/index.htm",
+    "address": {
+      "line1": "5 miles north of Moab, Utah, on US 191",
+      "line2": "",
+      "city": "Moab",
+      "state": "UT",
+      "postalCode": "84532"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Arches National Park is generally open 24 hours a day, year-round. Fees apply. The park is very busy between March and October. To avoid traffic, we recommend entering the park before 8 am or after 3 pm."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one private, non-commercial vehicle (15 passenger capacity or less) and all its occupants.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car. Typically used for bicyclists, hikers, and pedestrians. Youth 15 and under are admitted free.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Arches is part of the Colorado Plateau, a \"high desert\" region that experiences wide temperature fluctuations, sometimes over 40 degrees in a single day. The temperate (and most popular) seasons are spring (April-May) and fall (mid-September-October), when daytime highs average 60 to 80 F and lows average 30 to 50 F. Summer temperatures often exceed 100 F, making strenuous exercise difficult. Winters are cold, with highs averaging 30 to 50 F, and lows averaging 0 to 20 F."
+  },
+  "images": [
+    {
+      "id": "arch-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/473F5463-F0D2-261D-CEF5FCB39363590B.jpg",
+      "title": "An afternoon at Delicate Arch",
+      "altText": "A crowd of people sit and watch the sunset at delicate arch.",
+      "caption": "Exploration awaits at Arches",
+      "credit": "NPS/Veronica Verdin",
+      "isPrimary": true
+    },
+    {
+      "id": "arch-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79931C-1DD8-B71B-0BF201E3DB540D04.jpg",
+      "title": "Double O Arch",
+      "altText": "a broad, red arch with rock pinnacles in the background",
+      "caption": "Double O Arch is one of many large arches in the Devils Garden area",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "arch-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0B2B-1DD8-B71B-0BE0E26B0740AA6B.jpg",
+      "title": "Delicate Arch",
+      "altText": "a stone arch",
+      "caption": "Delicate Arch is perhaps the most famous natural arch in the world.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "arch-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0C49-1DD8-B71B-0B460D58D6E83B40.jpg",
+      "title": "Milky Way over the Garden of Eden",
+      "altText": "the Milky Way arcs above silhouetted stone pinnacles",
+      "caption": "Arches offers some excellent night sky viewing.",
+      "credit": "NPS/Wonderly",
+      "isPrimary": false
+    },
+    {
+      "id": "arch-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0DE5-1DD8-B71B-0BFBE720788EF4A3.jpg",
+      "title": "Park Avenue Trail",
+      "altText": "two hikers descend a broad wash with tall rock walls on either side.",
+      "caption": "The Park Avenue trail is one of many hiking trails at Arches, ranging from easy to strenuous.",
+      "credit": "NPS/Herbert",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "07CBCA6A-46B8-413F-8B6C-ABEDEBF9853E",
+      "name": "Canyoneering"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/arch/index.htm",
+    "directions": "http://www.nps.gov/arch/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Farming and Agriculture",
+    "Ranches",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Geology",
+    "Night Sky",
+    "Rock Landscapes and Features",
+    "Arches",
+    "Trails",
+    "National Park",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

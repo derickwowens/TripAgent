@@ -1,0 +1,492 @@
+{
+  "stateCode": "WI",
+  "stateName": "Wisconsin",
+  "totalParks": 44,
+  "lastSynced": "2026-02-02T02:30:24.163Z",
+  "parks": [
+    {
+      "id": "wi-amnicon",
+      "name": "Amnicon Falls State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-aztalan",
+      "name": "Aztalan State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-belmont",
+      "name": "Belmont Mound State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-bigbay",
+      "name": "Big Bay State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-bigfoot",
+      "name": "Big Foot Beach State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-bluemound",
+      "name": "Blue Mound State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-brunetisland",
+      "name": "Brunet Island State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-buckhorn",
+      "name": "Buckhorn State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-copperculture",
+      "name": "Copper Culture State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-copperfalls",
+      "name": "Copper Falls State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-councilgrounds",
+      "name": "Council Grounds State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-devilslake",
+      "name": "Devil's Lake State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-govdodge",
+      "name": "Governor Dodge State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-govnelson",
+      "name": "Governor Nelson State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-govthompson",
+      "name": "Governor Thompson State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-harringtonbeach",
+      "name": "Harrington Beach State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-hartmancreek",
+      "name": "Hartman Creek State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-highcliff",
+      "name": "High Cliff State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-interstate",
+      "name": "Interstate State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-kinnickinnic",
+      "name": "Kinnickinnic State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-kohlerandrae",
+      "name": "Kohler-Andrae State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-lakekegonsa",
+      "name": "Lake Kegonsa State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-lakewissota",
+      "name": "Lake Wissota State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-lakeshore",
+      "name": "Lakeshore State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-merrick",
+      "name": "Merrick State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-millbluff",
+      "name": "Mill Bluff State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-mirrorlake",
+      "name": "Mirror Lake State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-naturalbridge",
+      "name": "Natural Bridge State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-nelsondewey",
+      "name": "Nelson Dewey State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-ngwoods",
+      "name": "New Glarus Woods State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-newport",
+      "name": "Newport State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-pattison",
+      "name": "Pattison State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-peninsula",
+      "name": "Peninsula State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-perrot",
+      "name": "Perrot State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-potawatomi",
+      "name": "Potawatomi State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-ribmt",
+      "name": "Rib Mountain State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-rockisland",
+      "name": "Rock Island State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-rockyarbor",
+      "name": "Rocky Arbor State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-towerhill",
+      "name": "Tower Hill State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-whitefish",
+      "name": "Whitefish Dunes State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-wildcat",
+      "name": "Wildcat Mountain State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-willowriver",
+      "name": "Willow River State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-wyalusing",
+      "name": "Wyalusing State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    },
+    {
+      "id": "wi-yellowstone",
+      "name": "Yellowstone Lake State Park",
+      "parkType": "state_park",
+      "coordinates": {
+        "latitude": 0,
+        "longitude": 0
+      },
+      "hasCamping": false,
+      "hasTrails": false
+    }
+  ]
+}

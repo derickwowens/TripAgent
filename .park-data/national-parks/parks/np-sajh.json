@@ -1,0 +1,245 @@
+{
+  "id": "np-sajh",
+  "name": "San Juan Island National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "region": "pacific",
+  "description": "San Juan Island is well known for its splendid vistas, saltwater shores, quiet woodlands, orca whales and one of the last remaining native prairies in the Puget Sound/Northern Straits region. But it was also here in 1859 that the United States and Great Britain nearly went to war over possession of the island, the crisis ignited by the death of a pig.",
+  "shortDescription": "San Juan Island is well known for its splendid vistas, saltwater shores, quiet woodlands, orca whales and one of the last remaining native prairies in the Puget Sound/Northern Straits region. But it w...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 48.51241933,
+    "longitude": -123.0610277
+  },
+  "nationalParkInfo": {
+    "parkCode": "sajh",
+    "npsId": "63A8DCC0-0A62-4164-BF0B-51F6369B9E8B",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sajh/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sajh/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3603782240",
+    "email": "allison_herkey@nps.gov",
+    "website": "https://www.nps.gov/sajh/index.htm",
+    "address": {
+      "line1": "4668 Cattle Point Rd.",
+      "line2": "",
+      "city": "Friday Harbor",
+      "state": "WA",
+      "postalCode": "98250"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Park grounds are open 24 hours per-day, year-round."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 40 F to 60 F. Wildflowers are at their peak around May. Summer: Temperatures usually range from 45 F to 70 F. On very sunny days, be prepared with water-heat exhaustion is a common complaint among park visitors who are unprepared. Fall: Temperatures usually range from 40 F to 65 F. Rain is common. Winter: Temperatures range from 35 F to 50 F. Be prepared with cold and wet weather gear and numerous layers if you intend to be outside. Rain and wind are common."
+  },
+  "images": [
+    {
+      "id": "sajh-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81CFC5-1DD8-B71B-0B16B28795ED1CA0.jpg",
+      "title": "Sunset at American Camp",
+      "altText": "a sun setting behind historic parade grounds",
+      "caption": "The sun sets on the American Camp parade grounds",
+      "credit": "NPS Photo/Gary Tarleton",
+      "isPrimary": true
+    },
+    {
+      "id": "sajh-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81D12D-1DD8-B71B-0B79CFAC380A3D5C.jpg",
+      "title": "English Camp Barracks",
+      "altText": "people visiting a historic building",
+      "caption": "Visitors come from all over the world to explore English Camp",
+      "credit": "NPS Photo/Gary Tarleton",
+      "isPrimary": false
+    },
+    {
+      "id": "sajh-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81D396-1DD8-B71B-0B7FF74CD67473C3.jpg",
+      "title": "Encampment",
+      "altText": "a historic cannon being fired",
+      "caption": "Reenactors fire a cannon at Encampment",
+      "credit": "NPS Photo/Gary Tarleton",
+      "isPrimary": false
+    },
+    {
+      "id": "sajh-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81D512-1DD8-B71B-0BB9DE02CB2C84A4.jpg",
+      "title": "English Camp Formal Garden",
+      "altText": "flowers in bloom",
+      "caption": "The formal garden in bloom",
+      "credit": "NPS Photo/Gary Tarleton",
+      "isPrimary": false
+    },
+    {
+      "id": "sajh-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81D6F9-1DD8-B71B-0B458C357549D644.jpg",
+      "title": "Grandma's Cove",
+      "altText": "a sandy beach and blue sky",
+      "caption": "Grandma's Cove is a popular spot for park visitors",
+      "credit": "NPS Photo/Gary Tarleton",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sajh/index.htm",
+    "directions": "http://www.nps.gov/sajh/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Forts",
+    "Military",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "Meadows",
+    "Night Sky",
+    "Oceans",
+    "Whales",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "National Historical Park",
+    "WA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

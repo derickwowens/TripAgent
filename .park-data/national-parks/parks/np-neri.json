@@ -1,0 +1,367 @@
+{
+  "id": "np-neri",
+  "name": "New River Gorge National Park & Preserve",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "WV",
+  "stateName": "West Virginia",
+  "region": "southeast",
+  "description": "A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.",
+  "shortDescription": "A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. The park encompasses over 70,000 acres of land along the New River, is ric...",
+  "designation": "National Park & Preserve",
+  "coordinates": {
+    "latitude": 37.86878554,
+    "longitude": -80.99956002
+  },
+  "nationalParkInfo": {
+    "parkCode": "neri",
+    "npsId": "28F155F2-5116-4E4F-9E21-E8CBCFA5FF49",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/neri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/neri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "304-465-0508",
+    "email": "neri_interpretation@nps.gov",
+    "website": "https://www.nps.gov/neri/index.htm",
+    "address": {
+      "line1": "104 Main Street",
+      "line2": "",
+      "city": "Glen Jean",
+      "state": "WV",
+      "postalCode": "25846"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park itself is open 24 hour a day, year round. The park's two main visitor centers at Canyon Rim and Sandstone are open daily from 9:00 am to 5:00 pm (closed on Thanksgiving, Christmas, and New Years Day). There are two seasonal Visitor Centers located in Thurmond and Grandview. They are typically open Memorial Day to Labor Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in the Appalachian Mountains can be unpredictable and can change quickly. Always be prepared for the possibility of sudden storms. Weather in the mountains is often cooler and wetter than the surrounding area. On average, the warmest month is July. The maximum average precipitation also occurs in July."
+  },
+  "images": [
+    {
+      "id": "neri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8C70-1DD8-B71B-0B00C7B2373E386E.jpg",
+      "title": "Sunrise at Diamond Point",
+      "altText": "sun rising over the New River Gorge",
+      "caption": "Sun rising over the New River Gorge from Diamond Point on the Endless Wall Trail.",
+      "credit": "Gary Hartley",
+      "isPrimary": true
+    },
+    {
+      "id": "neri-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8DAE-1DD8-B71B-0B9B0DDABB90EA30.jpg",
+      "title": "New River Gorge Bridge",
+      "altText": "bridge spanning the river",
+      "caption": "The New River Gorge Bridge spans across the New River.",
+      "credit": "Gary Hartley",
+      "isPrimary": false
+    },
+    {
+      "id": "neri-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8F1F-1DD8-B71B-0B03B737CD7AE489.jpg",
+      "title": "Horseshoe Bend from Grandview",
+      "altText": "bend in the river",
+      "caption": "The Horseshoe Bend in the New River from Grandview",
+      "credit": "NPS photo/Louise McLaughlin",
+      "isPrimary": false
+    },
+    {
+      "id": "neri-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E907D-1DD8-B71B-0B502C95583F514E.jpg",
+      "title": "Thurmond Depot",
+      "altText": "railroad tracks and depot",
+      "caption": "Thurmond Depot",
+      "credit": "NPS photo/Louise McLaughlin",
+      "isPrimary": false
+    },
+    {
+      "id": "neri-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E91DA-1DD8-B71B-0B508B9CB06C681E.jpg",
+      "title": "Sandstone Falls",
+      "altText": "waterfall spanning the river",
+      "caption": "Sandstone Falls spans the New River",
+      "credit": "NPS photo/Carey Woods",
+      "isPrimary": false
+    },
+    {
+      "id": "neri-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E9441-1DD8-B71B-0BED7246643E6693.jpg",
+      "title": "Foggy morning",
+      "altText": "fog and mountains",
+      "caption": "Fog settles in the gorge",
+      "credit": "NPS photo/Leah Perkowski-Sisk",
+      "isPrimary": false
+    },
+    {
+      "id": "neri-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E95AB-1DD8-B71B-0BB9F0FCDF99420B.jpg",
+      "title": "Rhododendron at Turkey Spur",
+      "altText": "pink rhododendron and view of the gorge and river",
+      "caption": "View from Turkey Spur at Grandview",
+      "credit": "NPS photo/Dave Bieri",
+      "isPrimary": false
+    },
+    {
+      "id": "neri-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E96DD-1DD8-B71B-0B515196575EBFE2.jpg",
+      "title": "Waterfall on Dowdy Creek",
+      "altText": "waterfall and stream",
+      "caption": "Waterfall on Dowdy Creek",
+      "credit": "Gary Hartley",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/neri/index.htm",
+    "directions": "http://www.nps.gov/neri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Farming and Agriculture",
+    "Industry",
+    "Mining",
+    "Laborer and Worker",
+    "Labor Movement",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Schools and Education",
+    "Transportation",
+    "Bridges",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Explosions",
+    "Wars and Conflicts",
+    "Korean War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "Mountains",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "National Park & Preserve",
+    "WV"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

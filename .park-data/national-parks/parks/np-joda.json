@@ -1,0 +1,150 @@
+{
+  "id": "np-joda",
+  "name": "John Day Fossil Beds National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "OR",
+  "stateName": "Oregon",
+  "region": "pacific",
+  "description": "Large rhino-like brontotheres roam a semitropical forest. Dog-sized, three-toed horses dart between the trees. The cat-like nimravid and bear dogs stalk their prey. The climate cools and forests alter to dryer grasslands. Saber tooth cats and camels get replaced by mountain lions and deer. Paleontologists learn more about the ancient animals and environment with every new fossil they discover.",
+  "shortDescription": "Large rhino-like brontotheres roam a semitropical forest. Dog-sized, three-toed horses dart between the trees. The cat-like nimravid and bear dogs stalk their prey. The climate cools and forests alter...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 44.62566508,
+    "longitude": -119.8811491
+  },
+  "nationalParkInfo": {
+    "parkCode": "joda",
+    "npsId": "B2577D2A-A33E-4DCF-B6F8-C299E1DFEC19",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/joda/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/joda/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5419872333",
+    "email": "joda_interpretation@nps.gov",
+    "website": "https://www.nps.gov/joda/index.htm",
+    "address": {
+      "line1": "32651 Highway 19",
+      "line2": "",
+      "city": "Kimberly",
+      "state": "OR",
+      "postalCode": "97848"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "All outdoor recreation opportunities in the park are open daily, including all overlooks and hiking trails at the park’s three units: Sheep Rock, Painted Hills, and Clarno."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather conditions at John Day Fossil Beds National Monument are highly variable in this semi-arid desert landscape. Summer highs can climb into the 110's. Winters tend to be fairly mild, with occassional snow and ice and lows occasionally dipping into the single digits."
+  },
+  "images": [
+    {
+      "id": "joda-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/65131BFA-AC34-079D-7FD7AF99F152FFED.jpg",
+      "title": "Sheep Rock",
+      "altText": "Sheep Rock",
+      "caption": "Sheep Rock, with the John Day River in the foreground",
+      "credit": "NPS Photo / Sue Anderson",
+      "isPrimary": true
+    },
+    {
+      "id": "joda-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C848785-1DD8-B71B-0B846784B96C76EE.jpg",
+      "title": "Painted Hills",
+      "altText": "Painted Hills",
+      "caption": "The Painted Hills on a stormy winter day.",
+      "credit": "NPS Photo / Scott Ritner",
+      "isPrimary": false
+    },
+    {
+      "id": "joda-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8488CD-1DD8-B71B-0B29E5280AE3C784.jpg",
+      "title": "Clarno",
+      "altText": "Clarno",
+      "caption": "The Clarno Palisades are remains of ancient volcanic mudslides.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "joda-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C848BB2-1DD8-B71B-0B434648CF84C5DE.jpg",
+      "title": "Paleontologist at work",
+      "altText": "Paleontologist at work",
+      "caption": "The Thomas Condon Paleontology Center is both a visitor center and research center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "joda-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6593D65B-C84F-49D1-833D0F4F38BF288D.jpg",
+      "title": "Historic James Cant Ranch Homestead",
+      "altText": "White house surrounded by green with concrete path leading to the front",
+      "caption": "Cant Ranch house",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/joda/index.htm",
+    "directions": "http://www.nps.gov/joda/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Science, Technology and Innovation",
+    "Fossils and Paleontology",
+    "Geology",
+    "River and Riparian",
+    "Trails",
+    "Unique Species",
+    "National Monument",
+    "OR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

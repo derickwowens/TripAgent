@@ -1,0 +1,297 @@
+{
+  "id": "np-anti",
+  "name": "Antietam National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "23,000 soldiers were killed, wounded or missing after twelve hours of savage combat on September 17, 1862. The Battle of Antietam ended the Confederate Army of Northern Virginia's first invasion into the North and led Abraham Lincoln to issue the preliminary Emancipation Proclamation.",
+  "shortDescription": "23,000 soldiers were killed, wounded or missing after twelve hours of savage combat on September 17, 1862. The Battle of Antietam ended the Confederate Army of Northern Virginia's first invasion into ...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 39.46763452,
+    "longitude": -77.73828017
+  },
+  "nationalParkInfo": {
+    "parkCode": "anti",
+    "npsId": "8415526C-C932-4236-A634-2D89DF718936",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/anti/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/anti/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3014325124",
+    "email": "anti_info@nps.gov",
+    "website": "https://www.nps.gov/anti/index.htm",
+    "address": {
+      "line1": "5831 Dunker Church Rd.",
+      "line2": "",
+      "city": "Sharpsburg",
+      "state": "MD",
+      "postalCode": "21782"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The visitor center is open every day except Thanksgiving, Christmas, and New Year's Day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Personal Vehicle/Family: $20.00 for three days",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Individual: $10.00 for three days. This fee admits one individual in a vehicle and also includes hikers, bicyclists or pedestrians. Youth 15 and under are admitted free of charge.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 3 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "$100 Motor Coach/Commercial Tour Groups with 26 or more people",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "$40 per passenger bus with 16-25 people",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "$25 per passenger bus/sedan with 1-6 people",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "To request an Academic Fee Waiver for your group, click on the link for further details.",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The weather is fairly mild. Summers can be very warm and humid and winters cold and snowy. We have four distinct seasons with the fall and spring being the best times to visit the battlefield."
+  },
+  "images": [
+    {
+      "id": "anti-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BAFFFE67-B158-BC0B-56666381F3C571C3.jpg",
+      "title": "Memorial Illumination",
+      "altText": "luminaries placed by Maryland Monument with dramatic orange red clouds",
+      "caption": "The Memorial Illumination, held in December, features 23,000 candles placed by volunteers, over the north end of the battlefield.  Each represents a causality from the battle.",
+      "credit": "NPS Antietam/BBaracz",
+      "isPrimary": true
+    },
+    {
+      "id": "anti-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/828E1DBA-9A58-DD12-D62FF6F259633B3D.jpg",
+      "title": "Antietam National Cemetery Lodge Building",
+      "altText": "stone building with black fence in foreground",
+      "caption": "The National Cemetery Lodge Building sits just inside the gates of the cemetery.",
+      "credit": "NPS Antietam/ BBaracz",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6E455943-9933-66E7-288EADAA891B7267.jpg",
+      "title": "The Cornfield",
+      "altText": "wood fence rails with green corn stalks behind fence",
+      "caption": "Looking east along the south edge of The Cornfield.",
+      "credit": "NPS Antietam/ BBaracz",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8EB071FD-DDA4-68D6-D79A7EF68B2E5474.jpg",
+      "title": "Antietam Cannons",
+      "altText": "A line Civil War cannons and a stone wall at Antietam National Battlefield",
+      "caption": "Placing more than 500 cannons on high ground, both armies were able to effectively strike enemy troop positions at great distances.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8085D6-1DD8-B71B-0BBFD59E69D8F9F6.jpg",
+      "title": "Burnside Bridge",
+      "altText": "three arch stone bridge over Antietam Creek",
+      "caption": "Burnside Bridge in the snow from the Union side of Antietam Creek.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/818AAC53-0ABA-C85F-E176D917EBECBABD.jpg",
+      "title": "Dunker Church",
+      "altText": "small white building with cannon in the foreground",
+      "caption": "Spring at the Battlefield.",
+      "credit": "NPS Antietam/ BBaracz",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7FBFE821-E7DB-9DF0-69434346F6827418.jpg",
+      "title": "Dunker Church",
+      "altText": "one room house covered in snow",
+      "caption": "The Dunker Church covered in snow.",
+      "credit": "NPS Antietam/ BBaracz",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80828B-1DD8-B71B-0BAC8994DD862724.jpg",
+      "title": "Monument at Sunset",
+      "altText": "a monument of a soldier at sunset",
+      "caption": "130th Pennsylvania Monument at Bloody Lane",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80843B-1DD8-B71B-0B95E2404AB420FA.jpg",
+      "title": "Cannon the Field",
+      "altText": "artillery piece sitting on a rock break",
+      "caption": "Artillery played a key role at Antietam.  Over 500 cannon were involved in the fighting.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "anti-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8080AA-1DD8-B71B-0BE68488E3F4CDCF.jpg",
+      "title": "Fog Over the Battlefield",
+      "altText": "fog filling in the low areas of the field at sunset",
+      "caption": "View from the visitor center looking toward Bloody Lane at sunset",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/anti/index.htm",
+    "directions": "http://www.nps.gov/anti/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Arts",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Medicine",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Presidents",
+    "Reconstruction",
+    "Schools and Education",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Trails",
+    "National Battlefield",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

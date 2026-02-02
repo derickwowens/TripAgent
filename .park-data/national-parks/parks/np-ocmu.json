@@ -1,0 +1,190 @@
+{
+  "id": "np-ocmu",
+  "name": "Ocmulgee Mounds National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "Welcome to Ocmulgee Mounds National Historical Park. This park is a prehistoric American Indian site, where many different American Indian cultures occupied this land for thousands of years. American Indians first came here during the Paleo-Indian Period hunting Ice Age mammals. Around 900 CE, the Mississippian Period began, and people constructed mounds for their elite, which remain here today.",
+  "shortDescription": "Welcome to Ocmulgee Mounds National Historical Park. This park is a prehistoric American Indian site, where many different American Indian cultures occupied this land for thousands of years. American ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 32.83816576,
+    "longitude": -83.60224853
+  },
+  "nationalParkInfo": {
+    "parkCode": "ocmu",
+    "npsId": "81AFEB37-7119-4BF1-B65B-806BAB973FFD",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ocmu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/ocmu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4787528257",
+    "email": "ocmu_administration@nps.gov",
+    "website": "https://www.nps.gov/ocmu/index.htm",
+    "address": {
+      "line1": "1207 Emery Hwy",
+      "line2": "",
+      "city": "Macon",
+      "state": "GA",
+      "postalCode": "31217"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:00PM",
+    "tuesday": "8:00AM - 5:00PM",
+    "wednesday": "8:00AM - 5:00PM",
+    "thursday": "8:00AM - 5:00PM",
+    "friday": "8:00AM - 5:00PM",
+    "saturday": "8:00AM - 5:00PM",
+    "sunday": "8:00AM - 5:00PM",
+    "description": "Ocmulgee Mounds National Historical Park   \n\nPark grounds and walking trails are open from 8:00 am to 5:00 pm daily.\n\nThe Visitor Center and Earth Lodge are open from 9:00 am-5:00 pm daily."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Macon has a humid subtropical climate (Köppen climate classification Cfa). The average high temperature ranges from 46 to 58°F (7.7 to 14.4°C) in January and 82 to 91°F (27.7 to 32.7°C) in July. Winters are mild. Temps ranging from 30 degrees to 50 degrees. Spring is mild but wet. Temps ranging from 50 degrees to low 70 degrees. Summers are hot and very humid. Temp ranging from upper 80 degrees to 100 degrees. Fall is pleasant. Temps ranging from 60 to 80 degrees."
+  },
+  "images": [
+    {
+      "id": "ocmu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C797774-1DD8-B71B-0B2DA9E973C5AD89.jpg",
+      "title": "Great Temple and Lesser Temple Mound",
+      "altText": "mounds",
+      "caption": "The Great Temple Mound is the largest mound at the park, it stands at 55 feet tall.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "ocmu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79785B-1DD8-B71B-0B44360C5B1FA126.jpg",
+      "title": "Earth Lodge",
+      "altText": "earth lodge",
+      "caption": "The Earth Lodge was used as a council chamber for the Mississippian Culture (900-1600)",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "ocmu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79797E-1DD8-B71B-0B467EFC07A0E785.jpg",
+      "title": "Earth Lodge Floor",
+      "altText": "earth lodge floor",
+      "caption": "The earth Lodge floor is original it was carbon dated to 1015.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "ocmu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C797A83-1DD8-B71B-0B4E120BDF11316B.jpg",
+      "title": "The Funeral Mound",
+      "altText": "funeral mound",
+      "caption": "The Funeral Mound was by prehistoric cultures to bury their dead. Today there are still remains instead the mound",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "ocmu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C797C6B-1DD8-B71B-0B82D63B083D1850.jpg",
+      "title": "Clovis Point",
+      "altText": "spear point",
+      "caption": "This Clovis point is the first spear found east of the Mississippi River. It was carbon dated to 10,000 BC",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ocmu/index.htm",
+    "directions": "https://www.nps.gov/ocmu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Military",
+    "Infantry and Militia",
+    "Battlefields",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Trails",
+    "Wetlands",
+    "National Historical Park",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

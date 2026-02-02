@@ -1,0 +1,101 @@
+{
+  "id": "np-ston",
+  "name": "Stonewall National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Before the 1960s, almost everything about living authentically as a lesbian, a bisexual person or a gay man was illegal. The Stonewall Uprising on June 28, 1969 is a milestone in the quest for civil rights and provided momentum for a movement.",
+  "shortDescription": "Before the 1960s, almost everything about living authentically as a lesbian, a bisexual person or a gay man was illegal. The Stonewall Uprising on June 28, 1969 is a milestone in the quest for civil r...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.7337799072,
+    "longitude": -74.0006866455
+  },
+  "nationalParkInfo": {
+    "parkCode": "ston",
+    "npsId": "E65E7D88-D280-4B41-B700-BF1DC219BA38",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ston/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ston/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "email": "Stonewall@nps.gov",
+    "website": "https://www.nps.gov/ston/index.htm",
+    "address": {
+      "line1": "Intersection of Christopher, Grove, and Fourth Streets.",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10014"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 5:00PM",
+    "tuesday": "7:00AM - 5:00PM",
+    "wednesday": "7:00AM - 5:00PM",
+    "thursday": "7:00AM - 5:00PM",
+    "friday": "7:00AM - 5:00PM",
+    "saturday": "7:00AM - 5:00PM",
+    "sunday": "7:00AM - 5:00PM",
+    "description": "Off peak operation occurs November - April, with the park opening and closing daily from 7 am - 5 pm. Holidays and poor weather can be affect these hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "New York City experiences all four seasons. It is typically hot in the summer and cold in the winter with cool springs and autumns."
+  },
+  "images": [
+    {
+      "id": "ston-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B8D363E8-B3FB-A486-4AD8A4E9BF314140.jpeg",
+      "title": "Tulips in Christopher Park",
+      "altText": "Pink and purple tulips in bloom with the Pride flag waving above a statue in the background.",
+      "caption": "Tulips in Christopher Park",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ston/index.htm",
+    "directions": "http://www.nps.gov/ston/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "LGB American Heritage",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Civil Rights",
+    "Tragic Events",
+    "Urban America",
+    "National Monument",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "id": "np-orpi",
+  "name": "Organ Pipe Cactus National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Look closely. Look again. The sights and sounds of Organ Pipe Cactus National Monument, an International Biosphere Reserve, reveal a thriving community of plants and animals. Human stories echo throughout the Sonoran Desert, chronicling thousands of years of desert living. A wilderness hike, a scenic drive, or a night of camping will expose you to a living desert abounding with hidden life.",
+  "shortDescription": "Look closely. Look again. The sights and sounds of Organ Pipe Cactus National Monument, an International Biosphere Reserve, reveal a thriving community of plants and animals. Human stories echo throug...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 32.03585543,
+    "longitude": -112.8573314
+  },
+  "nationalParkInfo": {
+    "parkCode": "orpi",
+    "npsId": "8A4FA0D4-A3BE-4AE2-8303-1936D9BA1E29",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/orpi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/orpi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "520-387-6849",
+    "email": "orpi_information@nps.gov",
+    "website": "https://www.nps.gov/orpi/index.htm",
+    "address": {
+      "line1": "10 Organ Pipe Drive",
+      "line2": "",
+      "city": "Ajo",
+      "state": "AZ",
+      "postalCode": "85321"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The monument is open 365 days a year and park roads and trails are open 24 hours. There is no gate at the monument entrance; entrance fees are paid for at the visitor center. There is no dispersed camping allowed anywhere in the monument. US-Mexico Border hours are 6 am-8 pm.\n\nThe main season for visitors is December through the end of April, during the mild winter months and wildflower season. Campgrounds may fill during this time; check Recreation.gov for campsite availability."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Valid for 7 days. This fee includes all occupants of a non-commercial vehicle.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Valid for 7 days. This fee applies to bicycles and walk-ins (per person)",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summer months are hot, with temperatures exceeding 100F during the day and night-time temperatures in the high 70's. Winter months are milder, with temperatures in the 70s during the day and 30's to 40's in the evening."
+  },
+  "images": [
+    {
+      "id": "orpi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A1910F3F-AC95-B7D0-2B1171BAB2F34B89.jpg",
+      "title": "Organ Pipe Cactus at sunset",
+      "altText": "Organ pipe cactus and mountains at sunset",
+      "caption": "Visit the only place in the U.S. where you can see large stands of organ pipe cacti.",
+      "credit": "NPS Photo/ Craig Stocks",
+      "isPrimary": true
+    },
+    {
+      "id": "orpi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EB5D4-1DD8-B71B-0B8593382BE0A36F.jpg",
+      "title": "Organ Pipe Cactus",
+      "altText": "sun setting on a green organ pipe cactus",
+      "caption": "Experience the only place in the US where the Organ Pipe Cactus naturally grows",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "orpi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/61C87139-A8DB-0AB8-A8178548A62CC9C0.jpg",
+      "title": "Scenic views in Alamo Canyon",
+      "altText": "View of Alamo Canyon trail, flanked by saguaros and vegetation with mountains in background",
+      "caption": "Capture amazing views from trails and scenic drives",
+      "credit": "NPS Photo/ C Stocks",
+      "isPrimary": false
+    },
+    {
+      "id": "orpi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/61BB1C3C-D724-7336-D2F0D80ED3AC9926.jpg",
+      "title": "Sonoran Pronghorn",
+      "altText": "Sonoran pronghorn with cholla stuck to its face",
+      "caption": "Experience the wildlife of the most biodiverse desert in North America",
+      "credit": "NPS Photo/ D Martin",
+      "isPrimary": false
+    },
+    {
+      "id": "orpi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/61AF0A7E-A55E-7365-987DD992EB97131B.jpg",
+      "title": "Blooming saguaro cactus",
+      "altText": "A saguaro cactus with white blooms, with reddish mountains in the background",
+      "caption": "Experience the rich assemblage of cacti at Organ Pipe Cactus.",
+      "credit": "NPS Photo/ K Ceballos",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/orpi/index.htm",
+    "directions": "http://www.nps.gov/orpi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Groundwater",
+    "Freshwater Springs",
+    "Mountains",
+    "Night Sky",
+    "Astronomy",
+    "Rock Landscapes and Features",
+    "Arches",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Wilderness",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

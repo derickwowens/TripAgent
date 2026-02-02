@@ -1,0 +1,170 @@
+{
+  "id": "np-sama",
+  "name": "Salem Maritime National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "Originally established in 1938 as the first National Historic Site in the United States, Salem Maritime National Historical Park consists of nine acres of land and twelve historic structures along the Salem waterfront, as well as a downtown visitor center. Located in the urban setting of Salem, the park preserves and interprets over 600 years of New England's maritime history and global stories.",
+  "shortDescription": "Originally established in 1938 as the first National Historic Site in the United States, Salem Maritime National Historical Park consists of nine acres of land and twelve historic structures along the...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.52024529,
+    "longitude": -70.88640867
+  },
+  "nationalParkInfo": {
+    "parkCode": "sama",
+    "npsId": "3C5998C3-F130-4E4C-8BA4-C1B25E728CE0",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sama/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/sama/planyourvisit/directions-transportation.htm"
+    }
+  ],
+  "contact": {
+    "phone": "978-740-1650",
+    "email": "SAMA_Information@nps.gov",
+    "website": "https://www.nps.gov/sama/index.htm",
+    "address": {
+      "line1": "Salem Armory Visitor Center",
+      "line2": "2 New Liberty Street",
+      "city": "Salem",
+      "state": "MA",
+      "postalCode": "01970"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "All outdoor spaces including the grounds, gardens, waterfront, and wharves are accessible 7 days a week. Please check the Visitor Center hours to learn more about which facilities are open."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "New England weather is unpredictable year-round. Monthly averages, in degrees Fahrenheit, are: January: 37 high, 20 low February: 40 high, 23 low March: 47 high, 30 low April: 57 high, 38 low May: 67 high, 48 low June: 76 high, 58 low July: 82 high, 63 low August: 80 high, 62 low September: 73 high, 55 low October: 62 high, 45 low November: 52 high, 37 low December: 42 high, 27 low"
+  },
+  "images": [
+    {
+      "id": "sama-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C852B17-1DD8-B71B-0BB86A151B7BE502.jpg",
+      "title": "Friendship of Salem",
+      "altText": "A three mast tall ship on the water under a blue sky with red brick buildings on the shore.",
+      "caption": "Park Waterfront & Vessel Friendship of Salem",
+      "credit": "NPS Photo / Robert Grant",
+      "isPrimary": true
+    },
+    {
+      "id": "sama-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/81A1A135-D07F-2401-575D27AEB50757EA.jpg",
+      "title": "Custom House",
+      "altText": "Three story red brick building with white columns has a wide staircase and golden eagle on top.",
+      "caption": "This Custom House was built in 1819 and housed offices for the officers of the U.S. Customs Service, as well as an attached warehouse, the Public Stores, used for the storage of bonded and impounded cargo.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sama-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/81B85D8A-B8FC-4C60-5D86719450CFA7BA.jpg",
+      "title": "Derby Wharf Light",
+      "altText": "A white rectangular lighthouse approximately 20 feet tall is near the water on a gravel road.",
+      "caption": "The Derby Wharf Light Station has aided navigation in Salem Harbor since it was first lit in 1871.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sama-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/81E50923-C71A-94BD-7BAFD64C112DB4CE.jpg",
+      "title": "Derby House",
+      "altText": "Three story red brick building with white windows and a brick pathway through grasses and trees.",
+      "caption": "Built in 1762 as a wedding present, the Derby House was the home of Elias Hasket Derby (1739-1799) and Elizabeth Crowninshield Derby (1727-1799) for the first twenty years of their marriage.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sama/index.htm",
+    "directions": "https://www.nps.gov/sama/planyourvisit/directions-transportation.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Arts",
+    "Poetry and Literature",
+    "Commerce",
+    "Trade",
+    "Enslavement",
+    "Immigration",
+    "Maritime",
+    "Maritime - Military",
+    "Lighthouses",
+    "Piracy and Privateering",
+    "Ships and Shipwrecks",
+    "Military",
+    "Armories",
+    "Social Movements",
+    "Conservation Movement",
+    "Transportation",
+    "Ancient Seas",
+    "Animals",
+    "Climate Change",
+    "Oceans",
+    "National Historical Park",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

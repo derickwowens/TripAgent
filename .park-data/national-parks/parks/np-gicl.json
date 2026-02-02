@@ -1,0 +1,263 @@
+{
+  "id": "np-gicl",
+  "name": "Gila Cliff Dwellings National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "For thousands of years, groups of nomads used the caves above Cliff Dweller Creek as temporary shelter. In the late 1200s, people of the agricultural Mogollon (Southern Ancestral Pueblo) culture made it a home. They built rooms, crafted pottery and raised children in the cliff dwellings for one or two generations. By approximately 1300, the Mogollon had moved on, leaving the walls behind.",
+  "shortDescription": "For thousands of years, groups of nomads used the caves above Cliff Dweller Creek as temporary shelter. In the late 1200s, people of the agricultural Mogollon (Southern Ancestral Pueblo) culture made ...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 33.22715258,
+    "longitude": -108.2706711
+  },
+  "nationalParkInfo": {
+    "parkCode": "gicl",
+    "npsId": "1BB1F955-A830-4E85-A80F-5E940A143CE5",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gicl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gicl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(575) 323-2904",
+    "email": "gicl_information@nps.gov",
+    "website": "https://www.nps.gov/gicl/index.htm",
+    "address": {
+      "line1": "26 Jim Bradford Trail",
+      "line2": "",
+      "city": "Mimbres",
+      "state": "NM",
+      "postalCode": "88049"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "The National Monument and Visitor Center are open all year and are closed only for Thanksgiving Day (the 4th Thursday of November), Christmas Day (December 25) and New Year's Day (January 1)."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather is extremely variable. Summers are usually around 90° F. but approach 100° F. Winters have occasional snow or temperatures near 0° F. Thunderstorms are common in the summer and early fall, usually in the afternoon. https://forecast.weather.gov/MapClick.php?lat=33.2296&lon=-108.2639#.YUX0_SuSmUk"
+  },
+  "images": [
+    {
+      "id": "gicl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83FFEC-1DD8-B71B-0B6EC625F8E23652.jpg",
+      "title": "Winter Solstice Sunrise at Gila Cliff Dwellings",
+      "altText": "Sunrise view of Gila Cliff Dwellings with brilliant sky.",
+      "caption": "Visitors enjoy panoramic views of the canyon and dwellings at Gila Cliff Dwellings.",
+      "credit": "NPS/Janice Wei",
+      "isPrimary": true
+    },
+    {
+      "id": "gicl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8401BB-1DD8-B71B-0B29C3E110725BF2.jpg",
+      "title": "Looking Back in Time",
+      "altText": "View of Mogollon dwelling rooms within a cave.",
+      "caption": "Tularosa Phase Mogollon people made these caves their home in the late 1200's.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gicl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83FE38-1DD8-B71B-0B088D92FBB7939E.jpg",
+      "title": "A Place to Call Home",
+      "altText": "Cliff Dwellings walls and rooms with narrow catwalk",
+      "caption": "Most of the dwellings walls are original. Some even preserve a builder's fingerprints that are over 700 years old.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gicl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83FC70-1DD8-B71B-0BB95811DA8D8522.jpg",
+      "title": "Mogollon Cliff Dwelling with T Door",
+      "altText": "Exterior view of Mogollon Cliff Dwelling",
+      "caption": "The T-shaped door suggests trade between Mogollon and Ancestral Puebloan.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gicl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84C55C-1DD8-B71B-0B2357EE2D760C54.jpg",
+      "title": "View of the Gila River Valley near Gila Cliff Dwellings NM",
+      "altText": "Distant view of Gila river valley and mountains beyond.",
+      "caption": "The Oldest Wilderness Area in the United States Awaits.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gicl-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C09CF975-1DD8-B71B-0BC5FE23911C9819.jpg",
+      "title": "Gila National Forest Approach to Gila National Monument in Winter",
+      "altText": "Light snowfall on red rock cliffs along river.",
+      "caption": "Winter wonderland along the Gila River",
+      "credit": "NPS Photo/VIP Janice Wei",
+      "isPrimary": false
+    },
+    {
+      "id": "gicl-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C17A9A3D-1DD8-B71B-0B76151956BDE7ED.jpg",
+      "title": "Eroded Cliffs Along the Gila River",
+      "altText": "Eroded cliffs reflecting off a river",
+      "caption": "As the first designated Wilderness Area, the Gila offers endless opportunites peaceful reflection.",
+      "credit": "NPS Photo/Janice Wei",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gicl/index.htm",
+    "directions": "http://www.nps.gov/gicl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Cliff Dwellings",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Military",
+    "Cavalry",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Wolves",
+    "Caves, Caverns and Karst",
+    "Canyons and Canyonlands",
+    "Climate Change",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Plateaus and Mesas",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Geothermal",
+    "Hot Springs",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Wilderness",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

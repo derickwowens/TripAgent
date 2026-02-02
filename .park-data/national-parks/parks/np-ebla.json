@@ -1,0 +1,284 @@
+{
+  "id": "np-ebla",
+  "name": "Ebey's Landing National Historical Reserve",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "region": "pacific",
+  "description": "This stunning landscape on the Salish Sea, with its rich farmland and promising seaport, lured the earliest American pioneers north of the Columbia River to Ebey’s Landing. Today Ebey’s Landing National Historical Reserve preserves the historical, agricultural and cultural traditions of both Native and Euro-American – while offering spectacular opportunities for recreation.",
+  "shortDescription": "This stunning landscape on the Salish Sea, with its rich farmland and promising seaport, lured the earliest American pioneers north of the Columbia River to Ebey’s Landing. Today Ebey’s Landing Nation...",
+  "designation": "National Historical Reserve",
+  "coordinates": {
+    "latitude": 48.21403036,
+    "longitude": -122.6877213
+  },
+  "nationalParkInfo": {
+    "parkCode": "ebla",
+    "npsId": "98C8117C-EDE9-4A7C-9354-5AD0DEFDB848",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ebla/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ebla/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3606786084",
+    "email": "clifford_deloreon@nps.gov",
+    "website": "https://www.nps.gov/ebla/index.htm",
+    "address": {
+      "line1": "162 Cemetery Road",
+      "line2": "",
+      "city": "Coupeville",
+      "state": "WA",
+      "postalCode": "98239"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Reserve is over 80% privately owned, contains three Washington State Parks, and the historic town of Coupeville. There are no hours or fees for visiting the Reserve, but individual business and parks within the Reserve set their own hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Fall and Winter often bring blustery and rainy weather, and while winter storm watching might be fun from the many beaches within the Reserve, it's important to watch for high waves and logs coming ashore. Always dress appropriately for the weather, which can change suddenly from warm to chilly very quickly."
+  },
+  "images": [
+    {
+      "id": "ebla-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84BC00-1DD8-B71B-0BD2CA9CA44675E9.jpg",
+      "title": "View from the Bluff Overlook",
+      "altText": "View from the Bluff Overlook",
+      "caption": "The Bluff Overlook on the Bluff Trail offers spectacular views of the Straight of Juan de Fuca",
+      "credit": "NPS Photo / H. Richards",
+      "isPrimary": true
+    },
+    {
+      "id": "ebla-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84BDD7-1DD8-B71B-0B3517BBE2AFC768.jpg",
+      "title": "Sunrise over Admiralty Bay",
+      "altText": "Sunrise over Admiralty Bay",
+      "caption": "Admiralty Bay in Fort Casey State Park offers spectacular views of Mt Rainier and the Olympic Mountains.",
+      "credit": "NPS Photo / H. Richards",
+      "isPrimary": false
+    },
+    {
+      "id": "ebla-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84BF6A-1DD8-B71B-0B478117375417E0.jpg",
+      "title": "Mt Baker and the historic Smith Barn",
+      "altText": "Mt Baker and the historic Smith Barn",
+      "caption": "The views from the prairie overlook tell a story of farming and community that stretches back for centuries.",
+      "credit": "NPS Photo / H. Richards",
+      "isPrimary": false
+    },
+    {
+      "id": "ebla-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84C127-1DD8-B71B-0B41F30944B7EABF.jpg",
+      "title": "Sunrise Over a Prairie Farm",
+      "altText": "Sunrise over the prairie.",
+      "caption": "Ebey's Landing National Historical Reserve exists to preserve a working rural farm community.",
+      "credit": "NPS Photo / H. Richards",
+      "isPrimary": false
+    },
+    {
+      "id": "ebla-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84C278-1DD8-B71B-0B90C49906FF109C.jpg",
+      "title": "Historic Ferry House",
+      "altText": "Historic Ferry House",
+      "caption": "The Ferry House sits in the heart of the Reserve, a testament to the community that calls this place home.",
+      "credit": "NPS Photo / H. Richards",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ebla/index.htm",
+    "directions": "http://www.nps.gov/ebla/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Asian American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Forts",
+    "Landscape Design",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Migrations",
+    "Military",
+    "Native American Heritage",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Coasts, Islands and Atolls",
+    "Grasslands",
+    "Prairies",
+    "Night Sky",
+    "Astronomy",
+    "Aurora Borealis",
+    "Oceans",
+    "Whales",
+    "Unique Species",
+    "Rare",
+    "National Historical Reserve",
+    "WA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

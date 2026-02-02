@@ -1,0 +1,213 @@
+{
+  "id": "np-mima",
+  "name": "Minute Man National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "At Minute Man National Historical Park the opening battle of the Revolution is brought to life as visitors explore the battlefields and structures associated with April 19, 1775, and witness the American revolutionary spirit through the writings of the Concord authors.",
+  "shortDescription": "At Minute Man National Historical Park the opening battle of the Revolution is brought to life as visitors explore the battlefields and structures associated with April 19, 1775, and witness the Ameri...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.4562778,
+    "longitude": -71.30738884
+  },
+  "nationalParkInfo": {
+    "parkCode": "mima",
+    "npsId": "3AB31FA9-E174-4A03-952D-397944D3A3C8",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mima/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/mima/planyourvisit/directions-transportation.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9783696993",
+    "email": "mima_info@nps.gov",
+    "website": "https://www.nps.gov/mima/index.htm",
+    "address": {
+      "line1": "Minute Man Visitor Center",
+      "line2": "210 North Great Road",
+      "city": "Lincoln",
+      "state": "MA",
+      "postalCode": "01773"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The grounds of Minute Man National Historical Park are open daily, sunrise to sunset. Parking lot gates close at sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "New England weather can be quite unpredictable, so check the regional weather forecasts before you plan your trip. Winters can range in temperature from 20 - 50 degrees Fahrenheit. Summers are quite humid and range in temperature from 60 - 90 degrees Fahrenheit. Beware of ticks as they can be active year round."
+  },
+  "images": [
+    {
+      "id": "mima-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E5B10817-0ED5-D9EE-108A8418774DBE7A.jpg",
+      "title": "Captain William Smith House",
+      "altText": "Located on Battle Road, the Smith House was home of Captain John Smith of the Lincoln Militia.",
+      "caption": "The Smith House is a witness to the days events of April 19, 1775.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mima-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/68E665B8-944F-8A03-5A98B76E22C90B25.jpg",
+      "title": "Park Ranger Programs",
+      "altText": "A park ranger stands in front of a stone obelisk monument pointing and talking to visitors",
+      "caption": "Guided Talks & Walks at Minute Man",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E59437A9-9989-F290-F8D386E45AA8D3F8.jpg",
+      "title": "Living History!",
+      "altText": "A small cannon fires a large blast of flame.",
+      "caption": "History comes alive!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1D95937F-B2CB-371C-020E2C549C5BA876.jpg",
+      "title": "The Battle Road Trail",
+      "altText": "A narrow dirt track runs through green fields shaded by large trees.",
+      "caption": "Walk in the footsteps of history",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2B6A6ABD-9EB5-3022-A5F09EB02306E17D.jpg",
+      "title": "The Wayside: Home of Authors",
+      "altText": "A large mansion house made of wood with wrap around porch and tower room. Surrounded by large trees",
+      "caption": "The Wayside: Home of Authors",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2AF8FDC6-B283-50D4-E4F85FD01F0B5753.jpg",
+      "title": "North Bridge Visitor Center",
+      "altText": "A three story brick mansion house with paved walkway leading to door. Green bushes flank both sides.",
+      "caption": "North Bridge Visitor Center",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C809BBC-1DD8-B71B-0B28100B8F89B083.jpg",
+      "title": "North Bridge",
+      "altText": "A wooden bridge spans the Concord river as people walk and canoe paddlers gluide under the bridge",
+      "caption": "North Bridge, Concord Massachusetts",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/69585BFC-F6D6-756F-5D17A314CCFA9484.jpg",
+      "title": "British Soldiers on the Old North Bridge",
+      "altText": "British soldiers marching together over the a wooden bridge. A stone monument towers behind.",
+      "caption": "British Soldiers on the move",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E5FB543B-D9DA-81DB-536F673B15E1C0C7.png",
+      "title": "British Soldiers on Battle Road",
+      "altText": "An open field with trees and stone wall. British soldiers in red coats march in the distance.",
+      "caption": "British Regulars on Battle Road",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mima-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/69AD4256-0201-14A4-F31678901BCD14F6.jpg",
+      "title": "Minute Men on the march",
+      "altText": "A group of militia soldiers standing shoulder to shoulder with muskets march down a dirt road.",
+      "caption": "Minute Men",
+      "credit": "NPS Photo/ Julie Pollock",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mima/index.htm",
+    "directions": "https://www.nps.gov/mima/planyourvisit/directions-transportation.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Arts",
+    "Poetry and Literature",
+    "Sculpture",
+    "Enslavement",
+    "Military",
+    "Infantry and Militia",
+    "Battlefields",
+    "Social Movements",
+    "Abolition Movement",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Animals",
+    "National Historical Park",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

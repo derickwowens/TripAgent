@@ -1,0 +1,165 @@
+{
+  "id": "np-mamc",
+  "name": "Mary McLeod Bethune Council House National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Mary McLeod Bethune achieved her greatest recognition at the Washington, DC townhouse that is now this National Historic Site. The Council House was the first headquarters of the National Council of Negro Women (NCNW) and was Bethune’s last home in Washington, DC. From here, Bethune and the NCNW spearheaded strategies and developed programs that advanced the interests of African American women.",
+  "shortDescription": "Mary McLeod Bethune achieved her greatest recognition at the Washington, DC townhouse that is now this National Historic Site. The Council House was the first headquarters of the National Council of N...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.90819107,
+    "longitude": -77.03096742
+  },
+  "nationalParkInfo": {
+    "parkCode": "mamc",
+    "npsId": "1D530576-5363-4264-9A26-1C0809DB0B6A",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mamc/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mamc/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1583",
+    "email": "mamc_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/mamc/index.htm",
+    "address": {
+      "line1": "1318 Vermont Avenue NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20005"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "Closed",
+    "description": "The Mary McLeod Bethune Council House NHS is open to the public for ranger-guided tours Thursday – Saturday from 9:00 a.m. until 5:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winter: Temperatures usually range from 30 to 50 F. There is occasional snow. Spring: Temperatures usually range widely from 40 to 70 F. Rain is common. Summer: Temperatures usually range from 70 to 90 F. Humidity is usually high. Be prepared and drink plenty of water. There is a water fountain in the visitor center. Fall: Temperatures usually range widely from 40 to 70 F. Humidity can remain high in the earlier part of the season."
+  },
+  "images": [
+    {
+      "id": "mamc-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83EDB8-1DD8-B71B-0B904FDCAD5D7937.jpg",
+      "title": "Mary McLeod Bethune Council House National Historic Site",
+      "altText": "MAMC",
+      "caption": "Bethune Council House in Spring time full bloom!",
+      "credit": "NPS Photo/Kenneth Chandler",
+      "isPrimary": true
+    },
+    {
+      "id": "mamc-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9291BD86-F384-4911-62A335B77C64EBAE.jpg",
+      "title": "Boardroom Conference Table",
+      "altText": "Table with glass table top and wooden chairs",
+      "caption": "Visitors can view original Boardroom Conference Table where Mary McLeod Bethune and NCNW members met and planned programs that affected African American women, their families, and communities.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mamc-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/92A98977-E2FC-B1D6-1C094435A415DAF7.jpg",
+      "title": "Parlor",
+      "altText": "A room with ornate furniture, crystal chandelier, large mirror, and large portrait of Mrs. Bethune",
+      "caption": "The Parlor was served as the setting where Mary McLeod Bethune and NCNW members entertained guests and foreign dignitaries, and also where seminars and other important meetings were held.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mamc-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/92CD8E6C-06B6-F4F4-E4E03C72C08E38A7.jpg",
+      "title": "President's Office",
+      "altText": "A desk and chairs roped off with other furnishings and objects mounted on the walls",
+      "caption": "This room served as the NCNW President's Office where meetings were held and business was conducted.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mamc-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2584BFD4-D783-EF59-A90BF8F799FD5A2A.jpg",
+      "title": "Past meets present",
+      "altText": "A historic photo of the parlor room is held up in front of the same view today.",
+      "caption": "Walk the same rooms as Mrs. Bethune and the NCNW.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mamc/index.htm",
+    "directions": "http://www.nps.gov/mamc/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Great Depression",
+    "Military",
+    "Monuments and Memorials",
+    "Presidents",
+    "Reconstruction",
+    "Religion and Spirituality",
+    "Schools and Education",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Tragic Events",
+    "Forced Marches",
+    "Wars and Conflicts",
+    "World War II",
+    "Women's History",
+    "National Historic Site",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

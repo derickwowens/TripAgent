@@ -1,0 +1,230 @@
+{
+  "id": "np-noco",
+  "name": "North Country National Scenic Trail",
+  "category": "national",
+  "parkType": "national_scenic_trail",
+  "stateCode": "MI",
+  "stateName": "Michigan",
+  "region": "midwest",
+  "description": "Come to the North Country. Trek the hills and valleys. Stand on the shores of lakes & streams from glaciers 10,000 years before. Clear-flowing water, red/gold of autumn, a fairyland of snow, open prairies, and distant horizons paint the land. Historic sites along the way tell how America settled and grew as a nation. From North Dakota to Vermont, adventure is never far away.",
+  "shortDescription": "Come to the North Country. Trek the hills and valleys. Stand on the shores of lakes & streams from glaciers 10,000 years before. Clear-flowing water, red/gold of autumn, a fairyland of snow, open prai...",
+  "designation": "National Scenic Trail",
+  "coordinates": {
+    "latitude": 46.334400743,
+    "longitude": -90.8165630499
+  },
+  "nationalParkInfo": {
+    "parkCode": "noco",
+    "npsId": "4BE453C2-6527-484F-90D6-98057901EBDF",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/noco/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/noco/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(616) 330-2456",
+    "email": "NOCO_Administration@nps.gov",
+    "website": "https://www.nps.gov/noco/index.htm",
+    "address": {
+      "line1": "318 East Main Street, Suite K",
+      "line2": "",
+      "city": "Lowell",
+      "state": "MI",
+      "postalCode": "49331"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The North Country Trail is generally open at all times and during all seasons. There may be area or seasonal closures at the discretion of the local land owner or manager. Please contact local managers or the North Country Trail Association at (616) 897-5987 x1 for the latest trail closures."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "With the trail going through more than 4,800 miles through eight states from the Northeast to the Great Plains, weather along the trail can be highly variable. You could be subject to any kind of weather or temperature related emergency depending on your location and the season. Be careful to protect yourself from heat-related illnesses and hypothermia while out on the trail. Be mindful of lightning, severe storms, and other environmental hazards common to the “North Country.”"
+  },
+  "images": [
+    {
+      "id": "noco-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C834C15-1DD8-B71B-0BDB0B3A229F398B.jpg",
+      "title": "Hiking the North Country Trail",
+      "altText": "Hiking on trail",
+      "caption": "The trail links scenic, natural, historic, and cultural areas across seven states allowing visitors to experience a variety of northern landscapes.",
+      "credit": "NCTA",
+      "isPrimary": true
+    },
+    {
+      "id": "noco-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C834D56-1DD8-B71B-0B74388D9102A08E.jpg",
+      "title": "Fall foliage",
+      "altText": "Fall colors along the trail",
+      "caption": "Enjoy the seasonal changes along the North Country Trail",
+      "credit": "NCTA",
+      "isPrimary": false
+    },
+    {
+      "id": "noco-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C834ED3-1DD8-B71B-0B816A8BE4C5F955.jpg",
+      "title": "Hiking the NCT",
+      "altText": "Hiking on the North Country Trail",
+      "caption": "A variety of landscapes are present along the North Country Trail.",
+      "credit": "NCTA",
+      "isPrimary": false
+    },
+    {
+      "id": "noco-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83500E-1DD8-B71B-0B7DD9AEA9CE93D5.jpg",
+      "title": "Trail sign",
+      "altText": "North Country trail sign",
+      "caption": "Trail sign",
+      "credit": "NPS PHOTO",
+      "isPrimary": false
+    },
+    {
+      "id": "noco-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C2AB90AA-FAE8-564B-B30DA70EAF2A7F2C.jpg",
+      "title": "North Country National Scenic Trail Trailhead",
+      "altText": "Bulletin board at a trailhead in a forest that features a map and brochures.",
+      "caption": "North Country National Scenic Trail Trailhead in the Chippewa National Forest, Minnesota.",
+      "credit": "NPS / Luke Jordan",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/noco/index.htm",
+    "directions": "http://www.nps.gov/noco/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Forts",
+    "Immigration",
+    "Laborer and Worker",
+    "Migrations",
+    "Native American Heritage",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Canals",
+    "Tunnels",
+    "Urban America",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Coasts, Islands and Atolls",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Grasslands",
+    "Prairies",
+    "Meadows",
+    "Lakes",
+    "Mountains",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "Wilderness",
+    "National Scenic Trail",
+    "MI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

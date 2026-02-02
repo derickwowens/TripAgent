@@ -1,0 +1,312 @@
+{
+  "id": "np-caco",
+  "name": "Cape Cod National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "The great Outer Beach described by Thoreau in the 1800s is protected within the national seashore. Forty miles of pristine sandy beach, marshes, ponds, and uplands support diverse species. Lighthouses, cultural landscapes, and wild cranberry bogs offer a glimpse of Cape Cod's past and continuing ways of life. Swimming beaches and walking and biking trails beckon today's visitors.",
+  "shortDescription": "The great Outer Beach described by Thoreau in the 1800s is protected within the national seashore. Forty miles of pristine sandy beach, marshes, ponds, and uplands support diverse species. Lighthouses...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 41.92381465,
+    "longitude": -70.04319832
+  },
+  "nationalParkInfo": {
+    "parkCode": "caco",
+    "npsId": "DE0A8012-5324-4F5C-98DA-0EE6589FDFB3",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/caco/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/caco/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "508-255-3421",
+    "email": "caco_information@nps.gov",
+    "website": "https://www.nps.gov/caco/index.htm",
+    "address": {
+      "line1": "50 Nauset Road",
+      "line2": "",
+      "city": "Eastham",
+      "state": "MA",
+      "postalCode": "02642"
+    }
+  },
+  "operatingHours": {
+    "monday": "Opens at 6:00AM",
+    "tuesday": "Opens at 6:00AM",
+    "wednesday": "Opens at 6:00AM",
+    "thursday": "Opens at 6:00AM",
+    "friday": "Opens at 6:00AM",
+    "saturday": "Opens at 6:00AM",
+    "sunday": "Opens at 6:00AM",
+    "description": "Beaches, parking areas, and trails are open year-round between 6 am and midnight."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Pass is for one private, non-commercial vehicle — passenger cars, pickup trucks, RVs and vans.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Pass is for one person 16 years of age or older — entering on foot or by bicycle.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Cape Cod's weather is generally moderated by its proximity to the ocean. Winter is typically cold with some snow. Spring is often rainy. Summer is usually warm and humid. Fall is generally dry and clear."
+  },
+  "images": [
+    {
+      "id": "caco-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C853027-1DD8-B71B-0B7E332E35FF7626.jpg",
+      "title": "Sunrise Waves",
+      "altText": "A curling wave breaks against the backdrop of a pink sunrise.",
+      "caption": "Visiting the beach to watch the sunrise over the Atlantic Ocean is a beautiful experience.",
+      "credit": "NPS image",
+      "isPrimary": true
+    },
+    {
+      "id": "caco-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8531C0-1DD8-B71B-0BE3CAF8B7CFED72.jpg",
+      "title": "Sand Ripples",
+      "altText": "Low tide exposes rippled ridges of sand and water.",
+      "caption": "You will never walk the same beach twice on Cape Cod; daily low and high tides expose and then cover the sand.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "caco-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C853320-1DD8-B71B-0B079D55D788EEAD.jpg",
+      "title": "Exploring the Park by Water",
+      "altText": "A red kayak floats on a pond facing a forest colored with red and orange leaves.",
+      "caption": "Exploring the park by water offers a different perspective.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "caco-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85349E-1DD8-B71B-0B20658295A3DE59.jpg",
+      "title": "Birds and Beach",
+      "altText": "A flock of birds flies along a beach with waves in the background.",
+      "caption": "The national seashore is known for its species diversity, including threatened and endangered shorebirds.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "caco-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E7DA8038-AFE4-888A-1B3FC42E73D8A043.jpg",
+      "title": "Atlantic White Cedar Swamp Trail",
+      "altText": "Boardwalk trail runs through a swamp surrounded by green ferns and tall trees.",
+      "caption": "This popular trail takes visitors through the rare habitat of an Atlantic White Cedar swamp.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "caco-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E7F7C4DF-C735-2DAD-A7A1595C204EB920.jpg",
+      "title": "Sunrise Over the Atlantic",
+      "altText": "A brilliant sun rises over the ocean reflecting light on the water's surface.",
+      "caption": "Cape Cod provides the opportunity to watch the sun rise out of the Atlantic Ocean and set into Cape Cod Bay.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "3F3ABD16-2C52-4EAA-A1F6-4235DE5686F0",
+      "name": "Golf"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/caco/index.htm",
+    "directions": "http://www.nps.gov/caco/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Painting",
+    "Poetry and Literature",
+    "Colonization and Settlement",
+    "Maritime",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Military",
+    "US Coast Guard",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Science, Technology and Innovation",
+    "Wars and Conflicts",
+    "Cold War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Dunes",
+    "Estuaries and Mangroves",
+    "Groundwater",
+    "Natural Sounds",
+    "Night Sky",
+    "Oceans",
+    "Whales",
+    "Scenic Views",
+    "Trails",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "National Seashore",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "np-yuho",
+  "name": "Yucca House National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "Yucca House National Monument preserves a large unexcavated pueblo with a stunning setting in Montezuma Valley, nestled between Mesa Verde and Ute Mountain. Since Yucca House was protected as a national monument in 1919, it has remained largely untouched, offering intrepid visitors a sense of discovery and preserving the pueblo's beauty and integrity for future generations.",
+  "shortDescription": "Yucca House National Monument preserves a large unexcavated pueblo with a stunning setting in Montezuma Valley, nestled between Mesa Verde and Ute Mountain. Since Yucca House was protected as a nation...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.24778944,
+    "longitude": -108.6861274
+  },
+  "nationalParkInfo": {
+    "parkCode": "yuho",
+    "npsId": "9854D136-AFC0-4966-BB40-FE9323B56A49",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/yuho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/yuho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "970-529-4465",
+    "email": "meve_general_information@nps.gov",
+    "website": "https://www.nps.gov/yuho/index.htm",
+    "address": {
+      "line1": "Off County Rd 20.5",
+      "line2": "",
+      "city": "Cortez",
+      "state": "CO",
+      "postalCode": "81321"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Open year-round, weather pending. No services are available."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring and Fall are mild with daytime temperatures ranging from 50 F to 80 F. Winter temperatures are below 50 F with occasional snowstorms. Summers are hot and dry, with highs in the 90s."
+  },
+  "images": [
+    {
+      "id": "yuho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C2020-1DD8-B71B-0B9F3E84D4AE2CD0.jpg",
+      "title": "Yucca House Spring",
+      "altText": "Cattails with mesa in background.",
+      "caption": "Cattails define marshy locations watered by springs.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "yuho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C2179-1DD8-B71B-0BD549D711B7C146.jpg",
+      "title": "View of Mesa Verde from Yucca House",
+      "altText": "View of Mesa Verde landform",
+      "caption": "View of Mesa Verde above from Yucca House in the valley below.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "yuho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C238F-1DD8-B71B-0B00D1C3C27BFBFB.jpg",
+      "title": "Walls of the Yucca House Pueblo",
+      "altText": "Masonry walls seen through shrubbery",
+      "caption": "Ancient walls of Yucca House still standing today.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "yuho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C24F8-1DD8-B71B-0B4DA773A67908B3.jpg",
+      "title": "Ancestral Puebloan Wall at Yucca House",
+      "altText": "Close up view of an ancient wall at Yucca House",
+      "caption": "View of an Ancestral Puebloan wall still standing at Yucca House.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "yuho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C2736-1DD8-B71B-0BF4D35DE98A58DB.jpg",
+      "title": "Yucca House in Context",
+      "altText": "View of  ancient wall in the center of agricultural land surrounding it.",
+      "caption": "The Yucca House archeological site is surrounded by agricultural land today.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/yuho/index.htm",
+    "directions": "http://www.nps.gov/yuho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Native American Heritage",
+    "Animals",
+    "National Monument",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

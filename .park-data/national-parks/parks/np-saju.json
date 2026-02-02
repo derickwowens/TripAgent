@@ -1,0 +1,157 @@
+{
+  "id": "np-saju",
+  "name": "San Juan National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PR",
+  "stateName": "PR",
+  "region": "southeast",
+  "description": "San Juan National Historic Site preserves stories of great ambition and aspirations. Countries fought for control of this tiny yet strategic island for centuries. Generations of soldiers have lived and worked within the forts. Visitors today are as inspired by these stories as they are by the beauty of the architecture and the ingenuity of design and engineering of this World Heritage Site.",
+  "shortDescription": "San Juan National Historic Site preserves stories of great ambition and aspirations. Countries fought for control of this tiny yet strategic island for centuries. Generations of soldiers have lived an...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 18.46873857,
+    "longitude": -66.11848623
+  },
+  "nationalParkInfo": {
+    "parkCode": "saju",
+    "npsId": "2E4D4918-95DF-4D99-9DEC-C6ADEB330281",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/saju/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://goo.gl/maps/Zdqe83YFksT1EzKd9"
+    }
+  ],
+  "contact": {
+    "phone": "7877296777",
+    "email": "saju_superintendent@nps.gov",
+    "website": "https://www.nps.gov/saju/index.htm",
+    "address": {
+      "line1": "501 Norzagaray Street",
+      "line2": "Castillo San Cristobal",
+      "city": "San Juan",
+      "state": "PR",
+      "postalCode": "00901"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "San Juan National Historic Site is open year-round except for Thanksgiving Day, Christmas Day, and New Year's Day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Valid for 24 hours, valid for both fortifications",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Puerto Rico enjoys year round tropical climate. Winters are breeze and summers are mostly hot and humid. It rains all year long with a \"dry\" season in April. Temperatures range from 80's in the winter to 90's in the summer. The hurricane season starts in June and ends in November. On the longest day, June 22nd, the sun sets around 7 PM. On the shortest day, December 22nd, the sun sets around 4:30 PM."
+  },
+  "images": [
+    {
+      "id": "saju-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AF5C5-1DD8-B71B-0B40514DB1A21024.jpg",
+      "title": "Castillo San Felipe del Morro Aereal View",
+      "altText": "Castillo San Felipe del Morro Aereal View",
+      "caption": "Castillo San Felipe del Morro Aereal View",
+      "credit": "Courtesy: Aerofoto",
+      "isPrimary": true
+    },
+    {
+      "id": "saju-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AF731-1DD8-B71B-0B4C8711756EF3FC.jpg",
+      "title": "Castillo San Cristobal Aereal View",
+      "altText": "Castillo San Cristobal Aereal View",
+      "caption": "Castillo San Cristobal Aereal View",
+      "credit": "Courtesy:  Aerofoto",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/saju/index.htm",
+    "directions": "https://goo.gl/maps/Zdqe83YFksT1EzKd9"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Engineering",
+    "Explorers and Expeditions",
+    "Forts",
+    "Hispanic American Heritage",
+    "Incarceration",
+    "Jails and Prisons",
+    "Immigration",
+    "Latino American Heritage",
+    "Maritime",
+    "Lighthouses",
+    "Military",
+    "Artillery",
+    "Religion and Spirituality",
+    "Churches",
+    "Wars and Conflicts",
+    "Spanish-American War",
+    "National Historic Site",
+    "PR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

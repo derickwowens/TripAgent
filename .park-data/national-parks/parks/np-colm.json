@@ -1,0 +1,277 @@
+{
+  "id": "np-colm",
+  "name": "Colorado National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "Colorado National Monument preserves one of the grand landscapes of the American West. But this treasure is much more than a monument. Towering monoliths exist within a vast plateau and canyon panorama. You can experience sheer-walled, red rock canyons along the twists and turns of Rim Rock Drive, where you may spy bighorn sheep and soaring eagles.",
+  "shortDescription": "Colorado National Monument preserves one of the grand landscapes of the American West. But this treasure is much more than a monument. Towering monoliths exist within a vast plateau and canyon panoram...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 39.05045016,
+    "longitude": -108.6920709
+  },
+  "nationalParkInfo": {
+    "parkCode": "colm",
+    "npsId": "EC5A2653-4470-46E7-8B57-30B8ADE46445",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/colm/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/colm/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9708582800",
+    "email": "colm_info@nps.gov",
+    "website": "https://www.nps.gov/colm/index.htm",
+    "address": {
+      "line1": "1750 Rim Rock Drive",
+      "line2": "",
+      "city": "Fruita",
+      "state": "CO",
+      "postalCode": "81521"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Monument is open 24 hours a day year-round. Rim Rock Road is only closed for poor road conditions (snow, ice, rock fall, etc). For updates on storm or temporary closures call the park hotline at (970) 858-3617 ext 350."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "$25 for a private vehicle. Unlimited entry for one vehicle and all its passengers for seven consecutive days, beginning on the day of purchase. Private vehicle must be non-commercial and with a seating capacity of 15 or less.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "This pass is good for 7 days for an individual who is walking or bicycling into the monument.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Organized groups such as Scouts, Rotary, Hiking Clubs, Youth Groups, Religious Institutions, etc. that do not qualify for an Academic Fee Waiver are charged as follows:  $15 per person, not to exceed the equivalent commercial rate.  Passes are valid for 7 days.  Youth ages 15 and under are free.  Individuals or families in the group may use any valid Annual or Lifetime pass for entry.  Pass and photo ID must be presented.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Groups entering the park for educational purposes (curriculum-based classes or activities) may be eligible for a free academic fee wavier.  Email COLM_permits@nps.gov to apply for a waiver or for more information.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Cost:  $25, plus $15 per person to a maximum of $40.  The entry fees for commercial tours are based on the total capacity of vehicles that carry 7 or more people, regardless of the actual number of passengers.  Possession of an annual or lifetime pass, or the ages of the passengers, does not affect the price charged unless the vehicle's capacity is less than 7 passengers, excluding the driver.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "The entry fees for commercial tours are based on the total capacity of vehicles that carry 7 or more people, regardless of the actual number of passengers.  Possession of an annual or lifetime pass, or the ages of the passengers, does not affect the price charged unless the vehicle's capacity is less than 7 passengers, excluding the driver.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "The entry fees for commercial tours are based on the total capacity of vehicles that carry 7 or more people, regardless of the actual number of passengers.  Possession of an annual or lifetime pass, or the ages of the passengers, does not affect the price charged unless the vehicle's capacity is less than 7 passengers, excluding the driver.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "The entry fees for commercial tours are based on the total capacity of vehicles that carry 7 or more people, regardless of the actual number of passengers.  Possession of an annual or lifetime pass, or the ages of the passengers, does not affect the price charged unless the vehicle's capacity is less than 7 passengers, excluding the driver.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring: Daytime high temperatures 70-85 F (21-30 C), nighttime low temperature 30-50 F (-1 - +10 C). Summer: Daytime high temperatures can reach 100 F (38 C), afternoon thunderstorms common. Fall: Similar to spring temperatures, sudden changes in weather common. Snow can occur in October. Winter: Daytime highs vary from 10 - 45 F (-12 - +7 C). Snow common, patches of snow and ice stay around most of the winter."
+  },
+  "images": [
+    {
+      "id": "colm-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C823606-1DD8-B71B-0BF5770F63271B19.jpg",
+      "title": "Independence Monument",
+      "altText": "View of Independence Monument with Grand Valley in background. Taken from Rim Rock Rock Drive.",
+      "caption": "View of Independence Monument with Grand Valley in background. Taken from Rim Rock Rock Drive.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "colm-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9EBBF1C5-C208-762B-56FED6B7CAD01C60.jpg",
+      "title": "Monument Canyon",
+      "altText": "red-orange cliffs frame rolling green canyon bottoms at sunrise",
+      "caption": "Sunrise illuminates the monoliths of Monument Canyon",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colm-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C823AB3-1DD8-B71B-0B21A2C0D29B43C8.jpg",
+      "title": "Colorado National Monument Visitor Center",
+      "altText": "Visitor Center with American Flag",
+      "caption": "Colorado National Monument Visitor Center",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colm-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C823E2E-1DD8-B71B-0B988F7A7A42CD8E.jpg",
+      "title": "Rim Rock Drive",
+      "altText": "Looking down from canyon rim at a portion of the historic Rim Rock Drive",
+      "caption": "Rim Rock Drive was built in the 1930s by the Civilian Conservation Corps (CCC).",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colm-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9ED71E57-B2CD-F41B-1394851C9EBC01EF.jpg",
+      "title": "Hiking in Wilderness",
+      "altText": "Family of four stands on trail looking out towards wide canyons blanketed in green, framed by cliffs",
+      "caption": "Enjoy a hike in canyon country",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colm-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C823FA5-1DD8-B71B-0B6B3CF608C1A6C9.jpg",
+      "title": "Balanced Rock",
+      "altText": "Rock spire with large boulder balancing on top.",
+      "caption": "Balanced Rock",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "colm-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9EF0C0B3-ADEB-F9DF-5233A2AE3F5E0AF1.jpg",
+      "title": "Desert Bighorn Sheep",
+      "altText": "Two female desert bighorn sheep look to the right among rusty sandstones",
+      "caption": "Desert bighorn sheep are often seen along Rim Rock Drive",
+      "credit": "NPS Photo / C DeKalb",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/colm/index.htm",
+    "directions": "http://www.nps.gov/colm/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Schools and Education",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Animals",
+    "Canyons and Canyonlands",
+    "Geology",
+    "Scenic Views",
+    "Trails",
+    "National Monument",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

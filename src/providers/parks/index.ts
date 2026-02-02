@@ -33,3 +33,6 @@ export type {
   StateParkSearchResults,
   CampgroundFilters,
 } from './StateParkService.js';
+
+// S3 Park Database Service (Authoritative data source)
+export { S3ParkDataService, s3ParkData } from './S3ParkDataService.js';

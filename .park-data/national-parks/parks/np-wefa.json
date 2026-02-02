@@ -1,0 +1,169 @@
+{
+  "id": "np-wefa",
+  "name": "Weir Farm National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "CT",
+  "stateName": "Connecticut",
+  "region": "northeast",
+  "description": "Visit the home and studio of America's most beloved Impressionist, J. Alden Weir, and walk in the footsteps of generations of world-class artists. Set amidst more than 60 acres of painterly woods, fields, and waterways, you’ll soon see why Weir described his home as the \"Great Good Place.\" Weir’s farm is a national legacy to American Impressionism, the creative spirit, and historic preservation.",
+  "shortDescription": "Visit the home and studio of America's most beloved Impressionist, J. Alden Weir, and walk in the footsteps of generations of world-class artists. Set amidst more than 60 acres of painterly woods, fie...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 41.25886268,
+    "longitude": -73.45452542
+  },
+  "nationalParkInfo": {
+    "parkCode": "wefa",
+    "npsId": "EA86FED8-2E03-467A-A8BD-4F032A647F35",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wefa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wefa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2038341896",
+    "email": "wefa_interpretation@nps.gov",
+    "website": "https://www.nps.gov/wefa/index.htm",
+    "address": {
+      "line1": "735 Nod Hill Road",
+      "line2": "",
+      "city": "Wilton",
+      "state": "CT",
+      "postalCode": "06897"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Park grounds, trails and parking lot are open everyday from Sunrise to Sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weir Farm’s grounds are open all year and each season offers a unique experience. For a comfortable visit please note the following information. Winter: Temperatures average from 20 F to 40 F. Storms and colder weather are possible. Spring: Temperatures average from 30 F to 70 F. Rain is common. Summer: Temperatures average from 60 F to 85 F. High humidity is common in July and August. Fall: Temperatures average from 35 F to 75 F. Foliage season runs from mid-September to mid-to-late October."
+  },
+  "images": [
+    {
+      "id": "wefa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79474F-1DD8-B71B-0B09D5BBA22FB9D0.jpg",
+      "title": "Weir House",
+      "altText": "A view of the south side of the Weir House with porch visable, showing a fence in front of the home",
+      "caption": "The Weir House was home to three generations of artists, beginning with Impressionist painter Julian Alden Weir in 1882.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "wefa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/85BBE452-98DB-F0AD-1469F4115F3D6126.jpg",
+      "title": "Living Room of the Weir House",
+      "altText": "The inside of a living room with two arm chairs and a table in between.",
+      "caption": "Weir House tours are offered seasonally, Wednesday through Sunday.",
+      "credit": "Xiomaro.com",
+      "isPrimary": false
+    },
+    {
+      "id": "wefa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/85CB5424-EDDF-A492-87A5F22A0E2A0BC3.jpg",
+      "title": "Plein Air Painting of Weir Studio",
+      "altText": "A painting of a red building with the same building in the background.",
+      "caption": "An oil painting of Weir Studio by artist Mary Burkhardt at Weir Farm National Historical Park.",
+      "credit": "H John Voorhees III",
+      "isPrimary": false
+    },
+    {
+      "id": "wefa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8653ACDA-C68F-9B33-D171A5087201EE04.jpg",
+      "title": "The Inside of the Young Studio",
+      "altText": "The inside of a studio with several northern windows, paintings, sculptures, and art supplies.",
+      "caption": "The Young Studio has been restored to circa-1940 and is historically furnished. Mahonri Young once owned many of the furnishings and art supplies in the building.",
+      "credit": "Xiomaro.com",
+      "isPrimary": false
+    },
+    {
+      "id": "wefa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/85EC2763-DB51-F1FC-8B5551CE7FDC9D27.jpg",
+      "title": "Weir Barn",
+      "altText": "An wooden barn with the slider door open and a wooden fence around the sides.",
+      "caption": "The Weir Barn and its outbuildings - the tack house, chicken coop, ice house, and corn crib - were crucial to the working farm.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wefa-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7958B0-1DD8-B71B-0B4FB457F1F72573.jpg",
+      "title": "Weir Pond",
+      "altText": "A large still pond in the foreground reflects the tree line that rims the pond.",
+      "caption": "Weir Pond was built in 1896 after Julian Alden Weir won 1st prize at the Boston Art Club Exposition.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wefa/index.htm",
+    "directions": "http://www.nps.gov/wefa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Painting",
+    "Sculpture",
+    "Farming and Agriculture",
+    "Schools and Education",
+    "Women's History",
+    "Animals",
+    "Natural Sounds",
+    "National Historical Park",
+    "CT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

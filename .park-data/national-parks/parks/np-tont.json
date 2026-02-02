@@ -1,0 +1,187 @@
+{
+  "id": "np-tont",
+  "name": "Tonto National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Located within the northern range of the Sonoran Desert lie two cliff dwellings that were occupied from 1300-1450 CE (common era). They represent a vibrant culture consisting of local and immigrant groups that lived in the Tonto Basin. Together they formed a new ideology, which archeologists refer to as Salado. Today, descendants of the cliff dwellers continue to call Arizona home.",
+  "shortDescription": "Located within the northern range of the Sonoran Desert lie two cliff dwellings that were occupied from 1300-1450 CE (common era). They represent a vibrant culture consisting of local and immigrant gr...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 33.64842945,
+    "longitude": -111.1135627
+  },
+  "nationalParkInfo": {
+    "parkCode": "tont",
+    "npsId": "69C5BC24-3065-401D-86C2-3FAC411E1327",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tont/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tont/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9284672241",
+    "email": "tont_information@nps.gov",
+    "website": "https://www.nps.gov/tont/index.htm",
+    "address": {
+      "line1": "26260 N AZ Hwy 188 Lot 2",
+      "line2": "",
+      "city": "Roosevelt",
+      "state": "AZ",
+      "postalCode": "85545"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 4:00PM",
+    "tuesday": "8:00AM - 4:00PM",
+    "wednesday": "8:00AM - 4:00PM",
+    "thursday": "8:00AM - 4:00PM",
+    "friday": "8:00AM - 4:00PM",
+    "saturday": "8:00AM - 4:00PM",
+    "sunday": "8:00AM - 4:00PM",
+    "description": "Tonto National Monument is open 8:00 am to 4:00 pm all year round. The park is closed Thanksgiving Day, Christmas Day, and New Year's Day. The park closes early at 1:45 pm on Christmas Eve and New Year's Eve. October through April, the Lower Cliff Dwelling trail is open 8 am to 3 pm. May to September, you must start your hike before 12 pm (noon). The Visitor Center, store and museum are open from 8 am to 4 pm."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Tonto National Monument charges a fee to all visitors hiking to the Lower or Upper Cliff Dwelling. Tour reservations are required to visit the Upper Cliff Dwelling. The Lower Cliff Dwelling is open September through May 8:00 am to 4:00 pm and June through August 8:00 am to noon. Credit and Debit only",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Education groups may be granted an educational fee waiver. All requests and documentation must be submitted at least 2 weeks in advance of the school's planned visit.",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Weather during the summer can be extremely hot. It is typically 10 degrees Fahrenheit cooler than Phoenix, AZ. Winter weather may create hazardous conditions on the roads to Tonto National Monument. Severe thunderstorms may lead to a closure of the hiking trails."
+  },
+  "images": [
+    {
+      "id": "tont-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81D952-1DD8-B71B-0B67D23426B08661.jpg",
+      "title": "Lower Cliff Dwelling",
+      "altText": "cliff dwelling in the spring with desert plants and wildflowers.",
+      "caption": "The Lower Cliff Dwelling in Spring",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "tont-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81DAE2-1DD8-B71B-0B8A6673B9671D27.jpg",
+      "title": "Saguaro Cactus",
+      "altText": "Hillside with Saguaro Cactus",
+      "caption": "Hillside with Saguaro Cactus near the Lower Cliff Dwelling",
+      "credit": "NPS Photo/ Christa Sadler",
+      "isPrimary": false
+    },
+    {
+      "id": "tont-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81DC67-1DD8-B71B-0B1831AF7771CD9D.jpg",
+      "title": "Visitor Center Dwelling",
+      "altText": "Visitor Center with cliff dwelling and a rainbow in the background.",
+      "caption": "The Visitor Center sits below the Lower Cliff Dwelling",
+      "credit": "NPS Photo/ Macario Mora",
+      "isPrimary": false
+    },
+    {
+      "id": "tont-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81DDC9-1DD8-B71B-0B926E14F8F643B6.jpg",
+      "title": "Upper Cliff Dwelling",
+      "altText": "Two story rooms of the Upper Cliff Dwelling.",
+      "caption": "Front view of the Upper Cliff Dwelling.",
+      "credit": "NPS Photo/ Davis Stevenson",
+      "isPrimary": false
+    },
+    {
+      "id": "tont-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81DF24-1DD8-B71B-0B319AD538D98407.jpg",
+      "title": "Upper Cliff Dwelling",
+      "altText": "The view looking out from the cliff dwelling over Roosevelt Lake.",
+      "caption": "The view from the back of the Upper Cliff Dwelling.",
+      "credit": "NPS Photo/ Davis Stevenson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tont/index.htm",
+    "directions": "http://www.nps.gov/tont/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Cliff Dwellings",
+    "Explorers and Expeditions",
+    "Native American Heritage",
+    "Animals",
+    "Geology",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

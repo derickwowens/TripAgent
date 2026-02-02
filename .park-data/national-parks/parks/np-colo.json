@@ -1,0 +1,188 @@
+{
+  "id": "np-colo",
+  "name": "Colonial National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "On May 13, 1607, Jamestown was established as the first permanent English settlement in North America. Three cultures came together – European, Virginia Indian and African–to create a new society that would eventually seek independence from Great Britain. On October 19, 1781, American and French troops defeated the British at Yorktown in the last major battle of the American Revolutionary War.",
+  "shortDescription": "On May 13, 1607, Jamestown was established as the first permanent English settlement in North America. Three cultures came together – European, Virginia Indian and African–to create a new society that...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 37.22824435,
+    "longitude": -76.61998123
+  },
+  "nationalParkInfo": {
+    "parkCode": "colo",
+    "npsId": "1FC8F995-C4F2-4553-BDE4-BB43AAB12ED6",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/colo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/colo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7578982410",
+    "email": "COLO_Info@nps.gov",
+    "website": "https://www.nps.gov/colo/index.htm",
+    "address": {
+      "line1": "1000 Colonial Parkway",
+      "line2": "",
+      "city": "Yorktown",
+      "state": "VA",
+      "postalCode": "23690"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Historic Jamestowne Visitor Center is open. The Historic Jamestowne ENTRANCE GATE opens 8:45 a.m. - 4:30 p.m. daily. Historic Jamestowne Gift Shop is open 9 a.m. - 5:00 p.m. daily.\n\nGlasshouse is open 8:45 a.m. - 4:30 p.m."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Adult (16 and older) -$15; good for 7 days entrance to Yorktown Battlefield (and NPS areas at Historic Jamestowne); can be upgraded to see Preservation Virginia areas at Historic Jamestowne for an additional $15 at the Historic Jamestowne Visitor Center. Yorktown Battlefield will not be selling the $30 entrance permit for Historic Jamestowne.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "During the summer season visitors should dress in light, comfortable clothing, wear comfortable shoes and use sunscreen. We recommended you carry a bottle of water with you. High temperatures and high humidity create higher risk of heat cramps, heat exhaustion and heatstroke. Most of the Historic site is out-of-doors and although not a great distance from an air-conditioned building, staying properly hydrated will help prevent these illnesses. During the fall visitors should have a light jacket available."
+  },
+  "images": [
+    {
+      "id": "colo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E166-1DD8-B71B-0B513F9A61E8A9EB.jpg",
+      "title": "Yorktown Battlefield",
+      "altText": "Yorktown Battlefield",
+      "caption": "Reconstructed Revolutionary War Canon in Winter",
+      "credit": "National Park Service",
+      "isPrimary": true
+    },
+    {
+      "id": "colo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E29A-1DD8-B71B-0BD01F83AEB0C81F.jpg",
+      "title": "Bikers at Entrance to Historic Jamestowne Tour Road",
+      "altText": "Bikers at Entrance to Historic Jamestowne Tour Road",
+      "caption": "Weekend Biking Near Tour Road",
+      "credit": "Elizabeth Green",
+      "isPrimary": false
+    },
+    {
+      "id": "colo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E05F-1DD8-B71B-0B265B8079D93C33.jpg",
+      "title": "Historic Jamestowne Visitor Center",
+      "altText": "Historic Jamestowne Visitor Center",
+      "caption": "Volunteer Informing Visitors of Interpretive Programs",
+      "credit": "Park Ranger Roger W. Green",
+      "isPrimary": false
+    },
+    {
+      "id": "colo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E3A8-1DD8-B71B-0BCB8EEA9C8A0C86.jpg",
+      "title": "Bacon's Rebellion",
+      "altText": "Bacon's Rebellion",
+      "caption": "Living History Program",
+      "credit": "Park Ranger Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "colo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E4DA-1DD8-B71B-0B40C6C6201B9829.jpg",
+      "title": "The Royal Artillery Living History Team Firing Yorktown Battlefield's 6 Pounder",
+      "altText": "The Royal Artillery Living History Team Firing Yorktown Battlefield's 6 Pounder",
+      "caption": "Living History Program",
+      "credit": "Park Ranger Linda Willliams",
+      "isPrimary": false
+    },
+    {
+      "id": "colo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E6C932B5-9372-35D4-C2BEBE43BAAE2FA0.jpg",
+      "title": "Yorktown National Cemetery",
+      "altText": "Yorktown National Cemetery",
+      "caption": "This site was selected in 1866 as a good cemetery location in the general vicinity of various Civil War battlefields and scenes of action related particularly to the Peninsular Campaign of 1862",
+      "credit": "National Park Service",
+      "isPrimary": false
+    },
+    {
+      "id": "colo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E78D791E-BAB9-E615-514C1D3AFFC90E13.jpg",
+      "title": "Colonial Parkway",
+      "altText": "Colonial Parkway",
+      "caption": "The Colonial Parkway is a twenty-three mile scenic roadway stretching from the York River at Yorktown to the James River at Jamestown",
+      "credit": "National Park Service",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/colo/index.htm",
+    "directions": "http://www.nps.gov/colo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "National Historical Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

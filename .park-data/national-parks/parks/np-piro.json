@@ -1,0 +1,456 @@
+{
+  "id": "np-piro",
+  "name": "Pictured Rocks National Lakeshore",
+  "category": "national",
+  "parkType": "national_lakeshore",
+  "stateCode": "MI",
+  "stateName": "Michigan",
+  "region": "midwest",
+  "description": "Sandstone cliffs, beaches, waterfalls, sand dunes, inland lakes, deep forest, and wild shoreline beckon you to visit Pictured Rocks National Lakeshore. The power of Lake Superior shapes the park's coastal features and affects every ecosystem, creating a unique landscape to explore. Hiking, camping, sightseeing, and four-season outdoor opportunities abound.",
+  "shortDescription": "Sandstone cliffs, beaches, waterfalls, sand dunes, inland lakes, deep forest, and wild shoreline beckon you to visit Pictured Rocks National Lakeshore. The power of Lake Superior shapes the park's coa...",
+  "designation": "National Lakeshore",
+  "coordinates": {
+    "latitude": 46.56435642,
+    "longitude": -86.31628733
+  },
+  "nationalParkInfo": {
+    "parkCode": "piro",
+    "npsId": "8D803E2F-FB28-4DC3-9EDC-7FDAE185C092",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/piro/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/piro/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "906-387-3700",
+    "email": "piro_information@nps.gov",
+    "website": "https://www.nps.gov/piro/index.htm",
+    "address": {
+      "line1": "1505 Sand Point Road",
+      "line2": "",
+      "city": "Munising",
+      "state": "MI",
+      "postalCode": "49862"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Pictured Rocks National Lakeshore is open year-round, 24 hours a day, though most roads are closed by snow in the winter. Sand Point Road is the only park road plowed in winter."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This pass admits the driver and all passengers in a private-use vehicle for seven consecutive days to all areas of Pictured Rocks National Lakeshore. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers to all areas of Pictured Rocks National Lakeshore. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Snowmobile",
+      "description": "This pass admits a snowmobile to all parts of Pictured Rocks National Lakeshore for 7 consecutive days. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "This pass admits one walk-in, bicycle-in, or boat-in person to all parts of Pictured Rocks National Lakeshore. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "This admits a commercial sedan to all areas of Pictured Rocks National Lakeshore. The flat rate for this pass is $25, plus an additional $5 per person age 16+. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "This pass admits a commercial van with a capacity of 7-16 persons, regardless of capacity, to all parts of Pictured Rocks National Lakeshore. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "This fee admits a commercial mini-bus to all parts of Pictured Rocks National Lakeshore. A mini-bus is defined as a vehicle with a 16-25 person capacity. The fee is charged regardless of occupancy of the vehicle. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "This fee applies to commercial vehicles with a 26+ person vehicle capacity, regardless of occupancy. This fee does not cover additional fees associated with activities such as camping or commercial tours.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summers are pleasant with the average highs in June, July, and August in the 70s°F, and lows in the low 50s°F. The coldest months are December through March with average highs of 25°F to 32°F, and average lows in the teens. Annual precipitation averages 31 inches; average annual snowfall is about 140 inches, although winters with more than 200 inches are not uncommon. Snow generally covers the ground from late November through late April."
+  },
+  "images": [
+    {
+      "id": "piro-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C834062-1DD8-B71B-0B5E6CE1052B344E.jpg",
+      "title": "Au Sable Light Station",
+      "altText": "Au Sable Lighthouse and light keeper's quarters",
+      "caption": "Au Sable Lighthouse and light keeper's quarters",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "piro-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A99FD52A-AAB7-C41B-6AF048CFDF8BDFC3.jpg",
+      "title": "Beaver Basin Wilderness",
+      "altText": "Shallow creek narrowing through the forest.",
+      "caption": "Shallow creek in the Beaver Basin Wilderness",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AA08B449-C568-F494-E29104444DF1356E.jpg",
+      "title": "Battleship Row",
+      "altText": "Three sections of cliffs sticking out into Lake Superior like the bows of battleships.",
+      "caption": "15 miles of carved and colorful cliffs along the Lake Superior shoreine.",
+      "credit": "NPS Photos",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C833C0B-1DD8-B71B-0B96C507721C9931.jpg",
+      "title": "Grand Sable Dunes",
+      "altText": "The Grand Sable Dunes rise up 300 feet from Lake Superior.",
+      "caption": "The Grand Sable Dunes rise up 300 feet from Lake Superior.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A9CC49A2-C316-EC38-85BC38F20E10B1CB.jpg",
+      "title": "Kayaking Along the Pictured Rocks Cliffs",
+      "altText": "Kayakers near Lovers Leap rock arch formation",
+      "caption": "Kayakers near Lovers Leap",
+      "credit": "NPS Photos",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A98ECD8A-9B30-F3E9-846F5615CE4199B9.jpg",
+      "title": "Backcountry Camping - Benchmark Site",
+      "altText": "Backcountry camping at Benchmark site showing tent surrounded by ferns and trees.",
+      "caption": "Backpacking and camping are a popular activities.",
+      "credit": "NPS Photos",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A9F20688-F13F-5BF1-018ACEF7BF029742.jpg",
+      "title": "Ice Climbing",
+      "altText": "Ice climber on a curtain of ice along the Pictured Rocks Escarpment",
+      "caption": "Ice climbing is a popular winter activity.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8341A2-1DD8-B71B-0B37FDD8AC91FF3E.jpg",
+      "title": "Miners Falls",
+      "altText": "High volume of water flowing at Miners Falls",
+      "caption": "Water flowing over Miners Falls",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8339B3-1DD8-B71B-0B489572204DC86D.jpg",
+      "title": "Miner's Castle",
+      "altText": "Miner's Castle rock formation along the Lake Superior shoreline.",
+      "caption": "View the Miner's Castle rock formation from the adjacent cliffs or from a boat.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "piro-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AA29365F-A10F-2EC8-5BEE4997CD0D0E2E.jpg",
+      "title": "Pictured Rocks Cliffs along the Chapel / Mosquito Loop",
+      "altText": "Mineral stained cliffs and collapsed rock arch along Lake Superior",
+      "caption": "Springtime along the Chapel / Mosquito hiking loop",
+      "credit": "NPS Photos",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "7503433C-3856-4E82-AFF3-0B1649766ED3",
+      "name": "Jet Skiing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "7C822207-214A-48E8-8794-2F42F7CFB56F",
+      "name": "Ice Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/piro/index.htm",
+    "directions": "http://www.nps.gov/piro/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Industry",
+    "Logging and Timber Cutting",
+    "Maritime",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Military",
+    "US Coast Guard",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Wolves",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Dunes",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Geology",
+    "Groundwater",
+    "Glaciers",
+    "Lakes",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "Aurora Borealis",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Arches",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Waterfalls",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "Wilderness",
+    "National Lakeshore",
+    "MI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

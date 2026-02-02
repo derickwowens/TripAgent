@@ -1,0 +1,168 @@
+{
+  "id": "np-hart",
+  "name": "Harriet Tubman National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Harriet Tubman was guided by a deep faith and devotion to family, freedom, and community. After emancipating herself and members of her family, she moved them from Ontario, Canada to Fleming and Auburn, New York in 1859. Central New York was a center for progressive thought, abolition, and women’s suffrage where Tubman continued to fight for human rights and dignity until she died in 1913.",
+  "shortDescription": "Harriet Tubman was guided by a deep faith and devotion to family, freedom, and community. After emancipating herself and members of her family, she moved them from Ontario, Canada to Fleming and Aubur...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.9128920287,
+    "longitude": -76.5646715462
+  },
+  "nationalParkInfo": {
+    "parkCode": "hart",
+    "npsId": "067468EC-25DB-447C-91A8-068C167EEF32",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hart/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hart/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(315) 835-5945",
+    "email": "hart_information@nps.gov",
+    "website": "https://www.nps.gov/hart/index.htm",
+    "address": {
+      "line1": "47 Parker Street",
+      "line2": "",
+      "city": "Auburn",
+      "state": "NY",
+      "postalCode": "13021"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "Closed",
+    "description": "Harriet Tubman helped raise funds to build the Thompson Memorial African Methodist Episcopal Zion Church at 49 Parker Street. The church is open for self-guided tours during open hours, while the parsonage serves as a visitor contact station. \n\nPlease note: hours may be subject to change seasonally."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Auburn, New York has four distinct seasons. Fall and spring are usually mild and summers tend to be sunny, warm, and humid. Winter weather is variable and conditions can change quickly. Snow in November is not uncommon. The heaviest snowfall tends to be in January with an average of 33”."
+  },
+  "images": [
+    {
+      "id": "hart-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9888332F-EE3A-20BB-813E0AEE37B6A52F.jpg",
+      "title": "Thompsom A.M.E. Zion Church",
+      "altText": "A tall, green and orange painted church steeple, against a blue sky, with a tree in the foreground.",
+      "caption": "The Thompson A.M.E. Zion Church and parsonage are the primary buildings for visitors to Harriet Tubman NHP. They are currently undergoing restoration.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "hart-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3FE26B89-1DD8-B71B-0B7E863F6BA073DA.jpg",
+      "title": "Harriet Tubman Residence",
+      "altText": "Brick building surrounded by autumn trees",
+      "caption": "Tubman's Auburn residence.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hart-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/98A3D080-A92F-1966-2ED9C66C36D44E63.jpg",
+      "title": "Thompson Memorial A.M.E. Zion Church",
+      "altText": "Wooden church with tall steeple, with construction equipment out front.",
+      "caption": "Located near Tubman's home, the church continues to honor Tubman's legacy of freedom.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hart-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3FDA61A9-1DD8-B71B-0B91F265773FB60D.jpg",
+      "title": "Tubman Grave",
+      "altText": "Headstone of Harriet Tubman",
+      "caption": "Tubman grave at Fort Hill Cemetery",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "hart-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E4FB2CF6-CBCE-3BCF-65FA1A411A728848.jpg",
+      "title": "Thompson AME Zion Church 1913",
+      "altText": "A black-and-white photograph of the AME Zion church in Auburn, New York. On the back, a message from",
+      "caption": "The AME Zion church in Auburn, New York.",
+      "credit": "National Museum of African American History and Culture, Smithsonian Institution",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hart/index.htm",
+    "directions": "http://www.nps.gov/hart/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Incarceration",
+    "Jails and Prisons",
+    "Medicine",
+    "Military",
+    "US Army",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Religious Freedom",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Tragic Events",
+    "Urban America",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Night Sky",
+    "National Historical Park",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

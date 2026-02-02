@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "state": "FL",
+    "stateName": "Florida",
+    "description": "Coordinates for Florida State Parks",
+    "source": "Curated from official sources"
+  },
+  "parks": {
+    "bahia-honda-state-park": { "latitude": 24.6656, "longitude": -81.2817 },
+    "john-pennekamp-coral-reef-state-park": { "latitude": 25.1211, "longitude": -80.4039 },
+    "myakka-river-state-park": { "latitude": 27.2342, "longitude": -82.3117 },
+    "ichetucknee-springs-state-park": { "latitude": 29.9844, "longitude": -82.7617 },
+    "blue-spring-state-park": { "latitude": 28.9456, "longitude": -81.3389 },
+    "rainbow-springs-state-park": { "latitude": 29.1017, "longitude": -82.4356 },
+    "st-andrews-state-park": { "latitude": 30.1272, "longitude": -85.7356 },
+    "edward-ball-wakulla-springs-state-park": { "latitude": 30.2350, "longitude": -84.3028 },
+    "hillsborough-river-state-park": { "latitude": 28.1489, "longitude": -82.2306 },
+    "anastasia-state-park": { "latitude": 29.8617, "longitude": -81.2711 },
+    "big-lagoon-state-park": { "latitude": 30.3156, "longitude": -87.4017 },
+    "blackwater-river-state-park": { "latitude": 30.7089, "longitude": -86.8717 },
+    "caladesi-island-state-park": { "latitude": 28.0356, "longitude": -82.8217 },
+    "cayo-costa-state-park": { "latitude": 26.6689, "longitude": -82.2517 },
+    "collier-seminole-state-park": { "latitude": 25.8356, "longitude": -81.4617 },
+    "de-leon-springs-state-park": { "latitude": 29.1317, "longitude": -81.3517 },
+    "devils-millhopper-geological-state-park": { "latitude": 29.7089, "longitude": -82.3917 },
+    "falling-waters-state-park": { "latitude": 30.7289, "longitude": -85.5317 },
+    "florida-caverns-state-park": { "latitude": 30.8189, "longitude": -85.2217 },
+    "fort-clinch-state-park": { "latitude": 30.6989, "longitude": -81.4317 },
+    "grayton-beach-state-park": { "latitude": 30.3289, "longitude": -86.1617 },
+    "henderson-beach-state-park": { "latitude": 30.3789, "longitude": -86.4517 },
+    "highlands-hammock-state-park": { "latitude": 27.4689, "longitude": -81.5317 },
+    "ellie-schiller-homosassa-springs-wildlife-state-park": { "latitude": 28.7989, "longitude": -82.5817 },
+    "honeymoon-island-state-park": { "latitude": 28.0689, "longitude": -82.8317 },
+    "jonathan-dickinson-state-park": { "latitude": 27.0189, "longitude": -80.1117 },
+    "paynes-prairie-preserve-state-park": { "latitude": 29.5389, "longitude": -82.3017 },
+    "sebastian-inlet-state-park": { "latitude": 27.8589, "longitude": -80.4517 },
+    "silver-springs-state-park": { "latitude": 29.2139, "longitude": -82.0517 },
+    "stephen-foster-folk-culture-center-state-park": { "latitude": 30.3889, "longitude": -82.9417 },
+    "topsail-hill-preserve-state-park": { "latitude": 30.3589, "longitude": -86.2817 },
+    "wekiwa-springs-state-park": { "latitude": 28.7139, "longitude": -81.4617 }
+  }
+}

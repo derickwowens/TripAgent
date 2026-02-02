@@ -1,0 +1,188 @@
+{
+  "id": "np-pete",
+  "name": "Petersburg National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Two hundred ninety-two days, eight offensives, over 70,000 casualties, U. S. Colored Troops, and the decline of Gen. Lee's Army of Northern Virginia all describe the Siege of Petersburg. U.S. forces cut off supplies to both Petersburg and the Confederate capital, Richmond. Today, the park preserves the sites of this pivotal campaign.",
+  "shortDescription": "Two hundred ninety-two days, eight offensives, over 70,000 casualties, U. S. Colored Troops, and the decline of Gen. Lee's Army of Northern Virginia all describe the Siege of Petersburg. U.S. forces c...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 37.19109957,
+    "longitude": -77.47594865
+  },
+  "nationalParkInfo": {
+    "parkCode": "pete",
+    "npsId": "16B99840-35CB-4D14-BB83-136C371EFD2E",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pete/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pete/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8047323531",
+    "email": "PETE_Info@nps.gov",
+    "website": "https://www.nps.gov/pete/index.htm",
+    "address": {
+      "line1": "Petersburg National Battlefield",
+      "line2": "Eastern Front Unit Visitor Center",
+      "city": "Petersburg",
+      "state": "VA",
+      "postalCode": "23803"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Eastern Front Unit includes our main visitor center and a four mile, 8-stop tour road which includes the Fort Stedman and Crater battlefields. During Spring and Summer, the tour road closes at sunset or 8:00 pm (whichever is earlier). In the Fall and Winter, the tour road closes at 5:00pm.\n\n\nThe Visitor Center is open from 9:00 - 5:00 pm daily except for Thanksgiving, Christmas, and New Years Day when the park is closed."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winters are usually cool with temperatures averaging in the 40s. Spring and fall are mild. Summer can bring very hot and humid weather."
+  },
+  "images": [
+    {
+      "id": "pete-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C857F09-1DD8-B71B-0B54C972E552D1CB.jpg",
+      "title": "Appomattox Plantation (Eppes Home)",
+      "altText": "Plantation home prior to the War. U.S. Quartermaster Headquarters during the Siege.",
+      "caption": "This home and the grounds surrounding it were used by General Grant and his staff during the Siege of Petersburg.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "pete-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C858037-1DD8-B71B-0B879E0A0E39C0E8.jpg",
+      "title": "Snow Covered Cannon",
+      "altText": "Snow covered cannon overlooking the Crater Battlefield",
+      "caption": "Soldiers spent months in the trenches around Petersburg, including snowy winter mornings.",
+      "credit": "NPS Photo / Aaron Rowland",
+      "isPrimary": false
+    },
+    {
+      "id": "pete-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2C283FE1-CF96-D6D1-CB3789BDE51F879A.jpg",
+      "title": "Eastern Front Visitor Center",
+      "altText": "Pictured is the front of the brick visitor center under a cloudless blue sky.",
+      "caption": "Thousands of people gather information about the park, view the park's video, and conduct research on Civil War ancestors from this visitor center.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "pete-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/309783F2-9C50-ACAE-8AA9EC87229E6E7F.jpg",
+      "title": "Fort Fisher",
+      "altText": "Earthworks covered in green grass.",
+      "caption": "Earthworks at Fort Fisher",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pete/index.htm",
+    "directions": "http://www.nps.gov/pete/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Military",
+    "Battlefields",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "National Battlefield",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

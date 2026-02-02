@@ -1,0 +1,161 @@
+{
+  "id": "np-cari",
+  "name": "Cane River Creole National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "LA",
+  "stateName": "Louisiana",
+  "region": "southeast",
+  "description": "The Cane River region is home to a unique culture; the Creoles. Generations of the same families of workers, enslaved and tenant, and owners lived on these lands for over 200 years. The park tells their stories and preserves the cultural landscape of Oakland and Magnolia Plantations, two of the most intact Creole cotton plantations in the United States.",
+  "shortDescription": "The Cane River region is home to a unique culture; the Creoles. Generations of the same families of workers, enslaved and tenant, and owners lived on these lands for over 200 years. The park tells the...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 31.65408447,
+    "longitude": -93.00131977
+  },
+  "nationalParkInfo": {
+    "parkCode": "cari",
+    "npsId": "55ABA58B-B19E-4851-BDE1-1C0712B2BE2C",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cari/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/cari/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "318-352-0383",
+    "email": "cari_interp@nps.gov",
+    "website": "https://www.nps.gov/cari/index.htm",
+    "address": {
+      "line1": "4386 Highway 494, Natchez, LA 71456 (Oakland )",
+      "line2": "5549 Highway 119, Cloutierville, LA  71416 (Magnolia)",
+      "city": "Natchitoches Parish",
+      "state": "LA",
+      "postalCode": "71457"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 3:30PM",
+    "thursday": "9:00AM - 3:30PM",
+    "friday": "9:00AM - 3:30PM",
+    "saturday": "9:00AM - 3:30PM",
+    "sunday": "9:00AM - 3:30PM",
+    "description": "The Texas & Pacific Railway Depot, Oakland Plantation and Magnolia Plantation are open Wednesday through Sunday from 9 am to 3:30 pm. Both self-guided and guided tours of the plantation grounds and outbuildings are available. In addition, the park store located in the Oakland Plantation store is open for shopping. The Oakland Plantation Main House is open for self-guided tours only on Saturday and Sunday from 10 a.m. to 2 p.m. Closed all federal holidays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in central Louisiana can be unpredictable. Summers are hot and humid. Winter is relatively mild with measurable snowfall every 5-10 years. Average rainfall is approximately 55-60 inches per year. The area is also subject to severe thunderstorms, hail, damaging winds, and tornadoes. Visitors might want to bring hats, umbrellas, and drink plenty of water. Please check the local weather forecast before planning your visit to the park."
+  },
+  "images": [
+    {
+      "id": "cari-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FF225B2C-08F8-7008-74039BCDFF98F1FF.jpg",
+      "title": "Oakland Plantation Quarters",
+      "altText": "A small cabin sits beneath the branches of a Live Oak in the Oakland Plantation Quarters.",
+      "caption": "One of two remaining cabins built for enslaved workers on Oakland Plantation. The cabin was lived in by sharecroppers into the 1960s.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cari-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FFB75E13-BA5C-B758-6E9C5B64968B5B12.jpg",
+      "title": "Magnolia Plantation Overseer's House",
+      "altText": "A raised Creole cottage surrounded by oak trees.",
+      "caption": "Originally built as a hospital for the enslaved workers on Magnolia Plantation, this raised Creole cottage also served as home to the plantation Overseer.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cari-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/00525A5F-A2C3-2A6C-F38AD7592F03C57D.jpg",
+      "title": "Live Oak Trees",
+      "altText": "The sunrise shines through Live Oak trees at Oakland Plantation.",
+      "caption": "Live Oak trees at sunrise on Oakland Plantation.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cari-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/00B736C4-96DD-E2B8-FD02840AB40264BF.jpg",
+      "title": "Cabins in the Magnolia Plantation Quarters",
+      "altText": "Brick cabins built to house enslaved workers, served as homes for tenant farmers into the 1960s.",
+      "caption": "These brick cabins were built in the 1840s to house enslaved workers on Magnolia Plantation. Following Emancipation the cabins served as homes for tenant farmers.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cari-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/013E2FA7-0484-6936-482FC53FB6584056.jpg",
+      "title": "Oak Allee",
+      "altText": "Two rows of Live Oak trees stretch from the Cane River to the Oakland Plantation Main House.",
+      "caption": "The Oak Allee, planted in the mid-1820s, stretches from the Cane River to the Oakland Plantation Main House.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cari-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/019CD306-9332-DEA7-DD3E2DEB1EC6E164.jpg",
+      "title": "Magnolia Plantation Cotton Gin and Press Barn",
+      "altText": "This wood screw cotton press was used at Magnolia Plantation to form cotton into bales for market.",
+      "caption": "The Magnolia Plantation Gin Barn houses this rare wood screw cotton press.",
+      "credit": "NPS Photo.",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cari/index.htm",
+    "directions": "https://www.nps.gov/cari/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Laborer and Worker",
+    "Animals",
+    "Birds",
+    "National Historical Park",
+    "LA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

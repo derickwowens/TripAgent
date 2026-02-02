@@ -1,0 +1,216 @@
+{
+  "id": "np-sagu",
+  "name": "Saguaro National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Tucson, Arizona is home to the nation's largest cacti. The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are protected by Saguaro National Park, to the east and west of the modern city of Tucson. Here you have a chance to see these enormous cacti, silhouetted by the beauty of a magnificent desert sunset.",
+  "shortDescription": "Tucson, Arizona is home to the nation's largest cacti. The giant saguaro is the universal symbol of the American west. These majestic plants, found only in a small portion of the United States, are pr...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 32.20909636,
+    "longitude": -110.7574974
+  },
+  "nationalParkInfo": {
+    "parkCode": "sagu",
+    "npsId": "A6F169CF-B830-499C-A5EB-A35138C77589",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sagu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/sagu/planyourvisit/directionstothepark.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5207335153",
+    "email": "sagu_information@nps.gov",
+    "website": "https://www.nps.gov/sagu/index.htm",
+    "address": {
+      "line1": "3693 S Old Spanish Trail",
+      "line2": "",
+      "city": "Tucson",
+      "state": "AZ",
+      "postalCode": "85730"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is always open, except under emergency conditions. You can walk or bike into the park 24 hours a day. \n\nThe Visitor Centers are open daily from 9:00am - 5:00pm from Oct. 1st to May 31st, & switch to 8:00am - 4:00pm from June 1st to Sept. 30th. \n\nIn the Tucson Mountain District (West), The Bajada Loop Scenic Drive (Golden Gate Road & Hohokam Road) is open to vehicles during daylight hours.\n\nIn the Rincon Mountain District (East), the Cactus Forest Loop Drive is open from 5:00am - 8:30pm."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "The vehicle entrance pass is sold in the form of a dated register receipt and admits one privately owned, non-commercial vehicle into Saguaro National Park. This includes passenger cars, trucks, vans, recreational vehicles, campers, or converted buses used for private, recreational purposes.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Individuals entering the park by means other than a motor vehicle may purchase individual entrance passes. This includes hikers, horseback riders and bicyclists. The individual entrance fee is charged to anyone 16 years of age or older.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Winter Season With daytime temperature from the low 50's to the high 70's Summer Season As we get deeper into the summer season, temperatures will range from mid-90's to low 110's. This is a great time to experience the desert as the day breaks or in the late of the day as the sun disappears behind the surrounding mountain ranges. During the late spring and summer months Saguaro National Park only offers interpretive programs on an intermittent basis."
+  },
+  "images": [
+    {
+      "id": "sagu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5CB8B2F6-01B7-9A50-73702A355E4136B8.jpg",
+      "title": "Saguaro Flowers",
+      "altText": "Saguaro flowers",
+      "caption": "The flowering season in Saguaro National Park attracts visitors from all over the world.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "sagu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C858462-1DD8-B71B-0BB499810C61332C.jpg",
+      "title": "Flowering Fishhook Pincushion Cactus",
+      "altText": "A flowering fishhook pincushion cactus",
+      "caption": "Wildflower season at Saguaro National Park is at it's peak in the month of MArch. The Pincushion cactus, however, blooms April through August.",
+      "credit": "NPS Photo/ Bolyard",
+      "isPrimary": false
+    },
+    {
+      "id": "sagu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C858613-1DD8-B71B-0BEFB533FAB3FB55.jpg",
+      "title": "Coyote Pups",
+      "altText": "Two coyote pups captured on a wilderness camera",
+      "caption": "Saguaro National Park has a vast variety of wildlife, and with the help of wilderness cameras, can be photographed to help with studies and for visitors to learn about animals only seen by chance.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sagu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85873C-1DD8-B71B-0BA5D81599611142.jpg",
+      "title": "Saguaro National Park Lighting Storm",
+      "altText": "Lightning strike captured on camera with saguaros in the background",
+      "caption": "Saguaro deaths are usually attributed to natural weather conditions and other natural phenomena. Specifically, lightning strikes have been known to strike saguaros due to the large amount of water stored within their fleshy tissue.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sagu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C858903-1DD8-B71B-0BE2312B40DB3D26.jpg",
+      "title": "Weather at Saguaro National Park",
+      "altText": "Rare Sight of snow in Saguaro National Park East Visitor Center (Rincon Mountain District)",
+      "caption": "Saguaro National Park summers can be extremely hot with temperatures exceeding 105 degrees F, lows averaging 72 degrees F.  Winters are mild warm days averaging 65 degrees F and cool nights averaging 40 degrees F. Snowfall is extremely rare in the area.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sagu-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C858AB6-1DD8-B71B-0B0F6C0A56410894.jpg",
+      "title": "Group of Regal Horned Lizards",
+      "altText": "A group of Phrynosoma solare, or regal horned lizards.",
+      "caption": "Regal horned lizards are one of many reptiles in the park, who have adapted to living in the harsh desert environment. Information on how different species survive can be found on the park's website, visitor center, or through our many programs offered.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sagu/index.htm",
+    "directions": "https://www.nps.gov/sagu/planyourvisit/directionstothepark.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Industry",
+    "Mining",
+    "Schools and Education",
+    "Westward Expansion",
+    "Animals",
+    "Climate Change",
+    "Fire",
+    "Fossils and Paleontology",
+    "Geology",
+    "Night Sky",
+    "River and Riparian",
+    "National Park",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "id": "np-lacl",
+  "name": "Lake Clark National Park & Preserve",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Lake Clark National Park and Preserve is a land of stunning beauty. Volcanoes steam, salmon run, bears forage, and craggy mountains reflect in shimmering turquoise lakes. Here, too, local people and culture still depend on the land and water. Venture into the park to become part of the wilderness.",
+  "shortDescription": "Lake Clark National Park and Preserve is a land of stunning beauty. Volcanoes steam, salmon run, bears forage, and craggy mountains reflect in shimmering turquoise lakes. Here, too, local people and c...",
+  "designation": "National Park & Preserve",
+  "coordinates": {
+    "latitude": 60.57405857,
+    "longitude": -153.55535
+  },
+  "nationalParkInfo": {
+    "parkCode": "lacl",
+    "npsId": "5F76F85B-23F4-4616-AA0B-A26E8DE76593",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lacl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/lacl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9076443626",
+    "email": "lacl_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/lacl/index.htm",
+    "address": {
+      "line1": "1 Park Place",
+      "line2": "",
+      "city": "Port Alsworth",
+      "state": "AK",
+      "postalCode": "99653"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park and preserve are open 24 hours per day, seven days per week year round. However, visitor services are limited Labor Day through Memorial Day.\n\nSeasonal and temporary closures are listed by location on the Operating Hours & Seasons page."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Lake Clark has two distinct climate areas: the coast and the interior. The coast is wetter and experiences milder temperatures. The interior gets half to one fourth as much precipitation, but temperatures are hotter in summer and colder in winter. Frost and snow can occur any time parkwide, but are most common from September to early June. Lakes here typically begins freezing in November and melting in April. Ice conditions dictate whether planes need floats or skis to land on lakes."
+  },
+  "images": [
+    {
+      "id": "lacl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A9F9E-1DD8-B71B-0B6CEC8EF3F377DA.jpg",
+      "title": "Lake Clark",
+      "altText": "Photo of blue sky with fluffy white clouds reflect in calm lake with mountains in the background.",
+      "caption": "The park's namesake lake is the largest lake by volume in the National Park Service.",
+      "credit": "NPS Photo / James Kramer",
+      "isPrimary": true
+    },
+    {
+      "id": "lacl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AA462-1DD8-B71B-0BB13D97381C04B0.jpg",
+      "title": "Tanalian Falls",
+      "altText": "Waterfall surrounded by forest in fall foiliage and mountains in the background.",
+      "caption": "The park protects thousands of waterfalls including Tanalian Falls, which is a popular day hike destination from the town of Port Alsworth.",
+      "credit": "NPS Photo / Karen Smigielski",
+      "isPrimary": false
+    },
+    {
+      "id": "lacl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AA140-1DD8-B71B-0BE3ECC0A8EE0DE5.jpg",
+      "title": "Redoubt Volcano",
+      "altText": "Photo of a stratovolcano flanked with glaciers towering over a river valley.",
+      "caption": "Lake Clark is a land of fire and ice. Active volcanism and retreating glaciers created and continue to shape the peaks, moraines, and river systems in the Chigmit and Neacola Mountains.",
+      "credit": "NPS Photo / Paige Spencer",
+      "isPrimary": false
+    },
+    {
+      "id": "lacl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A9D02-1DD8-B71B-0B154E93FCC5D7F9.jpg",
+      "title": "Tanaina Glacier",
+      "altText": "photo of large alpine glacier",
+      "caption": "Perenial snow and glacial ice covers ~1,250 square miles, or 20% of Lake Clark National Park and Preserve.",
+      "credit": "NPS Photo / Chuck Lindsay",
+      "isPrimary": false
+    },
+    {
+      "id": "lacl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C521C4DB-C6CB-EB6B-242225CB76BAB42E.jpg",
+      "title": "Two cubs playing at Silver Salmon Creek",
+      "altText": "two brown bear cubs playing in the sedges",
+      "caption": "Bear viewing is a popular activity along the Cook Inlet Coast.",
+      "credit": "NPS Photo / Kara Lewandowski",
+      "isPrimary": false
+    },
+    {
+      "id": "lacl-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A9BBB-1DD8-B71B-0BD4675D87449A15.jpg",
+      "title": "Boreal Forest",
+      "altText": "Forest of spruce trees blanketed in snow and fog.",
+      "caption": "Boreal forests encircle the earth's northern latitudes like an emerald necklace. Lake Clark's forest, which covers more than 440 thousand acres or 11% of the park,  is dominated by white spruce mixed with black spruce and birch.",
+      "credit": "NPS Photo/ J.Mills",
+      "isPrimary": false
+    },
+    {
+      "id": "lacl-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AA70A-1DD8-B71B-0BCA87C6E2CA136E.jpg",
+      "title": "Telaquana Lake",
+      "altText": "A colorful sky, an island with spruce trees, and mountains in the background reflect in a calm lake",
+      "caption": "A number of glacier fed lakes pepper the western boundary of the Chigmit and Neacola mountains like a string of spectacular turquoise gems.",
+      "credit": "NPS Photo / J.Mills",
+      "isPrimary": false
+    },
+    {
+      "id": "lacl-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AA5B4-1DD8-B71B-0BCD819BADB29D2E.jpg",
+      "title": "West Glacier Creek",
+      "altText": "Photo of a river delta flowing into tidal flats surrounded by green salt marshes and mountains.",
+      "caption": "Estuaries where rivers meet the sea provide a mosaic of rich habitats along the Cook Inlet Coast that support high numbers of bears and other wildlife.",
+      "credit": "Alaska ShoreZone",
+      "isPrimary": false
+    },
+    {
+      "id": "lacl-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AA314-1DD8-B71B-0B5E93E5AD68E6D5.jpg",
+      "title": "Richard L. Proenneke National Historic Site",
+      "altText": "Photo of a one story log cabin, cache, forest, and American flag reflecting in a calm, blue lake.",
+      "caption": "The park protects and interprets the Richard L. Proenneke National Historic Site and trail complex as a symbol of the national wilderness movement and a source of inspiration and solace sought out by visitors from throughout the world.",
+      "credit": "NPS Photo / Kent Miller",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "977B3209-68A2-4BCE-97A9-EA0CAC320664",
+      "name": "Mountain Climbing"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "89DA72D0-16D6-4C1C-89D4-103D94F1F63D",
+      "name": "Orienteering"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "C06FE528-9671-4EC1-909F-B7D3720A1D89",
+      "name": "Fixed Wing Flying"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lacl/index.htm",
+    "directions": "http://www.nps.gov/lacl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Aviation",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Industry",
+    "Mining",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Wolves",
+    "Arctic",
+    "Tundra",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Fire",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "Glaciers",
+    "Grasslands",
+    "Meadows",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "Aurora Borealis",
+    "Oceans",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Marshes",
+    "Wilderness",
+    "National Park & Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

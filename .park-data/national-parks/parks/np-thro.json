@@ -1,0 +1,343 @@
+{
+  "id": "np-thro",
+  "name": "Theodore Roosevelt National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "ND",
+  "stateName": "North Dakota",
+  "region": "midwest",
+  "description": "When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamiliar place would forever alter the course of the nation. The rugged landscape and strenuous life that TR experienced here would help shape a conservation policy that we still benefit from today.",
+  "shortDescription": "When Theodore Roosevelt came to Dakota Territory to hunt bison in 1883, he was a skinny, young, spectacled dude from New York. He could not have imagined how his adventure in this remote and unfamilia...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 47.17777274,
+    "longitude": -103.4300083
+  },
+  "nationalParkInfo": {
+    "parkCode": "thro",
+    "npsId": "B5FE5682-7981-47DD-AC96-13F4B33A466E",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/thro/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/thro/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7016234466",
+    "email": "thro_interpretation@nps.gov",
+    "website": "https://www.nps.gov/thro/index.htm",
+    "address": {
+      "line1": "315 Second Avenue",
+      "line2": "",
+      "city": "Medora",
+      "state": "ND",
+      "postalCode": "58645"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Theodore Roosevelt National Park is open 24 hours a day, every day of the year. This applies to all units of the park; North Unit, South Unit, and Elkhorn Ranch Unit. Even when entrance stations and visitor centers are closed, the park itself remains open. Remember to check current conditions for any weather related closures."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Valid for 7 days for all persons traveling in a single, private, non-commercial vehicle.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Valid for 7 days for a visitor traveling on foot, bicycle, horse, or other non-motorized means of travel.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Based upon the total capacity of a vehicle that can carry 7-15 passengers, regardless of the actual number of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Pass is good for seven days as long as it's the same passenger group.",
+      "cost": "50.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Based upon the total capacity of a vehicle that can carry 16-25 passengers, regardless of the actual number of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Pass is good for seven days as long as it's the same passenger group.",
+      "cost": "60.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Based upon the total capacity of a vehicle that can carry 26 or more passengers, regardless of the actual number of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Pass is good for seven days as long as it's the same passenger group.",
+      "cost": "150.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "In winter, some or all park roads may be closed due to snow."
+  },
+  "images": [
+    {
+      "id": "thro-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C793AD5-1DD8-B71B-0B4A3C1BFA5B4C83.jpg",
+      "title": "River Bend Overlook, North Unit",
+      "altText": "A colorfully striped butte in the foreground overlooks a dark green badlands landscape",
+      "caption": "The River Bend Overlook offers one of the most popular views in the park's North Unit.",
+      "credit": "NPS Photo / Mark Meyers",
+      "isPrimary": true
+    },
+    {
+      "id": "thro-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7939C8-1DD8-B71B-0B048D7EC3812DE3.jpg",
+      "title": "A View from the Maah Daah Hey Trail",
+      "altText": "the Little Missouri River under blue skies",
+      "caption": "The Maah Daah Hey Trail follows the Little Missouri River for several miles before it enters the Theodore Roosevelt Wilderness.",
+      "credit": "NPS Photo / Laura Thomas",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C793D1D-1DD8-B71B-0B17AA76AF7AE453.jpg",
+      "title": "Ekblom Trail",
+      "altText": "A muddy river bank lined with cottonwood trees and steep buttes",
+      "caption": "The Ekblom Trail is the gateway to the Theodore Roosevelt Wilderness. All you have to do is make it across the river!",
+      "credit": "NPS Photo / Laura Thomas",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C794347-1DD8-B71B-0B5EB10134348DE1.jpg",
+      "title": "Raise a Ruckus",
+      "altText": "two bull bison collide heads in a dusty battle for dominance",
+      "caption": "In the summer, bull bison wage furious battles over the right to breed.",
+      "credit": "NPS Photo / Teresina Wheaten",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C794A8F-1DD8-B71B-0B3C8A05CF065D02.jpg",
+      "title": "Milky Way",
+      "altText": "the swirling, dusty looking milky way runs vertically though a starry night sky",
+      "caption": "Though light pollution in the area is increasing, the night sky over Theodore Roosevelt National Park remains beautiful and inspiring.",
+      "credit": "NPS Photo / Jeff Zylland",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7941B3-1DD8-B71B-0B9F03744B164B38.jpg",
+      "title": "Bison Trail",
+      "altText": "a string of bison are silhouetted against the backdrop of hazy blue and yellow badlands",
+      "caption": "Bison roam the badlands from top to bottom, surprising visitors with their agility and ability to cross even the most rugged terrain.",
+      "credit": "NPS Photo / Roland and Lisa Honeyman",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C793C29-1DD8-B71B-0BD780A3A72F020B.jpg",
+      "title": "Sunset on Buck Hill",
+      "altText": "a green prairie hilltop overlooks the badlands, shrouded in shadows",
+      "caption": "A short climb to the top of Buck Hill in the park's South Unit rewards hikers with a sweeping panorama and a fantastic place to watch the sun rise or set.",
+      "credit": "NPS Photo / Laura Thomas",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79484D-1DD8-B71B-0BD76E098C35DBFA.jpg",
+      "title": "Fall Bugle",
+      "altText": "A bugling bull elk and his harem of cows stand on the edge of a butte as the sunlight fades",
+      "caption": "The ghostly bugles of bull elk can be heard wafting through the badlands in the fall.",
+      "credit": "NPS Photo / Rolan and Lisa Honeyman",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C794D85-1DD8-B71B-0BE8C67C46D0233A.jpg",
+      "title": "Hoodoos",
+      "altText": "a strange looking sand and rock formation stands in a prairie of brown grass",
+      "caption": "Theodore Roosevelt described the badlands as \"so fantastically broken in form and so bizarre in color as to seem hardly properly to belong to this earth.\"",
+      "credit": "NPS Photo / Laura Thomas",
+      "isPrimary": false
+    },
+    {
+      "id": "thro-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C795014-1DD8-B71B-0B9A2115735380B0.jpg",
+      "title": "Maltese Cross Cabin",
+      "altText": "The rising sun casts light on Roosevelt's snow-covered cabin.",
+      "caption": "Imagine waking up on a crisp winter morning in Roosevelt's Maltese Cross Cabin. It is no wonder that his heart was captured by the romance of life in the West.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/thro/index.htm",
+    "directions": "http://www.nps.gov/thro/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Farming and Agriculture",
+    "Ranches",
+    "Great Depression",
+    "Presidents",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Bison",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Horses (wild)",
+    "Tortoises and Turtles",
+    "Fossils and Paleontology",
+    "Petrified Wood",
+    "Geology",
+    "Mineral Deposits",
+    "Grasslands",
+    "Prairies",
+    "Night Sky",
+    "Astronomy",
+    "Aurora Borealis",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Buttes",
+    "Scenic Views",
+    "Wilderness",
+    "National Park",
+    "ND"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

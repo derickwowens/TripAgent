@@ -1,0 +1,139 @@
+{
+  "id": "np-ddem",
+  "name": "Dwight D. Eisenhower Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "The Dwight D. Eisenhower Memorial tells the story of one of America's greatest leaders of the 20th century.",
+  "shortDescription": "The Dwight D. Eisenhower Memorial tells the story of one of America's greatest leaders of the 20th century.",
+  "designation": "Memorial",
+  "coordinates": {
+    "latitude": 38.8869476647,
+    "longitude": -77.018737554
+  },
+  "nationalParkInfo": {
+    "parkCode": "ddem",
+    "npsId": "658C035B-119B-4C6F-9720-67872AD6A8A5",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ddem/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "htttp://www.nps.gov/ddem/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/ddem/index.htm",
+    "address": {
+      "line1": "540 Independence Avenue SW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20202"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The sites of National Mall and Memorial Parks (other than the Washington Monument) are always open to the public. Restrooms, museums and elevators close in the evenings (check individual sites for hours)"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "ddem-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7E0A4E6C-06D4-F1EC-7717B0A532D6A635.jpg",
+      "title": "Dwight D. Eisenhower Memorial Entrance",
+      "altText": "Dwight D. Eisenhower Memorial Entrance",
+      "caption": "Entrance to the Dwight D. Eisenhower Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "ddem-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7E294876-E461-B928-B55FE2D9624EB27E.jpg",
+      "title": "President Eisenhower Memorial Night Shot",
+      "altText": "President Eisenhower Memorial Night Shot",
+      "caption": "Evening shot of the Eisenhower Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ddem-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7E4D2C01-B59A-5697-43CB97E966D09843.jpg",
+      "title": "Tapestry in the Dwight D. Eisenhower Memorial",
+      "altText": "Tapestry in the Dwight D. Eisenhower Memorial",
+      "caption": "Closeup of Tapestry in the Dwight D. Eisenhower Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ddem-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7E5C73E7-B1B7-03C0-52E64FE3564EA5B4.jpg",
+      "title": "President Eisenhower Statue",
+      "altText": "President Eisenhower Statue",
+      "caption": "Close up of President Eisenhower Statue",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ddem-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7E69507F-EBE4-1654-AD1D3741471087DB.jpg",
+      "title": "Dwight D. Eisenhower Memorial Wide shot",
+      "altText": "Dwight D. Eisenhower Memorial Wide shot",
+      "caption": "Dwight D. Eisenhower Memorial Wide shot",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ddem-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7E70A08C-FBF4-5468-E9CF0A848C866716.jpg",
+      "title": "General Eisenhower Statue",
+      "altText": "General Eisenhower Statue",
+      "caption": "Close up of the General Eisenhower Statue",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ddem/index.htm",
+    "directions": "htttp://www.nps.gov/ddem/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Monuments and Memorials",
+    "Presidents",
+    "Memorial",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

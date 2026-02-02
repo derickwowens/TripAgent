@@ -1,0 +1,233 @@
+{
+  "id": "np-cavo",
+  "name": "Capulin Volcano National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Part of the 8,000 square mile Raton-Clayton Volcanic Field, Capulin Volcano showcases the volcanic geology of northeastern New Mexico. The views are spectacular day or night, with views of 4 different states from the volcanic rim and one of the darkest night skies in the country. Whether it's a quick stop or a day's trip, enjoy exploring the landscape of this unique volcano!",
+  "shortDescription": "Part of the 8,000 square mile Raton-Clayton Volcanic Field, Capulin Volcano showcases the volcanic geology of northeastern New Mexico. The views are spectacular day or night, with views of 4 different...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 36.78171096,
+    "longitude": -103.9710427
+  },
+  "nationalParkInfo": {
+    "parkCode": "cavo",
+    "npsId": "93BB79F9-D700-4202-B21C-B2354617A729",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cavo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cavo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5752782201",
+    "email": "cavo_interpretation@nps.gov",
+    "website": "https://www.nps.gov/cavo/index.htm",
+    "address": {
+      "line1": "46 Volcano Highway",
+      "line2": "",
+      "city": "Capulin",
+      "state": "NM",
+      "postalCode": "88414"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 4:00PM",
+    "tuesday": "8:30AM - 4:00PM",
+    "wednesday": "8:30AM - 4:00PM",
+    "thursday": "8:30AM - 4:00PM",
+    "friday": "8:30AM - 4:00PM",
+    "saturday": "8:30AM - 4:00PM",
+    "sunday": "8:30AM - 4:00PM",
+    "description": "Volcano Road Vehicle Access is open from 8:30 a.m. to 4:00 p.m. Pedestrians and Bicycles are allowed on volcano road after 4:30."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits private, non-commercial vehicle (15 passenger capacity or less) and all occupants to Capulin Volcano National Monument. The maximum size of a vehicle allowed on the Volcano Road is 26 feet in length and/or 8 feet in width. Passes may be upgraded to annual passes within 7 days of purchase.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Capulin Volcano accepts the America the Beautiful - Federal Lands Passes (Interagency Annual, Senior, and Access passes) in place of an entrance fee. Passes may be upgraded to annual passes within 7 days of purchase.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one person arriving on foot or bicycle, or by commercial operator to Capulin Volcano National Monument.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "$10 per person for organized groups such as Scouts, Rotary, Clubs, Youth Groups, Churches, Reunions, etc. that do not qualify for an Academic Fee Waiver. Fees will not exceed the commercial fee for the same-sized vehicle. Youth 15 and under are free. Individuals or families with any valid Annual or Lifetime pass may use their pass for entry at the per person rate. The maximum size of a vehicle allowed on the Volcano Road without a permit is 26 feet in length and/or 8 feet in width.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Educational waivers will be provided in accordance with the Code of Federal Regulations Title 36: if the request is from \"organized tours or outings conducted for educational or scientific purposes related to the resources of the area visited by bona fide institutions established for these purposes.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Entry fees of commercial tours are based upon the total capacity of vehicles.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Elevations range from 7247 feet at the park visitor center to 8182 feet on the crater rim trail. Summers usually have mild temperatures with highs averaging in the low to mid 80s F/30C with occasional afternoon thunderstorms. Winters average from 40F/5C to 50F/10C, but temperatures vary. Snowfall is most common from December into April and may cause temporary closures of the volcano road. Sunny winter days are beautiful days to be in the park. Check weather conditions before visiting."
+  },
+  "images": [
+    {
+      "id": "cavo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84FCB2-1DD8-B71B-0BE4C7320D95575F.jpg",
+      "title": "Capulin Volcano",
+      "altText": "A cloud shrouded volcano rises behind a field of yellow flowers.",
+      "caption": "Capulin Volcano in summer.",
+      "credit": "NPS photo/ R. Richman",
+      "isPrimary": true
+    },
+    {
+      "id": "cavo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84FDF7-1DD8-B71B-0B21AAE5CD8316CB.jpg",
+      "title": "Aerial View of Capulin Volcano",
+      "altText": "View of cinder cone volcano and the road leading to the top of the volcano as seen from the air.",
+      "caption": "Capulin Volcano is a classic example of a cinder cone. The crater is approximately 130 m (420 ft) deep and 440 m (1,450 ft) across. The base of the mountain is 6 km (4 mi) in circumference. Volcano Road spirals up the volcano, providing panoramic views.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cavo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84FF37-1DD8-B71B-0B956181F9F5E199.jpg",
+      "title": "Nature Trail at Capulin Volcano",
+      "altText": "A shaded bench on the side of a paved nature trail wending through juniper trees and grasses.",
+      "caption": "A paved nature trail at Capulin Volcano NM.",
+      "credit": "NPS photo/ A. Buccanero",
+      "isPrimary": false
+    },
+    {
+      "id": "cavo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85008E-1DD8-B71B-0B2FEF52E96A172C.jpg",
+      "title": "Volcano Road",
+      "altText": "Layers of rock are visible in the steep hillside along a road.",
+      "caption": "Layers of volcanic material can be seen in the Volcano Road that takes visitors to the top of Capulin Volcano.",
+      "credit": "NPS Photo/A. Buccanero",
+      "isPrimary": false
+    },
+    {
+      "id": "cavo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8501F7-1DD8-B71B-0B83ABCF518E1D2B.jpg",
+      "title": "Capulin Volcano-Best Example of a Cinder Cone in North America",
+      "altText": "View of a cinder cone volcano covered with grasses, small trees, and other plants.",
+      "caption": "Although Capulin Mountain is considered no longer active, because its excellent condition, the cinder cone is considered one of the best and most accessible examples of a cinder cone in North America.",
+      "credit": "USGS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cavo/index.htm",
+    "directions": "http://www.nps.gov/cavo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Farming and Agriculture",
+    "Ranches",
+    "Animals",
+    "Birds",
+    "Elk",
+    "Volcanoes",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

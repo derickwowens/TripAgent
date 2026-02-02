@@ -1,0 +1,161 @@
+{
+  "id": "np-gegr",
+  "name": "General Grant National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "The final resting place of President Ulysses S. Grant and his wife, Julia, is the largest mausoleum in North America. It testifies to a people’s gratitude for the man who ended the bloodiest conflict in American history as Commanding General of the Union Army and then, as President of the United States, strove to heal a nation after a civil war and make rights for all citizens a reality.",
+  "shortDescription": "The final resting place of President Ulysses S. Grant and his wife, Julia, is the largest mausoleum in North America. It testifies to a people’s gratitude for the man who ended the bloodiest conflict ...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 40.81332817,
+    "longitude": -73.96331542
+  },
+  "nationalParkInfo": {
+    "parkCode": "gegr",
+    "npsId": "99F1F4ED-5B14-4756-B0EB-FF251B1A12BD",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gegr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gegr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(646) 670-7251",
+    "email": "gegr_info@nps.gov",
+    "website": "https://www.nps.gov/gegr/index.htm",
+    "address": {
+      "line1": "Riverside Drive and W. 122nd Street",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10027"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 5:00PM",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "The interior of the Mausoleum is where visitors can see the last resting place of Ulysses and Julia Grant. Rangers are present during opening hours to provide information and answer questions. Check our Operating Hours & Seasons website page for any alerts or updates regarding current operations."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&lat=40.7198&lon=-73.993#.Vqj8OvkrJlZ"
+  },
+  "images": [
+    {
+      "id": "gegr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C855F85-1DD8-B71B-0B5A4A32E92B3730.jpg",
+      "title": "Mausoleum",
+      "altText": "Mausoleum and flags in sunny weather",
+      "caption": "The Mausoleum is the final resting place for Ulysses S Grant and his wife Julia D. Grant.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "gegr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85CF98-1DD8-B71B-0BCFF55AB73732B1.jpg",
+      "title": "The Sarcophagi of Ulysses and Julia Grant",
+      "altText": "Two red stone sarcophagi are in a crypt. A bust of General Sherman can be seen in the distance.",
+      "caption": "Two sarcophagi, made of granite from Wisconsin, house the remains of Ulysses S. Grant and his wife, Julia. Bronze busts of key union generals (like William T. Sherman seen here) occupy the  niches in the lower crypt.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gegr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85D0CA-1DD8-B71B-0BDE95834F2A5289.jpg",
+      "title": "The Upper Dome of the Mausoleum",
+      "altText": "A circular dome is held up by carvings of allegorical figures.",
+      "caption": "The dome of the memorial stretches 150 feet into the sky. On its four corners are four allegorical sculptures, executed by J. Massey Rhind.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gegr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85D1CF-1DD8-B71B-0B360DCD6E00EE09.jpg",
+      "title": "The Overlook Pavillion, above the Visitor Center",
+      "altText": "A neoclassic pavilion sits on the hillside, surrounded by trees with the Hudson River below.",
+      "caption": "The Overlook Pavilion is great place to check out the scenery. Beneath the overlook is the park's visitor center.",
+      "credit": "NPS / D. Stanko",
+      "isPrimary": false
+    },
+    {
+      "id": "gegr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85D2D2-1DD8-B71B-0BF7A0FA3E4DC031.jpg",
+      "title": "Site of the Temporary Tomb",
+      "altText": "A black wrought-iron fence surrounds two trees. The enclosure is located directly behind the tomb.",
+      "caption": "This enclosure marks the location of the temporary vault where Grant was initially interred. His remains were in the temporary vault for 12 years, from 1885-1897.",
+      "credit": "NPS / D. Stanko",
+      "isPrimary": false
+    },
+    {
+      "id": "gegr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4AF3F057-98B9-6E88-D80E74F879E83ED1.jpg",
+      "title": "U S Military Academy at West Point Colorguard",
+      "altText": "West Point Cadets in formal uniforms carrying three flags in front of the mausoleum",
+      "caption": "Visit the site on the Birthday Ceremony for U.S. Grant",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gegr/index.htm",
+    "directions": "http://www.nps.gov/gegr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Burial, Cemetery and Gravesite",
+    "Monuments and Memorials",
+    "Presidents",
+    "Reconstruction",
+    "Wars and Conflicts",
+    "Mexican War",
+    "Civil War",
+    "National Memorial",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

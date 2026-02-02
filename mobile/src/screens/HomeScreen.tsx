@@ -12,6 +12,7 @@ import {
   Alert,
   Image,
   TextInput,
+  Keyboard,
 } from 'react-native';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer, fetchStateParks, StateParkSummary } from '../services/api';
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode, useTravelDates } from '../hooks';
@@ -919,7 +920,10 @@ const HomeScreen: React.FC = () => {
             <CollapsibleBottomPanel hasPhotos={true}>
               <PhotoGallery 
                 photos={allPhotos} 
-                onClose={() => setShowPhotoGallery(false)}
+                onClose={() => {
+                  Keyboard.dismiss();
+                  setShowPhotoGallery(false);
+                }}
               />
             </CollapsibleBottomPanel>
           )}

@@ -1,0 +1,207 @@
+{
+  "id": "np-blrv",
+  "name": "Blackstone River Valley National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "RI",
+  "stateName": "Rhode Island",
+  "region": "northeast",
+  "description": "The Blackstone River powered America's entry into the Age of Industry. The success of Samuel Slater's cotton spinning mill in Pawtucket, RI touched off a chain reaction that changed how people worked and where they lived. Learn how this revolution transformed the landscape of the Blackstone Valley and the United States. The Visitor Center at Old Slater Mill is closed for the winter season.",
+  "shortDescription": "The Blackstone River powered America's entry into the Age of Industry. The success of Samuel Slater's cotton spinning mill in Pawtucket, RI touched off a chain reaction that changed how people worked ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 41.8775792792,
+    "longitude": -71.382433945
+  },
+  "nationalParkInfo": {
+    "parkCode": "blrv",
+    "npsId": "A36366E7-5663-4531-B0CE-D58928C6D01B",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/blrv/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://nps.gov/blrv/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(401) 725-8638",
+    "email": "allison_horrocks@nps.gov",
+    "website": "https://www.nps.gov/blrv/index.htm",
+    "address": {
+      "line1": "67 Roosevelt Ave",
+      "line2": "",
+      "city": "Pawtucket",
+      "state": "RI",
+      "postalCode": "02860"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park grounds are open from Sunrise to Sunset.  \n\nThe headquarters are located at Slater Mill\n67 Roosevelt Ave\nPawtucket, RI 02860\n\n(401) 725-8638"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer temperatures range from 56-83F. Fall temperatures range from 30-70F. Winter temperatures range from 20-45F. Spring temperatures range from 30-70F."
+  },
+  "images": [
+    {
+      "id": "blrv-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0BD0215D-B0D9-7E37-CFF0CDB2B29679CC.png",
+      "title": "Slater Mill Site",
+      "altText": "Slater Mill, Wilkinson Mill and Brown House at Blackstone River Valley NHP",
+      "caption": "Slater Mill, Wilkinson Mill and Brown House at Blackstone River Valley NHP",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "blrv-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD3C0-1DD8-B71B-0BDD87BD4E0070A2.jpg",
+      "title": "Slatersville",
+      "altText": "Slatersville",
+      "caption": "View of John Slater's home in Slatersville, RI",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blrv-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD04E-1DD8-B71B-0B3A6A73F3DA415B.jpg",
+      "title": "Ashton Kelly House and canal",
+      "altText": "Blackstone canal outside of the Wilbur Kelly House",
+      "caption": "The Blackstone Canal and towpath along the Wilbur Kelly House in Ashton, RI",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blrv-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD1EB-1DD8-B71B-0BB6BD446709EF5D.jpg",
+      "title": "Little Red Shop",
+      "altText": "The Little Red Shop in Hopedale, MA",
+      "caption": "The Little Red Shop in Hopedale, MA - the original home of the Draper Loom Corporation",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blrv-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD559-1DD8-B71B-0B165454D6F7D0B6.jpg",
+      "title": "Wilkinson Mill interior",
+      "altText": "Interior view of the Wilkinson Mill",
+      "caption": "The machine shop inside the Wilkinson Mill",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "blrv-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD6A6-1DD8-B71B-0BB41BBE33806A03.jpg",
+      "title": "Autumn in the Blackstone Valley",
+      "altText": "Autumn in the Blackstone Valley",
+      "caption": "Autumn in the Blackstone Valley",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/blrv/index.htm",
+    "directions": "http://nps.gov/blrv/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Arts",
+    "Dams",
+    "Farming and Agriculture",
+    "Laborer and Worker",
+    "Monuments and Memorials",
+    "Schools and Education",
+    "Transportation",
+    "Bridges",
+    "Canals",
+    "Roads, Routes and Highways",
+    "Trains and Railroads",
+    "Urban America",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Natural Sounds",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Watersheds",
+    "National Historical Park",
+    "RI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

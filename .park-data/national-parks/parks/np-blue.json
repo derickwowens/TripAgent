@@ -1,0 +1,200 @@
+{
+  "id": "np-blue",
+  "name": "Bluestone National Scenic River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "WV",
+  "stateName": "West Virginia",
+  "region": "southeast",
+  "description": "The Bluestone River and the rugged and ancient gorge it has carved is a richly diverse and scenic area of the southern Appalachians. Bluestone National Scenic River is preserved as a living landscape that provides an unspoiled experience for visitors and a haven for a variety of plants and animals. The park protects a 10.5-mile section of the Bluestone River in southern West Virginia.",
+  "shortDescription": "The Bluestone River and the rugged and ancient gorge it has carved is a richly diverse and scenic area of the southern Appalachians. Bluestone National Scenic River is preserved as a living landscape ...",
+  "designation": "National Scenic River",
+  "coordinates": {
+    "latitude": 37.56577087,
+    "longitude": -80.98366657
+  },
+  "nationalParkInfo": {
+    "parkCode": "blue",
+    "npsId": "14025CA9-91DE-4D36-B4CA-9880463C3BC2",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/blue/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/blue/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "304-465-0508",
+    "email": "neri_interpretation@nps.gov",
+    "website": "https://www.nps.gov/blue/index.htm",
+    "address": {
+      "line1": "3405 Pipestem Drive",
+      "line2": "",
+      "city": "Pipestem",
+      "state": "WV",
+      "postalCode": "25979"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is accessible year-round at two entrance points, Bluestone State Park and the former Lilly townsite, and seasonally at Pipestem Resort State Park. The park is open 24 hours a day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer: Temperatures range from low to mid 60's at night to middle to upper 80's during the daytime hours. Winter: Temperatures average from the mid 20's to the mid 40's. Snowfall amount varies, but averages 5\" per month Dec. - March. Spring and Fall: temperatures and rainfall variable. Peak fall foliage is usually mid-October."
+  },
+  "images": [
+    {
+      "id": "blue-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C800E49-1DD8-B71B-0BD0956F0EFE00F0.jpg",
+      "title": "Bluestone River",
+      "altText": "Bluestone River",
+      "caption": "Bluestone National Scenic River offers a quiet getaway.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "blue-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8005C6-1DD8-B71B-0B0EFC0F7BB22F3A.jpg",
+      "title": "Leading a hike",
+      "altText": "Hiking the Turnpike Trail",
+      "caption": "Ranger Richard leads a guided walk on the Turnpike Trail",
+      "credit": "NPS Photo / Eve West",
+      "isPrimary": false
+    },
+    {
+      "id": "blue-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C800FC9-1DD8-B71B-0B66BDF36878F435.jpg",
+      "title": "Bluestone Turnpike Trail",
+      "altText": "Ranger giving information to park visitor",
+      "caption": "NPS Ranger Richard Altaire provides an overview of the park map to a visitor to the Bluestone NSR.",
+      "credit": "NPS Photo / Eve West",
+      "isPrimary": false
+    },
+    {
+      "id": "blue-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C800735-1DD8-B71B-0B89CDFCEB32DDDB.jpg",
+      "title": "Enjoying the day",
+      "altText": "Youngster enjoying the Bluestone",
+      "caption": "A young hiker makes his own connection with Bluestone National Scenic River.",
+      "credit": "NPS Photo / Eve West",
+      "isPrimary": false
+    },
+    {
+      "id": "blue-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6F37F8DC-C649-5B81-F8C2F239936D4C27.jpg",
+      "title": "Bluestone River",
+      "altText": "river with trees",
+      "caption": "The Bluestone River",
+      "credit": "NPS Photo, Dave Bieri",
+      "isPrimary": false
+    },
+    {
+      "id": "blue-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6F37F8DC-C649-5B81-F8C2F239936D4C27.jpg",
+      "title": "Bluestone River",
+      "altText": "river with trees",
+      "caption": "The Bluestone River",
+      "credit": "NPS Photo, Dave Bieri",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/blue/index.htm",
+    "directions": "http://www.nps.gov/blue/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Farming and Agriculture",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "Mountains",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Trails",
+    "National Scenic River",
+    "WV"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

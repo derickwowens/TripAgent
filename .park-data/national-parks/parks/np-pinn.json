@@ -1,0 +1,359 @@
+{
+  "id": "np-pinn",
+  "name": "Pinnacles National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Around 23 million years ago, a series of volcanic eruptions shaped the landscape that is now Pinnacles National Park. The remnants of these ancient eruptions have formed a striking terrain of rocky spires and deep canyons. Visitors can explore diverse environments, from chaparral and oak woodlands to the cool, shaded depths of canyon floors.",
+  "shortDescription": "Around 23 million years ago, a series of volcanic eruptions shaped the landscape that is now Pinnacles National Park. The remnants of these ancient eruptions have formed a striking terrain of rocky sp...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 36.49029208,
+    "longitude": -121.1813607
+  },
+  "nationalParkInfo": {
+    "parkCode": "pinn",
+    "npsId": "9B266961-3364-43D2-9A08-82BB5EF5643F",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pinn/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pinn/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8313894486",
+    "email": "pinn_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/pinn/index.htm",
+    "address": {
+      "line1": "5000 East Entrance Road",
+      "line2": "",
+      "city": "Paicines",
+      "state": "CA",
+      "postalCode": "95043"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Entrance to the east side of Pinnacles National Park is open 24 hours, 7 days a week, including holidays."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This pass is valid for 1-7 days and includes everyone traveling in a single, private (non-commercial) vehicle up to 15 passengers to Pinnacles East Entrance and West Entrance.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles, scooters, or similar motorized vehicles with up to 4 total passengers to Pinnacles East Entrance and West Entrance.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "This entry fee is for a single person traveling on foot or by bicycle.  It is valid for 1-7 days to Pinnacles East Entrance and West Entrance.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial groups traveling in vehicles that have a capacity of 16 passengers or more pay $15 per person up to the maximums listed for commercial groups with comparable passenger capacity ($40 or $100). People 15 years old or younger, anyone with a pass that may be used for park entry, and drivers hired for transportation only are exempt from the per person fee.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "The charge for vehicles with a seating capacity of 1-6 passengers is $30. This entrance fee is for commercial tours of one or more people traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Passenger ages or entrance passes do not affect the price.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "This entrance fee is for commercial tours of vehicles with a seating capacity of 7-15 people that has been packaged, priced, or sold for leisure or recreational puposes by an organization that realizes financial gain through the provision of the service. This fee is based on the seating capacity of the vehicle and not the actual number of passengers. Passengers ages or entrance passes do not affect the price.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "This entrance fee is for commercial trous of vehicles with a seating capacity of 16-25 people that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the sevice. This fee is based on the seating capacity of the vehicle and not the actual number of passengers. Passengers ages or entrance passes do not affect the price.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "This entrance fee is for commercial tours of vehicles with a seating capacity of 26 or more people that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. This fee is based on the seating capacity of the vehicle and not the actual number of passengers. Passenger ages or entrance passes do not affect the price.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "School groups and other academic institutions may qualify for an Educational Fee Waiver. If not qualified, please check fees for large or commercial groups.",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Pinnacles National Park has a Mediterranean climate with hot, dry summers, and mild winters with moderate precipitation. The park is several miles inland from the Pacific Ocean. A wider variation in seasonal temperatures can be expected in the local area. Summers are hot with temperatures above 100 degrees. Winters are cooler with highs in the 60s. Big swings in temperature occur between day and night, year round."
+  },
+  "images": [
+    {
+      "id": "pinn-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86A8CB-1DD8-B71B-0BAE8F7141CCBB1B.jpg",
+      "title": "Balconies Caves",
+      "altText": "Boulders in the Balconies Cave.",
+      "caption": "Balconies Cliffs as seen from the inside of the Balconies Caves",
+      "credit": "National Park Service/Oscar Garcia",
+      "isPrimary": true
+    },
+    {
+      "id": "pinn-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86AAE7-1DD8-B71B-0BA8BC5E5E895E98.jpg",
+      "title": "Tree",
+      "altText": "Light falling on tree",
+      "caption": "Light illuminates a tree on a rainy day, seen from the Resurrection Wall.",
+      "credit": "National Park Service/Oscar Garcia",
+      "isPrimary": false
+    },
+    {
+      "id": "pinn-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86AE8B-1DD8-B71B-0B3ACEBC064CCC03.jpg",
+      "title": "Tarantula",
+      "altText": "A Tarantula walking",
+      "caption": "A Tarantula crawls in the wild.",
+      "credit": "National Park Service/Oscar Garcia",
+      "isPrimary": false
+    },
+    {
+      "id": "pinn-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9CCA8ED3-ABB9-CB69-EF4B32F2ADACEC47.jpeg",
+      "title": "High Peaks with Condors Above",
+      "altText": "A massive rock spire with California condors flying above the peak.",
+      "caption": "The best views of Pinnacles' rocks can be enjoyed from the west side with almost no effort required.",
+      "credit": "NPS Photo/ Katherine Fielding",
+      "isPrimary": false
+    },
+    {
+      "id": "pinn-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/38194093-C21D-59D4-B979ECD053B96101.jpg",
+      "title": "Oak Woodlands",
+      "altText": "Rock formations appear behind a grassy hillside covered with oak trees and purple and yellow flowers",
+      "caption": "Native grasses and wildflowers cover hillsides in spring",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pinn/index.htm",
+    "directions": "http://www.nps.gov/pinn/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Colonization and Settlement",
+    "Dams",
+    "Engineering",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Great Depression",
+    "Hispanic American Heritage",
+    "Industry",
+    "Mining",
+    "Immigration",
+    "Latino American Heritage",
+    "Migrations",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Presidents",
+    "Religion and Spirituality",
+    "Missions",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Conservation Movement",
+    "Transportation",
+    "Bridges",
+    "Roads, Routes and Highways",
+    "Tunnels",
+    "Tragic Events",
+    "Catastrophic Fires",
+    "Floods",
+    "Wars and Conflicts",
+    "Spanish-American War",
+    "Cold War",
+    "Westward Expansion",
+    "Homesteading",
+    "The Gold Rush",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Tortoises and Turtles",
+    "Wolves",
+    "Caves, Caverns and Karst",
+    "Canyons and Canyonlands",
+    "Climate Change",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Deciduous Forests",
+    "Fossils and Paleontology",
+    "Geology",
+    "Mineral Deposits",
+    "Groundwater",
+    "Aquifers",
+    "Freshwater Springs",
+    "Grasslands",
+    "Meadows",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Wilderness",
+    "National Park",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

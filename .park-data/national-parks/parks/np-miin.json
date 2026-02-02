@@ -1,0 +1,142 @@
+{
+  "id": "np-miin",
+  "name": "Minidoka National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "ID",
+  "stateName": "Idaho",
+  "region": "west",
+  "description": "During World War II, over 120,000 people of Japanese ancestry were forcibly removed from their homes and incarcerated without due process of law. Although little remains of the barbed-wire fences and tar-papered barracks, the Minidoka concentration camp once held over 13,000 Japanese Americans in the Idaho desert. Minidoka preserves their legacy and teaches the importance of civil liberties.",
+  "shortDescription": "During World War II, over 120,000 people of Japanese ancestry were forcibly removed from their homes and incarcerated without due process of law. Although little remains of the barbed-wire fences and ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.678,
+    "longitude": -114.2465
+  },
+  "nationalParkInfo": {
+    "parkCode": "miin",
+    "npsId": "FE52067B-EBB9-4FD2-B613-FE778985BAD9",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/miin/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/miin/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "208-825-4169",
+    "email": "Miin_information@nps.gov",
+    "website": "https://www.nps.gov/miin/index.htm",
+    "address": {
+      "line1": "1428 Hunt Road",
+      "line2": "",
+      "city": "Jerome",
+      "state": "ID",
+      "postalCode": "83338"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Historic Site is open daily during daylight hours year-round for self-guided tours. Visitor center hours and ranger program offerings vary seasonally. Restrooms are only open during Visitor center operations."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Jerome and Twin Falls, Idaho, gets 10 inches of rain per year. On average, there are 213 sunny days per year here. The July high is around 94 degrees. The January low is 22. High winds are common, and little shade is available at the site."
+  },
+  "images": [
+    {
+      "id": "miin-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C874621-1DD8-B71B-0B29C1E739E9977F.jpg",
+      "title": "Origami Go Around",
+      "altText": "Origami cranes twirl on carousel",
+      "caption": "Origami cranes twirl on a colorful carousel.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "miin-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87F4CF-1DD8-B71B-0BEC68909801B45D.jpg",
+      "title": "The Replicated Minidoka Honor Roll",
+      "altText": "The replicated Minidoka Honor Roll is part of the history at Minidoka NHS.",
+      "caption": "The replicated Minidoka Honor Roll is part of the history at Minidoka NHS.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "miin-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87FD67-1DD8-B71B-0BD40ECD281047FC.jpg",
+      "title": "View Across the Barbed Wire",
+      "altText": "A view from Minidoka through the barbed wire fence.",
+      "caption": "A view from Minidoka through the barbed wire fence.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "miin-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87FF9B-1DD8-B71B-0B8BF59A9E00F279.jpg",
+      "title": "Looking at the northside Canal",
+      "altText": "A view of the Northside Canal and reconstructed barbed wire fence.",
+      "caption": "Looking northeast from the entrance area to the Northside Canal and reconstructed barbed wire fence.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "miin-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8801A7-1DD8-B71B-0B72513C885927BE.jpg",
+      "title": "An Original Barrack Returns to the Site",
+      "altText": "An original barrack was retuned to Minidoka and placed on site.",
+      "caption": "An original barrack was retuned to Minidoka and placed on site.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/miin/index.htm",
+    "directions": "http://www.nps.gov/miin/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Asian American Heritage",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "World War II",
+    "National Historic Site",
+    "ID"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

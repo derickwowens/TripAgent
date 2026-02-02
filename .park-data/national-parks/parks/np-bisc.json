@@ -1,0 +1,248 @@
+{
+  "id": "np-bisc",
+  "name": "Biscayne National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Within sight of Miami, yet worlds away, Biscayne protects a rare combination of aquamarine waters, emerald islands, and fish-bejeweled coral reefs. Evidence of 10,000 years of human history is here too; from prehistoric tribes to shipwrecks, and pineapple farmers to presidents. For many, the park is a boating, fishing, and diving destination, while others enjoy a warm breeze and peaceful scenery.",
+  "shortDescription": "Within sight of Miami, yet worlds away, Biscayne protects a rare combination of aquamarine waters, emerald islands, and fish-bejeweled coral reefs. Evidence of 10,000 years of human history is here to...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 25.490587,
+    "longitude": -80.21023851
+  },
+  "nationalParkInfo": {
+    "parkCode": "bisc",
+    "npsId": "FBF9F793-5114-4B61-A5BA-6F9ADDFDF459",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bisc/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bisc/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "786-335-3620",
+    "email": "bisc_information@nps.gov",
+    "website": "https://www.nps.gov/bisc/index.htm",
+    "address": {
+      "line1": "9700 SW 328th Street",
+      "line2": "Sir Lancelot Jones Way",
+      "city": "Homestead",
+      "state": "FL",
+      "postalCode": "33033"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 5:30PM",
+    "tuesday": "7:00AM - 5:30PM",
+    "wednesday": "7:00AM - 5:30PM",
+    "thursday": "7:00AM - 5:30PM",
+    "friday": "7:00AM - 5:30PM",
+    "saturday": "7:00AM - 5:30PM",
+    "sunday": "7:00AM - 5:30PM",
+    "description": "Launch your own canoe or kayak from the ramp near the parking area, enjoy a picnic on the lawn, or stroll along the jetty trail."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park is situated in a subtropical climate, which ensures sunshine year-round. Winters are normally dry and mild, with occasional fronts bringing wind and little rain. Summer brings hot and humid weather with scattered thunderstorms in the afternoons. The average temperature in January is 68 degrees Fahrenheit and 82 in July. The average rainfall for the area is 2.17 inches in January and 3.95 inches in July. June to November is hurricane season."
+  },
+  "images": [
+    {
+      "id": "bisc-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8717A4-1DD8-B71B-0B2EED68CFA7E008.jpg",
+      "title": "Snorkeling",
+      "altText": "Coral reef with two snorkelers diving below the surface",
+      "caption": "Snorkeling is a great way to explore the coral reefs in the park",
+      "credit": "NPS image by Shaun Wolfe",
+      "isPrimary": true
+    },
+    {
+      "id": "bisc-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C870533-1DD8-B71B-0B70CFF5EF6538F1.jpg",
+      "title": "Boca Chita Key",
+      "altText": "Downtown Miami in background.",
+      "caption": "Boca Chita Key is the park's most popular island destination.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bisc-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E789390E-C7B5-2B1F-13974FC0EA9C7BD6.jpg",
+      "title": "Coral Reef",
+      "altText": "Underwater view of coral reef with a large school of yellow and blue fish",
+      "caption": "The coral reef is home to many species of fish",
+      "credit": "NPS image by Shaun Wolfe",
+      "isPrimary": false
+    },
+    {
+      "id": "bisc-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C870833-1DD8-B71B-0BE93D49E0DF6503.jpg",
+      "title": "Coral Reef",
+      "altText": "The coral reefs are located mostly on the Eastern side of the park.",
+      "caption": "Biscayne National Park is 95% water.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bisc-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C870A07-1DD8-B71B-0B9BA7F6549AD537.jpg",
+      "title": "Green sea turtle",
+      "altText": "Green sea turtle",
+      "caption": "Loggerhead, Green and Hawksbill turtles are all commonly observed in park waters.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bisc-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C871441-1DD8-B71B-0BBD1985ADA0E585.jpg",
+      "title": "Totten Key",
+      "altText": "Aerial view of Totten Key.",
+      "caption": "Biscayne National Park includes the northernmost Florida Keys.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bisc/index.htm",
+    "directions": "http://www.nps.gov/bisc/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Maritime",
+    "Maritime - Military",
+    "Lighthouses",
+    "Piracy and Privateering",
+    "Ships and Shipwrecks",
+    "Schools and Education",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Oceans",
+    "Coral Reefs",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Endangered",
+    "National Park",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "id": "np-libi",
+  "name": "Little Bighorn Battlefield National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "MT",
+  "stateName": "Montana",
+  "region": "west",
+  "description": "This land is a place to honor and reflect on the sacrifices made here on June 25 and 26, 1876, when Lakota, Cheyenne, and Arapaho warriors fought against a deliberate attack by the U.S. Army's 7th Cavalry, led by Lt. Col. George Custer, who sought to enforce policies that threatened their traditional way of life. How are the results of the battle felt in the West and Indigenous communities today?",
+  "shortDescription": "This land is a place to honor and reflect on the sacrifices made here on June 25 and 26, 1876, when Lakota, Cheyenne, and Arapaho warriors fought against a deliberate attack by the U.S. Army's 7th Cav...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 45.55633048,
+    "longitude": -107.4183614
+  },
+  "nationalParkInfo": {
+    "parkCode": "libi",
+    "npsId": "415AA3E1-CE8A-4A24-BD69-451C87107AA4",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/libi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/libi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "406-924-9167",
+    "email": "LIBI_information@nps.gov",
+    "website": "https://www.nps.gov/libi/index.htm",
+    "address": {
+      "line1": "756 Battlefield Tour Road",
+      "line2": "",
+      "city": "Crow Agency",
+      "state": "MT",
+      "postalCode": "59022"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "8:00AM - 4:00PM",
+    "saturday": "8:00AM - 4:00PM",
+    "sunday": "8:00AM - 4:00PM",
+    "description": "Little Bighorn Battlefield National Monument winter season hours begin October 1. The park is currently closed Monday to Thursday. \n\nThe temporary contact station, bookstore, entrance gate, and Custer National Cemetery are open from 8 am to 4 pm on Friday, Saturday, and Sunday. \n\nThe 4.5 Mile Tour Road, Last Stand Hill, the Indian Memorial, the Reno-Benteen Entrenchment and Deep Ravine Trail are open from 8 am to 3:30 pm on Friday, Saturday, and Sunday."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Private non-commercial vehicle.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Per person fee",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Commercial Rate for a vehicle holds up to 6 people, $25 plus per person.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Van holds up to 15 people",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Commercial vehicle that holds up to 25 passengers",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Commercial Bus $100.00 (26 or more seats, regardless of occupancy)",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Little Bighorn Battlefield National Monument average weather: Spring: 50-60 (F) degree days/ 30+/- (F) degree nights Summer: 70-100 (F) degree days/ 45-60+ (F) degree nights Fall: 40-50 (F) degree days/ 25+/- (F) degree nights Winter: 20-30 (F) degree days/ 0+/- (F) degree nights"
+  },
+  "images": [
+    {
+      "id": "libi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C847035-1DD8-B71B-0B387957A7924FFA.jpg",
+      "title": "Indian Memorial",
+      "altText": "The sun sets behind the Indian Memorial.",
+      "caption": "The Indian Memorial is a circular earthwork carved gently into the prairie. The walls carry the names of those who fell here as well as the words of some who fought in the battle.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "libi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84682D-1DD8-B71B-0B204B5C3B32A7C5.jpg",
+      "title": "Headstones in the winter",
+      "altText": "Headstone can still been seen even with the fresh snow that blankets the battlefield .",
+      "caption": "The monument and battlefield are open year round, even in winter when snow coats the ground.",
+      "credit": "Brandon Blackburn",
+      "isPrimary": false
+    },
+    {
+      "id": "libi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8476A4-1DD8-B71B-0B0AFBC4A2555FC1.jpg",
+      "title": "Stone House",
+      "altText": "The stone house sits on the edge of the Custer National Cemetery.",
+      "caption": "The stone house once served as a house for the Superintendent and their family. It has been renovated and  restored and now serves as an office and research area.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "libi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8469EF-1DD8-B71B-0BF9406C2B5CDC41.jpg",
+      "title": "Seventh Calvary Memorial at Dusk",
+      "altText": "The Seventh Calvary Memorial at dusk.",
+      "caption": "About 40 to 50 men of the original 210 were cornered on the hill where the monument now stands.",
+      "credit": "Brandon Blackburn",
+      "isPrimary": false
+    },
+    {
+      "id": "libi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/18C37BED-A441-7D91-86C2E71E5A8E997E.jpg",
+      "title": "Rising Full Moon",
+      "altText": "A rising moon peaks above the eastern horizon in January.",
+      "caption": "Little Bighorn Battlefield National Monument moon rising above the Indian Memorial",
+      "credit": "Marvin Dawes",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/libi/index.htm",
+    "directions": "http://www.nps.gov/libi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Military",
+    "Cavalry",
+    "Indigenous and Native Warrior",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Grasslands",
+    "National Monument",
+    "MT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

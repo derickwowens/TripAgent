@@ -1,0 +1,223 @@
+{
+  "id": "np-noat",
+  "name": "Noatak National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "As one of North America's largest mountain-ringed river basins with an intact ecosystem, the Noatak River environs feature some of the Arctic's finest arrays of plants and animals. The river is classified as a National Wild and Scenic River. It offers stunning wilderness float-trip opportunities - from deep in the Brooks Range to the tidewater of the Chukchi Sea.",
+  "shortDescription": "As one of North America's largest mountain-ringed river basins with an intact ecosystem, the Noatak River environs feature some of the Arctic's finest arrays of plants and animals. The river is classi...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 68.01027053,
+    "longitude": -159.831694
+  },
+  "nationalParkInfo": {
+    "parkCode": "noat",
+    "npsId": "C9AA17CC-3152-464A-A9E2-494368086045",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/noat/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/noat/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9073182230",
+    "email": "wear_webmail@nps.gov",
+    "website": "https://www.nps.gov/noat/index.htm",
+    "address": {
+      "line1": "171 3rd Ave",
+      "line2": "",
+      "city": "Kotzebue",
+      "state": "AK",
+      "postalCode": "99752"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Public access to Noatak National Preserve is open year-round, 24-hours a day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Snow, rain, and freezing temperatures can occur any time of the year. Always travel with good quality rain gear and warm layers. Be especially careful to stay dry. Hypothermia can set in on a windy, wet day, even when it doesn't feel that cold."
+  },
+  "images": [
+    {
+      "id": "noat-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C616CB02-D421-3562-CEDF608D9E401930.jpg",
+      "title": "Noatak River",
+      "altText": "Noatak River cuts through a green tundra landscape with distant mountains.",
+      "caption": "The Noatak River carves through the summertime tundra.",
+      "credit": "NPS Photo / Annie Carlson",
+      "isPrimary": true
+    },
+    {
+      "id": "noat-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1876-1DD8-B71B-0B9C0CE759BEC365.jpg",
+      "title": "Nightime Extravaganza",
+      "altText": "green northern lights",
+      "caption": "A huge spray of northern lights is reflected in a tiny sliver of water in the Noatak River. This image was captured in early September at 2:30 in the morning.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "noat-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A19A9-1DD8-B71B-0BEF579CA52B5653.jpg",
+      "title": "Golden Hour",
+      "altText": "Light and shadows on mountains",
+      "caption": "The famous golden hour near sunset on Copter Peak gives depth to the mountains and neon hues to the tundra.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "noat-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1B02-1DD8-B71B-0B9517B26267D5D2.jpg",
+      "title": "Mirror Image",
+      "altText": "mountain refection on calm lake",
+      "caption": "The Delong Mountains are flawlessly reflected in the clear, clean water of Desperation Lake in the northern part of Noatak National Preserve.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "noat-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C53C2650-AA06-F1FF-BAD7F1163BE9D1C3.jpeg",
+      "title": "Three packrafts",
+      "altText": "Three multicolored packrafts on the gravel shore of the Kelly river",
+      "caption": "Three packrafts sit packed and ready to launch for the days float on the Kelly River.",
+      "credit": "NPS Photo / Annie Carlson",
+      "isPrimary": false
+    },
+    {
+      "id": "noat-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1C3D-1DD8-B71B-0BBC331E0E22E957.jpg",
+      "title": "Grizzly on the Noatak River",
+      "altText": "bear walking along river",
+      "caption": "The profile of this grizzly on the Noatak River shows a nice example of the hump of muscle between it's shoulders. That muscle makes grizzlies good diggers.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "noat-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A1E45-1DD8-B71B-0BDFD9DD5B7E2A73.jpg",
+      "title": "Scout Leaving Kelly Bar",
+      "altText": "small plane taking off",
+      "caption": "A National Park Service plane takes off from the Kelly Bar landing site at the confluence of the Kelly River and Noatak River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "C06FE528-9671-4EC1-909F-B7D3720A1D89",
+      "name": "Fixed Wing Flying"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/noat/index.htm",
+    "directions": "http://www.nps.gov/noat/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Arctic",
+    "Tundra",
+    "Night Sky",
+    "Aurora Borealis",
+    "Scenic Views",
+    "Watersheds",
+    "Headwaters",
+    "Wilderness",
+    "National Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

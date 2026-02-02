@@ -1,0 +1,278 @@
+{
+  "id": "np-pevi",
+  "name": "Perry's Victory & International Peace Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "OH",
+  "stateName": "Ohio",
+  "region": "midwest",
+  "description": "Perry's Victory and International Peace Memorial was established to honor those who fought in the Battle of Lake Erie, during the War of 1812, and to celebrate the long-lasting peace among Great Britain, Canada and the U.S. The Memorial, a Doric column, rising 352 feet over Lake Erie is situated 5 miles from the longest undefended border in the world.",
+  "shortDescription": "Perry's Victory and International Peace Memorial was established to honor those who fought in the Battle of Lake Erie, during the War of 1812, and to celebrate the long-lasting peace among Great Brita...",
+  "designation": "Memorial",
+  "coordinates": {
+    "latitude": 41.65449782,
+    "longitude": -82.8115794
+  },
+  "nationalParkInfo": {
+    "parkCode": "pevi",
+    "npsId": "29329926-4215-4E10-83B8-5CF162A0E3F1",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pevi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pevi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4192852184",
+    "email": "pevi_social_media@nps.gov",
+    "website": "https://www.nps.gov/pevi/index.htm",
+    "address": {
+      "line1": "93 Delaware Avenue",
+      "line2": "",
+      "city": "Put-in-Bay",
+      "state": "OH",
+      "postalCode": "43456"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 6:00PM",
+    "tuesday": "10:00AM - 6:00PM",
+    "wednesday": "10:00AM - 6:00PM",
+    "thursday": "10:00AM - 6:00PM",
+    "friday": "10:00AM - 6:00PM",
+    "saturday": "10:00AM - 6:00PM",
+    "sunday": "10:00AM - 6:00PM",
+    "description": "** The Plazas, Rotunda, and the Observation Deck of the Memorial will be inaccessible for the 2026 and 2027 seasons due to the Upper Plaza Rehabilitation. **\n\nOperating hours for the rotunda and observation deck are modified for special events and adjusted for staffing reductions as seen below.  Prepare to purchase tickets or passes from the visitor center before that time."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "*The Observation Deck will be inaccessible for 2026 and 2027 seasons.*\n\nA ticket is required to visit the observation deck at the top of the Memorial. Tickets are sold daily in the visitor center from 10 am to 5:45 pm in 15-minute time slots and can sell out as early as 2 pm on the weekend. Children 15 and under are free and must be accompanied by an adult. An annual pass that covers the pass holder and three adults is available for $35.00. America the Beautiful Passes are also accepted.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summer months can be extremely hot and humid, with occasional and sudden severe thunderstorms. Fall and spring are pleasant with cool temperatures but brisk winds can make a 60° day feel much colder. In winter the memorial and visitor center are closed."
+  },
+  "images": [
+    {
+      "id": "pevi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/841EBF31-FF88-8F95-A51D7A1594AAF65C.jpg",
+      "title": "International flags at Memorial",
+      "altText": "9-3'x5' international flags line sidewalk that leads to a white building with green roof. Tall stone",
+      "caption": "International flags at Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "pevi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2BC16FA1-DAB7-749D-EE14D8769B9C5273.jpg",
+      "title": "It is tall!",
+      "altText": "352 foot tall stone memorial column rises up to touch blue sky. In front a 5' urn on pedestal",
+      "caption": "It is tall!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pevi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/31DCE4DC-1DD8-B71B-0B88761F58A07D0C.jpg",
+      "title": "Night Sky and Memorial",
+      "altText": "Night sky with Memorial Column in the middle with sun just starting to come up in lower right corner",
+      "caption": "",
+      "credit": "",
+      "isPrimary": false
+    },
+    {
+      "id": "pevi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/35E3C0A9-1DD8-B71B-0B59C548ECE3D98D.jpg",
+      "title": "Perry's Victory and International Peace Memorial",
+      "altText": "The Memorial Column with the United Kingdom, Canadian, and US Flags flying from poles on the lawn.",
+      "caption": "",
+      "credit": "",
+      "isPrimary": false
+    },
+    {
+      "id": "pevi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2B9D20DA-0EE0-FE92-9C0296E5922D976E.jpg",
+      "title": "Carronade Fire Ball",
+      "altText": "Carronade fires with 5 people standing around it. Fireball from muzzle is 10 long and 4 foot tall.",
+      "caption": "Boom",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pevi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/31FEA17D-1DD8-B71B-0B8AC0C97E65B305.jpg",
+      "title": "Sun setting over the Bay",
+      "altText": "Sun setting over Put-in-Bay Harbor",
+      "caption": "",
+      "credit": "",
+      "isPrimary": false
+    },
+    {
+      "id": "pevi-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/40FEC728-0C86-46E1-12EA76AAD6040493.jpg",
+      "title": "Visitor center and spring garden",
+      "altText": "Tulips in a variety of colors in a garden in front of a light tan building that has an arched entry",
+      "caption": "Tulips welcome spring and park staff back to the island.",
+      "credit": "NPS photo 2023 Mimi Gorman",
+      "isPrimary": false
+    },
+    {
+      "id": "pevi-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/41878A23-0E3B-C9F5-060668FEE765053A.jpg",
+      "title": "Visitor center porch and window",
+      "altText": "A tan building with a 2-story center window, porch and columns, surrounded by trees and a lawn",
+      "caption": "Just as welcoming as the front door the back side of the visitor center offers amazing views through the 2-story window.",
+      "credit": "NPS 2023 photo Mimi Gorman",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pevi/index.htm",
+    "directions": "http://www.nps.gov/pevi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Sculpture",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Forts",
+    "Maritime",
+    "Maritime - Military",
+    "Ships and Shipwrecks",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "Indigenous and Native Warrior",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "French and Indian War",
+    "American Revolutionary War",
+    "War of 1812",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Coasts, Islands and Atolls",
+    "Geology",
+    "Lakes",
+    "Night Sky",
+    "Astronomy",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Memorial",
+    "OH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

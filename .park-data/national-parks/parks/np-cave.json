@@ -1,0 +1,223 @@
+{
+  "id": "np-cave",
+  "name": "Carlsbad Caverns National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "High ancient sea ledges, deep rocky canyons, flowering cactus, and desert wildlife—treasures above the ground in the Chihuahuan Desert. Hidden beneath the surface are more than 119 caves—formed when sulfuric acid dissolved limestone leaving behind caverns of all sizes.",
+  "shortDescription": "High ancient sea ledges, deep rocky canyons, flowering cactus, and desert wildlife—treasures above the ground in the Chihuahuan Desert. Hidden beneath the surface are more than 119 caves—formed when s...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 32.14089463,
+    "longitude": -104.5529688
+  },
+  "nationalParkInfo": {
+    "parkCode": "cave",
+    "npsId": "6FDE39B1-AB4A-4C9A-A5CD-4AF67601CD78",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cave/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cave/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5757852232",
+    "email": "cave_park_information@nps.gov",
+    "website": "https://www.nps.gov/cave/index.htm",
+    "address": {
+      "line1": "727 Carlsbad Caverns Highway",
+      "line2": "",
+      "city": "Carlsbad",
+      "state": "NM",
+      "postalCode": "88220"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 2:30PM",
+    "tuesday": "9:00AM - 2:30PM",
+    "wednesday": "9:00AM - 2:30PM",
+    "thursday": "9:00AM - 2:30PM",
+    "friday": "9:00AM - 2:30PM",
+    "saturday": "9:00AM - 2:30PM",
+    "sunday": "9:00AM - 2:30PM",
+    "description": "Carlsbad Caverns National Park is open 24-hours a day. Visitor center hours and cave tour schedule vary throughout the year."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "A timed entry reservation must be purchased to access Carlsbad Cavern. In addition, an entry pass must be purchased at the visitor center.\n\nTime entry reservations ensure a more enjoyable experience and helps to protect the cave formations.",
+      "cost": "1.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entrance fee provides access to Carlsbad Cavern by elevator and hiking in. Ranger-guided tours are an additional fee and can be reserved on recreation.gov.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Carlsbad Caverns National Park is located in the Chihuahuan Desert in southeast New Mexico. Summers are hot with temperatures between 90°F (32°C) and low 100s °F (38°C). Windy conditions and mild temperatures are common in early spring (March-May) with frequent rain in early fall (August-September). This part of the country also sees cold temperatures in the winter with occasional snow and icy conditions. Most days, the park is enveloped by a gorgeous blue sky with very few clouds, 278 sunny days a year!"
+  },
+  "images": [
+    {
+      "id": "cave-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/29C3C977-AAE6-B7FD-3C107828D704A5CB.jpg",
+      "title": "Hall of Giants",
+      "altText": "Photo of Giant Dome and Twin Domes in the Big Room.",
+      "caption": "Giant and Twin domes in the Big Room.",
+      "credit": "NPS / Michael Larson",
+      "isPrimary": true
+    },
+    {
+      "id": "cave-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/29A84FDD-D660-B07C-A6B12986D3123FC7.jpeg",
+      "title": "Big Room",
+      "altText": "Photo of the Big Room with trail",
+      "caption": "Big Room",
+      "credit": "NPS / Eymard Bangcoro",
+      "isPrimary": false
+    },
+    {
+      "id": "cave-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2A625FD0-AED3-63A2-C91828ED61F916C3.jpg",
+      "title": "Mule Deer",
+      "altText": "Photo of four mule deer in a drainage with vegetation around them.",
+      "caption": "Mule deer find food in a drainage.",
+      "credit": "NPS / Michael Larson",
+      "isPrimary": false
+    },
+    {
+      "id": "cave-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2B40AD3D-DDDB-2F2E-1CB524F96FF08C4B.jpg",
+      "title": "Natural Entrance to Carlsbad Cavern",
+      "altText": "Photo of the Natural Entrance to Carlsbad Cavern with visitors hiking down the trail.",
+      "caption": "Natural Entrance to Carlsbad Cavern",
+      "credit": "NPS / Eymard Bangcoro",
+      "isPrimary": false
+    },
+    {
+      "id": "cave-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2C9EB52A-BD34-F69C-0149C92FF24E215D.jpg",
+      "title": "Chandelier and Caveman Formations",
+      "altText": "Photo of the Chandelier and Caveman formations in the Big Room",
+      "caption": "Chandelier and Caveman formations.",
+      "credit": "NPS / Eymard Bangcoro",
+      "isPrimary": false
+    },
+    {
+      "id": "cave-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2D096B53-E322-75F6-A065872E1CAB9EE6.jpg",
+      "title": "Yucca Blooming",
+      "altText": "Photo of a yucca plant with cream and pinkish-colored flowers.",
+      "caption": "Yucca blooming",
+      "credit": "NPS / Eymard Bangcoro",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cave/index.htm",
+    "directions": "http://www.nps.gov/cave/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Native American Heritage",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Caves, Caverns and Karst",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "Unique Species",
+    "Wilderness",
+    "National Park",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

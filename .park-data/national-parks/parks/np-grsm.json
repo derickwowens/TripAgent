@@ -1,0 +1,291 @@
+{
+  "id": "np-grsm",
+  "name": "Great Smoky Mountains National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of its ancient mountains, and the quality of its remnants of Southern Appalachian mountain culture, this is America's most visited national park. Plan your visit today!",
+  "shortDescription": "Ridge upon ridge of forest straddles the border between North Carolina and Tennessee in Great Smoky Mountains National Park. World renowned for its diversity of plant and animal life, the beauty of it...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 35.60116374,
+    "longitude": -83.50818326
+  },
+  "nationalParkInfo": {
+    "parkCode": "grsm",
+    "npsId": "D9819727-18DF-4A84-BDDE-D4F2696DE340",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/grsm/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/grsm/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(865)436-1200",
+    "email": "GRSM_Smokies_Information@nps.gov",
+    "website": "https://www.nps.gov/grsm/index.htm",
+    "address": {
+      "line1": "107 Park Headquarters Road",
+      "line2": "",
+      "city": "Gatlinburg",
+      "state": "TN",
+      "postalCode": "37738"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Primary roads are open 24 hours a day, seven days a week, year-round, weather permitting. This includes Newfound Gap Road (US-441), Little River Road, and Laurel Creek Road. Secondary roads are closed seasonally."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Elevations in the park range from approximately 875 feet (267 meters) to 6,643 feet (2,025 meters) and the topography can drastically affect local weather. Temperatures can vary by 10-20 degrees Fahrenheit from mountain base to top, and clear skies lower down do not guarantee equally pleasant weather at higher elevations."
+  },
+  "images": [
+    {
+      "id": "grsm-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80E3F4-1DD8-B71B-0BFF4F2280EF1B52.jpg",
+      "title": "Frosty Morning in Cades Cove",
+      "altText": "A thick layer of frost covers the fields, trees, and mountains in Cades Cove.",
+      "caption": "Wintertime brings a quiet beauty to the Great Smoky Mountains.",
+      "credit": "Kristina Plaas",
+      "isPrimary": true
+    },
+    {
+      "id": "grsm-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80EC37-1DD8-B71B-0B87F63E8B030D15.jpg",
+      "title": "\"Smoke\" Rising From the Mountains",
+      "altText": "Wisps of fog hang over the forests in the mountains.",
+      "caption": "The park gets its name from mists that often rise like smoke from the mountains.",
+      "credit": "Kristina Plaas",
+      "isPrimary": false
+    },
+    {
+      "id": "grsm-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/62D22291-ECC1-C9C6-D4C249F41BC599CC.jpg",
+      "title": "Winter in the Smokies",
+      "altText": "A clear sky with a vast snowy mountain scene.",
+      "caption": "The Smokies receives snow periodically throughout the winter, mostly at higher elevations.",
+      "credit": "NPS / Bob Carr",
+      "isPrimary": false
+    },
+    {
+      "id": "grsm-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80F02B-1DD8-B71B-0BBC2DFD4E9349E9.jpg",
+      "title": "The \"Wildflower National Park\"",
+      "altText": "A hillside in the forest covered with white trillium flowers",
+      "caption": "Wildflowers, such as these white trillium, can be found blooming from February through November in the park.",
+      "credit": "Kristina Plaas",
+      "isPrimary": false
+    },
+    {
+      "id": "grsm-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80F1CC-1DD8-B71B-0B784AC1BCA74166.jpg",
+      "title": "Fall Colors Near Newfound Gap",
+      "altText": "Bright gold and red leaves shine through the fog in a forest.",
+      "caption": "Fall leaf season is one of the busiest times of year in the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "grsm-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80F6C9-1DD8-B71B-0B33F35922A21B3B.jpg",
+      "title": "Fall Meets Winter",
+      "altText": "Gold and red fall colors fill the valleys while snow coats the mountain tops.",
+      "caption": "In spring and fall, weather in the foothills can be pleasant, while snow and cold rule on the mountain tops.",
+      "credit": "Sam Hobbs",
+      "isPrimary": false
+    },
+    {
+      "id": "grsm-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80EEE2-1DD8-B71B-0BC2620AAA57D7CA.jpg",
+      "title": "The Waters of Roaring Fork Below Grotto Falls",
+      "altText": "Rhododendron bushes line the banks of a stream filled with large boulders.",
+      "caption": "Abundant rainfall means lush forests and beautiful stream scenes in the Great Smoky Mountains.",
+      "credit": "Danielle Austen, Artist-in-Residence 2015",
+      "isPrimary": false
+    },
+    {
+      "id": "grsm-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80EDBC-1DD8-B71B-0B743AF911FE7557.jpg",
+      "title": "A Foggy Morning at Cades Cove Methodist Church",
+      "altText": "Tombstones stand in front of a white, wooden church on a foggy morning.",
+      "caption": "Historic buildings such as churches, gristmills, barns, and homes allow visitors to get a feel for life in the mountains before the national park was created.",
+      "credit": "Kristina Plaas",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/grsm/index.htm",
+    "directions": "http://www.nps.gov/grsm/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "National Park",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

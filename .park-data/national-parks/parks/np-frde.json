@@ -1,0 +1,155 @@
+{
+  "id": "np-frde",
+  "name": "Franklin Delano Roosevelt Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "These words by President Franklin Delano Roosevelt ushered the United States into World War II and defined what it is to be an American. Stop by this secluded memorial and begin to understand the Roosevelt legacy.",
+  "shortDescription": "These words by President Franklin Delano Roosevelt ushered the United States into World War II and defined what it is to be an American. Stop by this secluded memorial and begin to understand the Roos...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.88341274,
+    "longitude": -77.04311542
+  },
+  "nationalParkInfo": {
+    "parkCode": "frde",
+    "npsId": "8F8CC788-D1BB-42BC-A41E-B442E2B001C8",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frde/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/frde/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/frde/index.htm",
+    "address": {
+      "line1": "400 West Basin Drive SW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20002"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "There are no Rangers on duty at this site (except for special events). The United States Park Police are on duty 24 hours a day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "frde-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C822603-1DD8-B71B-0BADCFA6633AC4D6.jpg",
+      "title": "Franklin Delano Roosevelt",
+      "altText": "Picture of FDR in a wheel chair within his memorial",
+      "caption": "From Adversity to Presidency",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "frde-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F3AAEE54-D25D-FB3D-3A81ACF783DBA216.jpg",
+      "title": "Statue of Eleanor Roosevelt",
+      "altText": "Statue of Eleanor Roosevelt",
+      "caption": "Statue of First Lady and US Delegate to the US, Eleanor Roosevelt is found within the Franklin Delano Roosevelt Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frde-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F3C2AEAC-DAF8-E352-DEB0DE1EBD2550FE.jpg",
+      "title": "Franklin Delano Roosevelt Statue Face",
+      "altText": "An up-close photo of Franklin Delano Roosevelt Face",
+      "caption": "An up-close photo of Franklin Delano Roosevelt's face located in Room 3",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frde-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F3E47EA1-B13A-7662-FDF77FB1F1E25FC7.jpg",
+      "title": "Cascade at Franklin Delano Roosevelt",
+      "altText": "A four tier cascade of water flows",
+      "caption": "One of five main water features located in Room 2 at Franklin Delano Roosevelt Memorial",
+      "credit": "Library of Congress/Carol Highsmith",
+      "isPrimary": false
+    },
+    {
+      "id": "frde-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F431D628-AD5D-B1B1-723D41D78A363EBF.jpeg",
+      "title": "Aerial View of Franklin Delano Roosevelt during Cherry Blossom",
+      "altText": "Vivid pink colors surround the Franklin Delano Roosevelt Memorial",
+      "caption": "Franklin Delano Roosevelt Memorial during Japanese Cherry Blossom peak bloom time",
+      "credit": "Library of Congress/Carol Highsmith",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frde/index.htm",
+    "directions": "http://www.nps.gov/frde/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Presidents",
+    "Wars and Conflicts",
+    "World War II",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

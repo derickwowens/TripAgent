@@ -1,0 +1,182 @@
+{
+  "id": "np-valr",
+  "name": "Pearl Harbor National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "HI",
+  "stateName": "Hawaii",
+  "region": "hawaii",
+  "description": "At Pearl Harbor National Memorial, we honor the lives affected by the December 7, 1941, attack. This pivotal moment in global history marked the United States' entry into World War II, impacting nations and communities worldwide. Join us in reflecting on this shared history and its lasting significance in the pursuit of peace.",
+  "shortDescription": "At Pearl Harbor National Memorial, we honor the lives affected by the December 7, 1941, attack. This pivotal moment in global history marked the United States' entry into World War II, impacting natio...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 21.3670699388,
+    "longitude": -157.938578898
+  },
+  "nationalParkInfo": {
+    "parkCode": "valr",
+    "npsId": "0B61230F-375C-4392-BDF0-BB3FC43D2CFE",
+    "region": "hawaii"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/valr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pearlharbor/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8084223399",
+    "email": "nps_valr_visitor_services@nps.gov",
+    "website": "https://www.nps.gov/valr/index.htm",
+    "address": {
+      "line1": "National Park Service",
+      "line2": "Pearl Harbor National Memorial",
+      "city": "Honolulu",
+      "state": "HI",
+      "postalCode": "96818"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 5:00PM",
+    "tuesday": "7:00AM - 5:00PM",
+    "wednesday": "7:00AM - 5:00PM",
+    "thursday": "7:00AM - 5:00PM",
+    "friday": "7:00AM - 5:00PM",
+    "saturday": "7:00AM - 5:00PM",
+    "sunday": "7:00AM - 5:00PM",
+    "description": "Pearl Harbor National Memorial, Visitor Center and parking lots are open from 7 AM to 5 PM seven days a week. \n\nPearl Harbor National Memorial, Visitor Center and parking lots are closed on Thanksgiving, December 25th, and January 1st."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Hawaii has two seasons – winter (ho'oilo) and summer (kau wela) – and temperatures don't change drastically the way they do in the mainland United States. During the day, expect temperatures in the mid-70s to the mid-80s all year around. Expect lows in the winter months (November to March) to be around 60 degrees. The Hawaiian winter is also considered the rainy season, and flash floods are not uncommon. You can expect to see lots of rainbows as the rain clears."
+  },
+  "images": [
+    {
+      "id": "valr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6E5D5C03-C701-0F6B-FB7BF0935A817ED0.jpg",
+      "title": "Pearl Harbor Visitor Center",
+      "altText": "An evening photo of the Pearl Harbor Visitor Center Complex looking towards the museums.",
+      "caption": "Pearl Harbor welcomes approximately 1.2 million visitors annually from around the world.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "valr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B3C1-1DD8-B71B-0BBE30E8BE9E1683.jpg",
+      "title": "USS Arizona Memorial",
+      "altText": "The USS Arizona Memorial in front of the USS Missouri.",
+      "caption": "About 1.4 million people from all over the world visit the USS Arizona Memorial every year.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "valr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B4DC-1DD8-B71B-0B1085B2619E5D12.jpg",
+      "title": "The USS Arizona and Memorial",
+      "altText": "The USS Arizona Memorial",
+      "caption": "The USS Arizona is the final resting place for many of the ship's 1,177 crewmen who lost their lives on December 7, 1941. The memorial",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "valr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79B5C6-1DD8-B71B-0B63CB07A4F2B8D4.jpg",
+      "title": "The USS Utah",
+      "altText": "The USS Utah off the coast of Ford Island",
+      "caption": "The USS Utah lays where she fell on the north side of Ford Island. This decision was made in 1944 after several attempts at raising the ship failed. The quiet decision was made to leave the bodies of 58 crewmen onboard, considering them buried at sea.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "valr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B6698-1DD8-B71B-0BB7F88DA8A2F9B0.jpg",
+      "title": "USS Arizona Memorial",
+      "altText": "USS Arizona Memorial",
+      "caption": "USS Arizona Memorial and turret",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "valr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B67F7-1DD8-B71B-0BCDCE2BC68480A6.jpg",
+      "title": "USS Arizona Memorial",
+      "altText": "Visitors at the USS Arizona Memorial",
+      "caption": "Daily visitation to the USS Arizona Memorial is often more than 4,000 visitors.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "valr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B69EC-1DD8-B71B-0BA54D8DA00F43E4.jpg",
+      "title": "The USS Oklahoma Memorial",
+      "altText": "The USS Oklahoma Memorial",
+      "caption": "After receiving seven to nine torpedo hits on the port (left) side, the USS Oklahoma capsized in roughly 20 minutes after the attack began. Over 400 men were trapped inside, of which only 32 were rescued.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/valr/index.htm",
+    "directions": "http://www.nps.gov/pearlharbor/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Aviation",
+    "Burial, Cemetery and Gravesite",
+    "Incarceration",
+    "Maritime",
+    "Ships and Shipwrecks",
+    "Military",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "US Coast Guard",
+    "US Air Force (Army Air Corps)",
+    "Monuments and Memorials",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Wars and Conflicts",
+    "World War II",
+    "National Memorial",
+    "HI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

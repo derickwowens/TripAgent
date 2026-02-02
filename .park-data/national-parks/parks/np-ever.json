@@ -1,0 +1,402 @@
+{
+  "id": "np-ever",
+  "name": "Everglades National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Established in 1947 as the first national park created for its biodiversity, Everglades National Park protects 1.5 million acres of wetland, forest, and marine habitats and the native plants and animals that call it home. With several international designations, the park provides a major source of drinking water for local residents of South Florida and recreational opportunities for all.",
+  "shortDescription": "Established in 1947 as the first national park created for its biodiversity, Everglades National Park protects 1.5 million acres of wetland, forest, and marine habitats and the native plants and anima...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 25.37294225,
+    "longitude": -80.88200301
+  },
+  "nationalParkInfo": {
+    "parkCode": "ever",
+    "npsId": "5EA02193-276A-4037-B7DB-5765A56935FD",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ever/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ever/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3052427700",
+    "email": "ever_information@nps.gov",
+    "website": "https://www.nps.gov/ever/index.htm",
+    "address": {
+      "line1": "40001 State Road 9336",
+      "line2": "",
+      "city": "Homestead",
+      "state": "FL",
+      "postalCode": "33034"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Everglades National Park is open 7 days a week, 24 hours a day. Park entrance is always open but staffed from 8:00 a.m. to 4:30 p.m."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits the passholder and passengers of a single vehicle or vessel. Good for 7 consecutive days at all park entrances.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Good for 7 consecutive days at all park entrances. Admits one individual hiker, bicyclist, pedestrian, or human-powered paddlecraft, when not arriving in a vehicle or vessel. Individuals 15 years old and younger, are admitted free of charge.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "All accredited educational and scientific institutions are eligible to receive free entrance to the park. Bringing your classroom to the park can present many unique learning opportunities and novel ways for your students to advance their studies. The Federal Lands Recreation Enhancement Act (FLREA), Public Law 108-447, provides the National Park Service statutory authority to allow “outings conducted for non-commercial educational purposes by schools or bona fide academic institutions.”",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "A commercial tour is defined as persons traveling on an itinerary that has been packaged, priced or sold for leisure recreational purposes by an organization that realizes financial gain through the provisions of the service. Entrance fees are charges based on the seating capacity of the vehicle. Commercial entry good for 7 days as long as its the same passenger group.",
+      "cost": "300.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "A commercial tour is defined as persons traveling on an itinerary that has been packaged, priced or sold for leisure recreational purposes by an organization that realizes financial gain through the provisions of the service. Entrance fees are charges based on the seating capacity of the vehicle. Commercial entry good for 7 days as long as its the same passenger group.",
+      "cost": "200.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "A commercial tour is defined as persons traveling on an itinerary that has been packaged, priced or sold for leisure recreational purposes by an organization that realizes financial gain through the provisions of the service. Entrance fees are charges based on the seating capacity of the vehicle. Commercial entry good for 7 days as long as its the same passenger group.",
+      "cost": "125.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Everglades National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The climate in Florida is known to be mild and sunny.The average annual temperatures for South Florida and the Keys range from 74° to 77°F (23° to 25°C). There are two seasons at the Everglades National Park: the wet season and the dry season. The wet season runs from Mid-May to November and the dry season runs from December to mid-May."
+  },
+  "images": [
+    {
+      "id": "ever-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/17EC840E-9926-2E09-F2DD47A282915BBB.jpg",
+      "title": "Cypress Tree Sunrise",
+      "altText": "A sunset creates a silhouette of a cypress tree with needle-like leaves that is shaped like an 'N'.",
+      "caption": "Cypress Tree Sunrise (2020 Photo Contest)",
+      "credit": "NPS Photo by Miguel Salas",
+      "isPrimary": true
+    },
+    {
+      "id": "ever-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C854681-1DD8-B71B-0BA4F6D9379336DF.jpg",
+      "title": "Nine Mile Pond",
+      "altText": "Two canoes at Nine Mile Pond during sunset.",
+      "caption": "A meeting ground of marsh and mangrove environments. You may see alligators, wading birds, turtles, and fish.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ever-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8547ED-1DD8-B71B-0B596F29F0A9A60B.jpg",
+      "title": "American Alligator",
+      "altText": "An American Alligator high walks the Anhinga Trail.",
+      "caption": "An American Alligator high walks the Anhinga Trail.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ever-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85E60F-1DD8-B71B-0BAB4F7583E96025.jpg",
+      "title": "Shark Valley Tram and Bicycle Road",
+      "altText": "Two visitors bike along the road in Shark Valley.",
+      "caption": "Biking is a great way to experience the quiet beauty of the Everglades.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ever-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85E70B-1DD8-B71B-0B7C75649CCDB907.jpg",
+      "title": "Transition from Sawgrass to Florida Bay",
+      "altText": "An aerial view of the landscape transition from Sawgrass to Florida Bay.",
+      "caption": "An aerial view of the landscape transition from Sawgrass to Florida Bay.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "ever-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F532-1DD8-B71B-0BFC5BB51D8AB675.jpg",
+      "title": "Camping at Long Pine Key",
+      "altText": "Three tents are put up along the Long Pine Key campsite.",
+      "caption": "Long Pine Key Campground is open seasonally from November through May. It is located seven miles (11 km) from the main entrance, just off the main road.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ever/index.htm",
+    "directions": "http://www.nps.gov/ever/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Colonization and Settlement",
+    "Military",
+    "Artillery",
+    "US Army",
+    "Armories",
+    "Native American Heritage",
+    "Schools and Education",
+    "Social Movements",
+    "Conservation Movement",
+    "Wars and Conflicts",
+    "Cold War",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Fire",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "Natural Sounds",
+    "Night Sky",
+    "Oceans",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Wetlands",
+    "Marshes",
+    "Wilderness",
+    "National Park",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "id": "np-rira",
+  "name": "River Raisin National Battlefield Park",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "MI",
+  "stateName": "Michigan",
+  "region": "midwest",
+  "description": "River Raisin NBP preserves, commemorates, and interprets the January 1813 battles of the War of 1812 and their aftermath. Battles that resulted in the greatest victory for Tecumseh’s Confederation and the British and the greatest defeat for the U.S. The aftermath led to U.S. Indian laws that forced the removal, relocation, and assimilation of native nations, an aftermath that continues today.",
+  "shortDescription": "River Raisin NBP preserves, commemorates, and interprets the January 1813 battles of the War of 1812 and their aftermath. Battles that resulted in the greatest victory for Tecumseh’s Confederation and...",
+  "designation": "National Battlefield Park",
+  "coordinates": {
+    "latitude": 41.91291085,
+    "longitude": -83.37620464
+  },
+  "nationalParkInfo": {
+    "parkCode": "rira",
+    "npsId": "0AEC82D5-0D49-492A-9936-DBE44AF69F09",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/rira/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/rira/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "734 243 7136",
+    "email": "rira_admin@nps.gov",
+    "website": "https://www.nps.gov/rira/index.htm",
+    "address": {
+      "line1": "333 N. Dixie Hwy.",
+      "line2": "",
+      "city": "Monroe",
+      "state": "MI",
+      "postalCode": "48162"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The visitor center contains a 24-foot diorama of the River Raisin Settlement, maps, ranger programs, basic park orientation, park store, passport stamp and Park film. We are open year-round. Please check seasonal hours for times of operation. We are closed on Thanksgiving Day, Christmas Day, and New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "There is a saying about Michigan weather: \"If you don't like the weather wait five minutes and it will change!\" Seasonal average temperatures for Monroe area: Winter: highs range from 30 F- 45 F and lows range from 15 F- 30 F Spring: highs range from 40 F - 70 F and lows range from 25 F - 55 F Summer: highs range from 70 F - 85 F and lows range from 50 F - 65 F Fall: highs range from 40 F - 80 F and lows range from 60 F - 30 F"
+  },
+  "images": [
+    {
+      "id": "rira-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C380D-1DD8-B71B-0BB6B63A283B9B55.jpg",
+      "title": "Battle of the River Raisin",
+      "altText": "Painting of the Battle of the River Raisin",
+      "caption": "The January 22, 1813 Battle raging in the snowy village of Frenchtown",
+      "credit": "Painting by Tim Kurtz",
+      "isPrimary": true
+    },
+    {
+      "id": "rira-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C3943-1DD8-B71B-0B82269FC3166010.jpg",
+      "title": "Remember the Raisin!",
+      "altText": "re-enactors firing in a battle line",
+      "caption": "Annual Commemoration of the Battle in January",
+      "credit": "Photo by William Saul",
+      "isPrimary": false
+    },
+    {
+      "id": "rira-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C4366-1DD8-B71B-0B7193D614F1B49B.jpg",
+      "title": "British Sled Cannon",
+      "altText": "a sled cannon in the snow",
+      "caption": "British ingenuity - adopting their cannons for the snowy conditions at the Battle",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rira-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C4C01-1DD8-B71B-0BB2F4AEFEEF5943.jpg",
+      "title": "Summer in the Park",
+      "altText": "period gardens",
+      "caption": "Visitors enjoy the period gardens and trails in the Park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rira-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7A19C50-F779-7838-96ABFFBAC00A806B.jpg",
+      "title": "River Raisin National Battlefield Park",
+      "altText": "Grounds and structure",
+      "caption": "River Raisin National Battlefield Park",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "rira-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7A19C50-F779-7838-96ABFFBAC00A806B.jpg",
+      "title": "River Raisin National Battlefield Park",
+      "altText": "Grounds and structure",
+      "caption": "River Raisin National Battlefield Park",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "94369BFD-F186-477E-8713-AE2A745154DA",
+      "name": "Team Sports"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/rira/index.htm",
+    "directions": "http://www.nps.gov/rira/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Photography",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Dams",
+    "Farming and Agriculture",
+    "Industry",
+    "Factories",
+    "Mills",
+    "Immigration",
+    "Laborer and Worker",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Presidents",
+    "Religion and Spirituality",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Conservation Movement",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Tragic Events",
+    "Forced Marches",
+    "Massacres",
+    "Murders",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Lakes",
+    "River and Riparian",
+    "Trails",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "National Battlefield Park",
+    "MI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

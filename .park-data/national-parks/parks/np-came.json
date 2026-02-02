@@ -1,0 +1,119 @@
+{
+  "id": "np-came",
+  "name": "Cape Henry Memorial Part of Colonial National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "English colonists first landed here in April 1607, erected a wooden cross and gave thanks for a successful crossing to a new land. In 1781, Americans could watch from these same sand dunes the largest naval battle of the Revolutionary War. Our French Allies defeated a British fleet just off this shore to set the stage for General George Washington's victory at Yorktown.",
+  "shortDescription": "English colonists first landed here in April 1607, erected a wooden cross and gave thanks for a successful crossing to a new land. In 1781, Americans could watch from these same sand dunes the largest...",
+  "designation": "Part of Colonial National Historical Park",
+  "coordinates": {
+    "latitude": 36.9278094,
+    "longitude": -76.0088219
+  },
+  "nationalParkInfo": {
+    "parkCode": "came",
+    "npsId": "3A2AEA7C-8896-4445-9763-932B4A74CF34",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/came/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/came/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7578982410",
+    "email": "colo_info@nps.gov",
+    "website": "https://www.nps.gov/came/index.htm",
+    "address": {
+      "line1": "Atlantic Ave",
+      "line2": "",
+      "city": "Fort Story",
+      "state": "VA",
+      "postalCode": "23459"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Currently, Cape Henry Memorial is only open to those who have access to Joint Expeditionary Base Little Creek – Fort Story. You must be able to provide a military ID.\n\nThis quarter acre of ground marks the approximate site of the first landing of the Jamestown settlers in Virginia."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from 40 F to 80 F. Rain is common. Summer: Temperatures usually range from 80 F to 100 F. Rain and sun are equally common. On very sunny days, be prepared with plenty of water . Fall: Temperatures usually range from 40 F to 70 F. Winter: Temperatures range from 40 F to 20 F. Be prepared with cold weather gear and numerous layers if you intend to be outside."
+  },
+  "images": [
+    {
+      "id": "came-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79AA09-1DD8-B71B-0B4B7A5D37A9CBA5.jpg",
+      "title": "Memorial Cross",
+      "altText": "Memorial Cross",
+      "caption": "A granite cross erected in 1935 by the National Society Daughters of the American Colonists, in memory of the wooden cross erected by the English colonists in 1607.",
+      "credit": "National Park Service",
+      "isPrimary": true
+    },
+    {
+      "id": "came-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79EC63-1DD8-B71B-0BBAF3FA5751112E.jpg",
+      "title": "Admiral de Grasse Statue",
+      "altText": "Admiral de Grasse Statue",
+      "caption": "Located near overlook at Cape Henry",
+      "credit": "Park Ranger Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "came-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79ED7A-1DD8-B71B-0B9C411AD29FB72B.jpg",
+      "title": "Battle of Capes Wayside",
+      "altText": "Battle of Capes Wayside",
+      "caption": "At Overlook",
+      "credit": "Park Ranger Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "came-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79EE7D-1DD8-B71B-0B81A233F01B00E1.jpg",
+      "title": "Memorial Cross",
+      "altText": "Memorial Cross",
+      "caption": "Near Overlook",
+      "credit": "Park Ranger Linda Williams",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/came/index.htm",
+    "directions": "http://www.nps.gov/came/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Part of Colonial National Historical Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

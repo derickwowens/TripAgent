@@ -1,0 +1,413 @@
+{
+  "id": "np-crla",
+  "name": "Crater Lake National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "OR",
+  "stateName": "Oregon",
+  "region": "pacific",
+  "description": "Crater Lake inspires awe. Native Americans witnessed its formation 7,700 years ago, when a violent eruption triggered the collapse of a tall peak. Scientists marvel at its purity—fed by rain and snow, it’s the deepest lake in the USA and one of the most pristine on Earth. Artists, photographers, and sightseers gaze in wonder at its blue water and stunning setting atop the Cascade Mountain Range.",
+  "shortDescription": "Crater Lake inspires awe. Native Americans witnessed its formation 7,700 years ago, when a violent eruption triggered the collapse of a tall peak. Scientists marvel at its purity—fed by rain and snow,...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 42.94065854,
+    "longitude": -122.1338414
+  },
+  "nationalParkInfo": {
+    "parkCode": "crla",
+    "npsId": "7DC1050A-0DDE-4EF9-B777-3C9349BCC4DE",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/crla/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/crla/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5415943000",
+    "email": "craterlake@nps.gov",
+    "website": "https://www.nps.gov/crla/index.htm",
+    "address": {
+      "line1": "Crater Lake National Park",
+      "line2": "1 Sager Building",
+      "city": "Crater Lake",
+      "state": "OR",
+      "postalCode": "97604"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Crater Lake National Park is open year-round, 24 hours a day. Some roads, trails, and facilities, however, are closed seasonally due to snow. North Entrance Road, and West and East Rim Drives close for the season on November 1 (or earlier if there is significant snowfall). Crews begin removing snow from these roads in April, but opening dates vary. The North Entrance Road and West Rim Drive tend to open in early June. The East Rim Drive typically opens in early July."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This is the summer entrance fee and is charged from mid-May through the end of October.  Admits one private, non-commercial vehicle (15-passenger capacity or less) and all occupants. Good for 7 days.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This is the winter entrance fee.  Admits one private, non-commercial vehicle (15-passenger capacity or less) and all occupants. Good for 7 days.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Summer rate from mid-May to October 31st.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Winter rate from 11/1 through mid-May.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no motor vehicle (bicyclist, hiker, pedestrian). Youth 15 and under are admitted free of charge. Good for 7 days.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Snowmobile",
+      "description": "Admits one individual on a snowmobile for travel on snow covered North Entrance Road closed to regular vehicle traffic. Youth 15 and under are admitted free of charge. Good for 7 days.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Fees for commercial vehicles are based on the capacity of the vehicle, not the number of passengers on board.  In addition to the $25 per vehicle there is also a $15 per passenger charge.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Fees for commercial vehicles are based on the capacity of the vehicle, not the number of passengers on board.",
+      "cost": "75.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Fees for commercial vehicles are based on the capacity of the vehicle, not the number of passengers on board.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Fees for commercial vehicles are based on the capacity of the vehicle, not the number of passengers on board.",
+      "cost": "200.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "July, August, and September are your best bets for warm, dry weather. In May, June, and October, sunny days alternate with periods of rain and snow. Winters at Crater Lake are long and snowy. Storms from the Pacific Ocean dump an annual average of 41 feet (13.5 meters) of snow at park headquarters. When it's raining or snowing, the lake is usually hidden by clouds. Crater Lake is completely invisible about 50% of the time in the winter!"
+  },
+  "images": [
+    {
+      "id": "crla-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B227E-1DD8-B71B-0BEECDD24771C381.jpg",
+      "title": "Wizard Island",
+      "altText": "A view of Crater Lake and Wizard Island",
+      "caption": "Looking at Crater Lake and Wizard Island from Discovery Point",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "crla-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B23C5-1DD8-B71B-0B4F2400855714FA.jpg",
+      "title": "Chaski Bay",
+      "altText": "a view of Phantom Ship and Chaski Bay",
+      "caption": "A view from Garfield Peak along the rim of Crater Lake",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "crla-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B2524-1DD8-B71B-0B84C60FF964D102.jpg",
+      "title": "Crater Lake",
+      "altText": "a view of Crater Lake from the lakeshore",
+      "caption": "A view across Crater Lake from the lakeshore",
+      "credit": "NPS Photot",
+      "isPrimary": false
+    },
+    {
+      "id": "crla-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B26D3-1DD8-B71B-0B939039D597B9A3.jpg",
+      "title": "Crater Lake from Mount Scott",
+      "altText": "Crater Lake as seen from the summit of Mt. Scott",
+      "caption": "A view of the caldera from Mt. Scott, the highest point in Crater Lake National Park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "crla-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B28BD-1DD8-B71B-0B3EA88108473DEA.jpg",
+      "title": "Vidae Falls",
+      "altText": "water flowing over Vidae Falls",
+      "caption": "Water flowing over Vidae Falls",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "crla-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B2A16-1DD8-B71B-0B181596A537FAE3.jpg",
+      "title": "Wildflowers on Wizard Island",
+      "altText": "wildflowers on Wizard Island",
+      "caption": "Wildflowers along the Wizard Island Summit Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "crla-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B2B97-1DD8-B71B-0B8A0028F7FBEC27.jpg",
+      "title": "Crater Lake in Winter",
+      "altText": "A view of Crater Lake in the winter",
+      "caption": "A view of Crater Lake in the winter",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "crla-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B2D3B-1DD8-B71B-0B39E67A3DC57E94.jpg",
+      "title": "Clouds in the Caldera",
+      "altText": "Clouds in the Crater Lake Caldera",
+      "caption": "Clouds in the Crater Lake Caldera",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "89DA72D0-16D6-4C1C-89D4-103D94F1F63D",
+      "name": "Orienteering"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/crla/index.htm",
+    "directions": "http://www.nps.gov/crla/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Poetry and Literature",
+    "Explorers and Expeditions",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Wolves",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Volcanoes",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Wilderness",
+    "National Park",
+    "OR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

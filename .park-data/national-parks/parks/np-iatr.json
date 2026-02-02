@@ -1,0 +1,220 @@
+{
+  "id": "np-iatr",
+  "name": "Ice Age National Scenic Trail",
+  "category": "national",
+  "parkType": "national_scenic_trail",
+  "stateCode": "WI",
+  "stateName": "Wisconsin",
+  "region": "midwest",
+  "description": "The Ice Age National Scenic Trail spans 1,200 miles, traverses some of Wisconsin's finest geologic and glacial features, and passes through the ancestral lands of 15 Tribes. The Trail is built, managed and maintained by dedicated volunteers, Ice Age Trail Alliance, Wisconsin Department of Natural Resources, local partners, and the National Park Service.",
+  "shortDescription": "The Ice Age National Scenic Trail spans 1,200 miles, traverses some of Wisconsin's finest geologic and glacial features, and passes through the ancestral lands of 15 Tribes. The Trail is built, manage...",
+  "designation": "National Scenic Trail",
+  "coordinates": {
+    "latitude": 43.9895697794,
+    "longitude": -89.5612021706
+  },
+  "nationalParkInfo": {
+    "parkCode": "iatr",
+    "npsId": "DED290D0-879A-4134-BBC3-54980D80959E",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/iatr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/iatr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "608-798-8700",
+    "email": "iatr_administration@nps.gov",
+    "website": "https://www.nps.gov/iatr/index.htm",
+    "address": {
+      "line1": "8075 Old Sauk Pass Road",
+      "line2": "",
+      "city": "Cross Plains",
+      "state": "WI",
+      "postalCode": "53528"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Ice Age National Scenic Trail is not your 'typical' park. The trail is almost 1,200 miles long and crosses the state of Wisconsin north to south and east to west. The Trail is open year round. However some segments may be closed during Wisconsin's November 9-day gun deer hunting season. Additional information about hunting seasons, trail conditions and closures along the rest of the trail is available from the Wisconsin Department of Natural Resources and the Ice Age Trail Alliance."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Wisconsin has four distinct seasons. Summers are generally warm, while winters are cold, often bringing significant snowfall. Weather conditions can vary widely throughout the year and location on the trail. Prepare accordingly for each season when visiting the Ice Age National Scenic Trail."
+  },
+  "images": [
+    {
+      "id": "iatr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E538F76C-CB06-6007-549113D6D1A7E4D5.jpg",
+      "title": "Glacial Erratic Boulder on Harwood Lake Segment of Ice Age National Scenic Trail",
+      "altText": "Photograph of a large glacial erratic boulder in autumn with trees covered in colorful foliage and f",
+      "caption": "Glacial Erratic Boulder on Harwood Lake Segment of Ice Age National Scenic Trail",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": true
+    },
+    {
+      "id": "iatr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E555FA9F-DC54-C88B-305AA4FE154636BC.jpg",
+      "title": "Chippewa Moraine Segment of Ice Age National Scenic Trail",
+      "altText": "Photograph of an autumn prairie scene with rolling hills edged by trees under a partly cloudy sky.",
+      "caption": "Chippewa Moraine Segment of Ice Age National Scenic Trail",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4B9E7644-C8AC-76BB-FBA6A6B4A76BFFB5.jpg",
+      "title": "Ice Age Trail Sign",
+      "altText": "Photograph of “Ice Age Trail” sign surrounded by a forest with autumn foliage.",
+      "caption": "Ice Age Trail sign on the McKenzie Creek Segment of Ice Age National Scenic Trail",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CA4A3-1DD8-B71B-0B4237BE69AA3184.jpg",
+      "title": "Gibralter Rock",
+      "altText": "expansive view as seen from atop Gibraltar Rock",
+      "caption": "The view extends for many miles from atop Gibraltar Rock.",
+      "credit": "IATA/ Eric Sherman",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4BFD5658-FDF3-925A-C6567EFBD3EE583F.jpg",
+      "title": "Felsenmeer in Ice Age National Scenic Trail Blue Hills Segment",
+      "altText": "Photograph of a forest scene with a V-shaped boulder-strewn valley.",
+      "caption": "Blue Hills Felsenmeer in Wisconsin.",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4BD1FE59-EE24-E551-03C035EC154E3463.jpg",
+      "title": "Ice Age National Scenic Trail Road Sign",
+      "altText": "Photograph of “Ice Age Trail” sign surrounded by a forest with autumn foliage.",
+      "caption": "Ice Age National Scenic Trail sign near the McKenzie Creek Segment",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4C4A7B65-E485-BAEC-B4B183293849FF00.jpg",
+      "title": "Yellow Blaze Marking the Ice Age National Scenic Trail",
+      "altText": "Photograph of a yellow rectangular blaze painted onto the trunk of a tree.",
+      "caption": "Yellow blazes indicate that you are on Ice Age National Scenic Trail",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4C819772-A9EE-C3A8-AF1DE3A9792A0186.jpg",
+      "title": "Trail On Straight Lake Segment of Ice Age National Scenic Trail",
+      "altText": "Photograph of leaf covered trail in autumn.",
+      "caption": "Trail on the Straight Lake Segment of the Ice Age National Scenic Trail.",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4DA3812B-CC5C-10BE-B6FA1E31E0945783.jpg",
+      "title": "Pine Lake Segment of Ice Age National Scenic Trail",
+      "altText": "Photograph of an autumn prairie scene with a grassy trail meandering into the distance.",
+      "caption": "Trail on the Pine Lake Segment of the Ice Age National Scenic Trail",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    },
+    {
+      "id": "iatr-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4DCAE51C-C051-C792-DAECDB1F7EA51D75.jpg",
+      "title": "Trail On Harwood Lake Segment of Ice Age National Scenic Trail",
+      "altText": "Photograph of autumn forest scene with dirt trail littered with colorful leaves leading into forest,",
+      "caption": "Trail on the Harwood Lake Segment of the Ice Age National Scenic Trail",
+      "credit": "NPS Photo / Billy Flynn",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/iatr/index.htm",
+    "directions": "http://www.nps.gov/iatr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Geology",
+    "Glaciers",
+    "Grasslands",
+    "Prairies",
+    "Natural Sounds",
+    "Scenic Views",
+    "Trails",
+    "National Scenic Trail",
+    "WI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

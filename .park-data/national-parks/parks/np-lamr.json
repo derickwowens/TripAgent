@@ -1,0 +1,249 @@
+{
+  "id": "np-lamr",
+  "name": "Lake Meredith National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Set within the wide‑open Texas Plains, Lake Meredith National Recreation Area offers a peaceful retreat in the heart of rugged grasslands. Over thousands of years, the Canadian River carved dramatic 200‑foot canyons—known as breaks—that now frame the lake in striking layers of color and texture. These quiet coves sustain an unexpectedly rich array of life, providing seven distinct habitats.",
+  "shortDescription": "Set within the wide‑open Texas Plains, Lake Meredith National Recreation Area offers a peaceful retreat in the heart of rugged grasslands. Over thousands of years, the Canadian River carved dramatic 2...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 35.61926203,
+    "longitude": -101.6820066
+  },
+  "nationalParkInfo": {
+    "parkCode": "lamr",
+    "npsId": "AC3B46AA-B4C2-4555-A82A-D4CF790DF81D",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lamr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/lamr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "806 857-3151",
+    "email": "lamr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/lamr/index.htm",
+    "address": {
+      "line1": "419 E. Broadway",
+      "line2": "",
+      "city": "Fritch",
+      "state": "TX",
+      "postalCode": "79036"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The National Recreation Area is open 24 hours a day, 365 days a year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "This area of the Texas Panhandle has a wide variety of weather conditions throughout the year. Winters are cold and windy, with summers being hot and dry. Weather can change rapidly on Lake Meredith. It is usually a good idea to check the weather report and dress accordingly."
+  },
+  "images": [
+    {
+      "id": "lamr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EF8FA-1DD8-B71B-0B0A1337DFDA3A87.jpg",
+      "title": "Lake Meredith",
+      "altText": "A boat travels across Lake Meredith on a sunny day.  The lake is light blue.",
+      "caption": "Boating at Lake Meredith",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "lamr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9596B148-E2F9-AA91-0080206745F55D87.jpg",
+      "title": "Lake Meredith Storm",
+      "altText": "A storm coming in at Lover's Canyon.  The sky is dark blue with dark clouds.  The lake is greenish.",
+      "caption": "Weather in the Texas Panhandle",
+      "credit": "NPS Photo.",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C845316-1DD8-B71B-0B60E7BFC9FC5B97.jpg",
+      "title": "Harbor Bay Trail",
+      "altText": "A bench on the Harbor Bay Trail, overlooking Lake Meredith. The sky is blue with white clouds.",
+      "caption": "View of the lake from Harbor Bay Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AED6916F-C5BE-F02F-031F29AD1DF57554.jpg",
+      "title": "Camping with a View",
+      "altText": "Picnic shelter at a campsite overlooking Lake Meredith.  The sky is blue with no clouds.",
+      "caption": "View from the Rim",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8455CE-1DD8-B71B-0B71C87BCBE4C909.jpg",
+      "title": "Sanford Dam at Lake Meredith",
+      "altText": "Sanford Dam and Lake Meredith.  The lake is deep blue with white clouds above in the sky.",
+      "caption": "A view of Sanford Dam and Lake Meredith",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/95151A04-97AE-EA36-D9544BA29592A7B2.jpg",
+      "title": "Mullinaw Trail",
+      "altText": "Mullinaw trailhead with green cottonwoods and blue skies in the summer.",
+      "caption": "Mullinaw Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/952DB6DC-D1AD-7E16-82D5B98D2D941DA1.jpg",
+      "title": "Birding at Lake Meredith",
+      "altText": "A Red-winged Blackbird sitting on greyish-brown stump",
+      "caption": "Birding at Lake Meredith",
+      "credit": "Mark Elliott",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/954E4288-D8D5-6139-A78B24A580A10E83.jpg",
+      "title": "Harbor Bay Trail",
+      "altText": "Harbor Bay Trail with green mesas, blue sky, and white clouds.",
+      "caption": "Harbor Bay Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/955B2F26-0895-2FF3-A2E64E4B805F6069.jpg",
+      "title": "Fishing at Lake Meredith",
+      "altText": "Sanford Yake boat docks.  The water is blue and calm.  There are a few fisherman fishing.",
+      "caption": "Sanford Yake",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lamr-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/95687288-C945-4F50-1DC63A42B5A85BB8.jpg",
+      "title": "View from the Rim",
+      "altText": "View from a mesa of Lake Meredith.  The sky is blue with a few white clouds.",
+      "caption": "View from a Mesa",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "BBC79C28-EBA7-4CE9-8614-02D00AA21558",
+      "name": "ATV Off-Roading"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lamr/index.htm",
+    "directions": "http://www.nps.gov/lamr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Grasslands",
+    "Prairies",
+    "National Recreation Area",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

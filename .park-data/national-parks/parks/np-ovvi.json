@@ -1,0 +1,204 @@
+{
+  "id": "np-ovvi",
+  "name": "Overmountain Victory National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "Stretching 330-miles through four states (Virginia, Tennessee, North and South Carolina) the Overmountain Victory National Historic Trail traces the route used by Patriot militia during the pivotal Kings Mountain campaign of 1780. Follow their campaign by utilizing a Commemorative Motor Route along existing state highways marked with the distinctive trail logo, or 80+ miles of walkable trail.",
+  "shortDescription": "Stretching 330-miles through four states (Virginia, Tennessee, North and South Carolina) the Overmountain Victory National Historic Trail traces the route used by Patriot militia during the pivotal Ki...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 35.14044,
+    "longitude": -81.377
+  },
+  "nationalParkInfo": {
+    "parkCode": "ovvi",
+    "npsId": "BAB8E761-8BB9-4DFF-9D38-5D4BA9AB2BD4",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/ovvi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/ovvi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8644612828",
+    "email": "OVVI_Information@nps.gov",
+    "website": "https://www.nps.gov/ovvi/index.htm",
+    "address": {
+      "line1": "4001 Chesnee Hwy",
+      "line2": "",
+      "city": "Gaffney",
+      "state": "SC",
+      "postalCode": "29341"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Overmountain Victory National Historic Trail can be visited in any season.\nIt includes sections of walkable pathway, a Commemorative Motor Route, affiliated historic sites and museums, and wayside exhibits.\nAlong the way it passes through four NPS areas, two National Forests, an Army Corps of Engineers Dam &Reservoir, plus several state and county parks."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures for the area range from very hot and humid in the summer to cool and moderate in the winter."
+  },
+  "images": [
+    {
+      "id": "ovvi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FC4E6536-9169-719C-95D5D511D4B94145.jpg",
+      "title": "Cherokee Ford Trail in Gaffney, SC",
+      "altText": "A dirt trail winds along in a forest.",
+      "caption": "Hiking sections of the Overmountain Victory Trail is a favorite pastime.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "ovvi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FC66B490-EE54-C7C8-E1CA51768CA9E4E0.jpg",
+      "title": "Sycamore Shoals in Elizabethton, TN",
+      "altText": "A large group of living historians stand in a river and fire muskets, with a cloud of smoke rising.",
+      "caption": "Living historians bring the Overmountain Victory Trail to life.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "ovvi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FC814FC2-C8CC-2A03-F3ECFEBA4AF17DC4.jpg",
+      "title": "Alexander's Ford Trail at Bradley Nature Preserve",
+      "altText": "A cut log is laying over a crevasse on a trail in the woods.",
+      "caption": "Great hiking adventure awaits on sections of the Overmountain Victory National Historic Trail.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "ovvi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FCB3C8E9-C7CD-AA26-047C4CD632131F49.jpg",
+      "title": "Hampton Creek Cove Trail at Yellow Mountain Gap",
+      "altText": "5 people are hiking along a trail surrounded by mountains and wildflowers and trees.",
+      "caption": "Hikers enjoy exploring sections of the Overmountain Victory National Historic Trail.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "ovvi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FCC70016-F44D-3B7D-C3F901933DDD81B3.jpg",
+      "title": "Yadkin River Greenway in Wilkesboro, NC",
+      "altText": "A walking bridge with trees in the background.",
+      "caption": "Hikers can enjoy walking over many bridges along the trail.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/ovvi/index.htm",
+    "directions": "http://www.nps.gov/ovvi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Military",
+    "Battlefields",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Trails",
+    "National Historic Trail",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

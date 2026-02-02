@@ -1,0 +1,179 @@
+{
+  "id": "np-stli",
+  "name": "Statue Of Liberty National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "A gift of friendship from the people of France to the United States \"The Statue of Liberty Enlightening the World\" is recognized as a universal symbol of freedom and democracy. It was dedicated by President Grover Cleveland on October 28, 1886. Designated as a National Monument in 1924, employees of the National Park Service have been caring for the Statue of Liberty since 1933.",
+  "shortDescription": "A gift of friendship from the people of France to the United States \"The Statue of Liberty Enlightening the World\" is recognized as a universal symbol of freedom and democracy. It was dedicated by Pre...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.6898,
+    "longitude": -74.0451
+  },
+  "nationalParkInfo": {
+    "parkCode": "stli",
+    "npsId": "6E3608BE-63AA-4379-A543-97D2FCBF12F1",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/stli/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/stli/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2123633200",
+    "email": "stli_info@nps.gov",
+    "website": "https://www.nps.gov/stli/index.htm",
+    "address": {
+      "line1": "Liberty Island",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10004"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Access to Liberty and Ellis Islands is by Statue City Cruises ferry only. For ferry departure times and ticketing information visit http://www.statuecitycruises.com or call 1-877-LADY-TIX. \n\nThe last entrance into the statue is at 3:30 PM."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "It is typically colder and more windy in New York Harbor than elsewhere in New York City. Winters are cold and damp. Spring and Fall can range from chilly to warm. Summers are warm to hot and humid."
+  },
+  "images": [
+    {
+      "id": "stli-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85432E-1DD8-B71B-0B678722109EDDF3.jpg",
+      "title": "The Statue of Liberty on Liberty Island from Statue Cruises Ferry",
+      "altText": "Patina green statue atop her pedestal on Liberty Island; grey cloudy sky in the distance",
+      "caption": "The Statue of Liberty's patina green stands out brilliantly on a cloudy day.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "stli-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85443B-1DD8-B71B-0B4E0A1FFCCDEEC0.jpg",
+      "title": "The Statue of Liberty with New York City Skyline",
+      "altText": "The Statue of Liberty in front of the New York City skyline.",
+      "caption": "Statue of Liberty stands tall on Liberty Island with the skyline of bustling New York City in view.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stli-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85455B-1DD8-B71B-0B6C0AFD0E6AAA3E.jpg",
+      "title": "Close-up of the Statue of Liberty's Head",
+      "altText": "Close-up of the Statue of Liberty's head, crown, and the folds of her robe",
+      "caption": "This close-up reveals fine details of the Statue of Liberty's face, hair, crown, and robe, which can be difficult to see even in person.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stli-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85490B-1DD8-B71B-0B76C7B47F05187D.jpg",
+      "title": "The Statue of Liberty taken on Liberty Island",
+      "altText": "Entire patina green Statue of Liberty and very top of granite pedestal",
+      "caption": "The Statue of Liberty stands tall on her pedestal: from the ground to the tip of the torch, she measures 305 feet 1 inch (93 meters)!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stli-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85515D-1DD8-B71B-0B14434081BC0EC1.jpg",
+      "title": "Statue of Liberty from Flagpole Plaza on Liberty Island",
+      "altText": "Shoulders, head, and raised right arm of the Statue of Liberty from behind the statue.",
+      "caption": "Millions visit the Statue of Liberty each year, but only a select few, like this peregrine falcon perched on the left-most ray, enjoy the view from above the crown.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/stli/index.htm",
+    "directions": "http://www.nps.gov/stli/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Engineering",
+    "Forts",
+    "Laborer and Worker",
+    "Migrant Workers",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Military",
+    "Infantry and Militia",
+    "Monuments and Memorials",
+    "Tragic Events",
+    "Floods",
+    "Women's History",
+    "National Monument",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

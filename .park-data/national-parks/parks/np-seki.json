@@ -1,0 +1,371 @@
+{
+  "id": "np-seki",
+  "name": "Sequoia & Kings Canyon National Parks",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to plan your visit or to learn about the plants and animals here and the threats they face. Ancient giant sequoias may seem invincible, but they, too are vulnerable.",
+  "shortDescription": "Huge mountains, rugged foothills, deep canyons, vast caverns, and the world’s largest trees exemplify the diversity of landscapes, life, and beauty here. Explore these pages to plan your visit or to l...",
+  "designation": "National Parks",
+  "coordinates": {
+    "latitude": 36.71277299,
+    "longitude": -118.587429
+  },
+  "nationalParkInfo": {
+    "parkCode": "seki",
+    "npsId": "7E5A693C-2F63-44FD-B791-31FC8B8B6285",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/seki/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/seki/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5595653341",
+    "email": "SEKI_information@nps.gov",
+    "website": "https://www.nps.gov/seki/index.htm",
+    "address": {
+      "line1": "47050 Generals Highway",
+      "line2": "",
+      "city": "Three Rivers",
+      "state": "CA",
+      "postalCode": "93271"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The parks are open 24 hours a day, 365 days a year. Some park roads and roads that access more remote parts of the parks close in the winter due to snow accumulation. Rarely, extreme weather conditions may cause roads into the parks to be closed."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This pass is valid for 1-7 days and includes everyone traveling in a single vehicle for Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "This entry fee is for a single person traveling on foot or by bicycle. It is valid for 1-7 days in Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles, scooters, or similar motorized vehicles with up to 4 total passengers to Sequoia & Kings Canyon National Parks and Hume Lake District of Sequoia National Forest/Giant Sequoia National Monument.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial groups traveling in vehicles that have a capacity of up to 15 passengers pay a $35 vehicle entrance fee or use a park pass. Groups traveling in a bus or vehicle with a capacity of 16 persons or more are charged $20 per person, up to the maximums listed for commercial groups with comparable passenger capacity ($100 or $200). People 15 years old or younger, anyone with a pass that may be used for park entry, and drivers hired for transportation only are exempt from the per person fee.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "This entrance fee is for commercial tours of vehicles with a seating capacity of 7-15 people that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. This fee is based on the seating capacity of the vehicle and not the actual number of passengers. Passenger ages or entrance passes do not affect the price.",
+      "cost": "75.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "This entrance fee is for commercial tours of vehicles with a seating capacity of 16-25 people that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. This fee is based on the seating capacity of the vehicle and not the actual number of passengers. Passenger ages or entrance passes do not affect the price.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "This entrance fee is for commercial tours of vehicles with a seating capacity of 26 or more people that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. This fee is based on the seating capacity of the vehicle and not the actual number of passengers. Passenger ages or entrance passes do not affect the price.",
+      "cost": "200.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "The charge for vehicles with a seating capacity of 1-6 passengers is $25, plus $20 per passenger, with a maximum total fee of $75. This entrance fee is for commercial tours of one or more people traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Passenger ages or entrance passes do not affect the price.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "The per person fee for vehicles with a seating capacity of 1-6 passengers is $20, plus $25 per vehicle, with a maximum total fee of $75. This entrance fee is for commercial tours of one or more people traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Passenger ages or entrance passes do not affect the price.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Sequoia & Kings Canyon National Parks must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Because of the extreme elevation range in the parks, weather conditions vary widely between areas. In summer, the sequoia groves have comfortable temperatures and the foothills are hot and dry. Snow lingers on high-mountain passes well into summer. In fall, conditions can range from summer-like to winter-like. Winter brings snow to sequoia groves and rain to the foothills. Be prepared for tire chain requirements. Spring is a great time to hike in the foothills and snow begins to melt at higher elevations."
+  },
+  "images": [
+    {
+      "id": "seki-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A250B-1DD8-B71B-0BCF61A89A8B2970.jpg",
+      "title": "Kings Canyon",
+      "altText": "A deep canyon with a forested floor and steep granite cliffs",
+      "caption": "The Glaciers carved the Kings Canyon's steep granite cliffs, leaving a wide U-shaped valley.",
+      "credit": "NPS/Rick Cain",
+      "isPrimary": true
+    },
+    {
+      "id": "seki-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A2835-1DD8-B71B-0B468E834049FBE4.jpg",
+      "title": "The Tablelands",
+      "altText": "A steep granite slope leads from forest to a bare alpine landscape",
+      "caption": "Just above Lodgepole Valley, the trail to the Watchtower offers views above the treeline.",
+      "credit": "NPS/Rick Cain",
+      "isPrimary": false
+    },
+    {
+      "id": "seki-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A2E1B-1DD8-B71B-0B4D563CB47FA60F.jpg",
+      "title": "Moro Rock",
+      "altText": "A guardrail encircles people along a narrow walkway with wide views",
+      "caption": "A historic stairway leads to the top of Moro Rock, offering views from foothills to peaks",
+      "credit": "NPS/Paul Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "seki-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A301B-1DD8-B71B-0B8311F9B0AC4F69.jpg",
+      "title": "Giant Sequoia in Winter",
+      "altText": "A giant sequoia's reddish bark contrasts with the snow around it",
+      "caption": "For those who don't mind icy roads, winter offers stunning views of sequoias in snow.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "seki-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A4E3C-1DD8-B71B-0B99ADC8D2689BDE.jpg",
+      "title": "Giant Forest Museum",
+      "altText": "A rustic building is surrounded by giant sequoias",
+      "caption": "Giant Forest Museum offers exhibits, park information, and a bookstore.",
+      "credit": "NPS/Rick Cain",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/seki/index.htm",
+    "directions": "http://www.nps.gov/seki/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Poetry and Literature",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Animals",
+    "Birds",
+    "Caves, Caverns and Karst",
+    "Canyons and Canyonlands",
+    "Climate Change",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Grasslands",
+    "Meadows",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "Headwaters",
+    "Wilderness",
+    "National Parks",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "id": "np-jofl",
+  "name": "Johnstown Flood National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "The South Fork Dam failed on Friday, May 31, 1889, and unleashed 20,000,000 tons of water that devastated Johnstown, PA. The flood killed 2,209 people but it brought the nation and the world together to aid the \"Johnstown sufferers.\" The story of the Johnstown Flood reminds us all, \"...that we must leave nothing undone for the preservation and protection of our brother men.\"",
+  "shortDescription": "The South Fork Dam failed on Friday, May 31, 1889, and unleashed 20,000,000 tons of water that devastated Johnstown, PA. The flood killed 2,209 people but it brought the nation and the world together ...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 40.34584534,
+    "longitude": -78.77448601
+  },
+  "nationalParkInfo": {
+    "parkCode": "jofl",
+    "npsId": "A8C04CA4-FEFF-4FDD-99C4-5BA801AA2DB5",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jofl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jofl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8148866171",
+    "email": "jofl_interpretation@nps.gov",
+    "website": "https://www.nps.gov/jofl/index.htm",
+    "address": {
+      "line1": "733 Lake Road",
+      "line2": "",
+      "city": "South Fork",
+      "state": "PA",
+      "postalCode": "15956"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Hours of Operations\nThe Visitor Center is closed on Wednesdays and Thursdays. The Visitor Center is open Fridays through Tuesdays from 9:00 a.m. to 5:00 p.m.\n\nPark grounds and trails are open daily from sunrise to sunset. \n\nThe Visitor Center is closed on Thanksgiving Day, Christmas Day, and New Year's Day. \n\n\"All Park Hours\" reflects the hours of operation for the Visitor Center."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Winters can be cold and severe. Spring can be seasonable and wet. Summer can be hot with potentials for thunderstorms. Fall can be seasonal, with cold temperatures into October and November."
+  },
+  "images": [
+    {
+      "id": "jofl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2A4B8778-986F-86FB-4B696139FFE5B131.jpg",
+      "title": "The Lake View Farm",
+      "altText": "Barn and spring house",
+      "caption": "The Lake View Farm",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "jofl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2ACE78E3-DE22-8056-46CBE5BB9E96122D.jpg",
+      "title": "Lake View House",
+      "altText": "Farm house",
+      "caption": "Lake View House",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2B4CCAA7-AE33-3360-11E79C1CFCF0EA36.jpg",
+      "title": "The Double Cottage",
+      "altText": "Cottage",
+      "caption": "The Double Cottage once served as a structure for the South Fork Fishing and Hunting Club",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2B116CA9-EAC0-740F-2E01598994175AEF.jpg",
+      "title": "The remains of the South Fork Dam",
+      "altText": "Remains of the dam",
+      "caption": "Remains of the South Fork Dam with snow",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2B76165F-9EFE-107D-D082CEA362B5736E.jpg",
+      "title": "The Lippincott Cottage",
+      "altText": "Cottage",
+      "caption": "The Lippincott Cottage once served as a structure for the South Fork Fishing and Hunting Club",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2AED54C6-E9F7-502C-2E14FD74FC5E43AD.jpg",
+      "title": "Park entrance sign",
+      "altText": "Park entrance sign",
+      "caption": "Park entrance sign",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2B9EE7C5-EA4B-C3F4-683506B2482DBF34.png",
+      "title": "The remains of the South Fork Dam",
+      "altText": "Dam remains",
+      "caption": "The remains of the South Fork Dam",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2BDC3B41-E643-0675-2134CD168696D05F.jpg",
+      "title": "The remains of the South Fork Dam",
+      "altText": "Dam remains",
+      "caption": "The remains of the South Fork Dam",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2A92868C-E31B-0CC4-551004A071015245.jpg",
+      "title": "South Fork Fishing and Hunting Club Club House",
+      "altText": "Club house",
+      "caption": "South Fork Fishing and Hunting Club Club House",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "jofl-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2BBF4C0F-FC98-D84E-2514C32ECBAAEE9F.jpg",
+      "title": "The remains of the South Fork Dam",
+      "altText": "Dam remains",
+      "caption": "The remains of the South Fork Dam",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jofl/index.htm",
+    "directions": "http://www.nps.gov/jofl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "Dams",
+    "Engineering",
+    "Industry",
+    "Monuments and Memorials",
+    "Transportation",
+    "Canals",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Floods",
+    "Lakes",
+    "River and Riparian",
+    "Trails",
+    "Watersheds",
+    "Headwaters",
+    "Wetlands",
+    "National Memorial",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,298 @@
+{
+  "id": "np-zion",
+  "name": "Zion National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "Follow the paths where people have walked for thousands of years. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience the tall, stretching walls of a narrow slot canyon. Zion’s unique array of plants and animals will enchant you as you absorb the rich history of the past and enjoy the excitement of present-day adventures.",
+  "shortDescription": "Follow the paths where people have walked for thousands of years. Gaze up at massive sandstone cliffs of cream, pink, and red that soar into a brilliant blue sky. Experience the tall, stretching walls...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 37.29839254,
+    "longitude": -113.0265138
+  },
+  "nationalParkInfo": {
+    "parkCode": "zion",
+    "npsId": "41BAB8ED-C95F-447D-9DA1-FCC4E4D808B2",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/zion/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/zion/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "435-772-3256",
+    "email": "zion_park_information@nps.gov",
+    "website": "https://www.nps.gov/zion/index.htm",
+    "address": {
+      "line1": "Zion National Park",
+      "line2": "1 Zion Park Blvd.",
+      "city": "Springdale",
+      "state": "UT",
+      "postalCode": "84767"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Zion National Park is open every day of the year."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits private, non-commercial vehicle (15 passenger capacity or less) and all occupants to Zion National Park. Valid for 1-7 days.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Snowmobile",
+      "description": "Admits one individual with no car to Zion National Park. Typically used for bicyclists, hikers and pedestrians. Youth 15 and under are admitted free. Valid for 1-7 days.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car to Zion National Park. Typically used for bicyclists, hikers and pedestrians. Youth 15 and under are admitted free. Valid for 1-7 days.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "$20 per person. Non-commercial vehicles with a capacity of 16 or greater. Fees will not exceed the commercial fee for the same-sized vehicle. Youth 15 and under are free. Individuals or families with any valid Annual or Lifetime pass may use their pass for entry at the per person rate. Pass and photo ID must be present upon entry.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "70.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "80.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "190.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "A commercial tour is defined as one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Vehicles with commercial tours of 1-6 people (not including guide) pay $35 per vehicle + $20 per person with a total fee not to exceed $70.\n\nPassengers can use valid weekly, annual, lifetime, or appreciation passes.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Zion National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Zion is known for a wide range of weather conditions. Temperatures vary with changes in elevation and day/night temperatures may differ by over 30°F. In summer, temperatures in Zion National Park often exceed 100°F/38°C. Zion experiences monsoons from mid-July into September that result in an increased risk of flash floods. Always be aware of the threat of storms and lightning and be prepared for a wide range of weather conditions. Winters are generally mild."
+  },
+  "images": [
+    {
+      "id": "zion-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/68BFC1AC-BF96-629F-89D261D78F181C64.jpg",
+      "title": "The Watchman",
+      "altText": "A triangular sandstone mountain overlooks green and yellow foliage. A cloudy blue sky is overhead.",
+      "caption": "The Watchman in Zion Canyon",
+      "credit": "NPS/Shane Carte",
+      "isPrimary": true
+    },
+    {
+      "id": "zion-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/69162F54-D4AF-8695-A42F97A8F9774C19.jpg",
+      "title": "The Towers of the Virgin",
+      "altText": "The sun sets behind large red and white towers of sandstone.",
+      "caption": "The Towers of the Virgin in Zion Canyon",
+      "credit": "NPS/Jesse Nelson",
+      "isPrimary": false
+    },
+    {
+      "id": "zion-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/68D46E7D-A116-A443-ABA04AD1DD785208.jpg",
+      "title": "Zion Canyon Visitor Center",
+      "altText": "A sandstone and glass building surrounded by tall trees with a mountain behind it.",
+      "caption": "The Zion Canyon Visitor Center is a great place to stop to learn about the park!",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "zion-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/68ED8C2C-A9D3-90B2-BBC96E7A21BC3744.jpg",
+      "title": "The Narrows",
+      "altText": "Tall, red, sandstone walls enclose a narrow river.",
+      "caption": "The Narrows can be accessed at the end of Riverside Walk, just follow the river.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "zion-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/69033C8D-B439-855D-6B260FB2F4CDB53B.jpg",
+      "title": "Kolob Arch",
+      "altText": "A red sandstone arch under a clear blue sky.",
+      "caption": "Deep in Zion's Wilderness site Kolob Arch, one of the largest free-standing arches in the world.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "07CBCA6A-46B8-413F-8B6C-ABEDEBF9853E",
+      "name": "Canyoneering"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/zion/index.htm",
+    "directions": "http://www.nps.gov/zion/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Laborer and Worker",
+    "Native American Heritage",
+    "Transportation",
+    "Tunnels",
+    "Tragic Events",
+    "Floods",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Tortoises and Turtles",
+    "Canyons and Canyonlands",
+    "Fire",
+    "Fossils and Paleontology",
+    "Geology",
+    "Night Sky",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Arches",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Wilderness",
+    "National Park",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

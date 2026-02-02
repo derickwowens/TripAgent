@@ -1,0 +1,287 @@
+{
+  "id": "np-choh",
+  "name": "Chesapeake & Ohio Canal National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Preserving America's early transportation history, the C&O Canal began as a dream of passage to Western wealth. Operating for nearly 100 years the canal was a lifeline for communities along the Potomac River as coal, lumber, and agricultural products floated down the waterway to market. Today it endures as a pathway for discovering historical, natural, and recreational treasures.",
+  "shortDescription": "Preserving America's early transportation history, the C&O Canal began as a dream of passage to Western wealth. Operating for nearly 100 years the canal was a lifeline for communities along the Potoma...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 39.000283692,
+    "longitude": -77.2481399539
+  },
+  "nationalParkInfo": {
+    "parkCode": "choh",
+    "npsId": "9192FFEE-4D88-4A03-A054-F47C33F0C3E9",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/choh/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/choh/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "301-739-4200",
+    "email": "CHOH_Information@nps.gov",
+    "website": "https://www.nps.gov/choh/index.htm",
+    "address": {
+      "line1": "142 W. Potomac St.",
+      "line2": "",
+      "city": "Williamsport",
+      "state": "MD",
+      "postalCode": "21795"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The towpath is open 365 days a year."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Pass is for one private, non-commercial vehicle — passenger cars, pickup trucks, RVs and vans — and is valid at the Great Falls area of the Chesapeake and Ohio Canal National Historical Park on the Maryland side of the Potomac River and Great Falls Park on the Virginia side of the Potomac River.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers to the Great Falls area of the Chesapeake and Ohio Canal National Historical Park on the Maryland side of the Potomac River and at Great Falls Park on the Virginia side of the Potomac River.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Pass is for one person 16 years of age or older — entering on foot or by bicycle — and is valid at the Great Falls area of the Chesapeake and Ohio Canal National Historical Park on the Maryland side of the Potomac River and at Great Falls Park on the Virginia side of the Potomac River.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Includes church groups, college/school groups, scouts, service organizations, military, etc...\nVehicles with passenger capacity of fewer than 16 persons, $20 for the vehicle.\nVehicles with a passenger capacity of 16 or more persons, $10 per person age 16 and over.\nRemoval of seats from a vehicle does not then qualify for the lower rate. Age and pass exemptions apply.\nThe total fee charged for an Organized Non-Commercial Group will not exceed the $100 fee per vehicle.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "The commercial pass is valid for date of purchase plus six days at the Great Falls area of the Chesapeake and Ohio Canal National Historical Park on the Maryland side of the Potomac River. Please note that fees are based on vehicle capacity and not actual occupants.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "The commercial pass is valid for date of purchase plus six days at the Great Falls area of the Chesapeake and Ohio Canal National Historical Park on the Maryland side of the Potomac River. Please note that fees are based on vehicle capacity and not actual occupants.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "The commercial pass is valid for date of purchase plus six days at the Great Falls area of the Chesapeake and Ohio Canal National Historical Park on the Maryland side of the Potomac River. Please note that fees are based on vehicle capacity and not actual occupants.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "The commercial pass is valid for date of purchase plus six days at the Great Falls area of the Chesapeake and Ohio Canal National Historical Park on the Maryland side of the Potomac River. Please note that fees are based on vehicle capacity and not actual occupants.",
+      "cost": "25.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The Washington, DC, area has a four-season Mid-Atlantic climate. Summertime is warm and humid, while winter can be cold and snowy. Precipitation averages 2-4” monthly, year-round. The climate gradually gets cooler and wetter further west along the canal where the elevation is higher."
+  },
+  "images": [
+    {
+      "id": "choh-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EC77A-1DD8-B71B-0B67E179DDA9A05A.jpg",
+      "title": "Great Falls of the Potomac",
+      "altText": "The rushing river cascades over the rocks of the Potomac",
+      "caption": "The area of Great Falls is one of the reasons for the C&O Canal needed to be built for boat traffic.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "choh-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EC604-1DD8-B71B-0B20F3F216BA2809.jpg",
+      "title": "Bike rider along the towpath",
+      "altText": "A single bike rider on the towpath next to the widewater section of the canal.",
+      "caption": "The towpath offers a serene bike riding experience.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "choh-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EC45C-1DD8-B71B-0B4EDFD56A427891.jpg",
+      "title": "Lockhouse 16 along the Canal",
+      "altText": "A whitewashed lockhouse sits above a stone lock with wooden crib.",
+      "caption": "Lockhouse 16 sits atop a stone outcropping above the lock.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "choh-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7EC2D8-1DD8-B71B-0B12B526FCC72D53.jpg",
+      "title": "Big Slackwater",
+      "altText": "Fog over the Potomac River alongside the Canal towpath.",
+      "caption": "Big Slackwater is a 3 mile stretch where canal boats entered the Potomac River to travel above Dam 4.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "choh-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F149D-1DD8-B71B-0BF4E52DDA5B4834.jpg",
+      "title": "Charles F. Mercer Replica Canal Boat",
+      "altText": "A replica double decker canal boat is being pulled upstream by mules.",
+      "caption": "Mule-drawn canal boat rides are offered at Great Falls Tavern, April through October.",
+      "credit": "NPS photo/Buckner",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "5FF5B286-E9C3-430E-B612-3380D8138600",
+      "name": "Ice Skating"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/choh/index.htm",
+    "directions": "http://www.nps.gov/choh/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Dams",
+    "Laborer and Worker",
+    "Schools and Education",
+    "Transportation",
+    "Canals",
+    "Tunnels",
+    "Tragic Events",
+    "Floods",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Fossils and Paleontology",
+    "Geology",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "National Historical Park",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

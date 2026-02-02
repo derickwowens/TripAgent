@@ -1,0 +1,197 @@
+{
+  "id": "np-mimi",
+  "name": "Minuteman Missile National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "SD",
+  "stateName": "South Dakota",
+  "region": "midwest",
+  "description": "During the Cold War, a vast arsenal of nuclear missiles were placed in the Great Plains. Hidden in plain sight, for thirty years 1,000 missiles were kept on constant alert; hundreds remain today. The Minuteman Missile remains an iconic weapon in the American nuclear arsenal. It holds the power to destroy civilization, but is meant as a nuclear deterrent to maintain peace and prevent war.",
+  "shortDescription": "During the Cold War, a vast arsenal of nuclear missiles were placed in the Great Plains. Hidden in plain sight, for thirty years 1,000 missiles were kept on constant alert; hundreds remain today. The ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 43.89558013,
+    "longitude": -102.0272131
+  },
+  "nationalParkInfo": {
+    "parkCode": "mimi",
+    "npsId": "5DE19B04-85AD-4C3A-93BF-A0D484B1AD91",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mimi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mimi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6054335552",
+    "email": "mimi_information@nps.gov",
+    "website": "https://www.nps.gov/mimi/index.htm",
+    "address": {
+      "line1": "24545 Cottonwood Road",
+      "line2": "",
+      "city": "Philip",
+      "state": "SD",
+      "postalCode": "57567"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:00AM - 3:00PM",
+    "wednesday": "9:00AM - 3:00PM",
+    "thursday": "9:00AM - 3:00PM",
+    "friday": "9:00AM - 3:00PM",
+    "saturday": "9:00AM - 3:00PM",
+    "sunday": "Closed",
+    "description": "Visitors are invited to go inside the fenced compound and look down into the silo at a Minuteman missile in its historic state, protected by a glass viewing enclosure. A narrated ranger guided tour of Delta-09 is available year-round using your cell phone. Inclement weather may close this site on occasion.\n\n***Please Be Aware***\nThe park will NOT be changing days of operation. The park will be open Tuesday-Saturday through the summer and winter seasons."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Rapid weather changes are common in the western South Dakota area where Minuteman Missile National Historic Site is located. Variations from season to season and from year to year are great. Characteristics of the climate are hot dry summers and bitterly cold winters. Wind is a constant on the Great Plains, winds in excess of 50 mph not uncommon. During the winter season, winds typically blow from the north-northwest and have been known to cause wind chills in excess of -40 degrees."
+  },
+  "images": [
+    {
+      "id": "mimi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BEAAF-1DD8-B71B-0BBB2CECC1123926.jpg",
+      "title": "Delta-09 enclosure",
+      "altText": "Glass structure over the silo allows visitors to look down at the missile",
+      "caption": "The glass enclosure allows visitors to view a Minuteman II missile in the silo.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mimi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BEBF3-1DD8-B71B-0B5C85C543F76321.jpg",
+      "title": "Minuteman II Missile",
+      "altText": "A cylindrical missile inside an underground silo.",
+      "caption": "A Minuteman II nuclear missile remains on alert, representing the 1,000 missiles which kept a constant vigil during the Cold War.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BF0DC-1DD8-B71B-0B3812E6C9AC3B4E.jpg",
+      "title": "A winter visit to Delta-09",
+      "altText": "Two people are visible at the missile silo through a chain link fence",
+      "caption": "A visit to the Delta-09 missile silo allows the opportunity to consider the role of these missile in America's defense during the Cold War.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BED4C-1DD8-B71B-0B37F93539A2107E.jpg",
+      "title": "Delta-01",
+      "altText": "A brown building behind a tall fence with warning signs",
+      "caption": "For thirty years, US Air Force staff monitored a flight of ten nuclear missiles at the Delta-01 Launch Control Facility.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BF27F-1DD8-B71B-0B25D6E6F033E51E.jpg",
+      "title": "\"Thirty Minutes or Less\"",
+      "altText": "A large metal blast door with art of a Domino with a nuclear missile",
+      "caption": "Behind this blast door is the control center where two missileers kept a constant watch over ten nuclear missiles.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BF3EA-1DD8-B71B-0BF5FC14CA1D26B8.jpg",
+      "title": "Morale Art of the Cold War",
+      "altText": "A painting of a nuclear missile bursting through a Soviet Flag",
+      "caption": "Located next to the elevator, this painting served as a reminder to missileers who they were defending the United States against.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BF6F4-1DD8-B71B-0BF118191513DBAB.jpg",
+      "title": "Nose-to-Nose with Armegeddon",
+      "altText": "View down a silo at a nuclear missile",
+      "caption": "Visitors can peer through the glass at a Minuteman II missile in the silo at Delta-09.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BF8E6-1DD8-B71B-0B7D3BBA05E56FB9.jpg",
+      "title": "Night view of Delta-09",
+      "altText": "Night view of the Delta-09 site",
+      "caption": "Night view of the Delta-09 site",
+      "credit": "NPS Photo / Caroline Rohe",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D4BF1CF6-1DD8-B71B-0B25279EBB07F48F.jpg",
+      "title": "Minuteman Missile Visitor Center",
+      "altText": "A modern building with a prominent glass clerestory dominates a prairie landscape at sunset",
+      "caption": "The visitor center at sunset.",
+      "credit": "HDR",
+      "isPrimary": false
+    },
+    {
+      "id": "mimi-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D4D4B259-1DD8-B71B-0BCCC417E00707BA.jpg",
+      "title": "Cold War \"Blast Door\" art at Delta-01",
+      "altText": "A view of a concrete wall with a painting and a blastdoor with art",
+      "caption": "Morale art reminded missile officers who the enemy was during the Cold War",
+      "credit": "NPS/Minuteman Missile NHS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mimi/index.htm",
+    "directions": "http://www.nps.gov/mimi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Engineering",
+    "Military",
+    "US Air Force (Army Air Corps)",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "Cold War",
+    "National Historic Site",
+    "SD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

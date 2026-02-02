@@ -1,0 +1,117 @@
+{
+  "id": "np-thco",
+  "name": "Thomas Cole National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "In 1825, America was still a new nation, just forming its own unique identity and traditions. Thomas Cole invented a new style of art, one that Americans could call their own. His landscape paintings launched the art movement known as the Hudson River School. His groundbreaking achievements took place here in Catskill, New York -- in the \"peaceful shades\" of his beloved home, Cedar Grove.",
+  "shortDescription": "In 1825, America was still a new nation, just forming its own unique identity and traditions. Thomas Cole invented a new style of art, one that Americans could call their own. His landscape paintings ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.22570607,
+    "longitude": -73.86154864
+  },
+  "nationalParkInfo": {
+    "parkCode": "thco",
+    "npsId": "FE5E320D-BFCC-41EE-8113-BFEA9D6CA8CD",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/thco/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.thomascole.org/hours/"
+    }
+  ],
+  "contact": {
+    "phone": "518.943.7465",
+    "email": "director@thomascole.org",
+    "website": "https://www.nps.gov/thco/index.htm",
+    "address": {
+      "line1": "218 Spring Street",
+      "line2": "",
+      "city": "Catskill",
+      "state": "NY",
+      "postalCode": "12414"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "For the Hours of Operation, please visit https://thomascole.org"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "For details and information, visit, http://www.thomascole.org/."
+  },
+  "images": [
+    {
+      "id": "thco-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2D840ABD-9893-BA8E-49B75545C9AD5875.jpg",
+      "title": "1815 Main House",
+      "altText": "A three story house with large porch across the front and flight of steps leading to the ground.",
+      "caption": "Thomas Cole's house, constructed in 1815.",
+      "credit": "Photo by Escape Brooklyn",
+      "isPrimary": true
+    },
+    {
+      "id": "thco-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2D6C2E4A-F955-7538-5ADB7DB4A8539BF9.jpg",
+      "title": "Thomas Cole Site Campus",
+      "altText": "A bird's eye view of several buildings nested among trees and lawn.",
+      "caption": "Thomas Cole National Historic Site.",
+      "credit": "Photo by Devin Pickering",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/thco/index.htm",
+    "directions": "http://www.thomascole.org/hours/"
+  },
+  "keywords": [
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

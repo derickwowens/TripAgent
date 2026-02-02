@@ -1,0 +1,201 @@
+{
+  "id": "np-grfa",
+  "name": "Great Falls Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "At Great Falls, the Potomac River builds up speed and force as it falls over a series of steep, jagged rocks and flows through the narrow Mather Gorge. The Patowmack Canal offers a glimpse into the early history of this country. Great Falls Park has many opportunities to explore history and nature, all in a beautiful 800-acre park only 15 miles from the Nation's Capital.",
+  "shortDescription": "At Great Falls, the Potomac River builds up speed and force as it falls over a series of steep, jagged rocks and flows through the narrow Mather Gorge. The Patowmack Canal offers a glimpse into the ea...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.98776107,
+    "longitude": -77.25128326
+  },
+  "nationalParkInfo": {
+    "parkCode": "grfa",
+    "npsId": "4DC6F018-E87E-46AE-8F05-BA30D3B82FF9",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/grfa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/grfa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7037573101",
+    "email": "gwmp_superintendent@nps.gov",
+    "website": "https://www.nps.gov/grfa/index.htm",
+    "address": {
+      "line1": "9200 Old Dominion Dr.",
+      "line2": "",
+      "city": "McLean",
+      "state": "VA",
+      "postalCode": "22102"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - Sunset",
+    "tuesday": "7:00AM - Sunset",
+    "wednesday": "7:00AM - Sunset",
+    "thursday": "7:00AM - Sunset",
+    "friday": "7:00AM - Sunset",
+    "saturday": "7:00AM - Sunset",
+    "sunday": "7:00AM - Sunset",
+    "description": "Great Falls Park is open from 7:00 am until 30 minutes after sunset.  This time varies each day.  Great Falls Park is closed on December 25."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Includes driver and passengers. Admits one single, private, non-commercial vehicle and all its passengers. Organized groups are not eligible for the vehicle permit. Also valid for entrance into the Chesapeake and Ohio Canal National Historical Park. Admission to Great Falls Park is valid for seven consecutive days including date of purchase.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Individuals 15 years of age and younger are admitted free of charge. Also valid for entrance into the Chesapeake and Ohio Canal National Historical Park. Admission to Great Falls Park is valid for seven consecutive days including date of purchase.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Applies only to people entering by foot, bicycle, or horse. Individuals 15 years of age and younger are admitted free of charge. Also valid for entrance into the Chesapeake and Ohio Canal National Historical Park. Admission to Great Falls Park is valid for seven consecutive days including date of purchase.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Includes church groups, college/school groups, scouts, service organizations, military, etc.\n\nAll holders of annual passes and those under 15 years old will be exempt from payment of fees.\n\nNon-Commercial Groups in vehicles with a capacity of 15 or less are charged the $20.00 vehicle permit. Vehicles with a capacity of 16 or more are charged a fee of $10.00 per person. Removal of seats from a vehicle does not then qualify for the lower rate.\n\nThe total fee will not exceed the $100 fee per vehicle.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Vehicles with capacity of 7-25 passengers: $40. (No per person fee)",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Vehicles with capacity of 7-25 passengers: $40. (No per person fee)",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Vehicles with capacity of 1-6 passengers: $25 plus $3 per person.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Vehicles with capacity of 26+: $100. (No per person fee)",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The Washington, D.C. area has a four-season Mid-Atlantic climate. Summertime is warm and humid, while winter can be cold and snowy. Precipitation averages 2-4” monthly, year-round."
+  },
+  "images": [
+    {
+      "id": "grfa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F3B82E17-CE9F-1035-D33AE07C0819BBD2.jpg",
+      "title": "Great Falls",
+      "altText": "Water pouring down rocks at Great Falls",
+      "caption": "Great Falls, Virginia",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "grfa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85E2E1-1DD8-B71B-0BD052D2CE78598E.jpg",
+      "title": "Great Falls",
+      "altText": "Water rushes over jagged rocks",
+      "caption": "The Potomac River rushes down the Great Falls on the Virginia-Maryland border.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "grfa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F3DA0A97-C846-5EA6-71FA0794AC7D6D2A.jpg",
+      "title": "Evening at Great Falls",
+      "altText": "Great Falls with a purple sky near dusk",
+      "caption": "Great Falls in the Evening",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "grfa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F135C708-C6AF-5DB7-A09B79EB4A550EC2.jpg",
+      "title": "Great Falls Aerial",
+      "altText": "An aerial shot of the Great Falls.",
+      "caption": "An aerial shot of Great Falls.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "grfa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F335ABA6-F22B-DA34-275BEEFF655A9114.jpg",
+      "title": "View of Great Falls from Virginia",
+      "altText": "Water rushing over rocks",
+      "caption": "A view of Great Falls from Virginia",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/grfa/index.htm",
+    "directions": "http://www.nps.gov/grfa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Commerce",
+    "Engineering",
+    "Transportation",
+    "Canals",
+    "Animals",
+    "Birds",
+    "Geology",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Watersheds",
+    "Waterfalls",
+    "Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

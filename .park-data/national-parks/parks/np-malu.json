@@ -1,0 +1,148 @@
+{
+  "id": "np-malu",
+  "name": "Martin Luther King, Jr. National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "Welcome to Martin Luther King, Jr. National Historical Park & Preservation District where a young boy grows up in a time of segregation. He was moved by destiny to lead the modern civil rights movement. This was Martin Luther King, Jr. Explore his roots, walk in his footsteps, visit the home of his birth, and where he played as a child. Hear his voice in the church where he changed the world.",
+  "shortDescription": "Welcome to Martin Luther King, Jr. National Historical Park & Preservation District where a young boy grows up in a time of segregation. He was moved by destiny to lead the modern civil rights movemen...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 33.75618241,
+    "longitude": -84.37256768
+  },
+  "nationalParkInfo": {
+    "parkCode": "malu",
+    "npsId": "59636FCE-DE81-4D98-890C-585BD48F9AD0",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/malu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/malu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(404) 331-1401",
+    "email": "MALU_Information@nps.gov",
+    "website": "https://www.nps.gov/malu/index.htm",
+    "address": {
+      "line1": "450 Auburn Avenue, NE",
+      "line2": "",
+      "city": "Atlanta",
+      "state": "GA",
+      "postalCode": "30312"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Access to buildings at the Martin Luther King, Jr. National Historical Park is as follows:\n\nOpen: Monday – Sunday, 9:00am – 5:00pm\n\nVisitor Center \nHistoric Ebenezer Baptist Church \nBirth Home – Tours are temporarily on-hold. \nFire Station No. 6 – Opened with staff availability."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers typically are warm and humid with average afternoon high temperatures are in the lower 90s. During winter the high temperatures average from the mid-50s to the lower 60s. Lows average in the mid-30s. Spring and Autumn seasons are characterized by much variability from day to day and from year to year. The average date of first freeze is in mid-November and the date of the last freeze is mid to late March."
+  },
+  "images": [
+    {
+      "id": "malu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5DC14EA9-047B-156E-0DEAFE4188EAD890.jpg",
+      "title": "The Visitor Center at Martin Luther King, Jr. National Historical Park",
+      "altText": "Visitor center and the \"I Have a Dream\" Internrational World Peace Rose",
+      "caption": "The visitor center features an exhibit entitled \"Courage To Lead\".",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "malu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/05E52B2F-1DD8-B71B-0BF2101AB9877F24.jpg",
+      "title": "Birth Home of Martin Luther King, Jr.",
+      "altText": "The Birth Home of Martin Luther King, Jr.",
+      "caption": "The Birth Home of Martin Luther King, Jr.",
+      "credit": "Gary Tarleton, NPS, HFC",
+      "isPrimary": false
+    },
+    {
+      "id": "malu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0625B9FE-1DD8-B71B-0BAA913E3985A8BC.jpg",
+      "title": "Historic Ebenezer Baptist Church",
+      "altText": "Historic Ebenezer Baptist Church",
+      "caption": "The spiritual home of the King Family.",
+      "credit": "Gary Tarleton, NPS, HFC",
+      "isPrimary": false
+    },
+    {
+      "id": "malu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/06909748-1DD8-B71B-0B311F3700205932.jpg",
+      "title": "Fire Station No. 6",
+      "altText": "Fire Station No. 6",
+      "caption": "The second Fire Station integrated in the City of Atlanta.",
+      "credit": "NPS Photo/Gary Tarleton",
+      "isPrimary": false
+    },
+    {
+      "id": "malu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/06A2AE8E-1DD8-B71B-0B35D421256AF991.jpg",
+      "title": "The Tomb of Dr. and Mrs. Martin Luther King, Jr.",
+      "altText": "The Tomb of Dr. and Mrs. Martin Luther King, Jr.",
+      "caption": "The Tomb of Dr. and Mrs. Martin Luther King, Jr.  rests on a brick island within a reflecting pool.",
+      "credit": "NPS Photo/Gary Tarleton",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/malu/index.htm",
+    "directions": "http://www.nps.gov/malu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Monuments and Memorials",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "National Historical Park",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

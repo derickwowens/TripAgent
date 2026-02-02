@@ -1,0 +1,367 @@
+{
+  "id": "np-wrst",
+  "name": "Wrangell - St Elias National Park & Preserve",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Wrangell-St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. At 13.2 million acres, the park is the same size as Yellowstone National Park, Yosemite National Park, and Switzerland combined! Within this wild landscape, people continue to live off the land as they have done for centuries. This rugged, beautiful land is filled with opportunities for adventure.",
+  "shortDescription": "Wrangell-St. Elias is a vast national park that rises from the ocean all the way up to 18,008 ft. At 13.2 million acres, the park is the same size as Yellowstone National Park, Yosemite National Park,...",
+  "designation": "National Park & Preserve",
+  "coordinates": {
+    "latitude": 61.4182147,
+    "longitude": -142.6028439
+  },
+  "nationalParkInfo": {
+    "parkCode": "wrst",
+    "npsId": "B7944940-3FE5-4F9B-80AB-2FD78A4CDD48",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wrst/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wrst/planyourvisit/wrangell-st-elias-visitor-center.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9078225234",
+    "email": "wrst_info@nps.gov",
+    "website": "https://www.nps.gov/wrst/index.htm",
+    "address": {
+      "line1": "Wrangell-St. Elias National Park & Preserve",
+      "line2": "Mile 106.8 Richardson Highway",
+      "city": "Copper Center",
+      "state": "AK",
+      "postalCode": "99573"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "The park and public lands are always open but visitor facilities have limited seasons: Open in Summer. Call ahead for hours: Copper Center (907) 822-7250, Slana (907) 822-7401, Chitina (907) 823-2205 and Kennecott (907) 205-7106. CLOSED Fall-Winter-Spring - Mid-September through April."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Varies widely depending on location in park and time of year. Visit https://www.nps.gov/wrst/planyourvisit/weather.htm for detailed information."
+  },
+  "images": [
+    {
+      "id": "wrst-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AAD63-1DD8-B71B-0BCE10FFD741A687.jpg",
+      "title": "Icy Bay with Mt. St. Elias",
+      "altText": "Glaciers loom over the ocean with large snowy mountains rising into blue skies",
+      "caption": "Wrangell-St. Elias National Park contains a diversity of natural features.  Landscapes unique to the North American continent are common here.",
+      "credit": "NPS Photo/ Neal Herbert",
+      "isPrimary": true
+    },
+    {
+      "id": "wrst-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AAC04-1DD8-B71B-0B6534785C41D6B5.jpg",
+      "title": "Backpackers in Mentasta Mountains",
+      "altText": "Two backpackers sitting in an alpine meadow with snowy mountains in the background",
+      "caption": "Wrangell-St. Elias National Park is a backpacker's paradise.  A variety of routes take you into beautiful country, including the Mentasta Mountains.",
+      "credit": "NPS Photo/ Bryan Petrtyl",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AB124-1DD8-B71B-0B224A3B96A7304E.jpg",
+      "title": "Kennecott Mill Town",
+      "altText": "Historic, large, red buildings with mountains in the background",
+      "caption": "Kennecott Mines National Historic Landmark is found within Wrangell-St. Elias National Park.  This early 1900's copper mining operation overcame numerous challenges and found success in the heart of the Alaskan wilderness.",
+      "credit": "NPS Photo/ Matthew Yarbrough",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AB2FD-1DD8-B71B-0BC380F8D220B0BA.jpg",
+      "title": "Logan Glacier",
+      "altText": "A large glacier with stripes of different colored rock nestled in between barren mountain slopes.",
+      "caption": "Wrangell-St. Elias National Park contains the greatest concentration of glaciers in North America.  More than 3000 glaciers covering over three million acres of land are found in the park.",
+      "credit": "NPS Photo/ Bryan Petrtyl",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AB5F0-1DD8-B71B-0B0A0B409DEAB3ED.jpg",
+      "title": "Wrangell Mountains",
+      "altText": "Four large snow covered mountains rise above dense forest into blue skies.",
+      "caption": "The Wrangell Mountains dominate the view of the northern half of the park.   This range lies entirely within the park and reaches 16,390 ft (4,996 m) in height.",
+      "credit": "NPS Photo/ Bryan Petrtyl",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9DC3E3D5-D69E-D0CC-CB5DDBE505175B32.jpg",
+      "title": "Copper Center Visitor Center",
+      "altText": "Copper Center Visitor Center",
+      "caption": "Copper Center Visitor Center",
+      "credit": "National Park Service",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9DCBE069-A954-BD79-5281A59DC8A04EDE.jpg",
+      "title": "Slana Ranger Station",
+      "altText": "Slana Ranger Station",
+      "caption": "Slana Ranger Station",
+      "credit": "National Park Service",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9DD39775-F416-41FB-469ABEA4388BD8F2.jpg",
+      "title": "Chitina Ranger Station",
+      "altText": "Chitina Ranger Station",
+      "caption": "Chitina Ranger Station",
+      "credit": "National Park Service",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9DE230BE-C2B2-38C5-DF6FF368C1AB8F0B.jpg",
+      "title": "Kennecott Visitor Center",
+      "altText": "Kennecott Visitor Center in the historic Blackburn School",
+      "caption": "Kennecott Visitor Center in the historic Blackburn School",
+      "credit": "National Park Service",
+      "isPrimary": false
+    },
+    {
+      "id": "wrst-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9DED0407-CD98-60E5-7965642A3CD2DA0D.jpg",
+      "title": "Yakutat coastal area",
+      "altText": "Yakutat coastal area",
+      "caption": "Yakutat coastal area",
+      "credit": "National Park Service",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "BBC79C28-EBA7-4CE9-8614-02D00AA21558",
+      "name": "ATV Off-Roading"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "07CBCA6A-46B8-413F-8B6C-ABEDEBF9853E",
+      "name": "Canyoneering"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "977B3209-68A2-4BCE-97A9-EA0CAC320664",
+      "name": "Mountain Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "C06FE528-9671-4EC1-909F-B7D3720A1D89",
+      "name": "Fixed Wing Flying"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wrst/index.htm",
+    "directions": "http://www.nps.gov/wrst/planyourvisit/wrangell-st-elias-visitor-center.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Aviation",
+    "Explorers and Expeditions",
+    "Industry",
+    "Mining",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Bison",
+    "Cats (wild)",
+    "Fish",
+    "Wolves",
+    "Arctic",
+    "Tundra",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Fossils and Paleontology",
+    "Dinosaur",
+    "Geology",
+    "Mineral Deposits",
+    "Glaciers",
+    "Lakes",
+    "Mountains",
+    "Night Sky",
+    "Aurora Borealis",
+    "Trails",
+    "Volcanoes",
+    "Watersheds",
+    "Wilderness",
+    "National Park & Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

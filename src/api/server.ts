@@ -11,6 +11,7 @@ import { AmadeusCarAdapter } from '../providers/cars/AmadeusCarAdapter.js';
 import { AmadeusActivitiesAdapter } from '../providers/activities/AmadeusActivitiesAdapter.js';
 import { NationalParksAdapter } from '../providers/parks/NationalParksAdapter.js';
 import { StateParkService } from '../providers/parks/StateParkService.js';
+import { s3ParkData } from '../providers/parks/S3ParkDataService.js';
 import { RecreationGovAdapter } from '../providers/recreation/RecreationGovAdapter.js';
 import { INaturalistAdapter } from '../providers/wildlife/INaturalistAdapter.js';
 import { createChatHandler, TOOL_DISPLAY_NAMES } from './chat.js';
@@ -139,6 +140,76 @@ app.get('/itinerary/:id', asyncHandler(async (req: Request, res: Response) => {
   
   res.setHeader('Content-Type', 'text/html');
   res.send(itinerary.html);
+}));
+
+// ============================================
+// PARK DATABASE ENDPOINTS (S3)
+// ============================================
+app.get('/api/parks/stats', asyncHandler(async (req: Request, res: Response) => {
+  const stats = await s3ParkData.getStats();
+  if (!stats) {
+    return res.status(503).json({ error: 'Park database unavailable' });
+  }
+  res.json(stats);
+}));
+
+app.get('/api/parks/search', asyncHandler(async (req: Request, res: Response) => {
+  const { query, category, state, limit = '10' } = req.query;
+  
+  if (!query) {
+    return res.status(400).json({ error: 'Missing required parameter: query' });
+  }
+  
+  const results = await s3ParkData.searchParks(query as string, {
+    category: category as 'national' | 'state' | 'all',
+    stateCode: state as string,
+    limit: parseInt(limit as string),
+  });
+  
+  res.json({ parks: results, totalResults: results.length });
+}));
+
+app.get('/api/parks/nearby', asyncHandler(async (req: Request, res: Response) => {
+  const { latitude, longitude, radius = '50', category, limit = '10' } = req.query;
+  
+  if (!latitude || !longitude) {
+    return res.status(400).json({ error: 'Missing required parameters: latitude, longitude' });
+  }
+  
+  const parks = await s3ParkData.getParksNearLocation(
+    parseFloat(latitude as string),
+    parseFloat(longitude as string),
+    parseFloat(radius as string),
+    {
+      category: category as 'national' | 'state' | 'all',
+      limit: parseInt(limit as string),
+    }
+  );
+  
+  res.json({ parks, totalFound: parks.length });
+}));
+
+app.get('/api/parks/:parkId', asyncHandler(async (req: Request, res: Response) => {
+  const { parkId } = req.params;
+  
+  const park = await s3ParkData.getParkById(parkId);
+  if (!park) {
+    return res.status(404).json({ error: `Park not found: ${parkId}` });
+  }
+  
+  res.json(park);
+}));
+
+app.get('/api/parks/state/:stateCode', asyncHandler(async (req: Request, res: Response) => {
+  const { stateCode } = req.params;
+  
+  const parks = await s3ParkData.getParksInState(stateCode);
+  res.json({
+    stateCode: stateCode.toUpperCase(),
+    national: parks.national,
+    state: parks.state,
+    totalParks: parks.national.length + parks.state.length,
+  });
 }));
 
 // ============================================

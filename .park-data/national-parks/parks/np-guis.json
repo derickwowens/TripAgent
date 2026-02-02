@@ -1,0 +1,371 @@
+{
+  "id": "np-guis",
+  "name": "Gulf Islands National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "Millions of visitors are drawn to the Gulf of America for Gulf Islands National Seashore's emerald coast waters, magnificent white beaches, fertile marshes and historical landscapes. Come explore with us today!",
+  "shortDescription": "Millions of visitors are drawn to the Gulf of America for Gulf Islands National Seashore's emerald coast waters, magnificent white beaches, fertile marshes and historical landscapes. Come explore with...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 30.3211,
+    "longitude": -87.2304
+  },
+  "nationalParkInfo": {
+    "parkCode": "guis",
+    "npsId": "ACA78E27-3C26-4C8B-8CCB-9F0B5BED247F",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/guis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/guis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "850-934-2600",
+    "email": "guis_information@nps.gov",
+    "website": "https://www.nps.gov/guis/index.htm",
+    "address": {
+      "line1": "1801 Gulf Breeze Parkway",
+      "line2": "",
+      "city": "Gulf Breeze",
+      "state": "FL",
+      "postalCode": "32563"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 6:00PM",
+    "tuesday": "8:00AM - 6:00PM",
+    "wednesday": "8:00AM - 6:00PM",
+    "thursday": "8:00AM - 6:00PM",
+    "friday": "8:00AM - 6:00PM",
+    "saturday": "8:00AM - 6:00PM",
+    "sunday": "8:00AM - 6:00PM",
+    "description": "The Davis Bayou Area is located south of U. S. Hwy. 90 east of downtown Ocean Springs, Mississippi and offers many recreational opportunities. Visitors can enjoy fishing, hiking, biking, birdwatching, picnicking, kayaking and ranger-led programs. There are no swimming beaches in the Davis Bayou Area. Visitor Center hours are 9 a.m. to 4 p.m. Wednesday - Sunday."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Cost for up to six people in one vehicle. Good for seven days into any fee area in Florida, (Opal Beach, Johnson Beach, Fort Pickens).",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. Fees are required at Fort Pickens Area, Opal Beach Complex Area, and Johnson Beach Area in Florida. Additional fees to ride the ferry.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Fees are required at Fort Pickens Area, Opal Beach Complex Area, and Johnson Beach Area in Florida. Additional fees to ride the ferry.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Weather along the northern coast of the Gulf of Mexico can change quickly. During the winter temperatures range from 40-70 degrees fahrenheit, rain is less common than other seasons. Snow and freezing temperatures are not common. During the summer temperatures range from 70-100+ degrees fahrenheit. Rain is common during the summer with many thunderstorms. Hurricanes impact the area during the tropical storm season between June and November. Tornadoes can impact the area during the Spring and Fall."
+  },
+  "images": [
+    {
+      "id": "guis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/242ED14D-95F8-A1B3-4BEA8B8817B57B2B.jpg",
+      "title": "Pensacola Bay City Ferry in Florida",
+      "altText": "Ferry in the Pensacola Bay",
+      "caption": "A National Park Service ferry navigates the Pensacola Bay to Fort Pickens.",
+      "credit": "NPS/Doggrell",
+      "isPrimary": true
+    },
+    {
+      "id": "guis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CF8AA22D-A3C2-8DBE-98F1255BBA16CE3C.jpg",
+      "title": "Fort Barrancas and Spanish Water Battery",
+      "altText": "A white building and a fort",
+      "caption": "Fort Barrancas and Spanish Water Battery sit on Naval Air Station Pensacola.",
+      "credit": "NPS/Doggrell",
+      "isPrimary": false
+    },
+    {
+      "id": "guis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CE2187A2-F3AF-54FA-06EFF4660752902F.jpg",
+      "title": "Fort Massachusetts",
+      "altText": "A fort with water on an island",
+      "caption": "Fort Massachusetts sits on Ship Island in the Gulf off Mississippi.",
+      "credit": "NPS/Bernstiel",
+      "isPrimary": false
+    },
+    {
+      "id": "guis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CE7F6CD7-9D06-D6F7-E8BCCC878F57D216.jpeg",
+      "title": "Santa Rosa Area",
+      "altText": "White sand and green water",
+      "caption": "The Santa Rosa Area is the stech of beach between Navarre and Pensacola Beach. There is a fee area called Opal Beach.",
+      "credit": "NPS/Doggrell",
+      "isPrimary": false
+    },
+    {
+      "id": "guis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CECB6504-E46D-110F-AC4A39D32488193B.jpg",
+      "title": "Naval Live Oaks Area",
+      "altText": "Green trees with water",
+      "caption": "The maritime forest sits on the Santa Rosa Sound in the Naval Live Oaks Area, fee free area in Gulf Breeze, Florida.",
+      "credit": "NPS/Doggrell",
+      "isPrimary": false
+    },
+    {
+      "id": "guis-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CF532898-AD17-5265-F3C3891182FEE203.jpg",
+      "title": "Davis Bayou",
+      "altText": "Water",
+      "caption": "Davis Bayou is a fee free area in Ocean Springs, Mississippi. Home to beautiful nature area.",
+      "credit": "NPS/Breault",
+      "isPrimary": false
+    },
+    {
+      "id": "guis-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D03B85B1-D5F7-2B98-46ED669DBE0EB771.jpg",
+      "title": "Perdido Key Area",
+      "altText": "Wood boardwalk to a sound water.",
+      "caption": "Perdido Key Area is a fee area featuring 7 crossovers, 2 pavilions, and 4 parking lots on the Gulf and Sound.",
+      "credit": "NPS/Wade",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "7503433C-3856-4E82-AFF3-0B1649766ED3",
+      "name": "Jet Skiing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/guis/index.htm",
+    "directions": "http://www.nps.gov/guis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Engineering",
+    "Forts",
+    "Incarceration",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "US Coast Guard",
+    "US Air Force (Army Air Corps)",
+    "Armories",
+    "Battlefields",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Coasts, Islands and Atolls",
+    "Forests and Woodlands",
+    "Oceans",
+    "Trails",
+    "Wetlands",
+    "Marshes",
+    "Wilderness",
+    "National Seashore",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

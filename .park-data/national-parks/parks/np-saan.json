@@ -1,0 +1,224 @@
+{
+  "id": "np-saan",
+  "name": "San Antonio Missions National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Welcome to San Antonio Missions, a National Park Service site and the only UNESCO World Heritage Site in Texas. Each mission in the park is a center of community and has been since the early 1700s. They changed life in this region, introducing new technologies while enforcing new cultural guidelines. As you visit, reflect on change, culture, power, and how people have used the land.",
+  "shortDescription": "Welcome to San Antonio Missions, a National Park Service site and the only UNESCO World Heritage Site in Texas. Each mission in the park is a center of community and has been since the early 1700s. Th...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 29.31262089,
+    "longitude": -98.4289522
+  },
+  "nationalParkInfo": {
+    "parkCode": "saan",
+    "npsId": "CCE1AD17-9B13-4D74-9CAC-0278D5477316",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/saan/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/saan/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2109321001",
+    "email": "saan_interpretation@nps.gov",
+    "website": "https://www.nps.gov/saan/index.htm",
+    "address": {
+      "line1": "Visitor Center at Mission San José",
+      "line2": "6701 San Jose Drive",
+      "city": "San Antonio",
+      "state": "TX",
+      "postalCode": "78214"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 8:00PM",
+    "tuesday": "6:00AM - 8:00PM",
+    "wednesday": "6:00AM - 8:00PM",
+    "thursday": "6:00AM - 8:00PM",
+    "friday": "6:00AM - 8:00PM",
+    "saturday": "6:00AM - 8:00PM",
+    "sunday": "6:00AM - 8:00PM",
+    "description": "Park grounds are open sunrise to sunset. Mission San José is open 9am-5pm. \nOur park store located in the Visitor Center is open daily 9 am to 1 pm and 2 pm to 5 pm. \nPark grounds are closed on Thanksgiving Day, Christmas Day, and New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Over the course of a year, the temperature typically varies from 40°F to 95°F and is rarely below 29°F or above 100°F. The warm season lasts from May through September with an average daily high temperature above 90°F and a low of 75°F. The cold season lasts from November through February with an average daily high below 68°F and an average low of 40°F. The relative humidity ranges from 40-80% over the course of the year, which can be very uncomfortable to many people."
+  },
+  "images": [
+    {
+      "id": "saan-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/90077B69-9ADB-DEE2-B0637EE8165E8299.jpg",
+      "title": "Mission San Juan",
+      "altText": "White frescoed church with a stone ruin to the left in the foreground.",
+      "caption": "Mission San Juan church and stone ruins.",
+      "credit": "NPS Photo/Andrew Shirey",
+      "isPrimary": true
+    },
+    {
+      "id": "saan-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/74EEB902-9F63-AB65-D3CAD77F3F0239AB.jpg",
+      "title": "Mission Espada, World Heritage Site",
+      "altText": "Mission Espada, World Heritage Site",
+      "caption": "A part of Mission Espada's ranch is located 30 miles south-east, outside of Floresville, TX.",
+      "credit": "NPS Photo / Andrew Shirey",
+      "isPrimary": false
+    },
+    {
+      "id": "saan-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A1F5E6C0-1DD8-B71B-0B23C3B88803DB0B.jpg",
+      "title": "Tours of Mission San José",
+      "altText": "Park Ranger leads a tour through Mission San José",
+      "caption": "Catch a tour at Mission San José at 10:00, 11:00, 1:00 and 3:00 daily.",
+      "credit": "NPS Photo.",
+      "isPrimary": false
+    },
+    {
+      "id": "saan-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D5A9A6DD-DAAA-BD2B-2AE4B53C57B3E1C0.jpg",
+      "title": "Rose Window at Mission San Jose",
+      "altText": "Rose window at mission San Jose, with linestone carvings surrounding a small glass window.",
+      "caption": "The Rose Window is a famous feature of Mission San Jose.",
+      "credit": "NPS Photo.",
+      "isPrimary": false
+    },
+    {
+      "id": "saan-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1D36B273-BA5C-39AB-F75912DA746E3D67.jpg",
+      "title": "Mission San Jose sunset",
+      "altText": "Mission San Jose church and convento during the golden hour with tree",
+      "caption": "Explore 18th century mission sites like Mission San Jose.",
+      "credit": "NPS Photo.",
+      "isPrimary": false
+    },
+    {
+      "id": "saan-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1D4C640B-AC88-ED51-59AE87D041A0B129.jpg",
+      "title": "Mission Concepcion Convento & Church",
+      "altText": "Mission Concepcion convento with church in background.",
+      "caption": "Mission Concepcion is the nation's oldest unrestored stone church.",
+      "credit": "NPS Photo.",
+      "isPrimary": false
+    },
+    {
+      "id": "saan-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/74D1A662-0F1F-BE6D-E7755A5F9E313CF6.jpg",
+      "title": "Granary at Mission San José",
+      "altText": "Large room with an arches ceiling",
+      "caption": "Empty granary, or storage room at Mission San José.",
+      "credit": "NPS Photo / Andrew Shirey",
+      "isPrimary": false
+    },
+    {
+      "id": "saan-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/74E29F6F-BAF3-BAA5-932161E265F47260.jpg",
+      "title": "Original Fresco",
+      "altText": "wall art of a sun",
+      "caption": "Original Fresco at Mission Concepción",
+      "credit": "NPS Photo / Andrew Shirey",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/saan/index.htm",
+    "directions": "http://www.nps.gov/saan/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Colonization and Settlement",
+    "Dams",
+    "Farming and Agriculture",
+    "Hispanic American Heritage",
+    "Latino American Heritage",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Churches",
+    "Schools and Education",
+    "Animals",
+    "Climate Change",
+    "Trails",
+    "National Historical Park",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "id": "np-gari",
+  "name": "Gauley River National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "WV",
+  "stateName": "West Virginia",
+  "region": "southeast",
+  "description": "The 25 miles of free-flowing Gauley River and the six miles of the Meadow River pass through scenic gorges and valleys containing a wide variety of natural and cultural features. The Gauley River contains several class V+ rapids, making it one of the most adventurous white water boating rivers in the east.",
+  "shortDescription": "The 25 miles of free-flowing Gauley River and the six miles of the Meadow River pass through scenic gorges and valleys containing a wide variety of natural and cultural features. The Gauley River cont...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 38.20614947,
+    "longitude": -81.00420836
+  },
+  "nationalParkInfo": {
+    "parkCode": "gari",
+    "npsId": "A1994071-1BCB-4C14-9C21-108348882067",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gari/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http:www.gari/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "304-465-0508",
+    "email": "neri_interpretation@nps.gov",
+    "website": "https://www.nps.gov/gari/index.htm",
+    "address": {
+      "line1": "Gauley River National Recreation Area",
+      "line2": "104 Main Street",
+      "city": "Glen Jean",
+      "state": "WV",
+      "postalCode": "25846-0246"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The area is open year round. The official Gauley boating season is from early September through mid October. Boating is occasionally possible at other times, depending on water releases from Summersville Dam. There is no visitor center for Gauley River National Recreation Area. Please visit the Canyon Rim Visitor Center for New River Gorge National Park and Preserve for information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in the Appalachian Mountains can be unpredictable and can change quickly. Always be prepared for the possibility of sudden storms. Weather in the mountains is often cooler and wetter than the surrounding area. On average, the warmest month is July. The maximum average precipitation also occurs in July."
+  },
+  "images": [
+    {
+      "id": "gari-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F582C-1DD8-B71B-0BD2BEB50EE7AA86.jpg",
+      "title": "Splashy Gauley River",
+      "altText": "Rafters enjoying the Gauley River",
+      "caption": "Gauley River is a popular whitewater river in the fall",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "gari-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F5999-1DD8-B71B-0B65462A497E2575.jpg",
+      "title": "Smiling on the Gauley River",
+      "altText": "Rafting on the Gauley River",
+      "caption": "Gauley Season on the Gauley River is popular.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gari-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F5B0A-1DD8-B71B-0B230CA9C734F1E3.jpg",
+      "title": "Holding On - Gauley River",
+      "altText": "Trying to stay in the raft on the Gauley River",
+      "caption": "Enjoying the rapids on the Gauley River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gari-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F5C81-1DD8-B71B-0B5D31CC26F490DD.jpg",
+      "title": "Before Sweets Falls",
+      "altText": "Rafting on Gauley River before Sweets Falls fapid",
+      "caption": "A popular spot to watch the boats on the Gauley River - Sweets Falls",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gari-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F5E00-1DD8-B71B-0B0960FFFB58C3F5.jpg",
+      "title": "Kayaking Pillow Rock rapid on the Gauley River",
+      "altText": "Watching the boats come by on the Gauley River",
+      "caption": "A popular place on the Gauley River - Pillow Rock",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gari-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F5F97-1DD8-B71B-0B5C15F1E2407997.jpg",
+      "title": "Kayaking Pillow Rock rapid",
+      "altText": "Kayakers coming through Pillow Rock rapid on Gauley River",
+      "caption": "Watching the kayaks come through Pillow Rock rapid",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gari-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F6158-1DD8-B71B-0BA32F0738491837.jpg",
+      "title": "Paddler's tapping Pillow Rock",
+      "altText": "Tapping the rock at Pillow Rock rapid on the Gauley River",
+      "caption": "Tapping the Pillow Rock is a ritual on the Gauley River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gari-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F666E-1DD8-B71B-0B957E680A2A4C8D.jpg",
+      "title": "Guiding on the Gauley River",
+      "altText": "Guiding through a rapid on the Gauley River",
+      "caption": "Whitewater rafting is popular during Gauley Season",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gari-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F67E3-1DD8-B71B-0BBA63AB254EF9B4.jpg",
+      "title": "High siding on the Gauley River",
+      "altText": "One of the many rapids on the Gauley River",
+      "caption": "Enjoying the rapids on the Gauley River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gari/index.htm",
+    "directions": "http:www.gari/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "Battlefields",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "National Recreation Area",
+    "WV"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

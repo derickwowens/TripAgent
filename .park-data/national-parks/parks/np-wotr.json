@@ -1,0 +1,164 @@
+{
+  "id": "np-wotr",
+  "name": "Wolf Trap National Park for the Performing Arts",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "No matter what your age or taste in shows, you'll find something you like onstage at Wolf Trap National Park for the Performing Arts. From May through September, multiple amphitheaters in the park present performances such as musicals, dance, opera, jazz, and popular and country music. A good time to explore the beauty and history of the park without the crowds is October - April.",
+  "shortDescription": "No matter what your age or taste in shows, you'll find something you like onstage at Wolf Trap National Park for the Performing Arts. From May through September, multiple amphitheaters in the park pre...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.93854526,
+    "longitude": -77.265089
+  },
+  "nationalParkInfo": {
+    "parkCode": "wotr",
+    "npsId": "72F41D84-A8ED-47FC-935A-2FD28C3C582E",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wotr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wotr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7032551800",
+    "email": "wotr_interp@nps.gov",
+    "website": "https://www.nps.gov/wotr/index.htm",
+    "address": {
+      "line1": "1551 Trap Road",
+      "line2": "",
+      "city": "Vienna",
+      "state": "VA",
+      "postalCode": "22182-1643"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Wolf Trap National Park for the Performing Arts is open to the public from sunrise to dusk every day. During the performance season, the park is closed to public visitation which is not performance related during park festivals and Filene Center performances to avoid conflict among visitor use activities. This public use restriction begins two hours prior to Filene Center show times and ends one hour after Filene Center performances have completed."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather at Wolf Trap National Park for the Performing Arts is typical for the mid-Atlantic area. There are four seasons. The majority of visitation is during the summers, which can be hot and humid during the day and cooler at night."
+  },
+  "images": [
+    {
+      "id": "wotr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8068F8-1DD8-B71B-0B3D0F4B88C2CD62.jpg",
+      "title": "Filene Center Blast Off",
+      "altText": "The Filene Center House full of patrons",
+      "caption": "Everyone is ready to kickoff the Filene Center season.",
+      "credit": "NPS Photo / N. Adams",
+      "isPrimary": true
+    },
+    {
+      "id": "wotr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C806A78-1DD8-B71B-0B214F246D9BC413.jpg",
+      "title": "Catherine Filene Shouse Bust",
+      "altText": "Bust of Catherine Filene Shouse with building in back",
+      "caption": "Catherine Filene Shouse donated her land to the National Park Service, which Wolf Trap National Park for the Performing Arts was established.",
+      "credit": "NPS Photo / N. Adams",
+      "isPrimary": false
+    },
+    {
+      "id": "wotr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B408B77F-E63D-5DF1-377E3DBD36120ECB.jpg",
+      "title": "Junior Ranger Day",
+      "altText": "A ranger swears in two new Jr. Rangers during Jr. Ranger Day activities at the park.",
+      "caption": "Junior Ranger Days occur throughout the summer.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wotr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C806D30-1DD8-B71B-0B1348005ED7DA7D.jpg",
+      "title": "Dimple Meadow",
+      "altText": "Native garden with the Filene Center in the background",
+      "caption": "In 2012, park staff and volunteers planted 42 species of native grasses and wildflowers here to create a habitat that now supports over 40 kinds of bees and 25 types of butterflies.",
+      "credit": "NPS Photo / N. Adams",
+      "isPrimary": false
+    },
+    {
+      "id": "wotr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C806EB0-1DD8-B71B-0B61464724F6810A.jpg",
+      "title": "Natural Side of a Park for the Performing Arts",
+      "altText": "Filene Center in the background with autumn leaves",
+      "caption": "There are opportunities year-round to hike and enjoy the outdoors, picnic and participate in ranger programs or walks.",
+      "credit": "NPS Photo / N. Adams",
+      "isPrimary": false
+    },
+    {
+      "id": "wotr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80727B-1DD8-B71B-0B7F94588A9BB608.jpg",
+      "title": "Children's Theatre-in-the-Woods Performances",
+      "altText": "Sold out show at Theatre-in-the-Woods",
+      "caption": "Most of the activities in the park during the summer are centered around performances at the Filene Center and Theatre-in-the-Woods.",
+      "credit": "NPS Photo / N. Adams",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wotr/index.htm",
+    "directions": "http://www.nps.gov/wotr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Tragic Events",
+    "Trails",
+    "",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

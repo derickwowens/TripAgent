@@ -1,0 +1,160 @@
+{
+  "id": "np-fobu",
+  "name": "Fossil Butte National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "WY",
+  "stateName": "Wyoming",
+  "region": "west",
+  "description": "In the ridges of southwest Wyoming are some of the best-preserved fossils in the world. They tell the story of ancient life in a warm, wet environment in and around a freshwater lake. Stingrays swam in the lake. Turtles basked in the sun. Leaves rustled in the breeze while early horses darted between the trunks. We reveal more of the past with each fossil found.",
+  "shortDescription": "In the ridges of southwest Wyoming are some of the best-preserved fossils in the world. They tell the story of ancient life in a warm, wet environment in and around a freshwater lake. Stingrays swam i...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 41.85635223,
+    "longitude": -110.7624754
+  },
+  "nationalParkInfo": {
+    "parkCode": "fobu",
+    "npsId": "57CCF213-6285-408F-AD58-CC2DB9D5B6C1",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fobu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fobu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3078774455",
+    "email": "fobu_information@nps.gov",
+    "website": "https://www.nps.gov/fobu/index.htm",
+    "address": {
+      "line1": "864 Chicken Creek Road",
+      "line2": "",
+      "city": "Kemmerer",
+      "state": "WY",
+      "postalCode": "83101"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Visitors may enter the park any day sunrise to sunset, but visitor services and motor vehicle access vary throughout the year. \nCamping is not available."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Expect a variety of weather conditions no matter what time of year you visit. Spring, fall and winter can be very cold with snow and icy conditions. In spring, daytime temperatures usually range from 30 F to 65 F. Summer daytime temperatures range from 60 F to 90 F. Fall daytime temperatures range from 45 F to 70 F. Winter daytime temperatures range from -20 F to 30 F."
+  },
+  "images": [
+    {
+      "id": "fobu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/41C5C9F2-E170-9D8F-5AC0C8BB658F20A6.jpg",
+      "title": "Fossils on the Ridge",
+      "altText": "Fish fossils, Knightia eocaena, exposed near cliff",
+      "caption": "Knightia eocaena, the most abundant vertebrate fossil in the world, lies exposed near cliff face.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fobu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DC9FB-1DD8-B71B-0BA584C7C85866DD.jpg",
+      "title": "Cockerellites liops, a Common Fossil Fish",
+      "altText": "a well preserved fossil fish, Cockerellites liops",
+      "caption": "Fossils from the Green River Formation are known for their excellent preservation, abundance, and diversity. Cockerellites liops is one of the common fishes found here.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fobu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D8A6E-1DD8-B71B-0B04F9B2331990F9.jpg",
+      "title": "Palm Frond",
+      "altText": "fossil palm frond",
+      "caption": "Fossil palm fronds and other plants indicate a climate similar to the Gulf Coast states.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fobu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE1CA-1DD8-B71B-0BFF5560ADF72FCB.jpg",
+      "title": "The Limestone Ridges, Remnants of Ancient Fossil Lake, Contrast the Green, Early Summer Landscape.",
+      "altText": "A scenic view of Fossil Basin in early summer; yellow limestone, red mudstones and green vegetation",
+      "caption": "Early Summer Beauty in the High Desert of Southwestern Wyoming",
+      "credit": "NPS Photo/Devin Cherry",
+      "isPrimary": false
+    },
+    {
+      "id": "fobu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D8C4A-1DD8-B71B-0BD89BF4186BBD89.jpg",
+      "title": "Visitor Center",
+      "altText": "visitor center with Fossil Butte in the background",
+      "caption": "The visitor center is nestled in a sagebrush landscape beneath Fossil Butte. Over 300 fossils are on exhibit.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fobu-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7848D9AC-F629-D2C3-3E4109D8F60F3165.jpg",
+      "title": "Moonrise Over Fossil Butte",
+      "altText": "The moon rises just to the right of snow-covered Fossil Butte.",
+      "caption": "Fossil Butte is the most noticeable landmark of the park and where the monument got its name.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fobu/index.htm",
+    "directions": "http://www.nps.gov/fobu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Schools and Education",
+    "Fossils and Paleontology",
+    "Geology",
+    "National Monument",
+    "WY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

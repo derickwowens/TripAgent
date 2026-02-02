@@ -1,0 +1,141 @@
+{
+  "id": "np-amch",
+  "name": "Amache National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "Amache, also known as the Granada Relocation Center, near Granada, Colorado was one of ten incarceration sites established by the War Relocation Authority during World War II to unjustly incarcerate Japanese Americans. Over 10,000 people, most American citizens, were incarcerated at Amache from 1942 to 1945.",
+  "shortDescription": "Amache, also known as the Granada Relocation Center, near Granada, Colorado was one of ten incarceration sites established by the War Relocation Authority during World War II to unjustly incarcerate J...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.04962,
+    "longitude": -102.32903
+  },
+  "nationalParkInfo": {
+    "parkCode": "amch",
+    "npsId": "D35004EF-5F5A-4DA4-8716-5141BE5C933C",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/amch/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/amch/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "719-936-7600",
+    "email": "Amache_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/amch/index.htm",
+    "address": {
+      "line1": "County Rd 23 5/10",
+      "line2": "",
+      "city": "Granada",
+      "state": "CO",
+      "postalCode": "81041"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The site is currently open to the public with limited hours and services. The site currently consists of a cemetery, a monument, building foundations, and landscaping. Interpretive panels and a downloadable self-guided auto tour are available on amache.org to assist with navigation of the site. There is no visitor center at the site."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The site is located in Colorado on the High Plains, an arid, windy, and sunny environment. Temperatures and conditions can be extreme in this region, with hot, arid summers that include occasional thunderstorms and tornadoes, as well as cold and snowy winters."
+  },
+  "images": [
+    {
+      "id": "amch-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C1E570C9-C140-0E81-EDDC02810B0B7EAE.jpg",
+      "title": "Amache Barracks and Guard Tower",
+      "altText": "reconstructed barracks, guard and water towers surrounded by brown grass and shrubs.",
+      "caption": "Reconstructed barracks, guard and water towers at the newly designated Amache National Historic Site",
+      "credit": "NPS Photo / Stuart West",
+      "isPrimary": true
+    },
+    {
+      "id": "amch-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/77216C5F-A3BF-A319-3570F28DE1CBC914.jpeg",
+      "title": "Overview of Amache",
+      "altText": "black and white image of rows of barracks from above.",
+      "caption": "Amache as seen from the water tower, circa 1942",
+      "credit": "Courtesy of Amache Preservation Society",
+      "isPrimary": false
+    },
+    {
+      "id": "amch-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/77556B60-DD36-5A0E-087CCD00135FD71D.jpg",
+      "title": "Water tower",
+      "altText": "A water tower on the horizon next to trees",
+      "caption": "The water tower at Amache was a landmark that could be seen from miles.",
+      "credit": "NPS Photo/J. Ellis",
+      "isPrimary": false
+    },
+    {
+      "id": "amch-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/77CB479D-9586-2D05-5D4A0D9E3EE22E98.jpg",
+      "title": "Gardens at Amache",
+      "altText": "black and white image of a Japanese styled garden with a small koi pond.",
+      "caption": "Gardens at Amache provided beauty in a harsh landscape.",
+      "credit": "Courtesy of Sonoma State.",
+      "isPrimary": false
+    },
+    {
+      "id": "amch-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/77DD2E71-FB28-C3B9-B59957B51739350E.jpg",
+      "title": "Sunrise at Amache",
+      "altText": "An orange sunrise silhouettes a water tower and tree",
+      "caption": "Sunrise offers a time of quiet and peace for reflection.",
+      "credit": "NPS Photo/J. Kepford",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/amch/index.htm",
+    "directions": "https://www.nps.gov/amch/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Asian American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Military",
+    "US Army",
+    "Wars and Conflicts",
+    "World War II",
+    "National Historic Site",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

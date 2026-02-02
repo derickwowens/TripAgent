@@ -1,0 +1,195 @@
+{
+  "id": "np-kaww",
+  "name": "Katahdin Woods and Waters National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "ME",
+  "stateName": "Maine",
+  "region": "northeast",
+  "description": "Spread across a wild landscape offering spectacular views of Katahdin, Katahdin Woods and Waters invites discovery of its rivers, streams, woods, flora, fauna, geology, and the night skies that have attracted humans for millennia.",
+  "shortDescription": "Spread across a wild landscape offering spectacular views of Katahdin, Katahdin Woods and Waters invites discovery of its rivers, streams, woods, flora, fauna, geology, and the night skies that have a...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 45.9567565918,
+    "longitude": -68.7122879028
+  },
+  "nationalParkInfo": {
+    "parkCode": "kaww",
+    "npsId": "406F7D87-F34F-41C9-9CCE-9FD53ABBA9A7",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kaww/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/kaww/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "207-456-6001",
+    "email": "kaww_info@nps.gov",
+    "website": "https://www.nps.gov/kaww/index.htm",
+    "address": {
+      "line1": "Route 11",
+      "line2": "",
+      "city": "Patten",
+      "state": "ME",
+      "postalCode": "04765"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Katahdin Woods and Waters National Monument is open year-round. From mid-November to late May, the north entrance and Katahdin Loop Road are closed to wheeled vehicles. Two gates on the Swift Brook Road leading to the southern sections of the monument are managed by a neighboring timber company and may be closed to wheeled vehicles as well from mid-November to late May."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Northern Maine experiences all four seasons. Summer temperatures range from 45-90F (7-30C). Fall temperatures range from 30-70F (-1-21C). Typically, the first frost is in mid-October and first snowfall begins in November and can continue through April with an average accumulation of 73 inches (185 cm). Winter temperatures range from 14-35F (-10 - 2C). Spring temperatures range from 30-70F (-1-21C)."
+  },
+  "images": [
+    {
+      "id": "kaww-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/706CD3A6-9835-C974-F5C1ECDF3354177B.jpg",
+      "title": "East Branch of the Penobscot River",
+      "altText": "Mirror reflection of Lunksoos Mountain and trees within the water of the river.",
+      "caption": "The East Branch of the Penobscot River is filled with wildness and beautiful scenery for the adventurous few who travel down it.",
+      "credit": "Jason Gablaski",
+      "isPrimary": true
+    },
+    {
+      "id": "kaww-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/714401EC-A91E-F39F-787168844CC94A5A.jpg",
+      "title": "Autumn Foliage",
+      "altText": "Autumn foliage along a dirt logging road.",
+      "caption": "Katahdin Woods & Waters National Monument has arguably the best autumn foliage out of any national park unit.",
+      "credit": "NPS / Jason Gablaski",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kaww/index.htm",
+    "directions": "https://www.nps.gov/kaww/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Industry",
+    "Logging and Timber Cutting",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Animals",
+    "Forests and Woodlands",
+    "Geology",
+    "Glaciers",
+    "Mountains",
+    "Night Sky",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "National Monument",
+    "ME"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

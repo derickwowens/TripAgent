@@ -1,0 +1,159 @@
+{
+  "id": "np-fora",
+  "name": "Fort Raleigh National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "Amongst the shallow blue waters of the Outer Banks lies Fort Raleigh on Roanoke Island. Shaped by constant winds of change, Fort Raleigh has become a focal point of American history. From the first Algonquian-speaking people to the first English colonies, from formerly enslaved people starting anew to an inventor testing new radio technology, this island continues to be a place to forge new paths.",
+  "shortDescription": "Amongst the shallow blue waters of the Outer Banks lies Fort Raleigh on Roanoke Island. Shaped by constant winds of change, Fort Raleigh has become a focal point of American history. From the first Al...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 35.93278602,
+    "longitude": -75.71496865
+  },
+  "nationalParkInfo": {
+    "parkCode": "fora",
+    "npsId": "C84BCBF8-FC75-48BB-8032-6FF56AB2DCED",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fora/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fora/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2524732111",
+    "email": "caha_public_affairs@nps.gov",
+    "website": "https://www.nps.gov/fora/index.htm",
+    "address": {
+      "line1": "1500 Fort Raleigh Road",
+      "line2": "",
+      "city": "Manteo",
+      "state": "NC",
+      "postalCode": "27954"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The grounds are open for visitation 24 hours a day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather on the Outer Banks varies seasonally and daily. Please check the National Weather Service at http://www.weather.gov/mhx/ for up-to-date weather forecast information."
+  },
+  "images": [
+    {
+      "id": "fora-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C78FF79-1DD8-B71B-0B8F7CC3FCAA5934.jpg",
+      "title": "First Light of Freedom",
+      "altText": "Back of the monument commemorating the Roanoke Island Freedmen's Colony",
+      "caption": "Commemorating the Roanoke Island Freedmen's Colony",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fora-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79040E-1DD8-B71B-0BE7F3FE5F7DCE0B.jpg",
+      "title": "Thomas Hariot Trail",
+      "altText": "Tree standing next to the maritime forest path of the Thomas Hariot Trail",
+      "caption": "Venture through a maritime forest",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fora-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C790624-1DD8-B71B-0B4DBDCDE199F5DC.jpg",
+      "title": "Crucible Artifact",
+      "altText": "Pieces of a crucible left behind by the 1585 English expedition",
+      "caption": "Shards unearthed here provide clues to the English expedition of 1585",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fora-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79081C-1DD8-B71B-0B2642E00ED9B1E5.jpg",
+      "title": "Waterside Theatre",
+      "altText": "Stage of the Waterside Theatre with a view of the Roanoke Sound in the background",
+      "caption": "Home of The Lost Colony drama performed every summer",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fora/index.htm",
+    "directions": "http://www.nps.gov/fora/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Maritime",
+    "Piracy and Privateering",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Abolition Movement",
+    "Transportation",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "Civil War",
+    "Forests and Woodlands",
+    "National Historic Site",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

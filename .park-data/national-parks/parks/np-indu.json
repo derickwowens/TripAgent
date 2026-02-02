@@ -1,0 +1,342 @@
+{
+  "id": "np-indu",
+  "name": "Indiana Dunes National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "IN",
+  "stateName": "Indiana",
+  "region": "midwest",
+  "description": "Lake Michigan's might has influenced Indiana Dunes for millennia. Wind and waves have shaped the land, leaving a rich mosaic of habitats along these 15 miles of Indiana coast. Over 50 miles of trails lead through shifting sand dunes, quiet woodlands, sunny prairies and lush wetlands. Known for its striking plant and bird diversity, it's easy to find inspiration throughout the park’s 16,000 acres.",
+  "shortDescription": "Lake Michigan's might has influenced Indiana Dunes for millennia. Wind and waves have shaped the land, leaving a rich mosaic of habitats along these 15 miles of Indiana coast. Over 50 miles of trails ...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 41.63765525,
+    "longitude": -87.09647445
+  },
+  "nationalParkInfo": {
+    "parkCode": "indu",
+    "npsId": "473EFACE-EE15-4A4F-AA6C-666810A9E27D",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/indu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/indu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2193951882",
+    "email": "indu_communications@nps.gov",
+    "website": "https://www.nps.gov/indu/index.htm",
+    "address": {
+      "line1": "1215 IN-49",
+      "line2": "",
+      "city": "Porter",
+      "state": "IN",
+      "postalCode": "46304"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 11:00PM",
+    "tuesday": "6:00AM - 11:00PM",
+    "wednesday": "6:00AM - 11:00PM",
+    "thursday": "6:00AM - 11:00PM",
+    "friday": "6:00AM - 11:00PM",
+    "saturday": "6:00AM - 11:00PM",
+    "sunday": "6:00AM - 11:00PM",
+    "description": "The general areas of the park are open year-round.  Please check individual areas for specific hours of operation."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "7-Day Park Entrance Fee - Family-Size Vehicle\n\nPer private family-sized vehicle (valid for 1-7 days from date of purchase).",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "7-Day Per Person Entrance Fee (Organized, non-commercial groups)\n\nVisitors 16 years of age or older who enter on foot, bicycle, boat, or as part of an organized group not involved in a commercial tour.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Entry for commercial sedans with 6 or less people. \n\nCost is $25.00 plus $15 per person (not to exceed next highest rate).",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Commercial Tour Fee - Van (7-15 persons) - $40.00\n\nEntry for commercial vans with 7-15 people.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Commercial Tour Fee - Mini Bus (16-25 persons) - $40.00\n\nEntry for commercial mini bus with 16-25 people.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Commercial Tour Fee - Motor Coach (26+ persons) - $100.00\nEntry for commercial motor coaches with 26+ persons.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "On average, the warmest month is July and the highest recorded temperature was 105F in 1934. The coolest month is January, with the lowest recorded temperature of -25F in 1985. June sees the most precipitation with an average rainfall of 4.66 Inches."
+  },
+  "images": [
+    {
+      "id": "indu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9253EDFB-AAFD-E111-B985CD2747F5C48F.jpg",
+      "title": "Central Avenue Beach Indiana Dunes National Park",
+      "altText": "Michigan Lake beach with green grassy dunes in the background, under a blue sky.",
+      "caption": "Central Avenue Beach at low water levels, spring 2006.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "indu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E501C-1DD8-B71B-0B78424BE2B09114.jpg",
+      "title": "Sunset at Indiana Dunes National Park",
+      "altText": "Sunset on Lake Michigan",
+      "caption": "Sunset at Indiana Dunes National Park",
+      "credit": "Rafi Wilkinson",
+      "isPrimary": false
+    },
+    {
+      "id": "indu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E49C3-1DD8-B71B-0B66A187F21A2292.jpg",
+      "title": "Sunset on Lake Michigan",
+      "altText": "Sunset on Lake Michigan",
+      "caption": "Sunset on Lake Michigan",
+      "credit": "Michael Gard",
+      "isPrimary": false
+    },
+    {
+      "id": "indu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/93317C03-A0F6-3587-DEFBDE06D879DF16.jpg",
+      "title": "Mnoké Prairie in Bloom",
+      "altText": "Prairie in Bloom",
+      "caption": "Mnoké Prairie",
+      "credit": "Jeff Manuszak",
+      "isPrimary": false
+    },
+    {
+      "id": "indu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E3FE9-1DD8-B71B-0B4F1EBF7C0CFE04.jpg",
+      "title": "Porter Beach Access Point",
+      "altText": "Porter Beach Access Point",
+      "caption": "Porter Beach Access Point",
+      "credit": "Jeff Manuszak",
+      "isPrimary": false
+    },
+    {
+      "id": "indu-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E4345-1DD8-B71B-0B1054DD51E7798B.jpg",
+      "title": "Central Beach",
+      "altText": "Central Beach",
+      "caption": "Central Beach",
+      "credit": "NPS Collection",
+      "isPrimary": false
+    },
+    {
+      "id": "indu-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E4682-1DD8-B71B-0B750F94FDF9DFDC.jpg",
+      "title": "Sunset at Lake View",
+      "altText": "Sunset at Lake View",
+      "caption": "Sunset at Lake View",
+      "credit": "Jeff Manuszak",
+      "isPrimary": false
+    },
+    {
+      "id": "indu-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E4819-1DD8-B71B-0B1F99B8AFB5C9AA.jpg",
+      "title": "Peace on Lake Michigan",
+      "altText": "Peace on Lake Michigan",
+      "caption": "Peace on Lake Michigan",
+      "credit": "Jeff Manuszak",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/indu/index.htm",
+    "directions": "http://www.nps.gov/indu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Poetry and Literature",
+    "Animals",
+    "Birds",
+    "Dunes",
+    "Fire",
+    "Lakes",
+    "Trails",
+    "National Park",
+    "IN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

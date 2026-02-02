@@ -1,0 +1,178 @@
+{
+  "id": "np-aleu",
+  "name": "Aleutian Islands World War II National Historic Area",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "The remote Aleutian Islands, home to the Unangax̂ (Aleut) people for over 8,000 years, became a fiercely contested Pacific battleground in World War II. Some Unangax̂ were taken from their homelands as Japanese prisoners of war while the others were evacuated from the islands by the government. Both groups suffered greatly during the war, and some would never return to their villages.",
+  "shortDescription": "The remote Aleutian Islands, home to the Unangax̂ (Aleut) people for over 8,000 years, became a fiercely contested Pacific battleground in World War II. Some Unangax̂ were taken from their homelands a...",
+  "designation": "National Historic Area",
+  "coordinates": {
+    "latitude": 53.9143,
+    "longitude": -166.5197
+  },
+  "nationalParkInfo": {
+    "parkCode": "aleu",
+    "npsId": "94B046DC-2AFD-4ECB-A60D-CE210A8550B1",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/aleu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/aleu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "907-581-9944",
+    "email": "anch_web_mail@nps.gov",
+    "website": "https://www.nps.gov/aleu/index.htm",
+    "address": {
+      "line1": "Aleutian Islands WWII Visitor Center",
+      "line2": "",
+      "city": "Unalaska",
+      "state": "AK",
+      "postalCode": "99692"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:00PM",
+    "tuesday": "8:00AM - 5:00PM",
+    "wednesday": "8:00AM - 5:00PM",
+    "thursday": "8:00AM - 5:00PM",
+    "friday": "8:00AM - 5:00PM",
+    "saturday": "8:00AM - 5:00PM",
+    "sunday": "8:00AM - 5:00PM",
+    "description": ""
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Aleutian Islands are known for unpredictable and stormy weather. Rain, fog, and wind are common. Dress warmly and carry rain gear even in summer. Summer temperatures range from 45 to 65 degrees F."
+  },
+  "images": [
+    {
+      "id": "aleu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BC1AE-1DD8-B71B-0BF60FDE7A21822B.jpg",
+      "title": "A homeland changed",
+      "altText": "Group of people around a Russian cross in tall grass",
+      "caption": "In September 2009, Nick Lekanoff, Sr., former Makushin resident, traveled with his daughter and other descendants of Makushin on the Tiglax to visit the village site, which had been left behind in the evacuation of 1942 and never permanently resettled.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "aleu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BC517-1DD8-B71B-0BD7C869F63B3276.jpg",
+      "title": "Evacuation and internment",
+      "altText": "People crowd at the railing of a ship",
+      "caption": "Pribilof villagers, here lining the railing of the USAT Delarof on the day of their departure (June 15, 1942), were evacuated with only a few hours notice and no idea of their ultimate destination.",
+      "credit": "Photograph courtesy National Archives",
+      "isPrimary": false
+    },
+    {
+      "id": "aleu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BC7CF-1DD8-B71B-0B73637962E06C74.jpg",
+      "title": "The battle for Attu Island",
+      "altText": "Six men with guns carry a person on a stretcher in a valley.",
+      "caption": "U.S. wounded are gathered from the battlefield on Attu Island.  The battle on Attu, lasting nearly 20 days, was the second most deadly in the Pacific Theater.",
+      "credit": "Photo courtesy National Archives",
+      "isPrimary": false
+    },
+    {
+      "id": "aleu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BC97B-1DD8-B71B-0B9A70C0C0988F0E.jpg",
+      "title": "Cultural collision",
+      "altText": "A uniformed man holds up a broken Russian cross",
+      "caption": "The Aleutian campaign brought together Russian, Native Alaskan, Japanese, and Euroamerican cultures. During the war 7 historic churches were damaged or destroyed. Villages were unrecognizable or burned to the ground and personal belonging lost or stolen.",
+      "credit": "Photo courtesy National Archives",
+      "isPrimary": false
+    },
+    {
+      "id": "aleu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/11ADB8B7-CE24-B41F-18BB4F3D4D5AA8F1.jpg",
+      "title": "Anti-aircraft Gun Artifact",
+      "altText": "a rusty, large gun sits on a grassy bank overlooking a coastal bay.",
+      "caption": "The Aleutian Islands WWII National Historic Area preserves historic landscapes that evidence war.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/aleu/index.htm",
+    "directions": "http://www.nps.gov/aleu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Aviation",
+    "Colonization and Settlement",
+    "Forts",
+    "Incarceration",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Ships and Shipwrecks",
+    "Military",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "US Coast Guard",
+    "US Air Force (Army Air Corps)",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Tragic Events",
+    "Forced Marches",
+    "Massacres",
+    "Wars and Conflicts",
+    "World War II",
+    "Arctic",
+    "Tundra",
+    "Coasts, Islands and Atolls",
+    "Mountains",
+    "Scenic Views",
+    "National Historic Area",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

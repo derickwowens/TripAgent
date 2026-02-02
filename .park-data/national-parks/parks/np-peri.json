@@ -1,0 +1,223 @@
+{
+  "id": "np-peri",
+  "name": "Pea Ridge National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "AR",
+  "stateName": "Arkansas",
+  "region": "southeast",
+  "description": "On March 7-8, 1862, over 23,000 soldiers fought here to decide the fate of Missouri which was a turning point of the war in the Trans-Mississippi. This 4,400-acre battlefield honors those who fought and died on these hallowed grounds. Pea Ridge was the most pivotal Civil War battle west of the Mississippi River.",
+  "shortDescription": "On March 7-8, 1862, over 23,000 soldiers fought here to decide the fate of Missouri which was a turning point of the war in the Trans-Mississippi. This 4,400-acre battlefield honors those who fought a...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 36.45438033,
+    "longitude": -94.03468357
+  },
+  "nationalParkInfo": {
+    "parkCode": "peri",
+    "npsId": "58BCDB2B-5A91-4892-8470-76D802313884",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/peri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/peri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "479-451-8122",
+    "email": "PERI_Interpretation@nps.gov",
+    "website": "https://www.nps.gov/peri/index.htm",
+    "address": {
+      "line1": "15930 National Park Drive",
+      "line2": "",
+      "city": "Garfield",
+      "state": "AR",
+      "postalCode": "72732"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - Sunset",
+    "tuesday": "6:00AM - Sunset",
+    "wednesday": "6:00AM - Sunset",
+    "thursday": "6:00AM - Sunset",
+    "friday": "6:00AM - Sunset",
+    "saturday": "6:00AM - Sunset",
+    "sunday": "6:00AM - Sunset",
+    "description": "Pea Ridge National Military Park The battlefield driving tour road is open for visitors to tour 7 days a week from 6 am to sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Pea Ridge National Military Park is located in the northwestern part of the state and is on a part of the Ozark Plateau. The climate is hot and humid in the summers, has mild temperatures in the fall, and drier and cooler temperatures in the winter. During the spring and summer, active thunderstorms can pop up. During the winter months, the wind chill factor can make the temperature feel much colder than the air temperature. The winters can be cold with some snow and ice."
+  },
+  "images": [
+    {
+      "id": "peri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E6346-1DD8-B71B-0B7F2E71DEF77DE8.jpg",
+      "title": "Elkhorn Tavern",
+      "altText": "A reconstructed Elkhorn Tavern.",
+      "caption": "Used as a field hospital during the Battle of Pea Ridge, the Elkhorn Tavern is a focal point at Pea Ridge National Military Park.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "peri-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C381C070-94AF-1317-5B0E349516676336.jpg",
+      "title": "Park Tour Road in Fall",
+      "altText": "Photo of road with trees on both sides of road. Trees have Fall Foliage",
+      "caption": "Park tour road in the fall.",
+      "credit": "Sirena Evans NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "peri-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C3B025EF-C781-C9CA-8377C4E33745DA21.jpg",
+      "title": "Sunset and Green Tree's",
+      "altText": "Photo of the rays of sunshine, shining though dark green trees, with long shadows falling on grass",
+      "caption": "Photo taken at sunset showing the deep green trees.",
+      "credit": "Stephanie Caley NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "peri-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C435DD0E-E4BD-FB80-68CF7B1B64516E9D.jpg",
+      "title": "Silent Field",
+      "altText": "Photo of sun setting over the golden grass the battlefield.",
+      "caption": "Silent Field is a photo that shows the sun setting over the golden grass of the battlefield. Men fought and died in this field, on a cold day in March of 1862.",
+      "credit": "Stephanie Caley NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "peri-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/88799988-0E5D-C2EE-FCB25A06A785FAD1.jpg",
+      "title": "Rededication to the Elkhorn Tavern",
+      "altText": "Photo of Union Union artilleryman reenactors standing in front of building.",
+      "caption": "Photo of Union Union artilleryman reenactors standing in front of the Elkhorn Tavern for the rededication of the building.",
+      "credit": "Stephanie Caley",
+      "isPrimary": false
+    },
+    {
+      "id": "peri-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/88AD40F1-99B0-9C28-4A4334568349585D.jpg",
+      "title": "Park Ranger and Cannon Crew",
+      "altText": "Photo of Park Ranger talking about cannon and Cannon Crew.",
+      "caption": "Ranger Troy Banzhaf giving information about 6 lb. cannon and cannon crew.",
+      "credit": "Stephanie Caley",
+      "isPrimary": false
+    },
+    {
+      "id": "peri-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/89485CC5-E192-72D3-DF43D6C02805D59D.jpg",
+      "title": "Union Cannons",
+      "altText": "Photo of Union cannons and crew firing cannons in a field.",
+      "caption": "Photo of Union artilleryman reenactors standing in Cox's field firing cannon's on the 150th Anniversary of the Battle of Pea Ridge.",
+      "credit": "Jackie Fry 3-10-2012",
+      "isPrimary": false
+    },
+    {
+      "id": "peri-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/898DCF8C-9A71-4D6A-9F7738D098FF450A.jpg",
+      "title": "Union Infantry 150th",
+      "altText": "Photo of Union Infantrymen reenactors standing in front of building with large crowd.",
+      "caption": "Photo of Union Infantrymen reenactors standing in front of the Elkhorn Tavern, with large crowd during demonstration on the 150th anniversary of the Battle of Pea Ridge. .",
+      "credit": "Sirena Evans NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/peri/index.htm",
+    "directions": "http://www.nps.gov/peri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "Battlefields",
+    "Wars and Conflicts",
+    "Civil War",
+    "Trails",
+    "National Military Park",
+    "AR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

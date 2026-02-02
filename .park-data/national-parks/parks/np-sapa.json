@@ -1,0 +1,179 @@
+{
+  "id": "np-sapa",
+  "name": "Saint Paul's Church National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Since 1665, Saint Paul's Church played a vital role in the colonial life of Eastchester, 20 miles north of New York City. Townspeople voted at the nearby Village Green; local militia drilled outside its doors. But the American Revolution changed everything. American, British and Hessian troops tore down the old wooden meetinghouse for firewood and used the unfinished stone chapel as a hospital.",
+  "shortDescription": "Since 1665, Saint Paul's Church played a vital role in the colonial life of Eastchester, 20 miles north of New York City. Townspeople voted at the nearby Village Green; local militia drilled outside i...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 40.89283511,
+    "longitude": -73.82577276
+  },
+  "nationalParkInfo": {
+    "parkCode": "sapa",
+    "npsId": "7E946FDE-C454-4361-98A5-F60158B42770",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sapa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sapa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9146674116",
+    "email": "dho59stpaul@yahoo.com",
+    "website": "https://www.nps.gov/sapa/index.htm",
+    "address": {
+      "line1": "897 South Columbus Avenue",
+      "line2": "",
+      "city": "Mount Vernon",
+      "state": "NY",
+      "postalCode": "10550"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 5:00PM",
+    "tuesday": "10:00AM - 5:00PM",
+    "wednesday": "10:00AM - 5:00PM",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "From early January through late June, the site will be open Monday to Friday, 10 AM to 5 PM.   During those months of January through June, the site will also be open the second Saturday of each month, from noon to 4 PM. From early July through late December, the site will be open Tuesday to Saturday, 10 AM to 5 PM."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in New York City is basically the same as for this northern suburb. Please visit http://forecast.weather.gov/MapClick.php?lat=40.91259830500047&lon=-73.83707741599966#.Vqjtf_krKUk."
+  },
+  "images": [
+    {
+      "id": "sapa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C854A64-1DD8-B71B-0B52ECD0B7FF74F2.jpg",
+      "title": "Rebecca Turner gravesite",
+      "altText": "Rebecca Turner gravesite",
+      "caption": "A former enslaved person, Rebecca Turner attended the church and is buried in the cemetery. A local elementary school is named after her.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "sapa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C854BDF-1DD8-B71B-0B4390CDF73F0CA0.jpg",
+      "title": "Saint Paul's Church National Historic Site",
+      "altText": "Saint Paul's Church National Historic Site",
+      "caption": "The church was originally a wooden meetinghouse. This stone structure was still unfinished when US, British and Hessian troops used it for a hospital during the Revolution.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sapa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C854D01-1DD8-B71B-0BFD8F6E12195634.jpg",
+      "title": "Encampment volley",
+      "altText": "Encampment volley",
+      "caption": "History is a blast, especially when costumed Revolutionary War interpreters visit the site during a special event.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sapa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C854E1E-1DD8-B71B-0B5371F6B5517ADE.jpg",
+      "title": "Local students gather inside Saint Paul's Church",
+      "altText": "Local students gather inside Saint Paul's Church",
+      "caption": "In 2015, local students visited the site to honor Rebecca and Benjamin Turner, two former members of Saint Paul's Church. Local schools have been named after the couple.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sapa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C854FB3-1DD8-B71B-0B122F0939D76F23.jpg",
+      "title": "The restored church pews",
+      "altText": "The restored church pews",
+      "caption": "The pews have been rebuilt to resemble what was here when the stone church was first opened.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sapa/index.htm",
+    "directions": "http://www.nps.gov/sapa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Burial, Cemetery and Gravesite",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "US Navy",
+    "Monuments and Memorials",
+    "Music",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Social Movements",
+    "Religious Freedom",
+    "Voting Rights and Suffrage",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Women's History",
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

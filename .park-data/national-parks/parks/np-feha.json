@@ -1,0 +1,142 @@
+{
+  "id": "np-feha",
+  "name": "Federal Hall National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Here on Federal Hall, George Washington took the oath of office as our first President, and this site was home to the first Congress, Supreme Court, and Executive Branch offices. The current structure, a Customs House, later served as part of the US Sub-Treasury. Now, the building serves as a museum and memorial to our first President and the beginnings of the United States of America.",
+  "shortDescription": "Here on Federal Hall, George Washington took the oath of office as our first President, and this site was home to the first Congress, Supreme Court, and Executive Branch offices. The current structure...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 40.70731192,
+    "longitude": -74.01025636
+  },
+  "nationalParkInfo": {
+    "parkCode": "feha",
+    "npsId": "2337D255-2D32-4997-957A-D461EEA03AF8",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/feha/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/feha/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2128256990",
+    "email": "feha_info@nps.gov",
+    "website": "https://www.nps.gov/feha/index.htm",
+    "address": {
+      "line1": "15 Pine Street",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10005"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "Federal Hall is open Wednesday through Sunday, from 10:00 AM to 4:00 PM.\nThe site is closed on Mondays and Tuesdays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "http://forecast.weather.gov/MapClick.php?CityName=New+York&state=NY&site=OKX&lat=40.7198&lon=-73.993#.Vqj8OvkrJlZ"
+  },
+  "images": [
+    {
+      "id": "feha-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C855D19-1DD8-B71B-0B2AF1FAF9721319.jpg",
+      "title": "Federal Hall Interior",
+      "altText": "“Large crowd inside the rotunda of Federal Hall National Memorial”",
+      "caption": "Thousands of visitors each year visit Federal Hall National Memorial",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "feha-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/82B14AFC-F641-E994-43C0407DFBC630EB.jpg",
+      "title": "2015 Evacuation Day Commemoration at Federal Hal",
+      "altText": "Three people in reenactment clothing hold instruments in front of a stone building and giant statue.",
+      "caption": "Commemoration of the 232th Anniversary of Evacuation Day, the end of the Revolution and the withdrawal of British troops.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "feha-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/840AF25C-FDBC-D874-E02D44C133D53705.jpg",
+      "title": "Federal Hall National Memorial at Night",
+      "altText": "A stone, Grecian-style building, with columns and a statue in the front.",
+      "caption": "Federal Hall National Memorial at night",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "feha-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E00EB46B-0B09-4F64-EB883D593792C5FA.jpg",
+      "title": "Reenactment at Federal Hall",
+      "altText": "Five men dressed in Revolutionary War outfits play fife and drums",
+      "caption": "Old Barracks Fifes and Drums in lower Manhattan, Federal Hall",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/feha/index.htm",
+    "directions": "http://www.nps.gov/feha/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Commerce",
+    "Military",
+    "Monuments and Memorials",
+    "Presidents",
+    "Wars and Conflicts",
+    "National Memorial",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

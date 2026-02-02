@@ -1,0 +1,221 @@
+{
+  "id": "np-home",
+  "name": "Homestead National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NE",
+  "stateName": "Nebraska",
+  "region": "midwest",
+  "description": "The Homestead Act of 1862 transformed the world. Millions were invited to file claims including families, women, immigrants, and formerly enslaved people. Over 10 percent of the United States was homesteaded! The land, long inhabited by indigenous cultures, changed forever. Homesteaders created settlements and farms, drove industrial advancement, and built our nation chasing the American Dream.",
+  "shortDescription": "The Homestead Act of 1862 transformed the world. Millions were invited to file claims including families, women, immigrants, and formerly enslaved people. Over 10 percent of the United States was home...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 40.28802381,
+    "longitude": -96.83387781
+  },
+  "nationalParkInfo": {
+    "parkCode": "home",
+    "npsId": "3E1E316B-2F1A-4F08-8BD0-AE64761D68C2",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/home/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/home/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4022233514",
+    "email": "home_information@nps.gov",
+    "website": "https://www.nps.gov/home/index.htm",
+    "address": {
+      "line1": "8523 West State Highway 4",
+      "line2": "",
+      "city": "Beatrice",
+      "state": "NE",
+      "postalCode": "68310"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Trails and park grounds are open from sunrise to sunset. Picnic areas are available at the Education Center and Heritage Center. There are a total of 3.0 miles of trails through the tallgrass prairie and woodland."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Homestead NHP's weather can vary quite a bit, even in a single day. In the summer, average daytime highs can exceed 80°F (27°C), only to drop 20 or more degrees when a thunderstorm rolls through. Winter lows fluctuate day to day and year to year, but average lows were measured at about 16°F (-9°C) for January and February over a 20-year period. Wind is common throughout the year."
+  },
+  "images": [
+    {
+      "id": "home-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E9AA6622-E74B-C7C1-97C6C3C3676F7519.jpg",
+      "title": "The Palmer Epard Cabin and the Heritage Center",
+      "altText": "A historic cabin stands next to a concrete path that leads to a plow shaped visitor center",
+      "caption": "The Palmer Epard Cabin and Heritage Center at Sunset",
+      "credit": "NPS Photo/Hunter Hendricks",
+      "isPrimary": true
+    },
+    {
+      "id": "home-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C13D0BC9-FBA8-3B59-8789B20F08B3AE68.jpg",
+      "title": "Freeman One-Room Schoolhouse",
+      "altText": "A historic one room schoolhouse",
+      "caption": "An original one-room schoolhouse, the Freeman School preserves educational history and allows for visitors of all ages to walk into history.",
+      "credit": "Homestead National Monument of America",
+      "isPrimary": false
+    },
+    {
+      "id": "home-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F0BD1E3B-9EFE-D2CC-EF3F29C143C3FF05.jpg",
+      "title": "Grounds",
+      "altText": "The tallgrass prairie is yellow with goldenrod in full bloom.",
+      "caption": "The overlook from the picnic area at the Heritage Center showcases the beauty of the tallgrass prairie in late summer.",
+      "credit": "",
+      "isPrimary": false
+    },
+    {
+      "id": "home-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C0D3AC00-A54C-39CD-F1CABF753C16EF20.jpg",
+      "title": "Homestead Heritage Center",
+      "altText": "The Homestead Heritage Center on the tallgrass prairie",
+      "caption": "Thousands of visitors stop to view the oldest restored tallgrass prairie in the National Park Service from the Heritage Center back patio.",
+      "credit": "Mel Mann, artist in residence of Homestead National Monument of America",
+      "isPrimary": false
+    },
+    {
+      "id": "home-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7159455-9A2A-BD6A-086625E55286414D.jpg",
+      "title": "Grounds",
+      "altText": "The tallgrass prairie spans to the Heritage Center on the horizon.",
+      "caption": "The oldest restored tallgrass prairie in the NPS spans to the Heritage Center.",
+      "credit": "Mel Mann",
+      "isPrimary": false
+    },
+    {
+      "id": "home-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C10E46C9-A9C2-8C16-E59DDFEDA271D10A.jpg",
+      "title": "Homestead Education Center",
+      "altText": "The Homestead Education Center",
+      "caption": "The Homestead Education Center holds historic farm implements from the vast archives and collections of the Monument.",
+      "credit": "Homestead National Monument of America",
+      "isPrimary": false
+    },
+    {
+      "id": "home-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C15C3626-9E01-C489-A80BC7F9FB21F3DE.jpg",
+      "title": "Palmer-Epard Homestead Cabin",
+      "altText": "A homestead cabin at sunset",
+      "caption": "The historic homestead cabin that can be found on the America the Beautiful Homestead Quarter, this cabin has been preserved in it's original condition for visitors to enter and see the inside of a historic structure.",
+      "credit": "Homestead National Monument of America",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/home/index.htm",
+    "directions": "http://www.nps.gov/home/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Farming and Agriculture",
+    "Industry",
+    "Immigration",
+    "Native American Heritage",
+    "Presidents",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Civil Rights",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Grasslands",
+    "Prairies",
+    "Natural Sounds",
+    "Trails",
+    "National Historical Park",
+    "NE"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

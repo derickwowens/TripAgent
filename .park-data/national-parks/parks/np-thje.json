@@ -1,0 +1,135 @@
+{
+  "id": "np-thje",
+  "name": "Thomas Jefferson Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Author of the Declaration of Independence, statesman and visionary for the founding of a nation.",
+  "shortDescription": "Author of the Declaration of Independence, statesman and visionary for the founding of a nation.",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.88101431,
+    "longitude": -77.03632572
+  },
+  "nationalParkInfo": {
+    "parkCode": "thje",
+    "npsId": "2D0C31DF-BE78-42A8-812E-1A44602B3D40",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/thje/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/thje/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/thje/index.htm",
+    "address": {
+      "line1": "16 East Basin Drive, SW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20242"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The sites of National Mall and Memorial Parks (other than the Washington Monument) are always open to the public. Restrooms, museums and elevators close in the evenings (check individual sites for hours)"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "thje-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F313C540-E6E1-3928-D14883E746D101E9.jpg",
+      "title": "Thomas Jefferson at Sunset",
+      "altText": "Thomas Jefferson Memorial reflects on Tidal Basin",
+      "caption": "Thomas Jefferson Memorial reflecting on the Tidal Basin during sunset",
+      "credit": "Library of Congress/Carol Highsmith",
+      "isPrimary": true
+    },
+    {
+      "id": "thje-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5C73FE40-F6DF-34E1-C8354610AD6E1230.jpg",
+      "title": "Thomas Jefferson Memorial",
+      "altText": "The Thomas Jefferson Memorial with flowering trees in the foreground",
+      "caption": "The Thomas Jefferson Memorial framed by cherry blossoms",
+      "credit": "NPS/ Mike Litterst",
+      "isPrimary": false
+    },
+    {
+      "id": "thje-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F351B680-E195-A86F-EDE94956A6BB61DC.jpg",
+      "title": "Thomas Jefferson Memorial at Night",
+      "altText": "Photo of Thomas Jefferson Memorial from plaza",
+      "caption": "Late night image of Thomas Jefferson Memorial",
+      "credit": "NPS/Volunteer-in-parks/AGoebert",
+      "isPrimary": false
+    },
+    {
+      "id": "thje-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4081B7D5-045A-4F4C-14B392E1EA21C359.jpg",
+      "title": "Statue of Thomas Jefferson",
+      "altText": "Close up of Thomas Jefferson Statue",
+      "caption": "Statue of Thomas Jefferson",
+      "credit": "Carol M. Highsmith",
+      "isPrimary": false
+    },
+    {
+      "id": "thje-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C822990-1DD8-B71B-0BE050EA15A04568.gif",
+      "title": "Jefferson at Night",
+      "altText": "Thomas Jefferson Memorial at Night",
+      "caption": "Reflections of the past",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/thje/index.htm",
+    "directions": "http://www.nps.gov/thje/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Monuments and Memorials",
+    "Presidents",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

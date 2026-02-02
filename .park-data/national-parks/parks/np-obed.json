@@ -1,0 +1,162 @@
+{
+  "id": "np-obed",
+  "name": "Obed Wild & Scenic River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "TN",
+  "stateName": "Tennessee",
+  "region": "southeast",
+  "description": "The Obed Wild and Scenic River looks much the same today as it did when the first white settlers strolled its banks in the late 1700s. While meagerly populated due to poor farming soil, the river was a hospitable fishing and hunting area for trappers and pioneers. Today, the Obed stretches along the Cumberland Plateau and offers visitors a variety of outdoor recreational opportunities.",
+  "shortDescription": "The Obed Wild and Scenic River looks much the same today as it did when the first white settlers strolled its banks in the late 1700s. While meagerly populated due to poor farming soil, the river was ...",
+  "designation": "Wild & Scenic River",
+  "coordinates": {
+    "latitude": 36.1056026037,
+    "longitude": -84.5979170501
+  },
+  "nationalParkInfo": {
+    "parkCode": "obed",
+    "npsId": "EE2565D2-D745-4EF7-8814-21DF448427AD",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/obed/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/obed/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4233466294",
+    "email": "obri_information@nps.gov",
+    "website": "https://www.nps.gov/obed/index.htm",
+    "address": {
+      "line1": "208 N. Maiden Street",
+      "line2": "",
+      "city": "Wartburg",
+      "state": "TN",
+      "postalCode": "37887"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is open every day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather along the Cumberland Plateau can be best described as unpredictable. Each season brings its own weather patterns. Summers are generally hot and humid, with high temperatures sometimes eclipsing 90 degrees. The low temperatures in winter often dip below freezing. Spring sees the most amount of precipitation, but rainfall can occur in various amounts throughout the year."
+  },
+  "images": [
+    {
+      "id": "obed-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C792DFB-1DD8-B71B-0B5E8EB41685A5BB.jpg",
+      "title": "Obed WSR in Fall",
+      "altText": "Obed in Fall",
+      "caption": "Obed in Fall",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "obed-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/36E8B202-F88E-262B-3256425F034B554C.jpg",
+      "title": "Nemo at Night",
+      "altText": "A star-filled night sky above the silhouette of a truss-bridge",
+      "caption": "A Star-Filled Night Sky above the Historic Nemo Bridge",
+      "credit": "NPS Photo/Brandon Jett",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "87D3B1CD-3903-4561-ABB1-2DD870C43F2F",
+      "name": "Rock Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/obed/index.htm",
+    "directions": "http://www.nps.gov/obed/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "Night Sky",
+    "Scenic Views",
+    "Trails",
+    "Watersheds",
+    "Wild & Scenic River",
+    "TN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "id": "np-whho",
+  "name": "The White House and President's Park",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "The White House is owned by the American people and stewarded by the National Park Service. It is more than the President's residence; it is a site for protests and national discourse about what it means to be American. As one of the most iconic sites in the country, the White House and President's Park seeks to tell the stories of all people who have lived, worked, and visited.",
+  "shortDescription": "The White House is owned by the American people and stewarded by the National Park Service. It is more than the President's residence; it is a site for protests and national discourse about what it me...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.89541886,
+    "longitude": -77.03654147
+  },
+  "nationalParkInfo": {
+    "parkCode": "whho",
+    "npsId": "C59FE971-54EE-447C-9DCE-CB781949B0B8",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/whho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/whho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2022081631",
+    "email": "presidents_park@nps.gov",
+    "website": "https://www.nps.gov/whho/index.htm",
+    "address": {
+      "line1": "1450 Pennsylvania Ave., NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20230"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:30AM - 4:00PM",
+    "tuesday": "7:30AM - 4:00PM",
+    "wednesday": "7:30AM - 4:00PM",
+    "thursday": "7:30AM - 4:00PM",
+    "friday": "7:30AM - 4:00PM",
+    "saturday": "7:30AM - 4:00PM",
+    "sunday": "7:30AM - 4:00PM",
+    "description": "The White House Visitor Center"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Washington, DC, area has a four-season Mid-Atlantic climate. Summertime is warm and humid, while winter can be cold and snowy. Precipitation averages 2-4” monthly, year-round. The warmest months are June, July, and August, with average highs in the 80s (~31) combined with high humidity. Temperatures often climb into the 90s (~34). The coldest months are December, January, and February, with average temperatures in the 30s (~3), though lows may dip into the single digits on occasion."
+  },
+  "images": [
+    {
+      "id": "whho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85DF8B-1DD8-B71B-0B3BCAF449D7D845.jpg",
+      "title": "White House - Truman Balcony",
+      "altText": "The White House and South Lawn.",
+      "caption": "The White House and South Lawn",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "whho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F069-1DD8-B71B-0B74C0AB6CE281CD.jpg",
+      "title": "Andrew Jackson Statue and North Side of the White House",
+      "altText": "Andrew Jackson Statue and view of North Side of the White House",
+      "caption": "",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "whho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F1CC-1DD8-B71B-0BDB78EED45184DC.jpg",
+      "title": "National Christmas Tree Lighting Ceremony 2015",
+      "altText": "National Christmas Christmas Tree with the view of the south side of the White House.",
+      "caption": "Trombone Shorty performs at the National Christmas Tree Ceremony in 2015.",
+      "credit": "NPS/M. Reese",
+      "isPrimary": false
+    },
+    {
+      "id": "whho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85F2C7-1DD8-B71B-0BFC4ECD2792A376.jpg",
+      "title": "White House Visitor Center",
+      "altText": "White House model and exhibit cases inside the visitor center",
+      "caption": "You can take a virtual tour inside the White House as well as view items on display from the White House collection in the visitor center.",
+      "credit": "White House Historical Association",
+      "isPrimary": false
+    },
+    {
+      "id": "whho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/25B706FC-9EDB-38F5-42E8C03CEBD4D680.jpg",
+      "title": "First Division Monument",
+      "altText": "A tall stone column with a golden, winged figure on top.",
+      "caption": "The First Division Monument is one of several military and other monuments in President's Park.",
+      "credit": "NPS / Nathan King",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/whho/index.htm",
+    "directions": "http://www.nps.gov/whho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Arts",
+    "Painting",
+    "Sculpture",
+    "Engineering",
+    "Enslavement",
+    "Monuments and Memorials",
+    "Presidents",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Transportation",
+    "Canals",
+    "Roads, Routes and Highways",
+    "Tragic Events",
+    "Assassinations",
+    "Urban America",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Mexican War",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Korean War",
+    "Vietnam War",
+    "Cold War",
+    "Women's History",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

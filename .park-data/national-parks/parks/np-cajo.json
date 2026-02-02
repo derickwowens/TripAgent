@@ -1,0 +1,295 @@
+{
+  "id": "np-cajo",
+  "name": "Captain John Smith Chesapeake National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "People first arrived in the Chesapeake Bay during the last ice age. As glaciers melted, diverse societies learned to thrive in a world of water. When Englishman Captain John Smith explored the Bay in 1608, he documented hundreds of American Indian communities. Today, sites on his map are archeological treasures and sacred sites for tribal citizens. Come join us on the shores of the Chesapeake Bay!",
+  "shortDescription": "People first arrived in the Chesapeake Bay during the last ice age. As glaciers melted, diverse societies learned to thrive in a world of water. When Englishman Captain John Smith explored the Bay in ...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 38.971601,
+    "longitude": -76.483355
+  },
+  "nationalParkInfo": {
+    "parkCode": "cajo",
+    "npsId": "481CEBB8-1942-4FAE-8D89-9902E7B9EECA",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cajo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/cajo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(757) 856-1220",
+    "email": "cajo_info@nps.gov",
+    "website": "https://www.nps.gov/cajo/index.htm",
+    "address": {
+      "line1": "1368 Colonial Parkway",
+      "line2": "",
+      "city": "Jamestown",
+      "state": "VA",
+      "postalCode": "23081"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The water trail is open 24 hours a day, 7 days a week, 365 days a year! To launch your kayak or other vessel on the trail, access a local boat launch along one of the trail's many tributary rivers and coastlines. Local boat launches, state parks, and other locations have specific operating hours and seasons. Always check weather and conditions before going out on the water - take care during the winter months to dress appropriately for the weather and the possibility of submersion in cold water."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "During the summer season, visitors should dress in light, comfortable, moisture-wicking clothing, and use sunscreen. High temperatures and humidity create a higher risk of heat cramps, heat exhaustion and heatstroke. We strongly recommended you carry a bottle of water with you and wear a life jacket at all times. During the winter, be aware that submersion in freezing cold water can be deadly. If you are going out, bring safety gear such as a wetsuit and practice techniques to avoid tipping over."
+  },
+  "images": [
+    {
+      "id": "cajo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C823100-1DD8-B71B-0B3AE3516DDF485B.jpg",
+      "title": "Heron at sunset at Blackwater NWR",
+      "altText": "A heron at sunset in the waters and marshes of Blackwater National Wildlife Refuge",
+      "caption": "Many people visit Blackwater National Wildlife Refuge to spot birds, like this heron, that rely the natural resources of the landscape.",
+      "credit": "NPS Photo / Middleton Evans",
+      "isPrimary": true
+    },
+    {
+      "id": "cajo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C822B6B-1DD8-B71B-0B1DCCAB3F9BFA60.jpg",
+      "title": "Living History at Jamestown Settlement",
+      "altText": "A re-created American Indian town.",
+      "caption": "At Jamestown Settlement, trail visitors can view yihakan, the houses seen pictured here, which are constructed from saplings and reed mats.",
+      "credit": "Jamestown Settlement",
+      "isPrimary": false
+    },
+    {
+      "id": "cajo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C822CB2-1DD8-B71B-0BF6D067DAF20F8C.jpg",
+      "title": "Cypress Trees Chickahominy River",
+      "altText": "Many baldcypress trees standing in the Chickahominy River",
+      "caption": "Some scenes - like this one of cypress trees in the Chickahominy River - look similar to what Captain John Smith would have seen 400 years ago.",
+      "credit": "Bill Portlock",
+      "isPrimary": false
+    },
+    {
+      "id": "cajo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C823278-1DD8-B71B-0B1E9F8326884E3B.jpg",
+      "title": "Kayaker at Jug Bay",
+      "altText": "A lone kayaker explores the Patuxent River",
+      "caption": "The upper reaches of the Patuxent River at Jug Bay give visitors a view of the Chesapeake region that feels similar to a time before European settlement.",
+      "credit": "NPS Photo / Middleton Evans",
+      "isPrimary": false
+    },
+    {
+      "id": "cajo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C823C7D-1DD8-B71B-0B716A0012D6C0E3.jpg",
+      "title": "Susquehanna River view from Zimmerman Center",
+      "altText": "A view of the Susquehanna River and the boat dock at Zimmerman Center for Heritage",
+      "caption": "Visitors can use the dock at Zimmerman Center for Heritage to launch canoes and kayaks onto the beautiful Susquehanna River in south central Pennsylvania.",
+      "credit": "Susquehanna Gateway Heritage Area",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "4D06CEED-90C6-4B69-B264-32CC90B69BA6",
+      "name": "Tubing"
+    },
+    {
+      "id": "0F2CC530-8DD9-4328-98AA-E514918AD206",
+      "name": "River Tubing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cajo/index.htm",
+    "directions": "https://www.nps.gov/cajo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Arts",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Dams",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Maritime",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Bridges",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "Headwaters",
+    "Waterfalls",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "National Historic Trail",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

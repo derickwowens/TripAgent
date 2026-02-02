@@ -1,0 +1,233 @@
+{
+  "id": "np-bowa",
+  "name": "Booker T Washington National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Booker T. Washington was born a slave in April 1856 on the 207-acre farm of James Burroughs. After the Civil War, Washington became the first principal of Tuskegee Normal and Industrial School. Later as an adviser, author and orator, his past would influence his philosophies as the most influential African American of his era. Come explore his birthplace.",
+  "shortDescription": "Booker T. Washington was born a slave in April 1856 on the 207-acre farm of James Burroughs. After the Civil War, Washington became the first principal of Tuskegee Normal and Industrial School. Later ...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.11520539,
+    "longitude": -79.73185833
+  },
+  "nationalParkInfo": {
+    "parkCode": "bowa",
+    "npsId": "6278FE68-139E-4758-A6DE-9A0437F777B5",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bowa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bowa"
+    }
+  ],
+  "contact": {
+    "phone": "5406820173",
+    "email": "bowa_rangers_3@nps.gov",
+    "website": "https://www.nps.gov/bowa/index.htm",
+    "address": {
+      "line1": "12130 Booker T. Washington Highway",
+      "line2": "",
+      "city": "Hardy",
+      "state": "VA",
+      "postalCode": "24101"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "The Visitor Center is open Wednesday through Sunday from 10:00 am - 4:00 pm. The park grounds and restrooms are open daily from 9:00 am-5:00 pm.\n\nBooker T. Washington National Monument will be closed for Thanksgiving Day, December 24 after 2 p.m., December 25 all day, and January 1 all day. The park may close early on December 31. The park closes sometimes due to inclement weather. Call the park at 540-682-0173 for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Please contact the park at 540/682-0173 during inclement weather conditions to find out about closures."
+  },
+  "images": [
+    {
+      "id": "bowa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C78FE2A-1DD8-B71B-0B28DF0A7DEA50EB.jpg",
+      "title": "Tobacco, the cash crop",
+      "altText": "Tobacco field being plowed by man with two draft horses",
+      "caption": "The main crop on the plantation where Booker T. Washington was born was tobacco. This photograph shows a man with draft horses preparing to plow a field.",
+      "credit": "NPS Photo/ VIP Bill Tucker",
+      "isPrimary": true
+    },
+    {
+      "id": "bowa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7902B5-1DD8-B71B-0B8940C6F3F68417.jpg",
+      "title": "The reconstructed kitchen cabin and smoke house in the snow",
+      "altText": "Back side of kitchen cabin and smokehouse in snow with blue sky and trees",
+      "caption": "The reconstructed kitchen cabin and smoke house on the farm where Booker T. Washington was born.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7914F4-1DD8-B71B-0BD74384D49B94B4.jpg",
+      "title": "Re-enactors in the reconstructed kitchen cabin at the Old Virginia Christmas Event",
+      "altText": "Four people dressed as enslaved people in front of the fireplace in cabin",
+      "caption": "Re-enactors portraying enslaved people in the reconstructed kitchen cabin where Booker T. Washington was born and lived for 9 years.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/83530173-D48B-D044-FD7CA3C2E1C9B6E1.jpg",
+      "title": "Reconstructed kitchen cabin where Booker T. Washington was born",
+      "altText": "Kitchen cabin with child in green dress in front",
+      "caption": "Visit the reconstructed kitchen cabin where Dr. Washington was born",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/83FE6D6E-0AF9-DB0D-0753031822D8FEBA.jpg",
+      "title": "Reconstructed kitchen cabin where Booker T. Washington was born",
+      "altText": "Reconstructed kitchen cabin where Booker T. Washington was born",
+      "caption": "Reconstructed kitchen cabin with herb garden",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/84328687-0A39-35BF-388AB6B8F0222598.jpg",
+      "title": "An Old Virginia Christmas",
+      "altText": "Two re-enactors portraying enslaved people sitting in front of fire inside kitchen cabin",
+      "caption": "Two re-enactors portraying enslaved people sitting in front of fire inside kitchen cabin",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8460AA60-E7C9-19F5-34BA3C39DFE80BE2.jpg",
+      "title": "Visitor center",
+      "altText": "Visitor Center",
+      "caption": "Visitor Center",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/84737F56-DEEC-BF35-75D177430FBAD2FA.jpg",
+      "title": "Exhibits on outside of visitor center bathrooms",
+      "altText": "Exhibits on outside of visitor center bathrooms",
+      "caption": "Exhibits on outside of visitor center bathrooms",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/84B17C05-0392-36C8-2BBF8D05C237A943.jpg",
+      "title": "Booker T. Washington Elementary School (Park Headquarters)",
+      "altText": "Booker T. Washington Elementary School (Park Headquarters)",
+      "caption": "Booker T. Washington Elementary School (Park Headquarters)",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bowa-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/85301C02-A876-2729-58F0644ACFC4D87C.jpg",
+      "title": "Park trail and part of pasture",
+      "altText": "Park trail and part of pasture",
+      "caption": "Park trail and part of pasture",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bowa/index.htm",
+    "directions": "http://www.nps.gov/bowa"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Birthplace",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Schools and Education",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Monument",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

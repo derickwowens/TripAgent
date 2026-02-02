@@ -1,0 +1,158 @@
+{
+  "id": "np-vicr",
+  "name": "Virgin Islands Coral Reef National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "VI",
+  "stateName": "VI",
+  "region": "southeast",
+  "description": "Virgin Islands Coral Reef National Monument includes federal submerged lands within the 3-mile belt off the island of St. John. These waters support a diverse and complex system of coral reefs and other ecosystems such as shoreline mangrove forests and seagrass beds.",
+  "shortDescription": "Virgin Islands Coral Reef National Monument includes federal submerged lands within the 3-mile belt off the island of St. John. These waters support a diverse and complex system of coral reefs and oth...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 18.28996918,
+    "longitude": -64.70683395
+  },
+  "nationalParkInfo": {
+    "parkCode": "vicr",
+    "npsId": "B2178CA4-35DE-4827-9B7A-B25FAAE1E69B",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/vicr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/vicr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3407766201",
+    "email": "viis_interpretation@nps.gov",
+    "website": "https://www.nps.gov/vicr/index.htm",
+    "address": {
+      "line1": "Hurrican Hole",
+      "line2": "",
+      "city": "St. John",
+      "state": "VI",
+      "postalCode": "00830"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Always open"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Mostly Perfect. The Tradewinds (the Easterlies) dominate the weather in the Virgin Islands, blowing east to west across the tropical Atlantic. The winter tends to bring stronger winds and less rain, and the summer tends to bring more rain and lighter winds."
+  },
+  "images": [
+    {
+      "id": "vicr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D67D3D53-1DD8-B71B-0BCC67BD08FD4E6B.jpg",
+      "title": "Parrot Fish",
+      "altText": "Parrot Fish posing for the camera over several corals",
+      "caption": "Parrot Fish posing for the camera over several corals",
+      "credit": "Susanna Pershern",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/vicr/index.htm",
+    "directions": "http://www.nps.gov/vicr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Maritime",
+    "Ships and Shipwrecks",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Oceans",
+    "Coral Reefs",
+    "The Tropics",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "National Monument",
+    "VI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

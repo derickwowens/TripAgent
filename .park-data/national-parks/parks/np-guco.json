@@ -1,0 +1,191 @@
+{
+  "id": "np-guco",
+  "name": "Guilford Courthouse National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "\"I never saw such fighting since God made me. The Americans fought like demons.\" - Lt. General Charles, Earl Cornwallis On March 15, 1781, six years into the American Revolution, General Greene and Lord Cornwallis' troops faced off at a small courthouse community. The battle would change the course of the Southern Campaign of the American Revolution.",
+  "shortDescription": "\"I never saw such fighting since God made me. The Americans fought like demons.\" - Lt. General Charles, Earl Cornwallis On March 15, 1781, six years into the American Revolution, General Greene and Lo...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 36.13225478,
+    "longitude": -79.8424561
+  },
+  "nationalParkInfo": {
+    "parkCode": "guco",
+    "npsId": "D1417003-3F9E-4FE0-9C6B-8ECE50855C7B",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/guco/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/guco/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3362881776",
+    "email": "guco_administration@nps.gov",
+    "website": "https://www.nps.gov/guco/index.htm",
+    "address": {
+      "line1": "2332 New Garden Road",
+      "line2": "",
+      "city": "Greensboro",
+      "state": "NC",
+      "postalCode": "27410"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 5:00PM",
+    "tuesday": "8:30AM - 5:00PM",
+    "wednesday": "8:30AM - 5:00PM",
+    "thursday": "8:30AM - 5:00PM",
+    "friday": "8:30AM - 5:00PM",
+    "saturday": "8:30AM - 5:00PM",
+    "sunday": "8:30AM - 5:00PM",
+    "description": "Start your visit at the Battlefield Visitor Center, located at 2332 New Garden Road, Greensboro NC 27410. The Visitors Center is open Wednesday through Sunday from 9:00 a.m. to 5:00 p.m. These facilities close to visitors and motor vehicle traffic on Thanksgiving Day, Christmas Day, and New Years Day. \n\nThe park is accessible by foot, and visitors are welcome to walk the trails until dusk."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "https://www.nps.gov/guco/planyourvisit/weather.htm Summers are warm to hot and humid with the occasional thunderstorm. Spring and Fall are cool with rainy periods. Winter is mild and cold with snow and ice possible in January and February. Wear comfortable clothing for the season and good walking shoes year round!"
+  },
+  "images": [
+    {
+      "id": "guco-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F649327B-9F59-A88D-E8A82709DC7B2970.jpg",
+      "title": "General Nathanael Greene Monument",
+      "altText": "Bronze and granite monument of General Nathanael Greene on horseback",
+      "caption": "The General Greene Monument is a focal point of commemoration on the battlefield",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "guco-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CE61F31C-1DD8-B71B-0BD2BB32B3ADB1EF.jpg",
+      "title": "Hoskins' House and Kitchen",
+      "altText": "Hoskins' House and Kitchen Located on the Grounds of the Colonial Heritage Center",
+      "caption": "Hoskins' House and Kitchen Located on the Grounds of the Colonial Heritage Center",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "guco-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F66087A6-0A7E-1630-1074B30166FC2711.jpg",
+      "title": "Historic New Garden Road",
+      "altText": "A gravel path winds through a forest",
+      "caption": "The Historic New Garden Road was a colonial highway and the location of the artillery during the Battle of Guilford Courthouse",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "guco-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F833B7C2-D107-5AA8-B4CA3F93767D54B6.jpg",
+      "title": "6 pounder cannons",
+      "altText": "Two cannons on grey carriages (wheels) sit in a forest",
+      "caption": "Anthony Singleton used two 6 pounder cannons like these reproductions at the American Third Line, the final battle point",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "guco-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D099B945-1DD8-B71B-0B0BD8F54CD1E8BD.png",
+      "title": "18th Century Field Drum",
+      "altText": "18th Century Field Drum at Guilford Courthouse National Military Park",
+      "caption": "18th Century Field Drum at Guilford Courthouse National Military Park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/guco/index.htm",
+    "directions": "https://www.nps.gov/guco/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Arts",
+    "Painting",
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Military",
+    "Infantry and Militia",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Animals",
+    "Trails",
+    "National Military Park",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

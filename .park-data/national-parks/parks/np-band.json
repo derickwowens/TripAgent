@@ -1,0 +1,292 @@
+{
+  "id": "np-band",
+  "name": "Bandelier National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Bandelier National Monument protects over 33,000 acres of ruggedly beautiful canyon and mesa country. Petroglyphs, dwellings carved into the soft rock cliffs, and standing masonry walls pay tribute to the early days of a culture that still survives in the surrounding communities.",
+  "shortDescription": "Bandelier National Monument protects over 33,000 acres of ruggedly beautiful canyon and mesa country. Petroglyphs, dwellings carved into the soft rock cliffs, and standing masonry walls pay tribute to...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.77898596,
+    "longitude": -106.3317124
+  },
+  "nationalParkInfo": {
+    "parkCode": "band",
+    "npsId": "E28CA30C-2D81-4394-81E9-67677C412115",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/band/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/band/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5056723861",
+    "email": "band_visitor_center@nps.gov",
+    "website": "https://www.nps.gov/band/index.htm",
+    "address": {
+      "line1": "Bandelier National Monument",
+      "line2": "15 Entrance Road",
+      "city": "Los Alamos",
+      "state": "NM",
+      "postalCode": "87544"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Bandelier National Monument is open every day from dawn to dusk unless impacted by severe weather or noted for specific holidays. The hours of dawn and dusk vary throughout the year so please come prepared knowing when you may have to exit the canyon. Visitors holding an overnight backcountry permit are allowed to be in the park after these hours following the guidance of their permit. The Juniper and Ponderosa campgrounds are open 24hrs."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Pass covers all persons traveling in a single, private, non-commercial vehicle (car, truck, camper, or van up to 15 passengers). Auto passes are non-transferable and not replaced if lost or stolen.  Entrance passes do not cover camping fees.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Pass covers per person entrance fee for those 16 years of age and older traveling on foot or by bicycle, or for individuals traveling together in a 16 passenger or greater vehicle as a non-commercial, organized group. Individual passes are non-transferable and not replaced if lost or stolen.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring daytime temperatures in the 70's can be followed by a snow storm with wet heavy snow and daytime temperatures in the 40's. Summers are dry with June usually being the hottest month of the year. Days in July, August and September often end with thunderstorms that can drop heavy localized rain and are often accompanied by lightning. Autumn weather is usually sunny with blue skies and warm (but not hot) days and cool nights. Winter average snowfall 25\". Snow and ice can close trails and roads."
+  },
+  "images": [
+    {
+      "id": "band-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C830B03-1DD8-B71B-0BA1266ED9B0CE08.jpg",
+      "title": "Tyuonyi",
+      "altText": "the village of Tyuonyi",
+      "caption": "A view of Tyuonyi and the cliff dwelling in Frijoles Canyon from the mesa.",
+      "credit": "NPS Photo/Sally King",
+      "isPrimary": true
+    },
+    {
+      "id": "band-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C830E07-1DD8-B71B-0B19DE78174BBC7F.jpg",
+      "title": "View from a Cavate",
+      "altText": "Tyuonyi from a cavate",
+      "caption": "A view of Tyuonyi from a cavate along the Main Loop Trail in Frijoles Canyon.",
+      "credit": "NPS Photo/Sally King",
+      "isPrimary": false
+    },
+    {
+      "id": "band-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C830F61-1DD8-B71B-0BCA306EADAB4457.jpg",
+      "title": "Long House",
+      "altText": "archeological sites in Frijoles Canyon",
+      "caption": "A view of Long House dwellings from the mesa top.",
+      "credit": "NPS Photo/Sally King",
+      "isPrimary": false
+    },
+    {
+      "id": "band-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83126D-1DD8-B71B-0B800213F33D2F6D.jpg",
+      "title": "Frijoles Canyon",
+      "altText": "a view of Frijoles Canyon from the rim",
+      "caption": "A view of Frijoles Canyon from the Frey Trail",
+      "credit": "NPS Photo/Sally King",
+      "isPrimary": false
+    },
+    {
+      "id": "band-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8313E1-1DD8-B71B-0B96C7D8009AD8C3.jpg",
+      "title": "Cerro Grande",
+      "altText": "a view of the Valles Caldera from Cerro Grande",
+      "caption": "A view of the Valles Caldera from Cerro Grande, the highest point in Bandelier.",
+      "credit": "NPS Photo/Sally King",
+      "isPrimary": false
+    },
+    {
+      "id": "band-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C831529-1DD8-B71B-0B9E2AE36958A39C.jpg",
+      "title": "The Rio Grande",
+      "altText": "a view of the Rio Grande",
+      "caption": "A view of the Rio Grande, the lowest point in Bandelier, from the mesa above Frijoles Canyon",
+      "credit": "NPS Photo/Sally King",
+      "isPrimary": false
+    },
+    {
+      "id": "band-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5C901E0A-E092-5421-2863AB8319E7951E.jpg",
+      "title": "Visitor Center",
+      "altText": "visitor center in winter",
+      "caption": "Bandelier visitor center in winter",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/band/index.htm",
+    "directions": "http://www.nps.gov/band/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Cliff Dwellings",
+    "Laborer and Worker",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Elk",
+    "Canyons and Canyonlands",
+    "Foothills, Plains and Valleys",
+    "Plateaus and Mesas",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Volcanoes",
+    "Watersheds",
+    "Wilderness",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

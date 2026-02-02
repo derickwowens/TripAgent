@@ -1,0 +1,200 @@
+{
+  "id": "np-petr",
+  "name": "Petroglyph National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Petroglyph National Monument protects one of the largest petroglyph sites in North America, featuring designs and symbols carved onto volcanic rocks by Native Americans and Spanish settlers 400 to 700 years ago. These images are a valuable record of cultural expression and hold profound spiritual significance for contemporary Native Americans and for the descendants of the early Spanish settlers.",
+  "shortDescription": "Petroglyph National Monument protects one of the largest petroglyph sites in North America, featuring designs and symbols carved onto volcanic rocks by Native Americans and Spanish settlers 400 to 700...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.13915998,
+    "longitude": -106.7491456
+  },
+  "nationalParkInfo": {
+    "parkCode": "petr",
+    "npsId": "47CBA521-0A8A-4728-8BDA-85D269455A7A",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/petr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/petr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5058990205",
+    "email": "petr_interpretation@nps.gov",
+    "website": "https://www.nps.gov/petr/index.htm",
+    "address": {
+      "line1": "Visitor Information Center",
+      "line2": "Unser Blvd. NW at Western Trail",
+      "city": "Albuquerque",
+      "state": "NM",
+      "postalCode": "87120"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 4:30PM",
+    "tuesday": "8:30AM - 4:30PM",
+    "wednesday": "8:30AM - 4:30PM",
+    "thursday": "8:30AM - 4:30PM",
+    "friday": "8:30AM - 4:30PM",
+    "saturday": "8:30AM - 4:30PM",
+    "sunday": "8:30AM - 4:30PM",
+    "description": "Staffed by our partner, the City of Albuquerque Open Space, this developed trail system consists of 3 short, paved trails with trail markers. Full-service restroom facility, picnic tables, shaded seating areas and a shaded patio area. See up to 100 petroglyphs in one hour if you walk all 3 trails. Last entry is at 4:00 pm daily and all visitors are swept out at 4:30 pm sharp. Pets not allowed on the petroglyph viewing trails. Trails are not accessible for wheelchairs or strollers."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Altitude approx. 5000 ft. Usually sunny and dry, with low relative humidity. Winter temperatures range from 40 to 50 degrees F. Summer temperatures range from 88-99 degrees F. 278 days of sunshine per year. Spring can be windy with 20 to 30 mph sustained winds which can produce periods of blowing sand and dust. For current weather forecast, Google Albuquerque weather."
+  },
+  "images": [
+    {
+      "id": "petr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2425221F-94B6-50F2-382B3DB62384FB07.jpg",
+      "title": "Handprint petroglyphs in Piedras Marcadas Canyon",
+      "altText": "Petroglyphs on dark boulders with a cloudy sky.",
+      "caption": "Handprints and other petroglyphs on boulders at Piedras Marcadas.",
+      "credit": "NPS Photo / Daniel Leifheit",
+      "isPrimary": true
+    },
+    {
+      "id": "petr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/23C24E6B-E74F-FFC9-9396316C856B4228.jpg",
+      "title": "Hawk petroglyph at Mesa Prieta",
+      "altText": "A petroglyph of a hawk on a dark boulder with a cloudy sky and mountains in the background.",
+      "caption": "A petroglyph of a hawk at Mesa Prieta. It can be visited from the South Point trailhead.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DA2BC-1DD8-B71B-0B1AB38AD4FB21D7.jpg",
+      "title": "Desert mammal petroglyph",
+      "altText": "Petroglyph of a small mammal along the Mesa Point Trail in Boca Negra Canyon.",
+      "caption": "Petroglyph of a small mammal along the Mesa Point Trail in Boca Negra Canyon.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/10CCE75E-1DD8-B71B-0B5F2C39FA0DD048.jpg",
+      "title": "Macaw petroglyph",
+      "altText": "Petroglyph of a macaw parrot along the Macaw Trail in Boca Negra Canyon.",
+      "caption": "Petroglyph of a macaw parrot along the Macaw Trail in Boca Negra Canyon.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DA5F9-1DD8-B71B-0B29D03420294A71.jpg",
+      "title": "Coyote and rattlesnake petroglyphs in Rinconada Canyon",
+      "altText": "Petroglyph imagery of a coyote and rattlesnake in Rinconada Canyon.",
+      "caption": "Petroglyph imagery of a coyote and rattlesnake in Rinconada Canyon.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DA77D-1DD8-B71B-0B12E0492DEA5D29.jpg",
+      "title": "Petroglyph of grazing sheep in Rinconada Canyon",
+      "altText": "Petroglyph panel of sheep grazing in Rinconada Canyon.",
+      "caption": "Petroglyph panel of sheep grazing in Rinconada Canyon.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DAD68-1DD8-B71B-0B14E482CD947167.jpg",
+      "title": "Snow Dusted Cinder Cones",
+      "altText": "Winter scene of snow covered cinder cones at the Volcanoes Day Use Area.",
+      "caption": "Winter scene of snow covered cinder cones at the Volcanoes Day Use Area.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D97DA525-DFAD-F244-BF2E77C181677D2C.jpg",
+      "title": "Coyote and rattlesnake petroglyphs",
+      "altText": "Petroglyphs of a coyote and a rattlesnake on a dark boulder.",
+      "caption": "These petroglyphs could possibly depict a coyote and a rattlesnake, two of the more commonly seen animals at the monument.",
+      "credit": "NPS Photo / Daniel Leifheit",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D7A0207D-00EB-076D-28162FC4818CAD8E.jpg",
+      "title": "Bird Petroglyph",
+      "altText": "A petroglyph of a bird on a dark boulder.",
+      "caption": "A petroglyph of a bird at Rinconada Canyon.",
+      "credit": "NPS Photo / Daniel Leifheit",
+      "isPrimary": false
+    },
+    {
+      "id": "petr-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D7D7ED15-9952-87D6-66AFDE2DA6C4E74F.jpg",
+      "title": "Bird and Footprint Petroglyphs",
+      "altText": "Petroglyphs of a bird and a footprint on a dark boulder.",
+      "caption": "Petroglyphs of a bird and a footprint at Piedras Marcadas Canyon.",
+      "credit": "NPS Photo / Daniel Leifheit",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/petr/index.htm",
+    "directions": "http://www.nps.gov/petr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Native American Heritage",
+    "Geology",
+    "Volcanoes",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

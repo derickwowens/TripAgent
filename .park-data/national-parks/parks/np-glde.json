@@ -1,0 +1,129 @@
+{
+  "id": "np-glde",
+  "name": "Gloria Dei Church National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Before Pennsylvania there was New Sweden. Discover this last historic link to a forgotten past. Visit the church's pastoral surroundings and its burial ground of patriots and ordinary citizens alike.",
+  "shortDescription": "Before Pennsylvania there was New Sweden. Discover this last historic link to a forgotten past. Visit the church's pastoral surroundings and its burial ground of patriots and ordinary citizens alike.",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.93435005,
+    "longitude": -75.14398924
+  },
+  "nationalParkInfo": {
+    "parkCode": "glde",
+    "npsId": "4A2954A3-F00F-46E4-8FC7-BB2766350518",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/glde/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/glde/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "215-389-1513",
+    "email": "indevisitorinfo@nps.gov",
+    "website": "https://www.nps.gov/glde/index.htm",
+    "address": {
+      "line1": "916 S. Swanson Street",
+      "line2": "",
+      "city": "Philadelphia",
+      "state": "PA",
+      "postalCode": "19147"
+    }
+  },
+  "operatingHours": {
+    "monday": "5:00AM - 11:00PM",
+    "tuesday": "5:00AM - 11:00PM",
+    "wednesday": "5:00AM - 11:00PM",
+    "thursday": "5:00AM - 11:00PM",
+    "friday": "5:00AM - 11:00PM",
+    "saturday": "5:00AM - 11:00PM",
+    "sunday": "5:00AM - 11:00PM",
+    "description": "NOTE: The church grounds are closed from 11PM to 5AM."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are typically hot and muggy, fall and spring are generally mild, and winter is cold. Snowfall is highly variable, with some winters bringing only light snow and others bringing several major snowstorms, with the normal seasonal snowfall standing at 22.4 in (57 cm). Precipitation is generally spread throughout the year, with eight to twelve wet days per month."
+  },
+  "images": [
+    {
+      "id": "glde-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7FA643-1DD8-B71B-0BC25E1EB46EC74C.jpg",
+      "title": "Steeple of the Gloira Dei Church",
+      "altText": "A color photo of the Gloria Dei Church steeple during a sunset in Philadelphia.",
+      "caption": "The church building at Gloria Dei 'Old Swedes' has been in use since 1700, making it the oldest church building in Pennsylvania and the second oldest in the United States.  The steeple was completed in 1703.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "glde-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80CE82-1DD8-B71B-0BCB32C44FF22EAF.jpg",
+      "title": "Gloria Dei Chuch yard",
+      "altText": "A color photo of the Gloria Dei Church yard showing tombstones with the church in the background.",
+      "caption": "Gloria Dei Church was designated as a National Historical Site in 1942. The Gloria Dei congregation owns and maintains the church and the related buildings, its ministry and the grounds.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glde-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80CFED-1DD8-B71B-0BBC536D1F7B75A5.jpg",
+      "title": "Interior of the Gloria Dei Church",
+      "altText": "A color photo of the interior of Gloria Dei Church showing the pulpit and a stained glass window.",
+      "caption": "Situated above the pulpit is the only stained glass window in the church building.  Created in the mid 1800s, the window is the earliest example of American stained glass among the 3600 windows in the Philadelphia region.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glde-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81EA73-1DD8-B71B-0B2939FEE627A95A.jpg",
+      "title": "Model of a ship hanging inside Gloria Dei Church",
+      "altText": "A color photo of a model tall ship hanging inside Gloria Die Church.",
+      "caption": "Hanging from the ceiling of Gloria Dei are models of the two ships that brought the first Swedish colonists to North America in 1638, the \"Kalmar Nyckel\" and the \"Fogel Gryp.\"",
+      "credit": "Library of Congress Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "glde-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81E0A5-1DD8-B71B-0B23793CBA1F8C5C.jpg",
+      "title": "The Gloria Dei Church c.1850",
+      "altText": "A 19th century photograph of the Gloria Dei Church, with the cemetery in the foreground.",
+      "caption": "This 1850s photograph shows a bird's-eye view of the Gloria Dei Church, with the cemetery in the foreground and the masts of ships visible in the background.",
+      "credit": "Library of Congress Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/glde/index.htm",
+    "directions": "http://www.nps.gov/glde/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Burial, Cemetery and Gravesite",
+    "Religion and Spirituality",
+    "Churches",
+    "Transportation",
+    "National Historic Site",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

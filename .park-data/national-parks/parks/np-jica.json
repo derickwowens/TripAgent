@@ -1,0 +1,157 @@
+{
+  "id": "np-jica",
+  "name": "Jimmy Carter National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "Few U.S. Presidents have had such close ties with where they were born and raised. The rural southern culture of Plains, Georgia revolves around farming, church, and school, which had a large influence in molding the character and shaping the political policies of the 39th President of the United States.",
+  "shortDescription": "Few U.S. Presidents have had such close ties with where they were born and raised. The rural southern culture of Plains, Georgia revolves around farming, church, and school, which had a large influenc...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 32.03611,
+    "longitude": -84.3924
+  },
+  "nationalParkInfo": {
+    "parkCode": "jica",
+    "npsId": "F63CFF21-C861-422D-A725-B8F3ECFF6EAE",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jica/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jica/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(229) 824 - 4104",
+    "email": "jica_information@nps.gov",
+    "website": "https://www.nps.gov/jica/index.htm",
+    "address": {
+      "line1": "300 North Bond Street",
+      "line2": "",
+      "city": "Plains",
+      "state": "GA",
+      "postalCode": "31780"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 4:00PM",
+    "tuesday": "10:00AM - 4:00PM",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "Plains Depot was chosen for President Carter's 1976 Presidential Campaign Headquarters because it was vacant and it had a public restroom. Today the building is a museum for Jimmy Carter's campaign for Georgia State Senate, Governor of Georgia, and President of the United States."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "When visiting Southwest Georgia during the summer, expect hot and humid weather with the potential for thunderstorms. Check the local forecast before planning any outdoor activities in the region and be prepared with appropriate clothing, sun protection, and hydration to ensure a comfortable and safe visit."
+  },
+  "images": [
+    {
+      "id": "jica-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87D454-1DD8-B71B-0B1CF7672AB5806C.jpg",
+      "title": "Jimmy Carter's Boyhood Home",
+      "altText": "A picture of the front of the home Jimmy Carter lived in as a young boy.",
+      "caption": "Front view of the Jimmy Carter Boyhood Home in Archery, Georgia.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "jica-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87D616-1DD8-B71B-0B81EBD345A00323.jpg",
+      "title": "Plains High School Museum and Visitors Center",
+      "altText": "Front view of Plains High School Visitor Center and Museum",
+      "caption": "Almost one hundred thousand visitors visit Plains High School Visitor Center and Museum yearly.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jica-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87D763-1DD8-B71B-0BB5F55DAD2E6514.jpg",
+      "title": "Plains Depot, 1976 Campaign Headquarters",
+      "altText": "The Plains train depot that President Carter used as the 1976 campaign headquarters.",
+      "caption": "The oldest building in Plains, the train depot, was used as the 1976 campaign headquarters for President Carter.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jica-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/61CED1DA-1DD8-B71B-0B3FDDBB629AA7DF.jpg",
+      "title": "Jimmy Carter Presidents' Day 2016",
+      "altText": "Jimmy Carter speaking to the crowd; Presidents' Day 2016",
+      "caption": "President Jimmy Carter speaking to the crowd at Plains High School for Presidents' Day 2016",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jica-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/61DF9E1D-1DD8-B71B-0B3700555CB0DC61.jpg",
+      "title": "Rosalynn Carter, Presidents' Day 2016",
+      "altText": "Rosalynn Carter signing a book, Presidents' Day 2016",
+      "caption": "Rosalynn Carter signing a book she authored during Presidents' Day 2016",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jica/index.htm",
+    "directions": "http://www.nps.gov/jica/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Farming and Agriculture",
+    "Great Depression",
+    "Presidents",
+    "Schools and Education",
+    "Natural Sounds",
+    "National Historical Park",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

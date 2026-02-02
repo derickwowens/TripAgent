@@ -1,0 +1,150 @@
+{
+  "id": "np-elte",
+  "name": "El Camino Real de los Tejas National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Explore a diverse array of histories contained within El Camino Real de los Tejas’ 150-year life, including the Spanish struggle to missionize American Indian nations, the growth of cattle ranching in the Mexican period, and the movement for Texan independence and statehood.",
+  "shortDescription": "Explore a diverse array of histories contained within El Camino Real de los Tejas’ 150-year life, including the Spanish struggle to missionize American Indian nations, the growth of cattle ranching in...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 30.0922964581,
+    "longitude": -97.3397666725
+  },
+  "nationalParkInfo": {
+    "parkCode": "elte",
+    "npsId": "111711AC-B056-4CCF-B08F-35EE0E313CF4",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/elte/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/elte/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/elte/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7, & 8",
+      "line2": "El Camino Real de los Tejas National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "El Camino Real de los Tejas National Historic Trail is not a clearly marked hiking trail. Instead it is a route that passes through communities, urban areas, public lands, and Wilderness. The route travels across a variety of land ownerships and management, including private land. Each location varies as to the hours of operations and access. Please contact individual trail sites before your visit for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of El Camino de los Tejas National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: www.weather.gov"
+  },
+  "images": [
+    {
+      "id": "elte-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7812-1DD8-B71B-0B21FD984B4C001C.jpg",
+      "title": "Mission San Bernardo ruins, Guerrero, Coahuila, Mexico",
+      "altText": "Mexican mission stands in the dirt",
+      "caption": "Construction of the mission church began in 1760 but was never completed. The outstanding ruins are virtually the only visible remains of the complex of missions established in the area. The purpose was to convert Coahuiltecan Indians to Catholicism.",
+      "credit": "Christopher Talbot",
+      "isPrimary": true
+    },
+    {
+      "id": "elte-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7952-1DD8-B71B-0BFB5B12C3B0E5DA.jpg",
+      "title": "El Paso de Jacinto/Paso de los Indios, Webb County, Texas",
+      "altText": "lots of greenery along a river; sunflowers in the foreground",
+      "caption": "Around 1746, explorer Jacinto de León discovered a ford that allowed safe passage across the Río Grande in this vicinity; it had probably been used for centuries by American Indians.",
+      "credit": "Christopher Talbot",
+      "isPrimary": false
+    },
+    {
+      "id": "elte-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7ABC-1DD8-B71B-0B412CEDBCA85B2A.jpg",
+      "title": "Rancho los Ojuelos, Webb County, Texas",
+      "altText": "stone house ruins; briliant green grasses and trees on the right",
+      "caption": "This national historic district consists of 13 stone houses (several in ruins) constructed from hewn sandstone blocks, chinked and plastered, ranging from rectangular flat roofed Colonial style buildings to hip roofed two room structures. Post-1750s.",
+      "credit": "Christopher Talbot",
+      "isPrimary": false
+    },
+    {
+      "id": "elte-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7C07-1DD8-B71B-0B637A2BD1BCF7A6.jpg",
+      "title": "McKinney Falls State Park, Travis County, Texas",
+      "altText": "rock indentations in a dry creek with five people walking under clouds",
+      "caption": "Recent research reveals that in 1716 the expedition of Domingo Ramón followed the left bank of Onion Creek along the western edge of McKinney Falls State Park to its junction with Williamson Creek. You can walk in rock indentations in the creek bed.",
+      "credit": "Christopher Talbot",
+      "isPrimary": false
+    },
+    {
+      "id": "elte-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E7D2D-1DD8-B71B-0BBC1AD8F8F8B91C.jpg",
+      "title": "Mission Tejas State Park, Houston County, Texas",
+      "altText": "trail segment indentation with leaves in it, trees along the side",
+      "caption": "This 1.5-mile-long trail segment crosses an area that has remarkable visual integrity. The trail segment courses parallel to State Road 21 and at times crosses the highway.",
+      "credit": "Christopher Talbot",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/elte/index.htm",
+    "directions": "http://www.nps.gov/elte/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Forts",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Schools and Education",
+    "Trails",
+    "National Historic Trail",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

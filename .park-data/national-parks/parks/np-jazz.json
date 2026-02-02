@@ -1,0 +1,160 @@
+{
+  "id": "np-jazz",
+  "name": "New Orleans Jazz National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "LA",
+  "stateName": "Louisiana",
+  "region": "southeast",
+  "description": "Discover the roots of jazz at the New Orleans Jazz National Historical Park. Located in the heart of the French Quarter, our park offers live performances, exhibits, and programs that celebrate the legacy of America's unique musical art form. Immerse yourself in the vibrant history and culture of jazz, a sound that continues to inspire the world. Join us in preserving and celebrating the music!",
+  "shortDescription": "Discover the roots of jazz at the New Orleans Jazz National Historical Park. Located in the heart of the French Quarter, our park offers live performances, exhibits, and programs that celebrate the le...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 29.96303129,
+    "longitude": -90.06749669
+  },
+  "nationalParkInfo": {
+    "parkCode": "jazz",
+    "npsId": "CB014DE3-3483-4E36-BC35-3CC7E9F60529",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jazz/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jazz/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "504-589-3882",
+    "email": "jazz_interpretation@nps.gov",
+    "website": "https://www.nps.gov/jazz/index.htm",
+    "address": {
+      "line1": "419 Decatur St",
+      "line2": "",
+      "city": "New Orleans",
+      "state": "LA",
+      "postalCode": "70130"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:30AM - 4:30PM",
+    "wednesday": "9:30AM - 4:30PM",
+    "thursday": "9:30AM - 4:30PM",
+    "friday": "9:30AM - 4:30PM",
+    "saturday": "9:30AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "These are the standard hours for the French Quarter Visitor Center for New Orleans Jazz National Historical Park and the Jean Lafitte National Historical Park and Preserve at 419 Decatur St, New Orleans, LA 70130.\n\nThe secondary site for New Orleans Jazz National Historical Park (Dutch Alley) at 916 N Peters St, New Orleans, LA 70116, is only open for special events.  Please see our event calendar for details."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "All temperatures in degrees Fahrenheit. Note that relative humidity, especially in summer months, can reach 90%, so summertime temperatures can feel 10-20 degrees hotter than actual temperature. Average high & low temperatures by month: January - 62-44 February - 68-51 March - 77-61 April - 81-65 May - 86-69 June - 92-79 July - 97-83 August - 96-83 Sept - 90-74 Oct - 82-65 Nov - 72-53 Dec - 66-50"
+  },
+  "images": [
+    {
+      "id": "jazz-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87C505-1DD8-B71B-0BE34A8A361477FB.jpg",
+      "title": "Community Events by New Orleans Jazz National Historical Park",
+      "altText": "A young brass band musician plays a trumpet",
+      "caption": "The park works with local partners to share jazz at community events, festivals, and other venues.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "jazz-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87BF6D-1DD8-B71B-0BE7901DF3FCBDE9.jpg",
+      "title": "Visitor Center Exhibit at New Orleans Jazz National Historical Park",
+      "altText": "Exhibit titled \"What Is New Orleans Jazz?\"",
+      "caption": "\"What is New Orleans Jazz?\" A visit to the park's main visitor center at 916 North Peters Street will answer the question.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jazz-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87C0C3-1DD8-B71B-0BEF50BA9C9BFB5D.jpg",
+      "title": "Visitor Center Concert at New Orleans Jazz National Historical Park",
+      "altText": "Kids and adults playing instruments on a stage",
+      "caption": "Passing jazz traditions from one generation to the next is an important part of the park's mission---and great listening too!",
+      "credit": "NPS Photo / Elizabeth Dupree",
+      "isPrimary": false
+    },
+    {
+      "id": "jazz-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87C20C-1DD8-B71B-0B53480C74A5F56F.jpg",
+      "title": "US Mint Concert by New Orleans Jazz National Historical Park",
+      "altText": "Singer with jazz band, including park rangers",
+      "caption": "The park's state-of-the-art concert space at the Old US Mint is the perfect place to enjoy some jazz.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jazz-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87C3B6-1DD8-B71B-0B91F46410CC1CB1.jpg",
+      "title": "US Mint Voting Rights Act Program at New Orleans Jazz National Historical Park",
+      "altText": "Rangers and others sing and play on a stage",
+      "caption": "Programs like this celebration of the Voting Rights Act bring together history, culture, and music.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jazz/index.htm",
+    "directions": "http://www.nps.gov/jazz/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Birthplace",
+    "Music",
+    "Urban America",
+    "National Historical Park",
+    "LA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

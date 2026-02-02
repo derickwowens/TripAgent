@@ -1,0 +1,309 @@
+{
+  "id": "np-npnh",
+  "name": "National Parks of New York Harbor",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "These 12 sites preserve more than 400 years of American history! We invite you to explore the past and investigate its relevance in our lives today. From the birth of American democracy to the evolution of commerce, harbor defense, ecology and immigration, the breadth of themes commemorated through the National Parks of New York Harbor reflect the richness and diversity of our heritage.",
+  "shortDescription": "These 12 sites preserve more than 400 years of American history! We invite you to explore the past and investigate its relevance in our lives today. From the birth of American democracy to the evoluti...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 40.6632,
+    "longitude": -74.0451
+  },
+  "nationalParkInfo": {
+    "parkCode": "npnh",
+    "npsId": "186BF51D-FA34-4DD7-A967-233CB32547B8",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/npnh/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/npnh/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "917-731-1997",
+    "email": "Suzanne_McCarthy@nps.gov",
+    "website": "https://www.nps.gov/npnh/index.htm",
+    "address": {
+      "line1": "26 Wall Street",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10005"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 5:00PM",
+    "tuesday": "10:00AM - 5:00PM",
+    "wednesday": "10:00AM - 5:00PM",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "There are twelve national parks in New York Harbor. Each park, and elements within those parks, may have different hours. Please be sure to check out the individual park webpages to learn more about operating hours for specific parks and park areas."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Check out the weather here for New York City: https://www.accuweather.com/en/us/new-york/10021/daily-weather-forecast/349727?page=0"
+  },
+  "images": [
+    {
+      "id": "npnh-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C851C36-1DD8-B71B-0B0CDC66CCAD1F18.jpg",
+      "title": "Manhattan skyline as seen from Governors Island National Monument",
+      "altText": "Manhattan skyline as seen from Governors Island National Monument",
+      "caption": "National Parks of New York Harbor includes eleven national parks, including seven within Manhattan alone.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "npnh-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C851FAA-1DD8-B71B-0BB559E3777D5603.jpg",
+      "title": "General Grant National Memorial at dusk in midwinter",
+      "altText": "General Grant National Memorial at dusk in midwinter",
+      "caption": "The largest mausoleum in North America pays tribute to Civil War general and U.S. President Ulysses S. Grant, who is entombed here with his wife Julia.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "npnh-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8522DA-1DD8-B71B-0B633AD197DD157A.jpg",
+      "title": "Battery Weed, Fort Wadsworth, Staten Island",
+      "altText": "Battery Weed, Fort Wadsworth, Staten Island",
+      "caption": "Gateway National Recreation Area covers two states and three New York City boroughs. Several of its sites are former military bases, such as Fort Wadsworth.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "npnh-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85246C-1DD8-B71B-0B4219F690AD949E.jpg",
+      "title": "Statue of Liberty looking ahead",
+      "altText": "Statue of Liberty looking ahead",
+      "caption": "Statue of Liberty National Monument also includes Ellis Island Immigration Museum.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "npnh-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8527D9-1DD8-B71B-0B9734907AE388BC.jpg",
+      "title": "African Burial Ground National Monument",
+      "altText": "African Burial Ground National Monument",
+      "caption": "The African Burial Ground was a vast cemetery for enslaved and free Africans, forgotten since the 1790s, it was rediscovered in 1991.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/npnh/index.htm",
+    "directions": "https://www.nps.gov/npnh/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Arts",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Great Depression",
+    "Hispanic American Heritage",
+    "Industry",
+    "Immigration",
+    "Laborer and Worker",
+    "Migrant Workers",
+    "LGB American Heritage",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Military",
+    "Infantry and Militia",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Presidents",
+    "Social Movements",
+    "Civil Rights",
+    "Urban America",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "American Revolutionary War",
+    "War of 1812",
+    "Civil War",
+    "Westward Expansion",
+    "Coasts, Islands and Atolls",
+    "Oceans",
+    "",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

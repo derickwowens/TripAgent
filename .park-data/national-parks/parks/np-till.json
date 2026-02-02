@@ -1,0 +1,176 @@
+{
+  "id": "np-till",
+  "name": "Emmett Till and Mamie Till-Mobley National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "IL",
+  "stateName": "Illinois",
+  "region": "midwest",
+  "description": "In 1955, 14-year-old Emmett Till traveled to Money, Mississippi, to visit relatives. He was kidnapped, tortured, and murdered after reportedly whistling at a white woman. His mother, Mamie Till-Mobley, insisted on an open-casket funeral near their hometown of Chicago. Her brave decision let the world see the racist violence inflicted upon her son and set the Civil Rights Movement into motion.",
+  "shortDescription": "In 1955, 14-year-old Emmett Till traveled to Money, Mississippi, to visit relatives. He was kidnapped, tortured, and murdered after reportedly whistling at a white woman. His mother, Mamie Till-Mobley...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 33.9711,
+    "longitude": -90.3698
+  },
+  "nationalParkInfo": {
+    "parkCode": "till",
+    "npsId": "0776E4B1-036C-4C61-9F5D-F5DB0EFB3220",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/till/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/till/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(662) 483-1231",
+    "email": "till_info@nps.gov",
+    "website": "https://www.nps.gov/till/index.htm",
+    "address": {
+      "line1": "Emmett Till Interpretive Center",
+      "line2": "158 N. Court St.",
+      "city": "Sumner",
+      "state": "MS",
+      "postalCode": "38957"
+    }
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Emmett Till and Mamie Till-Mobley National Monument has sites in Chicago, IL and Sumner and Glendora, MS. Check local weather conditions in each unit before you visit."
+  },
+  "images": [
+    {
+      "id": "till-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/904FA468-C327-634B-B5BD07007C927FAD.jpg",
+      "title": "Emmett Till and Mamie Till-Mobley",
+      "altText": "Two African Americans sitting in a room and smiling toward the camera.",
+      "caption": "Emmett Till and Mamie Till-Mobley, ca. 1954.",
+      "credit": "NAACP Records, Prints and Photographs Division, Library of Congress",
+      "isPrimary": true
+    },
+    {
+      "id": "till-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9084F3FC-AE02-6544-3B317D201D8ACF29.jpg",
+      "title": "Roberts Temple Church of God in Christ",
+      "altText": "A multi-story tan brick church along a road. A tree stands in front.",
+      "caption": "Roberts Temple Church of God in Christ in Chicago.",
+      "credit": "Battiest Photography / National Trust for Historic Preservation",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6838ADB-B90C-F121-486848F852CC6AAE.jpg",
+      "title": "Roberts Temple Church of God in Christ Interior",
+      "altText": "Rows of green seats in a large white room pointed toward a pulpit and a cross on a wall.",
+      "caption": "Present-day photo of the Inside of Roberts Temple Church of God in Christ.",
+      "credit": "Battiest Photography / National Trust for Historic Preservation",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C695F5E0-DE2E-7E02-33395C7209954F17.jpg",
+      "title": "Reverend Wheeler Parker Jr.",
+      "altText": "An elderly African American man looks at a plaque on the church exterior.",
+      "caption": "Reverend Wheeler Parker Jr., cousin and last living witness of Emmett Till’s kidnapping, viewing Chicago Landmark plaque on Roberts Temple Church of God in Christ.",
+      "credit": "Battiest Photography / National Trust for Historic Preservation",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6ADB63A-E12D-F371-C70C1BB91D90A937.jpg",
+      "title": "Emmett Till Interpretive Center",
+      "altText": "A one story store-like front along a street containing two doors and several windows.",
+      "caption": "The Emmett Till Interpretive Center in Sumner, MS, an official nonprofit partner of Emmett Till and Mamie Till-Mobley National Monument.",
+      "credit": "NPS / Jay D. Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6F817A8-09B3-B04E-5BAA7291E2CB47E4.jpg",
+      "title": "Emmett Till Interpretive Center Interior",
+      "altText": "Six chairs sit in a circle in a room that is lined with informational panels.",
+      "caption": "Interior of the Emmett Till Interpretive Center.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C7387047-FA5D-EA46-34C39AE23445B364.jpg",
+      "title": "Emmett Till Interpretive Center 2",
+      "altText": "A table sits besides shelves featuring magazines and books in a white room.",
+      "caption": "Interior of the Emmett Till Interpretive Center.",
+      "credit": "NPS / Jay D. Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C7C12FC3-9289-BA98-B5A9EDA3033B0D34.jpg",
+      "title": "Tallahatchie County Courthouse Courtroom",
+      "altText": "Rows of seats face a bench in an empty courtroom.",
+      "caption": "Present-day interior view of the Tallahatchie County Courthouse courtroom where the trial of the men accused of lynching Emmett Till took place took place.",
+      "credit": "NPS / Jay D. Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/921D105C-A8E1-F8F7-806EB022212BEDA7.jpg",
+      "title": "Tallahatchie County Courthouse",
+      "altText": "Side view of a two-story brick courthouse with a clock tower. A statue stands in front.",
+      "caption": "The Tallahatchie County Courthouse in Sumner, MS.",
+      "credit": "NPS / Jay D. Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "till-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/90F3B7FF-99F5-B53B-194A8474FC7F6D28.jpg",
+      "title": "Graball Landing",
+      "altText": "View of a muddy river from between two trees.",
+      "caption": "Graball Landing in Glendora, MS.",
+      "credit": "NPS / Jay D. Johnson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/till/index.htm",
+    "directions": "https://www.nps.gov/till/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "Churches",
+    "Social Movements",
+    "Civil Rights",
+    "Voting Rights and Suffrage",
+    "Tragic Events",
+    "Murders",
+    "Urban America",
+    "Women's History",
+    "National Monument",
+    "IL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

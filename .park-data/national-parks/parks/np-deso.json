@@ -1,0 +1,157 @@
+{
+  "id": "np-deso",
+  "name": "De Soto National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "region": "southeast",
+  "description": "In May 1539, Conquistador Hernando de Soto’s army of soldiers, hired mercenaries, craftsmen, and clergy made landfall in Tampa Bay. They were met with fierce resistance of indigenous people protecting their homelands. De Soto’s quest for glory and gold would be a four year, four thousand mile odyssey of intrigue, warfare, disease, and discovery that would form the history of the United States.",
+  "shortDescription": "In May 1539, Conquistador Hernando de Soto’s army of soldiers, hired mercenaries, craftsmen, and clergy made landfall in Tampa Bay. They were met with fierce resistance of indigenous people protecting...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 27.52272613,
+    "longitude": -82.64335416
+  },
+  "nationalParkInfo": {
+    "parkCode": "deso",
+    "npsId": "C40BEE20-AF31-4DB5-AC77-D53EC89D1D9F",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/deso/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/deso/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9417920458",
+    "email": "deso_interpretive_staff@nps.gov",
+    "website": "https://www.nps.gov/deso/index.htm",
+    "address": {
+      "line1": "8300 De Soto Memorial Hwy",
+      "line2": "",
+      "city": "Bradenton",
+      "state": "FL",
+      "postalCode": "34209"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "De Soto National Memorial is open with a Visitor Contact Tent. The park's Visitor Center remains closed due to Hurricane damage. The park cannot offer the movie at this time. Trails are awaiting rehabilitation and access is limited for those who need mobility assistance. There are portable restroom facilities and handwashing stations on site for visitor use."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers avg. Temperature is 90 degrees Fahrenheit with a relative humidity of 80-90% Late afternoon showers and thunderstorms are common usually lasting only 10-20 minutes. Winters are mild and dry with lows reaching on average 60 degrees."
+  },
+  "images": [
+    {
+      "id": "deso-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5A51F02C-1DD8-B71B-0B73F14FDF6736AE.jpg",
+      "title": "De Soto Monument",
+      "altText": "Reenactor Bill Boston on his horse Dixie in front of the De Soto Monument.",
+      "caption": "Reenactor Bill Boston on his horse Dixie in front of the De Soto Monument.",
+      "credit": "Tim Ohr",
+      "isPrimary": true
+    },
+    {
+      "id": "deso-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5A5D9589-1DD8-B71B-0B825B2F5DCB816B.jpg",
+      "title": "De Soto and the Junior Ranger",
+      "altText": "De Soto Tim Burke greets on of the parks Junior Rangers",
+      "caption": "De Soto Tim Burke greets on of the parks Junior Rangers",
+      "credit": "Tim Ohr",
+      "isPrimary": false
+    },
+    {
+      "id": "deso-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5A69DB65-1DD8-B71B-0B5760E94038457E.jpg",
+      "title": "Sunset at De Soto",
+      "altText": "Sunset at the Park",
+      "caption": "The Sunsets on another day at De Soto NM",
+      "credit": "park photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/deso/index.htm",
+    "directions": "http://www.nps.gov/deso/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Explorers and Expeditions",
+    "Hispanic American Heritage",
+    "Maritime",
+    "Maritime - Military",
+    "Ships and Shipwrecks",
+    "Military",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Tragic Events",
+    "Massacres",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Estuaries and Mangroves",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "National Memorial",
+    "FL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

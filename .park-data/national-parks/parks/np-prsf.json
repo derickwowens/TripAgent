@@ -1,0 +1,207 @@
+{
+  "id": "np-prsf",
+  "name": "Presidio of San Francisco",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "For 218 years, the Presidio served as an army post for three nations. World and local events, from military campaigns to World Fairs and earthquakes, left their mark. Come enjoy the history and the natural beauty of the Presidio. Explore centuries of architecture. Reflect in a national cemetery. Walk along an historic airfield, through forests or to beaches, and admire spectacular vistas.",
+  "shortDescription": "For 218 years, the Presidio served as an army post for three nations. World and local events, from military campaigns to World Fairs and earthquakes, left their mark. Come enjoy the history and the na...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 37.797,
+    "longitude": -122.4671
+  },
+  "nationalParkInfo": {
+    "parkCode": "prsf",
+    "npsId": "75DD7A23-4BCF-4D11-A407-E282C2417DA4",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/prsf/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.parksconservancy.org/visit/trip-planner.html?to=Presidio%20of%20San%20Francisco:312644314?referrer=http://www.nps.gov/prsf/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "415-561-4323",
+    "email": "goga_pres_socialmedia@nps.gov",
+    "website": "https://www.nps.gov/prsf/index.htm",
+    "address": {
+      "line1": "Presidio of San Francisco",
+      "line2": "210 Lincoln Boulevard",
+      "city": "San Francisco",
+      "state": "CA",
+      "postalCode": "94129"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Presidio is open 24 hours a day, every day of the year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather at the Presidio is typically cool and quite variable from location to location. The summer is often foggy and cool, so a light coat or sweater is appropriate year-round."
+  },
+  "images": [
+    {
+      "id": "prsf-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80243D-1DD8-B71B-0B485E9DA8C86784.jpg",
+      "title": "San Francisco National Cemetery",
+      "altText": "Rows of grave markers in the green grass of the cemetery as light shafts through misty trees.",
+      "caption": "San Francisco National Cemetery in the Presidio offers a place to contemplate service to your country.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": true
+    },
+    {
+      "id": "prsf-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8025D8-1DD8-B71B-0B4C0004016E35B3.jpg",
+      "title": "Coastal Bluffs",
+      "altText": "Rocky bluffs above the blue ocean covered with yellow flowers in the foreground and and trees.",
+      "caption": "The coastal bluffs of the Presidio still retain a wild feeling within the city.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "prsf-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80273E-1DD8-B71B-0B3C8BD5E8B9C2D4.jpg",
+      "title": "Montgomery Street Barracks",
+      "altText": "A long row of red brick barracks with green lawns in front extends into the distance.",
+      "caption": "The brick barracks on Montgomery Street showcase military architecture from the late 1800s.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "prsf-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8028BD-1DD8-B71B-0B2B29B946E009A3.jpg",
+      "title": "Historic Forest",
+      "altText": "Scattered Monterey Cypress trunks with green grass and fern cover at their bases.",
+      "caption": "The planted historic forests offer tranquil places to walk.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "prsf-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C802A44-1DD8-B71B-0B3D53CAF57596FE.jpg",
+      "title": "Wind Surfers at Crissy Field",
+      "altText": "A kite boarder with yellow kite on beach with wind surfers behind on the blue bay.",
+      "caption": "On windy days, Crissy Field is a popular wind surfing and Kite boarding location.",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    },
+    {
+      "id": "prsf-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C802BBD-1DD8-B71B-0BEC1D7B0F0F9B60.jpg",
+      "title": "Crissy Field",
+      "altText": "White building with red roofs on Crissy Field with blue bay and orange bridge with fog behind.",
+      "caption": "Crissy Field is a popular spot to wak and run while viewing the bay and changing fog conditions.l",
+      "credit": "NPS photo/Will Elder",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "3F3ABD16-2C52-4EAA-A1F6-4235DE5686F0",
+      "name": "Golf"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/prsf/index.htm",
+    "directions": "http://www.parksconservancy.org/visit/trip-planner.html?to=Presidio%20of%20San%20Francisco:312644314?referrer=http://www.nps.gov/prsf/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Aviation",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Explorers and Expeditions",
+    "Forts",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Maritime",
+    "Coastal Defenses",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "US Coast Guard",
+    "US Air Force (Army Air Corps)",
+    "Indigenous and Native Warrior",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Mexican War",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Spanish-American War",
+    "World War II",
+    "Vietnam War",
+    "Cold War",
+    "Dunes",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "Thickets and Shrublands",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Wetlands",
+    "",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

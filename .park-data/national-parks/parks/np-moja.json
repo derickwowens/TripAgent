@@ -1,0 +1,303 @@
+{
+  "id": "np-moja",
+  "name": "Mojave National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Mojave preserves a diverse mosaic of ecological habitats and a 10,000 year history of human connection with the desert. Offering extensive opportunities to experience desert landscapes, the preserve promotes understanding and appreciation for the increasingly threatened resources of the Mojave Desert. This remote preserve encourages a sense of discovery and a connection to wild places.",
+  "shortDescription": "Mojave preserves a diverse mosaic of ecological habitats and a 10,000 year history of human connection with the desert. Offering extensive opportunities to experience desert landscapes, the preserve p...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 35.12485941,
+    "longitude": -115.5168258
+  },
+  "nationalParkInfo": {
+    "parkCode": "moja",
+    "npsId": "D509DC08-53AD-4661-A2EA-FC69BE456E50",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/moja/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/moja/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(760) 252-6100",
+    "email": "moja_info@nps.gov",
+    "website": "https://www.nps.gov/moja/index.htm",
+    "address": {
+      "line1": "90942 Kelso Cima Road",
+      "line2": "",
+      "city": "Kelso",
+      "state": "CA",
+      "postalCode": "92309"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Outdoor areas of the Mojave National Preserve including trails, roads, campgrounds are OPEN 24 hours a day, 365 days per year. Be sure to check Alerts and Conditions for any temporary closures."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Mojave Desert experiences change with the seasons. In winter, freezing temperatures and strong winds can be expected, with rain and snow in the mountains. With enough moisture, spring wildflowers may carpet the desert floor with vivid colors. Summers are hot, and temperatures above 100 degrees Fahrenheit are typical. In summer, adventurers head for the higher elevations such as Mid-Hills and the New York Mountains. The cooler temperatures of fall mark hunting season."
+  },
+  "images": [
+    {
+      "id": "moja-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A2751C78-ACB9-A19B-D7946503414E34AE.jpg",
+      "title": "Kelso Dunes",
+      "altText": "Kelso Dunes with rays of light coming through the clouds. Mountains in the background..",
+      "caption": "Kelso Dunes is the most popular hike at Mojave National Preserve.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "moja-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87561A-1DD8-B71B-0BB71D193B42FC5A.jpg",
+      "title": "A desert road surrounded by spring wildflowers",
+      "altText": "Spring wildflowers carpeting the desert floor",
+      "caption": "Many people visit Mojave in the spring season to view stunning wildflower displays.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moja-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C875C07-1DD8-B71B-0BD37FF6E79A9EC0.jpg",
+      "title": "Desert Wildlife",
+      "altText": "A desert tortoise rest in the shade of a bush near some hikers",
+      "caption": "Mojave has a great diversity of wildlife. In spring and fall, the elusive desert tortoise can be seen foraging food.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moja-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C875A3A-1DD8-B71B-0B978E24674F66B8.jpg",
+      "title": "Hiking Opportunities Abound",
+      "altText": "A lonely desert trail leads to tall sand dunes",
+      "caption": "Mojave has endless options for hikers. Kelso Sand Dunes are a popular trail in cooler months.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moja-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C876184-1DD8-B71B-0B2438DAB2E2E1F5.jpg",
+      "title": "Stunning Vistas",
+      "altText": "A man standing on a mountain peak in front of a wide desert landscape",
+      "caption": "Mojave is a hiker's paradise. With no less than 9 named mountain ranges int he park, there's no shortage of amazing views to be had.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moja-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C876320-1DD8-B71B-0BFB2A74AD8562D1.jpg",
+      "title": "Rich Human History",
+      "altText": "A Joshua tree seen though the window of an old miner's cabin",
+      "caption": "Visitors can still hear the echos of history here. Evidence of days long past still persist in Mojave. Native American petroglyphs, long-abandoned mines, and cattle ranches still dot the landscape.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "moja-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A2751C78-ACB9-A19B-D7946503414E34AE.jpg",
+      "title": "Kelso Dunes",
+      "altText": "Kelso Dunes with rays of light coming through the clouds. Mountains in the background..",
+      "caption": "Kelso Dunes is the most popular hike at Mojave National Preserve.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/moja/index.htm",
+    "directions": "http://www.nps.gov/moja/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Commerce",
+    "Trade",
+    "Farming and Agriculture",
+    "Ranches",
+    "Industry",
+    "Mining",
+    "Military",
+    "US Army",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Transportation",
+    "Trains and Railroads",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Tortoises and Turtles",
+    "Dunes",
+    "Fire",
+    "Geology",
+    "Groundwater",
+    "Freshwater Springs",
+    "Mountains",
+    "Night Sky",
+    "Astronomy",
+    "Rock Landscapes and Features",
+    "Buttes",
+    "Scenic Views",
+    "Unique Species",
+    "Endangered",
+    "Volcanoes",
+    "Wilderness",
+    "National Preserve",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

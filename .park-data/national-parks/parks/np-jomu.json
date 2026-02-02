@@ -1,0 +1,155 @@
+{
+  "id": "np-jomu",
+  "name": "John Muir National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "John Muir’s life was a tapestry of roles—fruit rancher, family man, writer—each interwoven with his deep love for nature. As one of America’s most influential naturalists, Muir was more than just an observer of the wilderness; he was its fiercest advocate. His passion for the land drove him to protect the places he held dear, ensuring that future generations could experience their beauty.",
+  "shortDescription": "John Muir’s life was a tapestry of roles—fruit rancher, family man, writer—each interwoven with his deep love for nature. As one of America’s most influential naturalists, Muir was more than just an o...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 37.9828422,
+    "longitude": -122.1326097
+  },
+  "nationalParkInfo": {
+    "parkCode": "jomu",
+    "npsId": "F339067B-A588-4BF3-9D90-1C1BA1249203",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jomu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jomu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9252288860",
+    "email": "jomu_general_info@nps.gov",
+    "website": "https://www.nps.gov/jomu/index.htm",
+    "address": {
+      "line1": "4202 Alhambra Ave",
+      "line2": "",
+      "city": "Martinez",
+      "state": "CA",
+      "postalCode": "94553"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "10:00AM - 5:00PM",
+    "wednesday": "10:00AM - 5:00PM",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "Closed",
+    "description": "The main park site and visitor center are open Tuesday through Saturday from 10:00 A.M. to 5:00 P.M. We are closed on Sunday and Monday."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Mediterranean climate of Martinez features hot, dry summers with lower temperatures near 60º F and upper temperatures near 100º F. The heat gives way to cool, rainy winters with lows near 45º F and highs near 75º F. Fall and spring can bring rain and temperatures from 55-80º F. March to April: wet/dry, 60-80º F May to September: very dry, 60-100º+ F October to November: dry/wet, 55-80º F December to February: wet, 45-75º F"
+  },
+  "images": [
+    {
+      "id": "jomu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79DF6A-1DD8-B71B-0B64749528CB4952.jpg",
+      "title": "John Muir Home at the John Muir National Historic Site",
+      "altText": "John Muir Home at the John Muir National Historic Site",
+      "caption": "John Muir Home at the John Muir National Historic Site",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "jomu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7F8B4FB-0333-BE92-58C6A8113FA7D70E.jpg",
+      "title": "John Muir National Historic Site",
+      "altText": "A old copper sprayer sits against a tree-line background.",
+      "caption": "Historic Copper Sprayer.",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "jomu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F80280BB-E7D5-E067-00A105D97A26603F.jpg",
+      "title": "Mount Wanda",
+      "altText": "A natural foot path winds its way through hills and trees.",
+      "caption": "Mount Wanda walking trail.",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "jomu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F80B41C9-CA24-ACF0-AE090EA8794AA1E5.jpg",
+      "title": "John Muir National Historic Site",
+      "altText": "A tall wooden windmill and a small white shed surrounded by trees.",
+      "caption": "The old windmill.",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "jomu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F8158989-E30C-A590-71F620A96879B472.jpg",
+      "title": "John Muir National Historic Site",
+      "altText": "Old books, a writing pen and inkwell, and paper sit on John Muir's original desk.",
+      "caption": "John Muir's desk in the \"Scribble Den\".",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jomu/index.htm",
+    "directions": "http://www.nps.gov/jomu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Explorers and Expeditions",
+    "Immigration",
+    "Natural Sounds",
+    "Scenic Views",
+    "Trails",
+    "Watersheds",
+    "National Historic Site",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

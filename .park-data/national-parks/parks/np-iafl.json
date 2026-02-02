@@ -1,0 +1,139 @@
+{
+  "id": "np-iafl",
+  "name": "Ice Age Floods National Geologic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "region": "pacific",
+  "description": "At the end of the last Ice Age, 18,000 to 15,000 years ago, an ice dam in northern Idaho created Glacial Lake Missoula stretching 3,000 square miles around Missoula, Montana. The dam burst and released flood waters across Washington, down the Columbia River into Oregon before reaching the Pacific Ocean. The Ice Age Floods forever changed the lives and landscape of the Pacific Northwest.",
+  "shortDescription": "At the end of the last Ice Age, 18,000 to 15,000 years ago, an ice dam in northern Idaho created Glacial Lake Missoula stretching 3,000 square miles around Missoula, Montana. The dam burst and release...",
+  "designation": "National Geologic Trail",
+  "coordinates": {
+    "latitude": 46.5669309008,
+    "longitude": -118.992564971
+  },
+  "nationalParkInfo": {
+    "parkCode": "iafl",
+    "npsId": "07D9E506-B86A-4762-801F-2D333F369D5D",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/iafl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/iafl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(509) 237-9722",
+    "email": "iafl_program_manager@nps.gov",
+    "website": "https://www.nps.gov/iafl/index.htm",
+    "address": {
+      "line1": "Program Manager",
+      "line2": "Ice Age Floods National Geologic Trail",
+      "city": "Coulee Dam",
+      "state": "WA",
+      "postalCode": "99116"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Ice Age Floods National Geologic Trail is a collection of sites operated and owned by a variety of partners. , Hours of operation and season will vary from site to site. Please check each respective site for more details and information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The National Geologic Trail is a collection of sites stretched across a four state area, the weather will vary from site to site. Please check the weather for your local region, or the region you'll be visiting, through their respective sites."
+  },
+  "images": [
+    {
+      "id": "iafl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A003C5CE-E0EB-2AC6-FC8EDC134B1DFD19.jpg",
+      "title": "Green Monarch Ridge",
+      "altText": "Green Monarch Ridge by Lake Pend Oreille ID",
+      "caption": "Green Monarch Ridge by Lake Pend Oreille ID",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "iafl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0E7BEDF2-952B-D9E0-038D808912A45A65.jpeg",
+      "title": "Steamboat Rock",
+      "altText": "Large butte with lake in the foreground",
+      "caption": "Steamboat Rock State Park, Washington",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "iafl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D4C33AFB-B84F-E87C-E19705F8380417D1.jpeg",
+      "title": "Banks Lake",
+      "altText": "Steamboat rock in the foreground with Banks Lake in the distance",
+      "caption": "Banks Lake view from Steamboat Rock",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "iafl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/693AFB1E-1DD8-B71B-0B7DAE958A82C347.jpg",
+      "title": "Dry Lakes",
+      "altText": "Dry Lake lake bed and falls blanked with snow.",
+      "caption": "Dry Lake lake bed and falls in winter",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "iafl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0BDAB952-1DD8-B71B-0B509D5898489BD4.jpg",
+      "title": "Dry Falls",
+      "altText": "A overhead shot of the Dry Falls area",
+      "caption": "A beautiful shot from the ledge near the visitor's center in the Dry Falls area.",
+      "credit": "NPS/Cline",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/iafl/index.htm",
+    "directions": "https://www.nps.gov/iafl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Tragic Events",
+    "Floods",
+    "Geology",
+    "National Geologic Trail",
+    "WA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

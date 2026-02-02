@@ -1,0 +1,176 @@
+{
+  "id": "np-bela",
+  "name": "Bering Land Bridge National Preserve",
+  "category": "national",
+  "parkType": "national_preserve",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Bering Land Bridge National Preserve lies at the continental crossroad that greatly influenced the distribution of life in the Western Hemisphere during the Pleistocene Epoch. It is a vital landscape for Indigenous communities who depend on the land just as their ancestors did for many generations. It is a wild and ecologically healthy landscape unlike any other.",
+  "shortDescription": "Bering Land Bridge National Preserve lies at the continental crossroad that greatly influenced the distribution of life in the Western Hemisphere during the Pleistocene Epoch. It is a vital landscape ...",
+  "designation": "National Preserve",
+  "coordinates": {
+    "latitude": 65.96087902,
+    "longitude": -164.4086432
+  },
+  "nationalParkInfo": {
+    "parkCode": "bela",
+    "npsId": "EE1F4878-00FB-4760-A77F-EA76DB8DEFD9",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bela/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bela/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "1-907-759-8020",
+    "email": "bela_information@nps.gov",
+    "website": "https://www.nps.gov/bela/index.htm",
+    "address": {
+      "line1": "214 Front St.",
+      "line2": "Sitnasuak Building",
+      "city": "Nome",
+      "state": "AK",
+      "postalCode": "99762"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Bering Land Bridge Preserve is open 24/7 year round. Due to its remote location accessing the preserve can be challenging, costly and time consuming."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in the Seward Peninsula is generally characterized by long freezing winters and short, cool summers. Coastal areas typically have mild weather, while the interior has greater seasonal variation in temperature and precipitation."
+  },
+  "images": [
+    {
+      "id": "bela-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A859F-1DD8-B71B-0B24F438FBCB2BE9.jpg",
+      "title": "Wet Muskox",
+      "altText": "Three wet muskox stand in a line.",
+      "caption": "Three wet muskox.",
+      "credit": "NPS / Roy Wood",
+      "isPrimary": true
+    },
+    {
+      "id": "bela-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A8443-1DD8-B71B-0BDA7966D18282FC.jpg",
+      "title": "Fall Colors",
+      "altText": "A hiker is seen in the distance as autumn colors dominate the tundra landscape.",
+      "caption": "Autumn hike at Bering Land Bridge",
+      "credit": "NPS / Katie Cullen",
+      "isPrimary": false
+    },
+    {
+      "id": "bela-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A88A0-1DD8-B71B-0B4720E73A7F0534.jpg",
+      "title": "Coastal Moon Rise",
+      "altText": "Rolling sand dunes with sparse vegetation with full moon rising above.",
+      "caption": "Coastal moon rise",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bela-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4E189372-A511-5F4D-17A56D6B9D2BD7E6.jpg",
+      "title": "Aerial View of Serpentine Hot Springs in Summer",
+      "altText": "A vast expanse of undulating hills with granite spire jutting from the top.",
+      "caption": "A small aircraft descends on Serpentine Hot Springs.",
+      "credit": "NPS / Neal Herbert",
+      "isPrimary": false
+    },
+    {
+      "id": "bela-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A82A5-1DD8-B71B-0B79861422658B39.jpg",
+      "title": "Flock of shore birds",
+      "altText": "Flock of shore birds taking flight",
+      "caption": "Flock of shore birds taking flight",
+      "credit": "NPS / Jim Pfeiffenberger",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "8C495067-8E94-4D78-BBD4-3379DACF6550",
+      "name": "Dog Sledding"
+    },
+    {
+      "id": "D72206E4-6CD1-4441-A355-F8F1827466B1",
+      "name": "Flying"
+    },
+    {
+      "id": "C06FE528-9671-4EC1-909F-B7D3720A1D89",
+      "name": "Fixed Wing Flying"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bela/index.htm",
+    "directions": "http://www.nps.gov/bela/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arctic",
+    "Geothermal",
+    "Hot Springs",
+    "Volcanoes",
+    "National Preserve",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

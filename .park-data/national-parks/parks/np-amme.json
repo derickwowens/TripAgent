@@ -1,0 +1,229 @@
+{
+  "id": "np-amme",
+  "name": "American Memorial Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MP",
+  "stateName": "MP",
+  "region": "pacific",
+  "description": "American Memorial Park honors the American and Marianas people who gave their lives during the Marianas Campaign of World War II. At the park, memorials stand in tribute to the courage and sacrifice of the US Servicemen and Chamorro and Carolinian civilians who were killed in the battles between the United States and Japan that took place on Saipan, Tinian, and the Philippine Sea in 1944.",
+  "shortDescription": "American Memorial Park honors the American and Marianas people who gave their lives during the Marianas Campaign of World War II. At the park, memorials stand in tribute to the courage and sacrifice o...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 15.21680033,
+    "longitude": 145.7231096
+  },
+  "nationalParkInfo": {
+    "parkCode": "amme",
+    "npsId": "A0B4CA5E-608A-4DF2-8EFB-E2E4619EA243",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/amme/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/amme/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6702347207",
+    "email": "brooke_nevitt@nps.gov",
+    "website": "https://www.nps.gov/amme/index.htm",
+    "address": {
+      "line1": "Beach Road",
+      "line2": "",
+      "city": "Saipan",
+      "state": "MP",
+      "postalCode": "96950"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "All public parks, public pathways, and public beaches are open for recreational activities and social gatherings. For visitor center hours, please reference visitor center information tab."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The temperature varies from 75°F to 88°F and is rarely below 73°F or above 90°F.The climate is tropical, hot and humid throughout the year, with a relatively cool and dry season from December to June, and a warmer and rainy season from July to November. The temperatures are stable throughout the year."
+  },
+  "images": [
+    {
+      "id": "amme-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8576F5-1DD8-B71B-0B2A1CF96D1F9701.jpg",
+      "title": "Lawn at American Memorial Park",
+      "altText": "Large lawn in front of the memorial.",
+      "caption": "A popular place for visitors.",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "amme-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85785A-1DD8-B71B-0B1940CFBC090C57.jpg",
+      "title": "Ampitheater at American Memorial Park",
+      "altText": "Rehearsing at the American Memorial Park ampitheater",
+      "caption": "The ampitheater is where many performances take place.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "amme-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C857A07-1DD8-B71B-0B2BA9E71049FA6E.jpg",
+      "title": "Visitor Center at American Memorial Park",
+      "altText": "The visitor center is open daily.",
+      "caption": "The visitor center  is a popular place to learn about Saipan's role in WWII history.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "amme-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C857B39-1DD8-B71B-0B7121E4C1B2A9D3.jpg",
+      "title": "Walking the path at American Memorial Park.",
+      "altText": "People walking the paths at the American Memorial Park.",
+      "caption": "The paths at the American Memorial Park are always in use.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "amme-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C857C50-1DD8-B71B-0B272D30762B414D.jpg",
+      "title": "The beach at American Memorial Park.",
+      "altText": "Crystal clear blue swimming at the park.",
+      "caption": "The beach is an inviting place to swim and relax.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/amme/index.htm",
+    "directions": "https://www.nps.gov/amme/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Maritime",
+    "Maritime - Military",
+    "Military",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "US Air Force (Army Air Corps)",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Pacific Islander Heritage",
+    "Wars and Conflicts",
+    "World War II",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Coasts, Islands and Atolls",
+    "Estuaries and Mangroves",
+    "Oceans",
+    "Wetlands",
+    "Park",
+    "MP"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

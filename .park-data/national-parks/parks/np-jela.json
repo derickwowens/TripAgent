@@ -1,0 +1,278 @@
+{
+  "id": "np-jela",
+  "name": "Jean Lafitte National Historical Park and Preserve",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "LA",
+  "stateName": "Louisiana",
+  "region": "southeast",
+  "description": "In Jean Lafitte's day, silver and gold filled a pirate's treasure chest, but today's treasures are people, places, and memories. Discover New Orleans’ rich cultural mix. Learn Cajun traditions from people who live them. Watch an alligator bask on a bayou’s bank. Walk in the footsteps of the men who fought at 1815’s Battle of New Orleans. Follow the link to discover the treasure of Jean Lafitte.",
+  "shortDescription": "In Jean Lafitte's day, silver and gold filled a pirate's treasure chest, but today's treasures are people, places, and memories. Discover New Orleans’ rich cultural mix. Learn Cajun traditions from pe...",
+  "designation": "National Historical Park and Preserve",
+  "coordinates": {
+    "latitude": 29.81739855,
+    "longitude": -90.1402241
+  },
+  "nationalParkInfo": {
+    "parkCode": "jela",
+    "npsId": "ED57A2B1-2560-471C-82A7-7EF6BC3486F8",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jela/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jela/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "504-589-3882",
+    "email": "jela_interpretation@nps.gov",
+    "website": "https://www.nps.gov/jela/index.htm",
+    "address": {
+      "line1": "419 Decatur St",
+      "line2": "",
+      "city": "New Orleans",
+      "state": "LA",
+      "postalCode": "70130"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Each of Jean Lafitte's six sites is open year-round. See the specific site(s) you want to visit for operating hours and days information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "All of the temperatures listed are in degrees Fahrenheit. Note that relative humidity, especially in summer months, can reach 90%, so temperatures can feel 10-20 degrees hotter than the actual temperature. Spring (March, April, May): average high 77 and low 61. Summer (June, July, August): average high 89 and low 75. Fall (September, October, November): average high 78 and low 64. Winter (December, January, February): average high 64 and low 48."
+  },
+  "images": [
+    {
+      "id": "jela-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C845D16-1DD8-B71B-0B04181AABF4F0C1.jpg",
+      "title": "Barataria Preserve of Jean Lafitte National Historical Park and Preserve",
+      "altText": "Spanish moss hangs from live oak tree",
+      "caption": "Spanish moss and lush vegetation provide glimpses of Louisiana's wild wetlands at Jean Lafitte's Barataria Preserve.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "jela-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C845E7E-1DD8-B71B-0BE1AC184B0AF650.jpg",
+      "title": "Chalmete Battlefield at Jean Lafitte National Historical Park and Preserve",
+      "altText": "An oak tree arches over a cannon-guarded rampart with historic house and American flag in background",
+      "caption": "Chalmette Battlefield's American rampart and cannons still guard the site of the Battle of New Orleans in 1815.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jela-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8461CD-1DD8-B71B-0BA0A3EAB3AFD319.jpg",
+      "title": "Chalmette National Cemetery at Jean Lafitte National Historical Park and Preserve",
+      "altText": "Setting sun lights up cemetery headstones",
+      "caption": "Established during the Civil War, Chalmette National Cemetery's 14,000+ headstones pay tribute to those buried there.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jela-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C846B2F-1DD8-B71B-0B8FA8F547ADCE23.jpg",
+      "title": "French Quarter Visitor Center of Jean Lafitte National Historical Park and Preserve",
+      "altText": "Visitor center exhibit titled \"Crossroads of Cultures\"",
+      "caption": "Hundreds of years of history and thousands of people from all over the world have created New Orleans' distinctive cultural mix.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jela-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C846C76-1DD8-B71B-0BCC7D9571EBF0FA.jpg",
+      "title": "Acadian Cultural Center of Jean Lafitte National Historical Park and Preserve",
+      "altText": "Model of an early Acadian home sits in a glass case",
+      "caption": "Bringing skills and traditions from Nova Scotia, the Acadian exiles in Louisiana found a new home and a new name---Cajuns.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jela-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C846EF3-1DD8-B71B-0B4D8391F7C91BC6.jpg",
+      "title": "Wetlands Acadian Cultural Center of Jean Lafitte National Historical Park and Preserve",
+      "altText": "Exhibit case full of musical instruments",
+      "caption": "Acadian (Cajun) music began in cabins and dancehalls and has become famous worldwide.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "jela-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/99468C42-EE93-353D-DC5C106FC356B7F8.jpg",
+      "title": "Prairie Acadian Cultural Center of Jean Lafitte National Historical Park and Preserve",
+      "altText": "guitar sits on a dimly lit porch styled stage",
+      "caption": "The Music Porch at the Prairie Acadian Cultural Center in Eunice, LA",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jela/index.htm",
+    "directions": "http://www.nps.gov/jela/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Arts",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Immigration",
+    "Maritime",
+    "Piracy and Privateering",
+    "Migrations",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Marines",
+    "US Coast Guard",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Presidents",
+    "Reconstruction",
+    "Schools and Education",
+    "Urban America",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Civil War",
+    "Animals",
+    "Alligators or Crocodiles",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Grasslands",
+    "Prairies",
+    "Scenic Views",
+    "Trails",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "National Historical Park and Preserve",
+    "LA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

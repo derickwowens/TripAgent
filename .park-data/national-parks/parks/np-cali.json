@@ -1,0 +1,172 @@
+{
+  "id": "np-cali",
+  "name": "California National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Follow in the footsteps of over 250,000 emigrants who traveled to the gold fields and rich farmlands of California during the 1840s and 1850s: the greatest mass migration in American history. The California National Historic Trail is over 5,000 miles long and covers portions of 10 states. Step into history along more than 1,000 miles of ruts and traces from travelers and their overland wagons.",
+  "shortDescription": "Follow in the footsteps of over 250,000 emigrants who traveled to the gold fields and rich farmlands of California during the 1840s and 1850s: the greatest mass migration in American history. The Cali...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 42.3999643979,
+    "longitude": -108.702415369
+  },
+  "nationalParkInfo": {
+    "parkCode": "cali",
+    "npsId": "B39C368F-CB27-49EC-B2A9-E6C1552430FB",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cali/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cali/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/cali/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7, & 8",
+      "line2": "California National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The California National Historic Trail is not a clearly marked hiking trail. Instead it is a corridor that passes through communities, urban areas, public lands, and Wilderness. The route travels across a variety of land ownerships and management, including private land. Each location varies as to the hours of operation and access. Please contact individual trail sites before your visit for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of the California National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: weather.gov"
+  },
+  "images": [
+    {
+      "id": "cali-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B7987-1DD8-B71B-0B3C3123ED8F686B.jpg",
+      "title": "Wagon at Register Rock in City of Rocks National Reserve",
+      "altText": "A white canvas wagon sits in front of a large rock buttress with mountains in the distance.",
+      "caption": "Wagon at Register Rock in City of Rocks National Reserve",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "cali-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B7CDA-1DD8-B71B-0B999C4AC7A9D37C.jpg",
+      "title": "A creek in Carlin Canyon, Nevada on the California Trail",
+      "altText": "A still creek winds through brown rolling hills.",
+      "caption": "A creek in Carlin Canyon, Nevada on the California Trail",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cali-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B7E5D-1DD8-B71B-0B0A1BE6987E18AF.jpg",
+      "title": "Trail ruts on through Humboldt Wells in Nevada",
+      "altText": "A dirt road passes through sagebrush and a white post with a mountain in the background.",
+      "caption": "Trail ruts on through Humboldt Wells in Nevada",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cali-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B7FCF-1DD8-B71B-0BA502EF5988BC47.jpg",
+      "title": "Devil's Gate, Wyoming",
+      "altText": "A rock buttress with a notch in it surrounded by sagebrush flats.",
+      "caption": "Devil's Gate was an important emigrant landmark in Wyoming.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cali-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/56ACD550-C0CE-423B-9448A9D0ABCDD9E7.jpg",
+      "title": "View of West Pass on Carson Route",
+      "altText": "Pine trees partly obscure a distant mountain lake with snow-capped mountains.",
+      "caption": "View of West Pass on the Carson Route of the California NHT.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cali/index.htm",
+    "directions": "http://www.nps.gov/cali/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Poetry and Literature",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Westward Expansion",
+    "The Gold Rush",
+    "Rock Landscapes and Features",
+    "Trails",
+    "National Historic Trail",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

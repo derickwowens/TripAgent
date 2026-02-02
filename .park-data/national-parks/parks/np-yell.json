@@ -1,0 +1,500 @@
+{
+  "id": "np-yell",
+  "name": "Yellowstone National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "ID",
+  "stateName": "Idaho",
+  "region": "west",
+  "description": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.",
+  "shortDescription": "On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 44.59824417,
+    "longitude": -110.5471695
+  },
+  "nationalParkInfo": {
+    "parkCode": "yell",
+    "npsId": "F58C6D24-8D10-4573-9826-65D42B8B83AD",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/yell/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/yell/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "307-344-7381",
+    "email": "YELL_Information@nps.gov",
+    "website": "https://www.nps.gov/yell/index.htm",
+    "address": {
+      "line1": "2 Officers Row",
+      "line2": "Yellowstone National Park Headquarters",
+      "city": "Yellowstone National Park",
+      "state": "WY",
+      "postalCode": "82190"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Yellowstone is open daily, year-round, although activities and services are limited at night and certain times of year. The park has five entrance stations, but not all entrance stations are open year-round. Make sure to carefully read about access at each station at different times of year. And remember, all dates are weather-dependent.\n\nPlease note that camping is possible only in designated campgrounds."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Unlimited entry for one vehicle and all passengers for seven consecutive days, beginning on the day of purchase. Vehicles must be private, non-commercial, and with a seating capacity of 15 or less.",
+      "cost": "35.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial group (e.g. church groups, scouts) traveling in a vehicle with a capacity of 16 or more people. Cost is per person. Unlimited entry for one vehicle and all passengers for seven consecutive days, beginning on the day of purchase.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Snowmobile",
+      "description": "Valid for 7 days. Admits up to 2 snowmobiles with up to 4 total passengers.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entry for visitors on foot, bicycle, ski, etc., when 16 years of age or older.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. The cost is $25 + $20 per person. Pass is good for seven days as long as it's the same passenger group.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Based upon the total capacity of a vehicle that can carry 7-15 passengers, regardless of the actual number of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Pass is good for seven days as long as it's the same passenger group.",
+      "cost": "125.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Based upon the total capacity of a vehicle that can carry 16-25 passengers, regardless of the actual number of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Pass is good for seven days as long as it's the same passenger group.",
+      "cost": "200.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Based upon the total capacity of a vehicle that can carry 26 or more passengers, regardless of the actual number of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Pass is good for seven days as long as it's the same passenger group.",
+      "cost": "300.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Nonresident",
+      "description": "Each non-US resident aged 16 and older visiting Yellowstone National Park must pay a $100 nonresident fee (in addition to the standard entrance fee), unless admitted with an Annual or America the Beautiful Pass. This includes nonresidents entering as part of a commercial tour group, commercial use authorization (CUA) group, or concessioner tour group.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Yellowstone's weather can vary quite a bit, even in a single day. In the summer, daytime highs can exceed 70°F (21°C), only to drop 20 or more degrees when a thunderstorm rolls through. It can snow during any month of the year, and winter lows frequently drop below 0°F (-18°C), especially at night. Bring a range of clothing options, including a warm jacket and rain gear, even in the summer."
+  },
+  "images": [
+    {
+      "id": "yell-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg",
+      "title": "Grand Prismatic Spring",
+      "altText": "Brilliant blues and greens of a hot spring ringed by oranges, yellows, reds, and browns.",
+      "caption": "The bright colors found in Grand Prismatic Spring come from thermophiles—microorganisms that thrive in hot temperatures",
+      "credit": "NPS/Jim Peaco",
+      "isPrimary": true
+    },
+    {
+      "id": "yell-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D2FBB-1DD8-B71B-0BED99731011CFCE.jpg",
+      "title": "Aurum Geyser",
+      "altText": "A crowd of people standing along a wooden boardwalk watches a geyser erupt.",
+      "caption": "Aurum Geyser erupting",
+      "credit": "NPS/Jim Peaco",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D383B-1DD8-B71B-0BEC4A4D6BDF7CAD.jpg",
+      "title": "Black Pool",
+      "altText": "A visitor stands on a boardwalk near a hot spring and a lake.",
+      "caption": "Black Pool at the West Thumb Geyser Basin",
+      "credit": "NPS/Diane Renkin",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D334F-1DD8-B71B-0B108C7771F4E854.jpg",
+      "title": "Beehive Geyser",
+      "altText": "People on a wooden boardwalk watch a geyser erupt.",
+      "caption": "Visitors to the Upper Geyser Basin watch Beehive Geyser erupt.",
+      "credit": "NPS/Jim Peaco",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D3BD3-1DD8-B71B-0BB607F9BAAE1271.jpg",
+      "title": "Wolf howling",
+      "altText": "A wolf howls while standing on a snowy field.",
+      "caption": "Alpha male of the Canyon wolf pack",
+      "credit": "NPS/Jim Peaco",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D573E-1DD8-B71B-0B5C0DF5BB91D043.jpg",
+      "title": "Fishing Bridge Trailside Museum",
+      "altText": "Visitors walk into a rustic, log and stone building.",
+      "caption": "The stone-and-log architecture of Fishing Bridge Trailside Museum became a prototype for park buildings all around the country",
+      "credit": "NPS/Jim Peaco",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D5AB4-1DD8-B71B-0BF91CF45345ED16.jpg",
+      "title": "Great Fountain Geyser",
+      "altText": "A geyser erupting in the middle of a large pool.",
+      "caption": "Great Fountain Geyser erupts against a blue summer sky",
+      "credit": "NPS/Diane Renkin",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D610A-1DD8-B71B-0BEF676112007818.jpg",
+      "title": "Old Faithful Geyser in winter",
+      "altText": "A crowd in front of an erupting geyser during a snowy winter day.",
+      "caption": "Winter is a magical time to watch Old Faithful Geyser erupt",
+      "credit": "NPS/Jim Peaco",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D8903-1DD8-B71B-0BA8669AEEF74379.jpg",
+      "title": "Palette Spring",
+      "altText": "Visitors walk in front of a brightly colored, terraced landscape.",
+      "caption": "The vibrant colors of Palette Springs are formed by thermophiles—heat-loving organisms",
+      "credit": "NPS/Jim Peaco",
+      "isPrimary": false
+    },
+    {
+      "id": "yell-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D95DD-1DD8-B71B-0BC4FA19BD72F0EC.jpg",
+      "title": "Bighorn sheep",
+      "altText": "Two bighorn sheep laying on the ground.",
+      "caption": "Two bighorn rams rest and chew their cud",
+      "credit": "NPS/Peggy Olliff",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "9456A40A-AF75-4AD3-8BE1-79C4A7DBEDFC",
+      "name": "Volunteer Vacation"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "7C912B83-1B1B-4807-9B66-97C12211E48E",
+      "name": "Snowmobiling"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/yell/index.htm",
+    "directions": "http://www.nps.gov/yell/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Forts",
+    "Migrations",
+    "Military",
+    "Cavalry",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Conservation Movement",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Bison",
+    "Cats (wild)",
+    "Elk",
+    "Fish",
+    "Wolves",
+    "Canyons and Canyonlands",
+    "Climate Change",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Fossils and Paleontology",
+    "Petrified Wood",
+    "Geology",
+    "Groundwater",
+    "Aquifers",
+    "Freshwater Springs",
+    "Geothermal",
+    "Hot Springs",
+    "Geysers",
+    "Glaciers",
+    "Grasslands",
+    "Lakes",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Volcanoes",
+    "Watersheds",
+    "Waterfalls",
+    "Wetlands",
+    "Wilderness",
+    "National Park",
+    "ID"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

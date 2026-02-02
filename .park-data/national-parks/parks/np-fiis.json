@@ -1,0 +1,220 @@
+{
+  "id": "np-fiis",
+  "name": "Fire Island National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special place for diverse plants, animals and people for centuries. Far from the pressure of nearby big-city life, dynamic barrier island beaches offer solitude, camaraderie, and spiritual renewal.",
+  "shortDescription": "Immerse yourself in an enchanting collage of coastal life and history. Rhythmic waves, high dunes, ancient maritime forests, historic landmarks and glimpses of wildlife, Fire Island has been a special...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 40.69668638,
+    "longitude": -73.00013462
+  },
+  "nationalParkInfo": {
+    "parkCode": "fiis",
+    "npsId": "8A31246D-5AB9-4A0E-8FBA-A9780C468935",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fiis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fiis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "631-515-5557",
+    "email": "FIIS_Information@nps.gov",
+    "website": "https://www.nps.gov/fiis/index.htm",
+    "address": {
+      "line1": "120 Laurel Street",
+      "line2": "",
+      "city": "Patchogue",
+      "state": "NY",
+      "postalCode": "11772"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Fire Island National Seashore encompasses five National Park Service sites on Fire Island, and headquarters and the William Floyd Estate on Long Island. The Fire Island Lighthouse, the William Floyd Estate and Wilderness Visitor Center are open year-round. Watch Hill and Sailors Haven on Fire Island are open seasonally. \n\nPlease be sure to check the hours of operations and the exceptions tab for each site you plan to visit."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures may range from high 30s to low 50s (F). Rain and sun are equally common. Summer: Temperatures usually range from 65 F to 90 F. Fall: Temperatures from 70 F in early autumn to 40 F later in the season may be expected. Winter: Temperatures in the 30s (F) are common, with below freezing temperatures possible."
+  },
+  "images": [
+    {
+      "id": "fiis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D4BAC-1DD8-B71B-0B8798F96FC8F8D7.jpg",
+      "title": "View of Fire Island Lighthouse from Great South Bay",
+      "altText": "The Fire Island Lighthouse against a vibrant sunset.",
+      "caption": "People from around the world come to visit the Fire Island Lighthouse.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fiis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AF034266-92C5-11B1-1AB7A72EDC6FED18.jpg",
+      "title": "Salt marsh trail at Watch Hill",
+      "altText": "A boardwalk trail through lush green salt marsh glistens in sunset light.",
+      "caption": "A boardwalk trail welcomes visitors to a salt marsh at Watch Hill.",
+      "credit": "Photo/ Stacy Davis",
+      "isPrimary": false
+    },
+    {
+      "id": "fiis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/AF38442C-0B65-DE15-FCB4950482E8FE0B.jpg",
+      "title": "The Wilderness Visitor Center in winter",
+      "altText": "A brown hexagonal building covered in snow stands behind a beachside dune.",
+      "caption": "The Wilderness Visitor Center welcomes visitors to the Otis Pike High Dune Wilderness on the east end of Fire Island.",
+      "credit": "NPS Photo/Sucena",
+      "isPrimary": false
+    },
+    {
+      "id": "fiis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D47EC-1DD8-B71B-0B70219BD2D27B71.jpg",
+      "title": "Old Mastic House at William Floyd Estate",
+      "altText": "A view from a meadow of the historic Old Mastic House",
+      "caption": "A view of the Old Mastic House from the grounds of the William Floyd Estate",
+      "credit": "NPS Photo/Xiomaro",
+      "isPrimary": false
+    },
+    {
+      "id": "fiis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D4A17-1DD8-B71B-0B0A63BBB1B989ED.jpg",
+      "title": "Fire Island Wilderness",
+      "altText": "Grasses and shrubs cover the undulating backdune habitat of Fire Island's wilderness.",
+      "caption": "Unparalleled opportunities for solitude and recreation can be found in New York State's only federally designated wilderness, the Otis Pike Fire Island High Dune Wilderness.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fiis-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D4D6C-1DD8-B71B-0BB8A386EEE102C0.jpg",
+      "title": "View of primary dune from Sunken Forest overlook",
+      "altText": "View of ocean and primary dune with boardwalk winding up to the Sunken Forest overlook.",
+      "caption": "Get one of the best boardwalk views on a walk through the Sunken Forest - a more than 350 year-old, globally rare ecosystem.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fiis/index.htm",
+    "directions": "http://www.nps.gov/fiis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "LGB American Heritage",
+    "Maritime",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Migrations",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Dunes",
+    "Forests and Woodlands",
+    "Night Sky",
+    "Oceans",
+    "Unique Species",
+    "Endangered",
+    "Wetlands",
+    "Marshes",
+    "Wilderness",
+    "National Seashore",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

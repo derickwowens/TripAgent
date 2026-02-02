@@ -1,0 +1,160 @@
+{
+  "id": "np-rabr",
+  "name": "Rainbow Bridge National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "UT",
+  "stateName": "Utah",
+  "region": "west",
+  "description": "Rainbow Bridge is one of the world's largest known natural bridges. The span has undoubtedly inspired people throughout time--from the neighboring Native American tribes who consider Rainbow Bridge sacred, to the thousands of visitors from around the world who visit it each year. Please visit Rainbow Bridge in a spirit that honors and respects the cultures to whom it is sacred.",
+  "shortDescription": "Rainbow Bridge is one of the world's largest known natural bridges. The span has undoubtedly inspired people throughout time--from the neighboring Native American tribes who consider Rainbow Bridge sa...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.0779,
+    "longitude": -110.9655
+  },
+  "nationalParkInfo": {
+    "parkCode": "rabr",
+    "npsId": "CF02A7E7-147F-4F1C-966B-FE3F2AE28DDC",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/rabr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/rabr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9286086200",
+    "email": "glca_information@nps.gov",
+    "website": "https://www.nps.gov/rabr/index.htm",
+    "address": {
+      "line1": "c/o Glen Canyon National Recreation Area",
+      "line2": "PO Box 1507",
+      "city": "Page",
+      "state": "AZ",
+      "postalCode": "86040"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Rainbow Bridge National Monument is open every day of the year, from sunrise to sunset. On rare occasions, the park may be closed for visitor safety while significant trail and/or dock repairs are taking place. Contact the park for up-to-date information on any closures in effect. Overnight camping or docking your boat is prohibited."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are extremely hot with little, if any, shade. Winters are moderately cold with night time lows often below freezing. Spring weather is highly variable with extended periods of strong winds. Fall is generally mild. Temperatures range from 110°F (43°C) in June & July to 20°F (-7°C) in December & January. Although precipitation is generally less than 6 inches (15cm) annually, both heavy rains and flash flooding can occur, particularly during the summer monsoon season."
+  },
+  "images": [
+    {
+      "id": "rabr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F2C6F-1DD8-B71B-0B3A38DBC8161E3E.jpg",
+      "title": "Rainbow Bridge",
+      "altText": "A large sandstone arch - a natural bridge.",
+      "caption": "Stand here and take in the majesty of Rainbow Bridge - the largest natural bridge in the National Park Service.",
+      "credit": "NPS Photo / Scott Dowd",
+      "isPrimary": true
+    },
+    {
+      "id": "rabr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F30A1-1DD8-B71B-0B756A7A0B14C37E.jpg",
+      "title": "Aerial View of Rainbow Bridge",
+      "altText": "A view of Rainbow Bridge from the air.",
+      "caption": "Seen from the air, Rainbow Bridge is a graceful curve over the dry stream bed.",
+      "credit": "NPS Photo / Barbara Lee",
+      "isPrimary": false
+    },
+    {
+      "id": "rabr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F326F-1DD8-B71B-0B3EE84AE2C89686.jpg",
+      "title": "A Crowd Views Rainbow Bridge From Its Shadow",
+      "altText": "A large crowd faces away from the camera at the scenery.",
+      "caption": "In the desert heat after the rough walk up to Rainbow Bridge from the docks, you take shade where you can get it.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rabr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F359E-1DD8-B71B-0B9A70212C07D9D2.jpg",
+      "title": "Rainbow Bridge Docks",
+      "altText": "Boats and personal watercraft sidle up to docks.",
+      "caption": "The only way to access Rainbow Bridge is by a two-day hike across the Navajo Nation, or a fifty-mile boat trip up Lake Powell.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rabr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F38C6-1DD8-B71B-0B536DC57ECBC602.jpg",
+      "title": "Jim Mike Returns to Rainbow Bridge",
+      "altText": "An elderly Native American man sits in a lawn chair under Rainbow Bridge",
+      "caption": "In 1974, Ute Mountain Ute Jim Mike, one of the  guides who led the original expedition to Rainbow Bridge, returned to see how he had led the way for many more visitors.",
+      "credit": "Cline Library Archives",
+      "isPrimary": false
+    },
+    {
+      "id": "rabr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/01800691-088A-74C4-60BE31EAFAA8E4C8.jpg",
+      "title": "Park Ranger at Second Observation Area",
+      "altText": "Park Ranger standing in front of perfectly curved sandstone arch",
+      "caption": "During the summer season, Park Rangers will be at the observation areas to answer your questions.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/rabr/index.htm",
+    "directions": "http://www.nps.gov/rabr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Explorers and Expeditions",
+    "Native American Heritage",
+    "Animals",
+    "Canyons and Canyonlands",
+    "Geology",
+    "Rock Landscapes and Features",
+    "Unique Species",
+    "National Monument",
+    "UT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

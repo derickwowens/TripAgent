@@ -1,0 +1,253 @@
+{
+  "id": "np-cabr",
+  "name": "Cabrillo National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "In 1542, Juan Rodriguez Cabrillo climbed out of his boat and onto shore, becoming the first European to set foot on what is now the West Coast of the United States. Cabrillo National Monument not only tells the story of this 16th-century exploration but also houses a wealth of cultural and natural resources. Join us and embark on your own Voyage of Exploration.",
+  "shortDescription": "In 1542, Juan Rodriguez Cabrillo climbed out of his boat and onto shore, becoming the first European to set foot on what is now the West Coast of the United States. Cabrillo National Monument not only...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 32.6722503,
+    "longitude": -117.2415985
+  },
+  "nationalParkInfo": {
+    "parkCode": "cabr",
+    "npsId": "2DB09FB7-0408-44C9-8083-8F50039BD6DA",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cabr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/cabr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6195234285",
+    "email": "cabr_info@nps.gov",
+    "website": "https://www.nps.gov/cabr/index.htm",
+    "address": {
+      "line1": "1800 Cabrillo Memorial Drive",
+      "line2": "",
+      "city": "San Diego",
+      "state": "CA",
+      "postalCode": "92106"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The park is open 365 days a year including holidays from 9 am until 5 pm. \nThe Bayside Trail and the Oceanside Trail close at 4pm. The tidepools and the Coastal Trail close at 4:30pm."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one single, private, non-commercial vehicle and all its passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual when entering by foot or bicycle. Groups of up to 4 people walking in or on bicycles are capped at $20 total.\n\nIndividuals 15 years old and younger are admitted free of charge.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "1 to 6 / ($30)",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "7 to 25 / ($45)",
+      "cost": "45.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "7 to 25 / ($45)",
+      "cost": "45.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "26 or more / ($100)",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Organized Non-Commercial Groups include church groups, college/school groups, scouts, service organizations, military, etc.\nVehicles with a capacity of 16 or less are charged the $20.00 vehicle permit fee. Vehicles with 17 or more seats will instead be charged the $10 per person individual rate for any passengers that are not free. The total fee charged for an Organized Non-Commercial Group will not exceed $100 per vehicle.",
+      "cost": "20.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Check the current weather from the National Weather Service at https://www.weather.gov/. San Diego's climate is characterized by warm, dry summers and mild winters, with most of the annual precipitation falling between December and March. The city has a mild climate year-round, with an average of 201 days above 70 °F (21 °C) and low rainfall (9–13 inches [230–330 mm] annually)."
+  },
+  "images": [
+    {
+      "id": "cabr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83BD0E-1DD8-B71B-0B8A7140406810C6.jpg",
+      "title": "Rocky Intertidal Zone",
+      "altText": "Tidepools at Cabrillo",
+      "caption": "Low Tide at the Tidepools",
+      "credit": "NPS Photo / Dan Zeller",
+      "isPrimary": true
+    },
+    {
+      "id": "cabr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83BE4E-1DD8-B71B-0B056AAA8EA8AD24.jpg",
+      "title": "Sunset at Cabrillo",
+      "altText": "Sun setting over the Pacific",
+      "caption": "Sunset at Cabrillo",
+      "credit": "NPS Photo / Mike Nelson",
+      "isPrimary": false
+    },
+    {
+      "id": "cabr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83BF81-1DD8-B71B-0B1070022CDC04D6.jpg",
+      "title": "Dusk at the Old Point Loma Lighthouse",
+      "altText": "Dusk at the Old Point Loma Lighthouse",
+      "caption": "Dusk over the Old Point Loma Lighthouse",
+      "credit": "NPS Photo / Mike Nelson",
+      "isPrimary": false
+    },
+    {
+      "id": "cabr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83C0FF-1DD8-B71B-0B85BBD2186E9F44.jpg",
+      "title": "Old Point Loma Lighthouse",
+      "altText": "Spring flowers in front of Old Point Loma Lighthouse",
+      "caption": "Spring flowers in front of Old Point Loma Lighthouse",
+      "credit": "NPS Photo / Mike Nelson",
+      "isPrimary": false
+    },
+    {
+      "id": "cabr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83C25D-1DD8-B71B-0B0658E975DC56A4.jpg",
+      "title": "View from Cabrillo",
+      "altText": "Looking out on San Diego from Cabrillo",
+      "caption": "View looking over to Coronado from Cabrillo",
+      "credit": "NPS Photo / Mike Nelson",
+      "isPrimary": false
+    },
+    {
+      "id": "cabr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83C3FC-1DD8-B71B-0B5EECDE9C8C44DE.jpg",
+      "title": "Pelican Point",
+      "altText": "View of Pelican Point at Cabrillo",
+      "caption": "Pelican Point at Cabrillo National Monument",
+      "credit": "NPS Photo / Bill Griswold",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cabr/index.htm",
+    "directions": "https://www.nps.gov/cabr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Explorers and Expeditions",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Military",
+    "Monuments and Memorials",
+    "Animals",
+    "Birds",
+    "Oceans",
+    "Whales",
+    "Scenic Views",
+    "National Monument",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

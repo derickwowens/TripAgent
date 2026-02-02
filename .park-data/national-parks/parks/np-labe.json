@@ -1,0 +1,281 @@
+{
+  "id": "np-labe",
+  "name": "Lava Beds National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Lava Beds National Monument is a land of turmoil, both geological and historical. Over the last half-million years, volcanic eruptions on the Medicine Lake shield volcano have created a rugged landscape dotted with diverse volcanic features. More than 800 caves, Native American rock art sites, historic battlefields and campsites, and a high desert wilderness experience await you!",
+  "shortDescription": "Lava Beds National Monument is a land of turmoil, both geological and historical. Over the last half-million years, volcanic eruptions on the Medicine Lake shield volcano have created a rugged landsca...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 41.75915823,
+    "longitude": -121.5172189
+  },
+  "nationalParkInfo": {
+    "parkCode": "labe",
+    "npsId": "10AEFADA-AFA0-4998-A9E5-3F504F351AAB",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/labe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/labe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5306678113",
+    "email": "LABE_Information@nps.gov",
+    "website": "https://www.nps.gov/labe/index.htm",
+    "address": {
+      "line1": "1 Indian Well HQ",
+      "line2": "",
+      "city": "Tulelake",
+      "state": "CA",
+      "postalCode": "96134"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is open 24 hours a day, year-round. \n\nThe visitor center is typically only closed on Christmas Day but will sometimes temporarily close in the winter due to weather or maintenance. Temporary closures are usually posted as an alert and/or on our social media. \n\nFor visitor center hours please the Visitor Center section below."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Park Entrance is $25 per vehicle and is good for 7 days.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Park Entrance is $15 per person and is good for 7 days.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Park elevations range from 4,000 to 5,700 feet. Cold weather is possible any time of year, and snow has been recorded in all months. Winter day­time highs average 40°F; lows average 20°F. Morning fog is frequent from autumn through spring. Summer daytime highs average 75° to 80°F; lows average 50°F. Occasional thunderstorms occur in summer."
+  },
+  "images": [
+    {
+      "id": "labe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C820779-1DD8-B71B-0B20C2B5154C940A.jpg",
+      "title": "Sunrise at Lava Beds",
+      "altText": "Sunrise at Lava Beds",
+      "caption": "Sunrise at Lava Beds",
+      "credit": "NPS Photo / Nathan Charlton",
+      "isPrimary": true
+    },
+    {
+      "id": "labe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8205B5-1DD8-B71B-0BE90854B44958A1.jpg",
+      "title": "Sunset at Lava Beds",
+      "altText": "Sunset at Lava Beds",
+      "caption": "Sunset at Lava Beds",
+      "credit": "NPS Photo / Laura Bellasalma",
+      "isPrimary": false
+    },
+    {
+      "id": "labe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C820405-1DD8-B71B-0B64A9A8B9E20CA1.jpg",
+      "title": "Paintbrush along park trail",
+      "altText": "Paintbrush along park trail",
+      "caption": "Paintbrush along park trail",
+      "credit": "NPS Photo / Nico Ramirez",
+      "isPrimary": false
+    },
+    {
+      "id": "labe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C820997-1DD8-B71B-0BE5E2D0E26D90F0.jpg",
+      "title": "Schonchin Butte & Skull Cave",
+      "altText": "Schonchin Butte & Skull Cave",
+      "caption": "Schonchin Butte & Skull Cave",
+      "credit": "NPS Photo / Jesse Barden",
+      "isPrimary": false
+    },
+    {
+      "id": "labe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C820AFA-1DD8-B71B-0B0C81AAC1788FC2.jpg",
+      "title": "Snowy Sunrise",
+      "altText": "snowy sunrise at Hopkins Chocolate Cave",
+      "caption": "Snowy sunrise at Hopkins Chocolate Cave",
+      "credit": "NPS Photo / Jesse Barden",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/labe/index.htm",
+    "directions": "http://www.nps.gov/labe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Great Depression",
+    "Migrations",
+    "Military",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Homesteading",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Caves, Caverns and Karst",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Grasslands",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Unique Species",
+    "Rare",
+    "Volcanoes",
+    "Wilderness",
+    "National Monument",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

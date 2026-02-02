@@ -1,0 +1,191 @@
+{
+  "id": "np-loea",
+  "name": "Lower East Side Tenement Museum National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "The Tenement Museum tells the stories of working-class tenement residents, who moved to New York City from other countries and other parts of the country. Their work helped build the city and nation, and their stories help us understand our history. The museum shares these stories through guided tours of recreated tenement apartments, neighborhood walking tours, and virtual tours and programs.",
+  "shortDescription": "The Tenement Museum tells the stories of working-class tenement residents, who moved to New York City from other countries and other parts of the country. Their work helped build the city and nation, ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 40.7187683,
+    "longitude": -73.99001245
+  },
+  "nationalParkInfo": {
+    "parkCode": "loea",
+    "npsId": "3725FD28-4693-481E-888C-855484E73800",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/loea/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.tenement.org/plan-a-visit/#"
+    }
+  ],
+  "contact": {
+    "phone": "8779753786",
+    "email": "lestm@tenement.org",
+    "website": "https://www.nps.gov/loea/index.htm",
+    "address": {
+      "line1": "103 Orchard Street",
+      "line2": "",
+      "city": "New York",
+      "state": "NY",
+      "postalCode": "10002"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 5:30PM",
+    "tuesday": "10:00AM - 5:30PM",
+    "wednesday": "10:00AM - 5:30PM",
+    "thursday": "10:00AM - 5:30PM",
+    "friday": "10:00AM - 6:00PM",
+    "saturday": "10:00AM - 6:00PM",
+    "sunday": "10:00AM - 5:30PM",
+    "description": "Visit the Tenement Museum virtually or in person! From neighborhood walking tours and educator-led apartment tours, to digital exhibits and virtual programs, experience the museum the way that works best for you."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Explore historically recreated tenement apartments and discover how immigrants lived on New York’s Lower East Side in the 19th and 20th centuries. Along with a glimpse of the past, glean insights from educators who offer historical perspectives that relate to current conversations about immigration.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Explore the often-forgotten places, unexplored spaces, and the many histories of migration over centuries on daily walking tours of the storied Lower East Side neighborhood. Get to know the city by visiting historical sites and learning about the people and neighborhoods that made New York City what it is today.",
+      "cost": "30.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Check out the 10 day forecast for New York City!"
+  },
+  "images": [
+    {
+      "id": "loea-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C81BB61B-B296-C003-0E6B615B84AF38DB.jpg",
+      "title": "Parlor at the Lower East Side Tenement Museum",
+      "altText": "A room with wooden floors, blue wall paper, two windows, some furniture and a dress hanging.",
+      "caption": "Inside the Levine Parlor",
+      "credit": "Courtesy of the Tenement Museum",
+      "isPrimary": true
+    },
+    {
+      "id": "loea-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B33B17EA-04B0-90A1-5693E6BA072678CF.jpg",
+      "title": "The Lower East Side Tenement Musuem",
+      "altText": "A four story red brick building against a blue sky with white puffy clouds",
+      "caption": "The Lower East Side Tenement Museum as seen from Delancy Street.",
+      "credit": "Tenement Museum",
+      "isPrimary": false
+    },
+    {
+      "id": "loea-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B3508CEF-D21E-22FB-24EECF953BF232B4.jpg",
+      "title": "The Visitor Center",
+      "altText": "A flowering white tree in front of the entrance to the visitor center",
+      "caption": "Spring in bloom at the entrance to the Tenement Museum visitor center.",
+      "credit": "Tenement Museum",
+      "isPrimary": false
+    },
+    {
+      "id": "loea-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B360E148-BF7F-1653-4BFE8FB8C05E518C.jpg",
+      "title": "Interior of Rogarshevsky Kitchen",
+      "altText": "A tenement kitchen with cast iron posts, old stove, and a bed next to the stove",
+      "caption": "The interior of the Rogarshevsky's tenement kitchen.",
+      "credit": "Tenement Musuem",
+      "isPrimary": false
+    },
+    {
+      "id": "loea-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B360E148-BF7F-1653-4BFE8FB8C05E518C.jpg",
+      "title": "Interior of Rogarshevsky Kitchen",
+      "altText": "A tenement kitchen with cast iron posts, old stove, and a bed next to the stove",
+      "caption": "The interior of the Rogarshevsky's tenement kitchen.",
+      "credit": "Tenement Musuem",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/loea/index.htm",
+    "directions": "https://www.tenement.org/plan-a-visit/#"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Arts",
+    "Asian American Heritage",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Enslavement",
+    "Great Depression",
+    "Hispanic American Heritage",
+    "Industry",
+    "Factories",
+    "Immigration",
+    "Laborer and Worker",
+    "Latino American Heritage",
+    "LGB American Heritage",
+    "Migrations",
+    "Music",
+    "Native American Heritage",
+    "Pacific Islander Heritage",
+    "Social Movements",
+    "Transportation",
+    "Urban America",
+    "Wars and Conflicts",
+    "Women's History",
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

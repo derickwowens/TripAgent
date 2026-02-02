@@ -1,0 +1,146 @@
+{
+  "id": "np-thri",
+  "name": "Theodore Roosevelt Inaugural National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "As president, Theodore Roosevelt created protections for ordinary citizens, began regulation of big business, and made the US a major force in international affairs. Yet one of the most important presidencies in America's history nearly didn't happen. See the place where a brief, emotional, and improvised ceremony in Buffalo, NY brought TR into office, and forever altered the nation.",
+  "shortDescription": "As president, Theodore Roosevelt created protections for ordinary citizens, began regulation of big business, and made the US a major force in international affairs. Yet one of the most important pres...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.90146781,
+    "longitude": -78.87248411
+  },
+  "nationalParkInfo": {
+    "parkCode": "thri",
+    "npsId": "B4AEC074-8652-4B0A-8963-4CD60ECA2349",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/thri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/thri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7168840095",
+    "email": "info@trsite.org",
+    "website": "https://www.nps.gov/thri/index.htm",
+    "address": {
+      "line1": "Theodore Roosevelt Inaugural Site",
+      "line2": "641 Delaware Avenue",
+      "city": "Buffalo",
+      "state": "NY",
+      "postalCode": "14202"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:30AM - 3:30PM",
+    "tuesday": "9:30AM - 3:30PM",
+    "wednesday": "9:30AM - 3:30PM",
+    "thursday": "9:30AM - 3:30PM",
+    "friday": "9:30AM - 3:30PM",
+    "saturday": "11:30AM - 3:30PM",
+    "sunday": "11:30AM - 3:30PM",
+    "description": "Museum visit is by guided tour only. Tours begin every hour at the bottom of the hour, starting at 9:30 a.m. on weekdays and at 12:30 p.m. on Saturdays and Sundays. The last tour begins at 3:30 p.m. every day.\n\nRESERVATIONS ARE STRONGLY RECOMMENDED. To make reservations, visit TRSite.org. Walk-ins will be accommodated only as space permits.\n\nClosed on New Year's Eve, New Year's Day, Easter Sunday, Memorial Day, Independence Day, Labor Day, Thanksgiving, Christmas Eve and Christmas Day."
+  },
+  "fees": [
+    {
+      "title": "Timed Entry Reservation - Location",
+      "description": "Museum visits are by guided tour only. Due to limited space on each guided tour, pre-paid reservations are strongly recommended. Tours scheduled hourly, beginning at 9:30 a.m. weekdays and 11:30 p.m. weekends. Last tour at 3:30 p.m. For groups of ten or more, advance reservations are required. Minimum two weeks' notice, please. Call 716-884-0095.",
+      "cost": "12.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summer tends to be mild but humid. Fall moderate temperatures. Winters can have prolonged cold spells and be snowy, with occasional periods of intense snow. Spring mild and rainy."
+  },
+  "images": [
+    {
+      "id": "thri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7BD805-1DD8-B71B-0B1E51DD10FB6FAA.jpg",
+      "title": "Theodore Roosevelt Inaugural Site",
+      "altText": "Theodore Roosevelt Inaugural Site",
+      "caption": "This home in Buffalo, NY, is where Theodore Roosevelt took the oath of office as President on September 14, 1901.",
+      "credit": "Mark Lozo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/thri/index.htm",
+    "directions": "http://www.nps.gov/thri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Military",
+    "US Army",
+    "Armories",
+    "Monuments and Memorials",
+    "Presidents",
+    "Transportation",
+    "Canals",
+    "Roads, Routes and Highways",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Assassinations",
+    "Urban America",
+    "Wars and Conflicts",
+    "Mexican War",
+    "National Historic Site",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

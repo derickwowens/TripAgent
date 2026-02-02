@@ -1,0 +1,165 @@
+{
+  "id": "np-mana",
+  "name": "Manassas National Battlefield Park",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "On July 21, 1861, two armies clashed for the first time on the fields overlooking Bull Run. Heavy fighting swept away any notion of a quick war. In August 1862, Union and Confederate armies converged for a second time on the plains of Manassas. The Confederates won a solid victory bringing them to the height of their power.",
+  "shortDescription": "On July 21, 1861, two armies clashed for the first time on the fields overlooking Bull Run. Heavy fighting swept away any notion of a quick war. In August 1862, Union and Confederate armies converged ...",
+  "designation": "National Battlefield Park",
+  "coordinates": {
+    "latitude": 38.81710063,
+    "longitude": -77.5353468
+  },
+  "nationalParkInfo": {
+    "parkCode": "mana",
+    "npsId": "75E4B06E-24C5-4F04-AAB3-F41CF0F55B7A",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mana/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mana/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7033611339",
+    "email": "manassas_battlefield@nps.gov",
+    "website": "https://www.nps.gov/mana/index.htm",
+    "address": {
+      "line1": "6511 Sudley Road",
+      "line2": "",
+      "city": "Manassas",
+      "state": "VA",
+      "postalCode": "20109"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park is open daily from dawn until dusk."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Mild weather, with average low/high temperatures from 33 F to 75 F. Variable rainfall, with May being the wettest month of the year on average. Summer: Warm and humid weather, with average temperatures from 61 F to 88 F. Variable rainfall, with occasional downpours during storms. Fall: Mild weather, with average temperatures from 35 F to 79 F. Variable rainfall. Winter: Mild to cool weather, with average temperatures from 24 F to 47 F. Annual snowfall averages about 22 inches."
+  },
+  "images": [
+    {
+      "id": "mana-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85AA4D-1DD8-B71B-0B4C0BA37FFF3157.jpg",
+      "title": "Bull Run Monument",
+      "altText": "Red sandstone obelisk surrounded by post and rail fence.",
+      "caption": "The Bull Run Monument on Henry Hill is among the nation's earliest Civil War monuments.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mana-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85AB57-1DD8-B71B-0BA5BF69AE90BFA0.jpg",
+      "title": "Stone House",
+      "altText": "View of Stone House, with worm rail fence and well in front yard.",
+      "caption": "The historic Stone House, a battlefield landmark, sheltered Union wounded in both battles of Manassas.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mana-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85AC6A-1DD8-B71B-0B703BB760D8DACF.jpg",
+      "title": "14th Brooklyn Monument",
+      "altText": "Civil War cannon and granite and bronze monument under a cloudy sky.",
+      "caption": "The 14th Brooklyn Monument overlooks the scene of heavy fighting near Groveton during Second Manassas.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mana-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85ADDA-1DD8-B71B-0B6455162B9B5E4B.jpg",
+      "title": "Henry House",
+      "altText": "Rustic farmhouse, flanked by shade tree, stone monument, and white outbuilding, on top of a hill.",
+      "caption": "The Henry House, built over the ruins of the wartime dwelling, welcomed returning veterans to the battlefield after the war.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mana-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85A8E8-1DD8-B71B-0B22E43B4975FC4A.jpg",
+      "title": "Stonewall Jackson Monument",
+      "altText": "Bronze statue of Gen. T. J. \"Stonewall\" Jackson on horseback in an open field.",
+      "caption": "The statue of Confederate Gen. T. J. \"Stonewall\" Jackson stands on Henry Hill, near the spot where he earned his famous nickname.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mana/index.htm",
+    "directions": "http://www.nps.gov/mana/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "US Marines",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Battlefield Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

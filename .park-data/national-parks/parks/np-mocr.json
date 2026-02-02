@@ -1,0 +1,216 @@
+{
+  "id": "np-mocr",
+  "name": "Moores Creek National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "In the early morning hours of February 27, 1776, Loyalist forces charged across a partially dismantled Moores Creek Bridge. Beyond the bridge, nearly 1,000 North Carolina Patriots waited quietly with cannons and muskets poised to fire. This battle marked the last broadsword charge by Scottish Highlanders and the first significant victory for the Patriots in the American Revolution.",
+  "shortDescription": "In the early morning hours of February 27, 1776, Loyalist forces charged across a partially dismantled Moores Creek Bridge. Beyond the bridge, nearly 1,000 North Carolina Patriots waited quietly with ...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 34.45820776,
+    "longitude": -78.11031134
+  },
+  "nationalParkInfo": {
+    "parkCode": "mocr",
+    "npsId": "617A3B73-D7CD-449D-8E27-41DE3BF149A6",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mocr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mocr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9102835591",
+    "email": "mocr_information@nps.gov",
+    "website": "https://www.nps.gov/mocr/index.htm",
+    "address": {
+      "line1": "40 Patriots Hall Dr.",
+      "line2": "",
+      "city": "Currie",
+      "state": "NC",
+      "postalCode": "28435"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "Closed",
+    "description": "The Visitor Center is open Tuesday - Saturday, 9:00 am to 5:00 pm. This includes access to exhibits, the park's 10-minute film, \"In the Most Furious Manner\", the gift shop and America the Beautiful passes.  The visitor center is closed on all Federal Holidays except Memorial Day, Independence Day and Veteran's Day. The Visitor Center Phone Number is 910-283-5591 ex.2234"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Currie, North Carolina has mild Winters and moderate to hot Summers with varying humidity."
+  },
+  "images": [
+    {
+      "id": "mocr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/914A2696-A4AE-2051-F206B93B3BE54A8B.jpg",
+      "title": "Welcome to Moores Creek National Battlefield",
+      "altText": "Cannon on a hill on a winter day. American flag to the left of the cannon",
+      "caption": "Mother Covington",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mocr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D1E67C49-1DD8-B71B-0B62539537012131.jpg",
+      "title": "Artillery Demonstration at Moore's Creek",
+      "altText": "Artillery Demonstration at Moore's Creek",
+      "caption": "Artillery Demonstration at Moore's Creek.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mocr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D1EC1D05-1DD8-B71B-0B465385EACC58D5.jpg",
+      "title": "Bridge at Moore's Creek",
+      "altText": "Bridge at Moore's Creek.",
+      "caption": "Bridge at Moore's Creek.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mocr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D2870E9A-1DD8-B71B-0BC01D5B52E13BE8.png",
+      "title": "Small Cannon at Moore's Creek",
+      "altText": "Small Cannon at Moore's Creek.",
+      "caption": "Small Cannon at Moore's Creek.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mocr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D2AE1ACB-1DD8-B71B-0B16C5C6495CCFA4.jpg",
+      "title": "Cannon overlooking field at Moore's Creek",
+      "altText": "Cannon overlooking field at Moore's Creek.",
+      "caption": "Cannon overlooking field at Moore's Creek.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mocr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D2A9ED69-1DD8-B71B-0BBA4A8605A8DCE1.jpg",
+      "title": "Cannon at Moore's Creek",
+      "altText": "Cannon at Moore's Creek.",
+      "caption": "Cannon at Moore's Creek.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mocr/index.htm",
+    "directions": "http://www.nps.gov/mocr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "American Revolution",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Schools and Education",
+    "Transportation",
+    "Bridges",
+    "Roads, Routes and Highways",
+    "Tragic Events",
+    "Floods",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fire",
+    "Forests and Woodlands",
+    "Trails",
+    "Unique Species",
+    "Watersheds",
+    "Wetlands",
+    "Swamps",
+    "National Battlefield",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

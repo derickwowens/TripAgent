@@ -1,0 +1,146 @@
+{
+  "id": "np-kimo",
+  "name": "Kings Mountain National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "SC",
+  "stateName": "South Carolina",
+  "region": "southeast",
+  "description": "Thomas Jefferson called it \"The turn of the tide of success.\" The battle of Kings Mountain, fought October 7th, 1780, was an important American victory during the Revolutionary War. The battle was the first major patriot victory to occur after the British invasion of Charleston, SC in May 1780. The park preserves the site of this important battle.",
+  "shortDescription": "Thomas Jefferson called it \"The turn of the tide of success.\" The battle of Kings Mountain, fought October 7th, 1780, was an important American victory during the Revolutionary War. The battle was the...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 35.13900723,
+    "longitude": -81.38978712
+  },
+  "nationalParkInfo": {
+    "parkCode": "kimo",
+    "npsId": "C7C40543-5879-48FC-8E55-C26F3E0B4CCD",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kimo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/kimo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8649367921",
+    "email": "KIMO_Information@nps.gov",
+    "website": "https://www.nps.gov/kimo/index.htm",
+    "address": {
+      "line1": "2300 Park Road",
+      "line2": "",
+      "city": "Blacksburg",
+      "state": "SC",
+      "postalCode": "29702"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Park Grounds (Restrooms, Parking Lot and Trails) Open Daily 9:00 a.m. to 5:00 p.m.\n\nVisitor Center Open Wednesday - Sunday 9 a.m. to 5:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures for the area range from very hot and humid in the summer to cool and moderate in the winter."
+  },
+  "images": [
+    {
+      "id": "kimo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8687F0-1DD8-B71B-0B6A5B7B87219459.jpg",
+      "title": "Ferguson's Grave",
+      "altText": "An oval gravestone for Maj Patrick Ferguson is in front of his stone covered grave.",
+      "caption": "Major Patrick Ferguson's Grave",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "kimo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C868B12-1DD8-B71B-0B87FD7F6BC9ECB4.jpg",
+      "title": "Patriot Rifleman",
+      "altText": "A patriot rifleman stands ready to fire his weapon.",
+      "caption": "A patriot rifleman stands ready to fire his weapon.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kimo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C868D10-1DD8-B71B-0BE0B8A78B9F1CF6.jpg",
+      "title": "Centennial Monument in Snow",
+      "altText": "Snow covers the ground in front of the Centennial Monument.",
+      "caption": "Centennial Monument in the Snow",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kimo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C868F03-1DD8-B71B-0BB8654AD4FFDC70.jpg",
+      "title": "US Monument in Fall",
+      "altText": "The US Monument is surrounded by trees that are turning orange and yellow.",
+      "caption": "US Monument in the Fall",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kimo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C869124-1DD8-B71B-0B0A68C8BB1D9646.jpg",
+      "title": "Militia Marching with Arms",
+      "altText": "Militia reenactors march with weapons on their shoulders as they prepare to demonstrate them.",
+      "caption": "Militia reenactors march with weapons on their shoulders as they prepare to give a firing demonstration.",
+      "credit": "Joe Epley for NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kimo/index.htm",
+    "directions": "http://www.nps.gov/kimo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "National Military Park",
+    "SC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

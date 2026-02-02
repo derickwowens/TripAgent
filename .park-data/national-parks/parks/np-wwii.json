@@ -1,0 +1,138 @@
+{
+  "id": "np-wwii",
+  "name": "World War II Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "Through stone architecture and bronze sculptures, the World War II Memorial recognizes the ways Americans served, honors those who fell, and recognizes the victory they achieved to restore freedom and end tyranny around the globe.",
+  "shortDescription": "Through stone architecture and bronze sculptures, the World War II Memorial recognizes the ways Americans served, honors those who fell, and recognizes the victory they achieved to restore freedom and...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.88923917,
+    "longitude": -77.0403759
+  },
+  "nationalParkInfo": {
+    "parkCode": "wwii",
+    "npsId": "F85AF8D0-1B85-4B2C-9356-840A4AF6A354",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wwii/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wwii/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "202-426-6841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/wwii/index.htm",
+    "address": {
+      "line1": "1750 Independence Ave. SW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20024"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The World War II Memorial is open 24 hours a day every day of the year. Restrooms, museums and elevators close in the evenings (check individual sites for hours). Park Rangers and volunteers are generally available between 9 a.m. and 10 p.m. to answer questions and provide assistance."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "wwii-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8177E8-1DD8-B71B-0BE98D23BE5E7C32.jpg",
+      "title": "A Field of Stars",
+      "altText": "Close up of Gold Stars in the Memorial",
+      "caption": "Paying honor to those that paid the ultimate price.",
+      "credit": "NPS Photo/Brian Hall",
+      "isPrimary": true
+    },
+    {
+      "id": "wwii-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81795B-1DD8-B71B-0B32A08A7858D89B.jpg",
+      "title": "Lady Freedom Walking",
+      "altText": "A close up of one of the Lady Freedom markers",
+      "caption": "One of the two plaques showing a nation answering the call to defend freedom",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wwii-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C817BA1-1DD8-B71B-0B24DF1A9121EB94.jpg",
+      "title": "The World War II Memorial at night",
+      "altText": "The World War II Memorial at night",
+      "caption": "The World War II Memorial at night",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wwii-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C817CF7-1DD8-B71B-0B3E8FC6569F7547.jpg",
+      "title": "WWII Memorial",
+      "altText": "WWII Memorial panoramic shot",
+      "caption": "A nation pays honor in the center of the capital city to the greatest generatioin",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wwii-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2303AB7B-E6D5-BB2F-8AB9F8319DB4B901.jpg",
+      "title": "Aerial view of World War II Memorial",
+      "altText": "Aerial view of stone columns around an oval-shaped pool at the World War II Memorial.",
+      "caption": "56 columns represent the 50 states, the District of Columbia, and the U.S. territories at the time of World War II.",
+      "credit": "NPS / USPP",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wwii/index.htm",
+    "directions": "http://www.nps.gov/wwii/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "World War II",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "id": "np-alag",
+  "name": "Alagnak Wild River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "The headwaters of Alagnak Wild River lie within the rugged Aleutian Range of neighboring Katmai National Park and Preserve. Meandering west towards Bristol Bay and the Bering Sea, the Alagnak traverses the beautiful Alaska Peninsula, providing an unparalleled opportunity to experience the unique wilderness, wildlife, and cultural heritage of southwest Alaska.",
+  "shortDescription": "The headwaters of Alagnak Wild River lie within the rugged Aleutian Range of neighboring Katmai National Park and Preserve. Meandering west towards Bristol Bay and the Bering Sea, the Alagnak traverse...",
+  "designation": "Wild River",
+  "coordinates": {
+    "latitude": 59.05180188,
+    "longitude": -156.112002
+  },
+  "nationalParkInfo": {
+    "parkCode": "alag",
+    "npsId": "C4E1A9A4-D121-4734-94FA-7788A93C2AAA",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/alag/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/alag/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9072463305",
+    "email": "KATM_Visitor_Information@nps.gov",
+    "website": "https://www.nps.gov/alag/index.htm",
+    "address": {
+      "line1": "1000 Silver St., Bldg. 603",
+      "line2": "PO Box 7",
+      "city": "King Salmon",
+      "state": "AK",
+      "postalCode": "99613"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Alagnak Wild River is never closed, but access can be difficult during the winter."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Located between the stormy north Pacific Ocean and the even stormier Bering Sea, the Alagnak Wild River is often a battleground between weather systems. When you visit, be prepared to encounter all types of weather.  On average, wet and cool conditions predominate in spring, summer, and fall. Winters are drier and colder."
+  },
+  "images": [
+    {
+      "id": "alag-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E810E-1DD8-B71B-0B92FDF31F5C0CA6.jpg",
+      "title": "salmon in Alagnak River",
+      "altText": "underwater photo of salmon swimming in river",
+      "caption": "Each summer, hundreds of thousands of salmon return to the Alagnak watershed to spawn.",
+      "credit": "NPS/R. Wood",
+      "isPrimary": true
+    },
+    {
+      "id": "alag-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8259-1DD8-B71B-0B45810F0CB6E02C.jpg",
+      "title": "Rafts along the river",
+      "altText": "inflatable rafts on the edge of a river",
+      "caption": "Rafting is a popular way to experience the river.",
+      "credit": "NPS/R. Wood",
+      "isPrimary": false
+    },
+    {
+      "id": "alag-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8391-1DD8-B71B-0BB3E18B7F96110A.jpg",
+      "title": "Alagnak Wild River",
+      "altText": "aerial view of braided Alagnak River",
+      "caption": "Alagnak River's lower reaches are extremely braided.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/alag/index.htm",
+    "directions": "http://www.nps.gov/alag/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Arctic",
+    "Tundra",
+    "Groundwater",
+    "River and Riparian",
+    "Wetlands",
+    "Wilderness",
+    "Wild River",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.831Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

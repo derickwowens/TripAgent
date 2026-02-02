@@ -1,0 +1,391 @@
+{
+  "id": "np-whis",
+  "name": "Whiskeytown National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Whiskeytown Lake’s crystal-clear waters are iconic, but this 42,000-acre National Recreation Area offers much more. Explore waterfalls, hike rugged trails, uncover Gold Rush history, and witness the resilience of nature in its post-fire recovery. Adventure awaits at every turn—Whiskeytown is calling!",
+  "shortDescription": "Whiskeytown Lake’s crystal-clear waters are iconic, but this 42,000-acre National Recreation Area offers much more. Explore waterfalls, hike rugged trails, uncover Gold Rush history, and witness the r...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 40.61359941,
+    "longitude": -122.6022657
+  },
+  "nationalParkInfo": {
+    "parkCode": "whis",
+    "npsId": "89730CB2-BB7D-400B-AF35-5F95A574D97D",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/whis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/whis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5302423400",
+    "email": "whis_information@nps.gov",
+    "website": "https://www.nps.gov/whis/index.htm",
+    "address": {
+      "line1": "14412 Kennedy Memorial Drive",
+      "line2": "",
+      "city": "Whiskeytown",
+      "state": "CA",
+      "postalCode": "96095"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is open year-round, 24 hours a day.  Certain areas of the park are subject to seasonal and COVID-19 temporary closures or limited hours. Some areas of the park remain closed due to hazardous conditions from the Carr Fire. Please check the park website for current information."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no motor vehicle (bicyclist, hiker, pedestrian). Youth 15 and under are admitted free of charge. Good for 7 days. For more information visit https://www.recreation.gov/sitepass/74295.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. For more information visit https://www.recreation.gov/sitepass/74295.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one private, non-commercial vehicle (15-passenger capacity or less) and all occupants. Good for 7 days at Whiskeytown National Recreation Area only. For more information visit https://www.recreation.gov/sitepass/74295.",
+      "cost": "25.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Whiskeytown NRA is in a Mediterranean climate, which means hot, dry summers followed by cool, wet winters. Summer temperatures often reach the upper 90's to lower 100 degrees Fahrenheit, as well as the occasional thunderstorm. Winter brings snow to the upper elevations (only occasionally down to the lake level of 1,200'), and rain and ice. See the park weather page for the current weather."
+  },
+  "images": [
+    {
+      "id": "whis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81470B-1DD8-B71B-0B1CF8A880DBD58D.jpg",
+      "title": "Shasta Bally",
+      "altText": "A snowy day on top of Shasta Bally",
+      "caption": "A beautiful stop along Kennedy Memorial Drive",
+      "credit": "NPS Matthew Switzer",
+      "isPrimary": true
+    },
+    {
+      "id": "whis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C814A04-1DD8-B71B-0B564DC8801CA9E3.jpg",
+      "title": "A Beautiful Day on the Lake",
+      "altText": "Crystal clear waters make for good paddling",
+      "caption": "Another Way to Capture the Beauty",
+      "credit": "NPS Matthew Switzer",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81485B-1DD8-B71B-0B34DCEEE0870A67.jpg",
+      "title": "Moonlight Kayak Tour",
+      "altText": "An evening kayak tour",
+      "caption": "Thousands of vistors join interpretive rangers to get a new perspective of the lake on a moonlight kayak tour",
+      "credit": "NPS Matthew Switzer",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C814B72-1DD8-B71B-0B505449057E3064.jpg",
+      "title": "Recreation",
+      "altText": "Another way to enjoy the park",
+      "caption": "A popular recreational activity",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C814F8F-1DD8-B71B-0BDAF1974D2D38D6.jpg",
+      "title": "Whiskeytown Falls",
+      "altText": "A Fall Day at Whiskeytown Falls",
+      "caption": "One of the four major waterfalls- Whiskeytown Falls",
+      "credit": "Marissa Carlisle",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8145A3-1DD8-B71B-0B7C0680C99D7CFC.jpg",
+      "title": "A View from the Top",
+      "altText": "Being on the Top of Shasta Bally",
+      "caption": "A popular spot for visitors to get a view of the valley and mountain ranges",
+      "credit": "Marissa Carlisle",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81510D-1DD8-B71B-0BF5F97783DE7EFE.jpg",
+      "title": "Boulder Creek Falls",
+      "altText": "A Beautiful Day at Boulder Creek Falls",
+      "caption": "One of the four major waterfalls- Boulder Creek Falls",
+      "credit": "NPS Matt Switzer",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/753436CA-EE25-E418-2E0AE5AC39F5341F.jpg",
+      "title": "JFK Memorial",
+      "altText": "John F. Kennedy Memorial",
+      "caption": "John F. Kennedy Memorial",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/754ED5C4-EDF3-1F14-324C96D2CFB7CDDF.jpg",
+      "title": "Glory Hole",
+      "altText": "Glory Hole at Whiskeytown Lake",
+      "caption": "Glory Hole at Whiskeytown Lake",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "whis-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/756750F1-EB79-A960-8FA6B59855B5874C.jpg",
+      "title": "VC",
+      "altText": "Whiskeytown NRA Visitor Center",
+      "caption": "Whiskeytown NRA Visitor Center",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "8A1C7B17-C2C6-4F7C-9539-EA1E19971D80",
+      "name": "Water Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/whis/index.htm",
+    "directions": "http://www.nps.gov/whis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Dams",
+    "Schools and Education",
+    "Science, Technology and Innovation",
+    "Transportation",
+    "Bridges",
+    "Roads, Routes and Highways",
+    "Westward Expansion",
+    "Homesteading",
+    "The Gold Rush",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Fish",
+    "Tortoises and Turtles",
+    "Fire",
+    "Lakes",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Watersheds",
+    "Waterfalls",
+    "Wilderness",
+    "National Recreation Area",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

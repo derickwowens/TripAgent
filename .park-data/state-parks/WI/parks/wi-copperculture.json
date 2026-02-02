@@ -1,0 +1,44 @@
+{
+  "id": "wi-copperculture",
+  "name": "Copper Culture State Park",
+  "parkType": "state_park",
+  "stateCode": "WI",
+  "stateName": "Wisconsin",
+  "coordinates": {
+    "latitude": 0,
+    "longitude": 0
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://dnr.wisconsin.gov/topic/parks/copperculture",
+      "isPrimary": true,
+      "source": "manual"
+    },
+    {
+      "type": "reservation",
+      "url": "https://wisconsin.goingtocamp.com/",
+      "isPrimary": true,
+      "source": "manual"
+    }
+  ],
+  "contact": {
+    "phone": "1-888-947-2757",
+    "reservationUrl": "https://wisconsin.goingtocamp.com/"
+  },
+  "quickLinks": {
+    "officialWebsite": "https://dnr.wisconsin.gov/topic/parks/copperculture",
+    "reservations": "https://wisconsin.goingtocamp.com/"
+  },
+  "metadata": {
+    "sources": [
+      {
+        "source": "manual",
+        "lastSynced": "2026-02-02T02:30:24.151Z"
+      }
+    ],
+    "createdAt": "2026-02-02T02:30:24.151Z",
+    "updatedAt": "2026-02-02T02:30:24.151Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "id": "np-stsp",
+  "name": "Star-Spangled Banner National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "The Star-Spangled Banner National Historic Trail is a collection of sites impacted by the War of 1812. These local, historic sites tell the story of the Chesapeake Campaign, culminating in the writing of our National Anthem. In addition to their historic significance, many of the sites along the trail are fantastic places to go for a walk, explore the outdoors, and access local waterways.",
+  "shortDescription": "The Star-Spangled Banner National Historic Trail is a collection of sites impacted by the War of 1812. These local, historic sites tell the story of the Chesapeake Campaign, culminating in the writing...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 39.2872505188,
+    "longitude": -76.6034317017
+  },
+  "nationalParkInfo": {
+    "parkCode": "stsp",
+    "npsId": "F22ED7C4-DDB8-43F8-AAF2-D474864352DA",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/stsp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/stsp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "410.962.4290",
+    "email": "Star-Spangled-Trail_info@nps.gov",
+    "website": "https://www.nps.gov/stsp/index.htm",
+    "address": {
+      "line1": "2400 East Fort Avenue",
+      "line2": "",
+      "city": "Baltimore",
+      "state": "MD",
+      "postalCode": "21230"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Star-Spangled Banner National Historic Trail is not a clearly marked hiking trail. Instead it is a route that passes through communities, urban areas, and public lands. The route travels across a variety of land ownerships and management, including private land. Each location varies as to the hours of operations and access. Please contact individual trail sites before your visit for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Star-Spangled Banner National Historic Trail is made up of parks, museums, outdoor trails, and waterways throughout the Chesapeake Bay region. Weather can effect the hours of operation and access points to many sites along the trail. Exercise caution when exploring the trail outdoors. Dress appropriately for seasonal conditions such as heat, snow, and ice. Parks, museums, and visitor centers may be impacted by weather conditions year round. Please call ahead to your planned trail stop for updates on"
+  },
+  "images": [
+    {
+      "id": "stsp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F108B920-E383-8D58-961E7B7E0C438B74.jpg",
+      "title": "PRIDE OF BALTIMORE II",
+      "altText": "A tall ship sails on the water.",
+      "caption": "The PRIDE OF BALTIMORE II is a sailing ambassador for the Trail.",
+      "credit": "Pride of Baltimore, Inc.",
+      "isPrimary": true
+    },
+    {
+      "id": "stsp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F12D5A96-94D4-C33A-0DA8312DDC17F436.jpg",
+      "title": "Historic Sotterley",
+      "altText": "Image of a large historic house with green lawn in foreground.",
+      "caption": "Historic Sotterley",
+      "credit": "Frank Greenwell",
+      "isPrimary": false
+    },
+    {
+      "id": "stsp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F14C825D-09CC-8288-55B32C6E247EE80A.jpg",
+      "title": "White House",
+      "altText": "A close-up of the White House portico.",
+      "caption": "British forces set fire to the original home of the U.S. president on August 26, 1814.",
+      "credit": "NPS/ T. Adams",
+      "isPrimary": false
+    },
+    {
+      "id": "stsp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F167A7F8-CD7C-EDB1-A19B51F7A6C1B4BE.jpg",
+      "title": "Paddling on the Sassafras",
+      "altText": "A person in a yellow kayak paddles through lotus blossoms.",
+      "caption": "The Sassafras River Water Trail is one of the many paddle trails to explore along the Star-Spangled Banner Trail",
+      "credit": "Sultana Education Foundation/Chris Cerino",
+      "isPrimary": false
+    },
+    {
+      "id": "stsp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F32EE65B-D0CD-D7B5-209E00AE83CD2C7B.jpg",
+      "title": "Living History at Fort McHenry",
+      "altText": "People in 18th century period clothing standing in a line and firing muskets.",
+      "caption": "Living history at Fort McHenry National Monument and Historic Shrine.",
+      "credit": "Office of the Governor/Jay Baker",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/stsp/index.htm",
+    "directions": "https://www.nps.gov/stsp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Commerce",
+    "Trade",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Forts",
+    "Incarceration",
+    "Jails and Prisons",
+    "Immigration",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Piracy and Privateering",
+    "Ships and Shipwrecks",
+    "Medicine",
+    "Hospital",
+    "Migrations",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Native American Heritage",
+    "Presidents",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Social Movements",
+    "Civil Rights",
+    "Conservation Movement",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Urban America",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "French and Indian War",
+    "American Revolutionary War",
+    "War of 1812",
+    "Indian and Frontier Wars",
+    "World War I",
+    "World War II",
+    "Westward Expansion",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Oceans",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Watersheds",
+    "Headwaters",
+    "Wetlands",
+    "Marshes",
+    "Wilderness",
+    "National Historic Trail",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

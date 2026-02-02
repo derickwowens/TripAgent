@@ -1,0 +1,270 @@
+{
+  "id": "np-saga",
+  "name": "Saint-Gaudens National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NH",
+  "stateName": "New Hampshire",
+  "region": "northeast",
+  "description": "Your National Park for the Arts preserves the home and studio of sculptor Augustus Saint-Gaudens (1848-1907). Here stories flow through a landscape of inspiration. Discover the history behind the captivating bronze sculptures and enjoy the beauty of art and nature. The park and its partners continue the tradition of the Cornish Colony of artists. Unleash your creativity today.",
+  "shortDescription": "Your National Park for the Arts preserves the home and studio of sculptor Augustus Saint-Gaudens (1848-1907). Here stories flow through a landscape of inspiration. Discover the history behind the capt...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 43.4997238,
+    "longitude": -72.37333969
+  },
+  "nationalParkInfo": {
+    "parkCode": "saga",
+    "npsId": "0FC25325-87AA-4325-A6B7-C404D94B16DB",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/saga/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/saga/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "603-675-2175",
+    "email": "saga_info@nps.gov",
+    "website": "https://www.nps.gov/saga/index.htm",
+    "address": {
+      "line1": "139 Saint Gaudens Road",
+      "line2": "",
+      "city": "Cornish",
+      "state": "NH",
+      "postalCode": "03745"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Park buildings are open Thursday through Monday from 9am to 4:30pm, Memorial Day weekend to October 31.\n\nGrounds and trails are open during daylight hours. The visitor center, restrooms, galleries, and historic buildings are closed from November 1 to Memorial Day weekend. Use caution as walkways, trails, and grounds are not maintained outside of visitor season and may be icy, snow-covered, or even."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entrance fee to park grounds for people aged 16 and over. Kids aged 15 and younger are free. Valid for seven days. Fees collected 9am-4pm.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The upper Connecticut River valley is located in a temperate climate. While some summer days may be hot and humid, the average summer temperature ranges in the 70s and lower 80s. Temperatures in the fall are normally in the upper 60s, with evenings dropping into the upper 40s and lower 50s. Winters can be cold with daily temperatures usually in the 20s and occasionally dropping to below zero. Snow may be heavy from mid December through March."
+  },
+  "images": [
+    {
+      "id": "saga-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C856833-1DD8-B71B-0BAEFC61DA10D0B6.jpg",
+      "title": "Aspet, home of Augustus Saint-Gaudens",
+      "altText": "Looking toward Aspet from the Pan Garden",
+      "caption": "Built in 1817, Saint-Gaudens came here in 1885. He named it Aspet after the birthplace of his father in France.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "saga-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85696C-1DD8-B71B-0B73D22052CE3719.jpg",
+      "title": "Interior of the Little Studio",
+      "altText": "Interior of the Little Studio, Sculpture of Diana in foreground",
+      "caption": "The Little Studio where Augustus Saint-Gaudens worked, exhibits some his well known works.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "saga-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C856A96-1DD8-B71B-0B6A396B191775FB.jpg",
+      "title": "The Shaw Memorial",
+      "altText": "Visitors looking at the Shaw Memorial",
+      "caption": "Visitors looking at the bronze cast of the Shaw Memorial, Saint-Gaudens' masterpiece.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "saga-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C856BE9-1DD8-B71B-0BFE9504CA5582D8.jpg",
+      "title": "Formal Gardens",
+      "altText": "View of the Formal Gardens",
+      "caption": "The Formal Gardens remain much like they were in the artist's time.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "saga-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C856D62-1DD8-B71B-0BC9914E404ACDAF.jpg",
+      "title": "Twenty dollar gold coin, 1907",
+      "altText": "Obverse of the twenty dollar gold coin, 1907",
+      "caption": "The 20 dollar gold piece Saint-Gaudens designed, is considered the most beautiful American coin ever minted",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/saga/index.htm",
+    "directions": "http://www.nps.gov/saga/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Arts",
+    "Painting",
+    "Poetry and Literature",
+    "Sculpture",
+    "Burial, Cemetery and Gravesite",
+    "Industry",
+    "Mills",
+    "Immigration",
+    "Laborer and Worker",
+    "Landscape Design",
+    "Monuments and Memorials",
+    "Music",
+    "Presidents",
+    "Reconstruction",
+    "Science, Technology and Innovation",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Mountains",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "Wetlands",
+    "National Historical Park",
+    "NH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

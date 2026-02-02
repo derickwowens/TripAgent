@@ -1,0 +1,204 @@
+{
+  "id": "np-puhe",
+  "name": "Puʻukoholā Heiau National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "HI",
+  "stateName": "Hawaii",
+  "region": "hawaii",
+  "description": "How many places in America can you walk in the footsteps of a king? Where else has a stranded sailor risen up to become a great chief over an entire island? Where else can you experience the culminating event of a people, foretold from centuries past? Where else can you stand on a beach and watch as sharks pass over a submerged temple? Experience all this and much more – only at Pu'ukoholā Heiau!",
+  "shortDescription": "How many places in America can you walk in the footsteps of a king? Where else has a stranded sailor risen up to become a great chief over an entire island? Where else can you experience the culminati...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 20.02772186,
+    "longitude": -155.8211629
+  },
+  "nationalParkInfo": {
+    "parkCode": "puhe",
+    "npsId": "9C680E81-C4DC-46DD-BF33-8189828FF887",
+    "region": "hawaii"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/puhe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://home.nps.gov/puhe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8088827218",
+    "email": "puhe_info@nps.gov",
+    "website": "https://www.nps.gov/puhe/index.htm",
+    "address": {
+      "line1": "Pu'ukohola Heiau National Historic Site",
+      "line2": "62-3601 Kawaihae Road",
+      "city": "Kawaihae",
+      "state": "HI",
+      "postalCode": "96743"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:30AM - 4:30PM",
+    "tuesday": "8:30AM - 4:30PM",
+    "wednesday": "8:30AM - 4:30PM",
+    "thursday": "8:30AM - 4:30PM",
+    "friday": "8:30AM - 4:30PM",
+    "saturday": "8:30AM - 4:30PM",
+    "sunday": "8:30AM - 4:30PM",
+    "description": "Covered, open air lanai at visitor center open 8:30 AM - 4:30 PM daily.\n\nParking Lot Entrance (Top) Gate will be closed by 4:00 PM Daily, however the Parking Lot Exit (Bottom) Gate will close at 4:30 PM Daily. All vehicles parked in the visitor center parking lot after closing hours will be locked in or towed at owner's expense.\n\nIn case of Emergency call 911"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in the park is typically hot and sunny with daytime temperatures in the upper 80's. An excellent time to experience the park is in the morning and in the late afternoon when the temperatures are a bit cooler. The park is open daily from 8:30 a.m. until 4:30 p.m. However, the park and or trail does occasionally close because of high winds or dangerous storm conditions. Please check with the visitor center or your hotel for any weather advisories or hazardous conditions on the day of your visit."
+  },
+  "images": [
+    {
+      "id": "puhe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/46C8006D-B528-C45C-00A2A572EF94584A.jpg",
+      "title": "Puʻukoholā Heiau Ceremony by Herb Kane",
+      "altText": "Painting of historic ceremony at Puʻukoholā Heiau",
+      "caption": "Ceremony at Puʻukoholā Heiau, Painting by Herb Kane",
+      "credit": "Herb Kane",
+      "isPrimary": true
+    },
+    {
+      "id": "puhe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EB3BCC7A-CB39-FD44-4E6392881F5CC412.jpg",
+      "title": "Pu'ukoholā Heiau National Historic Site Banner",
+      "altText": "A Lele (offering tower) set below Pu'ukoholā Heiau NHS",
+      "caption": "Pu'ukoholā Heiau on a clear hot and sunny day in the district of Kawaihae.",
+      "credit": "NPS Photo / M. Tadio",
+      "isPrimary": false
+    },
+    {
+      "id": "puhe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CF9F184A-A873-98A1-95D55AE153E94BA3.jpg",
+      "title": "Sunrise",
+      "altText": "Sunrise over Pu'ukoholā Heiau in mid September.",
+      "caption": "Sunrise with a bright orange red glow rising above Pu'ukoholā Heiau.",
+      "credit": "NPS/M.Tadio",
+      "isPrimary": false
+    },
+    {
+      "id": "puhe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0882370-FE4E-1FB3-4FF00315C3244C70.jpg",
+      "title": "War God Kū and His Warriors",
+      "altText": "War god Kū and His Warriors",
+      "caption": "Warriors dressed in traditional attire presenting war god Kū on top of Pu'ukoholā Heiau during Ho'oku'ikahi Ceremony.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "puhe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D11CAB09-06A5-5489-AF13C42BD2DCAB45.jpg",
+      "title": "Ho'oku'ikahi Ceremony",
+      "altText": "Ho'okupu offerings placed on Lele",
+      "caption": "Ho'okupu offerings placed on top of the lele during Ho'oku'ikahi ceremony.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "puhe-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D19F58C5-BF72-CEC0-BE599FD41B49E0B0.jpg",
+      "title": "Trail",
+      "altText": "Paved half mile loop trail",
+      "caption": "Paved half mile loop trail (starting from the visitor center) will takes you to the base of Pu'ukoholā Heiau, passing Mailekini Heiau to Pelekane Bay, and right a long the coastal trail back to the visitor center.",
+      "credit": "NPS/M.Tadio",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/puhe/index.htm",
+    "directions": "http://home.nps.gov/puhe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Birthplace",
+    "Forts",
+    "Pacific Islander Heritage",
+    "Religion and Spirituality",
+    "Heiau",
+    "Schools and Education",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Night Sky",
+    "Astronomy",
+    "Oceans",
+    "Whales",
+    "Trails",
+    "Watersheds",
+    "National Historic Site",
+    "HI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

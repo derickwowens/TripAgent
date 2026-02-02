@@ -1,0 +1,91 @@
+{
+  "id": "np-anch",
+  "name": "Alaska Public Lands",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "Alaska’s parks, forests, and refuges are rich and varied. The Alaska Public Lands Information Centers help visitors and residents to have meaningful, safe, enjoyable experiences on public lands, and encourages them to sustain the natural and cultural resources of Alaska. These centers provide trip-planning, interpretation, and education for all ages.",
+  "shortDescription": "Alaska’s parks, forests, and refuges are rich and varied. The Alaska Public Lands Information Centers help visitors and residents to have meaningful, safe, enjoyable experiences on public lands, and e...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 61.2188,
+    "longitude": -149.894536
+  },
+  "nationalParkInfo": {
+    "parkCode": "anch",
+    "npsId": "7D6098F9-3F75-4775-A56D-CD9C7F9A9488",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/anch/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://alaskacenters.gov/anchorage-directions.cfm"
+    }
+  ],
+  "contact": {
+    "phone": "9076443661",
+    "email": "anch_web_mail@nps.gov",
+    "website": "https://www.nps.gov/anch/index.htm",
+    "address": {
+      "line1": "605 West 4th Avenue",
+      "line2": "Suite 105",
+      "city": "Anchorage",
+      "state": "AK",
+      "postalCode": "99501"
+    }
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Visitors center is located inside the Federal Building and weather conditions are seasonal conditions of the Anchorage area, outside the facility."
+  },
+  "images": [
+    {
+      "id": "anch-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2595FA12-DF7A-1B6C-55D8F41ABCA2E011.jpg",
+      "title": "Hikers on Angel Rocks",
+      "altText": "Two Hikers stand on top of a very large granite boulder, looking out across the landscape",
+      "caption": "Hikers on top of Angel Rocks near Fairbanks look out across the landscape of Chena River State Recreation Area",
+      "credit": "NPS/Josh Spice",
+      "isPrimary": true
+    },
+    {
+      "id": "anch-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86397B-1DD8-B71B-0B8F02FE5D76B46D.jpg",
+      "title": "Anchorage APLIC",
+      "altText": "Front of the Anchorage Federal Building, housing the Anchorage APLIC",
+      "caption": "The Anchorage APLIC is located inside the Federal Building",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "anch-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C860F61-1DD8-B71B-0B4E7399BE80347C.jpg",
+      "title": "Fairbanks APLIC",
+      "altText": "Fairbanks Alaska Public Lands Information Center, located inside the Morris Thompson Cultural & Visi",
+      "caption": "Fairbanks Alaska Public Lands Information Center, located inside the Morris Thompson Cultural & Visitors Center, in summer",
+      "credit": "NPS/Josh Spice",
+      "isPrimary": false
+    }
+  ],
+  "activities": [],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/anch/index.htm",
+    "directions": "http://alaskacenters.gov/anchorage-directions.cfm"
+  },
+  "keywords": [
+    "",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.831Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

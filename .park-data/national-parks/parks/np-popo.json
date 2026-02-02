@@ -1,0 +1,120 @@
+{
+  "id": "np-popo",
+  "name": "Poverty Point National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "LA",
+  "stateName": "Louisiana",
+  "region": "southeast",
+  "description": "Now a nearly forgotten culture, Poverty Point at its peak 3,000 years ago was part of an enormous trading network that stretched for hundreds of miles across the continent. It was - and is - also an engineering marvel, the product of five million hours of labor. Explore the culture of a highly sophisticated people who left behind one of North America’s most important archeological sites.",
+  "shortDescription": "Now a nearly forgotten culture, Poverty Point at its peak 3,000 years ago was part of an enormous trading network that stretched for hundreds of miles across the continent. It was - and is - also an e...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 32.6424361,
+    "longitude": -91.40829834
+  },
+  "nationalParkInfo": {
+    "parkCode": "popo",
+    "npsId": "DC9185D6-CCA9-4F40-AE53-5D77DE35E202",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/popo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/popo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3189265492",
+    "email": "povertypoint@crt.la.gov",
+    "website": "https://www.nps.gov/popo/index.htm",
+    "address": {
+      "line1": "6859 Hwy. 577",
+      "line2": "",
+      "city": "Pioneer",
+      "state": "LA",
+      "postalCode": "71266"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Poverty Point National Monument is managed by the state of Louisiana.\n\nClosed on Thanksgiving Day, Christmas Day and New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are sunny, hot, and humid. Winters tend to be mild; however, humid rainy periods occur throughout the year. Sudden and severe thunderstorms are common, so stay alert to weather forecasts. Check with rangers at the Visitor Center and/or USS Cairo Museum for updates on weather patterns. Wear comfortable sportswear appropriate for the season, with walking or hiking shoes recommended."
+  },
+  "images": [
+    {
+      "id": "popo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/093C6AE3-1DD8-B71B-0BF4825496F87868.jpg",
+      "title": "Bird Mound",
+      "altText": "A grassy green mound.",
+      "caption": "A grassy green mound.",
+      "credit": "Bart Everson",
+      "isPrimary": true
+    },
+    {
+      "id": "popo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/09EBA126-1DD8-B71B-0B199FFFD36CD0FD.jpg",
+      "title": "Bird Mound",
+      "altText": "Bird Mound - a grassy green mound.",
+      "caption": "Bird Mound - a grassy green mound.",
+      "credit": "Bert Everson",
+      "isPrimary": false
+    },
+    {
+      "id": "popo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/09EBA126-1DD8-B71B-0B199FFFD36CD0FD.jpg",
+      "title": "Bird Mound",
+      "altText": "Bird Mound - a grassy green mound.",
+      "caption": "Bird Mound - a grassy green mound.",
+      "credit": "Bert Everson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/popo/index.htm",
+    "directions": "http://www.nps.gov/popo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Native American Heritage",
+    "National Monument",
+    "LA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

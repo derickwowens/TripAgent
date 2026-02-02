@@ -1,0 +1,261 @@
+{
+  "id": "np-foda",
+  "name": "Fort Davis National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Fort Davis is one of the best surviving examples of an Indian Wars' frontier military post in the Southwest. From 1854 to 1891, Fort Davis was strategically located to protect emigrants, mail coaches, and freight wagons on the Trans-Pecos portion of the San Antonio-El Paso Road and on the Chihuahua Trail.",
+  "shortDescription": "Fort Davis is one of the best surviving examples of an Indian Wars' frontier military post in the Southwest. From 1854 to 1891, Fort Davis was strategically located to protect emigrants, mail coaches,...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 30.59930381,
+    "longitude": -103.8961904
+  },
+  "nationalParkInfo": {
+    "parkCode": "foda",
+    "npsId": "DE70B987-01A4-4BA5-9662-030BE3329AB3",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/foda/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/foda/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "1-432-426-3224",
+    "email": "FODA_Superintendent@nps.gov",
+    "website": "https://www.nps.gov/foda/index.htm",
+    "address": {
+      "line1": "101 Lt. Flipper Dr. #1379",
+      "line2": "P.O. Box 1379",
+      "city": "Fort Davis",
+      "state": "TX",
+      "postalCode": "79734"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:00PM",
+    "tuesday": "8:00AM - 5:00PM",
+    "wednesday": "8:00AM - 5:00PM",
+    "thursday": "8:00AM - 5:00PM",
+    "friday": "8:00AM - 5:00PM",
+    "saturday": "8:00AM - 5:00PM",
+    "sunday": "8:00AM - 5:00PM",
+    "description": "Daily Hours are 8:00 AM - 5:00 PM\nHoliday Closures: Thanksgiving Day, Christmas Day, New Year's Day, and Martin Luther King Jr. Holiday."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Per Person entry.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Entrance - Private Vehicle (includes driver and passengers)",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Commercial Entrance - Sedan (1-6 persons vehicle capacity)",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Commercial Entrance - Van (7-15 persons vehicle capacity)",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Commercial Entrance - Mini-bus (16-25 persons vehicle capacity)",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Commercial Entrance - Motor Coach (26+ person vehicle capacity)",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summer Temperatures average a High of 95 and low of 65. Winter Temperatures average a High of 60 and a low of 20. Wind is very common and heavy rainfall is very sporadic."
+  },
+  "images": [
+    {
+      "id": "foda-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DCD39-1DD8-B71B-0BEE09E6D3EF298C.jpg",
+      "title": "Parade Ground",
+      "altText": "Garrison Flag flying over the post.",
+      "caption": "Garrison flag flying over the post within the box canyon Fort Davis is located.",
+      "credit": "NPS Photo / Max Kandler",
+      "isPrimary": true
+    },
+    {
+      "id": "foda-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DCEB9-1DD8-B71B-0B0D7E4D5947B1BB.jpg",
+      "title": "Artillery Crew",
+      "altText": "Artillery Crew stands at the ready",
+      "caption": "The Artillery Crew stand ready for orders to post at their positions and fire the U.S. 3-inch Ordnance Rifle.",
+      "credit": "NPS Photo / Max Kandler",
+      "isPrimary": false
+    },
+    {
+      "id": "foda-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DCBC4-1DD8-B71B-0B71D2F2431ADAD5.jpg",
+      "title": "Kitchen",
+      "altText": "Two ladies working in the kitchen",
+      "caption": "Special events bring back the smells of an 1800s Kitchen",
+      "credit": "NPS Photo / Dana Jones",
+      "isPrimary": false
+    },
+    {
+      "id": "foda-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DD030-1DD8-B71B-0BCFFA4A826F038F.jpg",
+      "title": "Cavalry",
+      "altText": "Soldier mounted on his horse",
+      "caption": "The U.S. Cavalry was utilized at Fort Davis for most of its existence. Here a soldier shows off the uniform and equipment of the 1800s.",
+      "credit": "NPS Photo / Max Kandler",
+      "isPrimary": false
+    },
+    {
+      "id": "foda-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DD1B0-1DD8-B71B-0B75AFDB9100B067.jpg",
+      "title": "Fall Colors",
+      "altText": "Building and trees at Fort Davis during the fall with yellow leaves.",
+      "caption": "This sky island habitat is known for its dramatic season changes. Fall brings the end of our rainy season allowing the bright yellow Cottonwoods to shine. In spring /summer waving grasses and wildflowers show off their vivid colors once again.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/foda/index.htm",
+    "directions": "http://www.nps.gov/foda/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Forts",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Cavalry",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Cats (wild)",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Geology",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "National Historic Site",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

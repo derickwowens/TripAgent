@@ -1,0 +1,162 @@
+{
+  "id": "np-elca",
+  "name": "El Camino Real de Tierra Adentro National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Travel along El Camino Real de Tierra Adentro National Historic Trail to experience and learn from a complicated legacy of 300 years of conflict, cooperation, and cultural exchange between a variety of empires—European and non-European alike.",
+  "shortDescription": "Travel along El Camino Real de Tierra Adentro National Historic Trail to experience and learn from a complicated legacy of 300 years of conflict, cooperation, and cultural exchange between a variety o...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 33.7990672546,
+    "longitude": -106.866386195
+  },
+  "nationalParkInfo": {
+    "parkCode": "elca",
+    "npsId": "2EE542B6-3806-4E9C-ABBD-C4CC4C7E97C7",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/elca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/elca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/elca/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7, & 8",
+      "line2": "El Camino Real de Tierra Adentro National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "El Camino Real de Tierra Adentro National Historic Trail is not a clearly marked hiking trail. Instead it is a route that passes through communities, urban areas, public lands, and Wilderness. The route travels across a variety of land ownerships and management, including private land. Beyond the United States, the trail reaches Mexico City, Mexico. Each location varies as to the hours of operations and access. Please contact individual trail sites before your visit for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of El Camino Real de Tierra Adentro National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: weather.gov"
+  },
+  "images": [
+    {
+      "id": "elca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A6685-1DD8-B71B-0B18BFB9BABA6FCD.jpg",
+      "title": "Kuaua Ruin in Coronado Historic Site, Bernalillo, New Mexico",
+      "altText": "tan-colored pueblo Indian ruins with blue sky and three people",
+      "caption": "The Tiwa pueblo of Kuaua lies in ruin at Coronado Historic Site. The site includes a rebuilt kiva that displays reproductions of original murals adorning its walls. Be sure to go to the visitor center where some of the original murals are displayed.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "elca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A67D0-1DD8-B71B-0BA03160D7947352.jpg",
+      "title": "El Rancho de las Golondrinas, La Cienega, New Mexico",
+      "altText": "adobe buildings including two beehive-looking ovens with people in a courtyard",
+      "caption": "El Rancho de las Golondrinas was a historic paraje (stopping place) along El Camino Real. “The ranch of the swallows” dates from the early 1700s, and is now being used as a living history museum.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "elca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A6943-1DD8-B71B-0B828BE24AE2C304.jpg",
+      "title": "Jornada del Muerto, County Roads A013 & E070, Sierra & Doña Ana Counties, New Mexico",
+      "altText": "shrubby desert scene with people walking under a cloud-filled sky",
+      "caption": "Walk in the footsteps of settlers from the 1600s who had to walk along this dreaded yet unavoidable section of El Camino Real: Jornada del Muerto or Dead Man’s Journey.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "elca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A6A93-1DD8-B71B-0B25C2DE5079660E.jpg",
+      "title": "Fort Selden Historic Site, Radium Springs, New Mexico",
+      "altText": "fort ruins in the sunlight with cottonwood trees on the left",
+      "caption": "Fort Selden was built near the town of Las Cruces in 1865 and housed troops for 25 years. The visitor center offers exhibits on frontier military life during the fort’s heyday and the grounds are self-guided.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "elca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A6C65-1DD8-B71B-0B2FFD7FF839895F.jpg",
+      "title": "Presidio Chapel of San Elizario, Mission Trail, El Paso, Texas",
+      "altText": "large white chapel under blue sky",
+      "caption": "Spanish troops built a presidio (fort) and chapel at this site during the 1780s to protect settlements in the lower Río Grande Valley downstream from El Paso, Texas.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/elca/index.htm",
+    "directions": "http://www.nps.gov/elca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Forts",
+    "Religion and Spirituality",
+    "Missions",
+    "Wars and Conflicts",
+    "Mexican War",
+    "Trails",
+    "National Historic Trail",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

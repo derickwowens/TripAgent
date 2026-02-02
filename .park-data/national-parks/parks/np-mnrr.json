@@ -1,0 +1,340 @@
+{
+  "id": "np-mnrr",
+  "name": "Missouri National Recreational River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "SD",
+  "stateName": "South Dakota",
+  "region": "midwest",
+  "description": "Imagine a 100-mile stretch of North America's longest river, a vestige of the untamed American West. The Missouri National Recreational River is where imagination meets reality. Two free flowing stretches of the Missouri make up the National Park. Relive the past by exploring the wild, untamed and mighty river that continues to flow as nature intended.",
+  "shortDescription": "Imagine a 100-mile stretch of North America's longest river, a vestige of the untamed American West. The Missouri National Recreational River is where imagination meets reality. Two free flowing stret...",
+  "designation": "National Recreational River",
+  "coordinates": {
+    "latitude": 42.7882189,
+    "longitude": -97.59077822
+  },
+  "nationalParkInfo": {
+    "parkCode": "mnrr",
+    "npsId": "D43C7439-5C0B-4F4F-9D5B-65080F13AD28",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mnrr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/mnrr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "605-665-0209",
+    "email": "mnrr_visitorinfo@nps.gov",
+    "website": "https://www.nps.gov/mnrr/index.htm",
+    "address": {
+      "line1": "508 East 2nd Street",
+      "line2": "",
+      "city": "Yankton",
+      "state": "SD",
+      "postalCode": "57078"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The entire park includes the 39-Mile District and 59-Mile District. Both districts are open 24 hours, seven days a week."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Rapid weather changes are common along the Missouri National Recreational River corridor. Variations from season to season and from year to year are great. Characteristics of the climate are hot summers and cold winters. Sunshine is abundant, particularly in the summer months. Average annual rainfall is 25 inches. Thunderstorms can be dangerous and visitors should be prepared for them, especially from June until late August. Winter snowfall averages 34 inches annually."
+  },
+  "images": [
+    {
+      "id": "mnrr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8375D2-1DD8-B71B-0B28DF0D3992CFAE.jpg",
+      "title": "Aerial of Missouri River",
+      "altText": "Aerial view of the Missouri River and surrounding landscape.",
+      "caption": "Aerial view of the Missouri River and surrounding landscape.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "mnrr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8377AB-1DD8-B71B-0B6C5CE67B33725D.jpg",
+      "title": "Remains of a sunken steamboat in Missouri River.",
+      "altText": "Sunken remains of the North Alabama steamboat appears only when water is low.",
+      "caption": "Sunken remains of the North Alabama steamboat appears only when water is low.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mnrr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83791A-1DD8-B71B-0B9235DF1A05A7B4.jpg",
+      "title": "View of Missouri River",
+      "altText": "Scenic view of Missouri River on a sunny day",
+      "caption": "Scenic view of Missouri River on a sunny day",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mnrr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C837A4B-1DD8-B71B-0BD5921C754C72FF.jpg",
+      "title": "Park trailer",
+      "altText": "Park educational trailer",
+      "caption": "Educational trailer with painted pictures",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "mnrr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/176CC10B-9149-BA14-EBA7934F1BDCA490.jpg",
+      "title": "All alone with my canoe",
+      "altText": "A canoe loaded with gear sits quietly on a sandy river bank with blue sky above.",
+      "caption": "Get into nature by paddling the Missouri River.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "586B4949-8D1B-4F03-8F6D-D1FCFE01AEF4",
+      "name": "Pool Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mnrr/index.htm",
+    "directions": "http://www.nps.gov/mnrr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Dams",
+    "Engineering",
+    "Explorers and Expeditions",
+    "Forts",
+    "Maritime",
+    "Ships and Shipwrecks",
+    "Migrations",
+    "Military",
+    "Infantry and Militia",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Transportation",
+    "Bridges",
+    "Roads, Routes and Highways",
+    "Tragic Events",
+    "Floods",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Fire",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Buttes",
+    "Scenic Views",
+    "Trails",
+    "Water Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Watersheds",
+    "National Recreational River",
+    "SD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

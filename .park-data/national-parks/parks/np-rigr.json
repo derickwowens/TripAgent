@@ -1,0 +1,204 @@
+{
+  "id": "np-rigr",
+  "name": "Rio Grande Wild & Scenic River",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "For 196 miles, this free-flowing stretch of the Rio Grande winds its way through desert expanses and stunning canyons of stratified rock. For the well prepared, an extended float trip provides opportunities to explore the most remote corner of Texas and experience the ultimate in solitude, self-reliance, and immersion in natural soundscapes.",
+  "shortDescription": "For 196 miles, this free-flowing stretch of the Rio Grande winds its way through desert expanses and stunning canyons of stratified rock. For the well prepared, an extended float trip provides opportu...",
+  "designation": "Wild & Scenic River",
+  "coordinates": {
+    "latitude": 29.881,
+    "longitude": -102.3188
+  },
+  "nationalParkInfo": {
+    "parkCode": "rigr",
+    "npsId": "E1A636E5-E7AC-4B71-93DE-F1408F65C458",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/rigr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bibe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(432) 477-2251",
+    "email": "bibe_info@nps.gov",
+    "website": "https://www.nps.gov/rigr/index.htm",
+    "address": {
+      "line1": "Rio Grande Wild & Scenic River",
+      "line2": "1 Panther Junction",
+      "city": "Big Bend National Park",
+      "state": "TX",
+      "postalCode": "79834"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Rio Grande Wild & Scenic River is open 24 hours a day, 365 days per year."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Entrance Fee to Big Bend National Park.\nThis fee includes all occupants of a private, non-commercial vehicle and is valid for 7 days",
+      "cost": "30.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Variable -- February-April: High temperatures range from mid-70sF (23C) to low-90sF (32C) with lows from the mid-30sF (2C) to mid-50sF (12C). Cold fronts can bring freezing weather with rain or snow. -- May-August: Temperatures are hot and the weather can be stormy. Temperatures over 100F (more than 38C) degrees. -- September-January:Temperatures are cooler. The weather can turn cold any time during these months."
+  },
+  "images": [
+    {
+      "id": "rigr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7F2119C6-9098-7131-FCBAC74787E4E2DB.jpg",
+      "title": "Canoeing Boquillas Canyon",
+      "altText": "Canoeing Boquillas Canyon",
+      "caption": "Floating through Boquillas Canon",
+      "credit": "NPS / G. Fisseler",
+      "isPrimary": true
+    },
+    {
+      "id": "rigr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7F000DA5-F0C4-D048-1EF137BD2F80CB3C.jpg",
+      "title": "Boquillas Canyon",
+      "altText": "View in Boquillas Canyon",
+      "caption": "A float through the canyons can be a magical experience.",
+      "credit": "NPS / G. Fisseler",
+      "isPrimary": false
+    },
+    {
+      "id": "rigr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C842FEA-1DD8-B71B-0B9996D58060FC66.jpg",
+      "title": "Rio Grande Vista and Crown Mountain",
+      "altText": "A desert river with a backdrop of mountains in the distance.",
+      "caption": "Rio Grande Vista and Crown Mountain",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "rigr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84314F-1DD8-B71B-0B9CE8BB06320216.jpg",
+      "title": "Mariscal Canyon",
+      "altText": "People in two canoes paddle on a river threading through high canyon walls.",
+      "caption": "Canoeing Mariscal Canyon",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "rigr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C842B92-1DD8-B71B-0BCA4078E79F2F65.jpg",
+      "title": "Rio Grande Vista",
+      "altText": "A desert river with a tree lined bank in the background.",
+      "caption": "Rio Grande Vista",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "rigr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C842887-1DD8-B71B-0BB8F65C9EBB928E.jpg",
+      "title": "Rio Grande",
+      "altText": "A desert river with a rugged landscape of cliff faces and hills in the background.",
+      "caption": "The Rio Grande seen from the Santa Elena River Access.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/rigr/index.htm",
+    "directions": "http://www.nps.gov/bibe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Geology",
+    "Geothermal",
+    "Hot Springs",
+    "Night Sky",
+    "River and Riparian",
+    "Scenic Views",
+    "Wilderness",
+    "Wild & Scenic River",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "id": "np-trte",
+  "name": "Trail Of Tears National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "Remember and commemorate the survival of the Cherokee people, forcefully removed from their homelands in Georgia, Alabama, and Tennessee to live in Indian Territory, now Oklahoma. They traveled by foot, horse, wagon, or steamboat in 1838-1839.",
+  "shortDescription": "Remember and commemorate the survival of the Cherokee people, forcefully removed from their homelands in Georgia, Alabama, and Tennessee to live in Indian Territory, now Oklahoma. They traveled by foo...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 36.0530021046,
+    "longitude": -89.6761041963
+  },
+  "nationalParkInfo": {
+    "parkCode": "trte",
+    "npsId": "07A92FEB-682E-4895-8070-3323BC6F9EF7",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/trte/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/trte/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "N/A",
+    "email": "ntir_information@nps.gov",
+    "website": "https://www.nps.gov/trte/index.htm",
+    "address": {
+      "line1": "National Trails Office Regions 6, 7, & 8",
+      "line2": "Trail of Tears National Historic Trail",
+      "city": "Santa Fe",
+      "state": "NM",
+      "postalCode": "87505"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "OPERATING HOURS VARY FROM SITE TO SITE. There are many historic sites, museums, and parks (federal, state, and local) along the Trail of Tears in Tennessee, North Carolina, Georgia, Alabama, Kentucky, Illinois, Arkansas, Missouri, or Oklahoma for you to visit. Please contact individual sites for more information by going to Plan Your Visit and selecting Places To Go or Passport Program, where sites are listed by state, and there is an interactive map to search for sites."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Due to the length of the Trail of Tears National Historic Trail, be sure to consult local weather sources for the region you'll be visiting. Check out the forecast with the National Weather Service and search for the area you'd like to visit: www.weather.gov"
+  },
+  "images": [
+    {
+      "id": "trte-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E670B-1DD8-B71B-0B25C5CD76BF4A04.jpg",
+      "title": "Chieftain's Museum, Rome, Georgia",
+      "altText": "large white house, green lawn, two trees in front",
+      "caption": "The museum tells the story of Major Ridge, the influential Ridge family including prominent son John Ridge, Cherokee history, and the Trail of Tears, as well as subsequent history of the home and region.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "trte-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E6990-1DD8-B71B-0B75FFAF17A4B2A8.jpg",
+      "title": "Brown's Ferry Tavern, Chattanooga, Tennessee",
+      "altText": "structure in the background with large chimney on the end; signs saying Brown's Ferry Tavern",
+      "caption": "Cherokee leader John Brown, who owned 640 acres in this area, ordered the construction of Browns Ferry Tavern in 1803. In 1838, the road running past this structure was the route by which several Cherokee detachments were removed to present-day Oklahoma.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "trte-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E6AE0-1DD8-B71B-0BD3C7623B4A0272.jpg",
+      "title": "Mantle Rock Preserve, Joy, Kentucky",
+      "altText": "sunlight coming through trees with green leaves",
+      "caption": "Thousands of Cherokee camped for weeks along the main (northern) route, near Mantle Rock, during the winter of 1838-39 as they waited for ice conditions in the Ohio River to allow a safe crossing.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "trte-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E6C3A-1DD8-B71B-0B1C7619213A627A.jpg",
+      "title": "Cherokee Retracement at Pea Ridge National Military Park, Garfield, Arkansas",
+      "altText": "dozens of people walk a section of the Trail of Tears, winter scene, trees with no leaves",
+      "caption": "The Pea Ridge National Military Park encompasses 4,300 acres and features a visitor center, museum, self-guided tours, reconstructed Elkhorn Tavern, and a retracement trail along a 2.5-mile original route segment of the Trail of Tears.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "trte-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E6EDB-1DD8-B71B-0BE8B4E27DEA21BB.jpg",
+      "title": "Grave Stone of William Adair, Stilwell, Oklahoma",
+      "altText": "gravestone with words etched, green grass",
+      "caption": "When the Cherokee arrived at their prescribed disbandment depot in Oklahoma, settlements sprang up nearby. There was a depot at the Adair's farm near present-day Stilwell, Oklahoma.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "trte-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E6D6E-1DD8-B71B-0BF2FB679C481F1A.jpg",
+      "title": "Crabb Abbott Farm, Grantsburg, Illinois",
+      "altText": "Two people walk a remnant of the Trail of Tears. Spring setting with green leafed trees.",
+      "caption": "Crabb Abbott Farm has segments of the Northern Route, including the rock crossing and ford of Sugar Creek. These segments are contiguous with trail segments on the adjacent Shawnee National Forest.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/trte/index.htm",
+    "directions": "http://www.nps.gov/trte/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Plantations",
+    "Forts",
+    "Native American Heritage",
+    "Schools and Education",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Forced Marches",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Trails",
+    "National Historic Trail",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

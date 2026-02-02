@@ -1,0 +1,194 @@
+{
+  "id": "np-adam",
+  "name": "Adams National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "From the sweet little farm at the foot of Penn’s Hill to the gentleman’s country estate at Peace field, Adams National Historical Park is the story of “heroes, statesmen, philosophers…and learned women” whose ideas and actions helped to transform thirteen disparate colonies into one united nation.",
+  "shortDescription": "From the sweet little farm at the foot of Penn’s Hill to the gentleman’s country estate at Peace field, Adams National Historical Park is the story of “heroes, statesmen, philosophers…and learned wome...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 42.2553961,
+    "longitude": -71.01160356
+  },
+  "nationalParkInfo": {
+    "parkCode": "adam",
+    "npsId": "E4C7784E-66A0-4D44-87D0-3E072F5FEF43",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/adam/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/adam/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "617-770-1175",
+    "email": "ADAM_Visitor_Center@nps.gov",
+    "website": "https://www.nps.gov/adam/index.htm",
+    "address": {
+      "line1": "1250 Hancock St.",
+      "line2": "",
+      "city": "Quincy",
+      "state": "MA",
+      "postalCode": "02169"
+    }
+  },
+  "operatingHours": {
+    "monday": "11:00AM - 4:00PM",
+    "tuesday": "11:00AM - 4:00PM",
+    "wednesday": "11:00AM - 4:00PM",
+    "thursday": "11:00AM - 4:00PM",
+    "friday": "11:00AM - 4:00PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "The Visitor Center is open 11:00 am to 4:00 pm Mondays through Fridays. The Visitor Center is closed Saturdays and Sundays. The Visitor Center is closed on wintertime federal holidays, except for Presidents Day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entrance into the historic homes at Adams National Historical Park requires an entrance pass. Entrance passes cost $15 per person. Children under the age of 16 are free. If you have an America the Beautiful Interagency Pass, you do not need to pay the entrance fee. Guided tours must be reserved in-person on the day of your visit at the park’s visitor center.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Be prepared for hot, humid weather during the summer months. The historic homes are not air conditioned. While the visitor center remains open all year, the historic homes are generally closed from approximately November 1 through April 30. Winters in New England often feature low temperatures and snowy/icy conditions. Please exercise caution when visiting the park. The Visitor Center may close during inclement weather."
+  },
+  "images": [
+    {
+      "id": "adam-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/889E1412-09CD-086C-0BA3855C6E9FF9D3.jpg",
+      "title": "The John and John Quincy Adams Birthplaces",
+      "altText": "The Birthplaces of Presidents John Adams (right) and John Quincy Adams (left)",
+      "caption": "The Birthplaces of John and John Quincy Adams sit right next to each other on Franklin Street.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "adam-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8924E149-9BB4-37D2-710F245F8D1345FD.jpg",
+      "title": "The Birthplace of John Adams",
+      "altText": "A New England \"salt-box\" style home with wooden siding and trim.",
+      "caption": "The house where John Adams was born in 1735.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "adam-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8942542D-B88C-8E75-525D5D8E60126209.jpg",
+      "title": "The Birthplace of John Quincy Adams",
+      "altText": "A New England \"salt-box\" style house with light gray siding and a beige door.",
+      "caption": "The house where President John Quincy Adams was born in 1767.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "adam-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C780E-1DD8-B71B-0B18B8DB9F39704F.jpg",
+      "title": "Old House at Peace field",
+      "altText": "A view of Old House at Peace field",
+      "caption": "Old House at Peace field, where four generations of the Adams family lived from 1788 to 1927.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "adam-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7945-1DD8-B71B-0BE14B48DD78B777.jpg",
+      "title": "The Paneled Room",
+      "altText": "The Paneled Room located inside Old House at Peace field.",
+      "caption": "The Paneled Room greets everyone who enters Old House at Peace field.",
+      "credit": "NPS Photo / Betty Brown",
+      "isPrimary": false
+    },
+    {
+      "id": "adam-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7A77-1DD8-B71B-0BDA92321AD899C5.jpg",
+      "title": "The Stone Library",
+      "altText": "The Stone Library located outside Old House at Peace field.",
+      "caption": "The Stone Library houses up to 14,000 books belonging to the Adams family.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "adam-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B40B7435-9820-F37A-541DCBFC93C5BBDF.jpg",
+      "title": "Inside the Stone Library",
+      "altText": "A dark room with tiled floor, filled with chairs and desks, with books lining the walls.",
+      "caption": "A view into the Stone Library",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "adam-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C7D4E-1DD8-B71B-0B48B5CDE41703D7.jpg",
+      "title": "The Gardens Located at Old House at Peace field",
+      "altText": "The gardens located at Old House at Peace field.",
+      "caption": "The gardens located by Old House at Peace field bloom in every color you can imagine.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/adam/index.htm",
+    "directions": "http://www.nps.gov/adam/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Birthplace",
+    "Colonization and Settlement",
+    "Presidents",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Civil War",
+    "Women's History",
+    "National Historical Park",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.831Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

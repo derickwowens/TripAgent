@@ -1,0 +1,215 @@
+{
+  "id": "np-apco",
+  "name": "Appomattox Court House National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "On April 9, 1865, the surrender of the Army of Northern Virginia in the McLean House in the village of Appomattox Court House, Virginia signaled the effective end of the nation's largest war. Questions remained: could the nation reunite as one? How would emancipation be realized?",
+  "shortDescription": "On April 9, 1865, the surrender of the Army of Northern Virginia in the McLean House in the village of Appomattox Court House, Virginia signaled the effective end of the nation's largest war. Question...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 37.38022164,
+    "longitude": -78.79856982
+  },
+  "nationalParkInfo": {
+    "parkCode": "apco",
+    "npsId": "16CCCC56-1DC1-47D6-AE91-E939955BFC53",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/apco/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/apco/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4346948904",
+    "email": "APCO_SocialMedia@nps.gov",
+    "website": "https://www.nps.gov/apco/index.htm",
+    "address": {
+      "line1": "Appomattox Court House National Historical Park",
+      "line2": "239 George Peers Drive",
+      "city": "Appomattox",
+      "state": "VA",
+      "postalCode": "24522"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The park is open daily from 9-5, with the exception of certain holidays: Thanksgiving Day, December 25, and January 1. The park may have reduced hours (9-3) on December 24."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park may close due to emergency weather conditions (typically snow or ice). For updated information about possible closure or altered hours due to weather, please call 434-352-8987 ext. 245."
+  },
+  "images": [
+    {
+      "id": "apco-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85DA69-1DD8-B71B-0B56D1B9F92263B5.jpg",
+      "title": "The McLean House",
+      "altText": "This is the home where Gen. Lee surrendered to Gen. Grant on April 9, 1865",
+      "caption": "This is the home where Gen. Lee surrendered to Gen. Grant on April 9, 1865",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "apco-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85DB5F-1DD8-B71B-0BCC30E7C7BCB07D.jpg",
+      "title": "The McLean House during the 150th Anniversary",
+      "altText": "The McLean House during the 150th Anniversary with luminaries along the Stage Road.",
+      "caption": "The McLean House during the 150th Anniversary with luminaries along the Stage Road.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "apco-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85DC98-1DD8-B71B-0BB7517070BE81BD.jpg",
+      "title": "The village of Appomattox Court House",
+      "altText": "Aerial view of the village of Appomattox Court House taken in 2014.",
+      "caption": "Aerial view of the village of Appomattox Court House taken in 2014.",
+      "credit": "Photo by Cameron Davidson (permission for NPS use)",
+      "isPrimary": false
+    },
+    {
+      "id": "apco-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85DD8D-1DD8-B71B-0B589A1B80E04E4A.jpg",
+      "title": "Living History at Appomattox Court House NHP",
+      "altText": "Living History at Appomattox Court House NHP",
+      "caption": "Living History at Appomattox Court House NHP",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/apco/index.htm",
+    "directions": "http://www.nps.gov/apco/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Ruins",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Incarceration",
+    "Jails and Prisons",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Music",
+    "Native American Heritage",
+    "Reconstruction",
+    "Social Movements",
+    "Abolition Movement",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Grasslands",
+    "Scenic Views",
+    "Trails",
+    "National Historical Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

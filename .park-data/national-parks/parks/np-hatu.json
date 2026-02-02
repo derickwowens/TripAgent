@@ -1,0 +1,121 @@
+{
+  "id": "np-hatu",
+  "name": "Harriet Tubman Underground Railroad National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Harriet Tubman was a deeply spiritual woman who lived her ideals and dedicated her life to freedom. She is the Underground Railroad’s best known conductor and before the Civil War repeatedly risked her life to guide 70 enslaved people north to new lives of freedom. This new national historical park preserves the same landscapes that Tubman used to carry herself and others away from slavery.",
+  "shortDescription": "Harriet Tubman was a deeply spiritual woman who lived her ideals and dedicated her life to freedom. She is the Underground Railroad’s best known conductor and before the Civil War repeatedly risked he...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 38.4548643511,
+    "longitude": -76.1373451376
+  },
+  "nationalParkInfo": {
+    "parkCode": "hatu",
+    "npsId": "380E7DFB-6F37-499F-8996-356EC5F0DDE5",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/hatu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/hatu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "410-221-2290",
+    "email": "hatu_information@nps.gov",
+    "website": "https://www.nps.gov/hatu/index.htm",
+    "address": {
+      "line1": "4068 Golden Hill Road",
+      "line2": "",
+      "city": "Church Creek",
+      "state": "MD",
+      "postalCode": "21622"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "The National Park Service jointly operates the visitor center facility for the public in partnership with the Maryland Park Service."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Cambridge, Maryland generally experiences warm, humid summers and mild winters. Average summertime highs are in the 80s, with evening lows in the 60s. Winter temperatures usually range from the 30s to the 50s. Spring and fall are variable, but tend to be in the 50s and 60s. Precipitation is spread throughout the year. For more information, see: http://forecast.weather.gov/MapClick.php?lat=38.37100441991913&lon=-76.13347536809295#.WCNeYWorLIU"
+  },
+  "images": [
+    {
+      "id": "hatu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/351D33D4-1DD8-B71B-0B2D84861E200164.jpg",
+      "title": "Harriet Tubman Underground Railroad Site",
+      "altText": "Girl stands on a bridge overlooking the marshlands.",
+      "caption": "Harriet Tubman Underground Railroad Site",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/hatu/index.htm",
+    "directions": "http://www.nps.gov/hatu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Enslavement",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Religious Freedom",
+    "Voting Rights and Suffrage",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "National Historical Park",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

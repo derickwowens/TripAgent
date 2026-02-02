@@ -1,0 +1,153 @@
+{
+  "id": "np-euon",
+  "name": "Eugene O'Neill National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "America's only Nobel Prize-winning playwright, Eugene O'Neill, chose Northern California as his sanctuary at the pinnacle of his writing career. Secluded from the outside world within the serene walls of his Tao House, O'Neill crafted his final and most memorable masterpieces: The Iceman Cometh, Long Day's Journey Into Night, and A Moon for the Misbegotten.",
+  "shortDescription": "America's only Nobel Prize-winning playwright, Eugene O'Neill, chose Northern California as his sanctuary at the pinnacle of his writing career. Secluded from the outside world within the serene walls...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 37.82604456,
+    "longitude": -122.0271566
+  },
+  "nationalParkInfo": {
+    "parkCode": "euon",
+    "npsId": "353241CC-4C4A-4F9E-A928-EFDCE2C6E29A",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/euon/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/euon/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "925-228-8860",
+    "email": "euon_general_info@nps.gov",
+    "website": "https://www.nps.gov/euon/index.htm",
+    "address": {
+      "line1": "205 Railroad Avenue",
+      "line2": "",
+      "city": "Danville",
+      "state": "CA",
+      "postalCode": "94526"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:30PM",
+    "thursday": "10:00AM - 4:30PM",
+    "friday": "10:00AM - 4:30PM",
+    "saturday": "10:00AM - 4:30PM",
+    "sunday": "10:00AM - 4:30PM",
+    "description": "Eugene O'Neill National Historic Site must be accessed through a private, gated road owned by a community of neighboring residents. In order to experience Eugene O'Neill National Historic Site, visitors need to make reservations and will be driven by a park shuttle from the Town of Danville, California. You'll receive a tour of Eugene O'Neill's \"Tao House\" and have time to explore the grounds before returning to Danville on the shuttle."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Mediterranean climate of Danville features hot, dry summers with lower temperatures near 60º F and upper temperatures near 100º F. The heat gives way to cool, rainy winters with lows near 45º F and highs near 75º F. Fall and spring can bring rain and temperatures from 55-80º F."
+  },
+  "images": [
+    {
+      "id": "euon-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0334-1DD8-B71B-0B8C905A1ABBFE6A.jpg",
+      "title": "Eugene O'Neill Home in Danville, California",
+      "altText": "Eugene O'Neill Home in Danville, California",
+      "caption": "Eugene O'Neill Home in Danville, California",
+      "credit": "NPS Photo/Luther Bailey",
+      "isPrimary": true
+    },
+    {
+      "id": "euon-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7364830-D782-009D-8315AD90F83E6295.jpg",
+      "title": "Old Barn",
+      "altText": "An old barn and an historic wheeled wagon sit in front of a tree-lined hill.",
+      "caption": "The \"Old Barn\", a part of the Eugene O'Neill National Historic Site",
+      "credit": "NPS/Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "euon-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F74F52B7-E815-73A5-96DA655EBF7F519F.jpg",
+      "title": "Eugene O'Neill National Historic Site",
+      "altText": "A tree is seen sitting against a small mountain background. A fence runs along the right side.",
+      "caption": "Mountain background as seen from the park.",
+      "credit": "NPS/Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "euon-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F76C27C3-E4FE-C61A-C59AE9E48C3A714B.jpg",
+      "title": "Eugene O'Neill National Historic Site",
+      "altText": "A sign with the park name is sitting in a field of trees.",
+      "caption": "The Eugene O'Neill NHS park sign.",
+      "credit": "NPS/Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "euon-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F78E744F-0391-68F7-BAA5B9D3EE9569E4.jpg",
+      "title": "Eugene O'Neill",
+      "altText": "Eugene O'Neill, and older man, poses outside against a hilly background.",
+      "caption": "Historic image of Eugene O'Neill at the Tao House property.",
+      "credit": "NPS Collection.",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/euon/index.htm",
+    "directions": "http://www.nps.gov/euon/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Scenic Views",
+    "National Historic Site",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

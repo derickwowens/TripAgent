@@ -1,0 +1,136 @@
+{
+  "id": "np-nebe",
+  "name": "New Bedford Whaling National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "\"The town itself is perhaps the dearest place to live in, in all New England..nowhere in all America will you find more patrician-like houses, parks and gardens more opulent, than in New Bedford…all these brave houses and flowery gardens came from the Atlantic, Pacific, and Indian oceans. One and all, they were harpooned and dragged up hither from the bottom of the sea.\" H. Melville, \"Moby-Dick\"",
+  "shortDescription": "\"The town itself is perhaps the dearest place to live in, in all New England..nowhere in all America will you find more patrician-like houses, parks and gardens more opulent, than in New Bedford…all t...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 41.63540552,
+    "longitude": -70.92322321
+  },
+  "nationalParkInfo": {
+    "parkCode": "nebe",
+    "npsId": "848DFACA-B486-4BC4-AD71-C834F7713793",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/nebe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/nebe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "508-996-4095",
+    "email": "nebe_info@nps.gov",
+    "website": "https://www.nps.gov/nebe/index.htm",
+    "address": {
+      "line1": "33 William Street",
+      "line2": "",
+      "city": "New Bedford",
+      "state": "MA",
+      "postalCode": "02740"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Welcome to New Bedford Whaling National Historical Park! The Visitor Center and Garden provide a distinctive urban park experience. Operating hours vary seasonally and may differ from those of our local partners/businesses within the park boundary and throughout the city. Please refer to the Visitor Center hours listed below for access and note that park grounds remain open year-round.\n\nHoliday Closures: Thanksgiving Day, Christmas Eve, Christmas Day, and New Year’s Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "In New Bedford, Massachusetts, you’ll experience all four seasons in their full glory! Summers are warm and pleasant, with temperatures ranging from 56°F to 83°F, perfect for enjoying the coastal breeze. As the year turns, fall brings crisp, cool weather, with temperatures between 30°F and 70°F, offering the ideal backdrop for stunning autumn foliage. Winters are chilly, with temperatures ranging from 20°F to 45°F, occasionally bringing snow to the scenic city. By spring, the weather begins to warm up again"
+  },
+  "images": [
+    {
+      "id": "nebe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B58A6-1DD8-B71B-0BECE805AD9FBFDA.png",
+      "title": "National Park Visitor Center",
+      "altText": "New Bedford Whaling National Historical Park Visitor Center on a bright fall day.",
+      "caption": "New Bedford Whaling National Historical Park Visitor Center on a bright fall day.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "nebe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81A662-1DD8-B71B-0B35DB2B943F6F4D.jpg",
+      "title": "Seamen's Bethel and the Mariners' Home",
+      "altText": "Semen's Bethel and the Mariners' Home on a sunny day",
+      "caption": "Semen's Bethel and Mariners' Home",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nebe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/8DE29B7D-ED87-CCC8-1327142E3E0BF84D.jpeg",
+      "title": "Sunset Overlooking New Bedfords Harbor",
+      "altText": "The sun setting over the Acushnet River in New Bedford.",
+      "caption": "The sun setting over the Acushnet River in New Bedford.",
+      "credit": "NPS Photo/Jason Taylor",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/nebe/index.htm",
+    "directions": "https://www.nps.gov/nebe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Arts",
+    "Immigration",
+    "Maritime",
+    "Ships and Shipwrecks",
+    "Native American Heritage",
+    "Pacific Islander Heritage",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Urban America",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Oceans",
+    "Whales",
+    "National Historical Park",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

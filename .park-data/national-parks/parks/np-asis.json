@@ -1,0 +1,314 @@
+{
+  "id": "np-asis",
+  "name": "Assateague Island National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Want to live on the edge? Visit a place recreated each day by ocean wind and waves. Life on Assateague Island has adapted to an existence on the move. Explore sandy beaches, salt marshes, maritime forests and coastal bays. Rest, relax, recreate and enjoy some time on the edge of the continent.",
+  "shortDescription": "Want to live on the edge? Visit a place recreated each day by ocean wind and waves. Life on Assateague Island has adapted to an existence on the move. Explore sandy beaches, salt marshes, maritime for...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 38.05593172,
+    "longitude": -75.24524611
+  },
+  "nationalParkInfo": {
+    "parkCode": "asis",
+    "npsId": "307BE169-345D-472C-8128-20F1D59864A7",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/asis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/asis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4106411441",
+    "email": "asis_information@nps.gov",
+    "website": "https://www.nps.gov/asis/index.htm",
+    "address": {
+      "line1": "7206 National Seashore Lane",
+      "line2": "",
+      "city": "Berlin",
+      "state": "MD",
+      "postalCode": "21811"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Open year round, 24 hours a day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Assateague 7 day vehicle pass.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Assateague per person walk-in or bicycle",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring: Often windy and cool with lows in the 40's and highs in the 60's. Summer: Hot and humid with lows in the 60's and highs in the 80's. Fall: Warm with lows in the 50's and highs in the 70's. Winter: Damp cold and often windy. Lows in the 20's, highs in the 40's."
+  },
+  "images": [
+    {
+      "id": "asis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C809F06-1DD8-B71B-0B39C9B927D2C688.jpg",
+      "title": "Wild Horses on the dunes at Assateague",
+      "altText": "Wild horses on the dunes at Assateague",
+      "caption": "There are few places in the United States where you can view wild horses.Take advantage of the opportunity to view these horses in a natural habitat.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "asis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/78000DE7-F629-A6FF-17A9BD7C9CB1E0D3.jpg",
+      "title": "Wild horses in the salt marshes on Assateague Island",
+      "altText": "Wild horses in the salt marshes on Assateague Island",
+      "caption": "Assateague's wild horses can often be found grazing in salt marshes.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "asis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80A430-1DD8-B71B-0B2576C77ADACF33.jpg",
+      "title": "Tree Swallows Migrating along Assateague",
+      "altText": "Tree Swallows migrating along the beach at Assateague",
+      "caption": "Enormous flocks of migrating tree swallows stop and rest on Assateague beaches in the fall.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "asis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80A720-1DD8-B71B-0BE4A5E0043E8E7C.jpg",
+      "title": "Camping at Assateague",
+      "altText": "tents and vehicle in the oceanside campground dunes",
+      "caption": "Tent camping in the Oceanside campground at Assateague is a great way to relax and recreate at the beach.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "asis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80A86E-1DD8-B71B-0B5EC085EECBB339.jpg",
+      "title": "Waves on Assateague beach",
+      "altText": "waves on Assateague beach with people fishing in the background",
+      "caption": "Visit the shifting sands at the water's edge where thousands of waves change the beach every day.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "80229F2D-972E-40A8-8860-232551CC30D6",
+      "name": "Horse Camping (see also Horse/Stock Use)"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "788C7572-5425-49EF-A0BF-5A0DF93F7542",
+      "name": "Horse Camping (see also camping)"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/asis/index.htm",
+    "directions": "http://www.nps.gov/asis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Fish",
+    "Horses (wild)",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Dunes",
+    "Geology",
+    "Oceans",
+    "Trails",
+    "National Seashore",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

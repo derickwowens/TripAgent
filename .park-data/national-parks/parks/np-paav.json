@@ -1,0 +1,130 @@
+{
+  "id": "np-paav",
+  "name": "Pennsylvania Avenue",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "A street unlike any other. It is known the world over as the heart of the Nation's Capital. America's history has marched, paraded, promenaded, and protested its way along the Avenue.",
+  "shortDescription": "A street unlike any other. It is known the world over as the heart of the Nation's Capital. America's history has marched, paraded, promenaded, and protested its way along the Avenue.",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.89426856,
+    "longitude": -77.02506554
+  },
+  "nationalParkInfo": {
+    "parkCode": "paav",
+    "npsId": "6282ABFA-00EF-413D-BE91-48D993A356F4",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/paav/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/paav/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/paav/index.htm",
+    "address": {
+      "line1": "1 Pennsylvania Ave, NW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20002"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Pennsylvania Avenue National Historic Site is always open to the public (except for special events like Presidential Inaugurations and State Funerals).  There are no Rangers on duty at this site (except for special events). The United States Park Police are on duty 24 hours a day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "paav-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85E1B9-1DD8-B71B-0B20BF6EC58D31AF.jpg",
+      "title": "Pennsylvania Avenue",
+      "altText": "Motorcycles pass by a crowd in a parade.",
+      "caption": "Police motorcycles pass in formation during the 2013 inaugural parade.",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "paav-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F53926B3-F9AE-DB31-B95F6AABACD93F15.jpg",
+      "title": "US Navy Memorial",
+      "altText": "A stone plaza depicting a map of the globe.",
+      "caption": "Explore the plaza, fountains, and artwork of the US Navy Memorial.",
+      "credit": "NPS / Chris Elbich",
+      "isPrimary": false
+    },
+    {
+      "id": "paav-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F57FF431-08E9-AA53-4C8B7163486DB561.jpg",
+      "title": "Major General Winfield Scott Hancock Monument",
+      "altText": "A bronze statue of a man on horse atop a stone plinth.",
+      "caption": "Hancock grew to fame in the Civil War at the Battle of Gettysburg.",
+      "credit": "NPS / Chris Elbich",
+      "isPrimary": false
+    },
+    {
+      "id": "paav-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F5A1F600-AFE3-914E-13F41E3178E72695.jpg",
+      "title": "Freedom Plaza",
+      "altText": "A grass circle in a gray stone plaza with lines resembling streets with the US Capitol in the rear.",
+      "caption": "Freedom Plaza is a large square on Pennsylvania Avenue near the White House.",
+      "credit": "NPS / Chris Elbich",
+      "isPrimary": false
+    },
+    {
+      "id": "paav-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F5BE158B-E17E-538F-D5DD001F77E5265F.jpg",
+      "title": "Stephenson Memorial (Grand Army of the Republic)",
+      "altText": "A rather squat, stone obelisk in a plaza with a bronze figure on the face.",
+      "caption": "The Grand Army of the Republic was a veterans group of nearly half a million men formed from veterans of the Civil War. It was also the first veterans group in the United States.",
+      "credit": "NPS / Chris Elbich",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/paav/index.htm",
+    "directions": "http://www.nps.gov/paav/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Presidents",
+    "Scenic Views",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

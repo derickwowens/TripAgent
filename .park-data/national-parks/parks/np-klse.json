@@ -1,0 +1,154 @@
+{
+  "id": "np-klse",
+  "name": "Klondike Gold Rush - Seattle Unit National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "region": "pacific",
+  "description": "Seattle flourished during and after the Klondike Gold Rush. Merchants supplied people from around the world passing through this port city on their way to a remarkable adventure in the Yukon Territory of Canada. Today, the park is your gateway to learn about the Klondike Gold Rush, explore the area's public lands, and engage with the local community.",
+  "shortDescription": "Seattle flourished during and after the Klondike Gold Rush. Merchants supplied people from around the world passing through this port city on their way to a remarkable adventure in the Yukon Territory...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 47.5993663,
+    "longitude": -122.3319664
+  },
+  "nationalParkInfo": {
+    "parkCode": "klse",
+    "npsId": "0529BC85-CD42-4DA9-AC60-CAD7C40C3525",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/klse/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/klse/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2062204240",
+    "email": "klse_ranger_activities@nps.gov",
+    "website": "https://www.nps.gov/klse/index.htm",
+    "address": {
+      "line1": "319 Second Ave S.",
+      "line2": "",
+      "city": "Seattle",
+      "state": "WA",
+      "postalCode": "98104"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 5:00PM",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "The park is open Wednesday through Sunday 10:00 AM to 5:00 PM."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Warm dry summers from mid-July through mid-Sept, all the rest of the year, mainly rainy and cool."
+  },
+  "images": [
+    {
+      "id": "klse-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/39704550-FCDA-D336-B4FBEE35BD2793C2.jpg",
+      "title": "Cadillac Hotel",
+      "altText": "Large brick wall with glass windows.",
+      "caption": "Cadillac Hotel",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "klse-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C796968-1DD8-B71B-0B0104B6AE13AEC3.jpg",
+      "title": "Interactive exhibits",
+      "altText": "display of old newspapers",
+      "caption": "Two floor of interesting and interactive exhibits and displays",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "klse-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C796C95-1DD8-B71B-0BEB54A28F5DA68C.jpg",
+      "title": "Ton of gold",
+      "altText": "One ton pile of gold bars",
+      "caption": "How many gold bars take to make one ton?",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "klse-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C796A5B-1DD8-B71B-0B3643628CC54556.jpg",
+      "title": "Front door",
+      "altText": "Front entrance to park",
+      "caption": "On the corner of Jackson St and 2nd Ave S",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "klse-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C796D9B-1DD8-B71B-0BB068BB66AFE4A5.jpg",
+      "title": "Miners cabin",
+      "altText": "replica of Stampeders winter cabin",
+      "caption": "Compare a replica Stampeders winter cabin to your home.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "klse-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C796B8C-1DD8-B71B-0BA402D548F12919.jpg",
+      "title": "Big Wheel of Fortune",
+      "altText": "Big wheel to find your fortune",
+      "caption": "Spin the big wheel and see if you would have struck it rich.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/klse/index.htm",
+    "directions": "http://www.nps.gov/klse/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Banking",
+    "Engineering",
+    "Immigration",
+    "Westward Expansion",
+    "The Gold Rush",
+    "National Historical Park",
+    "WA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

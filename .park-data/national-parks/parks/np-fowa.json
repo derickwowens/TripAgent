@@ -1,0 +1,173 @@
+{
+  "id": "np-fowa",
+  "name": "Fort Washington Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Built to defend the river approach to Washington, DC, Fort Washington has stood sentry for over 200 years. As technologies advanced, so did Fort Washington from the brick and stone of the 19th century to the concrete and steel of the 20th century.",
+  "shortDescription": "Built to defend the river approach to Washington, DC, Fort Washington has stood sentry for over 200 years. As technologies advanced, so did Fort Washington from the brick and stone of the 19th century...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.7117,
+    "longitude": -77.0302
+  },
+  "nationalParkInfo": {
+    "parkCode": "fowa",
+    "npsId": "E49B3D75-8676-4417-BFAD-8B3E23B1418B",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fowa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fowa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1555",
+    "email": "fowa_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/fowa/index.htm",
+    "address": {
+      "line1": "13551 Fort Washington Road",
+      "line2": "",
+      "city": "Fort Washington",
+      "state": "MD",
+      "postalCode": "20744"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "Open daily, 6:00 a.m. to 10:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are generally hot and humid, with daytime highs frequently above 90 degrees Fahrenheit and scattered afternoon thunderstorms. Please carry water while participating in physical activity and be prepared to take shelter from lightning. Winters are generally cold, with nighttime lows frequently near freezing and occasional snowfall. Weather during spring and fall is generally moderate, but can change quickly."
+  },
+  "images": [
+    {
+      "id": "fowa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81C3C3-1DD8-B71B-0B04CE7B7C61FE25.jpg",
+      "title": "Entrance to Fort Washington",
+      "altText": "Entrance way into historic Fort Washington",
+      "caption": "Fort Washington Entrance",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fowa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/889ACFDE-1DD8-B71B-0B66D243B767FF29.jpg",
+      "title": "Fort Washington Volunteers firing a cannon",
+      "altText": "Fort Washington Volunteers firing a cannon",
+      "caption": "Fort Washington Guard fires one of the park's cannons.  Demonstrations are presented during the summer months April-October.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fowa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D03ECF9F-BC5B-1CBE-024E95E948F655E2.jpg",
+      "title": "Potomac View",
+      "altText": "a green shoreline with small lighthouse along river at sunset",
+      "caption": "Fort Washington offers great views of the Potomac River, especially at sunset.",
+      "credit": "NPS/JGernatt",
+      "isPrimary": false
+    },
+    {
+      "id": "fowa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D14E0E67-A49D-25E9-F34FF8D00ECDBEDA.jpg",
+      "title": "Picnic Area at Fort Washington Park",
+      "altText": "Picnic tables under a tree",
+      "caption": "Picnic areas available to reserve.",
+      "credit": "NPS Photo/ C LaBarge",
+      "isPrimary": false
+    },
+    {
+      "id": "fowa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/ED77599D-0666-CE86-B7B99CF742DC42B0.jpg",
+      "title": "Cannon crew at Fort Washington",
+      "altText": "Men in blue army uniforms pose by a cannon.",
+      "caption": "Check out the park's cannon demonstrations to experience the sights, sounds, and smells of the past!",
+      "credit": "NPS / Marcey Frutchey",
+      "isPrimary": false
+    },
+    {
+      "id": "fowa-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CFC7D002-CC84-5E06-69AA0D7B0E96EA8B.jpg",
+      "title": "Fort tour",
+      "altText": "A female park ranger talks with a man and woman in a fort",
+      "caption": "A park ranger gives a tour of the fort",
+      "credit": "(NPS/JGernatt)",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fowa/index.htm",
+    "directions": "http://www.nps.gov/fowa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Farming and Agriculture",
+    "Plantations",
+    "Forts",
+    "Military",
+    "US Army",
+    "Wars and Conflicts",
+    "War of 1812",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Women's History",
+    "Park",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

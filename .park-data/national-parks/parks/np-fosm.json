@@ -1,0 +1,208 @@
+{
+  "id": "np-fosm",
+  "name": "Fort Smith National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AR",
+  "stateName": "Arkansas",
+  "region": "southeast",
+  "description": "Explore life on the edge of frontier and Indian Territory through the stories of soldiers, the Trail of Tears, scandals, outlaws, and lawmen who pursued them. From the establishment of the first Fort Smith on December 25, 1817, to the final days of Judge Isaac C. Parker's jurisdiction over Indian Territory in 1896, Fort Smith National Historic Site preserves almost 80 years of history.",
+  "shortDescription": "Explore life on the edge of frontier and Indian Territory through the stories of soldiers, the Trail of Tears, scandals, outlaws, and lawmen who pursued them. From the establishment of the first Fort ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 35.38834746,
+    "longitude": -94.43129079
+  },
+  "nationalParkInfo": {
+    "parkCode": "fosm",
+    "npsId": "54DC5EA0-2635-4154-BBD0-AF0F38D76933",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fosm/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fosm/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4797833961",
+    "email": "fosm_parkinfo@nps.gov",
+    "website": "https://www.nps.gov/fosm/index.htm",
+    "address": {
+      "line1": "301 Parker Ave",
+      "line2": "",
+      "city": "Fort Smith",
+      "state": "AR",
+      "postalCode": "72901"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Gallows and Commissary are open during Visitor Center hours, which may vary by season. Please check Visitor Center Hours for more information.\n\nPark grounds are open daily from 30 minutes before sunrise until 30 minutes after sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Fort Smith weather includes four distinct, yet temperate seasons. Spring and fall are usually mild while late summer is hot and humid. During winter months, temperatures occasionally dip into the teens. Forecast often changes dramatically due to surrounding weather influences. Arkansas's central location allows weather systems from all directions to influence its climate. The area is prone to flash flooding and river flooding in rainy seasons."
+  },
+  "images": [
+    {
+      "id": "fosm-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CB43F-1DD8-B71B-0B6B515EA0FAACF5.jpg",
+      "title": "Visitor Center",
+      "altText": "Aerial view of visitor center",
+      "caption": "The former barracks, courthouse, and jail serves as the park's visitor center",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fosm-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CB246-1DD8-B71B-0B38A1FD49893B2D.jpg",
+      "title": "Commissary and Supply Wagon",
+      "altText": "Commissary and Supply Wagon",
+      "caption": "In 1845, Fort Smith was converted to a supply depot. With this mission, Fort Smith became one of the busiest supply posts in the southwest.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosm-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CB5FD-1DD8-B71B-0B1254B34CAFBAD4.jpg",
+      "title": "Entrance sign",
+      "altText": "Entrance sign in snow",
+      "caption": "Entrance sign along the river trail on a snowy day.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosm-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CB789-1DD8-B71B-0B0D191C7A492FE9.jpg",
+      "title": "Foundations of First Fort Smith",
+      "altText": "Foundations of first Fort Smith and Arkansas River",
+      "caption": "Foundations of the first Fort Smith with Arkansas River in the background",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosm-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CB913-1DD8-B71B-0B97A0CE1059769F.jpg",
+      "title": "Jail Wagon and Gallows",
+      "altText": "Jail Wagon and Gallows",
+      "caption": "A jail wagon like this one was use the transport prisoners to the Federal Courthouse 6th Street.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosm-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CBBE6-1DD8-B71B-0BCE9A7D9CFC330A.jpg",
+      "title": "Supply Wagon and Visitor Center",
+      "altText": "Supply Wagon and visitor center",
+      "caption": "Supply Wagon and visitor center",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosm-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/649D90F1-B5D8-D05C-7DE830DE90DD5CAF.jpg",
+      "title": "Visitor Center in Spring",
+      "altText": "The red brick visitor center framed by two redbud trees with a paved path leading to it.",
+      "caption": "Redbud trees give a lively look to the park in spring.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosm-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/64AE1A99-0CEA-C278-B2002AB65638FC83.jpg",
+      "title": "Visitor Center in Winter",
+      "altText": "A snow-covered Hawthorn bush partially obscures the red brick visitor center in the background.",
+      "caption": "Snow might be present during a winter visit to the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosm-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/64C7ACED-A981-7F97-EEBF1526BDED9C84.jpg",
+      "title": "Officers' Garden",
+      "altText": "Purple and orange flowers bloom in the foreground with the red brick visitor center in the back.",
+      "caption": "The Officers' Garden is maintained with assistance from the River Valley Master Gardeners.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fosm/index.htm",
+    "directions": "http://www.nps.gov/fosm/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Ruins",
+    "Explorers and Expeditions",
+    "Forts",
+    "Incarceration",
+    "Jails and Prisons",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Artillery",
+    "Cavalry",
+    "Schools and Education",
+    "Transportation",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Civil War",
+    "Westward Expansion",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "River and Riparian",
+    "Scenic Views",
+    "National Historic Site",
+    "AR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

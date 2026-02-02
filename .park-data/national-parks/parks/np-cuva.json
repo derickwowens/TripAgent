@@ -1,0 +1,262 @@
+{
+  "id": "np-cuva",
+  "name": "Cuyahoga Valley National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "OH",
+  "stateName": "Ohio",
+  "region": "midwest",
+  "description": "Though a short distance from the urban areas of Cleveland and Akron, Cuyahoga Valley National Park seems worlds away. The park is a refuge for native plants and wildlife, and provides routes of discovery for visitors. The winding Cuyahoga River gives way to deep forests, rolling hills, and open farmlands. Walk or ride the Towpath Trail to follow the historic route of the Ohio & Erie Canal.",
+  "shortDescription": "Though a short distance from the urban areas of Cleveland and Akron, Cuyahoga Valley National Park seems worlds away. The park is a refuge for native plants and wildlife, and provides routes of discov...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 41.26093905,
+    "longitude": -81.57116722
+  },
+  "nationalParkInfo": {
+    "parkCode": "cuva",
+    "npsId": "F4D44F29-3F67-498F-B05B-0783473D2708",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cuva/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cuva/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4407173890",
+    "email": "cuva_info@nps.gov",
+    "website": "https://www.nps.gov/cuva/index.htm",
+    "address": {
+      "line1": "Boston Mill Visitor Center",
+      "line2": "6947 Riverview Road",
+      "city": "Peninsula",
+      "state": "OH",
+      "postalCode": "44264"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Cuyahoga Valley National Park is open everyday, 24 hours a day with the following exceptions: Brandywine Falls, Ledges, Octagon, Kendall Lake, and Kendall Hills close from dusk until morning opening."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring's rain and warming temperatures bring new leaves on trees, blooming wildflowers, and visitors anxious to get out on the trail. Summer temperatures range from 49 to 95 degrees F and can be humid. Dressing in layers is advisable. Fall temperatures can range from low 70s during the day to freezing during the night. Fall foliage often peaks in mid-October. Winter weather conditions can rapidly change due to the lake effect snow from Lake Erie. Temperatures vary from mid-30s to below zero."
+  },
+  "images": [
+    {
+      "id": "cuva-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7425874-D97F-BFD6-36581A36C8A7FF0D.jpg",
+      "title": "Kayakers on the Cuyahoga River",
+      "altText": "People in bright orange kayaks paddle around a bend in a river, past green trees and a rocky shore.",
+      "caption": "A group of kayaks passing a rocky beach on the Cuyahoga River in summer.",
+      "credit": "NPS Photo / D.J. Reiser",
+      "isPrimary": true
+    },
+    {
+      "id": "cuva-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F78A31A2-D7AD-F384-BEFACB28E45B7608.jpg",
+      "title": "The Ledges Overlook in Fall",
+      "altText": "Two people stand at the edge of a gray rock cliff; in the distance, sunset and trees in fall colors.",
+      "caption": "Visitors taking in the view at the Ledges Overlook in fall.",
+      "credit": "NPS Photo / Tim Fenner",
+      "isPrimary": false
+    },
+    {
+      "id": "cuva-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7E15C5E-AF19-2C8B-7BC519C9BBDB06CC.jpg",
+      "title": "The Cuyahoga Valley Scenic Railroad",
+      "altText": "A yellow-and-red engine with number 6777 leads a passenger train along tracks through green trees.",
+      "caption": "CVSR Engine 6777 motors down the tracks.",
+      "credit": "NPS Photo / Robert George",
+      "isPrimary": false
+    },
+    {
+      "id": "cuva-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F82FA0CD-D84B-D131-1A778346760D24FB.jpg",
+      "title": "Brandywine Falls Viewed from the Upper Boardwalk",
+      "altText": "Viewed from above, people stand on a platform near frothy white water falling over a rocky ledge.",
+      "caption": "Brandywine Falls viewed from the upper boardwalk.",
+      "credit": "NPS Photo / D.J. Reiser",
+      "isPrimary": false
+    },
+    {
+      "id": "cuva-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F8E08661-CAAB-331C-C3AD53B479822346.jpg",
+      "title": "Lock 38 and Canal Exploration Center",
+      "altText": "Visitors line the concrete edge of a canal lock filled with water, in front of a white building.",
+      "caption": "Visitors watch a lock demonstration at Canal Exploration Center.",
+      "credit": "NPS Photo / Ted Toth",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cuva/index.htm",
+    "directions": "http://www.nps.gov/cuva/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Colonization and Settlement",
+    "Farming and Agriculture",
+    "Industry",
+    "Mills",
+    "Music",
+    "Native American Heritage",
+    "Transportation",
+    "Canals",
+    "Trains and Railroads",
+    "Tragic Events",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Geology",
+    "Lakes",
+    "River and Riparian",
+    "Trails",
+    "Water Trails",
+    "Watersheds",
+    "Waterfalls",
+    "Wetlands",
+    "National Park",
+    "OH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

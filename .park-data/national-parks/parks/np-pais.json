@@ -1,0 +1,300 @@
+{
+  "id": "np-pais",
+  "name": "Padre Island National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Protecting sixty-six miles of wild coastline along the Gulf of America, the narrow barrier island is home to one of the last intact coastal prairie habitats in the United States. Along the hypersaline Laguna Madre, tidal mud flats teem with life. Native Americans, Spanish explorers and cattle ranchers have walked along its shores. Padre Island National Seashore is waiting to be rediscovered.",
+  "shortDescription": "Protecting sixty-six miles of wild coastline along the Gulf of America, the narrow barrier island is home to one of the last intact coastal prairie habitats in the United States. Along the hypersaline...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 27.05381186,
+    "longitude": -97.35901135
+  },
+  "nationalParkInfo": {
+    "parkCode": "pais",
+    "npsId": "7F7E12D2-E295-41D2-8446-BBF5EEF2F8F2",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pais/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pais/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(361) 949-8068",
+    "email": "pais_visitor_center@nps.gov",
+    "website": "https://www.nps.gov/pais/index.htm",
+    "address": {
+      "line1": "20420 Park Road 22",
+      "line2": "",
+      "city": "Corpus Christi",
+      "state": "TX",
+      "postalCode": "78418"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The park is open 24 hours per day, 365 days per year. However, park facilities are not open 24 hours per day. Hours for the entrance station, where the required entrance pass is sold, vary from day to day. If the entrance station is not open when you arrive, you can proceed into the park. If you are camping, go back to the entrance station the next morning and obtain an entrance pass. If not camping, pay the entrance fee as you leave if the entrance station is open."
+  },
+  "fees": [
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. The entry fees of commercial tours are based upon the total capacity of vehicles that can carry seven or more passengers regardless of the actual number of passengers.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits the passholder and up to 15 passengers in the same private (non-commercial) vehicle. It expires one week from the date of purchase. For private vehicles, this entrance pass is required for overnight camping. \n\nA 1-day entrance pass is available for $10 per vehicle. 1-day entrance passes expire at midnight on the date of purchase and are not valid for overnight camping.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. For motorcyclists, this entrance pass is required for overnight camping.\n\nA 1-day entrance pass is available for $5. 1-day entrance passes expire at midnight on the date of purchase and are not valid for overnight camping.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual bicyclist, hiker, or pedestrian visiting the facility without a private vehicle. An individual pass is not required for visitors aged 15 and under. It expires one week from the date of purchase. For an individual, this entrance pass is required for overnight camping. \n\nA 1-day entrance pass is available for $5 per person. 1-day entrance passes expire at midnight on the date of purchase and are not valid for overnight camping.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial groups traveling in a vehicle with a capacity of 16 persons or more are charged per person. This entrance pass is valid for one week from the date of purchase. Fees will not exceed the commercial fee for the same-sized vehicle. Youth 15 and younger are free. Individuals or families with any valid Annual or Lifetime pass may use their pass for entry.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Padre Island has long, hot summers and short, mild winters. Summers are very humid. Winter can bring strong cold fronts and gale force winds. Most rain falls near the beginning and end of hurricane season (Jun 1 - Nov 30). Average seasonal temperatures (Fahrenheit): Spring - high 70s-80s, low 50s-60s; Summer - high mid-90s, low 70s; Fall - high 70s-80s, low 50s-60s; Winter - high 50s-70s, low 30s-40s. Year-round, average wind speed ranges from 5-25 miles per hour. Relative humidity seldom drops below 70%."
+  },
+  "images": [
+    {
+      "id": "pais-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F771AB23-E1E9-0B08-C7765B725C3EB41F.jpg",
+      "title": "Malaquite Beach",
+      "altText": "Yellow flowers bloom in the dunes along Malaquite Beach.",
+      "caption": "Yellow flowers bloom in the dunes along Malaquite Beach.",
+      "credit": "NPS Photo/ Thomas DiGiovannangelo",
+      "isPrimary": true
+    },
+    {
+      "id": "pais-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7900E38-FCAE-4EEA-D5B1AAA5DBC5E9FD.jpg",
+      "title": "Shells on South Beach",
+      "altText": "Small shell fragments in the sand long the beach.",
+      "caption": "Depending on the conditions, shells can be found along the gulf beaches.",
+      "credit": "NPS Photo/ Sue Wolfe",
+      "isPrimary": false
+    },
+    {
+      "id": "pais-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7A5E23B-DBC0-0796-20E363DA0EEE8E4F.jpg",
+      "title": "Deer in the grasslands",
+      "altText": "Two deer feed on grass. Their antlers have velvet on them.",
+      "caption": "Deer can often be seen foraging in the grasslands.",
+      "credit": "NPS Photo/ Kara Rogers",
+      "isPrimary": false
+    },
+    {
+      "id": "pais-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7C767DB-BA6D-C805-366B872B0E9445E3.jpg",
+      "title": "Kemps hatchlings",
+      "altText": "Several sea turtle hatchlings crawl on the sand towards the Gulf of Mexico.",
+      "caption": "Attending a sea turtle hatchling release is a popular activity in the mid-summer.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pais-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7DE28FF-0C7B-D1A6-A2B59F59E077B2AA.jpg",
+      "title": "Crested Caracara",
+      "altText": "A hawk like bird with an orange beak stands on a fence post.",
+      "caption": "The crested caracara, also known as the Mexican eagle, can be found year-round in the park.",
+      "credit": "NPS Photo/ Sue Wolfe",
+      "isPrimary": false
+    },
+    {
+      "id": "pais-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F7F76985-0C29-9380-1EFF50A68316857B.jpg",
+      "title": "Novillo Line Camp",
+      "altText": "Small wooden structures are seen looking through a wood fence.",
+      "caption": "The historic Novillo Line Camp provides a window into the island's past ranching history.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pais-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F8085A14-E332-1292-E511D3DD9168341E.jpg",
+      "title": "Brown Pelican",
+      "altText": "Several brown pelicans stand on the sand next to the edge of the sea.",
+      "caption": "Brown pelicans can often be seen along the Gulf of Mexico.",
+      "credit": "NPS Photo/ Sue Wolfe",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "DC668D29-297C-4D16-B6F8-89A67D9E19E3",
+      "name": "Auto Off-Roading"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pais/index.htm",
+    "directions": "http://www.nps.gov/pais/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Coasts, Islands and Atolls",
+    "Dunes",
+    "Geology",
+    "Night Sky",
+    "Astronomy",
+    "Unique Species",
+    "Endangered",
+    "National Seashore",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

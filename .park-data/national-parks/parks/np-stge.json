@@ -1,0 +1,165 @@
+{
+  "id": "np-stge",
+  "name": "Ste. Geneviève National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "Established by 1750, Ste. Geneviève was the first permanent European settlement in Missouri. Early French Canadian settlers were drawn here by the rich agricultural land known as Le Grand Champ (the Big Field). After the flood of 1785, the town relocated to its present location on higher ground approximately three miles to the northwest of its original site.",
+  "shortDescription": "Established by 1750, Ste. Geneviève was the first permanent European settlement in Missouri. Early French Canadian settlers were drawn here by the rich agricultural land known as Le Grand Champ (the B...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 37.9792171421,
+    "longitude": -90.0432157516
+  },
+  "nationalParkInfo": {
+    "parkCode": "stge",
+    "npsId": "EDD278F5-E9A8-4A40-BA41-9809ED8E025D",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/stge/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/stge/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "573-880-7189",
+    "email": "STGE_Visitor_Info@nps.gov",
+    "website": "https://www.nps.gov/stge/index.htm",
+    "address": {
+      "line1": "Ste. Genevieve National Historical Park",
+      "line2": "339 St. Marys Road",
+      "city": "Ste. Genevieve",
+      "state": "MO",
+      "postalCode": "63670"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Ste. Genevieve National Historical Park and the Ste. Genevieve Welcome Center is open daily with the exception of Thanksgiving, Christmas, and New Year's Day. \n\nFor program information and access to historic structures, please check with staff at the Ste. Genevieve Welcome Center, 573-880-7189."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in Ste. Genevieve is typical of a midwestern climate. High heat and humidity, severe thunderstorms, snow and ice, and extreme cold are all possible depending upon the season. The average high in July is 88 degrees and the average low in January is 22 degrees. The area averages 41 inches of precipitation annually. Please plan your visit accordingly."
+  },
+  "images": [
+    {
+      "id": "stge-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6FED42BD-930F-B92A-9CC652F2D045D60D.jpg",
+      "title": "Beauvais-Amoureux House",
+      "altText": "Frame house made of wood with U.S. and French flags flying on front porch.",
+      "caption": "Bauvais-Amoureux House",
+      "credit": "NPS/Nick Sacco",
+      "isPrimary": true
+    },
+    {
+      "id": "stge-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5AF37243-D3D6-DC0B-C1586A7BF51A54AD.jpg",
+      "title": "Jean Baptiste Valle House",
+      "altText": "Cream colored house with a covered porch on a street corner.",
+      "caption": "Tours are usually offered daily of the Jean Baptiste Valle House.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "stge-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5B50A846-B89F-D5E0-723B97A886B7A67C.jpg",
+      "title": "Green Tree Tavern",
+      "altText": "A large raised building with a covered porch and vertical log construction visible.",
+      "caption": "Green Tree Tavern",
+      "credit": "NPS/Claire Casey",
+      "isPrimary": false
+    },
+    {
+      "id": "stge-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E893057C-C11F-AB44-3A6937711DBF0DAB.jpg",
+      "title": "Jean Baptiste Valle Rose Garden",
+      "altText": "Flower beds with blooming flowers and a fountain, with a cream-colored house behind.",
+      "caption": "Take a break in the Jean Baptiste Valle Rose Garden.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stge-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E8A55D43-B7CB-6971-0A0CB44A2B805668.jpg",
+      "title": "Ste. Genevieve Welcome Center",
+      "altText": "Blue building with a high pitched roof. A sign in front says, \"Ste. Genevieve Welcome Center.\"",
+      "caption": "Get park and city information at the Ste. Genevieve Welcome Center",
+      "credit": "NPS/Jana Irving",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/stge/index.htm",
+    "directions": "https://www.nps.gov/stge/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Colonization and Settlement",
+    "Commerce",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Industry",
+    "Mining",
+    "Immigration",
+    "Migrations",
+    "Military",
+    "Native American Heritage",
+    "Social Movements",
+    "Civil Rights",
+    "Conservation Movement",
+    "Women's History",
+    "Climate Change",
+    "National Historical Park",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

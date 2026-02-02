@@ -1,0 +1,228 @@
+{
+  "id": "np-biho",
+  "name": "Big Hole National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "MT",
+  "stateName": "Montana",
+  "region": "west",
+  "description": "On August 9, 1877, gunshots shattered a chilly dawn on a sleeping camp of nımí·pu· (Nez Perce). By the time the smoke cleared on August 10, almost 90 nımí·pu· were dead, along with 31 soldiers and volunteers. Big Hole National Battlefield was created to honor all who were there.",
+  "shortDescription": "On August 9, 1877, gunshots shattered a chilly dawn on a sleeping camp of nımí·pu· (Nez Perce). By the time the smoke cleared on August 10, almost 90 nımí·pu· were dead, along with 31 soldiers and vol...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 45.64647324,
+    "longitude": -113.6458443
+  },
+  "nationalParkInfo": {
+    "parkCode": "biho",
+    "npsId": "3262234F-A56A-447D-AE6C-F5C734ABD3A4",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/biho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/biho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4066893155",
+    "email": "biho_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/biho/index.htm",
+    "address": {
+      "line1": "16425 Highway 43 West",
+      "line2": "",
+      "city": "Wisdom",
+      "state": "MT",
+      "postalCode": "59761"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The grounds and trails at Big Hole National Battlefield are open daily from sunrise to sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "This climatic region is typified by large seasonal temperature differences, with warm to hot (and often humid) summers and cold (sometimes severely cold) winters. Wisdom has a humid continental climate."
+  },
+  "images": [
+    {
+      "id": "biho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/99279113-1DD8-B71B-0BF75905FA3FFC7A.jpg",
+      "title": "Battlefield at Dawn",
+      "altText": "Multiple tepee poles and a river are silhouetted against a dawn sky.",
+      "caption": "Today tepee poles stand sentinel at the site of August 9th, 1877 dawn attack at the Big Hole.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "biho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9931E00B-1DD8-B71B-0BE1335A10F923B6.jpg",
+      "title": "Camas Blooms Near the Nez Perce Camp at the Big Hole",
+      "altText": "Blue camas flowers dot a green field with tepee poles in the background.",
+      "caption": "The Nez Perce chose their camp site in the Big Hole in part due to the Camas, whose roots they gathered prior to the August 9th attack.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "biho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/99620D14-1DD8-B71B-0B4DFE31C3E61867.jpg",
+      "title": "Mountain Howitzer at the Big Hole Battlefield",
+      "altText": "a cannon overlooks a valley and distant mountains",
+      "caption": "Nez Perce warriors captured and dismantled the Mountain Howitzer cannon before the US army could use it effectively at the Battle of the Big Hole.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "biho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/998698BD-1DD8-B71B-0BDE2583FD29ECDC.jpg",
+      "title": "Monument to the US Soldiers and Volunteers at the Big Hole Battlefield",
+      "altText": "cross country skis rest against a large granite monument on a snowy day.",
+      "caption": "In 1883 the United States Government erected this monument in honor of the soldiers and volunteers that served and died at the 1877 Battle of the Big Hole.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "biho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/999116F8-1DD8-B71B-0B3F5A6151D017CE.jpg",
+      "title": "Chief Joseph Memorial at the Big Hole Battlefield",
+      "altText": "Stone carving of a Nez Perce Warrior's head in full regalia.",
+      "caption": "This monument, erected on the Big Hole Battlefield in 1928, reads; \"To the everlasting memory of the brave warriors Chief Joseph's Band who fought on these grounds in the Nez Perce War of 1877.\"",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "biho-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/99C3444E-1DD8-B71B-0B4709A65AB9D0C2.jpg",
+      "title": "Bear Paw Battlefield",
+      "altText": "Three large stone monuments and four interpretive signs overlook a series of low hills.",
+      "caption": "",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/biho/index.htm",
+    "directions": "http://www.nps.gov/biho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Military",
+    "Infantry and Militia",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Tragic Events",
+    "Massacres",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Trails",
+    "National Battlefield",
+    "MT"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

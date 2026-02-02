@@ -1,0 +1,149 @@
+{
+  "id": "np-carl",
+  "name": "Carl Sandburg Home National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "NC",
+  "stateName": "North Carolina",
+  "region": "southeast",
+  "description": "Post Helene Status: Pedestrian detour in place from main parking lot. Grounds / trails open dawn till dusk 7 days a week. Barn open 7 days a week 10-4. Bookstore / Visitor Center open Wed, Thurs, Fri, Sat and Sun 10-4. Interagency passes can be purchased at Visitor Center.",
+  "shortDescription": "Post Helene Status: Pedestrian detour in place from main parking lot. Grounds / trails open dawn till dusk 7 days a week. Barn open 7 days a week 10-4. Bookstore / Visitor Center open Wed, Thurs, Fri,...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 35.26815509,
+    "longitude": -82.45106258
+  },
+  "nationalParkInfo": {
+    "parkCode": "carl",
+    "npsId": "6E9B2F16-4CFE-49B2-A95E-87E4F02E79FF",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/carl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/carl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8286934178",
+    "email": "carl_administration@nps.gov",
+    "website": "https://www.nps.gov/carl/index.htm",
+    "address": {
+      "line1": "81 Carl Sandburg Lane",
+      "line2": "",
+      "city": "Flat Rock",
+      "state": "NC",
+      "postalCode": "28731"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00PM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "Parking lots, grounds, gardens, and trails are open every day, year-round, sunrise to sunset. Occasional closures arise from weather events, check park alerts for more information.\n\nThe Sandburg Home, Visitor Center and Farm Area have seasonal hours that vary. \n\nHouse Tours are by reservation only through http://www.recreation.gov"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Average Monthly Highs and Lows January - 45 / 25 February - 50 / 30 March - 55 / 35 April - 60 / 40 May- 70 / 60 June - 80 / 65 July - 85 / 65 August - 80 / 65 September - 75 / 55 October - 70 / 45 November - 60 / 35 December - 50 / 30"
+  },
+  "images": [
+    {
+      "id": "carl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C798702-1DD8-B71B-0B01ED72F322BC48.jpg",
+      "title": "Carl Sandburg Home NHS",
+      "altText": "A view of the Sandburg Home as visitors enter the park",
+      "caption": "The Sandburg family enjoyed living in the Carolina mountains along with a collection of 12,000 books and a herd of dairy goats.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "carl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C798CA3-1DD8-B71B-0B050F01A4562ED0.jpg",
+      "title": "Visitor Entrance to Carl Sandburg Home NHS",
+      "altText": "A view of the front lake and Sandburg Home as visitors enter the park",
+      "caption": "A view of the front lake and Sandburg Home as visitors enter the park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "carl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7987F7-1DD8-B71B-0B7D9CC8C28E37F2.jpg",
+      "title": "Connemara Farms",
+      "altText": "Dairy goats graze peacefully near the Sandburg barn",
+      "caption": "Connemara Farms dairy goats graze peacefully near the Sandburg barn",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "carl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C798B6A-1DD8-B71B-0BA2D340AF39EA5E.jpg",
+      "title": "Carl Sandburg's Study",
+      "altText": "A view of Sandburg's study as visitors see it today",
+      "caption": "A view of Sandburg's study as visitors see it today",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "carl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C798935-1DD8-B71B-0BB9BF75ED68DFAB.jpg",
+      "title": "Kid Goats Greet Visitors",
+      "altText": "Spring-born kid goats greet visitors to the barn",
+      "caption": "Spring-born kid goats greet visitors to the barn.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "carl-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C798DA5-1DD8-B71B-0B2ECF51F8233BC6.jpg",
+      "title": "Hiking Trails in the Park",
+      "altText": "Two visitors enjoy a stroll through the trees on a park trail",
+      "caption": "Visitors can enjoy more than five miles of hiking trails through the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/carl/index.htm",
+    "directions": "http://www.nps.gov/carl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Poetry and Literature",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Music",
+    "National Historic Site",
+    "NC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

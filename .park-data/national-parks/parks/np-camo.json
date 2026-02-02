@@ -1,0 +1,123 @@
+{
+  "id": "np-camo",
+  "name": "Castle Mountains National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Castle Mountains represents some of the most unique elements of the Mojave Desert. Nestled between the Nevada state line and Mojave National Preserve, the nearly 21,000 acres of Castle Mountains boasts Joshua tree forests, unbroken natural landscapes, rare desert grasslands, and rich human history. This intriguing area provides serenity and solitude from nearby metropolitan areas.",
+  "shortDescription": "Castle Mountains represents some of the most unique elements of the Mojave Desert. Nestled between the Nevada state line and Mojave National Preserve, the nearly 21,000 acres of Castle Mountains boast...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.29156348,
+    "longitude": -115.0935606
+  },
+  "nationalParkInfo": {
+    "parkCode": "camo",
+    "npsId": "872417E6-2F91-4FDA-89A7-865B51B22332",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/camo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/camo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7602526100",
+    "email": "MOJA_Superintendent@nps.gov",
+    "website": "https://www.nps.gov/camo/index.htm",
+    "address": {
+      "line1": "Castle Mountains National Monument",
+      "line2": "2701 Barstow Road",
+      "city": "Barstow",
+      "state": "CA",
+      "postalCode": "92311"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Castle Mountains National Monument is open year-round. There are no facilities in the Monument. Visitor Centers in neighboring Mojave National Preserve provide information and orientation."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather at Castle Mountains changes with the seasons. Freezing temperatures are expected in winter, with occasional snow. Spring brings mild warm days and cooler nights. With enough rain, wildflowers can carpet the area, making for spectacular displays. Summer months are much hotter, with temperatures nearing 100 degrees Fahrenheit. Strong monsoonal storms in late summer may cause flash-flooding in low-lying areas and can create hazardous road conditions. Fall is a cooler respite after the heat of summer."
+  },
+  "images": [
+    {
+      "id": "camo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C87A219-1DD8-B71B-0BF28720E6A4AC75.jpg",
+      "title": "Red Rocks Outcropping",
+      "altText": "Red rocks frame a stand of Joshua trees and sage brush.",
+      "caption": "Red rocks frame a stand of Joshua trees and sage brush in the desert floor..",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "camo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4AED1BA7-BA13-8631-517EFA3F8ED1D173.jpg",
+      "title": "View of Castle Peaks",
+      "altText": "Foreground is desert greenery. The isolated spires of the Castle Peaks rise up in the background",
+      "caption": "From Walking Box Ranch road, visitors to Castle Mountains can enjoy the stunning view of the Castle Peaks, which are located in surrounding Mojave National Preserve lands.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/camo/index.htm",
+    "directions": "http://www.nps.gov/camo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Dunes",
+    "Foothills, Plains and Valleys",
+    "Geology",
+    "Mineral Deposits",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Scenic Views",
+    "Unique Species",
+    "Endangered",
+    "Wilderness",
+    "National Monument",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "id": "np-chir",
+  "name": "Chiricahua National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Explore rhyolite pinnacles and balanced rocks on foot or by car. Relax at the campground under star-filled, dark skies. See how a mountain range rising between two deserts creates a home for diverse wildlife. Imagine history here. Prehistoric peoples, Apaches, Buffalo Soldiers, Civilian Conservation Corps, ranchers, and homesteaders inhabited Chiricahua.",
+  "shortDescription": "Explore rhyolite pinnacles and balanced rocks on foot or by car. Relax at the campground under star-filled, dark skies. See how a mountain range rising between two deserts creates a home for diverse w...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 32.01214618,
+    "longitude": -109.341607
+  },
+  "nationalParkInfo": {
+    "parkCode": "chir",
+    "npsId": "E98D419A-A118-49D5-89AF-3C4F9BE7372D",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/chir/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/chir/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5208243560",
+    "email": "chir_info@nps.gov",
+    "website": "https://www.nps.gov/chir/index.htm",
+    "address": {
+      "line1": "13063 E Bonita Canyon Rd",
+      "line2": "",
+      "city": "Willcox",
+      "state": "AZ",
+      "postalCode": "85643"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The road, campground, and facilities in the park are open overnight. Gates on the road will not be closed during overnight hours unless an emergency occurs. The park prohibits overnight parking, sleeping in vehicles, and camping outside the campground. \n\n The trails stay open for sunrise, sunset, and night sky viewing. Be aware of wildlife and use extreme caution."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park elevation goes from 5,124 feet at the entrance to 7,310 feet on Sugarloaf Mountain. The top of the park can be 5-10 degrees cooler and windier than the visitor center and entrance. The higher elevations generally have more sun exposure. Clothing layers are always recommended here. The park is often cooler than cities in Arizona with summer highs in the 80s and 90s. Winter lows are often near or below freezing."
+  },
+  "images": [
+    {
+      "id": "chir-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/391E0C41-F660-DF55-E2CD9A1ACFBC63C2.jpg",
+      "title": "View from Massai Point",
+      "altText": "Many rock pinnacles with a valley and mountain range in background",
+      "caption": "Massai Point offers excellent views of the standing rocks at Chiricahua",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "chir-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8305A7-1DD8-B71B-0B25F3D38A67DB3D.jpg",
+      "title": "Faraway Ranch",
+      "altText": "A ranch house in a green field surrounds by low mountains",
+      "caption": "Faraway Ranch preserves the heritage of early European settlers in the Chiricahua Mountains",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chir-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82DEC6-1DD8-B71B-0B4E420D57981FB4.jpg",
+      "title": "Echo Canyon Grotto",
+      "altText": "Children climb through rock archways",
+      "caption": "The standing rocks at Chiricahua create natural nooks and crannies ready to be explored",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chir-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8306C0-1DD8-B71B-0B5B64EB999EEF53.jpg",
+      "title": "Bonita Canyon",
+      "altText": "A narrow road winds between tall oaks and rock cliffs",
+      "caption": "Bonita Canyon Scenic Drive winds through standing rocks and rhyolite cliffs, climbing to Massai Point at 6900 ft / 2100 m.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chir-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7FE6F9B0-D4CD-1197-71F96888A81D16D3.jpg",
+      "title": "Big Balanced Rock",
+      "altText": "Large rock balanced on a small point",
+      "caption": "Big Balanced Rock",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/chir/index.htm",
+    "directions": "http://www.nps.gov/chir/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Geology",
+    "Grasslands",
+    "Night Sky",
+    "Rock Landscapes and Features",
+    "Trails",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

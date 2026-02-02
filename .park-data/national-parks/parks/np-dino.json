@@ -1,0 +1,374 @@
+{
+  "id": "np-dino",
+  "name": "Dinosaur National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "150 million years ago, dinosaurs roamed here. Their fossils are still embedded in the rocks. Today, mountains, desert, and rivers flowing in canyons support a variety of life. Petroglyphs reveal the lives and connections of Indigenous people to this land. Homesteaders and outlaws found refuge here. Whether your passion is science, adventure, history, or scenery, Dinosaur offers much to explore.",
+  "shortDescription": "150 million years ago, dinosaurs roamed here. Their fossils are still embedded in the rocks. Today, mountains, desert, and rivers flowing in canyons support a variety of life. Petroglyphs reveal the l...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 40.50739742,
+    "longitude": -108.9333714
+  },
+  "nationalParkInfo": {
+    "parkCode": "dino",
+    "npsId": "061D9754-B947-48FD-99BE-1FE1AAD1BB90",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/dino/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/dino/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "4357817700",
+    "email": "dino_information@nps.gov",
+    "website": "https://www.nps.gov/dino/index.htm",
+    "address": {
+      "line1": "11625 E 1500 S",
+      "line2": "",
+      "city": "Jensen",
+      "state": "UT",
+      "postalCode": "84035"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The outdoor areas in the monument is open 24 hours per day. Facilities such as visitor centers and the Quarry Exhibit Hall have specific hours of operation. Visit the Operating Hours & Seasons page for more information on facility hours. Some areas of the monument may close in the winter due to snow."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one private, non-commercial vehicle (15 passenger capacity or less) and all its occupants. Admission is good for seven consecutive days. You can come and go any time with your seven-day pass.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. You can come and go any time with your seven-day pass.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual with no car. Typically used for bicyclists, hikers, and pedestrians. Youth 15 and under are admitted free. Admission is good for seven consecutive days. You can come and go any time with your seven-day pass.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Fees for commercial tours are based upon the total capacity of vehicle regardless of actual number of passengers.",
+      "cost": "50.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Fees for commercial tours are based upon the total capacity of vehicle regardless of actual number of passengers.",
+      "cost": "60.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Fees for commercial tours are based upon the total capacity of vehicle regardless of actual number of passengers.",
+      "cost": "150.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial group fees (per vehicle): \nVehicle capacity of 15 or less: $25 \nVehicle capacity of 16-25: $15 per person age 16 and older, not to exceed $60. \nVehicle capacity of 26+: $15 per person age 16 and older, not to exceed $150. \nYou may use Annual and Lifetime passes. A pass will cover the pass holder and up to three people traveling with the group.\nPass is valid for reentry for 7 days.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "National Park Service regulations allow school groups and other bona fide national and international academic institutions to obtain a waiver for park entrance fees, provided that the visit is for educational or scientific purposes, and the resources or facilities the group proposes to use support those purposes.\n\nFee waivers must be obtained in advance and cannot be issued at the entrance station or visitor center.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. Fees for commercial tours are based upon the total capacity of vehicle regardless of actual number of passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "Pass is valid for the day of purchase and the next six days for a vehicle carrying the same group of passengers. A commercial tour is defined as consisting of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure or recreational purposes by an organization that realizes financial gain through the provision of the service. (minimum required fee is $25 commercial fee plus the per-person entrance fee for each passenger not to exceed $50.00)",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Dinosaur's climate is semiarid with temperatures averaging between 0°F to 30°F in January and 50°F to 100°F in July. Extreme winter low temperatures may reach -40°F and summer highs can top 110°F. Elevations within the park vary between 4,700 and 9,000 feet. Winter snow may be heavy at higher elevations while only light to moderate snow is found at lower elevations. Summer thunderstorms may cause heavy downpours and localized flooding, but fail to dampen parched soils less than a mile away."
+  },
+  "images": [
+    {
+      "id": "dino-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83D97A-1DD8-B71B-0B61AF7BD82A61B1.jpg",
+      "title": "Camarasaurus Skull",
+      "altText": "the fossilized skull of camarasaurus dinosaur",
+      "caption": "Over 1500 fossilized bones of various dinosaurs are still embedded in the cliff face including a skull and several neck vertebrae of a camarasaurus",
+      "credit": "NPS Photo / Dan Johnson",
+      "isPrimary": true
+    },
+    {
+      "id": "dino-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/17A09BB3-F3EC-84BB-92B711189544E64B.jpg",
+      "title": "Jones Hole Canyon",
+      "altText": "A large sandstone canyon with golden grasses and green trees growing inside.",
+      "caption": "The Jones Hole Trail offers remote solitude in the wilderness of the monument.",
+      "credit": "NPS Photo/Conrad Provan",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83DB2E-1DD8-B71B-0BC525C50D4409F6.jpg",
+      "title": "Steamboat Rock and the Green River in Echo Park",
+      "altText": "the rocky pinnacle of Steamboat Rock rises over the Green River",
+      "caption": "Steamboat Rock rises above the Green River in Echo Park",
+      "credit": "NPS Photo / Jacob W. Frank",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83DCD9-1DD8-B71B-0B1B1DB1EA85D51B.jpg",
+      "title": "McKee Springs Petroglyphs",
+      "altText": "Ancestral Native American rock art at McKee Springs",
+      "caption": "The ancestral indigenous peoples left petroglyphs on many of the rock cliffs within Dinosaur National Monument including those at McKee Springs",
+      "credit": "NPS Photo / Jacob W. Frank",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/177BD0AF-0433-3BD4-97BBC4E349B5C902.jpg",
+      "title": "Jones Hole Creek",
+      "altText": "A small waterfall in a fast flowing creek, moving through a green forest.",
+      "caption": "Jones Hole Creek flows year round, providing nourishment for vibrant, green forests.",
+      "credit": "NPS Photo/Conrad Provan",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BB24ABAB-FE17-2297-A8599A6861411C27.jpg",
+      "title": "Camarasaurus Hump Specimen",
+      "altText": "Large bones resembling legs, ribs and the vertebrae of a neck embed grayish brown rock.",
+      "caption": "Fossils from a camarasaurus dinosaur display the well articulated specimens still found in the rock in the Quarry Exhibit Hall.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83DE76-1DD8-B71B-0B00DA4DE320CD4B.jpg",
+      "title": "Mitten Park from Harpers Corner",
+      "altText": "view of a river flowing through a deep canyon",
+      "caption": "Hikers arriving at the end of the Harpers Corner Trail are rewarded with a view of the Mitten Park Fault, Green River and the Yampa River Canyons",
+      "credit": "NPS Photo / Dan Johnson",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83DFE2-1DD8-B71B-0B29236614706D22.jpg",
+      "title": "Night Sky over Tent",
+      "altText": "the star filled sky above a tent",
+      "caption": "Dinosaur's dark skies provides dramatic views of the Milky Way Galaxy",
+      "credit": "NPS Photo / Jacob W. Frank",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BAC9ED9A-A56E-D358-898FE6A294171077.jpg",
+      "title": "Rocky Mountain Bighorns",
+      "altText": "A bighorn sheep lamb stands in front of a bighorn ewe.",
+      "caption": "Visitors to Dinosaur may also see its diversity of wildlife including Rocky Mountain bighorn sheep.",
+      "credit": "NPS/Jacob W. Frank",
+      "isPrimary": false
+    },
+    {
+      "id": "dino-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BB767205-9934-5683-58446C268A62135E.jpg",
+      "title": "Floating Rapids",
+      "altText": "A green rubber raft floats over a rapid on a brown colored river in front of multi-colored mountains",
+      "caption": "Rapids like those in Split Mountain Canyon challenge and thrill rafters on the Green River.",
+      "credit": "NPS/Jacob W. Frank",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "EADFAEEB-4D57-49DB-9C58-BF8DC241C24F",
+      "name": "Off-Trail Permitted Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "75B92BEB-A36D-4064-88B7-92EEC6D17611",
+      "name": "Whitewater Rafting"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/dino/index.htm",
+    "directions": "http://www.nps.gov/dino/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Arts",
+    "Photography",
+    "Explorers and Expeditions",
+    "Westward Expansion",
+    "Homesteading",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Elk",
+    "Fish",
+    "Canyons and Canyonlands",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Fossils and Paleontology",
+    "Dinosaur",
+    "Geology",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "River and Riparian",
+    "Scenic Views",
+    "Thickets and Shrublands",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "Watersheds",
+    "Wilderness",
+    "National Monument",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

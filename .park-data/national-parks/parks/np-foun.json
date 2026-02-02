@@ -1,0 +1,160 @@
+{
+  "id": "np-foun",
+  "name": "Fort Union National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851 to 1891, Fort Union functioned as an agent of change, desired or not, in the New Mexico Territory and throughout the Southwest.",
+  "shortDescription": "Exposed to the wind, within a sweeping valley of short grass prairie, and along the eroded Santa Fe Trail, lie the adobe walled ruins of the largest 19th century military fort in the region. From 1851...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.90700629,
+    "longitude": -105.0145185
+  },
+  "nationalParkInfo": {
+    "parkCode": "foun",
+    "npsId": "FB1AE18D-522F-434B-9983-3D0194CE1995",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/foun/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/foun/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "505-425-8025",
+    "email": "foun_information@nps.gov",
+    "website": "https://www.nps.gov/foun/index.htm",
+    "address": {
+      "line1": "3115 NM Highway 161",
+      "line2": "",
+      "city": "Watrous",
+      "state": "NM",
+      "postalCode": "87753"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 4:00PM",
+    "tuesday": "8:00AM - 4:00PM",
+    "wednesday": "8:00AM - 4:00PM",
+    "thursday": "8:00AM - 4:00PM",
+    "friday": "8:00AM - 4:00PM",
+    "saturday": "8:00AM - 4:00PM",
+    "sunday": "8:00AM - 4:00PM",
+    "description": "The monument grounds and visitor center are generally open 7 days a week, from 8:00 AM - 4:00 PM.\n\nThe monument is closed Thanksgiving Day, Christmas Day, New Year's Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Fort Union is situated at 6,760 feet above sea level. Daytime temperatures between June and September may exceed 90 degrees Fahrenheit. Winter temperatures often drop below 32 degrees Fahrenheit. Temperatures may vary within 50 degrees in a 24-hour period. During the winter, it is not uncommon for the temperatures to drop below 0°F (-18°C.) During the summer, expect high temperatures, intense sunlight and extremely low humidity."
+  },
+  "images": [
+    {
+      "id": "foun-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C1B33-1DD8-B71B-0B88C189AAA85B01.jpg",
+      "title": "Big Skies Over Officers Row",
+      "altText": "Panorama of Officers Row",
+      "caption": "Blue skies and billowing clouds frequently add to the incredible viewshed that surrounds the monument grounds.",
+      "credit": "Ron Harvey - Fort Union National Monument",
+      "isPrimary": true
+    },
+    {
+      "id": "foun-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C19E9-1DD8-B71B-0B30B525E80A59F8.jpg",
+      "title": "Freezing Fog in Mechanics Corral",
+      "altText": "Wagons encrusted in frost",
+      "caption": "One of the most photographed areas of the monument, the Mechanics Corral onced serviced wagons that travelled along the Santa Fe Trail.",
+      "credit": "Ron Harvey - Fort Union National Monument",
+      "isPrimary": false
+    },
+    {
+      "id": "foun-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C1C53-1DD8-B71B-0BC2A852EC0117F7.jpg",
+      "title": "Sunflower in Enlisted Barracks",
+      "altText": "Sunflower in Enlisted Barracks",
+      "caption": "Located deep within the Mora Valley, Fort Union National Monument contains a vast array of plant and animal life.",
+      "credit": "Ron Harvey - Fort Union National Monument",
+      "isPrimary": false
+    },
+    {
+      "id": "foun-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C1DED-1DD8-B71B-0B9F53F2B8C8DCDA.jpg",
+      "title": "Remnants of the Past",
+      "altText": "Moon in sky above adobe remnants",
+      "caption": "Located on the monument grounds is the world's largest collection of Territorial-Style adobe remanants.",
+      "credit": "Fort Union National Monument",
+      "isPrimary": false
+    },
+    {
+      "id": "foun-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7C2B0C-1DD8-B71B-0B6B13EBD720B5CC.jpg",
+      "title": "Fort Union NM Visitor Center",
+      "altText": "Fort Union Visitor Center Sign",
+      "caption": "Completed in 1960, the Visitor Center at Fort Union was one of the first built during the \"MIssion 66\" program for the National Park Service. It was designed by the internationally known architect Cecil Doty.",
+      "credit": "Ron Harvey - Fort Union National Monument",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/foun/index.htm",
+    "directions": "http://www.nps.gov/foun/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Forts",
+    "Hispanic American Heritage",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "US Army",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Westward Expansion",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

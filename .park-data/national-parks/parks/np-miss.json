@@ -1,0 +1,283 @@
+{
+  "id": "np-miss",
+  "name": "Mississippi National River & Recreation Area",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MN",
+  "stateName": "Minnesota",
+  "region": "midwest",
+  "description": "In the middle of a bustling urban setting, this 72 mile river park offers quiet stretches for fishing, boating and canoeing, birdwatching, bicycling, and hiking. And there are plenty of visitor centers and trails that highlight the fascinating human history of the Mississippi River. This a great place to start your exploration of this important river.",
+  "shortDescription": "In the middle of a bustling urban setting, this 72 mile river park offers quiet stretches for fishing, boating and canoeing, birdwatching, bicycling, and hiking. And there are plenty of visitor center...",
+  "designation": "National River & Recreation Area",
+  "coordinates": {
+    "latitude": 44.942487,
+    "longitude": -93.098712
+  },
+  "nationalParkInfo": {
+    "parkCode": "miss",
+    "npsId": "913100E9-987E-4659-8124-DFCEE3158FCB",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/miss/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/miss/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "651-293-0200",
+    "email": "miss_info@nps.gov",
+    "website": "https://www.nps.gov/miss/index.htm",
+    "address": {
+      "line1": "Mississippi River Visitor Center",
+      "line2": "120 Kellogg Blvd West",
+      "city": "Saint Paul",
+      "state": "MN",
+      "postalCode": "55102"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "We are a partnership park that overlaps many parks (regional, city, state), other public lands, museums, and historical sites. Check with the specific park site you plan on visiting for their hours. See http://www.nps.gov/miss/planyourvisit/placestogo.htm for more information. The National Park Service does not control the visiting hours for the partner sites. Coldwater Spring (NPS) is open from 6:00 a.m. through 10:00 p.m., 365 days a year."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Minnesota has a continental climate characterized by cold winters and warm summers. Spring brings moderate temperatures and low humidity. Summer days may reach temperatures of more than 100°F (38°C), but are usually pleasant with temperatures in the low to mid-80°F (25-30°C). Autumn brings dry, warm days, cool nights and gorgeous fall colors. Winter daytime highs are around 25°F (-3°C). Rarely, winter daytime high temperatures may not get above -10°F (-23°C), sometimes with strong winds."
+  },
+  "images": [
+    {
+      "id": "miss-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CDBEB-1DD8-B71B-0BA93C0F0BE1C5FB.jpg",
+      "title": "Voyageur Canoes",
+      "altText": "Large canoes and crews paddle down the river amidst autumnal color.",
+      "caption": "The park often uses big, safe Voyageur canoes in our programs.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": true
+    },
+    {
+      "id": "miss-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D729A-1DD8-B71B-0B1F6B293E7BF9E8.jpg",
+      "title": "Storms over Grey Cloud Dunes",
+      "altText": "Gray clouds over flowers growing on sand dunes.",
+      "caption": "Storm clouds begin gathering over Grey Cloud Dunes Scientific and Natural Area",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CDDA4-1DD8-B71B-0BE698CCBA6CBD49.jpg",
+      "title": "Modern day Voyageurs Paddle the Mississippi River",
+      "altText": "A large canoe filled with paddlers on the river surrounded by autumnal color.",
+      "caption": "A Voyageur canoe makes headway up a river while surrounded by autumnal color.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CDF90-1DD8-B71B-0B292AF265CB2054.jpg",
+      "title": "Great Egret Fishes the Mississippi River",
+      "altText": "A large, long-necked, long-legged bird wades in the river.",
+      "caption": "Wildlife is a common sight along the river.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CE12B-1DD8-B71B-0B33804962A6982D.jpg",
+      "title": "Savanna at Coldwater Spring",
+      "altText": "Large trees are widely spaced in a grassland.",
+      "caption": "Visitors can glimpse the past in the Coldwater Spring savanna restoration.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D7738-1DD8-B71B-0BD2B0BB8C3F591F.jpg",
+      "title": "Canoeing the Vermillion River Backwaters",
+      "altText": "A canoeist paddles through a water channel between islands.",
+      "caption": "The Vermillion River Bottoms are a tangle of waterways where the river meets the Mississippi River.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D73FE-1DD8-B71B-0B330D18919FFBC5.jpg",
+      "title": "Canoeing through Lotus Blossoms",
+      "altText": "A canoeist reaches out and holds a large, yellow flower.",
+      "caption": "Lotus beds bloom in the backwaters of the Mississippi National River and Recreation Area and provide canoeists an unexpected visual treat.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D75B5-1DD8-B71B-0BF191176CEBE762.jpg",
+      "title": "Water Source for a Fort",
+      "altText": "Water tumbles down layers of rock with an old stone spring house in the background.",
+      "caption": "The Spring House at Coldwater Spring provided water to Historic Fort Snelling and the Upper Post.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D7E72-1DD8-B71B-0B847D9BFF1C6045.jpg",
+      "title": "Building a Nest",
+      "altText": "A large, long-necked, long-legged bird flies overhead carrying a branch.",
+      "caption": "Blue herons are a common sight on the Mississippi River and its backwaters.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    },
+    {
+      "id": "miss-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D791B-1DD8-B71B-0BB02885F2438F0E.jpg",
+      "title": "Canoeing Past Gulls",
+      "altText": "Gulls stand on a floating log while a canoe passes in the background.",
+      "caption": "Canoeists find a wide variety of wildlife in the backwaters of the Mississippi River.",
+      "credit": "NPS photo/Gordon Dietzman",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/miss/index.htm",
+    "directions": "http://www.nps.gov/miss/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Photography",
+    "Dams",
+    "Forts",
+    "Industry",
+    "Mills",
+    "Music",
+    "Transportation",
+    "Dunes",
+    "Groundwater",
+    "Freshwater Springs",
+    "Grasslands",
+    "Prairies",
+    "Waterfalls",
+    "National River & Recreation Area",
+    "MN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

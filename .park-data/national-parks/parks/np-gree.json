@@ -1,0 +1,178 @@
+{
+  "id": "np-gree",
+  "name": "Greenbelt Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Enjoy affordable camping, hiking, and peaceful forest surroundings just ten miles from Washington, DC!",
+  "shortDescription": "Enjoy affordable camping, hiking, and peaceful forest surroundings just ten miles from Washington, DC!",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.98328267,
+    "longitude": -76.89722133
+  },
+  "nationalParkInfo": {
+    "parkCode": "gree",
+    "npsId": "8CEE28AB-50AE-4AC6-ACEF-B209A5346743",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gree/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/gree/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1588",
+    "email": "gree_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/gree/index.htm",
+    "address": {
+      "line1": "6565 Greenbelt Road",
+      "line2": "",
+      "city": "Greenbelt",
+      "state": "MD",
+      "postalCode": "20770"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "Open daily from 6:00 a.m. to 10:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Washington, D.C. area has a four-season Mid-Atlantic climate. Summertime is warm and humid, while winter can be cold and snowy. Spring: During these months of transition, the weather can alternate from warm, humid air coming from the south to cold, dry air coming from the northwest. Be prepared for changing conditions. Summer: The warmest months are June, July, and August, with average highs in the 80s (~31 ?) combined with high humidity. Fall: Expect a drop in temperature and humidity in September"
+  },
+  "images": [
+    {
+      "id": "gree-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/44A5DD06-1DD8-B71B-0B61B91EB87117B2.jpg",
+      "title": "Tent in the Greenbelt Park campground",
+      "altText": "Tent in the Greenbelt Park campground",
+      "caption": "Camp within 13 miles of the Nation's Capital",
+      "credit": "NPS/G Wilson",
+      "isPrimary": true
+    },
+    {
+      "id": "gree-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F231A77E-0FEF-0810-73C5205ABA988D4C.jpg",
+      "title": "New grill in the Greenbelt Park Maryland campground",
+      "altText": "a round back grill with grill on top on a campsite in the Greenbelt Park campground",
+      "caption": "Enjoy a campfire in the new grill under the stars at Greenbelt",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "gree-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F7CEA-1DD8-B71B-0B324D95E5E90CDD.jpg",
+      "title": "Trees in Greenbelt Park, Maryland",
+      "altText": "trees in Greenbelt Park",
+      "caption": "Enjoy the beautiful forest in the Urban Oasis of Greenbelt Park,Maryland",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gree-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F808E-1DD8-B71B-0B309AAC70EA8407.jpg",
+      "title": "Father and son relaxing in the Greenbelt Park campground",
+      "altText": "Father and son sitting in chairs reading in the Greenbelt Park campground",
+      "caption": "A family weekend getaway at the Greenbelt Park campground",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gree-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F8234-1DD8-B71B-0B30DBD48002A076.jpg",
+      "title": "Fall Colors in the Sweetgum Picnic Area, Greenbelt Park, Maryland",
+      "altText": "Fall Colors in the Sweetgum Picnic Area, Greenbelt Park, Maryland",
+      "caption": "Fall Colors in the Sweetgum Picnic Area, Greenbelt Park, Maryland",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gree-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F7B4F-1DD8-B71B-0B182C0948A58ACD.jpg",
+      "title": "Perimeter Trail bridge in Greenbelt Park",
+      "altText": "bridge in Greenbelt Park",
+      "caption": "Enjoy the beautiful trails of Greenbelt Park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gree-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6B73302C-9967-46AE-5BDF8B2D15CB0645.jpg",
+      "title": "Spring and Fall Campfire Programs at Sunset",
+      "altText": "campfire in the forefront and people watching a campfire program in the background",
+      "caption": "Enjoy a free campfire program under the stars at the Greenbelt Park campground",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gree/index.htm",
+    "directions": "http://www.nps.gov/gree/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Birds",
+    "Forests and Woodlands",
+    "Deciduous Forests",
+    "Park",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,272 @@
+{
+  "id": "np-amis",
+  "name": "Amistad National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "An oasis in the desert, Amistad National Recreation Area consists of the US portion of the International Amistad Reservoir. Amistad, a Spanish word meaning \"friendship,\" is known for excellent water-based recreation, camping, hiking, and rich cultural history dating back nearly 5,000 years. Amistad is also home to a wide variety of plant and animal life both above and below the water.",
+  "shortDescription": "An oasis in the desert, Amistad National Recreation Area consists of the US portion of the International Amistad Reservoir. Amistad, a Spanish word meaning \"friendship,\" is known for excellent water-b...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 29.53539777,
+    "longitude": -101.075821
+  },
+  "nationalParkInfo": {
+    "parkCode": "amis",
+    "npsId": "34CB30BA-8A5F-4563-AA34-6633708DD9DC",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/amis/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/amis/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(830) 775-7491",
+    "email": "amis_interpretation@nps.gov",
+    "website": "https://www.nps.gov/amis/index.htm",
+    "address": {
+      "line1": "10477 Highway 90 West",
+      "line2": "",
+      "city": "Del Rio",
+      "state": "TX",
+      "postalCode": "78840"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Amistad National Recreation Area is open throughout the year. However, some areas may experience temporary closures because of low water levels. Please see our Operation Hours and Seasons and Current Conditions pages for more specific details."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather in Southwest Texas can change in a matter of minutes. It is best to check the local weather report. Amistad National Recreation Area usually has hot summers and mild winters. For more information, please visit the park's Current Conditions page at https://www.nps.gov/amis/planyourvisit/conditions.htm."
+  },
+  "images": [
+    {
+      "id": "amis-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3459C06C-DEA3-F44D-36D1A6393F34BFD4.jpg",
+      "title": "Amistad Reservoir and Hwy 90 Bridge",
+      "altText": "Sunset over Amistad Reservoir with Highway 90 bridge to left of photo going over the reservoir and i",
+      "caption": "Enjoy the serenity of sunset at Amistad National Recreation Area's Governors Landing Day Use Area.",
+      "credit": "NPS / E Paola",
+      "isPrimary": true
+    },
+    {
+      "id": "amis-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F0F97-1DD8-B71B-0B2AE2BF68A9390E.jpg",
+      "title": "View of Amistad National Recreation Area from The Diablo East Nature Trail",
+      "altText": "Amistad National Recreation Area",
+      "caption": "Blue skies and blue waters are common at Amistad National Recreation Area",
+      "credit": "A. Curtis",
+      "isPrimary": false
+    },
+    {
+      "id": "amis-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8057C0-1DD8-B71B-0BDE87CC6BFEBFDE.jpg",
+      "title": "Under the HWY 90 Bridge",
+      "altText": "Under the HWY 90 Bridge",
+      "caption": "A view of the Amistad Reservoir and the HWY 90 Bridge from Governors Landing.",
+      "credit": "Photo by: M. Galvan",
+      "isPrimary": false
+    },
+    {
+      "id": "amis-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C80595D-1DD8-B71B-0BB1CD7674EB437B.jpg",
+      "title": "The shoreline along Amistad National Recreation Area",
+      "altText": "A view of the peaceful shoreline along Amistad National Recreation Area",
+      "caption": "A peaceful view of the shores along Amistad National Recreation Area",
+      "credit": "Photo by: Cesha Hernandez",
+      "isPrimary": false
+    },
+    {
+      "id": "amis-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C805B38-1DD8-B71B-0BEB3AAF12CCD190.jpg",
+      "title": "Sunset over Amistad National Recreation Area",
+      "altText": "Sunset over Amistad National Recreation Area",
+      "caption": "The ever chainging and beautiful sunsets in Southwest Texas are one of the many things visitor enjoy while at Amistad National Recreation Area.",
+      "credit": "Photo by: George Bruce",
+      "isPrimary": false
+    },
+    {
+      "id": "amis-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C805CD0-1DD8-B71B-0B204F0B8630CEBC.jpg",
+      "title": "Limestone shoreline along Amistad National Recreation Area",
+      "altText": "Limestone shoreline along Amistad National Recreation Area",
+      "caption": "Limestone is visible along the shoreline of Amistad National Recreation Area.",
+      "credit": "Photo by: Octavio Garcia",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "7503433C-3856-4E82-AFF3-0B1649766ED3",
+      "name": "Jet Skiing"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "8A1C7B17-C2C6-4F7C-9539-EA1E19971D80",
+      "name": "Water Skiing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/amis/index.htm",
+    "directions": "https://www.nps.gov/amis/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Asian American Heritage",
+    "Explorers and Expeditions",
+    "Hispanic American Heritage",
+    "Laborer and Worker",
+    "Migrant Workers",
+    "Latino American Heritage",
+    "Military",
+    "Infantry and Militia",
+    "US Army",
+    "Native American Heritage",
+    "Transportation",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Caves, Caverns and Karst",
+    "Canyons and Canyonlands",
+    "Geology",
+    "Lakes",
+    "Scenic Views",
+    "National Recreation Area",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

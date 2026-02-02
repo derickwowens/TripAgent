@@ -1,0 +1,186 @@
+{
+  "id": "np-kewe",
+  "name": "Keweenaw National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "MI",
+  "stateName": "Michigan",
+  "region": "midwest",
+  "description": "The stories of people and copper in the Keweenaw Peninsula have been intertwined for more than 7,000 years. Indigenous peoples made copper into tools and trade items. Investors and immigrants arrived in the 1800s in a great mineral rush, developing thriving industries and cosmopolitan communities. Though the mines have since closed, their mark is still visible on the land and people.",
+  "shortDescription": "The stories of people and copper in the Keweenaw Peninsula have been intertwined for more than 7,000 years. Indigenous peoples made copper into tools and trade items. Investors and immigrants arrived ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 47.1792308,
+    "longitude": -88.52275344
+  },
+  "nationalParkInfo": {
+    "parkCode": "kewe",
+    "npsId": "E25D6277-11D8-425F-8498-718C98B13854",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kewe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/kewe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9063373168",
+    "email": "kewe_information@nps.gov",
+    "website": "https://www.nps.gov/kewe/index.htm",
+    "address": {
+      "line1": "25970 Red Jacket Road",
+      "line2": "",
+      "city": "Calumet",
+      "state": "MI",
+      "postalCode": "49913"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Calumet Unit of Keweenaw NHP encompasses the Village of Calumet and part of Calumet Township. Park grounds (with the exception of private property and the Keweenaw Heritage Sites) are open to the public from sunrise to sunset. The Calumet Visitor Center at 98 Fifth Street has seasonal hours of operation."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer: Keweenaw summers are usually mild, with average highs in the 70s, but can reach into the 80s and 90s. Nighttime temperatures are typically cool, but can also dip into the 40s or stay in the 70s. Summer months are dry, with occasional rain or severe thunderstorms. Winter: Again influenced by Lake Superior, winter temperatures are mild with highs in the 20s. Cold spells can occur with subzero temperatures. Lake effect snow is common, and 300 inches of snow can fall in a season."
+  },
+  "images": [
+    {
+      "id": "kewe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D1933-1DD8-B71B-0BDEE535F0C69BBC.jpg",
+      "title": "Keweenaw NHP Headquarters",
+      "altText": "Two story stone and brick building. The American flag flies in front of a blue sky background",
+      "caption": "Park Headquarters is housed in the former Calumet & Hecla Mining Company General Office building.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "kewe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D1AD1-1DD8-B71B-0B51B8F6FD9C83F8.jpg",
+      "title": "Keweenaw History Center",
+      "altText": "Two story stone and brick building. a ranger leads a group of visitors in front or the steps",
+      "caption": "A ranger guided walk outside the former Calumet & Hecla Public Library, now known at the Keweenaw History Center.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kewe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D1C98-1DD8-B71B-0BEEA093ED353936.jpg",
+      "title": "Calumet Visitor Center",
+      "altText": "Three story brick building, with snow covered trees along the right side",
+      "caption": "The Calumet Visitor Center in the historic Union Building showcases three floors of interactive exhibits, films, and museum pieces.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kewe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D1ED3-1DD8-B71B-0BCC48DDBC3BB82E.jpg",
+      "title": "Quincy Mine",
+      "altText": "140 foot tall industrial building with a steeply pitched roofline under blue skies and snowy ground",
+      "caption": "The Quincy Mining Company #2 Shaft-Rockhouse and Hoist House in winter.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kewe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D20D1-1DD8-B71B-0B292351051EE295.jpg",
+      "title": "Quincy Mining Company Smelter",
+      "altText": "With a colorful autumn background, numerous industrial buildings sit on the waterfront",
+      "caption": "The Quincy Smelter is one of the best-preserved copper smelting facilities of its era.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kewe/index.htm",
+    "directions": "http://www.nps.gov/kewe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Industry",
+    "Mining",
+    "Immigration",
+    "Animals",
+    "Geology",
+    "National Historical Park",
+    "MI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

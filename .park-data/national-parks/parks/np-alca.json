@@ -1,0 +1,161 @@
+{
+  "id": "np-alca",
+  "name": "Alcatraz Island",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Alcatraz reveals stories of American incarceration, justice, and our common humanity. This small island was once a fort, a military prison, and a maximum security federal penitentiary. In 1969, the Indians of All Tribes occupied Alcatraz for 19 months in the name of freedom and Native American civil rights. We invite you to explore Alcatraz's complex history and natural beauty.",
+  "shortDescription": "Alcatraz reveals stories of American incarceration, justice, and our common humanity. This small island was once a fort, a military prison, and a maximum security federal penitentiary. In 1969, the In...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 37.82676234,
+    "longitude": -122.4230206
+  },
+  "nationalParkInfo": {
+    "parkCode": "alca",
+    "npsId": "C08AD828-98FF-478E-A63C-614E7534274B",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/alca/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://home.nps.gov/alca/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "415-561-4900",
+    "email": "goga_alca_socialmedia@nps.gov",
+    "website": "https://www.nps.gov/alca/index.htm",
+    "address": {
+      "line1": "Alcatraz Island",
+      "line2": "",
+      "city": "San Francisco Bay",
+      "state": "CA",
+      "postalCode": "94133"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 6:30PM",
+    "tuesday": "9:00AM - 9:30PM",
+    "wednesday": "9:00AM - 9:30PM",
+    "thursday": "9:00AM - 9:30PM",
+    "friday": "9:00AM - 9:30PM",
+    "saturday": "9:00AM - 9:30PM",
+    "sunday": "9:00AM - 6:30PM",
+    "description": "Access to Alcatraz Island is via commercial ferry service. For ticket reservation and schedule call (415) 981-7625 or go to www.alcatrazcitycruises.com. The ferry schedule changes seasonally. Alcatraz is closed on Thanksgiving, Christmas and New Years Day. Once on the island you can stay up to the last ferry. \n\nBe aware that tickets sell out quickly and reservations are recommended. Tickets go on sale 90 days in advance."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The climate on Alcatraz is unpredictable and can change suddenly. Cold, foggy mornings may give way to sunny afternoons, which in turn can shift quickly back to more fog and blustery winds. The most pleasant weather usually occurs in spring and fall. Summers tend to be cool and foggy, winter is our rainy season. Temperatures on Alcatraz seldom rise above 75°F (24°C) or fall below 38°"
+  },
+  "images": [
+    {
+      "id": "alca-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2514A14F-D5E3-BB31-4A0C4175BF61216A.jpg",
+      "title": "Alcatraz Island",
+      "altText": "View of the Alcatraz Lighthouse and Island from the water",
+      "caption": "Alcatraz Island",
+      "credit": "NPS",
+      "isPrimary": true
+    },
+    {
+      "id": "alca-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5482A294-DB42-56E0-FCCCD03C986AE1DC.jpg",
+      "title": "Alcatraz Cellhouse",
+      "altText": "A corridor extends between two rows and three tiers of cells. Skylights let in light from overhead.",
+      "caption": "Looking down Broadway in the Alcatraz Cellhouse",
+      "credit": "NPS / Dave Rauenbuehler",
+      "isPrimary": false
+    },
+    {
+      "id": "alca-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A5C1D012-1DD8-B71B-0BA00C730D46F141.jpg",
+      "title": "Alcatraz Rangers and Firetruck",
+      "altText": "Alcatraz Rangers and Firetruck",
+      "caption": "Alcatraz Rangers and 1934 Diamond T Firetruck",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alca-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A61F4F58-1DD8-B71B-0B981C552798242B.jpg",
+      "title": "Army Prisoners in the Stockade, 1902",
+      "altText": "Army Prisoners in the Stockade, 1902",
+      "caption": "Army Prisoners in the Stockade, 1902",
+      "credit": "NPS Photo - Golden Gate National Recreation Area, GOGA 2316a",
+      "isPrimary": false
+    },
+    {
+      "id": "alca-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/A64B4FF8-1DD8-B71B-0B63B232325C8081.jpg",
+      "title": "Serving the Christmas Meal, c 1951",
+      "altText": "Cook serving Christmas dinner with menu posted above.",
+      "caption": "An inmate worker distributes trays near the steam table. Bars separate the kitchen from the mess hall.  The day’s menu, the Christmas meal, appears on a sign over his head. The menu includes consomme, stuffed celery, green olives and mixed sweet pickles,",
+      "credit": "Darlyne Sheppard Alcatraz Photo Collection",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/alca/index.htm",
+    "directions": "http://home.nps.gov/alca/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Forts",
+    "Incarceration",
+    "Jails and Prisons",
+    "Maritime",
+    "Maritime - Military",
+    "Lighthouses",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Social Movements",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Animals",
+    "Birds",
+    "",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

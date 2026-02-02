@@ -1,0 +1,57 @@
+{
+  "id": "wi-kinnickinnic",
+  "name": "Kinnickinnic State Park",
+  "parkType": "state_park",
+  "stateCode": "WI",
+  "stateName": "Wisconsin",
+  "coordinates": {
+    "latitude": 0,
+    "longitude": 0
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic",
+      "isPrimary": true,
+      "source": "manual"
+    },
+    {
+      "type": "activities",
+      "url": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic/recreation",
+      "isPrimary": false,
+      "source": "manual"
+    },
+    {
+      "type": "map",
+      "url": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic/maps",
+      "isPrimary": false,
+      "source": "manual"
+    },
+    {
+      "type": "reservation",
+      "url": "https://wisconsin.goingtocamp.com/",
+      "isPrimary": true,
+      "source": "manual"
+    }
+  ],
+  "contact": {
+    "phone": "1-888-947-2757",
+    "reservationUrl": "https://wisconsin.goingtocamp.com/"
+  },
+  "quickLinks": {
+    "officialWebsite": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic",
+    "reservations": "https://wisconsin.goingtocamp.com/",
+    "map": "https://dnr.wisconsin.gov/topic/parks/kinnickinnic/maps"
+  },
+  "metadata": {
+    "sources": [
+      {
+        "source": "manual",
+        "lastSynced": "2026-02-02T02:30:24.155Z"
+      }
+    ],
+    "createdAt": "2026-02-02T02:30:24.155Z",
+    "updatedAt": "2026-02-02T02:30:24.155Z",
+    "version": 1
+  }
+}

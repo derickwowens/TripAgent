@@ -1,0 +1,165 @@
+{
+  "id": "np-cebe",
+  "name": "Cedar Creek & Belle Grove National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Virginia’s Shenandoah Valley has a long and rich heritage that still inspires today. Native Americans first shaped the land, followed by colonists and settlers. The fertile valley became an important wheat-growing region in the 1800s. It also witnessed dramatic Civil War campaigns, including the Battle of Cedar Creek, a decisive Federal victory that helped bring the war to an end.",
+  "shortDescription": "Virginia’s Shenandoah Valley has a long and rich heritage that still inspires today. Native Americans first shaped the land, followed by colonists and settlers. The fertile valley became an important ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 39.0093576,
+    "longitude": -78.30618934
+  },
+  "nationalParkInfo": {
+    "parkCode": "cebe",
+    "npsId": "387A28F2-022F-4C06-A486-E9E7777B12C2",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cebe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cebe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "540-490-9569",
+    "email": "cebe_information@nps.gov",
+    "website": "https://www.nps.gov/cebe/index.htm",
+    "address": {
+      "line1": "7712 Main Street",
+      "line2": "",
+      "city": "Middletown",
+      "state": "VA",
+      "postalCode": "22645"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Public areas administered by the National Park Service— Morning Attack Trails, Claven Lane parking area, Vermont Monument property and parking area, and park headquarters— are open from sunrise to sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers in Virginia are often very hot with high heat indexes. Check the weather in advance of your trip, and plan accordingly. Dress for the heat and for sun protection. Pack lots of water. The Shenandoah Valley experiences temperate spring and fall seasons and winters with snowfall and cold temperatures."
+  },
+  "images": [
+    {
+      "id": "cebe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F7010-1DD8-B71B-0BBD98AD1E4FD734.jpg",
+      "title": "Sunrise over Belle Grove",
+      "altText": "Sunrise over Belle Grove",
+      "caption": "Sunrise over Belle Grove",
+      "credit": "NPS Photo/Buddy Secor",
+      "isPrimary": true
+    },
+    {
+      "id": "cebe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F717E-1DD8-B71B-0BC01C6CF3F5C26D.jpg",
+      "title": "The Heater House",
+      "altText": "Image of the Heater House",
+      "caption": "The Heater House",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cebe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F7324-1DD8-B71B-0BB8708508EDE0C8.jpg",
+      "title": "Kids Program",
+      "altText": "Ranger giving kids Program",
+      "caption": "Ranger Jeff presenting a kids program.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cebe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F76C6-1DD8-B71B-0B8B820C99AECC0D.jpg",
+      "title": "Cedar Creek and Belle Grove in a Box",
+      "altText": "Visitors watching a ranger program at Belle Grove",
+      "caption": "Ranger Shannon presents Cedar Creek and Belle Grove in a Box.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cebe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F78E5-1DD8-B71B-0B5922091F6C4BA0.jpg",
+      "title": "Signal Knob Program",
+      "altText": "Ranger presenting program on top of the Massanutten Moutain.",
+      "caption": "Ranger presenting program at Signal Knob.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cebe/index.htm",
+    "directions": "http://www.nps.gov/cebe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Colonization and Settlement",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Civil War",
+    "Scenic Views",
+    "Trails",
+    "National Historical Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

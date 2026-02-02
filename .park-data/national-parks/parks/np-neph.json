@@ -1,0 +1,132 @@
+{
+  "id": "np-neph",
+  "name": "New Philadelphia National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "IL",
+  "stateName": "Illinois",
+  "region": "midwest",
+  "description": "To a casual observer, New Philadelphia looked like a typical Illinois pioneer town. But a closer look revealed a unique and racially diverse community. New Philadelphia was the first US town platted and registered by an African American. A formerly enslaved man, Free Frank McWorter, founded New Philadelphia in 1836 and purchased freedom for himself and 15 family members.",
+  "shortDescription": "To a casual observer, New Philadelphia looked like a typical Illinois pioneer town. But a closer look revealed a unique and racially diverse community. New Philadelphia was the first US town platted a...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.69803,
+    "longitude": -90.96131
+  },
+  "nationalParkInfo": {
+    "parkCode": "neph",
+    "npsId": "62389727-B407-49A8-8EE9-FE6A6491B395",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/neph/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/neph/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(573) 880-3120",
+    "email": "NEPH_Information@nps.gov",
+    "website": "https://www.nps.gov/neph/index.htm",
+    "address": {
+      "line1": "New Philadelphia National Historic Site",
+      "line2": "29782 306 Lane",
+      "city": "Barry",
+      "state": "IL",
+      "postalCode": "62312"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The site is open to the public with no scheduled operating hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Temperatures at our site can range from 0°F (-18°C) in the winter to 95°F (35°C) or warmer in the summer. Summers can be very humid, with intense sun, rainstorms, thunderstorms possible. Snow and occasional blizzard conditions are possible in the winter. Please dress appropriately for potential weather conditions and plan ahead."
+  },
+  "images": [
+    {
+      "id": "neph-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3ABBD713-BFB0-E207-3F13D883C8BCF18F.jpg",
+      "title": "Perseverance and Freedom on the Illinois Frontier",
+      "altText": "A grassy field surrounded by forest under a sunny sky with large white clouds.",
+      "caption": "View of New Philadelphia National Historic Site on a sunny day.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "neph-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3AD24D84-C90A-FDDA-393F72EE680D5E7E.jpg",
+      "title": "Kiosk",
+      "altText": "Four interpretive panels mounted under a covered, open-sided kiosk overlooking a prairie landscape.",
+      "caption": "A kiosk houses several informational panels at New Philadelphia National Historic Site.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "neph-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3B42C8D2-EF8F-2F33-53ACA950811F985C.jpg",
+      "title": "Walking Tour",
+      "altText": "A mowed path through prairie. There are numbered signs along the trail.",
+      "caption": "Visitors can take a self-guided ¼-mile-long walking tour of the site using an augmented virtual reality app managed by the New Philadelphia Association. The app is available to download for electronic handheld devices, cost-free, at the kiosk.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "neph-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3B36B532-04F8-092A-7E924590CDA691BC.png",
+      "title": "Schoolchildren",
+      "altText": "Twenty children of mixed ages and genders posing for the camera in front of a schoolhouse.",
+      "caption": "Schoolchildren at the New Philadelphia School, October 1925.",
+      "credit": "Courtesy of Gerald McWorter and Kate Williams McWorter.",
+      "isPrimary": false
+    },
+    {
+      "id": "neph-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3B675DB4-C554-1728-3407BA21EC2A236D.jpg",
+      "title": "Lucy McWorter",
+      "altText": "Historic black and white photo of an African American woman seated looking past the camera.",
+      "caption": "Lucy McWorter, Free Frank McWorter’s wife, 1800s.",
+      "credit": "Courtesy of Pamela and Sheena Franklin",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/neph/index.htm",
+    "directions": "https://www.nps.gov/neph/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Archeology",
+    "Colonization and Settlement",
+    "Commerce",
+    "Enslavement",
+    "Social Movements",
+    "Abolition Movement",
+    "Westward Expansion",
+    "National Historic Site",
+    "IL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

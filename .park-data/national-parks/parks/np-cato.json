@@ -1,0 +1,264 @@
+{
+  "id": "np-cato",
+  "name": "Catoctin Mountain Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "President Franklin D. Roosevelt created programs to give people a chance to rebuild their lives from the Great Depression. The Works Progress Administration and the Civilian Conservation Corps gave this land a second opportunity and through re-growth, a new role as a recreation area.",
+  "shortDescription": "President Franklin D. Roosevelt created programs to give people a chance to rebuild their lives from the Great Depression. The Works Progress Administration and the Civilian Conservation Corps gave th...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 39.65068457,
+    "longitude": -77.46417665
+  },
+  "nationalParkInfo": {
+    "parkCode": "cato",
+    "npsId": "2977669B-4B2E-4044-B2CC-701D9521E4AC",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/cato/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/cato/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3016639388",
+    "email": "CATO_superintendent@nps.gov",
+    "website": "https://www.nps.gov/cato/index.htm",
+    "address": {
+      "line1": "14707 Park Central Road",
+      "line2": "",
+      "city": "Thurmont",
+      "state": "MD",
+      "postalCode": "21788"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Hiking trails and parking areas are open year round, dawn to dusk, but may close as a result of security or safety concerns.  Consult the park's website for updates: http://www.nps.gov/cato/index.htm.  The visitor center, camps, and campgrounds have separate hours.  Please see descriptions for those facilities elsewhere."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer (June-Aug) average temperature is between 61 and 81 degrees Fahrenheit. Fall (Sep-Nov) average temperature is between 45 and 64 degrees Fahrenheit. Fall foliage is at its peak in mid-October Winter (Dec-Feb) average temperature is between 24 and 41 degrees Fahrenheit. Winter snowfall is between 5-12\" per month. Spring (March-May) average temperature is between 41 and 63 degrees Fahrenheit. Average precipitation is approximately 4 inches per month. (Source: usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "cato-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/88247400-C3C0-D7DE-8C42EF37DF502F7F.jpg",
+      "title": "Chimney Rock Vista",
+      "altText": "Rock formation with mountains in the background",
+      "caption": "A challenging hike leads to Chimney Rock, the most popular vista in the park.",
+      "credit": "NPS Photo/Peggie Gaul",
+      "isPrimary": true
+    },
+    {
+      "id": "cato-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/87F43686-B01E-0914-9BD0FEE4FC2EDFD9.jpg",
+      "title": "Visitor Center",
+      "altText": "A stone and wood building with plants and flowers in front",
+      "caption": "First time visitors should begin their park experience at the visitor center.",
+      "credit": "NPS Photo/Peggie Gaul",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BDA98409-C524-F068-F987CED34165C246.jpg",
+      "title": "Eastern Mud Salamander",
+      "altText": "A slender-bodied, red salamander with black spots across its body.",
+      "caption": "Life is abundant at Catoctin Mountain Park, and habitat is plentiful for many salamander species.",
+      "credit": "NPS Photo/Thomas Zygmunt",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/1A821D6D-09C6-7026-1F7E48871C478B06.jpg",
+      "title": "Big Hunting Creek",
+      "altText": "A fast flowing stream cutting through a green forest.",
+      "caption": "Winding its way through the ridge, Big Hunting Creek is a popular fly fishing destination.",
+      "credit": "NPS Photo/John Zuke",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F6CC6-1DD8-B71B-0B2FC0CA15230A1E.jpg",
+      "title": "Historic Camp Misty Mount",
+      "altText": "A log cabin in the woods",
+      "caption": "Visitors can stay overnight in one of the historic Misty Mount cabins.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F0463D8E-9FF4-4D2B-6C92127503CD5152.jpg",
+      "title": "Wolf Rock",
+      "altText": "A large angular boulder that resembles the shape of a wolf.",
+      "caption": "At the end of a boulder field the size of a football field, stands Wolf Rock. Do you see the wolf?",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/046AB469-AB3F-CC59-A6F8115B22A3B106.jpg",
+      "title": "Blue Ridge Summit",
+      "altText": "A rocky outcrop nestled amongst trees overlooking a valley.",
+      "caption": "Blue Ridge Summit offers hikers a view northward into Pennsylvania.",
+      "credit": "NPS Photo/John Zuke",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BDF4B57B-CE59-7DA4-9E96EF7138421C9D.jpg",
+      "title": "Sun Rays Through the Forest at Misty Mount",
+      "altText": "Multiple bright sun rays shining through a forest with log cabins.",
+      "caption": "Natural beauty envelopes the mountainside throughout the day.",
+      "credit": "NPS Photo/Thomas Zygmunt",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C37012A0-D9CA-551C-2DFA6FBDAAF917EE.jpg",
+      "title": "The Horse Trail",
+      "altText": "Two riders, on horseback, walking through a forested trail.",
+      "caption": "The west side of the park is a popular trail riding destination.",
+      "credit": "NPS Photo/John Zuke",
+      "isPrimary": false
+    },
+    {
+      "id": "cato-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F1053EF9-C00F-0A1D-E78E6D90C7E2AA33.jpg",
+      "title": "Chimney Rock in the Fall",
+      "altText": "A large rocky outcropping overlooking a mountainside with fall foliage.",
+      "caption": "Chimney Rock provides an excellent view of the mountain's fall foliage.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "89DA72D0-16D6-4C1C-89D4-103D94F1F63D",
+      "name": "Orienteering"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/cato/index.htm",
+    "directions": "http://www.nps.gov/cato/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Industry",
+    "Mills",
+    "Logging and Timber Cutting",
+    "Native American Heritage",
+    "Reconstruction",
+    "Social Movements",
+    "Civil Rights",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Geology",
+    "Trails",
+    "Park",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

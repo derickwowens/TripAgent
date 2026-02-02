@@ -1,0 +1,282 @@
+{
+  "id": "np-havo",
+  "name": "Hawaiʻi Volcanoes National Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "HI",
+  "stateName": "Hawaii",
+  "region": "hawaii",
+  "description": "Hawai‘i Volcanoes National Park protects some of the most unique geological, biological, and cherished cultural landscapes in the world. Extending from sea level to 13,680 feet, the park encompasses the summits of two of the world's most active volcanoes - Kīlauea and Mauna Loa - and is a designated International Biosphere Reserve and UNESCO World Heritage Site.",
+  "shortDescription": "Hawai‘i Volcanoes National Park protects some of the most unique geological, biological, and cherished cultural landscapes in the world. Extending from sea level to 13,680 feet, the park encompasses t...",
+  "designation": "National Park",
+  "coordinates": {
+    "latitude": 19.3355036,
+    "longitude": -155.4700257
+  },
+  "nationalParkInfo": {
+    "parkCode": "havo",
+    "npsId": "D9BF4288-9AC3-4526-9598-BE8920839ACC",
+    "region": "hawaii"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/havo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/havo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8089856011",
+    "email": "havo_information@nps.gov",
+    "website": "https://www.nps.gov/havo/index.htm",
+    "address": {
+      "line1": "1 Crater Rim Drive",
+      "line2": "",
+      "city": "Hawaii National Park",
+      "state": "HI",
+      "postalCode": "96718"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Hawai‘i Volcanoes National Park is open 7 days a week, 24 hours a day including holidays."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Private Vehicle Pass - The private vehicle pass admits the passholder and up to 14 passengers of a single, private (non-commercial) vehicle.",
+      "cost": "30.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Pedestrian/Cyclist Pass - Admits one individual bicyclist, hiker, or pedestrian visiting without a private vehicle. An individual pass is not required for visitors aged 15 and under.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "The commercial entrance fee for a Road Based Guided Tour is based on vehicle seating capacity. For a 16-25 passenger vehicle the user fee is $100.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "The commercial entrance fee for a Road Based Guided Tour is based on vehicle seating capacity. For a 26+ passenger vehicle the user fee is $200. \n\nLarge vehicles, defined as more than 26 feet in length and/or more than eight feet wide, are only allowed to operate on Crater Rim Drive to Kilauea Visitor Center, Kūkamāhuākea (Steam Vents), and Uēkahuna. Mauna Loa Road to the Kīpukapuaulu turnabout.",
+      "cost": "200.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "$15 per person for Commercial Non-Road Based Guided Tours. This includes hiking more than one mile on one trail, bird watching on foot for more than one hour at one location, and/or or bicycling tours.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The weather the summit of Kīlauea (~4000' elevation) varies daily and may be rainy and chilly any time of the year. Temperature varies by elevation. At the summit of the volcano, temperatures may be 12 to 15 degrees cooler than at sea level. The coastal plain at the end of Chain of Craters Road is often hot, dry, and windy with the possibility of passing showers."
+  },
+  "images": [
+    {
+      "id": "havo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C4E8415A-08E5-5976-833F494FFCA3FFE6.jpg",
+      "title": "Halapē",
+      "altText": "Rocky coastline with palm trees and a cliff beyon",
+      "caption": "Coastline of Hawaiʻi Volcanoes National Park",
+      "credit": "Courtesy of J. Frank",
+      "isPrimary": true
+    },
+    {
+      "id": "havo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C5AEDF53-AE4A-F6DB-2FBA7BE158386C0E.jpg",
+      "title": "Kīlauea Iki",
+      "altText": "A cloud-filled volcanic crater at sunrise with a mountain rising behind",
+      "caption": "Sunrise at Kīlauea Iki",
+      "credit": "NPS Photo/J. Wei",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C5D3655B-BF42-2E22-8068376035581BB2.jpg",
+      "title": "Hōlei Pali",
+      "altText": "Lava flows and ferns in front of a cliff at sunset",
+      "caption": "Lava flows from the Mauna Ulu eruption drape the Hōlei Pali",
+      "credit": "NPS Photo/A. LaValle",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C69391EE-FBFA-BC85-885A49C4BD5CEC8D.jpg",
+      "title": "Steam Vents",
+      "altText": "Trees and tall grass through steam at sunrise",
+      "caption": "Wahinekapu (Steaming Bluff)",
+      "credit": "NPS Photo/A. LaValle",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C8E997AB-E2A8-0AE2-346A65CEE6B0FD30.jpg",
+      "title": "The Kahuku Unit",
+      "altText": "Grassy hill dotted with trees underneath a blue sky with white clouds",
+      "caption": "The Kahuku Unit of Hawaiʻi Volcanoes National Park once was one of the largest cattle ranches in Hawaiʻi",
+      "credit": "NPS Photo/A. LaValle",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C4C64AE6-092B-A593-7727CAE9487AC462.jpg",
+      "title": "Tide Pools",
+      "altText": "Green vegetation in tide pools on a rocky ocean coastline",
+      "caption": "Tide pools along the Puna Coast",
+      "credit": "NPS Photo/A. LaValle",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C44A654D-DEFB-02B3-2EECDD47FA6BF2D8.jpg",
+      "title": "Nāhuku",
+      "altText": "A lava tube lit by warm electric light",
+      "caption": "Nāhuku (Thurston Lava Tube)",
+      "credit": "NPS Photo/D. Boyle",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C524CE8E-BE01-B3D1-E9ED35AC2B79F2ED.jpg",
+      "title": "Lava Trees",
+      "altText": "A lava tree in a black lava field with small living trees and a rainbow behind",
+      "caption": "Lava trees memorialize trees that once stood in the path of encroaching lava",
+      "credit": "NPS Photo/A. LaValle",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6149CE4-DFB9-DECE-57311912C897C228.jpg",
+      "title": "ʻAe Fern",
+      "altText": "Ferns rising from a lava field",
+      "caption": "About 200 species of ferns can be found across the Hawaiian Islands. Sixty-five percent of these species are considered endemic, found nowhere else in the world.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "havo-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6730400-9060-5187-6DA91D10ADF30A99.jpg",
+      "title": "ʻŌhiʻa",
+      "altText": "Red ʻōhiʻa blossom",
+      "caption": "The red blossoms of the ʻōhiʻa are a Hawaiian cultural icon",
+      "credit": "NPS Photo/J. Wei",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/havo/index.htm",
+    "directions": "http://www.nps.gov/havo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Arts",
+    "Animals",
+    "Birds",
+    "Oceans",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "Wilderness",
+    "National Park",
+    "HI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

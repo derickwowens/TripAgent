@@ -1,0 +1,151 @@
+{
+  "id": "np-nico",
+  "name": "Nicodemus National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "KS",
+  "stateName": "Kansas",
+  "region": "midwest",
+  "description": "Formerly enslaved African Americans left Kentucky at the end of the post-Civil War Reconstruction period to experience freedom in the \"Promised Land\" of Kansas. Nicodemus represents the involvement of African Americans in the homesteading movement across the Great Plains. It is the oldest remaining Black settlement west of the Mississippi River.",
+  "shortDescription": "Formerly enslaved African Americans left Kentucky at the end of the post-Civil War Reconstruction period to experience freedom in the \"Promised Land\" of Kansas. Nicodemus represents the involvement of...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.39167606,
+    "longitude": -99.61680329
+  },
+  "nationalParkInfo": {
+    "parkCode": "nico",
+    "npsId": "C8E59368-4CCA-4513-B2C5-D055BC0DA491",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/nico/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/nico/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "785-839-4233",
+    "email": "Nicodemus_Info@nps.gov",
+    "website": "https://www.nps.gov/nico/index.htm",
+    "address": {
+      "line1": "304 Washington Ave.",
+      "line2": "",
+      "city": "Nicodemus",
+      "state": "KS",
+      "postalCode": "67625-3015"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Nicodemus Township Hall and visitor center is open year-round for five (5) days of the week, closed Tuesdays and Wednesdays. Visitor center hours are 9 am to 5 pm central time. The grounds are open 24 hours a day. The visitor center will be closed on Thanksgiving Day, Christmas Day, and New Year Day."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Northwest Kansas has a four-season climate typified by long, hot summers, cold winters, short spring and fall seasons, and a nearly constant breeze. Humidity is relatively low compared to the eastern portion of the state. Afternoon thunderstorms with lightning, hail, and gusty winds frequently occur during the spring and summer. Tornados are possible but are less common in Kansas than they are in several other states. Snow accumulation from winter blizzards occasionally causes site to close."
+  },
+  "images": [
+    {
+      "id": "nico-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C71D6C09-9F6D-9027-52520EDA8DBABF14.jpg",
+      "title": "District Number 1 Schoolhouse",
+      "altText": "Frame one story schoolhouse with most of white paint worn off to show gray.",
+      "caption": "District Number 1 Schoolhouse on a cloudy summer day.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "nico-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C69E02A2-C63D-189F-6463124751C78872.jpg",
+      "title": "The First Baptist Church",
+      "altText": "The First Baptist Church",
+      "caption": "View of the First Baptist Church from street corner.",
+      "credit": "NPS Photo / Brendan Oates",
+      "isPrimary": false
+    },
+    {
+      "id": "nico-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6BCBC85-D5E2-4BC3-BC676942DB82686E.jpg",
+      "title": "Township Hall",
+      "altText": "Front view of limestone building. A sidewalk leads up to white double doors of the building.",
+      "caption": "The Township Hall on a beautiful summer day.",
+      "credit": "NPS Photo / Valerie Blubaugh",
+      "isPrimary": false
+    },
+    {
+      "id": "nico-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6D16A5F-9E06-6968-D75AF157CE2CFFF7.jpg",
+      "title": "Nicodemus A.M.E. (African Methodist Episcopal) Church",
+      "altText": "White stucco church with white double doors and text above the doors that reads \"A.M.E. CHURCH 1885\"",
+      "caption": "Nicodemus A.M.E. (African Methodist Episcopal) Church",
+      "credit": "NPS Photo / Valerie Blubaugh",
+      "isPrimary": false
+    },
+    {
+      "id": "nico-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C833F13-1DD8-B71B-0B96A59FC95CC9C9.jpg",
+      "title": "Nicodemus Descendants",
+      "altText": "Nicodemus Descendants outside Visitor Center",
+      "caption": "Nicodemus Descendants outisde the park Visitor Center",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "nico-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C6E67A10-B805-F61A-5F72B1EDF7D53973.jpg",
+      "title": "St. Francis Hotel (Fletcher-Switzer Home)",
+      "altText": "White frame with a second story gable on the right side, tan roof, and small screened porch.",
+      "caption": "The St. Francis Hotel (Fletcher-Switzer Home)",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/nico/index.htm",
+    "directions": "http://www.nps.gov/nico/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Westward Expansion",
+    "National Historic Site",
+    "KS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

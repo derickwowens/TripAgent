@@ -1,0 +1,173 @@
+{
+  "id": "np-fobo",
+  "name": "Fort Bowie National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "For nearly 25 years, Fort Bowie stood at the crossroads of the Chiricahua Apache's fight to defend their ancestral homeland and the U.S. Army's westward expansion. Today, visitors embark on a 3-mile scenic loop trail traversing the ground where this profound cultural collision forever altered the course of both American and Indigenous history.",
+  "shortDescription": "For nearly 25 years, Fort Bowie stood at the crossroads of the Chiricahua Apache's fight to defend their ancestral homeland and the U.S. Army's westward expansion. Today, visitors embark on a 3-mile s...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 32.14925942,
+    "longitude": -109.451132
+  },
+  "nationalParkInfo": {
+    "parkCode": "fobo",
+    "npsId": "5AD68231-8681-43F6-89B1-08E5AA4C7FE6",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fobo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fobo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "520-549-6751",
+    "email": "chir_info@nps.gov",
+    "website": "https://www.nps.gov/fobo/index.htm",
+    "address": {
+      "line1": "3500 South Apache Pass Road",
+      "line2": "",
+      "city": "Bowie",
+      "state": "AZ",
+      "postalCode": "85605"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The Historic Site trails and ruins are open every day from sunrise to sunset. Please see Visitor Center tab for museum and visitor center hours."
+  },
+  "fees": [],
+  "images": [
+    {
+      "id": "fobo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/30BF20D7-BF6A-1DE6-21266DC5EE3557AF.jpg",
+      "title": "Fort Bowie Ruins",
+      "altText": "Ruins of the fort with mountains and valley in the background.",
+      "caption": "San Simon Valley can be seen just beyond the ruins of the cavalry barracks.",
+      "credit": "NPS Photo/ Ron Stewart",
+      "isPrimary": true
+    },
+    {
+      "id": "fobo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E24B-1DD8-B71B-0BDB09461B231689.jpg",
+      "title": "Mountain howitzer",
+      "altText": "Close up of a canon barrel",
+      "caption": "The mountain howitzer is a symbolic relic from the active days of Fort Bowie",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fobo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/30D2AFAC-F40A-0F36-5C0968B96A8FB68A.jpg",
+      "title": "Post Trader's Store",
+      "altText": "Ruins of adobe building under a blue sky with white clouds.",
+      "caption": "The Post Trader's store on a spring day.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fobo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82E117-1DD8-B71B-0BBC3BE2A2C1C1FD.jpg",
+      "title": "Fort Bowie landscape and ruins",
+      "altText": "Ruined walls of the old buildings and mountains in the background",
+      "caption": "Fort Bowie was once a bustling frontier military fort. Today, the ruins offer a place of reflection.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fobo-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82FC33-1DD8-B71B-0B162188DB413F97.jpg",
+      "title": "Fort Bowie Cemetery",
+      "altText": "Black and white photo of white tombstones in a cemetery, mountains in the background",
+      "caption": "Fort Bowie cemetery is accessed via the Fort Bowie Trail, and in addition to many US troops buried here, some Apache/Indeh are buried here as well.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fobo-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82FD36-1DD8-B71B-0B4FEF6DCA35A115.jpg",
+      "title": "Heliograph demonstration",
+      "altText": "A group gathers as a ranger displays the heliograph equipment",
+      "caption": "The heliograph was an important communications tool in the late 1880s. Stationed on top of high desert peaks, sunlight was reflected off mirrors in coded patterns to send a message miles away.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fobo/index.htm",
+    "directions": "http://www.nps.gov/fobo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Forts",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Animals",
+    "Birds",
+    "Groundwater",
+    "Freshwater Springs",
+    "National Historic Site",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

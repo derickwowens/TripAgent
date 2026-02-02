@@ -1,0 +1,193 @@
+{
+  "id": "np-coro",
+  "name": "Coronado National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "It was a journey of conquest filled with exploration, wonder - and cruelty. Inspired by tales of vast cities of gold, 339 European soldiers and over a thousand Aztec allies embarked on an epic journey through arid deserts and rugged mountains. They encountered rich traditions and brought new technologies. The resulting collision and combination of cultures reverberates today.",
+  "shortDescription": "It was a journey of conquest filled with exploration, wonder - and cruelty. Inspired by tales of vast cities of gold, 339 European soldiers and over a thousand Aztec allies embarked on an epic journey...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 31.34900397,
+    "longitude": -110.2561574
+  },
+  "nationalParkInfo": {
+    "parkCode": "coro",
+    "npsId": "6ED827FD-EA71-443E-83EE-9367FD14F940",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/coro/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/coro/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5203665515",
+    "email": "coro_interpretation@nps.gov",
+    "website": "https://www.nps.gov/coro/index.htm",
+    "address": {
+      "line1": "4101 E Montezuma Canyon Road",
+      "line2": "",
+      "city": "Hereford",
+      "state": "AZ",
+      "postalCode": "85615"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Coronado National Memorial is a day use park. The trails, picnic area, waysides, and Montezuma Pass overlook are open each day from one half hour before sunrise to one half hour after sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Though the park shares a border with our southern neighbors, the elevation and the mountain ecosystem keep Coronado National Memorial relatively cool in the summer, and winter can bring snow. Summers are warm, with daytime temps in the 90s F (32-37 C) and low humidity in May, June, and July. The summer rainy season (monsoon) is between late June and early September. Monsoon thunderstorms can cause flash floods. Winter temps can fall below freezing at night, with highs 40-60 F (4-15 C)."
+  },
+  "images": [
+    {
+      "id": "coro-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82C959-1DD8-B71B-0B596D5EE36DB6CD.jpg",
+      "title": "Wildflowers and Montezuma Peak",
+      "altText": "Agave stalks and wildflowers with mountains in the distance",
+      "caption": "A field of wildflowers blooms in the grasslands, one of the many life zones in the park",
+      "credit": "NPS Photo / D. Bly",
+      "isPrimary": true
+    },
+    {
+      "id": "coro-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82D04F-1DD8-B71B-0B9FBF53061B965D.jpg",
+      "title": "Vermillion Flycatcher",
+      "altText": "A brilliant red bird in a tree",
+      "caption": "A great diversity of birds are found in and near Coronado National Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "coro-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82CD4B-1DD8-B71B-0B037994F2511C4E.jpg",
+      "title": "Cave formations of Coronado Cave",
+      "altText": "Two cavers inspect a series of calcite cave formations",
+      "caption": "Coronado Cave is a large limestone cavern with cave formations such as stalactites and stalagmites",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "coro-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9B813633-B68C-12BC-A17CF03DB139E49D.jpg",
+      "title": "Sunset From Montezuma Pass",
+      "altText": "Sun setting over the San Rafael Valley with a cane cholla in the foreground.",
+      "caption": "Sunsets from Montezuma Pass provide a beautiful opportunity to gaze out into the Sky Islands.",
+      "credit": "NPS Volunteer Ron Stewart",
+      "isPrimary": false
+    },
+    {
+      "id": "coro-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82C83A-1DD8-B71B-0BC5B0F96C3B3450.jpg",
+      "title": "Pink-throated morning glories in the grasslands",
+      "altText": "Pink morning glories with mountain and grasslands",
+      "caption": "Each year the pink-throated morning glories bloom during monsoon season in the grasslands",
+      "credit": "NPS Photo / D. Bly",
+      "isPrimary": false
+    },
+    {
+      "id": "coro-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C475057C-F834-C7E4-75A8F1CB2EC43D08.jpg",
+      "title": "View from the cave trail",
+      "altText": "Rocky trail along a hillside with a tall stock of a blooming yucca.",
+      "caption": "View from the Coronado Cave trail.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "BA316D0F-92AE-4E00-8C80-DBD605DC58C3",
+      "name": "Caving"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/coro/index.htm",
+    "directions": "http://www.nps.gov/coro/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Explorers and Expeditions",
+    "Monuments and Memorials",
+    "Animals",
+    "Birds",
+    "Caves, Caverns and Karst",
+    "Geology",
+    "Scenic Views",
+    "Watersheds",
+    "National Memorial",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

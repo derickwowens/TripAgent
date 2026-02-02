@@ -1,0 +1,191 @@
+{
+  "id": "np-whmi",
+  "name": "Whitman Mission National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "region": "pacific",
+  "description": "One moment can change the fate of many nations. After thousands of years of habitation by the Cayuse Nation, life in the Columbia River Plateau begins to change rapidly with the influx of missionaries, newcomers from the Oregon Trail, and diseases. A single violent act of desperation to protect a community ignites a series of events that will reshape the United States forever.",
+  "shortDescription": "One moment can change the fate of many nations. After thousands of years of habitation by the Cayuse Nation, life in the Columbia River Plateau begins to change rapidly with the influx of missionaries...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 46.04119286,
+    "longitude": -118.4629388
+  },
+  "nationalParkInfo": {
+    "parkCode": "whmi",
+    "npsId": "10505DA0-A627-47EA-8533-5C67C3B2AF15",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/whmi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/whmi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5095226360",
+    "email": "whmi_interpretation@nps.gov",
+    "website": "https://www.nps.gov/whmi/index.htm",
+    "address": {
+      "line1": "328 Whitman Mission Road",
+      "line2": "",
+      "city": "Walla Walla",
+      "state": "WA",
+      "postalCode": "99362"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The grounds and trails at Whitman Mission National Historic Site are open daily from sunrise to sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are hot. Hats, water and sunblock are recommended. Winters are mild and rainy with a few snow storms. Layered clothing is advised."
+  },
+  "images": [
+    {
+      "id": "whmi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0BF0A3D7-D2A9-5705-180B4FED2BAA38FC.jpg",
+      "title": "Tipi",
+      "altText": "A tipi sits beneath a tree near a walking trail",
+      "caption": "Rangers offer tipi demonstrations during the summer",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "whmi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0AF1AE74-A0E1-852F-F2EFD048EC1E9293.jpg",
+      "title": "The Mission Site from the Hill",
+      "altText": "View from above looking down at green fields, a pond, and mountains in the distance",
+      "caption": "From Monument Hill, you can see the mission site and the surrounding Walla Walla Valley",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "whmi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B7BE07D-9F8A-331C-0D0A3871D9AEA840.jpg",
+      "title": "Cultural Items",
+      "altText": "An array of animal furs, beaded bags, and woven baskets",
+      "caption": "Explore the past through hands-on cultural items at the visitor center",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "whmi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B13A1DD-BF02-226C-337347C747A00B36.jpg",
+      "title": "Fall at Whitman Mission",
+      "altText": "A tree reflected in a pond with more trees and a field of golden tall grass in the background",
+      "caption": "",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "whmi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85D42F-1DD8-B71B-0BD929E73E0E28E2.jpg",
+      "title": "Cayuse Woven Cornhusk Bag",
+      "altText": "Cornhusk Flat Bag",
+      "caption": "Traditional Cayuse Cornhusk Bag",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/whmi/index.htm",
+    "directions": "http://www.nps.gov/whmi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Burial, Cemetery and Gravesite",
+    "Farming and Agriculture",
+    "Medicine",
+    "Migrations",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Tragic Events",
+    "Westward Expansion",
+    "Trails",
+    "National Historic Site",
+    "WA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

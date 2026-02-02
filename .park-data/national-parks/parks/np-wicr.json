@@ -1,0 +1,277 @@
+{
+  "id": "np-wicr",
+  "name": "Wilson's Creek National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "MO",
+  "stateName": "Missouri",
+  "region": "midwest",
+  "description": "Wilson's Creek was the first major Civil War battle fought west of the Mississippi River, and where the first Union general was killed in action. The costly Southern victory on August 10, 1861, focused national attention on the war in Missouri. Wilson’s Creek National Battlefield commemorates and interprets the battle within the context of the war in the Trans-Mississippi West.",
+  "shortDescription": "Wilson's Creek was the first major Civil War battle fought west of the Mississippi River, and where the first Union general was killed in action. The costly Southern victory on August 10, 1861, focuse...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 37.1000127,
+    "longitude": -93.40986704
+  },
+  "nationalParkInfo": {
+    "parkCode": "wicr",
+    "npsId": "2067FAB2-41D4-43DF-8142-9B1FC40AFDFC",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wicr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wicr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "417-732-2662",
+    "email": "WICR_visitor_requests@nps.gov",
+    "website": "https://www.nps.gov/wicr/index.htm",
+    "address": {
+      "line1": "6424 W. Farm Road 182",
+      "line2": "",
+      "city": "Republic",
+      "state": "MO",
+      "postalCode": "65738"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The park grounds are open from 1/2 hour before sunrise until 1/2 hour after sunset. This includes non-motorized and pedestrian access to the tour road. Motorized access to the tour road begins at 8:00 am daily when the automated entrance gate will open. The visitor center and museum hours are 9:00 am to 5:00 pm daily, seven days a week."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer months are frequently hot and humid, with occasional showers and thunderstorms. Winter months (especially January and February) are frequently cold, with occasional ice and light snow. Spring and fall months are generally pleasant, with occasional showers."
+  },
+  "images": [
+    {
+      "id": "wicr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EB8B9CDB-F889-440A-39F7A89402AF6B96.jpg",
+      "title": "Moonlight Tour",
+      "altText": "Men in reproduction uniforms talk around a campfire",
+      "caption": "Living history volunteers act out a scene during the annual Moonlight Tours event",
+      "credit": "Charles Dischinger",
+      "isPrimary": true
+    },
+    {
+      "id": "wicr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EBBBAE8C-B74C-E705-422A3C4448B72BEE.jpg",
+      "title": "Edwards Cabin",
+      "altText": "Women in reproduction historic dress sit and stand on porch of old cabin",
+      "caption": "Living history volunteers give demonstration at the historic Edwards Cabin",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wicr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EC34AEC4-ED98-E7DF-F535B283B80C8AE2.jpg",
+      "title": "Lyon Marker",
+      "altText": "A stone marker with engraving sits in front of a wooden fence and trees",
+      "caption": "The 1928 Lyon Marker commemorates General Nathaniel Lyon, the first Union general to die in the Civil War.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wicr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EC48AD4A-AD18-7E4C-09E681C9E0768F91.jpg",
+      "title": "Henry Rifle",
+      "altText": "The receiver of an 1864 rifle shows decorative engraving with the original owner's name",
+      "caption": "A rare 1864 Henry repeating rifle from the park's museum collection belonged to Missouri Civil War veteran George W. Fulton",
+      "credit": "Courtesy of Morphy Auctions",
+      "isPrimary": false
+    },
+    {
+      "id": "wicr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EDC6E2F2-AF32-27A1-8032A8DC092AE65C.jpg",
+      "title": "Tour Road",
+      "altText": "A man and woman walk with their dog on a paved road edged by trees and fields",
+      "caption": "Visitors enjoy an evening stroll on the Tour Road.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "wicr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7F9267D4-0B81-4F27-6AB80EB821003D3A.jpg",
+      "title": "Wilson's Creek National Battlefield Visitor Center",
+      "altText": "Front Entrance of Visitor Center and Arrowhead on sign reading \"Wilson's Creek National Battlefield\"",
+      "caption": "Begin your visit at the newly remodeled Visitor Center at Wilson's Creek National Battlefield.",
+      "credit": "Charles Dischinger, NPS Volunteer",
+      "isPrimary": false
+    },
+    {
+      "id": "wicr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7F34FD73-9144-2C69-37845C09E18A14E6.jpg",
+      "title": "The Lyon Bed",
+      "altText": "General Nathaniel Lyon killed at  The Battle of Wilson's Creek was placed on this bed. The Lyon Bed.",
+      "caption": "The Bed where General Nathaniel Lyon is placed, after being fatally wounded on the Battlefield.",
+      "credit": "Charles Dischinger, NPS Volunteer",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wicr/index.htm",
+    "directions": "http://www.nps.gov/wicr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Industry",
+    "Mills",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Schools and Education",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Forests and Woodlands",
+    "Groundwater",
+    "Freshwater Springs",
+    "Grasslands",
+    "Prairies",
+    "Meadows",
+    "Night Sky",
+    "Astronomy",
+    "Trails",
+    "Unique Species",
+    "Endangered",
+    "National Battlefield",
+    "MO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

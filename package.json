@@ -20,13 +20,29 @@
     "mobile:build:android": "cd mobile && eas build --platform android --profile production",
     "mobile:build:preview": "cd mobile && eas build --platform android --profile preview",
     "validate-links": "tsx scripts/validate-nps-links.ts",
-    "prebuild:validate": "npm run validate-links && npm run build"
+    "prebuild:validate": "npm run validate-links && npm run build",
+    "sync:state": "tsx data/sync/runSync.ts state",
+    "sync:wi": "tsx data/sync/runSync.ts state WI",
+    "sync:fl": "tsx data/sync/runSync.ts state FL",
+    "sync:all": "tsx data/sync/runSync.ts all",
+    "parks:generate": "tsx data/scripts/generateLinks.ts",
+    "parks:validate": "tsx data/tests/validateLinks.test.ts all",
+    "parks:export": "tsx data/scripts/exportParkData.ts all",
+    "parks:export:wi": "tsx data/scripts/exportParkData.ts WI",
+    "parks:export:fl": "tsx data/scripts/exportParkData.ts FL",
+    "parks:upload": "tsx data/scripts/syncToS3.ts all",
+    "parks:upload:wi": "tsx data/scripts/syncToS3.ts WI",
+    "parks:upload:fl": "tsx data/scripts/syncToS3.ts FL",
+    "parks:master-index": "tsx data/scripts/uploadMasterIndex.ts",
+    "nps:fetch": "tsx data/scripts/fetchNPSSites.ts",
+    "nps:upload": "tsx data/scripts/fetchNPSSites.ts --upload"
   },
   "bin": {
     "tripagent": "./src/cli/simple.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
+    "@aws-sdk/client-s3": "^3.980.0",
     "@modelcontextprotocol/sdk": "^0.5.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",

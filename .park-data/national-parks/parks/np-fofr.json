@@ -1,0 +1,179 @@
+{
+  "id": "np-fofr",
+  "name": "Fort Frederica National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "GA",
+  "stateName": "Georgia",
+  "region": "southeast",
+  "description": "War was imminent as James Oglethorpe established Fort Frederica in 1736, to help protect the British colonies from the Spanish in Florida. Fort Frederica illustrates the story of the War of Jenkins Ear (1739-1748) and how its British defenders fought off the Spanish Army. Today, archeology has uncovered the story of the 1,000 people that once lived here.",
+  "shortDescription": "War was imminent as James Oglethorpe established Fort Frederica in 1736, to help protect the British colonies from the Spanish in Florida. Fort Frederica illustrates the story of the War of Jenkins Ea...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 31.2214699,
+    "longitude": -81.39452014
+  },
+  "nationalParkInfo": {
+    "parkCode": "fofr",
+    "npsId": "4301F6E9-750B-489D-B8E4-4204165894A1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fofr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fofr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9126383639",
+    "email": "fofr_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/fofr/index.htm",
+    "address": {
+      "line1": "Fort Frederica National Monument",
+      "line2": "6515 Frederica Rd.",
+      "city": "St. Simons Island",
+      "state": "GA",
+      "postalCode": "31522"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Park & Grounds Closed:\n\nThanksgiving\nChristmas Day\nNew Year's Day"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The site enjoys mild climate from fall through early summer, followed by hot, humid summers."
+  },
+  "images": [
+    {
+      "id": "fofr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DD350-1DD8-B71B-0BF0B4C77628ED80.jpg",
+      "title": "Ruin of Soldier Barracks at Fort Frederica NM",
+      "altText": "Ruin of Soldier Barracks at Fort Frederica NM",
+      "caption": "The Barracks ruin is one of the few above ground structures at Fort Frederica",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fofr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DD4D2-1DD8-B71B-0B2F6AE10061EEDA.jpg",
+      "title": "Artist rendering of Downtown Frederica Town",
+      "altText": "Artist rendering of Downtown Frederica Town",
+      "caption": "Artist rendering of Downtown Frederica Town",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fofr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DD66B-1DD8-B71B-0BB613CFA00C35B7.jpg",
+      "title": "Artist rendering of Downtown Frederica Town",
+      "altText": "Artist rendering of Downtown Frederica Town",
+      "caption": "Artist rendering of Downtown Frederica Town",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fofr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DD81D-1DD8-B71B-0BD41D04DF8DB390.jpg",
+      "title": "Artifacts found at Frederica",
+      "altText": "Artifacts found at Frederica",
+      "caption": "Artifacts found at Frederica",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fofr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DDA2F-1DD8-B71B-0B1528D99B1014B0.jpg",
+      "title": "Soldiers of the 42nd Regiment of Foote",
+      "altText": "Reenactors performing as the original redcoats who served at Frederica",
+      "caption": "Soldiers of the 42nd Regiment of Foote",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fofr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DDC0E-1DD8-B71B-0B2D727C6EF2F489.jpg",
+      "title": "100 year old grapevine at Frederica",
+      "altText": "A large grapevine draped among the Live Oaks",
+      "caption": "100 year old grapevine at Frederica which still produces \"Summer Grapes\"",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fofr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DDE1A-1DD8-B71B-0B341050E0F95288.jpg",
+      "title": "Fort Frederica at Sunset",
+      "altText": "The shadow of the ruin of Fort Frederica highlighted by a sunset along the Frederica River.",
+      "caption": "Nature and History combine in a beautiful setting at Fort Frederica",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fofr-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DE008-1DD8-B71B-0B3801F151DECD83.jpg",
+      "title": "Fort Frederica's Visitor Center during Azalea Season",
+      "altText": "Brick building of the Visitor Center with Azaleas blossoming in front",
+      "caption": "Fort Frederica's Visitor Center during Azalea Season",
+      "credit": "NPS photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fofr/index.htm",
+    "directions": "http://www.nps.gov/fofr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Colonization and Settlement",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "National Monument",
+    "GA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

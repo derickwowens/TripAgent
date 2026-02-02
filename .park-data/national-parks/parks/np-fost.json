@@ -1,0 +1,261 @@
+{
+  "id": "np-fost",
+  "name": "Fort Stanwix National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NY",
+  "stateName": "New York",
+  "region": "northeast",
+  "description": "For centuries, the Oneida Carrying Place, a six-mile portage connecting the Mohawk River and Wood Creek, served as a vital link for those traveling by water from the ocean to the Great Lakes. When Europeans arrived, nations fought for control of the carry, the homelands of the Six Nations Confederacy, and the rich resources of North America. In this struggle, Fort Stanwix would play a vital role.",
+  "shortDescription": "For centuries, the Oneida Carrying Place, a six-mile portage connecting the Mohawk River and Wood Creek, served as a vital link for those traveling by water from the ocean to the Great Lakes. When Eur...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 43.21053441,
+    "longitude": -75.45557626
+  },
+  "nationalParkInfo": {
+    "parkCode": "fost",
+    "npsId": "D57C8F0D-71E9-46D7-B00B-001BC7E39096",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fost/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fost/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "315-338-7730",
+    "email": "fost_info@nps.gov",
+    "website": "https://www.nps.gov/fost/index.htm",
+    "address": {
+      "line1": "100 North James St.",
+      "line2": "",
+      "city": "Rome",
+      "state": "NY",
+      "postalCode": "13440"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The cost of admission to the park is FREE. Park trails and lawn are open from sunrise to sunset everyday.  Hours vary and alternate throughout the year. They can be found here: Visit www.nps.gov/fost/planyourvisit/hours.htm\nThe park closed on most federal holidays."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Park lies within a temperate zone and experiences four full seasons. Summer can become very hot and humid. Snow is common as late as May and as early as October. The fort area can become muddy in all seasons. With most activities outdoors, good closed-toe walking shoes and low heels are advised. Air conditioning and heating is limited to park visitor center most times in the year. Water and extra layers of clothing in all seasons are always recommended!"
+  },
+  "images": [
+    {
+      "id": "fost-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/2ED9866F-0D28-4E68-AB932F1C54C0D14A.jpg",
+      "title": "Which Adventure Will You Choose?",
+      "altText": "A park ranger directs a group of children thorugh the fort.",
+      "caption": "From ranger tours, to walking trails, to exploring history, there's plenty to do at Fort Stanwix!",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fost-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/97B49B54-1DD8-B71B-0B182BEF64FAA577.jpg",
+      "title": "Celebrate the Park! Fort Stanwix at 40 & the NPS Centennial!",
+      "altText": "Children dance, jump, and skip on the parade ground of reconstructed Fort Stanwix.",
+      "caption": "The park is gearing up for the National Park Service Centennial. Find out what's going on and what's already been done!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fost-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/987D6EEA-1DD8-B71B-0BEBD381AE9D09C9.png",
+      "title": "Objects From the Past: Museum Collection",
+      "altText": "Small boxes in rows contain small artifacts, including broken pipes and glass bottles.",
+      "caption": "Learn more about the objects in the park's museum collection.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fost-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/988ED0D8-1DD8-B71B-0B42050335B9C0C4.jpg",
+      "title": "Uncovering the Past at Fort Stanwix",
+      "altText": "A woman digs in a carefully excavated hole.",
+      "caption": "What evidence of the past has been found at Fort Stanwix? Stop through to find out!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fost-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/98ADC8DB-1DD8-B71B-0B6F8FEADD955234.jpg",
+      "title": "Fort Stanwix: History Happened Here!",
+      "altText": "Soldiers stand in a neat row holding their muskets.",
+      "caption": "Discover the vital role that Fort Stanwix/Schuyler, the fort that \"never surrendered\" played in the American Revolution.",
+      "credit": "NPS Photo/M. Hucko",
+      "isPrimary": false
+    },
+    {
+      "id": "fost-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CA7E871C-B8C1-2173-916218FC8CC1D4C6.jpg",
+      "title": "A Cloudy Day at Fort Stanwix",
+      "altText": "Puffy white clouds billow over log cabin-like walls. An American flag flies on a wooden pole",
+      "caption": "Come and visit the site with a thousand stories flying under the flag!",
+      "credit": "National Park Service / Ranger Dan",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C38B3C62-1BBF-4EA1-A1A2-35DE21B74C17",
+      "name": "Snow Play"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fost/index.htm",
+    "directions": "http://www.nps.gov/fost/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Forts",
+    "Great Depression",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Presidents",
+    "Tragic Events",
+    "Massacres",
+    "Urban America",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "French and Indian War",
+    "American Revolutionary War",
+    "Indian and Frontier Wars",
+    "Westward Expansion",
+    "Ancient Seas",
+    "Foothills, Plains and Valleys",
+    "Geology",
+    "River and Riparian",
+    "Trails",
+    "Watersheds",
+    "Wetlands",
+    "Marshes",
+    "National Monument",
+    "NY"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

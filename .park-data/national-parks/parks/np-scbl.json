@@ -1,0 +1,211 @@
+{
+  "id": "np-scbl",
+  "name": "Scotts Bluff National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NE",
+  "stateName": "Nebraska",
+  "region": "midwest",
+  "description": "Towering 800 feet above the North Platte River, Scotts Bluff has served as a landmark for peoples from Native Americans to emigrants on the Oregon, California and Mormon Trails to modern travelers. Rich with geological and paleontological history as well as human history, there is much to discover while exploring the 3,000 acres of Scotts Bluff National Monument.",
+  "shortDescription": "Towering 800 feet above the North Platte River, Scotts Bluff has served as a landmark for peoples from Native Americans to emigrants on the Oregon, California and Mormon Trails to modern travelers. Ri...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 41.83464193,
+    "longitude": -103.7071351
+  },
+  "nationalParkInfo": {
+    "parkCode": "scbl",
+    "npsId": "48ED0744-7B8A-4FFD-BEFC-C4AC22A7D649",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/scbl/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/scbl/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3084369700",
+    "email": "scbl_ranger_activities@nps.gov",
+    "website": "https://www.nps.gov/scbl/index.htm",
+    "address": {
+      "line1": "190276 Old Oregon Trail",
+      "line2": "",
+      "city": "Gering",
+      "state": "NE",
+      "postalCode": "69341"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "Scotts Bluff National Monument is located in the Mountain Time Zone. These hours are for the grounds, picnic area, and trails only. The hours for the Visitor Center and Summit Road are different. See below for Summit Road and Visitor Center hours."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers at Scotts Bluff are generally dry and high temperatures are usually in the 80's and 90's, although they can reach above 100 on occasion. Hikers are strongly advised to carry water. Winter daytime temperatures are usually in the 40's or low 50's, with overnight lows below freezing and, on occasion, below 0 degrees Fahrenheit. Although it can be windy any time of the year, spring is the windiest season."
+  },
+  "images": [
+    {
+      "id": "scbl-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7AB9C7-1DD8-B71B-0BE8539018DE86B3.jpg",
+      "title": "Eagle Rock with Conestoga Wagon",
+      "altText": "Conestoga wagon in front of Eagle Rock",
+      "caption": "Thousands of covered wagons rolled by Eagle Rock in the mid nineteenth century.",
+      "credit": "NPS Photo / Wesley Gant",
+      "isPrimary": true
+    },
+    {
+      "id": "scbl-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5397668D-EE2B-ECA5-E20D3909770F55A1.jpg",
+      "title": "Scotts Bluff from the North Platte RIver",
+      "altText": "A pink sky and dramatic bluff are seen reflected in water.",
+      "caption": "Scotts Bluff as seen from the north side of the North Platte River",
+      "credit": "NPS/Brian Poffenberger",
+      "isPrimary": false
+    },
+    {
+      "id": "scbl-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/53E24E27-9E85-1E36-7C0620A02E2CF826.jpg",
+      "title": "A Hot Air Balloon at the East Entrance to the Monument",
+      "altText": "A colorful hot air balloon is seen in the distance with the Scotts Bluff entrance sign.",
+      "caption": "A hot air balloon is seen at the east entrance to Scotts Bluff National Monument.",
+      "credit": "NPS/Eric Grunwald",
+      "isPrimary": false
+    },
+    {
+      "id": "scbl-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/53FCDCF1-CF55-C217-5992B9D300037376.jpg",
+      "title": "Mitchell Pass bathed in Morning Light",
+      "altText": "The distinctive rock formations of Mitchell Pass glow with early morning light.",
+      "caption": "Early morning is a great time to explore Scotts Bluff National Monument.",
+      "credit": "NPS/Eric Grunwald",
+      "isPrimary": false
+    },
+    {
+      "id": "scbl-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/541B41E1-DC9B-3DAA-17952D0186B85883.jpg",
+      "title": "Saddle Rock rises above the Clouds",
+      "altText": "A unique rock formation is seen above a layer of clouds.",
+      "caption": "An inversion creates the feeling of walking on the clouds at the summit of Scotts Bluff.",
+      "credit": "NPS/Robert Wagner",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "7C37B79B-D02D-49EB-9020-3DB8299B748A",
+      "name": "Backcountry Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/scbl/index.htm",
+    "directions": "http://www.nps.gov/scbl/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Painting",
+    "Photography",
+    "Burial, Cemetery and Gravesite",
+    "Forts",
+    "Great Depression",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Westward Expansion",
+    "Animals",
+    "Birds",
+    "Fossils and Paleontology",
+    "Geology",
+    "Grasslands",
+    "Prairies",
+    "River and Riparian",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "National Monument",
+    "NE"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

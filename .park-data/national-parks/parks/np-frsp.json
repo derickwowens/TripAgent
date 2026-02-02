@@ -1,0 +1,234 @@
+{
+  "id": "np-frsp",
+  "name": "Fredericksburg & Spotsylvania National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Fredericksburg, Chancellorsville, Wilderness, and Spotsylvania, this is America's battleground, where the Civil War roared to its bloody climax. No place more vividly reflects the War's tragic cost in all its forms. A town bombarded and looted. Farms large and small ruined. Refugees by the thousands forced into the countryside. More than 85,000 men wounded; 15,000 killed--most in graves unknown.",
+  "shortDescription": "Fredericksburg, Chancellorsville, Wilderness, and Spotsylvania, this is America's battleground, where the Civil War roared to its bloody climax. No place more vividly reflects the War's tragic cost in...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 38.29378,
+    "longitude": -77.46734
+  },
+  "nationalParkInfo": {
+    "parkCode": "frsp",
+    "npsId": "52430E36-3361-4BB8-BE6F-0F2834E50CB3",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/frsp/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/frsp/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5406933200",
+    "email": "FRSP_Info@nps.gov",
+    "website": "https://www.nps.gov/frsp/index.htm",
+    "address": {
+      "line1": "120 Chatham Ln",
+      "line2": "",
+      "city": "Fredericksburg",
+      "state": "VA",
+      "postalCode": "22405"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Park grounds are open from sunrise to sunset daily, with the exception of extreme weather incidents. Building hours vary by building and season."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The regional climate is characterized by mild winters and warm, humid summers. The mean annual temperatures is 56 degrees Fahrenheit. The average summer temperature is 75 degrees Fahrenheit. Daytime highs during the summer can reach the 90s, and nighttime lows are in the lower 60s. Daytime highs in the winter are typically in the upper 40s, and nighttime lows in the middle 20s. Precipitation is well distributed throughout the year, with the minimum amount in August and the maximum in February."
+  },
+  "images": [
+    {
+      "id": "frsp-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BC87C21E-A621-18BC-AA6D4063790AD241.jpg",
+      "title": "Fairview in the Winter",
+      "altText": "A line of four cannons placed in front of crescent shaped earthen gun pits.",
+      "caption": "Fairview, in the Chancellorsville Battlefield, was the location of intense fighting during the Civil War.",
+      "credit": "Buddy Secor",
+      "isPrimary": true
+    },
+    {
+      "id": "frsp-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/CA02C1EF-1DD8-B71B-0BEEB2EBD4B3D88F.jpg",
+      "title": "Fredericksburg National Cemetery",
+      "altText": "Monument in national cemetery illuminated by candles",
+      "caption": "Thousands of visitors join us every year for our Memorial Day Illumination of the National Cemetery",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frsp-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BC5845B9-BE1C-4D80-935F04F86E771386.jpg",
+      "title": "Innis House along the Sunken Road",
+      "altText": "A gravel path bordered by a stone wall leading to a small, two story white house.",
+      "caption": "The Sunken Road on the Fredericksburg Battlefield is one of the most popular walking spots in the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frsp-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/C9E8E1AB-1DD8-B71B-0B26F19D38F769B0.jpg",
+      "title": "Chatham in the Fall",
+      "altText": "Trees with fall colors in front of large brick manor house",
+      "caption": "When visiting Fredericksburg & Spotsylvania, be sure to explore our numerous historic structures, such as Chatham Manor pictured here",
+      "credit": "Buddy Secor",
+      "isPrimary": false
+    },
+    {
+      "id": "frsp-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BBD886EF-0826-F956-B24D570C28FDE8A3.jpg",
+      "title": "Saunders Field in Spring",
+      "altText": "A cannon in a misty clearing surrounded by sparse trees.",
+      "caption": "The Overland Campaign began at Saunders Field on the Wilderness Battlefield.",
+      "credit": "Buddy Secor",
+      "isPrimary": false
+    },
+    {
+      "id": "frsp-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BC419840-DC24-63D2-9754330092B33E27.jpg",
+      "title": "Bloody Angle in the Fall",
+      "altText": "A bowl-shaped field surrounded by autumn trees.",
+      "caption": "The Bloody Angle in the Spotsylvania Battlefield is a peaceful place today.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frsp-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BCE1F4A5-B66D-5277-2F2A23DC3FDA25F3.jpg",
+      "title": "Living History on Marye's Heights",
+      "altText": "A living historian dressed as a US Civil War soldier speaks with a family outdoors.",
+      "caption": "During the summer, visitors may encounter park living historians and learn about soldiers' experiences during the war.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "frsp-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/BD035087-A43D-59F6-05E3759C316CB546.jpg",
+      "title": "Orientation at the Chancellorsville Battlefield Visitor Center",
+      "altText": "A middle aged couple stand at a visitor center desk and speak with a park service volunteer.",
+      "caption": "Make one of our visitor centers your first stop for orientation, maps, and exhibits about the battles we protect.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/frsp/index.htm",
+    "directions": "http://www.nps.gov/frsp/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Great Depression",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "Cavalry",
+    "US Army",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Presidents",
+    "Reconstruction",
+    "Wars and Conflicts",
+    "Civil War",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fish",
+    "National Military Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

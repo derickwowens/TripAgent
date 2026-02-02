@@ -1,0 +1,157 @@
+{
+  "id": "np-fila",
+  "name": "First Ladies National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "OH",
+  "stateName": "Ohio",
+  "region": "midwest",
+  "description": "First Ladies National Historic Site consists of two properties in downtown Canton, Ohio - the home of First Lady Ida Saxton-McKinley and our Visitor Center. Come learn about how the position of First Lady has evolved over time to include a public role.",
+  "shortDescription": "First Ladies National Historic Site consists of two properties in downtown Canton, Ohio - the home of First Lady Ida Saxton-McKinley and our Visitor Center. Come learn about how the position of First ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 40.79689857,
+    "longitude": -81.37579869
+  },
+  "nationalParkInfo": {
+    "parkCode": "fila",
+    "npsId": "35CB040E-765C-47D0-A594-05943E64EF3E",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fila/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fila/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(330) 452-0876",
+    "email": "FILA_info@nps.gov",
+    "website": "https://www.nps.gov/fila/index.htm",
+    "address": {
+      "line1": "205 Market Avenue South",
+      "line2": "",
+      "city": "Canton",
+      "state": "OH",
+      "postalCode": "44702-2107"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "Closed",
+    "description": "From May 1-October 31 First Ladies National Historic Site's Education & Research Center will be open Tuesday-Saturday (closed Sunday and Mondays).\n\nWe offer guided tours of the Saxton House at 10:00am, 12:00pm, and 2:00pm. Tours have a capacity of fifteen people per tour, and begin at the Visitor Center. Tickets are on a first come first serve basis."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather at First Ladies National Historic Site is typical of Northeastern Ohio: four distinct seasons. Spring's rain and warming temperatures bring new leaves on trees and blooming wildflowers. Summer temperatures range from 49 to 95 degrees F and can be humid. Fall temperatures can range from low 70s during the day to freezing during the night. Fallcolor peaks mid-October. Winter weather conditions can rapidly change. Temperatures vary from mid-30s to below zero."
+  },
+  "images": [
+    {
+      "id": "fila-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C824DCE-1DD8-B71B-0B14D80DEE050385.jpg",
+      "title": "First Ladies National Historic Site",
+      "altText": "a front view of the Ida Saxton McKinley House",
+      "caption": "This was the longtime residence of William and Ida McKinley.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fila-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8250B3-1DD8-B71B-0BC1186047C44DD7.jpg",
+      "title": "Saxton McKinley House Piano",
+      "altText": "A piano in the Saxton McKinley Home",
+      "caption": "Ida Saxton's original piano is just one of many items belonging to President McKinley and First Lady Ida McKinley.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fila-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C82537E-1DD8-B71B-0B629A860705ABF0.jpg",
+      "title": "Saxton McKinley Home",
+      "altText": "Close up view of home entrance.",
+      "caption": "The Saxton McKinley Home is significant as the only residence with direct historical ties to President William McKinley remaining in his hometown of Canton.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fila-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EBC077E5-CA2A-A7E8-DA3F365420132FC4.jpg",
+      "title": "The education center features rotating exhibits.",
+      "altText": "Historic gowns in the education center.",
+      "caption": "Learn about the role of the first lady at our education center.",
+      "credit": "National First Ladies' Library",
+      "isPrimary": false
+    },
+    {
+      "id": "fila-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/EBD27D90-0587-46C5-3A6B8B7BFF240C77.jpg",
+      "title": "Front Door of the Education Center",
+      "altText": "The front of the education center.",
+      "caption": "The education center is is the historic City National Bank building.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fila/index.htm",
+    "directions": "http://www.nps.gov/fila/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Arts",
+    "Presidents",
+    "Social Movements",
+    "Voting Rights and Suffrage",
+    "Tragic Events",
+    "Assassinations",
+    "Women's History",
+    "National Historic Site",
+    "OH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

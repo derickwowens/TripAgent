@@ -1,0 +1,239 @@
+{
+  "id": "np-lewi",
+  "name": "Lewis and Clark National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "OR",
+  "stateName": "Oregon",
+  "region": "pacific",
+  "description": "Explore the timeless rainforests and majestic coastal vistas. Discover the rich heritage of the native people. Unfold the dramatic stories of America's most famous explorers. The park encompasses sites along the Columbia River and the Pacific Coast. Follow in the footsteps of the explorers and have an adventure in history.",
+  "shortDescription": "Explore the timeless rainforests and majestic coastal vistas. Discover the rich heritage of the native people. Unfold the dramatic stories of America's most famous explorers. The park encompasses site...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 46.21178735,
+    "longitude": -123.9638583
+  },
+  "nationalParkInfo": {
+    "parkCode": "lewi",
+    "npsId": "2666104A-6685-4F93-9412-8091007BEF6C",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lewi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/lewi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5038612471",
+    "email": "LEWI_information@nps.gov",
+    "website": "https://www.nps.gov/lewi/index.htm",
+    "address": {
+      "line1": "Lewis and Clark National Historical Park",
+      "line2": "92343 Fort Clatsop Road",
+      "city": "Astoria",
+      "state": "OR",
+      "postalCode": "97103"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Winter Hours:\nBegin the day after Labor Day\nOpen 9 a.m. to 5 p.m."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Entrance fees are collected at the Fort Clatsop Visitor Center.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "We see an average of 70 inches of rain a year and we are the foggiest location in the Lower 48 states. Summer months are usually nice with days ranging from 55-70 degrees. Winters are wet and mild, usually 40-55 degrees. During the 106 days the Lewis and Clark Expedition wintered at Fort Clatsop in 1806 it rained all but 12 days and they saw the sun 6 times. While we are usually not so dreary make sure to prepare for rain or shine."
+  },
+  "images": [
+    {
+      "id": "lewi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/54612AA3-0734-3D97-137865DFB9918D11.jpg",
+      "title": "Fort Clatsop",
+      "altText": "A fifty foot square wooden fort surrounded by tall trees in a forest.",
+      "caption": "The second replica of Fort Clatsop is the main attraction at Lewis and Clark National Historical Park",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "lewi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/577C80DE-B699-CB42-DF941F25F226A9B7.jpg",
+      "title": "Fort Clatsop Visitor Center and Sign",
+      "altText": "A wooden rectangular sign reading Fort Clatsop eclipsing a wide one story building and flag pole",
+      "caption": "The entrance sign and Fort Clatsop visitor center marks the main entrance point to the replica of Fort Clatsop itself.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lewi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/576ABE68-A03E-AAE6-D195912438D64556.jpg",
+      "title": "Fort Clatsop Main Entrance Sign",
+      "altText": "A wooden sign standing as a tall rectangle, the words Fort Clatsop carved of wood placed on it.",
+      "caption": "The entrance sign at the Visitor Center was created in a style that reflects the actual Fort itself, wooden stakes and all.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lewi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/562BF04B-90F9-16EA-90218C826AE639C9.jpg",
+      "title": "Netul River Trail Bridge",
+      "altText": "Looking directly down a short railed bridge towards a calm river surrounded by leafless trees.",
+      "caption": "The Netul River Trail follows 1.25 miles of river and crosses over inlets that salmon and other fish rest at.",
+      "credit": "NPS Photo / B. Kasper",
+      "isPrimary": false
+    },
+    {
+      "id": "lewi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/57362028-C232-556B-6335D32C2A3C2B29.jpg",
+      "title": "Canoe Bow on the Netul River",
+      "altText": "The front end of a canoe on a river, the water still and reflecting large trees and clouds.",
+      "caption": "Paddling on the Lewis and Clark River allows visitors to experience the site from an entirely different perspective, the tidal influenced waters are often gentle and serene.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "lewi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0EFF241-D9EA-F81E-CD6F5E6EDE2B7C48.jpg",
+      "title": "Kayaks from Otter Point",
+      "altText": "Paddlers in warm-colored kayaks cluster along the grassy banks of a river's side channel.",
+      "caption": "Every summer, rangers accompany dozens of visitors on paddle tours of the Lewis and Clark River.",
+      "credit": "NPS Photo / Jim Wilson",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lewi/index.htm",
+    "directions": "http://www.nps.gov/lewi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Enslavement",
+    "Explorers and Expeditions",
+    "Forts",
+    "Industry",
+    "Logging and Timber Cutting",
+    "Military",
+    "Infantry and Militia",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Elk",
+    "Fish",
+    "Forests and Woodlands",
+    "Rainforest",
+    "River and Riparian",
+    "Trails",
+    "Water Trails",
+    "Wetlands",
+    "Marshes",
+    "National Historical Park",
+    "OR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

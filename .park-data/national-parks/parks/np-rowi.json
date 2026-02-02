@@ -1,0 +1,187 @@
+{
+  "id": "np-rowi",
+  "name": "Roger Williams National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "RI",
+  "stateName": "Rhode Island",
+  "region": "northeast",
+  "description": "\"I acknowledge that to molest any person, Jew or Gentile, for either professing doctrine, or practicing worship meerly religious or spiritual, is to persecute him, and such a person (whether his doctrine or practice be true or false) suffers persecution for conscience.\" -Roger Williams, 1644 Banished by the English and saved by the First Peoples, Roger Williams founded Providence here in 1636.",
+  "shortDescription": "\"I acknowledge that to molest any person, Jew or Gentile, for either professing doctrine, or practicing worship meerly religious or spiritual, is to persecute him, and such a person (whether his doctr...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 41.8298955,
+    "longitude": -71.41056665
+  },
+  "nationalParkInfo": {
+    "parkCode": "rowi",
+    "npsId": "0419867F-20D9-49CF-BC42-88F5A70AD32D",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/rowi/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/rowi/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "401-521-7266",
+    "email": "rowi_info@nps.gov",
+    "website": "https://www.nps.gov/rowi/index.htm",
+    "address": {
+      "line1": "282 North Main Street",
+      "line2": "",
+      "city": "Providence",
+      "state": "RI",
+      "postalCode": "02903"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "We're excited to welcome you to the park! Our grounds are open from dawn to dusk, and our Visitor Center is here to greet you Wednesday - Saturday, from 10:00 AM to 4:00 PM. Stop by to grab your passport stamp, enjoy a fascinating 5-minute video about Roger Williams' life, and explore informative panels and exhibits showcasing his enduring influence on America today. We can't wait to share this enriching experience with you!"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "At Roger Williams National Memorial in Providence, the weather varies with the seasons. Spring and fall are mild, with temperatures in the 50s to 60s Fahrenheit and occasional rain. Summers are warm and humid, reaching the 70s to 80s, while winters are cold, often in the 30s and 40s, with chances of snow. Check the forecast before visiting and dress in layers for comfort."
+  },
+  "images": [
+    {
+      "id": "rowi-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0B4D5074-F708-48D7-F777ACFC754336C4.jpg",
+      "title": "The Hahn Memorial and Crabapple Orchard",
+      "altText": "View of the historic well through crabapple trees",
+      "caption": "Roger Williams NM",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "rowi-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C24B603-BF1E-77CC-43B3BCCEA0F492FA.jpg",
+      "title": "National Memorial Grounds",
+      "altText": "Shady lawn along a brick pathway",
+      "caption": "Visit the lawns for a moment of reflection",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rowi-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0BFAF215-F354-E572-F9E1C3AAAF285FE4.jpg",
+      "title": "Crabapple Orchard Picnic Area",
+      "altText": "Accessible tables in the picnic area",
+      "caption": "The Crabapple Orchard is a great place to rest and relax",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rowi-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0C0DB66F-C286-CD0E-9B36C01C03CD1C40.jpg",
+      "title": "Visitor Center",
+      "altText": "Historic building with lamppost and sidewalk",
+      "caption": "The Roger Williams National Memorial Visitor Center",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rowi-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B60F4-1DD8-B71B-0B0E85FDBFF6D842.jpg",
+      "title": "View of the park in early spring.",
+      "altText": "View of the park in early spring.",
+      "caption": "View of the park in early spring.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "rowi-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7B652F-1DD8-B71B-0B99EEF0D2F07B53.jpg",
+      "title": "Ranger helping a child with an activity",
+      "altText": "Ranger helping a child with an activity",
+      "caption": "Ranger helping a child with an activity",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/rowi/index.htm",
+    "directions": "http://www.nps.gov/rowi/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Arts",
+    "Poetry and Literature",
+    "Explorers and Expeditions",
+    "Monuments and Memorials",
+    "Social Movements",
+    "Religious Freedom",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Trains and Railroads",
+    "Urban America",
+    "National Memorial",
+    "RI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

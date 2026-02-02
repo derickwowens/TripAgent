@@ -1,0 +1,274 @@
+{
+  "id": "np-fosu",
+  "name": "Fort Sumter and Fort Moultrie National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "SC",
+  "stateName": "South Carolina",
+  "region": "southeast",
+  "description": "Two forts stand at the entrance of Charleston Harbor. Patriots inside a palmetto log fort, later named Fort Moultrie, defeated the Royal Navy in 1776. As Charleston blazed a path towards secession to preserve slavery, construction on a new fort, Fort Sumter, proceeded. The Confederacy fired on the US garrison of Fort Sumter on April 12, 1861 opening the Civil War, which redefined American freedom.",
+  "shortDescription": "Two forts stand at the entrance of Charleston Harbor. Patriots inside a palmetto log fort, later named Fort Moultrie, defeated the Royal Navy in 1776. As Charleston blazed a path towards secession to ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 32.75654469,
+    "longitude": -79.87068744
+  },
+  "nationalParkInfo": {
+    "parkCode": "fosu",
+    "npsId": "372AF558-26C8-461F-B011-AF359276398D",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fosu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/fosu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(843) 883-3123",
+    "email": "fosu_information@nps.gov",
+    "website": "https://www.nps.gov/fosu/index.htm",
+    "address": {
+      "line1": "340 Concord Street",
+      "line2": "",
+      "city": "Charleston",
+      "state": "SC",
+      "postalCode": "29401"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "9:00AM - 4:30PM",
+    "description": "Fort Moultrie represents the entire history of static seacoast defenses in the United States, from the American Revolution through World War II. The site includes a visitor center with museum exhibits. The Fort Moultrie Visitor Center is open daily 9:00 am-4:30 pm. The fort itself is open until 4:30 pm all year. There is an entrance fee for the park."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Fort Moultrie charges a per person entrance fee for adults. Anyone 16 years old or older is considered an adult.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Mild winters. Hot and humid during the summer."
+  },
+  "images": [
+    {
+      "id": "fosu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E989D519-950E-C3AC-84F007692983681A.jpg",
+      "title": "Fort Moultrie",
+      "altText": "A row of cannon with Fort Moultrie in the background. A US flag is flying in the fort.",
+      "caption": "Fort Moultrie spans 171 years from 1776-1947",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "fosu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5940E3D9-BA8F-CC70-B7721D361AA47CC3.jpg",
+      "title": "Fort Sumter",
+      "altText": "Fort Sumter with a US flag flying above the fort with dock in the foreground",
+      "caption": "Fort Sumter is located on an island in Charleston Harbor and is only accessible by boat.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/57E9FC38-BFCA-D90F-358E6B6813C0CFA2.jpg",
+      "title": "Fort Sumter Cannon",
+      "altText": "Civil War cannon sitting on carriage pointing towards firing hole in brick wall",
+      "caption": "Fort Sumter cannon sitting on cannon carriage under a brick casemate",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/57A6BBDB-9421-A1B9-998E611D61FD9153.jpg",
+      "title": "Inside Fort Moultrie Today",
+      "altText": "Center of image is round metal and glass signal light with grassy hills hills in background",
+      "caption": "Interior View of Fort Moultrie featuring the World War II signal light with grass hills and black concrete gun bateries",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "fosu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E9EA502D-E714-2B69-79A245F9840FF5B5.jpg",
+      "title": "Fort Sumter Visitor Center",
+      "altText": "A three-story brick structure with a staircase in front and water in the background",
+      "caption": "The Fort Sumter Visitor Center is the primary departure point for the ferries to Fort Sumter.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "5A241412-0CFB-497A-9B5F-0AB8C03CDE72",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fosu/index.htm",
+    "directions": "https://www.nps.gov/fosu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "American Revolution",
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Engineering",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Forts",
+    "Incarceration",
+    "Jails and Prisons",
+    "Immigration",
+    "Maritime",
+    "Coastal Defenses",
+    "Maritime - Military",
+    "Lighthouses",
+    "Piracy and Privateering",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "Infantry and Militia",
+    "Artillery",
+    "US Army",
+    "US Navy",
+    "US Coast Guard",
+    "Indigenous and Native Warrior",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Reconstruction",
+    "Schools and Education",
+    "Social Movements",
+    "Abolition Movement",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "American Revolutionary War",
+    "War of 1812",
+    "Civil War",
+    "Spanish-American War",
+    "World War I",
+    "World War II",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Night Sky",
+    "Astronomy",
+    "Scenic Views",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "National Historical Park",
+    "SC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "id": "np-sapu",
+  "name": "Salinas Pueblo Missions National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Tucked away in the middle of New Mexico you’ll find Salinas Pueblo Missions National Monument. Its three distinct sites offer a glimpse into a unique time in history—a time entrenched with cultural borrowing, conflict and struggles. These sites continue to stand as reminders of the Spanish and Pueblo peoples’ early encounters and prompt exploration of today’s interactions among different people.",
+  "shortDescription": "Tucked away in the middle of New Mexico you’ll find Salinas Pueblo Missions National Monument. Its three distinct sites offer a glimpse into a unique time in history—a time entrenched with cultural bo...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 34.35423203,
+    "longitude": -106.2050309
+  },
+  "nationalParkInfo": {
+    "parkCode": "sapu",
+    "npsId": "4E7F8D4B-68EC-4A1B-BB71-0A295EB08557",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sapu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sapu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5058472585",
+    "email": "sapu_interp@nps.gov",
+    "website": "https://www.nps.gov/sapu/index.htm",
+    "address": {
+      "line1": "Salinas Pueblo Missions National Monument",
+      "line2": "105 South Ripley Avenue",
+      "city": "Mountainair",
+      "state": "NM",
+      "postalCode": "87036-0517"
+    }
+  },
+  "operatingHours": {
+    "monday": "10:00AM - 5:00PM",
+    "tuesday": "10:00AM - 5:00PM",
+    "wednesday": "10:00AM - 5:00PM",
+    "thursday": "10:00AM - 5:00PM",
+    "friday": "10:00AM - 5:00PM",
+    "saturday": "10:00AM - 5:00PM",
+    "sunday": "10:00AM - 5:00PM",
+    "description": "Salinas Pueblo Missions National Monument is open 7 days a week year-round except for Thanksgiving, Christmas, and New Years Day.\nSummer hours (April 1st - October 31st) for Mountainair Headquarters and Abó, Quarai and Gran Quivira sites are 10:00AM to 5:00PM daily. Winter hours (November 1st - March 31st) are 9:00AM to 4:00PM daily. \nFor Visitor Center Hours for Abó, Quarai and Gran Quivira, please click the Visitor Centers tab below."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Salinas Pueblo Missions is located at an elevation of 6100-6500 ft (1860-1980 m) in an arid climate. Average annual rainfall is about 15 inches. Winters can be cold and snowy. Summer highs are above 90°F/32°C with cool evenings. The months of June-September often have thunderstorms. Flash flooding may occur in the area. Abó is especially prone to road closures as a result. Spring highs average 75°F/24°C. Fall temperatures are a little cooler. High winds often occur, which may result in trail closures."
+  },
+  "images": [
+    {
+      "id": "sapu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C860054-1DD8-B71B-0BE09BE0AD611F0B.jpg",
+      "title": "Quarai Mission In Spring",
+      "altText": "Pink flowers and green foliage frame the roofless remains of a stone mission.",
+      "caption": "Quarai Mission in Spring",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "sapu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85FF45-1DD8-B71B-0B970D305A272A60.jpg",
+      "title": "Quarai Mission",
+      "altText": "Stone walls of a roofless building rise into a bright blue sky.",
+      "caption": "An overview of the Quarai Mission, seen from the west.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sapu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85FD29-1DD8-B71B-0B6F8E0F1D119DC4.jpg",
+      "title": "Annular Eclipse Seen From Gran Quivira",
+      "altText": "An solar eclipse outlines an old stone structure at Salinas Pueblo Missions.",
+      "caption": "An annular eclipse was visible from Gran Quivira in 2012. A special program allowed visitors to experience this amazing celestial event.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sapu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85FE2F-1DD8-B71B-0B576101F10DC705.jpg",
+      "title": "Kivas At Gran Quivira",
+      "altText": "A paved path winds through the stone foundations of several old kivas.",
+      "caption": "An overview of kivas at Gran Quivira",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sapu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85FC1C-1DD8-B71B-0B63D1D8264921A4.jpg",
+      "title": "An Overview Of The Abó Mission",
+      "altText": "Stone foundations of an old mission structure.",
+      "caption": "An overview of the Abó Mission with the convento in the foreground.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sapu-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C85FAE8-1DD8-B71B-0BF5E48AEE58FC9E.jpg",
+      "title": "Inside The Abó Church",
+      "altText": "A path through stone walls of an old church.",
+      "caption": "A view inside the Abó Church looking north. A nice carpet of grass is usually present during summer months.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sapu/index.htm",
+    "directions": "http://www.nps.gov/sapu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Farming and Agriculture",
+    "Hispanic American Heritage",
+    "Latino American Heritage",
+    "Migrations",
+    "Military",
+    "Cavalry",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Churches",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Wars and Conflicts",
+    "Mexican War",
+    "Indian and Frontier Wars",
+    "Animals",
+    "Birds",
+    "Foothills, Plains and Valleys",
+    "Plateaus and Mesas",
+    "Fossils and Paleontology",
+    "Dinosaur",
+    "Geology",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "Scenic Views",
+    "Trails",
+    "Unique Species",
+    "National Monument",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "np-waco",
+  "name": "Waco Mammoth National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "TX",
+  "stateName": "Texas",
+  "region": "southwest",
+  "description": "Standing as tall as 14 feet and weighing 20,000 pounds, Columbian mammoths roamed across what is present-day Texas thousands of years ago. Today, the fossil specimens represent the nation's first and only recorded evidence of a nursery herd of ice age Columbian mammoths.",
+  "shortDescription": "Standing as tall as 14 feet and weighing 20,000 pounds, Columbian mammoths roamed across what is present-day Texas thousands of years ago. Today, the fossil specimens represent the nation's first and ...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 31.60465887,
+    "longitude": -97.17606143
+  },
+  "nationalParkInfo": {
+    "parkCode": "waco",
+    "npsId": "46CA5FAF-2AEE-4795-B609-8CB81F9FBBEC",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/waco/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/waco/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(254) 750-7946",
+    "email": "WACO_info@nps.gov",
+    "website": "https://www.nps.gov/waco/index.htm",
+    "address": {
+      "line1": "6220 Steinbeck Bend Drive",
+      "line2": "",
+      "city": "Waco",
+      "state": "TX",
+      "postalCode": "76708"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "Operating hours are 9:00 am to 5:00 pm daily. \n\nThe park is open every day except Thanksgiving, Christmas, and New Year's Day. \n\nA Dig Shelter access fee does apply. "
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The monument enjoys a sunny, mild climate during three seasons of the year. Spring: Temperatures range from 45 F to 85 F (7 C/29 C). Rain is common in April and May. Summer: Temperatures range from 70 F to 95 F (21 C/35 C). Temperatures can exceed 100 F (38 C) in July and August. Lightweight clothing and sunscreen are advisable. Be prepared with plenty of water. Fall: Temperatures range from 45 F to 85 F (7 C/29 C). Winter: Temperatures range from 35 F to 65 F (2 C/18 C) . Snow and ice are rare."
+  },
+  "images": [
+    {
+      "id": "waco-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F3BE3-1DD8-B71B-0BD24272B0D8B14F.jpg",
+      "title": "Interior of Dig Shelter",
+      "altText": "Visitors view fossils from walkway",
+      "caption": "Visitors view fossils from above using the elevated walkway.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "waco-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F4210-1DD8-B71B-0B58C9D6A07E6250.jpg",
+      "title": "Waco Mammoth Executive Order",
+      "altText": "President Obama signs order viewed by members of National Park Service",
+      "caption": "On July 10, 2015, President Barack Obama issued a Presidential Proclamation making the Waco Mammoth Site a new unit of the National Park System.",
+      "credit": "Official White House photo by Amanda Lucidon",
+      "isPrimary": false
+    },
+    {
+      "id": "waco-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F43D0-1DD8-B71B-0BBA582C846975FE.jpg",
+      "title": "Mammoth Herd Mural",
+      "altText": "Painting of Mammoth nursery herd",
+      "caption": "This paleontological site represents the nation’s only recorded discovery of a nursery herd of Columbian mammoths.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "waco-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F4735-1DD8-B71B-0B21A6690A70A65B.jpg",
+      "title": "Entrance Sign to Waco Mammoth",
+      "altText": "Entrance sign to Waco Mammoth with bluebonnets in foreground.",
+      "caption": "Waco Mammoth National Monument became part of the national Park Service on July 10, 2015.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "waco-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F4897-1DD8-B71B-0B2380CB31380537.jpg",
+      "title": "Mammoth Tusks",
+      "altText": "Mammoth Tusks in situ",
+      "caption": "Mammoth fossils are in situ (still in their original position within the bone bed).",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/waco/index.htm",
+    "directions": "http://www.nps.gov/waco/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Fossils and Paleontology",
+    "National Monument",
+    "TX"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

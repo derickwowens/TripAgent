@@ -1,0 +1,234 @@
+{
+  "id": "np-stri",
+  "name": "Stones River National Battlefield",
+  "category": "national",
+  "parkType": "national_battlefield",
+  "stateCode": "TN",
+  "stateName": "Tennessee",
+  "region": "southeast",
+  "description": "The Battle of Stones River began on the last day of 1862 and became one of the bloodiest conflicts of the Civil War. The battle produced important military and political gains for the Union, and it changed forever the people who lived and fought here.",
+  "shortDescription": "The Battle of Stones River began on the last day of 1862 and became one of the bloodiest conflicts of the Civil War. The battle produced important military and political gains for the Union, and it ch...",
+  "designation": "National Battlefield",
+  "coordinates": {
+    "latitude": 35.87608652,
+    "longitude": -86.43078399
+  },
+  "nationalParkInfo": {
+    "parkCode": "stri",
+    "npsId": "89157226-8474-4BAE-B471-F1730993A468",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/stri/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/stri/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "615-893-9501",
+    "email": "stri_administration@nps.gov",
+    "website": "https://www.nps.gov/stri/index.htm",
+    "address": {
+      "line1": "1563 North Thompson Lane",
+      "line2": "",
+      "city": "Murfreesboro",
+      "state": "TN",
+      "postalCode": "37129"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:00AM - 5:00PM",
+    "tuesday": "8:00AM - 5:00PM",
+    "wednesday": "8:00AM - 5:00PM",
+    "thursday": "8:00AM - 5:00PM",
+    "friday": "8:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "From March 1st through October 31st,the park tour road is open to vehicles from 8 AM to 5 PM daily. Gates to the parking areas at Stones River National Cemetery, McFadden Farm (Tour Stop 6) and Redoubt Brannan are also open from 8 AM to 5 PM. \n\nWINTER HOURS - From November 1st through the end of February, the gates listed above close at 4:30 PM.\n\nVisitor Center parking open from 7 AM to 30-45 minutes before sunset daily. \n\nPedestrians and bicyclists may use park roads and trails from sunrise to sunset."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summer is hot and humid with highs in the 90s. Spring and fall are pleasant. Winter temperatures are variable, but temperatures may drop below freezing with occasional snow."
+  },
+  "images": [
+    {
+      "id": "stri-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7433C5A9-1DD8-B71B-0B8D22CB43F53B7C.jpg",
+      "title": "Sunrise at Mendenhall's Artillery Trail",
+      "altText": "The sun rises behind a green field with a cannon in the foreground.",
+      "caption": "On January 2, 1863, fifty-seven Union cannons fired from this line ending the Battle of Stones River by killing or wounding more than 1,800 Confederates in less than an hour.",
+      "credit": "NPS Photo / Buddy Secor",
+      "isPrimary": true
+    },
+    {
+      "id": "stri-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7541BA2B-1DD8-B71B-0B930C916C418995.jpg",
+      "title": "Stones River National Cemetery",
+      "altText": "A ray of sunlight shines on the ground at Stones River National Cemetery.",
+      "caption": "More than 6,100 Union soldiers lie in Stones River National Cemetery.",
+      "credit": "NPS Photo / Diana Anderson",
+      "isPrimary": false
+    },
+    {
+      "id": "stri-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7564647E-1DD8-B71B-0BA05DFB4A163DB8.jpg",
+      "title": "The Chicago Board of Trade Battery",
+      "altText": "Two cannons sit in an icy field.",
+      "caption": "The men of the Chicago Board of Trade Battery got their first taste of combat at the Battle of Stones River and helped stem the Confederate tide from this position during the afternoon of December 31, 1862.",
+      "credit": "NPS Photo / Hunter Brooks",
+      "isPrimary": false
+    },
+    {
+      "id": "stri-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/75BFB22E-1DD8-B71B-0B959BCD1CF7203A.jpg",
+      "title": "Union Infantry Program",
+      "altText": "Union soldiers fire muskets.",
+      "caption": "Living history programs help visitors visualize the trials of soldiers during the Battle of Stones River.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "stri-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/75FDE5FF-1DD8-B71B-0B7E9D513467824B.jpeg",
+      "title": "Bike Tour",
+      "altText": "Bicyclists ride down a road bracketed by trees.",
+      "caption": "Thousands of visitors enjoy biking and hiking through the park.",
+      "credit": "NPS Photo / Brenda Massei",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "CE84DEFA-D692-4165-96DF-D5FF56002E2F",
+      "name": "Theater"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/stri/index.htm",
+    "directions": "http://www.nps.gov/stri/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Arts",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Enslavement",
+    "Forts",
+    "Military",
+    "Battlefields",
+    "Monuments and Memorials",
+    "Reconstruction",
+    "Transportation",
+    "Trains and Railroads",
+    "Wars and Conflicts",
+    "Civil War",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Fire",
+    "Geology",
+    "Grasslands",
+    "Scenic Views",
+    "National Battlefield",
+    "TN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

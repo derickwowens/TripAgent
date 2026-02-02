@@ -1,0 +1,130 @@
+{
+  "id": "np-bawa",
+  "name": "Baltimore-Washington Parkway",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "This 29-mile highway connects Baltimore, MD and Washington, D.C. The parkway has carried visitors to and from the capital city since 1954.",
+  "shortDescription": "This 29-mile highway connects Baltimore, MD and Washington, D.C. The parkway has carried visitors to and from the capital city since 1954.",
+  "designation": "Parkway",
+  "coordinates": {
+    "latitude": 39.02604289,
+    "longitude": -76.85410921
+  },
+  "nationalParkInfo": {
+    "parkCode": "bawa",
+    "npsId": "A21F01BC-9E47-4DBE-8655-A1651FC2C1B1",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/bawa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/bawa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1453",
+    "email": "nace_superintendent@nps.gov",
+    "website": "https://www.nps.gov/bawa/index.htm",
+    "address": {
+      "line1": "Baltimore Washington Parkway",
+      "line2": "",
+      "city": "Greenbelt",
+      "state": "MD",
+      "postalCode": "20770"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Baltimore-Washington Parkway is generally open year round, 24 hours a day. Check current conditions for information about closures due to road work and inclement weather."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Washington, D.C. area has a four-season Mid-Atlantic climate. Summertime is warm and humid, while winter can be cold and snowy. Spring: During these months of transition, the weather can alternate from warm, humid air coming from the south to cold, dry air coming from the northwest. Be prepared for changing conditions. Summer: The warmest months are June, July, and August, with average highs in the 80s (~31 ?) combined with high humidity. Temperatures often climb into the 90s (~34?)."
+  },
+  "images": [
+    {
+      "id": "bawa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F83E6-1DD8-B71B-0BD4AB5763204C1E.jpg",
+      "title": "Baltimore Washington Parkway",
+      "altText": "Gladys Noon Spellman sign on the Baltimore Washington Parkway",
+      "caption": "The parkway is dedicated for Gladys Noon Spellman",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "bawa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7F858F-1DD8-B71B-0B673EC0A945016E.jpg",
+      "title": "Baltimore Washington Parkway",
+      "altText": "Greenbelt-Road overpass on the Baltimore Washington Parkway",
+      "caption": "Millions enjoy the scenic entryway to the Nation's Capital",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "bawa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F32DFC76-1DD8-B71B-0B3E48BAA99C6AA7.jpg",
+      "title": "Baltimore Washington Parkway",
+      "altText": "Baltimore Washington Parkway",
+      "caption": "Baltimore Washington Parkway",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "bawa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/66BB5124-BE94-62E8-ED09E05FC3939FF4.jpg",
+      "title": "Baltimore Washington Parkway",
+      "altText": "vehicles driving along the Baltimore Washington Parkway",
+      "caption": "Enjoy a Scenic Drive to the Nation's Capital",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "bawa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/66BB5124-BE94-62E8-ED09E05FC3939FF4.jpg",
+      "title": "Baltimore Washington Parkway",
+      "altText": "vehicles driving along the Baltimore Washington Parkway",
+      "caption": "Enjoy a Scenic Drive to the Nation's Capital",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/bawa/index.htm",
+    "directions": "http://www.nps.gov/bawa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Parkway",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

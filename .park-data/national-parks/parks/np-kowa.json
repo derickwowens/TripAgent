@@ -1,0 +1,134 @@
+{
+  "id": "np-kowa",
+  "name": "Korean War Veterans Memorial",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "At the Korean War Veterans Memorial, \"Our nation honors her sons and daughters who answered the call to defend a country they never knew and a people they never met.\"",
+  "shortDescription": "At the Korean War Veterans Memorial, \"Our nation honors her sons and daughters who answered the call to defend a country they never knew and a people they never met.\"",
+  "designation": "",
+  "coordinates": {
+    "latitude": 38.88784226,
+    "longitude": -77.04773857
+  },
+  "nationalParkInfo": {
+    "parkCode": "kowa",
+    "npsId": "0DEA542F-01B7-4631-8AAD-124161D7B7E6",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/kowa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/kowa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "2024266841",
+    "email": "national_mall@nps.gov",
+    "website": "https://www.nps.gov/kowa/index.htm",
+    "address": {
+      "line1": "10 Daniel French Dr, SW",
+      "line2": "",
+      "city": "Washington",
+      "state": "DC",
+      "postalCode": "20002"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The sites of National Mall and Memorial Parks (other than the Washington Monument) are always open to the public. Restrooms, museums and elevators close in the evenings (check individual sites for hours)"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Washington DC gets to see all four seasons. Humidity will make the temps feel hotter in summer and colder in winter. Spring (March - May) Temp: Average high is 65.5 degrees with a low of 46.5 degrees Summer (June - August) Temp: Average high is 86 degrees with a low of 68.5 degrees Fall (September - November) Temp: Average high is 68 degrees with a low of 51.5 degrees Winter (December - February) Temp: Average high is 45 degrees with a low of 30 degrees (Source: www.usclimatedata.com)"
+  },
+  "images": [
+    {
+      "id": "kowa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C822E13-1DD8-B71B-0B426CD34F183D32.jpg",
+      "title": "Dawn Breaks into the future",
+      "altText": "Dawn Picture of the statues within the memorial",
+      "caption": "Sun Rises over the statues of the Memorial",
+      "credit": "NPS Photo/Carol Highsmith",
+      "isPrimary": true
+    },
+    {
+      "id": "kowa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5C956797-B3A9-16E1-B8B935717288530E.jpg",
+      "title": "Korean War Veterans Memorial",
+      "altText": "The American flag is centered in the backgrounds between two walkways.",
+      "caption": "Korean War Veterans Memorial in the summer",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kowa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5CCA16EA-9898-5840-985A8CAF54604D29.jpg",
+      "title": "Korean War Veterans Memorial",
+      "altText": "Statues of servicemen from the Korean War with fall foliage in the background",
+      "caption": "The Korean War Veterans Memorial with fall foliage",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "kowa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F0BEA1C1-01AB-D4B4-4A16B3080BF2AD80.jpg",
+      "title": "Wall of Faces",
+      "altText": "Faces of soldiers are etched onto a black granite wall",
+      "caption": "The Wall of Faces remembers soldiers that fought during the Korean War.",
+      "credit": "NPS/RMendoza",
+      "isPrimary": false
+    },
+    {
+      "id": "kowa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F0DCE2DE-CB5C-1B53-2DAD37F5B10D68A6.jpg",
+      "title": "Freedom Is Not Free",
+      "altText": "Nineteen stainless steel statues reflect on a black granite wall",
+      "caption": "The nineteen statues reflect on the black granite wall creating an illusion of thirty-eight soldiers. The number thirty-eight represents the 38th parallel latitude where the Korean borders are located.",
+      "credit": "NPS/RMendoza",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/kowa/index.htm",
+    "directions": "http://www.nps.gov/kowa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Wars and Conflicts",
+    "Korean War",
+    "",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

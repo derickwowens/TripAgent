@@ -1,0 +1,253 @@
+{
+  "id": "np-pore",
+  "name": "Point Reyes National Seashore",
+  "category": "national",
+  "parkType": "national_seashore",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "From its thunderous ocean breakers crashing against rocky headlands and expansive sand beaches to its open grasslands, brushy hillsides, and forested ridges, Point Reyes offers visitors over 1500 species of plants and animals to discover. Home to several cultures over thousands of years, the Seashore preserves a tapestry of stories and interactions of people. Point Reyes awaits your exploration.",
+  "shortDescription": "From its thunderous ocean breakers crashing against rocky headlands and expansive sand beaches to its open grasslands, brushy hillsides, and forested ridges, Point Reyes offers visitors over 1500 spec...",
+  "designation": "National Seashore",
+  "coordinates": {
+    "latitude": 38.05511241,
+    "longitude": -122.8797804
+  },
+  "nationalParkInfo": {
+    "parkCode": "pore",
+    "npsId": "B87424A7-92C3-49BA-BF16-A2EB16882376",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pore/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/pore/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "415-464-5100",
+    "email": "pore_info@nps.gov",
+    "website": "https://www.nps.gov/pore/index.htm",
+    "address": {
+      "line1": "1 Bear Valley Road",
+      "line2": "",
+      "city": "Point Reyes Station",
+      "state": "CA",
+      "postalCode": "94956"
+    }
+  },
+  "operatingHours": {
+    "monday": "Opens at 6:00AM",
+    "tuesday": "Opens at 6:00AM",
+    "wednesday": "Opens at 6:00AM",
+    "thursday": "Opens at 6:00AM",
+    "friday": "Opens at 6:00AM",
+    "saturday": "Opens at 6:00AM",
+    "sunday": "Opens at 6:00AM",
+    "description": "Point Reyes National Seashore is open to visitors every day of the year! The park is open from 6 am to midnight. (Visit our Visitor Centers web page, for the hours for the Bear Valley Visitor Center, the Kenneth C. Patrick Visitor Center at Drakes Beach, and the Point Reyes Lighthouse and the stairs leading down to the lighthouse.) Overnight parking is only permitted in the park with a valid backcountry camping permit or for visitors staying at the Point Reyes Hostel."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The moderating influence of the Pacific Ocean creates a climate with no great extremes of heat or cold. Any season can bring interesting weather during your visit to Point Reyes National Seashore. Come prepared!"
+  },
+  "images": [
+    {
+      "id": "pore-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4A1A8835-9A7B-6E5C-B6CE0D4BDCFDB2CB.jpg",
+      "title": "Point Reyes Beach and the Pacific Ocean",
+      "altText": "Waves wash in from the left onto a long, straight stretch of undeveloped, low-lying coastline.",
+      "caption": "Point Reyes Beach from the Point Reyes Lighthouse visitors' parking lot.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "pore-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4A0D673C-D80B-291E-DBA4FFCB414B153A.jpg",
+      "title": "Point Reyes Lighthouse",
+      "altText": "A three-story-tall, white-sided, red-roofed lighthouse adjacent to three other small buildings.",
+      "caption": "Point Reyes Lighthouse",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pore-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4AA393E0-BBE8-CD67-26FB1D85740452AB.jpg",
+      "title": "Historic RCA Coast Station KPH on December 15, 2018.",
+      "altText": "A white, two-story art deco building beyond a green, grassy round-about.",
+      "caption": "The Historic RCA Coast Station KPH.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pore-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4A6ED490-B132-2BEB-02E2109E6B11314E.jpg",
+      "title": "Pierce Point Ranch on June 8, 2020",
+      "altText": "A historic dairy ranch composed of white-painted buildings surrounded by dry grass and a few trees.",
+      "caption": "Pierce Point Ranch",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pore-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/4A4DFFB7-AE90-C860-C30B232D2D8843C2.jpg",
+      "title": "Drakes Beach on July 27, 2019",
+      "altText": "A few dozens of visitors walk along or sit on towels at a sandy beach on a sunny day.",
+      "caption": "Visitors enjoy a sunny day at Drakes Beach.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pore-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DC855-1DD8-B71B-0BBFB3DF83535226.jpg",
+      "title": "Sunset on Tomales Point",
+      "altText": "Photo taken at sunset looking south from Tomales Point with a large granite boulder on the left.",
+      "caption": "Sunset on Tomales Point.",
+      "credit": "NPS Photo / Dan Wells",
+      "isPrimary": false
+    },
+    {
+      "id": "pore-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DC3A6-1DD8-B71B-0BA4EB0B2A5FD3E9.jpg",
+      "title": "Herd of Tule Elk on Tomales Point",
+      "altText": "Herd of Tule Elk on Tomales Point",
+      "caption": "Herd of Tule Elk on Tomales Point.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pore-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7DC509-1DD8-B71B-0B53D1AEB7F385C5.jpg",
+      "title": "Hikers and horse riders on Bear Valley Trail",
+      "altText": "Hikers and horse riders on Bear Valley Trail.",
+      "caption": "Hikers and horse riders on Bear Valley Trail.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pore/index.htm",
+    "directions": "https://www.nps.gov/pore/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Burial, Cemetery and Gravesite",
+    "Explorers and Expeditions",
+    "Farming and Agriculture",
+    "Ranches",
+    "Maritime",
+    "Lighthouses",
+    "Ships and Shipwrecks",
+    "Native American Heritage",
+    "Tragic Events",
+    "Catastrophic Fires",
+    "Animals",
+    "Birds",
+    "Elk",
+    "Fish",
+    "Climate Change",
+    "Dunes",
+    "Estuaries and Mangroves",
+    "Fire",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "Grasslands",
+    "Lakes",
+    "Natural Sounds",
+    "Night Sky",
+    "Oceans",
+    "Whales",
+    "River and Riparian",
+    "Trails",
+    "Unique Species",
+    "Waterfalls",
+    "Wetlands",
+    "Wilderness",
+    "National Seashore",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

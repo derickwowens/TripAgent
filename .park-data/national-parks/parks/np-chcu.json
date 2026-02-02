@@ -1,0 +1,207 @@
+{
+  "id": "np-chcu",
+  "name": "Chaco Culture National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "Explore the monumental structures and breathtaking landscape at Chaco, a thriving regional center for the ancestral Pueblo people from 850 to 1250 CE (Common Era), through hiking & biking trails, ranger guided tours & programs, and more. Chaco Canyon is a sacred and deeply personal place for many Indigenous peoples throughout the Southwest. Please visit with respect.",
+  "shortDescription": "Explore the monumental structures and breathtaking landscape at Chaco, a thriving regional center for the ancestral Pueblo people from 850 to 1250 CE (Common Era), through hiking & biking trails, rang...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 36.03963414,
+    "longitude": -107.9560076
+  },
+  "nationalParkInfo": {
+    "parkCode": "chcu",
+    "npsId": "9C730246-CCB2-496F-AD0E-1D31D76C4C45",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/chcu/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/chcu/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5057867014",
+    "email": "chcu_information@nps.gov",
+    "website": "https://www.nps.gov/chcu/index.htm",
+    "address": {
+      "line1": "1808 CR 7950",
+      "line2": "",
+      "city": "Nageezi",
+      "state": "NM",
+      "postalCode": "87037"
+    }
+  },
+  "operatingHours": {
+    "monday": "7:00AM - 9:00PM",
+    "tuesday": "7:00AM - 9:00PM",
+    "wednesday": "7:00AM - 9:00PM",
+    "thursday": "7:00AM - 9:00PM",
+    "friday": "7:00AM - 9:00PM",
+    "saturday": "7:00AM - 9:00PM",
+    "sunday": "7:00AM - 9:00PM",
+    "description": "All hiking trails and archaeological sites are open from 7am until 9:00pm from May 1-October 31. The visitor center is open from 9:00am-5:00pm daily. At 8:30 PM, you must be leaving or if you are camping, you need to be back in the campground."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This fee allows all persons traveling in one private, non-commercial vehicle (car/truck/van) to enter the park to visit for up to 7 days from the date of purchase.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "This fee allows a single individual traveling on foot, bicycle, or as individuals traveling together in a vehicle as a non-commercial, organized group to enter the park to visit for up to 7 days from the date of purchase.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "This fee for commercial entrance is charged per vehicle and based on the capacity of the vehicle.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "This fee for commercial entrance is charged per vehicle and based on the capacity of the vehicle.",
+      "cost": "100.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial groups are charged per vehicle and based on the capacity of the vehicle. For vehicles with a seating capacity of 15 or fewer, the fee is $25. For vehicles with a seating capacity of 16 or more, the fee is $15/person up to the commercial fee rate. Interagency passes may be used for entry in lieu of the $15/person fee.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "If you represent an academic institution, you may be eligible for a fee waiver. Download and complete the Academic Fee Waiver and mail it to the park at least two weeks prior to your intended visit. We will notify you of the approval or disapproval of your application before your arrival. Please call 505-786-7014 for any additional questions about this process.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "This fee for commercial entrance is charged per vehicle and based on the capacity of the vehicle.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "This fee for commercial entrance is charged per vehicle and based on the capacity of the vehicle.",
+      "cost": "40.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Summer highs are typically in the 80s to mid-90s. Thunderstorms can produce heavy localized downpours and sudden dramatic drops in temperatures. Winter temperatures will drop to well below freezing most nights. If you plan to camp in the winter, prepare for nighttime temperatures in the teens or lower. Spring and fall are great times to visit with more moderate temperatures, but unexpected storms can change things dramatically. Monitor local weather forecasts."
+  },
+  "images": [
+    {
+      "id": "chcu-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/67485E91-9831-CBE2-DFD63F0452FF69AA.jpg",
+      "title": "Fajada Butte",
+      "altText": "Fajada Butte's silhoutte shown under a timelapse image of stars appearing in a vibrant circle above.",
+      "caption": "Chaco Culture National Historical Park is an International Dark Sky Park.",
+      "credit": "B Davis",
+      "isPrimary": true
+    },
+    {
+      "id": "chcu-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/673CF0D6-EA75-AEA3-CB481CFFAB834618.jpg",
+      "title": "Chaco Culture NHP Entrance Sign",
+      "altText": "The entrance sign to Chaco Culture made out of sandstone and showing Fajada Butte through a window.",
+      "caption": "Welcome to Chaco Culture National Historical Park!",
+      "credit": "M Murphy",
+      "isPrimary": false
+    },
+    {
+      "id": "chcu-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/67551208-A835-AB5A-2ABD2016B28F7A54.jpg",
+      "title": "Sandstone Walls",
+      "altText": "Colorful sandstone walls with two open sections in the middle that look like doorways.",
+      "caption": "Most walls seen at Chaco Culture NHP are close to 1,000 years old.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "chcu-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/675E5281-B66A-01FD-71F8C6B5243955BC.jpg",
+      "title": "Raven",
+      "altText": "A raven perched on the side of a canyon wall.",
+      "caption": "Observe many ravens while visiting Chaco Culture NHP.",
+      "credit": "M Murphy",
+      "isPrimary": false
+    },
+    {
+      "id": "chcu-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6766D5AC-B66E-C5E8-8FF614CA62DB2C24.jpg",
+      "title": "Pueblo Bonito",
+      "altText": "An aerial view of the Pueblo Bonito great house showing many rooms and circular kivas.",
+      "caption": "Pueblo Bonito is the largest great house within Chaco Canyon.",
+      "credit": "Andrew Kearns",
+      "isPrimary": false
+    },
+    {
+      "id": "chcu-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/6777EF3D-C5A3-6C5A-828FDECDAE1A1D89.jpg",
+      "title": "Chacoan Jars",
+      "altText": "A series of 4 Chacoan jars replicated in the same black on white style that was excavated long ago.",
+      "caption": "Chaco Culture National Historical Park is home to impressive pottery built by the ancestral Pueblo people.",
+      "credit": "NPS.",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/chcu/index.htm",
+    "directions": "http://www.nps.gov/chcu/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Night Sky",
+    "National Historical Park",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

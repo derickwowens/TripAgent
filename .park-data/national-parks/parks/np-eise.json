@@ -1,0 +1,165 @@
+{
+  "id": "np-eise",
+  "name": "Eisenhower National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "Eisenhower National Historic Site preserves the farm of General and 34th President Dwight D. Eisenhower. Adjacent to the Gettysburg battlefield, the farm served the president and first lady as a weekend retreat and as a meeting place for world leaders. With its peaceful setting and view of South Mountain, it was a respite from Washington, DC, and a backdrop for efforts to reduce Cold War tensions.",
+  "shortDescription": "Eisenhower National Historic Site preserves the farm of General and 34th President Dwight D. Eisenhower. Adjacent to the Gettysburg battlefield, the farm served the president and first lady as a weeke...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.79577592,
+    "longitude": -77.26508101
+  },
+  "nationalParkInfo": {
+    "parkCode": "eise",
+    "npsId": "29621EB6-DFBA-40DD-A880-FE29BE9EE2D7",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/eise/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/eise/planyourvisit/maps.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7173389114",
+    "email": "gett_superintendent@nps.gov",
+    "website": "https://www.nps.gov/eise/index.htm",
+    "address": {
+      "line1": "250 Eisenhower Farm Road",
+      "line2": "",
+      "city": "Gettysburg",
+      "state": "PA",
+      "postalCode": "17325"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The grounds are open thirty minutes before sunrise to thirty minutes after sunset. Visit https://sunrise-sunset.org/us/gettysburg-pa.\nFor the Eisenhower Home tours visit https://www.nps.gov/eise/planyourvisit/eisenhower-farm.htm"
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "https://www.nps.gov/eise/planyourvisit/weather.htm"
+  },
+  "images": [
+    {
+      "id": "eise-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81389C-1DD8-B71B-0BDD6A8DAF590B3E.jpg",
+      "title": "Eisenhower home",
+      "altText": "The Eisenhower home with Ike's putting green in the foreground",
+      "caption": "President Eisenhower was an avid golfer and had a putting green added to the backyard.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "eise-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C813B84-1DD8-B71B-0B9D414CDEC98F96.jpg",
+      "title": "The Eisenhower home in autumn",
+      "altText": "The Eisenhower home in autumn",
+      "caption": "The Eisenhower home in autumn.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "eise-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C813D31-1DD8-B71B-0B034C188C3650B3.jpg",
+      "title": "The Eisenhower living room",
+      "altText": "The Eisenhower living room",
+      "caption": "The Eisenhower living room.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "eise-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C813E6E-1DD8-B71B-0B4D9B3A34C619BE.jpg",
+      "title": "The Eisenhower dining room decorated for the holidays",
+      "altText": "The Eisenhower dining room decorated for the holidays",
+      "caption": "The Eisenhower dining room decorated for the holidays.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/eise/index.htm",
+    "directions": "http://www.nps.gov/eise/planyourvisit/maps.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Farming and Agriculture",
+    "Military",
+    "US Army",
+    "Monuments and Memorials",
+    "Presidents",
+    "Social Movements",
+    "Civil Rights",
+    "Wars and Conflicts",
+    "Civil War",
+    "World War I",
+    "World War II",
+    "Korean War",
+    "Cold War",
+    "National Historic Site",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

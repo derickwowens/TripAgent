@@ -1,0 +1,168 @@
+{
+  "id": "np-sari",
+  "name": "Salt River Bay National Historical Park and Ecological Preserve",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "VI",
+  "stateName": "VI",
+  "region": "southeast",
+  "description": "Salt River Bay National Historical Park and Ecological Preserve uniquely documents the human and natural Caribbean world from the earliest indigenous settlements in the central Caribbean to their clash with seven different colonial European powers to the present day.",
+  "shortDescription": "Salt River Bay National Historical Park and Ecological Preserve uniquely documents the human and natural Caribbean world from the earliest indigenous settlements in the central Caribbean to their clas...",
+  "designation": "National Historical Park and Ecological Preserve",
+  "coordinates": {
+    "latitude": 17.77908602,
+    "longitude": -64.75519348
+  },
+  "nationalParkInfo": {
+    "parkCode": "sari",
+    "npsId": "E84CCC52-A22F-42D6-86F1-198D818C25DD",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sari/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sari/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(340) 773.1460",
+    "email": "CHRI_Education@nps.gov",
+    "website": "https://www.nps.gov/sari/index.htm",
+    "address": {
+      "line1": "Route 75 Salt River Bay",
+      "line2": "",
+      "city": "Christiansted",
+      "state": "VI",
+      "postalCode": "00820"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Due to damage suffered from Hurricane Maria, the Salt River Bay NHP&EP Visitor Center is closed. For information about Salt River Bay - its history and natural environment - please visit the Visitor Center at Fort Christiansvaern, Christiansted National Historic Site. For tours, please call the Interpretation Division at 340.773.1460."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Welcome to the tropics!"
+  },
+  "images": [
+    {
+      "id": "sari-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0B758DC-1DD8-B71B-0B463C640F211F0A.jpg",
+      "title": "Salt River Bay Visitor Contact Station",
+      "altText": "View of the Salt River Bay Visitor Contact Station",
+      "caption": "View of the Salt River Bay Visitor Contact Station from below.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "sari-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0CC412F-1DD8-B71B-0B4FBD44C72415C2.jpg",
+      "title": "View from the Salt River Bay Visitor Contact Station",
+      "altText": "View from the Salt River Bay Visitor Contact Station in the Bay",
+      "caption": "Many visitors visit the Visitor Contact Station and view Salt River Bay from this scenic vista.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sari-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D19D85BC-1DD8-B71B-0B19EB8C0B7DCC23.jpg",
+      "title": "Kayak Salt River",
+      "altText": "Kayak on the beach at Salt River",
+      "caption": "Kayaking is a great way to see our mangroves and beaches!",
+      "credit": "S. Corsaut, Digital Island.",
+      "isPrimary": false
+    },
+    {
+      "id": "sari-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0F89B5B-1DD8-B71B-0B5DE91ED465970E.jpg",
+      "title": "Salt River Bay Aerial View",
+      "altText": "An aerial view of the Salt River Bay area.",
+      "caption": "An aerial view of the Salt River Bay area.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sari-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D17B78F2-1DD8-B71B-0B5DD6FEDBAD5A65.jpg",
+      "title": "Well Tower",
+      "altText": "Photograph of historic masonry well tower in the woods at Salt River.",
+      "caption": "This brick and coral block masonry tower, built in the 1790s, used the power of wind to move water from Salt River to neighboring plantation estates.",
+      "credit": "NPS photo.",
+      "isPrimary": false
+    },
+    {
+      "id": "sari-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/925C33D7-D146-E242-85D7207B60D7DA83.jpg",
+      "title": "Schools and summer camps",
+      "altText": "park ranger talking with summer campers",
+      "caption": "Students and summer campers come to Salt River to learn about our island's nature and history.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "sari-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/92750549-DB4D-532E-36BFD193A9F73F39.jpg",
+      "title": "Diving the wall",
+      "altText": "SCUBA diver looking at the coral on the underwater canyon wall at Salt River",
+      "caption": "SCUBA divers from around the world come to dive the famous canyon walls at Salt River.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sari/index.htm",
+    "directions": "http://www.nps.gov/sari/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Oceans",
+    "National Historical Park and Ecological Preserve",
+    "VI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

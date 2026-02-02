@@ -1,0 +1,137 @@
+{
+  "id": "np-pisc",
+  "name": "Piscataway Park",
+  "category": "national",
+  "parkType": "national_park",
+  "stateCode": "MD",
+  "stateName": "Maryland",
+  "region": "northeast",
+  "description": "Piscataway Park is home to bald eagles, beavers, deer, foxes, ospreys, and many other species. To complement the surroundings, the park has, in addition to a public fishing pier and two boardwalks over fresh water tidal wetlands, a variety of nature trails, meadows, and woodland areas. The Park is also home to National Colonial Farm.",
+  "shortDescription": "Piscataway Park is home to bald eagles, beavers, deer, foxes, ospreys, and many other species. To complement the surroundings, the park has, in addition to a public fishing pier and two boardwalks ove...",
+  "designation": "Park",
+  "coordinates": {
+    "latitude": 38.6929,
+    "longitude": -77.067
+  },
+  "nationalParkInfo": {
+    "parkCode": "pisc",
+    "npsId": "0477F67A-A350-449F-B001-848F867F2CA2",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pisc/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pisc/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "771-208-1555",
+    "email": "pisc_visitorservices@nps.gov",
+    "website": "https://www.nps.gov/pisc/index.htm",
+    "address": {
+      "line1": "3400 Bryan Point Road",
+      "line2": "",
+      "city": "Accokeek",
+      "state": "MD",
+      "postalCode": "20607"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "Piscataway Park, including Accokeek Creek Boardwalk, Farmington Landing, and Marshall Hall, is open daily for pedestrian access from 6:00 a.m. to 10:00 p.m., and for vehicle access through gated areas from 9:00 a.m. to 10:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Summers are generally hot and humid, with daytime highs frequently above 90 degrees Fahrenheit and scattered afternoon thunderstorms. Please carry water while participating in physical activity and be prepared to take shelter from lightning. Winters are generally cold, with nighttime lows frequently near freezing and occasional snowfall. Weather during spring and fall is generally moderate, but can change quickly."
+  },
+  "images": [
+    {
+      "id": "pisc-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0595-1DD8-B71B-0BE07FAAF6BD61E8.jpg",
+      "title": "National Colonial Farm",
+      "altText": "Building at National Colonial Farm at Piscataway Park",
+      "caption": "Building at National Colonial Farm at Piscataway Park",
+      "credit": "NPS photo",
+      "isPrimary": true
+    },
+    {
+      "id": "pisc-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B2693DEC-A549-A42D-4A37785FE51E5FCA.jpg",
+      "title": "Living History at National Colonial Farm",
+      "altText": "A woman wearing 18th century dress stands next to a blooming tree",
+      "caption": "National Colonial Farm, run by the Accokeek Foundation, tells the story of a small family farm in the 1700s.",
+      "credit": "NPS/ MJ Garcia",
+      "isPrimary": false
+    },
+    {
+      "id": "pisc-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0953-1DD8-B71B-0BE70BD0A63819C2.jpg",
+      "title": "Accokeek Creek Site Boardwalk",
+      "altText": "Boardwalk over Accokeek Creek located in Piscataway Park",
+      "caption": "Boardwalk over Accokeek Creek.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pisc-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E0B36-1DD8-B71B-0B03E997FBC8FB62.jpg",
+      "title": "Marshall Hall",
+      "altText": "The remains of Marshall Hall, the house being destroyed by fire.",
+      "caption": "The remains of Marshall Hall.  The house was destroyed by fire.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pisc-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B6229BFF-FBA8-5094-6C0D6B7387A2D46F.jpg",
+      "title": "Accokeek Boardwalk",
+      "altText": "a wooden boardwalk to a green marsh",
+      "caption": "The Accokeek Creek Boardwalk travels through a diverse marsh ecosystem on the Potomac River.",
+      "credit": "NPS/ A Lopez",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pisc/index.htm",
+    "directions": "http://www.nps.gov/pisc/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Colonization and Settlement",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Native American Heritage",
+    "Animals",
+    "Birds",
+    "River and Riparian",
+    "Wetlands",
+    "Marshes",
+    "Park",
+    "MD"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

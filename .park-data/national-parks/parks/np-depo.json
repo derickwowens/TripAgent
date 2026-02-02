@@ -1,0 +1,185 @@
+{
+  "id": "np-depo",
+  "name": "Devils Postpile National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "Established in 1911 by presidential proclamation, Devils Postpile National Monument protects and preserves the Devils Postpile formation, the 101-foot high Rainbow Falls, and pristine mountain scenery. The formation is a rare sight in the geologic world and ranks as one of the world's finest examples of columnar basalt. Its' columns tower up to 60 feet and display a striking symmetry.",
+  "shortDescription": "Established in 1911 by presidential proclamation, Devils Postpile National Monument protects and preserves the Devils Postpile formation, the 101-foot high Rainbow Falls, and pristine mountain scenery...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 37.6152564,
+    "longitude": -119.0873903
+  },
+  "nationalParkInfo": {
+    "parkCode": "depo",
+    "npsId": "2DC9444C-880F-4738-BA1F-6FB123935A02",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/depo/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/depo/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7609342289",
+    "email": "depo_visitor_information@nps.gov",
+    "website": "https://www.nps.gov/depo/index.htm",
+    "address": {
+      "line1": "Devils Postpile Access Road",
+      "line2": "",
+      "city": "Mammoth Lakes",
+      "state": "CA",
+      "postalCode": "93546"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "In the operating season, Devils Postpile National Monument is open 24 hours a day, 7 days a week. \n\nThe Monument usually opens in mid-June. By mid to late October, early winter storms in the High Sierra typically begin to bring snow to the area."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Devils Postpile National Monument is located at 7,560 feet above sea level just west of the Sierra Nevada crest. As such, it experiences typical summer weather in the Sierras. Afternoon thunderstorms are possible in July and August. Daytime temperatures can range from the mid-70s to to mid-80s (degrees Fahrenheit). Evening temperatures can drop into the low 40s (and even the low 30s in the months of September and October)."
+  },
+  "images": [
+    {
+      "id": "depo-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7D873E-1DD8-B71B-0BF8E731254A9D7E.jpg",
+      "title": "Devils  Postpile Formation",
+      "altText": "The Devils Postpile basalt formation resembles tall columns.",
+      "caption": "Devils Postpile formation is one of many features to see at Devils Postpile National Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "depo-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F9B64475-9206-D59D-8C35DD3725F2A20C.jpg",
+      "title": "Hexagonal Fractures at the top of Devils Postpile",
+      "altText": "Hexagonal fractures that make up the columns at the postpile with glacial polish",
+      "caption": "Part of the popular loop trail will take you to this unique geologic formation.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "depo-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F9CDDB94-F7AD-10EA-CBD1553A0E90404B.jpg",
+      "title": "Rainbow Falls",
+      "altText": "Waterfall with faint rainbow",
+      "caption": "Rainbow Falls",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "depo-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FC50E2C7-ED14-4AB8-CC83A5AF15EE344D.jpg",
+      "title": "Soda Springs Meadow and San Joaquin River",
+      "altText": "Soda Springs Meadow and San Joaquin River",
+      "caption": "Soda Springs Meadow and San Joaquin River",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/depo/index.htm",
+    "directions": "http://www.nps.gov/depo/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Animals",
+    "Climate Change",
+    "Fire",
+    "Forests and Woodlands",
+    "Coniferous Forests",
+    "Geology",
+    "Groundwater",
+    "Freshwater Springs",
+    "Mountains",
+    "Natural Sounds",
+    "Night Sky",
+    "Astronomy",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Volcanoes",
+    "Watersheds",
+    "Waterfalls",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "Wilderness",
+    "National Monument",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

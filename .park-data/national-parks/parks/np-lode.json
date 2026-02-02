@@ -1,0 +1,173 @@
+{
+  "id": "np-lode",
+  "name": "Lower Delaware National Wild and Scenic River",
+  "category": "national",
+  "parkType": "national_wild_scenic_river",
+  "stateCode": "PA",
+  "stateName": "Pennsylvania",
+  "region": "northeast",
+  "description": "The Delaware River, the largest free-flowing river in the eastern United States, runs past forests, farmlands and villages. It also links some of the most densely populated regions in America. In 2000, the National Wild and Scenic River System incorporated key segments of the lower Delaware River to form this unit of the National Park System.",
+  "shortDescription": "The Delaware River, the largest free-flowing river in the eastern United States, runs past forests, farmlands and villages. It also links some of the most densely populated regions in America. In 2000...",
+  "designation": "National Wild and Scenic River",
+  "coordinates": {
+    "latitude": 40.4000389,
+    "longitude": -74.983737
+  },
+  "nationalParkInfo": {
+    "parkCode": "lode",
+    "npsId": "64FF65B7-0847-4495-9464-667CAFBF4D16",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/lode/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/lode/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "617-981-0466",
+    "email": "sarah_bursky@nps.gov",
+    "website": "https://www.nps.gov/lode/index.htm",
+    "address": {
+      "line1": "NPS Wild & Scenic Rivers",
+      "line2": "1234 Market Street",
+      "city": "Philadelphia",
+      "state": "PA",
+      "postalCode": "19107"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The largest free-flowing river in the eastern United States, the Delaware River runs past forests, farmlands, and villages, and it also links some of the most densely populated regions in America. In 2000, the National Wild and Scenic River System incorporated key segments of the lower Delaware River to form this unit of the National Park System."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from lows of 26 F to highs of 80 F with average rainfall of 5 inches. Summer: Temperatures usually range from lows of 55 F to highs of 85 F with average rainfall of 4 inches. Fall: Temperatures usually range from lows of 30 F to highs of 83F. Fall foliage is at its peak sometime in October as daily mountain temperatures vary frequently and influence the change. Winter: Temperatures usually range from lows of 15 F to highs of 49 F."
+  },
+  "images": [
+    {
+      "id": "lode-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A403C-1DD8-B71B-0B48D4D57314EA3D.jpg",
+      "title": "Delaware Canal at Raubsville, Locks 22 & 23",
+      "altText": "A rural boat lock with a gate",
+      "caption": "Locks were used to move boats overland via canals",
+      "credit": "NPS Photo/Julia Bell",
+      "isPrimary": true
+    },
+    {
+      "id": "lode-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A4199-1DD8-B71B-0BBB639114F35E91.jpg",
+      "title": "Raven Rock Bridge",
+      "altText": "An old stone-pier bridge over a river",
+      "caption": "The Bridge from Lumberville, PA to Bulls Island Recreation Area, NJ",
+      "credit": "NPS Photo/Julia Bell",
+      "isPrimary": false
+    },
+    {
+      "id": "lode-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A42DB-1DD8-B71B-0BD49DA7BCB7957C.jpg",
+      "title": "Delaware River Sojourners",
+      "altText": "Kayakers enter the river from a riverside beach",
+      "caption": "Sojourners enter the river at Martins Creek, PA",
+      "credit": "NPS Photo/Julia Bell",
+      "isPrimary": false
+    },
+    {
+      "id": "lode-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A4445-1DD8-B71B-0B3381881EA2DFAC.jpg",
+      "title": "Red Admiral Butterfly",
+      "altText": "butterfly lands on a maple leaf",
+      "caption": "Butterfly at Delaware Canal State Park near Upper Black Eddy, PA",
+      "credit": "NPS Photo/Julia Bell",
+      "isPrimary": false
+    },
+    {
+      "id": "lode-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A45C5-1DD8-B71B-0BFD51D64F58C9A9.jpg",
+      "title": "Ringing Rocks County Park",
+      "altText": "water falls over a layered stone cliff face",
+      "caption": "Visitors overlook the waterfall",
+      "credit": "NPS Photo/Julia Bell",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/lode/index.htm",
+    "directions": "http://www.nps.gov/lode/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "American Revolution",
+    "Military",
+    "Transportation",
+    "Canals",
+    "Wars and Conflicts",
+    "American Revolutionary War",
+    "Animals",
+    "Forests and Woodlands",
+    "Geology",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Wetlands",
+    "National Wild and Scenic River",
+    "PA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

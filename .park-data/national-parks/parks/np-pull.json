@@ -1,0 +1,171 @@
+{
+  "id": "np-pull",
+  "name": "Pullman National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "IL",
+  "stateName": "Illinois",
+  "region": "midwest",
+  "description": "In a growing Chicago neighborhood, diverse people and stories intertwined. All were seeking opportunity. Some succeeded. Others were limited—by race, gender, or economic status. Their stories came together in Pullman, a planned industrial community famed for its urban design and architecture.",
+  "shortDescription": "In a growing Chicago neighborhood, diverse people and stories intertwined. All were seeking opportunity. Some succeeded. Others were limited—by race, gender, or economic status. Their stories came tog...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 41.69429163,
+    "longitude": -87.60873824
+  },
+  "nationalParkInfo": {
+    "parkCode": "pull",
+    "npsId": "36223C80-D2F3-45E3-9C44-BEA58A072985",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pull/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pull/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "773 928-7257",
+    "email": "pull_visitorinfo@nps.gov",
+    "website": "https://www.nps.gov/pull/index.htm",
+    "address": {
+      "line1": "610 E. 111th Street",
+      "line2": "",
+      "city": "Chicago",
+      "state": "IL",
+      "postalCode": "60628"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "Pullman National Historical Park is a living, historic neighborhood composed of primarily private residences. Due to it being an active neighborhood just as in any other urban area, visitors are free to explore whenever they feel comfortable. \n\nThe Administration Clock Tower Building Visitor Center is open to the public."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park lies in a humid continental zone with a generally temperate climate. Chicago winters are mildly cold with average temperatures around 26 degrees (F). Summers are hot and humid with an average temperature around 72 degrees (F). Average annual total rainfall is about 36\". Snowfall in the winter is moderate with an average total snowfall of about 38\"."
+  },
+  "images": [
+    {
+      "id": "pull-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/20E409DD-D017-0B84-52AEE57620BCD240.jpg",
+      "title": "Pullman Clocktower on sunny day",
+      "altText": "front of clocktower taken looking up  with blue sky, sunny",
+      "caption": "The iconic Pullman clocktower building is one of the central buildings of Pullman National Monument.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "pull-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C834345-1DD8-B71B-0BDA7BB96CF6F1CA.jpg",
+      "title": "Clock Tower and Administration Building",
+      "altText": "Clock Tower and Administration Building",
+      "caption": "Built in 1880 for the rail car construction factory and executive offices of Pullman's Palace Car Company, this building complex was one of the most beautiful industrial landscapes in America.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pull-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C832E9B-1DD8-B71B-0BE875366FBCB8B5.jpg",
+      "title": "Historic Administration Building",
+      "altText": "Historic Administration Building",
+      "caption": "Administration Building",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pull-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C83449E-1DD8-B71B-0BEA5B3AFF06E874.jpg",
+      "title": "Hotel Florence Building",
+      "altText": "Hotel Florence Building in Fall.",
+      "caption": "The Hotel Florence opened on November 1, 1881 as the hospitality showcase for visitors to George Pullman's \"perfect town\" of Pullman. The hotel was named for George's favorite daughter, Florence.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pull-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C834606-1DD8-B71B-0B1D7130DD9C433B.jpg",
+      "title": "American Flag",
+      "altText": "American flag flying on front porch.",
+      "caption": "The Pullman district also benefits from a diverse and proud residential community.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pull-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/FBC387DE-EF4D-3234-B653B7D17532C1ED.jpg",
+      "title": "Clock Tower and Administration Building",
+      "altText": "Clock Tower and Administration Building with a walkway leading up to the front of it.",
+      "caption": "Built in 1880 for the rail car construction factory and executive offices of Pullman's Palace Car Company",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pull/index.htm",
+    "directions": "http://www.nps.gov/pull/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Engineering",
+    "Industry",
+    "Factories",
+    "Laborer and Worker",
+    "Labor Movement",
+    "Military",
+    "US Army",
+    "Social Movements",
+    "Civil Rights",
+    "Transportation",
+    "Trains and Railroads",
+    "Urban America",
+    "National Historical Park",
+    "IL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

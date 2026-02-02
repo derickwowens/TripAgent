@@ -1,0 +1,203 @@
+{
+  "id": "np-fova",
+  "name": "Fort Vancouver National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "OR",
+  "stateName": "Oregon",
+  "region": "pacific",
+  "description": "Located on the north bank of the Columbia River, in sight of snowy mountain peaks and a vibrant urban landscape, this park has a rich cultural past. From a frontier fur trading post, to a powerful military legacy, the magic of flight, and the origin of the American Pacific Northwest, history is shared at four unique sites. Discover stories of transition, settlement, conflict, and community.",
+  "shortDescription": "Located on the north bank of the Columbia River, in sight of snowy mountain peaks and a vibrant urban landscape, this park has a rich cultural past. From a frontier fur trading post, to a powerful mil...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 45.62234841,
+    "longitude": -122.6617043
+  },
+  "nationalParkInfo": {
+    "parkCode": "fova",
+    "npsId": "B13AB831-6806-4CBA-A93D-4E2FCC39F6F7",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/fova/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/fova/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "3608166230",
+    "email": "fova_information@nps.gov",
+    "website": "https://www.nps.gov/fova/index.htm",
+    "address": {
+      "line1": "1501 E Evergreen Blvd.",
+      "line2": "",
+      "city": "Vancouver",
+      "state": "WA",
+      "postalCode": "98661"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "9:00AM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "Closed",
+    "description": "Standard operating hours for Vancouver, Washington facilities are Tuesday through Saturday, 9:00 a.m. to 4:00 p.m."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Day use/entrance fees are required for visitors ages 16 and up to access reconstructed Fort Vancouver. Federal Interagency Passes are accepted. There is no day use/entrance fee for visitors accessing the Visitor Center, Pearson Air Museum, the Barclay House, and McLoughlin House.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Fort Vancouver National Historic Site is located in a mild, temperate climate. However, in the case of severe weather, park alerts posted on the park's website will provide information about emergency closures."
+  },
+  "images": [
+    {
+      "id": "fova-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8577-1DD8-B71B-0B5ABB3F175DDD81.jpg",
+      "title": "Fort Vancouver Garden",
+      "altText": "Fort Vancouver Garden",
+      "caption": "The garden at the reconstructed Fort Vancouver showcases the many plants that were grown at the historic Fort Vancouver.",
+      "credit": "NPS Photo / Troy Wayrynen",
+      "isPrimary": true
+    },
+    {
+      "id": "fova-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E86BF-1DD8-B71B-0B384E77223186E6.jpg",
+      "title": "Black Powder Demonstrations at Fort Vancouver NHS",
+      "altText": "Black Powder Demonstrations at Fort Vancouver NHS",
+      "caption": "The military history at Vancouver Barracks is told through living history demonstrations, including historic weapons demonstrations.",
+      "credit": "NPS Photo / Troy Wayrynen",
+      "isPrimary": false
+    },
+    {
+      "id": "fova-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E881D-1DD8-B71B-0B98C9CFAE864249.jpg",
+      "title": "Fort Vancouver",
+      "altText": "Fort Vancouver",
+      "caption": "A walk through the reconstructed Fort Vancouver is a highlight of any trip to Fort Vancouver National Historic Site.",
+      "credit": "NPS Photo / Troy Wayrynen",
+      "isPrimary": false
+    },
+    {
+      "id": "fova-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E89A7-1DD8-B71B-0BCC6874B5F69230.jpg",
+      "title": "McLoughlin House",
+      "altText": "McLoughlin House",
+      "caption": "The McLoughlin House in Oregon City is a unit of Fort Vancouver National Historic Site. Here, visitors learn about Dr. John McLoughlin and the early history of Oregon state.",
+      "credit": "NPS Photo / Troy Wayrynen",
+      "isPrimary": false
+    },
+    {
+      "id": "fova-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E8B4B-1DD8-B71B-0BE1CD3DD023CFEC.jpg",
+      "title": "Pearson Air Museum",
+      "altText": "Pearson Air Museum",
+      "caption": "At Pearson Air Museum, visitors learn about the history of Pearson Field and early aviation in the Pacific Northwest.",
+      "credit": "NPS Photo / Troy Wayrynen",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "A8650547-1A30-4222-86C3-A7660A829670",
+      "name": "Reenactments"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "7779241F-A70B-49BC-86F0-829AE332C708",
+      "name": "Playground"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/fova/index.htm",
+    "directions": "http://www.nps.gov/fova/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Archeology",
+    "Asian American Heritage",
+    "Aviation",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Forts",
+    "LGB American Heritage",
+    "Military",
+    "US Army",
+    "Native American Heritage",
+    "Pacific Islander Heritage",
+    "Women's History",
+    "Animals",
+    "National Historic Site",
+    "OR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "np-boaf",
+  "name": "Boston African American National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "MA",
+  "stateName": "Massachusetts",
+  "region": "northeast",
+  "description": "Centered on the north slope of Beacon Hill, the African American community of 1800s Boston led the city and the nation in the fight against slavery and injustice. These remarkable men and women, together with their allies, were leaders in the Abolition Movement, the Underground Railroad, the Civil War, and the early struggle for equal rights and education.",
+  "shortDescription": "Centered on the north slope of Beacon Hill, the African American community of 1800s Boston led the city and the nation in the fight against slavery and injustice. These remarkable men and women, toget...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 42.35908295,
+    "longitude": -71.06764181
+  },
+  "nationalParkInfo": {
+    "parkCode": "boaf",
+    "npsId": "87F00684-8E1F-4E12-B463-2B5B929A0C74",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/boaf/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/boaf/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6174296760",
+    "email": "boaf_mail@nps.gov",
+    "website": "https://www.nps.gov/boaf/index.htm",
+    "address": {
+      "line1": "21 Second Avenue",
+      "line2": "Boston African American National Historical Site",
+      "city": "Charlestown",
+      "state": "MA",
+      "postalCode": "02129"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "10:00AM - 4:00PM",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "10:00AM - 4:00PM",
+    "description": "Boston African American National Historic Site rangers offer tours of the Black Heritage Trail seasonally. Please check the park calendar for available tours and programs."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Boston African American National Historic Site is located in downtown Boston which can see extreme cold in the winter months, as well as extreme heat and humidity throughout the summer months. Walking tours may be cancelled during severe heat and/or weather events."
+  },
+  "images": [
+    {
+      "id": "boaf-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C790CB4-1DD8-B71B-0B29F4B5171A78B3.jpg",
+      "title": "The William Cooper Nell House",
+      "altText": "A yellow wooden house on Beacon Hill",
+      "caption": "This is the home of education activist, abolitionist, and historian William Cooper Nell.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "boaf-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79121E-1DD8-B71B-0BCA364A0C215DA4.jpg",
+      "title": "Flowers at the Shaw Memorial",
+      "altText": "A close up image of flowers laid at the feet of the soldiers on the Shaw Memorial",
+      "caption": "Flowers laid at the feet of the soldiers on the Robert Gould Shaw Memorial.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "boaf-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/68301D98-A14F-2A1E-EA8839FFA6B0CD72.jpg",
+      "title": "Faneuil Hall in Spring",
+      "altText": "A four-story federal-style brick building with rows of arched windows on each floor.",
+      "caption": "For over 275 years, Bostonians have gathered in Faneuil Hall to assert their rights and to work for a better future.",
+      "credit": "NPS / Arlan Fonseca",
+      "isPrimary": false
+    },
+    {
+      "id": "boaf-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C790A8C-1DD8-B71B-0BB037E9568998D1.jpg",
+      "title": "The African Meeting House",
+      "altText": "View from the pulpit at the African Meeting House",
+      "caption": "The African Meeting House served as the religious, educational, and political center of Boston's 19th century African American community.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "boaf-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C791807-1DD8-B71B-0B5F48E02243E9C0.jpg",
+      "title": "The Lewis and Harriet Hayden House",
+      "altText": "The entrance door into a red brick townhouse on Beacon Hill",
+      "caption": "Lewis and Harriet Hayden used their home as an Underground Railroad safe house to shelter those running away from slavery.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "boaf-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C791129-1DD8-B71B-0B2415095E720C42.jpg",
+      "title": "The Robert Gould Shaw Memorial",
+      "altText": "A large bronze statue showing a man on horseback and soldiers walking alongside him",
+      "caption": "The Robert Gould Shaw Memorial honors Colonel Shaw and the Massachusetts 54th, the first African American regiment from the North to fight in the Civil War.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/boaf/index.htm",
+    "directions": "http://www.nps.gov/boaf/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Enslavement",
+    "LGB American Heritage",
+    "Military",
+    "US Army",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "Churches",
+    "Social Movements",
+    "Abolition Movement",
+    "Wars and Conflicts",
+    "Civil War",
+    "Climate Change",
+    "National Historic Site",
+    "MA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

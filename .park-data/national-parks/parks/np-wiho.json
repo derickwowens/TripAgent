@@ -1,0 +1,195 @@
+{
+  "id": "np-wiho",
+  "name": "William Howard Taft National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "OH",
+  "stateName": "Ohio",
+  "region": "midwest",
+  "description": "High atop one of Cincinnati's most prominent hilltops stands the two-story Greek Revival house where William Howard Taft was born and grew up. Hard work, a good education, and an interest in civic duty are attributes that made the Taft family outstanding leaders over the years. The environment that shaped Taft's character and philosophy is highlighted on a visit to the site.",
+  "shortDescription": "High atop one of Cincinnati's most prominent hilltops stands the two-story Greek Revival house where William Howard Taft was born and grew up. Hard work, a good education, and an interest in civic dut...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 39.11970352,
+    "longitude": -84.50758951
+  },
+  "nationalParkInfo": {
+    "parkCode": "wiho",
+    "npsId": "8CB65BC9-2A9D-4AA0-A5E2-B64E9CDA1575",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/wiho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/wiho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5136843262",
+    "email": "wiho_information@nps.gov",
+    "website": "https://www.nps.gov/wiho/index.htm",
+    "address": {
+      "line1": "2038 Auburn Avenue",
+      "line2": "",
+      "city": "Cincinnati",
+      "state": "OH",
+      "postalCode": "45219"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "The Taft Education Center is the park's main visitor center. \n\nThe park grounds have different hours of operation and are open 9 am to 4 pm, seven days a week."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The park lies in a humid continental zone with a generally temperate climate. Winters are mildly cold with average temperatures around 48 degrees (F). Summers are hot and humid with an average temperature around 77 degrees (F). Average annual total rainfall is just under 40\". Snowfall in the winter is generally light with an average total snowfall of less than 12\""
+  },
+  "images": [
+    {
+      "id": "wiho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0D45DABD-A233-4C44-C2C50358855DCA46.jpg",
+      "title": "The Taft Family Home in Summer",
+      "altText": "A yellow two-story brick building with tall windows and green shutters on them",
+      "caption": "The Taft Family Home showing the lower-level entrance on the side and the main entrance on the front",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": true
+    },
+    {
+      "id": "wiho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0D9F98B4-0F1A-E156-D9FBE605D9D0B4BA.jpg",
+      "title": "Taft Education Center",
+      "altText": "A tan and brick sided building with a corner entrance featuring tall glass windows and doors.",
+      "caption": "The main entrance lobby to the Taft Education Center.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DAAE273-060C-82FD-D9547AFF83591170.jpg",
+      "title": "Taft Home and Taft Education Center",
+      "altText": "A yellow building to the right with a red brick sidewalk leading to a tan and red building",
+      "caption": "The walkway leading to and from the Taft Education Center and Taft Home.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DB592D8-CDC9-B2EF-26828169462F5F9F.jpg",
+      "title": "Bookstore Area",
+      "altText": "A lobby area with red and white square tiles and two people standing at a counter with a ranger.",
+      "caption": "The main entrance lobby to the Taft Education Center greets visitors when they arrive.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DC12366-AA03-CC33-F94A093047B2825D.jpg",
+      "title": "Charlie Taft Display",
+      "altText": "A sitting model of an older man in a vest, shirt and pants next to a replica of a car & canoe on top",
+      "caption": "The Charlie Taft animatronic display inside of the Taft Education Center.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DCE87DC-D965-E440-15A10362DD4402D8.jpg",
+      "title": "Shadowboxes",
+      "altText": "Several small and medium-sized glass-covered boxes with different displays inside of them on a wall",
+      "caption": "The shadowbox display of the Taft Legacy inside of the Taft Education Center.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DD7FA48-9658-3DD2-85C6516042B8879A.jpg",
+      "title": "Bookstore Area",
+      "altText": "Several books and gift items arranged in rows on slotted walls",
+      "caption": "The small bookstore inside the Taft Education Center offers visitors a chance to purchase souvenirs while at the park",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DE02697-E45C-A44E-A9E88935753E7986.jpg",
+      "title": "Taft Education Center interpretive displays",
+      "altText": "Tall display columns arranged in rows inside of a large room with photos and text on them.",
+      "caption": "The main interpretive display area inside of the Taft Education Center.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0DF72460-A55F-CA72-89183BBF7A82F14D.jpg",
+      "title": "Taft home display",
+      "altText": "A room inside of a house showing two portraits of men and a fireplace on a wall between two windows.",
+      "caption": "One of the rooms inside of the Taft home with portrait displays of William Howard Taft and Alphonso Taft.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    },
+    {
+      "id": "wiho-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0E058502-E89B-1704-6DF7ABAD1D8FF0A1.jpg",
+      "title": "Interpretive Exhibits inside of the Taft home",
+      "altText": "A large room with individual columns of artifacts and display items in the center and wall displays",
+      "caption": "A room in the Taft home with exhibits focusing on Taft's tenure as President.",
+      "credit": "NPS / Tom Engberg",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/wiho/index.htm",
+    "directions": "http://www.nps.gov/wiho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Birthplace",
+    "Presidents",
+    "National Historic Site",
+    "OH"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

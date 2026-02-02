@@ -1,0 +1,243 @@
+{
+  "id": "np-tuma",
+  "name": "Tumacácori National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "Tumacácori sits at a cultural crossroads in the Santa Cruz River valley. Here O’odham, Yaqui, and Apache people met and mingled with European Jesuit and Franciscan missionaries, settlers, and soldiers, sometimes in conflict and sometimes in cooperation. Follow the timeworn paths and discover stories that connect us to enduring relationships, vibrant cultures, and traditions of long ago.",
+  "shortDescription": "Tumacácori sits at a cultural crossroads in the Santa Cruz River valley. Here O’odham, Yaqui, and Apache people met and mingled with European Jesuit and Franciscan missionaries, settlers, and soldiers...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 31.567824,
+    "longitude": -111.051223
+  },
+  "nationalParkInfo": {
+    "parkCode": "tuma",
+    "npsId": "59E30CB1-C2C3-4444-BCA9-29B0FE16DCCD",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tuma/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tuma/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5203775060",
+    "email": "NPS_TUMA_Information@nps.gov",
+    "website": "https://www.nps.gov/tuma/index.htm",
+    "address": {
+      "line1": "1895 E Frontage Road",
+      "line2": "",
+      "city": "Tumacacori",
+      "state": "AZ",
+      "postalCode": "85640"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "These hours apply to the visitor center and mission grounds. The Anza Trail, which runs through the park, can be accessed 24/7 from other trailheads."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "The park entrance fee is $10.00 per adult (age 16 or older) and is good for 7 days. The entrance pass is valid for seven days.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Accredited school groups coming for educational purposes are exempt from the normal entrance fees.",
+      "cost": "0.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Located above the heat of the low desert, Tumacácori National Historical Park is in the mesquite highlands, close to 3,300 feet in elevation, where temperatures are five to ten degrees cooler than Tucson or Phoenix. Visiting the park in this moderate climate is pleasurable during any season of the year but remember to prepare accordingly. Bring layered clothing and drink plenty of water."
+  },
+  "images": [
+    {
+      "id": "tuma-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79D947-1DD8-B71B-0BD91C826A5B9030.jpg",
+      "title": "Tumacácori on a Summer Day",
+      "altText": "panorama of mission church with green grass and clouds",
+      "caption": "A summer day yields beautiful colors and a striking scene on the mission grounds.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "tuma-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79DADF-1DD8-B71B-0BBD3BEB58C2CF6C.jpg",
+      "title": "La Fiesta de Tumacácori",
+      "altText": "folklorico dancers in front of church",
+      "caption": "The Fiesta de Tumacácori, held annually in December, has over 40 years of history and hundreds of years of heritage.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tuma-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79DC55-1DD8-B71B-0BE9F6EF17F455BA.jpg",
+      "title": "Visiting Tumacácori",
+      "altText": "long paved sidewalk leads to adobe mission church",
+      "caption": "Modern facilities like paved sidewalks and restrooms complement a visit to this site's rich history.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tuma-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E03BB-1DD8-B71B-0B741814262D08D0.jpg",
+      "title": "Visitors on a Mission Tour",
+      "altText": "ranger and visitors looking at church facade",
+      "caption": "Guided mission tours explore the hidden treasures and untold stories of Tumacácori's past.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tuma-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F6313CB3-CC17-152C-12C9F487588533FA.jpg",
+      "title": "Visitors Exploring the Mission Grounds",
+      "altText": "two visitors on trail walking toward church, papel picado in foreground",
+      "caption": "Visitors can explore the mission grounds, the visitor center, and river corridor all in a single afternoon.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "C0FFC3D5-0E74-4B6F-B69D-6F95B78906CE",
+      "name": "Live Music"
+    },
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "E53E1320-9B17-41DC-86A5-37EB7D622572",
+      "name": "Dining"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tuma/index.htm",
+    "directions": "http://www.nps.gov/tuma/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Colonization and Settlement",
+    "Farming and Agriculture",
+    "Ranches",
+    "Hispanic American Heritage",
+    "Latino American Heritage",
+    "Military",
+    "Music",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Missions",
+    "Churches",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "Colonial/European Contact Conflicts",
+    "Women's History",
+    "Animals",
+    "Forests and Woodlands",
+    "Groundwater",
+    "Mountains",
+    "Night Sky",
+    "River and Riparian",
+    "Trails",
+    "National Historical Park",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

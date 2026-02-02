@@ -1,0 +1,137 @@
+{
+  "id": "np-poch",
+  "name": "Port Chicago Naval Magazine National Memorial",
+  "category": "national",
+  "parkType": "national_memorial",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "On July 17, 1944, a massive explosion jolted the San Francisco East Bay area, shattering windows and lighting up the night sky. At Port Chicago Naval Magazine, 320 men were killed instantly when two ships loading ammunition for Pacific troops exploded, resulting in the worst home front disaster of WWII. The aftermath illuminated the issues of segregation and racial inequality in the military.",
+  "shortDescription": "On July 17, 1944, a massive explosion jolted the San Francisco East Bay area, shattering windows and lighting up the night sky. At Port Chicago Naval Magazine, 320 men were killed instantly when two s...",
+  "designation": "National Memorial",
+  "coordinates": {
+    "latitude": 38.05685472,
+    "longitude": -122.0301603
+  },
+  "nationalParkInfo": {
+    "parkCode": "poch",
+    "npsId": "F26E7620-3284-4F39-AB1B-98100B4AC6A7",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/poch/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/poch/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9252288860",
+    "email": "poch_general_info@nps.gov",
+    "website": "https://www.nps.gov/poch/index.htm",
+    "address": {
+      "line1": "4202 Alhambra Ave",
+      "line2": "",
+      "city": "Martinez",
+      "state": "CA",
+      "postalCode": "94553"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Port Chicago Naval Magazine National Memorial is located on Military Ocean Terminal Concord (MOTCO) and is an active base. Due to its location, tours are only available with reservations on a ranger-guided tour. Public access to the memorial is through a two-week advance reservation process and only on Thursdays, Fridays or Saturdays. Allow for 1.5 hours beginning at 12:30 PM. No access Sundays, Mondays, Tuesdays, Wednesdays, and during Military Ocean Terminal Concord (MOTCO) operations."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Port Chicago Naval Magazine National Memorial is on a base and sits on the waterfront. There is no shelter at the memorial, aside from the shuttle. It can be windy and cold during any season. Many people prefer to at least bring a light jacket during the summer, or coat during the other seasons."
+  },
+  "images": [
+    {
+      "id": "poch-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A0454-1DD8-B71B-0B7C42BC0D75A36F.jpg",
+      "title": "Port Chicago Naval Magazine National Memorial",
+      "altText": "Port Chicago Memorial",
+      "caption": "Port Chicago Naval Magazine National Memorial",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "poch-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F8907716-E877-89E2-3DF458305A6BDE90.jpg",
+      "title": "Port Chicago Naval Magazine National Memorial",
+      "altText": "Park signs sitting in rock bed. Trees and bay in background.",
+      "caption": "Park sign at the memorial.",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "poch-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F89A2B0D-CDB6-8C96-F9786E18EB6B6994.jpg",
+      "title": "Port Chicago Naval Magazine National Memorial",
+      "altText": "Historic train car.",
+      "caption": "Historic train car at the memorial site.",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "poch-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F8A41067-E9C7-D704-44FC37C20CF3EA55.jpg",
+      "title": "Port Chicago Naval Magazine National Memorial",
+      "altText": "Munitions bolted as display in the magazine.",
+      "caption": "Munitions at the memorial.",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    },
+    {
+      "id": "poch-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F8AC5252-FE11-2AF7-759F428794187358.jpg",
+      "title": "Port Chicago Naval Magazine National Memorial",
+      "altText": "American flag waves in the wind.",
+      "caption": "American flag at the memorial.",
+      "credit": "NPS photo, Luther Bailey",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/poch/index.htm",
+    "directions": "http://www.nps.gov/poch/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Military",
+    "US Navy",
+    "Social Movements",
+    "Civil Rights",
+    "Tragic Events",
+    "Explosions",
+    "Wars and Conflicts",
+    "World War II",
+    "National Memorial",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

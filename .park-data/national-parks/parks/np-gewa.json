@@ -1,0 +1,220 @@
+{
+  "id": "np-gewa",
+  "name": "George Washington Birthplace National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "George Washington Birthplace National Monument is located in the Northern Neck of Virginia. It encompasses 551 acres of land where seven generations of the Washington family lived and where George Washington was born in 1732. The park was also central to one of the earliest efforts to memorialize George Washington during the celebration of his bicentennial birth anniversary in 1932.",
+  "shortDescription": "George Washington Birthplace National Monument is located in the Northern Neck of Virginia. It encompasses 551 acres of land where seven generations of the Washington family lived and where George Was...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 38.19362603,
+    "longitude": -76.92079458
+  },
+  "nationalParkInfo": {
+    "parkCode": "gewa",
+    "npsId": "542D7CC3-B948-4891-9811-829661F30686",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/gewa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/gewa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8042241732",
+    "email": "gewa_thst_information@nps.gov",
+    "website": "https://www.nps.gov/gewa/index.htm",
+    "address": {
+      "line1": "1732 Popes Creek Road",
+      "line2": "",
+      "city": "Colonial Beach",
+      "state": "VA",
+      "postalCode": "22443"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Memorial Area is open daily from 9:00 a.m. to 5:00 p.m."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "George Washington Birthplace can be very warm and humid in the summer months while cold and dry in the winter. Spring and fall are the best seasons to visit."
+  },
+  "images": [
+    {
+      "id": "gewa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3D13D699-B89E-E495-18D9F3D4826FD0BE.jpg",
+      "title": "Memorial House Museum and Kitchen in Summer",
+      "altText": "Two buildings surrounded by green foliage with a brick path leading to the buildings.",
+      "caption": "The Memorial House Museum and Colonial Revival Kitchen in Summer",
+      "credit": "NPS / Cleo Kantz-Schultz",
+      "isPrimary": true
+    },
+    {
+      "id": "gewa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/0ABBFD32-FE2A-6141-1486AC0FF80936EC.jpg",
+      "title": "George Washington Birthplace National Monument in Spring",
+      "altText": "White obelisk in a roundabout, surrounded by trees and the park sign",
+      "caption": "George Washington Birthplace National Monument in Spring",
+      "credit": "NPS / Cleo Kantz-Schultz",
+      "isPrimary": false
+    },
+    {
+      "id": "gewa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/678B843C-0D04-17B1-41E634FC92C3F98A.jpg",
+      "title": "George Washington Birthplace National Monument in Winter",
+      "altText": "A large monument sits in the middle of a roundabout with snow on the ground",
+      "caption": "George Washington Birthplace National Monument during the winter season.",
+      "credit": "NPS Photo / Cleo Kantz-Schultz",
+      "isPrimary": false
+    },
+    {
+      "id": "gewa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B1E849B2-E9A9-D53F-76496DE9CEC6C806.jpg",
+      "title": "Memorial House Museum and Colonial Kitchen",
+      "altText": "Brick Memorial House Museum and Wooden Colonial Kitchen",
+      "caption": "Historic Area landscape of the Memorial House and Colonial Kitchen",
+      "credit": "NPS Photo / Stephen Girimont",
+      "isPrimary": false
+    },
+    {
+      "id": "gewa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B1BC42A4-B749-0E55-A6D101DCD7ABBE57.jpg",
+      "title": "Overlook of Popes Creek",
+      "altText": "View of Popes Creek",
+      "caption": "View of Popes Creek",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "gewa-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/91339E64-D121-5059-DAC9A369214DCD5A.jpg",
+      "title": "Popes Creek Bridge",
+      "altText": "A wooden bridge stretching from shore to shore over a large body of water",
+      "caption": "Popes Creek Bridge leading to the Nature Trail",
+      "credit": "NPS Photo / Cleo Kantz-Schultz",
+      "isPrimary": false
+    },
+    {
+      "id": "gewa-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/914DDB77-D53B-3BE6-D9719CC45E8EF4E3.jpg",
+      "title": "Memorial House Museum",
+      "altText": "A red brick building surrounded by trees and a dirt path leading to the building",
+      "caption": "Memorial House Museum",
+      "credit": "NPS Photo / Cleo Kantz-Schultz",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/gewa/index.htm",
+    "directions": "https://www.nps.gov/gewa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Archeology",
+    "Birthplace",
+    "Burial, Cemetery and Gravesite",
+    "Enslavement",
+    "Farming and Agriculture",
+    "Plantations",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Presidents",
+    "Wars and Conflicts",
+    "Colonial/European Contact Conflicts",
+    "American Revolutionary War",
+    "Women's History",
+    "Animals",
+    "Climate Change",
+    "Forests and Woodlands",
+    "Fossils and Paleontology",
+    "Geology",
+    "Natural Sounds",
+    "River and Riparian",
+    "Scenic Views",
+    "Wetlands",
+    "Marshes",
+    "Swamps",
+    "National Monument",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

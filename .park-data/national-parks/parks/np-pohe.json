@@ -1,0 +1,143 @@
+{
+  "id": "np-pohe",
+  "name": "Potomac Heritage National Scenic Trail",
+  "category": "national",
+  "parkType": "national_scenic_trail",
+  "stateCode": "DC",
+  "stateName": "DC",
+  "region": "southeast",
+  "description": "The Potomac River corridor is rich in both history and recreation, offering a chance to both explore your heritage and choose your adventure along the way. Start your journey here!",
+  "shortDescription": "The Potomac River corridor is rich in both history and recreation, offering a chance to both explore your heritage and choose your adventure along the way. Start your journey here!",
+  "designation": "National Scenic Trail",
+  "coordinates": {
+    "latitude": 39.15060133,
+    "longitude": -77.52301085
+  },
+  "nationalParkInfo": {
+    "parkCode": "pohe",
+    "npsId": "B7429C72-D8CA-46D9-8E89-E659259D8EEF",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pohe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/pohe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "301-739-4200",
+    "email": "POHE_information@nps.gov",
+    "website": "https://www.nps.gov/pohe/index.htm",
+    "address": {
+      "line1": "Potomac Heritage National Scenic Trail",
+      "line2": "c/o Chesapeake and Ohio Canal National Historical Park",
+      "city": "Williamsport",
+      "state": "MD",
+      "postalCode": "21795"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Trail is open year-round, weather permitting. Our partners who manage specific sections of the trails may have seasonal openings and closings. Please refer to our Operating Hours & Seasons page for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather associated with the PHT network is typical of a temperate climate, with four distinct seasons and variable precipitation throughout the year. Temperatures can vary from a high of 100 degrees Fahrenheit in the summer to 0 degrees in the winter."
+  },
+  "images": [
+    {
+      "id": "pohe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/57DDD525-C26A-90FA-5D5DC9A304EE0246.jpg",
+      "title": "Potomac River",
+      "altText": "sunset over a river",
+      "caption": "Watch the sunset over the Potomac River",
+      "credit": "NPS Photo / Steve Dean",
+      "isPrimary": true
+    },
+    {
+      "id": "pohe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C836E6F-1DD8-B71B-0BDFC8EED394C32E.jpg",
+      "title": "Great Allegheny Passage (GAP)",
+      "altText": "A bicycle sits on a bright summer day overlooking the rolling mountains in the distance.",
+      "caption": "Great Allegheny Passage is a bicyclist enthusiasts' dream come true!",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pohe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/580BEC61-A9CE-EDA1-98EFFD3B1E833A73.jpg",
+      "title": "Chesapeake and Ohio Canal",
+      "altText": "blue flowers bloom next to a trail",
+      "caption": "Bluebells flowering on the towpath",
+      "credit": "NPS Photo / Stephanie Spencer",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pohe/index.htm",
+    "directions": "https://www.nps.gov/pohe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "American Revolution",
+    "Farming and Agriculture",
+    "Forts",
+    "Military",
+    "Artillery",
+    "Armories",
+    "Battlefields",
+    "Transportation",
+    "Canals",
+    "Tunnels",
+    "Trains and Railroads",
+    "Animals",
+    "Forests and Woodlands",
+    "River and Riparian",
+    "Scenic Views",
+    "Watersheds",
+    "National Scenic Trail",
+    "DC"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

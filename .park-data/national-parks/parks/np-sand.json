@@ -1,0 +1,167 @@
+{
+  "id": "np-sand",
+  "name": "Sand Creek Massacre National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CO",
+  "stateName": "Colorado",
+  "region": "west",
+  "description": "On November 29th, 1864, Chiefs Black Kettle, White Antelope, Left Hand and others were encamped with around 750 Arapaho and Cheyenne people in a valley by the Big Sandy Creek. A hope for peace, brought forth by Black Kettle was in the balance. It was a tragic day where the blood of the Cheyenne and Arapaho was shed, and a painful memory for generations of Native Americans was made.",
+  "shortDescription": "On November 29th, 1864, Chiefs Black Kettle, White Antelope, Left Hand and others were encamped with around 750 Arapaho and Cheyenne people in a valley by the Big Sandy Creek. A hope for peace, brough...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 38.56414189,
+    "longitude": -102.5169542
+  },
+  "nationalParkInfo": {
+    "parkCode": "sand",
+    "npsId": "13E255FA-F68C-491C-828C-59E5B4FA2600",
+    "region": "west"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sand/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sand/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7194385916",
+    "email": "sand_information@nps.gov",
+    "website": "https://www.nps.gov/sand/index.htm",
+    "address": {
+      "line1": "55411 County Rd W",
+      "line2": "",
+      "city": "Chivington",
+      "state": "CO",
+      "postalCode": "81036"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "9:00AM - 4:00PM",
+    "sunday": "9:00AM - 4:00PM",
+    "description": "The park is located 23 miles outside of the town of Eads, Colorado and is open five days a week. Please view the directions tab for more information."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather conditions at the park vary considerably. Temperatures range from over 100°F in summer to under 20°F in winter. Visitors can expect blowing dust and sand year-round, especially during infrequent storms. Some of these storms produce violent tornadoes or large blizzards, so prepare accordingly, and contact the on-duty Ranger to ask about road conditions at (719)-438-5916"
+  },
+  "images": [
+    {
+      "id": "sand-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C841052-1DD8-B71B-0B0333C9B2FBE609.jpg",
+      "title": "Cheyenne Lodges at Dawn",
+      "altText": "Four white Indian lodges on a grassy plain.",
+      "caption": "Cheyenne and Arapaho Lodges erected in commemoration of the 150th Year of the Sand Creek Massacre",
+      "credit": "NPS Photo/Shawn G. Gillette",
+      "isPrimary": true
+    },
+    {
+      "id": "sand-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C841219-1DD8-B71B-0B091C54872B2707.jpg",
+      "title": "Remembering the Past",
+      "altText": "A lone tipi frame and two wayside signs stand in a snow-covered landscape",
+      "caption": "A tipi frame is backlit by an evening sky.",
+      "credit": "NPS Photo/Shawn G. Gillette",
+      "isPrimary": false
+    },
+    {
+      "id": "sand-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8414E1-1DD8-B71B-0B762D9224F24C9B.jpg",
+      "title": "Sunset along Sand Creek",
+      "altText": "The uppermost branches of leafless trees in a grassy plain are lit by the setting sun.",
+      "caption": "The setting sun highlights trees along Sand Creek, forming a hauntingly beautiful landscape",
+      "credit": "NPS Photo/Jeff Campbell",
+      "isPrimary": false
+    },
+    {
+      "id": "sand-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C84163B-1DD8-B71B-0B9B06EA0A89A12C.jpg",
+      "title": "Tipi Frame at Dusk",
+      "altText": "A tipi frame is silhouetted by the evening sky.",
+      "caption": "The silhouette of a lone tipi at dusk symbolizes the tragic events that occurred in 1864 and of the indomitable spirit of the Cheyenne and Arapaho people, who overcame the tragedy and continue to work with the NPS to preserve its memory and legacy.",
+      "credit": "NPS Photo/Jeff Campbell",
+      "isPrimary": false
+    },
+    {
+      "id": "sand-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8417F1-1DD8-B71B-0B2E945CA8419664.jpg",
+      "title": "Winter clouds over Sand Creek",
+      "altText": "An expanse of winter prairie with brown grasses, leafless trees, and low clouds above.",
+      "caption": "Winter on the Southeastern Colorado Plains can produce beautiful scenes such as this.",
+      "credit": "NPS Photo/Jeff Campbell",
+      "isPrimary": false
+    },
+    {
+      "id": "sand-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C841AC7-1DD8-B71B-0BCCC52512C9C88C.jpg",
+      "title": "Snow on Monument Hill Overlook",
+      "altText": "A wayside in the snow-covered foreground with a winter plain stretching behind.",
+      "caption": "This tranquil winter view shows snow throughout the Sand Creek Valley.",
+      "credit": "NPS Photo/Shawn G. Gillette",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sand/index.htm",
+    "directions": "http://www.nps.gov/sand/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Military",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Social Movements",
+    "Tragic Events",
+    "Massacres",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "Civil War",
+    "Westward Expansion",
+    "The Gold Rush",
+    "Grasslands",
+    "Prairies",
+    "National Historic Site",
+    "CO"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

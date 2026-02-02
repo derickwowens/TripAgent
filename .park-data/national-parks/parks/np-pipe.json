@@ -1,0 +1,239 @@
+{
+  "id": "np-pipe",
+  "name": "Pipestone National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "MN",
+  "stateName": "Minnesota",
+  "region": "midwest",
+  "description": "For over 3,000 years, Indigenous people have quarried the red stone at this site to make pipes used in prayer and ceremony - a tradition that continues to this day and makes this site sacred to many people.",
+  "shortDescription": "For over 3,000 years, Indigenous people have quarried the red stone at this site to make pipes used in prayer and ceremony - a tradition that continues to this day and makes this site sacred to many p...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 44.01351958,
+    "longitude": -96.32475523
+  },
+  "nationalParkInfo": {
+    "parkCode": "pipe",
+    "npsId": "932C699A-5680-4EA3-8C62-69A6A7D286C5",
+    "region": "midwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/pipe/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/pipe/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5078255464",
+    "email": "pipe_interpretation@nps.gov",
+    "website": "https://www.nps.gov/pipe/index.htm",
+    "address": {
+      "line1": "36 Reservation Ave",
+      "line2": "",
+      "city": "Pipestone",
+      "state": "MN",
+      "postalCode": "56164"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The grounds are open 24 hours a day year-round so that visitors may walk the 3/4-mile Circle Trail at any time."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Weather varies seasonally from warm and humid in the summer to cold and snowy in the winter. Visitors should be prepared for seasonal weather and for rapidly-changing conditions."
+  },
+  "images": [
+    {
+      "id": "pipe-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DA3FB8BE-E6ED-14AC-0D31ABF5E44A43F8.jpg",
+      "title": "Sioux Quartzite Cliffs",
+      "altText": "Pink wall of rock next to path and grass",
+      "caption": "The outcroppings along the trail are a surprise to many visitors expecting a flat prairie",
+      "credit": "J.Borden",
+      "isPrimary": true
+    },
+    {
+      "id": "pipe-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DB66D53C-D79D-7BA0-81031844356E459F.jpg",
+      "title": "Tallgrass Prairie",
+      "altText": "Purple and yellow wildflowers in a field of tall grass",
+      "caption": "The tallgrass prairie is an explosion of color spring through fall",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DB42C218-AB6C-3517-90DFFD8BE2C5D54B.jpg",
+      "title": "Snowshoeing the Circle Trail",
+      "altText": "A couple outside in snowshoes smiling at the camera",
+      "caption": "Snowshoeing is available for free after January 1st",
+      "credit": "N.Barber",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D9AE8E6C-E1CB-DB3C-A26EB7D30D558178.jpg",
+      "title": "Pulling Pipestone",
+      "altText": "A sheet of stone being taken off a thick slab of stone in a quarry pit",
+      "caption": "It can take months or even years to reach the pipestone layer in a quarry pit.",
+      "credit": "J.Borden",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DA09FE57-B2F3-87A9-6562F73AE569EA9C.jpg",
+      "title": "Jr. Ranger Camp Programs",
+      "altText": "A woman standing next to a little girl helping her make a clay pot",
+      "caption": "Kids have opportunities throughout the summer for hands-on activities",
+      "credit": "C.McCright",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DA20D96B-C8DD-AFE6-6E95233B1408E45B.jpg",
+      "title": "Breaking Through",
+      "altText": "A man in a quarry pit swings a hammer as a woman watches",
+      "caption": "Quarriers must break through over 6 feet of quartzite to reach the pipestone layer",
+      "credit": "N.Barber",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DA0EF444-013D-BEAC-446C863EEEE3719A.jpg",
+      "title": "Learning to Carve Pipestone",
+      "altText": "A man watches over a woman as she saws a piece of stone",
+      "caption": "Travis Erickson teaches new carver, Jessica Arkeketa, how to make a pipe",
+      "credit": "N.Barber",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DB16AFE8-9377-80FA-8C73E6E48BF84892.jpg",
+      "title": "Winnewissa Falls in Winter",
+      "altText": "A waterfall partially surrounded by ice",
+      "caption": "Winnewissa Falls is a favorite spot for visitors all year long",
+      "credit": "N.Barber",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DB26F68D-F29E-1447-E66D966CA34BEC61.jpg",
+      "title": "Teaching the Next Generation",
+      "altText": "A man works with tools in a quarry as kids watch",
+      "caption": "Quarrier and carver Francis Eastman teaches Indigenous youth how to quarry",
+      "credit": "N.Barber",
+      "isPrimary": false
+    },
+    {
+      "id": "pipe-img-9",
+      "url": "https://www.nps.gov/common/uploads/structured_data/DC8F92EB-EECB-DFE8-16E051D3FD9B2293.jpg",
+      "title": "Aaron Prim Breaking Through Quartzite",
+      "altText": "A man in a quarry pit holding a sledge hammer",
+      "caption": "Quarrier Aaron Prim working his way through 6 feet of quartzite to reach pipestone",
+      "credit": "N.Barber",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "43800AD1-D439-40F3-AAB3-9FB651FE45BB",
+      "name": "Gift Shop and Souvenirs"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/pipe/index.htm",
+    "directions": "http://www.nps.gov/pipe/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Explorers and Expeditions",
+    "Monuments and Memorials",
+    "Native American Heritage",
+    "Religion and Spirituality",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Tortoises and Turtles",
+    "Natural Sounds",
+    "Rock Landscapes and Features",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "National Monument",
+    "MN"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

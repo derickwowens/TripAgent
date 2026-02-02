@@ -1,0 +1,249 @@
+{
+  "id": "np-puho",
+  "name": "Puʻuhonua o Hōnaunau National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "HI",
+  "stateName": "Hawaii",
+  "region": "hawaii",
+  "description": "Imagine you had just broken the sacred laws, the kapu, and the only punishment was death. Your only chance of survival is to elude your pursuers and reach the Puʻuhonua, a place of refuge. The Puʻuhonua protected the kapu breaker, defeated warriors, as well as civilians during the time of battle. No physical harm could come to those who reached the boundaries of the Puʻuhonua.",
+  "shortDescription": "Imagine you had just broken the sacred laws, the kapu, and the only punishment was death. Your only chance of survival is to elude your pursuers and reach the Puʻuhonua, a place of refuge. The Puʻuhon...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 19.41268627,
+    "longitude": -155.9008789
+  },
+  "nationalParkInfo": {
+    "parkCode": "puho",
+    "npsId": "632CA28B-F67C-4BDB-A209-42A8332EE6D0",
+    "region": "hawaii"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/puho/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/puho/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "8083282326",
+    "email": "puho_info@nps.gov",
+    "website": "https://www.nps.gov/puho/index.htm",
+    "address": {
+      "line1": "84-5559 Keala o Keawe Rd.",
+      "line2": "HWY 160",
+      "city": "Hōnaunau",
+      "state": "HI",
+      "postalCode": "96726"
+    }
+  },
+  "operatingHours": {
+    "monday": "8:15AM - Sunset",
+    "tuesday": "8:15AM - Sunset",
+    "wednesday": "8:15AM - Sunset",
+    "thursday": "8:15AM - Sunset",
+    "friday": "8:15AM - Sunset",
+    "saturday": "8:15AM - Sunset",
+    "sunday": "8:15AM - Sunset",
+    "description": "Sunset times vary throughout the year. For exact closing times, please see our Facebook page or call the visitor center."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Admits one single, private, non-commercial vehicle and all of its passengers (up to 8 persons). Organized non-profit groups (service organizations, scouts, church groups, college/school clubs) are not eligible for the vehicle permit. Good for entry into Puʻuhonua o Hōnaunau National Historical Park for seven days from the date of purchase.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual when entering by foot or bicycle. Good for entry into Puʻuhonua o Hōnaunau National Historical Park for seven days from the date of purchase. Individuals 15 years old and younger are admitted free of charge.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Academic institutions may be eligible for a fee waiver by simply filling out sections 1, 2, and 5 of our educational fee waiver application. If an educational fee waiver is not obtained, the standard entrance fees apply.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "Non-commercial groups entering the park in a bus or vehicle with a capacity of 16 persons or more will be charged $10.00 for each person on board.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Per Person",
+      "description": "All commercial tours that enter the park on a regular basis must have a Commercial Use Authorization (CUA) and are required to pay the commercial tour fee at the entrance station at each visit. For more information on how to get a CUA visit the Permits & Reservations page.",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "The weather in the park is typically hot and sunny with daytime temperatures in the upper 80's. An excellent time to experience the park is in the morning and in the late afternoon when the temperatures are a bit cooler. The park occasionally closes because of high winds or dangerous storm conditions. Please check with the visitor center or your hotel for any weather advisories or hazardous conditions on the day of your visit."
+  },
+  "images": [
+    {
+      "id": "puho-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/B9D5C440-9B40-6C05-5FCF4EFB33F1FD16.jpg",
+      "title": "Kōnane in the Royal Grounds",
+      "altText": "A stone papamū (Kōnane playing surface) with Hale o Keawe and Hōnaunau Bay in the background.",
+      "caption": "Explore the picturesque Royal Grounds and catch a game of Kōnane on the shores of Hōnaunau Bay.",
+      "credit": "NPS / Chisholm",
+      "isPrimary": true
+    },
+    {
+      "id": "puho-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/97C45226-99E5-D456-023418F7F2D6AA06.jpg",
+      "title": "Hale o Keawe & Keoneʻele Cove",
+      "altText": "A double-hulled canoe sits in Keoneʻele Cove with Hale o Keawe in the background.",
+      "caption": "Hale o Keawe (the royal mausoleum) brings visitors and current cultural practitioners to Puʻuhonua o Hōnaunau.",
+      "credit": "NPS Photo / Tyler Chisholm",
+      "isPrimary": false
+    },
+    {
+      "id": "puho-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/97E97DBA-0423-361D-05AB29FB3CED2C1A.jpg",
+      "title": "The Great Wall and Puʻuhonua",
+      "altText": "Close up image looking along the stones of the Great Wall in the Puʻuhonua with coconut trees",
+      "caption": "The Great Wall separates the Royal Grounds from the Puʻuhonua and demonstrates the impressive Hawaiian dry stacked masonry technique.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "puho-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86CA41-1DD8-B71B-0B589D9EF215AF77.jpg",
+      "title": "Hula Demonstration in the Royal Grounds",
+      "altText": "Hula dancers raise their arms to the sky in the sandy Royal Grounds.",
+      "caption": "Hula dancers perform at the annual Cultural Festival.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "puho-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/9794DBEA-C86C-03F5-51F3177CA76DCCCE.jpg",
+      "title": "Canoe Hale in the Royal Grounds",
+      "altText": "An a-frame canoe hale (house) in the Royal Grounds",
+      "caption": "Visitors from around the world visit Puʻuhonua o Hōnaunau NHP every year to learn more about Hawaiian history and culture",
+      "credit": "NPS Photo / Jeff Walsh",
+      "isPrimary": false
+    },
+    {
+      "id": "puho-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/97B10AB6-A2A0-DA8D-9316568A60CEECF1.jpg",
+      "title": "Sunset in the Tide Pools",
+      "altText": "A glowing sunset reflects in the calm waters of a tide pool.",
+      "caption": "The Picnic Area is a fantastic place to catch a beautiful Hawaiian sunset.",
+      "credit": "NPS Photo / Jeff Walsh",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/puho/index.htm",
+    "directions": "http://www.nps.gov/puho/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Sculpture",
+    "Pacific Islander Heritage",
+    "Reconstruction",
+    "Religion and Spirituality",
+    "Heiau",
+    "Schools and Education",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Tortoises and Turtles",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Geology",
+    "Natural Sounds",
+    "Scenic Views",
+    "Trails",
+    "The Tropics",
+    "Unique Species",
+    "Rare",
+    "Endangered",
+    "National Historical Park",
+    "HI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

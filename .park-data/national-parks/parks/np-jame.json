@@ -1,0 +1,148 @@
+{
+  "id": "np-jame",
+  "name": "Historic Jamestowne Part of Colonial National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "VA",
+  "stateName": "Virginia",
+  "region": "southeast",
+  "description": "Walk in the steps of Captain John Smith and Pocahontas where a successful English colonization of North America began. Despite early struggles to survive, the 1607 settlement evolved into a prosperous colony. As the colony expanded, the Virginia Indians were pushed out of their homeland. In 1619, the arrival of Africans was recorded, marking the origin of slavery in English North America.",
+  "shortDescription": "Walk in the steps of Captain John Smith and Pocahontas where a successful English colonization of North America began. Despite early struggles to survive, the 1607 settlement evolved into a prosperous...",
+  "designation": "Part of Colonial National Historical Park",
+  "coordinates": {
+    "latitude": 37.2065,
+    "longitude": -76.7538
+  },
+  "nationalParkInfo": {
+    "parkCode": "jame",
+    "npsId": "9CFF594A-8DB1-4377-BE2A-10CC2B0C47E1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/jame/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/jame/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "7578982410",
+    "email": "colo_info@nps.gov",
+    "website": "https://www.nps.gov/jame/index.htm",
+    "address": {
+      "line1": "1368 Colonial Parkway",
+      "line2": "",
+      "city": "Jamestown",
+      "state": "VA",
+      "postalCode": "23081"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 5:00PM",
+    "tuesday": "9:00AM - 5:00PM",
+    "wednesday": "9:00AM - 5:00PM",
+    "thursday": "9:00AM - 5:00PM",
+    "friday": "9:00AM - 5:00PM",
+    "saturday": "9:00AM - 5:00PM",
+    "sunday": "9:00AM - 5:00PM",
+    "description": "The Historic Jamestowne Visitor Center has public access to the Preservation Virginia Museum store, indoor public restrooms and for fee collection. Entrance Gate hours are from 8:45 a.m. - 4:30 p.m. Daily.  No entrance is permitted prior to 8:45 a.m. or after 4:30 p.m. including bicyclists and pedestrians."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Per Person",
+      "description": "Adult (16 and older) -$15; good for 7 days entrance to Yorktown Battlefield (and NPS areas at Historic Jamestowne); can be upgraded to see Preservation Virginia areas at Historic Jamestowne for an additional $15 at the Historic Jamestowne Visitor Center. Yorktown Battlefield will not be selling the $30 entrance permit for Historic Jamestowne.",
+      "cost": "15.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "http://www.nps.gov/jame/planyourvisit/weather.htm"
+  },
+  "images": [
+    {
+      "id": "jame-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E67E-1DD8-B71B-0B2D4A6D3D48D7A7.jpg",
+      "title": "Children In Nature Program at Historic Jamestowne",
+      "altText": "Children In Nature Program at Historic Jamestowne",
+      "caption": "Interpretive Program",
+      "credit": "Park Ranger Roger W. Green",
+      "isPrimary": true
+    },
+    {
+      "id": "jame-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E7AD-1DD8-B71B-0BB0DA3376EE97D9.jpg",
+      "title": "Sunset Over the James River",
+      "altText": "Sunset Over the James River",
+      "caption": "Viewed from Historic Jamestowne",
+      "credit": "Park Ranger Roger W. Green",
+      "isPrimary": false
+    },
+    {
+      "id": "jame-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79E91E-1DD8-B71B-0B7E88EBB138AD97.jpg",
+      "title": "Bacon's Rebellion",
+      "altText": "Bacon's Rebellion",
+      "caption": "Living History Program",
+      "credit": "Park Ranger Linda Williams",
+      "isPrimary": false
+    },
+    {
+      "id": "jame-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79EA35-1DD8-B71B-0B785C61718F25B1.jpg",
+      "title": "Park Ranger and Volunteer Prepared for Nature Program",
+      "altText": "Park Ranger and Volunteer Prepared for Nature Program",
+      "caption": "Interpretive Program",
+      "credit": "Park Ranger Roger W. Green",
+      "isPrimary": false
+    },
+    {
+      "id": "jame-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79EB62-1DD8-B71B-0BEF39AF784B51D3.jpg",
+      "title": "Walking Tour",
+      "altText": "Walking Tour",
+      "caption": "Historic Jamestowne's New Towne",
+      "credit": "Park Ranger Roger Green",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "28880A5B-3D29-41AC-BD8B-24743E7A070F",
+      "name": "First Person Interpretation"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/jame/index.htm",
+    "directions": "http://www.nps.gov/jame/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Archeology",
+    "Part of Colonial National Historical Park",
+    "VA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

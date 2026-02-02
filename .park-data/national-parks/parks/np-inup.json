@@ -1,0 +1,129 @@
+{
+  "id": "np-inup",
+  "name": "Iñupiat Heritage Center",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "On the rooftop of the world, the Iñupiat Heritage Center in Barrow, Alaska, tells the story of the Iñupiat people. They have thrived for thousands of years in one of the most extreme climates on Earth, hunting the bowhead, or \"Agviq.\" In the 19th century, the quiet northern seas swarmed with commercial whalemen from New England, who also sought the bowhead for its valuable baleen and blubber.",
+  "shortDescription": "On the rooftop of the world, the Iñupiat Heritage Center in Barrow, Alaska, tells the story of the Iñupiat people. They have thrived for thousands of years in one of the most extreme climates on Earth...",
+  "designation": "",
+  "coordinates": {
+    "latitude": 71.29832445,
+    "longitude": -156.7535863
+  },
+  "nationalParkInfo": {
+    "parkCode": "inup",
+    "npsId": "622B7696-B7D8-41D8-A3C9-C82A60D0CD12",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/inup/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/inup/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "907-434-0805",
+    "email": "jacob_martin@nps.gov",
+    "website": "https://www.nps.gov/inup/index.htm",
+    "address": {
+      "line1": "5421 North Star Street",
+      "line2": "",
+      "city": "Barrow",
+      "state": "AK",
+      "postalCode": "99723"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "Closed",
+    "thursday": "Closed",
+    "friday": "Closed",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "The physical site is not managed by the NPS. Please call 907 852-0422 for hours of operation."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Owing to its location 320 miles (515 km) north of the Arctic Circle, Barrow's climate is cold and dry, classified as a polar climate (Köppen ET). Winter weather can be extremely dangerous because of the combination of cold and wind, while summers are cool even at their warmest."
+  },
+  "images": [
+    {
+      "id": "inup-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8130DF-1DD8-B71B-0B99B1F06EB07E76.jpg",
+      "title": "Clothing of the Inupiaq",
+      "altText": "Museum exhibit case with fur parkas and boots",
+      "caption": "Traditional clothing of the Inupiaq on exhibit at the Center",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "inup-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C8132AC-1DD8-B71B-0BCE4C14F56EBC8D.jpg",
+      "title": "Waiting for whales",
+      "altText": "Two people sit by a tent and a skin canoe in snow next to the ocean.",
+      "caption": "A whaling crew (Hopson 1) waits patiently at the open lead for a bowhead whale, May 2002.",
+      "credit": "Photo courtesy of Inupiat Heritage Center",
+      "isPrimary": false
+    },
+    {
+      "id": "inup-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C813407-1DD8-B71B-0B75242ED1BE1F58.jpg",
+      "title": "Inupiat Heritage Center",
+      "altText": "Large building with words \"Inupiat Heritage Center\" on the side",
+      "caption": "The Inupiat Heritage Center promotes Inupiaq culture, history and language through exhibits, classes, performances and activities.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "inup-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81354E-1DD8-B71B-0B7FB1EEFAA1F02E.jpg",
+      "title": "Inupiaq whalers",
+      "altText": "Five people in heavy clothing paddle a skin canoe in icy waters",
+      "caption": "",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "inup-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C81370F-1DD8-B71B-0B306657BD7F72C5.jpg",
+      "title": "Masks",
+      "altText": "Five masks with fur trim in a display case.",
+      "caption": "A collection of masks from the Inupiat Heritage Center",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/inup/index.htm",
+    "directions": "http://www.nps.gov/inup/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Native American Heritage",
+    "",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

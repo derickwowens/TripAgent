@@ -1,0 +1,155 @@
+{
+  "id": "np-chsc",
+  "name": "Little Rock Central High School National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AR",
+  "stateName": "Arkansas",
+  "region": "southeast",
+  "description": "In 1957, Little Rock Central High School was the epicenter of confrontation and a catalyst for change as the fundamental test for the United States to enforce African American civil rights following Brown v. Board of Education. Learn how the sacrifice and struggle endured by the Little Rock Nine have provided opportunities and opened doors for those seeking education around the world.",
+  "shortDescription": "In 1957, Little Rock Central High School was the epicenter of confrontation and a catalyst for change as the fundamental test for the United States to enforce African American civil rights following B...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 34.7369465,
+    "longitude": -92.29987899
+  },
+  "nationalParkInfo": {
+    "parkCode": "chsc",
+    "npsId": "5C51E54A-BCDA-4186-96C3-1B896C3CDFCB",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/chsc/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/chsc/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(501) 516-7230",
+    "email": "chsc_info@nps.gov",
+    "website": "https://www.nps.gov/chsc/index.htm",
+    "address": {
+      "line1": "Little Rock Central High School NHS",
+      "line2": "2120 W. Daisy L. Gatson Bates Drive",
+      "city": "Little Rock",
+      "state": "AR",
+      "postalCode": "72202-5212"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "10:00AM - 4:00PM",
+    "wednesday": "10:00AM - 4:00PM",
+    "thursday": "10:00AM - 4:00PM",
+    "friday": "10:00AM - 4:00PM",
+    "saturday": "10:00AM - 4:00PM",
+    "sunday": "Closed",
+    "description": "The Little Rock Central High School National Historic Site Visitor Center is currently open Tuesday through Saturday (10:00 a.m. CST/CDT to 4:00 p.m. CST/CDT).\n\nThe Magnolia Mobil Gas Station & Little Rock Central High School are closed to the public and not available for public use. The commemorative garden is open daily for public visitation and use from 7:00 a.m. CST/CDT until sunset.\n\nGuests may visit the NHS daily; we recommend the NPS App for digital content on days when the visitor center is closed."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Arkansas weather can change quickly. While the state is in a moderate temperate zone, it does experience strong thunderstorms, tornadoes and flash floods. In winter, \"snow\" events tend to quickly turn to thin ice which can be difficult to see and to clear. Summer temperatures and humidity can lead to dehydration, heat exhaustion and heat stroke. Visitors are advised to dress in layers and be prepared for precipitation. Average seasonal temperatures (°F): Spring: 62° Summer: 80° Fall: 63° Winter: 43°"
+  },
+  "images": [
+    {
+      "id": "chsc-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/53095121-0127-7E62-B983B9E8D77E7ECF.jpg",
+      "title": "Little Rock Central High School",
+      "altText": "The front facade of Little Rock Central High School",
+      "caption": "Little Rock Central High School has been a public school since opening in 1927.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "chsc-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CBDC8-1DD8-B71B-0B29340F61D2CE6B.jpg",
+      "title": "Little Rock Central High School Visitor Center",
+      "altText": "National Park Visitor Center",
+      "caption": "Exhibits, restrooms and a bookstore are located in the National Park Visitor Center.",
+      "credit": "National Park Service",
+      "isPrimary": false
+    },
+    {
+      "id": "chsc-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/5304E992-EFC7-B3B9-DE8CA434B1739D5B.jpg",
+      "title": "Commemorative Garden",
+      "altText": "Fall colors in the commemorative garden",
+      "caption": "Spend some time in thought in the park's commemorative garden",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chsc-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/53694088-E272-346E-C2CEAE4C4B04B63F.jpeg",
+      "title": "Elizabeth Eckford Bench",
+      "altText": "a replica of a 1950s bus bench with Central High School in the background",
+      "caption": "Images of the Little Rock Nine’s persistence and Elizabeth’s brave walk through the mob to the sanctuary of the bench captured their enduring legacy of “moral courage” that has inspired others around",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "chsc-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7CC144-1DD8-B71B-0B50E17B662448E9.jpg",
+      "title": "The Little Rock Nine",
+      "altText": "The Little Rock Nine exit the doors at Central High under troop escort",
+      "caption": "In September 1957, Little Rock Central High School became a symbol for change and a catalyst for transformation in the civil rights movement as the first fundamental test to the United States’ resolve to enforce African-American civil rights in the face",
+      "credit": "Little Rock Central High School National Historic Site",
+      "isPrimary": false
+    },
+    {
+      "id": "chsc-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/F204F8F6-B24E-E963-527EA3ECE1B5DE64.jpg",
+      "title": "Magnolia Mobil Gas Station",
+      "altText": "The Magnolia Mobil Gas Station, a white stucco facility with terracotta roof",
+      "caption": "The Magnolia Mobil Gas Station, the de facto media headquarters during the 1957 desegregation crisis.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/chsc/index.htm",
+    "directions": "http://www.nps.gov/chsc/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Military",
+    "National Historic Site",
+    "AR"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

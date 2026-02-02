@@ -1,0 +1,136 @@
+{
+  "id": "np-tuin",
+  "name": "Tuskegee Institute National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "AL",
+  "stateName": "Alabama",
+  "region": "southeast",
+  "description": "In 1881, Booker T. Washington arrived in Alabama and started building Tuskegee Institute both in reputation and literally brick by brick. He recruited the best and the brightest to come and teach here including George Washington Carver who arrived in 1896. Carver’s innovations in agriculture, especially with peanuts, expanded Tuskegee’s standing throughout the country. The story continues….",
+  "shortDescription": "In 1881, Booker T. Washington arrived in Alabama and started building Tuskegee Institute both in reputation and literally brick by brick. He recruited the best and the brightest to come and teach here...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 32.42962115,
+    "longitude": -85.70488498
+  },
+  "nationalParkInfo": {
+    "parkCode": "tuin",
+    "npsId": "3A9B0972-7F97-4F8C-9B44-A5FA8DEB1AC1",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/tuin/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/tuin/directions"
+    }
+  ],
+  "contact": {
+    "phone": "(334) 727-3200",
+    "email": "sheryl_buchanan@nps.gov",
+    "website": "https://www.nps.gov/tuin/index.htm",
+    "address": {
+      "line1": "1212 West Montgomery Road",
+      "line2": "",
+      "city": "Tuskegee Institute",
+      "state": "AL",
+      "postalCode": "36088"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:30PM",
+    "tuesday": "9:00AM - 4:30PM",
+    "wednesday": "9:00AM - 4:30PM",
+    "thursday": "9:00AM - 4:30PM",
+    "friday": "9:00AM - 4:30PM",
+    "saturday": "9:00AM - 4:30PM",
+    "sunday": "Closed",
+    "description": "Tuskegee Insitute National Historic Site, admission is free for all visitors."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The weather in Tuskegee is generally sunny with an average of 218 sunny days annually. Tuskegee gets an average of 52 inches of rain per year. The high in July averages 92 degrees, and the average low in January is 34 degrees."
+  },
+  "images": [
+    {
+      "id": "tuin-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C880363-1DD8-B71B-0B19DE390A6D20CD.jpg",
+      "title": "The Oaks - The Home of Booker T. Washington",
+      "altText": "A three story Queen Anne Revival style red brick house",
+      "caption": "This house, like Washington himself, was a lesson plan to both students and benefactors of Tuskegee Institute.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "tuin-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C880528-1DD8-B71B-0BDCCB73C82511DF.jpg",
+      "title": "Sunset Over The Oaks",
+      "altText": "Sunset of blue, red, and orange sky behind The Oaks, Booker T. Washngton home",
+      "caption": "As the the sun sets behind The Oaks, the beauty of the Tuskegee sky shines through.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tuin-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7A401382-9926-84C4-24CF567718FB66F1.jpg",
+      "title": "The Movable School",
+      "altText": "A  brown colored modified school bus with two windows",
+      "caption": "Many are amazed to see the last Movable School that was used by Dr. George W. Carver to bring education to the rural communities surrounding Tuskegee",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "tuin-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7F5824F3-0BD1-EA64-0699A39FDB42B803.jpg",
+      "title": "Carver with Friend and Fellow Inventor, Henry Ford",
+      "altText": "George W. Carver and Henry Ford seated facing one another talking",
+      "caption": "Millions have been impressed by the genious of George W. Carver, including Henry Ford, Founder of Ford Motor Company",
+      "credit": "Tuskegee University Archives",
+      "isPrimary": false
+    },
+    {
+      "id": "tuin-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/7A540E65-09B1-0484-61711AE27C4A5CAB.jpg",
+      "title": "Carver's Peanut Oil",
+      "altText": "Bottle of Peanut Oil with green label - one of Dr. Carver's many uses for the peanut",
+      "caption": "Hundreds flocked to Tuskegee for polio treatment using George W. Carver's peanut oil",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/tuin/index.htm",
+    "directions": "http://www.nps.gov/tuin/directions"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "African American Heritage",
+    "Reconstruction",
+    "Schools and Education",
+    "National Historic Site",
+    "AL"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "id": "np-alka",
+  "name": "Ala Kahakai National Historic Trail",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "HI",
+  "stateName": "Hawaii",
+  "region": "hawaii",
+  "description": "Established in 2000 to preserve, protect and interpret traditional Native Hawaiian culture and natural resources, Ala Kahakai National Historic Trail is a 175-mile corridor encompassing a network of culturally and historically significant trails. This \"trail by the sea\" traverses wahi pana (storied landscapes), ancient Hawaiian sites and over 200 ahupuaʻa (traditional land divisions).",
+  "shortDescription": "Established in 2000 to preserve, protect and interpret traditional Native Hawaiian culture and natural resources, Ala Kahakai National Historic Trail is a 175-mile corridor encompassing a network of c...",
+  "designation": "National Historic Trail",
+  "coordinates": {
+    "latitude": 19.144668109,
+    "longitude": -155.890734294
+  },
+  "nationalParkInfo": {
+    "parkCode": "alka",
+    "npsId": "3B8307B3-54AB-4E5F-ACBC-8DECB98AD5F1",
+    "region": "hawaii"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/alka/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://home.nps.gov/alka/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "email": "aric_arakaki@nps.gov",
+    "website": "https://www.nps.gov/alka/index.htm",
+    "address": {
+      "line1": "Superintendent",
+      "line2": "Ala Kahakai National Historic Trail",
+      "city": "Kailua-Kona",
+      "state": "HI",
+      "postalCode": "96740"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Hours vary dependent on trail section."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Hawaiʻiʻs coast is generally sunny and hot. Be prepared with sun protection (hat, mineral-based sunscreen, sunglasses and long sleeves) and water (minimum 2 liters of water per person per day for short hikes). Before visiting the Trail, check weather forecasts and follow all warnings and advisories: - https://www.weather.gov/hfo/ - www.hawaiicounty.gov/active-alerts"
+  },
+  "images": [
+    {
+      "id": "alka-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/12DBDA50-CD81-A60F-A535BCB55C07A5F9.jpg",
+      "title": "Ala Kahakai",
+      "altText": "Aerial photograph of trail through lava along the Hawaiian Coast",
+      "caption": "The Ala Kahakai National Historic Trail traverses through many types of terrain, including ʻaʻā lava.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "alka-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C86C7EB-1DD8-B71B-0BF2A10341617580.jpg",
+      "title": "Waiulaula Bay",
+      "altText": "sandy beach",
+      "caption": "Segments of the Ala Kahakai pass through white sand beaches.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alka-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/12EC79FE-D6E5-47AB-F3AE5616569D9EA9.jpg",
+      "title": "Ala Kahakai",
+      "altText": "Aerial photograph of trail along the Hawaiian Coast",
+      "caption": "The Ala Kahakai offers panoramic views of the coast of Hawaii Island.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alka-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/12FF1009-CEBB-1B89-97B3499E5F45D82A.jpg",
+      "title": "Ala Kahakai",
+      "altText": "Photograph of woman walking along a segment of trail underneath a shaded tree canopy",
+      "caption": "Some segments of the Ala Kahakai pass through forests and segments with shaded canopy.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "alka-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/130BBAB8-9BCF-C272-3975BE3F34BF8935.jpg",
+      "title": "Ala Kahakai",
+      "altText": "Aerial photograph of hikers along straight rocky segment of Ala Kahakai",
+      "caption": "Some segments of the Ala Kahakai follow the linear and straight historic paths carved out for horse-based transportation.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "FAED7F97-3474-4C21-AB42-FB0768A2F826",
+      "name": "Cultural Demonstrations"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "299CB934-88DC-474F-A33D-E43E29A149C2",
+      "name": "Mountain Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "E0E4CE55-3119-46DE-86EB-6817CD8D5F30",
+      "name": "Motorized Boating"
+    },
+    {
+      "id": "BB0B8CD0-BF4C-4517-9980-CFE2D149C7B4",
+      "name": "Sailing"
+    },
+    {
+      "id": "A510F02B-8938-4679-A4F9-76580BCAE9C7",
+      "name": "Boat Tour"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "C11D3746-5063-4BD0-B245-7178D1AD866C",
+      "name": "Compass and GPS"
+    },
+    {
+      "id": "CA3641A0-FADC-497F-B036-3FE426D0DDCC",
+      "name": "Geocaching"
+    },
+    {
+      "id": "89DA72D0-16D6-4C1C-89D4-103D94F1F63D",
+      "name": "Orienteering"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "17411C8D-5769-4D0F-ABD1-52ED03840C18",
+      "name": "Saltwater Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "19A59EFB-DF4B-4049-9EE1-A784CAC9C70C",
+      "name": "Arts and Crafts"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "B3EF12AF-D951-419E-BD3C-6B36CBCC1E16",
+      "name": "Stand Up Paddleboarding"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "42CF4021-8524-428E-866A-D33097A4A764",
+      "name": "SCUBA Diving"
+    },
+    {
+      "id": "3EBF7EAC-68FC-4754-B6A4-0C38A1583D45",
+      "name": "Snorkeling"
+    },
+    {
+      "id": "AE3C95F5-E05B-4A28-81DD-1C5FD4BE88E2",
+      "name": "Surfing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "C2801992-F34D-4974-A0F2-80FF04309EE4",
+      "name": "Saltwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/alka/index.htm",
+    "directions": "http://home.nps.gov/alka/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Archeology",
+    "Ruins",
+    "Arts",
+    "Sculpture",
+    "Explorers and Expeditions",
+    "Pacific Islander Heritage",
+    "Religion and Spirituality",
+    "Heiau",
+    "Schools and Education",
+    "Transportation",
+    "Roads, Routes and Highways",
+    "Ancient Seas",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Coasts, Islands and Atolls",
+    "Forests and Woodlands",
+    "Rainforest",
+    "Oceans",
+    "Coral Reefs",
+    "Scenic Views",
+    "Trails",
+    "The Tropics",
+    "Volcanoes",
+    "Waterfalls",
+    "National Historic Trail",
+    "HI"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.831Z",
+    "updatedAt": "2026-02-02T03:08:33.831Z",
+    "version": 1
+  }
+}

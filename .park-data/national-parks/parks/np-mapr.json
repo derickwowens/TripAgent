@@ -1,0 +1,161 @@
+{
+  "id": "np-mapr",
+  "name": "Manhattan Project National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "NM",
+  "stateName": "New Mexico",
+  "region": "southwest",
+  "description": "The Manhattan Project is one of the most transformative events of the 20th century. It ushered in the nuclear age with the development of the world’s first atomic bombs. Most of this development took place in three secret communities located in Hanford, WA, Los Alamos, NM and Oak Ridge, TN. Today, you can visit these three sites that make up Manhattan Project National Historical Park.",
+  "shortDescription": "The Manhattan Project is one of the most transformative events of the 20th century. It ushered in the nuclear age with the development of the world’s first atomic bombs. Most of this development took ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 35.88096,
+    "longitude": -106.30214
+  },
+  "nationalParkInfo": {
+    "parkCode": "mapr",
+    "npsId": "E777590D-C086-4A88-B5A2-AAE47DBD6A6F",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/mapr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/mapr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "Hanford: 509.376.1647",
+    "email": "mapr_information@nps.gov",
+    "website": "https://www.nps.gov/mapr/index.htm",
+    "address": {
+      "line1": "National Park Service, Manhattan Project National Historical Park",
+      "line2": "c/o NPS Intermountain Regional Office",
+      "city": "Denver",
+      "state": "CO",
+      "postalCode": "80225-0287"
+    }
+  },
+  "operatingHours": {
+    "monday": "9:00AM - 4:00PM",
+    "tuesday": "9:00PM - 4:00PM",
+    "wednesday": "9:00AM - 4:00PM",
+    "thursday": "9:00AM - 4:00PM",
+    "friday": "9:00AM - 4:00PM",
+    "saturday": "Closed",
+    "sunday": "Closed",
+    "description": "Access to the Hanford B Reactor is by tour only. Separate tours of the Historic Sites are also offered. \nFor more information about tours of the B Reactor, visit http://manhattanprojectbreactor.hanford.gov/. \nFor more information about tours of the historic sites, visit http://tours.hanford.gov/HistoricTours/."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "The Manhattan Project National Historical Park has units in Hanford, WA, Los Alamos, NM, and Oak Ridge, TN. Check local weather conditions at each unit before you visit."
+  },
+  "images": [
+    {
+      "id": "mapr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/E310F561-EC32-2AE8-9AE265815F917C5C.jpg",
+      "title": "Oppenheimer and Groves at Trinity Test Site",
+      "altText": "Historic photo of two men standing next to a mangled piece of metal equipment in the desert.",
+      "caption": "J. Robert Oppenheimer and Gen. Leslie Groves at the Trinity Test Site.",
+      "credit": "Los Alamos National Laboratory",
+      "isPrimary": true
+    },
+    {
+      "id": "mapr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/87DC8664-0A66-3B76-6B9BF543D9581735.jpg",
+      "title": "Hanford B Reactor",
+      "altText": "Gray factory building like stacked boxes with single taller smokestack beneath cloudy blue skies.",
+      "caption": "The B Reactor, located along the Columbia River in Washington, was the world’s first full scale nuclear reactor.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mapr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/88034665-FD02-40D7-B8CBF850271EC139.jpg",
+      "title": "Hanford Hike Through Time",
+      "altText": "Uniformed park ranger talks animatedly to visitors on a hillside overlooking a sprawling urban area.",
+      "caption": "A hike with a Hanford park ranger can lead to new insights and perspectives of the local area.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mapr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/880E8585-ECDE-EB3C-34AF9A04F3EAD72E.png",
+      "title": "Los Alamos Slotin Building",
+      "altText": "Two-story white house with two small windows, a single door, and flat roof stands in a gravel lot.",
+      "caption": "Historic structures endure at Los Alamos, preserving the legacies and untold stories of this important chapter in world history.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mapr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/883C144E-C84E-C110-BBCD64BD1F4F0656.jpg",
+      "title": "Los Alamos Ashley Pond Walk",
+      "altText": "Uniformed park ranger points to distance of fountain and trees as visitors sit enraptured.",
+      "caption": "Park rangers engage visitors in several locations across the Los Alamos area.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mapr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/884A2FA9-FC95-36D1-FB9C52521E3FED66.jpg",
+      "title": "Oak Ridge X-10 Control Panel",
+      "altText": "Wooden chair sits amid light blue paneling covered in dials, meters, screens, and buttons.",
+      "caption": "Many locations at the Oak Ridge site can be accessed through guided tours coordinated by the US Department of Energy.",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "mapr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/885549FD-FC4D-74F5-D3CB06DF1C3B41CD.jpg",
+      "title": "Oak Ridge Family Fun",
+      "altText": "Uniformed park ranger stands with youth along path lined with green broadleaved trees.",
+      "caption": "An outing with Oak Ridge park rangers is fun for the whole family.",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/mapr/index.htm",
+    "directions": "https://www.nps.gov/mapr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Military",
+    "Science, Technology and Innovation",
+    "Tragic Events",
+    "Wars and Conflicts",
+    "World War II",
+    "Women's History",
+    "National Historical Park",
+    "NM"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "stateCode": "FL",
+  "stateName": "Florida",
+  "parkAuthority": {
+    "name": "Florida Department of Environmental Protection",
+    "abbreviation": "FL DEP",
+    "website": "https://www.floridastateparks.org/"
+  },
+  "dataSources": {
+    "boundaries": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "FL",
+        "Mang_Type": "STAT"
+      }
+    },
+    "parkList": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "FL",
+        "Mang_Type": "STAT",
+        "Des_Tp": ["SP", "SRA", "SRMA", "SHCA", "SHS", "SOTH", "SG"]
+      }
+    },
+    "campgrounds": {
+      "type": "reserve_america",
+      "stateFilter": "FL"
+    }
+  },
+  "reservationSystem": {
+    "provider": "Florida State Parks",
+    "providerType": "custom",
+    "baseUrl": "https://reserve.floridastateparks.org/",
+    "deepLinkPattern": "https://www.reserve.floridastateparks.org/Web/?parkId={parkId}",
+    "searchUrl": "https://reserve.floridastateparks.org/Web/"
+  },
+  "urlPatterns": {
+    "officialParkPage": "https://www.floridastateparks.org/{slug}",
+    "experiencesPage": "https://www.floridastateparks.org/parks-and-trails/{slugDash}/experiences-amenities",
+    "hoursFeesPage": "https://www.floridastateparks.org/parks-and-trails/{slugDash}/hours-fees"
+  },
+  "designationTypes": {
+    "SP": {
+      "code": "SP",
+      "name": "State Park",
+      "pluralName": "State Parks"
+    },
+    "SRA": {
+      "code": "SRA",
+      "name": "State Recreation Area",
+      "pluralName": "State Recreation Areas"
+    },
+    "SRMA": {
+      "code": "SRMA",
+      "name": "State Recreation Management Area",
+      "pluralName": "State Recreation Management Areas"
+    },
+    "SHCA": {
+      "code": "SHCA",
+      "name": "State Historic Site",
+      "pluralName": "State Historic Sites"
+    },
+    "SHS": {
+      "code": "SHS",
+      "name": "State Historic Site",
+      "pluralName": "State Historic Sites"
+    },
+    "SG": {
+      "code": "SG",
+      "name": "State Garden",
+      "pluralName": "State Gardens"
+    },
+    "SOTH": {
+      "code": "SOTH",
+      "name": "State Preserve",
+      "pluralName": "State Preserves"
+    }
+  },
+  "contact": {
+    "generalPhone": "850-245-2157",
+    "reservationPhone": "1-800-326-3521",
+    "email": "info@floridastateparks.org"
+  },
+  "fees": {
+    "vehicleAdmission": {
+      "standard": {
+        "perVehicle": 6,
+        "perPerson": 2
+      },
+      "notes": "Fees vary by park, typically $2-6 per vehicle"
+    },
+    "camping": {
+      "baseRate": {
+        "min": 18,
+        "max": 40
+      },
+      "reservationFee": 6.70
+    }
+  },
+  "seasonalInfo": {
+    "typicalSeasonStart": "01-01",
+    "typicalSeasonEnd": "12-31",
+    "yearRoundOperation": true,
+    "peakSeason": {
+      "start": "11-01",
+      "end": "04-30"
+    }
+  },
+  "specialFeatures": [
+    "springs",
+    "beaches",
+    "coral_reefs",
+    "manatee_viewing",
+    "kayak_trails"
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "id": "np-vick",
+  "name": "Vicksburg National Military Park",
+  "category": "national",
+  "parkType": "national_military_park",
+  "stateCode": "MS",
+  "stateName": "Mississippi",
+  "region": "southeast",
+  "description": "To Confederate President Jefferson Davis, Vicksburg was the \"nailhead that holds the South's two halves together.\" President Abraham Lincoln remarked \"Vicksburg is the key\" to victory, and could be the north's lifeline into the south. As the federals closed in on the Fortress City, they were met by a ring of forts with over 170 cannon. The resulting battle would determine the war's outcome.",
+  "shortDescription": "To Confederate President Jefferson Davis, Vicksburg was the \"nailhead that holds the South's two halves together.\" President Abraham Lincoln remarked \"Vicksburg is the key\" to victory, and could be th...",
+  "designation": "National Military Park",
+  "coordinates": {
+    "latitude": 32.3621286,
+    "longitude": -90.85030186
+  },
+  "nationalParkInfo": {
+    "parkCode": "vick",
+    "npsId": "45408368-12DB-4950-92A8-E26AC85E3724",
+    "region": "southeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/vick/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/vick/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "6016360583",
+    "email": "VICK_Information@nps.gov",
+    "website": "https://www.nps.gov/vick/index.htm",
+    "address": {
+      "line1": "3201 Clay Street",
+      "line2": "",
+      "city": "Vicksburg",
+      "state": "MS",
+      "postalCode": "39183"
+    }
+  },
+  "operatingHours": {
+    "monday": "Closed",
+    "tuesday": "Closed",
+    "wednesday": "8:30AM - 4:30PM",
+    "thursday": "8:30AM - 4:30PM",
+    "friday": "8:30AM - 4:30PM",
+    "saturday": "8:30AM - 4:30PM",
+    "sunday": "8:30AM - 4:30PM",
+    "description": "The Visitor Center is open 8:30 am to 4:30 pm Wednesday-Sunday. Tour road is open from 8:30 am to 5 pm daily with last vehicle entry at 4:40 pm. Public restrooms are open at the Visitor Center and USS Cairo 7 days a week. Park grounds are open sunrise to sunset daily. Closed Thanksgiving, Christmas Day, and New Year's Day."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This pass admits the driver and all passengers in a private, non-commercial vehicle to the park.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers. The park requires all visitors to pay an entrance fee except children under 16 years of age.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Good for 7 days \n\nYou are purchasing a digital site pass that is valid only for weekly entrance fees at Vicksburg National Military Park. The park requires all visitors to pay an entrance fee except children under 16 years of age.  The pass covers entry for one pedestrian or cyclist.",
+      "cost": "10.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "$10 per person, not to exceed commercial group rate.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "$25.00 plus $10 per passenger (not to exceed $40).",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "As provided by non-NPS charter tour companies.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Mini-bus",
+      "description": "As provided by non-NPS charter tour companies.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "As provided by non-NPS charter tour companies.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring and fall in Vicksburg are always very pleasant with cool nights and warm, sunny days with temperatures ranging from lows of 40 degrees to highs of 70 degrees. Winter weather in Mississippi is usually mild except for occasional cold air invasions which normally last only a couple of days. Temperatures range from lows of 30 degrees to highs of 50 degrees. In the summer, weather is consistently hot, beginning in the low 70's and climbing to highs ranging from 80-100 degrees in the afternoon."
+  },
+  "images": [
+    {
+      "id": "vick-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79F947-1DD8-B71B-0B6F394F6E31CAE2.jpg",
+      "title": "Union Cannon",
+      "altText": "Union cannon aimed at Confederate lines",
+      "caption": "The Union artillery played a major role in the outcome of the Vicksburg Campaign.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "vick-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79FC6D-1DD8-B71B-0B666D4D8ACAA98D.jpg",
+      "title": "Illinois State Memorial",
+      "altText": "Stars behind the Illinois State Memorial",
+      "caption": "Stars gleam behind the Illinois State Memorial.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "vick-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79FEFF-1DD8-B71B-0B68A290E3DBE016.jpg",
+      "title": "The Shirley House",
+      "altText": "Roses in bloom in front of the Shirley House",
+      "caption": "Roses in bloom in front of the Shirley House, the only remaining Civil War structure in the park.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "vick-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3EF74E3C-EC29-66FF-6FD94ACE7F103C90.jpg",
+      "title": "Ranger Programs",
+      "altText": "Park Ranger in Civil War Uniform Talks to Crowd",
+      "caption": "A park ranger in a Union Civil War uniform talks to a crowd of visitors.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "45261C0A-00D8-4C27-A1F8-029F933A0D34",
+      "name": "Front-Country Hiking"
+    },
+    {
+      "id": "B204DE60-5A24-43DD-8902-C81625A09A74",
+      "name": "Living History"
+    },
+    {
+      "id": "237A1662-6018-4115-ABD1-B8CCF827E703",
+      "name": "Historic Weapons Demonstration"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/vick/index.htm",
+    "directions": "http://www.nps.gov/vick/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "African American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "National Cemetery",
+    "Military",
+    "Monuments and Memorials",
+    "Wars and Conflicts",
+    "Civil War",
+    "National Military Park",
+    "MS"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "id": "np-dewa",
+  "name": "Delaware Water Gap National Recreation Area",
+  "category": "national",
+  "parkType": "national_recreation_area",
+  "stateCode": "NJ",
+  "stateName": "New Jersey",
+  "region": "northeast",
+  "description": "Situated within the most densely populated region of the United States, Delaware Water Gap National Recreation Area provides a unique opportunity to experience tranquil landscapes, rich human history, and striking scenery along 40 miles of the longest free-flowing river east of the Mississippi. The park offers year-round recreation including hiking, paddling, fishing, and hunting.",
+  "shortDescription": "Situated within the most densely populated region of the United States, Delaware Water Gap National Recreation Area provides a unique opportunity to experience tranquil landscapes, rich human history,...",
+  "designation": "National Recreation Area",
+  "coordinates": {
+    "latitude": 41.12793491,
+    "longitude": -74.94751173
+  },
+  "nationalParkInfo": {
+    "parkCode": "dewa",
+    "npsId": "ECCA243E-109D-4D73-8546-B0A2553DD9E5",
+    "region": "northeast"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/dewa/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/dewa/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "5704262452",
+    "email": "dewa_interpretation@nps.gov",
+    "website": "https://www.nps.gov/dewa/index.htm",
+    "address": {
+      "line1": "1978 River Road",
+      "line2": "",
+      "city": "Bushkill",
+      "state": "PA",
+      "postalCode": "18324"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "Park roads are open 24-hours a day. Most day-use areas within the park are open sunrise to sunset (such as trailhead parking lots, Millbrook Village, and all picnic areas)."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "Entrance fee for beaches and boat launches. Fee is good for one vehicle and it's passengers (up to 7 people).",
+      "cost": "10.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Spring: Temperatures usually range from lows of 26 F to highs of 80 F with average rainfall of 5 inches. Summer: Temperatures usually range from lows of 55 F to highs of 85 F with average rainfall of 4 inches. Fall: Temperatures usually range from lows of 30 F to highs of 83F. Fall foliage is at its peak sometime in October as daily mountain temperatures vary frequently and influence the change. Winter: Temperatures usually range from lows of 15 F to highs of 49 F."
+  },
+  "images": [
+    {
+      "id": "dewa-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79C4E3-1DD8-B71B-0B9EC12DFCA00E1C.jpg",
+      "title": "Delaware Water Gap",
+      "altText": "View of the Delaware River cutting between two low mountain peaks",
+      "caption": "The Delaware Water Gap is the geologic formation that gives the park its name. This distinctive cut thru the Kittatinny ridgeline was made by the Delaware River over thousands of years.",
+      "credit": "Courtesy of James Hicks",
+      "isPrimary": true
+    },
+    {
+      "id": "dewa-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79C5ED-1DD8-B71B-0BFDBB0313C6B8A7.jpg",
+      "title": "Fulmer Falls",
+      "altText": "A waterfall flows toward the viewer along a rocky riverbed.",
+      "caption": "Fulmer Falls is the second of three waterfalls in George W. Childs Park",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "dewa-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79C725-1DD8-B71B-0BF77E79A3DBB0E3.jpg",
+      "title": "Millbrook Days",
+      "altText": "A woman braids rye straw for hatmaking",
+      "caption": "A woman braids rye straw for hatmaking",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "dewa-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79C832-1DD8-B71B-0BAACF8A16A81B90.jpg",
+      "title": "River View from Mount Tammany",
+      "altText": "a snaking river view from a mountain top",
+      "caption": "High view of the Delaware River from atop Mount Tammany",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "dewa-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C79CA13-1DD8-B71B-0B31EF4B06834D81.jpg",
+      "title": "Nesting Great Blue Herons",
+      "altText": "Great Blue Herons attending their nests in a tree",
+      "caption": "Great Blue Herons attend their nests in a tree",
+      "credit": "NPS Photo/Dan Mohr",
+      "isPrimary": false
+    },
+    {
+      "id": "dewa-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/47B1994C-1DD8-B71B-0BC5F687A7941034.jpg",
+      "title": "Dingmans Falls",
+      "altText": "A strongly running Dingmans Falls waterfall surrounded by plants.",
+      "caption": "Dingmans Falls in summer, as seen from the wheelchair and stroller accessible boardwalk",
+      "credit": "NPS Photo / Michael Cuff",
+      "isPrimary": false
+    },
+    {
+      "id": "dewa-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/48A04A6F-1DD8-B71B-0B8CFD4841E55718.jpg",
+      "title": "Silver Thread Falls",
+      "altText": "Tall and narrow, Silver Thread Falls",
+      "caption": "Silver Thread Falls, as seen from the Dingmans Falls Boardwalk",
+      "credit": "NPS Photo / Michael Cuff",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "5F723BAD-7359-48FC-98FA-631592256E35",
+      "name": "Auto and ATV"
+    },
+    {
+      "id": "0B4A5320-216D-451A-9990-626E1D5ACE28",
+      "name": "Scenic Driving"
+    },
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "071BA73C-1D3C-46D4-A53C-00D5602F7F0E",
+      "name": "Boating"
+    },
+    {
+      "id": "A59947B7-3376-49B4-AD02-C0423E08C5F7",
+      "name": "Camping"
+    },
+    {
+      "id": "4A58AF13-E8FB-4530-B41A-97DF0B0C77B7",
+      "name": "Backcountry Camping"
+    },
+    {
+      "id": "907E8125-15E4-483C-8EAD-B9FA1E85C6F8",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "9159DF0F-951D-4AAE-9987-CEB3CE2A9ADA",
+      "name": "Car or Front Country Camping"
+    },
+    {
+      "id": "7CFF5F03-5ECC-4F5A-8572-75D1F0976C0C",
+      "name": "Group Camping"
+    },
+    {
+      "id": "C5C5971C-E325-4CEB-8C81-EE49A881DF17",
+      "name": "RV Camping"
+    },
+    {
+      "id": "B12FAAB9-713F-4B38-83E4-A273F5A43C77",
+      "name": "Climbing"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "25FB188F-5AAD-459A-9092-28A9801709FF",
+      "name": "Freshwater Fishing"
+    },
+    {
+      "id": "9BC03FAF-28F1-4609-BF6F-643F58071AED",
+      "name": "Fly Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "0307955A-B65C-4CE4-A780-EB36BAAADF0B",
+      "name": "Horse Trekking"
+    },
+    {
+      "id": "1886DA47-0AEC-4568-B9C2-8E9BC316AAAC",
+      "name": "Horseback Riding"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "25559F45-F162-4B8B-BEC2-B341034A2AF4",
+      "name": "Hunting"
+    },
+    {
+      "id": "4D224BCA-C127-408B-AC75-A51563C42411",
+      "name": "Paddling"
+    },
+    {
+      "id": "21DB3AFC-8AAC-4665-BC1F-7198C0685983",
+      "name": "Canoeing"
+    },
+    {
+      "id": "256543C7-4322-48B3-8978-765E89AA9431",
+      "name": "Canoe or Kayak Camping"
+    },
+    {
+      "id": "F353A9ED-4A08-456E-8DEC-E61974D0FEB6",
+      "name": "Kayaking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "F9B1D433-6B86-4804-AED7-B50A519A3B7C",
+      "name": "Skiing"
+    },
+    {
+      "id": "EAB1EBDE-5B72-493F-8F8F-0EE5B1724436",
+      "name": "Cross-Country Skiing"
+    },
+    {
+      "id": "01D717BC-18BB-4FE4-95BA-6B13AD702038",
+      "name": "Snowshoeing"
+    },
+    {
+      "id": "587BB2D3-EC35-41B2-B3F7-A39E2B088AEE",
+      "name": "Swimming"
+    },
+    {
+      "id": "82C3230F-6F87-452C-A01B-F8458867B26A",
+      "name": "Freshwater Swimming"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/dewa/index.htm",
+    "directions": "http://www.nps.gov/dewa/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Dams",
+    "Conservation Movement",
+    "Animals",
+    "Birds",
+    "Foothills, Plains and Valleys",
+    "Forests and Woodlands",
+    "Geology",
+    "Freshwater Springs",
+    "Lakes",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "Waterfalls",
+    "Wetlands",
+    "National Recreation Area",
+    "NJ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.832Z",
+    "updatedAt": "2026-02-02T03:08:33.832Z",
+    "version": 1
+  }
+}

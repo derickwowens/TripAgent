@@ -1,0 +1,223 @@
+{
+  "id": "np-sitk",
+  "name": "Sitka National Historical Park",
+  "category": "national",
+  "parkType": "national_historical_park",
+  "stateCode": "AK",
+  "stateName": "Alaska",
+  "region": "alaska",
+  "description": "On an island amid towering spruce and hemlock, Sitka National Historical Park preserves the site of a battle between invading Russian traders and Indigenous Kiks.ádi Tlingit. Totem poles from Tlingit and Haida areas line the park’s scenic coastal trail, and the restored Russian Bishop’s House is a rare reminder of Russia’s colonial legacy in North America.",
+  "shortDescription": "On an island amid towering spruce and hemlock, Sitka National Historical Park preserves the site of a battle between invading Russian traders and Indigenous Kiks.ádi Tlingit. Totem poles from Tlingit ...",
+  "designation": "National Historical Park",
+  "coordinates": {
+    "latitude": 57.04718173,
+    "longitude": -135.3156876
+  },
+  "nationalParkInfo": {
+    "parkCode": "sitk",
+    "npsId": "6258CAD9-1932-4A40-8FA1-891C51978345",
+    "region": "alaska"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sitk/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "https://www.nps.gov/sitk/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "9077470110",
+    "email": "SITK_Information_Requests@nps.gov",
+    "website": "https://www.nps.gov/sitk/index.htm",
+    "address": {
+      "line1": "106 Metlakatla Street",
+      "line2": "",
+      "city": "Sitka",
+      "state": "AK",
+      "postalCode": "99835"
+    }
+  },
+  "operatingHours": {
+    "monday": "6:00AM - 10:00PM",
+    "tuesday": "6:00AM - 10:00PM",
+    "wednesday": "6:00AM - 10:00PM",
+    "thursday": "6:00AM - 10:00PM",
+    "friday": "6:00AM - 10:00PM",
+    "saturday": "6:00AM - 10:00PM",
+    "sunday": "6:00AM - 10:00PM",
+    "description": "Park grounds are open for day-use year-round. Pedestrian through-traffic is allowed between Sawmill Creek Road and the visitor center parking lot (over the Indian River footbridge) at any time provided pedestrians do not loiter."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Sitka experiences a temperate maritime climate, characterized by heavy precipitation and a small temperature range between seasons. Summer temperatures range from high 50s to high 60s F with frequent rain. Winter is rainy and snowy with temperatures from the high teens to the 40s F. Well prepared visitors will have rain gear and layered clothing at any time of year."
+  },
+  "images": [
+    {
+      "id": "sitk-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/595854BB-0FD5-AA9C-FD9B70A673563D8F.png",
+      "title": "Sunset at Sitka",
+      "altText": "A totem pole in the foreground with a sunset over water in the background.",
+      "caption": "Sunset from Cinnamon Dockham and the Centennial Pole.",
+      "credit": "NPS Photo",
+      "isPrimary": true
+    },
+    {
+      "id": "sitk-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A6F42-1DD8-B71B-0BFEDCE161100385.jpg",
+      "title": "Russian Bishop's House Reception Room",
+      "altText": "Reception room in the Russian Bishop's House",
+      "caption": "Tour the Russian Bishop's House to see Russian American architecture and lifestyle restored.",
+      "credit": "NPS Photo/ Weston Kessler",
+      "isPrimary": false
+    },
+    {
+      "id": "sitk-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A873D-1DD8-B71B-0B8AD5C703A13270.jpg",
+      "title": "Sitka National Historical Park Visitor Center",
+      "altText": "Visitor Center from the beach.",
+      "caption": "The Visitor Center contains exhibits, a 15 minute park video, and Tlingit and Haida art.",
+      "credit": "NPS photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sitk-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A7B91-1DD8-B71B-0B18105FF66D4FD4.jpg",
+      "title": "Salmon Run",
+      "altText": "Salmon run in the Indian River",
+      "caption": "Salmon run in the Indian River from mid-July until late September.",
+      "credit": "NPS Photo/Weston Kessler",
+      "isPrimary": false
+    },
+    {
+      "id": "sitk-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A7299-1DD8-B71B-0B085C28315592C5.jpg",
+      "title": "Russian Bishop's House",
+      "altText": "Russian Bishop's house from the front.",
+      "caption": "One of the last remaining examples of Russian American architecture.",
+      "credit": "NPS Photo",
+      "isPrimary": false
+    },
+    {
+      "id": "sitk-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7A8147-1DD8-B71B-0B9D9FA5E52A677B.jpg",
+      "title": "Mosquito Legend Pole",
+      "altText": "Mosquito Legend Pole",
+      "caption": "See the Park's 18 Totem Poles with a walk along the Totem Trail.",
+      "credit": "NPS Photo/Weston Kessler",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "09DF0950-D319-4557-A57E-04CD2F63FF42",
+      "name": "Arts and Culture"
+    },
+    {
+      "id": "C59E231D-55FC-4B37-BC5B-FF76383951B5",
+      "name": "Craft Demonstrations"
+    },
+    {
+      "id": "AE42B46C-E4B7-4889-A122-08FE180371AE",
+      "name": "Fishing"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "42FD78B9-2B90-4AA9-BC43-F10E9FEA8B5A",
+      "name": "Hands-On"
+    },
+    {
+      "id": "31F88DA6-696F-441F-89CF-D7B1415C4CB9",
+      "name": "Citizen Science"
+    },
+    {
+      "id": "BFF8C027-7C8F-480B-A5F8-CD8CE490BFBA",
+      "name": "Hiking"
+    },
+    {
+      "id": "8386EEAF-985F-4DE8-9037-CCF91975AC94",
+      "name": "Hunting and Gathering"
+    },
+    {
+      "id": "8286295F-0932-4491-9350-280C9848E6AB",
+      "name": "Gathering and Foraging"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sitk/index.htm",
+    "directions": "https://www.nps.gov/sitk/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Colonization and Settlement",
+    "Commerce",
+    "Trade",
+    "Explorers and Expeditions",
+    "Military",
+    "Indigenous and Native Warrior",
+    "Native American Heritage",
+    "Reconstruction",
+    "Religion and Spirituality",
+    "Churches",
+    "Wars and Conflicts",
+    "Indian and Frontier Wars",
+    "World War II",
+    "Women's History",
+    "Animals",
+    "Birds",
+    "Fish",
+    "Climate Change",
+    "Coasts, Islands and Atolls",
+    "Forests and Woodlands",
+    "Rainforest",
+    "Geology",
+    "Mountains",
+    "Natural Sounds",
+    "Oceans",
+    "River and Riparian",
+    "Scenic Views",
+    "Trails",
+    "National Historical Park",
+    "AK"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

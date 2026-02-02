@@ -1,0 +1,227 @@
+{
+  "id": "np-sucr",
+  "name": "Sunset Crater Volcano National Monument",
+  "category": "national",
+  "parkType": "national_monument",
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "region": "southwest",
+  "description": "The lava flow lies on the land like a dream, a wonderland of rock. A thousand years ago the ground was torn open and lava erupted into the sky, forever changing the landscape and the lives of the people who lived here. A thousand years later, trees and flowers grow among the rocks, and people visit the lava flow to see and remember the most recent volcanic eruption in Arizona.",
+  "shortDescription": "The lava flow lies on the land like a dream, a wonderland of rock. A thousand years ago the ground was torn open and lava erupted into the sky, forever changing the landscape and the lives of the peop...",
+  "designation": "National Monument",
+  "coordinates": {
+    "latitude": 35.37114323,
+    "longitude": -111.510376
+  },
+  "nationalParkInfo": {
+    "parkCode": "sucr",
+    "npsId": "52911672-4464-4569-984C-DC6DE1EE208F",
+    "region": "southwest"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/sucr/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://www.nps.gov/sucr/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "928-526-0502",
+    "email": "flag_information@nps.gov",
+    "website": "https://www.nps.gov/sucr/index.htm",
+    "address": {
+      "line1": "6082 Sunset Crater Road",
+      "line2": "",
+      "city": "Flagstaff",
+      "state": "AZ",
+      "postalCode": "86004"
+    }
+  },
+  "operatingHours": {
+    "monday": "All Day",
+    "tuesday": "All Day",
+    "wednesday": "All Day",
+    "thursday": "All Day",
+    "friday": "All Day",
+    "saturday": "All Day",
+    "sunday": "All Day",
+    "description": "The Sunset Crater Volcano National Monument is open every day. The visitor center is open daily from 9:00 am - 4:30 pm except on Thanksgiving, Christmas, and New Year's Day. The roads and trails are open 24/7, with occasional closures for fire season or winter weather."
+  },
+  "fees": [
+    {
+      "title": "Entrance - Private Vehicle",
+      "description": "This pass covers the pass holder and up to 15 passengers of a single, private (non-commercial) vehicle at both Sunset Crater Volcano and Wupatki National Monuments for 1-7 days.",
+      "cost": "25.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Motorcycle",
+      "description": "Valid for 7 days. Admits up to 2 private, non-commercial motorcycles with up to 4 total passengers to both Sunset Crater and Wupatki National Monument.",
+      "cost": "20.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Per Person",
+      "description": "Admits one individual bicyclist, hiker, or pedestrian visiting the facility without a private vehicle. Good for both Sunset Crater and Wupatki National Monuments for 1-7 days. A pass is not required for individuals 15 or younger.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Non-commercial Groups",
+      "description": "The per person fee is charged for non-commercial groups up to the point that it exceeds the cost of the commercial rate for the same size vehicle.",
+      "cost": "15.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Entrance - Education/Academic Groups",
+      "description": "Bona fide educational institutions visiting for non-recreational purposes whose visit pertains directly to established curriculum are exempt from paying entry fees. Apply for an educational fee waiver at least 4 weeks in advance by submitting an educational fee waiver. Please see the below link to access the waiver.",
+      "cost": "0.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Sedan",
+      "description": "Covers occupants of a vehicle with an occupancy of 1-6 individuals at Sunset Crater, Wupatki, and Walnut Canyon for 1 day. A commercial group is defined as a group that is entering for the purpose of providing commercial tour services within the unit. A commercial group consists of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure/recreational purpose by an organization that realizes financial gain through the provision of the service.",
+      "cost": "28.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Van",
+      "description": "Covers occupants of a vehicle with an occupancy of 7-15 individuals at Sunset Crater, Wupatki, and Walnut Canyon for 1 day. A commercial group is defined as a group that is entering for the purpose of providing commercial tour services within the unit. A commercial group consists of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure/recreational purpose by an organization that realizes financial gain through the provision of the service.",
+      "cost": "40.00",
+      "type": "entrance"
+    },
+    {
+      "title": "Commercial Entrance - Motor Coach",
+      "description": "Covers occupants of a vehicle with an occupancy of 16+ individuals at Sunset Crater, Wupatki, and Walnut Canyon for 1 day. A commercial group is defined as a group that is entering for the purpose of providing commercial tour services within the unit. A commercial group consists of one or more persons traveling on an itinerary that has been packaged, priced, or sold for leisure/recreational purpose by an organization that realizes financial gain through the provision of the service.",
+      "cost": "100.00",
+      "type": "entrance"
+    }
+  ],
+  "climate": {
+    "weatherDescription": "Be prepared for variable and extreme weather conditions. Expect high winds any time of year. Summer temperatures are often above 95ºF (35ºC) and we have afternoon thunderstorms from July through September. Snow, ice, and freezing temperatures are common in the winter. Dress in layers, as weather at Sunset Crater Volcano can change quickly at any time of year."
+  },
+  "images": [
+    {
+      "id": "sucr-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E279C-1DD8-B71B-0BBF86870A971E2B.jpg",
+      "title": "Sunset Crater Volcano",
+      "altText": "a cinder cone volcano and ponderosa pine trees",
+      "caption": "Sunset Crater Volcano is named for the color of the rusty red cinders near its peak.",
+      "credit": "NPS Photo / Elliot Schultz",
+      "isPrimary": true
+    },
+    {
+      "id": "sucr-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E2952-1DD8-B71B-0B586C9F9029F687.jpg",
+      "title": "Sunset Crater and Bonito Lava Flow",
+      "altText": "a jagged field of lava beneath a cinder cone volcano",
+      "caption": "Three trails allow visitors to explore the Bonito Lava Flow.",
+      "credit": "NPS Photo / Elliot Schultz",
+      "isPrimary": false
+    },
+    {
+      "id": "sucr-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E2B5C-1DD8-B71B-0B3F06B8E7DC30CF.jpg",
+      "title": "Lenox Crater and the San Francisco Peaks",
+      "altText": "a massive volcano rising behind a smaller, tree-covered volcano in the foreground",
+      "caption": "Sunset Crater Volcano is the most recent eruption in the San Francisco volcanic field. Visitors can climb Lenox Crater, foreground, for excellent views of the field, including the San Francisco Peaks.",
+      "credit": "NPS Photo / Elliot Schultz",
+      "isPrimary": false
+    },
+    {
+      "id": "sucr-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E2CE7-1DD8-B71B-0BC3228821F6DBEE.jpg",
+      "title": "Lone Ponderosa",
+      "altText": "a small ponderosa pine tree in a field of rolling cinder hills",
+      "caption": "Geologists and biologists study the area surrounding Sunset Crater Volcano to better understand how landscapes recover after an eruption.",
+      "credit": "NPS Photo / Elliot Schultz",
+      "isPrimary": false
+    },
+    {
+      "id": "sucr-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C7E2E7E-1DD8-B71B-0BD5D0DA003CB73B.jpg",
+      "title": "Ponderosas Reaching Skyward",
+      "altText": "tall pine trees grow beneath the Sunset Crater Volcano cinder cone",
+      "caption": "On warm days, the bark of ponderosa pine trees smells like vanilla or butterscotch.",
+      "credit": "NPS Photo / Elliot Schultz",
+      "isPrimary": false
+    },
+    {
+      "id": "sucr-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/49AFD0C3-EB38-03C8-22939A2F96A04DFA.jpg",
+      "title": "Sunset Crater over Bonito Park",
+      "altText": "A reddish cinder cone volcano standing above a meadow of dry grass",
+      "caption": "One of the best views of Sunset Crater Volcano is from Bonito Park on the entrance road",
+      "credit": "NPS / Owen Ellis",
+      "isPrimary": false
+    },
+    {
+      "id": "sucr-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/49C40664-C61D-A859-FF81C14248D94C1A.jpg",
+      "title": "Sunset Crater in winter",
+      "altText": "A snow-covered cinder cone and lava flow under a clear blue sky",
+      "caption": "A dusting of snow adds depth and color to the stark landscape of the lava flow",
+      "credit": "NPS / Owen Ellis",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "13A57703-BB1A-41A2-94B8-53B692EB7238",
+      "name": "Astronomy"
+    },
+    {
+      "id": "D37A0003-8317-4F04-8FB0-4CF0A272E195",
+      "name": "Stargazing"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/sucr/index.htm",
+    "directions": "http://www.nps.gov/sucr/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Night Sky",
+    "Astronomy",
+    "Scenic Views",
+    "Volcanoes",
+    "National Monument",
+    "AZ"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.834Z",
+    "updatedAt": "2026-02-02T03:08:33.834Z",
+    "version": 1
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "id": "np-manz",
+  "name": "Manzanar National Historic Site",
+  "category": "national",
+  "parkType": "national_historic_site",
+  "stateCode": "CA",
+  "stateName": "California",
+  "region": "pacific",
+  "description": "In 1942, the United States government ordered more than 110,000 men, women, and children to leave their homes and detained them in remote, military-style camps. Manzanar War Relocation Center was one of ten camps where the US government incarcerated Japanese immigrants ineligible for citizenship and Japanese American citizens during World War II.",
+  "shortDescription": "In 1942, the United States government ordered more than 110,000 men, women, and children to leave their homes and detained them in remote, military-style camps. Manzanar War Relocation Center was one ...",
+  "designation": "National Historic Site",
+  "coordinates": {
+    "latitude": 36.72559195,
+    "longitude": -118.1547177
+  },
+  "nationalParkInfo": {
+    "parkCode": "manz",
+    "npsId": "249AF67F-BB6C-4D0A-B632-07BEE855D24B",
+    "region": "pacific"
+  },
+  "officialLinks": [
+    {
+      "type": "official_website",
+      "url": "https://www.nps.gov/manz/index.htm",
+      "isPrimary": true
+    },
+    {
+      "type": "directions",
+      "url": "http://home.nps.gov/manz/planyourvisit/directions.htm"
+    }
+  ],
+  "contact": {
+    "phone": "(760)878-2194",
+    "email": "manz_information_request@nps.gov",
+    "website": "https://www.nps.gov/manz/index.htm",
+    "address": {
+      "line1": "Manzanar National Historic Site",
+      "line2": "",
+      "city": "Independence",
+      "state": "CA",
+      "postalCode": "93526"
+    }
+  },
+  "operatingHours": {
+    "monday": "Sunrise to Sunset",
+    "tuesday": "Sunrise to Sunset",
+    "wednesday": "Sunrise to Sunset",
+    "thursday": "Sunrise to Sunset",
+    "friday": "Sunrise to Sunset",
+    "saturday": "Sunrise to Sunset",
+    "sunday": "Sunrise to Sunset",
+    "description": "The driving tour and grounds remain open daily from sunrise to sunset. Visitor center hours are more limited. See visitor center hours section for more information. The Block 14 building exhibits are open 9:00 am - 4:15 pm daily, except for Christmas Day when they are closed."
+  },
+  "fees": [],
+  "climate": {
+    "weatherDescription": "Manzanar is located in the Owens Valley at 4,000' elevation, at the eastern base of the Sierra Nevada. We get little precipitation but we do have four distinct seasons. Summer temperatures can soar over 100 degrees. Winter highs are usually in the 40's. Nighttime temperatures year round are 30 to 40 degrees less than daytime highs. High winds are common in any season."
+  },
+  "images": [
+    {
+      "id": "manz-img-0",
+      "url": "https://www.nps.gov/common/uploads/structured_data/3C876C2F-1DD8-B71B-0B0F7AB75DF47C6F.jpg",
+      "title": "Barracks in 1942, Manzanar",
+      "altText": "People walk to barracks framed by mountain peaks.",
+      "caption": "1942 image of barracks at Manzanar",
+      "credit": "Dorothea Lange",
+      "isPrimary": true
+    },
+    {
+      "id": "manz-img-1",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D0FC0D30-E94C-BE11-F78441FF54278001.jpg",
+      "title": "Block 15 Barrack 7 Garden Lantern, Manzanar",
+      "altText": "Japanese stone lantern with mountains in background",
+      "caption": "Block 15 Barrack 7 Garden Lantern, Manzanar",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "manz-img-2",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D108A698-07AC-4252-1B9C0FCED41E32A5.jpg",
+      "title": "Historic Entrance Sign, Manzanar",
+      "altText": "Wooden sign with \"Mananar War Relocation Center\" written on it",
+      "caption": "Historic Entrance Sign, Manzanar",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "manz-img-3",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D129511A-B424-D943-6326AA3688DD04E2.jpg",
+      "title": "Manzanar Guard Tower",
+      "altText": "guard tower with fog and hills in background",
+      "caption": "Reconstructed Manzanar Guard Tower",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "manz-img-4",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D13099AB-0AC1-BDA4-FEC8E71A5FC6C9C3.jpg",
+      "title": "Merritt Park, Manzanar",
+      "altText": "wooden bridge and stonework in foreground with mountains behind",
+      "caption": "Merritt Park, Manzanar",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "manz-img-5",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D13E3AA9-0690-6BDF-6D1D9430964C910D.jpg",
+      "title": "Manzanar Cemetery Monument",
+      "altText": "white obelisk with black Japanese characters with stormy mountains beyond",
+      "caption": "Manzanar Cemetery Monument",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "manz-img-6",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D144EA12-9A3F-476E-B9237F947CAFECD7.jpg",
+      "title": "Manzanar Pear Orchard and Mount Williamson",
+      "altText": "flowering pear trees with mountains in background",
+      "caption": "Manzanar Pear Orchard and Mount Williamson",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "manz-img-7",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D1516FD5-A818-859E-94852D8A997DAF23.jpg",
+      "title": "Annual Manzanar Pilgrimage",
+      "altText": "crowd surrounds white obelisk with mountains beyond",
+      "caption": "Annual Manzanar Pilgrimage",
+      "credit": "NPS",
+      "isPrimary": false
+    },
+    {
+      "id": "manz-img-8",
+      "url": "https://www.nps.gov/common/uploads/structured_data/D15A0CB7-9113-3A12-E45EF078224B5D6B.jpg",
+      "title": "Manzanar Sentry Post",
+      "altText": "stone building with stormy mountains beyond",
+      "caption": "Manzanar Sentry Post",
+      "credit": "NPS",
+      "isPrimary": false
+    }
+  ],
+  "activities": [
+    {
+      "id": "7CE6E935-F839-4FEC-A63E-052B1DEF39D2",
+      "name": "Biking"
+    },
+    {
+      "id": "8D778629-F603-4C50-A121-6F4BB2FE2C4B",
+      "name": "Road Biking"
+    },
+    {
+      "id": "1DFACD97-1B9C-4F5A-80F2-05593604799E",
+      "name": "Food"
+    },
+    {
+      "id": "C6D3230A-2CEA-4AFE-BFF3-DC1E2C2C4BB4",
+      "name": "Picnicking"
+    },
+    {
+      "id": "B33DC9B6-0B7D-4322-BAD7-A13A34C584A3",
+      "name": "Guided Tours"
+    },
+    {
+      "id": "A0631906-9672-4583-91DE-113B93DB6B6E",
+      "name": "Self-Guided Tours - Walking"
+    },
+    {
+      "id": "C7D5A145-F8EB-4C37-9E92-2F6C6206B196",
+      "name": "Self-Guided Tours - Auto"
+    },
+    {
+      "id": "3DE599E2-22ED-40BF-B383-EDA073563C1E",
+      "name": "Bus/Shuttle Guided Tour"
+    },
+    {
+      "id": "DF4A35E0-7983-4A3E-BC47-F37B872B0F25",
+      "name": "Junior Ranger Program"
+    },
+    {
+      "id": "0B685688-3405-4E2A-ABBA-E3069492EC50",
+      "name": "Wildlife Watching"
+    },
+    {
+      "id": "5A2C91D1-50EC-4B24-8BED-A2E11A1892DF",
+      "name": "Birdwatching"
+    },
+    {
+      "id": "0C0D142F-06B5-4BE1-8B44-491B90F93DEB",
+      "name": "Park Film"
+    },
+    {
+      "id": "C8F98B28-3C10-41AE-AA99-092B3B398C43",
+      "name": "Museum Exhibits"
+    },
+    {
+      "id": "24380E3F-AD9D-4E38-BF13-C8EEB21893E7",
+      "name": "Shopping"
+    },
+    {
+      "id": "467DC8B8-0B7D-436D-A026-80A22358F615",
+      "name": "Bookstore and Park Store"
+    }
+  ],
+  "quickLinks": {
+    "officialWebsite": "https://www.nps.gov/manz/index.htm",
+    "directions": "http://home.nps.gov/manz/planyourvisit/directions.htm"
+  },
+  "keywords": [
+    "Architecture and Building",
+    "Arts",
+    "Painting",
+    "Photography",
+    "Asian American Heritage",
+    "Burial, Cemetery and Gravesite",
+    "Colonization and Settlement",
+    "Engineering",
+    "Farming and Agriculture",
+    "Incarceration",
+    "Japanese-American Internment",
+    "Immigration",
+    "Medicine",
+    "Hospital",
+    "Military",
+    "US Army",
+    "Indigenous and Native Warrior",
+    "Monuments and Memorials",
+    "Religion and Spirituality",
+    "Churches",
+    "Schools and Education",
+    "Social Movements",
+    "Civil Rights",
+    "Tragic Events",
+    "Forced Marches",
+    "Wars and Conflicts",
+    "Tribal Conflicts",
+    "World War II",
+    "Westward Expansion",
+    "Homesteading",
+    "Scenic Views",
+    "National Historic Site",
+    "CA"
+  ],
+  "metadata": {
+    "createdAt": "2026-02-02T03:08:33.833Z",
+    "updatedAt": "2026-02-02T03:08:33.833Z",
+    "version": 1
+  }
+}
