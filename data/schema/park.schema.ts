@@ -371,6 +371,12 @@ export interface Trail {
   mapUrl?: string;
   gpxUrl?: string;                    // GPX track file URL
   
+  // External links (deterministic, stored in S3)
+  allTrailsUrl?: string;              // Direct AllTrails trail page URL
+  allTrailsId?: string;               // AllTrails trail ID for API access
+  npsTrailUrl?: string;               // NPS trail page URL
+  googleMapsUrl?: string;             // Google Maps search URL for trail
+  
   // Metadata
   lastUpdated?: string;
 }

@@ -12,6 +12,8 @@ import { OpenChargeMapAdapter } from '../../providers/OpenChargeMapAdapter.js';
 import { YelpAdapter } from '../../providers/YelpAdapter.js';
 import { StateParkService } from '../../providers/parks/StateParkService.js';
 import { s3ParkData } from '../../providers/parks/S3ParkDataService.js';
+import { npsTrailAdapter } from '../../providers/trails/NPSTrailAdapter.js';
+import { trailAPIAdapter } from '../../providers/trails/TrailAPIAdapter.js';
 import { findParkCode } from '../../utils/parkCodeLookup.js';
 import { 
   generateGoogleMapsLink, 
@@ -377,7 +379,7 @@ async function handleToolCall(
       break;
 
     case 'get_park_hikes':
-      result = { hikes: facade.getParkHikes((toolUse.input as any).park_code) };
+      result = await handleGetParkHikes(toolUse.input as any, facade);
       break;
 
     case 'search_flights':
@@ -443,7 +445,7 @@ async function handleToolCall(
       break;
 
     case 'get_state_park_hikes':
-      result = handleGetStateParkHikes(toolUse.input as any);
+      result = await handleGetStateParkHikes(toolUse.input as any);
       break;
 
     // ============================================
@@ -724,6 +726,122 @@ async function handlePlanParkTrip(
   }
   
   return result;
+}
+
+async function handleGetParkHikes(
+  input: { park_code: string },
+  facade: TravelFacade
+): Promise<any> {
+  const parkCode = input.park_code.toLowerCase();
+  console.log(`[Hikes] Getting hikes for park: ${parkCode}`);
+  
+  // PRIORITY 1: Try S3 trail data with deterministic AllTrails URLs
+  const s3Trails = await s3ParkData.getTrailsForPark(parkCode);
+  
+  if (s3Trails.length > 0) {
+    console.log(`[Hikes] Found ${s3Trails.length} trails in S3 for ${parkCode}`);
+    console.log(`[Hikes] Sample trail from S3:`, JSON.stringify(s3Trails[0], null, 2));
+    const parkName = s3Trails[0].parkName;
+    
+    // Determine source and format response
+    const source = s3Trails[0].source || 'TripAgent Database';
+    const isNPSData = source === 'NPS API';
+    
+    const result = {
+      parkCode,
+      parkName,
+      hikes: s3Trails.map(trail => ({
+        name: trail.name,
+        description: trail.description,
+        distance: trail.length,
+        duration: trail.duration,
+        difficulty: (trail.difficulty || 'moderate').replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()),
+        trailType: trail.type,
+        // Use official NPS URL if available, otherwise Google Maps
+        trailUrl: trail.trailUrl || trail.npsUrl || generateGoogleMapsLink(`${trail.name} trailhead ${parkName}`),
+        npsUrl: trail.npsUrl,
+        googleMapsUrl: generateGoogleMapsLink(`${trail.name} trailhead ${parkName}`),
+        imageUrl: trail.imageUrl,
+      })),
+      totalHikes: s3Trails.length,
+      npsHikingUrl: `https://www.nps.gov/${parkCode}/planyourvisit/hiking.htm`,
+      source: source,
+      note: isNPSData 
+        ? 'Official NPS trail pages with permits, conditions, and alerts.'
+        : 'Use trail links to view details and get directions.',
+    };
+    
+    console.log(`[Hikes] Returning hikes with URLs:`, result.hikes.slice(0, 2).map(h => ({ name: h.name, trailUrl: h.trailUrl })));
+    return result;
+  }
+  
+  // PRIORITY 2: Try NPS API for official trail data with NPS.gov URLs
+  const npsTrails = await npsTrailAdapter.getTrailsForPark(parkCode);
+  
+  if (npsTrails.length > 0) {
+    console.log(`[Hikes] Found ${npsTrails.length} trails from NPS API for ${parkCode}`);
+    const parkName = npsTrails[0].parkName || parkCode.toUpperCase();
+    
+    return {
+      parkCode,
+      parkName,
+      hikes: npsTrails.map(trail => ({
+        name: trail.name,
+        description: trail.shortDescription,
+        duration: trail.duration,
+        // NPS official URL is primary!
+        trailUrl: trail.url,
+        npsUrl: trail.url,
+        googleMapsUrl: generateGoogleMapsLink(`${trail.name} trailhead ${parkName}`),
+        reservationRequired: trail.reservationRequired,
+        petsAllowed: trail.petsAllowed,
+        imageUrl: trail.imageUrl,
+      })),
+      totalHikes: npsTrails.length,
+      npsHikingUrl: `https://www.nps.gov/${parkCode}/planyourvisit/hiking.htm`,
+      allTrailsParkUrl: `https://www.alltrails.com/parks/us/${parkName.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`,
+      source: 'National Park Service API',
+      note: 'Official NPS trail pages with permits, conditions, and alerts.',
+    };
+  }
+  
+  // PRIORITY 3: Fall back to built-in hike data
+  const hikes = facade.getParkHikes(parkCode);
+  const parkDetails = await facade.searchNationalParks(parkCode);
+  const parkName = parkDetails?.[0]?.name || parkCode.toUpperCase();
+  
+  if (hikes.length === 0) {
+    // No hikes found, provide search links
+    return {
+      parkCode,
+      parkName,
+      hikes: [],
+      message: `No trail data available for ${parkName}. Use the links below to find trails.`,
+      allTrailsSearchUrl: `https://www.alltrails.com/search?q=${encodeURIComponent(parkName + ' hiking trails')}`,
+      npsHikingUrl: `https://www.nps.gov/${parkCode}/planyourvisit/hiking.htm`,
+      googleMapsUrl: `https://www.google.com/maps/search/${encodeURIComponent(parkName + ' hiking trails')}`,
+      source: 'Fallback search links',
+      note: 'Click the AllTrails link to browse all hiking trails for this park',
+    };
+  }
+  
+  // Add links to built-in hike data
+  const hikesWithLinks = hikes.map(hike => ({
+    ...hike,
+    trailUrl: generateGoogleMapsLink(`${hike.name} trail ${parkName}`),
+    googleMapsUrl: generateGoogleMapsLink(`${hike.name} trail ${parkName}`),
+  }));
+  
+  return {
+    parkCode,
+    parkName,
+    hikes: hikesWithLinks,
+    totalHikes: hikesWithLinks.length,
+    allTrailsSearchUrl: `https://www.alltrails.com/search?q=${encodeURIComponent(parkName + ' hiking trails')}`,
+    npsHikingUrl: `https://www.nps.gov/${parkCode}/planyourvisit/hiking.htm`,
+    source: 'Built-in data (fallback)',
+    note: 'Each hike includes an AllTrails search link',
+  };
 }
 
 async function handleSearchFlights(
@@ -1865,32 +1983,70 @@ const STATE_NAMES: Record<string, string> = {
   'VA': 'Virginia', 'WA': 'Washington', 'WV': 'West Virginia', 'WI': 'Wisconsin', 'WY': 'Wyoming',
 };
 
-function handleGetStateParkHikes(
+async function handleGetStateParkHikes(
   input: { park_name: string; state: string }
-): any {
+): Promise<any> {
   console.log(`[State Parks] Getting hikes for "${input.park_name}" in ${input.state}`);
   
-  const stateCode = input.state.toUpperCase();
+  const stateCode = input.state.toUpperCase() as 'WI' | 'FL';
   const stateName = STATE_NAMES[stateCode] || input.state;
   const parkName = input.park_name;
   
   // Generate AllTrails search URL for the park
-  const allTrailsSearchQuery = encodeURIComponent(`${parkName} ${stateName}`);
-  const allTrailsUrl = `https://www.alltrails.com/search?q=${allTrailsSearchQuery}`;
+  const allTrailsSearchQuery = encodeURIComponent(`${parkName} ${stateName} trails`);
+  const allTrailsSearchUrl = `https://www.alltrails.com/search?q=${allTrailsSearchQuery}`;
   
   // Generate Google Maps hiking search as backup
-  const googleMapsQuery = encodeURIComponent(`${parkName} hiking trails`);
+  const googleMapsQuery = encodeURIComponent(`${parkName} hiking trails ${stateName}`);
   const googleMapsUrl = `https://www.google.com/maps/search/${googleMapsQuery}`;
   
+  // Try to get trail data from S3 for WI and FL state parks
+  if (stateCode === 'WI' || stateCode === 'FL') {
+    // Generate park ID from name (e.g., "Devils Lake State Park" -> "devils-lake")
+    const parkId = parkName
+      .toLowerCase()
+      .replace(/\s*(state\s*park|state\s*forest|national\s*preserve|national\s*forest)\s*/gi, '')
+      .trim()
+      .replace(/\s+/g, '-');
+    
+    console.log(`[State Parks] Looking up S3 trail data for ${stateCode}/${parkId}`);
+    const s3Trails = await s3ParkData.getTrailsForStatePark(stateCode, parkId);
+    
+    if (s3Trails.length > 0) {
+      console.log(`[State Parks] Found ${s3Trails.length} trails in S3 for ${parkName}`);
+      
+      return {
+        parkName: parkName,
+        state: stateCode,
+        stateName: stateName,
+        hikes: s3Trails.map(trail => ({
+          name: trail.name,
+          distance: trail.length,
+          difficulty: (trail.difficulty || 'moderate').replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()),
+          trailType: trail.type,
+          allTrailsUrl: trail.alltrailsUrl,
+          googleMapsUrl: generateGoogleMapsLink(`${trail.name} trail ${parkName} ${stateName}`),
+        })),
+        totalHikes: s3Trails.length,
+        allTrailsSearchUrl: allTrailsSearchUrl,
+        googleMapsUrl: googleMapsUrl,
+        source: 'TripAgent S3 Database',
+        note: 'Trail links are verified AllTrails URLs from our database',
+      };
+    }
+  }
+  
+  // Fallback to search URLs for parks not in our database
   return {
     parkName: parkName,
     state: stateCode,
     stateName: stateName,
+    hikes: [],
     trailResources: [
       {
         name: 'AllTrails',
         description: 'Browse hiking trails with reviews, photos, difficulty ratings, and trail maps',
-        url: allTrailsUrl,
+        url: allTrailsSearchUrl,
         features: ['Trail maps', 'Difficulty ratings', 'User reviews', 'Photos', 'Offline maps'],
       },
       {
@@ -1900,20 +2056,16 @@ function handleGetStateParkHikes(
         features: ['Directions', 'Satellite view', 'Nearby amenities'],
       },
     ],
+    allTrailsSearchUrl: allTrailsSearchUrl,
+    googleMapsUrl: googleMapsUrl,
     hikingTips: [
       'Check trail conditions before your visit - state park websites often have alerts',
       'Bring plenty of water, especially on longer hikes',
       'Start early to avoid crowds and afternoon heat',
       'Download offline maps before heading out (AllTrails Pro or Google Maps)',
-      'Check if permits are required for backcountry trails',
-    ],
-    searchSuggestions: [
-      `Search AllTrails for "${parkName}" to see all available trails`,
-      'Filter by difficulty: Easy, Moderate, or Hard',
-      'Sort by rating to find the most popular trails',
-      'Check recent reviews for current trail conditions',
     ],
     note: `Click the AllTrails link to browse all hiking trails at ${parkName}. You can filter by distance, difficulty, and rating.`,
+    source: 'Search links (park not in trail database)',
   };
 }
 

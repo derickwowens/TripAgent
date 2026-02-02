@@ -45,7 +45,7 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'get_park_hikes',
-    description: `Get popular hiking trails for a National Park with difficulty, distance, and highlights. Use official NPS park codes: ${ALL_PARK_CODES}`,
+    description: `Get hiking trails for a National Park from our trail database. Returns trails with VERIFIED AllTrails URLs - always include these links in your response! Results include: name, distance, difficulty, trailType, allTrailsUrl, googleMapsUrl, allTrailsSearchUrl, npsHikingUrl. Park codes: ${ALL_PARK_CODES}`,
     input_schema: {
       type: 'object' as const,
       properties: {
@@ -237,12 +237,12 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'get_state_park_hikes',
-    description: 'Get hiking trail information for a state park. Returns AllTrails search links and trail recommendations. Use this when users ask about hiking, trails, or outdoor activities at a state park.',
+    description: 'Get hiking trails for a state park. For WI and FL parks, returns trails with VERIFIED AllTrails URLs from our database - always include these links! For other states, returns search links. Results include: name, distance, difficulty, trailType, allTrailsUrl, googleMapsUrl.',
     input_schema: {
       type: 'object' as const,
       properties: {
-        park_name: { type: 'string', description: 'Name of the state park (e.g., "Annadel State Park", "Big Basin Redwoods State Park")' },
-        state: { type: 'string', description: '2-letter US state code (e.g., "CA")' },
+        park_name: { type: 'string', description: 'Name of the state park (e.g., "Devils Lake State Park", "Myakka River State Park")' },
+        state: { type: 'string', description: '2-letter US state code (e.g., "WI", "FL")' },
       },
       required: ['park_name', 'state'],
     },

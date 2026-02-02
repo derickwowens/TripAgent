@@ -34,6 +34,9 @@
     "parks:upload:wi": "tsx data/scripts/syncToS3.ts WI",
     "parks:upload:fl": "tsx data/scripts/syncToS3.ts FL",
     "parks:master-index": "tsx data/scripts/uploadMasterIndex.ts",
+    "trails:upload": "tsx data/scripts/uploadTrailData.ts",
+    "trails:sync": "tsx data/scripts/syncTrailData.ts",
+    "sync:weekly": "tsx data/scripts/cronWeeklySync.ts",
     "nps:fetch": "tsx data/scripts/fetchNPSSites.ts",
     "nps:upload": "tsx data/scripts/fetchNPSSites.ts --upload"
   },

@@ -348,6 +348,22 @@ const HomeScreen: React.FC = () => {
       
       // Build context with cached trip data (reduces redundant API calls)
       const cachedContext = getContextForApi();
+      
+      // IMPORTANT: For existing trips, use the trip-specific dates, NOT profile dates
+      // Profile dates should only apply to NEW trips without their own dates
+      const currentConv = currentConversationId 
+        ? savedConversations.find(c => c.id === currentConversationId)
+        : null;
+      const hasExistingTripDates = currentConv?.metadata?.travelDates;
+      
+      // Only use profile travelDates if this is a new conversation (no existing trip dates)
+      const contextTravelDates = hasExistingTripDates 
+        ? undefined  // Existing trip - don't override with profile dates
+        : (travelDates.departure ? {
+            departure: travelDates.departure,
+            return: travelDates.return,
+          } : undefined);
+      
       const context: ChatContext = {
         userLocation: userLocation ? {
           city: userLocation.city,
@@ -358,11 +374,8 @@ const HomeScreen: React.FC = () => {
         maxTravelDistance: maxTravelDistance ?? undefined,
         blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
         parkMode: parkMode, // 'national' or 'state' parks mode
-        // Travel dates for booking links
-        travelDates: travelDates.departure ? {
-          departure: travelDates.departure,
-          return: travelDates.return,
-        } : undefined,
+        // Travel dates for booking links - only for NEW trips, not existing ones
+        travelDates: contextTravelDates,
         // Include cached context from local storage
         ...(cachedContext || {}),
         // Tool settings for API
@@ -528,6 +541,21 @@ const HomeScreen: React.FC = () => {
 
       // Build context with cached trip data
       const cachedContext = getContextForApi();
+      
+      // IMPORTANT: For existing trips, use the trip-specific dates, NOT profile dates
+      const currentConvForDates = currentConversationId 
+        ? savedConversations.find(c => c.id === currentConversationId)
+        : null;
+      const hasExistingTripDates = currentConvForDates?.metadata?.travelDates;
+      
+      // Only use profile travelDates if this is a new conversation
+      const contextTravelDates = hasExistingTripDates 
+        ? undefined  // Existing trip - don't override with profile dates
+        : (travelDates.departure ? {
+            departure: travelDates.departure,
+            return: travelDates.return,
+          } : undefined);
+      
       const context: ChatContext = {
         userLocation: userLocation ? {
           city: userLocation.city,
@@ -538,6 +566,7 @@ const HomeScreen: React.FC = () => {
         maxTravelDistance: maxTravelDistance ?? undefined,
         blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
         parkMode: parkMode,
+        travelDates: contextTravelDates,
         ...(cachedContext || {}),
         // Tool settings for API
         toolSettings: {
@@ -834,6 +863,15 @@ const HomeScreen: React.FC = () => {
                     content: m.content,
                   }));
                   
+                  // IMPORTANT: For existing trips, don't apply profile dates
+                  const retryConv = retryConversationId 
+                    ? savedConversations.find(c => c.id === retryConversationId)
+                    : null;
+                  const hasExistingDates = retryConv?.metadata?.travelDates;
+                  const retryTravelDates = hasExistingDates 
+                    ? undefined 
+                    : (travelDates.departure ? { departure: travelDates.departure, return: travelDates.return } : undefined);
+                  
                   const context: ChatContext = {
                     userLocation: userLocation ? {
                       city: userLocation.city,
@@ -844,6 +882,7 @@ const HomeScreen: React.FC = () => {
                     maxTravelDistance: maxTravelDistance ?? undefined,
                     blacklistedParkCodes: blacklistedParkCodes.length > 0 ? blacklistedParkCodes : undefined,
                     parkMode: parkMode,
+                    travelDates: retryTravelDates,
                     // Tool settings for API
                     toolSettings: {
                       languageModel: toolSettings.languageModel,

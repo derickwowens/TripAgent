@@ -490,11 +490,205 @@ export class S3ParkDataService {
   }
   
   /**
+   * Get trails for a national park from S3
+   * Priority: NPS API data (official URLs) > curated data
+   */
+  async getTrailsForPark(parkCode: string): Promise<TrailData[]> {
+    console.log(`[S3 Trails] Fetching trails for park: ${parkCode}`);
+    
+    // Try NPS API data first (has official nps.gov URLs)
+    const npsData = await this.fetchJson<NPSTrailsIndex>('trails/api-trails.json');
+    if (npsData?.nationalParks?.[parkCode.toLowerCase()]) {
+      const parkData = npsData.nationalParks[parkCode.toLowerCase()];
+      console.log(`[S3 Trails] Found ${parkData.trails.length} NPS API trails for ${parkCode}`);
+      
+      return parkData.trails.map(t => ({
+        name: t.name,
+        description: t.description,
+        duration: t.duration,
+        npsUrl: t.npsUrl,
+        trailUrl: t.npsUrl, // NPS URL is primary
+        imageUrl: t.imageUrl,
+        parkCode: parkCode.toLowerCase(),
+        parkName: parkData.parkName,
+        source: 'NPS API',
+      }));
+    }
+    
+    // Fall back to curated data
+    const trailsIndex = await this.fetchJson<TrailsIndex>('trails/all-parks-trails.json');
+    if (!trailsIndex || !trailsIndex.parks[parkCode.toLowerCase()]) {
+      console.log(`[S3 Trails] No trails found for ${parkCode}`);
+      return [];
+    }
+    
+    const parkTrails = trailsIndex.parks[parkCode.toLowerCase()];
+    console.log(`[S3 Trails] Found ${parkTrails.trails.length} curated trails for ${parkCode}`);
+    
+    return parkTrails.trails.map(t => ({
+      ...t,
+      trailUrl: t.alltrailsUrl,
+      parkCode: parkCode.toLowerCase(),
+      parkName: parkTrails.parkName,
+      source: 'Curated',
+    }));
+  }
+  
+  /**
+   * Get trails for a state park from S3
+   * Supports WI and FL state parks
+   */
+  async getTrailsForStatePark(stateCode: 'WI' | 'FL', parkId: string): Promise<TrailData[]> {
+    const trailsIndex = await this.fetchJson<TrailsIndex>('trails/all-parks-trails.json');
+    if (!trailsIndex?.stateParks?.[stateCode]?.[parkId]) {
+      return [];
+    }
+    
+    const parkTrails = trailsIndex.stateParks[stateCode][parkId];
+    return parkTrails.trails.map(t => ({
+      ...t,
+      parkCode: parkId,
+      parkName: parkTrails.parkName,
+    }));
+  }
+  
+  /**
+   * Get a specific trail by name (since we no longer have IDs)
+   */
+  async getTrailByName(trailName: string, parkCode?: string): Promise<TrailData | null> {
+    const trailsIndex = await this.fetchJson<TrailsIndex>('trails/all-parks-trails.json');
+    if (!trailsIndex) return null;
+    
+    const nameLower = trailName.toLowerCase();
+    
+    // Search national parks
+    for (const [code, parkData] of Object.entries(trailsIndex.parks)) {
+      if (parkCode && code !== parkCode.toLowerCase()) continue;
+      const trail = parkData.trails.find(t => t.name.toLowerCase() === nameLower);
+      if (trail) {
+        return {
+          ...trail,
+          parkCode: code,
+          parkName: parkData.parkName,
+        };
+      }
+    }
+    
+    return null;
+  }
+  
+  /**
+   * Search trails by name across all parks
+   */
+  async searchTrails(query: string, options?: { parkCode?: string; limit?: number }): Promise<TrailData[]> {
+    const { parkCode, limit = 10 } = options || {};
+    const trailsIndex = await this.fetchJson<TrailsIndex>('trails/all-parks-trails.json');
+    if (!trailsIndex) return [];
+    
+    const queryLower = query.toLowerCase();
+    const results: TrailData[] = [];
+    
+    const parksToSearch = parkCode 
+      ? { [parkCode.toLowerCase()]: trailsIndex.parks[parkCode.toLowerCase()] }
+      : trailsIndex.parks;
+    
+    for (const [code, parkData] of Object.entries(parksToSearch)) {
+      if (!parkData) continue;
+      
+      for (const trail of parkData.trails) {
+        if (trail.name.toLowerCase().includes(queryLower) ||
+            trail.difficulty.toLowerCase().includes(queryLower) ||
+            trail.type.toLowerCase().includes(queryLower)) {
+          results.push({
+            ...trail,
+            parkCode: code,
+            parkName: parkData.parkName,
+          });
+        }
+      }
+    }
+    
+    return results.slice(0, limit);
+  }
+  
+  /**
    * Clear the cache (useful for testing or force refresh)
    */
   clearCache(): void {
     cache.clear();
   }
+}
+
+// Trail data interfaces - matches all-parks-trails.json structure (curated data)
+interface TrailsIndex {
+  _meta: {
+    description: string;
+    lastUpdated: string;
+    source: string;
+    coverage: {
+      nationalParks: number;
+      stateParks: {
+        WI: number;
+        FL: number;
+      };
+    };
+  };
+  parks: Record<string, {
+    parkName: string;
+    trails: TrailInfo[];
+  }>;
+  stateParks: {
+    WI: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    FL: Record<string, { parkName: string; trails: TrailInfo[] }>;
+  };
+}
+
+interface TrailInfo {
+  name: string;
+  difficulty: string;
+  length: string;      // e.g. "3.2 mi"
+  type: string;        // e.g. "out-and-back", "loop"
+  alltrailsUrl: string;
+}
+
+// NPS API trail data structure
+interface NPSTrailsIndex {
+  _meta: any;
+  nationalParks: Record<string, {
+    parkName: string;
+    state: string;
+    coordinates: { lat: number; lon: number };
+    trails: NPSTrailInfo[];
+  }>;
+  stateParks: {
+    WI: Record<string, any>;
+    FL: Record<string, any>;
+  };
+}
+
+interface NPSTrailInfo {
+  name: string;
+  description: string;
+  duration: string;
+  npsUrl: string;
+  imageUrl?: string;
+  source: string;
+}
+
+export interface TrailData {
+  name: string;
+  difficulty?: string;
+  length?: string;
+  type?: string;
+  description?: string;
+  duration?: string;
+  alltrailsUrl?: string;
+  npsUrl?: string;
+  trailUrl?: string;  // Primary URL to use
+  imageUrl?: string;
+  parkCode: string;
+  parkName: string;
+  source?: string;
 }
 
 // Export singleton instance
