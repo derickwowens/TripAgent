@@ -151,6 +151,7 @@ export type ToolStatusCallback = (toolName: string, status: 'starting' | 'comple
 
 // Human-readable tool names for loading states
 // These messages are shown to end users in the chat UI during tool execution
+// All tools defined in toolDefinitions.ts should have a display name here
 export const TOOL_DISPLAY_NAMES: Record<string, string> = {
   // National Parks tools
   'search_national_parks': 'Searching for national parks...',
@@ -166,6 +167,11 @@ export const TOOL_DISPLAY_NAMES: Record<string, string> = {
   'get_state_park_details': 'Loading state park details...',
   'get_state_park_campgrounds': 'Finding campgrounds at this state park...',
   'get_state_park_hikes': 'Finding trails at this state park...',
+  'get_state_trails': 'Loading state-wide trails...',
+  // Park Database tools (S3)
+  'lookup_park_database': 'Looking up park in database...',
+  'get_parks_near_location': 'Finding parks near you...',
+  'get_park_database_stats': 'Loading database statistics...',
   // Travel booking tools
   'search_flights': 'Searching for available flights...',
   'search_hotels': 'Finding hotels and lodging...',

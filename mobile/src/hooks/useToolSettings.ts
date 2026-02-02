@@ -22,7 +22,7 @@ const DEFAULT_TOOLS: ToolConfig[] = [
   // National Parks tools (only available in National Parks mode)
   { id: 'search_national_parks', name: 'National Park Search', description: 'Search for US National Parks', category: 'parks', enabled: true, parkMode: 'national' },
   { id: 'plan_park_trip', name: 'Trip Planner', description: 'Complete park trip planning', category: 'parks', enabled: true, parkMode: 'national' },
-  { id: 'get_park_hikes', name: 'Hiking Trails', description: 'Get hiking trail info', category: 'parks', enabled: true, parkMode: 'national' },
+  { id: 'get_park_hikes', name: 'Hiking Trails', description: 'Get hiking trail info with NPS links', category: 'parks', enabled: true, parkMode: 'national' },
   { id: 'get_wildlife', name: 'Wildlife Info', description: 'Wildlife species in parks (iNaturalist)', category: 'parks', enabled: true },
   { id: 'get_campgrounds', name: 'NPS Campgrounds', description: 'National Park campgrounds', category: 'parks', enabled: true, parkMode: 'national' },
   
@@ -30,7 +30,12 @@ const DEFAULT_TOOLS: ToolConfig[] = [
   { id: 'search_state_parks', name: 'State Park Search', description: 'Search state parks by state', category: 'parks', enabled: true, parkMode: 'state' },
   { id: 'get_state_park_details', name: 'State Park Details', description: 'Get state park info', category: 'parks', enabled: true, parkMode: 'state' },
   { id: 'get_state_park_campgrounds', name: 'State Park Campgrounds', description: 'State park camping info', category: 'parks', enabled: true, parkMode: 'state' },
-  { id: 'get_state_park_hikes', name: 'State Park Hikes', description: 'Hiking trails via AllTrails', category: 'parks', enabled: true, parkMode: 'state' },
+  { id: 'get_state_park_hikes', name: 'State Park Hikes', description: 'Hiking trails from our database', category: 'parks', enabled: true, parkMode: 'state' },
+  
+  // Park Database tools (available in both modes)
+  { id: 'lookup_park_database', name: 'Park Database', description: 'Look up park details from S3 database', category: 'parks', enabled: true },
+  { id: 'get_parks_near_location', name: 'Nearby Parks', description: 'Find parks near a location', category: 'parks', enabled: true },
+  { id: 'get_park_database_stats', name: 'Database Stats', description: 'Park database statistics', category: 'parks', enabled: true },
   
   // Travel category (available in both modes)
   { id: 'search_flights', name: 'Flight Search', description: 'Search for flights', category: 'travel', enabled: true },

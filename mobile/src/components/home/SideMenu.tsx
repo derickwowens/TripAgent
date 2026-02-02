@@ -218,11 +218,16 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   }, [userLocation?.lat, userLocation?.lng, maxTravelDistance, isStateMode]);
 
   // Fetch state parks when in State Parks mode and a state is selected
+  // Re-fetches whenever the state changes (either by manual selection or location change)
   useEffect(() => {
     if (isStateMode && effectiveStateCode) {
-      console.log('Fetching state parks for:', effectiveState, '-> code:', effectiveStateCode);
+      console.log('Fetching state parks for:', effectiveState, '-> code:', effectiveStateCode, '(selected:', selectedState, ')');
+      // Clear existing parks first to show loading state
+      setStateParks([]);
       setStateParksLoading(true);
-      fetchStateParks(effectiveStateCode, 100) // Fetch more to allow distance filtering
+      // Fetch more parks when user manually selects a state (they want to see all)
+      const limit = selectedState ? 200 : 100;
+      fetchStateParks(effectiveStateCode, limit)
         .then(parks => {
           // Filter duplicates by name
           const seen = new Set<string>();
@@ -236,11 +241,22 @@ export const SideMenu: React.FC<SideMenuProps> = ({
           setStateParks(uniqueParks);
         })
         .finally(() => setStateParksLoading(false));
+    } else if (!isStateMode) {
+      // Clear state parks when switching to National Parks mode
+      setStateParks([]);
     }
-  }, [isStateMode, effectiveStateCode]);
+  }, [isStateMode, effectiveStateCode, selectedState]);
 
   // Filter state parks by distance from user's location
+  // When user manually selects a state, show ALL parks (no distance filtering)
+  // When using current location, apply distance filtering
   const filteredStateParks = useMemo(() => {
+    // If user manually selected a state, show all parks in that state (no distance filtering)
+    if (selectedState) {
+      return stateParks.sort((a, b) => a.name.localeCompare(b.name));
+    }
+    
+    // If using current location, apply distance filtering
     if (!userLocation?.lat || !userLocation?.lng || stateParksDistance === null) {
       return stateParks; // No filtering if no location or "All" selected
     }
@@ -259,7 +275,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
       }))
       .filter(park => park.distance <= stateParksDistance)
       .sort((a, b) => a.distance - b.distance);
-  }, [stateParks, userLocation?.lat, userLocation?.lng, stateParksDistance]);
+  }, [stateParks, userLocation?.lat, userLocation?.lng, stateParksDistance, selectedState]);
   
   // Display value shows preview during drag, actual value otherwise
   const displayDistance = sliderPreview !== null ? sliderPreview : (maxTravelDistance ?? null);
@@ -363,28 +379,35 @@ export const SideMenu: React.FC<SideMenuProps> = ({
             {isStateMode && (
               <View style={styles.distanceSection}>
                 <View style={styles.distanceHeader}>
-                  <Text style={styles.distanceLabel}>State Parks Near You</Text>
+                  <Text style={styles.distanceLabel}>
+                    {selectedState ? `All Parks in ${effectiveState}` : 'State Parks Near You'}
+                  </Text>
                   <Text style={[styles.distanceValue, { color: theme.primary }]}>
                     {stateParksLoading ? 'Loading...' : `${filteredStateParks.length} parks`}
                   </Text>
                 </View>
-                <Slider
-                  style={styles.distanceSlider}
-                  minimumValue={0}
-                  maximumValue={STATE_DISTANCE_PRESETS.length}
-                  step={1}
-                  value={stateDistanceToSliderValue(stateParksDistance)}
-                  onValueChange={(value) => setStateParksDistance(stateSliderValueToDistance(value))}
-                  minimumTrackTintColor={theme.sliderTrack}
-                  maximumTrackTintColor="rgba(255,255,255,0.2)"
-                  thumbTintColor={theme.sliderThumb}
-                />
-                <View style={styles.distanceLabelsRow}>
-                  <Text style={[styles.distanceLabelSmall, { color: theme.primary }]}>
-                    {getDistanceDisplayText(stateParksDistance)}
-                  </Text>
-                  <Text style={styles.distanceLabelSmall}>Unlimited</Text>
-                </View>
+                {/* Only show distance slider when using current location (not when state is manually selected) */}
+                {!selectedState && (
+                  <>
+                    <Slider
+                      style={styles.distanceSlider}
+                      minimumValue={0}
+                      maximumValue={STATE_DISTANCE_PRESETS.length}
+                      step={1}
+                      value={stateDistanceToSliderValue(stateParksDistance)}
+                      onValueChange={(value) => setStateParksDistance(stateSliderValueToDistance(value))}
+                      minimumTrackTintColor={theme.sliderTrack}
+                      maximumTrackTintColor="rgba(255,255,255,0.2)"
+                      thumbTintColor={theme.sliderThumb}
+                    />
+                    <View style={styles.distanceLabelsRow}>
+                      <Text style={[styles.distanceLabelSmall, { color: theme.primary }]}>
+                        {getDistanceDisplayText(stateParksDistance)}
+                      </Text>
+                      <Text style={styles.distanceLabelSmall}>Unlimited</Text>
+                    </View>
+                  </>
+                )}
 
                 {/* State Parks List */}
                 {(filteredStateParks.length > 0 || effectiveState) && (

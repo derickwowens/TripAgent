@@ -527,7 +527,9 @@ export class S3ParkDataService {
     
     return parkTrails.trails.map(t => ({
       ...t,
-      trailUrl: t.alltrailsUrl,
+      // AllTrails URLs deprecated - let caller generate Google Maps fallback
+      trailUrl: undefined,
+      needsEnrichment: true,
       parkCode: parkCode.toLowerCase(),
       parkName: parkTrails.parkName,
       source: 'Curated',
@@ -536,20 +538,101 @@ export class S3ParkDataService {
   
   /**
    * Get trails for a state park from S3
-   * Supports WI and FL state parks
+   * Reads from trails/state-parks/{STATE}/trails.json (authoritative source)
    */
   async getTrailsForStatePark(stateCode: 'WI' | 'FL', parkId: string): Promise<TrailData[]> {
-    const trailsIndex = await this.fetchJson<TrailsIndex>('trails/all-parks-trails.json');
-    if (!trailsIndex?.stateParks?.[stateCode]?.[parkId]) {
+    const stateTrails = await this.fetchStateTrailsData(stateCode);
+    if (!stateTrails?.parks?.[parkId]) {
+      // Fallback to old path for backward compatibility
+      const trailsIndex = await this.fetchJson<TrailsIndex>('trails/all-parks-trails.json');
+      if (!trailsIndex?.stateParks?.[stateCode]?.[parkId]) {
+        return [];
+      }
+      const parkTrails = trailsIndex.stateParks[stateCode][parkId];
+      return parkTrails.trails.map(t => ({
+        ...t,
+        parkCode: parkId,
+        parkName: parkTrails.parkName,
+      }));
+    }
+    
+    const parkData = stateTrails.parks[parkId];
+    return parkData.trails.map(t => this.mapStateTrailToTrailData(t, parkId, parkData.parkName));
+  }
+
+  /**
+   * Get state-wide trails (Wisconsin State Trails, Florida State Trails)
+   * These are longer multi-use trails that span regions
+   */
+  async getStateTrails(stateCode: 'WI' | 'FL'): Promise<TrailData[]> {
+    const stateTrailsKey = stateCode === 'WI' ? 'wi-state-trails' : 'fl-state-trails';
+    const stateTrails = await this.fetchStateTrailsData(stateCode);
+    
+    if (!stateTrails?.parks?.[stateTrailsKey]) {
       return [];
     }
     
-    const parkTrails = trailsIndex.stateParks[stateCode][parkId];
-    return parkTrails.trails.map(t => ({
-      ...t,
+    const parkData = stateTrails.parks[stateTrailsKey];
+    return parkData.trails.map(t => this.mapStateTrailToTrailData(t, stateTrailsKey, parkData.parkName));
+  }
+
+  /**
+   * Get nearby state trails for a given state park
+   * Returns trails from the state trails category that pass near the park
+   */
+  async getNearbyStateTrails(stateCode: 'WI' | 'FL', parkId: string): Promise<TrailData[]> {
+    const stateTrailsKey = stateCode === 'WI' ? 'wi-state-trails' : 'fl-state-trails';
+    const stateTrails = await this.fetchStateTrailsData(stateCode);
+    
+    if (!stateTrails?.parks?.[stateTrailsKey]) {
+      return [];
+    }
+    
+    const stateTrailsPark = stateTrails.parks[stateTrailsKey];
+    const nearbyTrails: TrailData[] = [];
+    
+    for (const trail of stateTrailsPark.trails) {
+      // Check if this trail has the current park in its nearbyParks
+      if (trail.nearbyParks?.some(np => np.parkId === parkId)) {
+        nearbyTrails.push(this.mapStateTrailToTrailData(trail, stateTrailsKey, stateTrailsPark.parkName));
+      }
+    }
+    
+    return nearbyTrails;
+  }
+
+  /**
+   * Internal: Fetch and cache state trails data
+   */
+  private async fetchStateTrailsData(stateCode: 'WI' | 'FL'): Promise<StateTrailsData | null> {
+    return this.fetchJson<StateTrailsData>(`trails/state-parks/${stateCode}/trails.json`);
+  }
+
+  /**
+   * Internal: Map state trail data to TrailData format
+   */
+  private mapStateTrailToTrailData(
+    t: StateTrailsData['parks'][string]['trails'][number],
+    parkId: string,
+    parkName: string
+  ): TrailData {
+    // URL priority: official > AllTrails > Google Maps
+    const trailUrl = t.officialUrl || (t as any).allTrailsUrl || t.googleMapsUrl;
+    
+    return {
+      name: t.name,
+      description: t.description,
+      length: t.lengthMiles ? `${t.lengthMiles} miles` : undefined,
+      difficulty: t.difficulty,
+      type: t.trailType,
+      trailUrl: trailUrl,
+      alltrailsUrl: (t as any).allTrailsUrl,
+      googleMapsUrl: t.googleMapsUrl,
       parkCode: parkId,
-      parkName: parkTrails.parkName,
-    }));
+      parkName: parkName,
+      source: t.dataSource,
+      nearbyParks: t.nearbyParks,
+    };
   }
   
   /**
@@ -685,10 +768,37 @@ export interface TrailData {
   alltrailsUrl?: string;
   npsUrl?: string;
   trailUrl?: string;  // Primary URL to use
+  googleMapsUrl?: string;
   imageUrl?: string;
   parkCode: string;
   parkName: string;
   source?: string;
+  nearbyParks?: Array<{ parkId: string; parkName: string; distanceMiles: number }>;
+}
+
+// State trails data structure from S3
+interface StateTrailsData {
+  _meta: { stateCode: string; stateName: string; totalParks: number; totalTrails: number };
+  parks: Record<string, { 
+    parkName: string; 
+    trails: Array<{
+      id: string;
+      name: string;
+      parkId: string;
+      parkName: string;
+      stateCode: string;
+      lengthMiles?: number;
+      difficulty?: string;
+      trailType?: string;
+      description?: string;
+      officialUrl?: string;
+      googleMapsUrl: string;
+      trailheadCoordinates?: { latitude: number; longitude: number };
+      nearbyParks?: Array<{ parkId: string; parkName: string; distanceMiles: number }>;
+      dataSource: string;
+      lastUpdated: string;
+    }>;
+  }>;
 }
 
 // Export singleton instance

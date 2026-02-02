@@ -168,20 +168,38 @@ export const ToolSettingsPanel: React.FC<ToolSettingsPanelProps> = ({
                     const isLocked = isToolLockedInMode(tool, parkMode);
                     const isAvailable = isToolAvailableInMode(tool, parkMode);
                     
+                    // Determine mode badge text
+                    const modeBadge = tool.parkMode 
+                      ? (tool.parkMode === 'national' ? 'National Parks' : 'State Parks')
+                      : 'All Modes';
+                    
                     return (
                       <View key={tool.id} style={[styles.toolItem, isLocked && styles.toolItemLocked]}>
                         <View style={styles.toolInfo}>
-                          <Text style={[styles.toolName, isLocked && styles.toolNameLocked]}>
-                            {tool.name}
+                          <View style={styles.toolHeader}>
+                            <Text style={[styles.toolName, isLocked && styles.toolNameLocked]}>
+                              {tool.name}
+                            </Text>
                             {isLocked && (
-                              <Text style={styles.lockedBadge}>
-                                {' '}({tool.parkMode === 'national' ? 'National' : 'State'} only)
-                              </Text>
+                              <View style={styles.lockedIndicator}>
+                                <Text style={styles.lockedIndicatorText}>Locked</Text>
+                              </View>
                             )}
-                          </Text>
+                          </View>
                           <Text style={[styles.toolDescription, isLocked && styles.toolDescriptionLocked]}>
                             {tool.description}
                           </Text>
+                          <View style={styles.toolMeta}>
+                            <Text style={styles.toolId}>{tool.id}</Text>
+                            <Text style={styles.toolMetaSeparator}>|</Text>
+                            <Text style={[
+                              styles.toolModeBadge,
+                              tool.parkMode === 'national' && styles.toolModeBadgeNational,
+                              tool.parkMode === 'state' && styles.toolModeBadgeState,
+                            ]}>
+                              {modeBadge}
+                            </Text>
+                          </View>
                         </View>
                         <Switch
                           value={isAvailable && tool.enabled}
@@ -398,6 +416,48 @@ const styles = StyleSheet.create({
     color: 'rgba(255,255,255,0.4)',
     fontWeight: '400',
     fontStyle: 'italic',
+  },
+  toolHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  lockedIndicator: {
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 4,
+  },
+  lockedIndicatorText: {
+    fontSize: 9,
+    color: 'rgba(255,255,255,0.4)',
+    fontWeight: '500',
+    textTransform: 'uppercase',
+  },
+  toolMeta: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 4,
+    gap: 6,
+  },
+  toolId: {
+    fontSize: 10,
+    color: 'rgba(255,255,255,0.3)',
+    fontFamily: 'monospace',
+  },
+  toolMetaSeparator: {
+    fontSize: 10,
+    color: 'rgba(255,255,255,0.2)',
+  },
+  toolModeBadge: {
+    fontSize: 10,
+    color: 'rgba(255,255,255,0.4)',
+  },
+  toolModeBadgeNational: {
+    color: 'rgba(34, 197, 94, 0.7)',
+  },
+  toolModeBadgeState: {
+    color: 'rgba(205, 133, 63, 0.8)',
   },
   bottomPadding: {
     height: 40,

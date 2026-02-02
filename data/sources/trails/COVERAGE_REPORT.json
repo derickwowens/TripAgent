@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-02-02T14:10:12.235Z",
+  "nationalParks": {
+    "totalParks": 55,
+    "totalTrails": 800,
+    "targetParks": 63,
+    "coveragePercent": 87,
+    "dataQuality": {
+      "withNpsUrl": 100,
+      "withDescription": 100,
+      "withDuration": 76
+    },
+    "lastUpdated": "2026-02-02"
+  },
+  "stateParks": {
+    "WI": {
+      "stateCode": "WI",
+      "stateName": "Wisconsin",
+      "currentParks": 18,
+      "currentTrails": 96,
+      "estimatedTotalParks": 50,
+      "estimatedTotalTrails": 500,
+      "coveragePercent": 36,
+      "trailCoveragePercent": 19,
+      "goals": {
+        "phase1": {
+          "parks": 25,
+          "trails": 150
+        },
+        "phase2": {
+          "parks": 40,
+          "trails": 300
+        },
+        "phase3": {
+          "parks": 50,
+          "trails": 400
+        }
+      },
+      "dataQuality": {
+        "withDescription": 100,
+        "withDistance": 97,
+        "withDifficulty": 58,
+        "withOfficialUrl": 16,
+        "withCoordinates": 100
+      },
+      "lastUpdated": "2026-02-02T14:09:14.737Z"
+    },
+    "FL": {
+      "stateCode": "FL",
+      "stateName": "Florida",
+      "currentParks": 21,
+      "currentTrails": 99,
+      "estimatedTotalParks": 175,
+      "estimatedTotalTrails": 1300,
+      "coveragePercent": 12,
+      "trailCoveragePercent": 8,
+      "goals": {
+        "phase1": {
+          "parks": 50,
+          "trails": 400
+        },
+        "phase2": {
+          "parks": 100,
+          "trails": 800
+        },
+        "phase3": {
+          "parks": 150,
+          "trails": 1000
+        }
+      },
+      "dataQuality": {
+        "withDescription": 100,
+        "withDistance": 98,
+        "withDifficulty": 94,
+        "withOfficialUrl": 18,
+        "withCoordinates": 100
+      },
+      "lastUpdated": "2026-02-02T14:10:00.658Z"
+    }
+  },
+  "summary": {
+    "totalParks": 94,
+    "totalTrails": 995,
+    "overallCoverage": 33,
+    "dataQualityScore": 0
+  }
+}

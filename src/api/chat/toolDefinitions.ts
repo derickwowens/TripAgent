@@ -45,7 +45,7 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'get_park_hikes',
-    description: `Get hiking trails for a National Park from our trail database. Returns trails with VERIFIED AllTrails URLs - always include these links in your response! Results include: name, distance, difficulty, trailType, allTrailsUrl, googleMapsUrl, allTrailsSearchUrl, npsHikingUrl. Park codes: ${ALL_PARK_CODES}`,
+    description: `Get hiking trails for a National Park from our trail database. Returns trails with official NPS URLs or Google Maps links. Results include: name, distance, difficulty, trailType, trailUrl, googleMapsUrl, npsHikingUrl. Park codes: ${ALL_PARK_CODES}`,
     input_schema: {
       type: 'object' as const,
       properties: {
@@ -237,7 +237,7 @@ export const tools: Anthropic.Tool[] = [
   },
   {
     name: 'get_state_park_hikes',
-    description: 'Get hiking trails for a state park. For WI and FL parks, returns trails with VERIFIED AllTrails URLs from our database - always include these links! For other states, returns search links. Results include: name, distance, difficulty, trailType, allTrailsUrl, googleMapsUrl.',
+    description: 'Get hiking trails for a state park. For WI and FL parks, returns trails from our database including nearby state trails. For other states, returns Google Maps search links. Results include: name, distance, difficulty, trailType, trailUrl, googleMapsUrl, and nearbyStateTrails.',
     input_schema: {
       type: 'object' as const,
       properties: {
@@ -245,6 +245,17 @@ export const tools: Anthropic.Tool[] = [
         state: { type: 'string', description: '2-letter US state code (e.g., "WI", "FL")' },
       },
       required: ['park_name', 'state'],
+    },
+  },
+  {
+    name: 'get_state_trails',
+    description: 'Get state-wide multi-use trails (Wisconsin State Trails, Florida State Trails). These are longer trails that span regions, like the Glacial Drumlin Trail or Florida Greenways. Returns trail name, distance, official URL, and nearby state parks.',
+    input_schema: {
+      type: 'object' as const,
+      properties: {
+        state: { type: 'string', description: '2-letter US state code (WI or FL)' },
+      },
+      required: ['state'],
     },
   },
   // ============================================

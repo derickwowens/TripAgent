@@ -1,0 +1,2736 @@
+{
+  "_meta": {
+    "stateCode": "FL",
+    "stateName": "Florida",
+    "lastUpdated": "2026-02-02T14:10:00.658Z",
+    "totalParks": 21,
+    "totalTrails": 99,
+    "sources": [
+      "curated",
+      "trailapi",
+      "florida_state_parks"
+    ],
+    "coverageGoal": {
+      "phase1": {
+        "parks": 50,
+        "trails": 400
+      },
+      "phase2": {
+        "parks": 100,
+        "trails": 800
+      },
+      "phase3": {
+        "parks": 150,
+        "trails": 1000
+      }
+    }
+  },
+  "parks": {
+    "myakka-river": {
+      "parkName": "Myakka River State Park",
+      "trails": [
+        {
+          "id": "fl-myakka-river-north-loop-trail",
+          "name": "North Loop Trail",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 5.8,
+          "difficulty": "moderate",
+          "trailType": "loop",
+          "description": "Diverse Florida habitats including prairie and hammock",
+          "highlights": [
+            "Wildlife viewing",
+            "Prairie views",
+            "Bird watching"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/myakka-river",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=North%20Loop%20Trail%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 27.2333,
+            "longitude": -82.3167
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-myakka-canopy-walkway",
+          "name": "Myakka Canopy Walkway",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 0.5,
+          "difficulty": "easy",
+          "trailType": "out_and_back",
+          "description": "Suspended walkway 25 feet above the forest floor",
+          "highlights": [
+            "Canopy views",
+            "Observation tower",
+            "Oak hammock"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/myakka-river",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Myakka%20Canopy%20Walkway%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 27.2333,
+            "longitude": -82.3167
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-bee-island-trail",
+          "name": "Bee Island Trail",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3.5,
+          "difficulty": "easy",
+          "trailType": "out_and_back",
+          "description": "Flat trail through diverse ecosystems",
+          "highlights": [
+            "Wetlands",
+            "Bird watching",
+            "Alligator sightings"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/myakka-river",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bee%20Island%20Trail%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 27.2333,
+            "longitude": -82.3167
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-carlton-preserve",
+          "name": "Carlton Preserve",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "Trail is now open.  This is a new trail system the SCORR (Sarasota Charlotte county Off Road Riders) Just built last spring and has been under water most of the summer. If you want to experience Florida riding at it's best, now is the time. You will get your feet a little wet, it will be 5 challenging miles, you'll get your heart rate up, your bike will get dirty, but you'll end up with a smile on your face.<br />\r\nCarlton Preserve <br />\r\n1800 Mabry Carlton Pkwy, Venice, FL 34292",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carlton%20Preserve%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.12504",
+            "longitude": "-82.34142"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-boldlygo",
+          "name": "BoldlyGo",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "Flat Singletrack good amount of twists turns and roots.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BoldlyGo%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.12772",
+            "longitude": "-82.33364"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-the-celery-fields",
+          "name": "The Celery Fields",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "easiest",
+          "description": "This trail is great for short rides before or after work. They have cut some new trails along the side that make it so you don't have to walk your bike up the mound the whole time.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Celery%20Fields%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.32546",
+            "longitude": "-82.43358"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-tiger-marsh",
+          "name": "Tiger Marsh",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 15,
+          "difficulty": "easiest",
+          "description": "Appears as a loop on the map but about 3 miles in it's a bit over grown.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tiger%20Marsh%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.11910",
+            "longitude": "-82.19570"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-south-power-line-well-road",
+          "name": "South Power Line   Well Road",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 23,
+          "difficulty": "easiest",
+          "description": "Gravel Road",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=South%20Power%20Line%20%20%20Well%20Road%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.11970",
+            "longitude": "-82.19524"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-live-long-and-prosper",
+          "name": "Live Long and Prosper",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "intermediate",
+          "description": "Singletrack, hardpacked- maintained by SCORR riders- restrooms at MCEP park- great singletrack for the area-",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Live%20Long%20and%20Prosper%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.11948",
+            "longitude": "-82.19528"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-north-port-mountain-bike-trails",
+          "name": "North Port Mountain Bike Trails",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 9,
+          "difficulty": "intermediate",
+          "description": "<div class=\"ugcp_open_edit_field\">Approximately 9 miles of a combination of singletrack, fire trails, technical switchbacks, rocks, and some sand and roots. Most of the trail is intermediate. Some parts of the trail are really advanced. Great Trail for SW Florida.</div>",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=North%20Port%20Mountain%20Bike%20Trails%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.06919",
+            "longitude": "-82.21955"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-myakka-river-lakewood-ranch",
+          "name": "Lakewood Ranch",
+          "parkId": "myakka-river",
+          "parkName": "Myakka River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "http://www.mapmyfitness.com/workout/120030589?fb_action_ids=3861675944775&fb_action_types=mapmyfitnessapp:did&fb_source=other_multiline",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lakewood%20Ranch%20trail%20Myakka%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.41979",
+            "longitude": "-82.42567"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "jonathan-dickinson": {
+      "parkName": "Jonathan Dickinson State Park",
+      "trails": [
+        {
+          "id": "fl-jonathan-dickinson-kitching-creek-trail",
+          "name": "Kitching Creek Trail",
+          "parkId": "jonathan-dickinson",
+          "parkName": "Jonathan Dickinson State Park",
+          "stateCode": "FL",
+          "lengthMiles": 9.4,
+          "difficulty": "moderate",
+          "trailType": "loop",
+          "description": "Longest trail through pine flatwoods and scrub",
+          "highlights": [
+            "Sandhill habitat",
+            "Creek views",
+            "Gopher tortoises"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kitching%20Creek%20Trail%20trail%20Jonathan%20Dickinson%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 27.0167,
+            "longitude": -80.1167
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-jonathan-dickinson-hobe-mountain-trail",
+          "name": "Hobe Mountain Trail",
+          "parkId": "jonathan-dickinson",
+          "parkName": "Jonathan Dickinson State Park",
+          "stateCode": "FL",
+          "lengthMiles": 1.3,
+          "difficulty": "easy",
+          "trailType": "out_and_back",
+          "description": "Short hike to ancient sand dune overlook",
+          "highlights": [
+            "Observation tower",
+            "Coastal views",
+            "Sand pine scrub"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hobe%20Mountain%20Trail%20trail%20Jonathan%20Dickinson%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 27.0167,
+            "longitude": -80.1167
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-jonathan-dickinson-east-loop-trail",
+          "name": "East Loop Trail",
+          "parkId": "jonathan-dickinson",
+          "parkName": "Jonathan Dickinson State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4.6,
+          "difficulty": "moderate",
+          "trailType": "loop",
+          "description": "Varied terrain through multiple habitats",
+          "highlights": [
+            "River views",
+            "Wildlife",
+            "Diverse ecosystems"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/jonathan-dickinson",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=East%20Loop%20Trail%20trail%20Jonathan%20Dickinson%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 27.0167,
+            "longitude": -80.1167
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-jonathan-dickinson-jonathan-dickinson-state-park",
+          "name": "Jonathan Dickinson State Park",
+          "parkId": "jonathan-dickinson",
+          "parkName": "Jonathan Dickinson State Park",
+          "stateCode": "FL",
+          "lengthMiles": 5,
+          "difficulty": "intermediate",
+          "description": "\n\n<!-- wp:paragraph -->\n<p>It has three levels of difficulty from the novice to the more technical riders. Green is easy, blue is intermediate, and black is hard. Know your limits enjoy. Trail is single track, with roots, jumps, wooden bridges, and switch backs. You can take it easy or make a day of it. Although the trails are short, they offer some nice elevation changes and are designed to be very flowy. During the summer there is pretty much ZERO shade so be prepared. Tortoise and Hare trails are a blast to hammer down and just go. All routes lead back to the main parking lot. Camping in the area is also great, and you can ride the paved trail they have from the campground to the off road sections and add a good amount of miles onto your day.</p>\n<!-- /wp:paragraph -->",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Jonathan%20Dickinson%20State%20Park%20trail%20Jonathan%20Dickinson%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.01142",
+            "longitude": "-80.11145"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-jonathan-dickinson-riverbend",
+          "name": "Riverbend",
+          "parkId": "jonathan-dickinson",
+          "parkName": "Jonathan Dickinson State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4,
+          "difficulty": "easiest",
+          "description": "Not far from C-18 or the Hungryland Preserve",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Riverbend%20trail%20Jonathan%20Dickinson%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "26.91143",
+            "longitude": "-80.17888"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-jonathan-dickinson-cypress-creek-natural-area",
+          "name": "Cypress Creek Natural Area",
+          "parkId": "jonathan-dickinson",
+          "parkName": "Jonathan Dickinson State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4,
+          "difficulty": "easiest",
+          "description": "Shell rock road through the Cypress Creek Natural Area. There are a few boardwalks that overlook the natural area and splinter trails for \"foot traffic only\". Trail goes to 2 miles west to Mac Dairy Rd and ends. ",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cypress%20Creek%20Natural%20Area%20trail%20Jonathan%20Dickinson%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "26.94261",
+            "longitude": "-80.19164"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-jonathan-dickinson-halpatiokee",
+          "name": "Halpatiokee",
+          "parkId": "jonathan-dickinson",
+          "parkName": "Jonathan Dickinson State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "Single track network with some simple ups and downs. Lots of Florida scrub riding. Some sand but mostly loose soil ride. New trails being developed around lakes and along river. Nothing really techical. Good after work ride.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Halpatiokee%20trail%20Jonathan%20Dickinson%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.10223",
+            "longitude": "-80.25152"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "paynes-prairie": {
+      "parkName": "Paynes Prairie Preserve State Park",
+      "trails": [
+        {
+          "id": "fl-paynes-prairie-la-chua-trail",
+          "name": "La Chua Trail",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "easy",
+          "trailType": "out_and_back",
+          "description": "Famous for alligator and bison sightings",
+          "highlights": [
+            "Wild bison",
+            "Alligators",
+            "Wetland birds"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/paynes-prairie",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=La%20Chua%20Trail%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 29.5333,
+            "longitude": -82.3
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-gainesville-hawthorne-trail",
+          "name": "Gainesville-Hawthorne Trail",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 16,
+          "difficulty": "easy",
+          "trailType": "point_to_point",
+          "description": "Paved rail-trail through the prairie",
+          "highlights": [
+            "Prairie overlooks",
+            "Paved path",
+            "Birding"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/paynes-prairie",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gainesville-Hawthorne%20Trail%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 29.5333,
+            "longitude": -82.3
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-cone-s-dike-trail",
+          "name": "Cone's Dike Trail",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 8,
+          "difficulty": "moderate",
+          "trailType": "out_and_back",
+          "description": "Historic dike with prairie basin views",
+          "highlights": [
+            "Panoramic views",
+            "Historic site",
+            "Wildlife"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/paynes-prairie",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Cone's%20Dike%20Trail%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 29.5333,
+            "longitude": -82.3
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-chacala-trail",
+          "name": "Chacala Trail",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 6,
+          "difficulty": "beginner",
+          "description": "This is a mostly level trail that goes through Paynes Prairie. It is doubletrack that offers beautiful scenery and a good cardio workout. Although it is level there are long stretches of sugar sand that really give your lungs a workout.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chacala%20Trail%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.52664",
+            "longitude": "-82.28731"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-bolen-bluff-trail",
+          "name": "Bolen Bluff Trail",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "beginner",
+          "description": "This trail is a lollipop configuration. You start at the trailhead and you can go either left or right. The doubletrack trail winds through a shady oak forest before going straight out into the prairie. At the end there is an observation platform with nice views.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Bolen%20Bluff%20Trail%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.55681",
+            "longitude": "-82.32990"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-gainesville-hawthorne-state-trail",
+          "name": "Gainesville-Hawthorne State Trail",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 16,
+          "difficulty": "easiest",
+          "description": "This is not an MTB trail but it is worth listing because it has over 16 miles of paved car free riding. You will pass through a beautiful forest where you will see wildlife and awesome scenery. This trail is mostly flat but there are a couple of areas where you will encounter a gradual elevation change. A local Gainesville favorite that will give you miles of great biking.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gainesville-Hawthorne%20State%20Trail%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.62234",
+            "longitude": "-82.30627"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-sweetwater-preserve",
+          "name": "Sweetwater Preserve",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "intermediate",
+          "description": "A nice trail that is close to the center of Gainesville. Trail features a little climbing and descending, some tight turns and a couple of log crossings. Typical Florida terrain here…sandy in some sections but not to the point that it’s a pain. This is in an area locals call homeless hills due to some homeless camps in the area. A place worth checking out in Gainesville.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sweetwater%20Preserve%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.62916",
+            "longitude": "-82.32142"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-alligator-alley",
+          "name": "Alligator Alley",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 2,
+          "difficulty": "intermediate",
+          "description": "Alligator alley is a nice short trail that takes you alongside Bivens Arm and offers some nice views of the lake.  The singletrack is fairly difficult in some spots due to roots but overall it is rideable by most. The trail has some slight elevation changes here and there. Its fun to ride but it’s very short. It’s usually used to connect you with other trails that are spread out through Gainesville. ",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Alligator%20Alley%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.63037",
+            "longitude": "-82.35070"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-fred-bear",
+          "name": "Fred Bear",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 1,
+          "difficulty": "intermediate",
+          "description": "There are several entrances to the trail, look for sand paths. Great for trials stuff, about a mile, not much on the trails side. Some of this trail has been cut off, so from what I understand, it's even shorter now.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fred%20Bear%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.61053",
+            "longitude": "-82.39823"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-gainesville-dirt-jumps",
+          "name": "Gainesville Dirt Jumps",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 0,
+          "difficulty": "beginner",
+          "description": "There are roughly 6 good jump lines,a wall ride, and a few drops and bridges out there that are alot of fun.The area is more like a MTB park than a trail so if you are looking for a good trail ride,you may want to skip this.If you want to feed the gravity monster though,this may be the place.<br />\r\n<br />\r\nPlease respect the structures and jumps.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gainesville%20Dirt%20Jumps%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.62995",
+            "longitude": "-82.38555"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-20th-ave",
+          "name": "20th Ave",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 2,
+          "difficulty": "intermediate",
+          "description": "The trail is mostly singletrack and has a fire road at the end. There is not much elevation change to speak of but there are some sections with roots that might pose a problem to beginners, other than that this trail is great for beginners. If you take a left instead of a right when you come out the nature sanctuary and start taking the fire road you can cross under I-75 and link this trail up with Split Rock for some more miles.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=20th%20Ave%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.63943",
+            "longitude": "-82.39530"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-split-rock-trail",
+          "name": "Split Rock Trail",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4,
+          "difficulty": "beginner",
+          "description": "The trail is a doubletrack/fire road loop that has good out and back singletrack all around it. The trail is mostly beginner with no elevation change or major obstacles. Not much traffic, so it can be a peaceful ride..",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Split%20Rock%20Trail%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.63935",
+            "longitude": "-82.40897"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-creekside",
+          "name": "Creekside",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "beginner",
+          "description": "Starts with a small slope down at the edge of the parking lot to a fallen tree,there is a one way ramp to a 1.5ft drop but it needs some maintainence on holding it down currently.The trail winds through the thick forest near some houses and streets and then comes through a park with water available.From there it is on and off some roads but gets to a part with a 8ft. wall that elevates the trail for almost half a mile.shortly after that, the trail hops back out on the road and if you follow that, it heads into another trail section that I had never seen and is relatively new.Nice singletrack with a loop around a body of water that I really couldn't see.Nice fun ride and good for a bit over 5 miles out and back.Not too terribly technical but you will find some roots to contend with.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Creekside%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.64926",
+            "longitude": "-82.37664"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-31st-drive",
+          "name": "31st Drive",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "",
+          "description": "Nice little singletrack network with some bridges over the creek. I went when it was dry, but it seemed like if it had rained recently much of it would be under water.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=31st%20Drive%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.65987",
+            "longitude": "-82.36932"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": false,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-hogtown-creek-greenway",
+          "name": "Hogtown Creek Greenway",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 1,
+          "difficulty": "beginner",
+          "description": "This is a short trail, usually very sandy unless it's rained. The \"bowl\" has little drop offs that are pretty fun, and there's a few trails running a mile or so. Even if it hasn't, there's usually plenty of water to go in :)",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Hogtown%20Creek%20Greenway%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.65520",
+            "longitude": "-82.37185"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-esterbrook-trails",
+          "name": "Esterbrook Trails",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 2,
+          "difficulty": "intermediate",
+          "description": "It's really cool, it has tons of little bridges built all over the place. Lots of little sharp turns and steep mounds and drops. Not a huge place but a fun hour long ride.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Esterbrook%20Trails%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.67408",
+            "longitude": "-82.34284"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-paynes-prairie-razorback",
+          "name": "Razorback",
+          "parkId": "paynes-prairie",
+          "parkName": "Paynes Prairie Preserve State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "There are 2 loops : one short and one long. Plenty of climbs that let you earn your decents. Good fast singlrack. Varied terrain. Worth traveling from South Florida to go there. While in the area try Santos or Hardrock.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Razorback%20trail%20Paynes%20Prairie%20Preserve%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.36216",
+            "longitude": "-82.18717"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "rainbow-springs": {
+      "parkName": "Rainbow Springs State Park",
+      "trails": [
+        {
+          "id": "fl-rainbow-springs-razorback-ridge",
+          "name": "Razorback Ridge",
+          "parkId": "rainbow-springs",
+          "parkName": "Rainbow Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 2,
+          "difficulty": "intermediate",
+          "description": "A semi-technical XC trail built around, on and over a ridgeline of old canal diggings.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Razorback%20Ridge%20trail%20Rainbow%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.04700",
+            "longitude": "-82.32456"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-rainbow-springs-tricycle",
+          "name": "Tricycle",
+          "parkId": "rainbow-springs",
+          "parkName": "Rainbow Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 8,
+          "difficulty": "beginner",
+          "description": "Under utilized new trail on the western edge of the the Santos system.  Badly in need of riding to become properly packed.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Tricycle%20trail%20Rainbow%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.03820",
+            "longitude": "-82.29634"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-rainbow-springs-ern-n-burn",
+          "name": "Ern N Burn",
+          "parkId": "rainbow-springs",
+          "parkName": "Rainbow Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "intermediate",
+          "description": "The trail is mostly on what looks like the diggings from an old barge canal. The trail is well made with plenty of bench cuts and the trail is re-enforced with shell in many areas. Because the trail takes advantage of the diggings there is plenty of quick elevation changes and nice flow.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ern%20N%20Burn%20trail%20Rainbow%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.03794",
+            "longitude": "-82.29618"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-rainbow-springs-troll",
+          "name": "Troll",
+          "parkId": "rainbow-springs",
+          "parkName": "Rainbow Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 1,
+          "difficulty": "advanced",
+          "description": "A fast, flowing, testing trail with several short climbs, descents, and burms along with a couple drops that are packed into a short loop off the main Ern N' Burn trail.  On the west end of the extended Santos trail network this short loop is another reason to venture away from the main trail head when riding at Santos.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Troll%20trail%20Rainbow%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.03823",
+            "longitude": "-82.29627"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "hillsborough-river": {
+      "parkName": "Hillsborough River State Park",
+      "trails": [
+        {
+          "id": "fl-hillsborough-river-morris-bridge-park",
+          "name": "Morris Bridge Park",
+          "parkId": "hillsborough-river",
+          "parkName": "Hillsborough River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "beginner",
+          "description": "The bike tail begins behind the rest rooms, follow the footbridge under the road, then follow the two-track south. The trails are a little sandy in spots and it floods during heavy rains. If summer, spray yourself with anti-mosquito spray. Approximately 10-15 miles of trails. If you hook-up with someone who knows the area, they can connect you with another 10-15 miles of trails.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Morris%20Bridge%20Park%20trail%20Hillsborough%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.11391",
+            "longitude": "-82.30636"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-hillsborough-river-wilderness-trails-park-loop",
+          "name": "Wilderness Trails Park Loop",
+          "parkId": "hillsborough-river",
+          "parkName": "Hillsborough River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 15,
+          "difficulty": "beginner",
+          "description": "The main loop offers a good after work mileage loop. several other trails also connect to the main loop for even more mileage. Not a very exciting trail, but good for miles and a cardio workout. ",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wilderness%20Trails%20Park%20Loop%20trail%20Hillsborough%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.08735",
+            "longitude": "-82.35006"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-hillsborough-river-flatwoods-park",
+          "name": "Flatwoods Park",
+          "parkId": "hillsborough-river",
+          "parkName": "Hillsborough River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "beginner",
+          "description": "Paved trail",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Flatwoods%20Park%20trail%20Hillsborough%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.13206",
+            "longitude": "-82.36255"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "big-talbot": {
+      "parkName": "Big Talbot Island State Park",
+      "trails": [
+        {
+          "id": "fl-big-talbot-fort-george",
+          "name": "Fort George",
+          "parkId": "big-talbot",
+          "parkName": "Big Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "easiest",
+          "description": "Easy and scenic",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fort%20George%20trail%20Big%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.42814",
+            "longitude": "-81.42551"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-big-talbot-kathryn-abby-hanna-park",
+          "name": "Kathryn Abby Hanna Park",
+          "parkId": "big-talbot",
+          "parkName": "Big Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 20,
+          "difficulty": "intermediate",
+          "description": "At least 10 miles of singletrack, possibly more. Many mile of hard pack, with a few areas of soft sand. It is pretty flat, but has some technical areas, a lot of switch backs. The trails are marked for beginner through expert. There are a large number of tree roots, which will beat up you and your bike.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kathryn%20Abby%20Hanna%20Park%20trail%20Big%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.37179",
+            "longitude": "-81.40648"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-big-talbot-egans-creek-greenway",
+          "name": "Egans Creek Greenway",
+          "parkId": "big-talbot",
+          "parkName": "Big Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "beginner",
+          "description": "There are free maps of the greenway at the trail head showing trails. The <br />\r\ntrail is wide and simple on the green way and very family friendly. It makes <br />\r\nfor a great ride at any pace. What you don't see on the map however is the <br />\r\nMTB trail off the greenway that is NOT directional. You can access this trail  <br />\r\nfrom two ends and those trail heads are marked with signs. The MTB trail is <br />\r\nsingle track and has lots of roots (both small and some larger), narrow <br />\r\nspots, and some low branches. I would not recommend small children on <br />\r\nthe MTB portion.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Egans%20Creek%20Greenway%20trail%20Big%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.66691",
+            "longitude": "-81.43679"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-big-talbot-crusty-knuckle",
+          "name": "Crusty Knuckle",
+          "parkId": "big-talbot",
+          "parkName": "Big Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "easiest",
+          "description": "The area as a whole is certainly more fun than Hanna, with the trails being a stong-intermediate at best. The two new \"bridges\" that have been fashioned are very clever, and the jump near the beginning on the east side of Kernan adds a little \"fear-factor\" for the less-skilled rider as well. Synopsis? : The rolling hills on both sides are great fun as long as your at speed; the one large carpeted hill is a leg-churning endever; the tight areas between a few sections of trees are interesting if you're into them a bit too fast (my left shoulder still aches); and I didn't find the roots to be all that much of a major headache to maneuver around considering what STATE we're in! There are 10 miles of varying terrain out there, though it actually feels more like 4-to-5 when your done. The trails are definitely worth the time it takes to find them all, especially if you live in or around the Jacksonville area.  CUDOS to those that have made and try hard to maintain these trails. When you ride, take notice that the newer additions were all made of degradable material and will make no impact on the natural surroundings. The riders here also seem to take out what they bring in, so please respect the area and do the same.   Environmental Center",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Crusty%20Knuckle%20trail%20Big%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.28427",
+            "longitude": "-81.48800"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "bahia-honda": {
+      "parkName": "Bahia Honda State Park",
+      "trails": [
+        {
+          "id": "fl-bahia-honda-old-bahia-honda-bridge-trail",
+          "name": "Old Bahia Honda Bridge Trail",
+          "parkId": "bahia-honda",
+          "parkName": "Bahia Honda State Park",
+          "stateCode": "FL",
+          "lengthMiles": 0.5,
+          "difficulty": "easy",
+          "trailType": "out_and_back",
+          "description": "Walk on the historic Flagler-era bridge",
+          "highlights": [
+            "Historic bridge",
+            "Ocean views",
+            "Photo opportunities"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/bahia-honda",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Old%20Bahia%20Honda%20Bridge%20Trail%20trail%20Bahia%20Honda%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 24.6667,
+            "longitude": -81.2833
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-bahia-honda-silver-palm-trail",
+          "name": "Silver Palm Trail",
+          "parkId": "bahia-honda",
+          "parkName": "Bahia Honda State Park",
+          "stateCode": "FL",
+          "lengthMiles": 0.5,
+          "difficulty": "easy",
+          "trailType": "loop",
+          "description": "Nature trail through tropical hardwood hammock",
+          "highlights": [
+            "Silver palm trees",
+            "Native plants",
+            "Bird watching"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/bahia-honda",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Silver%20Palm%20Trail%20trail%20Bahia%20Honda%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 24.6667,
+            "longitude": -81.2833
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "grayton-beach": {
+      "parkName": "Grayton Beach State Park",
+      "trails": [
+        {
+          "id": "fl-grayton-beach-grayton-beach-recreational-park",
+          "name": "Grayton Beach Recreational Park",
+          "parkId": "grayton-beach",
+          "parkName": "Grayton Beach State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4,
+          "difficulty": "beginner",
+          "description": "Beginning is duo track, winding through the odd but cool looking forest. Very flat but bumpy b/c the Yuca plant roots are exposed. Very curvy in some parts. Eventually dumps you out on access road for about 1/8 mile, walk the bike, too sandy. Singletrack then starts, go right or left off of the road. Very narrow, slightly sandy. Places that are too sandy, carpet has been laid down, about 2 feet across. The vegetation provides for a low pine tree canopy, but, the best parts it closes in around you and over you, making it very, very tight and slow, but challenging to keep your balance. Some places become so thick and low, long board walks snake through the large patches and 3 feet over the ground. Very enclosed. It's actually quite scenic, feels other worldly. Very leisurely. No climbs, no downs. It's a nice ride for a vacation @ the great beaches. It's worth it just for the odd vegetation and to get away from everybody. There will probably be nobody else back there, these were just constructed in spring '02. Leads to the better known East Lake trail that has a parking lot.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Grayton%20Beach%20Recreational%20Park%20trail%20Grayton%20Beach%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.33518",
+            "longitude": "-86.15933"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-grayton-beach-point-washington-state-forest",
+          "name": "Point Washington State Forest",
+          "parkId": "grayton-beach",
+          "parkName": "Grayton Beach State Park",
+          "stateCode": "FL",
+          "lengthMiles": 14,
+          "difficulty": "beginner",
+          "description": "Trails are fun, mostly flat, twisty and somewhat sandy. There may be 20 miles of trails if one is willing to explore into Deer Lake State Park.  I'll say straight out that these trails aren't in my top ten list but they were a great save when I was into town for work and needed a nice ride.  On the plus side you can ride and then jump in the gulf!",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Point%20Washington%20State%20Forest%20trail%20Grayton%20Beach%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.33625",
+            "longitude": "-86.12763"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-grayton-beach-longleaf-pine-greenway-trail",
+          "name": "Longleaf Pine Greenway Trail",
+          "parkId": "grayton-beach",
+          "parkName": "Grayton Beach State Park",
+          "stateCode": "FL",
+          "lengthMiles": 16,
+          "difficulty": "beginner",
+          "description": "This is 8 miles one-way, flat, all singletrack. Lots of fun. Very few sandy spots. If you combine this trail with Eastern Lake Bike Trail and Grayton Beach Recreational Park Mountain Bike Trail, you can do about 35 miles of trail in one area.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Longleaf%20Pine%20Greenway%20Trail%20trail%20Grayton%20Beach%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.34179",
+            "longitude": "-86.13123"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-grayton-beach-eastern-lake-bike-trail",
+          "name": "Eastern Lake Bike Trail",
+          "parkId": "grayton-beach",
+          "parkName": "Grayton Beach State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "beginner",
+          "description": "This trail is part of Point Washington State Forrest.  If you do the full loop (Orange), it will be 10+ miles.  But there are two shorter intersections that allow you to do 3.5 miles (Yellow) or 5.5 miles (Red).  The trail switches back and forth from double track logging road to singletrack.  There is no water at this place.  Maps are available at the Info Kiosk at the trail head.  This trail has LOTS of sand.  There are some sections that are practically unrideable.  You'd have to dismount and walk your bike through it.  For the most part, the intersections are well marked, but several are not completely clear - like they'll have a color in the middle of a 3-way T, but not tell you exactly which one to take.  Only after going a little ways down do you see another indicator.  In mountian biking, that's little more than a nuisance, but if I were cave diving, taking the wrong route because the paths are not marked well can get you killed.  It's a good ride and long enough to get in some exercise, but be warned about the sand!!!",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Eastern%20Lake%20Bike%20Trail%20trail%20Grayton%20Beach%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.34183",
+            "longitude": "-86.13164"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-grayton-beach-timpochee-trail",
+          "name": "Timpochee Trail",
+          "parkId": "grayton-beach",
+          "parkName": "Grayton Beach State Park",
+          "stateCode": "FL",
+          "lengthMiles": 20,
+          "difficulty": "easiest",
+          "description": "Trail is on bike lane all the way - just follow Hwy 30A. Going thru the most prestigiuos beach resorts like Grayton Beach, Watercolors and Seaside (known from the Truman Story). http://bit.ly/9TRLgN<br /><br />\r\nBring sunscreen!!!",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Timpochee%20Trail%20trail%20Grayton%20Beach%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.37170",
+            "longitude": "-86.27334"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "wekiwa-springs": {
+      "parkName": "Wekiwa Springs State Park",
+      "trails": [
+        {
+          "id": "fl-wekiwa-springs-sand-lake-trail",
+          "name": "Sand Lake Trail",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 6.6,
+          "difficulty": "moderate",
+          "trailType": "loop",
+          "description": "Diverse habitats including sandhills and wetlands",
+          "highlights": [
+            "Sand Lake",
+            "Sandhill cranes",
+            "Florida scrub-jay"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/wekiwa-springs",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Sand%20Lake%20Trail%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 28.7167,
+            "longitude": -81.4667
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-rock-springs-run-trail",
+          "name": "Rock Springs Run Trail",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 8.7,
+          "difficulty": "moderate",
+          "trailType": "out_and_back",
+          "description": "Remote trail along Rock Springs Run",
+          "highlights": [
+            "Spring-fed stream",
+            "Wilderness camping",
+            "Deer"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/wekiwa-springs",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rock%20Springs%20Run%20Trail%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 28.7167,
+            "longitude": -81.4667
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-wekiwa-springs-state-park",
+          "name": "Wekiwa Springs State Park",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 9,
+          "difficulty": "beginner",
+          "description": "Its a loop, but head west out of the parking area to access the bike trail.  It doesn't look like a trail, and the sign warns authorized vehicles only.  The singletrack portion of the trail is a little further down the trail and doubles as a hiking trail, but the senic diversity of the trail make running into the occational hiker well worth it.  You also have a great chance of seeing some wildlife.  Be aware of the red blazes that mark the trail, as you will easily get lost if you are not careful.  Once the shared trail ends, in order the continue the loop, one is forced onto a fire road/break.  Why this is a designated bike trail I'll never know.  Deep ruts and huge clods of dirt make riding impossible except on the edge of the bush.  You'll inevitibly end up walking your bike through the worst of it.  \r\nThe bicycle trail is approximately 9 miles long, but bicycles are also permitted on the 8 miles of horse trails.  Because these are multi-use trails, be prepared to meet the occasional hiker, horseback rider, or park vehicle.  You'll feel like riding some more after completing the trail and the park's paved roads are perfect for that high speed riding you were unable to accomplish on the dirt trails!",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wekiwa%20Springs%20State%20Park%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.72818",
+            "longitude": "-81.49853"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-rock-springs-reserve",
+          "name": "Rock Springs Reserve",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 12,
+          "difficulty": "beginner",
+          "description": "Technical single track and double track jeep roads meander through flat pine woods and palmetto prairies interspersed with cypress bogs.  Limited hunting.  Call first to find out hunting season status (407-884-2006).  This wild and beautiful area is good for biking during the dry months.  The Freewheelers scouted and cut a 12 mile loop trail and hope to add more trail in the future.  Look for the round blue blazes which mark the trail.  The scenic Rock Springs Run is on the southern boundary with Wekiva springs State park and is a good place to stop for a swim.  This is an area of both open palmetto thickets and woods.  Some sections of the bike trail is on existing roads which are shared with vehicles, equestrians and hikers while other sections are bicycle-only singletrack.\r\n\r\n",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rock%20Springs%20Reserve%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.79561",
+            "longitude": "-81.45025"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-seminole-wekiva-markham-road-trail",
+          "name": "Seminole Wekiva Markham Road Trail",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "intermediate",
+          "description": "This is a new trail loop that needs to be ridden in.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Seminole%20Wekiva%20Markham%20Road%20Trail%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.79147",
+            "longitude": "-81.39789"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-markham-woods-mtb-trail",
+          "name": "Markham Woods MTB trail",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "from Green to Black these trail have a little bit of everything",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Markham%20Woods%20MTB%20trail%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.79167",
+            "longitude": "-81.39771"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-lake-apopka-restoration-area",
+          "name": "Lake Apopka Restoration Area",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 14,
+          "difficulty": "easiest",
+          "description": "The North Shore is pretty deserted no shade in either section, TONS of birds and aligators. The West end is nicer, has a loop and a cool narrow bridge and a coupe observation towers. Mostly hard packed maintenance roads, some grassy trails also, very flat welands.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Apopka%20Restoration%20Area%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.67457",
+            "longitude": "-81.70731"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-ridgeline",
+          "name": "Ridgeline",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 2,
+          "difficulty": "intermediate",
+          "description": "This trail is ~2 miles of adrenaline-pumping fun. Consistently has natural mounds that vary in <br />\r\nheight from roughly 10-20 feet. As long as you keep your speed up so you can make it up the <br />\r\nclimbs, it is a fast, steep, up-and-down ride that is like a rollercoaster. It is not very techinal, for <br />\r\nthe most part, but fast and flowy. The climbs are quite strenuous. It is considered Advanced <br />\r\nbecause of the steepness and speed. It has four short, optional offshoots that are more difficult <br />\r\nand even steeper. They also live up to their names. In order, they are: The Plunge, Corkscrew, <br />\r\nOMG, and Max G's.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ridgeline%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.56154",
+            "longitude": "-81.40241"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-best-fitness-software-development-services-in-usa-bcoder-castle",
+          "name": "Best Fitness Software Development Services in USA | BCoder Castle",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 5,
+          "difficulty": "",
+          "description": "<p>If you are searching for the best software app development company in the United States, then you are at the right place. B-Coder Castle is well specialized <a href=\"https://b-coder.com/fitness-app-development/\">Fitness software Development</a> Company that delivers the best fitness apps that can help customers to maintain their physical as well as mental health. Contact us at +1 (561)603-5184 or visit our website for more information.</p>",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Best%20Fitness%20Software%20Development%20Services%20in%20USA%20%7C%20BCoder%20Castle%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.54736",
+            "longitude": "-81.41693"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": false,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-west-orange-trail",
+          "name": "West Orange Trail",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 22,
+          "difficulty": "easiest",
+          "description": "West Orange Trail\r\nJust a few miles from metropolitan Orlando and Walt Disney World, the West Orange Trail is a central Florida attraction of a different sort. This world-class rail-trail, which travels through the communities of Winter Garden and Apopka, offers a rewarding experience and excellent facilities for the visitor. Among the highlights along the trail are a xeriscape/butterfly garden about a mile east of the Oakland Outpost, the Winter Garden Historical Museum and some picturesque views of Lake Apopka. The trail also provides access to and from Clarcona Horsemanâ€™s Park, offering equestrians a staging area for their visit. The constant changes in scenery and the relaxed atmosphere of the towns along the way make this a great ride. This trail will eventually be a part of the 200 mile planned regional connection known as the Central Florida Loop.\r\n-- http://www.dep.state.fl.us/gwt/guide/regions/eastcentral/trails/west_orange.htm --",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=West%20Orange%20Trail%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.56689",
+            "longitude": "-81.58383"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-wekiwa-springs-orlando-mountain-bike-park",
+          "name": "Orlando Mountain Bike Park",
+          "parkId": "wekiwa-springs",
+          "parkName": "Wekiwa Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 1.7,
+          "difficulty": "beginner",
+          "description": "This small urban mountain bike park has been built at Lake Druid Park in a neighborhood close to downtown Orlando. The park includes a mountain bike area with a pump track, skills area with skinnies and wall ride, junior pump track and single track trail through the woods of approximately 1 mile of tight, twisty, but fairly easy trail. Beginner rated and great for kids, those getting started in the sport, and locals looking for some dirt.\n\nThe park is just getting started and plans for additional ST with more advanced options and skills area are planned for the future with more volunteer work.\nPark news and info on volunteer days can be found here: https://www.facebook.com/Orlando-Mountain-Bike-Park-121589457912716/\nPark Hours: 9 a.m. - half hour before sunset",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Orlando%20Mountain%20Bike%20Park%20trail%20Wekiwa%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.55855",
+            "longitude": "-81.34985"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "blue-spring": {
+      "parkName": "Blue Spring State Park",
+      "trails": [
+        {
+          "id": "fl-blue-spring-pine-island-trail",
+          "name": "Pine Island Trail",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4.5,
+          "difficulty": "easy",
+          "trailType": "loop",
+          "description": "Loops through diverse Central Florida habitats",
+          "highlights": [
+            "Hardwood hammock",
+            "Pine flatwoods",
+            "Wildlife"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/blue-spring",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Pine%20Island%20Trail%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 28.95,
+            "longitude": -81.3333
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-spring-trail",
+          "name": "Spring Trail",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 0.5,
+          "difficulty": "easy",
+          "trailType": "out_and_back",
+          "description": "Short walk to the famous spring run",
+          "highlights": [
+            "Manatees (winter)",
+            "Crystal-clear spring",
+            "Swimming"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/blue-spring",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Spring%20Trail%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 28.95,
+            "longitude": -81.3333
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-blue-springs-state-park",
+          "name": "Blue Springs State Park",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "beginner",
+          "description": "<div class=\"ugcp_open_edit_field\">A beginner trail for the area. Singletrack is relatively slow and twisty, but not difficult. They are all two-way singletrack trails and connected to each other. During the summertime the trail becomes very insect infested and you should prepare yourself for that.</div>",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Blue%20Springs%20State%20Park%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.95246",
+            "longitude": "-81.34216"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-lake-beresford-park-nature-trail",
+          "name": "Lake Beresford Park Nature Trail",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 2,
+          "difficulty": "easiest",
+          "description": "Trail located within the Lake Beresford Park in DeLand, Florida. A 1.6 mile nature trail and 2 mile paved loop. Both the paved and nature trails allow bicycles as well as hiking. The track starts at the equine parking lot (Horses are allowed), but the address takes you to the main parking lot which has a playground, picnic pavilions and a full restroom. This is the park that one gains access to the Spring to Spring Trail from.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Beresford%20Park%20Nature%20Trail%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.99519",
+            "longitude": "-81.33574"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-markham-woods-mtb-trail",
+          "name": "Markham Woods MTB trail",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "from Green to Black these trail have a little bit of everything",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Markham%20Woods%20MTB%20trail%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.79167",
+            "longitude": "-81.39771"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-seminole-wekiva-markham-road-trail",
+          "name": "Seminole Wekiva Markham Road Trail",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "intermediate",
+          "description": "This is a new trail loop that needs to be ridden in.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Seminole%20Wekiva%20Markham%20Road%20Trail%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.79147",
+            "longitude": "-81.39789"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-wild-turkey",
+          "name": "Wild Turkey",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 1,
+          "difficulty": "advanced",
+          "description": "A fantastic short and challenging trail. Skinny bridges and steep climbs; this trail is not for beginners. Short enough to loop 2 or 3 times before you quit.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Wild%20Turkey%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.12504",
+            "longitude": "-81.36381"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-rock-springs-reserve",
+          "name": "Rock Springs Reserve",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 12,
+          "difficulty": "beginner",
+          "description": "Technical single track and double track jeep roads meander through flat pine woods and palmetto prairies interspersed with cypress bogs.  Limited hunting.  Call first to find out hunting season status (407-884-2006).  This wild and beautiful area is good for biking during the dry months.  The Freewheelers scouted and cut a 12 mile loop trail and hope to add more trail in the future.  Look for the round blue blazes which mark the trail.  The scenic Rock Springs Run is on the southern boundary with Wekiva springs State park and is a good place to stop for a swim.  This is an area of both open palmetto thickets and woods.  Some sections of the bike trail is on existing roads which are shared with vehicles, equestrians and hikers while other sections are bicycle-only singletrack.\r\n\r\n",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Rock%20Springs%20Reserve%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "28.79561",
+            "longitude": "-81.45025"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-blue-spring-chuck-lennon-park",
+          "name": "Chuck Lennon Park",
+          "parkId": "blue-spring",
+          "parkName": "Blue Spring State Park",
+          "stateCode": "FL",
+          "lengthMiles": 11,
+          "difficulty": "intermediate",
+          "description": "A great single track trail system that is very well marked. The trails provide an enjoyable ride for most all skilled riders. There are plenty of bailouts and bypasses for the challenging obstacles. There are currently 7 separate trails and a dirt jump area. There is also a small pump track with beginner level challenges. The wood features throughout the trails are built very well and most are coated with anti-skid paint. Plenty of drops and smooth turns throughout the trails. The advanced level Wild Turkey trail will put your skills to work with it's technical wood features, climbs and switchbacks. You won't leave disappointed with the variety at Chuck Lennon Park. Warning that heavy rains can cause some trails to close until they dry out.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Chuck%20Lennon%20Park%20trail%20Blue%20Spring%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.12503",
+            "longitude": "-81.36403"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "ocala": {
+      "parkName": "Ocala National Forest Trails",
+      "trails": [
+        {
+          "id": "fl-ocala-florida-national-scenic-trail-ocala-section",
+          "name": "Florida National Scenic Trail - Ocala Section",
+          "parkId": "ocala",
+          "parkName": "Ocala National Forest Trails",
+          "stateCode": "FL",
+          "lengthMiles": 67,
+          "difficulty": "strenuous",
+          "trailType": "point_to_point",
+          "description": "Longest section of the Florida Trail",
+          "highlights": [
+            "Diverse ecosystems",
+            "Primitive camping",
+            "Wilderness"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/ocala",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Florida%20National%20Scenic%20Trail%20-%20Ocala%20Section%20trail%20Ocala%20National%20Forest%20Trails%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 29.1833,
+            "longitude": -81.6667
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-ocala-juniper-springs-trail",
+          "name": "Juniper Springs Trail",
+          "parkId": "ocala",
+          "parkName": "Ocala National Forest Trails",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "moderate",
+          "trailType": "loop",
+          "description": "Loop around historic Juniper Springs",
+          "highlights": [
+            "Spring-fed creek",
+            "Historic CCC structures",
+            "Paddling"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/ocala",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Juniper%20Springs%20Trail%20trail%20Ocala%20National%20Forest%20Trails%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 29.1833,
+            "longitude": -81.6667
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-ocala-salt-springs-trail",
+          "name": "Salt Springs Trail",
+          "parkId": "ocala",
+          "parkName": "Ocala National Forest Trails",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "easy",
+          "trailType": "loop",
+          "description": "Easy loop near Salt Springs Recreation Area",
+          "highlights": [
+            "Salt springs",
+            "Swimming",
+            "Picnicking"
+          ],
+          "officialUrl": "https://www.floridastateparks.org/parks-and-trails/ocala",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Salt%20Springs%20Trail%20trail%20Ocala%20National%20Forest%20Trails%20Florida",
+          "trailheadCoordinates": {
+            "latitude": 29.1833,
+            "longitude": -81.6667
+          },
+          "dataSource": "curated",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": true,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "torreya": {
+      "parkName": "Torreya State Park",
+      "trails": [
+        {
+          "id": "fl-torreya-lake-seminole",
+          "name": "Lake Seminole",
+          "parkId": "torreya",
+          "parkName": "Torreya State Park",
+          "stateCode": "FL",
+          "lengthMiles": 0,
+          "difficulty": "",
+          "description": "Lake Seminole holds over 37,500 acres of water and has over 18,000 acres of surrounding land. It borders both Georgia and Florida and sits in the heart of Chattahoochee. Recreational opportunities here include mountain biking, hiking, swimming, boating, canoeing, kayaking, fishing and camping.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Lake%20Seminole%20trail%20Torreya%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.70853",
+            "longitude": "-84.86409"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": false,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "anastasia": {
+      "parkName": "Anastasia State Park",
+      "trails": [
+        {
+          "id": "fl-anastasia-moses-creek",
+          "name": "Moses Creek",
+          "parkId": "anastasia",
+          "parkName": "Anastasia State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4,
+          "difficulty": "intermediate",
+          "description": "The trail has large sections with palm roots and some tight switchbacks which tend to slow the flow down on the first half of the trail.  There are also so great bridges and technical features currently and being built.  The second half of the trail has somewhat of a better flow (less palm roots- but unavoidable in NE Florida)Trail is fairly new so the path is being ridden in, however it is marked fairly well (bike signs and blue squares).",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Moses%20Creek%20trail%20Anastasia%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.75882",
+            "longitude": "-81.27705"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-anastasia-guana-river-state-park",
+          "name": "Guana River State Park",
+          "parkId": "anastasia",
+          "parkName": "Anastasia State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "beginner",
+          "description": "About 10 miles of mostly beginner and some intermediate scenic trail.  Completely flat.  Beginners will be right at home on these trails.  Intermediates will find trails to be easy, fun to ride in large groups, and good for introducing beginners.  Experts: You're going to the beach anyway so you might as well get a short ride in!  Not challenging at all.  \r\n\r\n",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Guana%20River%20State%20Park%20trail%20Anastasia%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.02294",
+            "longitude": "-81.32880"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "highlands-hammock": {
+      "parkName": "Highlands Hammock State Park",
+      "trails": [
+        {
+          "id": "fl-highlands-hammock-highlands-hammock-state-park",
+          "name": "Highlands Hammock State Park",
+          "parkId": "highlands-hammock",
+          "parkName": "Highlands Hammock State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "",
+          "description": "The trail is basically a double track that tours the state park.  It is not difficult and there isn't anything remotely challenging about the ride.  I camped here on a trip to Alafia River State Park, but there was rain in the forecast, so I rode here to beat the rain.  One of the loops ends on the paved auto tour with a bike lane.  I rode this also because it was there.  It was a fun ride in the sense that I saw more of the park than I would have otherwise.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Highlands%20Hammock%20State%20Park%20trail%20Highlands%20Hammock%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.47388",
+            "longitude": "-81.53126"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": false,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-highlands-hammock-the-preserve",
+          "name": "The Preserve",
+          "parkId": "highlands-hammock",
+          "parkName": "Highlands Hammock State Park",
+          "stateCode": "FL",
+          "lengthMiles": 12,
+          "difficulty": "intermediate",
+          "description": "Single track and fire roads. Some areas are very technical cardiac means high cardia workout. ",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Preserve%20trail%20Highlands%20Hammock%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.53253",
+            "longitude": "-81.55170"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "oscar-scherer": {
+      "parkName": "Oscar Scherer State Park",
+      "trails": [
+        {
+          "id": "fl-oscar-scherer-oscar-scherer-state-park",
+          "name": "Oscar Scherer State Park",
+          "parkId": "oscar-scherer",
+          "parkName": "Oscar Scherer State Park",
+          "stateCode": "FL",
+          "lengthMiles": 12,
+          "difficulty": "easiest",
+          "description": "Sandy singletrack for hiking & biking",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Oscar%20Scherer%20State%20Park%20trail%20Oscar%20Scherer%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.16302",
+            "longitude": "-82.47434"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-oscar-scherer-carlton-preserve",
+          "name": "Carlton Preserve",
+          "parkId": "oscar-scherer",
+          "parkName": "Oscar Scherer State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "Trail is now open.  This is a new trail system the SCORR (Sarasota Charlotte county Off Road Riders) Just built last spring and has been under water most of the summer. If you want to experience Florida riding at it's best, now is the time. You will get your feet a little wet, it will be 5 challenging miles, you'll get your heart rate up, your bike will get dirty, but you'll end up with a smile on your face.<br />\r\nCarlton Preserve <br />\r\n1800 Mabry Carlton Pkwy, Venice, FL 34292",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Carlton%20Preserve%20trail%20Oscar%20Scherer%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.12504",
+            "longitude": "-82.34142"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-oscar-scherer-boldlygo",
+          "name": "BoldlyGo",
+          "parkId": "oscar-scherer",
+          "parkName": "Oscar Scherer State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "intermediate",
+          "description": "Flat Singletrack good amount of twists turns and roots.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=BoldlyGo%20trail%20Oscar%20Scherer%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.12772",
+            "longitude": "-82.33364"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-oscar-scherer-the-celery-fields",
+          "name": "The Celery Fields",
+          "parkId": "oscar-scherer",
+          "parkName": "Oscar Scherer State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "easiest",
+          "description": "This trail is great for short rides before or after work. They have cut some new trails along the side that make it so you don't have to walk your bike up the mound the whole time.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Celery%20Fields%20trail%20Oscar%20Scherer%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "27.32546",
+            "longitude": "-82.43358"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "little-talbot": {
+      "parkName": "Little Talbot Island State Park",
+      "trails": [
+        {
+          "id": "fl-little-talbot-fort-george",
+          "name": "Fort George",
+          "parkId": "little-talbot",
+          "parkName": "Little Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 3,
+          "difficulty": "easiest",
+          "description": "Easy and scenic",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fort%20George%20trail%20Little%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.42814",
+            "longitude": "-81.42551"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-little-talbot-kathryn-abby-hanna-park",
+          "name": "Kathryn Abby Hanna Park",
+          "parkId": "little-talbot",
+          "parkName": "Little Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 20,
+          "difficulty": "intermediate",
+          "description": "At least 10 miles of singletrack, possibly more. Many mile of hard pack, with a few areas of soft sand. It is pretty flat, but has some technical areas, a lot of switch backs. The trails are marked for beginner through expert. There are a large number of tree roots, which will beat up you and your bike.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Kathryn%20Abby%20Hanna%20Park%20trail%20Little%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.37179",
+            "longitude": "-81.40648"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-little-talbot-crusty-knuckle",
+          "name": "Crusty Knuckle",
+          "parkId": "little-talbot",
+          "parkName": "Little Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 10,
+          "difficulty": "easiest",
+          "description": "The area as a whole is certainly more fun than Hanna, with the trails being a stong-intermediate at best. The two new \"bridges\" that have been fashioned are very clever, and the jump near the beginning on the east side of Kernan adds a little \"fear-factor\" for the less-skilled rider as well. Synopsis? : The rolling hills on both sides are great fun as long as your at speed; the one large carpeted hill is a leg-churning endever; the tight areas between a few sections of trees are interesting if you're into them a bit too fast (my left shoulder still aches); and I didn't find the roots to be all that much of a major headache to maneuver around considering what STATE we're in! There are 10 miles of varying terrain out there, though it actually feels more like 4-to-5 when your done. The trails are definitely worth the time it takes to find them all, especially if you live in or around the Jacksonville area.  CUDOS to those that have made and try hard to maintain these trails. When you ride, take notice that the newer additions were all made of degradable material and will make no impact on the natural surroundings. The riders here also seem to take out what they bring in, so please respect the area and do the same.   Environmental Center",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Crusty%20Knuckle%20trail%20Little%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.28427",
+            "longitude": "-81.48800"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-little-talbot-egans-creek-greenway",
+          "name": "Egans Creek Greenway",
+          "parkId": "little-talbot",
+          "parkName": "Little Talbot Island State Park",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "beginner",
+          "description": "There are free maps of the greenway at the trail head showing trails. The <br />\r\ntrail is wide and simple on the green way and very family friendly. It makes <br />\r\nfor a great ride at any pace. What you don't see on the map however is the <br />\r\nMTB trail off the greenway that is NOT directional. You can access this trail  <br />\r\nfrom two ends and those trail heads are marked with signs. The MTB trail is <br />\r\nsingle track and has lots of roots (both small and some larger), narrow <br />\r\nspots, and some low branches. I would not recommend small children on <br />\r\nthe MTB portion.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Egans%20Creek%20Greenway%20trail%20Little%20Talbot%20Island%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.66691",
+            "longitude": "-81.43679"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "suwannee-river": {
+      "parkName": "Suwannee River State Park",
+      "trails": [
+        {
+          "id": "fl-suwannee-river-anderson-springs",
+          "name": "Anderson Springs",
+          "parkId": "suwannee-river",
+          "parkName": "Suwannee River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 8,
+          "difficulty": "beginner",
+          "description": "The riverside track follows the Suwannee River for two miles, including a stretch of limestone outcrops and some shoals. Some of this trail is on the Florida trail, so be courteous to hikers. North end of the river section is an old hunt camp. You can do 7 to 10 miles of riding, depending on which trails you take. The Suwannee Bicycle Association is planning to development more singletrail in the area. Contact: wpburden@aol.com \"Westside Regional Park",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Anderson%20Springs%20trail%20Suwannee%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.35343",
+            "longitude": "-83.18928"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-suwannee-river-holton-creek",
+          "name": "Holton Creek",
+          "parkId": "suwannee-river",
+          "parkName": "Suwannee River State Park",
+          "stateCode": "FL",
+          "lengthMiles": 16,
+          "difficulty": "easiest",
+          "description": "Bike or hike through old growth forest 16 miiles in an area dubbed, \"Land of a Thousand Sinks.\" Woodland roads go for many miles along the river. Visit Holton Creek thought to be one of the rises of the disappearing Alapaha River. ",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Holton%20Creek%20trail%20Suwannee%20River%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.44273",
+            "longitude": "-83.07649"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "manatee-springs": {
+      "parkName": "Manatee Springs State Park",
+      "trails": [
+        {
+          "id": "fl-manatee-springs-red-trail",
+          "name": "Red Trail",
+          "parkId": "manatee-springs",
+          "parkName": "Manatee Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 5,
+          "difficulty": "",
+          "description": "Small network of easy trails but has roots.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Red%20Trail%20trail%20Manatee%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.67489",
+            "longitude": "-82.95049"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": false,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "fort-clinch": {
+      "parkName": "Fort Clinch State Park",
+      "trails": [
+        {
+          "id": "fl-fort-clinch-ft-clinch-state-park",
+          "name": "Ft. Clinch State Park",
+          "parkId": "fort-clinch",
+          "parkName": "Fort Clinch State Park",
+          "stateCode": "FL",
+          "lengthMiles": 6,
+          "difficulty": "intermediate",
+          "description": "Good mountain biking.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Ft.%20Clinch%20State%20Park%20trail%20Fort%20Clinch%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.70349",
+            "longitude": "-81.45279"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-fort-clinch-fort-clinch",
+          "name": "Fort Clinch",
+          "parkId": "fort-clinch",
+          "parkName": "Fort Clinch State Park",
+          "stateCode": "FL",
+          "lengthMiles": 14,
+          "difficulty": "beginner",
+          "description": "deep sand, roots",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Fort%20Clinch%20trail%20Fort%20Clinch%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.67122",
+            "longitude": "-81.44343"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-fort-clinch-egans-creek-greenway",
+          "name": "Egans Creek Greenway",
+          "parkId": "fort-clinch",
+          "parkName": "Fort Clinch State Park",
+          "stateCode": "FL",
+          "lengthMiles": 7,
+          "difficulty": "beginner",
+          "description": "There are free maps of the greenway at the trail head showing trails. The <br />\r\ntrail is wide and simple on the green way and very family friendly. It makes <br />\r\nfor a great ride at any pace. What you don't see on the map however is the <br />\r\nMTB trail off the greenway that is NOT directional. You can access this trail  <br />\r\nfrom two ends and those trail heads are marked with signs. The MTB trail is <br />\r\nsingle track and has lots of roots (both small and some larger), narrow <br />\r\nspots, and some low branches. I would not recommend small children on <br />\r\nthe MTB portion.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Egans%20Creek%20Greenway%20trail%20Fort%20Clinch%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.66691",
+            "longitude": "-81.43679"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-fort-clinch-etowah-park-naval-submarine-base",
+          "name": "Etowah Park Naval Submarine Base",
+          "parkId": "fort-clinch",
+          "parkName": "Fort Clinch State Park",
+          "stateCode": "FL",
+          "lengthMiles": 16,
+          "difficulty": "easiest",
+          "description": "This trail in on an open to the public part of the Naval Submarine Base in Kingsbay, Ga. It is basically a bunch of fire roads that lead out and back. Only thing about it that is hard is that it is covered in foilage. Nice ride for the kids and beginners. There is a boat ramp and a camp site, but to camp there you must contact MWR at Kingsbay NSB.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Etowah%20Park%20Naval%20Submarine%20Base%20trail%20Fort%20Clinch%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.82521",
+            "longitude": "-81.54650"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        },
+        {
+          "id": "fl-fort-clinch-crooked-river-state-park",
+          "name": "Crooked River State Park",
+          "parkId": "fort-clinch",
+          "parkName": "Fort Clinch State Park",
+          "stateCode": "FL",
+          "lengthMiles": 4,
+          "difficulty": "easiest",
+          "description": "Trail is mostly flat, good for stretching out those muscles and riding flat out on a wide easy trail. It's also good for younger riders that are just learning and you are wanting them to get into something. There are 3 different trail systems that can connect into one big loop. Each trail has its own name, Palmetto Trail, Sempervirens Trail, and the Bay Board Walk Trail. The Trails are relatively flat and not hard. The Sempervirens Trail is very rooty, but easily navigated through.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Crooked%20River%20State%20Park%20trail%20Fort%20Clinch%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "30.84363",
+            "longitude": "-81.55566"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "fanning-springs": {
+      "parkName": "Fanning Springs State Park",
+      "trails": [
+        {
+          "id": "fl-fanning-springs-red-trail",
+          "name": "Red Trail",
+          "parkId": "fanning-springs",
+          "parkName": "Fanning Springs State Park",
+          "stateCode": "FL",
+          "lengthMiles": 5,
+          "difficulty": "",
+          "description": "Small network of easy trails but has roots.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Red%20Trail%20trail%20Fanning%20Springs%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.67489",
+            "longitude": "-82.95049"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": false,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    },
+    "gold-head-branch": {
+      "parkName": "Gold Head Branch State Park",
+      "trails": [
+        {
+          "id": "fl-gold-head-branch-gold-head-branch-state-park",
+          "name": "Gold Head Branch State Park",
+          "parkId": "gold-head-branch",
+          "parkName": "Gold Head Branch State Park",
+          "stateCode": "FL",
+          "lengthMiles": 8,
+          "difficulty": "beginner",
+          "description": "The park has 4 trails. The Ravine Ridge Trail, Loblolly Trail, Fern Loop, and the Florida Trail. All offer great views of nature.",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=Gold%20Head%20Branch%20State%20Park%20trail%20Gold%20Head%20Branch%20State%20Park%20Florida",
+          "trailheadCoordinates": {
+            "latitude": "29.84746",
+            "longitude": "-81.96127"
+          },
+          "dataSource": "trailapi",
+          "lastUpdated": "2026-02-02",
+          "dataCompleteness": {
+            "hasDescription": true,
+            "hasDistance": true,
+            "hasElevation": false,
+            "hasDifficulty": true,
+            "hasOfficialUrl": false,
+            "hasCoordinates": true
+          }
+        }
+      ]
+    }
+  }
+}

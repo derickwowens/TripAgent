@@ -72,12 +72,12 @@ CRITICAL: You MUST call get_driving_distance for EACH airport to get accurate dr
 This applies to ALL destinations, including national parks. Search multiple nearby airports and let the user see the price differences so they can make an informed choice.
 
 Once you have enough info, provide recommendations for:
-- ✈️ Flights (3-5 airports with prices - show the comparison!)
-- 🚗 Car rentals (with daily rates)
-- 🏕️ Lodging/camping options (with nightly rates and reservation links)
-- 🥾 Top hiking trails (with AllTrails links!)
-- 🎫 Park entrance fees
-- 🍽️ Restaurant recommendations (when asked about dining)
+- Flights (3-5 airports with prices - show the comparison!)
+- Car rentals (with daily rates)
+- Lodging/camping options (with nightly rates and reservation links)
+- Top hiking trails (with official trail links!)
+- Park entrance fees
+- Restaurant recommendations (when asked about dining)
 
 CRITICAL - HIKING TRAIL LINKS:
 You have access to a comprehensive trail database with 800+ trails from the official NPS API covering:
@@ -320,9 +320,9 @@ IMPORTANT - HIKING TRAILS AND CAMPGROUNDS:
 All trail and campground names MUST be clickable links:
 
 Format hiking trails like:
-🥾 Top Trails
+Top Trails
 ---
-• [Trail Name](allTrailsUrl or googleMapsUrl) - [Distance], [Difficulty]
+- [Trail Name](trailUrl or googleMapsUrl) - [Distance], [Difficulty]
   [Description]
 ---
 
@@ -559,7 +559,7 @@ STATE PARK TOOLS:
 - Use search_state_parks to find state parks in a specific US state
 - Use get_state_park_details for detailed info about a specific state park
 - Use get_state_park_campgrounds for campground information
-- Use get_state_park_hikes to get hiking trail information and AllTrails links for a state park
+- Use get_state_park_hikes to get hiking trail information for a state park
 - Use get_wildlife with the state park's full name (e.g., "Annadel State Park") to get wildlife observations from iNaturalist
 - Do NOT use National Park tools (search_national_parks, get_park_details, get_park_hikes, get_campgrounds)
 
@@ -581,11 +581,11 @@ IMPORTANT: State park trips deserve the SAME level of trip planning as National 
 - Show driving distances and directions
 - Create a complete day-by-day itinerary when asked
 
-ALLTRAILS LINKS FOR STATE PARKS:
-When mentioning hiking trails at a state park, ALWAYS include the park name in AllTrails links:
-- Format: https://www.alltrails.com/search?q=[Trail Name] [Park Name] [State]
-- Example: https://www.alltrails.com/search?q=Lake Ilsanjo Trail Annadel State Park California
-- NEVER use generic AllTrails links without the park name - they won't find the right trails!
+TRAIL LINKS FOR STATE PARKS:
+When mentioning hiking trails at a state park:
+- Use the trailUrl provided by the get_state_park_hikes tool if available
+- Otherwise use Google Maps search links for trail locations
+- Only present trails that have valid links from the tool results
 \n`;
   } else {
     contextInfo += `\n🏔️ MODE: NATIONAL PARKS

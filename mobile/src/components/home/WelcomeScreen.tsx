@@ -19,10 +19,10 @@ const NATIONAL_PARK_PROMPTS = [
 ];
 
 const STATE_PARK_PROMPTS = [
-  { label: 'State park camping trip', template: 'Plan a camping trip to a state park near me' },
-  { label: 'Day hike at a state park', template: 'Find a state park with great day hikes nearby' },
-  { label: 'Scenic state park getaway', template: 'Recommend a scenic state park for a weekend getaway' },
-  { label: 'State park with campgrounds', template: 'Find state parks with available campgrounds in my area' },
+  { label: 'Plan a camping trip', template: 'Plan a camping trip to a state park near me' },
+  { label: 'Find day hikes', template: 'Find a state park with great day hikes nearby' },
+  { label: 'Weekend getaway', template: 'Recommend a scenic state park for a weekend getaway' },
+  { label: 'Find campgrounds', template: 'Find state parks with available campgrounds in my area' },
 ];
 
 type ParkMode = 'national' | 'state';
@@ -321,43 +321,39 @@ const generateRandomPrompt = (
   return prompt;
 };
 
-// Generate a state park prompt with a random park name from the nearby parks
+// Generate a state park prompt - either with a specific park (for Surprise me) or generic
 const generateStateParkPrompt = (
   template: string,
   nearbyStateParks?: StateParkSummary[],
   userLocation?: { city: string; state: string; nearestAirport: string },
-  userProfile?: string
+  userProfile?: string,
+  pickSpecificPark: boolean = false
 ): string => {
-  if (!nearbyStateParks || nearbyStateParks.length === 0) {
-    // If no state parks available, use generic prompt with user's state
-    if (userLocation?.state) {
-      let prompt = template.replace('near me', `in ${userLocation.state}`).replace('nearby', `in ${userLocation.state}`);
-      prompt = `${prompt} I'm located in ${userLocation.city}, ${userLocation.state}.`;
-      // Inject profile context
-      return injectProfileContext(prompt, userProfile);
+  let prompt = template;
+  
+  // Only pick a specific park if requested (e.g., "Surprise me!" button)
+  if (pickSpecificPark && template.includes('{PARK_NAME}')) {
+    let parkName: string;
+    let stateName: string;
+    
+    if (nearbyStateParks && nearbyStateParks.length > 0) {
+      const randomPark = nearbyStateParks[Math.floor(Math.random() * nearbyStateParks.length)];
+      parkName = randomPark.name;
+      stateName = randomPark.stateFullName || randomPark.state;
+    } else if (userLocation?.state) {
+      parkName = `a state park in ${userLocation.state}`;
+      stateName = userLocation.state;
+    } else {
+      parkName = 'a nearby state park';
+      stateName = 'your area';
     }
-    return injectProfileContext(template, userProfile);
-  }
-  
-  // Pick a random state park from nearby parks
-  const randomPark = nearbyStateParks[Math.floor(Math.random() * nearbyStateParks.length)];
-  const parkName = randomPark.name;
-  const stateName = randomPark.stateFullName || randomPark.state;
-  
-  // Build well-formed prompts based on the template type
-  let prompt: string;
-  
-  if (template.includes('camping trip')) {
-    prompt = `Plan a camping trip to ${parkName} in ${stateName}. Include campground options, hiking trails, and a suggested itinerary.`;
-  } else if (template.includes('day hikes')) {
-    prompt = `Find the best day hikes at ${parkName} in ${stateName}. Include trail difficulty, distance, and highlights.`;
-  } else if (template.includes('weekend getaway')) {
-    prompt = `Plan a weekend getaway to ${parkName} in ${stateName}. Include activities, camping or lodging options, and must-see attractions.`;
-  } else if (template.includes('campgrounds')) {
-    prompt = `Find campgrounds at ${parkName} in ${stateName}. Include amenities, availability, and reservation information.`;
+    
+    prompt = template.replace('{PARK_NAME}', `${parkName} in ${stateName}`);
   } else {
-    // Fallback: generic state park prompt
-    prompt = `Tell me about ${parkName} in ${stateName}. Include activities, facilities, and visitor tips.`;
+    // For generic prompts, add state context if available
+    if (userLocation?.state) {
+      prompt = template.replace('near me', `in ${userLocation.state}`).replace('nearby', `in ${userLocation.state}`);
+    }
   }
   
   // Add location context
@@ -528,18 +524,24 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             </TouchableOpacity>
           )}
           
-          {/* Surprise me! - National Parks mode only */}
-          {!isStateMode && (
-            <TouchableOpacity 
-              style={[
-                styles.promptChip,
-                { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
-              ]}
-              onPress={() => onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile))}
-            >
-              <Text style={[styles.promptText, { color: theme.chipText }]}>Surprise me!</Text>
-            </TouchableOpacity>
-          )}
+          {/* Surprise me! - both modes */}
+          <TouchableOpacity 
+            style={[
+              styles.promptChip,
+              { borderColor: theme.chipBorder, backgroundColor: theme.chipBackground }
+            ]}
+            onPress={() => {
+              if (isStateMode) {
+                // State parks: pick a random nearby park (pickSpecificPark=true)
+                const prompt = generateStateParkPrompt('Plan a trip to {PARK_NAME}', nearbyStateParks, userLocation, userProfile, true);
+                onSetPrompt(prompt);
+              } else {
+                onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile));
+              }
+            }}
+          >
+            <Text style={[styles.promptText, { color: theme.chipText }]}>Surprise me!</Text>
+          </TouchableOpacity>
           
           {quickPrompts.map((prompt, index) => (
             <TouchableOpacity 
