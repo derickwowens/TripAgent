@@ -45,13 +45,15 @@
       }
     },
     "production": {
+      "node": "20.18.0",
       "android": {
         "buildType": "app-bundle",
         "gradleCommand": ":app:bundleRelease",
         "withoutCredentials": false
       },
       "ios": {
-        "autoIncrement": false
+        "autoIncrement": false,
+        "resourceClass": "m-medium"
       },
       "env": {
         "APP_ENV": "production",
