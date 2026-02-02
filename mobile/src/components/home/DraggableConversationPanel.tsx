@@ -16,11 +16,13 @@ const DEFAULT_HEIGHT = SCREEN_HEIGHT * 0.65; // Default 65% of screen
 interface DraggableConversationPanelProps {
   children: React.ReactNode;
   hasMessages: boolean;
+  galleryOpen?: boolean;
 }
 
 export const DraggableConversationPanel: React.FC<DraggableConversationPanelProps> = ({
   children,
   hasMessages,
+  galleryOpen = false,
 }) => {
   const { theme } = useParkTheme();
   const animatedHeight = useRef(new Animated.Value(DEFAULT_HEIGHT)).current;
@@ -105,24 +107,38 @@ export const DraggableConversationPanel: React.FC<DraggableConversationPanelProp
     return <View style={styles.fullContainer}>{children}</View>;
   }
 
-  return (
-    <Animated.View style={[styles.container, { height: animatedHeight }]}>
-      <View 
-        style={[styles.handle, { backgroundColor: theme.buttonBackground }]} 
-        {...panResponder.panHandlers}
-      >
-        <View style={styles.handleBar} />
+  // When gallery is open, use flex layout so both panels can coexist
+  // The CollapsibleBottomPanel will handle its own dragging
+  if (galleryOpen) {
+    return (
+      <View style={styles.flexContainer}>
+        <View style={styles.content}>
+          {children}
+        </View>
       </View>
+    );
+  }
+
+  // When gallery is closed, fill the screen so chat input is at the bottom
+  // Use flex layout to maximize conversation space
+  return (
+    <View style={styles.fullContainer}>
       <View style={styles.content}>
         {children}
       </View>
-    </Animated.View>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
   fullContainer: {
     flex: 1,
+  },
+  flexContainer: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
   },
   container: {
     backgroundColor: 'rgba(0, 0, 0, 0.2)',

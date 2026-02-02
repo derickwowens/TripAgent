@@ -826,7 +826,7 @@ const HomeScreen: React.FC = () => {
           behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
           keyboardVerticalOffset={Platform.OS === 'ios' ? 90 : 20}
         >
-          <DraggableConversationPanel hasMessages={messages.length > 0}>
+          <DraggableConversationPanel hasMessages={messages.length > 0} galleryOpen={showPhotoGallery && allPhotos.length > 0}>
           <ScrollView
             ref={scrollViewRef}
             style={styles.messagesContainer}
