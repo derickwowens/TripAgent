@@ -79,15 +79,7 @@ Thumbs.db
 *.ai
 *.sketch
 
-# Large asset folders not needed for app
-assets/backgrounds/
+# Large asset folders not needed for app (but NOT backgrounds - those are used!)
 assets/screenshots_ipad/
 assets/screenshots_appstore/
 assets/Screenshot*.png
-
-# Root level large directories (if building from parent)
-../screenshots/
-../data/
-../scripts/
-../.park-data/
-../.git/
