@@ -131,110 +131,6 @@ function extractNationalParkFromText(text: string): string | null {
   return null;
 }
 
-/**
- * US State names for state park detection
- */
-const US_STATES: Record<string, string> = {
-  'alabama': 'Alabama', 'alaska': 'Alaska', 'arizona': 'Arizona', 'arkansas': 'Arkansas',
-  'california': 'California', 'colorado': 'Colorado', 'connecticut': 'Connecticut', 'delaware': 'Delaware',
-  'florida': 'Florida', 'georgia': 'Georgia', 'hawaii': 'Hawaii', 'idaho': 'Idaho',
-  'illinois': 'Illinois', 'indiana': 'Indiana', 'iowa': 'Iowa', 'kansas': 'Kansas',
-  'kentucky': 'Kentucky', 'louisiana': 'Louisiana', 'maine': 'Maine', 'maryland': 'Maryland',
-  'massachusetts': 'Massachusetts', 'michigan': 'Michigan', 'minnesota': 'Minnesota', 'mississippi': 'Mississippi',
-  'missouri': 'Missouri', 'montana': 'Montana', 'nebraska': 'Nebraska', 'nevada': 'Nevada',
-  'new hampshire': 'New Hampshire', 'new jersey': 'New Jersey', 'new mexico': 'New Mexico', 'new york': 'New York',
-  'north carolina': 'North Carolina', 'north dakota': 'North Dakota', 'ohio': 'Ohio', 'oklahoma': 'Oklahoma',
-  'oregon': 'Oregon', 'pennsylvania': 'Pennsylvania', 'rhode island': 'Rhode Island', 'south carolina': 'South Carolina',
-  'south dakota': 'South Dakota', 'tennessee': 'Tennessee', 'texas': 'Texas', 'utah': 'Utah',
-  'vermont': 'Vermont', 'virginia': 'Virginia', 'washington': 'Washington', 'west virginia': 'West Virginia',
-  'wisconsin': 'Wisconsin', 'wyoming': 'Wyoming',
-};
-
-/**
- * Extract state park name from text
- * Looks for patterns like "Annadel State Park", "Big Basin Redwoods", etc.
- * Falls back to "[State] State Parks" if no specific park is found
- */
-function extractStateParkFromText(text: string, userState?: string): string | null {
-  const textLower = text.toLowerCase();
-  
-  // Words that should NOT be considered park names (common verbs, articles, etc.)
-  const invalidParkNames = new Set([
-    'plan', 'find', 'search', 'get', 'show', 'tell', 'help', 'want', 'need',
-    'the', 'a', 'an', 'this', 'that', 'some', 'any', 'best', 'great', 'nice',
-    'camping', 'hiking', 'trip', 'visit', 'explore', 'discover', 'about',
-    'nearby', 'local', 'closest', 'nearest', 'popular', 'recommended', 'good',
-  ]);
-  
-  // Pattern 1: Direct state park mention with specific park name
-  // Match patterns like "to Annadel State Park" or "at Big Basin State Park"
-  const stateParkPatterns = [
-    // Match 1-4 capitalized words before "State Park/Beach/Forest/etc"
-    /(?:to|at|in|visit|explore|about)\s+([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Park/i,
-    /(?:to|at|in|visit|explore|about)\s+([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Recreation\s+Area/i,
-    /(?:to|at|in|visit|explore|about)\s+([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Beach/i,
-    /(?:to|at|in|visit|explore|about)\s+([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Forest/i,
-    /(?:to|at|in|visit|explore|about)\s+([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Reserve/i,
-    // Fallback: just look for "X State Park" pattern anywhere
-    /\b([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Park\b/i,
-    /\b([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Recreation\s+Area\b/i,
-    /\b([A-Z][a-zA-Z]+(?:\s+[A-Z][a-zA-Z]+){0,3})\s+State\s+Beach\b/i,
-  ];
-  
-  for (const pattern of stateParkPatterns) {
-    const match = text.match(pattern);
-    if (match && match[1]) {
-      const parkNameBase = match[1].trim();
-      // Skip if the "park name" is actually an invalid word
-      if (invalidParkNames.has(parkNameBase.toLowerCase())) {
-        continue;
-      }
-      // Skip if it's a US state name (we want specific park names, not "California State Park")
-      if (US_STATES[parkNameBase.toLowerCase()]) {
-        continue;
-      }
-      
-      // Determine the full designation from the match
-      const fullMatch = match[0].toLowerCase();
-      let suffix = 'State Park';
-      if (fullMatch.includes('recreation area')) suffix = 'State Recreation Area';
-      else if (fullMatch.includes('beach')) suffix = 'State Beach';
-      else if (fullMatch.includes('forest')) suffix = 'State Forest';
-      else if (fullMatch.includes('reserve')) suffix = 'State Reserve';
-      
-      return `${parkNameBase} ${suffix}`;
-    }
-  }
-  
-  // Pattern 2: Check if a US state is mentioned - use "[State] State Parks" for generic naming
-  // Check longer state names first to avoid "new" matching before "new york"
-  const sortedStates = Object.entries(US_STATES).sort((a, b) => b[0].length - a[0].length);
-  for (const [stateKey, stateName] of sortedStates) {
-    // Use word boundary to avoid partial matches
-    const statePattern = new RegExp(`\\b${stateKey}\\b`, 'i');
-    if (statePattern.test(text)) {
-      return `${stateName} State Parks`;
-    }
-  }
-  
-  // Pattern 3: Use user's state if available and text mentions "state park" generically
-  if (userState && (textLower.includes('state park') || textLower.includes('state parks'))) {
-    return `${userState} State Parks`;
-  }
-  
-  return null;
-}
-
-/**
- * Extract destination based on park mode
- */
-function extractDestinationFromText(text: string, parkMode: 'national' | 'state' = 'national', userState?: string): string | null {
-  if (parkMode === 'state') {
-    return extractStateParkFromText(text, userState);
-  }
-  return extractNationalParkFromText(text);
-}
-
 export interface PhotoReference {
   keyword: string;
   url: string;
@@ -337,79 +233,94 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
   const extractMetadata = (msgs: Message[], userState?: string, parkModeOverride?: 'national' | 'state'): SavedConversation['metadata'] => {
     const allText = msgs.map(m => m.content).join(' ');
     const userMessages = msgs.filter(m => m.type === 'user').map(m => m.content.toLowerCase()).join(' ');
-    const assistantMessages = msgs.filter(m => m.type === 'assistant').map(m => m.content).join(' ');
     
     // Use the override parkMode if provided (for existing conversations), otherwise use current global parkMode
     const effectiveParkMode = parkModeOverride ?? parkMode;
+    const now = new Date();
+    const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     
-    // Use authoritative park data with priority for longer/more specific matches
-    // Pass parkMode to extract the right type of destination (national vs state park)
-    const destination = extractDestinationFromText(allText, effectiveParkMode, userState) || undefined;
-
-    let travelers: number | undefined;
-    const allTextLower = allText.toLowerCase();
-    const travelerMatch = allTextLower.match(/(\d+)\s*(people|travelers|persons|adults|of us)/);
-    if (travelerMatch) {
-      travelers = parseInt(travelerMatch[1]);
-    } else if (allTextLower.includes('solo') || allTextLower.includes('just me') || allTextLower.includes('myself')) {
-      travelers = 1;
-    } else if (allTextLower.includes('couple') || allTextLower.includes('two of us') || allTextLower.includes('my partner')) {
-      travelers = 2;
-    } else if (allTextLower.includes('family')) {
-      travelers = 4;
-    }
-
-    let travelDates: string | undefined;
-    const monthNames = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
-    const monthMatch = userMessages.match(new RegExp(`(${monthNames.join('|')})\\s*(\\d{1,2})?`, 'i'));
-    if (monthMatch) {
-      const month = monthMatch[1].charAt(0).toUpperCase() + monthMatch[1].slice(1);
-      travelDates = monthMatch[2] ? `${month} ${monthMatch[2]}` : month;
-    }
-
-    let duration: string | undefined;
-    const durationMatch = userMessages.match(/(\d+)\s*(day|night|week)/i);
-    if (durationMatch) {
-      const num = parseInt(durationMatch[1]);
-      const unit = durationMatch[2].toLowerCase();
-      if (unit === 'week') {
-        duration = num === 1 ? '1 week' : `${num} weeks`;
-      } else {
-        duration = num === 1 ? '1 day' : `${num} days`;
-      }
-    }
-
-    let summary: string | undefined;
+    // For National Parks: use the existing park extraction logic
+    // For State Parks: use simple date-based naming (users expected to edit)
+    let destination: string | undefined;
     let title: string | undefined;
+    let summary: string | undefined;
     
-    if (destination) {
-      title = destination;
-      const parts = [];
-      if (duration) parts.push(duration);
-      if (travelDates) parts.push(`in ${travelDates}`);
-      if (travelers) parts.push(`${travelers} ${travelers === 1 ? 'traveler' : 'travelers'}`);
-      summary = parts.length > 0 ? parts.join(' • ') : undefined;
-    } else {
-      // No specific destination found - use a generic title based on park mode
-      if (effectiveParkMode === 'state') {
-        title = userState ? `${userState} State Parks` : 'State Park Trip';
+    if (effectiveParkMode === 'national') {
+      // Keep full National Park extraction logic
+      destination = extractNationalParkFromText(allText) || undefined;
+      
+      let travelers: number | undefined;
+      const allTextLower = allText.toLowerCase();
+      const travelerMatch = allTextLower.match(/(\d+)\s*(people|travelers|persons|adults|of us)/);
+      if (travelerMatch) {
+        travelers = parseInt(travelerMatch[1]);
+      } else if (allTextLower.includes('solo') || allTextLower.includes('just me') || allTextLower.includes('myself')) {
+        travelers = 1;
+      } else if (allTextLower.includes('couple') || allTextLower.includes('two of us') || allTextLower.includes('my partner')) {
+        travelers = 2;
+      } else if (allTextLower.includes('family')) {
+        travelers = 4;
       }
+
+      let travelDates: string | undefined;
+      const monthNamesLower = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+      const monthMatch = userMessages.match(new RegExp(`(${monthNamesLower.join('|')})\\s*(\\d{1,2})?`, 'i'));
+      if (monthMatch) {
+        const month = monthMatch[1].charAt(0).toUpperCase() + monthMatch[1].slice(1);
+        travelDates = monthMatch[2] ? `${month} ${monthMatch[2]}` : month;
+      }
+
+      let duration: string | undefined;
+      const durationMatch = userMessages.match(/(\d+)\s*(day|night|week)/i);
+      if (durationMatch) {
+        const num = parseInt(durationMatch[1]);
+        const unit = durationMatch[2].toLowerCase();
+        if (unit === 'week') {
+          duration = num === 1 ? '1 week' : `${num} weeks`;
+        } else {
+          duration = num === 1 ? '1 day' : `${num} days`;
+        }
+      }
+
+      if (destination) {
+        title = destination;
+        const parts = [];
+        if (duration) parts.push(duration);
+        if (travelDates) parts.push(`in ${travelDates}`);
+        if (travelers) parts.push(`${travelers} ${travelers === 1 ? 'traveler' : 'travelers'}`);
+        summary = parts.length > 0 ? parts.join(' - ') : undefined;
+      } else {
+        const firstUserMsg = msgs.find(m => m.type === 'user')?.content || '';
+        summary = firstUserMsg.length > 60 ? firstUserMsg.substring(0, 57) + '...' : firstUserMsg;
+      }
+
+      return {
+        title,
+        destination,
+        travelers,
+        departingFrom: nearestAirport,
+        travelDates,
+        duration,
+        summary,
+        createdAt: now.toISOString(),
+        updatedAt: now.toISOString(),
+        parkMode: effectiveParkMode,
+      };
+    } else {
+      // State Parks: Simple date-based naming - users expected to edit titles
+      title = `New Trip - ${monthNames[now.getMonth()]} ${now.getDate()}`;
       const firstUserMsg = msgs.find(m => m.type === 'user')?.content || '';
       summary = firstUserMsg.length > 60 ? firstUserMsg.substring(0, 57) + '...' : firstUserMsg;
-    }
 
-    return {
-      title, // Explicitly set title (will override old value)
-      destination,
-      travelers,
-      departingFrom: nearestAirport,
-      travelDates,
-      duration,
-      summary,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
-      parkMode: effectiveParkMode,
-    };
+      return {
+        title,
+        summary,
+        departingFrom: nearestAirport,
+        createdAt: now.toISOString(),
+        updatedAt: now.toISOString(),
+        parkMode: effectiveParkMode,
+      };
+    }
   };
 
   const autoSaveConversation = async (skipTimestampUpdate: boolean = false) => {
