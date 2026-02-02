@@ -1,88 +1,21 @@
-# Development and testing files
-*.test.ts
-*.test.tsx
-*.spec.ts
-*.spec.tsx
-__tests__/
-__mocks__/
+# Root-level exclusions only - DO NOT exclude anything that could match mobile/src/*
+# EAS builds from mobile/ directory, but root .easignore may still be read
 
-# Documentation
-*.md
-docs/
-README.md
-CHANGELOG.md
+# Large root directories not needed for mobile build
+/screenshots/
+/data/
+/scripts/
+/.park-data/
+/src/
+/dist/
+/docs/
+/.git/
+/.github/
 
-# Screenshots and media (only exclude root level screenshots folder)
-screenshots/
-
-# Git and version control
-.git/
-.gitignore
-.gitattributes
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.DS_Store
-
-# Logs
-*.log
-logs/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Temporary files
-tmp/
-temp/
-*.tmp
-/tmp/
-
-# Scripts not needed for build
-scripts/
-
-# Data files and scripts (large, not needed for mobile build)
-data/
-
-# Park data cache (large, not needed for mobile build)
-.park-data/
-
-# Docker files
+# Root config files
 Dockerfile
 .dockerignore
 docker-compose*.yml
-
-# Source maps (already generated during build)
-*.map
-
-# Cache directories
-.cache/
-.expo/
-.expo-shared/
-
-# Node modules (will be installed during build)
-node_modules/
-
-# Environment files (handled by EAS)
-.env
-.env.local
-.env.development
-.env.production
-
-# Build artifacts
-dist/
-build/
-*.tsbuildinfo
-
-# API server files (not needed for mobile build) - use absolute paths from root
-/src/api/
-/src/providers/
-/src/utils/
-/src/data/
-
-# Package lock files (yarn.lock or package-lock.json is sufficient)
-# Keep package-lock.json, remove yarn.lock if not used
-yarn.lock
+.copilot-instructions.md
+DEPLOYMENT.md
+PRIVACY_POLICY.md

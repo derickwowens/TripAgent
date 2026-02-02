@@ -19,11 +19,9 @@ docs/
 CHANGELOG*
 LICENSE*
 
-# Development configs
+# Development configs (NOT babel.config.js - required for build!)
 .eslintrc*
 .prettierrc*
-tsconfig.json
-babel.config.js
 
 # IDE and editor files
 .vscode/
