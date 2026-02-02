@@ -39,8 +39,14 @@ for arg in "$@"; do
         --apple-id=*)
             APPLE_ID="${arg#*=}"
             ;;
-        major|minor|hotfix)
-            BUMP_TYPE=$arg
+        major|-major|--major)
+            BUMP_TYPE="major"
+            ;;
+        minor|-minor|--minor)
+            BUMP_TYPE="minor"
+            ;;
+        hotfix|-hotfix|--hotfix|patch|-patch|--patch)
+            BUMP_TYPE="hotfix"
             ;;
     esac
 done
