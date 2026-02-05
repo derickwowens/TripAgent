@@ -830,8 +830,8 @@ const HomeScreen: React.FC = () => {
 
         <KeyboardAvoidingView
           style={styles.container}
-          behavior={Platform.OS === 'ios' ? 'height' : undefined}
-          keyboardVerticalOffset={0}
+          behavior="padding"
+          keyboardVerticalOffset={Platform.OS === 'ios' ? insets.top + 64 : insets.top + 56}
         >
           <DraggableConversationPanel hasMessages={messages.length > 0} galleryOpen={showPhotoGallery && allPhotos.length > 0}>
           <ScrollView

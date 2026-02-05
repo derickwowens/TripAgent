@@ -85,6 +85,27 @@ const calculateDistance = (
   return R * c;
 };
 
+// Calculate cardinal direction from point 1 to point 2
+const getCardinalDirection = (
+  lat1: number, lon1: number,
+  lat2: number, lon2: number
+): string => {
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const y = Math.sin(dLon) * Math.cos(lat2 * Math.PI / 180);
+  const x = Math.cos(lat1 * Math.PI / 180) * Math.sin(lat2 * Math.PI / 180) -
+    Math.sin(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.cos(dLon);
+  let bearing = Math.atan2(y, x) * 180 / Math.PI;
+  bearing = (bearing + 360) % 360;
+  const directions = ['N', 'NE', 'E', 'SE', 'S', 'SW', 'W', 'NW'];
+  return directions[Math.round(bearing / 45) % 8];
+};
+
+// Format distance for display (e.g., "20mi NW")
+const formatDistanceBadge = (miles: number, direction: string): string => {
+  if (miles < 1) return `<1mi ${direction}`;
+  return `${Math.round(miles)}mi ${direction}`;
+};
+
 const sliderValueToDistance = (value: number): MaxTravelDistance => {
   if (value >= DISTANCE_PRESETS.length) return null;
   return DISTANCE_PRESETS[Math.round(value)];
@@ -251,31 +272,45 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   }, [isStateMode, effectiveStateCode, selectedState]);
 
   // Filter state parks by distance from user's location
+  // Always compute distance + cardinal direction when location is available
   // When user manually selects a state, show ALL parks (no distance filtering)
   // When using current location, apply distance filtering
   const filteredStateParks = useMemo(() => {
-    // If user manually selected a state, show all parks in that state (no distance filtering)
+    const hasLocation = userLocation?.lat && userLocation?.lng;
+    
+    // Enrich all parks with distance and direction if location is available
+    const enrichedParks = stateParks.map(park => {
+      if (hasLocation && park.coordinates?.latitude && park.coordinates?.longitude) {
+        const dist = calculateDistance(
+          userLocation.lat!,
+          userLocation.lng!,
+          park.coordinates.latitude,
+          park.coordinates.longitude
+        );
+        const dir = getCardinalDirection(
+          userLocation.lat!,
+          userLocation.lng!,
+          park.coordinates.latitude,
+          park.coordinates.longitude
+        );
+        return { ...park, distance: dist, direction: dir, distanceBadge: formatDistanceBadge(dist, dir) };
+      }
+      return { ...park, distance: Infinity, direction: '' as string, distanceBadge: '' as string };
+    });
+    
+    // If user manually selected a state, show all parks sorted by distance
     if (selectedState) {
-      return stateParks.sort((a, b) => a.name.localeCompare(b.name));
+      return hasLocation
+        ? enrichedParks.sort((a, b) => a.distance - b.distance)
+        : enrichedParks.sort((a, b) => a.name.localeCompare(b.name));
     }
     
     // If using current location, apply distance filtering
-    if (!userLocation?.lat || !userLocation?.lng || stateParksDistance === null) {
-      return stateParks; // No filtering if no location or "All" selected
+    if (!hasLocation || stateParksDistance === null) {
+      return enrichedParks;
     }
     
-    return stateParks
-      .map(park => ({
-        ...park,
-        distance: park.coordinates?.latitude && park.coordinates?.longitude
-          ? calculateDistance(
-              userLocation.lat!,
-              userLocation.lng!,
-              park.coordinates.latitude,
-              park.coordinates.longitude
-            )
-          : Infinity,
-      }))
+    return enrichedParks
       .filter(park => park.distance <= stateParksDistance)
       .sort((a, b) => a.distance - b.distance);
   }, [stateParks, userLocation?.lat, userLocation?.lng, stateParksDistance, selectedState]);
@@ -483,7 +518,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                               }}
                             >
                               <Text style={[styles.parkChipText, { color: theme.chipText }]}>
-                                {park.name}
+                                {park.name}{park.distanceBadge ? ` (${park.distanceBadge})` : ''}
                               </Text>
                             </TouchableOpacity>
                           ))}
