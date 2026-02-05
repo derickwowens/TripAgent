@@ -176,7 +176,8 @@ export {
   testCases,
 };
 
-// Run if called directly
-if (require.main === module) {
+// Run if called directly (ES module compatible)
+const isMainModule = process.argv[1]?.endsWith('linkPrefillTests.ts');
+if (isMainModule) {
   runLinkTests().catch(console.error);
 }

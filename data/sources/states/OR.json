@@ -1,0 +1,106 @@
+{
+  "stateCode": "OR",
+  "stateName": "Oregon",
+  "parkAuthority": {
+    "name": "Oregon Parks and Recreation Department",
+    "abbreviation": "OPRD",
+    "website": "https://stateparks.oregon.gov/"
+  },
+  "dataSources": {
+    "boundaries": {
+      "type": "arcgis",
+      "url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0",
+      "description": "Oregon State Parks official GIS boundaries"
+    },
+    "parkList": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "OR",
+        "Mang_Type": "STAT",
+        "Des_Tp": ["SP", "SRA", "SHCA", "SNA", "SRS"]
+      }
+    },
+    "trails": {
+      "type": "arcgis_rest",
+      "url": "https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer",
+      "description": "Oregon State Parks trails and boundaries"
+    },
+    "campgrounds": {
+      "type": "reserve_america",
+      "stateFilter": "OR"
+    }
+  },
+  "reservationSystem": {
+    "provider": "ReserveAmerica",
+    "providerType": "reserve_america",
+    "baseUrl": "https://www.reserveamerica.com/",
+    "searchUrl": "https://www.reserveamerica.com/explore/search-results?fq=state:OR"
+  },
+  "urlPatterns": {
+    "officialParkPage": "https://stateparks.oregon.gov/index.cfm?do=park.profile&parkId={parkId}"
+  },
+  "designationTypes": {
+    "SP": {
+      "code": "SP",
+      "name": "State Park",
+      "pluralName": "State Parks"
+    },
+    "SRA": {
+      "code": "SRA",
+      "name": "State Recreation Area",
+      "pluralName": "State Recreation Areas"
+    },
+    "SRS": {
+      "code": "SRS",
+      "name": "State Recreation Site",
+      "pluralName": "State Recreation Sites"
+    },
+    "SHCA": {
+      "code": "SHCA",
+      "name": "State Historic Site",
+      "pluralName": "State Historic Sites"
+    },
+    "SNA": {
+      "code": "SNA",
+      "name": "State Natural Area",
+      "pluralName": "State Natural Areas"
+    }
+  },
+  "contact": {
+    "generalPhone": "1-800-551-6949",
+    "reservationPhone": "1-800-452-5687",
+    "email": "park.info@oregon.gov"
+  },
+  "fees": {
+    "vehicleAdmission": {
+      "standard": {
+        "daily": 5,
+        "annualPass": 30
+      },
+      "notes": "Day-use permit required at many parks"
+    },
+    "camping": {
+      "baseRate": {
+        "min": 22,
+        "max": 56
+      },
+      "reservationFee": 8
+    }
+  },
+  "seasonalInfo": {
+    "typicalSeasonStart": "01-01",
+    "typicalSeasonEnd": "12-31",
+    "yearRoundOperation": true,
+    "peakSeason": {
+      "start": "06-01",
+      "end": "09-30"
+    }
+  },
+  "specialFeatures": [
+    "coast",
+    "waterfalls",
+    "old_growth_forest",
+    "volcanic_landscapes",
+    "hot_springs"
+  ]
+}

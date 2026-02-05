@@ -1,0 +1,108 @@
+{
+  "stateCode": "WA",
+  "stateName": "Washington",
+  "parkAuthority": {
+    "name": "Washington State Parks and Recreation Commission",
+    "abbreviation": "WA State Parks",
+    "website": "https://parks.wa.gov/"
+  },
+  "dataSources": {
+    "boundaries": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "WA",
+        "Mang_Type": "STAT"
+      }
+    },
+    "parkList": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "WA",
+        "Mang_Type": "STAT",
+        "Des_Tp": ["SP", "SRA", "SHCA", "SHP", "SNA"]
+      }
+    },
+    "trails": {
+      "type": "wa_geo",
+      "url": "https://geo.wa.gov/",
+      "description": "Washington State Geospatial Open Data Portal"
+    },
+    "campgrounds": {
+      "type": "reserve_america",
+      "stateFilter": "WA"
+    }
+  },
+  "reservationSystem": {
+    "provider": "Washington State Parks",
+    "providerType": "custom",
+    "baseUrl": "https://washington.goingtocamp.com/",
+    "searchUrl": "https://washington.goingtocamp.com/"
+  },
+  "urlPatterns": {
+    "officialParkPage": "https://parks.wa.gov/{slug}"
+  },
+  "designationTypes": {
+    "SP": {
+      "code": "SP",
+      "name": "State Park",
+      "pluralName": "State Parks"
+    },
+    "SRA": {
+      "code": "SRA",
+      "name": "State Recreation Area",
+      "pluralName": "State Recreation Areas"
+    },
+    "SHCA": {
+      "code": "SHCA",
+      "name": "State Historic Site",
+      "pluralName": "State Historic Sites"
+    },
+    "SHP": {
+      "code": "SHP",
+      "name": "State Historic Park",
+      "pluralName": "State Historic Parks"
+    },
+    "SNA": {
+      "code": "SNA",
+      "name": "State Natural Area",
+      "pluralName": "State Natural Areas"
+    }
+  },
+  "contact": {
+    "generalPhone": "360-902-8844",
+    "reservationPhone": "1-888-226-7688",
+    "email": "info.request@parks.wa.gov"
+  },
+  "fees": {
+    "vehicleAdmission": {
+      "standard": {
+        "daily": 10,
+        "annualPass": 30
+      },
+      "notes": "Discover Pass required for day use"
+    },
+    "camping": {
+      "baseRate": {
+        "min": 25,
+        "max": 45
+      },
+      "reservationFee": 8
+    }
+  },
+  "seasonalInfo": {
+    "typicalSeasonStart": "01-01",
+    "typicalSeasonEnd": "12-31",
+    "yearRoundOperation": true,
+    "peakSeason": {
+      "start": "06-01",
+      "end": "09-30"
+    }
+  },
+  "specialFeatures": [
+    "rainforest",
+    "islands",
+    "volcanoes",
+    "old_growth_forest",
+    "waterfalls"
+  ]
+}

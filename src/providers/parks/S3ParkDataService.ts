@@ -540,7 +540,7 @@ export class S3ParkDataService {
    * Get trails for a state park from S3
    * Reads from trails/state-parks/{STATE}/trails.json (authoritative source)
    */
-  async getTrailsForStatePark(stateCode: 'WI' | 'FL', parkId: string): Promise<TrailData[]> {
+  async getTrailsForStatePark(stateCode: 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI', parkId: string): Promise<TrailData[]> {
     const stateTrails = await this.fetchStateTrailsData(stateCode);
     if (!stateTrails?.parks?.[parkId]) {
       // Fallback to old path for backward compatibility
@@ -564,8 +564,15 @@ export class S3ParkDataService {
    * Get state-wide trails (Wisconsin State Trails, Florida State Trails)
    * These are longer multi-use trails that span regions
    */
-  async getStateTrails(stateCode: 'WI' | 'FL'): Promise<TrailData[]> {
-    const stateTrailsKey = stateCode === 'WI' ? 'wi-state-trails' : 'fl-state-trails';
+  async getStateTrails(stateCode: 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI'): Promise<TrailData[]> {
+    const stateTrailsKeyMap: Record<string, string> = {
+      WI: 'wi-state-trails',
+      FL: 'fl-state-trails',
+      CA: 'ca-state-trails',
+      TX: 'tx-state-trails',
+      CO: 'co-state-trails',
+    };
+    const stateTrailsKey = stateTrailsKeyMap[stateCode] || `${stateCode.toLowerCase()}-state-trails`;
     const stateTrails = await this.fetchStateTrailsData(stateCode);
     
     if (!stateTrails?.parks?.[stateTrailsKey]) {
@@ -580,8 +587,15 @@ export class S3ParkDataService {
    * Get nearby state trails for a given state park
    * Returns trails from the state trails category that pass near the park
    */
-  async getNearbyStateTrails(stateCode: 'WI' | 'FL', parkId: string): Promise<TrailData[]> {
-    const stateTrailsKey = stateCode === 'WI' ? 'wi-state-trails' : 'fl-state-trails';
+  async getNearbyStateTrails(stateCode: 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI', parkId: string): Promise<TrailData[]> {
+    const stateTrailsKeyMap: Record<string, string> = {
+      WI: 'wi-state-trails',
+      FL: 'fl-state-trails',
+      CA: 'ca-state-trails',
+      TX: 'tx-state-trails',
+      CO: 'co-state-trails',
+    };
+    const stateTrailsKey = stateTrailsKeyMap[stateCode] || `${stateCode.toLowerCase()}-state-trails`;
     const stateTrails = await this.fetchStateTrailsData(stateCode);
     
     if (!stateTrails?.parks?.[stateTrailsKey]) {
@@ -604,7 +618,7 @@ export class S3ParkDataService {
   /**
    * Internal: Fetch and cache state trails data
    */
-  private async fetchStateTrailsData(stateCode: 'WI' | 'FL'): Promise<StateTrailsData | null> {
+  private async fetchStateTrailsData(stateCode: 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI'): Promise<StateTrailsData | null> {
     return this.fetchJson<StateTrailsData>(`trails/state-parks/${stateCode}/trails.json`);
   }
 
@@ -713,6 +727,9 @@ interface TrailsIndex {
       stateParks: {
         WI: number;
         FL: number;
+        CA?: number;
+        TX?: number;
+        CO?: number;
       };
     };
   };
@@ -723,6 +740,14 @@ interface TrailsIndex {
   stateParks: {
     WI: Record<string, { parkName: string; trails: TrailInfo[] }>;
     FL: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    CA?: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    TX?: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    CO?: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    OR?: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    AZ?: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    UT?: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    WA?: Record<string, { parkName: string; trails: TrailInfo[] }>;
+    MI?: Record<string, { parkName: string; trails: TrailInfo[] }>;
   };
 }
 
@@ -746,6 +771,9 @@ interface NPSTrailsIndex {
   stateParks: {
     WI: Record<string, any>;
     FL: Record<string, any>;
+    CA?: Record<string, any>;
+    TX?: Record<string, any>;
+    CO?: Record<string, any>;
   };
 }
 

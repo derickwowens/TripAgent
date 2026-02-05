@@ -1,0 +1,103 @@
+{
+  "stateCode": "AZ",
+  "stateName": "Arizona",
+  "parkAuthority": {
+    "name": "Arizona State Parks and Trails",
+    "abbreviation": "ASPT",
+    "website": "https://azstateparks.com/"
+  },
+  "dataSources": {
+    "boundaries": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "AZ",
+        "Mang_Type": "STAT"
+      }
+    },
+    "parkList": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "AZ",
+        "Mang_Type": "STAT",
+        "Des_Tp": ["SP", "SRA", "SHCA", "SHP"]
+      }
+    },
+    "trails": {
+      "type": "arcgis_rest",
+      "url": "https://services1.arcgis.com/UpxtrwRYNaXVpkGe/arcgis/rest/services/AZSPTrails/FeatureServer/0",
+      "description": "Arizona State Parks and Trails official trail data"
+    },
+    "campgrounds": {
+      "type": "reserve_america",
+      "stateFilter": "AZ"
+    }
+  },
+  "reservationSystem": {
+    "provider": "ReserveAmerica",
+    "providerType": "reserve_america",
+    "baseUrl": "https://www.reserveamerica.com/",
+    "searchUrl": "https://www.reserveamerica.com/explore/search-results?fq=state:AZ"
+  },
+  "urlPatterns": {
+    "officialParkPage": "https://azstateparks.com/{slug}"
+  },
+  "designationTypes": {
+    "SP": {
+      "code": "SP",
+      "name": "State Park",
+      "pluralName": "State Parks"
+    },
+    "SRA": {
+      "code": "SRA",
+      "name": "State Recreation Area",
+      "pluralName": "State Recreation Areas"
+    },
+    "SHCA": {
+      "code": "SHCA",
+      "name": "State Historic Site",
+      "pluralName": "State Historic Sites"
+    },
+    "SHP": {
+      "code": "SHP",
+      "name": "State Historic Park",
+      "pluralName": "State Historic Parks"
+    }
+  },
+  "contact": {
+    "generalPhone": "1-877-697-2757",
+    "reservationPhone": "1-877-697-2757",
+    "email": "azstatepark@azstateparks.gov"
+  },
+  "fees": {
+    "vehicleAdmission": {
+      "standard": {
+        "daily": 15,
+        "annualPass": 75
+      },
+      "notes": "Fees vary by park"
+    },
+    "camping": {
+      "baseRate": {
+        "min": 20,
+        "max": 45
+      },
+      "reservationFee": 5
+    }
+  },
+  "seasonalInfo": {
+    "typicalSeasonStart": "01-01",
+    "typicalSeasonEnd": "12-31",
+    "yearRoundOperation": true,
+    "peakSeason": {
+      "start": "10-01",
+      "end": "04-30"
+    }
+  },
+  "specialFeatures": [
+    "desert",
+    "canyons",
+    "lakes",
+    "historic_sites",
+    "dark_sky"
+  ]
+}

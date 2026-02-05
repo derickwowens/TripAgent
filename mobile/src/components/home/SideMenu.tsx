@@ -106,6 +106,7 @@ const APP_VERSION = Constants.expoConfig?.version || '1.0.0';
 const BUILD_SUFFIX = process.env.EXPO_PUBLIC_BUILD_SUFFIX || '';
 
 const { width: SCREEN_WIDTH } = Dimensions.get('window');
+const MENU_WIDTH = SCREEN_WIDTH * 0.8;
 
 const DarkModeToggle: React.FC<{ theme: any }> = ({ theme }) => {
   const { isDarkMode, toggleDarkMode } = useDarkModeContext();
@@ -206,6 +207,9 @@ export const SideMenu: React.FC<SideMenuProps> = ({
   const [stateParksExpanded, setStateParksExpanded] = useState(false);
   const [stateParksDistance, setStateParksDistance] = useState<number | null>(50); // Default 50 miles
   const [statePickerVisible, setStatePickerVisible] = useState(false);
+  const [isDraggingStateSlider, setIsDraggingStateSlider] = useState(false);
+  const [stateSliderPreview, setStateSliderPreview] = useState<number | null>(null);
+  const [stateSliderPosition, setStateSliderPosition] = useState(0); // 0-1 position for thumb tracking
   
   // Get the effective state (selected or user's location state)
   const effectiveState = selectedState || userLocation?.state || '';
@@ -225,9 +229,8 @@ export const SideMenu: React.FC<SideMenuProps> = ({
       // Clear existing parks first to show loading state
       setStateParks([]);
       setStateParksLoading(true);
-      // Fetch more parks when user manually selects a state (they want to see all)
-      const limit = selectedState ? 200 : 100;
-      fetchStateParks(effectiveStateCode, limit)
+      // Fetch all parks in the state (backend supports up to 500)
+      fetchStateParks(effectiveStateCode, 500)
         .then(parks => {
           // Filter duplicates by name
           const seen = new Set<string>();
@@ -389,17 +392,36 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                 {/* Only show distance slider when using current location (not when state is manually selected) */}
                 {!selectedState && (
                   <>
-                    <Slider
-                      style={styles.distanceSlider}
-                      minimumValue={0}
-                      maximumValue={STATE_DISTANCE_PRESETS.length}
-                      step={1}
-                      value={stateDistanceToSliderValue(stateParksDistance)}
-                      onValueChange={(value) => setStateParksDistance(stateSliderValueToDistance(value))}
-                      minimumTrackTintColor={theme.sliderTrack}
-                      maximumTrackTintColor="rgba(255,255,255,0.2)"
-                      thumbTintColor={theme.sliderThumb}
-                    />
+                    <View style={styles.sliderContainer}>
+                      {isDraggingStateSlider && stateSliderPreview !== null && (
+                        <View style={[styles.sliderPreviewOverlay, { left: 16 + (stateSliderPosition * (MENU_WIDTH - 72)) }]}>
+                          <Text style={styles.sliderPreviewText}>
+                            {stateSliderPreview === null ? 'All' : `${stateSliderPreview}`}
+                          </Text>
+                        </View>
+                      )}
+                      <Slider
+                        style={styles.distanceSlider}
+                        minimumValue={0}
+                        maximumValue={STATE_DISTANCE_PRESETS.length}
+                        step={1}
+                        value={stateDistanceToSliderValue(stateParksDistance)}
+                        onValueChange={(value) => {
+                          const miles = stateSliderValueToDistance(value);
+                          setStateSliderPreview(miles);
+                          setStateSliderPosition(value / STATE_DISTANCE_PRESETS.length);
+                        }}
+                        onSlidingStart={() => setIsDraggingStateSlider(true)}
+                        onSlidingComplete={(value) => {
+                          setIsDraggingStateSlider(false);
+                          setStateSliderPreview(null);
+                          setStateParksDistance(stateSliderValueToDistance(value));
+                        }}
+                        minimumTrackTintColor={theme.sliderTrack}
+                        maximumTrackTintColor="rgba(255,255,255,0.2)"
+                        thumbTintColor={theme.sliderThumb}
+                      />
+                    </View>
                     <View style={styles.distanceLabelsRow}>
                       <Text style={[styles.distanceLabelSmall, { color: theme.primary }]}>
                         {getDistanceDisplayText(stateParksDistance)}
@@ -640,7 +662,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   menu: {
-    width: SCREEN_WIDTH * 0.8,
+    width: MENU_WIDTH,
     backgroundColor: '#1a1a2e',
     height: '100%',
   },
@@ -941,5 +963,22 @@ const styles = StyleSheet.create({
   useCurrentLocationText: {
     fontSize: 12,
     fontWeight: '500',
+  },
+  sliderContainer: {
+    position: 'relative',
+    marginTop: 16,
+  },
+  sliderPreviewOverlay: {
+    position: 'absolute',
+    top: -14,
+    zIndex: 10,
+    transform: [{ translateX: -8 }],
+  },
+  sliderPreviewText: {
+    fontSize: 12,
+    fontWeight: '500',
+    color: 'rgba(255, 255, 255, 0.35)',
+    textAlign: 'center',
+    minWidth: 24,
   },
 });

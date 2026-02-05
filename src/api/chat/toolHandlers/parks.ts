@@ -261,8 +261,9 @@ export async function handleGetParkHikes(
     const parkName = s3Trails[0].parkName;
     const source = s3Trails[0].source || 'TripAgent Database';
     const isNPSData = source === 'NPS API';
+    const hasAllTrailsUrls = s3Trails.some(t => t.alltrailsUrl);
     
-    const result = {
+    const result: any = {
       parkCode,
       parkName,
       hikes: s3Trails.map(trail => ({
@@ -273,6 +274,7 @@ export async function handleGetParkHikes(
         difficulty: (trail.difficulty || 'moderate').replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()),
         trailType: trail.type,
         trailUrl: trail.trailUrl || trail.npsUrl || generateGoogleMapsLink(`${trail.name} trailhead ${parkName}`),
+        allTrailsUrl: trail.alltrailsUrl,
         npsUrl: trail.npsUrl,
         googleMapsUrl: generateGoogleMapsLink(`${trail.name} trailhead ${parkName}`),
         imageUrl: trail.imageUrl,
@@ -284,6 +286,10 @@ export async function handleGetParkHikes(
         ? 'Official NPS trail pages with permits, conditions, and alerts.'
         : 'Use trail links to view details and get directions.',
     };
+    
+    if (hasAllTrailsUrls) {
+      result.allTrailsDisclaimer = 'AllTrails links are search-based and may not find an exact match. Use Google Maps links for reliable navigation.';
+    }
     
     return result;
   }

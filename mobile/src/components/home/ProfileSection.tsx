@@ -11,7 +11,7 @@ const EXCLUSIVE_GROUPS = {
   vehicle: ['Gas vehicle', 'Tesla', 'Other EV'],
   climate: ['Warm destinations', 'Cold destinations'],
   airline: ['Delta', 'Southwest', 'United', 'American', 'JetBlue', 'Alaska'],
-  carRental: ['Hertz', 'Enterprise', 'National', 'Budget'],
+  carRental: ['Hertz', 'Enterprise', 'National', 'Budget', 'Turo'],
   hotel: ['Marriott', 'Hilton', 'IHG', 'Hyatt', 'Airbnb/VRBO'],
 };
 
@@ -141,6 +141,7 @@ const PROFILE_SUGGESTIONS: Array<{ label: string; profileText: string }> = [
   { label: 'Enterprise', profileText: 'I prefer Enterprise Rent-A-Car' },
   { label: 'National', profileText: 'I prefer National Car Rental' },
   { label: 'Budget', profileText: 'I prefer Budget Car Rental' },
+  { label: 'Turo', profileText: 'I prefer Turo for car rentals (peer-to-peer car sharing)' },
   // Hotels (mutually exclusive)
   { label: 'Marriott', profileText: 'I prefer Marriott hotels' },
   { label: 'Hilton', profileText: 'I prefer Hilton hotels' },

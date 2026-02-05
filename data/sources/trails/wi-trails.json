@@ -2,14 +2,17 @@
   "_meta": {
     "stateCode": "WI",
     "stateName": "Wisconsin",
-    "lastUpdated": "2026-02-02T15:33:32.751Z",
+    "lastUpdated": "2026-02-05T15:08:50.500Z",
     "totalParks": 22,
     "totalTrails": 143,
     "sources": [
       "curated",
       "trailapi",
       "wi_dnr"
-    ]
+    ],
+    "lastValidated": "2026-02-05T15:02:57.287Z",
+    "brokenLinksRemoved": 143,
+    "validationMethod": "full-individual-validation"
   },
   "parks": {
     "devils-lake": {
@@ -30,7 +33,6 @@
             "Devil's Doorway",
             "Bluff views"
           ],
-          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/name/devils-lake",
           "googleMapsUrl": "https://www.google.com/maps/search/Balanced%20Rock%20Trail%20trail/@43.4167,-89.7333,15z",
           "trailheadCoordinates": {
             "latitude": 43.4167,
@@ -46,6 +48,7 @@
             "hasOfficialUrl": true,
             "hasCoordinates": true
           },
+          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/devilslake",
           "allTrailsUrl": "https://www.alltrails.com/trail/us/wisconsin/balanced-rock-trail-devils-lake-state-park"
         },
         {
@@ -63,7 +66,6 @@
             "Rock scrambles",
             "Quartzite bluffs"
           ],
-          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/name/devils-lake",
           "googleMapsUrl": "https://www.google.com/maps/search/East%20Bluff%20Trail%20trail/@43.4167,-89.7333,15z",
           "trailheadCoordinates": {
             "latitude": 43.4167,
@@ -79,6 +81,7 @@
             "hasOfficialUrl": true,
             "hasCoordinates": true
           },
+          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/devilslake",
           "allTrailsUrl": "https://www.alltrails.com/trail/us/wisconsin/east-bluff-trail-devils-lake-state-park"
         },
         {
@@ -96,7 +99,6 @@
             "Cleopatra's Needle",
             "Sunset views"
           ],
-          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/name/devils-lake",
           "googleMapsUrl": "https://www.google.com/maps/search/West%20Bluff%20Trail%20trail/@43.4167,-89.7333,15z",
           "trailheadCoordinates": {
             "latitude": 43.4167,
@@ -112,6 +114,7 @@
             "hasOfficialUrl": true,
             "hasCoordinates": true
           },
+          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/devilslake",
           "allTrailsUrl": "https://www.alltrails.com/trail/us/wisconsin/west-bluff-trail-devils-lake-state-park"
         },
         {
@@ -129,7 +132,6 @@
             "Bluff climbing",
             "Lake views"
           ],
-          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/name/devils-lake",
           "googleMapsUrl": "https://www.google.com/maps/search/Ice%20Age%20National%20Scenic%20Trail%20-%20Devil's%20Lake%20Segment%20trail/@43.4167,-89.7333,15z",
           "trailheadCoordinates": {
             "latitude": 43.4167,
@@ -145,6 +147,7 @@
             "hasOfficialUrl": true,
             "hasCoordinates": true
           },
+          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/devilslake",
           "allTrailsUrl": "https://www.alltrails.com/trail/us/wisconsin/ice-age-national-scenic-trail-devils-lake-segment-devils-lake-state-park"
         },
         {
@@ -162,7 +165,6 @@
             "Creek crossing",
             "Rare plants"
           ],
-          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/name/devils-lake",
           "googleMapsUrl": "https://www.google.com/maps/search/Parfrey's%20Glen%20Trail%20trail/@43.4167,-89.7333,15z",
           "trailheadCoordinates": {
             "latitude": 43.4167,
@@ -178,6 +180,7 @@
             "hasOfficialUrl": true,
             "hasCoordinates": true
           },
+          "officialUrl": "https://dnr.wisconsin.gov/topic/parks/devilslake",
           "allTrailsUrl": "https://www.alltrails.com/trail/us/wisconsin/parfreys-glen-trail-devils-lake-state-park"
         },
         {

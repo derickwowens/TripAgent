@@ -40,7 +40,7 @@ export const SYNC_CONFIG = {
       apiKeyEnv: 'RECREATION_GOV_API_KEY',
     },
     padUs: {
-      baseUrl: 'https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Protected_Areas_Database/FeatureServer/0',
+      baseUrl: 'https://services.arcgis.com/v01gqwM5QqNysAAi/arcgis/rest/services/Manager_Name/FeatureServer/0',
     },
   },
   
@@ -55,6 +55,55 @@ export const SYNC_CONFIG = {
       name: 'Florida State Parks',
       baseUrl: 'https://www.floridastateparks.org',
       hasApi: false, // Will use PAD-US + RIDB
+    },
+    CA: {
+      name: 'California State Parks',
+      baseUrl: 'https://www.parks.ca.gov',
+      hasApi: true, // Has ArcGIS Hub data
+      trailsApi: 'https://hub.arcgis.com/api/download/v1/items/45fa4fba9dde4a8dbb23cdd56da40703',
+      campgroundsApi: 'https://hub.arcgis.com/api/download/v1/items/81c47beefff143ecb6c21bfd3ed6a933',
+    },
+    TX: {
+      name: 'Texas Parks and Wildlife',
+      baseUrl: 'https://tpwd.texas.gov',
+      hasApi: true, // Has ArcGIS REST services
+      trailsApi: 'https://tpwd.texas.gov/server/rest/services/Parks/TexasStateParksTrails/MapServer/0',
+    },
+    CO: {
+      name: 'Colorado Parks and Wildlife',
+      baseUrl: 'https://cpw.state.co.us',
+      trailsUrl: 'https://trails.colorado.gov/',
+      hasApi: true,
+    },
+    OR: {
+      name: 'Oregon Parks and Recreation Department',
+      baseUrl: 'https://stateparks.oregon.gov',
+      trailsUrl: 'https://maps.prd.state.or.us/arcgis/rest/services/Land_ownership/Oregon_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    AZ: {
+      name: 'Arizona State Parks and Trails',
+      baseUrl: 'https://azstateparks.com',
+      trailsUrl: 'https://services1.arcgis.com/UpxtrwRYNaXVpkGe/arcgis/rest/services/AZSPTrails/FeatureServer/0',
+      hasApi: true,
+    },
+    UT: {
+      name: 'Utah Division of State Parks',
+      baseUrl: 'https://stateparks.utah.gov',
+      trailsUrl: 'https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/Utah_Trails_and_Pathways/FeatureServer/0',
+      hasApi: true,
+    },
+    WA: {
+      name: 'Washington State Parks',
+      baseUrl: 'https://parks.wa.gov',
+      trailsUrl: 'https://geo.wa.gov/',
+      hasApi: true,
+    },
+    MI: {
+      name: 'Michigan DNR',
+      baseUrl: 'https://www.michigan.gov/dnr',
+      trailsUrl: 'https://gis-midnr.opendata.arcgis.com/',
+      hasApi: true,
     },
   },
   
@@ -74,7 +123,7 @@ export const SYNC_CONFIG = {
 };
 
 // Priority states for initial rollout
-export const PRIORITY_STATES = ['WI', 'FL'] as const;
+export const PRIORITY_STATES = ['WI', 'FL', 'CA', 'TX', 'CO', 'OR', 'AZ', 'UT', 'WA', 'MI'] as const;
 
 // All US states for future expansion
 export const ALL_STATES = [

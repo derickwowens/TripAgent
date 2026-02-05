@@ -133,6 +133,7 @@ const CAR_RENTALS = [
   { id: 'enterprise', label: 'Enterprise', profileText: 'I prefer Enterprise Rent-A-Car' },
   { id: 'national', label: 'National', profileText: 'I prefer National Car Rental' },
   { id: 'budget', label: 'Budget', profileText: 'I prefer Budget Car Rental' },
+  { id: 'turo', label: 'Turo', profileText: 'I prefer Turo for car rentals (peer-to-peer car sharing)' },
 ];
 
 // Preferred hotels

@@ -160,10 +160,22 @@ interface StateTrailsData {
   parks: Record<string, { parkName: string; trails: Trail[] }>;
 }
 
-async function enhanceStateTrails(stateCode: 'WI' | 'FL'): Promise<void> {
+const STATE_NAMES: Record<string, string> = {
+  WI: 'Wisconsin', FL: 'Florida', CA: 'California', TX: 'Texas',
+  CO: 'Colorado', AZ: 'Arizona', UT: 'Utah', OR: 'Oregon', WA: 'Washington', MI: 'Michigan'
+};
+
+const ALL_PARK_URLS: Record<string, Record<string, string>> = {
+  WI: WI_PARK_URLS,
+  FL: FL_PARK_URLS,
+  // Other states - can be populated as official URLs are collected
+  CA: {}, TX: {}, CO: {}, AZ: {}, UT: {}, OR: {}, WA: {}, MI: {}
+};
+
+async function enhanceStateTrails(stateCode: string): Promise<void> {
   const s3Client = new S3Client({ region: S3_REGION });
-  const stateName = stateCode === 'WI' ? 'Wisconsin' : 'Florida';
-  const parkUrls = stateCode === 'WI' ? WI_PARK_URLS : FL_PARK_URLS;
+  const stateName = STATE_NAMES[stateCode] || stateCode;
+  const parkUrls = ALL_PARK_URLS[stateCode] || {};
   
   console.log(`\n============================================================`);
   console.log(`Enhancing ${stateName} Trail URLs`);
@@ -228,8 +240,19 @@ async function enhanceStateTrails(stateCode: 'WI' | 'FL'): Promise<void> {
     }
   }
   
-  // Update metadata
-  data._meta.lastUpdated = new Date().toISOString();
+  // Update metadata (handle case where _meta doesn't exist)
+  if (data._meta) {
+    data._meta.lastUpdated = new Date().toISOString();
+  } else {
+    (data as any)._meta = {
+      stateCode,
+      stateName,
+      lastUpdated: new Date().toISOString(),
+      totalParks: Object.keys(data.parks || {}).length,
+      totalTrails: Object.values(data.parks || {}).reduce((sum: number, p: any) => sum + (p.trails?.length || 0), 0),
+      sources: ['enhanceTrailUrls'],
+    };
+  }
   
   // Save locally
   const outputPath = path.join(__dirname, `../sources/trails/${stateCode.toLowerCase()}-trails.json`);
@@ -264,8 +287,18 @@ async function main() {
   console.log('');
   console.log('Priority order: Official URL > AllTrails > Google Maps');
   
-  await enhanceStateTrails('WI');
-  await enhanceStateTrails('FL');
+  // All 10 states with trail data
+  const states: Array<'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'AZ' | 'UT' | 'OR' | 'WA' | 'MI'> = [
+    'WI', 'FL', 'CA', 'TX', 'CO', 'AZ', 'UT', 'OR', 'WA', 'MI'
+  ];
+  
+  for (const state of states) {
+    try {
+      await enhanceStateTrails(state as 'WI' | 'FL');
+    } catch (error: any) {
+      console.log(`\n[${state}] Skipped: ${error.message}`);
+    }
+  }
   
   console.log('\n============================================================');
   console.log('Enhancement Complete');

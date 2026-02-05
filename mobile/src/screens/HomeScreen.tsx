@@ -14,6 +14,7 @@ import {
   TextInput,
   Keyboard,
 } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer, fetchStateParks, StateParkSummary } from '../services/api';
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode, useTravelDates } from '../hooks';
 import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo, DraggableConversationPanel } from '../components/home';
@@ -52,6 +53,7 @@ const DEFAULT_BACKGROUNDS = [
 const getRandomBackground = () => DEFAULT_BACKGROUNDS[Math.floor(Math.random() * DEFAULT_BACKGROUNDS.length)];
 
 const HomeScreen: React.FC = () => {
+  const insets = useSafeAreaInsets();
   const [inputText, setInputText] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
   const [editingTitle, setEditingTitle] = useState(false);
@@ -714,6 +716,11 @@ const HomeScreen: React.FC = () => {
   if (onboardingLoading) {
     return (
       <View style={styles.loadingContainer}>
+        <Image 
+          source={require('../../assets/icon.png')} 
+          style={styles.loadingLogo} 
+          resizeMode="contain"
+        />
         <Text style={styles.loadingText}>Loading...</Text>
       </View>
     );
@@ -743,7 +750,7 @@ const HomeScreen: React.FC = () => {
         <View style={[styles.overlay, { backgroundColor: theme.overlay }]}>
           <StatusBar barStyle="light-content" />
         
-        <View style={styles.header}>
+        <View style={[styles.header, { paddingTop: insets.top + 8 }]}>
           <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
             <Text style={styles.menuIcon}>☰</Text>
           </TouchableOpacity>
@@ -823,8 +830,8 @@ const HomeScreen: React.FC = () => {
 
         <KeyboardAvoidingView
           style={styles.container}
-          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-          keyboardVerticalOffset={Platform.OS === 'ios' ? 90 : 20}
+          behavior={Platform.OS === 'ios' ? 'height' : undefined}
+          keyboardVerticalOffset={0}
         >
           <DraggableConversationPanel hasMessages={messages.length > 0} galleryOpen={showPhotoGallery && allPhotos.length > 0}>
           <ScrollView
@@ -1026,6 +1033,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  loadingLogo: {
+    width: 120,
+    height: 120,
+    marginBottom: 20,
+  },
   loadingText: {
     color: 'rgba(255, 255, 255, 0.6)',
     fontSize: 16,
@@ -1039,7 +1051,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: 16,
-    paddingTop: 50,
     paddingBottom: 12,
   },
   menuButton: {

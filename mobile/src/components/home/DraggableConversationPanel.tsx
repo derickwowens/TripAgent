@@ -133,6 +133,7 @@ export const DraggableConversationPanel: React.FC<DraggableConversationPanelProp
 const styles = StyleSheet.create({
   fullContainer: {
     flex: 1,
+    paddingBottom: 25,
   },
   flexContainer: {
     flex: 1,

@@ -48,8 +48,8 @@ export const ChatInput: React.FC<ChatInputProps> = memo(({
   const { theme } = useParkTheme();
   const insets = useSafeAreaInsets();
   
-  // Only add bottom safe area padding when gallery is closed (chat input is at bottom of screen)
-  const bottomPadding = galleryOpen ? 8 : Math.max(insets.bottom, 8);
+  // Bottom padding for safe area when gallery is closed
+  const bottomPadding = galleryOpen ? 4 : 8;
   
   // Only disable send button when no text - allow typing while loading
   const isDisabled = !inputText.trim();

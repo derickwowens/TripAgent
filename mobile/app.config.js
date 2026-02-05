@@ -5,7 +5,7 @@ export default ({ config }) => {
     ...config,
     name: "TripAgent",
     slug: "tripagent",
-    version: "2.3.7",
+    version: "2.4.0",
     orientation: "portrait",
     icon: "./assets/icon.png",
     userInterfaceStyle: "automatic",
@@ -18,7 +18,7 @@ export default ({ config }) => {
     ios: {
       supportsTablet: true,
       bundleIdentifier: "com.tripagent.app",
-      buildNumber: "18",
+      buildNumber: "19",
       infoPlist: {
         NSLocationWhenInUseUsageDescription: "TripAgent needs your location to find nearby parks, restaurants, and provide personalized travel recommendations.",
         NSSpeechRecognitionUsageDescription: "TripAgent uses speech recognition for voice input to make trip planning easier.",

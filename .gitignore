@@ -24,3 +24,8 @@ npm-debug.log*
 
 # Test coverage
 coverage/
+
+# Large trail data files (too big for GitHub)
+data/sources/trails/az-trails.json
+data/sources/trails/co-trails.json
+data/sources/trails/ut-trails.json

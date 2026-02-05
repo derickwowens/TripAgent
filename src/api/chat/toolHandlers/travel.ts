@@ -15,6 +15,7 @@ import {
   generatePlugShareLink,
   generateTeslaChargerLink,
 } from '../../../utils/linkUtils.js';
+import { linkPrefillService, TravelContext } from '../../../services/LinkPrefillService.js';
 
 /**
  * Handle flight search with context-aware defaults
@@ -46,17 +47,19 @@ export async function handleSearchFlights(
     adults: travelers,
   });
   
-  // Kayak link format
-  const kayakLink = returnDate
-    ? `https://www.kayak.com/flights/${origin}-${input.destination}/${departureDate}/${returnDate}`
-    : `https://www.kayak.com/flights/${origin}-${input.destination}/${departureDate}`;
+  // Use LinkPrefillService for consistent link generation
+  const linkContext: TravelContext = {
+    origin,
+    destination: input.destination,
+    departureDate,
+    returnDate,
+    adults: travelers,
+    userProfile: context.userProfile,
+  };
   
-  // Google Flights link format
-  const googleFlightsTfs = returnDate
-    ? `${origin}.${input.destination}.${departureDate}*${input.destination}.${origin}.${returnDate}`
-    : `${origin}.${input.destination}.${departureDate}`;
-  
-  const googleFlightsLink = `https://www.google.com/travel/flights?tfs=${encodeURIComponent(googleFlightsTfs)}&tfu=EgYIAhAAGAA`;
+  const bookingLinks = linkPrefillService.generateBookingLinks('flights', linkContext);
+  const flightLinks = linkPrefillService.generateLinks('flights', linkContext);
+  const primaryLink = flightLinks.find(l => l.isPrimary) || flightLinks[0];
   
   const originAirportUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(origin + ' Airport')}`;
   const destAirportUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(input.destination + ' Airport')}`;
@@ -76,17 +79,14 @@ export async function handleSearchFlights(
       returnDate: input.return_date,
       travelers: travelers,
     },
-    bookingLinks: {
-      kayak: kayakLink,
-      googleFlights: googleFlightsLink,
-    },
+    bookingLinks,
     airportLinks: {
       origin: { code: origin, googleMapsUrl: originAirportUrl },
       destination: { code: input.destination, googleMapsUrl: destAirportUrl },
     },
-    bookingLink: kayakLink,
-    bookingLinkText: `Search ${origin} → ${input.destination} flights`,
-    note: "Google Flights link also available for price comparison",
+    bookingLink: primaryLink?.url,
+    bookingLinkText: primaryLink?.displayText || `Search ${origin} → ${input.destination} flights`,
+    note: "Multiple flight search options available for price comparison",
   };
 }
 
@@ -157,10 +157,6 @@ export async function handleSearchEvChargingStations(input: any, context: ChatCo
  * Handle car rental search
  */
 export async function handleSearchCarRentals(input: any, facade: TravelFacade, context: ChatContext): Promise<any> {
-  const prefersEV = context.userProfile?.toLowerCase().includes('ev') ||
-                    context.userProfile?.toLowerCase().includes('electric') ||
-                    context.defaults?.vehicle === 'ev';
-  
   const pickupDate = input.pickup_date || context.travelDates?.departure;
   const dropoffDate = input.dropoff_date || context.travelDates?.return;
   
@@ -179,8 +175,18 @@ export async function handleSearchCarRentals(input: any, facade: TravelFacade, c
     dropoffTime: input.dropoff_time || '10:00',
   });
   
-  const kayakCarsUrl = `https://www.kayak.com/cars/${encodeURIComponent(input.pickup_location)}/${pickupDate}/${dropoffDate}`;
-  console.log(`[LinkGen] Car rental: pickup="${input.pickup_location}", dates=${pickupDate} to ${dropoffDate}`);
+  // Use LinkPrefillService for consistent link generation
+  const linkContext: TravelContext = {
+    location: input.pickup_location,
+    departureDate: pickupDate,
+    returnDate: dropoffDate,
+    userProfile: context.userProfile,
+  };
+  
+  const bookingLinks = linkPrefillService.generateBookingLinks('cars', linkContext);
+  const preferredProvider = linkPrefillService.getPreferredProvider('cars', linkContext);
+  
+  console.log(`[LinkGen] Car rental: pickup="${input.pickup_location}", dates=${pickupDate} to ${dropoffDate}, preferred=${preferredProvider || 'none'}`);
   
   return {
     cars: carResults.results.slice(0, 8).map(c => ({
@@ -196,8 +202,10 @@ export async function handleSearchCarRentals(input: any, facade: TravelFacade, c
     })),
     totalFound: carResults.totalResults,
     providers: carResults.providers,
-    bookingLinks: {
-      kayak: kayakCarsUrl,
-    },
+    bookingLinks,
+    preferredProvider,
+    note: preferredProvider 
+      ? `Based on your preference for ${preferredProvider}, we've included a ${preferredProvider} search link with your dates prefilled.`
+      : undefined,
   };
 }

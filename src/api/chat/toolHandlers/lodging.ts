@@ -8,6 +8,7 @@ import { TravelFacade } from '../../../domain/facade/TravelFacade.js';
 import { ChatContext } from '../types.js';
 import { resolveContextValue } from '../types.js';
 import { generateGoogleMapsLink, generateDirectionsLink } from '../../../utils/linkUtils.js';
+import { linkPrefillService, TravelContext } from '../../../services/LinkPrefillService.js';
 
 /**
  * Handle hotel search with context-aware defaults
@@ -39,8 +40,20 @@ export async function handleSearchHotels(
     rooms: rooms,
   });
   
-  const bookingSearchUrl = `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(input.location)}&checkin=${checkInDate}&checkout=${checkOutDate}&group_adults=${travelers}&no_rooms=${rooms}`;
-  console.log(`[LinkGen] Hotel booking search: ${bookingSearchUrl}`);
+  // Use LinkPrefillService for consistent link generation
+  const linkContext: TravelContext = {
+    location: input.location,
+    departureDate: checkInDate,
+    returnDate: checkOutDate,
+    adults: travelers,
+    rooms: rooms,
+    userProfile: context.userProfile,
+  };
+  
+  const bookingLinks = linkPrefillService.generateBookingLinks('hotels', linkContext);
+  const preferredProvider = linkPrefillService.getPreferredProvider('hotels', linkContext);
+  
+  console.log(`[LinkGen] Hotel search: location="${input.location}", dates=${checkInDate} to ${checkOutDate}, preferred=${preferredProvider || 'none'}`);
   
   return {
     hotels: hotelResults.results.slice(0, 8).map(h => {
@@ -60,8 +73,10 @@ export async function handleSearchHotels(
     }),
     totalFound: hotelResults.totalResults,
     providers: hotelResults.providers,
-    bookingLinks: {
-      booking: bookingSearchUrl,
-    },
+    bookingLinks,
+    preferredProvider,
+    note: preferredProvider 
+      ? `Based on your preference for ${preferredProvider}, we've included a ${preferredProvider} search link with your dates prefilled.`
+      : undefined,
   };
 }

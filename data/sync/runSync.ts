@@ -15,6 +15,7 @@
  */
 
 import { StateSyncer } from './syncers/stateSyncer.js';
+import { CaliforniaTrailSyncer, TexasTrailSyncer, ColoradoTrailSyncer, OregonTrailSyncer, ArizonaTrailSyncer, UtahTrailSyncer, WashingtonTrailSyncer, MichiganTrailSyncer, FloridaTrailSyncer } from './syncers/trailSyncer.js';
 import { PRIORITY_STATES } from './config.js';
 import type { SyncResult } from './baseSyncer.js';
 import { readdir } from 'fs/promises';
@@ -118,6 +119,53 @@ async function main() {
       } else {
         // Sync all priority states
         results = await syncAllPriorityStates();
+      }
+      break;
+
+    case 'trails':
+      // Sync trails for specific state or all
+      results = new Map();
+      const trailStates = target ? [target.toUpperCase()] : ['CA', 'TX', 'CO', 'OR', 'AZ', 'UT', 'WA', 'MI'];
+      for (const trailState of trailStates) {
+        console.log(`\n${'='.repeat(50)}`);
+        console.log(`Syncing ${trailState} trails...`);
+        console.log('='.repeat(50));
+        
+        let syncer;
+        switch (trailState) {
+          case 'CA':
+            syncer = new CaliforniaTrailSyncer();
+            break;
+          case 'TX':
+            syncer = new TexasTrailSyncer();
+            break;
+          case 'CO':
+            syncer = new ColoradoTrailSyncer();
+            break;
+          case 'OR':
+            syncer = new OregonTrailSyncer();
+            break;
+          case 'AZ':
+            syncer = new ArizonaTrailSyncer();
+            break;
+          case 'UT':
+            syncer = new UtahTrailSyncer();
+            break;
+          case 'WA':
+            syncer = new WashingtonTrailSyncer();
+            break;
+          case 'MI':
+            syncer = new MichiganTrailSyncer();
+            break;
+          case 'FL':
+            syncer = new FloridaTrailSyncer();
+            break;
+          default:
+            console.log(`No trail syncer for ${trailState}`);
+            continue;
+        }
+        const result = await syncer.sync();
+        results.set(trailState, result);
       }
       break;
 

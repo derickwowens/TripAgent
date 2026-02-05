@@ -175,6 +175,39 @@ export function generateRecreationGovLink(query: string): string {
 }
 
 /**
+ * Generate a Turo car rental search link with prefilled location and dates
+ * @param location - Pickup location (city, airport, or address)
+ * @param pickupDate - Pickup date in YYYY-MM-DD format (optional)
+ * @param dropoffDate - Dropoff date in YYYY-MM-DD format (optional)
+ * @returns Turo search URL
+ */
+export function generateTuroLink(location: string, pickupDate?: string, dropoffDate?: string): string {
+  // Turo uses URL parameters for location and dates
+  // Format: https://turo.com/search?location=...&startDate=...&endDate=...
+  const params = new URLSearchParams();
+  params.set('location', location);
+  
+  if (pickupDate) {
+    // Turo uses MM/DD/YYYY format for dates in URL
+    const [year, month, day] = pickupDate.split('-');
+    if (year && month && day) {
+      params.set('startDate', `${month}/${day}/${year}`);
+    }
+  }
+  
+  if (dropoffDate) {
+    const [year, month, day] = dropoffDate.split('-');
+    if (year && month && day) {
+      params.set('endDate', `${month}/${day}/${year}`);
+    }
+  }
+  
+  const url = `https://turo.com/search?${params.toString()}`;
+  console.log(`[LinkGen] Turo: location="${location}", pickup="${pickupDate || 'none'}", dropoff="${dropoffDate || 'none'}" -> ${url}`);
+  return url;
+}
+
+/**
  * Shorten a URL for display (extracts domain)
  * Note: This is just for display, the actual link should still use the full URL
  * @param url - Full URL

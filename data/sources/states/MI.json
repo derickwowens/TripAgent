@@ -1,0 +1,101 @@
+{
+  "stateCode": "MI",
+  "stateName": "Michigan",
+  "parkAuthority": {
+    "name": "Michigan Department of Natural Resources",
+    "abbreviation": "MI DNR",
+    "website": "https://www.michigan.gov/dnr/places/state-parks"
+  },
+  "dataSources": {
+    "boundaries": {
+      "type": "arcgis_hub",
+      "url": "https://gis-midnr.opendata.arcgis.com/",
+      "description": "Michigan DNR Open Data Portal"
+    },
+    "parkList": {
+      "type": "pad_us",
+      "filters": {
+        "State_Nm": "MI",
+        "Mang_Type": "STAT",
+        "Des_Tp": ["SP", "SRA", "SF", "SHCA"]
+      }
+    },
+    "trails": {
+      "type": "arcgis_hub",
+      "url": "https://gis-midnr.opendata.arcgis.com/",
+      "description": "Michigan DNR trails data"
+    },
+    "campgrounds": {
+      "type": "reserve_america",
+      "stateFilter": "MI"
+    }
+  },
+  "reservationSystem": {
+    "provider": "Michigan DNR",
+    "providerType": "midnrreservations",
+    "baseUrl": "https://midnrreservations.com/",
+    "searchUrl": "https://midnrreservations.com/"
+  },
+  "urlPatterns": {
+    "officialParkPage": "https://www2.dnr.state.mi.us/parksandtrails/Details.aspx?id={parkId}&type=SPRK"
+  },
+  "designationTypes": {
+    "SP": {
+      "code": "SP",
+      "name": "State Park",
+      "pluralName": "State Parks"
+    },
+    "SRA": {
+      "code": "SRA",
+      "name": "State Recreation Area",
+      "pluralName": "State Recreation Areas"
+    },
+    "SF": {
+      "code": "SF",
+      "name": "State Forest",
+      "pluralName": "State Forests"
+    },
+    "SHCA": {
+      "code": "SHCA",
+      "name": "State Historic Site",
+      "pluralName": "State Historic Sites"
+    }
+  },
+  "contact": {
+    "generalPhone": "517-284-7275",
+    "reservationPhone": "1-800-447-2757",
+    "email": "DNR-ParksAndRecreation@michigan.gov"
+  },
+  "fees": {
+    "vehicleAdmission": {
+      "standard": {
+        "resident": 17,
+        "nonResident": 34
+      },
+      "notes": "Recreation Passport required"
+    },
+    "camping": {
+      "baseRate": {
+        "min": 20,
+        "max": 45
+      },
+      "reservationFee": 8
+    }
+  },
+  "seasonalInfo": {
+    "typicalSeasonStart": "04-01",
+    "typicalSeasonEnd": "10-31",
+    "winterCampingAvailable": true,
+    "peakSeason": {
+      "start": "06-01",
+      "end": "09-15"
+    }
+  },
+  "specialFeatures": [
+    "great_lakes",
+    "lighthouses",
+    "dunes",
+    "waterfalls",
+    "fall_colors"
+  ]
+}
