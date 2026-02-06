@@ -123,7 +123,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   const [mapRegion, setMapRegion] = useState<Region | null>(null);
   const [androidMarkersReady, setAndroidMarkersReady] = useState(Platform.OS !== 'android');
 
-  const MAX_TRAILS_FOR_LINES = 15;
+  const MAX_TRAILS_FOR_LINES = 20;
 
   // Compute trails visible in the current map region
   // Wait for mapRegion to be set before rendering any trail markers - prevents
@@ -146,14 +146,20 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   }, [trails, mapRegion]);
 
   const hasTrailsLoaded = trails.length > 0 && !loading;
-  const canRenderTrailLines = visibleTrails.length <= MAX_TRAILS_FOR_LINES;
+  const canShowTrailLines = visibleTrails.length > 0 && visibleTrails.length <= MAX_TRAILS_FOR_LINES;
 
-  // Auto-disable trail lines when too many trails become visible (performance guard)
+  // Auto-disable trail lines when user zooms out past threshold
   useEffect(() => {
-    if (showTrailLines && !canRenderTrailLines) {
+    if (showTrailLines && !canShowTrailLines) {
       setShowTrailLines(false);
     }
-  }, [canRenderTrailLines, showTrailLines]);
+  }, [canShowTrailLines, showTrailLines]);
+
+  // Trails with geometry for polyline rendering
+  const trailsWithLines = useMemo(() => {
+    if (!showTrailLines || !canShowTrailLines) return [];
+    return visibleTrails.filter(t => t.geometry && t.geometry.length >= 2);
+  }, [showTrailLines, canShowTrailLines, visibleTrails]);
 
   // On Android, allow markers to render as bitmaps first, then disable tracking for touch events
   useEffect(() => {
@@ -319,7 +325,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               </View>
             ))}
           </View>
-          {hasTrailsLoaded && (
+          {hasTrailsLoaded && canShowTrailLines && (
             <TouchableOpacity
               style={styles.trailLinesToggle}
               onPress={() => {
@@ -338,6 +344,9 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               </View>
               <Text style={styles.trailLinesLabel}>Trail Lines</Text>
             </TouchableOpacity>
+          )}
+          {hasTrailsLoaded && !canShowTrailLines && (
+            <Text style={styles.trailLinesHint}>Zoom in to see trail lines</Text>
           )}
         </View>
 
@@ -422,33 +431,27 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
 
               {/* Trail polylines - only for visible trails when toggled on */}
               {/* White border lines (iOS only - Android skips for performance) */}
-              {showTrailLines && canRenderTrailLines && Platform.OS !== 'android' && visibleTrails.map((trail) => {
-                if (!trail.geometry || trail.geometry.length < 2) return null;
-                return (
-                  <Polyline
-                    key={`border-${trail.id}`}
-                    coordinates={trail.geometry}
-                    strokeColor="#FFFFFF"
-                    strokeWidth={5}
-                    tappable={true}
-                    onPress={() => selectTrail(trail)}
-                  />
-                );
-              })}
+              {showTrailLines && Platform.OS !== 'android' && trailsWithLines.map((trail) => (
+                <Polyline
+                  key={`border-${trail.id}`}
+                  coordinates={trail.geometry!}
+                  strokeColor="#FFFFFF"
+                  strokeWidth={5}
+                  tappable={true}
+                  onPress={() => selectTrail(trail)}
+                />
+              ))}
               {/* Red trail lines */}
-              {showTrailLines && canRenderTrailLines && visibleTrails.map((trail) => {
-                if (!trail.geometry || trail.geometry.length < 2) return null;
-                return (
-                  <Polyline
-                    key={`line-${trail.id}`}
-                    coordinates={trail.geometry}
-                    strokeColor="#E53935"
-                    strokeWidth={Platform.OS === 'android' ? 4 : 3}
-                    tappable={true}
-                    onPress={() => selectTrail(trail)}
-                  />
-                );
-              })}
+              {showTrailLines && trailsWithLines.map((trail) => (
+                <Polyline
+                  key={`line-${trail.id}`}
+                  coordinates={trail.geometry!}
+                  strokeColor="#E53935"
+                  strokeWidth={Platform.OS === 'android' ? 4 : 3}
+                  tappable={true}
+                  onPress={() => selectTrail(trail)}
+                />
+              ))}
             </MapView>
           )}
 
@@ -909,6 +912,12 @@ const styles = StyleSheet.create({
   trailLinesLabel: {
     color: 'rgba(255, 255, 255, 0.6)',
     fontSize: 10,
+  },
+  trailLinesHint: {
+    color: 'rgba(255, 255, 255, 0.4)',
+    fontSize: 9,
+    fontStyle: 'italic',
+    marginLeft: 8,
   },
   mapContainer: {
     flex: 1,
