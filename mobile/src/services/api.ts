@@ -385,7 +385,7 @@ export const fetchTrailsForMap = async (stateCode: string, parkId?: string): Pro
   }
 };
 
-export interface MapParkMarker {
+export interface ParkMapMarker {
   id: string;
   name: string;
   latitude: number;
@@ -396,7 +396,7 @@ export interface MapParkMarker {
   stateName?: string;
 }
 
-export interface MapCampgroundMarker {
+export interface CampgroundMapMarker {
   id: string;
   name: string;
   latitude: number;
@@ -408,7 +408,7 @@ export interface MapCampgroundMarker {
   description?: string;
 }
 
-export const fetchParksForMap = async (stateCode: string): Promise<MapParkMarker[]> => {
+export const fetchParksForMap = async (stateCode: string): Promise<ParkMapMarker[]> => {
   try {
     const response = await api.get(`/api/map/parks/${stateCode.toUpperCase()}`);
     return response.data.parks || [];
@@ -418,7 +418,7 @@ export const fetchParksForMap = async (stateCode: string): Promise<MapParkMarker
   }
 };
 
-export const fetchCampgroundsForMap = async (stateCode: string): Promise<MapCampgroundMarker[]> => {
+export const fetchCampgroundsForMap = async (stateCode: string): Promise<CampgroundMapMarker[]> => {
   try {
     const response = await api.get(`/api/map/campgrounds/${stateCode.toUpperCase()}`);
     return response.data.campgrounds || [];

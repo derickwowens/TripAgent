@@ -15,7 +15,7 @@ import {
 import MapView, { Marker, Polyline, Region } from 'react-native-maps';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useParkTheme } from '../../hooks/useParkTheme';
-import { TrailMapMarker } from '../../services/api';
+import { TrailMapMarker, ParkMapMarker, CampgroundMapMarker } from '../../services/api';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 const PANEL_WIDTH = SCREEN_WIDTH * 0.88;
@@ -47,28 +47,7 @@ function getDifficultyLabel(difficulty?: string): string {
   return difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase();
 }
 
-export interface ParkMapMarker {
-  id: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-  stateCode?: string;
-  category?: string;
-  designation?: string;
-  stateName?: string;
-}
-
-export interface CampgroundMapMarker {
-  id: string;
-  name: string;
-  latitude: number;
-  longitude: number;
-  parkName?: string;
-  totalSites?: number;
-  reservationUrl?: string;
-  googleMapsUrl?: string;
-  description?: string;
-}
+export type { ParkMapMarker, CampgroundMapMarker } from '../../services/api';
 
 interface TrailMapPanelProps {
   visible: boolean;

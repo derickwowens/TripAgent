@@ -1,7 +1,7 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import { fetchTrailsForMap, fetchParksForMap, fetchCampgroundsForMap, TrailMapMarker } from '../services/api';
+import type { ParkMapMarker, CampgroundMapMarker } from '../services/api';
 import { PARK_GATEWAYS, PARK_DETECTION_PATTERNS } from '../data/nationalParks';
-import type { ParkMapMarker, CampgroundMapMarker } from '../components/home/TrailMapPanel';
 
 export interface TrailMapState {
   visible: boolean;
