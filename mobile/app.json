@@ -37,14 +37,7 @@
         "ACCESS_FINE_LOCATION"
       ]
     },
-    "plugins": [
-      [
-        "react-native-maps",
-        {
-          "androidGoogleMapsApiKey": ""
-        }
-      ]
-    ],
+    "plugins": [],
     "web": {
       "favicon": "./assets/favicon.png"
     },

@@ -35,6 +35,11 @@ export default ({ config }) => {
         backgroundColor: "#166534"
       },
       edgeToEdgeEnabled: true,
+      config: {
+        googleMaps: {
+          apiKey: process.env.GOOGLE_MAPS_API_KEY || "",
+        },
+      },
       permissions: [
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION",
