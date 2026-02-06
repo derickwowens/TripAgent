@@ -334,6 +334,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     longitude: park.longitude,
                   }}
                   anchor={{ x: 0.5, y: 0.5 }}
+                  tracksViewChanges={false}
                   onPress={() => selectPark(park)}
                 >
                   <View style={styles.parkMarker}>
@@ -351,6 +352,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     longitude: cg.longitude,
                   }}
                   anchor={{ x: 0.5, y: 1.0 }}
+                  tracksViewChanges={false}
                   onPress={() => selectCampground(cg)}
                 >
                   <View style={styles.tentMarker}>
@@ -369,6 +371,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     longitude: trail.longitude,
                   }}
                   anchor={{ x: 0.5, y: 0.5 }}
+                  tracksViewChanges={false}
                   onPress={() => selectTrail(trail)}
                 >
                   <View style={[styles.trailDot, { backgroundColor: getDifficultyColor(trail.difficulty) }]} />
