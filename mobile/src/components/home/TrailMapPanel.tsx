@@ -26,14 +26,35 @@ const TAB_HEIGHT = 110;
 const HALF_MILE_LAT_DELTA = 0.015;  // ~0.5mi north-south
 const HALF_MILE_LNG_DELTA = 0.018;  // ~0.5mi east-west (varies by latitude)
 
-// Difficulty color mapping
+// Difficulty color mapping - covers all values from TrailAPI, USFS, OSM, Recreation.gov
 const DIFFICULTY_COLORS: Record<string, string> = {
   easy: '#4CAF50',
+  easiest: '#4CAF50',
+  beginner: '#4CAF50',
   moderate: '#FF9800',
+  intermediate: '#FF9800',
   hard: '#F44336',
   difficult: '#F44336',
+  advanced: '#F44336',
   expert: '#9C27B0',
   strenuous: '#9C27B0',
+  very_strenuous: '#9C27B0',
+};
+
+// Canonical labels for the map legend
+const DIFFICULTY_LEGEND: Array<{ label: string; color: string }> = [
+  { label: 'Easy', color: '#4CAF50' },
+  { label: 'Moderate', color: '#FF9800' },
+  { label: 'Hard', color: '#F44336' },
+  { label: 'Expert', color: '#9C27B0' },
+];
+
+// Normalized display labels
+const DIFFICULTY_LABELS: Record<string, string> = {
+  easy: 'Easy', easiest: 'Easy', beginner: 'Easy',
+  moderate: 'Moderate', intermediate: 'Moderate',
+  hard: 'Hard', difficult: 'Hard', advanced: 'Hard',
+  expert: 'Expert', strenuous: 'Expert', very_strenuous: 'Expert',
 };
 
 function getDifficultyColor(difficulty?: string): string {
@@ -44,7 +65,8 @@ function getDifficultyColor(difficulty?: string): string {
 
 function getDifficultyLabel(difficulty?: string): string {
   if (!difficulty) return 'Unknown';
-  return difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase();
+  const key = difficulty.toLowerCase().trim();
+  return DIFFICULTY_LABELS[key] || difficulty.charAt(0).toUpperCase() + difficulty.slice(1).toLowerCase();
 }
 
 export type { ParkMapMarker, CampgroundMapMarker } from '../../services/api';
@@ -101,7 +123,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   const [mapRegion, setMapRegion] = useState<Region | null>(null);
   const [androidMarkersReady, setAndroidMarkersReady] = useState(Platform.OS !== 'android');
 
-  const MAX_TRAILS_FOR_LINES = 50;
+  const MAX_TRAILS_FOR_LINES = 15;
 
   // Compute trails visible in the current map region
   // Wait for mapRegion to be set before rendering any trail markers - prevents
@@ -290,12 +312,10 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               </View>
               <Text style={styles.legendText}>Camp</Text>
             </View>
-            {Object.entries(DIFFICULTY_COLORS).slice(0, 4).map(([label, color]) => (
+            {DIFFICULTY_LEGEND.map(({ label, color }) => (
               <View key={label} style={styles.legendItem}>
                 <View style={[styles.legendPin, { backgroundColor: color }]} />
-                <Text style={styles.legendText}>
-                  {label.charAt(0).toUpperCase() + label.slice(1)}
-                </Text>
+                <Text style={styles.legendText}>{label}</Text>
               </View>
             ))}
           </View>
@@ -401,8 +421,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               ))}
 
               {/* Trail polylines - only for visible trails when toggled on */}
-              {/* White border lines rendered first (underneath) */}
-              {showTrailLines && canRenderTrailLines && visibleTrails.map((trail) => {
+              {/* White border lines (iOS only - Android skips for performance) */}
+              {showTrailLines && canRenderTrailLines && Platform.OS !== 'android' && visibleTrails.map((trail) => {
                 if (!trail.geometry || trail.geometry.length < 2) return null;
                 return (
                   <Polyline
@@ -415,7 +435,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                   />
                 );
               })}
-              {/* Red trail lines rendered on top */}
+              {/* Red trail lines */}
               {showTrailLines && canRenderTrailLines && visibleTrails.map((trail) => {
                 if (!trail.geometry || trail.geometry.length < 2) return null;
                 return (
@@ -423,7 +443,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     key={`line-${trail.id}`}
                     coordinates={trail.geometry}
                     strokeColor="#E53935"
-                    strokeWidth={3}
+                    strokeWidth={Platform.OS === 'android' ? 4 : 3}
                     tappable={true}
                     onPress={() => selectTrail(trail)}
                   />

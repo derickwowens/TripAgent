@@ -775,6 +775,83 @@ const STATE_PARKS: Record<string, StateDefinition> = {
       { id: 'ward-charcoal-ovens', name: 'Ward Charcoal Ovens State Park', lat: 39.0667, lng: -114.9333, priority: 3 },
     ],
   },
+
+  SD: {
+    stateCode: 'SD',
+    stateName: 'South Dakota',
+    estimatedParks: 15,
+    estimatedTrails: 200,
+    trailApiRadius: 25,
+    parks: [
+      { id: 'badlands-np', name: 'Badlands National Park', lat: 43.8554, lng: -102.3397, priority: 1 },
+      { id: 'wind-cave-np', name: 'Wind Cave National Park', lat: 43.5724, lng: -103.4838, priority: 1 },
+      { id: 'custer-sp', name: 'Custer State Park', lat: 43.7600, lng: -103.4300, priority: 1 },
+      { id: 'black-hills-nf', name: 'Black Hills National Forest', lat: 44.0000, lng: -103.7500, priority: 1 },
+      { id: 'mount-rushmore', name: 'Mount Rushmore National Memorial', lat: 43.8791, lng: -103.4591, priority: 2 },
+    ],
+  },
+
+  AR: {
+    stateCode: 'AR',
+    stateName: 'Arkansas',
+    estimatedParks: 15,
+    estimatedTrails: 200,
+    trailApiRadius: 25,
+    parks: [
+      { id: 'hot-springs-np', name: 'Hot Springs National Park', lat: 34.5217, lng: -93.0424, priority: 1 },
+      { id: 'devil-den-sp', name: "Devil's Den State Park", lat: 35.7750, lng: -94.2428, priority: 1 },
+      { id: 'petit-jean-sp', name: 'Petit Jean State Park', lat: 35.1100, lng: -92.9300, priority: 1 },
+      { id: 'pinnacle-mountain-sp', name: 'Pinnacle Mountain State Park', lat: 34.8400, lng: -92.4800, priority: 1 },
+      { id: 'ozark-nf', name: 'Ozark National Forest', lat: 35.7000, lng: -93.3000, priority: 1 },
+      { id: 'buffalo-national-river', name: 'Buffalo National River', lat: 36.0300, lng: -92.9000, priority: 1 },
+    ],
+  },
+
+  IN: {
+    stateCode: 'IN',
+    stateName: 'Indiana',
+    estimatedParks: 15,
+    estimatedTrails: 150,
+    trailApiRadius: 25,
+    parks: [
+      { id: 'indiana-dunes-np', name: 'Indiana Dunes National Park', lat: 41.6533, lng: -87.0524, priority: 1 },
+      { id: 'brown-county-sp', name: 'Brown County State Park', lat: 39.1500, lng: -86.2300, priority: 1 },
+      { id: 'turkey-run-sp', name: 'Turkey Run State Park', lat: 39.8800, lng: -87.2100, priority: 1 },
+      { id: 'clifty-falls-sp', name: 'Clifty Falls State Park', lat: 38.7500, lng: -85.4200, priority: 2 },
+      { id: 'hoosier-nf', name: 'Hoosier National Forest', lat: 38.5000, lng: -86.5000, priority: 1 },
+    ],
+  },
+
+  MO: {
+    stateCode: 'MO',
+    stateName: 'Missouri',
+    estimatedParks: 15,
+    estimatedTrails: 200,
+    trailApiRadius: 25,
+    parks: [
+      { id: 'gateway-arch-np', name: 'Gateway Arch National Park', lat: 38.6247, lng: -90.1848, priority: 1 },
+      { id: 'mark-twain-nf', name: 'Mark Twain National Forest', lat: 37.5000, lng: -91.5000, priority: 1 },
+      { id: 'ozark-national-scenic-riverways', name: 'Ozark National Scenic Riverways', lat: 37.1500, lng: -91.3500, priority: 1 },
+      { id: 'ha-ha-tonka-sp', name: 'Ha Ha Tonka State Park', lat: 37.9700, lng: -92.7700, priority: 1 },
+      { id: 'johnson-shut-ins-sp', name: "Johnson's Shut-Ins State Park", lat: 37.5500, lng: -90.8400, priority: 1 },
+      { id: 'elephant-rocks-sp', name: 'Elephant Rocks State Park', lat: 37.6500, lng: -90.6900, priority: 2 },
+    ],
+  },
+
+  ND: {
+    stateCode: 'ND',
+    stateName: 'North Dakota',
+    estimatedParks: 10,
+    estimatedTrails: 100,
+    trailApiRadius: 25,
+    parks: [
+      { id: 'theodore-roosevelt-np-south', name: 'Theodore Roosevelt NP South Unit', lat: 46.9790, lng: -103.5387, priority: 1 },
+      { id: 'theodore-roosevelt-np-north', name: 'Theodore Roosevelt NP North Unit', lat: 47.5861, lng: -103.3882, priority: 1 },
+      { id: 'little-missouri-ng', name: 'Little Missouri National Grassland', lat: 47.0000, lng: -103.5000, priority: 1 },
+      { id: 'fort-abraham-lincoln-sp', name: 'Fort Abraham Lincoln State Park', lat: 46.7600, lng: -100.8400, priority: 2 },
+      { id: 'maah-daah-hey-trail', name: 'Maah Daah Hey Trail', lat: 47.2000, lng: -103.4000, priority: 1 },
+    ],
+  },
 };
 
 // ============================================================================

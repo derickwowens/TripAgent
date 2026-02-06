@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-// Use your deployed API URL in production, localhost for development
-const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://192.168.1.109:3000'; // Your local IP for emulator access
+// API URL is set by .env.development (local dev) or .env.production (deployed)
+// Scripts update .env.development: Android uses 10.0.2.2:3001, iOS uses localhost:3001
+const API_BASE_URL = process.env.EXPO_PUBLIC_API_URL || 'http://10.0.2.2:3001';
 
 const api = axios.create({
   baseURL: API_BASE_URL,

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # TripAgent - Restart Android App Script
-# Uses dedicated ports so it can run in parallel with restart-ios.sh
+# Runs independently (not parallel with iOS)
 #   API: port 3001 | Metro: port 8081
 
 set -e
@@ -50,6 +50,10 @@ trap cleanup SIGINT SIGTERM
 # Stop previous Android session
 echo "🛑 Stopping previous Android session..."
 stop_own_processes
+sleep 1
+
+# Restart adb server to ensure connection after cleanup
+adb start-server 2>/dev/null || true
 sleep 1
 
 # Check emulator
@@ -103,12 +107,17 @@ if ! curl -s "http://localhost:$API_PORT/health" > /dev/null 2>&1; then
     exit 1
 fi
 
-# Start Expo with dedicated Metro port and API URL
+# Start Expo with dedicated Metro port
 echo ""
 echo "📱 Starting Expo (Metro port $METRO_PORT)..."
 cd "$MOBILE_DIR"
 
-EXPO_PUBLIC_API_URL="http://$LOCAL_IP:$API_PORT" npx expo start --port $METRO_PORT --clear > "$EXPO_LOG" 2>&1 &
+# Set API URL in .env.development for Android emulator (10.0.2.2 maps to host localhost)
+echo "# Development environment variables" > .env.development
+echo "EXPO_PUBLIC_API_URL=http://10.0.2.2:$API_PORT" >> .env.development
+echo "   API URL set to: http://10.0.2.2:$API_PORT"
+
+npx expo start --port $METRO_PORT --clear > "$EXPO_LOG" 2>&1 &
 EXPO_PID=$!
 echo "$EXPO_PID" >> "$PID_FILE"
 echo "   Expo PID: $EXPO_PID"

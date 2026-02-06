@@ -446,6 +446,52 @@ const STATE_SEARCH_CONFIGS: Record<string, StateSearchConfig> = {
       { id: 'apostle-islands', name: 'Apostle Islands / Bayfield', lat: 46.90, lng: -90.70, bbox: { south: 46.7, west: -91.0, north: 47.1, east: -90.4 } },
     ],
   },
+  SD: {
+    stateCode: 'SD',
+    stateName: 'South Dakota',
+    areas: [
+      { id: 'badlands-np', name: 'Badlands National Park', lat: 43.86, lng: -102.34, bbox: { south: 43.6, west: -102.8, north: 44.1, east: -101.9 } },
+      { id: 'black-hills-nf', name: 'Black Hills National Forest', lat: 44.00, lng: -103.75, bbox: { south: 43.5, west: -104.2, north: 44.5, east: -103.3 } },
+      { id: 'wind-cave-custer', name: 'Wind Cave NP / Custer SP', lat: 43.60, lng: -103.48, bbox: { south: 43.4, west: -103.8, north: 43.8, east: -103.2 } },
+    ],
+  },
+  AR: {
+    stateCode: 'AR',
+    stateName: 'Arkansas',
+    areas: [
+      { id: 'hot-springs-np', name: 'Hot Springs National Park', lat: 34.52, lng: -93.04, bbox: { south: 34.3, west: -93.3, north: 34.7, east: -92.8 } },
+      { id: 'ozark-nf', name: 'Ozark National Forest', lat: 35.70, lng: -93.30, bbox: { south: 35.4, west: -93.7, north: 36.0, east: -92.9 } },
+      { id: 'buffalo-river', name: 'Buffalo National River', lat: 36.03, lng: -92.90, bbox: { south: 35.8, west: -93.3, north: 36.3, east: -92.5 } },
+      { id: 'devils-den-area', name: "Devil's Den / NW Arkansas", lat: 35.78, lng: -94.24, bbox: { south: 35.5, west: -94.5, north: 36.0, east: -94.0 } },
+    ],
+  },
+  IN: {
+    stateCode: 'IN',
+    stateName: 'Indiana',
+    areas: [
+      { id: 'indiana-dunes-np', name: 'Indiana Dunes National Park', lat: 41.65, lng: -87.05, bbox: { south: 41.5, west: -87.3, north: 41.8, east: -86.8 } },
+      { id: 'hoosier-nf', name: 'Hoosier National Forest', lat: 38.50, lng: -86.50, bbox: { south: 38.2, west: -86.8, north: 38.8, east: -86.2 } },
+      { id: 'brown-county-area', name: 'Brown County / Turkey Run', lat: 39.15, lng: -86.23, bbox: { south: 38.9, west: -86.5, north: 39.4, east: -86.0 } },
+    ],
+  },
+  MO: {
+    stateCode: 'MO',
+    stateName: 'Missouri',
+    areas: [
+      { id: 'mark-twain-nf', name: 'Mark Twain National Forest', lat: 37.50, lng: -91.50, bbox: { south: 37.2, west: -91.8, north: 37.8, east: -91.2 } },
+      { id: 'ozark-riverways', name: 'Ozark National Scenic Riverways', lat: 37.15, lng: -91.35, bbox: { south: 36.9, west: -91.7, north: 37.4, east: -91.0 } },
+      { id: 'st-louis-area', name: 'Gateway Arch / St Louis Area', lat: 38.62, lng: -90.18, bbox: { south: 38.4, west: -90.5, north: 38.8, east: -89.9 } },
+    ],
+  },
+  ND: {
+    stateCode: 'ND',
+    stateName: 'North Dakota',
+    areas: [
+      { id: 'theodore-roosevelt-south', name: 'Theodore Roosevelt NP South', lat: 46.98, lng: -103.54, bbox: { south: 46.7, west: -103.9, north: 47.2, east: -103.2 } },
+      { id: 'theodore-roosevelt-north', name: 'Theodore Roosevelt NP North', lat: 47.59, lng: -103.39, bbox: { south: 47.4, west: -103.7, north: 47.8, east: -103.1 } },
+      { id: 'maah-daah-hey', name: 'Maah Daah Hey Trail', lat: 47.20, lng: -103.40, bbox: { south: 46.8, west: -103.8, north: 47.6, east: -103.0 } },
+    ],
+  },
 };
 
 // ============================================================================

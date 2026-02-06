@@ -713,7 +713,7 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`TripAgent API running on http://localhost:${PORT}`);
   console.log(`Endpoints:`);
   console.log(`   GET  /health`);

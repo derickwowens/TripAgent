@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # TripAgent - Restart iOS App Script
-# Uses dedicated ports so it can run in parallel with restart-android.sh
-#   API: port 3002 | Metro: port 8082
+# Runs independently (not parallel with Android)
+#   API: port 3001 | Metro: port 8081
 # Usage: ./restart-ios.sh [device_name] [--fresh]
 #   --fresh: Uninstall app from simulator for completely fresh start
 
@@ -15,8 +15,8 @@ APP_BUNDLE_ID="com.tripagent.app"
 PID_FILE="/tmp/tripagent-ios.pids"
 API_LOG="/tmp/tripagent-ios-api.log"
 EXPO_LOG="/tmp/tripagent-ios-expo.log"
-API_PORT=3002
-METRO_PORT=8082
+API_PORT=3001
+METRO_PORT=8081
 
 # Get local IP for Expo URL
 LOCAL_IP=$(ipconfig getifaddr en0 2>/dev/null || echo "127.0.0.1")
@@ -144,12 +144,17 @@ if ! curl -s "http://localhost:$API_PORT/health" > /dev/null 2>&1; then
     exit 1
 fi
 
-# Start Expo with dedicated Metro port, API URL, and iOS flag
+# Start Expo with dedicated Metro port and iOS flag
 echo ""
 echo "📱 Starting Expo (Metro port $METRO_PORT)..."
 cd "$MOBILE_DIR"
 
-EXPO_PUBLIC_API_URL="http://$LOCAL_IP:$API_PORT" npx expo start --port $METRO_PORT --clear --ios > "$EXPO_LOG" 2>&1 &
+# Set API URL in .env.development for iOS simulator (localhost works directly)
+echo "# Development environment variables" > .env.development
+echo "EXPO_PUBLIC_API_URL=http://localhost:$API_PORT" >> .env.development
+echo "   API URL set to: http://localhost:$API_PORT"
+
+npx expo start --port $METRO_PORT --clear --ios > "$EXPO_LOG" 2>&1 &
 EXPO_PID=$!
 echo "$EXPO_PID" >> "$PID_FILE"
 echo "   Expo PID: $EXPO_PID"

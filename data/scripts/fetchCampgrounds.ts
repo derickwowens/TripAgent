@@ -76,6 +76,13 @@ const STATE_CENTERS: Record<string, { lat: number; lng: number; name: string }> 
   MA: { lat: 42.3, lng: -72.0, name: 'Massachusetts' },
   MD: { lat: 39.3, lng: -77.0, name: 'Maryland' },
   NV: { lat: 39.0, lng: -117.0, name: 'Nevada' },
+  SD: { lat: 43.8, lng: -100.0, name: 'South Dakota' },
+  AR: { lat: 34.7, lng: -92.3, name: 'Arkansas' },
+  IN: { lat: 41.6, lng: -87.0, name: 'Indiana' },
+  MO: { lat: 38.6, lng: -90.2, name: 'Missouri' },
+  ND: { lat: 47.0, lng: -103.5, name: 'North Dakota' },
+  AK: { lat: 63.3, lng: -150.5, name: 'Alaska' },
+  HI: { lat: 20.7, lng: -156.3, name: 'Hawaii' },
 };
 
 function generateGoogleMapsUrl(name: string, lat: number, lng: number): string {
