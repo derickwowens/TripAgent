@@ -2,27 +2,61 @@
 
 **AI-Powered Park Trip Planner for National and State Parks**
 
-TripAgent (published as "Adventure Agent" on the App Store) is a mobile app and API that helps you plan amazing park adventures. Chat naturally with our AI assistant to get real-time flight pricing, lodging options, hiking trail recommendations, campground availability, and complete budget breakdowns.
+TripAgent (published as **Adventure Agent** on the App Store) is a mobile app and API that helps you plan amazing park adventures. Chat naturally with our AI assistant to get real-time flight pricing, lodging options, hiking trail recommendations, campground availability, and complete budget breakdowns -- all powered by 29 AI tools and a curated database spanning 31 states.
 
 ![Platform](https://img.shields.io/badge/Platform-iOS%20%7C%20Android-green)
 ![AI](https://img.shields.io/badge/AI-Claude%20AI-blue)
 ![NPS](https://img.shields.io/badge/Data-NPS%20API-green)
+![States](https://img.shields.io/badge/State%20Parks-31%20States-orange)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
+
+## Data at a Glance
+
+| Category | Count | Source |
+|----------|-------|--------|
+| National Parks | 63 | NPS API |
+| State Park States | 31 | Multi-source aggregation |
+| AI Tools | 29 | Claude tool system |
+| Data Sources | 7+ | NPS, USFS, OSM, Recreation.gov, TrailAPI, AllTrails, state GIS |
+| Background Images | 20 | High-res nature photography |
+
+### State Park Data Coverage (31 States)
+
+| Tier | States |
+|------|--------|
+| **Original 10** | WI, FL, CA, TX, CO, OR, AZ, UT, WA, MI |
+| **Appalachia 6** | NC, VA, TN, WV, KY, GA |
+| **Tier 1** | NY, PA, MN |
+| **Tier 2** | SC, NM, ID, MT |
+| **Tier 3** | NH, ME, WY, OH, IL, MA, MD, NV |
+
+Each state includes park metadata, trail data (with coordinates, difficulty, distance), campground data (from Recreation.gov), and AllTrails search URLs.
 
 ## Features
 
 ### Mobile App (iOS and Android)
-- **AI Chat Interface** - Natural conversation with Claude AI
-- **Dual Park Modes** - Switch between National Parks and State Parks
-- **Smart Onboarding** - Personalized profile with travel preferences
-- **Photo Gallery** - Beautiful park and campground photos
-- **Multi-Airport Comparison** - See 3-5 nearby airports with prices
+- **AI Chat Interface** - Natural conversation with Claude AI (Haiku for speed)
+- **Dual Park Modes** - Switch between National Parks (green theme) and State Parks (brown theme)
+- **Adventure Map** - Interactive trail/park/campground map with viewport-based rendering and background caching
+- **Smart Onboarding** - Personalized profile with travel preferences, dietary needs, and activity interests
+- **Photo Gallery** - Dynamic park photos from NPS, Unsplash, and Yelp/Google
+- **Multi-Airport Comparison** - See 3-5 nearby airports with real-time prices
 - **Budget Breakdown** - Complete trip cost estimates
-- **Saved Conversations** - Return to previous trip plans
+- **Saved Conversations** - Return to previous trip plans with per-conversation backgrounds
 - **Context-Aware** - Remembers preferences, handles overrides naturally
 - **Dark Mode** - Full dark mode support with themed UI
 
-### Travel Tools (20+ AI-Powered Tools)
+### Adventure Map
+- **Real-time map overlay** - Slides in when a park or state is detected in conversation
+- **Trail markers** - Color-coded by difficulty (easy/moderate/hard/expert)
+- **Park markers** - National and state parks shown as blue dots
+- **Campground markers** - Tent icons for campgrounds
+- **Trail Lines** - Toggle polyline trail routes (geometry fetched lazily)
+- **Background caching** - Map data pre-loaded on app startup and destination detection
+- **Viewport rendering** - Only renders markers visible in the current map region
+- **Cross-platform** - Works on both iOS and Android with platform-specific optimizations
+
+### Travel Tools (29 AI-Powered Tools)
 
 **National Parks**
 - **Park Search** - All 63 US National Parks with NPS data
@@ -32,34 +66,43 @@ TripAgent (published as "Adventure Agent" on the App Store) is a mobile app and 
 - **Wildlife** - iNaturalist observations with photos
 
 **State Parks**
-- **State Park Search** - Parks across all 50 states
-- **Park Details** - Acreage, access, and facilities
-- **Campground Search** - Recreation.gov and state park data
-- **Trail Information** - Curated trail database for WI and FL
+- **State Park Search** - Parks across 31 states from S3 database
+- **Park Details** - Acreage, access, facilities, and official URLs
+- **Campground Search** - Recreation.gov RIDB integration
+- **Trail Database** - Thousands of trails with coordinates, difficulty, distance, and AllTrails links
 
 **Travel Planning**
 - **Flight Search** - Real prices from Amadeus (400+ airlines)
 - **Hotel/Lodging Search** - Hotels, lodges, and nearby accommodations
 - **Car Rentals** - With EV/Tesla preference support
-- **Restaurant Search** - Yelp + Google Places with photos
+- **Restaurant Search** - Yelp + Google Places with photos and reservation links
 - **Driving Distance** - Google Maps integration with accurate times
 - **EV Charging** - Tesla Supercharger + PlugShare integration
 - **Weather** - Forecast for trip planning
 - **Activities** - Tours and experiences near parks
+- **Destination Photos** - NPS + Unsplash scenic imagery
+- **Park Database Lookup** - Direct S3 data queries for instant results
 
 ### Smart Context System
-- **Profile Preferences** - Budget, family size, accessibility, EV ownership
+- **Profile Preferences** - Budget, family size, accessibility, EV ownership, foodie preferences, coffee, books, history
 - **Dynamic Overrides** - "Actually, make it 4 travelers" works naturally
 - **Multi-Leg Trips** - "Fly into SFO, return from LAX" supported
 - **Location-Based Suggestions** - Auto-suggests parks near user's location
 - **Travel Date Integration** - Booking links prefilled with dates
 
-### Data Sources
-- **NPS API** - Official National Park Service data and trail information
-- **Recreation.gov** - Campground availability and reservations
-- **S3 Park Database** - Curated data for 550+ parks (474 NPS sites + 76+ state parks)
-- **iNaturalist** - Wildlife observations and photos
-- **TrailAPI** - State park trail data (Wisconsin, Florida)
+### Data Pipeline (5 Sources)
+
+| Source | Data | Coverage |
+|--------|------|----------|
+| **NPS API** | Official National Park Service data, trails, alerts | 63 national parks |
+| **USFS ArcGIS** | US Forest Service trail network with geometry | Federal trails |
+| **OpenStreetMap** | Trail paths via Overpass API with full geometry | Global |
+| **Recreation.gov** | Campground availability, reservations, facilities | National |
+| **TrailAPI** | State park trails by coordinates | Per-state |
+| **AllTrails** | Search URL enrichment for trail discovery | All trails |
+| **iNaturalist** | Wildlife observations and species photos | Per-park |
+
+All data is aggregated, normalized to a unified schema (`data/schema/park.schema.ts`), and stored in S3 (`tripagent-park-data`).
 
 ## Architecture
 
@@ -117,29 +160,33 @@ RECREATION_GOV_API_KEY=your_recreation_gov_key
 
 ### Run the App
 
+Both platforms can run simultaneously with isolated ports:
+
 ```bash
-# iOS (recommended for development)
+# iOS (API: 3002, Metro: 8082)
 ./scripts/restart-ios.sh
 
-# Android
+# Android (API: 3001, Metro: 8081)
 ./scripts/restart-android.sh
 
-# Or run separately:
-npm run api              # Start API server on :3000
-cd mobile && npm start   # Start Expo
+# Run both in parallel (separate terminals)
+./scripts/restart-android.sh   # Terminal 1
+./scripts/restart-ios.sh       # Terminal 2
 ```
+
+Ctrl+C in either terminal only stops that platform's processes.
 
 ## Development Scripts
 
 ### Convenience Scripts
 
 ```bash
-# iOS development (starts API, Expo, and iOS simulator)
+# iOS development (starts API on :3002, Expo on :8082, and iOS simulator)
 ./scripts/restart-ios.sh
 ./scripts/restart-ios.sh "iPhone 15 Pro Max"  # Specific device
-./scripts/restart-ios.sh --fresh               # Fresh install
+./scripts/restart-ios.sh --fresh               # Fresh install (clears app data)
 
-# Android development
+# Android development (starts API on :3001, Expo on :8081, and Android emulator)
 ./scripts/restart-android.sh
 
 # Take screenshots for App Store
@@ -262,38 +309,73 @@ Sign up at [rapidapi.com/trailapi](https://rapidapi.com/trailapi/api/trailapi) -
 TripAgent/
 ├── mobile/                      # React Native + Expo app
 │   ├── src/
-│   │   ├── screens/             # HomeScreen (main chat UI)
-│   │   ├── components/home/     # OnboardingFlow, ChatMessages, PhotoGallery, SideMenu
-│   │   ├── services/            # API client
-│   │   ├── hooks/               # useUserProfile, useConversations, useParkTheme
-│   │   └── data/                # nationalParks.ts, stateParks.ts
-│   ├── assets/                  # App icons
-│   └── app.json                 # Expo config
+│   │   ├── screens/
+│   │   │   └── HomeScreen.tsx   # Main chat UI, photo gallery, Adventure Map integration
+│   │   ├── components/home/
+│   │   │   ├── TrailMapPanel.tsx # Adventure Map (map overlay + trail/park/campground markers)
+│   │   │   ├── WelcomeScreen.tsx # Quick Start screen with park mode selector
+│   │   │   ├── OnboardingFlow.tsx # Smart onboarding with travel preferences
+│   │   │   ├── ChatMessages.tsx  # Message display with loading states
+│   │   │   ├── ChatInput.tsx     # Text input with speech recognition
+│   │   │   ├── PhotoGallery.tsx  # Draggable photo gallery overlay
+│   │   │   ├── SideMenu.tsx      # Conversation list + settings
+│   │   │   └── CollapsibleBottomPanel.tsx # Trip info panel
+│   │   ├── services/
+│   │   │   └── api.ts           # API client (chat, trails, parks, campgrounds, geometry)
+│   │   ├── hooks/
+│   │   │   ├── useTrailMap.ts   # Adventure Map hook + module-level cache + preloadMapData
+│   │   │   ├── useConversations.ts # Conversation persistence
+│   │   │   ├── useUserProfile.ts   # Profile management
+│   │   │   ├── useParkTheme.ts     # National/State park theming
+│   │   │   ├── useToolSettings.ts  # Tool toggle management
+│   │   │   └── useLocation.ts      # GPS + nearest airport detection
+│   │   └── data/
+│   │       └── nationalParks.ts # 63 national parks with gateway cities + coordinates
+│   ├── assets/
+│   │   └── backgrounds/         # 20 bundled nature background images
+│   └── app.json                 # Expo config (version, bundle ID, API keys)
 ├── src/
 │   ├── api/
-│   │   ├── server.ts            # Express API endpoints
-│   │   └── chat/                # Claude AI integration
-│   │       ├── index.ts         # Main handler, tool dispatch (20+ tools)
-│   │       ├── types.ts         # ChatContext, TripLeg, resolveContextValue
-│   │       ├── systemPrompt.ts  # System prompt with park mode context
-│   │       ├── toolDefinitions.ts # AI tools with park codes
+│   │   ├── server.ts            # Express API (29 endpoints, async chat with polling)
+│   │   └── chat/
+│   │       ├── index.ts         # Main handler, tool dispatch (29 tools)
+│   │       ├── types.ts         # ChatContext, TripLeg, TOOL_DISPLAY_NAMES
+│   │       ├── systemPrompt.ts  # System prompt with NPS data injection
+│   │       ├── toolDefinitions.ts # Claude tool schemas with park codes
+│   │       ├── toolHandlers/    # Modular tool handlers (parks, travel, food, lodging)
 │   │       └── parkFeatures.ts  # Park-specific photo keywords
 │   ├── providers/
-│   │   ├── parks/               # S3ParkDataService, StateParkService
-│   │   ├── trails/              # NPSTrailAdapter, TrailAPIAdapter
-│   │   ├── NationalParksAdapter.ts
-│   │   ├── YelpAdapter.ts
-│   │   ├── GoogleMapsAdapter.ts
-│   │   └── OpenChargeMapAdapter.ts
+│   │   ├── parks/
+│   │   │   ├── S3ParkDataService.ts  # S3 data layer (getTrailsForMap, getParksInState)
+│   │   │   └── StateParkService.ts   # State park search
+│   │   ├── flights/             # Amadeus + Kiwi flight adapters
+│   │   ├── hotels/              # Amadeus hotel adapter
+│   │   ├── recreation/          # Recreation.gov campground adapter
+│   │   ├── wildlife/            # iNaturalist adapter
+│   │   ├── YelpAdapter.ts       # Restaurant search + reservation links
+│   │   ├── GoogleMapsAdapter.ts # Driving distance, restaurant fallback
+│   │   └── OpenChargeMapAdapter.ts # EV charging stations
 │   ├── domain/facade/           # TravelFacade orchestration
-│   ├── mcp/                     # MCP server (Claude Desktop)
+│   ├── mcp/                     # MCP server (Claude Desktop integration)
 │   └── cli/                     # Command-line interface
 ├── data/
-│   ├── scripts/                 # Data sync and upload scripts
-│   └── sources/                 # Trail and park data sources
-├── scripts/                     # Dev scripts (restart-ios.sh, build-ios.sh, etc.)
+│   ├── schema/                  # park.schema.ts - unified data schema
+│   ├── scripts/                 # Data pipeline scripts
+│   │   ├── fetchStateTrails.ts  # TrailAPI fetcher with park coordinates
+│   │   ├── fetchUSFSAndOSMTrails.ts # USFS ArcGIS + OSM Overpass fetcher
+│   │   ├── fetchCampgrounds.ts  # Recreation.gov RIDB campground fetcher
+│   │   └── enrichAllTrailsUrls.ts # AllTrails search URL enrichment
+│   ├── sync/                    # State data sync orchestrator
+│   │   └── config.ts            # PRIORITY_STATES (31 states)
+│   └── sources/states/          # 31 state metadata JSON files
+├── scripts/
+│   ├── restart-ios.sh           # iOS dev (API:3002, Metro:8082)
+│   ├── restart-android.sh       # Android dev (API:3001, Metro:8081)
+│   ├── deploy-ios.sh            # iOS production build + submit
+│   ├── deploy-android.sh        # Android production build + submit
+│   └── deploy-all.sh            # Both platforms
 ├── screenshots/                 # Versioned App Store screenshots
-└── .copilot-instructions.md     # AI assistant rules
+└── .copilot-instructions.md     # AI assistant rules + architecture docs
 ```
 
 ## Architecture Principles

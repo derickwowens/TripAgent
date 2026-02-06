@@ -21,7 +21,7 @@ import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, Collaps
 import type { ParkMode as ParkModeType } from '../hooks';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
-import { useTrailMap } from '../hooks/useTrailMap';
+import { useTrailMap, preloadMapData } from '../hooks/useTrailMap';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
@@ -50,16 +50,12 @@ const DEFAULT_BACKGROUNDS = [
   require('../../assets/backgrounds/bg-20-peaks.jpg'),
 ];
 
-// Get a random background for new conversations
-const getRandomBackground = () => DEFAULT_BACKGROUNDS[Math.floor(Math.random() * DEFAULT_BACKGROUNDS.length)];
-
 const HomeScreen: React.FC = () => {
   const insets = useSafeAreaInsets();
   const [inputText, setInputText] = useState('');
   const [menuOpen, setMenuOpen] = useState(false);
   const [editingTitle, setEditingTitle] = useState(false);
   const [tempTitle, setTempTitle] = useState('');
-  const [defaultBackground] = useState(() => getRandomBackground()); // Random bg per session
   const [showPhotoGallery, setShowPhotoGallery] = useState(true);
   const [parkMode, setParkMode] = useState<ParkMode>('national');
   const scrollViewRef = useRef<ScrollView>(null);
@@ -104,7 +100,21 @@ const HomeScreen: React.FC = () => {
     addMessagesToConversation,
     ensureConversationId,
   } = useConversations(userLocation?.nearestAirport, parkMode, userLocation?.state);
-  
+
+  // Pick a different background per conversation based on conversation ID
+  // When no conversation exists yet, pick a random one for the welcome screen
+  const defaultBackground = useMemo(() => {
+    if (!currentConversationId) {
+      return DEFAULT_BACKGROUNDS[Math.floor(Math.random() * DEFAULT_BACKGROUNDS.length)];
+    }
+    let hash = 0;
+    for (let i = 0; i < currentConversationId.length; i++) {
+      hash = ((hash << 5) - hash) + currentConversationId.charCodeAt(i);
+      hash |= 0;
+    }
+    return DEFAULT_BACKGROUNDS[Math.abs(hash) % DEFAULT_BACKGROUNDS.length];
+  }, [currentConversationId]);
+
   // Derived loading state for current conversation
   const currentLoadingState = conversationLoadingState.get(currentConversationId) || { loading: false, status: '' };
   const isLoading = currentLoadingState.loading;
@@ -166,13 +176,22 @@ const HomeScreen: React.FC = () => {
   // Trail map overlay - detects parks in conversation and shows trail data
   const trailMap = useTrailMap();
 
+  // Pre-load map data for user's state in the background on app startup
+  useEffect(() => {
+    if (userLocation?.state) {
+      preloadMapData(userLocation.state);
+    }
+  }, [userLocation?.state]);
+
   // Initialize trail map when conversation changes or messages update
   // Uses conversation metadata (destination) first, then scans messages as fallback
+  // Only scan after the assistant finishes responding to avoid premature toaster display
   useEffect(() => {
+    if (isLoading) return;
     const currentConv = savedConversations.find(c => c.id === currentConversationId);
     const metadata = currentConv?.metadata || null;
     trailMap.initFromConversation(metadata, messages);
-  }, [currentConversationId, messages]);
+  }, [currentConversationId, messages, isLoading]);
 
   // Fetch nearby state parks when in state mode for Quick Start prefills
   useEffect(() => {
@@ -1003,13 +1022,12 @@ const HomeScreen: React.FC = () => {
           </ScrollView>
 
                     
-          <View pointerEvents="box-none">
-            <TrailMapTab
-              visible={trailMap.visible}
-              panelOpen={trailMap.panelOpen}
-              onTogglePanel={trailMap.togglePanel}
-            />
-            <ChatInput
+          <TrailMapTab
+            visible={trailMap.visible}
+            panelOpen={trailMap.panelOpen}
+            onTogglePanel={trailMap.togglePanel}
+          />
+          <ChatInput
               inputText={inputText}
               onChangeText={setInputText}
               onSend={handleSend}
@@ -1018,7 +1036,6 @@ const HomeScreen: React.FC = () => {
               galleryOpen={showPhotoGallery}
               onOpenGallery={() => setShowPhotoGallery(true)}
             />
-          </View>
           </DraggableConversationPanel>
           
           {messages.length > 0 && allPhotos.length > 0 && showPhotoGallery && (
@@ -1090,6 +1107,7 @@ const HomeScreen: React.FC = () => {
           onTogglePanel={trailMap.togglePanel}
           onClose={trailMap.closePanel}
           onFetchTrails={trailMap.fetchTrails}
+          onFetchGeometry={trailMap.fetchGeometry}
           onPlanAdventure={handlePlanAdventure}
         />
         </View>

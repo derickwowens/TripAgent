@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # TripAgent - Restart iOS App Script
-# Comprehensive restart with cache clearing and proper initialization
+# Uses dedicated ports so it can run in parallel with restart-android.sh
+#   API: port 3002 | Metro: port 8082
 # Usage: ./restart-ios.sh [device_name] [--fresh]
 #   --fresh: Uninstall app from simulator for completely fresh start
 
@@ -11,6 +12,14 @@ PROJECT_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 MOBILE_DIR="$PROJECT_ROOT/mobile"
 SIMCTL="/Applications/Xcode.app/Contents/Developer/usr/bin/simctl"
 APP_BUNDLE_ID="com.tripagent.app"
+PID_FILE="/tmp/tripagent-ios.pids"
+API_LOG="/tmp/tripagent-ios-api.log"
+EXPO_LOG="/tmp/tripagent-ios-expo.log"
+API_PORT=3002
+METRO_PORT=8082
+
+# Get local IP for Expo URL
+LOCAL_IP=$(ipconfig getifaddr en0 2>/dev/null || echo "127.0.0.1")
 
 # Parse arguments
 DEVICE="iPhone 15 Pro Max"
@@ -26,36 +35,37 @@ done
 
 echo "🔄 Restarting TripAgent (iOS)..."
 echo "=============================="
+echo "   API port: $API_PORT | Metro port: $METRO_PORT"
 if [ "$FRESH_INSTALL" = true ]; then
     echo "🆕 Fresh install mode enabled"
 fi
 
+# Stop only our own previous processes via PID file
+stop_own_processes() {
+    if [ -f "$PID_FILE" ]; then
+        while IFS= read -r pid; do
+            kill "$pid" 2>/dev/null || true
+        done < "$PID_FILE"
+        rm -f "$PID_FILE"
+    fi
+    # Also free our specific ports in case PIDs are stale
+    lsof -ti:$API_PORT | xargs kill -9 2>/dev/null || true
+    lsof -ti:$METRO_PORT | xargs kill -9 2>/dev/null || true
+}
+
 # Cleanup on exit
 cleanup() {
     echo ""
-    echo "🛑 Shutting down..."
-    pkill -f "tsx src/api/server.ts" 2>/dev/null || true
-    pkill -f "expo start" 2>/dev/null || true
+    echo "🛑 Shutting down iOS..."
+    stop_own_processes
     exit 0
 }
 trap cleanup SIGINT SIGTERM
 
-# Kill existing processes
-echo "🛑 Stopping existing processes..."
-pkill -f "tsx src/api/server.ts" 2>/dev/null || true
-pkill -f "expo start" 2>/dev/null || true
-pkill -f "@expo/metro-runtime" 2>/dev/null || true
-pkill -f "node.*metro" 2>/dev/null || true
-pkill -f "react-native" 2>/dev/null || true
-
-# Kill ports (including common Expo ports)
-echo "🔌 Freeing up ports..."
-lsof -ti:8081 | xargs kill -9 2>/dev/null || true
-lsof -ti:8082 | xargs kill -9 2>/dev/null || true
-lsof -ti:3000 | xargs kill -9 2>/dev/null || true
-lsof -ti:19000 | xargs kill -9 2>/dev/null || true
-lsof -ti:19001 | xargs kill -9 2>/dev/null || true
-sleep 2
+# Stop previous iOS session
+echo "🛑 Stopping previous iOS session..."
+stop_own_processes
+sleep 1
 
 echo ""
 echo "📱 Using simulator: $DEVICE"
@@ -67,13 +77,11 @@ if [ ! -f "$SIMCTL" ]; then
     exit 1
 fi
 
-# Shutdown all running simulators
+# Boot the specified simulator (don't shutdown all - Android might be running)
 echo ""
-echo "📱 Shutting down running simulators..."
-$SIMCTL shutdown all 2>/dev/null || true
-
-# Boot the specified simulator
 echo "📱 Booting $DEVICE..."
+# Shutdown only iOS simulators that are already booted, not Android
+$SIMCTL shutdown "$DEVICE" 2>/dev/null || true
 $SIMCTL boot "$DEVICE" 2>/dev/null || {
     echo "⚠️  Could not boot '$DEVICE'. Available devices:"
     $SIMCTL list devices available | grep -E "iPhone|iPad"
@@ -102,90 +110,69 @@ if [ "$FRESH_INSTALL" = true ]; then
     echo "✅ App uninstalled (if it existed)"
 fi
 
-# Clear local metro cache (thorough)
+# Clear local metro cache
 echo ""
 echo "🧹 Clearing Metro bundler cache..."
 cd "$MOBILE_DIR"
 rm -rf node_modules/.cache 2>/dev/null || true
 rm -rf .expo 2>/dev/null || true
-rm -rf "$TMPDIR/metro-*" 2>/dev/null || true
-rm -rf "$TMPDIR/haste-map-*" 2>/dev/null || true
-rm -rf "$TMPDIR/react-*" 2>/dev/null || true
-rm -rf "$TMPDIR/expo-*" 2>/dev/null || true
-rm -rf "$TMPDIR/hermes-*" 2>/dev/null || true
 
-# Clear watchman
-echo "🧹 Clearing Watchman cache..."
-watchman watch-del-all 2>/dev/null || true
-
-# Clear React Native cache
-echo "🧹 Clearing React Native cache..."
-rm -rf ~/Library/Developer/Xcode/DerivedData/*TripAgent* 2>/dev/null || true
-rm -rf ~/Library/Caches/com.facebook.ReactNativeBuild 2>/dev/null || true
-
-# Start API server
+# Start API server on dedicated port
 echo ""
-echo "📡 Starting API server..."
+echo "📡 Starting API server on port $API_PORT..."
 cd "$PROJECT_ROOT"
-npm run api > /tmp/tripagent-api.log 2>&1 &
+PORT=$API_PORT npx tsx src/api/server.ts > "$API_LOG" 2>&1 &
 API_PID=$!
+echo "$API_PID" > "$PID_FILE"
 echo "   API PID: $API_PID"
-echo "   Log: /tmp/tripagent-api.log"
+echo "   Log: $API_LOG"
 
 # Wait for API to be ready
 echo "   Waiting for API..."
-for i in {1..10}; do
-    if curl -s http://localhost:3000/health > /dev/null 2>&1; then
-        echo "✅ API running at http://localhost:3000"
+for i in {1..15}; do
+    if curl -s "http://localhost:$API_PORT/health" > /dev/null 2>&1; then
+        echo "✅ API running at http://localhost:$API_PORT"
         break
     fi
     sleep 1
 done
 
 # Verify API is actually running
-if ! curl -s http://localhost:3000/health > /dev/null 2>&1; then
-    echo "❌ API failed to start. Check /tmp/tripagent-api.log"
-    cat /tmp/tripagent-api.log | tail -20
+if ! curl -s "http://localhost:$API_PORT/health" > /dev/null 2>&1; then
+    echo "❌ API failed to start. Check $API_LOG"
+    tail -20 "$API_LOG"
     exit 1
 fi
 
-# Start Expo with clear cache and launch on iOS directly
+# Start Expo with dedicated Metro port, API URL, and iOS flag
 echo ""
-echo "📱 Starting Expo and launching on iOS simulator..."
+echo "📱 Starting Expo (Metro port $METRO_PORT)..."
 cd "$MOBILE_DIR"
 
-# Use --ios flag to automatically launch on simulator after bundler is ready
-# The --clear flag ensures fresh cache
-npx expo start --clear --ios 2>&1 | tee /tmp/tripagent-expo.log &
+EXPO_PUBLIC_API_URL="http://$LOCAL_IP:$API_PORT" npx expo start --port $METRO_PORT --clear --ios > "$EXPO_LOG" 2>&1 &
 EXPO_PID=$!
+echo "$EXPO_PID" >> "$PID_FILE"
 echo "   Expo PID: $EXPO_PID"
-echo "   Log: /tmp/tripagent-expo.log"
+echo "   Log: $EXPO_LOG"
 
 # Wait for Metro bundler to be ready
 echo "   Waiting for Metro bundler..."
-METRO_READY=false
 for i in {1..45}; do
-    if grep -q "Metro waiting" /tmp/tripagent-expo.log 2>/dev/null || \
-       grep -q "Starting Metro Bundler" /tmp/tripagent-expo.log 2>/dev/null || \
-       grep -q "Logs for your project" /tmp/tripagent-expo.log 2>/dev/null; then
+    if grep -q "Logs for your project" "$EXPO_LOG" 2>/dev/null || \
+       grep -q "Metro waiting" "$EXPO_LOG" 2>/dev/null || \
+       grep -q "Starting Metro Bundler" "$EXPO_LOG" 2>/dev/null; then
         echo "✅ Metro bundler ready"
-        METRO_READY=true
         break
     fi
     sleep 1
 done
 
-if [ "$METRO_READY" = false ]; then
-    echo "⚠️  Metro bundler may not have started properly"
-    echo "   Check /tmp/tripagent-expo.log for details"
-fi
-
 # Wait for bundle to complete (app launching on simulator)
 echo "🚀 Waiting for app to launch..."
 for i in {1..90}; do
-    if grep -q "Bundled" /tmp/tripagent-expo.log 2>/dev/null || \
-       grep -q "Opening on iOS" /tmp/tripagent-expo.log 2>/dev/null || \
-       grep -q "iOS Bundled" /tmp/tripagent-expo.log 2>/dev/null; then
+    if grep -q "Bundled" "$EXPO_LOG" 2>/dev/null || \
+       grep -q "Opening on iOS" "$EXPO_LOG" 2>/dev/null || \
+       grep -q "iOS Bundled" "$EXPO_LOG" 2>/dev/null; then
         echo "✅ App launched!"
         break
     fi
@@ -197,20 +184,16 @@ echo "=============================="
 echo "✅ TripAgent is running on iOS!"
 echo ""
 echo "📱 Check the simulator for the app"
-echo "📡 API: http://localhost:3000"
+echo "📡 API: http://localhost:$API_PORT"
+echo "� Metro: http://localhost:$METRO_PORT"
+echo "🌐 Local IP: $LOCAL_IP"
 echo ""
-echo "📋 Logs:"
-echo "   API:   tail -f /tmp/tripagent-api.log"
-echo "   Expo:  tail -f /tmp/tripagent-expo.log"
-echo ""
-echo "🔄 Usage examples:"
-echo "   ./scripts/restart-ios.sh                           # Default device"
-echo "   ./scripts/restart-ios.sh \"iPhone 15 Pro Max\"       # Specific device"
-echo "   ./scripts/restart-ios.sh --fresh                   # Fresh install (clears app data)"
-echo "   ./scripts/restart-ios.sh \"iPad Pro\" --fresh        # Both options"
+echo "� Logs:"
+echo "   API:   tail -f $API_LOG"
+echo "   Expo:  tail -f $EXPO_LOG"
 echo ""
 echo "Press Ctrl+C to stop all services"
 echo ""
 
 # Keep script running and tail expo logs
-tail -f /tmp/tripagent-expo.log
+tail -f "$EXPO_LOG"

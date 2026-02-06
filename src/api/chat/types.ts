@@ -187,4 +187,7 @@ export const TOOL_DISPLAY_NAMES: Record<string, string> = {
   'search_attractions': 'Discovering local attractions...',
   'get_destination_photos': 'Loading photos of your destination...',
   'refresh_photos': 'Refreshing destination photos...',
+  // Internal status markers (not real tools)
+  '__thinking__': 'Thinking...',
+  '__analyzing__': 'Analyzing your results...',
 };

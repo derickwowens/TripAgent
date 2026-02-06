@@ -102,6 +102,7 @@ export async function createChatHandler(facade: TravelFacade) {
     try {
       // Initial API call
       const client = getAnthropicClient();
+      if (onToolStatus) onToolStatus('__thinking__', 'starting');
       let response = await client.messages.create({
         model: selectedModel,
         max_tokens: 8192,
@@ -183,6 +184,7 @@ export async function createChatHandler(facade: TravelFacade) {
           content: toolResults,
         });
 
+        if (onToolStatus) onToolStatus('__analyzing__', 'starting');
         response = await client.messages.create({
           model: selectedModel,
           max_tokens: 8192,

@@ -619,7 +619,7 @@ export class S3ParkDataService {
    * Get raw trail data for map rendering (trails with coordinates)
    * Returns all trails with valid trailhead coordinates for a given state
    */
-  async getTrailsForMap(stateCode: string, parkId?: string): Promise<{
+  async getTrailsForMap(stateCode: string, parkId?: string, includeGeometry: boolean = false): Promise<{
     stateCode: string;
     totalTrails: number;
     trails: Array<{
@@ -659,7 +659,7 @@ export class S3ParkDataService {
           latitude: parseFloat(String(coords.latitude)), longitude: parseFloat(String(coords.longitude)),
           lengthMiles: trail.lengthMiles, difficulty: trail.difficulty, trailType: trail.trailType,
           googleMapsUrl: trail.googleMapsUrl, allTrailsUrl: (trail as any).allTrailsUrl,
-          geometry: (trail as any).geometry,
+          ...(includeGeometry ? { geometry: (trail as any).geometry } : {}),
         });
       }
     }

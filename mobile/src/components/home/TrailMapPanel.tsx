@@ -66,6 +66,7 @@ interface TrailMapPanelProps {
   onTogglePanel: () => void;
   onClose: () => void;
   onFetchTrails: () => void;
+  onFetchGeometry?: () => void;
   onPlanAdventure?: (parkName: string, parkState?: string, parkCategory?: string) => void;
 }
 
@@ -86,6 +87,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   onTogglePanel,
   onClose,
   onFetchTrails,
+  onFetchGeometry,
   onPlanAdventure,
 }) => {
   const insets = useSafeAreaInsets();
@@ -97,31 +99,47 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   const [selectedCampground, setSelectedCampground] = useState<CampgroundMapMarker | null>(null);
   const [showTrailLines, setShowTrailLines] = useState(false);
   const [mapRegion, setMapRegion] = useState<Region | null>(null);
+  const [androidMarkersReady, setAndroidMarkersReady] = useState(Platform.OS !== 'android');
 
-  const MAX_TRAILS_FOR_LINES = 10;
+  const MAX_TRAILS_FOR_LINES = 50;
 
   // Compute trails visible in the current map region
+  // Wait for mapRegion to be set before rendering any trail markers - prevents
+  // Android from choking on thousands of markers before viewport filtering kicks in
+  const MAX_VISIBLE_TRAIL_MARKERS = 300;
   const visibleTrails = useMemo(() => {
-    if (!mapRegion) return trails;
+    if (!mapRegion) return [];
     const { latitude, longitude, latitudeDelta, longitudeDelta } = mapRegion;
     const north = latitude + latitudeDelta / 2;
     const south = latitude - latitudeDelta / 2;
     const east = longitude + longitudeDelta / 2;
     const west = longitude - longitudeDelta / 2;
-    return trails.filter(t =>
+    const filtered = trails.filter(t =>
       t.latitude >= south && t.latitude <= north &&
       t.longitude >= west && t.longitude <= east
     );
+    return filtered.length > MAX_VISIBLE_TRAIL_MARKERS
+      ? filtered.slice(0, MAX_VISIBLE_TRAIL_MARKERS)
+      : filtered;
   }, [trails, mapRegion]);
 
-  const canShowTrailLines = visibleTrails.length <= MAX_TRAILS_FOR_LINES && visibleTrails.some(t => t.geometry && t.geometry.length >= 2);
+  const hasTrailsLoaded = trails.length > 0 && !loading;
+  const canRenderTrailLines = visibleTrails.length <= MAX_TRAILS_FOR_LINES;
 
-  // Auto-disable trail lines when too many trails become visible
+  // Auto-disable trail lines when too many trails become visible (performance guard)
   useEffect(() => {
-    if (showTrailLines && !canShowTrailLines) {
+    if (showTrailLines && !canRenderTrailLines) {
       setShowTrailLines(false);
     }
-  }, [canShowTrailLines, showTrailLines]);
+  }, [canRenderTrailLines, showTrailLines]);
+
+  // On Android, allow markers to render as bitmaps first, then disable tracking for touch events
+  useEffect(() => {
+    if (Platform.OS === 'android' && !androidMarkersReady && (trails.length > 0 || parks.length > 0 || campgrounds.length > 0)) {
+      const timer = setTimeout(() => setAndroidMarkersReady(true), 1500);
+      return () => clearTimeout(timer);
+    }
+  }, [trails.length, parks.length, campgrounds.length, androidMarkersReady]);
 
   const handleRegionChange = useCallback((region: Region) => {
     setMapRegion(region);
@@ -183,8 +201,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
         mapRef.current?.animateToRegion({
           latitude: parkLatitude,
           longitude: parkLongitude,
-          latitudeDelta: 0.5,
-          longitudeDelta: 0.5,
+          latitudeDelta: 1.5,
+          longitudeDelta: 1.5,
         }, 300);
       }, 300);
     } else if (userLatitude && userLongitude) {
@@ -225,8 +243,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   const initialRegion: Region = {
     latitude: parkLatitude || userLatitude || 39.8283,
     longitude: parkLongitude || userLongitude || -98.5795,
-    latitudeDelta: parkLatitude ? 0.5 : (userLatitude ? HALF_MILE_LAT_DELTA : 20),
-    longitudeDelta: parkLongitude ? 0.5 : (userLongitude ? HALF_MILE_LNG_DELTA : 20),
+    latitudeDelta: parkLatitude ? 1.5 : (userLatitude ? HALF_MILE_LAT_DELTA : 20),
+    longitudeDelta: parkLongitude ? 1.5 : (userLongitude ? HALF_MILE_LNG_DELTA : 20),
   };
 
   return (
@@ -274,17 +292,22 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
             </View>
             {Object.entries(DIFFICULTY_COLORS).slice(0, 4).map(([label, color]) => (
               <View key={label} style={styles.legendItem}>
-                <View style={[styles.legendDot, { backgroundColor: color }]} />
+                <View style={[styles.legendPin, { backgroundColor: color }]} />
                 <Text style={styles.legendText}>
                   {label.charAt(0).toUpperCase() + label.slice(1)}
                 </Text>
               </View>
             ))}
           </View>
-          {canShowTrailLines && (
+          {hasTrailsLoaded && (
             <TouchableOpacity
               style={styles.trailLinesToggle}
-              onPress={() => setShowTrailLines(prev => !prev)}
+              onPress={() => {
+                setShowTrailLines(prev => {
+                  if (!prev && onFetchGeometry) onFetchGeometry();
+                  return !prev;
+                });
+              }}
               activeOpacity={0.7}
             >
               <View style={[
@@ -300,12 +323,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
 
         {/* Map */}
         <View style={styles.mapContainer}>
-          {loading ? (
-            <View style={styles.loadingContainer}>
-              <ActivityIndicator size="large" color={theme.primary} />
-              <Text style={styles.loadingText}>Loading trails...</Text>
-            </View>
-          ) : error ? (
+          {error ? (
             <View style={styles.errorContainer}>
               <Text style={styles.errorText}>{error}</Text>
               <TouchableOpacity
@@ -324,6 +342,9 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               mapType="terrain"
               showsUserLocation={true}
               showsMyLocationButton={true}
+              scrollEnabled={!loading}
+              zoomEnabled={!loading}
+              rotateEnabled={!loading}
               onRegionChangeComplete={handleRegionChange}
             >
               {/* Park markers - bigger blue dots */}
@@ -335,11 +356,11 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     longitude: park.longitude,
                   }}
                   anchor={{ x: 0.5, y: 0.5 }}
-                  tracksViewChanges={false}
+                  tracksViewChanges={!androidMarkersReady}
                   onPress={() => selectPark(park)}
                 >
                   <View style={styles.parkMarker} collapsable={false}>
-                    <View style={styles.parkMarkerInner} collapsable={false} />
+                    <View style={styles.parkMarkerInner} />
                   </View>
                 </Marker>
               ))}
@@ -353,46 +374,70 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     longitude: cg.longitude,
                   }}
                   anchor={{ x: 0.5, y: 1.0 }}
-                  tracksViewChanges={false}
+                  tracksViewChanges={!androidMarkersReady}
                   onPress={() => selectCampground(cg)}
                 >
                   <View style={styles.tentMarker} collapsable={false}>
-                    <View style={styles.tentTop} collapsable={false} />
-                    <View style={styles.tentBase} collapsable={false} />
+                    <View style={styles.tentTop} />
+                    <View style={styles.tentBase} />
                   </View>
                 </Marker>
               ))}
 
-              {/* Trail trailhead markers */}
-              {trails.map((trail) => (
+              {/* Trail trailhead markers - colored dots with difficulty colors */}
+              {visibleTrails.map((trail, index) => (
                 <Marker
-                  key={trail.id}
+                  key={`trail-${trail.id}-${index}`}
                   coordinate={{
                     latitude: trail.latitude,
                     longitude: trail.longitude,
                   }}
                   anchor={{ x: 0.5, y: 0.5 }}
-                  tracksViewChanges={false}
+                  tracksViewChanges={Platform.OS === 'android'}
                   onPress={() => selectTrail(trail)}
                 >
-                  <View style={[styles.trailDot, { backgroundColor: getDifficultyColor(trail.difficulty) }]} collapsable={false} />
+                  <View style={[styles.trailPin, { backgroundColor: getDifficultyColor(trail.difficulty) }]} collapsable={false} />
                 </Marker>
               ))}
 
               {/* Trail polylines - only for visible trails when toggled on */}
-              {showTrailLines && canShowTrailLines && visibleTrails.map((trail) => {
+              {/* White border lines rendered first (underneath) */}
+              {showTrailLines && canRenderTrailLines && visibleTrails.map((trail) => {
+                if (!trail.geometry || trail.geometry.length < 2) return null;
+                return (
+                  <Polyline
+                    key={`border-${trail.id}`}
+                    coordinates={trail.geometry}
+                    strokeColor="#FFFFFF"
+                    strokeWidth={5}
+                    tappable={true}
+                    onPress={() => selectTrail(trail)}
+                  />
+                );
+              })}
+              {/* Red trail lines rendered on top */}
+              {showTrailLines && canRenderTrailLines && visibleTrails.map((trail) => {
                 if (!trail.geometry || trail.geometry.length < 2) return null;
                 return (
                   <Polyline
                     key={`line-${trail.id}`}
                     coordinates={trail.geometry}
-                    strokeColor={getDifficultyColor(trail.difficulty)}
-                    strokeWidth={2.5}
-                    lineDashPattern={undefined}
+                    strokeColor="#E53935"
+                    strokeWidth={3}
+                    tappable={true}
+                    onPress={() => selectTrail(trail)}
                   />
                 );
               })}
             </MapView>
+          )}
+
+          {/* Loading overlay - shown while map data is being fetched */}
+          {loading && (
+            <View style={styles.mapLoadingOverlay}>
+              <ActivityIndicator size="large" color={theme.primary} />
+              <Text style={styles.mapLoadingText}>Loading map data...</Text>
+            </View>
           )}
         </View>
 
@@ -689,9 +734,7 @@ export const TrailMapTab: React.FC<TrailMapTabProps> = ({ visible, panelOpen, on
 
 const styles = StyleSheet.create({
   tabContainer: {
-    position: 'absolute',
-    right: 0,
-    bottom: 56,
+    alignSelf: 'flex-end',
     zIndex: 100,
   },
   tab: {
@@ -928,12 +971,24 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 2,
     borderBottomRightRadius: 2,
   },
-  trailDot: {
+  trailPin: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    borderWidth: 2.5,
+    borderColor: '#FFFFFF',
+    elevation: 3,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.3,
+    shadowRadius: 2,
+  },
+  legendPin: {
     width: 10,
     height: 10,
     borderRadius: 5,
     borderWidth: 1.5,
-    borderColor: 'rgba(255, 255, 255, 0.8)',
+    borderColor: '#FFFFFF',
   },
   detailPanel: {
     paddingHorizontal: 16,
@@ -1108,5 +1163,18 @@ const styles = StyleSheet.create({
   footerText: {
     color: 'rgba(255, 255, 255, 0.35)',
     fontSize: 11,
+  },
+  mapLoadingOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 10,
+  },
+  mapLoadingText: {
+    color: '#FFFFFF',
+    fontSize: 14,
+    fontWeight: '500',
+    marginTop: 10,
   },
 });

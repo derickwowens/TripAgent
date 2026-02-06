@@ -333,6 +333,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
       visible={visible}
       animationType="slide"
       transparent={true}
+      statusBarTranslucent={true}
       onRequestClose={onClose}
     >
       <KeyboardAvoidingView 

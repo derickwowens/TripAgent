@@ -427,16 +427,13 @@ app.get('/api/state-parks/designations', asyncHandler(async (req: Request, res: 
 // ============================================
 app.get('/api/trails/map/:stateCode', asyncHandler(async (req: Request, res: Response) => {
   const { stateCode } = req.params;
-  const { parkId } = req.query;
+  const { parkId, includeGeometry } = req.query;
 
   const result = await s3ParkData.getTrailsForMap(
     stateCode.toUpperCase(),
-    parkId ? String(parkId) : undefined
+    parkId ? String(parkId) : undefined,
+    includeGeometry === 'true'
   );
-
-  if (result.totalTrails === 0) {
-    return res.status(404).json({ error: `No trail data found for state: ${stateCode}` });
-  }
 
   res.json(result);
 }));
@@ -563,7 +560,18 @@ app.post('/api/chat/start', asyncHandler(async (req: Request, res: Response) => 
           toolName: displayName, 
           timestamp: Date.now() 
         });
-        console.log(`[Chat] Request ${requestId} tool: ${displayName}`);
+        // Don't log internal status markers as tool calls
+        if (!toolName.startsWith('__')) {
+          console.log(`[Chat] Request ${requestId} tool: ${displayName}`);
+        }
+      } else if (status === 'complete') {
+        // After a tool finishes, briefly show transition status
+        // This gets overwritten quickly by the next tool's 'starting' or '__analyzing__'
+        activeRequestStatuses.set(requestId, { 
+          status: 'tool', 
+          toolName: 'Processing...', 
+          timestamp: Date.now() 
+        });
       }
     };
     

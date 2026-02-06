@@ -385,6 +385,18 @@ export const fetchTrailsForMap = async (stateCode: string, parkId?: string): Pro
   }
 };
 
+export const fetchTrailGeometry = async (stateCode: string, parkId?: string): Promise<TrailMapResponse> => {
+  try {
+    const params: Record<string, string> = { includeGeometry: 'true' };
+    if (parkId) params.parkId = parkId;
+    const response = await api.get(`/api/trails/map/${stateCode.toUpperCase()}`, { params });
+    return response.data;
+  } catch (error) {
+    console.error('Failed to fetch trail geometry:', error);
+    return { stateCode: stateCode.toUpperCase(), totalTrails: 0, trails: [] };
+  }
+};
+
 export interface ParkMapMarker {
   id: string;
   name: string;
