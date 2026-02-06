@@ -12,7 +12,7 @@ import {
   ScrollView,
   Switch,
 } from 'react-native';
-import MapView, { Marker, Polyline, Region } from 'react-native-maps';
+import MapView, { Marker, Polyline, Region, PROVIDER_GOOGLE } from 'react-native-maps';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useParkTheme } from '../../hooks/useParkTheme';
 import { TrailMapMarker, ParkMapMarker, CampgroundMapMarker } from '../../services/api';
@@ -319,6 +319,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
             <MapView
               ref={mapRef}
               style={styles.map}
+              provider={Platform.OS === 'android' ? PROVIDER_GOOGLE : undefined}
               initialRegion={initialRegion}
               mapType="terrain"
               showsUserLocation={true}
@@ -337,8 +338,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                   tracksViewChanges={false}
                   onPress={() => selectPark(park)}
                 >
-                  <View style={styles.parkMarker}>
-                    <View style={styles.parkMarkerInner} />
+                  <View style={styles.parkMarker} collapsable={false}>
+                    <View style={styles.parkMarkerInner} collapsable={false} />
                   </View>
                 </Marker>
               ))}
@@ -355,9 +356,9 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                   tracksViewChanges={false}
                   onPress={() => selectCampground(cg)}
                 >
-                  <View style={styles.tentMarker}>
-                    <View style={styles.tentTop} />
-                    <View style={styles.tentBase} />
+                  <View style={styles.tentMarker} collapsable={false}>
+                    <View style={styles.tentTop} collapsable={false} />
+                    <View style={styles.tentBase} collapsable={false} />
                   </View>
                 </Marker>
               ))}
@@ -374,7 +375,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                   tracksViewChanges={false}
                   onPress={() => selectTrail(trail)}
                 >
-                  <View style={[styles.trailDot, { backgroundColor: getDifficultyColor(trail.difficulty) }]} />
+                  <View style={[styles.trailDot, { backgroundColor: getDifficultyColor(trail.difficulty) }]} collapsable={false} />
                 </Marker>
               ))}
 
