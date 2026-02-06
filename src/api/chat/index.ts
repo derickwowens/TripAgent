@@ -342,18 +342,27 @@ async function handleToolCall(
     // ============================================
     case 'search_state_parks':
       result = await handleSearchStateParks(toolUse.input as any, collectedPhotos, facade);
+      // Set destination from the query/state so photo filter knows what park we're discussing
+      if ((toolUse.input as any).query) {
+        destination = (toolUse.input as any).query;
+        searchQuery = (toolUse.input as any).query;
+      }
       break;
 
     case 'get_state_park_details':
       result = await handleGetStateParkDetails(toolUse.input as any, collectedPhotos, facade);
+      destination = (toolUse.input as any).park_name;
+      searchQuery = (toolUse.input as any).park_name;
       break;
 
     case 'get_state_park_campgrounds':
       result = await handleGetStateParkCampgrounds(toolUse.input as any, collectedPhotos);
+      destination = (toolUse.input as any).park_name;
       break;
 
     case 'get_state_park_hikes':
       result = await handleGetStateParkHikes(toolUse.input as any);
+      destination = (toolUse.input as any).park_name;
       break;
 
     case 'get_state_trails':

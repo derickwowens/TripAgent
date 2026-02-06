@@ -616,6 +616,98 @@ export class S3ParkDataService {
   }
 
   /**
+   * Get raw trail data for map rendering (trails with coordinates)
+   * Returns all trails with valid trailhead coordinates for a given state
+   */
+  async getTrailsForMap(stateCode: string, parkId?: string): Promise<{
+    stateCode: string;
+    totalTrails: number;
+    trails: Array<{
+      id: string;
+      name: string;
+      parkId: string;
+      parkName: string;
+      latitude: number;
+      longitude: number;
+      lengthMiles?: number;
+      difficulty?: string;
+      trailType?: string;
+      googleMapsUrl?: string;
+      allTrailsUrl?: string;
+      geometry?: Array<{ latitude: number; longitude: number }>;
+    }>;
+  }> {
+    const trailsData = await this.fetchJson<StateTrailsData>(`trails/state-parks/${stateCode.toUpperCase()}/trails.json`);
+    if (!trailsData?.parks) {
+      return { stateCode: stateCode.toUpperCase(), totalTrails: 0, trails: [] };
+    }
+
+    const trails: Array<{
+      id: string; name: string; parkId: string; parkName: string;
+      latitude: number; longitude: number; lengthMiles?: number;
+      difficulty?: string; trailType?: string; googleMapsUrl?: string; allTrailsUrl?: string;
+      geometry?: Array<{ latitude: number; longitude: number }>;
+    }> = [];
+
+    for (const [pid, parkData] of Object.entries(trailsData.parks)) {
+      if (parkId && pid !== parkId) continue;
+      for (const trail of parkData.trails || []) {
+        const coords = trail.trailheadCoordinates;
+        if (!coords?.latitude || !coords?.longitude) continue;
+        trails.push({
+          id: trail.id, name: trail.name, parkId: pid, parkName: parkData.parkName,
+          latitude: parseFloat(String(coords.latitude)), longitude: parseFloat(String(coords.longitude)),
+          lengthMiles: trail.lengthMiles, difficulty: trail.difficulty, trailType: trail.trailType,
+          googleMapsUrl: trail.googleMapsUrl, allTrailsUrl: (trail as any).allTrailsUrl,
+          geometry: (trail as any).geometry,
+        });
+      }
+    }
+
+    return { stateCode: stateCode.toUpperCase(), totalTrails: trails.length, trails };
+  }
+
+  /**
+   * Get campground data for map rendering
+   */
+  async getCampgroundsForMap(stateCode: string): Promise<{
+    stateCode: string;
+    totalCampgrounds: number;
+    campgrounds: Array<{
+      id: string;
+      name: string;
+      latitude: number;
+      longitude: number;
+      parkName?: string;
+      totalSites?: number;
+      reservationUrl?: string;
+      googleMapsUrl?: string;
+      description?: string;
+    }>;
+  }> {
+    const data = await this.fetchJson<any>(`campgrounds/state-parks/${stateCode.toUpperCase()}/campgrounds.json`);
+    if (!data?.campgrounds) {
+      return { stateCode: stateCode.toUpperCase(), totalCampgrounds: 0, campgrounds: [] };
+    }
+
+    const campgrounds = data.campgrounds
+      .filter((c: any) => c.latitude && c.longitude)
+      .map((c: any) => ({
+        id: c.id,
+        name: c.name,
+        latitude: parseFloat(String(c.latitude)),
+        longitude: parseFloat(String(c.longitude)),
+        parkName: c.parkName,
+        totalSites: c.totalSites,
+        reservationUrl: c.reservationUrl,
+        googleMapsUrl: c.googleMapsUrl,
+        description: c.description,
+      }));
+
+    return { stateCode: stateCode.toUpperCase(), totalCampgrounds: campgrounds.length, campgrounds };
+  }
+
+  /**
    * Internal: Fetch and cache state trails data
    */
   private async fetchStateTrailsData(stateCode: 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI'): Promise<StateTrailsData | null> {

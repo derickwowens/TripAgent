@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import {
   View,
   ScrollView,
@@ -17,10 +17,11 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer, fetchStateParks, StateParkSummary } from '../services/api';
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode, useTravelDates } from '../hooks';
-import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo, DraggableConversationPanel } from '../components/home';
+import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo, DraggableConversationPanel, TrailMapPanel, TrailMapTab } from '../components/home';
 import type { ParkMode as ParkModeType } from '../hooks';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
+import { useTrailMap } from '../hooks/useTrailMap';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
@@ -162,6 +163,17 @@ const HomeScreen: React.FC = () => {
     getContextForApi,
   } = useTripContext(currentConversationId);
 
+  // Trail map overlay - detects parks in conversation and shows trail data
+  const trailMap = useTrailMap();
+
+  // Initialize trail map when conversation changes or messages update
+  // Uses conversation metadata (destination) first, then scans messages as fallback
+  useEffect(() => {
+    const currentConv = savedConversations.find(c => c.id === currentConversationId);
+    const metadata = currentConv?.metadata || null;
+    trailMap.initFromConversation(metadata, messages);
+  }, [currentConversationId, messages]);
+
   // Fetch nearby state parks when in state mode for Quick Start prefills
   useEffect(() => {
     const loadNearbyStateParks = async () => {
@@ -299,6 +311,44 @@ const HomeScreen: React.FC = () => {
   const handleStartNewConversation = () => {
     startNewConversation();
   };
+
+  // Handle "Plan an Adventure Here" from the Adventure Map
+  const handlePlanAdventure = useCallback((selectedParkName: string, parkState?: string, parkCategory?: string) => {
+    const parts: string[] = [];
+
+    if (parkCategory === 'campground') {
+      parts.push(`I want to camp at ${selectedParkName}${parkState ? ` in ${parkState}` : ''}.`);
+      parts.push('What should I know about this campground? Include nearby trails, things to do, and how to reserve a site.');
+    } else if (parkCategory === 'trail') {
+      parts.push(`I want to hike at ${selectedParkName}${parkState ? ` in ${parkState}` : ''}.`);
+      parts.push('Tell me about this area, including trail details, nearby campgrounds, and other things to do.');
+    } else {
+      parts.push(`Plan a trip to ${selectedParkName}${parkState ? `, ${parkState}` : ''}.`);
+      parts.push('Include top trails, campgrounds, key attractions, and a suggested itinerary.');
+    }
+
+    if (userProfile) {
+      parts.push(`My interests: ${userProfile}.`);
+    }
+
+    if (userLocation?.state) {
+      parts.push(`I'm traveling from ${userLocation.state}${userLocation.nearestAirport ? ` (nearest airport: ${userLocation.nearestAirport})` : ''}.`);
+    }
+
+    const formattedDates = getFormattedDates();
+    if (formattedDates) {
+      parts.push(`Travel dates: ${formattedDates}.`);
+    }
+
+    // Close the map panel and inject the prompt
+    trailMap.closePanel();
+    setInputText(parts.join(' '));
+
+    // Auto-scroll to bottom so the user sees the prompt
+    setTimeout(() => {
+      scrollViewRef.current?.scrollToEnd({ animated: true });
+    }, 200);
+  }, [userProfile, userLocation, getFormattedDates, trailMap]);
 
   const handleSend = async () => {
     if (!inputText.trim() || isLoading) return;
@@ -953,15 +1003,22 @@ const HomeScreen: React.FC = () => {
           </ScrollView>
 
                     
-          <ChatInput
-            inputText={inputText}
-            onChangeText={setInputText}
-            onSend={handleSend}
-            isLoading={isLoading}
-            hasPhotos={allPhotos.length > 0}
-            galleryOpen={showPhotoGallery}
-            onOpenGallery={() => setShowPhotoGallery(true)}
-          />
+          <View pointerEvents="box-none">
+            <TrailMapTab
+              visible={trailMap.visible}
+              panelOpen={trailMap.panelOpen}
+              onTogglePanel={trailMap.togglePanel}
+            />
+            <ChatInput
+              inputText={inputText}
+              onChangeText={setInputText}
+              onSend={handleSend}
+              isLoading={isLoading}
+              hasPhotos={allPhotos.length > 0}
+              galleryOpen={showPhotoGallery}
+              onOpenGallery={() => setShowPhotoGallery(true)}
+            />
+          </View>
           </DraggableConversationPanel>
           
           {messages.length > 0 && allPhotos.length > 0 && showPhotoGallery && (
@@ -1013,6 +1070,27 @@ const HomeScreen: React.FC = () => {
           onStateChange={setSelectedStateParkState}
           travelDates={travelDates}
           onUpdateTravelDates={updateTravelDates}
+        />
+
+        {/* Trail Map Panel - slides in from right when park detected */}
+        <TrailMapPanel
+          visible={trailMap.visible}
+          panelOpen={trailMap.panelOpen}
+          trails={trailMap.trails}
+          parks={trailMap.parks}
+          campgrounds={trailMap.campgrounds}
+          loading={trailMap.loading}
+          error={trailMap.error}
+          parkName={trailMap.parkName}
+          stateCode={trailMap.stateCode}
+          userLatitude={userLocation?.lat ?? null}
+          userLongitude={userLocation?.lng ?? null}
+          parkLatitude={trailMap.parkLatitude}
+          parkLongitude={trailMap.parkLongitude}
+          onTogglePanel={trailMap.togglePanel}
+          onClose={trailMap.closePanel}
+          onFetchTrails={trailMap.fetchTrails}
+          onPlanAdventure={handlePlanAdventure}
         />
         </View>
       </ImageBackground>

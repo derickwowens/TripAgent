@@ -2,7 +2,7 @@
   "expo": {
     "name": "TripAgent",
     "slug": "tripagent",
-    "version": "2.4.4",
+    "version": "2.5.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -26,7 +26,7 @@
     },
     "android": {
       "package": "com.tripagent.app",
-      "versionCode": 60,
+      "versionCode": 61,
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#166534"
@@ -37,6 +37,14 @@
         "ACCESS_FINE_LOCATION"
       ]
     },
+    "plugins": [
+      [
+        "react-native-maps",
+        {
+          "androidGoogleMapsApiKey": ""
+        }
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     },

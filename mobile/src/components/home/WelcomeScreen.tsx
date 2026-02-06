@@ -19,10 +19,10 @@ const NATIONAL_PARK_PROMPTS = [
 ];
 
 const STATE_PARK_PROMPTS = [
-  { label: 'Plan a camping trip', template: 'Plan a camping trip to a state park near me' },
-  { label: 'Find day hikes', template: 'Find a state park with great day hikes nearby' },
-  { label: 'Weekend getaway', template: 'Recommend a scenic state park for a weekend getaway' },
-  { label: 'Find campgrounds', template: 'Find state parks with available campgrounds in my area' },
+  { label: 'Plan a camping trip', template: 'Plan a camping trip to a state park near me. Include campground recommendations, hiking trails, things to do, and a day-by-day itinerary' },
+  { label: 'Find day hikes', template: 'Find a state park with great day hikes nearby. Include trail details, difficulty levels, distances, and what to bring' },
+  { label: 'Weekend getaway', template: 'Plan a weekend getaway to a scenic state park nearby. Include must-see spots, hiking recommendations, camping or lodging options, and a 2-day itinerary' },
+  { label: 'Find campgrounds', template: 'Find state parks with the best campgrounds in my area. Include site availability, amenities, reservation links, and nearby trails' },
 ];
 
 type ParkMode = 'national' | 'state';
@@ -533,7 +533,7 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             onPress={() => {
               if (isStateMode) {
                 // State parks: pick a random nearby park (pickSpecificPark=true)
-                const prompt = generateStateParkPrompt('Plan a trip to {PARK_NAME}', nearbyStateParks, userLocation, userProfile, true);
+                const prompt = generateStateParkPrompt('Plan a trip to {PARK_NAME}. Include hiking trails, camping or lodging options, things to do, and a day-by-day itinerary', nearbyStateParks, userLocation, userProfile, true);
                 onSetPrompt(prompt);
               } else {
                 onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile));

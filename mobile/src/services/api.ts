@@ -351,6 +351,83 @@ export const fetchStateParks = async (stateCode: string, limit: number = 20): Pr
   }
 };
 
+// Trail map data
+export interface TrailMapMarker {
+  id: string;
+  name: string;
+  parkId: string;
+  parkName: string;
+  latitude: number;
+  longitude: number;
+  lengthMiles?: number;
+  difficulty?: string;
+  trailType?: string;
+  googleMapsUrl?: string;
+  allTrailsUrl?: string;
+  geometry?: Array<{ latitude: number; longitude: number }>;
+}
+
+export interface TrailMapResponse {
+  stateCode: string;
+  totalTrails: number;
+  trails: TrailMapMarker[];
+}
+
+export const fetchTrailsForMap = async (stateCode: string, parkId?: string): Promise<TrailMapResponse> => {
+  try {
+    const params: Record<string, string> = {};
+    if (parkId) params.parkId = parkId;
+    const response = await api.get(`/api/trails/map/${stateCode.toUpperCase()}`, { params });
+    return response.data;
+  } catch (error) {
+    console.error('Failed to fetch trail map data:', error);
+    return { stateCode: stateCode.toUpperCase(), totalTrails: 0, trails: [] };
+  }
+};
+
+export interface MapParkMarker {
+  id: string;
+  name: string;
+  latitude: number;
+  longitude: number;
+  stateCode?: string;
+  category?: string;
+  designation?: string;
+  stateName?: string;
+}
+
+export interface MapCampgroundMarker {
+  id: string;
+  name: string;
+  latitude: number;
+  longitude: number;
+  parkName?: string;
+  totalSites?: number;
+  reservationUrl?: string;
+  googleMapsUrl?: string;
+  description?: string;
+}
+
+export const fetchParksForMap = async (stateCode: string): Promise<MapParkMarker[]> => {
+  try {
+    const response = await api.get(`/api/map/parks/${stateCode.toUpperCase()}`);
+    return response.data.parks || [];
+  } catch (error) {
+    console.error('Failed to fetch parks for map:', error);
+    return [];
+  }
+};
+
+export const fetchCampgroundsForMap = async (stateCode: string): Promise<MapCampgroundMarker[]> => {
+  try {
+    const response = await api.get(`/api/map/campgrounds/${stateCode.toUpperCase()}`);
+    return response.data.campgrounds || [];
+  } catch (error) {
+    console.error('Failed to fetch campgrounds for map:', error);
+    return [];
+  }
+};
+
 // Error logging
 export const logErrorToServer = async (error: {
   message: string;

@@ -14,6 +14,9 @@
  *   npx tsx data/sync/runSync.ts all          # Sync everything
  */
 
+import { config as dotenvConfig } from 'dotenv';
+dotenvConfig();
+
 import { StateSyncer } from './syncers/stateSyncer.js';
 import { CaliforniaTrailSyncer, TexasTrailSyncer, ColoradoTrailSyncer, OregonTrailSyncer, ArizonaTrailSyncer, UtahTrailSyncer, WashingtonTrailSyncer, MichiganTrailSyncer, FloridaTrailSyncer } from './syncers/trailSyncer.js';
 import { PRIORITY_STATES } from './config.js';

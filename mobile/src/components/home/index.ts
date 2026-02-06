@@ -11,3 +11,4 @@ export { CollapsibleBottomPanel } from './CollapsibleBottomPanel';
 export { DraggableConversationPanel } from './DraggableConversationPanel';
 export { OnboardingFlow } from './OnboardingFlow';
 export { ThemedLogo } from './ThemedLogo';
+export { TrailMapPanel, TrailMapTab } from './TrailMapPanel';

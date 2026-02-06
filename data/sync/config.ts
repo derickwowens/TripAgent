@@ -105,6 +105,124 @@ export const SYNC_CONFIG = {
       trailsUrl: 'https://gis-midnr.opendata.arcgis.com/',
       hasApi: true,
     },
+    NC: {
+      name: 'North Carolina Division of Parks and Recreation',
+      baseUrl: 'https://www.ncparks.gov',
+      trailsUrl: 'https://services.nconemap.gov/secure/rest/services/NC1Map_Parks/MapServer',
+      hasApi: true,
+    },
+    VA: {
+      name: 'Virginia Department of Conservation and Recreation',
+      baseUrl: 'https://www.dcr.virginia.gov/state-parks',
+      trailsUrl: 'https://services.arcgis.com/p5v98VHDX9Atv3l7/arcgis/rest/services/Virginia_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    TN: {
+      name: 'Tennessee Department of Environment and Conservation',
+      baseUrl: 'https://tnstateparks.com',
+      trailsUrl: 'https://services5.arcgis.com/FjJE7y0JFmBf7mJB/arcgis/rest/services/TN_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    WV: {
+      name: 'West Virginia Division of Natural Resources',
+      baseUrl: 'https://wvstateparks.com',
+      trailsUrl: 'https://services.wvgis.wvu.edu/arcgis/rest/services/PlanningCadastre/WV_State_Parks_Forests/MapServer/0',
+      hasApi: true,
+    },
+    KY: {
+      name: 'Kentucky Department of Parks',
+      baseUrl: 'https://parks.ky.gov',
+      trailsUrl: 'https://kygisserver.ky.gov/arcgis/rest/services/WGS84WM_Services/Ky_Recreation_WGS84WM/MapServer',
+      hasApi: true,
+    },
+    GA: {
+      name: 'Georgia Department of Natural Resources',
+      baseUrl: 'https://gastateparks.org',
+      trailsUrl: 'https://services1.arcgis.com/XMPcnH2WtpWCGhNj/arcgis/rest/services/GA_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    NY: {
+      name: 'New York State Office of Parks, Recreation and Historic Preservation',
+      baseUrl: 'https://parks.ny.gov',
+      trailsUrl: 'https://services6.arcgis.com/DZHaqZm9cxOD4CWM/arcgis/rest/services/NYS_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    PA: {
+      name: 'Pennsylvania Department of Conservation and Natural Resources',
+      baseUrl: 'https://www.dcnr.pa.gov/StateParks',
+      trailsUrl: 'https://services1.arcgis.com/yYiAVgemasNv8Xha/arcgis/rest/services/Pennsylvania_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    MN: {
+      name: 'Minnesota Department of Natural Resources',
+      baseUrl: 'https://www.dnr.state.mn.us/state_parks',
+      trailsUrl: 'https://services1.arcgis.com/YuVBqMIy0AXxOcYn/arcgis/rest/services/Minnesota_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    SC: {
+      name: 'South Carolina Department of Parks, Recreation and Tourism',
+      baseUrl: 'https://southcarolinaparks.com',
+      trailsUrl: 'https://services.arcgis.com/acgZYxoN5Oj8pDLa/arcgis/rest/services/SC_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    NM: {
+      name: 'New Mexico State Parks Division',
+      baseUrl: 'https://www.emnrd.nm.gov/spd',
+      trailsUrl: 'https://services.arcgis.com/qWQOphPJmVu0kzjH/arcgis/rest/services/NM_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    ID: {
+      name: 'Idaho Department of Parks and Recreation',
+      baseUrl: 'https://parksandrecreation.idaho.gov',
+      trailsUrl: 'https://services.arcgis.com/FjJE7y0JFmBf7mJB/arcgis/rest/services/Idaho_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    MT: {
+      name: 'Montana Fish, Wildlife and Parks',
+      baseUrl: 'https://fwp.mt.gov/state-parks',
+      trailsUrl: 'https://services.arcgis.com/qnjIrwR8z5Izc0ij/arcgis/rest/services/Montana_State_Parks/FeatureServer/0',
+      hasApi: true,
+    },
+    NH: {
+      name: 'New Hampshire Division of Parks and Recreation',
+      baseUrl: 'https://www.nhstateparks.org',
+      hasApi: false,
+    },
+    ME: {
+      name: 'Maine Bureau of Parks and Lands',
+      baseUrl: 'https://www.maine.gov/dacf/parks',
+      hasApi: false,
+    },
+    WY: {
+      name: 'Wyoming State Parks, Historic Sites and Trails',
+      baseUrl: 'https://wyoparks.wyo.gov',
+      hasApi: false,
+    },
+    OH: {
+      name: 'Ohio Department of Natural Resources',
+      baseUrl: 'https://ohiodnr.gov/go-and-do/plan-a-visit',
+      hasApi: false,
+    },
+    IL: {
+      name: 'Illinois Department of Natural Resources',
+      baseUrl: 'https://dnr.illinois.gov/parks',
+      hasApi: false,
+    },
+    MA: {
+      name: 'Massachusetts Department of Conservation and Recreation',
+      baseUrl: 'https://www.mass.gov/orgs/department-of-conservation-recreation',
+      hasApi: false,
+    },
+    MD: {
+      name: 'Maryland Department of Natural Resources',
+      baseUrl: 'https://dnr.maryland.gov/publiclands',
+      hasApi: false,
+    },
+    NV: {
+      name: 'Nevada Division of State Parks',
+      baseUrl: 'https://parks.nv.gov',
+      hasApi: false,
+    },
   },
   
   // Sync schedule (cron expressions)
@@ -123,7 +241,7 @@ export const SYNC_CONFIG = {
 };
 
 // Priority states for initial rollout
-export const PRIORITY_STATES = ['WI', 'FL', 'CA', 'TX', 'CO', 'OR', 'AZ', 'UT', 'WA', 'MI'] as const;
+export const PRIORITY_STATES = ['WI', 'FL', 'CA', 'TX', 'CO', 'OR', 'AZ', 'UT', 'WA', 'MI', 'NC', 'VA', 'TN', 'WV', 'KY', 'GA', 'NY', 'PA', 'MN', 'SC', 'NM', 'ID', 'MT', 'NH', 'ME', 'WY', 'OH', 'IL', 'MA', 'MD', 'NV'] as const;
 
 // All US states for future expansion
 export const ALL_STATES = [

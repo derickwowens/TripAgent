@@ -90,6 +90,20 @@ export async function handleGetStateParkDetails(
       };
     }
 
+    // Collect RIDB park-level photos (Recreation.gov - authoritative source for state parks)
+    if (park.photos && park.photos.length > 0) {
+      park.photos.slice(0, 5).forEach((photo, idx) => {
+        collectedPhotos.push({
+          keyword: idx === 0 ? park.name : `${park.name} photo ${idx + 1}`,
+          url: photo.url,
+          caption: photo.title || photo.description || `${park.name} - ${park.stateFullName}`,
+          source: 'other',
+        });
+      });
+      console.log(`[State Parks] Collected ${Math.min(park.photos.length, 5)} RIDB photos for "${park.name}"`);
+    }
+
+    // Collect campground photos (from Recreation.gov / OSM)
     if (park.campgrounds && park.campgrounds.length > 0) {
       park.campgrounds.forEach(cg => {
         if (cg.photos && cg.photos.length > 0) {
@@ -98,7 +112,7 @@ export async function handleGetStateParkDetails(
               keyword: cg.name,
               url: photo.url,
               caption: photo.caption || `${cg.name} - Campground`,
-              source: 'nps',
+              source: 'other',
             });
           });
         }

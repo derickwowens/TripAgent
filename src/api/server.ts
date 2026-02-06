@@ -423,6 +423,54 @@ app.get('/api/state-parks/designations', asyncHandler(async (req: Request, res: 
 }));
 
 // ============================================
+// TRAIL MAP ENDPOINTS
+// ============================================
+app.get('/api/trails/map/:stateCode', asyncHandler(async (req: Request, res: Response) => {
+  const { stateCode } = req.params;
+  const { parkId } = req.query;
+
+  const result = await s3ParkData.getTrailsForMap(
+    stateCode.toUpperCase(),
+    parkId ? String(parkId) : undefined
+  );
+
+  if (result.totalTrails === 0) {
+    return res.status(404).json({ error: `No trail data found for state: ${stateCode}` });
+  }
+
+  res.json(result);
+}));
+
+app.get('/api/map/parks/:stateCode', asyncHandler(async (req: Request, res: Response) => {
+  const { stateCode } = req.params;
+
+  // Get parks with coordinates from S3 park index (returns { national, state })
+  const result = await s3ParkData.getParksInState(stateCode.toUpperCase());
+  const allParks = [...(result?.national || []), ...(result?.state || [])];
+  const mapParks = allParks
+    .filter(p => p.coordinates?.latitude && p.coordinates?.longitude)
+    .map(p => ({
+      id: p.id,
+      name: p.name,
+      latitude: p.coordinates.latitude,
+      longitude: p.coordinates.longitude,
+      stateCode: p.stateCode,
+      category: p.category || p.parkType,
+      designation: p.designation,
+      stateName: p.stateName,
+    }));
+
+  res.json({ stateCode: stateCode.toUpperCase(), parks: mapParks, totalParks: mapParks.length });
+}));
+
+app.get('/api/map/campgrounds/:stateCode', asyncHandler(async (req: Request, res: Response) => {
+  const { stateCode } = req.params;
+
+  const campData = await s3ParkData.getCampgroundsForMap(stateCode.toUpperCase());
+  res.json(campData);
+}));
+
+// ============================================
 // TRIP PLANNING ENDPOINTS
 // ============================================
 app.post('/api/trips/plan-park-trip', asyncHandler(async (req: Request, res: Response) => {

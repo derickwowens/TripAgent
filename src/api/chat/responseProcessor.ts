@@ -59,21 +59,31 @@ export function filterPhotos(
   const npsPhotos = collectedPhotos.filter(p => p.source === 'nps');
   const otherPhotos = collectedPhotos.filter(p => p.source !== 'nps');
   
-  // For NPS photos, validate they're from official NPS source or match destination
+  // For NPS photos, validate they actually relate to the detected destination
   const destLower = (tripDestination || searchQuery || '').toLowerCase();
+  const destWords = destLower.split(/\s+/).filter(w => w.length >= 3 && !['the', 'national', 'park', 'state', 'historical', 'historic', 'site', 'monument', 'recreation', 'area', 'forest', 'preserve'].includes(w));
+  
   const validatedNpsPhotos = npsPhotos.filter(photo => {
-    const url = photo.url.toLowerCase();
     const keyword = photo.keyword.toLowerCase();
+    const caption = (photo.caption || '').toLowerCase();
     
-    // Accept if URL is from nps.gov (official source)
-    if (url.includes('nps.gov')) return true;
+    // If no destination detected, accept all NPS photos (can't filter)
+    if (!destLower || destWords.length === 0) return true;
     
-    // Accept if keyword matches part of destination
-    if (destLower && keyword.length > 2 && destLower.includes(keyword)) return true;
-    if (destLower && destLower.length > 2 && keyword.includes(destLower.split(' ')[0])) return true;
+    // Check if the photo keyword/caption relates to the destination
+    // At least one significant destination word must appear in keyword or caption
+    const matchesDest = destWords.some(w => keyword.includes(w) || caption.includes(w));
+    if (matchesDest) return true;
+    
+    // Check reverse: keyword words appear in destination
+    const keywordWords = keyword.split(/\s+/).filter(w => w.length >= 3 && !['photo', 'national', 'park', 'state'].includes(w));
+    const reverseMatch = keywordWords.some(w => destLower.includes(w));
+    if (reverseMatch) return true;
     
     return false;
   });
+  
+  console.log(`[Chat] Photo filtering with query: "${searchQuery}", destination: "${tripDestination || 'none'}"`);
   
   console.log(`[Chat] Photos: ${validatedNpsPhotos.length} NPS, ${otherPhotos.length} other`);
   
