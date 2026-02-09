@@ -34,8 +34,6 @@ export type {
   CampgroundFilters,
 } from './StateParkService.js';
 
-// S3 Park Database Service (legacy — kept for type exports and cold backup reference)
-export { S3ParkDataService, s3ParkData } from './S3ParkDataService.js';
-
-// PostgreSQL + PostGIS Park Database Service (Performance upgrade)
+// PostgreSQL + earthdistance Park Database Service (sole data provider)
 export { PostgresParkDataService } from './PostgresParkDataService.js';
+export type { TrailData } from './PostgresParkDataService.js';

@@ -11,10 +11,24 @@
  */
 
 import { Pool, PoolClient } from 'pg';
-import { TrailData } from './S3ParkDataService.js';
 
-// Re-export TrailData so consumers don't need to import from S3 service
-export type { TrailData } from './S3ParkDataService.js';
+export interface TrailData {
+  name: string;
+  difficulty?: string;
+  length?: string;
+  type?: string;
+  description?: string;
+  duration?: string;
+  alltrailsUrl?: string;
+  npsUrl?: string;
+  trailUrl?: string;
+  googleMapsUrl?: string;
+  imageUrl?: string;
+  parkCode: string;
+  parkName: string;
+  source?: string;
+  nearbyParks?: Array<{ parkId: string; parkName: string; distanceMiles: number }>;
+}
 
 interface ParkSummary {
   id: string;
