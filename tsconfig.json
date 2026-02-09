@@ -17,5 +17,5 @@
     "types": ["node", "vitest/globals"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "test", "src/tests"]
+  "exclude": ["node_modules", "dist", "test", "src/tests", "src/providers/parks/S3ParkDataService.ts"]
 }
