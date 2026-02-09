@@ -503,11 +503,16 @@ export class PostgresParkDataService {
       id: string; name: string; latitude: number; longitude: number;
       parkName?: string; totalSites?: number; reservationUrl?: string;
       googleMapsUrl?: string; description?: string;
+      amenities?: string[]; siteTypes?: string[]; phone?: string;
+      petFriendly?: boolean; openSeason?: string; rating?: number;
+      priceMin?: number; priceMax?: number;
     }>;
   }> {
     const { rows } = await this.pool.query(`
       SELECT id, name, latitude, longitude, park_name, total_sites,
-        reservation_url, google_maps_url, description
+        reservation_url, google_maps_url, description,
+        amenities, site_types, phone, pet_friendly, open_season,
+        rating, price_per_night_min, price_per_night_max
       FROM campgrounds
       WHERE state_code = $1 AND latitude IS NOT NULL AND longitude IS NOT NULL
     `, [stateCode.toUpperCase()]);
@@ -525,6 +530,14 @@ export class PostgresParkDataService {
         reservationUrl: r.reservation_url,
         googleMapsUrl: r.google_maps_url,
         description: r.description,
+        amenities: r.amenities || undefined,
+        siteTypes: r.site_types || undefined,
+        phone: r.phone || undefined,
+        petFriendly: r.pet_friendly,
+        openSeason: r.open_season || undefined,
+        rating: r.rating ? parseFloat(r.rating) : undefined,
+        priceMin: r.price_per_night_min ? parseFloat(r.price_per_night_min) : undefined,
+        priceMax: r.price_per_night_max ? parseFloat(r.price_per_night_max) : undefined,
       })),
     };
   }
@@ -538,10 +551,13 @@ export class PostgresParkDataService {
   ): Promise<Array<{
     id: string; name: string; latitude: number; longitude: number;
     parkName?: string; reservationUrl?: string; distanceMiles: number;
+    amenities?: string[]; siteTypes?: string[]; phone?: string;
+    petFriendly?: boolean; openSeason?: string;
   }>> {
     const radiusMeters = radiusMiles * 1609.34;
     const { rows } = await this.pool.query(`
       SELECT id, name, latitude, longitude, park_name, reservation_url,
+        amenities, site_types, phone, pet_friendly, open_season,
         earth_distance(ll_to_earth($1, $2), ll_to_earth(latitude, longitude)) / 1609.34 as distance_miles
       FROM campgrounds
       WHERE latitude IS NOT NULL AND longitude IS NOT NULL
@@ -558,6 +574,11 @@ export class PostgresParkDataService {
       parkName: r.park_name,
       reservationUrl: r.reservation_url,
       distanceMiles: Math.round(r.distance_miles * 10) / 10,
+      amenities: r.amenities || undefined,
+      siteTypes: r.site_types || undefined,
+      phone: r.phone || undefined,
+      petFriendly: r.pet_friendly,
+      openSeason: r.open_season || undefined,
     }));
   }
 
