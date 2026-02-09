@@ -210,71 +210,67 @@ export async function handleGetStateParkHikes(
 ): Promise<any> {
   console.log(`[State Parks] Getting hikes for "${input.park_name}" in ${input.state}`);
   
-  const stateCode = input.state.toUpperCase() as 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI';
+  const stateCode = input.state.toUpperCase();
   const stateName = STATE_NAMES[stateCode] || input.state;
   const parkName = input.park_name;
   
   const googleMapsQuery = encodeURIComponent(`${parkName} hiking trails ${stateName}`);
   const googleMapsUrl = `https://www.google.com/maps/search/${googleMapsQuery}`;
   
-  // States with S3 trail data
-  const supportedStates = ['WI', 'FL', 'CA', 'TX', 'CO', 'OR', 'AZ', 'UT', 'WA', 'MI'];
-  if (supportedStates.includes(stateCode)) {
-    const parkId = parkName
-      .toLowerCase()
-      .replace(/\s*(state\s*park|state\s*forest|national\s*preserve|national\s*forest)\s*/gi, '')
-      .trim()
-      .replace(/\s+/g, '-');
-    
-    console.log(`[State Parks] Looking up S3 trail data for ${stateCode}/${parkId}`);
-    const supportedState = stateCode as 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI';
-    const s3Trails = await parkData.getTrailsForStatePark(stateCode, parkId);
-    
-    // Also get nearby state trails that pass near this park
-    const nearbyStateTrails = await parkData.getNearbyStateTrails(stateCode, parkId);
-    
-    if (s3Trails.length > 0 || nearbyStateTrails.length > 0) {
-      console.log(`[State Parks] Found ${s3Trails.length} park trails and ${nearbyStateTrails.length} nearby state trails`);
+  // All 50 states have trail data in Postgres
+  const parkId = parkName
+    .toLowerCase()
+    .replace(/\s*(state\s*park|state\s*forest|national\s*preserve|national\s*forest)\s*/gi, '')
+    .trim()
+    .replace(/\s+/g, '-');
+  
+  console.log(`[State Parks] Looking up trail data for ${stateCode}/${parkId}`);
+  const trails = await parkData.getTrailsForStatePark(stateCode, parkId);
+  
+  // Also get nearby state trails that pass near this park
+  const nearbyStateTrails = await parkData.getNearbyStateTrails(stateCode, parkId);
+  
+  if (trails.length > 0 || nearbyStateTrails.length > 0) {
+    console.log(`[State Parks] Found ${trails.length} park trails and ${nearbyStateTrails.length} nearby state trails`);
       
       // Check if any trails have AllTrails URLs
-      const hasAllTrailsUrls = s3Trails.some(t => t.alltrailsUrl);
-      
-      const result: any = {
-        parkName: parkName,
-        state: stateCode,
-        stateName: stateName,
-        hikes: s3Trails.map(trail => ({
-          name: trail.name,
-          distance: trail.length,
-          difficulty: (trail.difficulty || 'moderate').replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()),
-          trailType: trail.type,
-          trailUrl: trail.trailUrl || generateGoogleMapsLink(`${trail.name} trail ${parkName} ${stateName}`),
-          allTrailsUrl: trail.alltrailsUrl,
-          googleMapsUrl: trail.googleMapsUrl || generateGoogleMapsLink(`${trail.name} trail ${parkName} ${stateName}`),
-        })),
-        totalHikes: s3Trails.length,
-        googleMapsUrl: googleMapsUrl,
-        source: 'TripAgent Database',
-        note: 'Trail data from our curated database.',
-        allTrailsDisclaimer: hasAllTrailsUrls 
-          ? 'AllTrails links are search-based and may not find an exact match. Use Google Maps links for reliable navigation.'
-          : undefined,
-      };
-      
-      // Add nearby state trails if available
-      if (nearbyStateTrails.length > 0) {
-        result.nearbyStateTrails = nearbyStateTrails.slice(0, 5).map(trail => ({
-          name: trail.name,
-          distance: trail.length,
-          trailUrl: trail.trailUrl,
-          googleMapsUrl: trail.googleMapsUrl,
-          nearbyParks: trail.nearbyParks?.slice(0, 3),
-        }));
-        result.nearbyStateTrailsNote = `${nearbyStateTrails.length} longer multi-use trails pass within 50 miles of this park.`;
-      }
-      
-      return result;
+    const hasAllTrailsUrls = trails.some(t => t.alltrailsUrl);
+    
+    const result: any = {
+      parkName: parkName,
+      state: stateCode,
+      stateName: stateName,
+      hikes: trails.map(trail => ({
+        name: trail.name,
+        distance: trail.length,
+        difficulty: (trail.difficulty || 'moderate').replace('_', ' ').replace(/\b\w/g, c => c.toUpperCase()),
+        trailType: trail.type,
+        trailUrl: trail.trailUrl || generateGoogleMapsLink(`${trail.name} trail ${parkName} ${stateName}`),
+        allTrailsUrl: trail.alltrailsUrl,
+        googleMapsUrl: trail.googleMapsUrl || generateGoogleMapsLink(`${trail.name} trail ${parkName} ${stateName}`),
+      })),
+      totalHikes: trails.length,
+      googleMapsUrl: googleMapsUrl,
+      source: 'TripAgent Database',
+      note: 'Trail data from our curated database.',
+      allTrailsDisclaimer: hasAllTrailsUrls 
+        ? 'AllTrails links are search-based and may not find an exact match. Use Google Maps links for reliable navigation.'
+        : undefined,
+    };
+    
+    // Add nearby state trails if available
+    if (nearbyStateTrails.length > 0) {
+      result.nearbyStateTrails = nearbyStateTrails.slice(0, 5).map(trail => ({
+        name: trail.name,
+        distance: trail.length,
+        trailUrl: trail.trailUrl,
+        googleMapsUrl: trail.googleMapsUrl,
+        nearbyParks: trail.nearbyParks?.slice(0, 3),
+      }));
+      result.nearbyStateTrailsNote = `${nearbyStateTrails.length} longer multi-use trails pass within 50 miles of this park.`;
     }
+    
+    return result;
   }
   
   return {
@@ -308,17 +304,8 @@ export async function handleGetStateParkHikes(
 export async function handleGetStateTrails(
   input: { state: string }
 ): Promise<any> {
-  const stateCode = input.state.toUpperCase() as 'WI' | 'FL';
+  const stateCode = input.state.toUpperCase();
   const stateName = STATE_NAMES[stateCode] || input.state;
-  
-  if (stateCode !== 'WI' && stateCode !== 'FL') {
-    return {
-      state: stateCode,
-      stateName: stateName,
-      trails: [],
-      note: `State trail data is currently available for Wisconsin and Florida.`,
-    };
-  }
   
   console.log(`[State Parks] Getting state-wide trails for ${stateCode}`);
   const stateTrails = await parkData.getStateTrails(stateCode);
@@ -326,7 +313,7 @@ export async function handleGetStateTrails(
   return {
     state: stateCode,
     stateName: stateName,
-    categoryName: stateCode === 'WI' ? 'Wisconsin State Trails' : 'Florida State Trails',
+    categoryName: `${stateName} State Trails`,
     trails: stateTrails.map(trail => ({
       name: trail.name,
       distance: trail.length,

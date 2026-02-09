@@ -372,7 +372,7 @@ async function handleToolCall(
       break;
 
     // ============================================
-    // S3 PARK DATABASE TOOLS
+    // PARK DATABASE TOOLS
     // ============================================
     case 'lookup_park_database':
       result = await handleLookupParkDatabase(toolUse.input as any, collectedPhotos, facade);

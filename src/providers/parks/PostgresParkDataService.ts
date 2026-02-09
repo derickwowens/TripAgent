@@ -62,8 +62,37 @@ interface ParkDetails {
   keywords?: string[];
 }
 
+// Simple TTL cache: { value, expiresAt }
+interface CacheEntry<T> { value: T; expiresAt: number; }
+
+class TTLCache<T> {
+  private cache = new Map<string, CacheEntry<T>>();
+  constructor(private ttlMs: number) {}
+
+  get(key: string): T | undefined {
+    const entry = this.cache.get(key);
+    if (!entry) return undefined;
+    if (Date.now() > entry.expiresAt) { this.cache.delete(key); return undefined; }
+    return entry.value;
+  }
+
+  set(key: string, value: T): void {
+    this.cache.set(key, { value, expiresAt: Date.now() + this.ttlMs });
+    // Evict expired entries periodically
+    if (this.cache.size > 500) {
+      const now = Date.now();
+      for (const [k, v] of this.cache) { if (now > v.expiresAt) this.cache.delete(k); }
+    }
+  }
+}
+
 export class PostgresParkDataService {
   private pool: Pool;
+  private parkCache = new TTLCache<ParkDetails | null>(30 * 60 * 1000);     // 30 min
+  private searchCache = new TTLCache<ParkSummary[]>(15 * 60 * 1000);        // 15 min
+  private trailCache = new TTLCache<TrailData[]>(15 * 60 * 1000);           // 15 min
+  private stateCache = new TTLCache<{ national: ParkSummary[]; state: ParkSummary[] }>(30 * 60 * 1000); // 30 min
+  private statsCache = new TTLCache<any>(30 * 60 * 1000);                   // 30 min
 
   constructor() {
     const connStr = process.env.DATABASE_URL;
@@ -85,6 +114,9 @@ export class PostgresParkDataService {
   // ============================================
 
   async getParkById(parkId: string): Promise<ParkDetails | null> {
+    const cached = this.parkCache.get(parkId);
+    if (cached !== undefined) return cached;
+
     const { rows } = await this.pool.query(`
       SELECT p.*,
         COALESCE(
@@ -108,8 +140,10 @@ export class PostgresParkDataService {
       GROUP BY p.id
     `, [parkId]);
 
-    if (rows.length === 0) return null;
-    return this.rowToParkDetails(rows[0]);
+    if (rows.length === 0) { this.parkCache.set(parkId, null); return null; }
+    const result = this.rowToParkDetails(rows[0]);
+    this.parkCache.set(parkId, result);
+    return result;
   }
 
   async getParkByCode(parkCode: string): Promise<ParkDetails | null> {
@@ -122,6 +156,9 @@ export class PostgresParkDataService {
     limit?: number;
   }): Promise<ParkSummary[]> {
     const { category = 'all', stateCode, limit = 10 } = options || {};
+    const cacheKey = `${query}|${category}|${stateCode || ''}|${limit}`;
+    const cached = this.searchCache.get(cacheKey);
+    if (cached) return cached;
     const params: any[] = [`%${query}%`];
     let whereClause = `WHERE (p.name ILIKE $1 OR p.park_code = $${params.length + 1})`;
     params.push(query.toLowerCase());
@@ -146,7 +183,9 @@ export class PostgresParkDataService {
       LIMIT $${params.length}
     `, params);
 
-    return rows.map(r => this.rowToParkSummary(r));
+    const results = rows.map(r => this.rowToParkSummary(r));
+    this.searchCache.set(cacheKey, results);
+    return results;
   }
 
   async getParksNearLocation(
@@ -183,6 +222,9 @@ export class PostgresParkDataService {
   }
 
   async getParksInState(stateCode: string): Promise<{ national: ParkSummary[]; state: ParkSummary[] }> {
+    const cached = this.stateCache.get(stateCode);
+    if (cached) return cached;
+
     const { rows } = await this.pool.query(`
       SELECT id, name, park_code, state_code, state_name, category, park_type,
         designation, latitude, longitude, image_url
@@ -191,16 +233,21 @@ export class PostgresParkDataService {
       ORDER BY category, name
     `, [stateCode.toUpperCase()]);
 
-    return {
+    const result = {
       national: rows.filter(r => r.category === 'national').map(r => this.rowToParkSummary(r)),
       state: rows.filter(r => r.category === 'state').map(r => this.rowToParkSummary(r)),
     };
+    this.stateCache.set(stateCode, result);
+    return result;
   }
 
   async getStats(): Promise<{
     totalParks: number; nationalParks: number; stateParks: number;
     statesWithData: string[]; lastUpdated: string;
   } | null> {
+    const cached = this.statsCache.get('stats');
+    if (cached) return cached;
+
     const { rows } = await this.pool.query(`
       SELECT
         COUNT(*) as total,
@@ -211,13 +258,15 @@ export class PostgresParkDataService {
       FROM parks
     `);
     if (rows.length === 0) return null;
-    return {
+    const result = {
       totalParks: parseInt(rows[0].total),
       nationalParks: parseInt(rows[0].national),
       stateParks: parseInt(rows[0].state),
       statesWithData: rows[0].states || [],
       lastUpdated: rows[0].last_updated?.toISOString() || new Date().toISOString(),
     };
+    this.statsCache.set('stats', result);
+    return result;
   }
 
   async buildParkContext(parkId: string): Promise<string | null> {
@@ -256,6 +305,9 @@ export class PostgresParkDataService {
   // ============================================
 
   async getTrailsForPark(parkCode: string): Promise<TrailData[]> {
+    const cached = this.trailCache.get(`park:${parkCode}`);
+    if (cached) return cached;
+
     const { rows } = await this.pool.query(`
       SELECT t.*, p.name as resolved_park_name
       FROM trails t
@@ -264,7 +316,7 @@ export class PostgresParkDataService {
       ORDER BY t.name
     `, [`np-${parkCode.toLowerCase()}`, parkCode.toLowerCase()]);
 
-    return rows.map(r => ({
+    const result = rows.map(r => ({
       name: r.name,
       description: r.description,
       length: r.length_miles ? `${r.length_miles} miles` : undefined,
@@ -278,6 +330,8 @@ export class PostgresParkDataService {
       parkName: r.resolved_park_name || r.park_name,
       source: r.data_source || 'TripAgent Database',
     }));
+    this.trailCache.set(`park:${parkCode}`, result);
+    return result;
   }
 
   async getTrailsForStatePark(stateCode: string, parkId: string): Promise<TrailData[]> {

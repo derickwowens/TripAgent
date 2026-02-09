@@ -253,20 +253,20 @@ export async function handleGetParkHikes(
   const parkCode = input.park_code.toLowerCase();
   console.log(`[Hikes] Getting hikes for park: ${parkCode}`);
   
-  // PRIORITY 1: Try S3 trail data
-  const s3Trails = await parkData.getTrailsForPark(parkCode);
+  // PRIORITY 1: Try Postgres trail data
+  const trails = await parkData.getTrailsForPark(parkCode);
   
-  if (s3Trails.length > 0) {
-    console.log(`[Hikes] Found ${s3Trails.length} trails in S3 for ${parkCode}`);
-    const parkName = s3Trails[0].parkName;
-    const source = s3Trails[0].source || 'TripAgent Database';
+  if (trails.length > 0) {
+    console.log(`[Hikes] Found ${trails.length} trails in database for ${parkCode}`);
+    const parkName = trails[0].parkName;
+    const source = trails[0].source || 'TripAgent Database';
     const isNPSData = source === 'NPS API';
-    const hasAllTrailsUrls = s3Trails.some(t => t.alltrailsUrl);
+    const hasAllTrailsUrls = trails.some(t => t.alltrailsUrl);
     
     const result: any = {
       parkCode,
       parkName,
-      hikes: s3Trails.map(trail => ({
+      hikes: trails.map(trail => ({
         name: trail.name,
         description: trail.description,
         distance: trail.length,
@@ -279,7 +279,7 @@ export async function handleGetParkHikes(
         googleMapsUrl: generateGoogleMapsLink(`${trail.name} trailhead ${parkName}`),
         imageUrl: trail.imageUrl,
       })),
-      totalHikes: s3Trails.length,
+      totalHikes: trails.length,
       npsHikingUrl: `https://www.nps.gov/${parkCode}/planyourvisit/hiking.htm`,
       source: source,
       note: isNPSData 

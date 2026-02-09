@@ -1,21 +1,13 @@
 /**
  * Park Database Tool Handlers
  * 
- * Handles S3 park database lookups, nearby parks, and stats
+ * Handles park database lookups, nearby parks, and stats via PostgreSQL.
  */
 
 import { TravelFacade } from '../../../domain/facade/TravelFacade.js';
 import { parkData } from '../../../providers/parks/parkDataProvider.js';
-import { StateParkService } from '../../../providers/parks/StateParkService.js';
-import { findParkCode } from '../../../utils/parkCodeLookup.js';
 import { PhotoReference } from '../types.js';
 import { STATE_NAMES } from './stateParks.js';
-
-// Initialize StateParkService for fallback
-const stateParkService = new StateParkService(
-  process.env.RECREATION_GOV_API_KEY,
-  process.env.NPS_API_KEY
-);
 
 /**
  * Handle park database lookup
@@ -25,9 +17,7 @@ export async function handleLookupParkDatabase(
   collectedPhotos: PhotoReference[],
   facade?: TravelFacade
 ): Promise<any> {
-  console.log(`[S3 Park DB] Lookup: query="${input.query}", park_id="${input.park_id}", category="${input.category}"`);
-  
-  let s3Failed = false;
+  console.log(`[Park DB] Lookup: query="${input.query}", park_id="${input.park_id}", category="${input.category}"`);
   
   try {
     if (input.park_id) {
@@ -44,17 +34,12 @@ export async function handleLookupParkDatabase(
           });
         }
         
-        const context = await parkData.buildParkContext(input.park_id);
-        
         return {
           park: park,
-          context: context,
           source: 'TripAgent Database',
           note: 'This data is from our authoritative park database',
         };
       }
-      s3Failed = true;
-      console.log(`[S3 Park DB] Park ${input.park_id} not found in S3, trying fallback...`);
     }
     
     if (input.query) {
@@ -85,91 +70,9 @@ export async function handleLookupParkDatabase(
           source: 'TripAgent Database',
         };
       }
-      s3Failed = true;
-      console.log(`[S3 Park DB] No results for "${input.query}" in S3, trying fallback...`);
     }
-    
   } catch (error: any) {
-    console.error(`[S3 Park DB] S3 error: ${error.message}, trying fallback...`);
-    s3Failed = true;
-  }
-  
-  // Fallback to NPS API or State Park Service
-  if (s3Failed && facade) {
-    console.log(`[S3 Park DB] Using fallback APIs...`);
-    
-    const query = input.query || input.park_id?.replace('np-', '') || '';
-    const category = input.category || 'all';
-    
-    if (category === 'all' || category === 'national') {
-      try {
-        const parkCode = findParkCode(query);
-        let parks;
-        
-        if (parkCode) {
-          const details = await facade.getParkDetails(parkCode);
-          parks = details ? [details.park] : await facade.searchNationalParks(parkCode);
-        } else {
-          parks = await facade.searchNationalParks(query);
-        }
-        
-        if (parks && parks.length > 0) {
-          const firstPark = parks[0];
-          if (firstPark.images && firstPark.images.length > 0) {
-            firstPark.images.slice(0, 3).forEach((img: string, idx: number) => {
-              collectedPhotos.push({
-                keyword: idx === 0 ? firstPark.name : `${firstPark.name} photo ${idx + 1}`,
-                url: img,
-                caption: firstPark.name,
-                source: 'nps'
-              });
-            });
-          }
-          
-          return {
-            parks: parks.slice(0, 10).map((p: any) => ({
-              id: `np-${p.parkCode}`,
-              name: p.name,
-              parkCode: p.parkCode,
-              stateCode: p.states?.split(',')[0] || '',
-              designation: p.designation,
-              coordinates: { latitude: parseFloat(p.latitude) || 0, longitude: parseFloat(p.longitude) || 0 },
-            })),
-            topResult: parks[0],
-            totalResults: parks.length,
-            source: 'NPS API (fallback)',
-            note: 'S3 database unavailable, using NPS API directly',
-          };
-        }
-      } catch (npsError: any) {
-        console.error(`[S3 Park DB] NPS fallback failed: ${npsError.message}`);
-      }
-    }
-    
-    if (category === 'all' || category === 'state') {
-      try {
-        const stateCode = input.state_code || '';
-        if (stateCode) {
-          const stateParks = await stateParkService.searchParks({ state: stateCode, query });
-          if (stateParks && stateParks.parks && stateParks.parks.length > 0) {
-            return {
-              parks: stateParks.parks.slice(0, 10).map((p: any) => ({
-                id: `${stateCode.toLowerCase()}-${p.name.toLowerCase().replace(/\s+/g, '-')}`,
-                name: p.name,
-                stateCode: stateCode,
-                category: 'state',
-                acres: p.gisAcres,
-              })),
-              totalResults: stateParks.parks.length,
-              source: 'State Park Service (fallback)',
-              note: 'S3 database unavailable, using State Park Service directly',
-            };
-          }
-        }
-      } catch (stateError: any) {
-        console.error(`[S3 Park DB] State park fallback failed: ${stateError.message}`);
-      }
-    }
+    console.error(`[Park DB] Error: ${error.message}`);
   }
   
   if (!input.query && !input.park_id) {
@@ -189,7 +92,7 @@ export async function handleLookupParkDatabase(
 export async function handleGetParksNearLocation(
   input: { latitude: number; longitude: number; radius_miles?: number; category?: 'national' | 'state' | 'all'; limit?: number }
 ): Promise<any> {
-  console.log(`[S3 Park DB] Parks near (${input.latitude}, ${input.longitude}), radius=${input.radius_miles || 50}mi`);
+  console.log(`[Park DB] Parks near (${input.latitude}, ${input.longitude}), radius=${input.radius_miles || 50}mi`);
   
   try {
     const parks = await parkData.getParksNearLocation(
@@ -207,11 +110,11 @@ export async function handleGetParksNearLocation(
       radiusMiles: input.radius_miles || 50,
       parks: parks,
       totalFound: parks.length,
-      source: 'TripAgent S3 Database',
+      source: 'TripAgent Database',
     };
     
   } catch (error: any) {
-    console.error(`[S3 Park DB] Error: ${error.message}`);
+    console.error(`[Park DB] Error: ${error.message}`);
     return { error: `Failed to find nearby parks: ${error.message}` };
   }
 }
@@ -220,7 +123,7 @@ export async function handleGetParksNearLocation(
  * Handle park database stats
  */
 export async function handleGetParkDatabaseStats(): Promise<any> {
-  console.log(`[S3 Park DB] Getting database stats`);
+  console.log(`[Park DB] Getting database stats`);
   
   try {
     const stats = await parkData.getStats();
@@ -249,12 +152,12 @@ export async function handleGetParkDatabaseStats(): Promise<any> {
         ],
         stateParks: stats.statesWithData.map(s => `${s} (${STATE_NAMES[s] || s})`),
       },
-      source: 'TripAgent S3 Database',
+      source: 'TripAgent Database',
       note: 'This is our authoritative park database',
     };
     
   } catch (error: any) {
-    console.error(`[S3 Park DB] Error: ${error.message}`);
+    console.error(`[Park DB] Error: ${error.message}`);
     return { error: `Failed to get database stats: ${error.message}` };
   }
 }
