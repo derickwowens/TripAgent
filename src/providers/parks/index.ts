@@ -36,3 +36,6 @@ export type {
 
 // S3 Park Database Service (Authoritative data source)
 export { S3ParkDataService, s3ParkData } from './S3ParkDataService.js';
+
+// PostgreSQL + PostGIS Park Database Service (Performance upgrade)
+export { PostgresParkDataService } from './PostgresParkDataService.js';

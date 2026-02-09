@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
-import { fetchTrailsForMap, fetchTrailGeometry, fetchParksForMap, fetchCampgroundsForMap, TrailMapMarker } from '../services/api';
+import { fetchTrailsForMap, fetchParksForMap, fetchCampgroundsForMap, TrailMapMarker } from '../services/api';
 import type { ParkMapMarker, CampgroundMapMarker } from '../services/api';
 import { PARK_GATEWAYS, PARK_DETECTION_PATTERNS } from '../data/nationalParks';
 
@@ -94,47 +94,6 @@ function detectStateFromText(text: string): string | null {
   return null;
 }
 
-// Module-level cache: persists across re-renders and conversation switches
-// Keyed by state code - once fetched, data stays cached until app restart
-const mapDataCache = new Map<string, {
-  trails: TrailMapMarker[];
-  parks: ParkMapMarker[];
-  campgrounds: CampgroundMapMarker[];
-}>();
-const pendingFetches = new Map<string, Promise<void>>();
-
-/**
- * Pre-load map data for a state in the background.
- * Call this on app startup with the user's state so data is ready when the map opens.
- */
-export const preloadMapData = async (stateCode: string): Promise<void> => {
-  const code = stateCode.toUpperCase();
-  if (mapDataCache.has(code)) return;
-  if (pendingFetches.has(code)) return pendingFetches.get(code);
-
-  const fetchPromise = (async () => {
-    try {
-      const [trailResult, parksResult, campResult] = await Promise.all([
-        fetchTrailsForMap(code),
-        fetchParksForMap(code),
-        fetchCampgroundsForMap(code),
-      ]);
-      mapDataCache.set(code, {
-        trails: trailResult.trails,
-        parks: parksResult,
-        campgrounds: campResult,
-      });
-      console.log(`[MapCache] Pre-loaded ${code}: ${trailResult.trails.length} trails, ${parksResult.length} parks, ${campResult.length} campgrounds`);
-    } catch (error: any) {
-      console.warn(`[MapCache] Pre-load failed for ${code}:`, error.message);
-    } finally {
-      pendingFetches.delete(code);
-    }
-  })();
-
-  pendingFetches.set(code, fetchPromise);
-  return fetchPromise;
-};
 
 export const useTrailMap = () => {
   const [state, setState] = useState<TrailMapState>({
@@ -162,49 +121,6 @@ export const useTrailMap = () => {
     };
   }, []);
 
-  // Auto-populate from cache when a state is detected
-  // If cache is ready, load instantly. If a preload is pending, wait for it.
-  useEffect(() => {
-    if (!state.stateCode || !state.visible) return;
-    // Already have data loaded
-    if (state.trails.length > 0 || state.parks.length > 0) return;
-
-    const code = state.stateCode.toUpperCase();
-    const cached = mapDataCache.get(code);
-    if (cached) {
-      setState(prev => ({
-        ...prev,
-        trails: cached.trails,
-        parks: cached.parks,
-        campgrounds: cached.campgrounds,
-        loading: false,
-      }));
-      return;
-    }
-
-    // If a preload is in progress, wait for it
-    const pending = pendingFetches.get(code);
-    if (pending) {
-      let cancelled = false;
-      setState(prev => ({ ...prev, loading: true }));
-      pending.then(() => {
-        if (cancelled) return;
-        const result = mapDataCache.get(code);
-        if (result) {
-          setState(prev => ({
-            ...prev,
-            trails: result.trails,
-            parks: result.parks,
-            campgrounds: result.campgrounds,
-            loading: false,
-          }));
-        } else {
-          setState(prev => ({ ...prev, loading: false }));
-        }
-      });
-      return () => { cancelled = true; };
-    }
-  }, [state.stateCode, state.visible, state.trails.length, state.parks.length]);
 
   /**
    * Scan messages for park mentions and trigger trail tab visibility
@@ -264,38 +180,6 @@ export const useTrailMap = () => {
     if (!state.stateCode) return;
     const code = state.stateCode.toUpperCase();
 
-    // Check cache first - instant load if pre-fetched
-    const cached = mapDataCache.get(code);
-    if (cached) {
-      setState(prev => ({
-        ...prev,
-        trails: cached.trails,
-        parks: cached.parks,
-        campgrounds: cached.campgrounds,
-        loading: false,
-      }));
-      return;
-    }
-
-    // If a fetch is already in progress (from preload), wait for it
-    const pending = pendingFetches.get(code);
-    if (pending) {
-      setState(prev => ({ ...prev, loading: true, error: null }));
-      await pending;
-      const result = mapDataCache.get(code);
-      if (result) {
-        setState(prev => ({
-          ...prev,
-          trails: result.trails,
-          parks: result.parks,
-          campgrounds: result.campgrounds,
-          loading: false,
-        }));
-        return;
-      }
-    }
-
-    // Fetch fresh data
     fetchControllerRef.current?.abort();
     fetchControllerRef.current = new AbortController();
 
@@ -307,13 +191,6 @@ export const useTrailMap = () => {
         fetchParksForMap(code),
         fetchCampgroundsForMap(code),
       ]);
-
-      // Store in cache
-      mapDataCache.set(code, {
-        trails: trailResult.trails,
-        parks: parksResult,
-        campgrounds: campResult,
-      });
 
       setState(prev => ({
         ...prev,
@@ -332,25 +209,6 @@ export const useTrailMap = () => {
       }
     }
   }, [state.stateCode]);
-
-  /**
-   * Fetch geometry data for trail lines (lazy - only when user toggles trail lines on)
-   */
-  const fetchGeometry = useCallback(async () => {
-    if (!state.stateCode) return;
-    // Skip if trails already have geometry
-    if (state.trails.length > 0 && state.trails[0].geometry) return;
-
-    try {
-      const result = await fetchTrailGeometry(state.stateCode);
-      setState(prev => ({
-        ...prev,
-        trails: result.trails,
-      }));
-    } catch (error: any) {
-      console.error('Failed to fetch trail geometry:', error);
-    }
-  }, [state.stateCode, state.trails]);
 
   /**
    * Toggle the slide-out panel open/closed
@@ -427,7 +285,6 @@ export const useTrailMap = () => {
             const key = `${park.code}-${sc}`;
             lastDetectedRef.current = key;
             const coords = PARK_GATEWAYS[park.code.toLowerCase()];
-            preloadMapData(sc);
             setState({
               visible: true,
               panelOpen: false,
@@ -452,7 +309,6 @@ export const useTrailMap = () => {
       if (stateFromDest) {
         const key = `dest-${stateFromDest}`;
         lastDetectedRef.current = key;
-        preloadMapData(stateFromDest);
         setState({
           visible: true,
           panelOpen: false,
@@ -482,7 +338,6 @@ export const useTrailMap = () => {
             const key = `${park.code}-${sc}`;
             lastDetectedRef.current = key;
             const coords = PARK_GATEWAYS[park.code.toLowerCase()];
-            preloadMapData(sc);
             setState({
               visible: true,
               panelOpen: false,
@@ -506,7 +361,6 @@ export const useTrailMap = () => {
       if (stateCode) {
         const key = `state-${stateCode}`;
         lastDetectedRef.current = key;
-        preloadMapData(stateCode);
         setState({
           visible: true,
           panelOpen: false,
@@ -530,7 +384,6 @@ export const useTrailMap = () => {
         if (sc) {
           const key = `text-${sc}`;
           lastDetectedRef.current = key;
-          preloadMapData(sc);
           setState({
             visible: true,
             panelOpen: false,
@@ -571,7 +424,6 @@ export const useTrailMap = () => {
     ...state,
     scanMessages,
     fetchTrails,
-    fetchGeometry,
     togglePanel,
     closePanel,
     dismiss,

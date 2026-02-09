@@ -6,7 +6,7 @@
 
 import { TravelFacade } from '../../../domain/facade/TravelFacade.js';
 import { StateParkService } from '../../../providers/parks/StateParkService.js';
-import { s3ParkData } from '../../../providers/parks/S3ParkDataService.js';
+import { parkData } from '../../../providers/parks/parkDataProvider.js';
 import { generateGoogleMapsLink } from '../../../utils/linkUtils.js';
 import { PhotoReference } from '../types.js';
 
@@ -228,10 +228,10 @@ export async function handleGetStateParkHikes(
     
     console.log(`[State Parks] Looking up S3 trail data for ${stateCode}/${parkId}`);
     const supportedState = stateCode as 'WI' | 'FL' | 'CA' | 'TX' | 'CO' | 'OR' | 'AZ' | 'UT' | 'WA' | 'MI';
-    const s3Trails = await s3ParkData.getTrailsForStatePark(supportedState, parkId);
+    const s3Trails = await parkData.getTrailsForStatePark(stateCode, parkId);
     
     // Also get nearby state trails that pass near this park
-    const nearbyStateTrails = await s3ParkData.getNearbyStateTrails(supportedState, parkId);
+    const nearbyStateTrails = await parkData.getNearbyStateTrails(stateCode, parkId);
     
     if (s3Trails.length > 0 || nearbyStateTrails.length > 0) {
       console.log(`[State Parks] Found ${s3Trails.length} park trails and ${nearbyStateTrails.length} nearby state trails`);
@@ -321,7 +321,7 @@ export async function handleGetStateTrails(
   }
   
   console.log(`[State Parks] Getting state-wide trails for ${stateCode}`);
-  const stateTrails = await s3ParkData.getStateTrails(stateCode);
+  const stateTrails = await parkData.getStateTrails(stateCode);
   
   return {
     state: stateCode,

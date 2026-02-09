@@ -21,7 +21,7 @@ import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, Collaps
 import type { ParkMode as ParkModeType } from '../hooks';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
-import { useTrailMap, preloadMapData } from '../hooks/useTrailMap';
+import { useTrailMap } from '../hooks/useTrailMap';
 
 // Use Haiku for faster responses - tools handle the heavy lifting
 const MODEL = 'claude-3-5-haiku-20241022';
@@ -176,12 +176,6 @@ const HomeScreen: React.FC = () => {
   // Trail map overlay - detects parks in conversation and shows trail data
   const trailMap = useTrailMap();
 
-  // Pre-load map data for user's state in the background on app startup
-  useEffect(() => {
-    if (userLocation?.state) {
-      preloadMapData(userLocation.state);
-    }
-  }, [userLocation?.state]);
 
   // Initialize trail map when conversation changes or messages update
   // Uses conversation metadata (destination) first, then scans messages as fallback
@@ -1107,7 +1101,6 @@ const HomeScreen: React.FC = () => {
           onTogglePanel={trailMap.togglePanel}
           onClose={trailMap.closePanel}
           onFetchTrails={trailMap.fetchTrails}
-          onFetchGeometry={trailMap.fetchGeometry}
           onPlanAdventure={handlePlanAdventure}
         />
         </View>

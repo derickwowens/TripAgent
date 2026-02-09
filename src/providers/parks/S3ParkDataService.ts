@@ -14,7 +14,10 @@ import { S3Client, GetObjectCommand, ListObjectsV2Command } from '@aws-sdk/clien
 
 const S3_BUCKET = process.env.PARK_DATA_S3_BUCKET || 'tripagent-park-data';
 const S3_REGION = process.env.AWS_REGION || 'us-east-1';
-const S3_BASE_URL = `https://${S3_BUCKET}.s3.${S3_REGION}.amazonaws.com`;
+const CLOUDFRONT_DOMAIN = process.env.CLOUDFRONT_DOMAIN;
+const S3_BASE_URL = CLOUDFRONT_DOMAIN
+  ? `https://${CLOUDFRONT_DOMAIN}`
+  : `https://${S3_BUCKET}.s3.${S3_REGION}.amazonaws.com`;
 
 // Cache for frequently accessed data
 const cache: Map<string, { data: any; timestamp: number }> = new Map();
@@ -705,6 +708,33 @@ export class S3ParkDataService {
       }));
 
     return { stateCode: stateCode.toUpperCase(), totalCampgrounds: campgrounds.length, campgrounds };
+  }
+
+  /**
+   * Bounding box trail query (S3 fallback: returns empty — use state-based endpoint instead)
+   */
+  async getTrailsInBoundingBox(
+    _minLat: number, _minLng: number, _maxLat: number, _maxLng: number,
+    _options?: { limit?: number; difficulty?: string }
+  ): Promise<Array<{
+    id: string; name: string; parkId: string; parkName: string;
+    latitude: number; longitude: number; difficulty?: string; lengthMiles?: number;
+  }>> {
+    console.log('[S3ParkData] getTrailsInBoundingBox not supported — use /api/trails/map/:stateCode instead');
+    return [];
+  }
+
+  /**
+   * Nearby campgrounds query (S3 fallback: returns empty — use state-based endpoint instead)
+   */
+  async getCampgroundsNearLocation(
+    _latitude: number, _longitude: number, _radiusMiles?: number, _limit?: number
+  ): Promise<Array<{
+    id: string; name: string; latitude: number; longitude: number;
+    parkName?: string; reservationUrl?: string; distanceMiles: number;
+  }>> {
+    console.log('[S3ParkData] getCampgroundsNearLocation not supported — use /api/map/campgrounds/:stateCode instead');
+    return [];
   }
 
   /**

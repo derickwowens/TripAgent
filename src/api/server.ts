@@ -11,7 +11,7 @@ import { AmadeusCarAdapter } from '../providers/cars/AmadeusCarAdapter.js';
 import { AmadeusActivitiesAdapter } from '../providers/activities/AmadeusActivitiesAdapter.js';
 import { NationalParksAdapter } from '../providers/parks/NationalParksAdapter.js';
 import { StateParkService } from '../providers/parks/StateParkService.js';
-import { s3ParkData } from '../providers/parks/S3ParkDataService.js';
+import { parkData, pgParkData } from '../providers/parks/parkDataProvider.js';
 import { RecreationGovAdapter } from '../providers/recreation/RecreationGovAdapter.js';
 import { INaturalistAdapter } from '../providers/wildlife/INaturalistAdapter.js';
 import { createChatHandler, TOOL_DISPLAY_NAMES } from './chat.js';
@@ -146,7 +146,7 @@ app.get('/itinerary/:id', asyncHandler(async (req: Request, res: Response) => {
 // PARK DATABASE ENDPOINTS (S3)
 // ============================================
 app.get('/api/parks/stats', asyncHandler(async (req: Request, res: Response) => {
-  const stats = await s3ParkData.getStats();
+  const stats = await parkData.getStats();
   if (!stats) {
     return res.status(503).json({ error: 'Park database unavailable' });
   }
@@ -160,7 +160,7 @@ app.get('/api/parks/search', asyncHandler(async (req: Request, res: Response) =>
     return res.status(400).json({ error: 'Missing required parameter: query' });
   }
   
-  const results = await s3ParkData.searchParks(query as string, {
+  const results = await parkData.searchParks(query as string, {
     category: category as 'national' | 'state' | 'all',
     stateCode: state as string,
     limit: parseInt(limit as string),
@@ -176,7 +176,7 @@ app.get('/api/parks/nearby', asyncHandler(async (req: Request, res: Response) =>
     return res.status(400).json({ error: 'Missing required parameters: latitude, longitude' });
   }
   
-  const parks = await s3ParkData.getParksNearLocation(
+  const parks = await parkData.getParksNearLocation(
     parseFloat(latitude as string),
     parseFloat(longitude as string),
     parseFloat(radius as string),
@@ -192,7 +192,7 @@ app.get('/api/parks/nearby', asyncHandler(async (req: Request, res: Response) =>
 app.get('/api/parks/:parkId', asyncHandler(async (req: Request, res: Response) => {
   const { parkId } = req.params;
   
-  const park = await s3ParkData.getParkById(parkId);
+  const park = await parkData.getParkById(parkId);
   if (!park) {
     return res.status(404).json({ error: `Park not found: ${parkId}` });
   }
@@ -203,7 +203,7 @@ app.get('/api/parks/:parkId', asyncHandler(async (req: Request, res: Response) =
 app.get('/api/parks/state/:stateCode', asyncHandler(async (req: Request, res: Response) => {
   const { stateCode } = req.params;
   
-  const parks = await s3ParkData.getParksInState(stateCode);
+  const parks = await parkData.getParksInState(stateCode);
   res.json({
     stateCode: stateCode.toUpperCase(),
     national: parks.national,
@@ -429,7 +429,7 @@ app.get('/api/trails/map/:stateCode', asyncHandler(async (req: Request, res: Res
   const { stateCode } = req.params;
   const { parkId, includeGeometry } = req.query;
 
-  const result = await s3ParkData.getTrailsForMap(
+  const result = await parkData.getTrailsForMap(
     stateCode.toUpperCase(),
     parkId ? String(parkId) : undefined,
     includeGeometry === 'true'
@@ -441,8 +441,8 @@ app.get('/api/trails/map/:stateCode', asyncHandler(async (req: Request, res: Res
 app.get('/api/map/parks/:stateCode', asyncHandler(async (req: Request, res: Response) => {
   const { stateCode } = req.params;
 
-  // Get parks with coordinates from S3 park index (returns { national, state })
-  const result = await s3ParkData.getParksInState(stateCode.toUpperCase());
+  // Get parks with coordinates from park data provider (Postgres or S3)
+  const result = await parkData.getParksInState(stateCode.toUpperCase());
   const allParks = [...(result?.national || []), ...(result?.state || [])];
   const mapParks = allParks
     .filter(p => p.coordinates?.latitude && p.coordinates?.longitude)
@@ -463,8 +463,41 @@ app.get('/api/map/parks/:stateCode', asyncHandler(async (req: Request, res: Resp
 app.get('/api/map/campgrounds/:stateCode', asyncHandler(async (req: Request, res: Response) => {
   const { stateCode } = req.params;
 
-  const campData = await s3ParkData.getCampgroundsForMap(stateCode.toUpperCase());
+  const campData = await parkData.getCampgroundsForMap(stateCode.toUpperCase());
   res.json(campData);
+}));
+
+// Spatial: trails by bounding box (Postgres only, falls back to state-based)
+app.get('/api/trails/bbox', asyncHandler(async (req: Request, res: Response) => {
+  const { minLat, minLng, maxLat, maxLng, limit, difficulty } = req.query;
+
+  if (!minLat || !minLng || !maxLat || !maxLng) {
+    return res.status(400).json({ error: 'Missing required parameters: minLat, minLng, maxLat, maxLng' });
+  }
+
+  const trails = await parkData.getTrailsInBoundingBox(
+    parseFloat(minLat as string), parseFloat(minLng as string),
+    parseFloat(maxLat as string), parseFloat(maxLng as string),
+    { limit: limit ? parseInt(limit as string) : 300, difficulty: difficulty as string }
+  );
+
+  res.json({ trails, totalTrails: trails.length });
+}));
+
+// Spatial: campgrounds near a point (Postgres only)
+app.get('/api/campgrounds/nearby', asyncHandler(async (req: Request, res: Response) => {
+  const { latitude, longitude, radius = '50', limit = '20' } = req.query;
+
+  if (!latitude || !longitude) {
+    return res.status(400).json({ error: 'Missing required parameters: latitude, longitude' });
+  }
+
+  const campgrounds = await parkData.getCampgroundsNearLocation(
+    parseFloat(latitude as string), parseFloat(longitude as string),
+    parseFloat(radius as string), parseInt(limit as string)
+  );
+
+  res.json({ campgrounds, totalFound: campgrounds.length });
 }));
 
 // ============================================

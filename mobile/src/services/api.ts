@@ -362,6 +362,7 @@ export interface TrailMapMarker {
   longitude: number;
   lengthMiles?: number;
   difficulty?: string;
+  difficultySource?: string;
   trailType?: string;
   googleMapsUrl?: string;
   allTrailsUrl?: string;
@@ -376,24 +377,12 @@ export interface TrailMapResponse {
 
 export const fetchTrailsForMap = async (stateCode: string, parkId?: string): Promise<TrailMapResponse> => {
   try {
-    const params: Record<string, string> = {};
-    if (parkId) params.parkId = parkId;
-    const response = await api.get(`/api/trails/map/${stateCode.toUpperCase()}`, { params });
-    return response.data;
-  } catch (error) {
-    console.error('Failed to fetch trail map data:', error);
-    return { stateCode: stateCode.toUpperCase(), totalTrails: 0, trails: [] };
-  }
-};
-
-export const fetchTrailGeometry = async (stateCode: string, parkId?: string): Promise<TrailMapResponse> => {
-  try {
     const params: Record<string, string> = { includeGeometry: 'true' };
     if (parkId) params.parkId = parkId;
     const response = await api.get(`/api/trails/map/${stateCode.toUpperCase()}`, { params });
     return response.data;
   } catch (error) {
-    console.error('Failed to fetch trail geometry:', error);
+    console.error('Failed to fetch trail map data:', error);
     return { stateCode: stateCode.toUpperCase(), totalTrails: 0, trails: [] };
   }
 };
@@ -437,6 +426,43 @@ export const fetchCampgroundsForMap = async (stateCode: string): Promise<Campgro
     return response.data.campgrounds || [];
   } catch (error) {
     console.error('Failed to fetch campgrounds for map:', error);
+    return [];
+  }
+};
+
+// Spatial: fetch trails by map bounding box (Postgres-powered)
+export const fetchTrailsByBoundingBox = async (
+  minLat: number, minLng: number, maxLat: number, maxLng: number,
+  options?: { limit?: number; difficulty?: string }
+): Promise<TrailMapMarker[]> => {
+  try {
+    const params: Record<string, string> = {
+      minLat: String(minLat), minLng: String(minLng),
+      maxLat: String(maxLat), maxLng: String(maxLng),
+    };
+    if (options?.limit) params.limit = String(options.limit);
+    if (options?.difficulty) params.difficulty = options.difficulty;
+    const response = await api.get('/api/trails/bbox', { params });
+    return response.data.trails || [];
+  } catch (error) {
+    console.error('Failed to fetch trails by bounding box:', error);
+    return [];
+  }
+};
+
+// Spatial: fetch campgrounds near a point (Postgres-powered)
+export const fetchCampgroundsNearby = async (
+  latitude: number, longitude: number, radiusMiles: number = 50
+): Promise<(CampgroundMapMarker & { distanceMiles: number })[]> => {
+  try {
+    const params = {
+      latitude: String(latitude), longitude: String(longitude),
+      radius: String(radiusMiles),
+    };
+    const response = await api.get('/api/campgrounds/nearby', { params });
+    return response.data.campgrounds || [];
+  } catch (error) {
+    console.error('Failed to fetch nearby campgrounds:', error);
     return [];
   }
 };

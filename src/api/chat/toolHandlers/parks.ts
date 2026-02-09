@@ -5,7 +5,7 @@
  */
 
 import { TravelFacade } from '../../../domain/facade/TravelFacade.js';
-import { s3ParkData } from '../../../providers/parks/S3ParkDataService.js';
+import { parkData } from '../../../providers/parks/parkDataProvider.js';
 import { npsTrailAdapter } from '../../../providers/trails/NPSTrailAdapter.js';
 import { findParkCode } from '../../../utils/parkCodeLookup.js';
 import { generateGoogleMapsLink } from '../../../utils/linkUtils.js';
@@ -254,7 +254,7 @@ export async function handleGetParkHikes(
   console.log(`[Hikes] Getting hikes for park: ${parkCode}`);
   
   // PRIORITY 1: Try S3 trail data
-  const s3Trails = await s3ParkData.getTrailsForPark(parkCode);
+  const s3Trails = await parkData.getTrailsForPark(parkCode);
   
   if (s3Trails.length > 0) {
     console.log(`[Hikes] Found ${s3Trails.length} trails in S3 for ${parkCode}`);

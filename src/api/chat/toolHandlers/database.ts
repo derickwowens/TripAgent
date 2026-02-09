@@ -5,7 +5,7 @@
  */
 
 import { TravelFacade } from '../../../domain/facade/TravelFacade.js';
-import { s3ParkData } from '../../../providers/parks/S3ParkDataService.js';
+import { parkData } from '../../../providers/parks/parkDataProvider.js';
 import { StateParkService } from '../../../providers/parks/StateParkService.js';
 import { findParkCode } from '../../../utils/parkCodeLookup.js';
 import { PhotoReference } from '../types.js';
@@ -31,7 +31,7 @@ export async function handleLookupParkDatabase(
   
   try {
     if (input.park_id) {
-      const park = await s3ParkData.getParkById(input.park_id);
+      const park = await parkData.getParkById(input.park_id);
       if (park) {
         if (park.images && park.images.length > 0) {
           park.images.slice(0, 5).forEach((img, idx) => {
@@ -44,12 +44,12 @@ export async function handleLookupParkDatabase(
           });
         }
         
-        const context = await s3ParkData.buildParkContext(input.park_id);
+        const context = await parkData.buildParkContext(input.park_id);
         
         return {
           park: park,
           context: context,
-          source: 'TripAgent S3 Database',
+          source: 'TripAgent Database',
           note: 'This data is from our authoritative park database',
         };
       }
@@ -58,14 +58,14 @@ export async function handleLookupParkDatabase(
     }
     
     if (input.query) {
-      const results = await s3ParkData.searchParks(input.query, {
+      const results = await parkData.searchParks(input.query, {
         category: input.category || 'all',
         stateCode: input.state_code,
         limit: 10,
       });
       
       if (results.length > 0) {
-        const topPark = await s3ParkData.getParkById(results[0].id);
+        const topPark = await parkData.getParkById(results[0].id);
         
         if (topPark?.images && topPark.images.length > 0) {
           topPark.images.slice(0, 3).forEach((img, idx) => {
@@ -82,7 +82,7 @@ export async function handleLookupParkDatabase(
           parks: results,
           topResult: topPark,
           totalResults: results.length,
-          source: 'TripAgent S3 Database',
+          source: 'TripAgent Database',
         };
       }
       s3Failed = true;
@@ -192,7 +192,7 @@ export async function handleGetParksNearLocation(
   console.log(`[S3 Park DB] Parks near (${input.latitude}, ${input.longitude}), radius=${input.radius_miles || 50}mi`);
   
   try {
-    const parks = await s3ParkData.getParksNearLocation(
+    const parks = await parkData.getParksNearLocation(
       input.latitude,
       input.longitude,
       input.radius_miles || 50,
@@ -223,7 +223,7 @@ export async function handleGetParkDatabaseStats(): Promise<any> {
   console.log(`[S3 Park DB] Getting database stats`);
   
   try {
-    const stats = await s3ParkData.getStats();
+    const stats = await parkData.getStats();
     
     if (!stats) {
       return { error: 'Could not retrieve database statistics' };
