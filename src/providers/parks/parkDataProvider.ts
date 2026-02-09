@@ -1,18 +1,16 @@
 /**
  * Park Data Provider Factory
  * 
- * Returns PostgresParkDataService when DATABASE_URL is configured,
- * otherwise falls back to S3ParkDataService.
+ * Returns PostgresParkDataService. DATABASE_URL is required.
+ * S3 is no longer used at runtime — all data is served from Postgres.
  * 
  * Uses lazy initialization so dotenv has time to load before we check
  * DATABASE_URL. The provider is created on first access.
  */
 
-import { S3ParkDataService, s3ParkData } from './S3ParkDataService.js';
 import { PostgresParkDataService } from './PostgresParkDataService.js';
 
-let _provider: PostgresParkDataService | S3ParkDataService | null = null;
-let _pgProvider: PostgresParkDataService | null = null;
+let _provider: PostgresParkDataService | null = null;
 let _initialized = false;
 
 function init() {
@@ -20,22 +18,18 @@ function init() {
   _initialized = true;
 
   const dbUrl = process.env.DATABASE_URL;
-  if (dbUrl) {
-    _pgProvider = new PostgresParkDataService();
-    _provider = _pgProvider;
-    console.log('[ParkData] Using PostgreSQL + earthdistance data provider');
-  } else {
-    _provider = s3ParkData;
-    console.log('[ParkData] Using S3 data provider (set DATABASE_URL for Postgres)');
+  if (!dbUrl) {
+    console.error('[ParkData] DATABASE_URL is required. Postgres is the sole data provider.');
   }
+  _provider = new PostgresParkDataService();
+  console.log('[ParkData] Using PostgreSQL + earthdistance data provider');
 }
 
 /**
- * Get the active park data provider.
- * Returns Postgres service if DATABASE_URL is set, otherwise S3 service.
+ * Get the active park data provider (PostgreSQL).
  * Lazy-initialized so dotenv.config() runs first.
  */
-export const parkData = new Proxy({} as PostgresParkDataService & S3ParkDataService, {
+export const parkData = new Proxy({} as PostgresParkDataService, {
   get(_target, prop, receiver) {
     init();
     return Reflect.get(_provider!, prop, receiver);
@@ -43,27 +37,24 @@ export const parkData = new Proxy({} as PostgresParkDataService & S3ParkDataServ
 });
 
 /**
- * Whether the current provider is PostgreSQL
+ * Whether the current provider is PostgreSQL (always true now)
  */
 export function isPostgresProvider(): boolean {
-  init();
-  return !!_pgProvider;
+  return true;
 }
 
 /**
- * Get the PostgreSQL provider directly (for spatial queries not available in S3)
- * Returns null if DATABASE_URL is not configured.
+ * Get the PostgreSQL provider directly.
  */
-export function getPgParkData(): PostgresParkDataService | null {
+export function getPgParkData(): PostgresParkDataService {
   init();
-  return _pgProvider;
+  return _provider!;
 }
 
 // Keep backward-compatible export name
 export const pgParkData = new Proxy({} as PostgresParkDataService, {
   get(_target, prop, receiver) {
     init();
-    if (!_pgProvider) return undefined;
-    return Reflect.get(_pgProvider, prop, receiver);
+    return Reflect.get(_provider!, prop, receiver);
   },
 });

@@ -435,6 +435,7 @@ app.get('/api/trails/map/:stateCode', asyncHandler(async (req: Request, res: Res
     includeGeometry === 'true'
   );
 
+  res.set('Cache-Control', 'public, max-age=900'); // 15 min
   res.json(result);
 }));
 
@@ -457,6 +458,7 @@ app.get('/api/map/parks/:stateCode', asyncHandler(async (req: Request, res: Resp
       stateName: p.stateName,
     }));
 
+  res.set('Cache-Control', 'public, max-age=900'); // 15 min
   res.json({ stateCode: stateCode.toUpperCase(), parks: mapParks, totalParks: mapParks.length });
 }));
 
@@ -464,6 +466,7 @@ app.get('/api/map/campgrounds/:stateCode', asyncHandler(async (req: Request, res
   const { stateCode } = req.params;
 
   const campData = await parkData.getCampgroundsForMap(stateCode.toUpperCase());
+  res.set('Cache-Control', 'public, max-age=900'); // 15 min
   res.json(campData);
 }));
 
@@ -481,6 +484,7 @@ app.get('/api/trails/bbox', asyncHandler(async (req: Request, res: Response) => 
     { limit: limit ? parseInt(limit as string) : 300, difficulty: difficulty as string }
   );
 
+  res.set('Cache-Control', 'public, max-age=300'); // 5 min — bbox queries vary more
   res.json({ trails, totalTrails: trails.length });
 }));
 
@@ -497,6 +501,7 @@ app.get('/api/campgrounds/nearby', asyncHandler(async (req: Request, res: Respon
     parseFloat(radius as string), parseInt(limit as string)
   );
 
+  res.set('Cache-Control', 'public, max-age=300'); // 5 min
   res.json({ campgrounds, totalFound: campgrounds.length });
 }));
 
