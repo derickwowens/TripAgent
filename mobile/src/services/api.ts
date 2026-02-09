@@ -408,6 +408,14 @@ export interface CampgroundMapMarker {
   reservationUrl?: string;
   googleMapsUrl?: string;
   description?: string;
+  amenities?: string[];
+  siteTypes?: string[];
+  phone?: string;
+  petFriendly?: boolean;
+  openSeason?: string;
+  rating?: number;
+  priceMin?: number;
+  priceMax?: number;
 }
 
 export const fetchParksForMap = async (stateCode: string): Promise<ParkMapMarker[]> => {

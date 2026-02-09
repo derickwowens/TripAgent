@@ -999,12 +999,43 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                   <Text style={styles.lengthText}>{selectedCampground.totalSites} sites</Text>
                 </View>
               )}
+              {selectedCampground.petFriendly === true && (
+                <View style={styles.typeBadge}>
+                  <Text style={styles.typeText}>Pet Friendly</Text>
+                </View>
+              )}
+              {selectedCampground.openSeason && (
+                <View style={styles.typeBadge}>
+                  <Text style={styles.typeText}>{selectedCampground.openSeason}</Text>
+                </View>
+              )}
+              {selectedCampground.priceMin != null && selectedCampground.priceMin > 0 && (
+                <View style={styles.lengthBadge}>
+                  <Text style={styles.lengthText}>
+                    ${selectedCampground.priceMin}{selectedCampground.priceMax ? `-$${selectedCampground.priceMax}` : ''}/night
+                  </Text>
+                </View>
+              )}
             </View>
 
             {selectedCampground.description && (
               <Text style={styles.descriptionText} numberOfLines={3}>
                 {selectedCampground.description}
               </Text>
+            )}
+
+            {selectedCampground.amenities && selectedCampground.amenities.length > 0 && (
+              <Text style={styles.descriptionText} numberOfLines={2}>
+                {selectedCampground.amenities.slice(0, 6).join(' | ')}
+              </Text>
+            )}
+
+            {selectedCampground.phone && (
+              <TouchableOpacity onPress={() => Linking.openURL(`tel:${selectedCampground.phone}`).catch(() => {})}>
+                <Text style={[styles.coordText, { color: '#64B5F6' }]}>
+                  {selectedCampground.phone}
+                </Text>
+              </TouchableOpacity>
             )}
 
             <Text style={styles.coordText}>
