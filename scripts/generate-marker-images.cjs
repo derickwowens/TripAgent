@@ -143,22 +143,86 @@ function createTrailCircle(color, size, borderWidth) {
   return buf;
 }
 
-function createHouseMarker(color, w, h) {
+function createBadgeMarker(color, w, h) {
   const [r, g, b] = hexToRgb(color);
   const buf = Buffer.alloc(w * h * 4);
-  const cx = w / 2;
-  const roofH = Math.floor(h * 0.55);
-  const bodyH = h - roofH;
+  const bw = Math.max(2, Math.round(w * 0.10)); // border width
+  const radius = Math.round(Math.min(w, h) * 0.25); // corner radius ~25% of smaller dimension
 
-  // White outline (slightly larger shapes)
-  drawTriangle(buf, w, cx, 0, 0, roofH + 1, w, roofH + 1, 255, 255, 255);
-  drawRect(buf, w, (w - w*0.7)/2 - 1, roofH - 1, w*0.7 + 2, bodyH + 1, 255, 255, 255);
+  // Draw rounded rectangle with white border and colored fill
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      // Check if pixel is inside rounded rect
+      let inside = true;
+      let inBorder = false;
+      
+      // Check corners for rounding
+      const corners = [
+        { cx: radius, cy: radius },           // top-left
+        { cx: w - radius, cy: radius },       // top-right
+        { cx: radius, cy: h - radius },       // bottom-left
+        { cx: w - radius, cy: h - radius },   // bottom-right
+      ];
+      
+      for (const { cx, cy } of corners) {
+        const inCornerRegion = 
+          (x < radius && y < radius && cx === radius && cy === radius) ||
+          (x >= w - radius && y < radius && cx === w - radius && cy === radius) ||
+          (x < radius && y >= h - radius && cx === radius && cy === h - radius) ||
+          (x >= w - radius && y >= h - radius && cx === w - radius && cy === h - radius);
+        
+        if (inCornerRegion) {
+          const dist = Math.sqrt((x - cx + 0.5) ** 2 + (y - cy + 0.5) ** 2);
+          if (dist > radius) {
+            inside = false;
+          } else if (dist > radius - bw) {
+            inBorder = true;
+          }
+        }
+      }
+      
+      // Check if in border region (not corners)
+      if (inside && !inBorder) {
+        if (x < bw || x >= w - bw || y < bw || y >= h - bw) {
+          inBorder = true;
+        }
+      }
+      
+      if (inside) {
+        if (inBorder) {
+          setPixel(buf, w, x, y, 255, 255, 255, 255); // white border
+        } else {
+          setPixel(buf, w, x, y, r, g, b, 255); // colored fill
+        }
+      }
+    }
+  }
+  return buf;
+}
 
-  // Colored roof triangle
-  drawTriangle(buf, w, cx, 2, 2, roofH, w - 2, roofH, r, g, b);
-  // Colored body rectangle
-  const bodyW = w * 0.6;
-  drawRect(buf, w, (w - bodyW)/2, roofH, bodyW, bodyH - 2, r, g, b);
+function createDiamondMarker(color, size) {
+  const [r, g, b] = hexToRgb(color);
+  const buf = Buffer.alloc(size * size * 4);
+  const cx = size / 2, cy = size / 2;
+  const half = size / 2 - 0.5;
+
+  // Diamond = rotated square. For each pixel, check if |x-cx| + |y-cy| <= half
+  for (let y = 0; y < size; y++) {
+    for (let x = 0; x < size; x++) {
+      const dist = Math.abs(x - cx + 0.5) + Math.abs(y - cy + 0.5);
+      if (dist <= half) {
+        // White border for outer 1.5px
+        if (dist > half - 1.5) {
+          setPixel(buf, size, x, y, 255, 255, 255, 255);
+        } else {
+          setPixel(buf, size, x, y, r, g, b, 255);
+        }
+      } else if (dist <= half + 0.5) {
+        const a = Math.round(Math.max(0, half + 0.5 - dist) * 255);
+        setPixel(buf, size, x, y, 255, 255, 255, a);
+      }
+    }
+  }
   return buf;
 }
 
@@ -188,9 +252,16 @@ fs.mkdirSync(outDir, { recursive: true });
 
 console.log('Generating marker images...\n');
 
-// Trail markers - colored circles with white border (40x40 for 2x density)
-const trailSize = 40;
-const trailBorder = 3;
+// Density variants: @1x, @2x, @3x
+// React Native picks the right variant for device density.
+// Logical sizes (in dp) match iOS custom views:
+//   Trail dot: 12dp, Selected: 18dp, House: 14x13dp, Tent: 12x11dp
+const scales = [
+  { suffix: '',    scale: 1 },
+  { suffix: '@2x', scale: 2 },
+  { suffix: '@3x', scale: 3 },
+];
+
 const trailColors = {
   'trail-easy':     '#4CAF50',
   'trail-moderate': '#FF9800',
@@ -198,33 +269,54 @@ const trailColors = {
   'trail-expert':   '#9C27B0',
   'trail-unknown':  '#9E9E9E',
 };
-for (const [name, color] of Object.entries(trailColors)) {
-  const buf = createTrailCircle(color, trailSize, trailBorder);
-  writePNG(path.join(outDir, `${name}.png`), trailSize, trailSize, buf);
-}
 
-// Selected trail markers (larger, 56x56)
-const selSize = 56;
-const selBorder = 4;
-for (const [name, color] of Object.entries(trailColors)) {
-  const buf = createTrailCircle(color, selSize, selBorder);
-  writePNG(path.join(outDir, `${name}-selected.png`), selSize, selSize, buf);
-}
-
-// Park markers - house shape (44x40 for 2x)
-const parkW = 44, parkH = 40;
-const parkColors = {
-  'park-state':    '#2E7D32',
-  'park-national': '#1565C0',
+const parkBadgeColors = {
+  'park-national': '#4A2C0A',  // US Recreation Brown (road sign brown)
+  'park-state':    '#33691E',  // State park green
 };
-for (const [name, color] of Object.entries(parkColors)) {
-  const buf = createHouseMarker(color, parkW, parkH);
-  writePNG(path.join(outDir, `${name}.png`), parkW, parkH, buf);
+const parkOtherColor = '#78909C'; // Gray for other national sites
+
+let count = 0;
+for (const { suffix, scale } of scales) {
+  // Trail markers - colored circles (12dp logical)
+  const trailSize = Math.round(12 * scale);
+  const trailBorder = Math.max(1, Math.round(1.5 * scale));
+  for (const [name, color] of Object.entries(trailColors)) {
+    const buf = createTrailCircle(color, trailSize, trailBorder);
+    writePNG(path.join(outDir, `${name}${suffix}.png`), trailSize, trailSize, buf);
+    count++;
+  }
+
+  // Selected trail markers (18dp logical)
+  const selSize = Math.round(18 * scale);
+  const selBorder = Math.max(1, Math.round(2 * scale));
+  for (const [name, color] of Object.entries(trailColors)) {
+    const buf = createTrailCircle(color, selSize, selBorder);
+    writePNG(path.join(outDir, `${name}-selected${suffix}.png`), selSize, selSize, buf);
+    count++;
+  }
+
+  // Park badge markers - rounded rect (24x16dp logical, more prominent)
+  const badgeW = Math.round(24 * scale);
+  const badgeH = Math.round(16 * scale);
+  for (const [name, color] of Object.entries(parkBadgeColors)) {
+    const buf = createBadgeMarker(color, badgeW, badgeH);
+    writePNG(path.join(outDir, `${name}${suffix}.png`), badgeW, badgeH, buf);
+    count++;
+  }
+
+  // Other national site markers - diamond shape (10x10dp logical)
+  const diamondSize = Math.round(10 * scale);
+  const diamondBuf = createDiamondMarker(parkOtherColor, diamondSize);
+  writePNG(path.join(outDir, `park-other${suffix}.png`), diamondSize, diamondSize, diamondBuf);
+  count++;
+
+  // Campground marker - tent shape (12x11dp logical)
+  const cgW = Math.round(12 * scale);
+  const cgH = Math.round(11 * scale);
+  const cgBuf = createTentMarker('#E65100', cgW, cgH);
+  writePNG(path.join(outDir, `campground${suffix}.png`), cgW, cgH, cgBuf);
+  count++;
 }
 
-// Campground marker - tent shape (40x36 for 2x)
-const cgW = 40, cgH = 36;
-const cgBuf = createTentMarker('#E65100', cgW, cgH);
-writePNG(path.join(outDir, 'campground.png'), cgW, cgH, cgBuf);
-
-console.log(`\n✅ Generated ${Object.keys(trailColors).length * 2 + Object.keys(parkColors).length + 1} marker images in ${outDir}`);
+console.log(`\n✅ Generated ${count} marker images in ${outDir}`);

@@ -17,7 +17,7 @@ import {
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { sendChatMessageWithStream, ChatMessage as ApiChatMessage, ChatContext, logErrorToServer, fetchStateParks, StateParkSummary } from '../services/api';
 import { useLocation, useConversations, useUserProfile, useDarkMode, DarkModeContext, getLoadingStatesForQuery, Message, SavedConversation, PhotoReference, useOnboarding, useTripContext, useToolSettings, ParkThemeProvider, getThemeForMode, useTravelDates } from '../hooks';
-import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo, DraggableConversationPanel, TrailMapPanel, TrailMapTab } from '../components/home';
+import { WelcomeScreen, ChatMessages, ChatInput, SideMenu, PhotoGallery, CollapsibleBottomPanel, OnboardingFlow, ParkMode, ThemedLogo, DraggableConversationPanel, TrailMapPanel } from '../components/home';
 import type { ParkMode as ParkModeType } from '../hooks';
 import { showShareOptions, generateItinerary, saveItineraryToDevice, shareGeneratedItinerary } from '../utils/shareItinerary';
 import { parseUserMessage, parseApiResponse, parseApiResponseWithValidation } from '../utils/responseParser';
@@ -814,30 +814,49 @@ const HomeScreen: React.FC = () => {
           <StatusBar barStyle="light-content" />
         
         <View style={[styles.header, { paddingTop: insets.top + 8 }]}>
-          <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
-            <Text style={styles.menuIcon}>☰</Text>
-          </TouchableOpacity>
+          <View style={styles.headerLeftButtons}>
+            <TouchableOpacity style={styles.menuButton} onPress={() => setMenuOpen(true)}>
+              <Text style={styles.menuIcon}>☰</Text>
+            </TouchableOpacity>
+          </View>
           {messages.length > 0 ? (
             <ThemedLogo size={32} style={styles.headerLogo} />
           ) : (
             <View style={styles.headerLogo} />
           )}
           {messages.length > 0 ? (
-            <TouchableOpacity 
-              style={[styles.shareButton, { backgroundColor: parkTheme.buttonBackground }]} 
-              onPress={() => {
-                const currentConv = savedConversations.find(c => c.id === currentConversationId);
-                if (currentConv) {
-                  showShareOptions(currentConv, () => handleGenerateItinerary(currentConv));
-                } else {
-                  Alert.alert('Share', 'Save your conversation first to share it');
-                }
-              }}
-            >
-              <Text style={styles.shareButtonText}>↗</Text>
-            </TouchableOpacity>
+            <View style={styles.headerRightButtons}>
+              <TouchableOpacity
+                style={[styles.mapButton, { backgroundColor: parkTheme.buttonBackground }]}
+                onPress={() => {
+                  // If map not visible yet, initialize with user's state
+                  if (!trailMap.visible && userLocation?.state) {
+                    trailMap.initFromConversation(
+                      { destination: userLocation.state, parkMode },
+                      messages.map(m => ({ type: m.type, content: m.content }))
+                    );
+                  }
+                  trailMap.togglePanel();
+                }}
+              >
+                <Text style={styles.mapButtonIcon}>🗺</Text>
+              </TouchableOpacity>
+              <TouchableOpacity 
+                style={[styles.shareButton, { backgroundColor: parkTheme.buttonBackground }]} 
+                onPress={() => {
+                  const currentConv = savedConversations.find(c => c.id === currentConversationId);
+                  if (currentConv) {
+                    showShareOptions(currentConv, () => handleGenerateItinerary(currentConv));
+                  } else {
+                    Alert.alert('Share', 'Save your conversation first to share it');
+                  }
+                }}
+              >
+                <Text style={styles.shareButtonText}>↗</Text>
+              </TouchableOpacity>
+            </View>
           ) : (
-            <View style={styles.menuButton} />
+            <View style={styles.headerRightButtons} />
           )}
         </View>
 
@@ -1015,12 +1034,6 @@ const HomeScreen: React.FC = () => {
             />
           </ScrollView>
 
-                    
-          <TrailMapTab
-            visible={trailMap.visible}
-            panelOpen={trailMap.panelOpen}
-            onTogglePanel={trailMap.togglePanel}
-          />
           <ChatInput
               inputText={inputText}
               onChangeText={setInputText}
@@ -1091,6 +1104,7 @@ const HomeScreen: React.FC = () => {
           parks={trailMap.parks}
           campgrounds={trailMap.campgrounds}
           loading={trailMap.loading}
+          regionLoading={trailMap.regionLoading}
           error={trailMap.error}
           parkName={trailMap.parkName}
           stateCode={trailMap.stateCode}
@@ -1101,6 +1115,7 @@ const HomeScreen: React.FC = () => {
           onTogglePanel={trailMap.togglePanel}
           onClose={trailMap.closePanel}
           onFetchTrails={trailMap.fetchTrails}
+          onFetchForRegion={trailMap.fetchForRegion}
           onPlanAdventure={handlePlanAdventure}
         />
         </View>
@@ -1161,6 +1176,34 @@ const styles = StyleSheet.create({
     width: 32,
     height: 32,
     borderRadius: 6,
+  },
+  headerLeftButtons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    width: 88,
+  },
+  headerRightButtons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    gap: 8,
+    width: 88,
+  },
+  mapButton: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#166534',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  mapButtonPlaceholder: {
+    width: 40,
+    height: 40,
+  },
+  mapButtonIcon: {
+    fontSize: 18,
   },
   shareButton: {
     width: 40,

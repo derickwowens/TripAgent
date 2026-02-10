@@ -586,6 +586,62 @@ export class PostgresParkDataService {
     }));
   }
 
+  /**
+   * Get campgrounds near a specific park (by park ID).
+   * Looks up the park's coordinates and finds campgrounds within radiusMiles.
+   */
+  async getCampgroundsNearPark(
+    parkId: string, radiusMiles: number = 30, limit: number = 20
+  ): Promise<Array<{
+    id: string; name: string; latitude: number; longitude: number;
+    parkName?: string; reservationUrl?: string; distanceMiles: number;
+    amenities?: string[]; siteTypes?: string[]; phone?: string;
+    petFriendly?: boolean; openSeason?: string; totalSites?: number;
+    priceMin?: number; priceMax?: number;
+  }>> {
+    // Get the park's coordinates
+    const parkResult = await this.pool.query(`
+      SELECT latitude, longitude FROM parks WHERE id = $1
+    `, [parkId]);
+
+    if (parkResult.rows.length === 0 || !parkResult.rows[0].latitude || !parkResult.rows[0].longitude) {
+      return [];
+    }
+
+    const { latitude, longitude } = parkResult.rows[0];
+    const radiusMeters = radiusMiles * 1609.34;
+
+    const { rows } = await this.pool.query(`
+      SELECT id, name, latitude, longitude, park_name, reservation_url,
+        amenities, site_types, phone, pet_friendly, open_season, total_sites,
+        price_per_night_min, price_per_night_max,
+        earth_distance(ll_to_earth($1, $2), ll_to_earth(latitude, longitude)) / 1609.34 as distance_miles
+      FROM campgrounds
+      WHERE latitude IS NOT NULL AND longitude IS NOT NULL
+        AND earth_distance(ll_to_earth($1, $2), ll_to_earth(latitude, longitude)) <= $3
+      ORDER BY distance_miles
+      LIMIT $4
+    `, [latitude, longitude, radiusMeters, limit]);
+
+    return rows.map(r => ({
+      id: r.id,
+      name: r.name,
+      latitude: parseFloat(r.latitude),
+      longitude: parseFloat(r.longitude),
+      parkName: r.park_name,
+      reservationUrl: r.reservation_url,
+      distanceMiles: Math.round(r.distance_miles * 10) / 10,
+      amenities: r.amenities || undefined,
+      siteTypes: r.site_types || undefined,
+      phone: r.phone || undefined,
+      petFriendly: r.pet_friendly,
+      openSeason: r.open_season || undefined,
+      totalSites: r.total_sites || undefined,
+      priceMin: r.price_per_night_min ? parseFloat(r.price_per_night_min) : undefined,
+      priceMax: r.price_per_night_max ? parseFloat(r.price_per_night_max) : undefined,
+    }));
+  }
+
   // ============================================
   // STATE TRAIL QUERIES
   // ============================================

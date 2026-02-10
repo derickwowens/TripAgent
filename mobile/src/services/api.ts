@@ -477,6 +477,20 @@ export const fetchCampgroundsNearby = async (
   }
 };
 
+// Spatial: fetch campgrounds near a specific park (by park ID)
+export const fetchCampgroundsNearPark = async (
+  parkId: string, radiusMiles: number = 30, limit: number = 10
+): Promise<(CampgroundMapMarker & { distanceMiles: number })[]> => {
+  try {
+    const params = { radius: String(radiusMiles), limit: String(limit) };
+    const response = await api.get(`/api/parks/${encodeURIComponent(parkId)}/campgrounds`, { params });
+    return response.data.campgrounds || [];
+  } catch (error) {
+    console.error('Failed to fetch campgrounds near park:', error);
+    return [];
+  }
+};
+
 // Error logging
 export const logErrorToServer = async (error: {
   message: string;

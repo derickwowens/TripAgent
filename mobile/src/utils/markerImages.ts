@@ -31,11 +31,12 @@ const TRAIL_SELECTED_IMAGES: Record<string, MarkerImage> = isAndroid ? {
   unknown: require('../../assets/markers/trail-unknown-selected.png'),
 } : {};
 
-// Park markers (house shapes)
+// Park markers (badge shapes for NP/SP, diamond for other national sites)
 const PARK_IMAGES = isAndroid ? {
-  state: require('../../assets/markers/park-state.png'),
   national: require('../../assets/markers/park-national.png'),
-} : { state: undefined, national: undefined };
+  state: require('../../assets/markers/park-state.png'),
+  other: require('../../assets/markers/park-other.png'),
+} : { national: undefined, state: undefined, other: undefined };
 
 // Campground marker (tent shape)
 const CAMPGROUND_IMAGE = isAndroid
@@ -58,12 +59,15 @@ export function getTrailMarkerImage(
 }
 
 /**
- * Get the marker image for a park (state vs national).
- * Returns undefined on iOS.
+ * Get the marker image for a park.
+ * Three-way classification: NP badge (brown), SP badge (green), other diamond (gray).
+ * Returns undefined on iOS (custom views used instead).
  */
-export function getParkMarkerImage(isNational: boolean): MarkerImage | undefined {
+export function getParkMarkerImage(isNP: boolean, isState: boolean): MarkerImage | undefined {
   if (!isAndroid) return undefined;
-  return isNational ? PARK_IMAGES.national : PARK_IMAGES.state;
+  if (isNP) return PARK_IMAGES.national;
+  if (isState) return PARK_IMAGES.state;
+  return PARK_IMAGES.other;
 }
 
 /**

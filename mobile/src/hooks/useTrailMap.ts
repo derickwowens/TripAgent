@@ -6,6 +6,7 @@ import { PARK_GATEWAYS, PARK_DETECTION_PATTERNS } from '../data/nationalParks';
 export interface TrailMapState {
   visible: boolean;
   panelOpen: boolean;
+  tabDismissed: boolean;
   stateCode: string | null;
   parkCode: string | null;
   parkName: string | null;
@@ -15,8 +16,36 @@ export interface TrailMapState {
   parks: ParkMapMarker[];
   campgrounds: CampgroundMapMarker[];
   loading: boolean;
+  regionLoading: boolean;
   error: string | null;
 }
+
+// Approximate bounding boxes for states with map data
+const DATA_STATE_BOUNDS: Record<string, { minLat: number; maxLat: number; minLng: number; maxLng: number }> = {
+  WI: { minLat: 42.5, maxLat: 47.1, minLng: -92.9, maxLng: -86.8 },
+  FL: { minLat: 24.4, maxLat: 31.0, minLng: -87.6, maxLng: -80.0 },
+  CA: { minLat: 32.5, maxLat: 42.0, minLng: -124.4, maxLng: -114.1 },
+  TX: { minLat: 25.8, maxLat: 36.5, minLng: -106.6, maxLng: -93.5 },
+  CO: { minLat: 37.0, maxLat: 41.0, minLng: -109.1, maxLng: -102.0 },
+  OR: { minLat: 42.0, maxLat: 46.3, minLng: -124.6, maxLng: -116.5 },
+  AZ: { minLat: 31.3, maxLat: 37.0, minLng: -114.8, maxLng: -109.0 },
+  UT: { minLat: 37.0, maxLat: 42.0, minLng: -114.1, maxLng: -109.0 },
+  WA: { minLat: 45.5, maxLat: 49.0, minLng: -124.8, maxLng: -116.9 },
+  MI: { minLat: 41.7, maxLat: 48.3, minLng: -90.4, maxLng: -82.1 },
+  NC: { minLat: 33.8, maxLat: 36.6, minLng: -84.3, maxLng: -75.5 },
+  VA: { minLat: 36.5, maxLat: 39.5, minLng: -83.7, maxLng: -75.2 },
+  TN: { minLat: 35.0, maxLat: 36.7, minLng: -90.3, maxLng: -81.6 },
+  WV: { minLat: 37.2, maxLat: 40.6, minLng: -82.6, maxLng: -77.7 },
+  KY: { minLat: 36.5, maxLat: 39.1, minLng: -89.6, maxLng: -81.9 },
+  GA: { minLat: 30.4, maxLat: 35.0, minLng: -85.6, maxLng: -80.8 },
+  NY: { minLat: 40.5, maxLat: 45.0, minLng: -79.8, maxLng: -71.9 },
+  PA: { minLat: 39.7, maxLat: 42.3, minLng: -80.5, maxLng: -74.7 },
+  MN: { minLat: 43.5, maxLat: 49.4, minLng: -97.2, maxLng: -89.5 },
+  SC: { minLat: 32.0, maxLat: 35.2, minLng: -83.4, maxLng: -78.5 },
+  NM: { minLat: 31.3, maxLat: 37.0, minLng: -109.0, maxLng: -103.0 },
+  ID: { minLat: 42.0, maxLat: 49.0, minLng: -117.2, maxLng: -111.0 },
+  MT: { minLat: 44.4, maxLat: 49.0, minLng: -116.0, maxLng: -104.0 },
+};
 
 const STATE_NAME_TO_CODE: Record<string, string> = {
   'alabama': 'AL', 'alaska': 'AK', 'arizona': 'AZ', 'arkansas': 'AR',
@@ -99,6 +128,7 @@ export const useTrailMap = () => {
   const [state, setState] = useState<TrailMapState>({
     visible: false,
     panelOpen: false,
+    tabDismissed: false,
     stateCode: null,
     parkCode: null,
     parkName: null,
@@ -108,11 +138,14 @@ export const useTrailMap = () => {
     parks: [],
     campgrounds: [],
     loading: false,
+    regionLoading: false,
     error: null,
   });
 
   const lastDetectedRef = useRef<string | null>(null);
   const fetchControllerRef = useRef<AbortController | null>(null);
+  const loadedStatesRef = useRef<Set<string>>(new Set());
+  const regionFetchingRef = useRef(false);
 
   // Cleanup on unmount
   useEffect(() => {
@@ -192,6 +225,8 @@ export const useTrailMap = () => {
         fetchCampgroundsForMap(code),
       ]);
 
+      loadedStatesRef.current.add(code);
+
       setState(prev => ({
         ...prev,
         trails: trailResult.trails,
@@ -209,6 +244,97 @@ export const useTrailMap = () => {
       }
     }
   }, [state.stateCode]);
+
+  /**
+   * Progressive data loading: fetch data for states visible in the map viewport
+   * that haven't been loaded yet. Accumulates data with existing.
+   */
+  const fetchForRegion = useCallback(async (region: {
+    latitude: number; longitude: number;
+    latitudeDelta: number; longitudeDelta: number;
+  }) => {
+    if (regionFetchingRef.current) return;
+
+    const { latitude, longitude, latitudeDelta, longitudeDelta } = region;
+    const viewMinLat = latitude - latitudeDelta / 2;
+    const viewMaxLat = latitude + latitudeDelta / 2;
+    const viewMinLng = longitude - longitudeDelta / 2;
+    const viewMaxLng = longitude + longitudeDelta / 2;
+
+    // Find states that overlap the viewport and aren't loaded yet
+    const statesToLoad: string[] = [];
+    for (const [code, bounds] of Object.entries(DATA_STATE_BOUNDS)) {
+      if (loadedStatesRef.current.has(code)) continue;
+      if (bounds.maxLat >= viewMinLat && bounds.minLat <= viewMaxLat &&
+          bounds.maxLng >= viewMinLng && bounds.minLng <= viewMaxLng) {
+        statesToLoad.push(code);
+      }
+    }
+
+    if (statesToLoad.length === 0) return;
+
+    regionFetchingRef.current = true;
+    setState(prev => ({ ...prev, regionLoading: true }));
+
+    try {
+      // Fetch all visible unloaded states in parallel
+      const results = await Promise.all(
+        statesToLoad.map(async (code) => {
+          const [trailResult, parksResult, campResult] = await Promise.all([
+            fetchTrailsForMap(code),
+            fetchParksForMap(code),
+            fetchCampgroundsForMap(code),
+          ]);
+          return { code, trails: trailResult.trails, parks: parksResult, campgrounds: campResult };
+        })
+      );
+
+      // Mark as loaded
+      for (const r of results) {
+        loadedStatesRef.current.add(r.code);
+      }
+
+      // Merge with existing data (dedupe by id)
+      setState(prev => {
+        const existingTrailIds = new Set(prev.trails.map(t => t.id));
+        const existingParkIds = new Set(prev.parks.map(p => p.id));
+        const existingCampIds = new Set(prev.campgrounds.map(c => c.id));
+
+        const newTrails = [...prev.trails];
+        const newParks = [...prev.parks];
+        const newCamps = [...prev.campgrounds];
+
+        for (const r of results) {
+          for (const t of r.trails) {
+            if (!existingTrailIds.has(t.id)) {
+              newTrails.push(t);
+              existingTrailIds.add(t.id);
+            }
+          }
+          for (const p of r.parks) {
+            if (!existingParkIds.has(p.id)) {
+              newParks.push(p);
+              existingParkIds.add(p.id);
+            }
+          }
+          for (const c of r.campgrounds) {
+            if (!existingCampIds.has(c.id)) {
+              newCamps.push(c);
+              existingCampIds.add(c.id);
+            }
+          }
+        }
+
+        return { ...prev, trails: newTrails, parks: newParks, campgrounds: newCamps, regionLoading: false };
+      });
+    } catch (error: any) {
+      if (error?.name !== 'AbortError') {
+        setState(prev => ({ ...prev, regionLoading: false }));
+      }
+    } finally {
+      regionFetchingRef.current = false;
+    }
+  }, []);
 
   /**
    * Toggle the slide-out panel open/closed
@@ -239,14 +365,30 @@ export const useTrailMap = () => {
   }, []);
 
   /**
+   * Dismiss the tab toast but keep data available (small map button will show)
+   */
+  const dismissTab = useCallback(() => {
+    setState(prev => ({ ...prev, tabDismissed: true, panelOpen: false }));
+  }, []);
+
+  /**
+   * Re-show the tab (and optionally open the panel)
+   */
+  const showTab = useCallback(() => {
+    setState(prev => ({ ...prev, tabDismissed: false }));
+  }, []);
+
+  /**
    * Reset when conversation changes
    */
   const reset = useCallback(() => {
     lastDetectedRef.current = null;
     fetchControllerRef.current?.abort();
+    loadedStatesRef.current.clear();
     setState({
       visible: false,
       panelOpen: false,
+      tabDismissed: false,
       stateCode: null,
       parkCode: null,
       parkName: null,
@@ -256,6 +398,7 @@ export const useTrailMap = () => {
       parks: [],
       campgrounds: [],
       loading: false,
+      regionLoading: false,
       error: null,
     });
   }, []);
@@ -288,6 +431,7 @@ export const useTrailMap = () => {
             setState({
               visible: true,
               panelOpen: false,
+              tabDismissed: false,
               stateCode: sc,
               parkCode: park.code,
               parkName: park.name,
@@ -297,6 +441,7 @@ export const useTrailMap = () => {
               parks: [],
               campgrounds: [],
               loading: false,
+              regionLoading: false,
               error: null,
             });
             return;
@@ -312,6 +457,7 @@ export const useTrailMap = () => {
         setState({
           visible: true,
           panelOpen: false,
+          tabDismissed: false,
           stateCode: stateFromDest,
           parkCode: null,
           parkName: dest,
@@ -321,6 +467,7 @@ export const useTrailMap = () => {
           parks: [],
           campgrounds: [],
           loading: false,
+          regionLoading: false,
           error: null,
         });
         return;
@@ -341,6 +488,7 @@ export const useTrailMap = () => {
             setState({
               visible: true,
               panelOpen: false,
+              tabDismissed: false,
               stateCode: sc,
               parkCode: park.code,
               parkName: park.name,
@@ -350,6 +498,7 @@ export const useTrailMap = () => {
               parks: [],
               campgrounds: [],
               loading: false,
+              regionLoading: false,
               error: null,
             });
             return;
@@ -364,6 +513,7 @@ export const useTrailMap = () => {
         setState({
           visible: true,
           panelOpen: false,
+          tabDismissed: false,
           stateCode,
           parkCode: null,
           parkName: `${stateCode} Trails`,
@@ -373,6 +523,7 @@ export const useTrailMap = () => {
           parks: [],
           campgrounds: [],
           loading: false,
+          regionLoading: false,
           error: null,
         });
         return;
@@ -387,6 +538,7 @@ export const useTrailMap = () => {
           setState({
             visible: true,
             panelOpen: false,
+            tabDismissed: false,
             stateCode: sc,
             parkCode: null,
             parkName: `${sc} Trails`,
@@ -396,6 +548,7 @@ export const useTrailMap = () => {
             parks: [],
             campgrounds: [],
             loading: false,
+            regionLoading: false,
             error: null,
           });
           return;
@@ -407,6 +560,7 @@ export const useTrailMap = () => {
     setState({
       visible: false,
       panelOpen: false,
+      tabDismissed: false,
       stateCode: null,
       parkCode: null,
       parkName: null,
@@ -416,6 +570,7 @@ export const useTrailMap = () => {
       parks: [],
       campgrounds: [],
       loading: false,
+      regionLoading: false,
       error: null,
     });
   }, []);
@@ -424,9 +579,12 @@ export const useTrailMap = () => {
     ...state,
     scanMessages,
     fetchTrails,
+    fetchForRegion,
     togglePanel,
     closePanel,
     dismiss,
+    dismissTab,
+    showTab,
     reset,
     initFromConversation,
   };

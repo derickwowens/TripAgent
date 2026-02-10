@@ -505,6 +505,21 @@ app.get('/api/campgrounds/nearby', asyncHandler(async (req: Request, res: Respon
   res.json({ campgrounds, totalFound: campgrounds.length });
 }));
 
+// Spatial: campgrounds near a specific park (by park ID)
+app.get('/api/parks/:parkId/campgrounds', asyncHandler(async (req: Request, res: Response) => {
+  const { parkId } = req.params;
+  const { radius = '30', limit = '20' } = req.query;
+
+  const campgrounds = await parkData.getCampgroundsNearPark(
+    parkId,
+    parseFloat(radius as string),
+    parseInt(limit as string)
+  );
+
+  res.set('Cache-Control', 'public, max-age=900'); // 15 min
+  res.json({ parkId, campgrounds, totalFound: campgrounds.length });
+}));
+
 // ============================================
 // TRIP PLANNING ENDPOINTS
 // ============================================

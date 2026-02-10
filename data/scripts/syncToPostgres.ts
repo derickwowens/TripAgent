@@ -653,7 +653,7 @@ async function fetchRIDBCampgrounds(stateCode: string): Promise<CampgroundRow[]>
   if (!RIDB_API_KEY) { console.log('  [RIDB] No API key (RECREATION_GOV_API_KEY) - skipping'); return []; }
   const campgrounds: CampgroundRow[] = [];
   try {
-    for (let offset = 0; offset <= 100; offset += 50) {
+    for (let offset = 0; offset < 2000; offset += 50) {
       const url = `${RIDB_BASE}/facilities?activity=CAMPING&state=${stateCode}&limit=50&offset=${offset}`;
       const resp = await fetch(url, { headers: { 'apikey': RIDB_API_KEY, 'Accept': 'application/json' } });
       if (!resp.ok) break;
@@ -680,6 +680,462 @@ async function fetchRIDBCampgrounds(stateCode: string): Promise<CampgroundRow[]>
   } catch (e: any) { console.log(`  [RIDB] Error: ${e.message}`); }
   return campgrounds;
 }
+
+// ============================================================================
+// USFS ARCGIS CAMPGROUND FETCHER
+// ============================================================================
+
+const USFS_CAMPGROUND_ENDPOINT = 'https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecreationOpportunities_01/MapServer/0/query';
+
+async function fetchUSFSCampgrounds(): Promise<CampgroundRow[]> {
+  const campgrounds: CampgroundRow[] = [];
+  try {
+    // Fetch count first
+    const countResp = await fetch(`${USFS_CAMPGROUND_ENDPOINT}?where=MARKERACTIVITY+LIKE+'%25Camping%25'&returnCountOnly=true&f=json`);
+    const countData = await countResp.json();
+    const total = countData.count || 0;
+    console.log(`  [USFS] Total camping sites available: ${total}`);
+
+    // Paginate through results (ArcGIS max 1000 per request)
+    for (let offset = 0; offset < total; offset += 1000) {
+      const params = new URLSearchParams({
+        where: "MARKERACTIVITY LIKE '%Camping%'",
+        outFields: 'RECAREANAME,LATITUDE,LONGITUDE,MARKERACTIVITY,RECAREAURL,FEEDESCRIPTION,OPEN_SEASON_START,OPEN_SEASON_END,FORESTNAME',
+        resultOffset: String(offset),
+        resultRecordCount: '1000',
+        f: 'json',
+      });
+      const resp = await fetch(`${USFS_CAMPGROUND_ENDPOINT}?${params}`);
+      if (!resp.ok) { console.log(`  [USFS] HTTP ${resp.status} at offset ${offset}`); break; }
+      const data = await resp.json();
+      const features = data.features || [];
+
+      for (const f of features) {
+        const a = f.attributes;
+        const lat = parseFloat(a.LATITUDE);
+        const lng = parseFloat(a.LONGITUDE);
+        if (!lat || !lng || isNaN(lat) || isNaN(lng)) continue;
+        const name = a.RECAREANAME || 'Unknown USFS Campground';
+        const id = `usfs-camp-${name.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}-${lat.toFixed(3)}-${lng.toFixed(3)}`;
+        campgrounds.push({
+          id, name,
+          stateCode: '', // Will be filled by reverse geocode or left empty
+          parkName: a.FORESTNAME || null,
+          description: a.FEEDESCRIPTION?.slice(0, 200) || null,
+          latitude: lat, longitude: lng, totalSites: null,
+          reservationUrl: a.RECAREAURL || null,
+          googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}&center=${lat},${lng}`,
+          dataSource: 'usfs',
+        });
+      }
+      if (features.length < 1000) break;
+      await sleep(500);
+    }
+    console.log(`  [USFS] Fetched ${campgrounds.length} campgrounds with coordinates`);
+  } catch (e: any) { console.log(`  [USFS] Error: ${e.message}`); }
+  return campgrounds;
+}
+
+// ============================================================================
+// OPENSTREETMAP OVERPASS CAMPGROUND FETCHER
+// ============================================================================
+
+async function fetchOSMCampgrounds(): Promise<CampgroundRow[]> {
+  const campgrounds: CampgroundRow[] = [];
+  // Split CONUS into small tiles (~5° x 7° max) to avoid Overpass 504 timeouts
+  const regions = [
+    // Pacific coast
+    { name: 'Pacific-S',     south: 24.0, west: -125.0, north: 40.0, east: -116.0 },
+    { name: 'Pacific-N',     south: 40.0, west: -125.0, north: 50.0, east: -116.0 },
+    // Mountain West
+    { name: 'MtnW-S',        south: 24.0, west: -116.0, north: 37.0, east: -109.0 },
+    { name: 'MtnW-M',        south: 37.0, west: -116.0, north: 42.0, east: -109.0 },
+    { name: 'MtnW-N',        south: 42.0, west: -116.0, north: 50.0, east: -109.0 },
+    // Mountain East
+    { name: 'MtnE-S',        south: 24.0, west: -109.0, north: 37.0, east: -102.0 },
+    { name: 'MtnE-M',        south: 37.0, west: -109.0, north: 42.0, east: -102.0 },
+    { name: 'MtnE-N',        south: 42.0, west: -109.0, north: 50.0, east: -102.0 },
+    // Plains West
+    { name: 'PlainsW-S',     south: 24.0, west: -102.0, north: 37.0, east: -94.0 },
+    { name: 'PlainsW-N',     south: 37.0, west: -102.0, north: 50.0, east: -94.0 },
+    // Plains East
+    { name: 'PlainsE-S',     south: 24.0, west: -94.0,  north: 37.0, east: -85.0 },
+    { name: 'PlainsE-N',     south: 37.0, west: -94.0,  north: 50.0, east: -85.0 },
+    // Southeast
+    { name: 'SE-S',          south: 24.0, west: -85.0,  north: 33.0, east: -75.0 },
+    { name: 'SE-N',          south: 33.0, west: -85.0,  north: 39.0, east: -75.0 },
+    // Northeast
+    { name: 'NE-W',          south: 39.0, west: -85.0,  north: 45.0, east: -78.0 },
+    { name: 'NE-E',          south: 39.0, west: -78.0,  north: 45.0, east: -70.0 },
+    { name: 'NE-N',          south: 45.0, west: -85.0,  north: 50.0, east: -70.0 },
+    // Atlantic
+    { name: 'Atl-S',         south: 24.0, west: -75.0,  north: 39.0, east: -66.0 },
+    { name: 'Atl-N',         south: 39.0, west: -70.0,  north: 50.0, east: -66.0 },
+  ];
+  try {
+    console.log(`  [OSM] Querying Overpass API for tourism=camp_site in CONUS (${regions.length} regions)...`);
+    let totalElements = 0;
+    for (const region of regions) {
+      const query = `
+        [out:json][timeout:180];
+        node["tourism"="camp_site"](${region.south},${region.west},${region.north},${region.east});
+        out body;
+      `;
+      let elements: any[] = [];
+      let success = false;
+      for (let attempt = 0; attempt < 3; attempt++) {
+        if (attempt > 0) {
+          const backoff = attempt * 20000; // 20s, 40s
+          console.log(`  [OSM] Retry ${attempt}/2 for ${region.name} (waiting ${backoff / 1000}s)...`);
+          await sleep(backoff);
+        }
+        try {
+          const resp = await fetch(OVERPASS_API, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: `data=${encodeURIComponent(query)}`,
+          });
+          if (resp.ok) {
+            const data = await resp.json();
+            elements = data.elements || [];
+            success = true;
+            break;
+          }
+          console.log(`  [OSM] HTTP ${resp.status} for ${region.name}${attempt < 2 ? ' — will retry' : ''}`);
+        } catch (err: any) {
+          console.log(`  [OSM] Error for ${region.name}: ${err.message}${attempt < 2 ? ' — will retry' : ''}`);
+        }
+      }
+      if (!success) { console.log(`  [OSM] FAILED ${region.name} after 3 attempts`); continue; }
+
+      totalElements += elements.length;
+      console.log(`  [OSM] ${region.name}: ${elements.length} nodes`);
+
+      for (const el of elements) {
+        const lat = el.lat;
+        const lng = el.lon;
+        if (!lat || !lng) continue;
+        const tags = el.tags || {};
+        const name = tags.name || tags['name:en'] || null;
+        if (!name) continue; // Skip unnamed campgrounds
+        const id = `osm-camp-${el.id}`;
+        const website = tags.website || tags['contact:website'] || tags.url || null;
+        campgrounds.push({
+          id, name,
+          stateCode: '', // Will be derived from coordinates
+          parkName: tags.operator || null,
+          description: tags.description?.slice(0, 200) || null,
+          latitude: lat, longitude: lng,
+          totalSites: tags.capacity && !isNaN(parseInt(tags.capacity)) ? parseInt(tags.capacity) : null,
+          reservationUrl: website,
+          googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}&center=${lat},${lng}`,
+          dataSource: 'openstreetmap',
+        });
+      }
+      await sleep(10000); // Overpass rate limit between regions
+    }
+    console.log(`  [OSM] ${totalElements} total nodes, ${campgrounds.length} named campgrounds extracted`);
+  } catch (e: any) { console.log(`  [OSM] Error: ${e.message}`); }
+  return campgrounds;
+}
+
+// Assign state codes to campgrounds based on coordinates
+function assignStateCodes(campgrounds: CampgroundRow[]): void {
+  const stateBounds: Record<string, { minLat: number; maxLat: number; minLng: number; maxLng: number }> = {
+    AL: { minLat: 30.2, maxLat: 35.0, minLng: -88.5, maxLng: -84.9 },
+    AK: { minLat: 51.2, maxLat: 71.4, minLng: -179.1, maxLng: -129.0 },
+    AZ: { minLat: 31.3, maxLat: 37.0, minLng: -114.8, maxLng: -109.0 },
+    AR: { minLat: 33.0, maxLat: 36.5, minLng: -94.6, maxLng: -89.6 },
+    CA: { minLat: 32.5, maxLat: 42.0, minLng: -124.4, maxLng: -114.1 },
+    CO: { minLat: 37.0, maxLat: 41.0, minLng: -109.1, maxLng: -102.0 },
+    CT: { minLat: 41.0, maxLat: 42.1, minLng: -73.7, maxLng: -71.8 },
+    DE: { minLat: 38.5, maxLat: 39.8, minLng: -75.8, maxLng: -75.0 },
+    FL: { minLat: 24.4, maxLat: 31.0, minLng: -87.6, maxLng: -80.0 },
+    GA: { minLat: 30.4, maxLat: 35.0, minLng: -85.6, maxLng: -80.8 },
+    HI: { minLat: 18.9, maxLat: 22.2, minLng: -160.2, maxLng: -154.8 },
+    ID: { minLat: 42.0, maxLat: 49.0, minLng: -117.2, maxLng: -111.0 },
+    IL: { minLat: 37.0, maxLat: 42.5, minLng: -91.5, maxLng: -87.5 },
+    IN: { minLat: 37.8, maxLat: 41.8, minLng: -88.1, maxLng: -84.8 },
+    IA: { minLat: 40.4, maxLat: 43.5, minLng: -96.6, maxLng: -90.1 },
+    KS: { minLat: 37.0, maxLat: 40.0, minLng: -102.1, maxLng: -94.6 },
+    KY: { minLat: 36.5, maxLat: 39.1, minLng: -89.6, maxLng: -81.9 },
+    LA: { minLat: 28.9, maxLat: 33.0, minLng: -94.0, maxLng: -89.0 },
+    ME: { minLat: 43.1, maxLat: 47.5, minLng: -71.1, maxLng: -66.9 },
+    MD: { minLat: 37.9, maxLat: 39.7, minLng: -79.5, maxLng: -75.0 },
+    MA: { minLat: 41.2, maxLat: 42.9, minLng: -73.5, maxLng: -69.9 },
+    MI: { minLat: 41.7, maxLat: 48.3, minLng: -90.4, maxLng: -82.1 },
+    MN: { minLat: 43.5, maxLat: 49.4, minLng: -97.2, maxLng: -89.5 },
+    MS: { minLat: 30.2, maxLat: 35.0, minLng: -91.7, maxLng: -88.1 },
+    MO: { minLat: 36.0, maxLat: 40.6, minLng: -95.8, maxLng: -89.1 },
+    MT: { minLat: 44.4, maxLat: 49.0, minLng: -116.0, maxLng: -104.0 },
+    NE: { minLat: 40.0, maxLat: 43.0, minLng: -104.1, maxLng: -95.3 },
+    NV: { minLat: 35.0, maxLat: 42.0, minLng: -120.0, maxLng: -114.0 },
+    NH: { minLat: 42.7, maxLat: 45.3, minLng: -72.6, maxLng: -71.0 },
+    NJ: { minLat: 38.9, maxLat: 41.4, minLng: -75.6, maxLng: -73.9 },
+    NM: { minLat: 31.3, maxLat: 37.0, minLng: -109.0, maxLng: -103.0 },
+    NY: { minLat: 40.5, maxLat: 45.0, minLng: -79.8, maxLng: -71.9 },
+    NC: { minLat: 33.8, maxLat: 36.6, minLng: -84.3, maxLng: -75.5 },
+    ND: { minLat: 45.9, maxLat: 49.0, minLng: -104.0, maxLng: -96.6 },
+    OH: { minLat: 38.4, maxLat: 42.0, minLng: -84.8, maxLng: -80.5 },
+    OK: { minLat: 33.6, maxLat: 37.0, minLng: -103.0, maxLng: -94.4 },
+    OR: { minLat: 42.0, maxLat: 46.3, minLng: -124.6, maxLng: -116.5 },
+    PA: { minLat: 39.7, maxLat: 42.3, minLng: -80.5, maxLng: -74.7 },
+    RI: { minLat: 41.1, maxLat: 42.0, minLng: -71.9, maxLng: -71.1 },
+    SC: { minLat: 32.0, maxLat: 35.2, minLng: -83.4, maxLng: -78.5 },
+    SD: { minLat: 42.5, maxLat: 46.0, minLng: -104.1, maxLng: -96.4 },
+    TN: { minLat: 35.0, maxLat: 36.7, minLng: -90.3, maxLng: -81.6 },
+    TX: { minLat: 25.8, maxLat: 36.5, minLng: -106.6, maxLng: -93.5 },
+    UT: { minLat: 37.0, maxLat: 42.0, minLng: -114.1, maxLng: -109.0 },
+    VT: { minLat: 42.7, maxLat: 45.0, minLng: -73.4, maxLng: -71.5 },
+    VA: { minLat: 36.5, maxLat: 39.5, minLng: -83.7, maxLng: -75.2 },
+    WA: { minLat: 45.5, maxLat: 49.0, minLng: -124.8, maxLng: -116.9 },
+    WV: { minLat: 37.2, maxLat: 40.6, minLng: -82.6, maxLng: -77.7 },
+    WI: { minLat: 42.5, maxLat: 47.1, minLng: -92.9, maxLng: -86.8 },
+    WY: { minLat: 41.0, maxLat: 45.0, minLng: -111.1, maxLng: -104.1 },
+  };
+  for (const cg of campgrounds) {
+    if (cg.stateCode) continue;
+    for (const [sc, b] of Object.entries(stateBounds)) {
+      if (cg.latitude >= b.minLat && cg.latitude <= b.maxLat &&
+          cg.longitude >= b.minLng && cg.longitude <= b.maxLng) {
+        cg.stateCode = sc;
+        break;
+      }
+    }
+    if (!cg.stateCode) cg.stateCode = 'XX'; // Unknown
+  }
+}
+
+// Deduplicate campgrounds by proximity (within ~0.5 miles ≈ 0.008 degrees)
+function deduplicateCampgrounds(all: CampgroundRow[]): CampgroundRow[] {
+  const PROXIMITY_DEG = 0.008;
+  const seen = new Map<string, CampgroundRow>();
+  // Priority: recreation.gov > usfs > openstreetmap
+  const priority: Record<string, number> = { 'recreation.gov': 3, 'usfs': 2, 'openstreetmap': 1 };
+
+  for (const cg of all) {
+    const key = `${cg.latitude.toFixed(3)}-${cg.longitude.toFixed(3)}`;
+    const existing = seen.get(key);
+    if (!existing) {
+      seen.set(key, cg);
+    } else {
+      const existPri = priority[existing.dataSource] || 0;
+      const newPri = priority[cg.dataSource] || 0;
+      if (newPri > existPri) seen.set(key, cg);
+    }
+  }
+  return Array.from(seen.values());
+}
+
+// ============================================================================
+// STATE PARKS GIS DATA SOURCES
+// ============================================================================
+
+// Texas State Parks Trails (ArcGIS REST API)
+const TX_TRAILS_ENDPOINT = 'https://tpwd.texas.gov/server/rest/services/Parks/TexasStateParksTrails/MapServer/0/query';
+
+async function fetchTexasStateParksTrails(): Promise<TrailRow[]> {
+  const trails: TrailRow[] = [];
+  try {
+    console.log('  [TX-SP] Fetching Texas State Parks trails...');
+    const params = new URLSearchParams({
+      where: '1=1',
+      outFields: '*',
+      returnGeometry: 'true',
+      f: 'json',
+      resultRecordCount: '2000',
+    });
+    const resp = await fetch(`${TX_TRAILS_ENDPOINT}?${params}`);
+    if (!resp.ok) { console.log(`  [TX-SP] HTTP ${resp.status}`); return []; }
+    const data = await resp.json();
+    const features = data.features || [];
+    
+    for (const f of features) {
+      const a = f.attributes;
+      const geom = f.geometry;
+      if (!geom?.paths?.[0]?.[0]) continue;
+      
+      const coords = geom.paths.flat();
+      const lat = coords.reduce((s: number, c: number[]) => s + c[1], 0) / coords.length;
+      const lng = coords.reduce((s: number, c: number[]) => s + c[0], 0) / coords.length;
+      
+      const name = a.Name1 || a.Trail_Name || 'Unknown Trail';
+      const lengthMiles = a.LengthMI || (a.Shape_Length ? a.Shape_Length / 1609.34 : null);
+      const trailUse = a.TrailUse || '';
+      
+      const id = `tx-sp-${a.OBJECTID}`;
+      
+      trails.push({
+        id,
+        parkId: `tx-sp-${(a.ParkName || 'unknown').replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}`,
+        parkName: a.ParkName || 'Texas State Park',
+        stateCode: 'TX',
+        name,
+        description: a.Description || null,
+        lengthMiles: lengthMiles ? parseFloat(Number(lengthMiles).toFixed(2)) : null,
+        difficulty: null,
+        trailType: trailUse.toLowerCase().includes('hik') ? 'hiking' : 'multiuse',
+        latitude: lat,
+        longitude: lng,
+        geometryJson: JSON.stringify(geom),
+        officialUrl: 'https://tpwd.texas.gov/state-parks/',
+        alltrailsUrl: null,
+        googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}&center=${lat},${lng}`,
+        dataSource: 'tx-state-parks',
+      });
+    }
+    console.log(`  [TX-SP] Fetched ${trails.length} trails`);
+  } catch (e: any) { console.log(`  [TX-SP] Error: ${e.message}`); }
+  return trails;
+}
+
+// Colorado COTREX Trails (ArcGIS Feature Service - 40,000+ miles of trails)
+const CO_COTREX_ENDPOINT = 'https://services3.arcgis.com/0jWpHMuhmHsukKE3/arcgis/rest/services/CPW_Trails_08222024/FeatureServer/1/query';
+
+async function fetchColoradoCOTREXTrails(): Promise<TrailRow[]> {
+  const trails: TrailRow[] = [];
+  try {
+    console.log('  [CO-COTREX] Fetching Colorado COTREX trails...');
+    // Get count first
+    const countResp = await fetch(`${CO_COTREX_ENDPOINT}?where=1=1&returnCountOnly=true&f=json`);
+    const countData = await countResp.json();
+    const total = countData.count || 0;
+    console.log(`  [CO-COTREX] Total trails available: ${total}`);
+    
+    // Paginate (max 2000 per request)
+    for (let offset = 0; offset < Math.min(total, 10000); offset += 2000) {
+      const params = new URLSearchParams({
+        where: '1=1',
+        outFields: 'FID,name,surface,hiking,length_mi_,manager,PropName',
+        resultOffset: String(offset),
+        resultRecordCount: '2000',
+        returnGeometry: 'true',
+        outSR: '4326',
+        f: 'json',
+      });
+      const resp = await fetch(`${CO_COTREX_ENDPOINT}?${params}`);
+      if (!resp.ok) { console.log(`  [CO-COTREX] HTTP ${resp.status} at offset ${offset}`); break; }
+      const data = await resp.json();
+      const features = data.features || [];
+      
+      for (const f of features) {
+        const a = f.attributes;
+        const geom = f.geometry;
+        if (!a.name || !geom?.paths?.[0]?.[0]) continue;
+        
+        const coords = geom.paths.flat();
+        const lat = coords.reduce((s: number, c: number[]) => s + c[1], 0) / coords.length;
+        const lng = coords.reduce((s: number, c: number[]) => s + c[0], 0) / coords.length;
+        
+        const id = `co-cotrex-${a.FID}`;
+        const lengthMiles = a.length_mi_ || null;
+        
+        trails.push({
+          id,
+          parkId: `co-${(a.manager || 'public').replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}`,
+          parkName: a.PropName || a.manager || 'Colorado Public Land',
+          stateCode: 'CO',
+          name: a.name,
+          description: null,
+          lengthMiles: lengthMiles ? parseFloat(Number(lengthMiles).toFixed(2)) : null,
+          difficulty: null,
+          trailType: 'hiking',
+          latitude: lat,
+          longitude: lng,
+          geometryJson: JSON.stringify(geom),
+          officialUrl: 'https://trails.colorado.gov/',
+          alltrailsUrl: null,
+          googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(a.name)}&center=${lat},${lng}`,
+          dataSource: 'co-cotrex',
+        });
+      }
+      if (features.length < 2000) break;
+      await sleep(500);
+    }
+    console.log(`  [CO-COTREX] Fetched ${trails.length} trails`);
+  } catch (e: any) { console.log(`  [CO-COTREX] Error: ${e.message}`); }
+  return trails;
+}
+
+
+// Florida State Park Trails (FL DEP GIS)
+const FL_TRAILS_ENDPOINT = 'https://ca.dep.state.fl.us/arcgis/rest/services/OpenData/OGT/MapServer/2/query';
+
+async function fetchFloridaStateTrails(): Promise<TrailRow[]> {
+  const trails: TrailRow[] = [];
+  try {
+    console.log('  [FL-SP] Fetching Florida State Park trails...');
+    const params = new URLSearchParams({
+      where: '1=1',
+      outFields: '*',
+      resultRecordCount: '5000',
+      returnGeometry: 'true',
+      outSR: '4326',
+      f: 'json',
+    });
+    const resp = await fetch(`${FL_TRAILS_ENDPOINT}?${params}`);
+    if (!resp.ok) { console.log(`  [FL-SP] HTTP ${resp.status}`); return []; }
+    const data = await resp.json();
+    const features = data.features || [];
+    
+    for (const f of features) {
+      const a = f.attributes;
+      const geom = f.geometry;
+      if (!geom?.paths?.[0]?.[0]) continue;
+      
+      const coords = geom.paths.flat();
+      const lat = coords.reduce((s: number, c: number[]) => s + c[1], 0) / coords.length;
+      const lng = coords.reduce((s: number, c: number[]) => s + c[0], 0) / coords.length;
+      
+      const name = a.SEGMENT_NAME || a.CORRIDOR || 'Unknown Trail';
+      const lengthMiles = a['SHAPE.LEN'] ? a['SHAPE.LEN'] / 1609.34 : null;
+      
+      const id = `fl-sp-${a.OBJECTID}`;
+      
+      trails.push({
+        id,
+        parkId: `fl-sp-${(a.CORRIDOR || 'public').replace(/[^a-zA-Z0-9]/g, '-').toLowerCase()}`,
+        parkName: a.CORRIDOR || 'Florida Greenway',
+        stateCode: 'FL',
+        name,
+        description: a.DESCRIPTION || null,
+        lengthMiles: lengthMiles ? parseFloat(Number(lengthMiles).toFixed(2)) : null,
+        difficulty: null,
+        trailType: 'hiking',
+        latitude: lat,
+        longitude: lng,
+        geometryJson: JSON.stringify(geom),
+        officialUrl: 'https://www.floridastateparks.org/',
+        alltrailsUrl: null,
+        googleMapsUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(name)}&center=${lat},${lng}`,
+        dataSource: 'fl-state-parks',
+      });
+    }
+    console.log(`  [FL-SP] Fetched ${trails.length} trails`);
+  } catch (e: any) { console.log(`  [FL-SP] Error: ${e.message}`); }
+  return trails;
+}
+
+// Aggregated function to fetch all state-level trail data
+async function fetchStateParksTrails(): Promise<TrailRow[]> {
+  console.log('\n--- STATE PARKS TRAILS ---');
+  const allTrails: TrailRow[] = [];
+  
+  const txTrails = await fetchTexasStateParksTrails();
+  allTrails.push(...txTrails);
+  await sleep(1000);
+  
+  const coTrails = await fetchColoradoCOTREXTrails();
+  allTrails.push(...coTrails);
+  await sleep(1000);
+  
+  const flTrails = await fetchFloridaStateTrails();
+  allTrails.push(...flTrails);
+  
+  console.log(`  State parks total: ${allTrails.length} trails`);
+  return allTrails;
+}
+
 
 // ============================================================================
 // POSTGRES BATCH UPSERT
@@ -809,6 +1265,106 @@ async function syncCampgroundsForState(stateCode: string): Promise<number> {
   return campgrounds.length;
 }
 
+async function syncAllCampgrounds(stateCodes: string[]): Promise<number> {
+  console.log('\n=== MULTI-SOURCE CAMPGROUND SYNC ===\n');
+
+  // Phase 1: RIDB (per-state)
+  console.log('--- Phase 1: Recreation.gov (RIDB) ---');
+  const ridbAll: CampgroundRow[] = [];
+  for (const sc of stateCodes) {
+    const cgs = await fetchRIDBCampgrounds(sc);
+    ridbAll.push(...cgs);
+    await sleep(500);
+  }
+  console.log(`  RIDB total: ${ridbAll.length} campgrounds\n`);
+
+  // Phase 2: USFS ArcGIS (national, one query)
+  console.log('--- Phase 2: US Forest Service (ArcGIS) ---');
+  const usfsCgs = await fetchUSFSCampgrounds();
+  assignStateCodes(usfsCgs);
+  console.log(`  USFS total: ${usfsCgs.length} campgrounds\n`);
+
+  // Phase 3: OpenStreetMap Overpass (national, one query)
+  console.log('--- Phase 3: OpenStreetMap (Overpass) ---');
+  const osmCgs = await fetchOSMCampgrounds();
+  assignStateCodes(osmCgs);
+  console.log(`  OSM total: ${osmCgs.length} campgrounds\n`);
+
+  // Merge and deduplicate
+  const allRaw = [...ridbAll, ...usfsCgs, ...osmCgs];
+  console.log(`--- Deduplication ---`);
+  console.log(`  Raw total: ${allRaw.length}`);
+  const deduped = deduplicateCampgrounds(allRaw);
+  console.log(`  After dedup: ${deduped.length}`);
+
+  // Upsert in batches
+  if (deduped.length > 0) {
+    const bySource: Record<string, number> = {};
+    for (const c of deduped) bySource[c.dataSource] = (bySource[c.dataSource] || 0) + 1;
+    console.log(`  By source: ${Object.entries(bySource).map(([k, v]) => `${k}=${v}`).join(', ')}`);
+    await upsertCampgrounds(deduped);
+    console.log(`  Upserted ${deduped.length} campgrounds to Postgres`);
+  }
+
+  // Link campgrounds to nearest parks (within 30 miles)
+  await linkCampgroundsToParks();
+
+  return deduped.length;
+}
+
+// ============================================================================
+// CAMPGROUND-PARK LINKING
+// ============================================================================
+
+/**
+ * Link campgrounds to their nearest park within 30 miles.
+ * Uses earth_distance spatial query to find the closest park.
+ * Updates the park_id column on campgrounds table.
+ */
+async function linkCampgroundsToParks(): Promise<number> {
+  console.log('\n=== LINKING CAMPGROUNDS TO PARKS ===\n');
+  
+  const RADIUS_MILES = 30;
+  const radiusMeters = RADIUS_MILES * 1609.34;
+  
+  // Update each campground with its nearest park (if within radius)
+  // This query finds the closest park for each campground and updates park_id
+  const result = await pool.query(`
+    WITH nearest_parks AS (
+      SELECT DISTINCT ON (c.id)
+        c.id as campground_id,
+        p.id as park_id,
+        earth_distance(ll_to_earth(c.latitude, c.longitude), ll_to_earth(p.latitude, p.longitude)) / 1609.34 as distance_miles
+      FROM campgrounds c
+      JOIN parks p ON earth_distance(ll_to_earth(c.latitude, c.longitude), ll_to_earth(p.latitude, p.longitude)) <= $1
+      WHERE c.latitude IS NOT NULL AND c.longitude IS NOT NULL
+        AND p.latitude IS NOT NULL AND p.longitude IS NOT NULL
+      ORDER BY c.id, distance_miles
+    )
+    UPDATE campgrounds c
+    SET park_id = np.park_id
+    FROM nearest_parks np
+    WHERE c.id = np.campground_id
+      AND (c.park_id IS NULL OR c.park_id != np.park_id)
+  `, [radiusMeters]);
+  
+  const linked = result.rowCount || 0;
+  console.log(`  Linked ${linked} campgrounds to their nearest park (within ${RADIUS_MILES} miles)`);
+  
+  // Log stats
+  const stats = await pool.query(`
+    SELECT 
+      COUNT(*) FILTER (WHERE park_id IS NOT NULL) as linked,
+      COUNT(*) FILTER (WHERE park_id IS NULL) as unlinked,
+      COUNT(*) as total
+    FROM campgrounds
+  `);
+  const { linked: totalLinked, unlinked, total } = stats.rows[0];
+  console.log(`  Total: ${totalLinked} linked, ${unlinked} unlinked, ${total} total campgrounds`);
+  
+  return linked;
+}
+
 // ============================================================================
 // CLI
 // ============================================================================
@@ -820,14 +1376,17 @@ async function main() {
     console.log(`
 Postgres-Direct Data Sync
 =========================
-Fetches trails (USFS + OSM) and campgrounds (Recreation.gov) directly to Postgres.
+Fetches trails and campgrounds from multiple GIS data sources directly to Postgres.
 
 Usage:
-  npx tsx data/scripts/syncToPostgres.ts trails              # All 50 states
+  npx tsx data/scripts/syncToPostgres.ts trails              # All 50 states (USFS + OSM)
   npx tsx data/scripts/syncToPostgres.ts trails NC VA WI     # Specific states
-  npx tsx data/scripts/syncToPostgres.ts campgrounds         # All states
-  npx tsx data/scripts/syncToPostgres.ts campgrounds NC      # Specific state
-  npx tsx data/scripts/syncToPostgres.ts all                 # Everything
+  npx tsx data/scripts/syncToPostgres.ts state-parks         # State parks GIS (TX, CO, FL trails)
+  npx tsx data/scripts/syncToPostgres.ts campgrounds         # All sources (RIDB + USFS + OSM + state parks)
+  npx tsx data/scripts/syncToPostgres.ts campgrounds NC      # Specific state (RIDB only)
+  npx tsx data/scripts/syncToPostgres.ts campgrounds-osm     # OSM only (skip RIDB + USFS)
+  npx tsx data/scripts/syncToPostgres.ts link-parks          # Link campgrounds to nearest parks
+  npx tsx data/scripts/syncToPostgres.ts all                 # Everything including state parks
   npx tsx data/scripts/syncToPostgres.ts --list              # List states
 
 States configured: ${Object.keys(STATES).length}
@@ -847,7 +1406,7 @@ States configured: ${Object.keys(STATES).length}
   const stateArgs = args.slice(1).map(s => s.toUpperCase()).filter(s => STATES[s]);
   const stateCodes = stateArgs.length > 0 ? stateArgs : Object.keys(STATES).sort();
 
-  console.log(`Database: ${DATABASE_URL.replace(/:[^@]+@/, ':***@')}`);
+  console.log(`Database: ${DATABASE_URL!.replace(/:[^@]+@/, ':***@')}`);
   console.log(`States: ${stateCodes.length}`);
 
   let totalTrails = 0;
@@ -862,16 +1421,53 @@ States configured: ${Object.keys(STATES).length}
   }
 
   if (mode === 'campgrounds' || mode === 'all') {
-    console.log('\n--- CAMPGROUND SYNC ---');
-    for (const sc of stateCodes) {
-      totalCampgrounds += await syncCampgroundsForState(sc);
-      await sleep(1000); // RIDB rate limit
+    // If syncing all 50 states, use multi-source (RIDB + USFS + OSM)
+    // For specific states, use RIDB only (faster, targeted)
+    if (stateCodes.length >= 50) {
+      totalCampgrounds = await syncAllCampgrounds(stateCodes);
+    } else {
+      console.log('\n--- CAMPGROUND SYNC (RIDB only for targeted states) ---');
+      for (const sc of stateCodes) {
+        totalCampgrounds += await syncCampgroundsForState(sc);
+        await sleep(1000);
+      }
     }
-    console.log(`\nCampground sync complete: ${totalCampgrounds} campgrounds across ${stateCodes.length} states`);
+    console.log(`\nCampground sync complete: ${totalCampgrounds} campgrounds`);
   }
 
-  if (mode !== 'trails' && mode !== 'campgrounds' && mode !== 'all') {
-    console.log(`Unknown mode: ${mode}. Use 'trails', 'campgrounds', or 'all'.`);
+  if (mode === 'campgrounds-osm') {
+    console.log('\n=== OSM-ONLY CAMPGROUND SYNC ===\n');
+    const osmCgs = await fetchOSMCampgrounds();
+    assignStateCodes(osmCgs);
+    console.log(`  OSM total: ${osmCgs.length} campgrounds`);
+    if (osmCgs.length > 0) {
+      await upsertCampgrounds(osmCgs);
+      console.log(`  Upserted ${osmCgs.length} campgrounds to Postgres`);
+    }
+    totalCampgrounds = osmCgs.length;
+    console.log(`\nOSM campground sync complete: ${totalCampgrounds} campgrounds`);
+  }
+
+  if (mode === 'state-parks' || mode === 'all') {
+    console.log('\n=== STATE PARKS GIS SYNC ===');
+    
+    // State parks trails (TX, CO, FL)
+    const spTrails = await fetchStateParksTrails();
+    if (spTrails.length > 0) {
+      await upsertTrails(spTrails);
+      console.log(`  Upserted ${spTrails.length} state parks trails to Postgres`);
+      totalTrails += spTrails.length;
+    }
+    
+    console.log(`\nState parks sync complete: ${spTrails.length} trails`);
+  }
+
+  if (mode === 'link-parks') {
+    await linkCampgroundsToParks();
+  }
+
+  if (!['trails', 'campgrounds', 'campgrounds-osm', 'state-parks', 'link-parks', 'all'].includes(mode)) {
+    console.log(`Unknown mode: ${mode}. Use 'trails', 'campgrounds', 'campgrounds-osm', 'state-parks', 'link-parks', or 'all'.`);
   }
 
   console.log('\nDone!');

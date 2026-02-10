@@ -9,13 +9,14 @@ import {
   ActivityIndicator,
   InteractionManager,
   Linking,
+  PanResponder,
   Platform,
   ScrollView,
 } from 'react-native';
 import MapView, { Marker, Polygon, Polyline, Region, PROVIDER_GOOGLE } from 'react-native-maps';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useParkTheme } from '../../hooks/useParkTheme';
-import { TrailMapMarker, ParkMapMarker, CampgroundMapMarker } from '../../services/api';
+import { TrailMapMarker, ParkMapMarker, CampgroundMapMarker, fetchCampgroundsNearPark } from '../../services/api';
 import { getTrailMarkerImage, getParkMarkerImage, getCampgroundMarkerImage } from '../../utils/markerImages';
 import {
   formatAmenitySummary,
@@ -39,6 +40,10 @@ const TAB_HEIGHT = 110;
 // 0.5 mile radius in degrees (approximate)
 const HALF_MILE_LAT_DELTA = 0.015;  // ~0.5mi north-south
 const HALF_MILE_LNG_DELTA = 0.018;  // ~0.5mi east-west (varies by latitude)
+
+// 10-mile landing zone: proportional E/W based on screen aspect ratio
+const TEN_MILES_LAT_DELTA = 0.145;  // ~10mi north-south
+const TEN_MILES_LNG_DELTA = TEN_MILES_LAT_DELTA * (SCREEN_WIDTH / SCREEN_HEIGHT);
 
 // Difficulty color mapping - covers all values from TrailAPI, USFS, OSM, Recreation.gov
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -143,6 +148,23 @@ function normalizeDifficulty(difficulty?: string): string {
   return 'unknown';
 }
 
+/** True only for the 63 designated National Parks (not monuments, rec areas, etc.) */
+function isActualNationalPark(park: ParkMapMarker): boolean {
+  const d = park.designation?.toLowerCase() || '';
+  return d.includes('national park') && !d.includes('national parkway');
+}
+
+/** True for state parks */
+function isStatePark(park: ParkMapMarker): boolean {
+  return park.category === 'state';
+}
+
+/** True for NPs + state parks — these get the prominent brown road-sign marker */
+function isProminentPark(park: ParkMapMarker): boolean {
+  return isActualNationalPark(park) || isStatePark(park);
+}
+
+/** Legacy: true for any national-category park (including monuments) */
 function isNationalPark(park: ParkMapMarker): boolean {
   return park.category === 'national' || park.id?.startsWith('np-');
 }
@@ -162,6 +184,7 @@ interface TrailMapPanelProps {
   parks: ParkMapMarker[];
   campgrounds: CampgroundMapMarker[];
   loading: boolean;
+  regionLoading: boolean;
   error: string | null;
   parkName: string | null;
   stateCode: string | null;
@@ -172,6 +195,7 @@ interface TrailMapPanelProps {
   onTogglePanel: () => void;
   onClose: () => void;
   onFetchTrails: () => void;
+  onFetchForRegion: (region: { latitude: number; longitude: number; latitudeDelta: number; longitudeDelta: number }) => void;
   onPlanAdventure?: (parkName: string, parkState?: string, parkCategory?: string) => void;
 }
 
@@ -182,6 +206,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   parks = [],
   campgrounds = [],
   loading,
+  regionLoading,
   error,
   parkName,
   stateCode,
@@ -192,6 +217,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   onTogglePanel,
   onClose,
   onFetchTrails,
+  onFetchForRegion,
   onPlanAdventure,
 }) => {
   const insets = useSafeAreaInsets();
@@ -206,11 +232,14 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   const [selectedTrail, setSelectedTrail] = useState<TrailMapMarker | null>(null);
   const [selectedPark, setSelectedPark] = useState<ParkMapMarker | null>(null);
   const [selectedCampground, setSelectedCampground] = useState<CampgroundMapMarker | null>(null);
+  const [parkCampgrounds, setParkCampgrounds] = useState<(CampgroundMapMarker & { distanceMiles: number })[]>([]);
   const [showTrailLines, setShowTrailLines] = useState(true);
   const [mapRegion, setMapRegion] = useState<Region | null>(null);
   const [mapStable, setMapStable] = useState(true);
   const [androidMarkersReady, setAndroidMarkersReady] = useState(Platform.OS !== 'android');
   const [focusCoords, setFocusCoords] = useState<{ latitude: number; longitude: number } | null>(null);
+  const [trailsCollapsed, setTrailsCollapsed] = useState(true);
+  const [campgroundsCollapsed, setCampgroundsCollapsed] = useState(true);
   const [filters, setFilters] = useState({
     easy: true,
     moderate: true,
@@ -234,6 +263,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   }, []);
 
   const FOCUS_RADIUS_DEG = 0.05; // ~3.5 miles
+  const ONE_MILE_DEG = 0.0145; // ~1 mile in degrees
 
   // Compute focus window bounds when a node is selected
   const focusBounds = useMemo(() => {
@@ -310,6 +340,15 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     );
   }, [viewportParks, filters.stateParks, filters.nationalParks]);
 
+  // Sort parks: other national sites first (bottom), then state parks, then actual NPs last (on top)
+  const sortedViewportParks = useMemo(() => {
+    return [...viewportParks].sort((a, b) => {
+      const scoreA = isActualNationalPark(a) ? 2 : isStatePark(a) ? 1 : 0;
+      const scoreB = isActualNationalPark(b) ? 2 : isStatePark(b) ? 1 : 0;
+      return scoreA - scoreB;
+    });
+  }, [viewportParks]);
+
   // Visible campgrounds = buffered viewport + filter; in focus mode only the selected campground
   const MAX_VISIBLE_CAMPGROUNDS = 100;
   const viewportCampgrounds = useMemo(() => {
@@ -341,6 +380,21 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       t.longitude >= focusBounds.west && t.longitude <= focusBounds.east
     );
   }, [focusBounds, selectedTrail, trails]);
+
+  // Campgrounds associated with the focused node
+  // For parks: use API-fetched parkCampgrounds (spatial query with distance)
+  // For other selections: use focus bounds rectangle
+  const associatedCampgrounds = useMemo(() => {
+    if (selectedPark && parkCampgrounds.length > 0) {
+      return parkCampgrounds;
+    }
+    if (!focusBounds) return [];
+    if (selectedCampground) return [selectedCampground];
+    return campgrounds.filter(c =>
+      c.latitude >= focusBounds.south && c.latitude <= focusBounds.north &&
+      c.longitude >= focusBounds.west && c.longitude <= focusBounds.east
+    );
+  }, [focusBounds, selectedCampground, campgrounds, selectedPark, parkCampgrounds]);
 
   // Polyline rendering: only for the clicked node's associated trails
   const MAX_VISIBLE_POLYLINES = 100;
@@ -384,6 +438,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     setMapStable(false);
   }, []);
 
+  const regionFetchDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const handleRegionChangeComplete = useCallback((region: Region) => {
     setMapStable(true);
     // CRITICAL: If a filter just changed, ignore this region event entirely.
@@ -397,7 +453,13 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       setMapRegion(region);
       regionDebounceRef.current = null;
     }, 100);
-  }, []);
+    // Progressive data loading: debounce longer to avoid rapid requests
+    if (regionFetchDebounceRef.current) clearTimeout(regionFetchDebounceRef.current);
+    regionFetchDebounceRef.current = setTimeout(() => {
+      onFetchForRegion(region);
+      regionFetchDebounceRef.current = null;
+    }, 800);
+  }, [onFetchForRegion]);
 
   const selectTrail = useCallback((trail: TrailMapMarker) => {
     markerJustPressedRef.current = true;
@@ -410,8 +472,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     mapRef.current?.animateToRegion({
       latitude: trail.latitude,
       longitude: trail.longitude,
-      latitudeDelta: FOCUS_RADIUS_DEG * 2.5,
-      longitudeDelta: FOCUS_RADIUS_DEG * 2.5,
+      latitudeDelta: ONE_MILE_DEG * 2, // 1 mile each direction
+      longitudeDelta: ONE_MILE_DEG * 2,
     }, 500);
   }, [mapRegion]);
 
@@ -422,6 +484,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     setSelectedPark(park);
     setSelectedTrail(null);
     setSelectedCampground(null);
+    setParkCampgrounds([]); // Clear previous
     setFocusCoords({ latitude: park.latitude, longitude: park.longitude });
     mapRef.current?.animateToRegion({
       latitude: park.latitude,
@@ -429,6 +492,10 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       latitudeDelta: FOCUS_RADIUS_DEG * 2.5,
       longitudeDelta: FOCUS_RADIUS_DEG * 2.5,
     }, 500);
+    // Fetch campgrounds near this park
+    fetchCampgroundsNearPark(park.id, 30, 10).then(cgs => {
+      setParkCampgrounds(cgs);
+    });
   }, [mapRegion]);
 
   const selectCampground = useCallback((cg: CampgroundMapMarker) => {
@@ -452,11 +519,16 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     setSelectedTrail(null);
     setSelectedPark(null);
     setSelectedCampground(null);
+    setParkCampgrounds([]);
     setFocusCoords(null);
-    // Restore pre-focus map region
+    setTrailsCollapsed(true);
+    setCampgroundsCollapsed(true);
+    // Restore pre-focus map region immediately so viewport bounds expand
+    // and all markers reappear without waiting for the animation to complete
     const savedRegion = preFocusRegionRef.current;
     preFocusRegionRef.current = null;
     if (savedRegion) {
+      setMapRegion(savedRegion);
       mapRef.current?.animateToRegion(savedRegion, 500);
     }
   }, []);
@@ -470,13 +542,15 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       tension: 50,
       useNativeDriver: true,
     }).start();
+  }, [panelOpen, slideAnim]);
 
-    // Fetch trails when panel first opens
-    if (panelOpen && !hasFetchedRef.current && trails.length === 0) {
+  // Fetch trails when panel opens and stateCode is available
+  useEffect(() => {
+    if (panelOpen && stateCode && !hasFetchedRef.current && trails.length === 0) {
       hasFetchedRef.current = true;
       onFetchTrails();
     }
-  }, [panelOpen, slideAnim, onFetchTrails, trails.length]);
+  }, [panelOpen, stateCode, trails.length, onFetchTrails]);
 
   // Reset fetch flag when stateCode changes
   useEffect(() => {
@@ -489,23 +563,27 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
 
     // 1) National park mode: center on the park's coordinates
     if (parkLatitude && parkLongitude) {
+      const region = {
+        latitude: parkLatitude,
+        longitude: parkLongitude,
+        latitudeDelta: TEN_MILES_LAT_DELTA,
+        longitudeDelta: TEN_MILES_LNG_DELTA,
+      };
+      setMapRegion(region);
       setTimeout(() => {
-        mapRef.current?.animateToRegion({
-          latitude: parkLatitude,
-          longitude: parkLongitude,
-          latitudeDelta: 1.5,
-          longitudeDelta: 1.5,
-        }, 300);
+        mapRef.current?.animateToRegion(region, 300);
       }, 300);
     } else if (userLatitude && userLongitude) {
       // 2) State park mode / no park coords: use user location
+      const region = {
+        latitude: userLatitude,
+        longitude: userLongitude,
+        latitudeDelta: HALF_MILE_LAT_DELTA,
+        longitudeDelta: HALF_MILE_LNG_DELTA,
+      };
+      setMapRegion(region);
       setTimeout(() => {
-        mapRef.current?.animateToRegion({
-          latitude: userLatitude,
-          longitude: userLongitude,
-          latitudeDelta: HALF_MILE_LAT_DELTA,
-          longitudeDelta: HALF_MILE_LNG_DELTA,
-        }, 300);
+        mapRef.current?.animateToRegion(region, 300);
       }, 300);
     } else if (trails.length > 0) {
       // 3) No location at all: fit all trail markers
@@ -513,12 +591,33 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
         latitude: t.latitude,
         longitude: t.longitude,
       }));
+      // Set an approximate region from trail bounds
+      const lats = coordinates.map(c => c.latitude);
+      const lngs = coordinates.map(c => c.longitude);
+      const minLat = Math.min(...lats);
+      const maxLat = Math.max(...lats);
+      const minLng = Math.min(...lngs);
+      const maxLng = Math.max(...lngs);
+      setMapRegion({
+        latitude: (minLat + maxLat) / 2,
+        longitude: (minLng + maxLng) / 2,
+        latitudeDelta: Math.max(maxLat - minLat, 0.1) * 1.2,
+        longitudeDelta: Math.max(maxLng - minLng, 0.1) * 1.2,
+      });
       setTimeout(() => {
         mapRef.current?.fitToCoordinates(coordinates, {
           edgePadding: { top: 60, right: 40, bottom: 60, left: 40 },
           animated: true,
         });
       }, 300);
+    } else {
+      // 4) Fallback: set a default region so markers can render
+      setMapRegion({
+        latitude: 39.8283,
+        longitude: -98.5795,
+        latitudeDelta: 20,
+        longitudeDelta: 20,
+      });
     }
   }, [trails, panelOpen, parkLatitude, parkLongitude, userLatitude, userLongitude]);
 
@@ -535,8 +634,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   const initialRegion: Region = {
     latitude: parkLatitude || userLatitude || 39.8283,
     longitude: parkLongitude || userLongitude || -98.5795,
-    latitudeDelta: parkLatitude ? 1.5 : (userLatitude ? HALF_MILE_LAT_DELTA : 20),
-    longitudeDelta: parkLongitude ? 1.5 : (userLongitude ? HALF_MILE_LNG_DELTA : 20),
+    latitudeDelta: parkLatitude ? TEN_MILES_LAT_DELTA : (userLatitude ? HALF_MILE_LAT_DELTA : 20),
+    longitudeDelta: parkLongitude ? TEN_MILES_LNG_DELTA : (userLongitude ? HALF_MILE_LNG_DELTA : 20),
   };
 
   return (
@@ -578,12 +677,11 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               onPress={() => toggleFilter('stateParks')}
               activeOpacity={0.7}
             >
-              <View style={[styles.filterCheckbox, filters.stateParks && { backgroundColor: '#4CAF50', borderColor: '#4CAF50' }]}>
+              <View style={[styles.filterCheckbox, filters.stateParks && { backgroundColor: '#33691E', borderColor: '#33691E' }]}>
                 {filters.stateParks && <Text style={styles.filterCheckmark}>{'\u2713'}</Text>}
               </View>
-              <View style={[styles.legendHouse, { opacity: filters.stateParks ? 1 : 0.3 }]}>
-                <View style={styles.legendHouseRoof} />
-                <View style={styles.legendHouseBody} />
+              <View style={[styles.legendBadge, styles.legendBadgeState, { opacity: filters.stateParks ? 1 : 0.3 }]}>
+                <Text style={styles.legendBadgeText}>SP</Text>
               </View>
               <Text style={[styles.filterLabel, !filters.stateParks && styles.filterLabelInactive]}>State</Text>
             </TouchableOpacity>
@@ -592,12 +690,11 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               onPress={() => toggleFilter('nationalParks')}
               activeOpacity={0.7}
             >
-              <View style={[styles.filterCheckbox, filters.nationalParks && { backgroundColor: '#1565C0', borderColor: '#1565C0' }]}>
+              <View style={[styles.filterCheckbox, filters.nationalParks && { backgroundColor: '#4A2C0A', borderColor: '#4A2C0A' }]}>
                 {filters.nationalParks && <Text style={styles.filterCheckmark}>{'\u2713'}</Text>}
               </View>
-              <View style={[styles.legendHouse, { opacity: filters.nationalParks ? 1 : 0.3 }]}>
-                <View style={[styles.legendHouseRoof, { borderBottomColor: '#1565C0' }]} />
-                <View style={[styles.legendHouseBody, { backgroundColor: '#0D47A1' }]} />
+              <View style={[styles.legendBadge, styles.legendBadgeNational, { opacity: filters.nationalParks ? 1 : 0.3 }]}>
+                <Text style={styles.legendBadgeText}>NP</Text>
               </View>
               <Text style={[styles.filterLabel, !filters.nationalParks && styles.filterLabelInactive]}>National</Text>
             </TouchableOpacity>
@@ -615,16 +712,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               </View>
               <Text style={[styles.filterLabel, !filters.campgrounds && styles.filterLabelInactive]}>Camp</Text>
             </TouchableOpacity>
-            <TouchableOpacity
-              style={[styles.filterItem, !showTrailLines && styles.filterItemInactive]}
-              onPress={() => setShowTrailLines(prev => !prev)}
-              activeOpacity={0.7}
-            >
-              <View style={[styles.filterCheckbox, showTrailLines && { backgroundColor: theme.primary, borderColor: theme.primary }]}>
-                {showTrailLines && <Text style={styles.filterCheckmark}>{'\u2713'}</Text>}
-              </View>
-              <Text style={[styles.filterLabel, !showTrailLines && styles.filterLabelInactive]}>Lines</Text>
-            </TouchableOpacity>
+            
           </View>
           {/* Row 2: Difficulty toggles */}
           <View style={styles.filterRow}>
@@ -650,7 +738,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
         </View>
         )}
 
-        {/* Map */}
+        {/* Map + loading overlays wrapper */}
+        <View style={{ flex: 1 }}>
         <View style={styles.mapContainer}>
           {error ? (
             <View style={styles.errorContainer}>
@@ -692,12 +781,14 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                 />
               )}
 
-              {/* Park markers - all viewport parks stay mounted; filtered-out ones get opacity=0 */}
-              {viewportParks.map((park) => {
+              {/* Park markers - sorted so prominent parks (NPs, state parks) render on top */}
+              {sortedViewportParks.map((park) => {
                 const isSelected = selectedPark?.id === park.id;
                 const isVisible = isNationalPark(park) ? filters.nationalParks : filters.stateParks;
-                const isNational = isNationalPark(park);
-                const parkImage = getParkMarkerImage(isNational);
+                const prominent = isProminentPark(park);
+                const isNP = isActualNationalPark(park);
+                const isSP = isStatePark(park);
+                const parkImage = getParkMarkerImage(isNP, isSP);
                 return (
                   <Marker
                     key={`park-${park.id}`}
@@ -705,28 +796,34 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                       latitude: park.latitude,
                       longitude: park.longitude,
                     }}
-                    anchor={{ x: 0.5, y: 1.0 }}
+                    anchor={{ x: 0.5, y: 0.5 }}
                     tracksViewChanges={isSelected}
                     opacity={isVisible ? 1 : 0}
                     tappable={isVisible}
+                    zIndex={prominent ? (isNP ? 20 : 15) : 5}
                     image={parkImage}
                     onPress={() => selectPark(park)}
                   >
-                    {!parkImage && (
+                    {!parkImage && prominent && (
                       <View style={[
-                        styles.houseMarker,
+                        styles.npsBadge,
+                        isNP ? styles.npsBadgeNational : styles.npsBadgeState,
+                        isSelected && styles.npsBadgeSelected,
+                      ]} collapsable={false}>
+                        <Text style={[
+                          styles.npsBadgeText,
+                          isSelected && { fontSize: 7 },
+                        ]} numberOfLines={1}>
+                          {isNP ? 'NP' : 'SP'}
+                        </Text>
+                      </View>
+                    )}
+                    {!parkImage && !prominent && (
+                      <View style={[
+                        styles.otherSiteMarker,
                         isSelected && styles.selectedMarkerGlow,
                       ]} collapsable={false}>
-                        <View style={[
-                          styles.houseRoof,
-                          isNational && { borderBottomColor: '#1565C0' },
-                          isSelected && { transform: [{ scale: 1.3 }] },
-                        ]} />
-                        <View style={[
-                          styles.houseBody,
-                          isNational && { backgroundColor: '#0D47A1' },
-                          isSelected && { transform: [{ scale: 1.3 }] },
-                        ]} />
+                        <View style={styles.otherSiteDiamond} />
                       </View>
                     )}
                   </Marker>
@@ -830,13 +927,22 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
             </TouchableOpacity>
           )}
 
-          {/* Loading overlay - shown while map data is being fetched */}
-          {loading && (
-            <View style={styles.mapLoadingOverlay}>
-              <ActivityIndicator size="large" color={theme.primary} />
-              <Text style={styles.mapLoadingText}>Loading map data...</Text>
-            </View>
-          )}
+        </View>
+
+        {/* Loading overlays rendered OUTSIDE mapContainer so they paint above native MapView */}
+        {regionLoading && (
+          <View style={styles.mapUpdatingOverlay}>
+            <ActivityIndicator size="small" color="#FFFFFF" />
+            <Text style={styles.mapUpdatingText}>Loading map data...</Text>
+          </View>
+        )}
+
+        {loading && (
+          <View style={styles.mapLoadingOverlay}>
+            <ActivityIndicator size="large" color={theme.primary} />
+            <Text style={styles.mapLoadingText}>Loading map data...</Text>
+          </View>
+        )}
 
         </View>
 
@@ -977,12 +1083,63 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               {selectedPark.latitude.toFixed(4)}, {selectedPark.longitude.toFixed(4)}
             </Text>
 
+            {associatedCampgrounds.length > 0 && (
+              <View style={styles.associatedTrailsSection}>
+                <TouchableOpacity
+                  onPress={() => setCampgroundsCollapsed(!campgroundsCollapsed)}
+                  activeOpacity={0.7}
+                  style={styles.collapsibleHeader}
+                >
+                  <Text style={styles.associatedTrailsTitle}>
+                    {associatedCampgrounds.length} Campground{associatedCampgrounds.length !== 1 ? 's' : ''} Nearby
+                  </Text>
+                  <Text style={styles.collapseArrow}>{campgroundsCollapsed ? '\u25B6' : '\u25BC'}</Text>
+                </TouchableOpacity>
+                {!campgroundsCollapsed && associatedCampgrounds.map((cg: any) => (
+                  <TouchableOpacity
+                    key={cg.id}
+                    style={styles.associatedTrailRow}
+                    onPress={() => selectCampground(cg)}
+                    activeOpacity={0.7}
+                  >
+                    <View style={[styles.associatedTrailDot, { backgroundColor: '#FF9800' }]} />
+                    <View style={styles.associatedTrailInfo}>
+                      <Text style={styles.associatedTrailName} numberOfLines={1}>{cg.name}</Text>
+                      <View style={styles.associatedTrailMeta}>
+                        {cg.distanceMiles != null && (
+                          <Text style={styles.associatedTrailMetaText}>{cg.distanceMiles} mi</Text>
+                        )}
+                        {cg.totalSites != null && cg.totalSites > 0 && (
+                          <Text style={styles.associatedTrailMetaText}>{cg.totalSites} sites</Text>
+                        )}
+                        {cg.openSeason && (
+                          <Text style={styles.associatedTrailMetaText}>{cg.openSeason}</Text>
+                        )}
+                        {cg.priceMin != null && (
+                          <Text style={styles.associatedTrailMetaText}>
+                            ${cg.priceMin}{cg.priceMax && cg.priceMax !== cg.priceMin ? `–$${cg.priceMax}` : ''}/night
+                          </Text>
+                        )}
+                      </View>
+                    </View>
+                  </TouchableOpacity>
+                ))}
+              </View>
+            )}
+
             {associatedTrails.length > 0 ? (
               <View style={styles.associatedTrailsSection}>
-                <Text style={styles.associatedTrailsTitle}>
-                  {associatedTrails.length} Trail{associatedTrails.length !== 1 ? 's' : ''} in this Park
-                </Text>
-                {associatedTrails.slice(0, 10).map((trail) => (
+                <TouchableOpacity
+                  onPress={() => setTrailsCollapsed(!trailsCollapsed)}
+                  activeOpacity={0.7}
+                  style={styles.collapsibleHeader}
+                >
+                  <Text style={styles.associatedTrailsTitle}>
+                    {associatedTrails.length} Trail{associatedTrails.length !== 1 ? 's' : ''} in this Park
+                  </Text>
+                  <Text style={styles.collapseArrow}>{trailsCollapsed ? '\u25B6' : '\u25BC'}</Text>
+                </TouchableOpacity>
+                {!trailsCollapsed && associatedTrails.map((trail) => (
                   <TouchableOpacity
                     key={trail.id}
                     style={styles.associatedTrailRow}
@@ -1008,9 +1165,6 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     </View>
                   </TouchableOpacity>
                 ))}
-                {associatedTrails.length > 10 && (
-                  <Text style={styles.noDataText}>+{associatedTrails.length - 10} more trails</Text>
-                )}
               </View>
             ) : (
               <Text style={styles.noDataText}>No trail data available for this park</Text>
@@ -1120,10 +1274,17 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
 
             {associatedTrails.length > 0 ? (
               <View style={styles.associatedTrailsSection}>
-                <Text style={styles.associatedTrailsTitle}>
-                  {associatedTrails.length} Nearby Trail{associatedTrails.length !== 1 ? 's' : ''}
-                </Text>
-                {associatedTrails.slice(0, 10).map((trail) => (
+                <TouchableOpacity
+                  onPress={() => setTrailsCollapsed(!trailsCollapsed)}
+                  activeOpacity={0.7}
+                  style={styles.collapsibleHeader}
+                >
+                  <Text style={styles.associatedTrailsTitle}>
+                    {associatedTrails.length} Nearby Trail{associatedTrails.length !== 1 ? 's' : ''}
+                  </Text>
+                  <Text style={styles.collapseArrow}>{trailsCollapsed ? '\u25B6' : '\u25BC'}</Text>
+                </TouchableOpacity>
+                {!trailsCollapsed && associatedTrails.map((trail) => (
                   <TouchableOpacity
                     key={trail.id}
                     style={styles.associatedTrailRow}
@@ -1146,9 +1307,6 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     </View>
                   </TouchableOpacity>
                 ))}
-                {associatedTrails.length > 10 && (
-                  <Text style={styles.noDataText}>+{associatedTrails.length - 10} more trails</Text>
-                )}
               </View>
             ) : (
               <Text style={styles.noDataText}>No trail data available for this campground</Text>
@@ -1206,62 +1364,113 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
 };
 
 /**
- * Separate tab component that lives in normal layout flow (above ChatInput)
- * so it moves with the input when gallery is dragged.
+ * Absolutely positioned tab on the right edge of the screen.
+ * Vertically draggable so the user can reposition it to avoid
+ * obscuring conversation content.
  */
 interface TrailMapTabProps {
   visible: boolean;
   panelOpen: boolean;
+  tabDismissed: boolean;
   onTogglePanel: () => void;
+  onDismiss: () => void;
 }
 
-export const TrailMapTab: React.FC<TrailMapTabProps> = ({ visible, panelOpen, onTogglePanel }) => {
+const TAB_DEFAULT_TOP = SCREEN_HEIGHT * 0.45;
+const TAB_MIN_TOP = 80;
+const TAB_MAX_TOP = SCREEN_HEIGHT - TAB_HEIGHT - 100;
+
+export const TrailMapTab: React.FC<TrailMapTabProps> = ({ visible, panelOpen, tabDismissed, onTogglePanel, onDismiss }) => {
   const { theme } = useParkTheme();
-  const tabAnim = useRef(new Animated.Value(60)).current;
+  const slideAnim = useRef(new Animated.Value(60)).current;
+  const posY = useRef(new Animated.Value(TAB_DEFAULT_TOP)).current;
+  const lastY = useRef(TAB_DEFAULT_TOP);
+  const isDragging = useRef(false);
+
+  const panResponder = useRef(
+    PanResponder.create({
+      onStartShouldSetPanResponder: () => true,
+      onMoveShouldSetPanResponder: (_, gs) => Math.abs(gs.dy) > 5,
+      onPanResponderGrant: () => {
+        isDragging.current = false;
+      },
+      onPanResponderMove: (_, gs) => {
+        if (Math.abs(gs.dy) > 5) isDragging.current = true;
+        const newY = Math.max(TAB_MIN_TOP, Math.min(TAB_MAX_TOP, lastY.current + gs.dy));
+        posY.setValue(newY);
+      },
+      onPanResponderRelease: (_, gs) => {
+        const finalY = Math.max(TAB_MIN_TOP, Math.min(TAB_MAX_TOP, lastY.current + gs.dy));
+        lastY.current = finalY;
+        Animated.spring(posY, {
+          toValue: finalY,
+          friction: 8,
+          tension: 40,
+          useNativeDriver: true,
+        }).start();
+        // If barely moved, treat as a tap
+        if (!isDragging.current) {
+          onTogglePanel();
+        }
+      },
+    })
+  ).current;
 
   useEffect(() => {
     if (visible) {
-      Animated.spring(tabAnim, {
+      Animated.spring(slideAnim, {
         toValue: 0,
         friction: 8,
         tension: 40,
         useNativeDriver: true,
       }).start();
     } else {
-      Animated.timing(tabAnim, {
+      Animated.timing(slideAnim, {
         toValue: 60,
         duration: 200,
         useNativeDriver: true,
       }).start();
     }
-  }, [visible, tabAnim]);
+  }, [visible, slideAnim]);
 
-  if (!visible || panelOpen) return null;
+  if (!visible || panelOpen || tabDismissed) return null;
 
   return (
     <Animated.View
       style={[
         styles.tabContainer,
-        { transform: [{ translateX: tabAnim }] },
+        {
+          transform: [
+            { translateX: slideAnim },
+            { translateY: posY },
+          ],
+        },
       ]}
+      {...panResponder.panHandlers}
     >
-      <TouchableOpacity
-        style={[styles.tab, { backgroundColor: theme.buttonBackground }]}
-        onPress={onTogglePanel}
-        activeOpacity={0.7}
-      >
+      <View style={[styles.tab, { backgroundColor: theme.buttonBackground }]}>
+        <TouchableOpacity
+          style={styles.tabCloseButton}
+          onPress={onDismiss}
+          hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+        >
+          <Text style={styles.tabCloseText}>✕</Text>
+        </TouchableOpacity>
         <View style={styles.tabLabelWrap}>
           <Text style={styles.tabLabel} numberOfLines={1}>Adventure Map</Text>
         </View>
-      </TouchableOpacity>
+      </View>
     </Animated.View>
   );
 };
 
 const styles = StyleSheet.create({
   tabContainer: {
-    alignSelf: 'flex-end',
+    position: 'absolute',
+    right: 0,
+    top: 0,
     zIndex: 100,
+    elevation: 100,
   },
   tab: {
     width: TAB_WIDTH,
@@ -1271,11 +1480,29 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: 4,
+    borderWidth: 1,
+    borderRightWidth: 0,
+    borderColor: 'rgba(255, 255, 255, 0.5)',
     shadowColor: '#000',
     shadowOffset: { width: -2, height: 0 },
     shadowOpacity: 0.3,
     shadowRadius: 4,
     elevation: 5,
+  },
+  tabCloseButton: {
+    position: 'absolute',
+    top: 4,
+    left: 2,
+    width: 16,
+    height: 16,
+    alignItems: 'center',
+    justifyContent: 'center',
+    zIndex: 10,
+  },
+  tabCloseText: {
+    color: 'rgba(255, 255, 255, 0.7)',
+    fontSize: 8,
+    fontWeight: '700',
   },
   tabLabelWrap: {
     width: TAB_HEIGHT,
@@ -1432,27 +1659,25 @@ const styles = StyleSheet.create({
     color: 'rgba(255, 255, 255, 0.5)',
     fontSize: 10,
   },
-  legendHouse: {
-    alignItems: 'center' as const,
-    width: 10,
-    height: 10,
+  legendBadge: {
+    borderRadius: 4,
+    borderWidth: 1.5,
+    borderColor: '#FFFFFF',
+    paddingHorizontal: 4,
+    paddingVertical: 2,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  legendHouseRoof: {
-    width: 0,
-    height: 0,
-    borderLeftWidth: 5,
-    borderRightWidth: 5,
-    borderBottomWidth: 5,
-    borderLeftColor: 'transparent',
-    borderRightColor: 'transparent',
-    borderBottomColor: '#2196F3',
+  legendBadgeNational: {
+    backgroundColor: '#4A2C0A',
   },
-  legendHouseBody: {
-    width: 8,
-    height: 5,
-    backgroundColor: '#1976D2',
-    borderBottomLeftRadius: 1,
-    borderBottomRightRadius: 1,
+  legendBadgeState: {
+    backgroundColor: '#33691E',
+  },
+  legendBadgeText: {
+    color: '#FFFFFF',
+    fontSize: 7,
+    fontWeight: '800',
   },
   legendTent: {
     alignItems: 'center' as const,
@@ -1552,27 +1777,52 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: '600',
   },
-  houseMarker: {
+  npsBadge: {
+    borderRadius: 6,
+    borderWidth: 2,
+    borderColor: '#FFFFFF',
+    paddingHorizontal: 6,
+    paddingVertical: 3,
     alignItems: 'center',
-    width: 14,
-    height: 13,
+    justifyContent: 'center',
+    minWidth: 28,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.5,
+    shadowRadius: 3,
+    elevation: 6,
   },
-  houseRoof: {
-    width: 0,
-    height: 0,
-    borderLeftWidth: 7,
-    borderRightWidth: 7,
-    borderBottomWidth: 7,
-    borderLeftColor: 'transparent',
-    borderRightColor: 'transparent',
-    borderBottomColor: '#2196F3',
+  npsBadgeNational: {
+    backgroundColor: '#4A2C0A',
   },
-  houseBody: {
-    width: 10,
-    height: 6,
-    backgroundColor: '#1976D2',
-    borderBottomLeftRadius: 1,
-    borderBottomRightRadius: 1,
+  npsBadgeState: {
+    backgroundColor: '#33691E',
+  },
+  npsBadgeSelected: {
+    transform: [{ scale: 1.4 }],
+    borderWidth: 2,
+    shadowOpacity: 0.6,
+    shadowRadius: 4,
+  },
+  npsBadgeText: {
+    color: '#FFFFFF',
+    fontSize: 8,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+  },
+  otherSiteMarker: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 12,
+    height: 12,
+  },
+  otherSiteDiamond: {
+    width: 8,
+    height: 8,
+    backgroundColor: '#78909C',
+    transform: [{ rotate: '45deg' }],
+    borderWidth: 1,
+    borderColor: '#FFFFFF',
   },
   tentMarker: {
     alignItems: 'center',
@@ -1649,7 +1899,18 @@ const styles = StyleSheet.create({
     color: 'rgba(255, 255, 255, 0.7)',
     fontSize: 13,
     fontWeight: '600',
-    marginBottom: 6,
+    flex: 1,
+  },
+  collapsibleHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 6,
+  },
+  collapseArrow: {
+    color: 'rgba(255, 255, 255, 0.5)',
+    fontSize: 10,
+    marginLeft: 6,
   },
   associatedTrailRow: {
     flexDirection: 'row',
@@ -1746,6 +2007,7 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     marginTop: 8,
   },
+  
   parkTypeBadge: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -1864,6 +2126,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 10,
+    elevation: 10,
   },
   mapLoadingText: {
     color: '#FFFFFF',
@@ -1877,11 +2140,12 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    paddingHorizontal: 12,
-    paddingVertical: 6,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
     borderRadius: 16,
     zIndex: 10,
+    elevation: 10,
     gap: 6,
   },
   mapUpdatingText: {
