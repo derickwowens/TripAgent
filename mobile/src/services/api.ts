@@ -364,6 +364,8 @@ export interface TrailMapMarker {
   difficulty?: string;
   difficultySource?: string;
   trailType?: string;
+  surfaceType?: string;
+  estimatedMinutes?: number;
   googleMapsUrl?: string;
   allTrailsUrl?: string;
   geometry?: Array<{ latitude: number; longitude: number }>;

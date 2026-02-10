@@ -364,7 +364,7 @@ export class PostgresParkDataService {
       id: string; name: string; parkId: string; parkName: string;
       latitude: number; longitude: number; lengthMiles?: number;
       difficulty?: string; trailType?: string; googleMapsUrl?: string;
-      allTrailsUrl?: string;
+      allTrailsUrl?: string; surfaceType?: string; estimatedMinutes?: number;
       geometry?: Array<{ latitude: number; longitude: number }>;
     }>;
   }> {
@@ -384,7 +384,8 @@ export class PostgresParkDataService {
     try {
       const res = await this.pool.query(`
         SELECT id, name, park_id, park_name, latitude, longitude,
-          length_miles, difficulty, difficulty_source, trail_type, google_maps_url, alltrails_url
+          length_miles, difficulty, difficulty_source, trail_type, google_maps_url, alltrails_url,
+          surface_type, estimated_minutes
           ${geometrySelect}
         FROM trails
         WHERE state_code = $1 AND latitude IS NOT NULL AND longitude IS NOT NULL
@@ -395,7 +396,8 @@ export class PostgresParkDataService {
       if (err.message?.includes('difficulty_source')) {
         const res = await this.pool.query(`
           SELECT id, name, park_id, park_name, latitude, longitude,
-            length_miles, difficulty, trail_type, google_maps_url, alltrails_url
+            length_miles, difficulty, trail_type, google_maps_url, alltrails_url,
+            surface_type, estimated_minutes
             ${geometrySelect}
           FROM trails
           WHERE state_code = $1 AND latitude IS NOT NULL AND longitude IS NOT NULL
@@ -423,6 +425,8 @@ export class PostgresParkDataService {
         trailType: r.trail_type,
         googleMapsUrl: r.google_maps_url,
         allTrailsUrl: r.alltrails_url,
+        surfaceType: r.surface_type || undefined,
+        estimatedMinutes: r.estimated_minutes ? parseFloat(r.estimated_minutes) : undefined,
         ...(includeGeometry && r.trail_geometry ? { geometry: simplifyGeometryServer(r.trail_geometry, 12) } : {}),
       })),
     };

@@ -16,6 +16,19 @@ import MapView, { Marker, Polygon, Polyline, Region, PROVIDER_GOOGLE } from 'rea
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useParkTheme } from '../../hooks/useParkTheme';
 import { TrailMapMarker, ParkMapMarker, CampgroundMapMarker } from '../../services/api';
+import {
+  formatAmenitySummary,
+  formatSiteTypeSummary,
+  formatOpenSeason,
+  formatPrice,
+  formatPhone,
+  formatPetFriendly,
+  formatTotalSites,
+  formatTrailType,
+  formatSurfaceType,
+  formatDuration,
+  formatTrailLength,
+} from '../../utils/dataPresentation';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 const PANEL_WIDTH = SCREEN_WIDTH * 0.88;
@@ -808,19 +821,31 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                   </Text>
                 </View>
               )}
-              {selectedTrail.lengthMiles != null && selectedTrail.lengthMiles > 0 && (
+              {formatTrailLength(selectedTrail.lengthMiles) && (
                 <View style={styles.lengthBadge}>
                   <Text style={styles.lengthText}>
-                    {selectedTrail.lengthMiles.toFixed(1)} mi
+                    {formatTrailLength(selectedTrail.lengthMiles)}
                   </Text>
                 </View>
               )}
-              {selectedTrail.trailType && (
-                <View style={styles.typeBadge}>
-                  <Text style={styles.typeText}>{selectedTrail.trailType}</Text>
+              {formatDuration(selectedTrail.estimatedMinutes) && (
+                <View style={styles.lengthBadge}>
+                  <Text style={styles.lengthText}>
+                    {formatDuration(selectedTrail.estimatedMinutes)}
+                  </Text>
                 </View>
               )}
-              {!selectedTrail.difficulty && !(selectedTrail.lengthMiles != null && selectedTrail.lengthMiles > 0) && !selectedTrail.trailType && (
+              {selectedTrail.trailType && formatTrailType(selectedTrail.trailType) && (
+                <View style={styles.typeBadge}>
+                  <Text style={styles.typeText}>{formatTrailType(selectedTrail.trailType)}</Text>
+                </View>
+              )}
+              {selectedTrail.surfaceType && (
+                <View style={styles.typeBadge}>
+                  <Text style={styles.typeText}>{formatSurfaceType(selectedTrail.surfaceType)}</Text>
+                </View>
+              )}
+              {!selectedTrail.difficulty && !formatTrailLength(selectedTrail.lengthMiles) && !selectedTrail.trailType && (
                 <Text style={styles.noDataText}>Limited trail data available</Text>
               )}
             </View>
@@ -994,29 +1019,35 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                 <View style={styles.campBadgeDot} />
                 <Text style={styles.campBadgeText}>Campground</Text>
               </View>
-              {selectedCampground.totalSites != null && selectedCampground.totalSites > 0 && (
+              {formatTotalSites(selectedCampground.totalSites) && (
                 <View style={styles.lengthBadge}>
-                  <Text style={styles.lengthText}>{selectedCampground.totalSites} sites</Text>
+                  <Text style={styles.lengthText}>{formatTotalSites(selectedCampground.totalSites)}</Text>
                 </View>
               )}
-              {selectedCampground.petFriendly === true && (
+              {formatPetFriendly(selectedCampground.petFriendly) && (
                 <View style={styles.typeBadge}>
-                  <Text style={styles.typeText}>Pet Friendly</Text>
+                  <Text style={styles.typeText}>{formatPetFriendly(selectedCampground.petFriendly)}</Text>
                 </View>
               )}
-              {selectedCampground.openSeason && (
+              {selectedCampground.openSeason && formatOpenSeason(selectedCampground.openSeason) && (
                 <View style={styles.typeBadge}>
-                  <Text style={styles.typeText}>{selectedCampground.openSeason}</Text>
+                  <Text style={styles.typeText}>{formatOpenSeason(selectedCampground.openSeason)}</Text>
                 </View>
               )}
-              {selectedCampground.priceMin != null && selectedCampground.priceMin > 0 && (
+              {formatPrice(selectedCampground.priceMin, selectedCampground.priceMax) && (
                 <View style={styles.lengthBadge}>
                   <Text style={styles.lengthText}>
-                    ${selectedCampground.priceMin}{selectedCampground.priceMax ? `-$${selectedCampground.priceMax}` : ''}/night
+                    {formatPrice(selectedCampground.priceMin, selectedCampground.priceMax)}
                   </Text>
                 </View>
               )}
             </View>
+
+            {selectedCampground.siteTypes && selectedCampground.siteTypes.length > 0 && (
+              <Text style={styles.descriptionText} numberOfLines={1}>
+                {formatSiteTypeSummary(selectedCampground.siteTypes)}
+              </Text>
+            )}
 
             {selectedCampground.description && (
               <Text style={styles.descriptionText} numberOfLines={3}>
@@ -1026,14 +1057,14 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
 
             {selectedCampground.amenities && selectedCampground.amenities.length > 0 && (
               <Text style={styles.descriptionText} numberOfLines={2}>
-                {selectedCampground.amenities.slice(0, 6).join(' | ')}
+                {formatAmenitySummary(selectedCampground.amenities, 5)}
               </Text>
             )}
 
             {selectedCampground.phone && (
               <TouchableOpacity onPress={() => Linking.openURL(`tel:${selectedCampground.phone}`).catch(() => {})}>
                 <Text style={[styles.coordText, { color: '#64B5F6' }]}>
-                  {selectedCampground.phone}
+                  {formatPhone(selectedCampground.phone!)}
                 </Text>
               </TouchableOpacity>
             )}
