@@ -226,8 +226,15 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     // marker reflows from triggering cascading viewport recomputation
     filterGuardRef.current = true;
     if (filterGuardTimerRef.current) clearTimeout(filterGuardTimerRef.current);
-    filterGuardTimerRef.current = setTimeout(() => { filterGuardRef.current = false; }, 500);
-    setFilters(prev => ({ ...prev, [key]: !prev[key] }));
+    filterGuardTimerRef.current = setTimeout(() => {
+      filterGuardRef.current = false;
+      console.log('[FILTER] guard cleared');
+    }, 500);
+    setFilters(prev => {
+      const next = { ...prev, [key]: !prev[key] };
+      console.log(`[FILTER] toggle ${key}: ${prev[key as keyof typeof prev]} -> ${next[key as keyof typeof next]}`);
+      return next;
+    });
   }, []);
 
   const FOCUS_RADIUS_DEG = 0.05; // ~3.5 miles
@@ -275,15 +282,18 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       if (aKnown !== bKnown) return bKnown - aKnown;
       return (b.lengthMiles || 0) - (a.lengthMiles || 0);
     });
+    console.log(`[VIEWPORT] viewportTrails recomputed: ${inView.length} trails in viewport (total: ${trails.length})`);
     return inView;
   }, [trails, viewportBounds, focusCoords, selectedTrail]);
 
   // Step 2: Difficulty filter (only changes when filter toggles, NOT when map moves)
   const visibleTrails = useMemo(() => {
-    return viewportTrails.filter(t => {
+    const result = viewportTrails.filter(t => {
       const norm = normalizeDifficulty(t.difficulty);
       return filters[norm as keyof typeof filters] !== false;
     });
+    console.log(`[FILTER] visibleTrails: ${result.length} of ${viewportTrails.length} viewport trails (E:${filters.easy} M:${filters.moderate} H:${filters.hard} X:${filters.expert} U:${filters.unknown})`);
+    return result;
   }, [viewportTrails, filters.easy, filters.moderate, filters.hard, filters.expert, filters.unknown]);
 
   // Visible parks = buffered viewport + type filter; in focus mode only the selected park
@@ -387,10 +397,14 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     // Marker reflows from filter toggles cause the map to fire spurious
     // onRegionChangeComplete events with slightly shifted regions, which
     // would cascade into viewport recomputation and phantom nodes.
-    if (filterGuardRef.current) return;
+    if (filterGuardRef.current) {
+      console.log('[REGION] blocked by filter guard');
+      return;
+    }
     // Debounce genuine user pan/zoom events
     if (regionDebounceRef.current) clearTimeout(regionDebounceRef.current);
     regionDebounceRef.current = setTimeout(() => {
+      console.log(`[REGION] accepted: lat=${region.latitude.toFixed(4)} lng=${region.longitude.toFixed(4)} dLat=${region.latitudeDelta.toFixed(4)} dLng=${region.longitudeDelta.toFixed(4)}`);
       setMapRegion(region);
       regionDebounceRef.current = null;
     }, 100);
@@ -689,9 +703,10 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                 />
               )}
 
-              {/* Park markers - only visible ones are mounted */}
-              {visibleParks.map((park) => {
+              {/* Park markers - all viewport parks stay mounted; filtered-out ones get opacity=0 */}
+              {viewportParks.map((park) => {
                 const isSelected = selectedPark?.id === park.id;
+                const isVisible = isNationalPark(park) ? filters.nationalParks : filters.stateParks;
                 return (
                   <Marker
                     key={`park-${park.id}`}
@@ -701,6 +716,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     }}
                     anchor={{ x: 0.5, y: 1.0 }}
                     tracksViewChanges={isSelected}
+                    opacity={isVisible ? 1 : 0}
+                    tappable={isVisible}
                     onPress={() => selectPark(park)}
                   >
                     <View style={[
@@ -722,9 +739,10 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                 );
               })}
 
-              {/* Campground markers - only visible ones are mounted */}
-              {visibleCampgrounds.map((cg) => {
+              {/* Campground markers - all viewport campgrounds stay mounted; filtered-out ones get opacity=0 */}
+              {viewportCampgrounds.map((cg) => {
                 const isSelected = selectedCampground?.id === cg.id;
+                const isVisible = filters.campgrounds;
                 return (
                   <Marker
                     key={`cg-${cg.id}`}
@@ -734,6 +752,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     }}
                     anchor={{ x: 0.5, y: 1.0 }}
                     tracksViewChanges={isSelected}
+                    opacity={isVisible ? 1 : 0}
+                    tappable={isVisible}
                     onPress={() => selectCampground(cg)}
                   >
                     <View style={[
@@ -747,9 +767,11 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                 );
               })}
 
-              {/* Trail markers - only visible ones are mounted */}
-              {visibleTrails.map((trail) => {
+              {/* Trail markers - all viewport trails stay mounted; filtered-out ones get opacity=0 */}
+              {viewportTrails.map((trail) => {
                 const isSelected = selectedTrail?.id === trail.id;
+                const norm = normalizeDifficulty(trail.difficulty);
+                const isVisible = filters[norm as keyof typeof filters] !== false;
                 return (
                   <Marker
                     key={`trail-${trail.id}`}
@@ -759,6 +781,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     }}
                     anchor={{ x: 0.5, y: 0.5 }}
                     tracksViewChanges={isSelected}
+                    opacity={isVisible ? 1 : 0}
+                    tappable={isVisible}
                     onPress={() => selectTrail(trail)}
                   >
                     <View
