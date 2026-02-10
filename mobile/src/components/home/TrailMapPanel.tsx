@@ -16,6 +16,7 @@ import MapView, { Marker, Polygon, Polyline, Region, PROVIDER_GOOGLE } from 'rea
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useParkTheme } from '../../hooks/useParkTheme';
 import { TrailMapMarker, ParkMapMarker, CampgroundMapMarker } from '../../services/api';
+import { getTrailMarkerImage, getParkMarkerImage, getCampgroundMarkerImage } from '../../utils/markerImages';
 import {
   formatAmenitySummary,
   formatSiteTypeSummary,
@@ -695,6 +696,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               {viewportParks.map((park) => {
                 const isSelected = selectedPark?.id === park.id;
                 const isVisible = isNationalPark(park) ? filters.nationalParks : filters.stateParks;
+                const isNational = isNationalPark(park);
+                const parkImage = getParkMarkerImage(isNational);
                 return (
                   <Marker
                     key={`park-${park.id}`}
@@ -706,23 +709,26 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     tracksViewChanges={isSelected}
                     opacity={isVisible ? 1 : 0}
                     tappable={isVisible}
+                    image={parkImage}
                     onPress={() => selectPark(park)}
                   >
-                    <View style={[
-                      styles.houseMarker,
-                      isSelected && styles.selectedMarkerGlow,
-                    ]} collapsable={false}>
+                    {!parkImage && (
                       <View style={[
-                        styles.houseRoof,
-                        isNationalPark(park) && { borderBottomColor: '#1565C0' },
-                        isSelected && { transform: [{ scale: 1.3 }] },
-                      ]} />
-                      <View style={[
-                        styles.houseBody,
-                        isNationalPark(park) && { backgroundColor: '#0D47A1' },
-                        isSelected && { transform: [{ scale: 1.3 }] },
-                      ]} />
-                    </View>
+                        styles.houseMarker,
+                        isSelected && styles.selectedMarkerGlow,
+                      ]} collapsable={false}>
+                        <View style={[
+                          styles.houseRoof,
+                          isNational && { borderBottomColor: '#1565C0' },
+                          isSelected && { transform: [{ scale: 1.3 }] },
+                        ]} />
+                        <View style={[
+                          styles.houseBody,
+                          isNational && { backgroundColor: '#0D47A1' },
+                          isSelected && { transform: [{ scale: 1.3 }] },
+                        ]} />
+                      </View>
+                    )}
                   </Marker>
                 );
               })}
@@ -731,6 +737,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               {viewportCampgrounds.map((cg) => {
                 const isSelected = selectedCampground?.id === cg.id;
                 const isVisible = filters.campgrounds;
+                const cgImage = getCampgroundMarkerImage();
                 return (
                   <Marker
                     key={`cg-${cg.id}`}
@@ -742,15 +749,18 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     tracksViewChanges={isSelected}
                     opacity={isVisible ? 1 : 0}
                     tappable={isVisible}
+                    image={cgImage}
                     onPress={() => selectCampground(cg)}
                   >
-                    <View style={[
-                      styles.tentMarker,
-                      isSelected && styles.selectedMarkerGlow,
-                    ]} collapsable={false}>
-                      <View style={[styles.tentTop, isSelected && { transform: [{ scale: 1.3 }] }]} />
-                      <View style={[styles.tentBase, isSelected && { transform: [{ scale: 1.3 }] }]} />
-                    </View>
+                    {!cgImage && (
+                      <View style={[
+                        styles.tentMarker,
+                        isSelected && styles.selectedMarkerGlow,
+                      ]} collapsable={false}>
+                        <View style={[styles.tentTop, isSelected && { transform: [{ scale: 1.3 }] }]} />
+                        <View style={[styles.tentBase, isSelected && { transform: [{ scale: 1.3 }] }]} />
+                      </View>
+                    )}
                   </Marker>
                 );
               })}
@@ -760,6 +770,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                 const isSelected = selectedTrail?.id === trail.id;
                 const norm = normalizeDifficulty(trail.difficulty);
                 const isVisible = filters[norm as keyof typeof filters] !== false;
+                const color = getDifficultyColor(trail.difficulty);
+                const trailImage = getTrailMarkerImage(norm, isSelected);
                 return (
                   <Marker
                     key={`trail-${trail.id}`}
@@ -771,18 +783,21 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
                     tracksViewChanges={isSelected}
                     opacity={isVisible ? 1 : 0}
                     tappable={isVisible}
+                    image={trailImage}
                     onPress={() => selectTrail(trail)}
                   >
-                    <View
-                      style={[
-                        isSelected ? styles.trailPinSelected : styles.trailPin,
-                        {
-                          backgroundColor: getDifficultyColor(trail.difficulty),
-                          ...(isSelected && focusCoords ? { transform: [{ scale: 0.25 }] } : {}),
-                        },
-                      ]}
-                      collapsable={false}
-                    />
+                    {!trailImage && (
+                      <View
+                        style={[
+                          isSelected ? styles.trailPinSelected : styles.trailPin,
+                          {
+                            backgroundColor: color,
+                            ...(isSelected && focusCoords ? { transform: [{ scale: 0.25 }] } : {}),
+                          },
+                        ]}
+                        collapsable={false}
+                      />
+                    )}
                   </Marker>
                 );
               })}
@@ -1539,53 +1554,53 @@ const styles = StyleSheet.create({
   },
   houseMarker: {
     alignItems: 'center',
-    width: 22,
-    height: 20,
+    width: 14,
+    height: 13,
   },
   houseRoof: {
     width: 0,
     height: 0,
-    borderLeftWidth: 11,
-    borderRightWidth: 11,
-    borderBottomWidth: 10,
+    borderLeftWidth: 7,
+    borderRightWidth: 7,
+    borderBottomWidth: 7,
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
     borderBottomColor: '#2196F3',
   },
   houseBody: {
-    width: 16,
-    height: 10,
+    width: 10,
+    height: 6,
     backgroundColor: '#1976D2',
-    borderBottomLeftRadius: 2,
-    borderBottomRightRadius: 2,
+    borderBottomLeftRadius: 1,
+    borderBottomRightRadius: 1,
   },
   tentMarker: {
     alignItems: 'center',
-    width: 20,
-    height: 18,
+    width: 12,
+    height: 11,
   },
   tentTop: {
     width: 0,
     height: 0,
-    borderLeftWidth: 10,
-    borderRightWidth: 10,
-    borderBottomWidth: 12,
+    borderLeftWidth: 6,
+    borderRightWidth: 6,
+    borderBottomWidth: 8,
     borderLeftColor: 'transparent',
     borderRightColor: 'transparent',
     borderBottomColor: '#E65100',
   },
   tentBase: {
-    width: 20,
-    height: 5,
+    width: 12,
+    height: 3,
     backgroundColor: '#BF360C',
-    borderBottomLeftRadius: 2,
-    borderBottomRightRadius: 2,
+    borderBottomLeftRadius: 1,
+    borderBottomRightRadius: 1,
   },
   trailPin: {
-    width: 20,
-    height: 20,
-    borderRadius: 10,
-    borderWidth: 2.5,
+    width: 12,
+    height: 12,
+    borderRadius: 6,
+    borderWidth: 1.5,
     borderColor: '#FFFFFF',
     elevation: 3,
     shadowColor: '#000',
@@ -1594,10 +1609,10 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
   },
   trailPinSelected: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    borderWidth: 3.5,
+    width: 18,
+    height: 18,
+    borderRadius: 9,
+    borderWidth: 2,
     borderColor: '#FFFFFF',
     elevation: 6,
     shadowColor: '#000',
