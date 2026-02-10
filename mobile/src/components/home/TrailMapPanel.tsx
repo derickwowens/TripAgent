@@ -199,13 +199,13 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
   const mapRef = useRef<MapView>(null);
   const markerJustPressedRef = useRef(false);
   const preFocusRegionRef = useRef<Region | null>(null);
+  const regionDebounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [selectedTrail, setSelectedTrail] = useState<TrailMapMarker | null>(null);
   const [selectedPark, setSelectedPark] = useState<ParkMapMarker | null>(null);
   const [selectedCampground, setSelectedCampground] = useState<CampgroundMapMarker | null>(null);
   const [showTrailLines, setShowTrailLines] = useState(true);
   const [mapRegion, setMapRegion] = useState<Region | null>(null);
   const [mapStable, setMapStable] = useState(true);
-  const [isUpdating, setIsUpdating] = useState(false);
   const [androidMarkersReady, setAndroidMarkersReady] = useState(Platform.OS !== 'android');
   const [focusCoords, setFocusCoords] = useState<{ latitude: number; longitude: number } | null>(null);
   const [filters, setFilters] = useState({
@@ -236,19 +236,29 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     };
   }, [focusCoords]);
 
-  // Visible trails: viewport bounds + difficulty filter applied on the FULL dataset.
+  // Viewport bounds with 10% buffer to prevent edge-flicker on tiny region shifts
+  const viewportBounds = useMemo(() => {
+    if (!mapRegion) return null;
+    const { latitude, longitude, latitudeDelta, longitudeDelta } = mapRegion;
+    const latBuffer = latitudeDelta * 0.1;
+    const lngBuffer = longitudeDelta * 0.1;
+    return {
+      north: latitude + latitudeDelta / 2 + latBuffer,
+      south: latitude - latitudeDelta / 2 - latBuffer,
+      east: longitude + longitudeDelta / 2 + lngBuffer,
+      west: longitude - longitudeDelta / 2 - lngBuffer,
+    };
+  }, [mapRegion]);
+
+  // Visible trails: buffered viewport + difficulty filter on FULL dataset.
   // No cap — all trails in the viewport are shown.
-  // Known-difficulty trails are sorted first so they render on top.
+  // Known-difficulty trails sorted first so they render on top.
   const visibleTrails = useMemo(() => {
     if (focusCoords) {
       return selectedTrail ? [selectedTrail] : [];
     }
-    if (!mapRegion) return [];
-    const { latitude, longitude, latitudeDelta, longitudeDelta } = mapRegion;
-    const north = latitude + latitudeDelta / 2;
-    const south = latitude - latitudeDelta / 2;
-    const east = longitude + longitudeDelta / 2;
-    const west = longitude - longitudeDelta / 2;
+    if (!viewportBounds) return [];
+    const { north, south, east, west } = viewportBounds;
     const inViewport = trails.filter(t =>
       t.latitude >= south && t.latitude <= north &&
       t.longitude >= west && t.longitude <= east
@@ -266,45 +276,37 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       return (b.lengthMiles || 0) - (a.lengthMiles || 0);
     });
     return filtered;
-  }, [trails, mapRegion, filters.easy, filters.moderate, filters.hard, filters.expert, filters.unknown, focusCoords, selectedTrail]);
+  }, [trails, viewportBounds, filters.easy, filters.moderate, filters.hard, filters.expert, filters.unknown, focusCoords, selectedTrail]);
 
-  // Visible parks = viewport + type filter; in focus mode only the selected park
+  // Visible parks = buffered viewport + type filter; in focus mode only the selected park
   const MAX_VISIBLE_PARKS = 100;
   const visibleParks = useMemo(() => {
     if (focusCoords) {
       return selectedPark ? [selectedPark] : [];
     }
-    if (!mapRegion) return [];
-    const { latitude, longitude, latitudeDelta, longitudeDelta } = mapRegion;
-    const north = latitude + latitudeDelta / 2;
-    const south = latitude - latitudeDelta / 2;
-    const east = longitude + longitudeDelta / 2;
-    const west = longitude - longitudeDelta / 2;
+    if (!viewportBounds) return [];
+    const { north, south, east, west } = viewportBounds;
     const filtered = parks.filter(p => {
       if (p.latitude < south || p.latitude > north || p.longitude < west || p.longitude > east) return false;
       return isNationalPark(p) ? filters.nationalParks : filters.stateParks;
     });
     return filtered.length > MAX_VISIBLE_PARKS ? filtered.slice(0, MAX_VISIBLE_PARKS) : filtered;
-  }, [parks, mapRegion, filters.stateParks, filters.nationalParks, focusCoords, selectedPark]);
+  }, [parks, viewportBounds, filters.stateParks, filters.nationalParks, focusCoords, selectedPark]);
 
-  // Visible campgrounds = viewport + filter; in focus mode only the selected campground
+  // Visible campgrounds = buffered viewport + filter; in focus mode only the selected campground
   const MAX_VISIBLE_CAMPGROUNDS = 100;
   const visibleCampgrounds = useMemo(() => {
     if (focusCoords) {
       return selectedCampground ? [selectedCampground] : [];
     }
-    if (!mapRegion || !filters.campgrounds) return [];
-    const { latitude, longitude, latitudeDelta, longitudeDelta } = mapRegion;
-    const north = latitude + latitudeDelta / 2;
-    const south = latitude - latitudeDelta / 2;
-    const east = longitude + longitudeDelta / 2;
-    const west = longitude - longitudeDelta / 2;
+    if (!viewportBounds || !filters.campgrounds) return [];
+    const { north, south, east, west } = viewportBounds;
     const filtered = campgrounds.filter(c =>
       c.latitude >= south && c.latitude <= north &&
       c.longitude >= west && c.longitude <= east
     );
     return filtered.length > MAX_VISIBLE_CAMPGROUNDS ? filtered.slice(0, MAX_VISIBLE_CAMPGROUNDS) : filtered;
-  }, [campgrounds, mapRegion, filters.campgrounds, focusCoords, selectedCampground]);
+  }, [campgrounds, viewportBounds, filters.campgrounds, focusCoords, selectedCampground]);
 
   const hasTrailsLoaded = trails.length > 0 && !loading;
 
@@ -362,13 +364,25 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
 
   const handleRegionChangeComplete = useCallback((region: Region) => {
     setMapStable(true);
-    setIsUpdating(true);
-    // Update region -> triggers viewport recomputation -> React re-renders markers
-    setMapRegion(region);
-    // Wait for React to finish rendering the new markers, then unlock the map
-    InteractionManager.runAfterInteractions(() => {
-      setIsUpdating(false);
-    });
+    // Debounce region state updates to prevent feedback loop:
+    // filter toggle -> markers change -> map fires regionChangeComplete -> repeat
+    if (regionDebounceRef.current) clearTimeout(regionDebounceRef.current);
+    regionDebounceRef.current = setTimeout(() => {
+      // Skip trivial region shifts (< 1% of current delta) to avoid phantom nodes
+      setMapRegion(prev => {
+        if (!prev) return region;
+        const latShift = Math.abs(region.latitude - prev.latitude);
+        const lngShift = Math.abs(region.longitude - prev.longitude);
+        const latDeltaChange = Math.abs(region.latitudeDelta - prev.latitudeDelta);
+        const lngDeltaChange = Math.abs(region.longitudeDelta - prev.longitudeDelta);
+        const threshold = prev.latitudeDelta * 0.01;
+        if (latShift < threshold && lngShift < threshold && latDeltaChange < threshold && lngDeltaChange < threshold) {
+          return prev; // No-op: region barely moved, keep same reference
+        }
+        return region;
+      });
+      regionDebounceRef.current = null;
+    }, 150);
   }, []);
 
   const selectTrail = useCallback((trail: TrailMapMarker) => {
@@ -786,13 +800,6 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
             </View>
           )}
 
-          {/* Updating overlay - shown while viewport markers are rendering */}
-          {!loading && isUpdating && hasTrailsLoaded && (
-            <View style={styles.mapUpdatingOverlay}>
-              <ActivityIndicator size="small" color="rgba(255,255,255,0.8)" />
-              <Text style={styles.mapUpdatingText}>Updating...</Text>
-            </View>
-          )}
         </View>
 
         {/* Selected Trail Detail */}
