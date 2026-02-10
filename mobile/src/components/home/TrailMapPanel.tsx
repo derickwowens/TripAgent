@@ -493,9 +493,14 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       longitudeDelta: FOCUS_RADIUS_DEG * 2.5,
     }, 500);
     // Fetch campgrounds near this park
-    fetchCampgroundsNearPark(park.id, 30, 10).then(cgs => {
-      setParkCampgrounds(cgs);
-    });
+    fetchCampgroundsNearPark(park.id, 30, 10)
+      .then(cgs => {
+        setParkCampgrounds(cgs);
+      })
+      .catch(err => {
+        console.warn('Failed to fetch campgrounds near park:', err);
+        setParkCampgrounds([]);
+      });
   }, [mapRegion]);
 
   const selectCampground = useCallback((cg: CampgroundMapMarker) => {
