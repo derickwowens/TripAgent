@@ -228,13 +228,8 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     if (filterGuardTimerRef.current) clearTimeout(filterGuardTimerRef.current);
     filterGuardTimerRef.current = setTimeout(() => {
       filterGuardRef.current = false;
-      console.log('[FILTER] guard cleared');
     }, 500);
-    setFilters(prev => {
-      const next = { ...prev, [key]: !prev[key] };
-      console.log(`[FILTER] toggle ${key}: ${prev[key as keyof typeof prev]} -> ${next[key as keyof typeof next]}`);
-      return next;
-    });
+    setFilters(prev => ({ ...prev, [key]: !prev[key] }));
   }, []);
 
   const FOCUS_RADIUS_DEG = 0.05; // ~3.5 miles
@@ -282,18 +277,15 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
       if (aKnown !== bKnown) return bKnown - aKnown;
       return (b.lengthMiles || 0) - (a.lengthMiles || 0);
     });
-    console.log(`[VIEWPORT] viewportTrails recomputed: ${inView.length} trails in viewport (total: ${trails.length})`);
     return inView;
   }, [trails, viewportBounds, focusCoords, selectedTrail]);
 
   // Step 2: Difficulty filter (only changes when filter toggles, NOT when map moves)
   const visibleTrails = useMemo(() => {
-    const result = viewportTrails.filter(t => {
+    return viewportTrails.filter(t => {
       const norm = normalizeDifficulty(t.difficulty);
       return filters[norm as keyof typeof filters] !== false;
     });
-    console.log(`[FILTER] visibleTrails: ${result.length} of ${viewportTrails.length} viewport trails (E:${filters.easy} M:${filters.moderate} H:${filters.hard} X:${filters.expert} U:${filters.unknown})`);
-    return result;
   }, [viewportTrails, filters.easy, filters.moderate, filters.hard, filters.expert, filters.unknown]);
 
   // Visible parks = buffered viewport + type filter; in focus mode only the selected park
@@ -397,14 +389,10 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     // Marker reflows from filter toggles cause the map to fire spurious
     // onRegionChangeComplete events with slightly shifted regions, which
     // would cascade into viewport recomputation and phantom nodes.
-    if (filterGuardRef.current) {
-      console.log('[REGION] blocked by filter guard');
-      return;
-    }
+    if (filterGuardRef.current) return;
     // Debounce genuine user pan/zoom events
     if (regionDebounceRef.current) clearTimeout(regionDebounceRef.current);
     regionDebounceRef.current = setTimeout(() => {
-      console.log(`[REGION] accepted: lat=${region.latitude.toFixed(4)} lng=${region.longitude.toFixed(4)} dLat=${region.latitudeDelta.toFixed(4)} dLng=${region.longitudeDelta.toFixed(4)}`);
       setMapRegion(region);
       regionDebounceRef.current = null;
     }, 100);
