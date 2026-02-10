@@ -223,9 +223,6 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     setFilters(prev => ({ ...prev, [key]: !prev[key] }));
   }, []);
 
-  // Compute trails in the exact visible viewport — no buffer, no guessing.
-  // tracksViewChanges is always true so markers render correctly.
-  const MAX_VISIBLE_TRAIL_MARKERS = 300;
   const FOCUS_RADIUS_DEG = 0.05; // ~3.5 miles
 
   // Compute focus window bounds when a node is selected
@@ -239,34 +236,37 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     };
   }, [focusCoords]);
 
-  const viewportTrails = useMemo(() => {
+  // Visible trails: viewport bounds + difficulty filter applied on the FULL dataset.
+  // No cap — all trails in the viewport are shown.
+  // Known-difficulty trails are sorted first so they render on top.
+  const visibleTrails = useMemo(() => {
+    if (focusCoords) {
+      return selectedTrail ? [selectedTrail] : [];
+    }
     if (!mapRegion) return [];
     const { latitude, longitude, latitudeDelta, longitudeDelta } = mapRegion;
     const north = latitude + latitudeDelta / 2;
     const south = latitude - latitudeDelta / 2;
     const east = longitude + longitudeDelta / 2;
     const west = longitude - longitudeDelta / 2;
-    const filtered = trails.filter(t =>
+    const inViewport = trails.filter(t =>
       t.latitude >= south && t.latitude <= north &&
       t.longitude >= west && t.longitude <= east
     );
-    if (filtered.length > MAX_VISIBLE_TRAIL_MARKERS) {
-      filtered.sort((a, b) => (b.lengthMiles || 0) - (a.lengthMiles || 0));
-      return filtered.slice(0, MAX_VISIBLE_TRAIL_MARKERS);
-    }
-    return filtered;
-  }, [trails, mapRegion]);
-
-  // Visible trails = viewport + difficulty filter; in focus mode only the selected trail
-  const visibleTrails = useMemo(() => {
-    if (focusCoords) {
-      return selectedTrail ? [selectedTrail] : [];
-    }
-    return viewportTrails.filter(t => {
+    // Apply difficulty filter
+    const filtered = inViewport.filter(t => {
       const norm = normalizeDifficulty(t.difficulty);
       return filters[norm as keyof typeof filters] !== false;
     });
-  }, [viewportTrails, filters, focusCoords, selectedTrail]);
+    // Sort: known-difficulty first, then by length descending
+    filtered.sort((a, b) => {
+      const aKnown = a.difficulty ? 1 : 0;
+      const bKnown = b.difficulty ? 1 : 0;
+      if (aKnown !== bKnown) return bKnown - aKnown;
+      return (b.lengthMiles || 0) - (a.lengthMiles || 0);
+    });
+    return filtered;
+  }, [trails, mapRegion, filters.easy, filters.moderate, filters.hard, filters.expert, filters.unknown, focusCoords, selectedTrail]);
 
   // Visible parks = viewport + type filter; in focus mode only the selected park
   const MAX_VISIBLE_PARKS = 100;
@@ -643,9 +643,9 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
               mapType="terrain"
               showsUserLocation={true}
               showsMyLocationButton={true}
-              scrollEnabled={!loading && !isUpdating}
-              zoomEnabled={!loading && !isUpdating}
-              rotateEnabled={!loading && !isUpdating}
+              scrollEnabled={!loading}
+              zoomEnabled={!loading}
+              rotateEnabled={!loading}
               onRegionChange={handleRegionChangeStart}
               onRegionChangeComplete={handleRegionChangeComplete}
             >
@@ -1151,7 +1151,7 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
         {!loading && !error && trails.length > 0 && (
           <View style={styles.footer}>
             <Text style={styles.footerText}>
-              {trails.length} trail{trails.length !== 1 ? 's' : ''} with trailhead coordinates
+              {visibleTrails.length} of {trails.length} trails in view
             </Text>
           </View>
         )}
