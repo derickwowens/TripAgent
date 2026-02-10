@@ -562,11 +562,11 @@ export const TrailMapPanel: React.FC<TrailMapPanelProps> = ({
     hasFetchedRef.current = false;
   }, [stateCode]);
 
-  // Fit map: national park coords first, then user location (state parks), then trail markers
+  // Fit map: park coords first, then user location, then trail markers
   useEffect(() => {
     if (!panelOpen || !mapRef.current) return;
 
-    // 1) National park mode: center on the park's coordinates
+    // 1) Center on park coordinates (national park gateway or state park location)
     if (parkLatitude && parkLongitude) {
       const region = {
         latitude: parkLatitude,

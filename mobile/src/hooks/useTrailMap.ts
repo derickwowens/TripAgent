@@ -409,7 +409,7 @@ export const useTrailMap = () => {
    * This combines reset + detect in a single call to avoid race conditions.
    */
   const initFromConversation = useCallback((
-    metadata: { destination?: string; parkMode?: 'national' | 'state' } | null,
+    metadata: { destination?: string; parkMode?: 'national' | 'state'; parkCoords?: { lat: number; lng: number }; stateCode?: string } | null,
     messages: Array<{ type: string; content: string }>
   ) => {
     // Reset first
@@ -449,8 +449,8 @@ export const useTrailMap = () => {
         }
       }
 
-      // Try to extract a state code from the destination string
-      const stateFromDest = detectStateFromText(dest);
+      // Try to extract a state code from the destination string, or use explicit stateCode
+      const stateFromDest = detectStateFromText(dest) || metadata?.stateCode;
       if (stateFromDest) {
         const key = `dest-${stateFromDest}`;
         lastDetectedRef.current = key;
@@ -461,8 +461,8 @@ export const useTrailMap = () => {
           stateCode: stateFromDest,
           parkCode: null,
           parkName: dest,
-          parkLatitude: null,
-          parkLongitude: null,
+          parkLatitude: metadata?.parkCoords?.lat ?? null,
+          parkLongitude: metadata?.parkCoords?.lng ?? null,
           trails: [],
           parks: [],
           campgrounds: [],
@@ -575,6 +575,15 @@ export const useTrailMap = () => {
     });
   }, []);
 
+  const setParkLocation = useCallback((lat: number, lng: number, name?: string) => {
+    setState(prev => ({
+      ...prev,
+      parkLatitude: lat,
+      parkLongitude: lng,
+      ...(name ? { parkName: name } : {}),
+    }));
+  }, []);
+
   return {
     ...state,
     scanMessages,
@@ -587,5 +596,6 @@ export const useTrailMap = () => {
     showTab,
     reset,
     initFromConversation,
+    setParkLocation,
   };
 };

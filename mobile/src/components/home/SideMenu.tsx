@@ -398,7 +398,7 @@ export const SideMenu: React.FC<SideMenuProps> = ({
                     <Text style={[
                       styles.parkModeButtonText,
                       parkMode === 'state' && styles.parkModeButtonTextActiveState,
-                    ]}>State Parks (Alpha)</Text>
+                    ]}>State Parks</Text>
                   </TouchableOpacity>
                 </View>
               </View>

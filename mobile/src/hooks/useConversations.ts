@@ -307,13 +307,85 @@ export const useConversations = (nearestAirport?: string, parkMode: 'national' |
         parkMode: effectiveParkMode,
       };
     } else {
-      // State Parks: Simple date-based naming - users expected to edit titles
-      title = `New Trip - ${monthNames[now.getMonth()]} ${now.getDate()}`;
+      // State Parks: Extract park name from the first user message for trip title
       const firstUserMsg = msgs.find(m => m.type === 'user')?.content || '';
+      
+      // Try to extract park name from common patterns in our quick start prompts
+      // Patterns: "Plan a camping trip to {PARK_NAME}.", "Find the best day hikes at {PARK_NAME}.", etc.
+      const parkNamePatterns = [
+        /(?:trip to|getaway to|hikes at|campgrounds at or near)\s+([^.]+?)(?:\s+in\s+[A-Z][a-z]+)?\.?\s*(?:Include|I'm|$)/i,
+        /(?:trip to|getaway to|hikes at|campgrounds at)\s+([^.]+?)(?:\s+in\s+[A-Z][a-z]+)?\.?\s*(?:Include|I'm|$)/i,
+      ];
+      
+      // Generic fallback phrases that should NOT be used as trip names
+      const genericPhrases = [
+        'a nearby state park',
+        'a state park',
+        'nearby state park',
+        'state park near me',
+        'a park',
+        'nearby park',
+      ];
+      
+      let extractedParkName: string | null = null;
+      for (const pattern of parkNamePatterns) {
+        const match = firstUserMsg.match(pattern);
+        if (match && match[1]) {
+          const candidate = match[1].trim().replace(/\s+in\s+[A-Z][a-z]+\s*$/, '').trim();
+          // Only use if it's not a generic fallback phrase
+          if (!genericPhrases.some(g => candidate.toLowerCase() === g.toLowerCase())) {
+            extractedParkName = candidate;
+          }
+          break;
+        }
+      }
+      
+      // Only set title from park name if we found a real park name
+      // Otherwise scan AI responses for location mentions
+      if (extractedParkName && extractedParkName.length > 3) {
+        title = extractedParkName;
+      } else {
+        // Scan assistant messages for specific location mentions
+        // Look for patterns like "**Park Name State Park**" or "I recommend Park Name"
+        const assistantMsgs = msgs.filter(m => m.type === 'assistant');
+        let foundLocation: string | null = null;
+        
+        for (const msg of assistantMsgs) {
+          // Pattern 1: Bold park names like **Devil's Lake State Park**
+          const boldParkMatch = msg.content.match(/\*\*([^*]+(?:State Park|State Forest|State Recreation Area|State Natural Area|County Park|Regional Park|State Trail|National Forest))\*\*/i);
+          if (boldParkMatch) {
+            foundLocation = boldParkMatch[1].trim();
+            break;
+          }
+          
+          // Pattern 2: "I recommend [Park Name]" or "Let's explore [Park Name]"
+          const recommendMatch = msg.content.match(/(?:I recommend|Let's explore|Let me tell you about|heading to|visit)\s+(?:\*\*)?([A-Z][^.,!?*]+(?:State Park|State Forest|Recreation Area|County Park|Trail))(?:\*\*)?/i);
+          if (recommendMatch) {
+            foundLocation = recommendMatch[1].trim();
+            break;
+          }
+          
+          // Pattern 3: Campground names like "**Campground Name Campground**"
+          const campgroundMatch = msg.content.match(/\*\*([^*]+Campground)\*\*/i);
+          if (campgroundMatch && !foundLocation) {
+            foundLocation = campgroundMatch[1].trim();
+            break;
+          }
+        }
+        
+        if (foundLocation && foundLocation.length > 3) {
+          title = foundLocation;
+          extractedParkName = foundLocation;
+        } else {
+          title = `New Trip - ${monthNames[now.getMonth()]} ${now.getDate()}`;
+        }
+      }
+      
       summary = firstUserMsg.length > 60 ? firstUserMsg.substring(0, 57) + '...' : firstUserMsg;
 
       return {
         title,
+        destination: extractedParkName || undefined,
         summary,
         departingFrom: nearestAirport,
         createdAt: now.toISOString(),

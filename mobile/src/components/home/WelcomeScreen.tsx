@@ -19,10 +19,10 @@ const NATIONAL_PARK_PROMPTS = [
 ];
 
 const STATE_PARK_PROMPTS = [
-  { label: 'Plan a camping trip', template: 'Plan a camping trip to a state park near me. Include campground recommendations, hiking trails, things to do, and a day-by-day itinerary' },
-  { label: 'Find day hikes', template: 'Find a state park with great day hikes nearby. Include trail details, difficulty levels, distances, and what to bring' },
-  { label: 'Weekend getaway', template: 'Plan a weekend getaway to a scenic state park nearby. Include must-see spots, hiking recommendations, camping or lodging options, and a 2-day itinerary' },
-  { label: 'Find campgrounds', template: 'Find state parks with the best campgrounds in my area. Include site availability, amenities, reservation links, and nearby trails' },
+  { label: 'Plan a camping trip', template: 'Plan a camping trip to {PARK_NAME}. Include campground recommendations, hiking trails, things to do, and a day-by-day itinerary' },
+  { label: 'Find day hikes', template: 'Find the best day hikes at {PARK_NAME}. Include trail details, difficulty levels, distances, and what to bring' },
+  { label: 'Weekend getaway', template: 'Plan a weekend getaway to {PARK_NAME}. Include must-see spots, hiking recommendations, camping or lodging options, and a 2-day itinerary' },
+  { label: 'Find campgrounds', template: 'Find campgrounds at or near {PARK_NAME}. Include site availability, amenities, reservation links, and nearby trails' },
 ];
 
 type ParkMode = 'national' | 'state';
@@ -321,18 +321,17 @@ const generateRandomPrompt = (
   return prompt;
 };
 
-// Generate a state park prompt - either with a specific park (for Surprise me) or generic
+// Generate a state park prompt with a specific park name injected
 const generateStateParkPrompt = (
   template: string,
   nearbyStateParks?: StateParkSummary[],
   userLocation?: { city: string; state: string; nearestAirport: string },
-  userProfile?: string,
-  pickSpecificPark: boolean = false
+  userProfile?: string
 ): string => {
   let prompt = template;
   
-  // Only pick a specific park if requested (e.g., "Surprise me!" button)
-  if (pickSpecificPark && template.includes('{PARK_NAME}')) {
+  // Always inject a specific park name for state park prompts
+  if (template.includes('{PARK_NAME}')) {
     let parkName: string;
     let stateName: string;
     
@@ -341,19 +340,15 @@ const generateStateParkPrompt = (
       parkName = randomPark.name;
       stateName = randomPark.stateFullName || randomPark.state;
     } else if (userLocation?.state) {
-      parkName = `a state park in ${userLocation.state}`;
+      parkName = `a state park`;
       stateName = userLocation.state;
     } else {
       parkName = 'a nearby state park';
-      stateName = 'your area';
+      stateName = '';
     }
     
-    prompt = template.replace('{PARK_NAME}', `${parkName} in ${stateName}`);
-  } else {
-    // For generic prompts, add state context if available
-    if (userLocation?.state) {
-      prompt = template.replace('near me', `in ${userLocation.state}`).replace('nearby', `in ${userLocation.state}`);
-    }
+    const fullParkName = stateName ? `${parkName} in ${stateName}` : parkName;
+    prompt = template.replace('{PARK_NAME}', fullParkName);
   }
   
   // Add location context
@@ -532,8 +527,8 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({
             ]}
             onPress={() => {
               if (isStateMode) {
-                // State parks: pick a random nearby park (pickSpecificPark=true)
-                const prompt = generateStateParkPrompt('Plan a trip to {PARK_NAME}. Include hiking trails, camping or lodging options, things to do, and a day-by-day itinerary', nearbyStateParks, userLocation, userProfile, true);
+                // State parks: pick a random nearby park
+                const prompt = generateStateParkPrompt('Plan a trip to {PARK_NAME}. Include hiking trails, camping or lodging options, things to do, and a day-by-day itinerary', nearbyStateParks, userLocation, userProfile);
                 onSetPrompt(prompt);
               } else {
                 onSetPrompt(injectProfileContext(generateRandomPrompt(userLocation, blacklistedParkCodes), userProfile));

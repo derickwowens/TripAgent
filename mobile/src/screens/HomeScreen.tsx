@@ -829,8 +829,53 @@ const HomeScreen: React.FC = () => {
               <TouchableOpacity
                 style={[styles.mapButton, { backgroundColor: parkTheme.buttonBackground }]}
                 onPress={() => {
-                  // If map not visible yet, initialize with user's state
-                  if (!trailMap.visible && userLocation?.state) {
+                  // For state park mode, find park coordinates from conversation
+                  if (parkMode === 'state' && nearbyStateParks.length > 0) {
+                    const currentConv = savedConversations.find(c => c.id === currentConversationId);
+                    let destination = currentConv?.metadata?.destination;
+                    
+                    // First try metadata destination
+                    let matchingPark = destination ? nearbyStateParks.find(p => 
+                      p.name.toLowerCase() === destination!.toLowerCase() ||
+                      destination!.toLowerCase().includes(p.name.toLowerCase())
+                    ) : undefined;
+                    
+                    // If no match, scan messages for any park name mention
+                    if (!matchingPark) {
+                      for (const msg of messages) {
+                        for (const park of nearbyStateParks) {
+                          if (msg.content.toLowerCase().includes(park.name.toLowerCase())) {
+                            matchingPark = park;
+                            destination = park.name;
+                            break;
+                          }
+                        }
+                        if (matchingPark) break;
+                      }
+                    }
+                    
+                    if (matchingPark?.coordinates) {
+                      // Always set park location so map centers on the park
+                      trailMap.setParkLocation(
+                        matchingPark.coordinates.latitude,
+                        matchingPark.coordinates.longitude,
+                        matchingPark.name,
+                      );
+                    }
+                    
+                    // If map not visible yet, initialize with conversation context
+                    if (!trailMap.visible && userLocation?.state) {
+                      const parkCoords = matchingPark?.coordinates ? {
+                        lat: matchingPark.coordinates.latitude,
+                        lng: matchingPark.coordinates.longitude,
+                      } : undefined;
+                      trailMap.initFromConversation(
+                        { destination: destination || userLocation.state, parkMode, parkCoords, stateCode: userLocation.state },
+                        messages.map(m => ({ type: m.type, content: m.content }))
+                      );
+                    }
+                  } else if (!trailMap.visible && userLocation?.state) {
+                    // National park mode: existing behavior
                     trailMap.initFromConversation(
                       { destination: userLocation.state, parkMode },
                       messages.map(m => ({ type: m.type, content: m.content }))
